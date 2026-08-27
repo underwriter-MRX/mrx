@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-27T13:35:46Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-27T13:58:54Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -486,13 +486,16 @@
     "wave161_selection_decision_sha256": "d0f31c1a00a3512d4b9ea34d71a824a2b20b96e65fcfa7d7512220c159e33cdd",
     "wave162_selection_decision_id": "MRX1000-W162-SELECT-2026-08-27",
     "wave162_selection_decision_path": "docs/governance/mrx1000-wave162-selection-decision-2026-08-27.md",
-    "wave162_selection_decision_sha256": "7171a3b4574dae3a2789182c5fb30916ed09be523af32da01dd9b27c845ea4bb"
+    "wave162_selection_decision_sha256": "7171a3b4574dae3a2789182c5fb30916ed09be523af32da01dd9b27c845ea4bb",
+    "wave163_selection_decision_id": "MRX1000-W163-SELECT-2026-08-27",
+    "wave163_selection_decision_path": "docs/governance/mrx1000-wave163-selection-decision-2026-08-27.md",
+    "wave163_selection_decision_sha256": "b361a3b88bff02f0cd05025f60342d7f853d895759437e145f91946dfb9a7b5f"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "d43614d6e4db92a272326a930b504f13a7414d330196abeb8879625d5d545e1d",
-    "canonical_ledger_generated_at": "2026-07-20T09:22:45.346Z",
+    "canonical_ledger_sha256": "580c07f1f0ce7799e8773b7fd33ce418c6916c3ee802425fc9db42850ad32ce3",
+    "canonical_ledger_generated_at": "2026-07-20T20:12:49.659Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -506,11 +509,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 233,
+    "prior_verified_article_count": 234,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 234,
-    "exact_admitted_slate_sha256": "b06a274b852f13486e74bc728c9cef4c95e41b3ae826307541500326c553cc5b"
+    "exact_admitted_count": 235,
+    "exact_admitted_slate_sha256": "4f578876b5b07ebf8703fce5fc611555e51479d2c75b7c3d5bb0db0de89ca325"
   },
   "articles": [
     {
@@ -8341,10 +8344,48 @@
       "inline_path": "/assets/articles/inline/culberson-cad-certified-mineral-roll-zip-source-control-record/culberson-cad-certified-mineral-roll-zip.webp",
       "inline_asset_sha256": "bc1c4df0eb22af149d72ec08b137d69650bfb791d2417cfd562662590cf9d93f",
       "inline_rendered_text": "Culberson CAD certified mineral roll ZIP"
+    },
+    {
+      "selection_rank": 235,
+      "program_row_id": "MRX1000-0762",
+      "source_shortlist_program_row_id": "MRX1000-0762",
+      "slug": "culberson-cad-mineral-category-codes-source-locator",
+      "title": "Culberson CAD Mineral Category Codes Source Locator",
+      "source_shortlist_title": "Culberson CAD Mineral Category Codes Source Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "492906d44eeeda67ac837f82dcb6b61f3168b106a0612f47fe537dba44e8a05b",
+      "repo_path": "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+      "repo_sha256": "ae2900a2a2c8adb8c83172ab9156becd29f9b8b37058557601a0b8304e6de021",
+      "article_sha256": "ae2900a2a2c8adb8c83172ab9156becd29f9b8b37058557601a0b8304e6de021",
+      "hero_path": "/assets/articles/hero/culberson-cad-mineral-category-codes-source-locator.webp",
+      "hero_sha256": "bea5224bc889874ef5d337f75c635e01311512e6bffc4fe9e553baf875b9d718",
+      "hero_asset_sha256": "bea5224bc889874ef5d337f75c635e01311512e6bffc4fe9e553baf875b9d718",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2288,
+      "risk_citation_remediation": [
+        "The original generic Culberson County mineral-value guide identity for MRX1000-0762 is rejected because it repeats current and already-owned county valuation and mineral-owner-guide coverage.",
+        "The replacement owns only a public source locator for the current official 2025 Culberson CAD mass-appraisal report, 2025 annual report, current Texas Comptroller classification guide, and literal displayed mineral category labels and page locations.",
+        "The adjacent Culberson ZIP article owns the exact 2026 archive container and central-directory metadata. This article performs no ZIP work, archive-member extraction, or row-data access.",
+        "Current Culberson CAD, Texas Comptroller, and Texas Legislature sources support publisher identity, document identity, broad section names, page locators, literal displayed labels, and governing-source provenance only.",
+        "Source-recorded, not-displayed, source-conflict, controlled-record-stop, and authorized-human-stop are document-control states only and are not converted into code equivalence, applicability, accuracy, completeness, classification, appraisal, tax, protest, legal, valuation, sale, or another outcome.",
+        "The public locator reproduces no parcel count, market value, ratio, formula, method, assumption, schedule, deadline, account fact, owner fact, property fact, legal description, lease, operator, regulatory identifier, production, exemption, protest, notice, contact, recommendation, or result.",
+        "Any code-equivalence inference, property search, row-data access, matching, evidence review, individualized classification, appraisal judgment, protest strategy, legal interpretation, tax guidance, valuation, representation, submission, payment, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/culberson-cad-mineral-category-codes-source-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/culberson-cad-mineral-category-codes-source-locator/culberson-cad-mineral-category-codes.webp",
+      "inline_asset_sha256": "b8bf2cba1e1b4337b53c6e2279dcdac0306447851bc43e3bde04a1e62119a14b",
+      "inline_rendered_text": "Culberson CAD mineral category codes"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 234,
+    "admitted_article_count": 235,
     "selection_ranks": [
       1,
       2,
@@ -8579,7 +8620,8 @@
       231,
       232,
       233,
-      234
+      234,
+      235
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8638,9 +8680,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "2410651c1c1e2d79d190aaeca37e139bc2058fef0d537cd8190650c128715252",
-    "public_article_count": 242,
-    "batch_article_count": 234,
+    "retrofit_manifest_sha256": "e885d36165cfc0c27f648f50256f7e2098ba0c84759ee48848b4c49163394dbb",
+    "public_article_count": 243,
+    "batch_article_count": 235,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
