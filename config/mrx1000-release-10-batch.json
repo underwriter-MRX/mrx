@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-26T21:27:09Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-27T07:51:53Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -474,13 +474,16 @@
     "wave157_selection_decision_sha256": "8675666a4d18d4ea6bf670dca479b0986e6b77a7b349ffed2ee88b7248e3a128",
     "wave158_selection_decision_id": "MRX1000-W158-SELECT-2026-08-26",
     "wave158_selection_decision_path": "docs/governance/mrx1000-wave158-selection-decision-2026-08-26.md",
-    "wave158_selection_decision_sha256": "3013a63c5651a4a4aae0e7cb4bad20facd4755341a9777444ceeada30e7d46eb"
+    "wave158_selection_decision_sha256": "3013a63c5651a4a4aae0e7cb4bad20facd4755341a9777444ceeada30e7d46eb",
+    "wave159_selection_decision_id": "MRX1000-W159-SELECT-2026-08-27",
+    "wave159_selection_decision_path": "docs/governance/mrx1000-wave159-selection-decision-2026-08-27.md",
+    "wave159_selection_decision_sha256": "824d68a580b3380d839924aed7f8bed7b7f45f08ab7ed27f7ecd1ab626cb1e37"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "8b3605cf9abdc22a1186024ca5ac34e545c73881678578a8a3aea4179f990adf",
-    "canonical_ledger_generated_at": "2026-07-20T07:34:45.772Z",
+    "canonical_ledger_sha256": "cbd6002ff43d47926ee86b2ee124817e40adac12c5b79951f6416542afc20b1a",
+    "canonical_ledger_generated_at": "2026-07-20T09:48:07.117Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -494,11 +497,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 229,
+    "prior_verified_article_count": 230,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 230,
-    "exact_admitted_slate_sha256": "6530a2a5fe6410688ef7b7e5c6025086215bfbbd2aa77cbf49db4ef35024927c"
+    "exact_admitted_count": 231,
+    "exact_admitted_slate_sha256": "9102a867b2c94d4079645ea14ba6b4145509366396d90259c1e4e195f55eeda1"
   },
   "articles": [
     {
@@ -8180,10 +8183,47 @@
       "inline_path": "/assets/articles/inline/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/form-50-172-crane-mineral-interest.webp",
       "inline_asset_sha256": "65c496273d4630cb617afd7b3d6d85714c12f27ef88fbf16bfeed4bf2270891c",
       "inline_rendered_text": "Form 50-172 Crane mineral interest"
+    },
+    {
+      "selection_rank": 231,
+      "program_row_id": "MRX1000-0758",
+      "source_shortlist_program_row_id": "MRX1000-0758",
+      "slug": "form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests",
+      "title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+      "source_shortlist_title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+      "canonical_url": "https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "99b582e57af63fe51660e79125af6a94e1d3794178d71f3d6771c5ba144a0668",
+      "repo_path": "src/content/posts/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.mdx",
+      "repo_sha256": "6efa6d20c88fa2130447d1a254e9ac9a875e7e95fa9e14819db7b372c40d881f",
+      "article_sha256": "6efa6d20c88fa2130447d1a254e9ac9a875e7e95fa9e14819db7b372c40d881f",
+      "hero_path": "/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp",
+      "hero_sha256": "25418c33c39b4c4c6cccdc2a23ef1bc674d74d0062a375f4d3723e7bca456959",
+      "hero_asset_sha256": "25418c33c39b4c4c6cccdc2a23ef1bc674d74d0062a375f4d3723e7bca456959",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2791,
+      "risk_citation_remediation": [
+        "The original generic Crane County market-update identity for MRX1000-0758 is rejected because it collides with adjacent county market-update variants and existing valuation-factor, valuation-guide, offer, risk, family, and timeline coverage.",
+        "The replacement owns only a source-controlled inventory of the current official blank Form 50-171 identity, revision, page count, instruction subjects, five displayed steps, blank field and attachment categories, statutory reference, official-source relationships, retrieval provenance, and document-control state.",
+        "Current Texas Comptroller, Crane CAD, Crane County directory, and Texas Tax Code sources support source identity, current-source context, local-source context, displayed field categories, and statutory provenance only.",
+        "Source-recorded, not-displayed, source-conflict, and authorized-human-stop are document-control states only and are not converted into applicability, eligibility, ownership, proportion, authority, proof, timing, completeness, filing, acceptance, qualification, tax, appraisal, valuation, or outcome conclusions.",
+        "The public template and images expose no owner, agent, address, phone, property description, interest proportion, recorded instrument, signature, date, account detail, taxable value, real form, recommendation, result, or outcome.",
+        "Any private-data entry, proof or instrument review, applicability or qualification decision, completion, signature, contact, upload, submission, timing calculation, legal interpretation, tax guidance, appraisal judgment, valuation, representation, or strategy forces an authorized-human or qualified-professional stop.",
+        "Continuous quality-gated admission under the owner no-approval directives; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/form-50-171-crane-mineral-interest.webp",
+      "inline_asset_sha256": "92cab31eade55f9b5dce2df18a794a26f7ac7bd2e28dd147a6ea5458f049259d",
+      "inline_rendered_text": "Form 50-171 Crane mineral interest"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 230,
+    "admitted_article_count": 231,
     "selection_ranks": [
       1,
       2,
@@ -8414,7 +8454,8 @@
       227,
       228,
       229,
-      230
+      230,
+      231
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8473,9 +8514,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "60f56506813f8979c398bdd83e0ca0ec582b1e0ce86e9db737787afd115a2602",
-    "public_article_count": 238,
-    "batch_article_count": 230,
+    "retrofit_manifest_sha256": "a95dae2951d3766e272e33cd380ef5c550b46f7b1e30e3780d999488ee4e07df",
+    "public_article_count": 239,
+    "batch_article_count": 231,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

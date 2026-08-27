@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T05:11:05.215Z",
+  "generated_at": "2026-07-20T09:48:07.117Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "7d460404c27edeb31cca7bab0ee2d0f548655babe179baf783e96e9ff2a07ba2",
+  "content_fingerprint_sha256": "5fabbcbfde24cff2a4ae0041c75b739630d5ba844348b84bef3dbc2698a5fc55",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "3ff1bd05b1af01d887cc316fb3a192d7e895e1eaafaaec125c05e56eff8ee796",
+    "canonical_ledger_fingerprint_sha256": "e31df51886310e10e59e89f7f9007c69d783952c9336bfd9710d088ee565a897",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T05:11:05.215Z",
+    "canonical_ledger_generated_at": "2026-07-20T09:48:07.117Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 238,
+      "live_public_published_route": 239,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 714
+      "planning_only_inventory": 713
     }
   },
   "rows": [
@@ -45751,11 +45751,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0758",
-        "target_title": "Crane County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/crane-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+        "url": "/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -45798,15 +45798,15 @@
     },
     {
       "program_row_id": "MRX1000-0758",
-      "canonical_title": "Crane County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "crane-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/crane-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+      "canonical_slug": "form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests",
+      "canonical_url": "/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -45828,7 +45828,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -45841,7 +45841,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -45855,7 +45855,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -62823,69 +62823,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-1060",
-        "target_title": "Brazos County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/brazos-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-1060",
-      "canonical_title": "Brazos County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "brazos-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/brazos-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "education",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-1062",
         "target_title": "Brazos County, Texas Mineral Rights Value: Timeline In 2026",
         "url": "/blog/brazos-county-texas-mineral-rights-value-timeline-in-2026/",
@@ -63063,6 +63000,69 @@
       "canonical_title": "Crane County, Texas Mineral Rights Value: Guide For Mineral Owners",
       "canonical_slug": "crane-county-texas-mineral-rights-value-guide-for-mineral-owners",
       "canonical_url": "/blog/crane-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "education",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-1065",
+        "target_title": "Crane County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+        "url": "/blog/crane-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1065",
+      "canonical_title": "Crane County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+      "canonical_slug": "crane-county-texas-mineral-rights-value-market-update-for-mineral-owners",
+      "canonical_url": "/blog/crane-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
       "search_intent": "education",

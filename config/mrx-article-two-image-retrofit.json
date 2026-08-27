@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-26T21:11:08Z",
+  "generated_at_utc": "2026-08-27T07:38:08Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 238,
-    "asset_count": 476,
-    "unique_source_art_count": 238,
-    "unique_hero_sha256_count": 238,
-    "unique_inline_sha256_count": 238,
-    "distinct_article_pair_count": 238,
-    "hero_ocr_pass_count": 238,
-    "inline_ocr_pass_count": 238,
-    "exact_filename_identity_count": 238
+    "article_count": 239,
+    "asset_count": 478,
+    "unique_source_art_count": 239,
+    "unique_hero_sha256_count": 239,
+    "unique_inline_sha256_count": 239,
+    "distinct_article_pair_count": 239,
+    "hero_ocr_pass_count": 239,
+    "inline_ocr_pass_count": 239,
+    "exact_filename_identity_count": 239
   },
   "contact_sheets": {
     "hero": [
@@ -1628,6 +1628,56 @@
           "actual": "How Do I Know if My Mineral\nRights Qualify for Evaluation?",
           "normalized_expected": "how do i know if my mineral rights qualify for evaluation",
           "normalized_actual": "how do i know if my mineral rights qualify for evaluation",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests",
+      "title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+      "keyword": "Form 50-171 Crane mineral interest",
+      "file_path": "src/content/posts/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.mdx",
+      "source_public_path": "/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave159-creative-sources/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests-hero-base.png",
+        "artifacts/mrx1000-wave159-creative-sources/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-27T07:37:08.517Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp",
+        "alt": "A five-divider archival source station appears beside the exact Form 50-171 field-inventory title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "25418c33c39b4c4c6cccdc2a23ef1bc674d74d0062a375f4d3723e7bca456959",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000110000000000000011000000000010011110000001111001111110000111110111111000011110000000000011111000000000001111101000000001111110100000000011110010000000000011001000000000000000000000000100000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+          "actual": "Form 50-171\nSeparate-Taxation\nRequest Field Inventory\nfor Crane Mineral Interests",
+          "normalized_expected": "form 50 171 separate taxation request field inventory for crane mineral interests",
+          "normalized_actual": "form 50 171 separate taxation request field inventory for crane mineral interests",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/form-50-171-crane-mineral-interest.webp",
+        "alt": "An overhead five-part blank field inventory appears above the exact Form 50-171 Crane mineral interest keyword.",
+        "rendered_text": "Form 50-171 Crane mineral interest",
+        "visual_variant": "wave159-distinct-generated-strict-overhead-five-part-field-inventory",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "92cab31eade55f9b5dce2df18a794a26f7ac7bd2e28dd147a6ea5458f049259d",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100111111111111110000111111111111000011111000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Form 50-171 Crane mineral interest",
+          "actual": "Form 50-171\nCrane mineral interest",
+          "normalized_expected": "form 50 171 crane mineral interest",
+          "normalized_actual": "form 50 171 crane mineral interest",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

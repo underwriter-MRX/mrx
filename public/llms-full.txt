@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Travis](https://mineralrightsxchange.com/authors/travis/)
 - [Wade](https://mineralrightsxchange.com/authors/wade/)
 
-## Published article URLs (238)
+## Published article URLs (239)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests](https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/)
 - [Form 50-172 Joint-Taxation Instruction Source Map for Crane Mineral Interests](https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/)
 - [Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties](https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/)
 - [Brazos CAD Mineral Property ARB Hearing Notice Inventory](https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-arb-hearing-notice-inventory/)
