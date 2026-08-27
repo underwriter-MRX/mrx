@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-27T07:51:53Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-27T08:18:08Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -477,13 +477,16 @@
     "wave158_selection_decision_sha256": "3013a63c5651a4a4aae0e7cb4bad20facd4755341a9777444ceeada30e7d46eb",
     "wave159_selection_decision_id": "MRX1000-W159-SELECT-2026-08-27",
     "wave159_selection_decision_path": "docs/governance/mrx1000-wave159-selection-decision-2026-08-27.md",
-    "wave159_selection_decision_sha256": "824d68a580b3380d839924aed7f8bed7b7f45f08ab7ed27f7ecd1ab626cb1e37"
+    "wave159_selection_decision_sha256": "824d68a580b3380d839924aed7f8bed7b7f45f08ab7ed27f7ecd1ab626cb1e37",
+    "wave160_selection_decision_id": "MRX1000-W160-SELECT-2026-08-27",
+    "wave160_selection_decision_path": "docs/governance/mrx1000-wave160-selection-decision-2026-08-27.md",
+    "wave160_selection_decision_sha256": "86abc5da2c54a595ef402ef4c6733fe9f565770451b1cdd366674aec547964fa"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "cbd6002ff43d47926ee86b2ee124817e40adac12c5b79951f6416542afc20b1a",
-    "canonical_ledger_generated_at": "2026-07-20T09:48:07.117Z",
+    "canonical_ledger_sha256": "dfc45d9cf51cf6ff217a5eb9483efd53d30b9dc8f5182fcffafee5794f17fd9f",
+    "canonical_ledger_generated_at": "2026-07-20T15:15:45.820Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -497,11 +500,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 230,
+    "prior_verified_article_count": 231,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 231,
-    "exact_admitted_slate_sha256": "9102a867b2c94d4079645ea14ba6b4145509366396d90259c1e4e195f55eeda1"
+    "exact_admitted_count": 232,
+    "exact_admitted_slate_sha256": "a9821f839ee67623f339e7eb2ed38902d1748b3e7706f0729b0b335bf67fe3d3"
   },
   "articles": [
     {
@@ -8220,10 +8223,47 @@
       "inline_path": "/assets/articles/inline/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/form-50-171-crane-mineral-interest.webp",
       "inline_asset_sha256": "92cab31eade55f9b5dce2df18a794a26f7ac7bd2e28dd147a6ea5458f049259d",
       "inline_rendered_text": "Form 50-171 Crane mineral interest"
+    },
+    {
+      "selection_rank": 232,
+      "program_row_id": "MRX1000-0759",
+      "source_shortlist_program_row_id": "MRX1000-0759",
+      "slug": "form-50-150-confidentiality-boundary-map-crane-oil-gas-property",
+      "title": "Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property",
+      "source_shortlist_title": "Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property",
+      "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "03369f181593c4b68382e171b931e66201de65c94b893827ce3221d7c2f10344",
+      "repo_path": "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+      "repo_sha256": "7f4c90e39761a57d8bc24ce2dc655ff8007728b9c8966e3e84fe1f1ac1a5339a",
+      "article_sha256": "7f4c90e39761a57d8bc24ce2dc655ff8007728b9c8966e3e84fe1f1ac1a5339a",
+      "hero_path": "/assets/articles/hero/form-50-150-confidentiality-boundary-map-for-crane-oil-and-gas-property.webp",
+      "hero_sha256": "8fbc9a7c5e2244a945d07a334cbb7efc5550ff6bb72b89039c1f828191a87d68",
+      "hero_asset_sha256": "8fbc9a7c5e2244a945d07a334cbb7efc5550ff6bb72b89039c1f828191a87d68",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2465,
+      "risk_citation_remediation": [
+        "The original generic Crane County risk-checklist identity for MRX1000-0759 is rejected because it collides with existing and already-owned county valuation, risk, market-update, offer-review, and appraisal coverage.",
+        "The replacement owns only a source-controlled map of the current official blank Form 50-150 identity, displayed revision, page count, CONFIDENTIAL display, four-section structure, broad field and attachment categories, Important Information subjects, official-source relationships, retrieval provenance, and public-versus-controlled record boundary.",
+        "Current Texas Comptroller, Crane CAD, Crane County directory, and Texas Tax Code sources support source identity, current-source context, local-source context, displayed field categories, and governing-source provenance only.",
+        "Source-recorded, not-displayed, source-conflict, controlled-record-stop, and authorized-human-stop are document-control states only and are not converted into applicability, authority, ownership, interest-type, value, timing, completeness, filing, acceptance, confidentiality, disclosure, penalty, tax, appraisal, valuation, or outcome conclusions.",
+        "The public template and images expose no owner, party, address, phone, account, jurisdiction, property description, Railroad Commission identifier, interest type, value, supporting record, signature, date, notary fact, real form, recommendation, result, or outcome.",
+        "Any private-data entry, evidence review, applicability or authority decision, completion, signature, notarization, contact, upload, submission, timing calculation, confidentiality or disclosure interpretation, legal interpretation, tax guidance, appraisal judgment, valuation, representation, or strategy forces an authorized-human or qualified-professional stop.",
+        "Continuous quality-gated admission under the owner no-approval directives; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/form-50-150-crane-oil-and-gas-property.webp",
+      "inline_asset_sha256": "88350d6e2ebd6896065a39230c0e2a6abe1baa35c33e66b9bc235b0f23cd0ab0",
+      "inline_rendered_text": "Form 50-150 Crane oil and gas property"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 231,
+    "admitted_article_count": 232,
     "selection_ranks": [
       1,
       2,
@@ -8455,7 +8495,8 @@
       228,
       229,
       230,
-      231
+      231,
+      232
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8514,9 +8555,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "a95dae2951d3766e272e33cd380ef5c550b46f7b1e30e3780d999488ee4e07df",
-    "public_article_count": 239,
-    "batch_article_count": 231,
+    "retrofit_manifest_sha256": "5d5337b9ab504e2b5ca9535940cd545ca51befc5e5b0b023555a5d6040a0d6d7",
+    "public_article_count": 240,
+    "batch_article_count": 232,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
