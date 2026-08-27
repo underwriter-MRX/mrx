@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-27T13:57:08Z",
+  "generated_at_utc": "2026-08-27T14:14:45Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 243,
-    "asset_count": 486,
-    "unique_source_art_count": 243,
-    "unique_hero_sha256_count": 243,
-    "unique_inline_sha256_count": 243,
-    "distinct_article_pair_count": 243,
-    "hero_ocr_pass_count": 243,
-    "inline_ocr_pass_count": 243,
-    "exact_filename_identity_count": 243
+    "article_count": 244,
+    "asset_count": 488,
+    "unique_source_art_count": 244,
+    "unique_hero_sha256_count": 244,
+    "unique_inline_sha256_count": 244,
+    "distinct_article_pair_count": 244,
+    "hero_ocr_pass_count": 244,
+    "inline_ocr_pass_count": 244,
+    "exact_filename_identity_count": 244
   },
   "contact_sheets": {
     "hero": [
@@ -1236,6 +1236,56 @@
           "actual": "Crane CAD oil and gas\nreappraisal plan",
           "normalized_expected": "crane cad oil and gas reappraisal plan",
           "normalized_actual": "crane cad oil and gas reappraisal plan",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "culberson-cad-2025-2026-reappraisal-plan-adoption-source-record",
+      "title": "Culberson CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+      "keyword": "Culberson CAD 2025-2026 reappraisal plan",
+      "file_path": "src/content/posts/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+      "source_public_path": "/assets/articles/hero/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave164-creative-sources/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record-hero-base.png",
+        "artifacts/mrx1000-wave164-creative-sources/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-27T14:12:20.536Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+        "alt": "A closed plan folio appears beside the exact Culberson CAD reappraisal plan adoption source-record title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "1fd59df647d8037ee217bbc46f8ab9834599b6d28cbfda1ffd0eda4bfe89975e",
+        "perceptual_hash": "0000000000000000000000000000000001000000001100001111000000111100111100000011110011100000001110101111100100111010111110010011111011100001011111001100001101111000000001110111100000000111011110000000111100111000000011110000100000011111000000000001111100000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+          "actual": "Culberson CAD\n2025-2026\nReappraisal Plan\nAdoption Source\nRecord",
+          "normalized_expected": "culberson cad 2025 2026 reappraisal plan adoption source record",
+          "normalized_actual": "culberson cad 2025 2026 reappraisal plan adoption source record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/culberson-cad-2025-2026-reappraisal-plan.webp",
+        "alt": "Two blank page tiles appear above the exact Culberson CAD 2025-2026 reappraisal plan keyword.",
+        "rendered_text": "Culberson CAD 2025-2026 reappraisal plan",
+        "visual_variant": "wave164-distinct-generated-strict-overhead-two-page-adoption-path",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "49b143791943280d1cd0f887314f8b0d49ef4620f8842e8522fca97208ba9131",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD 2025-2026 reappraisal plan",
+          "actual": "Culberson CAD 2025-2026\nreappraisal plan",
+          "normalized_expected": "culberson cad 2025 2026 reappraisal plan",
+          "normalized_actual": "culberson cad 2025 2026 reappraisal plan",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
