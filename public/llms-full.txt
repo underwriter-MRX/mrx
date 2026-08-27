@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Travis](https://mineralrightsxchange.com/authors/travis/)
 - [Wade](https://mineralrightsxchange.com/authors/wade/)
 
-## Published article URLs (240)
+## Published article URLs (241)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Crane CAD Oil and Gas Reappraisal Plan Source Locator](https://mineralrightsxchange.com/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/)
 - [Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property](https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/)
 - [Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests](https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/)
 - [Form 50-172 Joint-Taxation Instruction Source Map for Crane Mineral Interests](https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/)

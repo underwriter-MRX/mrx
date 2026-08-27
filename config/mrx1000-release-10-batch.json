@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-27T08:18:08Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-27T13:13:33Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -480,13 +480,16 @@
     "wave159_selection_decision_sha256": "824d68a580b3380d839924aed7f8bed7b7f45f08ab7ed27f7ecd1ab626cb1e37",
     "wave160_selection_decision_id": "MRX1000-W160-SELECT-2026-08-27",
     "wave160_selection_decision_path": "docs/governance/mrx1000-wave160-selection-decision-2026-08-27.md",
-    "wave160_selection_decision_sha256": "86abc5da2c54a595ef402ef4c6733fe9f565770451b1cdd366674aec547964fa"
+    "wave160_selection_decision_sha256": "86abc5da2c54a595ef402ef4c6733fe9f565770451b1cdd366674aec547964fa",
+    "wave161_selection_decision_id": "MRX1000-W161-SELECT-2026-08-27",
+    "wave161_selection_decision_path": "docs/governance/mrx1000-wave161-selection-decision-2026-08-27.md",
+    "wave161_selection_decision_sha256": "d0f31c1a00a3512d4b9ea34d71a824a2b20b96e65fcfa7d7512220c159e33cdd"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "dfc45d9cf51cf6ff217a5eb9483efd53d30b9dc8f5182fcffafee5794f17fd9f",
-    "canonical_ledger_generated_at": "2026-07-20T15:15:45.820Z",
+    "canonical_ledger_sha256": "a230314829ec0d93df611022c26ef2962d32a6b8bef8df537f27f8b8811d11db",
+    "canonical_ledger_generated_at": "2026-07-20T14:57:52.688Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -500,11 +503,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 231,
+    "prior_verified_article_count": 232,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 232,
-    "exact_admitted_slate_sha256": "a9821f839ee67623f339e7eb2ed38902d1748b3e7706f0729b0b335bf67fe3d3"
+    "exact_admitted_count": 233,
+    "exact_admitted_slate_sha256": "98b67baddbd1b2f84d2d7bc481bc41b240c3f371b18ab610809258742ef7309f"
   },
   "articles": [
     {
@@ -8260,10 +8263,47 @@
       "inline_path": "/assets/articles/inline/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/form-50-150-crane-oil-and-gas-property.webp",
       "inline_asset_sha256": "88350d6e2ebd6896065a39230c0e2a6abe1baa35c33e66b9bc235b0f23cd0ab0",
       "inline_rendered_text": "Form 50-150 Crane oil and gas property"
+    },
+    {
+      "selection_rank": 233,
+      "program_row_id": "MRX1000-0760",
+      "source_shortlist_program_row_id": "MRX1000-0760",
+      "slug": "crane-cad-oil-gas-reappraisal-plan-source-locator",
+      "title": "Crane CAD Oil and Gas Reappraisal Plan Source Locator",
+      "source_shortlist_title": "Crane CAD Oil and Gas Reappraisal Plan Source Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "4da0aa4c1fd020e54ae2c98a57809fcc2127162d074511cb1568a13172de6ce8",
+      "repo_path": "src/content/posts/crane-cad-oil-gas-reappraisal-plan-source-locator.mdx",
+      "repo_sha256": "e4fb6afeaa8ec7fba9ac29fb908f6c895b86d8172009a8683857b0fd01ac1c14",
+      "article_sha256": "e4fb6afeaa8ec7fba9ac29fb908f6c895b86d8172009a8683857b0fd01ac1c14",
+      "hero_path": "/assets/articles/hero/crane-cad-oil-and-gas-reappraisal-plan-source-locator.webp",
+      "hero_sha256": "28bf93150efb13426e91aceac20adccca580aa05c64d93b8c08dd142b507c46f",
+      "hero_asset_sha256": "28bf93150efb13426e91aceac20adccca580aa05c64d93b8c08dd142b507c46f",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2380,
+      "risk_citation_remediation": [
+        "The original generic Crane County value-timeline identity for MRX1000-0760 is rejected because it collides with existing and already-owned county valuation, timeline, market-update, risk, appraisal, and decision-support coverage.",
+        "The replacement owns only a source-controlled locator for the current official Crane CAD 2025-2026 reappraisal-plan PDF, its records-page relationship, displayed identity, 56-page count, broad plan contents, oil-and-gas-reserves section locators, displayed date and contractor context, broad displayed source categories, retrieval provenance, hash, and source-control states.",
+        "Current Crane CAD, Texas Comptroller, and Texas Legislature sources support current-source identity, official-directory context, broad document locators, and statutory provenance only.",
+        "Source-recorded, not-displayed, source-conflict, controlled-record-stop, and authorized-human-stop are document-control states only and are not converted into applicability, accuracy for an owner, completeness, appraisal treatment, taxation, value, protest position, filing, acceptance, or another outcome.",
+        "The public locator and images expose no owner, account, property, lease, Railroad Commission identifier, division-of-interest record, production value, price, expense, discount rate, formula, model input, notice, deadline, appraisal conclusion, private record, recommendation, or result.",
+        "Any private-data access, evidence review, individualized interpretation, calculation, appraisal judgment, protest strategy, legal interpretation, tax guidance, valuation, representation, submission, payment, or sale advice forces an authorized-human or qualified-professional stop.",
+        "Continuous quality-gated admission under the owner no-approval directives; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/crane-cad-oil-gas-reappraisal-plan-source-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/crane-cad-oil-gas-reappraisal-plan-source-locator/crane-cad-oil-and-gas-reappraisal-plan.webp",
+      "inline_asset_sha256": "1828f7170f661bdec27e1499bb4bbcc5201761f958d297ac663b7bdbd3bd88b0",
+      "inline_rendered_text": "Crane CAD oil and gas reappraisal plan"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 232,
+    "admitted_article_count": 233,
     "selection_ranks": [
       1,
       2,
@@ -8496,7 +8536,8 @@
       229,
       230,
       231,
-      232
+      232,
+      233
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8555,9 +8596,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "5d5337b9ab504e2b5ca9535940cd545ca51befc5e5b0b023555a5d6040a0d6d7",
-    "public_article_count": 240,
-    "batch_article_count": 232,
+    "retrofit_manifest_sha256": "8ab3a8048db090d4d9e6b83fb41f3f9b43d10b584b47e7189e4c0435a4fe8e3d",
+    "public_article_count": 241,
+    "batch_article_count": 233,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

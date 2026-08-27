@@ -95,11 +95,17 @@ async function verifySource({ label, url }) {
     throw new Error(`${url}: source access returned ${response.status}`);
   }
   const contentType = String(response.headers.get('content-type') ?? '').toLowerCase();
+  const finalUrl = new URL(response.url);
+  const pdfNamedSource =
+    finalUrl.pathname.toLowerCase().endsWith('.pdf') ||
+    [...finalUrl.searchParams.values()].some((value) =>
+      value.toLowerCase().endsWith('.pdf'),
+    );
   const allowed =
     contentType.includes('text/html') ||
-    (url.endsWith('.pdf') &&
+    (pdfNamedSource &&
       (contentType.includes('application/pdf') || contentType.includes('octet-stream')));
-  if (!allowed || new URL(response.url).protocol !== 'https:') {
+  if (!allowed || finalUrl.protocol !== 'https:') {
     throw new Error(`${url}: source access or content type is unsupported`);
   }
   return {
