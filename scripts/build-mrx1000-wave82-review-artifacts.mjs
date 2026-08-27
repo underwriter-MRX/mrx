@@ -101,10 +101,19 @@ async function verifySource({ label, url }) {
     [...finalUrl.searchParams.values()].some((value) =>
       value.toLowerCase().endsWith('.pdf'),
     );
+  const archiveNamedSource =
+    finalUrl.pathname.toLowerCase().endsWith('.zip') ||
+    [...finalUrl.searchParams.values()].some((value) =>
+      value.toLowerCase().endsWith('.zip'),
+    );
   const allowed =
     contentType.includes('text/html') ||
     (pdfNamedSource &&
-      (contentType.includes('application/pdf') || contentType.includes('octet-stream')));
+      (contentType.includes('application/pdf') || contentType.includes('octet-stream'))) ||
+    (archiveNamedSource &&
+      (contentType.includes('application/zip') ||
+        contentType.includes('application/x-zip-compressed') ||
+        contentType.includes('octet-stream')));
   if (!allowed || finalUrl.protocol !== 'https:') {
     throw new Error(`${url}: source access or content type is unsupported`);
   }

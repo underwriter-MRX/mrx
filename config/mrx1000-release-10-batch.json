@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-27T13:13:33Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-27T13:35:46Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -483,13 +483,16 @@
     "wave160_selection_decision_sha256": "86abc5da2c54a595ef402ef4c6733fe9f565770451b1cdd366674aec547964fa",
     "wave161_selection_decision_id": "MRX1000-W161-SELECT-2026-08-27",
     "wave161_selection_decision_path": "docs/governance/mrx1000-wave161-selection-decision-2026-08-27.md",
-    "wave161_selection_decision_sha256": "d0f31c1a00a3512d4b9ea34d71a824a2b20b96e65fcfa7d7512220c159e33cdd"
+    "wave161_selection_decision_sha256": "d0f31c1a00a3512d4b9ea34d71a824a2b20b96e65fcfa7d7512220c159e33cdd",
+    "wave162_selection_decision_id": "MRX1000-W162-SELECT-2026-08-27",
+    "wave162_selection_decision_path": "docs/governance/mrx1000-wave162-selection-decision-2026-08-27.md",
+    "wave162_selection_decision_sha256": "7171a3b4574dae3a2789182c5fb30916ed09be523af32da01dd9b27c845ea4bb"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "a230314829ec0d93df611022c26ef2962d32a6b8bef8df537f27f8b8811d11db",
-    "canonical_ledger_generated_at": "2026-07-20T14:57:52.688Z",
+    "canonical_ledger_sha256": "d43614d6e4db92a272326a930b504f13a7414d330196abeb8879625d5d545e1d",
+    "canonical_ledger_generated_at": "2026-07-20T09:22:45.346Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -503,11 +506,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 232,
+    "prior_verified_article_count": 233,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 233,
-    "exact_admitted_slate_sha256": "98b67baddbd1b2f84d2d7bc481bc41b240c3f371b18ab610809258742ef7309f"
+    "exact_admitted_count": 234,
+    "exact_admitted_slate_sha256": "b06a274b852f13486e74bc728c9cef4c95e41b3ae826307541500326c553cc5b"
   },
   "articles": [
     {
@@ -8300,10 +8303,48 @@
       "inline_path": "/assets/articles/inline/crane-cad-oil-gas-reappraisal-plan-source-locator/crane-cad-oil-and-gas-reappraisal-plan.webp",
       "inline_asset_sha256": "1828f7170f661bdec27e1499bb4bbcc5201761f958d297ac663b7bdbd3bd88b0",
       "inline_rendered_text": "Crane CAD oil and gas reappraisal plan"
+    },
+    {
+      "selection_rank": 234,
+      "program_row_id": "MRX1000-0761",
+      "source_shortlist_program_row_id": "MRX1000-0761",
+      "slug": "culberson-cad-certified-mineral-roll-zip-source-control-record",
+      "title": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+      "source_shortlist_title": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "b98e54f2e9fb07de76cbeaba6b8d94909db165e0ffe5df1bc049028c6eb0bc64",
+      "repo_path": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+      "repo_sha256": "adefe8212e53b650ad2854dd53e64e2841423df161ac91624c0050751af6341b",
+      "article_sha256": "adefe8212e53b650ad2854dd53e64e2841423df161ac91624c0050751af6341b",
+      "hero_path": "/assets/articles/hero/culberson-cad-certified-mineral-roll-zip-source-control-record.webp",
+      "hero_sha256": "a1267353957618297cf7183bf00998d63f767437ab1c577a4a35bb7da7d7a802",
+      "hero_asset_sha256": "a1267353957618297cf7183bf00998d63f767437ab1c577a4a35bb7da7d7a802",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2020,
+      "risk_citation_remediation": [
+        "The original generic Culberson County family valuation-guide identity for MRX1000-0761 is rejected because it repeats current and already-owned county valuation and family decision-guide coverage.",
+        "The replacement owns only a public source-control record for the exact current Culberson CAD 2026 Certified Mineral Appraisal Roll ZIP link and a generic central-directory inventory that does not extract or read member content.",
+        "Current Culberson CAD, Texas Comptroller, and Texas Legislature sources support publisher identity, exact source-link provenance, governing-source provenance, and source-control context only.",
+        "Source-recorded, not-displayed, source-conflict, controlled-record-stop, and authorized-human-stop are document-control states only and are not converted into accuracy, completeness, applicability, appraisal, tax, protest, legal, valuation, sale, or another outcome.",
+        "The public record may state the exact URL, retrieval result, MIME, compressed bytes, complete-file hash, generic member names, member count, generic extensions, aggregate uncompressed bytes, directory count, encryption flags, and retrieval provenance. It does not extract, open, read, search, index, transform, copy, display, or summarize any member content or row data.",
+        "The public article and images expose no owner, address, account, property, legal description, lease, operator, Railroad Commission identifier, interest, jurisdiction, production, appraisal, tax, exemption, protest, notice, contact, value, recommendation, or outcome.",
+        "Any member extraction, row-data access, matching, enrichment, evidence review, individualized interpretation, appraisal judgment, protest strategy, legal interpretation, tax guidance, valuation, representation, submission, payment, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/culberson-cad-certified-mineral-roll-zip-source-control-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/culberson-cad-certified-mineral-roll-zip-source-control-record/culberson-cad-certified-mineral-roll-zip.webp",
+      "inline_asset_sha256": "bc1c4df0eb22af149d72ec08b137d69650bfb791d2417cfd562662590cf9d93f",
+      "inline_rendered_text": "Culberson CAD certified mineral roll ZIP"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 233,
+    "admitted_article_count": 234,
     "selection_ranks": [
       1,
       2,
@@ -8537,7 +8578,8 @@
       230,
       231,
       232,
-      233
+      233,
+      234
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8596,9 +8638,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "8ab3a8048db090d4d9e6b83fb41f3f9b43d10b584b47e7189e4c0435a4fe8e3d",
-    "public_article_count": 241,
-    "batch_article_count": 233,
+    "retrofit_manifest_sha256": "2410651c1c1e2d79d190aaeca37e139bc2058fef0d537cd8190650c128715252",
+    "public_article_count": 242,
+    "batch_article_count": 234,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

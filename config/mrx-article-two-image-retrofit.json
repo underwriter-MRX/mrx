@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-27T13:12:53Z",
+  "generated_at_utc": "2026-08-27T13:32:30Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 241,
-    "asset_count": 482,
-    "unique_source_art_count": 241,
-    "unique_hero_sha256_count": 241,
-    "unique_inline_sha256_count": 241,
-    "distinct_article_pair_count": 241,
-    "hero_ocr_pass_count": 241,
-    "inline_ocr_pass_count": 241,
-    "exact_filename_identity_count": 241
+    "article_count": 242,
+    "asset_count": 484,
+    "unique_source_art_count": 242,
+    "unique_hero_sha256_count": 242,
+    "unique_inline_sha256_count": 242,
+    "distinct_article_pair_count": 242,
+    "hero_ocr_pass_count": 242,
+    "inline_ocr_pass_count": 242,
+    "exact_filename_identity_count": 242
   },
   "contact_sheets": {
     "hero": [
@@ -1236,6 +1236,56 @@
           "actual": "Crane CAD oil and gas\nreappraisal plan",
           "normalized_expected": "crane cad oil and gas reappraisal plan",
           "normalized_actual": "crane cad oil and gas reappraisal plan",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "culberson-cad-certified-mineral-roll-zip-source-control-record",
+      "title": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+      "keyword": "Culberson CAD certified mineral roll ZIP",
+      "file_path": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+      "source_public_path": "/assets/articles/hero/culberson-cad-certified-mineral-roll-zip-source-control-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave162-creative-sources/culberson-cad-certified-mineral-roll-zip-source-control-record-hero-base.png",
+        "artifacts/mrx1000-wave162-creative-sources/culberson-cad-certified-mineral-roll-zip-source-control-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-27T13:30:11.553Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/culberson-cad-certified-mineral-roll-zip-source-control-record.webp",
+        "alt": "A sealed archive appears beside the exact Culberson CAD certified mineral roll ZIP source-control title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "a1267353957618297cf7183bf00998d63f767437ab1c577a4a35bb7da7d7a802",
+        "perceptual_hash": "0000000000000111000000000000011100000000000001110000000001100111011000000111101101111000011111111111100001111100110000000111111000000000011111100000000000111111000000000000001000000000000001100000000000000011000000000000001100000000000000010000000000000011",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+          "actual": "Culberson CAD\nCertified Mineral Roll\nZIP Source-Control\nRecord",
+          "normalized_expected": "culberson cad certified mineral roll zip source control record",
+          "normalized_actual": "culberson cad certified mineral roll zip source control record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/culberson-cad-certified-mineral-roll-zip-source-control-record/culberson-cad-certified-mineral-roll-zip.webp",
+        "alt": "Seven closed file tokens appear above the exact Culberson CAD certified mineral roll ZIP keyword.",
+        "rendered_text": "Culberson CAD certified mineral roll ZIP",
+        "visual_variant": "wave162-distinct-generated-strict-overhead-seven-member-inventory",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "bc1c4df0eb22af149d72ec08b137d69650bfb791d2417cfd562662590cf9d93f",
+        "perceptual_hash": "1111110110000000111111111000000011111111111000001111111101100000111111110000000011111111000000001111111100000000111111100000000011111110011000001111111001100000010001100110000000000000000000000000011111100000000000111100000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD certified mineral roll ZIP",
+          "actual": "Culberson CAD certified\nmineral roll ZIP",
+          "normalized_expected": "culberson cad certified mineral roll zip",
+          "normalized_actual": "culberson cad certified mineral roll zip",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
