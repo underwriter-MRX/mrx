@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-27T14:51:46Z",
+  "generated_at_utc": "2026-08-28T18:35:47Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 245,
-    "asset_count": 490,
-    "unique_source_art_count": 245,
-    "unique_hero_sha256_count": 245,
-    "unique_inline_sha256_count": 245,
-    "distinct_article_pair_count": 245,
-    "hero_ocr_pass_count": 245,
-    "inline_ocr_pass_count": 245,
-    "exact_filename_identity_count": 245
+    "article_count": 246,
+    "asset_count": 492,
+    "unique_source_art_count": 246,
+    "unique_hero_sha256_count": 246,
+    "unique_inline_sha256_count": 246,
+    "distinct_article_pair_count": 246,
+    "hero_ocr_pass_count": 246,
+    "inline_ocr_pass_count": 246,
+    "exact_filename_identity_count": 246
   },
   "contact_sheets": {
     "hero": [
@@ -1286,6 +1286,56 @@
           "actual": "Culberson CAD 2025-2026\nreappraisal plan",
           "normalized_expected": "culberson cad 2025 2026 reappraisal plan",
           "normalized_actual": "culberson cad 2025 2026 reappraisal plan",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "culberson-cad-2025-oil-gas-minerals-ratio-study-source-record",
+      "title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+      "keyword": "Culberson CAD 2025 mineral ratio study",
+      "file_path": "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+      "source_public_path": "/assets/articles/hero/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave166-creative-sources/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record-hero-base.png",
+        "artifacts/mrx1000-wave166-creative-sources/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-28T18:33:10.703Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.webp",
+        "alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "39b6fdd80eb5024ced5c477d6cee113e392f9d830a5808ed33590bc7c4ed391b",
+        "perceptual_hash": "0000000011111111000000001111111100000000111011110000000011000001010000001100000101110000110000000110000011000001011000001100000100000000110000010000000011000001000000000000000100000000000110010000000000000111000000000000001100000000111100110000000011111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+          "actual": "Culberson CAD 2025\nOil, Gas, Minerals\nRatio Study\nSource Record",
+          "normalized_expected": "culberson cad 2025 oil gas minerals ratio study source record",
+          "normalized_actual": "culberson cad 2025 oil gas minerals ratio study source record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/culberson-cad-2025-mineral-ratio-study.webp",
+        "alt": "Seven blank measurement cells and a caution marker appear above the exact Culberson CAD 2025 mineral ratio study keyword.",
+        "rendered_text": "Culberson CAD 2025 mineral ratio study",
+        "visual_variant": "wave166-distinct-generated-strict-overhead-seven-cell-measurement-boundary",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "a34d871aa12326723f5faf413b60d49ad261d0cf4110d9c67641ee873a95f019",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111101111111111111110111111111111111111111011111111111111101111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Culberson CAD 2025 mineral ratio study",
+          "actual": "Culberson CAD 2025\nmineral ratio study",
+          "normalized_expected": "culberson cad 2025 mineral ratio study",
+          "normalized_actual": "culberson cad 2025 mineral ratio study",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

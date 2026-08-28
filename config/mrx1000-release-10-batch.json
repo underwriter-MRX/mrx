@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-28T18:17:20Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-28T18:41:11Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -495,13 +495,16 @@
     "wave164_selection_decision_sha256": "38e7c2facf23da3f6bb153192897a86521f17737b0498bf3352b9adc71770cf9",
     "wave165_selection_decision_id": "MRX1000-W165-SELECT-2026-08-27",
     "wave165_selection_decision_path": "docs/governance/mrx1000-wave165-selection-decision-2026-08-27.md",
-    "wave165_selection_decision_sha256": "8f2234e58e5b7848b5db4c5341b0b7234c228ae7720e246c86bd3d2696c4e846"
+    "wave165_selection_decision_sha256": "8f2234e58e5b7848b5db4c5341b0b7234c228ae7720e246c86bd3d2696c4e846",
+    "wave166_selection_decision_id": "MRX1000-W166-SELECT-2026-08-28",
+    "wave166_selection_decision_path": "docs/governance/mrx1000-wave166-selection-decision-2026-08-28.md",
+    "wave166_selection_decision_sha256": "e18477e6ff1595282973c987619d67173cec565a341d7b094a24cde1302f2563"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "449eaded11d32a3bb5e5141d35114a3f2c0e00f2aaa6024529ff71f583ee7476",
-    "canonical_ledger_generated_at": "2026-07-20T17:38:48.158Z",
+    "canonical_ledger_sha256": "c5abe152a55632fae5c4b59a8970e574bf144863615c087fc57264890e2d4e1b",
+    "canonical_ledger_generated_at": "2026-07-20T15:17:11.818Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -515,11 +518,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 236,
+    "prior_verified_article_count": 237,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 237,
-    "exact_admitted_slate_sha256": "2ea96d1c8778f5974052b4019bc2c040a07d4e13e62a5f7d2f65fcbd5077ee60"
+    "exact_admitted_count": 238,
+    "exact_admitted_slate_sha256": "c148b4ac8451685a03c9923338a1fee051d78d204065d54769ad73d64d376092"
   },
   "articles": [
     {
@@ -8465,10 +8468,49 @@
       "inline_path": "/assets/articles/inline/culberson-cad-2026-certified-roll-format-boundary-source-index/culberson-cad-2026-certified-roll-formats.webp",
       "inline_asset_sha256": "ae1af384a1f9da3e1b756c3a064b1c3f3233dcb8b96548f685e6374a1292bb0c",
       "inline_rendered_text": "Culberson CAD 2026 certified roll formats"
+    },
+    {
+      "selection_rank": 238,
+      "program_row_id": "MRX1000-0765",
+      "source_shortlist_program_row_id": "MRX1000-0765",
+      "slug": "culberson-cad-2025-oil-gas-minerals-ratio-study-source-record",
+      "title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+      "source_shortlist_title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "4ec393bc7a7dee88180afe3ab4402c2478fe32f3b0b7e4c7101b2acba80872cd",
+      "repo_path": "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+      "repo_sha256": "9f414af8e0398a0d7210e44b2600f39e94036ecb2916c34d47537ff30b2b8b84",
+      "article_sha256": "9f414af8e0398a0d7210e44b2600f39e94036ecb2916c34d47537ff30b2b8b84",
+      "hero_path": "/assets/articles/hero/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.webp",
+      "hero_sha256": "39b6fdd80eb5024ced5c477d6cee113e392f9d830a5808ed33590bc7c4ed391b",
+      "hero_asset_sha256": "39b6fdd80eb5024ced5c477d6cee113e392f9d830a5808ed33590bc7c4ed391b",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1556,
+      "risk_citation_remediation": [
+        "The original generic Culberson County valuation-timeline identity for MRX1000-0765 is rejected because it materially repeats live valuation, county-value, market-update, sale-process, and timeline coverage.",
+        "The replacement owns only the current official Texas Comptroller 2025 ratio-study landing-page relationship and 055-Culberson summary identity, displayed source dates, literal Category G row, displayed column labels and values, official program-purpose context, source limitation, retrieval provenance, and document-control state.",
+        "The official small-sample warning remains immediately adjacent to the reproduced row. No source field is recalculated, rounded, normalized, benchmarked, ranked, graded, trended, compared, expanded, matched, or applied.",
+        "The article does not characterize Culberson CAD as accurate or inaccurate, fair or unfair, compliant or noncompliant, good or bad, or better or worse from the summary.",
+        "The current Culberson mineral-ZIP, category-code, reappraisal-plan, and certified-roll-format articles retain their separate ownership. This article opens no local roll, report, plan, PDF, spreadsheet, ZIP, property-search, account, notice, tax bill, or private-data body.",
+        "The public source record exposes no owner, account, address, identifier, legal description, property fact, notice, tax amount, property-level appraisal value, offer, or personal data.",
+        "The table is not converted into a property result, appraisal notice, tax result, protest result, mineral valuation, market price, offer, sale price, fairness judgment, compliance judgment, or owner action.",
+        "Any property matching, account review, private-data handling, arithmetic analysis, cross-source comparison, appraisal judgment, protest strategy, tax guidance, legal interpretation, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and the 2026-08-27 website SEO/AEO release gate; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/culberson-cad-2025-mineral-ratio-study.webp",
+      "inline_asset_sha256": "a34d871aa12326723f5faf413b60d49ad261d0cf4110d9c67641ee873a95f019",
+      "inline_rendered_text": "Culberson CAD 2025 mineral ratio study"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 237,
+    "admitted_article_count": 238,
     "selection_ranks": [
       1,
       2,
@@ -8706,7 +8748,8 @@
       234,
       235,
       236,
-      237
+      237,
+      238
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8765,9 +8808,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "9579db7d80dc00170f3756de2527fe36be20bd6b08621d404f254ce1690ad2e7",
-    "public_article_count": 245,
-    "batch_article_count": 237,
+    "retrofit_manifest_sha256": "d70e9221711c08f5dffb5ceba19350a045b1066059ce85261fa4de08b4f3cbfd",
+    "public_article_count": 246,
+    "batch_article_count": 238,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
