@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-28T19:06:47Z",
+  "generated_at_utc": "2026-08-28T19:31:18Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 248,
-    "asset_count": 496,
-    "unique_source_art_count": 248,
-    "unique_hero_sha256_count": 248,
-    "unique_inline_sha256_count": 248,
-    "distinct_article_pair_count": 248,
-    "hero_ocr_pass_count": 248,
-    "inline_ocr_pass_count": 248,
-    "exact_filename_identity_count": 248
+    "article_count": 249,
+    "asset_count": 498,
+    "unique_source_art_count": 249,
+    "unique_hero_sha256_count": 249,
+    "unique_inline_sha256_count": 249,
+    "distinct_article_pair_count": 249,
+    "hero_ocr_pass_count": 249,
+    "inline_ocr_pass_count": 249,
+    "exact_filename_identity_count": 249
   },
   "contact_sheets": {
     "hero": [
@@ -1686,6 +1686,56 @@
           "actual": "DeWitt CAD 2025\nMAP review",
           "normalized_expected": "dewitt cad 2025 map review",
           "normalized_actual": "dewitt cad 2025 map review",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record",
+      "title": "DeWitt CAD 2024 Oil, Gas, Minerals Ratio Study Source Record",
+      "keyword": "DeWitt CAD 2024 mineral ratio study",
+      "file_path": "src/content/posts/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record.mdx",
+      "source_public_path": "/assets/articles/hero/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave169-creative-sources/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record-hero-base.png",
+        "artifacts/mrx1000-wave169-creative-sources/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-28T19:28:12.974Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record.webp",
+        "alt": "An open navy ledger case with seven blank dividers appears beside the exact DeWitt CAD ratio-study source-record title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "9a8e2de40b0306cd13d2e2a4df1c9bd08902d3a88caadaacc7e317eb205e801e",
+        "perceptual_hash": "0000000000111111000000000011111100000000001100110111000001100001011100000110000101110000011000011110000001100001011100000110000100000000010000000000000000000001000000000100000100000000001000110000000001010011000000000110001100000000011101110000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "DeWitt CAD 2024 Oil, Gas, Minerals Ratio Study Source Record",
+          "actual": "DeWitt CAD 2024\nOil, Gas, Minerals\nRatio Study\nSource Record",
+          "normalized_expected": "dewitt cad 2024 oil gas minerals ratio study source record",
+          "normalized_actual": "dewitt cad 2024 oil gas minerals ratio study source record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/dewitt-cad-2024-mineral-ratio-study.webp",
+        "alt": "Seven overhead abstract measurement frames appear above the exact DeWitt CAD 2024 mineral ratio study keyword.",
+        "rendered_text": "DeWitt CAD 2024 mineral ratio study",
+        "visual_variant": "wave169-distinct-generated-strict-overhead-seven-frame-ratio-study-boundary",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "4d35f17b0a3d6a2f9b8ba9898f6e5e7b60a3bb99b4d8db23ccb4ca6135a35a51",
+        "perceptual_hash": "1111111111111111111111111111111111111001110111111111100111011111111111111110011111111110011101111001111001111111100111111111111111011111111111111111111111111111001111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "DeWitt CAD 2024 mineral ratio study",
+          "actual": "DeWitt CAD 2024\nmineral ratio study",
+          "normalized_expected": "dewitt cad 2024 mineral ratio study",
+          "normalized_actual": "dewitt cad 2024 mineral ratio study",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
