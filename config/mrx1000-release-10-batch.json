@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-28T18:56:00Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-28T19:13:39Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -501,13 +501,16 @@
     "wave166_selection_decision_sha256": "e18477e6ff1595282973c987619d67173cec565a341d7b094a24cde1302f2563",
     "wave167_selection_decision_id": "MRX1000-W167-SELECT-2026-08-28",
     "wave167_selection_decision_path": "docs/governance/mrx1000-wave167-selection-decision-2026-08-28.md",
-    "wave167_selection_decision_sha256": "36b36e59bafbfa190c5a118657b21535a62252889267712b1ded4935e0535d7e"
+    "wave167_selection_decision_sha256": "36b36e59bafbfa190c5a118657b21535a62252889267712b1ded4935e0535d7e",
+    "wave168_selection_decision_id": "MRX1000-W168-SELECT-2026-08-28",
+    "wave168_selection_decision_path": "docs/governance/mrx1000-wave168-selection-decision-2026-08-28.md",
+    "wave168_selection_decision_sha256": "b92c35ac0c24a18bc8a1a097ffc11be0daca885cf79290bf1927835f240a9b70"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "fe67160cd1d79562ee3c7d731625d0ba0e83167a93fb55baeacfdb691afecdde",
-    "canonical_ledger_generated_at": "2026-07-20T07:55:56.634Z",
+    "canonical_ledger_sha256": "ffa09f3a75987d7eb5e4561135d8087261a00427dd5e14096ff141cbcd49aeea",
+    "canonical_ledger_generated_at": "2026-07-20T01:18:40.844Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -521,11 +524,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 238,
+    "prior_verified_article_count": 239,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 239,
-    "exact_admitted_slate_sha256": "a1cd254914e1d6e5b01c3eb108440b16569255ea3b622cb81ebf845b6705a268"
+    "exact_admitted_count": 240,
+    "exact_admitted_slate_sha256": "ae3347b1eec9c55ac255d1a5b5bd353849a3f09e3b8c0c83adfcf842566480c7"
   },
   "articles": [
     {
@@ -8549,10 +8552,48 @@
       "inline_path": "/assets/articles/inline/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/dewitt-cad-2025-mineral-reserve-category.webp",
       "inline_asset_sha256": "5d7ee4867ebccf6d7395060cc50305645cc799344ddc04950d370ee415f0d671",
       "inline_rendered_text": "DeWitt CAD 2025 mineral reserve category"
+    },
+    {
+      "selection_rank": 240,
+      "program_row_id": "MRX1000-0767",
+      "source_shortlist_program_row_id": "MRX1000-0767",
+      "slug": "dewitt-cad-2024-25-map-review-source-record",
+      "title": "DeWitt CAD 2024-25 MAP Review Source Record",
+      "source_shortlist_title": "DeWitt CAD 2024-25 MAP Review Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-25-map-review-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "53537870819b52b23abcd585b003ecf4155edec2c42e86e8f5a1111d88834b2d",
+      "repo_path": "src/content/posts/dewitt-cad-2024-25-map-review-source-record.mdx",
+      "repo_sha256": "baf477c3b7a9e517e06fec633c3227ebb875ea61cf89d919230dfa1e879eeda6",
+      "article_sha256": "baf477c3b7a9e517e06fec633c3227ebb875ea61cf89d919230dfa1e879eeda6",
+      "hero_path": "/assets/articles/hero/dewitt-cad-2024-25-map-review-source-record.webp",
+      "hero_sha256": "28c02d6209b83596d187f3de73130a687cc200b4073c8eb4bfd50a7d60394604",
+      "hero_asset_sha256": "28c02d6209b83596d187f3de73130a687cc200b4073c8eb4bfd50a7d60394604",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1355,
+      "risk_citation_remediation": [
+        "The original generic DeWitt County valuation and owner-guide identity for MRX1000-0767 is rejected because it materially repeats live valuation, county-value, decision-guide, and mineral-owner coverage.",
+        "The replacement owns only the official Texas Comptroller MAP overview, 2025 results-page relationship, exact linked 15-page DeWitt final-review PDF, limited current guide context, complete-file identity, literal review labels, page locators, retrieval provenance, and document-control state.",
+        "All report claims are attributed to the official publication and bound to complete 15-page visual review. MRX does not independently audit, certify, validate, approve, endorse, score, or rate the district.",
+        "No source result is recalculated, aggregated, normalized, derived, benchmarked, ranked, trended, compared across districts or years, matched, or combined with the DeWitt annual-report G1 row.",
+        "The review is not converted into an owner, parcel, mineral interest, property classification, appraisal, tax, protest, reserve, mineral valuation, market price for sale, offer, sale price, fairness judgment, compliance conclusion, or owner action.",
+        "The public source record exposes no address, identifier, account, legal description, owner fact, property fact, notice, tax amount, value, offer, or private data.",
+        "Any property matching, account review, private-data handling, arithmetic analysis, cross-source equivalence, appraisal judgment, protest strategy, tax guidance, legal interpretation, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and the 2026-08-27 website SEO/AEO release gate; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dewitt-cad-2024-25-map-review-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dewitt-cad-2024-25-map-review-source-record/dewitt-cad-2025-map-review.webp",
+      "inline_asset_sha256": "e10b93d5d970b5023c8df632dbfbfe3e600904df12dd5a2c86503b8c30fe979d",
+      "inline_rendered_text": "DeWitt CAD 2025 MAP review"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 239,
+    "admitted_article_count": 240,
     "selection_ranks": [
       1,
       2,
@@ -8792,7 +8833,8 @@
       236,
       237,
       238,
-      239
+      239,
+      240
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8851,9 +8893,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f172a9a74be6e9c1651b19574fb7406ac8c5e7241ad52177b493faaed278ac13",
-    "public_article_count": 247,
-    "batch_article_count": 239,
+    "retrofit_manifest_sha256": "fe010f70ed9339e760244bd37dc03374f7d5aa42f021c834e3ebe5ad4e40d679",
+    "public_article_count": 248,
+    "batch_article_count": 240,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
