@@ -4,6 +4,15 @@ import { describe, expect, it } from 'vitest';
 
 const root = join(import.meta.dirname, '..', '..');
 const postsDir = join(root, 'src', 'content', 'posts');
+const currentFactoryDirective = readFileSync(
+  join(
+    root,
+    'docs',
+    'governance',
+    'mrx1000-current-seo-aeo-article-factory-directive-2026-08-28.md',
+  ),
+  'utf8',
+);
 const releaseBatch = JSON.parse(
   readFileSync(join(root, 'config', 'mrx1000-release-10-batch.json'), 'utf8'),
 ) as {
@@ -24,8 +33,7 @@ function scalar(block: string, key: string): string {
 }
 
 function nestedScalar(block: string, parent: string, key: string): string {
-  const nested =
-    block.match(new RegExp(`^${parent}:\\s*\\n((?:[ \\t]+.*\\n?)*)`, 'm'))?.[1] ?? '';
+  const nested = block.match(new RegExp(`^${parent}:\\s*\\n((?:[ \\t]+.*\\n?)*)`, 'm'))?.[1] ?? '';
   return scalar(nested.replace(/^[ \t]+/gm, ''), key);
 }
 
@@ -63,8 +71,33 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(builder).toContain('answer_engine_controls');
     expect(builder).toContain('visible_body_citation_count');
     expect(builder).toContain('source_first_seo_aeo_entity_citation_and_internal_link_gate');
-    expect(builder).toContain("evidence_boundary: 'source-backed; no transcript-derived Summit tactics asserted'");
+    expect(builder).toContain(
+      "evidence_boundary: 'source-backed; no transcript-derived Summit tactics asserted'",
+    );
     expect(builder).toContain('no_ranking_or_citation_guarantee: true');
+  });
+
+  it('keeps the current AI Atom Brain and Search Atlas release controls in the durable factory prompt', () => {
+    expect(currentFactoryDirective).toContain('MRX1000-FACTORY-SEO-AEO-2026-08-28');
+    expect(currentFactoryDirective).toContain(
+      'resolve the next MRX1000 row into one unique, evidence-backed owner job',
+    );
+    expect(currentFactoryDirective).toContain('claim-level visible citations');
+    expect(currentFactoryDirective).toContain(
+      'exact title/H1/canonical/social/schema/share parity',
+    );
+    expect(currentFactoryDirective).toContain('every active production hostname and target');
+    expect(currentFactoryDirective).toContain('image MIME/dimensions/bytes/SHA parity');
+    expect(currentFactoryDirective).toContain('responsive extension-backed Chrome rendering');
+    expect(currentFactoryDirective).toContain('completed and post-processed Search Atlas recrawl');
+    expect(currentFactoryDirective).toContain('zero pending recommendations');
+    expect(currentFactoryDirective).toContain('raw technical-audit findings separately');
+    expect(currentFactoryDirective).toContain(
+      'does not promise ranking, indexing, retrieval, competitor displacement, or citation',
+    );
+    expect(currentFactoryDirective).toContain(
+      'The July 2026 pilot archive is not transcript-grade tactical evidence',
+    );
   });
 
   it('keeps Article 237 answer-first and visibly cited without expanding its header-only boundary', () => {
@@ -72,9 +105,9 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
     const fm = frontmatter(source);
     const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
-    const sourceUrls = [
-      ...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm),
-    ].map((match) => match[1]);
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
 
     expect(scalar(fm, 'answer_summary')).toContain(
       'preserve the four separately displayed 2026 certified-roll link relationships',
@@ -82,6 +115,8 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('does not download, open, preview, extract, sample, search');
-    expect(body).toContain('They do not establish what the files contain or whether their records match.');
+    expect(body).toContain(
+      'They do not establish what the files contain or whether their records match.',
+    );
   });
 });
