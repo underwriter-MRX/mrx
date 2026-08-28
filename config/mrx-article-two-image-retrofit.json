@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-28T18:35:47Z",
+  "generated_at_utc": "2026-08-28T18:52:42Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 246,
-    "asset_count": 492,
-    "unique_source_art_count": 246,
-    "unique_hero_sha256_count": 246,
-    "unique_inline_sha256_count": 246,
-    "distinct_article_pair_count": 246,
-    "hero_ocr_pass_count": 246,
-    "inline_ocr_pass_count": 246,
-    "exact_filename_identity_count": 246
+    "article_count": 247,
+    "asset_count": 494,
+    "unique_source_art_count": 247,
+    "unique_hero_sha256_count": 247,
+    "unique_inline_sha256_count": 247,
+    "distinct_article_pair_count": 247,
+    "hero_ocr_pass_count": 247,
+    "inline_ocr_pass_count": 247,
+    "exact_filename_identity_count": 247
   },
   "contact_sheets": {
     "hero": [
@@ -1636,6 +1636,56 @@
           "actual": "depth severance\nformation rights\nvaluation",
           "normalized_expected": "depth severance formation rights valuation",
           "normalized_actual": "depth severance formation rights valuation",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record",
+      "title": "DeWitt CAD 2025 G1 Oil, Gas and Mineral Reserve Source Record",
+      "keyword": "DeWitt CAD 2025 mineral reserve category",
+      "file_path": "src/content/posts/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.mdx",
+      "source_public_path": "/assets/articles/hero/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave167-creative-sources/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record-hero-base.png",
+        "artifacts/mrx1000-wave167-creative-sources/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-28T18:49:54.100Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.webp",
+        "alt": "A navy annual-report folio with four blank cells appears beside the exact DeWitt CAD G1 source-record title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "8d3c837cdb4a1de2a486dce1163b73cf1d08797937fd1ca7a8e9ad93debd3282",
+        "perceptual_hash": "0000000001111111000000000111111100000000011111110000000001000011000000000100001100010000110000010101100011000011000000001100000100000000111100110000000011000011000000001100001100000000110000110000000011000011000000001111101100000000111111110000000011111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "DeWitt CAD 2025 G1 Oil, Gas and Mineral Reserve Source Record",
+          "actual": "DeWitt CAD 2025 G1\nOil, Gas and Mineral\nReserve Source Record",
+          "normalized_expected": "dewitt cad 2025 g1 oil gas and mineral reserve source record",
+          "normalized_actual": "dewitt cad 2025 g1 oil gas and mineral reserve source record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/dewitt-cad-2025-mineral-reserve-category.webp",
+        "alt": "Four blank cells, a source locator, and a divider appear above the exact DeWitt CAD 2025 mineral reserve category keyword.",
+        "rendered_text": "DeWitt CAD 2025 mineral reserve category",
+        "visual_variant": "wave167-distinct-generated-strict-overhead-four-cell-source-boundary",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "5d7ee4867ebccf6d7395060cc50305645cc799344ddc04950d370ee415f0d671",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110110110101111111000000010011111100000001001111110110110100111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "DeWitt CAD 2025 mineral reserve category",
+          "actual": "DeWitt CAD 2025\nmineral reserve category",
+          "normalized_expected": "dewitt cad 2025 mineral reserve category",
+          "normalized_actual": "dewitt cad 2025 mineral reserve category",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

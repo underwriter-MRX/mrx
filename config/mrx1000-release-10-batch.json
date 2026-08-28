@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-28T18:41:11Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-28T18:56:00Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -498,13 +498,16 @@
     "wave165_selection_decision_sha256": "8f2234e58e5b7848b5db4c5341b0b7234c228ae7720e246c86bd3d2696c4e846",
     "wave166_selection_decision_id": "MRX1000-W166-SELECT-2026-08-28",
     "wave166_selection_decision_path": "docs/governance/mrx1000-wave166-selection-decision-2026-08-28.md",
-    "wave166_selection_decision_sha256": "e18477e6ff1595282973c987619d67173cec565a341d7b094a24cde1302f2563"
+    "wave166_selection_decision_sha256": "e18477e6ff1595282973c987619d67173cec565a341d7b094a24cde1302f2563",
+    "wave167_selection_decision_id": "MRX1000-W167-SELECT-2026-08-28",
+    "wave167_selection_decision_path": "docs/governance/mrx1000-wave167-selection-decision-2026-08-28.md",
+    "wave167_selection_decision_sha256": "36b36e59bafbfa190c5a118657b21535a62252889267712b1ded4935e0535d7e"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "c5abe152a55632fae5c4b59a8970e574bf144863615c087fc57264890e2d4e1b",
-    "canonical_ledger_generated_at": "2026-07-20T15:17:11.818Z",
+    "canonical_ledger_sha256": "fe67160cd1d79562ee3c7d731625d0ba0e83167a93fb55baeacfdb691afecdde",
+    "canonical_ledger_generated_at": "2026-07-20T07:55:56.634Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -518,11 +521,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 237,
+    "prior_verified_article_count": 238,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 238,
-    "exact_admitted_slate_sha256": "c148b4ac8451685a03c9923338a1fee051d78d204065d54769ad73d64d376092"
+    "exact_admitted_count": 239,
+    "exact_admitted_slate_sha256": "a1cd254914e1d6e5b01c3eb108440b16569255ea3b622cb81ebf845b6705a268"
   },
   "articles": [
     {
@@ -8507,10 +8510,49 @@
       "inline_path": "/assets/articles/inline/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/culberson-cad-2025-mineral-ratio-study.webp",
       "inline_asset_sha256": "a34d871aa12326723f5faf413b60d49ad261d0cf4110d9c67641ee873a95f019",
       "inline_rendered_text": "Culberson CAD 2025 mineral ratio study"
+    },
+    {
+      "selection_rank": 239,
+      "program_row_id": "MRX1000-0766",
+      "source_shortlist_program_row_id": "MRX1000-0766",
+      "slug": "dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record",
+      "title": "DeWitt CAD 2025 G1 Oil, Gas and Mineral Reserve Source Record",
+      "source_shortlist_title": "DeWitt CAD 2025 G1 Oil, Gas and Mineral Reserve Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "585756b8b5879430b452e2c699b24bb891ca353f5c98495282dfe8bff669e155",
+      "repo_path": "src/content/posts/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.mdx",
+      "repo_sha256": "a0b4690e5f86c225f750e2dca9b9139c7b6be3d5218fd18cc80a5ba98bda7d77",
+      "article_sha256": "a0b4690e5f86c225f750e2dca9b9139c7b6be3d5218fd18cc80a5ba98bda7d77",
+      "hero_path": "/assets/articles/hero/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.webp",
+      "hero_sha256": "8d3c837cdb4a1de2a486dce1163b73cf1d08797937fd1ca7a8e9ad93debd3282",
+      "hero_asset_sha256": "8d3c837cdb4a1de2a486dce1163b73cf1d08797937fd1ca7a8e9ad93debd3282",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1562,
+      "risk_citation_remediation": [
+        "The original generic DeWitt County valuation and family-decision identity for MRX1000-0766 is rejected because it materially repeats live valuation, county-value, family-decision, sale-process, and checklist coverage.",
+        "The replacement owns only the current official DeWitt CAD Data Records relationship, exact linked nine-page 2025 Annual Report, complete-file identity, report and presentation labels, page-4 outsourcing statement, literal G1 row, current statewide classification-guide context, retrieval provenance, and document-control state.",
+        "The annual report is a scanned PDF without an extractable text layer. Claims are bound to complete nine-page visual review and exact page locators rather than a machine transcript.",
+        "No source field is recalculated, aggregated, rounded, normalized, divided, benchmarked, ranked, trended, compared, matched, or applied. Parcel count is not converted into people, owners, acres, wells, leases, tracts, accounts, or unique mineral interests.",
+        "The article does not claim that local and statewide labels are identical or interchangeable and does not characterize DeWitt CAD or its contractor as accurate or inaccurate, fair or unfair, compliant or noncompliant, good or bad, or better or worse.",
+        "The public source record exposes no owner, account, address, identifier, legal description, property fact, notice, tax amount, property-level appraisal value, offer, or personal data.",
+        "The countywide row is not converted into a property result, appraisal notice, tax result, protest result, mineral valuation, market price for sale, offer, sale price, fairness judgment, compliance judgment, or owner action.",
+        "Any property matching, account review, private-data handling, arithmetic analysis, cross-source equivalence, appraisal judgment, protest strategy, tax guidance, legal interpretation, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and the 2026-08-27 website SEO/AEO release gate; no owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/dewitt-cad-2025-mineral-reserve-category.webp",
+      "inline_asset_sha256": "5d7ee4867ebccf6d7395060cc50305645cc799344ddc04950d370ee415f0d671",
+      "inline_rendered_text": "DeWitt CAD 2025 mineral reserve category"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 238,
+    "admitted_article_count": 239,
     "selection_ranks": [
       1,
       2,
@@ -8749,7 +8791,8 @@
       235,
       236,
       237,
-      238
+      238,
+      239
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8808,9 +8851,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "d70e9221711c08f5dffb5ceba19350a045b1066059ce85261fa4de08b4f3cbfd",
-    "public_article_count": 246,
-    "batch_article_count": 238,
+    "retrofit_manifest_sha256": "f172a9a74be6e9c1651b19574fb7406ac8c5e7241ad52177b493faaed278ac13",
+    "public_article_count": 247,
+    "batch_article_count": 239,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
