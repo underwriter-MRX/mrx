@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Travis](https://mineralrightsxchange.com/authors/travis/)
 - [Wade](https://mineralrightsxchange.com/authors/wade/)
 
-## Published article URLs (244)
+## Published article URLs (245)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Culberson CAD 2026 Certified Roll Format Boundary Source Index](https://mineralrightsxchange.com/blog/culberson-cad-2026-certified-roll-format-boundary-source-index/)
 - [Culberson CAD 2025-2026 Reappraisal Plan Adoption Source Record](https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/)
 - [Culberson CAD Mineral Category Codes Source Locator](https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/)
 - [Culberson CAD Certified Mineral Roll ZIP Source-Control Record](https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/)

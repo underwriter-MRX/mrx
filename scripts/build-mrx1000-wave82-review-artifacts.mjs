@@ -231,6 +231,37 @@ const wordCount =
   source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '').match(/\b[\p{L}\p{N}][\p{L}\p{N}’'-]*\b/gu)
     ?.length ?? 0;
 const sources = declaredSources(source);
+const articleBody = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '').trim();
+const seoTitle = scalar(fm, 'seo_title');
+const description = scalar(fm, 'description');
+const answerSummary = scalar(fm, 'answer_summary');
+const answerSummaryWordCount =
+  answerSummary.match(/\b[\p{L}\p{N}][\p{L}\p{N}’'-]*\b/gu)?.length ?? 0;
+const author = scalar(fm, 'author');
+const articleReviewedAt = scalar(fm, 'reviewed_at');
+const reviewedBy = scalar(fm, 'reviewed_by');
+const hubLink = nestedScalar(fm, 'internal_links', 'hub');
+const supportLink = nestedScalar(fm, 'internal_links', 'sibling');
+const nextStepLink = nestedScalar(fm, 'internal_links', 'conversion');
+const bodyCitationCount = sources.filter((entry) => articleBody.includes(entry.url)).length;
+const sourceFirstSeoAeoPass =
+  seoTitle.length >= 20 &&
+  seoTitle.length <= 70 &&
+  description.length >= 120 &&
+  description.length <= 165 &&
+  answerSummaryWordCount >= 25 &&
+  answerSummaryWordCount <= 100 &&
+  author.length > 0 &&
+  articleReviewedAt.length > 0 &&
+  reviewedBy.length > 0 &&
+  scalar(fm, 'publication_status') === 'published' &&
+  scalar(fm, 'noindex') === 'false' &&
+  /^\/.+\/$/.test(hubLink) &&
+  /^\/.+\/$/.test(supportLink) &&
+  supportLink !== hubLink &&
+  nextStepLink === '/book/' &&
+  bodyCitationCount >= Math.min(2, expectedSourceCount) &&
+  /^https:\/\/mineralrightsxchange\.com\/blog\/.+\/$/.test(row.canonical_url);
 
 if (
   articleSha !== row.repo_sha256 ||
@@ -250,10 +281,11 @@ if (
   nestedScalar(fm, 'inline_image', 'rendered_text') !== inlineKeyword ||
   faqCount !== 5 ||
   wordCount < 700 ||
-  sources.length !== expectedSourceCount
+  sources.length !== expectedSourceCount ||
+  !sourceFirstSeoAeoPass
 ) {
   throw new Error(
-    `Wave ${waveNumber} review inputs do not satisfy identity, article-depth, source, or creative gates`,
+    `Wave ${waveNumber} review inputs do not satisfy identity, article-depth, source, creative, or source-first SEO/AEO gates`,
   );
 }
 
@@ -265,8 +297,10 @@ const common = {
   disposition: 'PASS',
   reviewed_at: reviewedAt,
   decision_authority: {
-    source: 'Daryl owner directives, 2026-08-04 and 2026-08-14',
-    policy: 'MRX continuous quality-gated publication and two-image article creative directive',
+    source:
+      'Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27',
+    policy:
+      'MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention',
   },
   program_row_id: programRowId,
   slug,
@@ -278,6 +312,26 @@ const common = {
   expected_repo_sha256: articleSha,
   two_image_manifest_sha256: creativeSha,
   visual_metadata: { hero_alt: heroAlt, social_alt: heroAlt, inline_alt: inlineAlt },
+  answer_engine_controls: {
+    gate: 'website-seo-release-gate',
+    evidence_boundary: 'source-backed; no transcript-derived Summit tactics asserted',
+    seo_title: seoTitle,
+    seo_title_character_count: seoTitle.length,
+    description_character_count: description.length,
+    answer_summary_word_count: answerSummaryWordCount,
+    author,
+    reviewed_at: articleReviewedAt,
+    reviewed_by: reviewedBy,
+    declared_source_count: sources.length,
+    visible_body_citation_count: bodyCitationCount,
+    internal_link_roles: {
+      hub: hubLink,
+      support: supportLink,
+      next_step: nextStepLink,
+    },
+    canonical_url: row.canonical_url,
+    no_ranking_or_citation_guarantee: true,
+  },
 };
 
 writeArtifact('editorial', `${programRowId}-${slug}.json`, {
@@ -295,7 +349,30 @@ writeArtifact('editorial', `${programRowId}-${slug}.json`, {
     {
       name: 'answer_first_article_depth_and_five_faqs',
       status: 'PASS',
-      evidence: { word_count: wordCount, minimum_word_count: 700, faq_count: faqCount },
+      evidence: {
+        word_count: wordCount,
+        minimum_word_count: 700,
+        faq_count: faqCount,
+        answer_summary_word_count: answerSummaryWordCount,
+      },
+    },
+    {
+      name: 'source_first_seo_aeo_entity_citation_and_internal_link_gate',
+      status: 'PASS',
+      evidence: {
+        seo_title_character_count: seoTitle.length,
+        description_character_count: description.length,
+        author,
+        reviewed_at: articleReviewedAt,
+        reviewed_by: reviewedBy,
+        declared_source_count: sources.length,
+        visible_body_citation_count: bodyCitationCount,
+        hub: hubLink,
+        support: supportLink,
+        next_step: nextStepLink,
+        canonical_url: row.canonical_url,
+        noindex: false,
+      },
     },
     {
       name: 'two_image_exact_text_identity',
