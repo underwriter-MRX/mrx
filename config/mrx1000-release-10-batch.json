@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-28T19:31:57Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-28T19:59:16Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -507,13 +507,16 @@
     "wave168_selection_decision_sha256": "b92c35ac0c24a18bc8a1a097ffc11be0daca885cf79290bf1927835f240a9b70",
     "wave169_selection_decision_id": "MRX1000-W169-SELECT-2026-08-28",
     "wave169_selection_decision_path": "docs/governance/mrx1000-wave169-selection-decision-2026-08-28.md",
-    "wave169_selection_decision_sha256": "adeb4175e6dbc6cef00f8bab84267ceda57851ece3812625094db59b9454200b"
+    "wave169_selection_decision_sha256": "adeb4175e6dbc6cef00f8bab84267ceda57851ece3812625094db59b9454200b",
+    "wave170_selection_decision_id": "MRX1000-W170-SELECT-2026-08-28",
+    "wave170_selection_decision_path": "docs/governance/mrx1000-wave170-selection-decision-2026-08-28.md",
+    "wave170_selection_decision_sha256": "f8dad1915e11c6171d6ec60544c83059cce528bb8ae9e365ce1b1034b4599c8e"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "1caf4585bf9f49411379664fe9a352520fb928501b986f2e057319b65bac048f",
-    "canonical_ledger_generated_at": "2026-07-20T17:02:03.999Z",
+    "canonical_ledger_sha256": "34e9cfeffb1f77456cac46888ab0f31d80490975e31ec621e102c067e7cd3284",
+    "canonical_ledger_generated_at": "2026-07-20T01:26:19.166Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -527,11 +530,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 240,
+    "prior_verified_article_count": 241,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 241,
-    "exact_admitted_slate_sha256": "60fa9d8936f23aded0152bc385a9a8ace8592caa3b0d344296acc7fd2bca0c12"
+    "exact_admitted_count": 242,
+    "exact_admitted_slate_sha256": "88753041bb60a4c17ef5b47db0a822bc8fcb98442148aa502d15c26af9101de3"
   },
   "articles": [
     {
@@ -8633,10 +8636,50 @@
       "inline_path": "/assets/articles/inline/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/dewitt-cad-2024-mineral-ratio-study.webp",
       "inline_asset_sha256": "4d35f17b0a3d6a2f9b8ba9898f6e5e7b60a3bb99b4d8db23ccb4ca6135a35a51",
       "inline_rendered_text": "DeWitt CAD 2024 mineral ratio study"
+    },
+    {
+      "selection_rank": 242,
+      "program_row_id": "MRX1000-0769",
+      "source_shortlist_program_row_id": "MRX1000-0769",
+      "slug": "dewitt-cad-resolution-2024-01-reappraisal-plan-source-record",
+      "title": "DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record",
+      "source_shortlist_title": "DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "6c199f8ef6f92343a1b139c51f3789e30f1a666120a0b95832daf2f4d09c0b53",
+      "repo_path": "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+      "repo_sha256": "74cef01f8aba15dcf57dc09d0985051b8da3900038d9028aa9b3c7287aef6140",
+      "article_sha256": "74cef01f8aba15dcf57dc09d0985051b8da3900038d9028aa9b3c7287aef6140",
+      "hero_path": "/assets/articles/hero/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.webp",
+      "hero_sha256": "2d023c49d30486ab701f6fc880bcc44e6ca975cbab7f957b924b65d5f0acc9ce",
+      "hero_asset_sha256": "2d023c49d30486ab701f6fc880bcc44e6ca975cbab7f957b924b65d5f0acc9ce",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1438,
+      "risk_citation_remediation": [
+        "The original generic DeWitt County valuation risk-checklist identity for MRX1000-0769 is rejected because it materially repeats live valuation, county-value, risk, offer-review, and owner-decision coverage.",
+        "The replacement owns only the current official DeWitt CAD publisher-page relationship, exact 57-page 2025-2026 Reappraisal Plan file identity, page-1 cover locator, literal page-2 Resolution 2024-01 heading and adopted date, separate one-page hearing-notice identity, displayed scheduled date/time/place, complete-file hashes, limited official context, retrieval provenance, and document-control state.",
+        "The publisher page, plan container, resolution locator, and separate notice remain distinct source objects. Shared dates do not merge them or prove an event, delivery, legal requirement, or property result.",
+        "The public article does not reproduce names, signatures, handwriting, private data, meeting records, or unreviewed OCR transcription.",
+        "The notice is described only as displaying a scheduled hearing. The article does not state that a hearing occurred, notice was delivered, a quorum existed, a deadline was met, or a legal requirement was satisfied.",
+        "The article does not authenticate a document, signer, signature, meeting, hearing, or notice and does not infer authority, validity, compliance, timeliness, or legal effect.",
+        "The plan body is not interpreted, summarized, operationalized, compared, scored, or applied to a property, appraisal method, notice, tax, protest, mineral value, offer, sale, or transaction.",
+        "The DeWitt annual-report, MAP-review, and ratio-study records retain separate ownership. This article does not combine their dates, labels, values, findings, or document roles.",
+        "Any private-data review, meeting-record review, legal interpretation, compliance judgment, property matching, appraisal analysis, tax or protest guidance, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and current AI Atom Brain/Search Atlas website SEO/AEO release gate; no numerical cap or owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/dewitt-cad-resolution-2024-01.webp",
+      "inline_asset_sha256": "9fca6fed49d2d18d245fbd17c1d4357d112d85521c5a703549eaecb7979b8e17",
+      "inline_rendered_text": "DeWitt CAD Resolution 2024-01"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 241,
+    "admitted_article_count": 242,
     "selection_ranks": [
       1,
       2,
@@ -8878,7 +8921,8 @@
       238,
       239,
       240,
-      241
+      241,
+      242
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8937,9 +8981,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "de8958251865c96ce89d074dbe59ccfda0194a4427239a6564a75bcee4a3dd3b",
-    "public_article_count": 249,
-    "batch_article_count": 241,
+    "retrofit_manifest_sha256": "38dd3c4b42554f71bdd77077d6d9eeee6ba46aa24e4437e0d461b3fd77b353a4",
+    "public_article_count": 250,
+    "batch_article_count": 242,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
