@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T00:57:45Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T01:18:48Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -519,13 +519,16 @@
     "wave172_selection_decision_sha256": "091ffe2b8db51e95e77be47f648bba1f67b9f15955de26503e138c39e7c8061f",
     "wave173_selection_decision_id": "MRX1000-W173-SELECT-2026-08-28",
     "wave173_selection_decision_path": "docs/governance/mrx1000-wave173-selection-decision-2026-08-28.md",
-    "wave173_selection_decision_sha256": "a3d00272a8b177893d211cd669ee585f38f38ff3fc1ed876afcd026a2431eb51"
+    "wave173_selection_decision_sha256": "a3d00272a8b177893d211cd669ee585f38f38ff3fc1ed876afcd026a2431eb51",
+    "wave174_selection_decision_id": "MRX1000-W174-SELECT-2026-08-28",
+    "wave174_selection_decision_path": "docs/governance/mrx1000-wave174-selection-decision-2026-08-28.md",
+    "wave174_selection_decision_sha256": "600d4dba674589055aa3aa65382076eea1e0455605ce25fcc9152e5bd193e3c4"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "ea78278f71bef765bffd237138e7d5acea41b57ad94ca3f5fc06d5876d078b79",
-    "canonical_ledger_generated_at": "2026-07-20T06:42:11.481Z",
+    "canonical_ledger_sha256": "a41270dbf334501e52ec2e6f2480b0e1923ba319a07b8dcab843df55bfe7195e",
+    "canonical_ledger_generated_at": "2026-07-20T14:45:23.478Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -539,11 +542,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 244,
+    "prior_verified_article_count": 245,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 245,
-    "exact_admitted_slate_sha256": "d6984bbae95cfbc9bdbcf9260e888311e4ae36203b26e84f3a15ecc06d1b208b"
+    "exact_admitted_count": 246,
+    "exact_admitted_slate_sha256": "a4efc25406b00fadd473902824d9ed4de30a7e7a172adef50a549e62cdc6f46a"
   },
   "articles": [
     {
@@ -8801,10 +8804,49 @@
       "inline_path": "/assets/articles/inline/dimmit-cad-2024-25-map-review-source-record/dimmit-cad-2024-25-map-review.webp",
       "inline_asset_sha256": "f483a48fa65b044853575e261209dd9e1adca50c468fcee6c020d30db31d2eb6",
       "inline_rendered_text": "Dimmit CAD 2024-25 MAP review"
+    },
+    {
+      "selection_rank": 246,
+      "program_row_id": "MRX1000-0773",
+      "source_shortlist_program_row_id": "MRX1000-0773",
+      "slug": "dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record",
+      "title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+      "source_shortlist_title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "535442c8ef23d1f2ca92eb75463d3fee5f57ea3b01e7a6bd1f556922a6ae059a",
+      "repo_path": "src/content/posts/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+      "repo_sha256": "646daef74be6f01cc95e52421382c0bdb9c3b2d128515d733e2d825466480246",
+      "article_sha256": "646daef74be6f01cc95e52421382c0bdb9c3b2d128515d733e2d825466480246",
+      "hero_path": "/assets/articles/hero/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+      "hero_sha256": "13b1afe191c0cb87f4d4c561a310db84d1863ad8b72a44cc30272985903c20b5",
+      "hero_asset_sha256": "13b1afe191c0cb87f4d4c561a310db84d1863ad8b72a44cc30272985903c20b5",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1358,
+      "risk_citation_remediation": [
+        "The original Dimmit County mineral-rights value market-update identity for MRX1000-0773 is rejected because it materially overlaps the live and already-owned valuation, market-update, county-value, and owner-decision corpus.",
+        "The replacement owns one distinct information-gain job: identify, locate, and correctly bound the official 148-page Dimmit CAD 2025/2026 reappraisal plan, Resolution 2024-05 adoption record, stated two-year purpose, and oil-and-gas attachment locator.",
+        "The historical July 2024 estimate of 60,750 parcels remains district-wide and includes mineral and industrial accounts. It is not represented as current, mineral-only, owner-level, account-level, property-level, or a measure of value.",
+        "The plan index, exact PDF, Texas Tax Code Sections 6.05 and 25.18, and Comptroller county-directory page retain separate source roles. No source relationship, date, requirement, contractor role, or page locator is expanded beyond its stated context.",
+        "The Culberson plan-adoption record, Dimmit 2024-25 MAP record, and Dimmit 2025 ratio-study record remain separate canonical owners. Their district, issuer, URL, document, resolution, period, page fields, contractors, and findings are not merged or compared.",
+        "Pages 136 through 138 are described only as valuation-method material inside the plan. No formula, property value, appraisal correctness, tax result, offer, sale decision, or owner action is derived from them.",
+        "The updated factory contract requires defensible information gain, direct answer first, claim-adjacent official citations, exact entity and provenance identity, useful visible FAQs, semantic internal links, versioned AI-prompt observations, and separation of execution proof from later performance proof.",
+        "Any property matching, private-data review, statutory interpretation, appraisal judgment, tax or protest guidance, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/dimmit-cad-2025-2026-reappraisal-plan.webp",
+      "inline_asset_sha256": "f0dcf89c3c111c70f8fcc430b06bd769d87f384dcdcaee7aa8a52b93a68f1c83",
+      "inline_rendered_text": "Dimmit CAD 2025-2026 reappraisal plan"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 245,
+    "admitted_article_count": 246,
     "selection_ranks": [
       1,
       2,
@@ -9050,7 +9092,8 @@
       242,
       243,
       244,
-      245
+      245,
+      246
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9109,9 +9152,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "6247ddb03d22384bc153deb6610e26798fde9ad60b2083f9314233996e27cce1",
-    "public_article_count": 253,
-    "batch_article_count": 245,
+    "retrofit_manifest_sha256": "1a08be6adf14d6db8478e6d67d42ef8848fd2240fb622fe6aec556722ed0829d",
+    "public_article_count": 254,
+    "batch_article_count": 246,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

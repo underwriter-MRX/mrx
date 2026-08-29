@@ -119,6 +119,22 @@ Finalize the identity only after those checks. Record the article number, exact 
 
 If a material collision, cannibalization risk, or originality failure exists, route the candidate to `mrx_ceo` for rejection or substantive redefinition. Do not solve a collision with superficial wording, title, slug, or keyword changes. No drafting or image work may begin until the distinct job-to-be-done and exact title are locked.
 
+## Information-gain and AI-citation factory contract — 2026-08-28
+
+Apply this contract to every new or materially revised MRX article. It is an evidence and production standard, not a promise that a search engine or answer engine will rank, retrieve, train on, or cite the page.
+
+- Prioritize defensible information gain over publication volume. Every article must own one distinct reader job, one canonical content identity, and one useful outcome that is not already supplied by another MRX page.
+- Lead with a concise direct answer to the finalized question. Follow it with the exact issuer, document, entity, date or period, access route, page or section locator, and authoritative source needed to verify each material claim.
+- Keep citations adjacent to the claims they support. Preserve document and retrieval provenance, source freshness, exact source roles, and material limitations rather than citing a general bibliography as a substitute for claim-level support.
+- Add visible citation-ready questions and answers only when they improve reader utility and are fully supported by the article. Do not manufacture FAQ content to obtain schema or repeat the same answer under multiple headings.
+- Maintain semantic hub, supporting-resource, sibling, and next-step links with descriptive anchors. Each relationship must help a reader continue the same job without merging facts or conclusions across different source objects.
+- Keep visible copy, title, H1, canonical URL, author, reviewer, dates, image identity, metadata, and native JSON-LD entities consistent. Use only schema types and properties supported by visible content.
+- Treat Search Atlas exports, opportunity data, competitor observations, and answer-engine samples as planning or measurement evidence, never as factual support for an article claim. No measurable keyword data does not mean zero demand.
+- Maintain a versioned AI-visibility prompt universe outside public article copy. For each observation, record the exact prompt, product or model, mode, observation date, locale, and cited URLs so later citation-gap reviews are reproducible and do not rewrite the article around anecdotal output.
+- Separate execution proof from performance proof. Build, publication, crawler access, and live-page verification prove delivery; later search visibility, traffic, retrieval, and citation observations require their own dated measurement window and evidence.
+- Reject keyword stuffing, unsupported or duplicate schema, ungrounded FAQs, misleading alt text, fabricated entity relationships, stale source claims, content-identity drift, and any guarantee of ranking, indexing, retrieval, citation, traffic, leads, or revenue.
+- Preserve the Summit evidence boundary. The July 2026 archive remains governance-, route-, and metadata-grade; do not convert it into transcript-confirmed tactics unless stronger source evidence is independently available.
+
 ## Exact-title hero and share image
 
 Finalize and lock the exact article title before image work.
