@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T10:34:48Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T10:54:13Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -591,13 +591,16 @@
     "wave196_selection_decision_sha256": "b4d33bd9e3574aa7905230a43c7022dd7685c87a86ada3587070727db826250e",
     "wave197_selection_decision_id": "MRX1000-W197-SELECT-2026-08-29",
     "wave197_selection_decision_path": "docs/governance/mrx1000-wave197-selection-decision-2026-08-29.md",
-    "wave197_selection_decision_sha256": "0aa625465b053cd81b17f76474624dd5aae05fa24fdd028e26876f6eae5c724a"
+    "wave197_selection_decision_sha256": "0aa625465b053cd81b17f76474624dd5aae05fa24fdd028e26876f6eae5c724a",
+    "wave198_selection_decision_id": "MRX1000-W198-SELECT-2026-08-29",
+    "wave198_selection_decision_path": "docs/governance/mrx1000-wave198-selection-decision-2026-08-29.md",
+    "wave198_selection_decision_sha256": "d720e21fd4d440e018754671857a66d416322f99f80999ac71d0480ca938e7c8"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "016f493c34f87828211aedb5fe1a2ee84a4eabff82a23e2bd131ee6b3780b31f",
-    "canonical_ledger_generated_at": "2026-07-20T01:40:12.480Z",
+    "canonical_ledger_sha256": "b9633e2c34f44e9e231a9a0fe890a1e131f77324f67f0f890cb6d839089427c6",
+    "canonical_ledger_generated_at": "2026-07-20T05:21:52.239Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -611,11 +614,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 268,
+    "prior_verified_article_count": 269,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 269,
-    "exact_admitted_slate_sha256": "50abbe603c5ca5a1685674fd581aef6b33446e429877745ce3082372090ef69d"
+    "exact_admitted_count": 270,
+    "exact_admitted_slate_sha256": "5e975949fc64f90f0fc6838239540f0d99e6e408e26515cdb624a76c94b23823"
   },
   "articles": [
     {
@@ -9776,10 +9779,45 @@
       "inline_path": "/assets/articles/inline/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/karnes-cad-2025-corrected-mineral-roll-zip.webp",
       "inline_asset_sha256": "087311b1b461548a346f1157d436cc358ac7be369fbdf6ac07785ee9698ced6b",
       "inline_rendered_text": "Karnes CAD 2025 corrected mineral roll ZIP"
+    },
+    {
+      "selection_rank": 270,
+      "program_row_id": "MRX1000-0801",
+      "source_shortlist_program_row_id": "MRX1000-0801",
+      "slug": "karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index",
+      "title": "Karnes CAD 2026 Certified Mineral Roll ZIP: Seven-Member Container Index",
+      "source_shortlist_title": "Karnes CAD 2026 Certified Mineral Roll ZIP: Seven-Member Container Index",
+      "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "7351395ef054a473e08adb01900ed05ec26baa2e127efa8e95f5c3578d15cf5a",
+      "repo_path": "src/content/posts/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.mdx",
+      "repo_sha256": "150c5ed0f0a27f28dd4e8d0a14207a1c0dbdcd242c359dd71f5d835c6ca56212",
+      "article_sha256": "150c5ed0f0a27f28dd4e8d0a14207a1c0dbdcd242c359dd71f5d835c6ca56212",
+      "hero_path": "/assets/articles/hero/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.webp",
+      "hero_sha256": "fd1314bc64996c4c5e3ceed86aa7e5a8519c7695f513d0dc968164a89b92096b",
+      "hero_asset_sha256": "fd1314bc64996c4c5e3ceed86aa7e5a8519c7695f513d0dc968164a89b92096b",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1379,
+      "risk_citation_remediation": [
+        "The original generic Karnes County value timeline identity is rejected because it repeats the factory pattern and collides with current valuation and adjacent Karnes pages.",
+        "The replacement owns only the official displayed 2026 ZIP label, exact target and Content-Disposition filename, complete-file retrieval controls, seven-member generic central-directory inventory, and non-validating integrity result.",
+        "Publisher provenance, target identity, response metadata, byte identity, container metadata, and integrity status remain separate from member accuracy, completeness, currency, correctness, or applicability.",
+        "No member is extracted, opened, read, searched, sampled, reproduced, matched, or used for an owner, account, property, title, acreage, appraisal, tax, protest, production, royalty, value, offer, transaction, or legal conclusion.",
+        "Answer-first structure, stable claim IDs, evidence labels, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index/karnes-cad-2026-certified-mineral-roll-zip.webp",
+      "inline_asset_sha256": "5a98a89e6b3e6664d3e1aff31cb774eb1a4003e70ac2512abcc16a890383f85a",
+      "inline_rendered_text": "Karnes CAD 2026 certified mineral roll ZIP"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 269,
+    "admitted_article_count": 270,
     "selection_ranks": [
       1,
       2,
@@ -10049,7 +10087,8 @@
       266,
       267,
       268,
-      269
+      269,
+      270
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10108,9 +10147,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "5d5a07a792e6932338039f7e6c9d025d8053221eec4d49e8981bf2fb9ec3b030",
-    "public_article_count": 277,
-    "batch_article_count": 269,
+    "retrofit_manifest_sha256": "c79b79d202df79e23e05002aaf90d037038964f22da9959a0b14d37222c82332",
+    "public_article_count": 278,
+    "batch_article_count": 270,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
