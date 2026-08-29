@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T04:09:04.937Z",
+  "generated_at": "2026-07-20T00:28:37.447Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "b69dc2d09127029aeecf693b9cf69ed5811a18ea7e617838c795cadbb70f4863",
+  "content_fingerprint_sha256": "0f812a333b30475d021cf31d16c6be1d0a7308edea0a51345eec713ecbbd3a52",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "acae16f50372adb8f8b38d4d2c0e485fc67241d0e84ca6ae14bc0d856b104000",
+    "canonical_ledger_fingerprint_sha256": "ad75364d8ada93424d0662469b149581a6e4f6422c3d98f52e18cd3a39efcd87",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T04:09:04.937Z",
+    "canonical_ledger_generated_at": "2026-07-20T00:28:37.447Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 272,
+      "live_public_published_route": 273,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 680
+      "planning_only_inventory": 679
     }
   },
   "rows": [
@@ -47893,11 +47893,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0796",
-        "target_title": "Howard County, Texas Mineral Rights Value: Timeline In 2026",
-        "url": "/blog/howard-county-texas-mineral-rights-value-timeline-in-2026/",
+        "target_title": "Howard CAD 2026 Certified Mineral Roll ZIP: 16-Member PACS Export Container Index",
+        "url": "/blog/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -47940,15 +47940,15 @@
     },
     {
       "program_row_id": "MRX1000-0796",
-      "canonical_title": "Howard County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "howard-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "/blog/howard-county-texas-mineral-rights-value-timeline-in-2026/",
+      "canonical_title": "Howard CAD 2026 Certified Mineral Roll ZIP: 16-Member PACS Export Container Index",
+      "canonical_slug": "howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index",
+      "canonical_url": "/blog/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -47970,7 +47970,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -47983,7 +47983,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -47997,7 +47997,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -48270,69 +48270,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-0802",
-        "target_title": "La Salle County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-        "url": "/blog/la-salle-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-0802",
-      "canonical_title": "La Salle County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "la-salle-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "/blog/la-salle-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "risk-check",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-0803",
         "target_title": "La Salle County, Texas Mineral Rights Value: Guide For Mineral Owners",
         "url": "/blog/la-salle-county-texas-mineral-rights-value-guide-for-mineral-owners/",
@@ -48348,7 +48285,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-buyer",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -48361,7 +48298,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-buyer",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -63063,6 +63000,69 @@
       "canonical_title": "Howard County, Texas Mineral Rights Value: Risk Checklist In 2026",
       "canonical_slug": "howard-county-texas-mineral-rights-value-risk-checklist-in-2026",
       "canonical_url": "/blog/howard-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "local-buyer",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-1098",
+        "target_title": "Howard County, Texas Mineral Rights Value: Timeline In 2026",
+        "url": "/blog/howard-county-texas-mineral-rights-value-timeline-in-2026/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1098",
+      "canonical_title": "Howard County, Texas Mineral Rights Value: Timeline In 2026",
+      "canonical_slug": "howard-county-texas-mineral-rights-value-timeline-in-2026",
+      "canonical_url": "/blog/howard-county-texas-mineral-rights-value-timeline-in-2026/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
       "search_intent": "local-buyer",
