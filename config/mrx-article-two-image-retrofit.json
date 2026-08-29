@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T03:28:20Z",
+  "generated_at_utc": "2026-08-29T03:49:45Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 260,
-    "asset_count": 520,
-    "unique_source_art_count": 260,
-    "unique_hero_sha256_count": 260,
-    "unique_inline_sha256_count": 260,
-    "distinct_article_pair_count": 260,
-    "hero_ocr_pass_count": 260,
-    "inline_ocr_pass_count": 260,
-    "exact_filename_identity_count": 260
+    "article_count": 261,
+    "asset_count": 522,
+    "unique_source_art_count": 261,
+    "unique_hero_sha256_count": 261,
+    "unique_inline_sha256_count": 261,
+    "distinct_article_pair_count": 261,
+    "hero_ocr_pass_count": 261,
+    "inline_ocr_pass_count": 261,
+    "exact_filename_identity_count": 261
   },
   "contact_sheets": {
     "hero": [
@@ -2278,6 +2278,56 @@
           "actual": "eagle ford shale\nhow it affects\nmineral rights\nvalues in south\ntexas",
           "normalized_expected": "eagle ford shale how it affects mineral rights values in south texas",
           "normalized_actual": "eagle ford shale how it affects mineral rights values in south texas",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory",
+      "title": "Ector CAD 2025 Mineral Certified Original Tax Roll ZIP Container Inventory",
+      "keyword": "Ector CAD 2025 mineral original tax roll",
+      "file_path": "src/content/posts/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.mdx",
+      "source_public_path": "/assets/articles/hero/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave181-creative-sources/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory-hero-base.png",
+        "artifacts/mrx1000-wave181-creative-sources/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T03:46:41.089Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.webp",
+        "alt": "A three-bay archive carousel appears beside the exact Ector CAD 2025 original-tax-roll container-inventory title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "adf2b7f892ec19c92b454318482e054b6cdd231fd2c4c2df72d92dbb60a19c4c",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000010000001100000011000000000000001110000111000000111100011111100011110001111110000000000111111000000000011111100000000001111110100000000111111010000000011000000000000000110000100000000110000110000000011111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2025 Mineral Certified Original Tax Roll ZIP Container Inventory",
+          "actual": "Ector CAD 2025\nMineral Certified\nOriginal Tax Roll ZIP\nContainer Inventory",
+          "normalized_expected": "ector cad 2025 mineral certified original tax roll zip container inventory",
+          "normalized_actual": "ector cad 2025 mineral certified original tax roll zip container inventory",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/ector-cad-2025-mineral-original-tax-roll.webp",
+        "alt": "Three overhead evidence plates surround the exact Ector CAD 2025 mineral original tax roll keyword.",
+        "rendered_text": "Ector CAD 2025 mineral original tax roll",
+        "visual_variant": "wave181-distinct-generated-three-quarter-three-bay-carousel-and-overhead-triangular-three-member-checksum-board",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "3064a55064f2a6a64a8ba2d54f81d82fd9009836a620c77f265c161429bf9198",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111001111111111111100111111111111111111111111111111111111111111111111111011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2025 mineral original tax roll",
+          "actual": "Ector CAD 2025 mineral\noriginal tax roll",
+          "normalized_expected": "ector cad 2025 mineral original tax roll",
+          "normalized_actual": "ector cad 2025 mineral original tax roll",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

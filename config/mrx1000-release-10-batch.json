@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T03:30:52Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T03:57:39Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -540,13 +540,16 @@
     "wave179_selection_decision_sha256": "f125cdd2b820c1603ee17ecff70a04a764b2ba3ab69418ec616f54893d27db24",
     "wave180_selection_decision_id": "MRX1000-W180-SELECT-2026-08-28",
     "wave180_selection_decision_path": "docs/governance/mrx1000-wave180-selection-decision-2026-08-28.md",
-    "wave180_selection_decision_sha256": "bdd75d88a3b6337cf4af8708fea9d8d3e513112afa22dfee63424ac722a4badf"
+    "wave180_selection_decision_sha256": "bdd75d88a3b6337cf4af8708fea9d8d3e513112afa22dfee63424ac722a4badf",
+    "wave181_selection_decision_id": "MRX1000-W181-SELECT-2026-08-28",
+    "wave181_selection_decision_path": "docs/governance/mrx1000-wave181-selection-decision-2026-08-28.md",
+    "wave181_selection_decision_sha256": "28ef50ca8bd6e1f708eadcc8a4d67d88cc75a71107831ac237c7351888ebb8d8"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "67a00d0a1d05a12e81a6b429107cacbfe36f8371aa86adef5f45bb06c1881119",
-    "canonical_ledger_generated_at": "2026-07-20T10:04:14.149Z",
+    "canonical_ledger_sha256": "d416105c683bea8c96315b32b905972c0a5b3aa3038da82d32a2575b7173f0e8",
+    "canonical_ledger_generated_at": "2026-07-20T19:24:51.936Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -560,11 +563,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 251,
+    "prior_verified_article_count": 252,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 252,
-    "exact_admitted_slate_sha256": "5d4e1aa3b959bd00b71cbc111147840a718ee490e5d756b5c90a7424beae4589"
+    "exact_admitted_count": 253,
+    "exact_admitted_slate_sha256": "7c4cc22ab819b12a6a9e21aafb319f4bd4b33bf9222240d1f06dbbbcb9259448"
   },
   "articles": [
     {
@@ -9096,10 +9099,49 @@
       "inline_path": "/assets/articles/inline/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/ector-cad-2027-2028-oil-and-gas-reappraisal-plan.webp",
       "inline_asset_sha256": "c0d5ff387fb0e10ffee4bb611fc8a8a62227be48b8d98b89d65f1fdf408d95ab",
       "inline_rendered_text": "Ector CAD 2027-2028 oil and gas reappraisal plan"
+    },
+    {
+      "selection_rank": 253,
+      "program_row_id": "MRX1000-0780",
+      "source_shortlist_program_row_id": "MRX1000-0780",
+      "slug": "ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory",
+      "title": "Ector CAD 2025 Mineral Certified Original Tax Roll ZIP Container Inventory",
+      "source_shortlist_title": "Ector CAD 2025 Mineral Certified Original Tax Roll ZIP Container Inventory",
+      "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "e29a33d7de6088dd865ffbaf4bb372cfc162f991ca5949996ec70baa4e2c2149",
+      "repo_path": "src/content/posts/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.mdx",
+      "repo_sha256": "b93b9f21be04ce36993d06e99c969883a10108e05fe3c9673d385fd23d8bf5ac",
+      "article_sha256": "b93b9f21be04ce36993d06e99c969883a10108e05fe3c9673d385fd23d8bf5ac",
+      "hero_path": "/assets/articles/hero/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.webp",
+      "hero_sha256": "adf2b7f892ec19c92b454318482e054b6cdd231fd2c4c2df72d92dbb60a19c4c",
+      "hero_asset_sha256": "adf2b7f892ec19c92b454318482e054b6cdd231fd2c4c2df72d92dbb60a19c4c",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1629,
+      "risk_citation_remediation": [
+        "The original Ector County timeline identity for MRX1000-0780 is rejected because it repeats adjacent Ector value rows and the existing valuation and timing corpus.",
+        "The replacement owns one distinct information-gain job: preserve the official Ector CAD downloads-page relationship, exact 2025 Mineral Certified Original Tax Roll ZIP, complete-file identity, integrity result, and generic three-member central-directory metadata.",
+        "The exact 2,808,802-byte ZIP, SHA-256, HTTP Content-Type and Last-Modified fields, displayed file label, displayed size and creation date, and three-member container inventory remain tied to one 2026-08-28 retrieval.",
+        "No archive member is extracted, opened, read, searched, indexed, transformed, previewed, sampled, copied, displayed, reproduced, summarized, matched, enriched, or interpreted, and no row data is exposed.",
+        "Article 249 owns the separate Ector parameters PDF; Article 250 owns the separate Ector mass report; Article 251 owns the separate 2026 certified mineral appraisal-roll ZIP; Article 252 owns the separate reappraisal-plan PDF.",
+        "The Dimmit, Culberson, DeWitt, and Ector appraisal-roll articles concern different publishers or different artifacts, years, URLs, binaries, and member inventories. They are adjacency controls, not evidence for this original-tax-roll ZIP.",
+        "No person, owner, name, address, account, property, lease, tax balance, penalty, interest, appraisal, ownership, title, private data, offer, value, filing, or transaction fact is accessed, reproduced, inferred, or decided.",
+        "The information-gain and AI-citation factory contract is applied through direct answer first, claim-adjacent official citations, exact issuer/file/year/route/retrieval provenance, useful visible FAQs, semantic internal links, visible/schema parity, and separation of execution proof from later performance proof.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/ector-cad-2025-mineral-original-tax-roll.webp",
+      "inline_asset_sha256": "3064a55064f2a6a64a8ba2d54f81d82fd9009836a620c77f265c161429bf9198",
+      "inline_rendered_text": "Ector CAD 2025 mineral original tax roll"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 252,
+    "admitted_article_count": 253,
     "selection_ranks": [
       1,
       2,
@@ -9352,7 +9394,8 @@
       249,
       250,
       251,
-      252
+      252,
+      253
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9411,9 +9454,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "025ed1469bd922d0daab870f380fd5e14602c7021f97a9f6a3ca3cd250f486dd",
-    "public_article_count": 260,
-    "batch_article_count": 252,
+    "retrofit_manifest_sha256": "d60f669a4d8a02e206d30f96b2be0004a01d1a8a21f1ff70dbc66776015bef05",
+    "public_article_count": 261,
+    "batch_article_count": 253,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
