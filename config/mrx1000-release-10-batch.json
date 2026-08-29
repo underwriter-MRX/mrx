@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T07:26:40Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T07:51:06Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -567,13 +567,16 @@
     "wave188_selection_decision_sha256": "d6cf80924cddd6cc1e1a902051a46f256e4247e5bff2e26db48dcc9356ca7c32",
     "wave189_selection_decision_id": "MRX1000-W189-SELECT-2026-08-29",
     "wave189_selection_decision_path": "docs/governance/mrx1000-wave189-selection-decision-2026-08-29.md",
-    "wave189_selection_decision_sha256": "7ec2744f3685d3c0936760abf9795a32f71d29ec8ed488269b8c096e05038225"
+    "wave189_selection_decision_sha256": "7ec2744f3685d3c0936760abf9795a32f71d29ec8ed488269b8c096e05038225",
+    "wave190_selection_decision_id": "MRX1000-W190-SELECT-2026-08-29",
+    "wave190_selection_decision_path": "docs/governance/mrx1000-wave190-selection-decision-2026-08-29.md",
+    "wave190_selection_decision_sha256": "411861cc230c885a24c966927fe2c9400c3fbe509c99b87d26d0826c1921ad32"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "44216e4b38bd7811c10c3dc335cc009020023116c2c121fa4d71e194d3ebd0b8",
-    "canonical_ledger_generated_at": "2026-07-20T12:38:21.330Z",
+    "canonical_ledger_sha256": "903e3a2e95a43211f01c6e2cc83c77b512748e7416f592556107210068ce0528",
+    "canonical_ledger_generated_at": "2026-07-20T02:08:12.686Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -587,11 +590,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 260,
+    "prior_verified_article_count": 261,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 261,
-    "exact_admitted_slate_sha256": "a221c7fe1b576bdc12f5c8c41aac5ae51c0be625876d917c30a5aa82799d9cfb"
+    "exact_admitted_count": 262,
+    "exact_admitted_slate_sha256": "51991ab7e996ab459d553e640a38fefc925ca484cde279612452918997e2a2f1"
   },
   "articles": [
     {
@@ -9466,10 +9469,47 @@
       "inline_path": "/assets/articles/inline/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/howard-cad-2025-certified-mineral-dataset.webp",
       "inline_asset_sha256": "527979b39444e33999bba403935ffb46256ff7feae11b01a5682fcb9b54c6e26",
       "inline_rendered_text": "Howard CAD 2025 certified mineral dataset"
+    },
+    {
+      "selection_rank": 262,
+      "program_row_id": "MRX1000-0793",
+      "source_shortlist_program_row_id": "MRX1000-0793",
+      "slug": "howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator",
+      "title": "Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator",
+      "source_shortlist_title": "Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "0a422827e589441e14794c1f776e9e4784b4fa51189cdffb94f2922e836e1058",
+      "repo_path": "src/content/posts/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.mdx",
+      "repo_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+      "article_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+      "hero_path": "/assets/articles/hero/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.webp",
+      "hero_sha256": "724dcbc6773e9aa58c820ba35580b8af2c398fed21bb776ea2a2630c7e316d8d",
+      "hero_asset_sha256": "724dcbc6773e9aa58c820ba35580b8af2c398fed21bb776ea2a2630c7e316d8d",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1221,
+      "risk_citation_remediation": [
+        "The original Howard County mineral-rights value guide identity is rejected because it overlaps the current county-value, valuation-factor, appraisal, offer, sale, and mineral-owner guide corpus.",
+        "The replacement owns one distinct information-gain task: preserve one exact Howard CAD 2024 annual-report file identity, physical-page locator, literal Category G row, field-label ambiguity, and tax-record-versus-sale-value boundary.",
+        "The reports page, exact 2024 PDF, Howard CAD publisher surface, and Texas Comptroller classification guide remain separate evidence objects and roles.",
+        "The literal row is stated before interpretation. The middle value 145,117 is never labeled parcels, accounts, properties, owners, wells, interests, records, or another inferred field.",
+        "The right-hand value is attributed only as the report Category G market-value total under the visible page heading and is not treated as current in 2026, property-specific, an owner value, mineral-rights sale value, offer quality, tax owed, or a transaction result.",
+        "The current information-gain and answer-citation contract is applied through a direct answer first, claim-adjacent official citations, exact publisher/route/file/date/hash/page/heading/row provenance, one-fact-per-sentence controls, explicit no-inference language, supported FAQs, semantic internal links, and visible/schema entity parity.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/howard-cad-2024-category-g-oil-and-gas-property-totals.webp",
+      "inline_asset_sha256": "6641b81dcdea585f8643eb6bd379b73cd6a84e81c6eeb6601e981066075f962f",
+      "inline_rendered_text": "Howard CAD 2024 Category G oil and gas property totals"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 261,
+    "admitted_article_count": 262,
     "selection_ranks": [
       1,
       2,
@@ -9731,7 +9771,8 @@
       258,
       259,
       260,
-      261
+      261,
+      262
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9790,9 +9831,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "73ca13fb1b5fff32623f1bc58ffd98644ece618fb9894df28ee9691c95028527",
-    "public_article_count": 269,
-    "batch_article_count": 261,
+    "retrofit_manifest_sha256": "06895bdd2cbdecdd4811e3cd9d9afb23faa63b36b796b4934ffb523f9a5d9f37",
+    "public_article_count": 270,
+    "batch_article_count": 262,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

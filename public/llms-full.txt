@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (269)
+## Published article URLs (270)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator](https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/)
 - [Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record](https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/)
 - [Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table](https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/)
 - [Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator](https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/)
