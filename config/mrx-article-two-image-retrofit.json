@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T06:57:09Z",
+  "generated_at_utc": "2026-08-29T07:21:02Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 268,
-    "asset_count": 536,
-    "unique_source_art_count": 268,
-    "unique_hero_sha256_count": 268,
-    "unique_inline_sha256_count": 268,
-    "distinct_article_pair_count": 268,
-    "hero_ocr_pass_count": 268,
-    "inline_ocr_pass_count": 268,
-    "exact_filename_identity_count": 268
+    "article_count": 269,
+    "asset_count": 538,
+    "unique_source_art_count": 269,
+    "unique_hero_sha256_count": 269,
+    "unique_inline_sha256_count": 269,
+    "distinct_article_pair_count": 269,
+    "hero_ocr_pass_count": 269,
+    "inline_ocr_pass_count": 269,
+    "exact_filename_identity_count": 269
   },
   "contact_sheets": {
     "hero": [
@@ -5358,6 +5358,56 @@
           "actual": "predatory mineral rights buyers",
           "normalized_expected": "predatory mineral rights buyers",
           "normalized_actual": "predatory mineral rights buyers",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record",
+      "title": "Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record",
+      "keyword": "Howard CAD 2025 certified mineral dataset",
+      "file_path": "src/content/posts/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.mdx",
+      "source_public_path": "/assets/articles/hero/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave189-creative-sources/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record-hero-base.png",
+        "artifacts/mrx1000-wave189-creative-sources/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T07:20:08.564Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.webp",
+        "alt": "A navy archive capsule and one blank file sleeve appear beside the exact Howard CAD ZIP integrity-record title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "2ff15b850ec62aaaad4679ce15547e0363aa648232f87c65d03645cd845bb1d1",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000011100000000000010111101110000011011110110000001101111011111000110111100000000000011110000000000001111000000001111111100000000111111110000000011111111000000001111111100000000111111100000000011111110",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record",
+          "actual": "Howard CAD 2025\nCertified Mineral\nDataset ZIP:\nOne-Member Integrity Record",
+          "normalized_expected": "howard cad 2025 certified mineral dataset zip one member integrity record",
+          "normalized_actual": "howard cad 2025 certified mineral dataset zip one member integrity record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/howard-cad-2025-certified-mineral-dataset.webp",
+        "alt": "An overhead one-container, one-member evidence board appears above the Howard CAD 2025 certified mineral dataset phrase.",
+        "rendered_text": "Howard CAD 2025 certified mineral dataset",
+        "visual_variant": "wave189-distinct-generated-low-three-quarter-archive-capsule-and-overhead-one-member-integrity-board",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "527979b39444e33999bba403935ffb46256ff7feae11b01a5682fcb9b54c6e26",
+        "perceptual_hash": "1111111111111111111000111111011111100011111101111110000111110011111000011111001111100001111100111110000111110011111111101111001111111111111100111111111111110011110000001111001100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Howard CAD 2025 certified mineral dataset",
+          "actual": "Howard CAD 2025 certified\nmineral dataset",
+          "normalized_expected": "howard cad 2025 certified mineral dataset",
+          "normalized_actual": "howard cad 2025 certified mineral dataset",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
