@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T02:47:13Z",
+  "generated_at_utc": "2026-08-29T03:05:26Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 258,
-    "asset_count": 516,
-    "unique_source_art_count": 258,
-    "unique_hero_sha256_count": 258,
-    "unique_inline_sha256_count": 258,
-    "distinct_article_pair_count": 258,
-    "hero_ocr_pass_count": 258,
-    "inline_ocr_pass_count": 258,
-    "exact_filename_identity_count": 258
+    "article_count": 259,
+    "asset_count": 518,
+    "unique_source_art_count": 259,
+    "unique_hero_sha256_count": 259,
+    "unique_inline_sha256_count": 259,
+    "distinct_article_pair_count": 259,
+    "hero_ocr_pass_count": 259,
+    "inline_ocr_pass_count": 259,
+    "exact_filename_identity_count": 259
   },
   "contact_sheets": {
     "hero": [
@@ -2278,6 +2278,56 @@
           "actual": "eagle ford shale\nhow it affects\nmineral rights\nvalues in south\ntexas",
           "normalized_expected": "eagle ford shale how it affects mineral rights values in south texas",
           "normalized_actual": "eagle ford shale how it affects mineral rights values in south texas",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record",
+      "title": "Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record",
+      "keyword": "Ector CAD 2026 certified mineral appraisal roll",
+      "file_path": "src/content/posts/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.mdx",
+      "source_public_path": "/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave179-creative-sources/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record-hero-base.png",
+        "artifacts/mrx1000-wave179-creative-sources/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T03:05:01.702Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp",
+        "alt": "A sealed navy archive lockbox and one cream data cartridge appear beside the exact Ector CAD ZIP source-control title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "3b44072f529f7f964a74b7f369ea3eac07032f0a1d09136589384ded6097a291",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000001111000001110000111100000000000011110000001100001111100000110000111111000011000000000000011110000000000011111000000000001111100000000000111110000000000011110000000000010001000000000001000000000000000100000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record",
+          "actual": "Ector CAD 2026\nCertified Mineral\nAppraisal Roll ZIP\nSource-Control Record",
+          "normalized_expected": "ector cad 2026 certified mineral appraisal roll zip source control record",
+          "normalized_actual": "ector cad 2026 certified mineral appraisal roll zip source control record",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/ector-cad-2026-certified-mineral-appraisal-roll.webp",
+        "alt": "One overhead sealed file tile appears above the exact Ector CAD 2026 certified mineral appraisal roll keyword.",
+        "rendered_text": "Ector CAD 2026 certified mineral appraisal roll",
+        "visual_variant": "wave179-distinct-generated-low-angle-single-lockbox-and-overhead-one-member-archive-inventory",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "fab156ce82ad7d8cab6e29a29d4ae9c7ded2a3b5fc409f7f369fbbe14f13e9b5",
+        "perceptual_hash": "1111111111111111111110000001111111111111110111111111111111011111111111111101111111111111110011111111111111001111111110111101111111111011110111111111100000011111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 certified mineral appraisal roll",
+          "actual": "Ector CAD 2026 certified\nmineral appraisal roll",
+          "normalized_expected": "ector cad 2026 certified mineral appraisal roll",
+          "normalized_actual": "ector cad 2026 certified mineral appraisal roll",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
