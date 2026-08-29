@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T04:11:09Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T04:38:07Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -546,13 +546,16 @@
     "wave181_selection_decision_sha256": "28ef50ca8bd6e1f708eadcc8a4d67d88cc75a71107831ac237c7351888ebb8d8",
     "wave182_selection_decision_id": "MRX1000-W182-SELECT-2026-08-28",
     "wave182_selection_decision_path": "docs/governance/mrx1000-wave182-selection-decision-2026-08-28.md",
-    "wave182_selection_decision_sha256": "85320efa7f33502217947b77cb92240a65ec28cc8452046996ea6b7161624213"
+    "wave182_selection_decision_sha256": "85320efa7f33502217947b77cb92240a65ec28cc8452046996ea6b7161624213",
+    "wave183_selection_decision_id": "MRX1000-W183-SELECT-2026-08-28",
+    "wave183_selection_decision_path": "docs/governance/mrx1000-wave183-selection-decision-2026-08-28.md",
+    "wave183_selection_decision_sha256": "32c983b560dd27b022d5742f208b386f2a763e3d80fa7e6f2d7ee729d4330c2b"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "94b7113b2e35b792aa8c3c9c830ce1782920c02861807c28b6dd656775274115",
-    "canonical_ledger_generated_at": "2026-07-20T03:50:59.807Z",
+    "canonical_ledger_sha256": "2d8e4d543eb8d01550604b36632ce40493e3f5457b09830ac62595c5c338e908",
+    "canonical_ledger_generated_at": "2026-07-20T02:18:15.621Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -566,11 +569,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 253,
+    "prior_verified_article_count": 254,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 254,
-    "exact_admitted_slate_sha256": "c005343148fde24d25f6b9a03f7a09f1fea5af85e79aeede333170866609f7ce"
+    "exact_admitted_count": 255,
+    "exact_admitted_slate_sha256": "e6f066fcd4f622fca6ae1a2f2f04365e57c43eb034100fdf5cce7f27acb548f1"
   },
   "articles": [
     {
@@ -9180,10 +9183,48 @@
       "inline_path": "/assets/articles/inline/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/glasscock-cad-mineral-account-appraiser.webp",
       "inline_asset_sha256": "fb3210a2d984dfbe516a390ffbd99adcbe1b86db7d4accda3b5ab7a3c868019e",
       "inline_rendered_text": "Glasscock CAD mineral account appraiser"
+    },
+    {
+      "selection_rank": 255,
+      "program_row_id": "MRX1000-0782",
+      "source_shortlist_program_row_id": "MRX1000-0782",
+      "slug": "glasscock-cad-2025-certified-mineral-roll-zip-link-locator",
+      "title": "Glasscock CAD 2025 Certified Mineral Roll ZIP Link Locator",
+      "source_shortlist_title": "Glasscock CAD 2025 Certified Mineral Roll ZIP Link Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-certified-mineral-roll-zip-link-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "7833260dc9bf17142308631877939be31bcedb9409c7132ae164c9a6a3cbe37d",
+      "repo_path": "src/content/posts/glasscock-cad-2025-certified-mineral-roll-zip-link-locator.mdx",
+      "repo_sha256": "ae6ca80608de0c981780290d60fe4f43648f42bb20f7644c715b9bb9d1505c85",
+      "article_sha256": "ae6ca80608de0c981780290d60fe4f43648f42bb20f7644c715b9bb9d1505c85",
+      "hero_path": "/assets/articles/hero/glasscock-cad-2025-certified-mineral-roll-zip-link-locator.webp",
+      "hero_sha256": "b1e131b00d720233c104621ee0aac5dc72ff7f99c2076e054cfd6e23ec7eeb79",
+      "hero_asset_sha256": "b1e131b00d720233c104621ee0aac5dc72ff7f99c2076e054cfd6e23ec7eeb79",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1255,
+      "risk_citation_remediation": [
+        "The original Glasscock County mineral-rights value guide identity is rejected because adjacent planning rows repeat the same keyword and overlap the current valuation, county-guide, offer, sale, and owner-decision corpus.",
+        "The replacement owns one distinct page-level task: locate the official Glasscock CAD 2025 Certified Mineral Roll ZIP label, preserve its displayed target and observation date, and provide a return-to-source route if a direct request stalls.",
+        "The official page, displayed link, direct-endpoint response behavior, and file-inspection state remain separate evidence classes.",
+        "The direct endpoint rejected HEAD with HTTP 405 and a bounded GET timed out; neither observation proves availability, unavailability, download success, completeness, contents, accuracy, or legal effect.",
+        "No stale search snippet is used as factual evidence, and the current rendered absence of a 2026 mineral ZIP is not converted into an absence claim.",
+        "No person, owner, address, account, property, lease, record row, appraisal, tax amount, private data, ownership, title, value, offer, sale, filing, or legal fact is accessed, reproduced, inferred, or decided.",
+        "The current information-gain and answer-citation contract is applied through direct answer first, claim-adjacent primary citations, exact entity/page/label/route/date provenance, useful visible FAQs, semantic internal links, visible/schema parity, and separation of execution proof from later performance proof.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/glasscock-cad-2025-certified-mineral-roll-zip-link-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/glasscock-cad-2025-certified-mineral-roll-zip-link-locator/glasscock-cad-2025-certified-mineral-roll.webp",
+      "inline_asset_sha256": "00c51610e2cd5f412b24eb37737fe22bc8bdf35e2e32f603bf6b522e2f892a67",
+      "inline_rendered_text": "Glasscock CAD 2025 certified mineral roll"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 254,
+    "admitted_article_count": 255,
     "selection_ranks": [
       1,
       2,
@@ -9438,7 +9479,8 @@
       251,
       252,
       253,
-      254
+      254,
+      255
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9497,9 +9539,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "d7c4c39f14b273ee4561e66a1c8d548a346e58f8d418f290dd007478d178a322",
-    "public_article_count": 262,
-    "batch_article_count": 254,
+    "retrofit_manifest_sha256": "c1120e2c288904a80b3b65f1d6b7c7fe3d75029cb8bdc1eb294e2aef96af0e00",
+    "public_article_count": 263,
+    "batch_article_count": 255,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
