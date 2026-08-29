@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T01:39:35Z",
+  "generated_at_utc": "2026-08-29T02:02:12Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 255,
-    "asset_count": 510,
-    "unique_source_art_count": 255,
-    "unique_hero_sha256_count": 255,
-    "unique_inline_sha256_count": 255,
-    "distinct_article_pair_count": 255,
-    "hero_ocr_pass_count": 255,
-    "inline_ocr_pass_count": 255,
-    "exact_filename_identity_count": 255
+    "article_count": 256,
+    "asset_count": 512,
+    "unique_source_art_count": 256,
+    "unique_hero_sha256_count": 256,
+    "unique_inline_sha256_count": 256,
+    "distinct_article_pair_count": 256,
+    "hero_ocr_pass_count": 256,
+    "inline_ocr_pass_count": 256,
+    "exact_filename_identity_count": 256
   },
   "contact_sheets": {
     "hero": [
@@ -1986,6 +1986,56 @@
           "actual": "Dimmit CAD 2025-2026\nreappraisal plan",
           "normalized_expected": "dimmit cad 2025 2026 reappraisal plan",
           "normalized_actual": "dimmit cad 2025 2026 reappraisal plan",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map",
+      "title": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
+      "keyword": "Dimmit CAD mineral appraisal responsibility",
+      "file_path": "src/content/posts/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.mdx",
+      "source_public_path": "/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave176-creative-sources/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map-hero-base.png",
+        "artifacts/mrx1000-wave176-creative-sources/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T01:59:18.489Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp",
+        "alt": "A blank navy report folio and three page tabs sit beside the exact Dimmit CAD responsibility source-map title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "bc1b8cded2439f5a01e02c3b96222d8149fbb461090d79a14c382d113ebe6e5e",
+        "perceptual_hash": "0000000001000001000000000110000100000000111110010111000011111111111100001100000111111100110000101111100010000010111000000000011000000000000001100000000000000101000000000000010100000000000000010000000000000011000000001100000000000000111100000000000011111000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
+          "actual": "Dimmit CAD 2025\nMass Appraisal Report\nMineral Responsibility\nSource Map",
+          "normalized_expected": "dimmit cad 2025 mass appraisal report mineral responsibility source map",
+          "normalized_actual": "dimmit cad 2025 mass appraisal report mineral responsibility source map",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/dimmit-cad-mineral-appraisal-responsibility.webp",
+        "alt": "Three blank page cards connect above the exact Dimmit CAD mineral appraisal responsibility keyword.",
+        "rendered_text": "Dimmit CAD mineral appraisal responsibility",
+        "visual_variant": "wave176-distinct-generated-three-quarter-report-library-and-overhead-three-page-responsibility-source-map",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "a5fb8970a59c770d90e18ad58e41983302ad17c702b54c5c44625d3ba7c0bda2",
+        "perceptual_hash": "0111111111111111111111111111110011111111111111001111111111111100111111111111110011111111111111110111111111111110011111111111111011111111111111101111111111111110111110000011110000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Dimmit CAD mineral appraisal responsibility",
+          "actual": "Dimmit CAD mineral\nappraisal responsibility",
+          "normalized_expected": "dimmit cad mineral appraisal responsibility",
+          "normalized_actual": "dimmit cad mineral appraisal responsibility",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

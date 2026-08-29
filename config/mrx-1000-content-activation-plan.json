@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T12:46:35.460Z",
+  "generated_at": "2026-07-20T10:00:01.909Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "0b0b83fc1ebbacd2d3c853acc1da0055c8524d3b26717958b7c1dddaa8a8fca8",
+  "content_fingerprint_sha256": "a29d3d86e290635ff974b36d5b761e79df0ea388997defff201047f5369d4ce1",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "1fd9f1d4ff1c04ca41d6b51b4c84874e3588f28669a030e93df8f3551c23e999",
+    "canonical_ledger_fingerprint_sha256": "76e2eae908a1aa2e8df40011c45a741cd91d76625c8bc68b04b9d49c2467746b",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T12:46:35.460Z",
+    "canonical_ledger_generated_at": "2026-07-20T10:00:01.909Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 255,
+      "live_public_published_route": 256,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 697
+      "planning_only_inventory": 696
     }
   },
   "rows": [
@@ -46822,11 +46822,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0775",
-        "target_title": "Dimmit County, Texas Mineral Rights Value: Timeline In 2026",
-        "url": "/blog/dimmit-county-texas-mineral-rights-value-timeline-in-2026/",
+        "target_title": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
+        "url": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -46869,15 +46869,15 @@
     },
     {
       "program_row_id": "MRX1000-0775",
-      "canonical_title": "Dimmit County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "dimmit-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "/blog/dimmit-county-texas-mineral-rights-value-timeline-in-2026/",
+      "canonical_title": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
+      "canonical_slug": "dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map",
+      "canonical_url": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -46899,7 +46899,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -46912,7 +46912,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -46926,7 +46926,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -49593,69 +49593,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-0828",
-        "target_title": "Mcmullen County, Texas Mineral Rights Value: Timeline In 2026",
-        "url": "/blog/mcmullen-county-texas-mineral-rights-value-timeline-in-2026/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-0828",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "/blog/mcmullen-county-texas-mineral-rights-value-timeline-in-2026/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-0829",
         "target_title": "Midland County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
         "url": "/blog/midland-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
@@ -49671,7 +49608,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:education",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49684,7 +49621,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:education",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -63063,6 +63000,69 @@
       "canonical_title": "Dimmit County, Texas Mineral Rights Value: Risk Checklist In 2026",
       "canonical_slug": "dimmit-county-texas-mineral-rights-value-risk-checklist-in-2026",
       "canonical_url": "/blog/dimmit-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "local-buyer",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-1082",
+        "target_title": "Dimmit County, Texas Mineral Rights Value: Timeline In 2026",
+        "url": "/blog/dimmit-county-texas-mineral-rights-value-timeline-in-2026/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1082",
+      "canonical_title": "Dimmit County, Texas Mineral Rights Value: Timeline In 2026",
+      "canonical_slug": "dimmit-county-texas-mineral-rights-value-timeline-in-2026",
+      "canonical_url": "/blog/dimmit-county-texas-mineral-rights-value-timeline-in-2026/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
       "search_intent": "local-buyer",
