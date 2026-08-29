@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T09:00:27Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T09:13:44Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -579,12 +579,15 @@
     "wave192_selection_decision_sha256": "687189fa66f5b6378812ee52021cdf6a055b76d4dff14617ea2b8d57312d803b",
     "wave193_selection_decision_id": "MRX1000-W193-SELECT-2026-08-29",
     "wave193_selection_decision_path": "docs/governance/mrx1000-wave193-selection-decision-2026-08-29.md",
-    "wave193_selection_decision_sha256": "922f21462e5255a2003bb01fe95fe45e4d2c9bae68a99a776b11fa29b7849468"
+    "wave193_selection_decision_sha256": "922f21462e5255a2003bb01fe95fe45e4d2c9bae68a99a776b11fa29b7849468",
+    "wave194_selection_decision_id": "MRX1000-W194-SELECT-2026-08-29",
+    "wave194_selection_decision_path": "docs/governance/mrx1000-wave194-selection-decision-2026-08-29.md",
+    "wave194_selection_decision_sha256": "fb477ccf3b967d4803d53a1e558d674bb705eba9eb639c21c63512aa01b9c1cf"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "baea9877ed791f65bd7701bae761104d353373f43510071e572a8007654af00e",
+    "canonical_ledger_sha256": "b6ada9cdb9171655fa80d9da5b1c783bdcc708bb8caa4034d7d569f376cc0703",
     "canonical_ledger_generated_at": "2026-07-20T00:28:37.447Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -599,11 +602,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 264,
+    "prior_verified_article_count": 265,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 265,
-    "exact_admitted_slate_sha256": "05a0d66a36704fe438391333250f456dc3cd09bc50afe463c47abe35f7177df5"
+    "exact_admitted_count": 266,
+    "exact_admitted_slate_sha256": "f90dca15ffe0a46c9e467a99caaf1ae192ba6bceaf7fed2d6b00ebe92e794328"
   },
   "articles": [
     {
@@ -9624,10 +9627,45 @@
       "inline_path": "/assets/articles/inline/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/howard-cad-2026-certified-mineral-roll-zip.webp",
       "inline_asset_sha256": "d12c9bf3ca351834cab62b6884d62f15ad592b1e05289d4e7ce944a23d37710f",
       "inline_rendered_text": "Howard CAD 2026 certified mineral roll ZIP"
+    },
+    {
+      "selection_rank": 266,
+      "program_row_id": "MRX1000-0797",
+      "source_shortlist_program_row_id": "MRX1000-0797",
+      "slug": "karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk",
+      "title": "Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk",
+      "source_shortlist_title": "Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "b7a028fb9842a494225714ddecce75460e7f51992fabbad5cacfb4efc70170fc",
+      "repo_path": "src/content/posts/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.mdx",
+      "repo_sha256": "abfce498a824a393e336a2976d7780daf5d1b05d04c0321b008103fe5e819997",
+      "article_sha256": "abfce498a824a393e336a2976d7780daf5d1b05d04c0321b008103fe5e819997",
+      "hero_path": "/assets/articles/hero/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.webp",
+      "hero_sha256": "e775ca5b178cf2281c7e40732fb4be31855f482fcba9bea9212a24898f2ca838",
+      "hero_asset_sha256": "e775ca5b178cf2281c7e40732fb4be31855f482fcba9bea9212a24898f2ca838",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1267,
+      "risk_citation_remediation": [
+        "The original broad Karnes County value and family-guide identity is rejected because five adjacent planning rows repeat the same value keyword and generic factory pattern.",
+        "The replacement owns only the official publisher route, exact PDF controls, physical-page-3 locator, Property Types Appraised Category G row, separate Ratio Study Analysis Category G row, and explicit two-table boundary.",
+        "The differently labeled parcel count, ratio count, market value, appraised value, and statistical measures remain attached to their source headers and are never silently merged or reconciled.",
+        "No owner, property, account, tract, lease, well, acreage, reserve, production, royalty, title, appraisal-accuracy, tax, current-value, sale-value, offer, legal, or transaction conclusion is made.",
+        "Answer-first structure, claim-adjacent official citations, concise table extraction, supported FAQs, semantic internal links, visible/schema entity parity, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/karnes-cad-2024-annual-report-category-g.webp",
+      "inline_asset_sha256": "331f3c16d475a6536d1473f9d6f503c6ab37b6aac578a0bcdcad9fdf721e4340",
+      "inline_rendered_text": "Karnes CAD 2024 annual report Category G"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 265,
+    "admitted_article_count": 266,
     "selection_ranks": [
       1,
       2,
@@ -9893,7 +9931,8 @@
       262,
       263,
       264,
-      265
+      265,
+      266
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9952,9 +9991,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "fe288837d186ccfbeacdabbe8fb71c5e18951c28b610adfc980890c2697274e2",
-    "public_article_count": 273,
-    "batch_article_count": 265,
+    "retrofit_manifest_sha256": "af6cf4d147490e21d539e2a500543f23326859dd3f1b86b874f39d6d4e013ac5",
+    "public_article_count": 274,
+    "batch_article_count": 266,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
