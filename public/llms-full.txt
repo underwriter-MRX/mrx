@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (265)
+## Published article URLs (267)
 
 ### Competing offers
 
@@ -160,6 +160,8 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator](https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/)
+- [Glasscock CAD Property Search Result Field Inventory for Mineral Research](https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/)
 - [Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator](https://mineralrightsxchange.com/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/)
 - [Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator](https://mineralrightsxchange.com/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/)
 - [Glasscock CAD 2025 Certified Mineral Roll ZIP Link Locator](https://mineralrightsxchange.com/blog/glasscock-cad-2025-certified-mineral-roll-zip-link-locator/)

@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T05:43:50Z",
+  "generated_at_utc": "2026-08-29T06:35:14Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 265,
-    "asset_count": 530,
-    "unique_source_art_count": 265,
-    "unique_hero_sha256_count": 265,
-    "unique_inline_sha256_count": 265,
-    "distinct_article_pair_count": 265,
-    "hero_ocr_pass_count": 265,
-    "inline_ocr_pass_count": 265,
-    "exact_filename_identity_count": 265
+    "article_count": 267,
+    "asset_count": 534,
+    "unique_source_art_count": 267,
+    "unique_hero_sha256_count": 267,
+    "unique_inline_sha256_count": 267,
+    "distinct_article_pair_count": 267,
+    "hero_ocr_pass_count": 267,
+    "inline_ocr_pass_count": 267,
+    "exact_filename_identity_count": 267
   },
   "contact_sheets": {
     "hero": [
@@ -3128,6 +3128,106 @@
           "actual": "Glasscock CAD mineral\naccount appraiser",
           "normalized_expected": "glasscock cad mineral account appraiser",
           "normalized_actual": "glasscock cad mineral account appraiser",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "glasscock-cad-property-search-result-field-inventory-for-mineral-research",
+      "title": "Glasscock CAD Property Search Result Field Inventory for Mineral Research",
+      "keyword": "Glasscock CAD property search result fields",
+      "file_path": "src/content/posts/glasscock-cad-property-search-result-field-inventory-for-mineral-research.mdx",
+      "source_public_path": "/assets/articles/hero/glasscock-cad-property-search-result-field-inventory-for-mineral-research.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave186-creative-sources/glasscock-cad-property-search-result-field-inventory-for-mineral-research-hero-base.png",
+        "artifacts/mrx1000-wave186-creative-sources/glasscock-cad-property-search-result-field-inventory-for-mineral-research-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T06:03:02.444Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/glasscock-cad-property-search-result-field-inventory-for-mineral-research.webp",
+        "alt": "A navy card-catalog tray with blank dividers appears beside the exact Glasscock CAD field-inventory title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "41df13177e4aaf6801c0b374dd404ff4277b37d0e09f742e03d2666cdff00b06",
+        "perceptual_hash": "0000000000000000000000000000000000000000101100000101100011111110011111001111111011111000011111101110000001111110111100000111111000000000011111100000000000001100000000000000000000000000000000000000000000000000000000000001000000000000001000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD Property Search Result Field Inventory for Mineral Research",
+          "actual": "Glasscock CAD Property\nSearch Result Field\nInventory for\nMineral Research",
+          "normalized_expected": "glasscock cad property search result field inventory for mineral research",
+          "normalized_actual": "glasscock cad property search result field inventory for mineral research",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/glasscock-cad-property-search-result-field-inventory-for-mineral-research/glasscock-cad-property-search-result-fields.webp",
+        "alt": "An overhead eighteen-tile inventory board appears above the exact Glasscock CAD property search result fields phrase.",
+        "rendered_text": "Glasscock CAD property search result fields",
+        "visual_variant": "wave186-distinct-generated-three-quarter-card-catalog-and-overhead-eighteen-tile-inventory",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "91d64f3ba8e4c583eaef10df00f69269a0a3e199b02c6f99db0ae849d02016e6",
+        "perceptual_hash": "1111111111100000101111111111100010111111111111001101111111111100100111111111110010111111111111001001111111111100100111111111110010011111111111001111111111111100110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD property search result fields",
+          "actual": "Glasscock CAD property search\nresult fields",
+          "normalized_expected": "glasscock cad property search result fields",
+          "normalized_actual": "glasscock cad property search result fields",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator",
+      "title": "Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator",
+      "keyword": "Gonzales CAD mineral appraisal responsibility",
+      "file_path": "src/content/posts/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.mdx",
+      "source_public_path": "/assets/articles/hero/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave187-creative-sources/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator-hero-base.png",
+        "artifacts/mrx1000-wave187-creative-sources/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T06:34:12.300Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp",
+        "alt": "An open report binder and page marker appear beside the exact Gonzales CAD mineral-responsibility page-locator title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "f3551dfc09a0c95b0fc3fd52ee473a93626c4bbc4fc556a8e867f1b376ff206c",
+        "perceptual_hash": "0000000011100000000000001110000000000000110000100000000011111011000000001111111101111000011111000111100001111100011000001111111100000000111111110000000011111011000000000011101100000000000011110000000001100111000000000111111100000000011111110000000001101111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator",
+          "actual": "Gonzales CAD 2025\nMass Appraisal Report\nMineral Responsibility\nPage Locator",
+          "normalized_expected": "gonzales cad 2025 mass appraisal report mineral responsibility page locator",
+          "normalized_actual": "gonzales cad 2025 mass appraisal report mineral responsibility page locator",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/gonzales-cad-mineral-appraisal-responsibility.webp",
+        "alt": "An overhead print-and-PDF locator board appears above the Gonzales CAD mineral appraisal responsibility phrase.",
+        "rendered_text": "Gonzales CAD mineral appraisal responsibility",
+        "visual_variant": "wave187-distinct-generated-three-quarter-report-binder-and-overhead-two-page-locator",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "eeda5320dc2a1bb7dfd7e6d7753fc1ef0f10756e6b572e69e90d65922c1027ec",
+        "perceptual_hash": "1111111111111111100111111111111110011111111111111001111111111111100111111111111100011111111111111001111111111111111111111111111111111111111111111111111111111111111111111000011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Gonzales CAD mineral appraisal responsibility",
+          "actual": "Gonzales CAD mineral\nappraisal responsibility",
+          "normalized_expected": "gonzales cad mineral appraisal responsibility",
+          "normalized_actual": "gonzales cad mineral appraisal responsibility",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
