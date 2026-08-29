@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T13:01:45Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T13:24:50Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -609,13 +609,16 @@
     "wave202_selection_decision_sha256": "8dc062ab1d9fce22553dbcff5790dc1cc15cdb5cf20c738211831bc88140da4b",
     "wave203_selection_decision_id": "MRX1000-W203-SELECT-2026-08-29",
     "wave203_selection_decision_path": "docs/governance/mrx1000-wave203-selection-decision-2026-08-29.md",
-    "wave203_selection_decision_sha256": "465d6965495d91b1df19450429319423696123f3cca1294654672ce073cc32a7"
+    "wave203_selection_decision_sha256": "465d6965495d91b1df19450429319423696123f3cca1294654672ce073cc32a7",
+    "wave204_selection_decision_id": "MRX1000-W204-SELECT-2026-08-29",
+    "wave204_selection_decision_path": "docs/governance/mrx1000-wave204-selection-decision-2026-08-29.md",
+    "wave204_selection_decision_sha256": "430e67089e288fb75cfd06c4e2b0d14e610b362e89cde4181689f3d66fba379f"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "e5785c89201fcdfbb63e43f05305b5fbb8f4d700839f44eef769c147c8c7a05e",
-    "canonical_ledger_generated_at": "2026-07-20T06:04:03.463Z",
+    "canonical_ledger_sha256": "221c25b4017d685d3adc4fa91ff5563187c39a6589ca85f509d3d06f58263c20",
+    "canonical_ledger_generated_at": "2026-07-20T07:33:58.958Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -629,11 +632,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 274,
+    "prior_verified_article_count": 275,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 275,
-    "exact_admitted_slate_sha256": "8d57a1ca61e14705c9658c0285aa9d8e991e6d57a5d3923d904acc0ce9b9a92b"
+    "exact_admitted_count": 276,
+    "exact_admitted_slate_sha256": "daced62dad47f0a95a86aa1a98df314810fea22bedce3acf24f1f2f0d1e2975a"
   },
   "articles": [
     {
@@ -10004,10 +10007,46 @@
       "inline_path": "/assets/articles/inline/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/loving-cad-2026-year-by-year-appraisals-pdf.webp",
       "inline_asset_sha256": "d51f904a6b6106105e143a90b1b38a33df4831936345ae9a50022e8a944e77ab",
       "inline_rendered_text": "Loving CAD 2026 year-by-year appraisals PDF"
+    },
+    {
+      "selection_rank": 276,
+      "program_row_id": "MRX1000-0819",
+      "source_shortlist_program_row_id": "MRX1000-0819",
+      "slug": "martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label",
+      "title": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+      "source_shortlist_title": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+      "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "005a76287ec6341e9fb55a72a59efd9098c139051ae1b2d3563580d56cf34152",
+      "repo_path": "src/content/posts/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.mdx",
+      "repo_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+      "article_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+      "hero_path": "/assets/articles/hero/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.webp",
+      "hero_sha256": "7b68eb5f13fcb30dfdedf0ebc3d198d7bb4ca8b26b066ad44d91d2195412c2d1",
+      "hero_asset_sha256": "7b68eb5f13fcb30dfdedf0ebc3d198d7bb4ca8b26b066ad44d91d2195412c2d1",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1906,
+      "risk_citation_remediation": [
+        "The original Martin County value and family-guide identity is rejected because it repeats a high-similarity county factory pattern and collides with the valuation corpus.",
+        "The replacement owns only the official publisher-page placement, exact 2026 ZIP retrieval, exact master-inventory PDF controls, manually verified physical-page-1 labels, and the unresolved Certified-versus-PRELIMINARY source conflict.",
+        "The article preserves the two labels as separate observations and does not decide that the report is certified, preliminary, superseded, current, or valid for a property-specific purpose.",
+        "Physical pages 2 through 2,225 remain outside the public content claim set and their names, addresses, identifiers, property details, monetary figures, ownership, appraisal, tax, value, transaction, and legal content are excluded.",
+        "PDF extraction and OCR remain non-validating; the physical-page-1 manual render controls PDF-label wording and physical page 2 is used only to establish the fail-closed exclusion boundary.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/martin-cad-2026-mineral-archive-label-conflict.webp",
+      "inline_asset_sha256": "b330ee1ed4fc43fe75de1711e0f71909f09cfb884163f1d37aebcc99930253c1",
+      "inline_rendered_text": "Martin CAD 2026 mineral archive label conflict"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 275,
+    "admitted_article_count": 276,
     "selection_ranks": [
       1,
       2,
@@ -10283,7 +10322,8 @@
       272,
       273,
       274,
-      275
+      275,
+      276
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10342,9 +10382,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "1eaf256886ce185ae91204ade20e63055adcf54b9dd1104f10d784ad418bf9e7",
-    "public_article_count": 283,
-    "batch_article_count": 275,
+    "retrofit_manifest_sha256": "f55cc34eec9f74764a3e7db673282e8d11b516485a33e783126bf8a336112722",
+    "public_article_count": 284,
+    "batch_article_count": 276,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

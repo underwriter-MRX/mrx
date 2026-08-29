@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T13:01:11Z",
+  "generated_at_utc": "2026-08-29T13:20:42Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 283,
-    "asset_count": 566,
-    "unique_source_art_count": 283,
-    "unique_hero_sha256_count": 283,
-    "unique_inline_sha256_count": 283,
-    "distinct_article_pair_count": 283,
-    "hero_ocr_pass_count": 283,
-    "inline_ocr_pass_count": 283,
-    "exact_filename_identity_count": 283
+    "article_count": 284,
+    "asset_count": 568,
+    "unique_source_art_count": 284,
+    "unique_hero_sha256_count": 284,
+    "unique_inline_sha256_count": 284,
+    "distinct_article_pair_count": 284,
+    "hero_ocr_pass_count": 284,
+    "inline_ocr_pass_count": 284,
+    "exact_filename_identity_count": 284
   },
   "contact_sheets": {
     "hero": [
@@ -6396,6 +6396,56 @@
           "actual": "managing mineral interests estate\nplanning",
           "normalized_expected": "managing mineral interests estate planning",
           "normalized_actual": "managing mineral interests estate planning",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label",
+      "title": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+      "keyword": "Martin CAD 2026 mineral archive label conflict",
+      "file_path": "src/content/posts/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.mdx",
+      "source_public_path": "/assets/articles/hero/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave204-creative-sources/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label-hero-base.png",
+        "artifacts/mrx1000-wave204-creative-sources/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T13:18:00.097Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.webp",
+        "alt": "Two contrasting evidence sleeves and a magnifier sit beside the exact Martin CAD archive conflict title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "7b68eb5f13fcb30dfdedf0ebc3d198d7bb4ca8b26b066ad44d91d2195412c2d1",
+        "perceptual_hash": "0000000001111111000000000111111100000000011111110000000000001111000000000000111101000000000011110110000000001111010100000000111100000000000111110000000000011111000000000001111100000000000111110000000000011111000000000010111100000000001110110000000000011111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+          "actual": "Martin CAD 2026\nMineral Archive:\nCertified Link vs\nPreliminary PDF Label",
+          "normalized_expected": "martin cad 2026 mineral archive certified link vs preliminary pdf label",
+          "normalized_actual": "martin cad 2026 mineral archive certified link vs preliminary pdf label",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/martin-cad-2026-mineral-archive-label-conflict.webp",
+        "alt": "Two blank source cards feed a conflict log above the exact Martin CAD 2026 mineral archive label conflict phrase.",
+        "rendered_text": "Martin CAD 2026 mineral archive label conflict",
+        "visual_variant": "wave204-distinct-generated-low-oblique-evidence-sleeves-magnifier-hero-and-top-down-source-cards-conflict-log",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "b330ee1ed4fc43fe75de1711e0f71909f09cfb884163f1d37aebcc99930253c1",
+        "perceptual_hash": "1111111111111111100001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000001111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD 2026 mineral archive label conflict",
+          "actual": "Martin CAD 2026 mineral archive\nlabel conflict",
+          "normalized_expected": "martin cad 2026 mineral archive label conflict",
+          "normalized_actual": "martin cad 2026 mineral archive label conflict",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
