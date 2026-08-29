@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T09:36:29Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T09:59:00Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -585,13 +585,16 @@
     "wave194_selection_decision_sha256": "fb477ccf3b967d4803d53a1e558d674bb705eba9eb639c21c63512aa01b9c1cf",
     "wave195_selection_decision_id": "MRX1000-W195-SELECT-2026-08-29",
     "wave195_selection_decision_path": "docs/governance/mrx1000-wave195-selection-decision-2026-08-29.md",
-    "wave195_selection_decision_sha256": "00076aff9ce2f42323229cb6ca49f1a1fe466ef1621bce8ceeb90da596f82086"
+    "wave195_selection_decision_sha256": "00076aff9ce2f42323229cb6ca49f1a1fe466ef1621bce8ceeb90da596f82086",
+    "wave196_selection_decision_id": "MRX1000-W196-SELECT-2026-08-29",
+    "wave196_selection_decision_path": "docs/governance/mrx1000-wave196-selection-decision-2026-08-29.md",
+    "wave196_selection_decision_sha256": "b4d33bd9e3574aa7905230a43c7022dd7685c87a86ada3587070727db826250e"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "96b28b33c9f5ef7c92fcfb312722f14c9bee6a0bcda76d26a977a115e5f224a6",
-    "canonical_ledger_generated_at": "2026-07-20T01:44:18.510Z",
+    "canonical_ledger_sha256": "287c4348ef9e5004983128e67a607050c9583cb37c3b9ebb5edcd8e2c0b99c6b",
+    "canonical_ledger_generated_at": "2026-07-20T08:37:02.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -605,11 +608,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 266,
+    "prior_verified_article_count": 267,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 267,
-    "exact_admitted_slate_sha256": "9e8bb342828c640bcecadfda44cd9097c29508b461875a39cd23535f3feab8b7"
+    "exact_admitted_count": 268,
+    "exact_admitted_slate_sha256": "5a7265158214f12672ba7fdd7cfacf949fc0adde75a7b5f5890b50bedb3e2466"
   },
   "articles": [
     {
@@ -9700,10 +9703,45 @@
       "inline_path": "/assets/articles/inline/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk/karnes-cad-2025-2026-reappraisal-schedule.webp",
       "inline_asset_sha256": "1dc64c48e89891837b34799c7638cac6d8c4b4d4fcc4a5cfc13dfba925a20670",
       "inline_rendered_text": "Karnes CAD 2025-2026 reappraisal schedule"
+    },
+    {
+      "selection_rank": 268,
+      "program_row_id": "MRX1000-0799",
+      "source_shortlist_program_row_id": "MRX1000-0799",
+      "slug": "karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check",
+      "title": "Karnes CAD 2024 Mass Appraisal Report: Page 20 County-Name Source Check",
+      "source_shortlist_title": "Karnes CAD 2024 Mass Appraisal Report: Page 20 County-Name Source Check",
+      "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "26fd6dbea53286b0fe800a3e149e21b0641db73ce1224b99eacc2d8286dec6c9",
+      "repo_path": "src/content/posts/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.mdx",
+      "repo_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+      "article_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+      "hero_path": "/assets/articles/hero/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.webp",
+      "hero_sha256": "06dd26bbb0e770ee67fbe83738be18439488b51890e1ba8f6d1d3e0ac1257044",
+      "hero_asset_sha256": "06dd26bbb0e770ee67fbe83738be18439488b51890e1ba8f6d1d3e0ac1257044",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1165,
+      "risk_citation_remediation": [
+        "The original generic Karnes County valuation market-update identity is rejected because existing published and program articles already own broad county-value and valuation-factor intent.",
+        "The replacement owns only the official publisher route, exact 31-page PDF controls, cover identity, physical/PDF page-20 Cost Schedules phrase, and unresolved county-name comparison.",
+        "Publisher provenance and observed wording are kept separate from substantive correctness and local applicability; neither label is corrected or treated as intended.",
+        "No property, account, methodology, appraisal, tax, ownership, title, acreage, production, royalty, mineral-rights value, sale value, offer, transaction, or legal conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, rendered-page proof, claim-adjacent official citations, concise comparison table, supported FAQs, semantic links, visible/schema entity parity, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/karnes-cad-2024-mass-appraisal-report-page-20.webp",
+      "inline_asset_sha256": "a38ff02cc7b7c550356416db90d61c3c2007a5515c83cb4150d005ac1168aabb",
+      "inline_rendered_text": "Karnes CAD 2024 mass appraisal report page 20"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 267,
+    "admitted_article_count": 268,
     "selection_ranks": [
       1,
       2,
@@ -9971,7 +10009,8 @@
       264,
       265,
       266,
-      267
+      267,
+      268
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10030,9 +10069,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "9ef926ce1e702c499521d48eb31323ef490aa8b7e71b61fcca4c5ecf864882aa",
-    "public_article_count": 275,
-    "batch_article_count": 267,
+    "retrofit_manifest_sha256": "f6ca6e86a90f0e0f535930fe5856d0e315c1762d7419cf623d4f6bf5279ff54b",
+    "public_article_count": 276,
+    "batch_article_count": 268,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
