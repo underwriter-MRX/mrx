@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T14:29:09Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T17:38:14Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -618,13 +618,16 @@
     "wave205_selection_decision_sha256": "3013c1a6b51ab671cb3088f01a34bdff9403b6cd1750b0aad44ce36e40029f96",
     "wave206_selection_decision_id": "MRX1000-W206-SELECT-2026-08-29",
     "wave206_selection_decision_path": "docs/governance/mrx1000-wave206-selection-decision-2026-08-29.md",
-    "wave206_selection_decision_sha256": "ff0710d7efbbcb7f5784c50152e57d048a0b6c69049fc063eaeac342ba48620b"
+    "wave206_selection_decision_sha256": "ff0710d7efbbcb7f5784c50152e57d048a0b6c69049fc063eaeac342ba48620b",
+    "wave207_selection_decision_id": "MRX1000-W207-SELECT-2026-08-29",
+    "wave207_selection_decision_path": "docs/governance/mrx1000-wave207-selection-decision-2026-08-29.md",
+    "wave207_selection_decision_sha256": "c4eeeacd08e416649e88ef740421dd1469d82424c31f9e24591be5be9fb3e14a"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "3ce75131f6d11519e22e70d75360ef54db58ac52d85600488b223ed7170de6fc",
-    "canonical_ledger_generated_at": "2026-07-20T00:44:30.385Z",
+    "canonical_ledger_sha256": "0b0bdc4c30fe846a7bd9faf59b02e11869b08cdba1250fdf0e02409505162298",
+    "canonical_ledger_generated_at": "2026-07-20T17:28:45.320Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -638,11 +641,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 277,
+    "prior_verified_article_count": 278,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 278,
-    "exact_admitted_slate_sha256": "18ec0a32870a25a589e88e454258a1b1d2260614d29777b13239147eb24603a5"
+    "exact_admitted_count": 279,
+    "exact_admitted_slate_sha256": "ec19be3f86668d4b3571727fe80ae5a8c5a1fc71f34ca5339161590ce6fd5ef3"
   },
   "articles": [
     {
@@ -10119,10 +10122,45 @@
       "inline_path": "/assets/articles/inline/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/martin-cad-mineral-interests-not-minerals-in-place.webp",
       "inline_asset_sha256": "867d4c26953955ee4dfb024e8d88f2fb2e47aaccc7080c0acdd37efbc7c67bad",
       "inline_rendered_text": "Martin CAD mineral interests not minerals in place"
+    },
+    {
+      "selection_rank": 279,
+      "program_row_id": "MRX1000-0822",
+      "source_shortlist_program_row_id": "MRX1000-0822",
+      "slug": "martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan",
+      "title": "Martin CAD 2025-26 Reappraisal Plan: Mineral Work and the Separate P&A Plan",
+      "source_shortlist_title": "Martin CAD 2025-26 Reappraisal Plan: Mineral Work and the Separate P&A Plan",
+      "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "68eb1f72189abce68247761238b377d283af87984c92ff9f45d3ce466bddef42",
+      "repo_path": "src/content/posts/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan.mdx",
+      "repo_sha256": "550b498d8599709060b5706786c8f29094a8f050ee0bcff9f14d3a4c546a242c",
+      "article_sha256": "550b498d8599709060b5706786c8f29094a8f050ee0bcff9f14d3a4c546a242c",
+      "hero_path": "/assets/articles/hero/martin-cad-2025-26-reappraisal-plan-mineral-work-and-the-separate-p-and-a-plan.webp",
+      "hero_sha256": "c106e62c555278c7d506da29b006d841b930e9fdd4c16f938b0edab0654f1ae1",
+      "hero_asset_sha256": "c106e62c555278c7d506da29b006d841b930e9fdd4c16f938b0edab0654f1ae1",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2029,
+      "risk_citation_remediation": [
+        "The original Martin County value and risk-checklist identity is rejected because it repeats the generic county valuation factory and has 0.7143 nearest-template similarity.",
+        "The replacement owns only the official publisher’s two-plan listing, exact general-plan controls, five manual page renders, and the page-15 source-attributed handoff to a separate Pritchard & Abbott plan on file.",
+        "The public MIUP PDF and the general plan’s unspecified on-file contractor plan remain separate observations; the article does not silently equate them without explicit issuer confirmation.",
+        "The plan wording is not independently validated or interpreted and is not treated as current law, contractor performance, plan completeness, title, ownership, a reader-specific appraisal, tax result, sale value, offer, production, royalty, or legal advice.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/martin-cad-separate-mineral-reappraisal-plan.webp",
+      "inline_asset_sha256": "b9f566a6c54f334367bfd130a8aa21736fbf0b08264ac4e6e9e3845544af2a67",
+      "inline_rendered_text": "Martin CAD separate mineral reappraisal plan"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 278,
+    "admitted_article_count": 279,
     "selection_ranks": [
       1,
       2,
@@ -10401,7 +10439,8 @@
       275,
       276,
       277,
-      278
+      278,
+      279
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10460,9 +10499,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "4190dd5427acb130a63f6ff7148e89a19eb10e08dd737225d35de114e917cee6",
-    "public_article_count": 286,
-    "batch_article_count": 278,
+    "retrofit_manifest_sha256": "d7a46ea9748e968147da5eff04e60258200142fbae953142d3390edb0babe1c0",
+    "public_article_count": 287,
+    "batch_article_count": 279,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
