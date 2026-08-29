@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T02:30:07Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T02:47:20Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -531,13 +531,16 @@
     "wave176_selection_decision_sha256": "bf46b7577e50d506c965f05757b42b3c9c4c38ca61912398b0b8b5666b1b8b7a",
     "wave177_selection_decision_id": "MRX1000-W177-SELECT-2026-08-28",
     "wave177_selection_decision_path": "docs/governance/mrx1000-wave177-selection-decision-2026-08-28.md",
-    "wave177_selection_decision_sha256": "33a6b167409d2f2d1082d47690c1e3927b5d5c53386120a113c6ab0fc22a787c"
+    "wave177_selection_decision_sha256": "33a6b167409d2f2d1082d47690c1e3927b5d5c53386120a113c6ab0fc22a787c",
+    "wave178_selection_decision_id": "MRX1000-W178-SELECT-2026-08-28",
+    "wave178_selection_decision_path": "docs/governance/mrx1000-wave178-selection-decision-2026-08-28.md",
+    "wave178_selection_decision_sha256": "3325e06d04501c123a0bcc22eb5e8898ebe9d625a3346d3878c3c5cacb854990"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "4ad6b5f37222de752234dd33a0027cb7d52d99fc60f6d3591621d8debce5d1d5",
-    "canonical_ledger_generated_at": "2026-07-20T10:00:01.909Z",
+    "canonical_ledger_sha256": "4bc37ea5c61ebb9661bfa355371913619caab7ed2ecf6e03af15b507e82c347c",
+    "canonical_ledger_generated_at": "2026-07-20T17:29:48.014Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -551,11 +554,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 248,
+    "prior_verified_article_count": 249,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 249,
-    "exact_admitted_slate_sha256": "d55cd89520f7a6549487e5b1ad05ccbc426d74bcd536f1f4a8d9e22103e76453"
+    "exact_admitted_count": 250,
+    "exact_admitted_slate_sha256": "75ab436a5e05a7f3edea906bd31038ee7b97896a0965254f0f016282b3dd1dd4"
   },
   "articles": [
     {
@@ -8969,10 +8972,50 @@
       "inline_path": "/assets/articles/inline/ector-cad-2026-mineral-appraisal-parameters-source-index/ector-cad-2026-mineral-appraisal-parameters.webp",
       "inline_asset_sha256": "d446cdf27a855c969015760c785482c2aaac72aa92597e54905c77c2fb09cec2",
       "inline_rendered_text": "Ector CAD 2026 mineral appraisal parameters"
+    },
+    {
+      "selection_rank": 250,
+      "program_row_id": "MRX1000-0777",
+      "source_shortlist_program_row_id": "MRX1000-0777",
+      "slug": "ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk",
+      "title": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+      "source_shortlist_title": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "4b31dbac3c18871488ebdca16d465b2cb0baac27e1fada1715c21f959dbe712e",
+      "repo_path": "src/content/posts/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.mdx",
+      "repo_sha256": "56f1ee465d270c8750a1e7a67705848d6d71e8a35554852096ac99a107ffc19b",
+      "article_sha256": "56f1ee465d270c8750a1e7a67705848d6d71e8a35554852096ac99a107ffc19b",
+      "hero_path": "/assets/articles/hero/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.webp",
+      "hero_sha256": "65cfa7e48ecdb4a34d9874d414ba072e92d096e8cc866a7334a366ebe745e2a4",
+      "hero_asset_sha256": "65cfa7e48ecdb4a34d9874d414ba072e92d096e8cc866a7334a366ebe745e2a4",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1602,
+      "risk_citation_remediation": [
+        "The original Ector County mineral-rights value guide identity for MRX1000-0777 is rejected because adjacent Ector value rows and the existing valuation corpus repeat the same county-template job.",
+        "The replacement owns one distinct information-gain job: identify the official Ector CAD publisher relationship and exact 45-page 2026 Mass Appraisal Report, then map its physical-page mineral-section boundary.",
+        "The exact 1,192,966-byte PDF, SHA-256, HTTP Last-Modified field, issuer, title, year, page count, physical page 10 locator, and physical pages 42 through 45 remain tied to one 2026-08-28 retrieval.",
+        "Article 249 remains the canonical owner of the separate 60-page Mineral Appraisal Parameters PDF and printed parameter pages; Article 250 does not merge or apply that source.",
+        "No property record, owner, person, name, address, account, lease, well, legal description, acreage, ownership, title, appraisal notice, tax amount, private data, or transaction fact is opened, reproduced, searched, matched, characterized, or inferred.",
+        "No staff name or professional identifier displayed on physical page 45 is reproduced; only the staff-assistance section role and page boundary are preserved.",
+        "No displayed value, price, rate, factor, method, schedule, formula, table, example, or count is calculated, normalized, benchmarked, applied, recommended, or converted into a property-specific result.",
+        "District mass-appraisal scope remains separate from MRX fair value, market-offer valuation, investment analysis, offer quality, sale price, and owner decisions.",
+        "The information-gain and AI-citation factory contract is applied through direct answer first, claim-adjacent official citations, exact entity/document/page/route/retrieval provenance, useful visible FAQs, semantic internal links, visible/schema parity, and separation of execution proof from later performance proof.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/ector-cad-2026-mineral-section.webp",
+      "inline_asset_sha256": "4106b51351110ed4a311c5027c140b1554b0ce63b55aa05dad7cea3914959a66",
+      "inline_rendered_text": "Ector CAD 2026 mineral section"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 249,
+    "admitted_article_count": 250,
     "selection_ranks": [
       1,
       2,
@@ -9222,7 +9265,8 @@
       246,
       247,
       248,
-      249
+      249,
+      250
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9281,9 +9325,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "85c5995f1a20142bc6aff78f0912d63deec60b76c2aea77e170ced868d1f7588",
-    "public_article_count": 257,
-    "batch_article_count": 249,
+    "retrofit_manifest_sha256": "d9568dc15c57d1328406bc8fa9d1944b1ec6f124942c8aed7a71eb25d9211e18",
+    "public_article_count": 258,
+    "batch_article_count": 250,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

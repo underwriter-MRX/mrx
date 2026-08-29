@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T02:30:01Z",
+  "generated_at_utc": "2026-08-29T02:47:13Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 257,
-    "asset_count": 514,
-    "unique_source_art_count": 257,
-    "unique_hero_sha256_count": 257,
-    "unique_inline_sha256_count": 257,
-    "distinct_article_pair_count": 257,
-    "hero_ocr_pass_count": 257,
-    "inline_ocr_pass_count": 257,
-    "exact_filename_identity_count": 257
+    "article_count": 258,
+    "asset_count": 516,
+    "unique_source_art_count": 258,
+    "unique_hero_sha256_count": 258,
+    "unique_inline_sha256_count": 258,
+    "distinct_article_pair_count": 258,
+    "hero_ocr_pass_count": 258,
+    "inline_ocr_pass_count": 258,
+    "exact_filename_identity_count": 258
   },
   "contact_sheets": {
     "hero": [
@@ -2278,6 +2278,56 @@
           "actual": "eagle ford shale\nhow it affects\nmineral rights\nvalues in south\ntexas",
           "normalized_expected": "eagle ford shale how it affects mineral rights values in south texas",
           "normalized_actual": "eagle ford shale how it affects mineral rights values in south texas",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk",
+      "title": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+      "keyword": "Ector CAD 2026 mineral section",
+      "file_path": "src/content/posts/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.mdx",
+      "source_public_path": "/assets/articles/hero/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave178-creative-sources/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk-hero-base.png",
+        "artifacts/mrx1000-wave178-creative-sources/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T02:43:44.931Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.webp",
+        "alt": "An upright report folio and four page dividers appear beside the exact Ector CAD mass-report crosswalk title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "65cfa7e48ecdb4a34d9874d414ba072e92d096e8cc866a7334a366ebe745e2a4",
+        "perceptual_hash": "0000000000000000000000000000110000000000000000000111000000000000011100000000111011111000011111101111000000011110111100000001110000000000000111000000000000011100000000000001110000000000011111000000000001111100000000001111100000000000111111110000000000011111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+          "actual": "Ector CAD 2026\nMass Appraisal Report\nMineral Section\nPage Crosswalk",
+          "normalized_expected": "ector cad 2026 mass appraisal report mineral section page crosswalk",
+          "normalized_actual": "ector cad 2026 mass appraisal report mineral section page crosswalk",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/ector-cad-2026-mineral-section.webp",
+        "alt": "Four overhead page cards form a crosswalk above the exact Ector CAD mineral-section keyword.",
+        "rendered_text": "Ector CAD 2026 mineral section",
+        "visual_variant": "wave178-distinct-generated-eye-level-report-divider-archive-and-overhead-four-card-crosswalk",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "4106b51351110ed4a311c5027c140b1554b0ce63b55aa05dad7cea3914959a66",
+        "perceptual_hash": "1111111000000111111111100000011111111110000001111111111110000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 mineral section",
+          "actual": "Ector CAD 2026\nmineral section",
+          "normalized_expected": "ector cad 2026 mineral section",
+          "normalized_actual": "ector cad 2026 mineral section",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
