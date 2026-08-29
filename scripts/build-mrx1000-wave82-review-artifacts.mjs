@@ -113,6 +113,7 @@ async function verifySource({ label, url }) {
     );
   const allowed =
     contentType.includes('text/html') ||
+    contentType.includes('application/json') ||
     (pdfNamedSource &&
       (contentType.includes('application/pdf') || contentType.includes('octet-stream'))) ||
     (archiveNamedSource &&

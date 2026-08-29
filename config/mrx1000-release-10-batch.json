@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T08:14:31Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T08:40:56Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -573,13 +573,16 @@
     "wave190_selection_decision_sha256": "411861cc230c885a24c966927fe2c9400c3fbe509c99b87d26d0826c1921ad32",
     "wave191_selection_decision_id": "MRX1000-W191-SELECT-2026-08-29",
     "wave191_selection_decision_path": "docs/governance/mrx1000-wave191-selection-decision-2026-08-29.md",
-    "wave191_selection_decision_sha256": "3a3b5e68a7e510ceac5b053a77eb94115f307c1bb145cd902f595f7cc5af9834"
+    "wave191_selection_decision_sha256": "3a3b5e68a7e510ceac5b053a77eb94115f307c1bb145cd902f595f7cc5af9834",
+    "wave192_selection_decision_id": "MRX1000-W192-SELECT-2026-08-29",
+    "wave192_selection_decision_path": "docs/governance/mrx1000-wave192-selection-decision-2026-08-29.md",
+    "wave192_selection_decision_sha256": "687189fa66f5b6378812ee52021cdf6a055b76d4dff14617ea2b8d57312d803b"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "6970f433403ce884f85b6661cb331abaceb88fa47ebf59c2ee1acc75c02c9ca9",
-    "canonical_ledger_generated_at": "2026-07-20T08:20:30.403Z",
+    "canonical_ledger_sha256": "b8da088ab6afa6bc06c3b3ae66cc96477ae8ec6f0799bd4f641269f78d01d534",
+    "canonical_ledger_generated_at": "2026-07-20T04:09:04.937Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -593,11 +596,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 262,
+    "prior_verified_article_count": 263,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 263,
-    "exact_admitted_slate_sha256": "1b2442e3eed75c7e403259dc69bcbe9eb47a67bae22f11808708bff67659bb13"
+    "exact_admitted_count": 264,
+    "exact_admitted_slate_sha256": "7b4d33a1edda200e48271afde7e2d73516c6667d84d2ddd774ef50b9629aa786"
   },
   "articles": [
     {
@@ -9546,10 +9549,47 @@
       "inline_path": "/assets/articles/inline/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/howard-cad-2025-2026-mineral-property-valuation.webp",
       "inline_asset_sha256": "ee16aa32f009735dd9bbd4177175fa8054a4c1899796a32ffd3a4eebd847dae1",
       "inline_rendered_text": "Howard CAD 2025-2026 mineral property valuation"
+    },
+    {
+      "selection_rank": 264,
+      "program_row_id": "MRX1000-0795",
+      "source_shortlist_program_row_id": "MRX1000-0795",
+      "slug": "howard-cad-open-records-request-form-mineral-record-field-inventory",
+      "title": "Howard CAD Open Records Request Form: Mineral-Record Field Inventory",
+      "source_shortlist_title": "Howard CAD Open Records Request Form: Mineral-Record Field Inventory",
+      "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "f805fe8f49ffca75bddae785d086b835cce9720eda9ae266cf866724435e387e",
+      "repo_path": "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+      "repo_sha256": "8c867a54f2224b0f2aba6d9f47c2c78e53af04e3a3c89e40a3f955f0728cb3a5",
+      "article_sha256": "8c867a54f2224b0f2aba6d9f47c2c78e53af04e3a3c89e40a3f955f0728cb3a5",
+      "hero_path": "/assets/articles/hero/howard-cad-open-records-request-form-mineral-record-field-inventory.webp",
+      "hero_sha256": "ffe5c78a22d963698259d5fced16c836fa351b33bfb9af6e14360fe29a8395a7",
+      "hero_asset_sha256": "ffe5c78a22d963698259d5fced16c836fa351b33bfb9af6e14360fe29a8395a7",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1356,
+      "risk_citation_remediation": [
+        "The original Howard County mineral-rights value risk-checklist identity is rejected because it overlaps the current Howard and valuation corpus without a defensible evidence delta.",
+        "The replacement owns one distinct information-gain task: inventory the official request-page fields and delivery labels, preserve public-page and REST identity controls, separate personal data and request scope, and supply a blank no-submit worksheet.",
+        "No real name, phone, address, email, signature, property address, property ID, account, completed form, submission, contact, or district response is collected, displayed, generated, or transmitted.",
+        "The visible page, REST record, district contact page, and Texas Attorney General context remain separate evidence roles. The REST modified timestamp is not presented as a visible publication date.",
+        "The article does not decide record existence, custody, public status, responsiveness, completeness, confidentiality, exemptions, cost, timing, agency duty, property facts, appraisal, tax, title, offer, sale value, or legal effect.",
+        "The current information-gain and answer-citation contract is applied through a direct answer, exact source controls, source-role separation, field-classification table, no-submit worksheet, explicit evidence stops, supported FAQs, semantic internal links, and visible/schema entity parity.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/howard-cad-open-records-request-form-mineral-record-field-inventory.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/howard-cad-open-records-request-form-mineral-record-field-inventory/howard-cad-mineral-records-request-form.webp",
+      "inline_asset_sha256": "405ecf9858428bb663d96548543721b56b06eea48e4d2e246714b0f423bd2220",
+      "inline_rendered_text": "Howard CAD mineral records request form"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 263,
+    "admitted_article_count": 264,
     "selection_ranks": [
       1,
       2,
@@ -9813,7 +9853,8 @@
       260,
       261,
       262,
-      263
+      263,
+      264
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9872,9 +9913,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "839f8a30a87927f5f212f7f84f0b51e3f1317fcd6faadff42cee5386b8955318",
-    "public_article_count": 271,
-    "batch_article_count": 263,
+    "retrofit_manifest_sha256": "eea55df03d9f87c27d98553ce0f460d731bff406d2250e69718cda543d4942e6",
+    "public_article_count": 272,
+    "batch_article_count": 264,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
