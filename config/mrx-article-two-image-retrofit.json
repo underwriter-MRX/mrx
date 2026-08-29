@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T04:32:38Z",
+  "generated_at_utc": "2026-08-29T05:43:50Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 263,
-    "asset_count": 526,
-    "unique_source_art_count": 263,
-    "unique_hero_sha256_count": 263,
-    "unique_inline_sha256_count": 263,
-    "distinct_article_pair_count": 263,
-    "hero_ocr_pass_count": 263,
-    "inline_ocr_pass_count": 263,
-    "exact_filename_identity_count": 263
+    "article_count": 265,
+    "asset_count": 530,
+    "unique_source_art_count": 265,
+    "unique_hero_sha256_count": 265,
+    "unique_inline_sha256_count": 265,
+    "distinct_article_pair_count": 265,
+    "hero_ocr_pass_count": 265,
+    "inline_ocr_pass_count": 265,
+    "exact_filename_identity_count": 265
   },
   "contact_sheets": {
     "hero": [
@@ -2928,6 +2928,106 @@
           "actual": "Free Mineral Rights Valuation Review",
           "normalized_expected": "free mineral rights valuation review",
           "normalized_actual": "free mineral rights valuation review",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator",
+      "title": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+      "keyword": "Glasscock CAD oil and gas reserves reappraisal plan",
+      "file_path": "src/content/posts/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.mdx",
+      "source_public_path": "/assets/articles/hero/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave185-creative-sources/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator-hero-base.png",
+        "artifacts/mrx1000-wave185-creative-sources/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T05:40:17.890Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.webp",
+        "alt": "A navy archival binder with eight blank tabs appears beside the exact Glasscock CAD reappraisal-plan page-locator title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "5b92f79dadacc088c5a18d47b4b8687b94e65d565ff6f0611f39e881ec2dba4e",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000001100000001000011110000000111101110000000011110111100000001111011000000001111100000000000111110000000000011101000000000001110100000000000111110000000000111111000000000001111100000000000000110000000000001111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+          "actual": "Glasscock CAD 2025-2026\nReappraisal Plan\nOil and Gas Reserves\nPage Locator",
+          "normalized_expected": "glasscock cad 2025 2026 reappraisal plan oil and gas reserves page locator",
+          "normalized_actual": "glasscock cad 2025 2026 reappraisal plan oil and gas reserves page locator",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/glasscock-cad-oil-and-gas-reserves-reappraisal-plan.webp",
+        "alt": "An overhead eight-segment page strip appears above the exact Glasscock CAD oil and gas reserves reappraisal plan phrase.",
+        "rendered_text": "Glasscock CAD oil and gas reserves reappraisal plan",
+        "visual_variant": "wave185-distinct-generated-three-quarter-archival-binder-and-overhead-page-boundary",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "69bd148d35381d71786219a053939f2c3335ecf4afe39deb40aa97eeddcc8660",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD oil and gas reserves reappraisal plan",
+          "actual": "Glasscock CAD oil and gas reserves\nreappraisal plan",
+          "normalized_expected": "glasscock cad oil and gas reserves reappraisal plan",
+          "normalized_actual": "glasscock cad oil and gas reserves reappraisal plan",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator",
+      "title": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
+      "keyword": "Glasscock CAD Category G mineral definition",
+      "file_path": "src/content/posts/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.mdx",
+      "source_public_path": "/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave184-creative-sources/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator-hero-base.png",
+        "artifacts/mrx1000-wave184-creative-sources/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T04:46:33.051Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp",
+        "alt": "A cream report stack and page marker appear beside the exact Glasscock CAD Category G page-locator title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "62194ee9dafa6fe75e58ac529137d95d2e6f3a9168c3671a167bbf4567857080",
+        "perceptual_hash": "0000000000000111000000000001111100000000001111110000000001111111000000000111111101111100011111110111000001111111011000000011111100000000001111110000000000111111000000000011110000000000000110010000000000010011000000000000001000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
+          "actual": "Glasscock CAD 2025\nAnnual Report Category G\nMineral Definition\nPage Locator",
+          "normalized_expected": "glasscock cad 2025 annual report category g mineral definition page locator",
+          "normalized_actual": "glasscock cad 2025 annual report category g mineral definition page locator",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/glasscock-cad-category-g-mineral-definition.webp",
+        "alt": "An overhead blank category table appears above the exact Glasscock CAD Category G mineral definition phrase.",
+        "rendered_text": "Glasscock CAD Category G mineral definition",
+        "visual_variant": "wave184-distinct-generated-three-quarter-report-stack-and-overhead-category-table",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "36e80794b546676c7bf71160fd2553cd98189592a1e0b68a2d5bb115e3b291f2",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD Category G mineral definition",
+          "actual": "Glasscock CAD Category G\nmineral definition",
+          "normalized_expected": "glasscock cad category g mineral definition",
+          "normalized_actual": "glasscock cad category g mineral definition",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

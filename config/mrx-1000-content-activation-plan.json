@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T02:18:15.621Z",
+  "generated_at": "2026-07-20T05:54:09.722Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "26fbb0f144b81350d58583f5b8942213bb533da536429bba216e517072bb8cfe",
+  "content_fingerprint_sha256": "4b356e6765d02c1d2bdf423fff255b4c57db672466ddb6437412016843b61270",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "30159e490e98b6bfef92c20fded881b2e6ebbcf40de1fc35dcc9cf577c14065a",
+    "canonical_ledger_fingerprint_sha256": "61fcb8a61d7429a9dfe525f1fc53f39ab70a2e0856e178f3ae8fdb0bd63abb75",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T02:18:15.621Z",
+    "canonical_ledger_generated_at": "2026-07-20T05:54:09.722Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 263,
+      "live_public_published_route": 265,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 689
+      "planning_only_inventory": 687
     }
   },
   "rows": [
@@ -47326,11 +47326,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0783",
-        "target_title": "Glasscock County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
+        "url": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -47373,15 +47373,15 @@
     },
     {
       "program_row_id": "MRX1000-0783",
-      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
+      "canonical_slug": "glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator",
+      "canonical_url": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -47389,11 +47389,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0784",
-        "target_title": "Glasscock County, Texas Mineral Rights Value: Risk Checklist In 2026",
-        "url": "/blog/glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+        "target_title": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+        "url": "/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -47403,7 +47403,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -47416,7 +47416,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -47430,21 +47430,21 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
     {
       "program_row_id": "MRX1000-0784",
-      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "canonical_title": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+      "canonical_slug": "glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator",
+      "canonical_url": "/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -47466,7 +47466,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -47479,7 +47479,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -47493,7 +47493,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -47577,132 +47577,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-0788",
-        "target_title": "Gonzales County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/gonzales-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-0788",
-      "canonical_title": "Gonzales County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "gonzales-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/gonzales-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "education",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
-        "target_program_row_id": "MRX1000-0789",
-        "target_title": "Gonzales County, Texas Mineral Rights Value: Risk Checklist In 2026",
-        "url": "/blog/gonzales-county-texas-mineral-rights-value-risk-checklist-in-2026/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-0789",
-      "canonical_title": "Gonzales County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "gonzales-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "/blog/gonzales-county-texas-mineral-rights-value-risk-checklist-in-2026/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-0790",
         "target_title": "Gonzales County, Texas Mineral Rights Value: Timeline In 2026",
         "url": "/blog/gonzales-county-texas-mineral-rights-value-timeline-in-2026/",
@@ -47718,7 +47592,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:education",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -47731,7 +47605,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:education",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -63075,12 +62949,12 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-0726",
-        "target_title": "Eagle Ford Shale and South Texas Mineral Rights",
-        "url": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+        "target_program_row_id": "MRX1000-1090",
+        "target_title": "Glasscock County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+        "url": "/blog/glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "live_public_published_route",
-        "target_route_live": true,
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -63104,6 +62978,132 @@
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
         "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1090",
+      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+      "canonical_slug": "glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners",
+      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "education",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-1091",
+        "target_title": "Glasscock County, Texas Mineral Rights Value: Risk Checklist In 2026",
+        "url": "/blog/glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1091",
+      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Risk Checklist In 2026",
+      "canonical_slug": "glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026",
+      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "local-buyer",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-0726",
+        "target_title": "Eagle Ford Shale and South Texas Mineral Rights",
+        "url": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:local-buyer",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
