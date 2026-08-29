@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T12:21:21Z",
+  "generated_at_utc": "2026-08-29T13:01:11Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 282,
-    "asset_count": 564,
-    "unique_source_art_count": 282,
-    "unique_hero_sha256_count": 282,
-    "unique_inline_sha256_count": 282,
-    "distinct_article_pair_count": 282,
-    "hero_ocr_pass_count": 282,
-    "inline_ocr_pass_count": 282,
-    "exact_filename_identity_count": 282
+    "article_count": 283,
+    "asset_count": 566,
+    "unique_source_art_count": 283,
+    "unique_hero_sha256_count": 283,
+    "unique_inline_sha256_count": 283,
+    "distinct_article_pair_count": 283,
+    "hero_ocr_pass_count": 283,
+    "inline_ocr_pass_count": 283,
+    "exact_filename_identity_count": 283
   },
   "contact_sheets": {
     "hero": [
@@ -6300,6 +6300,56 @@
           "actual": "Loving CAD 2026 mineral\nrecap PDF",
           "normalized_expected": "loving cad 2026 mineral recap pdf",
           "normalized_actual": "loving cad 2026 mineral recap pdf",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary",
+      "title": "Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary",
+      "keyword": "Loving CAD 2026 year-by-year appraisals PDF",
+      "file_path": "src/content/posts/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary.mdx",
+      "source_public_path": "/assets/articles/hero/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-and-file-boundary.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave203-creative-sources/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary-hero-base.png",
+        "artifacts/mrx1000-wave203-creative-sources/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T13:00:56.694Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-and-file-boundary.webp",
+        "alt": "A dark report volume and blank selection card sit beside the exact Loving CAD year-by-year PDF title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "d1c204b7acb837790bce704fcce34e83b05ce896dc48d6866d9624af911772e9",
+        "perceptual_hash": "0000000000000011000000000000001100000000000000110001000000000001011100000000000101111100000000011111100000000000011000000000000100000000000001110000000000001111000000000001111000000000110110010000000011111111000000001111111100000000111111010000000011111000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary",
+          "actual": "Loving CAD 2026\nYear-by-Year Appraisals PDF:\nSelection Page and\nFile Boundary",
+          "normalized_expected": "loving cad 2026 year by year appraisals pdf selection page and file boundary",
+          "normalized_actual": "loving cad 2026 year by year appraisals pdf selection page and file boundary",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/loving-cad-2026-year-by-year-appraisals-pdf.webp",
+        "alt": "A blank selection sheet and privacy divider sit above the exact Loving CAD year-by-year appraisals PDF phrase.",
+        "rendered_text": "Loving CAD 2026 year-by-year appraisals PDF",
+        "visual_variant": "wave203-distinct-generated-oblique-bound-volume-selection-card-hero-and-top-down-selection-sheet-privacy-boundary",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "d51f904a6b6106105e143a90b1b38a33df4831936345ae9a50022e8a944e77ab",
+        "perceptual_hash": "1111111011111111111111101111000111111110111100001111111011100000111111101110000011111110111000001111111011100001111111101110000111111110111000011111111011100001111111100110000100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 year-by-year appraisals PDF",
+          "actual": "Loving CAD 2026 year-by-year\nappraisals PDF",
+          "normalized_expected": "loving cad 2026 year by year appraisals pdf",
+          "normalized_actual": "loving cad 2026 year by year appraisals pdf",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

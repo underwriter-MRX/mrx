@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T12:32:04Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T13:01:45Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -606,13 +606,16 @@
     "wave201_selection_decision_sha256": "8fab83c873d9902886e53f95be0eff44315e70dc8d5b18284d7e3cb9c89b9e9b",
     "wave202_selection_decision_id": "MRX1000-W202-SELECT-2026-08-29",
     "wave202_selection_decision_path": "docs/governance/mrx1000-wave202-selection-decision-2026-08-29.md",
-    "wave202_selection_decision_sha256": "8dc062ab1d9fce22553dbcff5790dc1cc15cdb5cf20c738211831bc88140da4b"
+    "wave202_selection_decision_sha256": "8dc062ab1d9fce22553dbcff5790dc1cc15cdb5cf20c738211831bc88140da4b",
+    "wave203_selection_decision_id": "MRX1000-W203-SELECT-2026-08-29",
+    "wave203_selection_decision_path": "docs/governance/mrx1000-wave203-selection-decision-2026-08-29.md",
+    "wave203_selection_decision_sha256": "465d6965495d91b1df19450429319423696123f3cca1294654672ce073cc32a7"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "0f8dbc4c32df5b15ed438ff995b46fde77df7803b2634be7379989536bd5ec5e",
-    "canonical_ledger_generated_at": "2026-07-20T19:54:19.480Z",
+    "canonical_ledger_sha256": "e5785c89201fcdfbb63e43f05305b5fbb8f4d700839f44eef769c147c8c7a05e",
+    "canonical_ledger_generated_at": "2026-07-20T06:04:03.463Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -626,11 +629,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 273,
+    "prior_verified_article_count": 274,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 274,
-    "exact_admitted_slate_sha256": "1ca17d2a119cf27df5130535b947aa2bc4635b6811d5dd3a17006a3f456ed88d"
+    "exact_admitted_count": 275,
+    "exact_admitted_slate_sha256": "8d57a1ca61e14705c9658c0285aa9d8e991e6d57a5d3923d904acc0ce9b9a92b"
   },
   "articles": [
     {
@@ -9966,10 +9969,45 @@
       "inline_path": "/assets/articles/inline/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/loving-cad-2026-mineral-file-layout-pdf.webp",
       "inline_asset_sha256": "8474c22a67dcca2afa026012720a5bf736554570ae9bfa5ebe9e0d95e1f4dfc3",
       "inline_rendered_text": "Loving CAD 2026 mineral file layout PDF"
+    },
+    {
+      "selection_rank": 275,
+      "program_row_id": "MRX1000-0818",
+      "source_shortlist_program_row_id": "MRX1000-0818",
+      "slug": "loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary",
+      "title": "Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary",
+      "source_shortlist_title": "Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary",
+      "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "c32f1460f294282b19ce870952fc0bffb049a6b000ef370bc7d1aad745a1b4d7",
+      "repo_path": "src/content/posts/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary.mdx",
+      "repo_sha256": "d6835fdde2d2572565c4b6fe26c69cc2c3e460bcb0ed97badcb63e4f6ff02348",
+      "article_sha256": "d6835fdde2d2572565c4b6fe26c69cc2c3e460bcb0ed97badcb63e4f6ff02348",
+      "hero_path": "/assets/articles/hero/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-and-file-boundary.webp",
+      "hero_sha256": "d1c204b7acb837790bce704fcce34e83b05ce896dc48d6866d9624af911772e9",
+      "hero_asset_sha256": "d1c204b7acb837790bce704fcce34e83b05ce896dc48d6866d9624af911772e9",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1500,
+      "risk_citation_remediation": [
+        "The original broad Loving County value-timeline identity is rejected because it repeats a high-similarity county factory pattern and collides with the valuation corpus.",
+        "The replacement owns only the exact 6. YR X YR APPRAISALS.PDF identity, complete-file controls, PDF-reported page count and geometry, manually verified physical-page-1 selection controls, and safe file boundary.",
+        "Physical pages 2 through 4,264 remain outside the public content claim set and their record names, identifiers, monetary figures, production data, ownership, acreage, royalty, appraisal, tax, value, offer, transaction, and legal content are excluded.",
+        "PDF extraction and OCR remain non-validating; physical-page-1 manual render evidence controls public wording and the next page is used only to establish the fail-closed exclusion boundary.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/loving-cad-2026-year-by-year-appraisals-pdf.webp",
+      "inline_asset_sha256": "d51f904a6b6106105e143a90b1b38a33df4831936345ae9a50022e8a944e77ab",
+      "inline_rendered_text": "Loving CAD 2026 year-by-year appraisals PDF"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 274,
+    "admitted_article_count": 275,
     "selection_ranks": [
       1,
       2,
@@ -10244,7 +10282,8 @@
       271,
       272,
       273,
-      274
+      274,
+      275
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10303,9 +10342,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f1cd86fc105c21e66e65a74ca7acb0edcdb1583c80926f9779c541fdbdf3e979",
-    "public_article_count": 282,
-    "batch_article_count": 274,
+    "retrofit_manifest_sha256": "1eaf256886ce185ae91204ade20e63055adcf54b9dd1104f10d784ad418bf9e7",
+    "public_article_count": 283,
+    "batch_article_count": 275,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
