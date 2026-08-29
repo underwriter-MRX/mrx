@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T01:17:26Z",
+  "generated_at_utc": "2026-08-29T01:39:35Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 254,
-    "asset_count": 508,
-    "unique_source_art_count": 254,
-    "unique_hero_sha256_count": 254,
-    "unique_inline_sha256_count": 254,
-    "distinct_article_pair_count": 254,
-    "hero_ocr_pass_count": 254,
-    "inline_ocr_pass_count": 254,
-    "exact_filename_identity_count": 254
+    "article_count": 255,
+    "asset_count": 510,
+    "unique_source_art_count": 255,
+    "unique_hero_sha256_count": 255,
+    "unique_inline_sha256_count": 255,
+    "distinct_article_pair_count": 255,
+    "hero_ocr_pass_count": 255,
+    "inline_ocr_pass_count": 255,
+    "exact_filename_identity_count": 255
   },
   "contact_sheets": {
     "hero": [
@@ -2036,6 +2036,56 @@
           "actual": "Dimmit CAD 2025 mineral\nratio study",
           "normalized_expected": "dimmit cad 2025 mineral ratio study",
           "normalized_actual": "dimmit cad 2025 mineral ratio study",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory",
+      "title": "Dimmit CAD 2026 Certified Mineral Roll ZIP Archive Inventory",
+      "keyword": "Dimmit CAD 2026 certified mineral roll",
+      "file_path": "src/content/posts/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.mdx",
+      "source_public_path": "/assets/articles/hero/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave175-creative-sources/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory-hero-base.png",
+        "artifacts/mrx1000-wave175-creative-sources/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T01:36:46.835Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.webp",
+        "alt": "A sealed navy archive case and blank file tabs appear beside the exact Dimmit CAD 2026 mineral-roll archive title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "feb5a364c4071e0947772d19075281b3e2b537f670c6357ff13578f797420301",
+        "perceptual_hash": "0000000011111100000000000000011000000000000000100111000000011110011100000111111101110000011111111100000000111111111100000011111100000000011111100000000000000010000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000111100",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Dimmit CAD 2026 Certified Mineral Roll ZIP Archive Inventory",
+          "actual": "Dimmit CAD 2026\nCertified Mineral\nRoll ZIP\nArchive Inventory",
+          "normalized_expected": "dimmit cad 2026 certified mineral roll zip archive inventory",
+          "normalized_actual": "dimmit cad 2026 certified mineral roll zip archive inventory",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/dimmit-cad-2026-certified-mineral-roll.webp",
+        "alt": "Blank archive tiles and three empty outlines sit above the exact Dimmit CAD 2026 certified mineral roll keyword.",
+        "rendered_text": "Dimmit CAD 2026 certified mineral roll",
+        "visual_variant": "wave175-distinct-generated-three-quarter-archive-vault-and-overhead-thirteen-tile-central-directory-inventory",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "96073fc63fa57dad767f121b20a5709df834e357f0f8318d350508ac421ca504",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111110101001010111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Dimmit CAD 2026 certified mineral roll",
+          "actual": "Dimmit CAD 2026\ncertified mineral roll",
+          "normalized_expected": "dimmit cad 2026 certified mineral roll",
+          "normalized_actual": "dimmit cad 2026 certified mineral roll",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
