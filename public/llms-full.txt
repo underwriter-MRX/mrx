@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Travis](https://mineralrightsxchange.com/authors/travis/)
 - [Wade](https://mineralrightsxchange.com/authors/wade/)
 
-## Published article URLs (251)
+## Published article URLs (252)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Dimmit CAD 2025 Oil, Gas, Minerals Ratio Study Source Record](https://mineralrightsxchange.com/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/)
 - [DeWitt CAD 2025 Certified Mineral Appraisal Roll Download Locator](https://mineralrightsxchange.com/blog/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/)
 - [DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record](https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/)
 - [DeWitt CAD 2024 Oil, Gas, Minerals Ratio Study Source Record](https://mineralrightsxchange.com/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/)
