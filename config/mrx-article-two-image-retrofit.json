@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T13:52:02Z",
+  "generated_at_utc": "2026-08-29T14:20:36Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 285,
-    "asset_count": 570,
-    "unique_source_art_count": 285,
-    "unique_hero_sha256_count": 285,
-    "unique_inline_sha256_count": 285,
-    "distinct_article_pair_count": 285,
-    "hero_ocr_pass_count": 285,
-    "inline_ocr_pass_count": 285,
-    "exact_filename_identity_count": 285
+    "article_count": 286,
+    "asset_count": 572,
+    "unique_source_art_count": 286,
+    "unique_hero_sha256_count": 286,
+    "unique_inline_sha256_count": 286,
+    "distinct_article_pair_count": 286,
+    "hero_ocr_pass_count": 286,
+    "inline_ocr_pass_count": 286,
+    "exact_filename_identity_count": 286
   },
   "contact_sheets": {
     "hero": [
@@ -6396,6 +6396,56 @@
           "actual": "managing mineral interests estate\nplanning",
           "normalized_expected": "managing mineral interests estate planning",
           "normalized_actual": "managing mineral interests estate planning",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place",
+      "title": "Martin CAD 2025-26 MIUP Plan: Mineral Interests, Not Minerals in Place",
+      "keyword": "Martin CAD mineral interests not minerals in place",
+      "file_path": "src/content/posts/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.mdx",
+      "source_public_path": "/assets/articles/hero/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave206-creative-sources/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place-hero-base.png",
+        "artifacts/mrx1000-wave206-creative-sources/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T14:17:24.538Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.webp",
+        "alt": "A translucent interest frame sits above layered stone beside the exact Martin CAD MIUP plan title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "bb2a1aa90f55b5cb669ba1df3b6d7694ca07d1acbbe0e49c9fd463d862852d9f",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000111100000000000111110000000000011100000000000001111100000000000111100001111111000000000111111100000000011111110000000001111111100000000111111100000000011111110000000000111111000000000000000110000000000000111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD 2025-26 MIUP Plan: Mineral Interests, Not Minerals in Place",
+          "actual": "Martin CAD 2025-26\nMIUP Plan:\nMineral Interests, Not\nMinerals in Place",
+          "normalized_expected": "martin cad 2025 26 miup plan mineral interests not minerals in place",
+          "normalized_actual": "martin cad 2025 26 miup plan mineral interests not minerals in place",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/martin-cad-mineral-interests-not-minerals-in-place.webp",
+        "alt": "A top-down lens and evidence tabs sit above the exact Martin CAD mineral-interest boundary keyword.",
+        "rendered_text": "Martin CAD mineral interests not minerals in place",
+        "visual_variant": "wave206-distinct-generated-low-oblique-interest-frame-hero-and-top-down-lens-evidence-scene",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "867d4c26953955ee4dfb024e8d88f2fb2e47aaccc7080c0acdd37efbc7c67bad",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111111111001111111110000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD mineral interests not minerals in place",
+          "actual": "Martin CAD mineral interests\nnot minerals in place",
+          "normalized_expected": "martin cad mineral interests not minerals in place",
+          "normalized_actual": "martin cad mineral interests not minerals in place",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
