@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (284)
+## Published article URLs (285)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary](https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/)
 - [Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label](https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/)
 - [Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary](https://mineralrightsxchange.com/blog/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/)
 - [Loving CAD 2026 Mineral File Layout PDF: Eight-Page Position and EOF Map](https://mineralrightsxchange.com/blog/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/)

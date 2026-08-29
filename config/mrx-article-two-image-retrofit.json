@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T13:20:42Z",
+  "generated_at_utc": "2026-08-29T13:52:02Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 284,
-    "asset_count": 568,
-    "unique_source_art_count": 284,
-    "unique_hero_sha256_count": 284,
-    "unique_inline_sha256_count": 284,
-    "distinct_article_pair_count": 284,
-    "hero_ocr_pass_count": 284,
-    "inline_ocr_pass_count": 284,
-    "exact_filename_identity_count": 284
+    "article_count": 285,
+    "asset_count": 570,
+    "unique_source_art_count": 285,
+    "unique_hero_sha256_count": 285,
+    "unique_inline_sha256_count": 285,
+    "distinct_article_pair_count": 285,
+    "hero_ocr_pass_count": 285,
+    "inline_ocr_pass_count": 285,
+    "exact_filename_identity_count": 285
   },
   "contact_sheets": {
     "hero": [
@@ -6396,6 +6396,56 @@
           "actual": "managing mineral interests estate\nplanning",
           "normalized_expected": "managing mineral interests estate planning",
           "normalized_actual": "managing mineral interests estate planning",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary",
+      "title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+      "keyword": "Martin CAD 2025 Category G parcel count",
+      "file_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+      "source_public_path": "/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave205-creative-sources/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary-hero-base.png",
+        "artifacts/mrx1000-wave205-creative-sources/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T13:51:54.976Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp",
+        "alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "d4def416c580a429e282f5d0cc801fc6197e7bb9ed019b9c04499d5ba2432f4b",
+        "perceptual_hash": "0000000001111111000000000111111100000000111111110000000011111111000000001111111100000000111111110000000011111111000000001111111100000000111111110000000011111111000000001111111000000000011111100000000001101100000000000111100100000000011100110000000001110111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+          "actual": "Martin CAD 2025\nCategory G Row:\nOil & Gas Parcel Count\nand Market-Value Boundary",
+          "normalized_expected": "martin cad 2025 category g row oil gas parcel count and market value boundary",
+          "normalized_actual": "martin cad 2025 category g row oil gas parcel count and market value boundary",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/martin-cad-2025-category-g-parcel-count.webp",
+        "alt": "A top-down evidence worksheet sits above the exact Martin CAD 2025 Category G parcel count phrase.",
+        "rendered_text": "Martin CAD 2025 Category G parcel count",
+        "visual_variant": "wave205-distinct-generated-low-oblique-report-table-hero-and-top-down-aggregate-row-evidence-worksheet",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "5ff3e49d701dd0550c6c74f11d45120baa851a9cc26a4f24a22c2be4a73aadd4",
+        "perceptual_hash": "0111111111111111001111111111111111111111111111111011111111111111001111111111111111111111111111110011111111111111011111111111111111111111111111111001111111111111100111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD 2025 Category G parcel count",
+          "actual": "Martin CAD 2025 Category G\nparcel count",
+          "normalized_expected": "martin cad 2025 category g parcel count",
+          "normalized_actual": "martin cad 2025 category g parcel count",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

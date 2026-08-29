@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T13:24:50Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T13:58:34Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -612,13 +612,16 @@
     "wave203_selection_decision_sha256": "465d6965495d91b1df19450429319423696123f3cca1294654672ce073cc32a7",
     "wave204_selection_decision_id": "MRX1000-W204-SELECT-2026-08-29",
     "wave204_selection_decision_path": "docs/governance/mrx1000-wave204-selection-decision-2026-08-29.md",
-    "wave204_selection_decision_sha256": "430e67089e288fb75cfd06c4e2b0d14e610b362e89cde4181689f3d66fba379f"
+    "wave204_selection_decision_sha256": "430e67089e288fb75cfd06c4e2b0d14e610b362e89cde4181689f3d66fba379f",
+    "wave205_selection_decision_id": "MRX1000-W205-SELECT-2026-08-29",
+    "wave205_selection_decision_path": "docs/governance/mrx1000-wave205-selection-decision-2026-08-29.md",
+    "wave205_selection_decision_sha256": "3013c1a6b51ab671cb3088f01a34bdff9403b6cd1750b0aad44ce36e40029f96"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "221c25b4017d685d3adc4fa91ff5563187c39a6589ca85f509d3d06f58263c20",
-    "canonical_ledger_generated_at": "2026-07-20T07:33:58.958Z",
+    "canonical_ledger_sha256": "c35e943eaa5107b390f313cda2b9507183f7fb3c0da6391974b52c11274f3aac",
+    "canonical_ledger_generated_at": "2026-07-20T09:35:45.720Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -632,11 +635,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 275,
+    "prior_verified_article_count": 276,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 276,
-    "exact_admitted_slate_sha256": "daced62dad47f0a95a86aa1a98df314810fea22bedce3acf24f1f2f0d1e2975a"
+    "exact_admitted_count": 277,
+    "exact_admitted_slate_sha256": "f5840e2f3b4e4238d55e04fddd543792c975aa750381bd89e6860ed3f0848963"
   },
   "articles": [
     {
@@ -10043,10 +10046,45 @@
       "inline_path": "/assets/articles/inline/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/martin-cad-2026-mineral-archive-label-conflict.webp",
       "inline_asset_sha256": "b330ee1ed4fc43fe75de1711e0f71909f09cfb884163f1d37aebcc99930253c1",
       "inline_rendered_text": "Martin CAD 2026 mineral archive label conflict"
+    },
+    {
+      "selection_rank": 277,
+      "program_row_id": "MRX1000-0820",
+      "source_shortlist_program_row_id": "MRX1000-0820",
+      "slug": "martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary",
+      "title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+      "source_shortlist_title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+      "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "9d97b307c6349c153aa9955cda5ef05d1f25462e9b0966de52fd22571593dfaf",
+      "repo_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+      "repo_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+      "article_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+      "hero_path": "/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp",
+      "hero_sha256": "d4def416c580a429e282f5d0cc801fc6197e7bb9ed019b9c04499d5ba2432f4b",
+      "hero_asset_sha256": "d4def416c580a429e282f5d0cc801fc6197e7bb9ed019b9c04499d5ba2432f4b",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1842,
+      "risk_citation_remediation": [
+        "The original Martin County mineral-rights-value guide identity is rejected because it is a generic county valuation factory pattern with a 0.6 same-cluster similarity and material collision risk.",
+        "The replacement owns only the official 2025 mass-appraisal-report link relationship, exact scanned PDF controls, manually verified physical pages 1 and 2, the Category G aggregate table row, and its use boundary.",
+        "The reported parcel count and market-value figure remain report-level property-type aggregates and are not treated as an owner count, interest count, reader property value, tax bill, sale value, offer, title, production, royalty, or legal or tax result.",
+        "Physical pages 3 through 6 remain outside the public claim set; PDF text extraction and OCR are non-validating because the source is image-only and manual renders control visible wording and figures.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/martin-cad-2025-category-g-parcel-count.webp",
+      "inline_asset_sha256": "5ff3e49d701dd0550c6c74f11d45120baa851a9cc26a4f24a22c2be4a73aadd4",
+      "inline_rendered_text": "Martin CAD 2025 Category G parcel count"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 276,
+    "admitted_article_count": 277,
     "selection_ranks": [
       1,
       2,
@@ -10323,7 +10361,8 @@
       273,
       274,
       275,
-      276
+      276,
+      277
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10382,9 +10421,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f55cc34eec9f74764a3e7db673282e8d11b516485a33e783126bf8a336112722",
-    "public_article_count": 284,
-    "batch_article_count": 276,
+    "retrofit_manifest_sha256": "662b6a3095d9d28b2518321ce6e9908351815dd06a8c33cbf1e3ba0c2a7ad6b0",
+    "public_article_count": 285,
+    "batch_article_count": 277,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
