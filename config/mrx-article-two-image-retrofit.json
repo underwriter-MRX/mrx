@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T06:35:14Z",
+  "generated_at_utc": "2026-08-29T06:57:09Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 267,
-    "asset_count": 534,
-    "unique_source_art_count": 267,
-    "unique_hero_sha256_count": 267,
-    "unique_inline_sha256_count": 267,
-    "distinct_article_pair_count": 267,
-    "hero_ocr_pass_count": 267,
-    "inline_ocr_pass_count": 267,
-    "exact_filename_identity_count": 267
+    "article_count": 268,
+    "asset_count": 536,
+    "unique_source_art_count": 268,
+    "unique_hero_sha256_count": 268,
+    "unique_inline_sha256_count": 268,
+    "distinct_article_pair_count": 268,
+    "hero_ocr_pass_count": 268,
+    "inline_ocr_pass_count": 268,
+    "exact_filename_identity_count": 268
   },
   "contact_sheets": {
     "hero": [
@@ -7314,6 +7314,56 @@
           "actual": "steps to take\nif royalty\nchecks are\ninconsistent a\nmineral owner's\nguide",
           "normalized_expected": "steps to take if royalty checks are inconsistent a mineral owner s guide",
           "normalized_actual": "steps to take if royalty checks are inconsistent a mineral owner s guide",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table",
+      "title": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+      "keyword": "Texas Comptroller mineral categories G1 G2 G3",
+      "file_path": "src/content/posts/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.mdx",
+      "source_public_path": "/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave188-creative-sources/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table-hero-base.png",
+        "artifacts/mrx1000-wave188-creative-sources/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T06:57:09.148Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp",
+        "alt": "Three symbolic category cards appear beside the exact Texas Comptroller mineral-classification boundary-table title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "d1d6eecf6e6908d83ad0858f6374ee675210a0f14343496326b361bc2b0b630a",
+        "perceptual_hash": "0000000000000000000000000110000000000000111000000000000011110000000100001111100001111000011110000111100001111100011100000111110000000000011111000000000000111100000000000011111100000000000111010000000000000111000000000100111100000000001011110000000000000111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+          "actual": "Texas Comptroller\nCategory G1, G2, and G3\nMineral Classification\nBoundary Table",
+          "normalized_expected": "texas comptroller category g1 g2 and g3 mineral classification boundary table",
+          "normalized_actual": "texas comptroller category g1 g2 and g3 mineral classification boundary table",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/texas-comptroller-mineral-categories-g1-g2-g3.webp",
+        "alt": "An overhead three-lane worksheet appears above the Texas Comptroller mineral categories G1 G2 G3 phrase.",
+        "rendered_text": "Texas Comptroller mineral categories G1 G2 G3",
+        "visual_variant": "wave188-distinct-generated-three-card-three-quarter-and-overhead-three-lane-classification",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "f97d4f1ae22d082e28f21f6f339da7a0da7fade14e12d5f26270758a9c5b713c",
+        "perceptual_hash": "0000011111111000101111111111110000111111111011100011111111101111001111111111111101111111111111110111111111111111011111111111111101111111111111110111111111111111111111111111110100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas Comptroller mineral categories G1 G2 G3",
+          "actual": "Texas Comptroller mineral\ncategories G1 G2 G3",
+          "normalized_expected": "texas comptroller mineral categories g1 g2 g3",
+          "normalized_actual": "texas comptroller mineral categories g1 g2 g3",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

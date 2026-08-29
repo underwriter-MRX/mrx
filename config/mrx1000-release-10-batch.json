@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T06:37:33Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T07:02:00Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -561,13 +561,16 @@
     "wave186_selection_decision_sha256": "5917e913cff8e000611fa28de49fc978d69948c497a90fea8df3471dca9bb446",
     "wave187_selection_decision_id": "MRX1000-W187-SELECT-2026-08-28",
     "wave187_selection_decision_path": "docs/governance/mrx1000-wave187-selection-decision-2026-08-28.md",
-    "wave187_selection_decision_sha256": "5613323703523d7f4255252dc8fc62920a38de7f68004e65aeb9772d5818c26f"
+    "wave187_selection_decision_sha256": "5613323703523d7f4255252dc8fc62920a38de7f68004e65aeb9772d5818c26f",
+    "wave188_selection_decision_id": "MRX1000-W188-SELECT-2026-08-28",
+    "wave188_selection_decision_path": "docs/governance/mrx1000-wave188-selection-decision-2026-08-28.md",
+    "wave188_selection_decision_sha256": "d6cf80924cddd6cc1e1a902051a46f256e4247e5bff2e26db48dcc9356ca7c32"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "ca719aaa699398af3ff2522403fb2d434c0f02ec3fb9f4793886940867e10bce",
-    "canonical_ledger_generated_at": "2026-07-20T11:50:02.103Z",
+    "canonical_ledger_sha256": "703d1e7ef7118558e55de8a1b44c6ab683ac868abc9bfca6466849cc98fe905b",
+    "canonical_ledger_generated_at": "2026-07-20T08:57:48.334Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -581,11 +584,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 258,
+    "prior_verified_article_count": 259,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 259,
-    "exact_admitted_slate_sha256": "a732a0694f56f58fb081055548025125a8f1ca480572f404163d7a0e100bf215"
+    "exact_admitted_count": 260,
+    "exact_admitted_slate_sha256": "e128e5353f5cd46af39bff900a1f39269fef7b54f3617f6657593b52b3ae2e41"
   },
   "articles": [
     {
@@ -9385,10 +9388,48 @@
       "inline_path": "/assets/articles/inline/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/gonzales-cad-mineral-appraisal-responsibility.webp",
       "inline_asset_sha256": "eeda5320dc2a1bb7dfd7e6d7753fc1ef0f10756e6b572e69e90d65922c1027ec",
       "inline_rendered_text": "Gonzales CAD mineral appraisal responsibility"
+    },
+    {
+      "selection_rank": 260,
+      "program_row_id": "MRX1000-0791",
+      "source_shortlist_program_row_id": "MRX1000-0791",
+      "slug": "texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table",
+      "title": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+      "source_shortlist_title": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "b6bc1c6d3ca6c75ede9ebe721e0c86ab3cad62f8018479a84dc030e93406d8fd",
+      "repo_path": "src/content/posts/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.mdx",
+      "repo_sha256": "d223c42b9b1682dd9872e520e98eefbf622d969febec08a0354ebae20d11013b",
+      "article_sha256": "d223c42b9b1682dd9872e520e98eefbf622d969febec08a0354ebae20d11013b",
+      "hero_path": "/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp",
+      "hero_sha256": "d1d6eecf6e6908d83ad0858f6374ee675210a0f14343496326b361bc2b0b630a",
+      "hero_asset_sha256": "d1d6eecf6e6908d83ad0858f6374ee675210a0f14343496326b361bc2b0b630a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1033,
+      "risk_citation_remediation": [
+        "The original statewide valuation identity is rejected because it overlaps the current valuation, factor, methodology, value, offer, and owner-decision corpus.",
+        "The replacement owns one distinct information-gain task: compare the current Texas Comptroller Category G1, G2, and G3 definitions and preserve the exact page and file controls.",
+        "The publications page, guide PDF, PVS page, and dated newsletter remain separate source objects with separate roles.",
+        "Printed page 20 and physical PDF page 23 are preserved as different locators.",
+        "No person, owner, account, property, parcel, lease, appraisal, tax amount, or private data is retrieved or reproduced.",
+        "Classification language is not interpreted as a property-specific appraisal, title or ownership finding, tax result, mineral-rights sale value, offer amount, transaction result, or legal effect.",
+        "The current information-gain and answer-citation contract is applied through direct answer first, claim-adjacent primary citations, exact entity/document/page/route/date provenance, useful visible FAQs, semantic internal links, visible/schema parity, and separation of created, admitted, published, indexed, ranking, cited, and converting states.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/texas-comptroller-mineral-categories-g1-g2-g3.webp",
+      "inline_asset_sha256": "f97d4f1ae22d082e28f21f6f339da7a0da7fade14e12d5f26270758a9c5b713c",
+      "inline_rendered_text": "Texas Comptroller mineral categories G1 G2 G3"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 259,
+    "admitted_article_count": 260,
     "selection_ranks": [
       1,
       2,
@@ -9648,7 +9689,8 @@
       256,
       257,
       258,
-      259
+      259,
+      260
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9707,9 +9749,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f5e72ebc178057616b29a9627f6a0f082f176fe9a24549ffbd8cff34c947ca52",
-    "public_article_count": 267,
-    "batch_article_count": 259,
+    "retrofit_manifest_sha256": "65389907c99e04fd71e4951b43168f6abc3aa38cd3c95afa834e40fd82f95d97",
+    "public_article_count": 268,
+    "batch_article_count": 260,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
