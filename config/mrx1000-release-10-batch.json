@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-28T19:59:16Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T00:13:33Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -510,13 +510,16 @@
     "wave169_selection_decision_sha256": "adeb4175e6dbc6cef00f8bab84267ceda57851ece3812625094db59b9454200b",
     "wave170_selection_decision_id": "MRX1000-W170-SELECT-2026-08-28",
     "wave170_selection_decision_path": "docs/governance/mrx1000-wave170-selection-decision-2026-08-28.md",
-    "wave170_selection_decision_sha256": "f8dad1915e11c6171d6ec60544c83059cce528bb8ae9e365ce1b1034b4599c8e"
+    "wave170_selection_decision_sha256": "f8dad1915e11c6171d6ec60544c83059cce528bb8ae9e365ce1b1034b4599c8e",
+    "wave171_selection_decision_id": "MRX1000-W171-SELECT-2026-08-28",
+    "wave171_selection_decision_path": "docs/governance/mrx1000-wave171-selection-decision-2026-08-28.md",
+    "wave171_selection_decision_sha256": "48ce63eb4805eb2ba45d6865275ffbfe0f5f5915f6a4436f85afb7af69aee3bd"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "34e9cfeffb1f77456cac46888ab0f31d80490975e31ec621e102c067e7cd3284",
-    "canonical_ledger_generated_at": "2026-07-20T01:26:19.166Z",
+    "canonical_ledger_sha256": "e20f2e2eb2e2239cc1faa109a3a9f35828e941dcbfdfbe0bfaf9cb5a70249e4e",
+    "canonical_ledger_generated_at": "2026-07-20T19:01:37.155Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -530,11 +533,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 241,
+    "prior_verified_article_count": 242,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 242,
-    "exact_admitted_slate_sha256": "88753041bb60a4c17ef5b47db0a822bc8fcb98442148aa502d15c26af9101de3"
+    "exact_admitted_count": 243,
+    "exact_admitted_slate_sha256": "2e7ab535b7e407126ff478a1364f7d0efaba2fdc65f48e93156af392802bc5c4"
   },
   "articles": [
     {
@@ -8676,10 +8679,49 @@
       "inline_path": "/assets/articles/inline/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/dewitt-cad-resolution-2024-01.webp",
       "inline_asset_sha256": "9fca6fed49d2d18d245fbd17c1d4357d112d85521c5a703549eaecb7979b8e17",
       "inline_rendered_text": "DeWitt CAD Resolution 2024-01"
+    },
+    {
+      "selection_rank": 243,
+      "program_row_id": "MRX1000-0770",
+      "source_shortlist_program_row_id": "MRX1000-0770",
+      "slug": "dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator",
+      "title": "DeWitt CAD 2025 Certified Mineral Appraisal Roll Download Locator",
+      "source_shortlist_title": "DeWitt CAD 2025 Certified Mineral Appraisal Roll Download Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "fb42a6f169bd96980960676c8c4ee5f4c80b7c093a0810a51d956103924f21f4",
+      "repo_path": "src/content/posts/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.mdx",
+      "repo_sha256": "48f4f3e1554330bd6cde15fcfa69223d87f7d09a3df9e993382194027776ed56",
+      "article_sha256": "48f4f3e1554330bd6cde15fcfa69223d87f7d09a3df9e993382194027776ed56",
+      "hero_path": "/assets/articles/hero/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.webp",
+      "hero_sha256": "b5288898939fa5f6960b6a229143c2e6c198d06055d7a2c0bb3f6e3f4e87bd93",
+      "hero_asset_sha256": "b5288898939fa5f6960b6a229143c2e6c198d06055d7a2c0bb3f6e3f4e87bd93",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1322,
+      "risk_citation_remediation": [
+        "The original generic DeWitt County valuation-timeline identity for MRX1000-0770 is rejected because it materially repeats live valuation, county-value, timeline, offer-review, sale, and owner-decision coverage.",
+        "The replacement owns only the current official DeWitt CAD publisher page, displayed 2025 Certified Mineral Appraisal Roll (Zip) label, exact routing target, retrieval date, source identity, limited official context, and controlled next step.",
+        "The direct ZIP address is described only as a publisher-displayed routing target. Complete archive retrieval and inspection were not established, so no archive byte count, hash, member, row, field, format, or content claim is admitted.",
+        "The public article does not reproduce or infer names, addresses, accounts, property identifiers, values, acreage, ownership, title, or personal data.",
+        "The article does not authenticate the page, route, archive, record, publisher, or property interest and does not infer authority, completeness, accuracy, appraisal correctness, tax, protest rights, legal effect, mineral value, offer quality, sale terms, or owner action.",
+        "The district policy, Comptroller publication index, and Texas statutes remain separate contextual objects and are not interpreted or applied to the DeWitt route, a property, or a person.",
+        "The DeWitt annual-report, MAP-review, ratio-study, and Resolution 2024-01 records retain separate ownership. The Culberson archive record concerns a different county and does not supply DeWitt archive evidence.",
+        "Any archive inspection, private-data review, property matching, legal interpretation, appraisal analysis, tax or protest guidance, ownership or title analysis, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and current AI Atom Brain/Search Atlas website SEO/AEO release gate; no numerical cap or owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/dewitt-cad-2025-certified-mineral-appraisal-roll.webp",
+      "inline_asset_sha256": "a443d7e24a65a39531fecbc71fc27f41beb653b365d2b885c19e5a56919bac1b",
+      "inline_rendered_text": "DeWitt CAD 2025 certified mineral appraisal roll"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 242,
+    "admitted_article_count": 243,
     "selection_ranks": [
       1,
       2,
@@ -8922,7 +8964,8 @@
       239,
       240,
       241,
-      242
+      242,
+      243
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -8981,9 +9024,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "38dd3c4b42554f71bdd77077d6d9eeee6ba46aa24e4437e0d461b3fd77b353a4",
-    "public_article_count": 250,
-    "batch_article_count": 242,
+    "retrofit_manifest_sha256": "9a54551aeb81cef9de60c271e6abc5de7c2cc78b89e6f3e898ef019fe9625a39",
+    "public_article_count": 251,
+    "batch_article_count": 243,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
