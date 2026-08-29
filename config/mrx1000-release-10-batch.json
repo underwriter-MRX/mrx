@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T10:54:13Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T11:15:04Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -594,13 +594,16 @@
     "wave197_selection_decision_sha256": "0aa625465b053cd81b17f76474624dd5aae05fa24fdd028e26876f6eae5c724a",
     "wave198_selection_decision_id": "MRX1000-W198-SELECT-2026-08-29",
     "wave198_selection_decision_path": "docs/governance/mrx1000-wave198-selection-decision-2026-08-29.md",
-    "wave198_selection_decision_sha256": "d720e21fd4d440e018754671857a66d416322f99f80999ac71d0480ca938e7c8"
+    "wave198_selection_decision_sha256": "d720e21fd4d440e018754671857a66d416322f99f80999ac71d0480ca938e7c8",
+    "wave199_selection_decision_id": "MRX1000-W199-SELECT-2026-08-29",
+    "wave199_selection_decision_path": "docs/governance/mrx1000-wave199-selection-decision-2026-08-29.md",
+    "wave199_selection_decision_sha256": "a27c6708a855be331fb5f7b9b8b7c0b9d5e8d87d01bdcab465dc849a72684a06"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "b9633e2c34f44e9e231a9a0fe890a1e131f77324f67f0f890cb6d839089427c6",
-    "canonical_ledger_generated_at": "2026-07-20T05:21:52.239Z",
+    "canonical_ledger_sha256": "576a716231bb13b411e543b43762915d88c653c558b20b0012fd068388abe66c",
+    "canonical_ledger_generated_at": "2026-07-20T05:40:29.840Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -614,11 +617,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 269,
+    "prior_verified_article_count": 270,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 270,
-    "exact_admitted_slate_sha256": "5e975949fc64f90f0fc6838239540f0d99e6e408e26515cdb624a76c94b23823"
+    "exact_admitted_count": 271,
+    "exact_admitted_slate_sha256": "fa0704bd42d698f888692d7d8cd0a757907fdef0f4a360db353249810b64c7d7"
   },
   "articles": [
     {
@@ -9814,10 +9817,45 @@
       "inline_path": "/assets/articles/inline/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index/karnes-cad-2026-certified-mineral-roll-zip.webp",
       "inline_asset_sha256": "5a98a89e6b3e6664d3e1aff31cb774eb1a4003e70ac2512abcc16a890383f85a",
       "inline_rendered_text": "Karnes CAD 2026 certified mineral roll ZIP"
+    },
+    {
+      "selection_rank": 271,
+      "program_row_id": "MRX1000-0814",
+      "source_shortlist_program_row_id": "MRX1000-0814",
+      "slug": "loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk",
+      "title": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
+      "source_shortlist_title": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "a8c0aae4faa82a66b56ce86e96ecd493b9a5db692c9cb5fb0e8198fc6837ff7b",
+      "repo_path": "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+      "repo_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+      "article_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+      "hero_path": "/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp",
+      "hero_sha256": "0fac4c853ade6c7d3a66407965f4085ab6807da78ba4a34b12a2034474d74bbb",
+      "hero_asset_sha256": "0fac4c853ade6c7d3a66407965f4085ab6807da78ba4a34b12a2034474d74bbb",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1363,
+      "risk_citation_remediation": [
+        "The original broad Loving County value family-guide identity is rejected because it repeats the factory pattern and collides with current valuation, family-decision, and county-intent pages.",
+        "The replacement owns only the official 2026 report publisher route, exact file controls, physical/PDF and printed-page crosswalk, and four-row significant-mass-appraisal-assistance roster.",
+        "Document-era names, titles, TDLR numbers, and assistance types remain separate from current employment, contact, role, registration, license status, property assignment, correctness, and authority beyond the report.",
+        "No owner, account, property, title, acreage, production, royalty, appraisal accuracy, tax, protest, mineral-rights value, offer, transaction, or legal conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, physical-page render evidence, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/loving-cad-2026-mineral-appraisal-assistance-roster.webp",
+      "inline_asset_sha256": "9f510376ab26d5c6e316fc2ef84f24364f117d5b3c332f2fb3c2a531c89e4109",
+      "inline_rendered_text": "Loving CAD 2026 mineral appraisal assistance roster"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 270,
+    "admitted_article_count": 271,
     "selection_ranks": [
       1,
       2,
@@ -10088,7 +10126,8 @@
       267,
       268,
       269,
-      270
+      270,
+      271
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10147,9 +10186,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "c79b79d202df79e23e05002aaf90d037038964f22da9959a0b14d37222c82332",
-    "public_article_count": 278,
-    "batch_article_count": 270,
+    "retrofit_manifest_sha256": "27604575efa126a1a4fb55127241f5251c2556625d49f558363dbc3b173d7ead",
+    "public_article_count": 279,
+    "batch_article_count": 271,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
