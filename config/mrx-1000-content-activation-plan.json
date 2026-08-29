@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T23:05:46.538Z",
+  "generated_at": "2026-07-20T09:01:59.311Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "a9abc4d8899cbf57933d325ad613f36d5d7e760916746a7d178c9b61d129c2cb",
+  "content_fingerprint_sha256": "40baffd300078976689c5e9d8b67a9e9a41a28339fc630c8f43619e15d767a5a",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "fb2b1e7309feacbd3e96630516c470178f7a71fda1a378a7323441c2964912ea",
+    "canonical_ledger_fingerprint_sha256": "aa88713ac1eab605e1c9dbb71eb5408e5159c90feb927c7a0568fa046727e5cd",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T23:05:46.538Z",
+    "canonical_ledger_generated_at": "2026-07-20T09:01:59.311Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 280,
+      "live_public_published_route": 281,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 672
+      "planning_only_inventory": 671
     }
   },
   "rows": [
@@ -48386,7 +48386,7 @@
       "canonical_url": "/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "informational",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
       "source_preservation_classification": "live_public_published_route",
       "source_route_live": true,
@@ -48397,11 +48397,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0816",
-        "target_title": "Loving County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/loving-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Loving CAD 2026 Mineral Recap PDF: Three-Page Column and Jurisdiction Map",
+        "url": "/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -48411,7 +48411,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:informational",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -48424,7 +48424,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:informational",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -48444,15 +48444,15 @@
     },
     {
       "program_row_id": "MRX1000-0816",
-      "canonical_title": "Loving County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "loving-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/loving-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Loving CAD 2026 Mineral Recap PDF: Three-Page Column and Jurisdiction Map",
+      "canonical_slug": "loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map",
+      "canonical_url": "/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -48474,7 +48474,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -48487,7 +48487,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -48501,7 +48501,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -62823,69 +62823,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-1101",
-        "target_title": "Karnes County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/karnes-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-1101",
-      "canonical_title": "Karnes County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "karnes-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/karnes-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "education",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-1103",
         "target_title": "Karnes County, Texas Mineral Rights Value: Timeline In 2026",
         "url": "/blog/karnes-county-texas-mineral-rights-value-timeline-in-2026/",
@@ -63063,6 +63000,69 @@
       "canonical_title": "Loving County, Texas Mineral Rights Value: Guide For Mineral Owners",
       "canonical_slug": "loving-county-texas-mineral-rights-value-guide-for-mineral-owners",
       "canonical_url": "/blog/loving-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "education",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-1106",
+        "target_title": "Loving County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+        "url": "/blog/loving-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:education",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1106",
+      "canonical_title": "Loving County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+      "canonical_slug": "loving-county-texas-mineral-rights-value-market-update-for-mineral-owners",
+      "canonical_url": "/blog/loving-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
       "search_intent": "education",

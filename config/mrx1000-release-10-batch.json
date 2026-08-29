@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T11:38:59Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T12:05:51Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -600,13 +600,16 @@
     "wave199_selection_decision_sha256": "a27c6708a855be331fb5f7b9b8b7c0b9d5e8d87d01bdcab465dc849a72684a06",
     "wave200_selection_decision_id": "MRX1000-W200-SELECT-2026-08-29",
     "wave200_selection_decision_path": "docs/governance/mrx1000-wave200-selection-decision-2026-08-29.md",
-    "wave200_selection_decision_sha256": "3195a2ee8e3fc30e09a67e72bddb11752dc4b892f8d4d3b016c3345befb5ac55"
+    "wave200_selection_decision_sha256": "3195a2ee8e3fc30e09a67e72bddb11752dc4b892f8d4d3b016c3345befb5ac55",
+    "wave201_selection_decision_id": "MRX1000-W201-SELECT-2026-08-29",
+    "wave201_selection_decision_path": "docs/governance/mrx1000-wave201-selection-decision-2026-08-29.md",
+    "wave201_selection_decision_sha256": "8fab83c873d9902886e53f95be0eff44315e70dc8d5b18284d7e3cb9c89b9e9b"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "bb161e612eef7a89ed8bec44ddf838bf56ec23aedd29904e5e175ebffc03e3d3",
-    "canonical_ledger_generated_at": "2026-07-20T23:05:46.538Z",
+    "canonical_ledger_sha256": "70cd99081e407a0ba753e839c65d8fc1fd323d508e04a5194b89079b7eda036d",
+    "canonical_ledger_generated_at": "2026-07-20T09:01:59.311Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -620,11 +623,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 271,
+    "prior_verified_article_count": 272,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 272,
-    "exact_admitted_slate_sha256": "7c7ec0c4fa104d4d2cd54b10620d18e00a510951dd08336d95564b51ec08fce2"
+    "exact_admitted_count": 273,
+    "exact_admitted_slate_sha256": "67b1e1c303e99e1cba6eb8b79233aa0fe3407730e2ad44743918a766592b8454"
   },
   "articles": [
     {
@@ -9890,10 +9893,45 @@
       "inline_path": "/assets/articles/inline/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/loving-cad-2026-certified-mineral-roll-zip.webp",
       "inline_asset_sha256": "ea325b366be48383ce02ba13d3391ebdb93ddf2e0fc98122701bc37adcced47e",
       "inline_rendered_text": "Loving CAD 2026 certified mineral roll ZIP"
+    },
+    {
+      "selection_rank": 273,
+      "program_row_id": "MRX1000-0816",
+      "source_shortlist_program_row_id": "MRX1000-0816",
+      "slug": "loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map",
+      "title": "Loving CAD 2026 Mineral Recap PDF: Three-Page Column and Jurisdiction Map",
+      "source_shortlist_title": "Loving CAD 2026 Mineral Recap PDF: Three-Page Column and Jurisdiction Map",
+      "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "37e4fa10553a722b912aa3d11e47dcfd852bdb4c603081116af1a212691779e4",
+      "repo_path": "src/content/posts/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map.mdx",
+      "repo_sha256": "d2f24fda2280f229976a4fa9ea055a22141ead62ad4f00854569c506bc8aef5f",
+      "article_sha256": "d2f24fda2280f229976a4fa9ea055a22141ead62ad4f00854569c506bc8aef5f",
+      "hero_path": "/assets/articles/hero/loving-cad-2026-mineral-recap-pdf-three-page-column-and-jurisdiction-map.webp",
+      "hero_sha256": "896a30528502b556ae4b33d51a6f9a98a6a1f5fb86f174f73a003f4113831e1a",
+      "hero_asset_sha256": "896a30528502b556ae4b33d51a6f9a98a6a1f5fb86f174f73a003f4113831e1a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1454,
+      "risk_citation_remediation": [
+        "The original broad Loving County market-update identity is rejected because it repeats the factory pattern, collides with valuation content, and lacks current market evidence.",
+        "The replacement owns only the exact 5. MINERAL RECAP.PDF member and its three physical pages, displayed column groups, jurisdiction-row pattern, report date/code, record-count line, and footnote.",
+        "The five-versus-seven displayed row count and M&O-versus-M&0 glyph remain unresolved and are not silently merged, normalized, expanded, or interpreted.",
+        "The public article withholds monetary entries, source-stated dollar thresholds, and record-level owner or property data and makes no appraisal, statutory, tax, protest, value, offer, transaction, or legal conclusion.",
+        "Answer-first structure, stable claim IDs, evidence labels, physical-page and render hashes, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/loving-cad-2026-mineral-recap-pdf.webp",
+      "inline_asset_sha256": "24adbc254203a94847eb4b9aaf990e4956186ea433fd0938115a329873ea226a",
+      "inline_rendered_text": "Loving CAD 2026 mineral recap PDF"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 272,
+    "admitted_article_count": 273,
     "selection_ranks": [
       1,
       2,
@@ -10166,7 +10204,8 @@
       269,
       270,
       271,
-      272
+      272,
+      273
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10225,9 +10264,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "d9fc6da5f4a1bdb643c3b1724cd4e66e256a1e49bb068cba6fb67a03708eca9f",
-    "public_article_count": 280,
-    "batch_article_count": 272,
+    "retrofit_manifest_sha256": "42d0d7365392c099ee1f21321dddefc90f30c2477e69576517a58d7a17cc1813",
+    "public_article_count": 281,
+    "batch_article_count": 273,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
