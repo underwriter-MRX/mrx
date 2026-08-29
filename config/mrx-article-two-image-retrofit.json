@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T02:02:12Z",
+  "generated_at_utc": "2026-08-29T02:30:01Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 256,
-    "asset_count": 512,
-    "unique_source_art_count": 256,
-    "unique_hero_sha256_count": 256,
-    "unique_inline_sha256_count": 256,
-    "distinct_article_pair_count": 256,
-    "hero_ocr_pass_count": 256,
-    "inline_ocr_pass_count": 256,
-    "exact_filename_identity_count": 256
+    "article_count": 257,
+    "asset_count": 514,
+    "unique_source_art_count": 257,
+    "unique_hero_sha256_count": 257,
+    "unique_inline_sha256_count": 257,
+    "distinct_article_pair_count": 257,
+    "hero_ocr_pass_count": 257,
+    "inline_ocr_pass_count": 257,
+    "exact_filename_identity_count": 257
   },
   "contact_sheets": {
     "hero": [
@@ -2278,6 +2278,56 @@
           "actual": "eagle ford shale\nhow it affects\nmineral rights\nvalues in south\ntexas",
           "normalized_expected": "eagle ford shale how it affects mineral rights values in south texas",
           "normalized_actual": "eagle ford shale how it affects mineral rights values in south texas",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ector-cad-2026-mineral-appraisal-parameters-source-index",
+      "title": "Ector CAD 2026 Mineral Appraisal Parameters Source Index",
+      "keyword": "Ector CAD 2026 mineral appraisal parameters",
+      "file_path": "src/content/posts/ector-cad-2026-mineral-appraisal-parameters-source-index.mdx",
+      "source_public_path": "/assets/articles/hero/ector-cad-2026-mineral-appraisal-parameters-source-index.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave177-creative-sources/ector-cad-2026-mineral-appraisal-parameters-source-index-hero-base.png",
+        "artifacts/mrx1000-wave177-creative-sources/ector-cad-2026-mineral-appraisal-parameters-source-index-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T02:26:39.042Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ector-cad-2026-mineral-appraisal-parameters-source-index.webp",
+        "alt": "A navy source folio and section tabs sit beside the exact Ector CAD mineral-parameters source-index title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "b8d7a75be7be72e5f20a2b404d57adadfbcec19f3954a4c3ba04b5ea077a90f6",
+        "perceptual_hash": "0000000001111111000000000111111100000000011111110000000000111111000000000001110101110000000011010110000000001110011000000000111000000000000001100000000000001110000000000000111100000000000111110000000001011111000000000011111100000000000011110000000000001111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 Mineral Appraisal Parameters Source Index",
+          "actual": "Ector CAD 2026\nMineral Appraisal\nParameters\nSource Index",
+          "normalized_expected": "ector cad 2026 mineral appraisal parameters source index",
+          "normalized_actual": "ector cad 2026 mineral appraisal parameters source index",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ector-cad-2026-mineral-appraisal-parameters-source-index/ector-cad-2026-mineral-appraisal-parameters.webp",
+        "alt": "An overhead route card, report stack, and page grid appear above the exact Ector CAD parameters keyword.",
+        "rendered_text": "Ector CAD 2026 mineral appraisal parameters",
+        "visual_variant": "wave177-distinct-generated-three-quarter-source-folio-and-overhead-route-report-page-index",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "d446cdf27a855c969015760c785482c2aaac72aa92597e54905c77c2fb09cec2",
+        "perceptual_hash": "0001111111111100110101111111110010011111111101001111111111111110111111111111011111111111111110111111111111111101111111111111111111101111111111111110011111111111010001111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ector CAD 2026 mineral appraisal parameters",
+          "actual": "Ector CAD 2026 mineral\nappraisal parameters",
+          "normalized_expected": "ector cad 2026 mineral appraisal parameters",
+          "normalized_actual": "ector cad 2026 mineral appraisal parameters",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
