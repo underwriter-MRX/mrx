@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T17:28:53Z",
+  "generated_at_utc": "2026-08-29T17:55:29Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 287,
-    "asset_count": 574,
-    "unique_source_art_count": 287,
-    "unique_hero_sha256_count": 287,
-    "unique_inline_sha256_count": 287,
-    "distinct_article_pair_count": 287,
-    "hero_ocr_pass_count": 287,
-    "inline_ocr_pass_count": 287,
-    "exact_filename_identity_count": 287
+    "article_count": 288,
+    "asset_count": 576,
+    "unique_source_art_count": 288,
+    "unique_hero_sha256_count": 288,
+    "unique_inline_sha256_count": 288,
+    "distinct_article_pair_count": 288,
+    "hero_ocr_pass_count": 288,
+    "inline_ocr_pass_count": 288,
+    "exact_filename_identity_count": 288
   },
   "contact_sheets": {
     "hero": [
@@ -6596,6 +6596,56 @@
           "actual": "Martin CAD 2026 mineral archive\nlabel conflict",
           "normalized_expected": "martin cad 2026 mineral archive label conflict",
           "normalized_actual": "martin cad 2026 mineral archive label conflict",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "martin-cad-property-search-lease-fields-not-ownership-proof",
+      "title": "Martin CAD Property Search: Lease Fields Are Search Inputs, Not Ownership Proof",
+      "keyword": "Martin CAD mineral lease search fields",
+      "file_path": "src/content/posts/martin-cad-property-search-lease-fields-not-ownership-proof.mdx",
+      "source_public_path": "/assets/articles/hero/martin-cad-property-search-lease-fields-are-search-inputs-not-ownership-proof.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave208-creative-sources/martin-cad-property-search-lease-fields-not-ownership-proof-hero-base.png",
+        "artifacts/mrx1000-wave208-creative-sources/martin-cad-property-search-lease-fields-not-ownership-proof-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T17:49:08.523Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/martin-cad-property-search-lease-fields-are-search-inputs-not-ownership-proof.webp",
+        "alt": "Blank search tiles stop at a sealed evidence folder beside the exact Martin CAD property-search title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "8df9daccbe56ec3c687824dd862e48a990444ed1bd22aee8e82315f6602a8ab2",
+        "perceptual_hash": "0000000000000000000000000000000001000000000000001111111011000100111111101110010011111100111101001111110011100000110000101110000000000010111000000000001011000000000001101110000000000111110001110000111111000011000011111110001100011111000000000001111100000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD Property Search: Lease Fields Are Search Inputs, Not Ownership Proof",
+          "actual": "Martin CAD Property Search:\nLease Fields Are Search\nInputs, Not Ownership\nProof",
+          "normalized_expected": "martin cad property search lease fields are search inputs not ownership proof",
+          "normalized_actual": "martin cad property search lease fields are search inputs not ownership proof",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/martin-cad-property-search-lease-fields-not-ownership-proof/martin-cad-mineral-lease-search-fields.webp",
+        "alt": "A top-down evidence ladder appears above the exact Martin CAD mineral lease search fields keyword.",
+        "rendered_text": "Martin CAD mineral lease search fields",
+        "visual_variant": "wave208-distinct-generated-low-oblique-search-boundary-hero-and-top-down-evidence-ladder",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "1de00a1c10edf508c906b2688ea569307027047bc4b1921f71dae9578d8b6967",
+        "perceptual_hash": "1111111111111101111111111111110010111111111111000011111111111010111111111111101011111111111110011000011111110000111111111111100011111111111110011111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Martin CAD mineral lease search fields",
+          "actual": "Martin CAD mineral lease\nsearch fields",
+          "normalized_expected": "martin cad mineral lease search fields",
+          "normalized_actual": "martin cad mineral lease search fields",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
