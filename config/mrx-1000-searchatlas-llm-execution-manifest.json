@@ -1,7 +1,7 @@
 {
   "program": "MRX1000",
   "artifact_type": "searchatlas_ordered_llm_local_execution_manifest",
-  "generated_at": "2026-07-20T22:27:44.883Z",
+  "generated_at": "2026-07-20T08:25:37.000Z",
   "deterministic": true,
   "local_only": true,
   "external_services_called": false,
@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "365beffb822be9ec526188e1cc36dd878d8b36ead4b2f783e0d123d911de0ea3",
-      "bytes": 4658034
+      "sha256": "ea78278f71bef765bffd237138e7d5acea41b57ad94ca3f5fc06d5876d078b79",
+      "bytes": 4659115
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "7182f37797096caad1ca1810b81e6634867562e6bf5a896fdf49e32b097c8de2",
-      "bytes": 3465655,
+      "sha256": "7b2b6f5c721dc6501216e342fd1b08725f8f280a3b750f853a9b06a9ac0c6dde",
+      "bytes": 3466020,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -366,30 +366,30 @@
     },
     "by_canonical_inventory_state": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 252,
+      "live_public_published_route": 253,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 700
+      "planning_only_inventory": 699
     },
     "by_searchatlas_action_needed": {
-      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 176,
+      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 177,
       "reconcile_artifact_bound_content_genius_record_no_creation": 2,
       "reconcile_pilot_non_creation_workflow_label_then_bind_or_conditionally_create": 23,
       "reconcile_unambiguous_exact_title_vendor_candidate_no_creation": 139,
       "resolve_ambiguous_exact_title_vendor_candidates_no_creation": 6,
-      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 654
+      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 653
     },
-    "repo_mdx_present": 300,
-    "workspace_public_route_configured": 252,
+    "repo_mdx_present": 301,
+    "workspace_public_route_configured": 253,
     "planning_searchatlas_map_id_count": 225,
     "planning_searchatlas_title_uuid_count": 200,
     "persisted_ledger_content_genius_article_uuid_count": 0,
-    "checksummed_review_candidate_rows": 276,
-    "rows_without_checksummed_review_candidate": 724,
+    "checksummed_review_candidate_rows": 277,
+    "rows_without_checksummed_review_candidate": 723,
     "by_review_candidate_state": {
-      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 252,
+      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 253,
       "CHECKSUMMED_HELD_SUBSTANTIVE_DRAFT_READY_FOR_LLM_REVIEW": 23,
       "NO_CHECKSUMMED_REVIEW_CANDIDATE_PILOT_QA_SHELL_ONLY": 24,
-      "NO_WORKSPACE_CONTENT_CANDIDATE": 700,
+      "NO_WORKSPACE_CONTENT_CANDIDATE": 699,
       "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW": 1
     },
     "pilot_workspace_qa_shell_rows": 25,
@@ -263203,28 +263203,52 @@
     },
     {
       "program_row_id": "MRX1000-0772",
-      "canonical_title": "Dimmit County, Texas Mineral Rights Value: Guide For Mineral Owners",
-      "canonical_slug": "dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners",
-      "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "canonical_title": "Dimmit CAD 2024-25 MAP Review Source Record",
+      "canonical_slug": "dimmit-cad-2024-25-map-review-source-record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "Dimmit County, Texas mineral rights value",
+      "primary_keyword": "Dimmit CAD 2024-25 MAP review",
       "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
+        "canonical_inventory_state": "live_public_published_route",
+        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
+          "state": "WORKSPACE_MDX_PRESENT",
+          "path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+          "mdx_exists": true,
+          "source_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+          "publication_status": "published",
           "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
+          "workspace_public_route_configured": true,
           "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
+          "content_evidence": {
+            "frontmatter_title": "Dimmit CAD 2024-25 MAP Review Source Record",
+            "frontmatter_slug": null,
+            "frontmatter_publication_status": "published",
+            "frontmatter_reviewed_at": "2026-08-29T00:50:00Z",
+            "frontmatter_reviewed_by": "mrx_compliance-continuous-wave173",
+            "frontmatter_article_id": null,
+            "frontmatter_searchatlas_uuid": null,
+            "frontmatter_workflow_status": null,
+            "frontmatter_remediated_from_sha256": null,
+            "frontmatter_body_checksum_sha256": null,
+            "frontmatter_body_length_chars": 0,
+            "frontmatter_body_word_count": 0,
+            "frontmatter_draft": false,
+            "frontmatter_noindex": false,
+            "frontmatter_indexable": null,
+            "body_sha256": "2981593940c9e952c54d8fcd596fa7b3dd3b256d1861de3d7d2d41eb00574ab1",
+            "body_bytes": 10732,
+            "body_characters": 10731,
+            "body_word_count": 1468,
+            "explicit_qa_shell_without_final_copy": false,
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true
+          }
         },
         "planning_handles": {
           "searchatlas_map_id": null,
@@ -263247,28 +263271,31 @@
           "manual_reconciliation_required": true
         },
         "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
+          "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
+          "checksummed_review_candidate_present": true,
+          "path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+          "source_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+          "body_sha256": "2981593940c9e952c54d8fcd596fa7b3dd3b256d1861de3d7d2d41eb00574ab1",
+          "body_word_count": 1468,
+          "candidate_type": "existing_public_article",
+          "readiness_evidence_verified": true,
+          "readiness_evidence_paths": [
+            "reports/mrx-1000-readiness-matrix.json",
+            "config/mrx-1000-canonical-content-ledger.json"
+          ],
           "readiness_checks": {
-            "workspace_source_checksum_present": false,
+            "workspace_source_checksum_present": true,
             "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true,
+            "substantive_body_at_least_500_words": true,
+            "explicit_qa_shell_absent": true,
+            "review_metadata_present": true,
+            "canonical_state_supports_content_review": true
           },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "workspace_mdx_is_review_candidate": true,
+          "workspace_mdx_rejection_reason": null,
           "special_candidate_validation": null
         }
       },
@@ -263279,7 +263306,7 @@
         "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
         "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
         "execution_eligible_now": false,
         "creation_needed_proven": false,
@@ -263293,9 +263320,9 @@
           "read_only_quota_preflight_required_before_external_write": true,
           "canonical_identity_reconciliation_required": true,
           "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
+          "checksummed_content_candidate_present": true,
+          "review_candidate_path_and_sha256_present": true,
+          "review_readiness_evidence_verified": true,
           "compliance_seo_aeo_editorial_gates_required": true
         },
         "evidence": {
@@ -263322,10 +263349,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+            "review_candidate_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
             "predecessor_pass_observed": false,
@@ -263359,10 +263386,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+            "review_candidate_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -263396,10 +263423,10 @@
           "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+            "review_candidate_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -263433,10 +263460,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+            "review_candidate_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -263470,10 +263497,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+            "review_candidate_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -263504,7 +263531,7 @@
           "perplexity",
           "microsoft_copilot"
         ],
-        "next_stage": null,
+        "next_stage": "chatgpt",
         "any_verdict_recorded": false,
         "all_required_verdicts_passed": false,
         "sequence_complete": false,
@@ -263522,7 +263549,7 @@
         "release_action_eligible_now": false,
         "index_submission_eligible_now": false,
         "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
+        "currently_in_workspace_sitemap": true,
         "production_live_verified_in_this_local_build": false,
         "release_or_index_action_performed": false,
         "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
@@ -263539,7 +263566,6 @@
         "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
         "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
         "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
         "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
       ]
     },
@@ -278934,10 +278960,10 @@
       ]
     },
     {
-      "program_row_id": "MRX1000-0824",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "program_row_id": "MRX1000-0825",
+      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Guide For Mineral Owners",
+      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-guide-for-mineral-owners",
+      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-guide-for-mineral-owners/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
@@ -279276,10 +279302,10 @@
       ]
     },
     {
-      "program_row_id": "MRX1000-0825",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Guide For Mineral Owners",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-guide-for-mineral-owners",
-      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "program_row_id": "MRX1000-0826",
+      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Market Update For Mineral Owners",
+      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-market-update-for-mineral-owners",
+      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
@@ -279618,10 +279644,10 @@
       ]
     },
     {
-      "program_row_id": "MRX1000-0826",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "program_row_id": "MRX1000-0827",
+      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Risk Checklist In 2026",
+      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-risk-checklist-in-2026",
+      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-risk-checklist-in-2026/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
@@ -279960,10 +279986,10 @@
       ]
     },
     {
-      "program_row_id": "MRX1000-0827",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "program_row_id": "MRX1000-0828",
+      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Timeline In 2026",
+      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-timeline-in-2026",
+      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-timeline-in-2026/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
@@ -280302,348 +280328,6 @@
       ]
     },
     {
-      "program_row_id": "MRX1000-0828",
-      "canonical_title": "Mcmullen County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "mcmullen-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "https://mineralrightsxchange.com/blog/mcmullen-county-texas-mineral-rights-value-timeline-in-2026/",
-      "pillar": "texas-mineral-rights",
-      "pillar_url": "/mineral-rights/texas/",
-      "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "McMullen County, Texas mineral rights value",
-      "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
-        "pilot_article_id": null,
-        "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
-          "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
-          "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
-        },
-        "planning_handles": {
-          "searchatlas_map_id": null,
-          "searchatlas_title_uuid": null,
-          "searchatlas_record_id_persisted_in_ledger": null,
-          "content_genius_article_uuid_persisted_in_ledger": null,
-          "are_content_genius_article_creation_proof": false,
-          "evidence_boundary": "map_id/title_uuid are topical-map planning handles; pilot_article_id is a local manifest identity; none proves a Content Genius article UUID"
-        },
-        "vendor_join": {
-          "join_method": "normalized_exact_title_against_composed_local_snapshot",
-          "match_count": 0,
-          "match_state": "NO_EXACT_TITLE_MATCH",
-          "binding_status": "NO_EXACT_TITLE_JOIN",
-          "candidate_article_uuids": [],
-          "candidate_statuses": [],
-          "records": [],
-          "content_genius_article_uuid_proven_for_canonical_row": null,
-          "exact_title_candidate_is_creation_proof_for_canonical_row": false,
-          "manual_reconciliation_required": true
-        },
-        "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
-          "readiness_checks": {
-            "workspace_source_checksum_present": false,
-            "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
-          },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
-          "special_candidate_validation": null
-        }
-      },
-      "searchatlas_execution": {
-        "execution_sequence": 794,
-        "batch_id": "MRX1000-SA-BATCH-032",
-        "batch_sequence": 32,
-        "position_in_batch": 19,
-        "batch_size": 25,
-        "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
-        "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
-        "execution_eligible_now": false,
-        "creation_needed_proven": false,
-        "searchatlas_created_claimed": false,
-        "external_write_performed": false,
-        "prerequisite_gates": {
-          "owner_decision_sha256_verified": true,
-          "program_release_authorization_observed": true,
-          "article_specific_quality_clearance_required": true,
-          "article_specific_quality_clearance_observed": false,
-          "read_only_quota_preflight_required_before_external_write": true,
-          "canonical_identity_reconciliation_required": true,
-          "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
-          "compliance_seo_aeo_editorial_gates_required": true
-        },
-        "evidence": {
-          "preflight_evidence_path": null,
-          "preflight_sha256": null,
-          "vendor_action_receipt_path": null,
-          "vendor_action_receipt_sha256": null,
-          "resulting_content_genius_article_uuid": null,
-          "resulting_candidate_content_sha256": null,
-          "executed_at": null
-        }
-      },
-      "ordered_llm_reviews": [
-        {
-          "order": 1,
-          "key": "chatgpt",
-          "display_name": "ChatGPT",
-          "provider": "OpenAI",
-          "required_exact_model_id": null,
-          "exact_model_gate": "Capture the exact first-party model identifier before dispatch; no model was selected or executed by this local-only build.",
-          "additional_engine": false,
-          "rationale": "First answer-engine review requested by Daryl.",
-          "state": "NOT_STARTED_LOCAL_ONLY_NO_DISPATCH",
-          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
-          "dispatch_eligible_now": false,
-          "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
-            "predecessor_key": null,
-            "predecessor_pass_required": false,
-            "predecessor_pass_observed": false,
-            "exact_model_id_must_be_recorded": true,
-            "exact_required_model_available": null,
-            "program_release_authorization_satisfied": true,
-            "row2_d12_exception_preconditions_satisfied": null,
-            "row2_d12_audit_ready_now": null
-          },
-          "evidence": {
-            "review_input_sha256": null,
-            "verdict_output_sha256": null,
-            "evidence_path": null,
-            "exact_model_id_observed": null,
-            "run_id": null,
-            "executed_at": null,
-            "verdict": null,
-            "issues": []
-          }
-        },
-        {
-          "order": 2,
-          "key": "google_gemini",
-          "display_name": "Google Gemini",
-          "provider": "Google",
-          "required_exact_model_id": null,
-          "exact_model_gate": "Capture the exact first-party Gemini model identifier before dispatch; the machine and display labels intentionally correct the user typo \"Demini\".",
-          "additional_engine": false,
-          "rationale": "Second answer-engine review requested by Daryl.",
-          "state": "WAITING_FOR_PREDECESSOR_PASS",
-          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
-          "dispatch_eligible_now": false,
-          "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
-            "predecessor_key": "chatgpt",
-            "predecessor_pass_required": true,
-            "predecessor_pass_observed": false,
-            "exact_model_id_must_be_recorded": true,
-            "exact_required_model_available": null,
-            "program_release_authorization_satisfied": true,
-            "row2_d12_exception_preconditions_satisfied": null,
-            "row2_d12_audit_ready_now": null
-          },
-          "evidence": {
-            "review_input_sha256": null,
-            "verdict_output_sha256": null,
-            "evidence_path": null,
-            "exact_model_id_observed": null,
-            "run_id": null,
-            "executed_at": null,
-            "verdict": null,
-            "issues": []
-          }
-        },
-        {
-          "order": 3,
-          "key": "claude_opus_4_6",
-          "display_name": "Claude Opus 4.6",
-          "provider": "Anthropic",
-          "required_exact_model_id": "claude-opus-4-6",
-          "exact_model_gate": "Hard requirement: execute only claude-opus-4-6 in a first-party environment; never substitute a different Claude model.",
-          "additional_engine": false,
-          "rationale": "Exact editorial/release model required by the signed MRX gate.",
-          "state": "MODEL_BLOCKED_EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
-          "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
-          "dispatch_eligible_now": false,
-          "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
-            "predecessor_key": "google_gemini",
-            "predecessor_pass_required": true,
-            "predecessor_pass_observed": false,
-            "exact_model_id_must_be_recorded": true,
-            "exact_required_model_available": false,
-            "program_release_authorization_satisfied": true,
-            "row2_d12_exception_preconditions_satisfied": null,
-            "row2_d12_audit_ready_now": null
-          },
-          "evidence": {
-            "review_input_sha256": null,
-            "verdict_output_sha256": null,
-            "evidence_path": null,
-            "exact_model_id_observed": null,
-            "run_id": null,
-            "executed_at": null,
-            "verdict": null,
-            "issues": []
-          }
-        },
-        {
-          "order": 4,
-          "key": "perplexity",
-          "display_name": "Perplexity",
-          "provider": "Perplexity AI",
-          "required_exact_model_id": null,
-          "exact_model_gate": "Capture the exact first-party model/product identifier before dispatch.",
-          "additional_engine": false,
-          "rationale": "Fourth answer-engine review requested by Daryl.",
-          "state": "WAITING_FOR_PREDECESSOR_PASS",
-          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
-          "dispatch_eligible_now": false,
-          "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
-            "predecessor_key": "claude_opus_4_6",
-            "predecessor_pass_required": true,
-            "predecessor_pass_observed": false,
-            "exact_model_id_must_be_recorded": true,
-            "exact_required_model_available": null,
-            "program_release_authorization_satisfied": true,
-            "row2_d12_exception_preconditions_satisfied": null,
-            "row2_d12_audit_ready_now": null
-          },
-          "evidence": {
-            "review_input_sha256": null,
-            "verdict_output_sha256": null,
-            "evidence_path": null,
-            "exact_model_id_observed": null,
-            "run_id": null,
-            "executed_at": null,
-            "verdict": null,
-            "issues": []
-          }
-        },
-        {
-          "order": 5,
-          "key": "microsoft_copilot",
-          "display_name": "Microsoft Copilot",
-          "provider": "Microsoft",
-          "required_exact_model_id": null,
-          "exact_model_gate": "Capture the exact first-party Copilot surface and model/product identifier before dispatch.",
-          "additional_engine": true,
-          "rationale": "Adds a distinct Bing/Copilot answer surface after the four required reviewers without changing their order.",
-          "state": "WAITING_FOR_PREDECESSOR_PASS",
-          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
-          "dispatch_eligible_now": false,
-          "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
-            "predecessor_key": "perplexity",
-            "predecessor_pass_required": true,
-            "predecessor_pass_observed": false,
-            "exact_model_id_must_be_recorded": true,
-            "exact_required_model_available": null,
-            "program_release_authorization_satisfied": true,
-            "row2_d12_exception_preconditions_satisfied": null,
-            "row2_d12_audit_ready_now": null
-          },
-          "evidence": {
-            "review_input_sha256": null,
-            "verdict_output_sha256": null,
-            "evidence_path": null,
-            "exact_model_id_observed": null,
-            "run_id": null,
-            "executed_at": null,
-            "verdict": null,
-            "issues": []
-          }
-        }
-      ],
-      "ordered_review_exception": null,
-      "review_gate": {
-        "required_order": [
-          "chatgpt",
-          "google_gemini",
-          "claude_opus_4_6",
-          "perplexity",
-          "microsoft_copilot"
-        ],
-        "next_stage": null,
-        "any_verdict_recorded": false,
-        "all_required_verdicts_passed": false,
-        "sequence_complete": false,
-        "exact_claude_substitution_allowed": false,
-        "exact_claude_substitution_scope": null
-      },
-      "release_index_eligibility": {
-        "decision_id": "D-2026-0804-16",
-        "signed_artifact_sha256": "edc1d4602149558ff6d2b960416839b8caf97593f5fd8fe6ea91b56617d1425f",
-        "authorization_cap_new_rows": null,
-        "numerical_release_cap_applies": false,
-        "elapsed_time_gate_applies": false,
-        "program_release_authorized": true,
-        "program_index_authorized": true,
-        "release_action_eligible_now": false,
-        "index_submission_eligible_now": false,
-        "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
-        "production_live_verified_in_this_local_build": false,
-        "release_or_index_action_performed": false,
-        "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
-        "release_or_index_model_substitution_allowed": false,
-        "reason_codes": [
-          "ORDERED_LLM_REVIEWS_NOT_COMPLETE",
-          "EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
-          "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-          "NO_EXTERNAL_RELEASE_OR_INDEX_ACTION_PERFORMED"
-        ]
-      },
-      "stop_conditions": [
-        "EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
-        "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
-        "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
-        "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
-        "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
-      ]
-    },
-    {
       "program_row_id": "MRX1000-0829",
       "canonical_title": "Midland County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
       "canonical_slug": "midland-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
@@ -280715,10 +280399,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 795,
+        "execution_sequence": 794,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -281057,10 +280741,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 796,
+        "execution_sequence": 795,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -281399,10 +281083,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 797,
+        "execution_sequence": 796,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -281741,10 +281425,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 798,
+        "execution_sequence": 797,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -282083,10 +281767,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 799,
+        "execution_sequence": 798,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -282425,10 +282109,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 800,
+        "execution_sequence": 799,
         "batch_id": "MRX1000-SA-BATCH-032",
         "batch_sequence": 32,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -282767,10 +282451,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 801,
-        "batch_id": "MRX1000-SA-BATCH-033",
-        "batch_sequence": 33,
-        "position_in_batch": 1,
+        "execution_sequence": 800,
+        "batch_id": "MRX1000-SA-BATCH-032",
+        "batch_sequence": 32,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -283109,10 +282793,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 802,
+        "execution_sequence": 801,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -283451,10 +283135,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 803,
+        "execution_sequence": 802,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -283793,10 +283477,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 804,
+        "execution_sequence": 803,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -284135,10 +283819,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 805,
+        "execution_sequence": 804,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -284477,10 +284161,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 806,
+        "execution_sequence": 805,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -284819,10 +284503,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 807,
+        "execution_sequence": 806,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -285161,10 +284845,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 808,
+        "execution_sequence": 807,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -285503,10 +285187,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 809,
+        "execution_sequence": 808,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -285845,10 +285529,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 810,
+        "execution_sequence": 809,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -286187,10 +285871,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 811,
+        "execution_sequence": 810,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -286529,10 +286213,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 812,
+        "execution_sequence": 811,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -286871,10 +286555,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 813,
+        "execution_sequence": 812,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -287213,10 +286897,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 814,
+        "execution_sequence": 813,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -287555,10 +287239,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 815,
+        "execution_sequence": 814,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -287897,10 +287581,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 816,
+        "execution_sequence": 815,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -288239,10 +287923,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 817,
+        "execution_sequence": 816,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -288581,10 +288265,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 818,
+        "execution_sequence": 817,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -288923,10 +288607,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 819,
+        "execution_sequence": 818,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -289265,10 +288949,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 820,
+        "execution_sequence": 819,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -289607,10 +289291,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 821,
+        "execution_sequence": 820,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -289949,10 +289633,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 822,
+        "execution_sequence": 821,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -290291,10 +289975,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 823,
+        "execution_sequence": 822,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -290633,10 +290317,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 824,
+        "execution_sequence": 823,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -290975,10 +290659,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 825,
+        "execution_sequence": 824,
         "batch_id": "MRX1000-SA-BATCH-033",
         "batch_sequence": 33,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -291317,10 +291001,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 826,
-        "batch_id": "MRX1000-SA-BATCH-034",
-        "batch_sequence": 34,
-        "position_in_batch": 1,
+        "execution_sequence": 825,
+        "batch_id": "MRX1000-SA-BATCH-033",
+        "batch_sequence": 33,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -291659,10 +291343,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 827,
+        "execution_sequence": 826,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -292001,10 +291685,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 828,
+        "execution_sequence": 827,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -292343,10 +292027,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 829,
+        "execution_sequence": 828,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -292685,10 +292369,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 830,
+        "execution_sequence": 829,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -293027,10 +292711,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 831,
+        "execution_sequence": 830,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -293369,10 +293053,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 832,
+        "execution_sequence": 831,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -293711,10 +293395,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 833,
+        "execution_sequence": 832,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -294053,10 +293737,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 834,
+        "execution_sequence": 833,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -294395,10 +294079,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 835,
+        "execution_sequence": 834,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -294737,10 +294421,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 836,
+        "execution_sequence": 835,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -295126,10 +294810,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 837,
+        "execution_sequence": 836,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -295494,10 +295178,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 838,
+        "execution_sequence": 837,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -295882,10 +295566,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 839,
+        "execution_sequence": 838,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -296270,10 +295954,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 840,
+        "execution_sequence": 839,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -296658,10 +296342,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 841,
+        "execution_sequence": 840,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -297046,10 +296730,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 842,
+        "execution_sequence": 841,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -297414,10 +297098,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 843,
+        "execution_sequence": 842,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -297802,10 +297486,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 844,
+        "execution_sequence": 843,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -298190,10 +297874,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 845,
+        "execution_sequence": 844,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -298578,10 +298262,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 846,
+        "execution_sequence": 845,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -298966,10 +298650,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 847,
+        "execution_sequence": 846,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -299307,10 +298991,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 848,
+        "execution_sequence": 847,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -299649,10 +299333,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 849,
+        "execution_sequence": 848,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -299991,10 +299675,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 850,
+        "execution_sequence": 849,
         "batch_id": "MRX1000-SA-BATCH-034",
         "batch_sequence": 34,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -300333,10 +300017,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 851,
-        "batch_id": "MRX1000-SA-BATCH-035",
-        "batch_sequence": 35,
-        "position_in_batch": 1,
+        "execution_sequence": 850,
+        "batch_id": "MRX1000-SA-BATCH-034",
+        "batch_sequence": 34,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -300675,10 +300359,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 852,
+        "execution_sequence": 851,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -301017,10 +300701,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 853,
+        "execution_sequence": 852,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -301359,10 +301043,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 854,
+        "execution_sequence": 853,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -301701,10 +301385,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 855,
+        "execution_sequence": 854,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -302043,10 +301727,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 856,
+        "execution_sequence": 855,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -302385,10 +302069,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 857,
+        "execution_sequence": 856,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -302727,10 +302411,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 858,
+        "execution_sequence": 857,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -303069,10 +302753,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 859,
+        "execution_sequence": 858,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -303411,10 +303095,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 860,
+        "execution_sequence": 859,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -303773,10 +303457,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 861,
+        "execution_sequence": 860,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -304115,10 +303799,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 862,
+        "execution_sequence": 861,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -304457,10 +304141,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 863,
+        "execution_sequence": 862,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -304799,10 +304483,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 864,
+        "execution_sequence": 863,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -305141,10 +304825,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 865,
+        "execution_sequence": 864,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -305483,10 +305167,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 866,
+        "execution_sequence": 865,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -305825,10 +305509,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 867,
+        "execution_sequence": 866,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -306167,10 +305851,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 868,
+        "execution_sequence": 867,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -306529,10 +306213,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 869,
+        "execution_sequence": 868,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -306871,10 +306555,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 870,
+        "execution_sequence": 869,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -307213,10 +306897,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 871,
+        "execution_sequence": 870,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -307555,10 +307239,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 872,
+        "execution_sequence": 871,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -307897,10 +307581,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 873,
+        "execution_sequence": 872,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -308239,10 +307923,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 874,
+        "execution_sequence": 873,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -308581,10 +308265,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 875,
+        "execution_sequence": 874,
         "batch_id": "MRX1000-SA-BATCH-035",
         "batch_sequence": 35,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -308923,10 +308607,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 876,
-        "batch_id": "MRX1000-SA-BATCH-036",
-        "batch_sequence": 36,
-        "position_in_batch": 1,
+        "execution_sequence": 875,
+        "batch_id": "MRX1000-SA-BATCH-035",
+        "batch_sequence": 35,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -309265,10 +308949,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 877,
+        "execution_sequence": 876,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -309607,10 +309291,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 878,
+        "execution_sequence": 877,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -309949,10 +309633,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 879,
+        "execution_sequence": 878,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -310311,10 +309995,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 880,
+        "execution_sequence": 879,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -310653,10 +310337,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 881,
+        "execution_sequence": 880,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -310995,10 +310679,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 882,
+        "execution_sequence": 881,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -311337,10 +311021,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 883,
+        "execution_sequence": 882,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -311679,10 +311363,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 884,
+        "execution_sequence": 883,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -312041,10 +311725,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 885,
+        "execution_sequence": 884,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -312383,10 +312067,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 886,
+        "execution_sequence": 885,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -312725,10 +312409,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 887,
+        "execution_sequence": 886,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -313067,10 +312751,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 888,
+        "execution_sequence": 887,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -313409,10 +313093,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 889,
+        "execution_sequence": 888,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -313751,10 +313435,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 890,
+        "execution_sequence": 889,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -314093,10 +313777,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 891,
+        "execution_sequence": 890,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -314435,10 +314119,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 892,
+        "execution_sequence": 891,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -314777,10 +314461,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 893,
+        "execution_sequence": 892,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -315119,10 +314803,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 894,
+        "execution_sequence": 893,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -315461,10 +315145,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 895,
+        "execution_sequence": 894,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -315803,10 +315487,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 896,
+        "execution_sequence": 895,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -316145,10 +315829,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 897,
+        "execution_sequence": 896,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -316487,10 +316171,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 898,
+        "execution_sequence": 897,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -316829,10 +316513,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 899,
+        "execution_sequence": 898,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -317171,10 +316855,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 900,
+        "execution_sequence": 899,
         "batch_id": "MRX1000-SA-BATCH-036",
         "batch_sequence": 36,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -317513,10 +317197,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 901,
-        "batch_id": "MRX1000-SA-BATCH-037",
-        "batch_sequence": 37,
-        "position_in_batch": 1,
+        "execution_sequence": 900,
+        "batch_id": "MRX1000-SA-BATCH-036",
+        "batch_sequence": 36,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -317855,10 +317539,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 902,
+        "execution_sequence": 901,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -318197,10 +317881,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 903,
+        "execution_sequence": 902,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -318539,10 +318223,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 904,
+        "execution_sequence": 903,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -318901,10 +318585,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 905,
+        "execution_sequence": 904,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -319243,10 +318927,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 906,
+        "execution_sequence": 905,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -319585,10 +319269,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 907,
+        "execution_sequence": 906,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -319974,10 +319658,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 908,
+        "execution_sequence": 907,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -320362,10 +320046,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 909,
+        "execution_sequence": 908,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -320750,10 +320434,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 910,
+        "execution_sequence": 909,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -321138,10 +320822,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 911,
+        "execution_sequence": 910,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -321526,10 +321210,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 912,
+        "execution_sequence": 911,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -321914,10 +321598,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 913,
+        "execution_sequence": 912,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -322302,10 +321986,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 914,
+        "execution_sequence": 913,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -322670,10 +322354,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 915,
+        "execution_sequence": 914,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -323058,10 +322742,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 916,
+        "execution_sequence": 915,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -323446,10 +323130,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 917,
+        "execution_sequence": 916,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -323834,10 +323518,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 918,
+        "execution_sequence": 917,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -324202,10 +323886,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 919,
+        "execution_sequence": 918,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -324590,10 +324274,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 920,
+        "execution_sequence": 919,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -324978,10 +324662,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 921,
+        "execution_sequence": 920,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -325366,10 +325050,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 922,
+        "execution_sequence": 921,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -325754,10 +325438,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 923,
+        "execution_sequence": 922,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -326142,10 +325826,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 924,
+        "execution_sequence": 923,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -326510,10 +326194,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 925,
+        "execution_sequence": 924,
         "batch_id": "MRX1000-SA-BATCH-037",
         "batch_sequence": 37,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -326898,10 +326582,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 926,
-        "batch_id": "MRX1000-SA-BATCH-038",
-        "batch_sequence": 38,
-        "position_in_batch": 1,
+        "execution_sequence": 925,
+        "batch_id": "MRX1000-SA-BATCH-037",
+        "batch_sequence": 37,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -327286,10 +326970,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 927,
+        "execution_sequence": 926,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -327674,10 +327358,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 928,
+        "execution_sequence": 927,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -328062,10 +327746,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 929,
+        "execution_sequence": 928,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -328450,10 +328134,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 930,
+        "execution_sequence": 929,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -328838,10 +328522,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 931,
+        "execution_sequence": 930,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -329226,10 +328910,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 932,
+        "execution_sequence": 931,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -329614,10 +329298,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 933,
+        "execution_sequence": 932,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -330002,10 +329686,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 934,
+        "execution_sequence": 933,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -330390,10 +330074,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 935,
+        "execution_sequence": 934,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -330758,10 +330442,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 936,
+        "execution_sequence": 935,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -331126,10 +330810,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 937,
+        "execution_sequence": 936,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -331514,10 +331198,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 938,
+        "execution_sequence": 937,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "reconcile_unambiguous_exact_title_vendor_candidate_no_creation",
@@ -331855,10 +331539,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 939,
+        "execution_sequence": 938,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -332197,10 +331881,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 940,
+        "execution_sequence": 939,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -332539,10 +332223,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 941,
+        "execution_sequence": 940,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -332881,10 +332565,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 942,
+        "execution_sequence": 941,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -333223,10 +332907,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 943,
+        "execution_sequence": 942,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -333565,10 +333249,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 944,
+        "execution_sequence": 943,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -333907,10 +333591,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 945,
+        "execution_sequence": 944,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -334249,10 +333933,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 946,
+        "execution_sequence": 945,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -334591,10 +334275,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 947,
+        "execution_sequence": 946,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -334933,10 +334617,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 948,
+        "execution_sequence": 947,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -335275,10 +334959,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 949,
+        "execution_sequence": 948,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -335617,10 +335301,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 950,
+        "execution_sequence": 949,
         "batch_id": "MRX1000-SA-BATCH-038",
         "batch_sequence": 38,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -335959,10 +335643,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 951,
-        "batch_id": "MRX1000-SA-BATCH-039",
-        "batch_sequence": 39,
-        "position_in_batch": 1,
+        "execution_sequence": 950,
+        "batch_id": "MRX1000-SA-BATCH-038",
+        "batch_sequence": 38,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -336301,10 +335985,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 952,
+        "execution_sequence": 951,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -336643,10 +336327,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 953,
+        "execution_sequence": 952,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -336985,10 +336669,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 954,
+        "execution_sequence": 953,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -337327,10 +337011,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 955,
+        "execution_sequence": 954,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -337669,10 +337353,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 956,
+        "execution_sequence": 955,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -338011,10 +337695,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 957,
+        "execution_sequence": 956,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -338380,10 +338064,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 958,
+        "execution_sequence": 957,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
@@ -338721,10 +338405,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 959,
+        "execution_sequence": 958,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -339063,10 +338747,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 960,
+        "execution_sequence": 959,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -339405,10 +339089,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 961,
+        "execution_sequence": 960,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -339747,10 +339431,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 962,
+        "execution_sequence": 961,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -340089,10 +339773,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 963,
+        "execution_sequence": 962,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -340431,10 +340115,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 964,
+        "execution_sequence": 963,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -340773,10 +340457,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 965,
+        "execution_sequence": 964,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -341115,10 +340799,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 966,
+        "execution_sequence": 965,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -341457,10 +341141,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 967,
+        "execution_sequence": 966,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -341799,10 +341483,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 968,
+        "execution_sequence": 967,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -342141,10 +341825,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 969,
+        "execution_sequence": 968,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -342483,10 +342167,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 970,
+        "execution_sequence": 969,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -342825,10 +342509,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 971,
+        "execution_sequence": 970,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -343167,10 +342851,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 972,
+        "execution_sequence": 971,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -343509,10 +343193,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 973,
+        "execution_sequence": 972,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -343851,10 +343535,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 974,
+        "execution_sequence": 973,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -344193,10 +343877,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 975,
+        "execution_sequence": 974,
         "batch_id": "MRX1000-SA-BATCH-039",
         "batch_sequence": 39,
-        "position_in_batch": 25,
+        "position_in_batch": 24,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -344535,10 +344219,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 976,
-        "batch_id": "MRX1000-SA-BATCH-040",
-        "batch_sequence": 40,
-        "position_in_batch": 1,
+        "execution_sequence": 975,
+        "batch_id": "MRX1000-SA-BATCH-039",
+        "batch_sequence": 39,
+        "position_in_batch": 25,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -344877,10 +344561,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 977,
+        "execution_sequence": 976,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 2,
+        "position_in_batch": 1,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -345219,10 +344903,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 978,
+        "execution_sequence": 977,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 3,
+        "position_in_batch": 2,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -345561,10 +345245,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 979,
+        "execution_sequence": 978,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 4,
+        "position_in_batch": 3,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -345903,10 +345587,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 980,
+        "execution_sequence": 979,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 5,
+        "position_in_batch": 4,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -346245,10 +345929,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 981,
+        "execution_sequence": 980,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 6,
+        "position_in_batch": 5,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -346587,10 +346271,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 982,
+        "execution_sequence": 981,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 7,
+        "position_in_batch": 6,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -346929,10 +346613,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 983,
+        "execution_sequence": 982,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 8,
+        "position_in_batch": 7,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -347271,10 +346955,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 984,
+        "execution_sequence": 983,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 9,
+        "position_in_batch": 8,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -347613,10 +347297,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 985,
+        "execution_sequence": 984,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 10,
+        "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -347955,10 +347639,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 986,
+        "execution_sequence": 985,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 11,
+        "position_in_batch": 10,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -348297,10 +347981,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 987,
+        "execution_sequence": 986,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 12,
+        "position_in_batch": 11,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -348639,10 +348323,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 988,
+        "execution_sequence": 987,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 13,
+        "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -348981,10 +348665,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 989,
+        "execution_sequence": 988,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 14,
+        "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -349323,10 +349007,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 990,
+        "execution_sequence": 989,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 15,
+        "position_in_batch": 14,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -349665,10 +349349,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 991,
+        "execution_sequence": 990,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 16,
+        "position_in_batch": 15,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -350007,10 +349691,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 992,
+        "execution_sequence": 991,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 17,
+        "position_in_batch": 16,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -350349,10 +350033,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 993,
+        "execution_sequence": 992,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 18,
+        "position_in_batch": 17,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -350691,10 +350375,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 994,
+        "execution_sequence": 993,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 19,
+        "position_in_batch": 18,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -351033,10 +350717,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 995,
+        "execution_sequence": 994,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 20,
+        "position_in_batch": 19,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -351375,10 +351059,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 996,
+        "execution_sequence": 995,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 21,
+        "position_in_batch": 20,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -351717,10 +351401,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 997,
+        "execution_sequence": 996,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 22,
+        "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -352059,10 +351743,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 998,
+        "execution_sequence": 997,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 23,
+        "position_in_batch": 22,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -352401,10 +352085,10 @@
         }
       },
       "searchatlas_execution": {
-        "execution_sequence": 999,
+        "execution_sequence": 998,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
-        "position_in_batch": 24,
+        "position_in_batch": 23,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
         "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
@@ -352743,6 +352427,348 @@
         }
       },
       "searchatlas_execution": {
+        "execution_sequence": 999,
+        "batch_id": "MRX1000-SA-BATCH-040",
+        "batch_sequence": 40,
+        "position_in_batch": 24,
+        "batch_size": 25,
+        "assignment_policy": "remaining_rows_by_program_row_id",
+        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
+        "execution_eligible_now": false,
+        "creation_needed_proven": false,
+        "searchatlas_created_claimed": false,
+        "external_write_performed": false,
+        "prerequisite_gates": {
+          "owner_decision_sha256_verified": true,
+          "program_release_authorization_observed": true,
+          "article_specific_quality_clearance_required": true,
+          "article_specific_quality_clearance_observed": false,
+          "read_only_quota_preflight_required_before_external_write": true,
+          "canonical_identity_reconciliation_required": true,
+          "checksummed_content_candidate_required_before_review": true,
+          "checksummed_content_candidate_present": false,
+          "review_candidate_path_and_sha256_present": false,
+          "review_readiness_evidence_verified": false,
+          "compliance_seo_aeo_editorial_gates_required": true
+        },
+        "evidence": {
+          "preflight_evidence_path": null,
+          "preflight_sha256": null,
+          "vendor_action_receipt_path": null,
+          "vendor_action_receipt_sha256": null,
+          "resulting_content_genius_article_uuid": null,
+          "resulting_candidate_content_sha256": null,
+          "executed_at": null
+        }
+      },
+      "ordered_llm_reviews": [
+        {
+          "order": 1,
+          "key": "chatgpt",
+          "display_name": "ChatGPT",
+          "provider": "OpenAI",
+          "required_exact_model_id": null,
+          "exact_model_gate": "Capture the exact first-party model identifier before dispatch; no model was selected or executed by this local-only build.",
+          "additional_engine": false,
+          "rationale": "First answer-engine review requested by Daryl.",
+          "state": "NOT_STARTED_LOCAL_ONLY_NO_DISPATCH",
+          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
+          "dispatch_eligible_now": false,
+          "prerequisite_gates": {
+            "checksummed_review_candidate_present": false,
+            "review_candidate_path": null,
+            "review_candidate_sha256": null,
+            "review_candidate_readiness_evidence_verified": false,
+            "predecessor_key": null,
+            "predecessor_pass_required": false,
+            "predecessor_pass_observed": false,
+            "exact_model_id_must_be_recorded": true,
+            "exact_required_model_available": null,
+            "program_release_authorization_satisfied": true,
+            "row2_d12_exception_preconditions_satisfied": null,
+            "row2_d12_audit_ready_now": null
+          },
+          "evidence": {
+            "review_input_sha256": null,
+            "verdict_output_sha256": null,
+            "evidence_path": null,
+            "exact_model_id_observed": null,
+            "run_id": null,
+            "executed_at": null,
+            "verdict": null,
+            "issues": []
+          }
+        },
+        {
+          "order": 2,
+          "key": "google_gemini",
+          "display_name": "Google Gemini",
+          "provider": "Google",
+          "required_exact_model_id": null,
+          "exact_model_gate": "Capture the exact first-party Gemini model identifier before dispatch; the machine and display labels intentionally correct the user typo \"Demini\".",
+          "additional_engine": false,
+          "rationale": "Second answer-engine review requested by Daryl.",
+          "state": "WAITING_FOR_PREDECESSOR_PASS",
+          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
+          "dispatch_eligible_now": false,
+          "prerequisite_gates": {
+            "checksummed_review_candidate_present": false,
+            "review_candidate_path": null,
+            "review_candidate_sha256": null,
+            "review_candidate_readiness_evidence_verified": false,
+            "predecessor_key": "chatgpt",
+            "predecessor_pass_required": true,
+            "predecessor_pass_observed": false,
+            "exact_model_id_must_be_recorded": true,
+            "exact_required_model_available": null,
+            "program_release_authorization_satisfied": true,
+            "row2_d12_exception_preconditions_satisfied": null,
+            "row2_d12_audit_ready_now": null
+          },
+          "evidence": {
+            "review_input_sha256": null,
+            "verdict_output_sha256": null,
+            "evidence_path": null,
+            "exact_model_id_observed": null,
+            "run_id": null,
+            "executed_at": null,
+            "verdict": null,
+            "issues": []
+          }
+        },
+        {
+          "order": 3,
+          "key": "claude_opus_4_6",
+          "display_name": "Claude Opus 4.6",
+          "provider": "Anthropic",
+          "required_exact_model_id": "claude-opus-4-6",
+          "exact_model_gate": "Hard requirement: execute only claude-opus-4-6 in a first-party environment; never substitute a different Claude model.",
+          "additional_engine": false,
+          "rationale": "Exact editorial/release model required by the signed MRX gate.",
+          "state": "MODEL_BLOCKED_EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
+          "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
+          "dispatch_eligible_now": false,
+          "prerequisite_gates": {
+            "checksummed_review_candidate_present": false,
+            "review_candidate_path": null,
+            "review_candidate_sha256": null,
+            "review_candidate_readiness_evidence_verified": false,
+            "predecessor_key": "google_gemini",
+            "predecessor_pass_required": true,
+            "predecessor_pass_observed": false,
+            "exact_model_id_must_be_recorded": true,
+            "exact_required_model_available": false,
+            "program_release_authorization_satisfied": true,
+            "row2_d12_exception_preconditions_satisfied": null,
+            "row2_d12_audit_ready_now": null
+          },
+          "evidence": {
+            "review_input_sha256": null,
+            "verdict_output_sha256": null,
+            "evidence_path": null,
+            "exact_model_id_observed": null,
+            "run_id": null,
+            "executed_at": null,
+            "verdict": null,
+            "issues": []
+          }
+        },
+        {
+          "order": 4,
+          "key": "perplexity",
+          "display_name": "Perplexity",
+          "provider": "Perplexity AI",
+          "required_exact_model_id": null,
+          "exact_model_gate": "Capture the exact first-party model/product identifier before dispatch.",
+          "additional_engine": false,
+          "rationale": "Fourth answer-engine review requested by Daryl.",
+          "state": "WAITING_FOR_PREDECESSOR_PASS",
+          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
+          "dispatch_eligible_now": false,
+          "prerequisite_gates": {
+            "checksummed_review_candidate_present": false,
+            "review_candidate_path": null,
+            "review_candidate_sha256": null,
+            "review_candidate_readiness_evidence_verified": false,
+            "predecessor_key": "claude_opus_4_6",
+            "predecessor_pass_required": true,
+            "predecessor_pass_observed": false,
+            "exact_model_id_must_be_recorded": true,
+            "exact_required_model_available": null,
+            "program_release_authorization_satisfied": true,
+            "row2_d12_exception_preconditions_satisfied": null,
+            "row2_d12_audit_ready_now": null
+          },
+          "evidence": {
+            "review_input_sha256": null,
+            "verdict_output_sha256": null,
+            "evidence_path": null,
+            "exact_model_id_observed": null,
+            "run_id": null,
+            "executed_at": null,
+            "verdict": null,
+            "issues": []
+          }
+        },
+        {
+          "order": 5,
+          "key": "microsoft_copilot",
+          "display_name": "Microsoft Copilot",
+          "provider": "Microsoft",
+          "required_exact_model_id": null,
+          "exact_model_gate": "Capture the exact first-party Copilot surface and model/product identifier before dispatch.",
+          "additional_engine": true,
+          "rationale": "Adds a distinct Bing/Copilot answer surface after the four required reviewers without changing their order.",
+          "state": "WAITING_FOR_PREDECESSOR_PASS",
+          "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
+          "dispatch_eligible_now": false,
+          "prerequisite_gates": {
+            "checksummed_review_candidate_present": false,
+            "review_candidate_path": null,
+            "review_candidate_sha256": null,
+            "review_candidate_readiness_evidence_verified": false,
+            "predecessor_key": "perplexity",
+            "predecessor_pass_required": true,
+            "predecessor_pass_observed": false,
+            "exact_model_id_must_be_recorded": true,
+            "exact_required_model_available": null,
+            "program_release_authorization_satisfied": true,
+            "row2_d12_exception_preconditions_satisfied": null,
+            "row2_d12_audit_ready_now": null
+          },
+          "evidence": {
+            "review_input_sha256": null,
+            "verdict_output_sha256": null,
+            "evidence_path": null,
+            "exact_model_id_observed": null,
+            "run_id": null,
+            "executed_at": null,
+            "verdict": null,
+            "issues": []
+          }
+        }
+      ],
+      "ordered_review_exception": null,
+      "review_gate": {
+        "required_order": [
+          "chatgpt",
+          "google_gemini",
+          "claude_opus_4_6",
+          "perplexity",
+          "microsoft_copilot"
+        ],
+        "next_stage": null,
+        "any_verdict_recorded": false,
+        "all_required_verdicts_passed": false,
+        "sequence_complete": false,
+        "exact_claude_substitution_allowed": false,
+        "exact_claude_substitution_scope": null
+      },
+      "release_index_eligibility": {
+        "decision_id": "D-2026-0804-16",
+        "signed_artifact_sha256": "edc1d4602149558ff6d2b960416839b8caf97593f5fd8fe6ea91b56617d1425f",
+        "authorization_cap_new_rows": null,
+        "numerical_release_cap_applies": false,
+        "elapsed_time_gate_applies": false,
+        "program_release_authorized": true,
+        "program_index_authorized": true,
+        "release_action_eligible_now": false,
+        "index_submission_eligible_now": false,
+        "sitemap_addition_eligible_now": false,
+        "currently_in_workspace_sitemap": false,
+        "production_live_verified_in_this_local_build": false,
+        "release_or_index_action_performed": false,
+        "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
+        "release_or_index_model_substitution_allowed": false,
+        "reason_codes": [
+          "ORDERED_LLM_REVIEWS_NOT_COMPLETE",
+          "EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
+          "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
+          "NO_EXTERNAL_RELEASE_OR_INDEX_ACTION_PERFORMED"
+        ]
+      },
+      "stop_conditions": [
+        "EXACT_CLAUDE_OPUS_4_6_UNAVAILABLE",
+        "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
+        "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
+        "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
+        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
+        "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
+      ]
+    },
+    {
+      "program_row_id": "MRX1000-1079",
+      "canonical_title": "Dimmit County, Texas Mineral Rights Value: Guide For Mineral Owners",
+      "canonical_slug": "dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "pillar": "texas-mineral-rights",
+      "pillar_url": "/mineral-rights/texas/",
+      "cluster": "texas-county-basin-local-intent",
+      "primary_keyword": "Dimmit County, Texas mineral rights value",
+      "authoritative_current_state": {
+        "canonical_inventory_state": "planning_only_inventory",
+        "normalized_status": "planning_only_factory_queue_title_metadata",
+        "source_system": "factory_queue_title_metadata",
+        "pilot_article_id": null,
+        "repo": {
+          "state": "NO_WORKSPACE_MDX",
+          "path": null,
+          "mdx_exists": false,
+          "source_sha256": null,
+          "publication_status": null,
+          "frontmatter_noindex": false,
+          "workspace_public_route_configured": false,
+          "production_live_verified_in_this_local_build": false,
+          "content_evidence": null
+        },
+        "planning_handles": {
+          "searchatlas_map_id": null,
+          "searchatlas_title_uuid": null,
+          "searchatlas_record_id_persisted_in_ledger": null,
+          "content_genius_article_uuid_persisted_in_ledger": null,
+          "are_content_genius_article_creation_proof": false,
+          "evidence_boundary": "map_id/title_uuid are topical-map planning handles; pilot_article_id is a local manifest identity; none proves a Content Genius article UUID"
+        },
+        "vendor_join": {
+          "join_method": "normalized_exact_title_against_composed_local_snapshot",
+          "match_count": 0,
+          "match_state": "NO_EXACT_TITLE_MATCH",
+          "binding_status": "NO_EXACT_TITLE_JOIN",
+          "candidate_article_uuids": [],
+          "candidate_statuses": [],
+          "records": [],
+          "content_genius_article_uuid_proven_for_canonical_row": null,
+          "exact_title_candidate_is_creation_proof_for_canonical_row": false,
+          "manual_reconciliation_required": true
+        },
+        "review_candidate": {
+          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
+          "checksummed_review_candidate_present": false,
+          "path": null,
+          "source_sha256": null,
+          "body_sha256": null,
+          "body_word_count": null,
+          "candidate_type": null,
+          "readiness_evidence_verified": false,
+          "readiness_evidence_paths": [],
+          "readiness_checks": {
+            "workspace_source_checksum_present": false,
+            "readiness_row_identity_verified": true,
+            "filename_matches_canonical_slug": false,
+            "frontmatter_title_matches_canonical": false,
+            "frontmatter_publication_status_matches_ledger": false,
+            "substantive_body_at_least_500_words": false,
+            "explicit_qa_shell_absent": false,
+            "review_metadata_present": false,
+            "canonical_state_supports_content_review": false
+          },
+          "workspace_mdx_is_review_candidate": false,
+          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "special_candidate_validation": null
+        }
+      },
+      "searchatlas_execution": {
         "execution_sequence": 1000,
         "batch_id": "MRX1000-SA-BATCH-040",
         "batch_sequence": 40,
@@ -353014,5 +353040,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "a533ec30c143720b8865de37acc5de7c77006be8faa0579a8069524e8b94e522"
+  "content_fingerprint_sha256": "e1b8945df1b4787732de3207e7a55dc663c76b7d5e8da0285fd4680e8effc07e"
 }

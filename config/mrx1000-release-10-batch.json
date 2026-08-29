@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T00:35:27Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T00:57:45Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -516,13 +516,16 @@
     "wave171_selection_decision_sha256": "48ce63eb4805eb2ba45d6865275ffbfe0f5f5915f6a4436f85afb7af69aee3bd",
     "wave172_selection_decision_id": "MRX1000-W172-SELECT-2026-08-28",
     "wave172_selection_decision_path": "docs/governance/mrx1000-wave172-selection-decision-2026-08-28.md",
-    "wave172_selection_decision_sha256": "091ffe2b8db51e95e77be47f648bba1f67b9f15955de26503e138c39e7c8061f"
+    "wave172_selection_decision_sha256": "091ffe2b8db51e95e77be47f648bba1f67b9f15955de26503e138c39e7c8061f",
+    "wave173_selection_decision_id": "MRX1000-W173-SELECT-2026-08-28",
+    "wave173_selection_decision_path": "docs/governance/mrx1000-wave173-selection-decision-2026-08-28.md",
+    "wave173_selection_decision_sha256": "a3d00272a8b177893d211cd669ee585f38f38ff3fc1ed876afcd026a2431eb51"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "365beffb822be9ec526188e1cc36dd878d8b36ead4b2f783e0d123d911de0ea3",
-    "canonical_ledger_generated_at": "2026-07-20T22:27:44.883Z",
+    "canonical_ledger_sha256": "ea78278f71bef765bffd237138e7d5acea41b57ad94ca3f5fc06d5876d078b79",
+    "canonical_ledger_generated_at": "2026-07-20T06:42:11.481Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -536,11 +539,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 243,
+    "prior_verified_article_count": 244,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 244,
-    "exact_admitted_slate_sha256": "1e2d85e5c7d2be8778afcc0096773d0416249ac0c5545e9d338ff711ecf207fe"
+    "exact_admitted_count": 245,
+    "exact_admitted_slate_sha256": "d6984bbae95cfbc9bdbcf9260e888311e4ae36203b26e84f3a15ecc06d1b208b"
   },
   "articles": [
     {
@@ -8760,10 +8763,48 @@
       "inline_path": "/assets/articles/inline/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/dimmit-cad-2025-mineral-ratio-study.webp",
       "inline_asset_sha256": "b1ed77ce2d7938c56bbaae1a9cbf8f71dd6842764becb51361abab409b923187",
       "inline_rendered_text": "Dimmit CAD 2025 mineral ratio study"
+    },
+    {
+      "selection_rank": 245,
+      "program_row_id": "MRX1000-0772",
+      "source_shortlist_program_row_id": "MRX1000-0772",
+      "slug": "dimmit-cad-2024-25-map-review-source-record",
+      "title": "Dimmit CAD 2024-25 MAP Review Source Record",
+      "source_shortlist_title": "Dimmit CAD 2024-25 MAP Review Source Record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "5b6e3a6425663e7c2be6791a093b9ae1209879734ebe27ed288736e21246b823",
+      "repo_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+      "repo_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+      "article_sha256": "f71772d7fc383b0a30341665e2c4d25dde41d9f18297bfc7c035e67d909d6135",
+      "hero_path": "/assets/articles/hero/dimmit-cad-2024-25-map-review-source-record.webp",
+      "hero_sha256": "09691161e0e8dd9dd54bcc1294463dd5a7e65d25a7ed2196e65ff79a5aa5bec4",
+      "hero_asset_sha256": "09691161e0e8dd9dd54bcc1294463dd5a7e65d25a7ed2196e65ff79a5aa5bec4",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1468,
+      "risk_citation_remediation": [
+        "The original generic Dimmit County mineral-rights value guide identity for MRX1000-0772 is rejected because queued Dimmit valuation variants and the wider valuation corpus materially overlap it; Search Atlas returned no data for both the planning and replacement phrases.",
+        "The replacement owns only the official Texas Comptroller 2024 results-page relationship and exact Dimmit 2024-25 MAP report identity, page locators, literal PASS and Meets All labels, displayed counts and scores, retrieval provenance, program context, and document-control state.",
+        "The 2024 completion-year context, 2024-25 report period, and January 2026 recommendation-completion language remain separate dated source facts. The article does not imply a current deadline, recommendation obligation, or present district status.",
+        "The five PASS results, four Meets All ratings, four displayed scores, Yes and N/A responses, and absence of a displayed recommendation are not converted into an MRX audit, score, grade, certification, property appraisal, tax or protest conclusion, valuation, offer, or owner action.",
+        "The Dimmit ratio-study source record and DeWitt MAP source record retain separate official sources, periods, district identities, page fields, and evidence ownership. No figure or result is combined, compared, benchmarked, or used as Dimmit property evidence.",
+        "The public source record exposes no owner, account, address, identifier, legal description, property fact, appraisal notice, tax amount, title fact, mineral value, offer, or personal data.",
+        "Any property matching, private-data handling, arithmetic analysis, cross-source comparison, legal interpretation, appraisal judgment, tax or protest guidance, valuation, representation, contact, submission, payment, offer analysis, or sale advice forces a controlled-record or authorized-human stop.",
+        "Continuous quality-gated admission under the owner no-approval directives and current AI Atom Brain/Search Atlas website SEO/AEO release gate; no numerical cap or owner publication approval applies."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/dimmit-cad-2024-25-map-review-source-record.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/dimmit-cad-2024-25-map-review-source-record/dimmit-cad-2024-25-map-review.webp",
+      "inline_asset_sha256": "f483a48fa65b044853575e261209dd9e1adca50c468fcee6c020d30db31d2eb6",
+      "inline_rendered_text": "Dimmit CAD 2024-25 MAP review"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 244,
+    "admitted_article_count": 245,
     "selection_ranks": [
       1,
       2,
@@ -9008,7 +9049,8 @@
       241,
       242,
       243,
-      244
+      244,
+      245
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9067,9 +9109,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "738c0096f1c2217aed3c8cda1b6616173107785cbf17e07fafa791112ea59d51",
-    "public_article_count": 252,
-    "batch_article_count": 244,
+    "retrofit_manifest_sha256": "6247ddb03d22384bc153deb6610e26798fde9ad60b2083f9314233996e27cce1",
+    "public_article_count": 253,
+    "batch_article_count": 245,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
