@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T09:13:42Z",
+  "generated_at_utc": "2026-08-29T09:28:27Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 274,
-    "asset_count": 548,
-    "unique_source_art_count": 274,
-    "unique_hero_sha256_count": 274,
-    "unique_inline_sha256_count": 274,
-    "distinct_article_pair_count": 274,
-    "hero_ocr_pass_count": 274,
-    "inline_ocr_pass_count": 274,
-    "exact_filename_identity_count": 274
+    "article_count": 275,
+    "asset_count": 550,
+    "unique_source_art_count": 275,
+    "unique_hero_sha256_count": 275,
+    "unique_inline_sha256_count": 275,
+    "distinct_article_pair_count": 275,
+    "hero_ocr_pass_count": 275,
+    "inline_ocr_pass_count": 275,
+    "exact_filename_identity_count": 275
   },
   "contact_sheets": {
     "hero": [
@@ -5854,6 +5854,56 @@
           "actual": "Karnes CAD 2024 annual\nreport Category G",
           "normalized_expected": "karnes cad 2024 annual report category g",
           "normalized_actual": "karnes cad 2024 annual report category g",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk",
+      "title": "Karnes CAD 2025-2026 Reappraisal Plan: Pages 22-23 Activity Schedule Crosswalk",
+      "keyword": "Karnes CAD 2025-2026 reappraisal schedule",
+      "file_path": "src/content/posts/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk.mdx",
+      "source_public_path": "/assets/articles/hero/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave195-creative-sources/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk-hero-base.png",
+        "artifacts/mrx1000-wave195-creative-sources/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T09:25:48.226Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk.webp",
+        "alt": "An upright blank reappraisal-plan folio appears beside the exact Karnes CAD activity-schedule crosswalk title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "dc9791c5fcd4870e3ba2217a98ec4b5e61c92a96dbca5215d2d2cbe407dcf482",
+        "perceptual_hash": "0000000001111111000000000111111100000000111111110000000011111111000000001111111100000000111111110000000011111110000000001111111000000000111111100000000011111110000000001111111000000000111111100000000011111110000000000111111100000000011111110000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Karnes CAD 2025-2026 Reappraisal Plan: Pages 22-23 Activity Schedule Crosswalk",
+          "actual": "Karnes CAD 2025-2026\nReappraisal Plan:\nPages 22-23 Activity\nSchedule Crosswalk",
+          "normalized_expected": "karnes cad 2025 2026 reappraisal plan pages 22 23 activity schedule crosswalk",
+          "normalized_actual": "karnes cad 2025 2026 reappraisal plan pages 22 23 activity schedule crosswalk",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk/karnes-cad-2025-2026-reappraisal-schedule.webp",
+        "alt": "Six overhead blank schedule cards appear above the Karnes CAD 2025-2026 reappraisal schedule phrase.",
+        "rendered_text": "Karnes CAD 2025-2026 reappraisal schedule",
+        "visual_variant": "wave195-distinct-generated-upright-plan-folio-and-overhead-six-band-schedule-workspace",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "1dc64c48e89891837b34799c7638cac6d8c4b4d4fcc4a5cfc13dfba925a20670",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111001111111111111101111111111111101111111111111111111111111111111111111111111110110111111111111011011111111111101101101100110100100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Karnes CAD 2025-2026 reappraisal schedule",
+          "actual": "Karnes CAD 2025-2026\nreappraisal schedule",
+          "normalized_expected": "karnes cad 2025 2026 reappraisal schedule",
+          "normalized_actual": "karnes cad 2025 2026 reappraisal schedule",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

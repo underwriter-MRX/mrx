@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (274)
+## Published article URLs (275)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Karnes CAD 2025-2026 Reappraisal Plan: Pages 22-23 Activity Schedule Crosswalk](https://mineralrightsxchange.com/blog/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk/)
 - [Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk](https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/)
 - [Howard CAD 2026 Certified Mineral Roll ZIP: 16-Member PACS Export Container Index](https://mineralrightsxchange.com/blog/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/)
 - [Howard CAD Open Records Request Form: Mineral-Record Field Inventory](https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/)
