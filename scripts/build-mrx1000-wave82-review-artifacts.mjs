@@ -106,6 +106,11 @@ async function verifySource({ label, url }) {
     [...finalUrl.searchParams.values()].some((value) =>
       value.toLowerCase().endsWith('.zip'),
     );
+  const legacyWordNamedSource =
+    finalUrl.pathname.toLowerCase().endsWith('.doc') ||
+    [...finalUrl.searchParams.values()].some((value) =>
+      value.toLowerCase().endsWith('.doc'),
+    );
   const allowed =
     contentType.includes('text/html') ||
     (pdfNamedSource &&
@@ -113,6 +118,10 @@ async function verifySource({ label, url }) {
     (archiveNamedSource &&
       (contentType.includes('application/zip') ||
         contentType.includes('application/x-zip-compressed') ||
+        contentType.includes('octet-stream'))) ||
+    (legacyWordNamedSource &&
+      (contentType.includes('application/msword') ||
+        contentType.includes('application/vnd.ms-word') ||
         contentType.includes('octet-stream')));
   if (!allowed || finalUrl.protocol !== 'https:') {
     throw new Error(`${url}: source access or content type is unsupported`);
