@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Travis](https://mineralrightsxchange.com/authors/travis/)
 - [Wade](https://mineralrightsxchange.com/authors/wade/)
 
-## Published article URLs (259)
+## Published article URLs (260)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Ector CAD 2027-2028 Reappraisal Plan Oil and Gas Section Source Locator](https://mineralrightsxchange.com/blog/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/)
 - [Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record](https://mineralrightsxchange.com/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/)
 - [Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk](https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/)
 - [Ector CAD 2026 Mineral Appraisal Parameters Source Index](https://mineralrightsxchange.com/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/)
