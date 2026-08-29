@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T03:57:39Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T04:11:09Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -543,13 +543,16 @@
     "wave180_selection_decision_sha256": "bdd75d88a3b6337cf4af8708fea9d8d3e513112afa22dfee63424ac722a4badf",
     "wave181_selection_decision_id": "MRX1000-W181-SELECT-2026-08-28",
     "wave181_selection_decision_path": "docs/governance/mrx1000-wave181-selection-decision-2026-08-28.md",
-    "wave181_selection_decision_sha256": "28ef50ca8bd6e1f708eadcc8a4d67d88cc75a71107831ac237c7351888ebb8d8"
+    "wave181_selection_decision_sha256": "28ef50ca8bd6e1f708eadcc8a4d67d88cc75a71107831ac237c7351888ebb8d8",
+    "wave182_selection_decision_id": "MRX1000-W182-SELECT-2026-08-28",
+    "wave182_selection_decision_path": "docs/governance/mrx1000-wave182-selection-decision-2026-08-28.md",
+    "wave182_selection_decision_sha256": "85320efa7f33502217947b77cb92240a65ec28cc8452046996ea6b7161624213"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "d416105c683bea8c96315b32b905972c0a5b3aa3038da82d32a2575b7173f0e8",
-    "canonical_ledger_generated_at": "2026-07-20T19:24:51.936Z",
+    "canonical_ledger_sha256": "94b7113b2e35b792aa8c3c9c830ce1782920c02861807c28b6dd656775274115",
+    "canonical_ledger_generated_at": "2026-07-20T03:50:59.807Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -563,11 +566,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 252,
+    "prior_verified_article_count": 253,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 253,
-    "exact_admitted_slate_sha256": "7c4cc22ab819b12a6a9e21aafb319f4bd4b33bf9222240d1f06dbbbcb9259448"
+    "exact_admitted_count": 254,
+    "exact_admitted_slate_sha256": "c005343148fde24d25f6b9a03f7a09f1fea5af85e79aeede333170866609f7ce"
   },
   "articles": [
     {
@@ -9138,10 +9141,49 @@
       "inline_path": "/assets/articles/inline/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/ector-cad-2025-mineral-original-tax-roll.webp",
       "inline_asset_sha256": "3064a55064f2a6a64a8ba2d54f81d82fd9009836a620c77f265c161429bf9198",
       "inline_rendered_text": "Ector CAD 2025 mineral original tax roll"
+    },
+    {
+      "selection_rank": 254,
+      "program_row_id": "MRX1000-0781",
+      "source_shortlist_program_row_id": "MRX1000-0781",
+      "slug": "glasscock-cad-mineral-account-appraisal-responsibility-source-locator",
+      "title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+      "source_shortlist_title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+      "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "defbfcb6dd41225f144d10d185b5a07fe450277633c1ac5c53f4b8db492d8d09",
+      "repo_path": "src/content/posts/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.mdx",
+      "repo_sha256": "a5ead1ca1734460a99bdf1c267618128c0a4e83f871bdc600041442e0d0b50b6",
+      "article_sha256": "a5ead1ca1734460a99bdf1c267618128c0a4e83f871bdc600041442e0d0b50b6",
+      "hero_path": "/assets/articles/hero/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.webp",
+      "hero_sha256": "a8d8b79bbb9797c2080f3af794d5f9b56e868cf03e6bdf780dc21a3350e80673",
+      "hero_asset_sha256": "a8d8b79bbb9797c2080f3af794d5f9b56e868cf03e6bdf780dc21a3350e80673",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1567,
+      "risk_citation_remediation": [
+        "The original Glasscock County value and family-decision identity for MRX1000-0781 is rejected because it repeats four adjacent Glasscock value rows and materially overlaps the existing valuation, family-decision, county-guide, offer, and sale corpus.",
+        "The replacement owns one distinct information-gain job: preserve the official Glasscock CAD home-page route and dated page-level mineral, utility, and industrial account-appraisal attribution while keeping the separate real-estate and personal-property attribution visible as a role boundary.",
+        "The exact official page route, 2026-08-28 retrieval date, HTTP 200 text/html state, displayed subject categories, displayed names, and source limitations remain tied to one recorded public-page observation.",
+        "A publisher-page attribution does not authenticate a contract, establish its term, decide authority or compliance, prove completed work, connect a firm to a particular property, validate an appraisal, or establish tax, title, value, offer, or transaction facts.",
+        "The Glasscock Data and Records page, Comptroller directory, statutes, property-search surfaces, rolls, reports, plans, forms, and contacts remain separate evidence objects; none is combined into an owner-specific conclusion.",
+        "The Dimmit responsibility source map owns a different county and report-page chain. The Brazos search and contact workflows and Ector document indexes own separate interactive, county, source, and document jobs.",
+        "No person, owner, address, account, property, lease, notice, roll row, appraisal, tax amount, protest status, private data, ownership, title, value, offer, or transaction fact is accessed, reproduced, inferred, or decided.",
+        "The information-gain and AI-citation factory contract is applied through direct answer first, claim-adjacent official citations, exact entity/page/route/retrieval provenance, useful visible FAQs, semantic internal links, visible/schema parity, and separation of execution proof from later performance proof.",
+        "Continuous quality-gated admission proceeds under the owner no-approval directives. No numerical cap or owner publication approval applies, and no ranking, indexing, retrieval, citation, traffic, lead, or revenue outcome is promised."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/glasscock-cad-mineral-account-appraiser.webp",
+      "inline_asset_sha256": "fb3210a2d984dfbe516a390ffbd99adcbe1b86db7d4accda3b5ab7a3c868019e",
+      "inline_rendered_text": "Glasscock CAD mineral account appraiser"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 253,
+    "admitted_article_count": 254,
     "selection_ranks": [
       1,
       2,
@@ -9395,7 +9437,8 @@
       250,
       251,
       252,
-      253
+      253,
+      254
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -9454,9 +9497,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "d60f669a4d8a02e206d30f96b2be0004a01d1a8a21f1ff70dbc66776015bef05",
-    "public_article_count": 261,
-    "batch_article_count": 253,
+    "retrofit_manifest_sha256": "d7c4c39f14b273ee4561e66a1c8d548a346e58f8d418f290dd007478d178a322",
+    "public_article_count": 262,
+    "batch_article_count": 254,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T19:24:51.936Z",
+  "generated_at": "2026-07-20T03:50:59.807Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "0d63d2bf30b68b79fb91aeee5b785eeff4cbaf8407578ad0117f8ffa1a358367",
+  "content_fingerprint_sha256": "1ac144ad05011550fb03b5215838e9ce79d6c51528d0d74a3fe1304ceab97a23",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "3e36dffe8b7fc89b5dd0a4a4d8a333cbd32cc13c00865abb2206660b8f1bf1af",
+    "canonical_ledger_fingerprint_sha256": "b6795f6039b31e40eb38261d3164350af907004761ce8b6d09d616da5ff5d293",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T19:24:51.936Z",
+    "canonical_ledger_generated_at": "2026-07-20T03:50:59.807Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 261,
+      "live_public_published_route": 262,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 691
+      "planning_only_inventory": 690
     }
   },
   "rows": [
@@ -47200,11 +47200,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0781",
-        "target_title": "Glasscock County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-        "url": "/blog/glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+        "target_title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+        "url": "/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -47247,15 +47247,15 @@
     },
     {
       "program_row_id": "MRX1000-0781",
-      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "canonical_title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+      "canonical_slug": "glasscock-cad-mineral-account-appraisal-responsibility-source-locator",
+      "canonical_url": "/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "risk-check",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -47277,7 +47277,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -47290,7 +47290,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -47304,7 +47304,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
@@ -62697,69 +62697,6 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-1079",
-        "target_title": "Dimmit County, Texas Mineral Rights Value: Guide For Mineral Owners",
-        "url": "/blog/dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners/",
-        "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
-        "status": "planned_local_only"
-      },
-      "primary_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "primary_appointment",
-        "is_appointment_cta": true,
-        "status": "planned_local_only"
-      },
-      "appointment_cta": {
-        "url": "/book/",
-        "label": "Discuss My Texas Mineral Rights",
-        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
-        "placement_code": "contextual_inline",
-        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
-        "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
-        "approved_route_evidence": "src/pages/book.astro",
-        "role": "same_as_primary_appointment",
-        "distinct_from_primary_cta": false,
-        "status": "planned_local_only"
-      },
-      "evidence": {
-        "triangle_plan_status": "planned_complete",
-        "primary_cta_plan_status": "planned_complete",
-        "appointment_cta_plan_status": "planned_complete",
-        "rendered_status": "not_rendered_or_verified_by_this_plan",
-        "rendered_triangle_verified": false,
-        "live_status": "not_published_or_verified_by_this_plan",
-        "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
-        "numerical_release_cap_applies": false
-      }
-    },
-    {
-      "program_row_id": "MRX1000-1079",
-      "canonical_title": "Dimmit County, Texas Mineral Rights Value: Guide For Mineral Owners",
-      "canonical_slug": "dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners",
-      "canonical_url": "/blog/dimmit-county-texas-mineral-rights-value-guide-for-mineral-owners/",
-      "cluster": "texas-county-basin-local-intent",
-      "pillar": "texas-mineral-rights",
-      "search_intent": "education",
-      "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
-      "pillar_link": {
-        "url": "/mineral-rights/texas/",
-        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
-        "status": "planned_local_only"
-      },
-      "sibling_link": {
         "target_program_row_id": "MRX1000-1083",
         "target_title": "Ector County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
         "url": "/blog/ector-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
@@ -62775,7 +62712,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-buyer",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -62788,7 +62725,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-buyer",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -63075,12 +63012,12 @@
         "status": "planned_local_only"
       },
       "sibling_link": {
-        "target_program_row_id": "MRX1000-0726",
-        "target_title": "Eagle Ford Shale and South Texas Mineral Rights",
-        "url": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+        "target_program_row_id": "MRX1000-1088",
+        "target_title": "Glasscock County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
+        "url": "/blog/glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "live_public_published_route",
-        "target_route_live": true,
+        "target_source_preservation_classification": "planning_only_inventory",
+        "target_route_live": false,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -63104,6 +63041,69 @@
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
         "assignment_basis": "consideration:local-buyer",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "same_as_primary_appointment",
+        "distinct_from_primary_cta": false,
+        "status": "planned_local_only"
+      },
+      "evidence": {
+        "triangle_plan_status": "planned_complete",
+        "primary_cta_plan_status": "planned_complete",
+        "appointment_cta_plan_status": "planned_complete",
+        "rendered_status": "not_rendered_or_verified_by_this_plan",
+        "rendered_triangle_verified": false,
+        "live_status": "not_published_or_verified_by_this_plan",
+        "live_triangle_verified": false,
+        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "numerical_release_cap_applies": false
+      }
+    },
+    {
+      "program_row_id": "MRX1000-1088",
+      "canonical_title": "Glasscock County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
+      "canonical_slug": "glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
+      "canonical_url": "/blog/glasscock-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "cluster": "texas-county-basin-local-intent",
+      "pillar": "texas-mineral-rights",
+      "search_intent": "risk-check",
+      "funnel_stage": "consideration",
+      "source_preservation_classification": "planning_only_inventory",
+      "source_route_live": false,
+      "pillar_link": {
+        "url": "/mineral-rights/texas/",
+        "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
+        "status": "planned_local_only"
+      },
+      "sibling_link": {
+        "target_program_row_id": "MRX1000-0726",
+        "target_title": "Eagle Ford Shale and South Texas Mineral Rights",
+        "url": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+        "relationship": "same_cluster_next_by_program_row_id_cyclic",
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
+        "status": "planned_local_only"
+      },
+      "primary_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:risk-check",
+        "approved_route_evidence": "src/pages/book.astro",
+        "role": "primary_appointment",
+        "is_appointment_cta": true,
+        "status": "planned_local_only"
+      },
+      "appointment_cta": {
+        "url": "/book/",
+        "label": "Discuss My Texas Mineral Rights",
+        "name": "mrx1000-texas-mineral-rights-book_review-contextual_inline",
+        "placement_code": "contextual_inline",
+        "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
+        "assignment_rule": "consideration_stage_assisted_review",
+        "assignment_basis": "consideration:risk-check",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,

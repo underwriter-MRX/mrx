@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T03:49:45Z",
+  "generated_at_utc": "2026-08-29T04:10:37Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 261,
-    "asset_count": 522,
-    "unique_source_art_count": 261,
-    "unique_hero_sha256_count": 261,
-    "unique_inline_sha256_count": 261,
-    "distinct_article_pair_count": 261,
-    "hero_ocr_pass_count": 261,
-    "inline_ocr_pass_count": 261,
-    "exact_filename_identity_count": 261
+    "article_count": 262,
+    "asset_count": 524,
+    "unique_source_art_count": 262,
+    "unique_hero_sha256_count": 262,
+    "unique_inline_sha256_count": 262,
+    "distinct_article_pair_count": 262,
+    "hero_ocr_pass_count": 262,
+    "inline_ocr_pass_count": 262,
+    "exact_filename_identity_count": 262
   },
   "contact_sheets": {
     "hero": [
@@ -2928,6 +2928,56 @@
           "actual": "Free Mineral Rights Valuation Review",
           "normalized_expected": "free mineral rights valuation review",
           "normalized_actual": "free mineral rights valuation review",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "glasscock-cad-mineral-account-appraisal-responsibility-source-locator",
+      "title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+      "keyword": "Glasscock CAD mineral account appraiser",
+      "file_path": "src/content/posts/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.mdx",
+      "source_public_path": "/assets/articles/hero/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave182-creative-sources/glasscock-cad-mineral-account-appraisal-responsibility-source-locator-hero-base.png",
+        "artifacts/mrx1000-wave182-creative-sources/glasscock-cad-mineral-account-appraisal-responsibility-source-locator-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T04:05:23.037Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.webp",
+        "alt": "Separate appraisal-role trays appear beside the exact Glasscock CAD responsibility source-locator title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "a8d8b79bbb9797c2080f3af794d5f9b56e868cf03e6bdf780dc21a3350e80673",
+        "perceptual_hash": "0000000000001100000000000001110000000000000110000111000000010000011100000000000011110000000000001111110011000000111100001101001100000000000100110000000000110111000000000010011100000000011011110000000000001111000000000000111100000000000001100000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+          "actual": "Glasscock CAD\nMineral Account\nAppraisal Responsibility\nSource Locator",
+          "normalized_expected": "glasscock cad mineral account appraisal responsibility source locator",
+          "normalized_actual": "glasscock cad mineral account appraisal responsibility source locator",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/glasscock-cad-mineral-account-appraiser.webp",
+        "alt": "Two overhead role lanes connect below the exact Glasscock CAD mineral account appraiser keyword.",
+        "rendered_text": "Glasscock CAD mineral account appraiser",
+        "visual_variant": "wave182-distinct-generated-side-lit-separate-role-trays-and-overhead-branching-role-lane-board",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "fb3210a2d984dfbe516a390ffbd99adcbe1b86db7d4accda3b5ab7a3c868019e",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111110111111110011111011101110001111101111111000111100111111111111110011111111011111101111111000111100111111100011110011111110001100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Glasscock CAD mineral account appraiser",
+          "actual": "Glasscock CAD mineral\naccount appraiser",
+          "normalized_expected": "glasscock cad mineral account appraiser",
+          "normalized_actual": "glasscock cad mineral account appraiser",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
