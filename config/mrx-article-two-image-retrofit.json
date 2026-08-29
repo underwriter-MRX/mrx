@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T11:59:01Z",
+  "generated_at_utc": "2026-08-29T12:21:21Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 281,
-    "asset_count": 562,
-    "unique_source_art_count": 281,
-    "unique_hero_sha256_count": 281,
-    "unique_inline_sha256_count": 281,
-    "distinct_article_pair_count": 281,
-    "hero_ocr_pass_count": 281,
-    "inline_ocr_pass_count": 281,
-    "exact_filename_identity_count": 281
+    "article_count": 282,
+    "asset_count": 564,
+    "unique_source_art_count": 282,
+    "unique_hero_sha256_count": 282,
+    "unique_inline_sha256_count": 282,
+    "distinct_article_pair_count": 282,
+    "hero_ocr_pass_count": 282,
+    "inline_ocr_pass_count": 282,
+    "exact_filename_identity_count": 282
   },
   "contact_sheets": {
     "hero": [
@@ -6200,6 +6200,56 @@
           "actual": "Loving CAD 2026 mineral\nappraisal assistance roster",
           "normalized_expected": "loving cad 2026 mineral appraisal assistance roster",
           "normalized_actual": "loving cad 2026 mineral appraisal assistance roster",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map",
+      "title": "Loving CAD 2026 Mineral File Layout PDF: Eight-Page Position and EOF Map",
+      "keyword": "Loving CAD 2026 mineral file layout PDF",
+      "file_path": "src/content/posts/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.mdx",
+      "source_public_path": "/assets/articles/hero/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave202-creative-sources/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map-hero-base.png",
+        "artifacts/mrx1000-wave202-creative-sources/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T12:18:14.938Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.webp",
+        "alt": "A navy archive binder and staggered blank sheets appear beside the exact Loving CAD 2026 mineral file-layout PDF title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "173df06d745b82e70ad7804e1473610f2ca99f0a68d5109e9710f42c5fd62abc",
+        "perceptual_hash": "0000000000000000000000000000011000000000000001110000000000000111000000000000011101111000000001110111100001100111010000000111011100000000111110100000000011111000000000001111110000000000111111000000000011111000000000000111100000000000001110000000000000010000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 Mineral File Layout PDF: Eight-Page Position and EOF Map",
+          "actual": "Loving CAD 2026\nMineral File Layout PDF:\nEight-Page Position and\nEOF Map",
+          "normalized_expected": "loving cad 2026 mineral file layout pdf eight page position and eof map",
+          "normalized_actual": "loving cad 2026 mineral file layout pdf eight page position and eof map",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/loving-cad-2026-mineral-file-layout-pdf.webp",
+        "alt": "Blank horizontal page bands and offset endpoint markers sit above the exact Loving CAD 2026 mineral file layout PDF phrase.",
+        "rendered_text": "Loving CAD 2026 mineral file layout PDF",
+        "visual_variant": "wave202-distinct-generated-oblique-binder-and-staggered-sheets-hero-and-top-down-page-band-eof-map",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "8474c22a67dcca2afa026012720a5bf736554570ae9bfa5ebe9e0d95e1f4dfc3",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 mineral file layout PDF",
+          "actual": "Loving CAD 2026 mineral\nfile layout PDF",
+          "normalized_expected": "loving cad 2026 mineral file layout pdf",
+          "normalized_actual": "loving cad 2026 mineral file layout pdf",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
