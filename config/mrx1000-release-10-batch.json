@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T11:15:04Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-29T11:38:59Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -597,13 +597,16 @@
     "wave198_selection_decision_sha256": "d720e21fd4d440e018754671857a66d416322f99f80999ac71d0480ca938e7c8",
     "wave199_selection_decision_id": "MRX1000-W199-SELECT-2026-08-29",
     "wave199_selection_decision_path": "docs/governance/mrx1000-wave199-selection-decision-2026-08-29.md",
-    "wave199_selection_decision_sha256": "a27c6708a855be331fb5f7b9b8b7c0b9d5e8d87d01bdcab465dc849a72684a06"
+    "wave199_selection_decision_sha256": "a27c6708a855be331fb5f7b9b8b7c0b9d5e8d87d01bdcab465dc849a72684a06",
+    "wave200_selection_decision_id": "MRX1000-W200-SELECT-2026-08-29",
+    "wave200_selection_decision_path": "docs/governance/mrx1000-wave200-selection-decision-2026-08-29.md",
+    "wave200_selection_decision_sha256": "3195a2ee8e3fc30e09a67e72bddb11752dc4b892f8d4d3b016c3345befb5ac55"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "576a716231bb13b411e543b43762915d88c653c558b20b0012fd068388abe66c",
-    "canonical_ledger_generated_at": "2026-07-20T05:40:29.840Z",
+    "canonical_ledger_sha256": "bb161e612eef7a89ed8bec44ddf838bf56ec23aedd29904e5e175ebffc03e3d3",
+    "canonical_ledger_generated_at": "2026-07-20T23:05:46.538Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -617,11 +620,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 270,
+    "prior_verified_article_count": 271,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 271,
-    "exact_admitted_slate_sha256": "fa0704bd42d698f888692d7d8cd0a757907fdef0f4a360db353249810b64c7d7"
+    "exact_admitted_count": 272,
+    "exact_admitted_slate_sha256": "7c7ec0c4fa104d4d2cd54b10620d18e00a510951dd08336d95564b51ec08fce2"
   },
   "articles": [
     {
@@ -9852,10 +9855,45 @@
       "inline_path": "/assets/articles/inline/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/loving-cad-2026-mineral-appraisal-assistance-roster.webp",
       "inline_asset_sha256": "9f510376ab26d5c6e316fc2ef84f24364f117d5b3c332f2fb3c2a531c89e4109",
       "inline_rendered_text": "Loving CAD 2026 mineral appraisal assistance roster"
+    },
+    {
+      "selection_rank": 272,
+      "program_row_id": "MRX1000-0815",
+      "source_shortlist_program_row_id": "MRX1000-0815",
+      "slug": "loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map",
+      "title": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
+      "source_shortlist_title": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
+      "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "5eae61bfb0387043cff2f4c3ee407c3704a7d8dbf2e2b4f328a1453103bbef36",
+      "repo_path": "src/content/posts/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map.mdx",
+      "repo_sha256": "1164780e6ec1938569f8f1105618463038f12fa0205d58b2aca459aa95508149",
+      "article_sha256": "1164780e6ec1938569f8f1105618463038f12fa0205d58b2aca459aa95508149",
+      "hero_path": "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp",
+      "hero_sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
+      "hero_asset_sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1568,
+      "risk_citation_remediation": [
+        "The original broad Loving County value-guide identity is rejected because it repeats the factory pattern and collides with valuation and county-intent pages.",
+        "The replacement owns only the official Loving CAD 2026 ZIP publisher route, exact file controls, stored central-directory order, seven member names and sizes, CRC observations, format boundaries, and safe extraction sequence.",
+        "Member presence, filenames, extensions, sizes, CRC success, and the file-layout PDF remain separate from archive completeness, semantic equivalence, row parity, encoding, delimiter, schema, correctness, and property-specific validity.",
+        "No owner, account, property, title, acreage, production, royalty, appraisal accuracy, tax, protest, mineral-rights value, offer, transaction, or legal conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, no silent normalization, physical-page render evidence, claim-adjacent official citations, semantic links, supported FAQs, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/loving-cad-2026-certified-mineral-roll-zip.webp",
+      "inline_asset_sha256": "ea325b366be48383ce02ba13d3391ebdb93ddf2e0fc98122701bc37adcced47e",
+      "inline_rendered_text": "Loving CAD 2026 certified mineral roll ZIP"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 271,
+    "admitted_article_count": 272,
     "selection_ranks": [
       1,
       2,
@@ -10127,7 +10165,8 @@
       268,
       269,
       270,
-      271
+      271,
+      272
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10186,9 +10225,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "27604575efa126a1a4fb55127241f5251c2556625d49f558363dbc3b173d7ead",
-    "public_article_count": 279,
-    "batch_article_count": 271,
+    "retrofit_manifest_sha256": "d9fc6da5f4a1bdb643c3b1724cd4e66e256a1e49bb068cba6fb67a03708eca9f",
+    "public_article_count": 280,
+    "batch_article_count": 272,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

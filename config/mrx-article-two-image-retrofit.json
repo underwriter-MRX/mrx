@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T11:14:34Z",
+  "generated_at_utc": "2026-08-29T11:38:34Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 279,
-    "asset_count": 558,
-    "unique_source_art_count": 279,
-    "unique_hero_sha256_count": 279,
-    "unique_inline_sha256_count": 279,
-    "distinct_article_pair_count": 279,
-    "hero_ocr_pass_count": 279,
-    "inline_ocr_pass_count": 279,
-    "exact_filename_identity_count": 279
+    "article_count": 280,
+    "asset_count": 560,
+    "unique_source_art_count": 280,
+    "unique_hero_sha256_count": 280,
+    "unique_inline_sha256_count": 280,
+    "distinct_article_pair_count": 280,
+    "hero_ocr_pass_count": 280,
+    "inline_ocr_pass_count": 280,
+    "exact_filename_identity_count": 280
   },
   "contact_sheets": {
     "hero": [
@@ -6100,6 +6100,56 @@
           "actual": "mineral rights\nassessment",
           "normalized_expected": "mineral rights assessment",
           "normalized_actual": "mineral rights assessment",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map",
+      "title": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
+      "keyword": "Loving CAD 2026 certified mineral roll ZIP",
+      "file_path": "src/content/posts/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map.mdx",
+      "source_public_path": "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave200-creative-sources/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map-hero-base.png",
+        "artifacts/mrx1000-wave200-creative-sources/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T11:38:29.421Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp",
+        "alt": "A navy archive box with blank file dividers appears beside the exact Loving CAD 2026 mineral-roll ZIP member-map title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
+        "perceptual_hash": "0000000001111111000000000000011100000000000001110000000000010111000000001111111100000000111111110001000011111111011000001111111100000000111111110000000011111111000000001111100100000000000000010000000000011001000000000000000100000000000011110000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
+          "actual": "Loving CAD 2026\nCertified Mineral Roll ZIP:\nPDF, TXT, and CSV\nMember Map",
+          "normalized_expected": "loving cad 2026 certified mineral roll zip pdf txt and csv member map",
+          "normalized_actual": "loving cad 2026 certified mineral roll zip pdf txt and csv member map",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/loving-cad-2026-certified-mineral-roll-zip.webp",
+        "alt": "Blank PDF sheets, a text strip, and a spreadsheet grid sit above the exact Loving CAD 2026 certified mineral roll ZIP phrase.",
+        "rendered_text": "Loving CAD 2026 certified mineral roll ZIP",
+        "visual_variant": "wave200-distinct-generated-three-quarter-seven-divider-archive-hero-and-top-down-pdf-txt-csv-format-map",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "ea325b366be48383ce02ba13d3391ebdb93ddf2e0fc98122701bc37adcced47e",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111110011111111111111011111111111111000111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Loving CAD 2026 certified mineral roll ZIP",
+          "actual": "Loving CAD 2026 certified\nmineral roll ZIP",
+          "normalized_expected": "loving cad 2026 certified mineral roll zip",
+          "normalized_actual": "loving cad 2026 certified mineral roll zip",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
