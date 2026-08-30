@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-29T17:55:29Z",
+  "generated_at_utc": "2026-08-29T18:44:56Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 288,
-    "asset_count": 576,
-    "unique_source_art_count": 288,
-    "unique_hero_sha256_count": 288,
-    "unique_inline_sha256_count": 288,
-    "distinct_article_pair_count": 288,
-    "hero_ocr_pass_count": 288,
-    "inline_ocr_pass_count": 288,
-    "exact_filename_identity_count": 288
+    "article_count": 289,
+    "asset_count": 578,
+    "unique_source_art_count": 289,
+    "unique_hero_sha256_count": 289,
+    "unique_inline_sha256_count": 289,
+    "distinct_article_pair_count": 289,
+    "hero_ocr_pass_count": 289,
+    "inline_ocr_pass_count": 289,
+    "exact_filename_identity_count": 289
   },
   "contact_sheets": {
     "hero": [
@@ -6692,6 +6692,56 @@
           "actual": "maximize gains\nwith 1031\nexchange Texas\nmineral rights",
           "normalized_expected": "maximize gains with 1031 exchange texas mineral rights",
           "normalized_actual": "maximize gains with 1031 exchange texas mineral rights",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "midland-cad-mineral-property-three-approaches-sufficient-data-condition",
+      "title": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+      "keyword": "Midland CAD mineral property appraisal approaches",
+      "file_path": "src/content/posts/midland-cad-mineral-property-three-approaches-sufficient-data-condition.mdx",
+      "source_public_path": "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave209-creative-sources/midland-cad-mineral-property-three-approaches-sufficient-data-condition-hero-base.png",
+        "artifacts/mrx1000-wave209-creative-sources/midland-cad-mineral-property-three-approaches-sufficient-data-condition-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-29T18:40:33.405Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp",
+        "alt": "Three evidence stations meet a translucent data gate beside the exact Midland CAD mineral-property title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "79a8b4e306668e55b0848bfa5486d7de06dccdf080078e26da88932e91a359d6",
+        "perceptual_hash": "0000000000111111000000000011100100000000001110000000000001110000000000000111000101110000111111010111000011111101011110001111111100000000111110110000000011110011000000000111111100000000011101110000000011110111000000001111111100000000111001110000000011111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+          "actual": "Midland CAD Mineral\nProperty Page: Three\nApproaches and the\nSufficient-Data Condition",
+          "normalized_expected": "midland cad mineral property page three approaches and the sufficient data condition",
+          "normalized_actual": "midland cad mineral property page three approaches and the sufficient data condition",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/midland-cad-mineral-property-three-approaches-sufficient-data-condition/midland-cad-mineral-property-appraisal-approaches.webp",
+        "alt": "Three top-down evidence plates flow through a data sieve above the exact Midland CAD appraisal-approaches keyword.",
+        "rendered_text": "Midland CAD mineral property appraisal approaches",
+        "visual_variant": "wave209-distinct-generated-low-oblique-three-station-gate-hero-and-top-down-three-plate-data-sieve",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "89bc1f9afdf09c2c3d37c8ad7ed0f55659d700033e56612ad674b2e9e60e71e7",
+        "perceptual_hash": "1111111111111111111111111111111111111110011111111111111101101011111111100111001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD mineral property appraisal approaches",
+          "actual": "Midland CAD mineral property\nappraisal approaches",
+          "normalized_expected": "midland cad mineral property appraisal approaches",
+          "normalized_actual": "midland cad mineral property appraisal approaches",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (288)
+## Published article URLs (289)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition](https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/)
 - [Martin CAD Property Search: Lease Fields Are Search Inputs, Not Ownership Proof](https://mineralrightsxchange.com/blog/martin-cad-property-search-lease-fields-not-ownership-proof/)
 - [Martin CAD 2025-26 Reappraisal Plan: Mineral Work and the Separate P&A Plan](https://mineralrightsxchange.com/blog/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/)
 - [Martin CAD 2025-26 MIUP Plan: Mineral Interests, Not Minerals in Place](https://mineralrightsxchange.com/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/)

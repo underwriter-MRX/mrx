@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-29T17:58:20Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-30T05:24:04Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -624,13 +624,16 @@
     "wave207_selection_decision_sha256": "c4eeeacd08e416649e88ef740421dd1469d82424c31f9e24591be5be9fb3e14a",
     "wave208_selection_decision_id": "MRX1000-W208-SELECT-2026-08-29",
     "wave208_selection_decision_path": "docs/governance/mrx1000-wave208-selection-decision-2026-08-29.md",
-    "wave208_selection_decision_sha256": "b43d83105fb99cda9ac1ad973954a9f56d182d093fef27eadfe81f6fc00708c7"
+    "wave208_selection_decision_sha256": "b43d83105fb99cda9ac1ad973954a9f56d182d093fef27eadfe81f6fc00708c7",
+    "wave209_selection_decision_id": "MRX1000-W209-SELECT-2026-08-29",
+    "wave209_selection_decision_path": "docs/governance/mrx1000-wave209-selection-decision-2026-08-29.md",
+    "wave209_selection_decision_sha256": "f65b248ea0ada14ce02102a752b2cf98562c74bd887d535f9c2505d6df65c728"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "f8d68165a46d191c50e3e97350f625a2d67c37160598a57d007d48274f203638",
-    "canonical_ledger_generated_at": "2026-07-20T02:58:53.603Z",
+    "canonical_ledger_sha256": "59a5723c507112185e4db10c76930b45bbbe775a08c2d985986168de0056975f",
+    "canonical_ledger_generated_at": "2026-07-20T06:03:59.702Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -644,11 +647,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 279,
+    "prior_verified_article_count": 280,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 280,
-    "exact_admitted_slate_sha256": "0d3c47a6a8e94c2d6f8f132553301857132ae576d22cb338d2e055712287e83b"
+    "exact_admitted_count": 281,
+    "exact_admitted_slate_sha256": "57743770392caa6be687f6fb1fe43c0cd0d1cc4300649764178a4afcb35d22bd"
   },
   "articles": [
     {
@@ -10195,10 +10198,45 @@
       "inline_path": "/assets/articles/inline/martin-cad-property-search-lease-fields-not-ownership-proof/martin-cad-mineral-lease-search-fields.webp",
       "inline_asset_sha256": "1de00a1c10edf508c906b2688ea569307027047bc4b1921f71dae9578d8b6967",
       "inline_rendered_text": "Martin CAD mineral lease search fields"
+    },
+    {
+      "selection_rank": 281,
+      "program_row_id": "MRX1000-0829",
+      "source_shortlist_program_row_id": "MRX1000-0829",
+      "slug": "midland-cad-mineral-property-three-approaches-sufficient-data-condition",
+      "title": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+      "source_shortlist_title": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "2907a372b62fb9ddb4bb758bea102a3296e89c51f38d6dbe1765d3652ab3e715",
+      "repo_path": "src/content/posts/midland-cad-mineral-property-three-approaches-sufficient-data-condition.mdx",
+      "repo_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+      "article_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+      "hero_path": "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp",
+      "hero_sha256": "79a8b4e306668e55b0848bfa5486d7de06dccdf080078e26da88932e91a359d6",
+      "hero_asset_sha256": "79a8b4e306668e55b0848bfa5486d7de06dccdf080078e26da88932e91a359d6",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1801,
+      "risk_citation_remediation": [
+        "The original Midland County value and family-decision identity is rejected because it repeats multiple valuation and decision-guide jobs.",
+        "The replacement owns only the current official Midland CAD Mineral Property page statement, its three named approaches, and the sufficient-data condition.",
+        "No owner, property, account, or mineral-file search was performed and no record was reproduced.",
+        "Page provenance is not silently converted into account-level method, data sufficiency, contractor performance, appraisal accuracy, ownership, title, taxes, protest results, private sale value, offers, production, royalties, or a legal conclusion.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/midland-cad-mineral-property-three-approaches-sufficient-data-condition.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/midland-cad-mineral-property-three-approaches-sufficient-data-condition/midland-cad-mineral-property-appraisal-approaches.webp",
+      "inline_asset_sha256": "89bc1f9afdf09c2c3d37c8ad7ed0f55659d700033e56612ad674b2e9e60e71e7",
+      "inline_rendered_text": "Midland CAD mineral property appraisal approaches"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 280,
+    "admitted_article_count": 281,
     "selection_ranks": [
       1,
       2,
@@ -10479,7 +10517,8 @@
       277,
       278,
       279,
-      280
+      280,
+      281
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10538,9 +10577,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "be8d68a84f54a1116817ad2b24c98b21594d17a99ecdd8f7269ccecc8c475218",
-    "public_article_count": 288,
-    "batch_article_count": 280,
+    "retrofit_manifest_sha256": "ef23b29b5572aba4b7ffc0b8b034b0d813298dbc595ef1d5df38754d8cf1560d",
+    "public_article_count": 289,
+    "batch_article_count": 281,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
