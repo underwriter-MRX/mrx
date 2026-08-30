@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-30T05:24:04Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-30T05:58:40Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -627,13 +627,16 @@
     "wave208_selection_decision_sha256": "b43d83105fb99cda9ac1ad973954a9f56d182d093fef27eadfe81f6fc00708c7",
     "wave209_selection_decision_id": "MRX1000-W209-SELECT-2026-08-29",
     "wave209_selection_decision_path": "docs/governance/mrx1000-wave209-selection-decision-2026-08-29.md",
-    "wave209_selection_decision_sha256": "f65b248ea0ada14ce02102a752b2cf98562c74bd887d535f9c2505d6df65c728"
+    "wave209_selection_decision_sha256": "f65b248ea0ada14ce02102a752b2cf98562c74bd887d535f9c2505d6df65c728",
+    "wave210_selection_decision_id": "MRX1000-W210-SELECT-2026-08-29",
+    "wave210_selection_decision_path": "docs/governance/mrx1000-wave210-selection-decision-2026-08-29.md",
+    "wave210_selection_decision_sha256": "c2ba8bdabbad3d13b0ac7ab0125e1b666d8a6fd06250572ded2dc964ff023327"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "59a5723c507112185e4db10c76930b45bbbe775a08c2d985986168de0056975f",
-    "canonical_ledger_generated_at": "2026-07-20T06:03:59.702Z",
+    "canonical_ledger_sha256": "e7091475dfd2403b36ead9e46ff15404f73ffbfd50271a1f51b8fbd4819cef3d",
+    "canonical_ledger_generated_at": "2026-07-20T05:41:42.982Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -647,11 +650,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 280,
+    "prior_verified_article_count": 281,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 281,
-    "exact_admitted_slate_sha256": "57743770392caa6be687f6fb1fe43c0cd0d1cc4300649764178a4afcb35d22bd"
+    "exact_admitted_count": 282,
+    "exact_admitted_slate_sha256": "3e20733999a53c82fd94c0b7f16b25eb6dc9d467c43933312347dadbee3ff965"
   },
   "articles": [
     {
@@ -10233,10 +10236,46 @@
       "inline_path": "/assets/articles/inline/midland-cad-mineral-property-three-approaches-sufficient-data-condition/midland-cad-mineral-property-appraisal-approaches.webp",
       "inline_asset_sha256": "89bc1f9afdf09c2c3d37c8ad7ed0f55659d700033e56612ad674b2e9e60e71e7",
       "inline_rendered_text": "Midland CAD mineral property appraisal approaches"
+    },
+    {
+      "selection_rank": 282,
+      "program_row_id": "MRX1000-0830",
+      "source_shortlist_program_row_id": "MRX1000-0830",
+      "slug": "midland-cad-2025-report-419660-mineral-interest-accounts-page-25",
+      "title": "Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25",
+      "source_shortlist_title": "Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "da22ffe864356e284a405ff2c6e0aa3983818c564ccb73b59d5b582472375dfb",
+      "repo_path": "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+      "repo_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+      "article_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+      "hero_path": "/assets/articles/hero/midland-cad-2025-report-419-660-mineral-interest-accounts-on-pdf-page-25.webp",
+      "hero_sha256": "f423547520f7c407c28996a29fee3a0bad77d69825aa2d4770a509cd33329225",
+      "hero_asset_sha256": "f423547520f7c407c28996a29fee3a0bad77d69825aa2d4770a509cd33329225",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2303,
+      "risk_citation_remediation": [
+        "The original Midland County value identity is rejected because it repeats generic county-value and mineral-owner guide jobs.",
+        "The replacement owns only the official 2025 Midland CAD report statement that approximately 419,660 mineral interest accounts appears on physical PDF page 25.",
+        "The article preserves the report wording, approximation label, denominator label, report context, file identity, and physical-page locator without treating the count as a current live inventory.",
+        "No owner, property, account, roll, notice, or mineral-file search was performed and no official record was reproduced.",
+        "The report statement is not converted into unique owners, tracts, wells, leases, producing interests, net mineral acres, current ownership, appraisal validity, contractor performance, title, tax, private sale value, offer, production, royalty, or legal conclusions.",
+        "Answer-first structure, stable claim IDs, evidence labels, provenance separated from validity, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/midland-cad-419-660-mineral-interest-accounts.webp",
+      "inline_asset_sha256": "a31e7c58c548c3264effc9513c082ad859224ce7eebc4d255aab9c4d42b9ddec",
+      "inline_rendered_text": "Midland CAD 419,660 mineral interest accounts"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 281,
+    "admitted_article_count": 282,
     "selection_ranks": [
       1,
       2,
@@ -10518,7 +10557,8 @@
       278,
       279,
       280,
-      281
+      281,
+      282
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10577,9 +10617,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "ef23b29b5572aba4b7ffc0b8b034b0d813298dbc595ef1d5df38754d8cf1560d",
-    "public_article_count": 289,
-    "batch_article_count": 281,
+    "retrofit_manifest_sha256": "ad0d933ea5dd6c104395989d47b9b371997f53aaffffd0d12c26b91bc0dac788",
+    "public_article_count": 290,
+    "batch_article_count": 282,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
