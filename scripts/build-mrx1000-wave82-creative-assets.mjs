@@ -29,6 +29,7 @@ const heroFontFamily =
   process.env.MRX_HERO_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
 const inlineFontFamily =
   process.env.MRX_INLINE_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
+const inlineBandPosition = process.env.MRX_INLINE_BAND_POSITION ?? 'bottom';
 const paths = {
   heroSource: join(root, `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-hero-base.png`),
   inlineSource: join(root, `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-inline-base.png`),
@@ -92,6 +93,9 @@ function heroTypography() {
 }
 
 function inlineTypography() {
+  const bandY = inlineBandPosition === 'top' ? 0 : 455;
+  const ruleY = inlineBandPosition === 'top' ? 28 : 485;
+  const textY = inlineBandPosition === 'top' ? 76 : 533;
   return Buffer.from(`
     <svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -105,9 +109,9 @@ function inlineTypography() {
         .keyword { fill: #fffaf0; font-family: ${inlineFontFamily}; font-size: 37px; font-weight: 700; text-anchor: middle; letter-spacing: -0.25px; }
         .rule { fill: #d79a2b; }
       </style>
-      <rect x="0" y="455" width="1200" height="220" fill="url(#navy)" />
-      <rect class="rule" x="300" y="485" width="600" height="4" rx="2" />
-      <text class="keyword" x="600" y="533">
+      <rect x="0" y="${bandY}" width="1200" height="220" fill="url(#navy)" />
+      <rect class="rule" x="300" y="${ruleY}" width="600" height="4" rx="2" />
+      <text class="keyword" x="600" y="${textY}">
         ${svgTextLines(inlineLines, 600, 48)}
       </text>
     </svg>
@@ -239,7 +243,7 @@ async function main() {
     });
     const inlineOcr = await runOcr(paths.inline, keyword, tempDirectory, {
       left: 0,
-      top: 450,
+      top: inlineBandPosition === 'top' ? 0 : 450,
       width: 1200,
       height: 225,
     });

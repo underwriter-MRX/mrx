@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T18:36:37Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T20:09:55Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -714,13 +714,16 @@
     "wave237_selection_decision_sha256": "97d996a85334403afc21bf41a7a8258d40057250721a9ab836f2981135afdd84",
     "wave238_selection_decision_id": "MRX1000-W238-SELECT-2026-08-31",
     "wave238_selection_decision_path": "docs/governance/mrx1000-wave238-selection-decision-2026-08-31.md",
-    "wave238_selection_decision_sha256": "1ee80ecfbc55ab18e2ab97aca5a7742ff71e9bac1f7f59035e4c7490ff7c2f74"
+    "wave238_selection_decision_sha256": "1ee80ecfbc55ab18e2ab97aca5a7742ff71e9bac1f7f59035e4c7490ff7c2f74",
+    "wave239_selection_decision_id": "MRX1000-W239-SELECT-2026-08-31",
+    "wave239_selection_decision_path": "docs/governance/mrx1000-wave239-selection-decision-2026-08-31.md",
+    "wave239_selection_decision_sha256": "ad2363e1a94b7c8a521f2cbe065b33c6effd89697f278fa5801e80410d337d54"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "d75358ebc8671d34a3158f60dea7c350900ce2465f2099794ae4679d0c8340b2",
-    "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
+    "canonical_ledger_sha256": "78b95be9d3edf85ca1e3ecd2fb0da530c64f59885ea75babc091d2e9cfd0d87f",
+    "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -734,11 +737,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 309,
+    "prior_verified_article_count": 310,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 310,
-    "exact_admitted_slate_sha256": "349af5a0f2426ebafab4b295c5bdaeecb17ef48076aa59a160c68da4a7bb86ae"
+    "exact_admitted_count": 311,
+    "exact_admitted_slate_sha256": "8b6fd9fd47b0e560a2806ff8ec6366e16566fdf20d6f217288442984ea4b538a"
   },
   "articles": [
     {
@@ -11361,10 +11364,45 @@
       "inline_path": "/assets/articles/inline/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/ward-cad-2026-mineral-zip-member-dates.webp",
       "inline_asset_sha256": "9b656b51013e5be7e9be75f22f3885c9622b87677787e773bdae1f944b652922",
       "inline_rendered_text": "Ward CAD 2026 mineral ZIP member dates"
+    },
+    {
+      "selection_rank": 311,
+      "program_row_id": "MRX1000-0859",
+      "source_shortlist_program_row_id": "MRX1000-0859",
+      "slug": "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
+      "title": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+      "source_shortlist_title": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+      "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "a6ef85e1649773d879c36bfe9045dcb40bb76d4631f2a7c0844140ecc86ae640",
+      "repo_path": "src/content/posts/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.mdx",
+      "repo_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+      "article_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+      "hero_path": "/assets/articles/hero/ward-cad-2026-2029-mineral-contract-listed-interests-and-non-fuel-mineral-exclusions.webp",
+      "hero_sha256": "a85755a6b80f1feb3fcc096122b9c11dec67f94184ca39d8d0635f8fa133c62b",
+      "hero_asset_sha256": "a85755a6b80f1feb3fcc096122b9c11dec67f94184ca39d8d0635f8fa133c62b",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2114,
+      "risk_citation_remediation": [
+        "The generic Ward County value risk-checklist identity is rejected because it materially collides with the admitted county-value, valuation, risk-checklist, and local-buyer corpus.",
+        "The replacement owns only the property-class definitions and exclusions in the Ward CAD professional appraisal services contract, the stated 2026-2029 term, and the January 1 information-date boundary.",
+        "The article paraphrases the supplied official packet pages, treats including and any other related interest as non-exhaustive language, and never converts a contract category into ownership, taxability, value, production, reserves, title, enforceability, or private transaction evidence.",
+        "Answer-first structure, stable claim IDs, versioned primary-source identities, source-age and inference-limit labels, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/ward-cad-mineral-property-contract-definition.webp",
+      "inline_asset_sha256": "b2b009d3d82a91c95864b5201fa4e83bee9fc881fd8210608a26cd18e91fa2aa",
+      "inline_rendered_text": "Ward CAD mineral property contract definition"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 310,
+    "admitted_article_count": 311,
     "selection_ranks": [
       1,
       2,
@@ -11675,7 +11713,8 @@
       307,
       308,
       309,
-      310
+      310,
+      311
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11734,9 +11773,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "a8093b69762079b3b88b8d1b1aae95c5b5235d5aef05d3971495e1407e8e2206",
-    "public_article_count": 318,
-    "batch_article_count": 310,
+    "retrofit_manifest_sha256": "e3f24bf2f7989d952aa3fd05a696e05eea206cb5e0f3ea3e5c9df47639c980b7",
+    "public_article_count": 319,
+    "batch_article_count": 311,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (318)
+## Published article URLs (319)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions](https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/)
 - [Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23](https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/)
 - [Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF](https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/)
 - [Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean](https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/)

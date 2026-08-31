@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T18:31:05Z",
+  "generated_at_utc": "2026-08-31T19:51:58Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 318,
-    "asset_count": 636,
-    "unique_source_art_count": 318,
-    "unique_hero_sha256_count": 318,
-    "unique_inline_sha256_count": 318,
-    "distinct_article_pair_count": 318,
-    "hero_ocr_pass_count": 318,
-    "inline_ocr_pass_count": 318,
-    "exact_filename_identity_count": 318
+    "article_count": 319,
+    "asset_count": 638,
+    "unique_source_art_count": 319,
+    "unique_hero_sha256_count": 319,
+    "unique_inline_sha256_count": 319,
+    "distinct_article_pair_count": 319,
+    "hero_ocr_pass_count": 319,
+    "inline_ocr_pass_count": 319,
+    "exact_filename_identity_count": 319
   },
   "contact_sheets": {
     "hero": [
@@ -14260,6 +14260,56 @@
           "actual": "Upton CAD\nopen records policy",
           "normalized_expected": "upton cad open records policy",
           "normalized_actual": "upton cad open records policy",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
+      "title": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+      "keyword": "Ward CAD mineral property contract definition",
+      "file_path": "src/content/posts/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.mdx",
+      "source_public_path": "/assets/articles/hero/ward-cad-2026-2029-mineral-contract-listed-interests-and-non-fuel-mineral-exclusions.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave239-creative-sources/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions-hero-base.png",
+        "artifacts/mrx1000-wave239-creative-sources/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T19:49:00.442Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ward-cad-2026-2029-mineral-contract-listed-interests-and-non-fuel-mineral-exclusions.webp",
+        "alt": "A contract binder, four interest markers, and three material samples appear beside the exact Article 311 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "a85755a6b80f1feb3fcc096122b9c11dec67f94184ca39d8d0635f8fa133c62b",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000011000001110000011100000111100001110000111111100111100001111110011111000111100000000000111100000000000011111000000000001111110000000000111111110000000011111111000000000111111000000000001111100000000000001101",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+          "actual": "Ward CAD 2026-2029\nMineral Contract:\nListed Interests and\nNon-Fuel Mineral Exclusions",
+          "normalized_expected": "ward cad 2026 2029 mineral contract listed interests and non fuel mineral exclusions",
+          "normalized_actual": "ward cad 2026 2029 mineral contract listed interests and non fuel mineral exclusions",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/ward-cad-mineral-property-contract-definition.webp",
+        "alt": "A top-down evidence table separates four interest markers from three material samples below the exact Ward CAD keyword.",
+        "rendered_text": "Ward CAD mineral property contract definition",
+        "visual_variant": "wave239-distinct-generated-dark-oblique-contract-binder-hero-and-bright-strict-top-down-definition-evidence-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "b2b009d3d82a91c95864b5201fa4e83bee9fc881fd8210608a26cd18e91fa2aa",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000010111111111111101111111111111101111111111111000011111111111100001111111111110000110111111111000011111111111110001111111101111000111111110111100011111111111110000111111111111000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ward CAD mineral property contract definition",
+          "actual": "Ward CAD mineral property\ncontract definition",
+          "normalized_expected": "ward cad mineral property contract definition",
+          "normalized_actual": "ward cad mineral property contract definition",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
