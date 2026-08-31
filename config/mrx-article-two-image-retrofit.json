@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T22:12:48Z",
+  "generated_at_utc": "2026-08-31T22:33:41Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 323,
-    "asset_count": 646,
-    "unique_source_art_count": 323,
-    "unique_hero_sha256_count": 323,
-    "unique_inline_sha256_count": 323,
-    "distinct_article_pair_count": 323,
-    "hero_ocr_pass_count": 323,
-    "inline_ocr_pass_count": 323,
-    "exact_filename_identity_count": 323
+    "article_count": 324,
+    "asset_count": 648,
+    "unique_source_art_count": 324,
+    "unique_hero_sha256_count": 324,
+    "unique_inline_sha256_count": 324,
+    "distinct_article_pair_count": 324,
+    "hero_ocr_pass_count": 324,
+    "inline_ocr_pass_count": 324,
+    "exact_filename_identity_count": 324
   },
   "contact_sheets": {
     "hero": [
@@ -15684,6 +15684,56 @@
           "actual": "Winkler CAD mineral appraisal\nJanuary 1 snapshot",
           "normalized_expected": "winkler cad mineral appraisal january 1 snapshot",
           "normalized_actual": "winkler cad mineral appraisal january 1 snapshot",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration",
+      "title": "Winkler CAD 2025-2026 Mineral Appraisal: Lease-Level Full Value and Owner Proration",
+      "keyword": "Winkler CAD mineral appraisal owner proration",
+      "file_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration.mdx",
+      "source_public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-and-owner-proration.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave244-creative-sources/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration-hero-base.png",
+        "artifacts/mrx1000-wave244-creative-sources/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T22:29:36.863Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-and-owner-proration.webp",
+        "alt": "A lease folio branches into interest-type folders and owner slips beside the exact Article 316 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "2a6b8a96167c012471ab1e5719fefa780e60b8dc9ae556cab118e30d64e1a3da",
+        "perceptual_hash": "0000000000000000000000000000100000000000000000000111100000000111011110001001111111110000100111111111110010011011111100001000001100000000110111110000000010011111000000000001111100000000000010110000000000000011000000000000111100000000000111000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD 2025-2026 Mineral Appraisal: Lease-Level Full Value and Owner Proration",
+          "actual": "Winkler CAD 2025-2026\nMineral Appraisal:\nLease-Level Full Value and\nOwner Proration",
+          "normalized_expected": "winkler cad 2025 2026 mineral appraisal lease level full value and owner proration",
+          "normalized_actual": "winkler cad 2025 2026 mineral appraisal lease level full value and owner proration",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/winkler-cad-mineral-appraisal-owner-proration.webp",
+        "alt": "A top-down lease-to-owner proration flow appears below the exact Winkler CAD keyword.",
+        "rendered_text": "Winkler CAD mineral appraisal owner proration",
+        "visual_variant": "wave244-distinct-generated-dark-low-three-quarter-lease-to-owner-evidence-desk-hero-and-bright-strict-top-down-proration-flow-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "98c3e790a55356e6a90876251a93487551ec967c3b3053f2b4598d4b37da2721",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111110011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111111111111111111111111111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD mineral appraisal owner proration",
+          "actual": "Winkler CAD mineral appraisal\nowner proration",
+          "normalized_expected": "winkler cad mineral appraisal owner proration",
+          "normalized_actual": "winkler cad mineral appraisal owner proration",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

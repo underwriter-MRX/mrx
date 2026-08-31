@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (323)
+## Published article URLs (324)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Winkler CAD 2025-2026 Mineral Appraisal: Lease-Level Full Value and Owner Proration](https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/)
 - [Winkler CAD 2025-2026 Mineral Appraisal: January 1 Snapshot and Later Information](https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/)
 - [Winkler CAD 2025-2026 Mineral Reports: Recipients vs. Intended Users](https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/)
 - [Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records](https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/)
