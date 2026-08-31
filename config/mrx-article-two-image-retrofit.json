@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T16:02:24Z",
+  "generated_at_utc": "2026-08-31T16:37:31Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 315,
-    "asset_count": 630,
-    "unique_source_art_count": 315,
-    "unique_hero_sha256_count": 315,
-    "unique_inline_sha256_count": 315,
-    "distinct_article_pair_count": 315,
-    "hero_ocr_pass_count": 315,
-    "inline_ocr_pass_count": 315,
-    "exact_filename_identity_count": 315
+    "article_count": 316,
+    "asset_count": 632,
+    "unique_source_art_count": 316,
+    "unique_hero_sha256_count": 316,
+    "unique_inline_sha256_count": 316,
+    "distinct_article_pair_count": 316,
+    "hero_ocr_pass_count": 316,
+    "inline_ocr_pass_count": 316,
+    "exact_filename_identity_count": 316
   },
   "contact_sheets": {
     "hero": [
@@ -14260,6 +14260,56 @@
           "actual": "Upton CAD\nopen records policy",
           "normalized_expected": "upton cad open records policy",
           "normalized_actual": "upton cad open records policy",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning",
+      "title": "Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean",
+      "keyword": "Ward CAD 2026 mineral recap 83,920 items",
+      "file_path": "src/content/posts/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning.mdx",
+      "source_public_path": "/assets/articles/hero/ward-cad-2026-mineral-recap-what-83-920-items-and-5-829b-gross-value-do-and-do-not-mean.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave236-creative-sources/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning-hero-base.png",
+        "artifacts/mrx1000-wave236-creative-sources/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T16:37:17.192Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/ward-cad-2026-mineral-recap-what-83-920-items-and-5-829b-gross-value-do-and-do-not-mean.webp",
+        "alt": "A Ward archive and blank recap packet appear beside the exact Article 308 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "e4759c159b55294ad7575ee3bc70a867b1bd0cc0f9f83d9547aa0ee51f466082",
+        "perceptual_hash": "0000000000011111000000000001111100000000000011110000000000001111000000000000001101100000000001010111100000001111011110000111111100110000111111110000000011111111000000001111110100000000011111110000000000111111000000000011111000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean",
+          "actual": "Ward CAD 2026\nMineral Recap:\nWhat 83,920 Items and\n$5.829B Gross Value\nDo and Do Not Mean",
+          "normalized_expected": "ward cad 2026 mineral recap what 83 920 items and 5 829b gross value do and do not mean",
+          "normalized_actual": "ward cad 2026 mineral recap what 83 920 items and 5 829b gross value do and do not mean",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/ward-cad-2026-mineral-recap-83-920-items.webp",
+        "alt": "A top-down aggregate-versus-private-value board appears above the exact Ward CAD recap keyword.",
+        "rendered_text": "Ward CAD 2026 mineral recap 83,920 items",
+        "visual_variant": "wave236-distinct-generated-low-oblique-dark-seven-sleeve-archive-hero-and-strict-top-down-light-aggregate-versus-private-value-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "e730c6b4bce68457ac87fa7022f60e81a3c04f89ca839ceffc96338f049c115f",
+        "perceptual_hash": "1111111111111111100000111111111111111111111111111111111111111111111111111111111111111111000011111111111100001111111111110000111111111111000011111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ward CAD 2026 mineral recap 83,920 items",
+          "actual": "Ward CAD 2026 mineral recap\n83,920 items",
+          "normalized_expected": "ward cad 2026 mineral recap 83 920 items",
+          "normalized_actual": "ward cad 2026 mineral recap 83 920 items",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

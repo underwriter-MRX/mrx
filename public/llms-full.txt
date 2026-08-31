@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (315)
+## Published article URLs (316)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean](https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/)
 - [Upton CAD 2025-2026 Plan Date-Control Register: July 2024 Print, January 1 Snapshot, and a 2020-2022 Appendix](https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/)
 - [Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS](https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/)
 - [Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation](https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/)
