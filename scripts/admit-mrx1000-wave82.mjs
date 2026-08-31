@@ -84,12 +84,113 @@ const articlePath = join(root, articleRelativePath);
 const decisionPath = join(root, decisionRelativePath);
 const creativeManifestPath = join(root, creativeManifestRelativePath);
 const ledgerPath = join(root, 'config/mrx-1000-canonical-content-ledger.json');
+const ledgerCsvPath = join(root, 'config/mrx-1000-canonical-content-ledger.csv');
 const productionVerificationPath = join(
   root,
   'artifacts/mrx1000-release-10/release/post-publication-verification.json',
 );
 
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
+
+function canonicalLedgerRowFingerprint(rows) {
+  return sha256(
+    JSON.stringify(
+      rows.map((row) => ({
+        slug: row.canonical_slug,
+        title: row.canonical_title,
+        cluster: row.cluster,
+        keyword: row.primary_keyword,
+        source: row.source_handle,
+      })),
+    ),
+  );
+}
+
+function normalizeLedgerTitle(value) {
+  return String(value ?? '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function refreshCanonicalLedgerDerivedState(ledger) {
+  const rows = ledger.articles;
+  const sourceCounts = {};
+  const clusterCounts = {};
+  for (const row of rows) {
+    sourceCounts[row.source_system] = (sourceCounts[row.source_system] ?? 0) + 1;
+    clusterCounts[row.cluster] = (clusterCounts[row.cluster] ?? 0) + 1;
+  }
+  ledger.source_summary = Object.fromEntries(
+    Object.entries(sourceCounts).sort(([left], [right]) => left.localeCompare(right)),
+  );
+  if (Array.isArray(ledger.quota_summary)) {
+    ledger.quota_summary = ledger.quota_summary.map((entry) => ({
+      ...entry,
+      actual: clusterCounts[entry.cluster] ?? 0,
+      pass: entry.required === (clusterCounts[entry.cluster] ?? 0),
+    }));
+  }
+
+  const preservationCounts = {
+    live_public_published_route: rows.filter(
+      (row) => row.preservation_classification === 'live_public_published_route',
+    ).length,
+    incumbent_draft_nonpublic_held: rows.filter(
+      (row) => row.preservation_classification === 'incumbent_draft_nonpublic_held',
+    ).length,
+    pilot_draft_noindex_stage: rows.filter(
+      (row) => row.preservation_classification === 'pilot_draft_noindex_stage',
+    ).length,
+    planning_only_inventory: rows.filter(
+      (row) => row.preservation_classification === 'planning_only_inventory',
+    ).length,
+  };
+  const slugs = rows.map((row) => row.canonical_slug);
+  const normalizedTitles = rows.map((row) => normalizeLedgerTitle(row.canonical_title));
+  const verification = (ledger.verification ??= {});
+  Object.assign(verification, {
+    row_count: rows.length,
+    unique_slug_count: new Set(slugs).size,
+    unique_normalized_title_count: new Set(normalizedTitles).size,
+    incumbent_repo_count: rows.filter((row) => row.source_system === 'astro_repo').length,
+    pilot_001_count: rows.filter((row) => row.is_pilot_001).length,
+    pilot_001_count_with_repo_mdx: rows.filter((row) => row.is_pilot_001 && row.repo_path).length,
+    exact_slug_duplicate_count: rows.length - new Set(slugs).size,
+    exact_title_duplicate_count: rows.length - new Set(normalizedTitles).size,
+    quota_total: Object.values(clusterCounts).reduce((sum, count) => sum + count, 0),
+    all_quota_checks_pass:
+      !Array.isArray(ledger.quota_summary) || ledger.quota_summary.every((entry) => entry.pass),
+    pilot_manifest_articles_with_mdx_shell: rows.filter(
+      (row) =>
+        row.is_pilot_001 && row.repo_path && row.repo_path.startsWith('mrx/src/content/posts/'),
+    ).length,
+    preservation_classification_counts: preservationCounts,
+    release_10_post_publication_verified_count: rows.filter(
+      (row) => row.normalized_status === 'live_public_published_route_release_10_verified',
+    ).length,
+    aggregate_eq_1000:
+      Object.values(preservationCounts).reduce((sum, count) => sum + count, 0) === rows.length &&
+      rows.length === 1000,
+  });
+  verification.evidence_taxonomy = {
+    ...(verification.evidence_taxonomy ?? {}),
+    searchatlas_record_id_non_null_uuid_count: rows.filter((row) => row.searchatlas_record_id)
+      .length,
+    content_genius_article_uuid_non_null_count: rows.filter(
+      (row) => row.content_genius_article_uuid,
+    ).length,
+    searchatlas_title_uuid_non_null_count: rows.filter((row) => row.searchatlas_title_uuid).length,
+    searchatlas_record_id_dropped_count: rows.filter((row) => row.searchatlas_record_id_dropped)
+      .length,
+    pilot_article_id_non_null_count: rows.filter((row) => row.pilot_article_id).length,
+    pilot_searchatlas_workflow_status_pilot_rows_with_non_creation_label: rows.filter(
+      (row) => row.is_pilot_001 && row.pilot_searchatlas_workflow_status_evidence_is_non_creation,
+    ).length,
+  };
+}
 
 function sortDeep(value) {
   if (Array.isArray(value)) return value.map(sortDeep);
@@ -101,6 +202,17 @@ function sortDeep(value) {
     );
   }
   return value;
+}
+
+function toCsv(rows, columns) {
+  const quote = (value) => {
+    const text = value == null ? '' : Array.isArray(value) ? value.join('; ') : String(value);
+    return /[",\n\r]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+  };
+  return [
+    columns.join(','),
+    ...rows.map((row) => columns.map((column) => quote(row[column])).join(',')),
+  ].join('\n');
 }
 
 function frontmatter(source) {
@@ -238,11 +350,12 @@ for (const parent of ['hero_image', 'inline_image']) {
   }
 }
 
-const [creativeBytes, batchBytes, retrofitBytes, ledgerBytes] = await Promise.all([
+const [creativeBytes, batchBytes, retrofitBytes, ledgerBytes, ledgerCsvBytes] = await Promise.all([
   readFile(creativeManifestPath),
   readFile(batchPath),
   readFile(retrofitPath),
   readFile(ledgerPath),
+  readFile(ledgerCsvPath),
 ]);
 const creativeDocument = JSON.parse(creativeBytes.toString('utf8'));
 const creative = creativeDocument.article;
@@ -452,8 +565,7 @@ if (
   ledger.articles.length !== 1000 ||
   new Set(ledger.articles.map((row) => row.canonical_slug)).size !== 1000 ||
   ledger.articles.some(
-    (row) =>
-      row.program_row_id === programRowId && row.canonical_slug === priorCanonicalSlug,
+    (row) => row.program_row_id === programRowId && row.canonical_slug === priorCanonicalSlug,
   )
 ) {
   throw new Error(
@@ -479,8 +591,15 @@ waveRekey.draft_selection_decision_sha256 ??= waveRekey.selection_decision_sha25
 waveRekey.selection_decision_sha256 = sha256(decisionBytes);
 waveRekey.release_candidate_article_sha256 = articleSha;
 waveRekey.promoted_at_utc ??= now;
+refreshCanonicalLedgerDerivedState(ledger);
+ledger.content_fingerprint_sha256 = canonicalLedgerRowFingerprint(ledger.articles);
 const nextLedgerText = `${JSON.stringify(ledger, null, 2)}\n`;
-await writeFile(ledgerPath, nextLedgerText);
+const ledgerCsvColumns = ledgerCsvBytes.toString('utf8').split(/\r?\n/, 1)[0].split(',');
+const nextLedgerCsvText = `${toCsv(ledger.articles, ledgerCsvColumns)}\n`;
+await Promise.all([
+  writeFile(ledgerPath, nextLedgerText),
+  writeFile(ledgerCsvPath, nextLedgerCsvText),
+]);
 
 const batchRow = {
   selection_rank: selectionRank,

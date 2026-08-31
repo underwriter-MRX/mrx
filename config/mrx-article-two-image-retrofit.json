@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-30T05:47:04Z",
+  "generated_at_utc": "2026-08-31T04:51:48Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 290,
-    "asset_count": 580,
-    "unique_source_art_count": 290,
-    "unique_hero_sha256_count": 290,
-    "unique_inline_sha256_count": 290,
-    "distinct_article_pair_count": 290,
-    "hero_ocr_pass_count": 290,
-    "inline_ocr_pass_count": 290,
-    "exact_filename_identity_count": 290
+    "article_count": 291,
+    "asset_count": 582,
+    "unique_source_art_count": 291,
+    "unique_hero_sha256_count": 291,
+    "unique_inline_sha256_count": 291,
+    "distinct_article_pair_count": 291,
+    "hero_ocr_pass_count": 291,
+    "inline_ocr_pass_count": 291,
+    "exact_filename_identity_count": 291
   },
   "contact_sheets": {
     "hero": [
@@ -6792,6 +6792,56 @@
           "actual": "Midland CAD mineral property\nappraisal approaches",
           "normalized_expected": "midland cad mineral property appraisal approaches",
           "normalized_actual": "midland cad mineral property appraisal approaches",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "midland-cad-open-records-mineral-files-rolls-notices-source-routes",
+      "title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+      "keyword": "Midland CAD mineral files, rolls, and notices",
+      "file_path": "src/content/posts/midland-cad-open-records-mineral-files-rolls-notices-source-routes.mdx",
+      "source_public_path": "/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave211-creative-sources/midland-cad-open-records-mineral-files-rolls-notices-source-routes-hero-base.png",
+        "artifacts/mrx1000-wave211-creative-sources/midland-cad-open-records-mineral-files-rolls-notices-source-routes-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T04:47:39.116Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp",
+        "alt": "A blank origin card and three separate archive lanes appear beside the exact Midland CAD Open Records article title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "50f492afeed7a04ce3b1635398a6c352331a26de96ad64d5bd6baf27023ec43f",
+        "perceptual_hash": "0000000000000001000000000111100100000000011110010111111001111001011111110011111111111110000000000111110000000000000000000011111100000000011111110000000001111111000000000111111100000000011111110000000001101000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+          "actual": "Midland CAD Open Records Page:\nMineral Files, Rolls, and Notices\nas Separate Source Routes",
+          "normalized_expected": "midland cad open records page mineral files rolls and notices as separate source routes",
+          "normalized_actual": "midland cad open records page mineral files rolls and notices as separate source routes",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/midland-cad-open-records-mineral-files-rolls-notices-source-routes/midland-cad-mineral-files-rolls-and-notices.webp",
+        "alt": "A bright top-down route map branches to roll, stack, and notice motifs above the exact Midland CAD keyword.",
+        "rendered_text": "Midland CAD mineral files, rolls, and notices",
+        "visual_variant": "wave211-distinct-generated-low-oblique-three-lane-hero-and-top-down-three-branch-route-map",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "d3b610530a78b9aac51d4674d5377b6fa81c5a86c6cbeef15dc276a51e43157e",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000111011101100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD mineral files, rolls, and notices",
+          "actual": "Midland CAD mineral files,\nrolls, and notices",
+          "normalized_expected": "midland cad mineral files rolls and notices",
+          "normalized_actual": "midland cad mineral files rolls and notices",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

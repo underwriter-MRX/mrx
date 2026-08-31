@@ -9,7 +9,7 @@ const currentFactoryDirective = readFileSync(
     root,
     'docs',
     'governance',
-    'mrx1000-current-seo-aeo-article-factory-directive-2026-08-28.md',
+    'mrx1000-current-seo-aeo-article-factory-directive-2026-08-29.md',
   ),
   'utf8',
 );
@@ -58,6 +58,10 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       expect(article.canonical_url, article.slug).toBe(
         `https://mineralrightsxchange.com/blog/${article.slug}/`,
       );
+
+      const inlineImageSrc = nestedScalar(fm, 'inline_image', 'src');
+      expect(inlineImageSrc, article.slug).toMatch(/^\/assets\/articles\/inline\/.+\.webp$/);
+      expect(source.split(inlineImageSrc).length - 1, article.slug).toBe(1);
     }
   });
 
@@ -78,26 +82,57 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
   });
 
   it('keeps the current AI Atom Brain and Search Atlas release controls in the durable factory prompt', () => {
-    expect(currentFactoryDirective).toContain('MRX1000-FACTORY-SEO-AEO-2026-08-28');
+    expect(currentFactoryDirective).toContain('MRX1000-FACTORY-SEO-AEO-2026-08-29');
     expect(currentFactoryDirective).toContain(
       'resolve the next MRX1000 row into one unique, evidence-backed owner job',
     );
-    expect(currentFactoryDirective).toContain('claim-level visible citations');
-    expect(currentFactoryDirective).toContain(
-      'exact title/H1/canonical/social/schema/share parity',
-    );
+    expect(currentFactoryDirective).toContain('`VERIFIED-OBSERVATION`');
+    expect(currentFactoryDirective).toContain('`UNRESOLVED-CONFLICT`');
+    expect(currentFactoryDirective).toContain('publisher provenance and observed wording');
+    expect(currentFactoryDirective).toContain('Never silently normalize, reconcile, substitute');
+    expect(currentFactoryDirective).toContain('physical page locator');
+    expect(currentFactoryDirective).toContain('render SHA-256');
+    expect(currentFactoryDirective).toContain('claim-adjacent primary citations');
+    expect(currentFactoryDirective).toContain('exact visible/schema entity parity');
     expect(currentFactoryDirective).toContain('every active production hostname and target');
-    expect(currentFactoryDirective).toContain('image MIME/dimensions/bytes/SHA parity');
+    expect(currentFactoryDirective).toContain('image bytes/MIME/dimensions/SHA parity');
     expect(currentFactoryDirective).toContain('responsive extension-backed Chrome rendering');
+    expect(currentFactoryDirective).toContain('Render the canonical in-body image exactly once');
+    expect(currentFactoryDirective).toContain('lazy-load gaps');
     expect(currentFactoryDirective).toContain('completed and post-processed Search Atlas recrawl');
     expect(currentFactoryDirective).toContain('zero pending recommendations');
-    expect(currentFactoryDirective).toContain('raw technical-audit findings separately');
+    expect(currentFactoryDirective).toContain('raw technical-audit observations separately');
+    expect(currentFactoryDirective).toContain('exact prompt, product and model, mode');
+    expect(currentFactoryDirective).toContain(
+      'creation, review, admission, commit, deployment, live verification, indexing, ranking, citation, and conversion as separate states',
+    );
     expect(currentFactoryDirective).toContain(
       'does not promise ranking, indexing, retrieval, competitor displacement, or citation',
     );
     expect(currentFactoryDirective).toContain(
       'The July 2026 pilot archive is not transcript-grade tactical evidence',
     );
+    expect(currentFactoryDirective).toContain(
+      '3e8b3de1e7208d4d9e4638878804f125e09c1ede53510d4a463c5f8cf8d3cefd',
+    );
+    expect(currentFactoryDirective).toContain('information gain outranks page volume');
+    expect(currentFactoryDirective).toContain('a retry cannot create a duplicate route');
+    expect(currentFactoryDirective).toContain(
+      'prompt-universe additions or removals as denominator breaks',
+    );
+  });
+
+  it('keeps long citation identifiers from creating mobile horizontal overflow', () => {
+    const proseCss = readFileSync(join(root, 'src', 'styles', 'prose.css'), 'utf8');
+    const articleLayout = readFileSync(join(root, 'src', 'layouts', 'ArticleLayout.astro'), 'utf8');
+
+    expect(proseCss).toMatch(
+      /\.prose code \{[\s\S]*?overflow-wrap: anywhere;[\s\S]*?word-break: break-word;[\s\S]*?white-space: normal;/,
+    );
+    expect(proseCss).toMatch(
+      /\.prose pre code \{[\s\S]*?overflow-wrap: normal;[\s\S]*?word-break: normal;[\s\S]*?white-space: inherit;/,
+    );
+    expect(articleLayout).toMatch(/\.article-takeaways li \{[\s\S]*?overflow-wrap: anywhere;/);
   });
 
   it('keeps Article 237 answer-first and visibly cited without expanding its header-only boundary', () => {

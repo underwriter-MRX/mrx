@@ -50,9 +50,9 @@ const SCRIPT = path.join(MRX_ROOT, 'scripts/build-mrx-1000-content-ledger.mjs');
 const CANONICAL_JSON = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.json');
 const CANONICAL_CSV = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.csv');
 const EXPECTED_CANONICAL_JSON_SHA256 =
-  'e7091475dfd2403b36ead9e46ff15404f73ffbfd50271a1f51b8fbd4819cef3d';
+  'b8875e649065879679aa048d3bf4c0ef84498f167c419bb4bf01135e4d5b608b';
 const EXPECTED_CANONICAL_CSV_SHA256 =
-  '2aba8c8957889007120a91b7725a16c2d830a40f7c26d4ae55f96e66f0e1ef75';
+  'e6e4ac9ade67cad6dd6201b440a5ab1a0078e8bc03f77f9429581fe294c2524d';
 const TEST_OUTPUT_DIR = mkdtempSync(path.join(tmpdir(), 'mrx1000-ledger-idempotency-'));
 const JSON_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.json');
 const CSV_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.csv');
@@ -196,6 +196,7 @@ interface Ledger {
     wave123_rekey?: { program_row_id: string };
     wave124_rekey?: { program_row_id: string };
     wave125_rekey?: { program_row_id: string };
+    wave211_rekey?: { program_row_id: string };
   };
   policy: {
     pilot_aware: boolean;
@@ -369,6 +370,14 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     expect(ledger.identity_registry.wave123_rekey?.program_row_id).toBe('MRX1000-0328');
     expect(ledger.identity_registry.wave124_rekey?.program_row_id).toBe('MRX1000-0329');
     expect(ledger.identity_registry.wave125_rekey?.program_row_id).toBe('MRX1000-0330');
+    expect(ledger.identity_registry.wave211_rekey?.program_row_id).toBe('MRX1000-0831');
+    expect(
+      bySlug.get('midland-cad-open-records-mineral-files-rolls-notices-source-routes')
+        ?.program_row_id,
+    ).toBe('MRX1000-0831');
+    expect(
+      bySlug.has('midland-county-texas-mineral-rights-value-market-update-for-mineral-owners'),
+    ).toBe(false);
     expect(bySlug.has('understanding-the-true-worth-of-your-mineral-interests')).toBe(false);
     expect(
       bySlug.has(

@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-30T05:58:40Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T05:03:49Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -630,13 +630,16 @@
     "wave209_selection_decision_sha256": "f65b248ea0ada14ce02102a752b2cf98562c74bd887d535f9c2505d6df65c728",
     "wave210_selection_decision_id": "MRX1000-W210-SELECT-2026-08-29",
     "wave210_selection_decision_path": "docs/governance/mrx1000-wave210-selection-decision-2026-08-29.md",
-    "wave210_selection_decision_sha256": "c2ba8bdabbad3d13b0ac7ab0125e1b666d8a6fd06250572ded2dc964ff023327"
+    "wave210_selection_decision_sha256": "c2ba8bdabbad3d13b0ac7ab0125e1b666d8a6fd06250572ded2dc964ff023327",
+    "wave211_selection_decision_id": "MRX1000-W211-SELECT-2026-08-30",
+    "wave211_selection_decision_path": "docs/governance/mrx1000-wave211-selection-decision-2026-08-30.md",
+    "wave211_selection_decision_sha256": "3f33f1610368d0f0a9986e7b548a8c8fb628604064f1f286239752b18a46fd60"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "e7091475dfd2403b36ead9e46ff15404f73ffbfd50271a1f51b8fbd4819cef3d",
-    "canonical_ledger_generated_at": "2026-07-20T05:41:42.982Z",
+    "canonical_ledger_sha256": "b8875e649065879679aa048d3bf4c0ef84498f167c419bb4bf01135e4d5b608b",
+    "canonical_ledger_generated_at": "2026-07-20T17:54:44.636Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -650,11 +653,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 281,
+    "prior_verified_article_count": 282,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 282,
-    "exact_admitted_slate_sha256": "3e20733999a53c82fd94c0b7f16b25eb6dc9d467c43933312347dadbee3ff965"
+    "exact_admitted_count": 283,
+    "exact_admitted_slate_sha256": "2af91fef946032f179683d5b04dfd0c866eaac9dd21dc3775b657b98756723ea"
   },
   "articles": [
     {
@@ -10272,10 +10275,45 @@
       "inline_path": "/assets/articles/inline/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/midland-cad-419-660-mineral-interest-accounts.webp",
       "inline_asset_sha256": "a31e7c58c548c3264effc9513c082ad859224ce7eebc4d255aab9c4d42b9ddec",
       "inline_rendered_text": "Midland CAD 419,660 mineral interest accounts"
+    },
+    {
+      "selection_rank": 283,
+      "program_row_id": "MRX1000-0831",
+      "source_shortlist_program_row_id": "MRX1000-0831",
+      "slug": "midland-cad-open-records-mineral-files-rolls-notices-source-routes",
+      "title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+      "source_shortlist_title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "ae747d2f1e4761c319928bc4b931b275bf5d19c7ba0e51423f5dfc8d97bfd593",
+      "repo_path": "src/content/posts/midland-cad-open-records-mineral-files-rolls-notices-source-routes.mdx",
+      "repo_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+      "article_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+      "hero_path": "/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp",
+      "hero_sha256": "50f492afeed7a04ce3b1635398a6c352331a26de96ad64d5bd6baf27023ec43f",
+      "hero_asset_sha256": "50f492afeed7a04ce3b1635398a6c352331a26de96ad64d5bd6baf27023ec43f",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2296,
+      "risk_citation_remediation": [
+        "The original Midland County market-update identity is rejected because it lacks a defined period, dataset, issuer, measurement frame, and evidence cutoff and overlaps the existing valuation corpus.",
+        "The replacement owns only Midland CAD Open Records route taxonomy: exact headings, link labels, target suffixes, request-form mismatch, page metadata, and non-validation boundaries.",
+        "The article preserves that the preliminary mineral roll is under Preliminary Rolls while the certified mineral roll and mineral notices are under Mineral Files; it does not silently normalize them into equal headings.",
+        "No roll, notice, or mineral-file archive was downloaded, opened, extracted, sampled, or searched, and no owner, property, account, title, appraisal, tax, value, production, royalty, or transaction conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, source byte identities, information gain, idempotent route ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under the refreshed MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/midland-cad-open-records-mineral-files-rolls-notices-source-routes.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/midland-cad-open-records-mineral-files-rolls-notices-source-routes/midland-cad-mineral-files-rolls-and-notices.webp",
+      "inline_asset_sha256": "d3b610530a78b9aac51d4674d5377b6fa81c5a86c6cbeef15dc276a51e43157e",
+      "inline_rendered_text": "Midland CAD mineral files, rolls, and notices"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 282,
+    "admitted_article_count": 283,
     "selection_ranks": [
       1,
       2,
@@ -10558,7 +10596,8 @@
       279,
       280,
       281,
-      282
+      282,
+      283
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10617,9 +10656,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "ad0d933ea5dd6c104395989d47b9b371997f53aaffffd0d12c26b91bc0dac788",
-    "public_article_count": 290,
-    "batch_article_count": 282,
+    "retrofit_manifest_sha256": "d0842ee335a9d0811975ba94f41a59ba44bc8413147a741723984e73c624b1ec",
+    "public_article_count": 291,
+    "batch_article_count": 283,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

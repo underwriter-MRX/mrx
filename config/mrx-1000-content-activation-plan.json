@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T05:41:42.982Z",
+  "generated_at": "2026-07-20T17:54:44.636Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "ecaaba4f3f73f70488b2e5a6960ce6b210351ef4819eee852d5f9aa662f0890d",
+  "content_fingerprint_sha256": "98970cd9c747a5b3e2bcee412fc006336c27f83d3bcc368e7a2c315aa7eb0136",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "3d88fadfbc3c176636d6c7ab03230fb638aa75ab2e474164dd00aaee9b66e6cc",
+    "canonical_ledger_fingerprint_sha256": "b5e716e91a2ea40985f05e24e4dfbabb1f0bfd187f2cc58f14a323ffdf243530",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T05:41:42.982Z",
+    "canonical_ledger_generated_at": "2026-07-20T17:54:44.636Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 290,
+      "live_public_published_route": 291,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 662
+      "planning_only_inventory": 661
     }
   },
   "rows": [
@@ -49027,11 +49027,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0831",
-        "target_title": "Midland County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/midland-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+        "url": "/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49074,15 +49074,15 @@
     },
     {
       "program_row_id": "MRX1000-0831",
-      "canonical_title": "Midland County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "midland-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/midland-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+      "canonical_slug": "midland-cad-open-records-mineral-files-rolls-notices-source-routes",
+      "canonical_url": "/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49104,7 +49104,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49117,7 +49117,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49131,7 +49131,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

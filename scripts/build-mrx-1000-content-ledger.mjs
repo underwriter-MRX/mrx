@@ -509,6 +509,7 @@ async function loadPriorProgramRowIds() {
       return {
         bySlug: new Map(),
         sourceSystemBySlug: new Map(),
+        priorPlanningRows: [],
         incumbentRepoCount: 0,
         maxSequenceEver: 0,
         waveMetadata: {},
@@ -559,6 +560,33 @@ async function loadPriorProgramRowIds() {
     throw error;
   }
 
+  // Every admitted replacement records its retired planning slug and durable
+  // program-row ID in the prior ledger. Derive the successor map from that
+  // registry so a rebuild cannot silently re-admit the retired factory row or
+  // require another hand-maintained mapping for each continuous wave.
+  const currentRowByProgramId = new Map(
+    (prior.articles ?? []).map((row) => [String(row.program_row_id ?? ''), row]),
+  );
+  const activePriorSlugs = new Set(
+    (prior.articles ?? []).map((row) => String(row.canonical_slug ?? '')),
+  );
+  for (const [key, rekey] of Object.entries(prior.identity_registry ?? {})) {
+    if (!/^wave\d+_rekey$/.test(key) || !rekey || typeof rekey !== 'object') continue;
+    const retiredSlug = String(rekey.prior_canonical_slug ?? '');
+    const currentRow = currentRowByProgramId.get(String(rekey.program_row_id ?? ''));
+    const successorSlug = String(currentRow?.canonical_slug ?? '');
+    if (
+      !retiredSlug ||
+      !successorSlug ||
+      retiredSlug === successorSlug ||
+      activePriorSlugs.has(retiredSlug)
+    ) {
+      continue;
+    }
+    SUPERSEDED_CANONICAL_SLUGS.add(retiredSlug);
+    SUCCESSOR_CANONICAL_SLUGS.set(retiredSlug, successorSlug);
+  }
+
   const bySlug = new Map();
   const sourceSystemBySlug = new Map();
   const seenIds = new Set();
@@ -596,6 +624,14 @@ async function loadPriorProgramRowIds() {
   return {
     bySlug,
     sourceSystemBySlug,
+    priorPlanningRows: (prior.articles ?? [])
+      .filter(
+        (row) =>
+          row.preservation_classification === 'planning_only_inventory' &&
+          row.source_system !== 'astro_repo' &&
+          !row.is_pilot_001,
+      )
+      .map((row) => structuredClone(row)),
     incumbentRepoCount: (prior.articles ?? []).filter(
       (row) => String(row.source_system ?? '') === 'astro_repo',
     ).length,
@@ -1222,7 +1258,7 @@ async function loadRepoCandidates({
         slug,
         cluster,
         primaryKeyword: data.primary_keyword || normalizeTitle(title),
-        secondaryKeywords: tags,
+        secondaryKeywords: Array.isArray(data.secondary_keywords) ? data.secondary_keywords : tags,
         searchIntent: APPROVED_REKEY_SEARCH_INTENT_BY_SLUG.get(slug),
         sourceSystem: 'astro_repo',
         sourceRecordId: filename,
@@ -1929,12 +1965,21 @@ async function main() {
 
   assertNoExactDuplicate(repo, 'incumbent repo');
   assertNoExactDuplicate(pilotRows, 'pilot manifest');
+  const canonicalRepoSlugs = new Set(canonicalRepo.map((row) => row.canonical_slug));
+  const stablePriorPlanning = priorIdentity.priorPlanningRows.filter(
+    (row) =>
+      !SUPERSEDED_CANONICAL_SLUGS.has(row.canonical_slug) &&
+      !canonicalRepoSlugs.has(row.canonical_slug),
+  );
   const { selected, counts, rejected } = selectLedger(quotas, {
     repo: canonicalRepo,
     pilot: pilotRows,
-    preservedPlanning: [...searchatlas, ...editorialGap, ...factory].filter((row) =>
-      PROGRAM_ROW_ID_RECOVERY_BY_SLUG.has(row.canonical_slug),
-    ),
+    preservedPlanning:
+      stablePriorPlanning.length > 0
+        ? stablePriorPlanning
+        : [...searchatlas, ...editorialGap, ...factory].filter((row) =>
+            PROGRAM_ROW_ID_RECOVERY_BY_SLUG.has(row.canonical_slug),
+          ),
     searchatlas: withoutSupersededIdentities(searchatlas),
     editorialGap: withoutSupersededIdentities(editorialGap),
     factory: withoutSupersededIdentities(factory),
