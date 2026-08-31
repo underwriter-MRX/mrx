@@ -218,4 +218,37 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('UNRESOLVED-CONFLICT');
     expect(body).not.toContain('Midland County, Texas Mineral Rights Value: Timeline In 2026');
   });
+
+  it('keeps Article 286 on its exact official-plan calendar-to-snapshot boundary', () => {
+    const slug =
+      'midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Midland CAD mineral work calendar',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('the plan separates the valuation date from the work calendar');
+    expect(body).toContain('Mineral Property Valuation: January-May');
+    expect(body).toContain('certification of accounts before July 25');
+    expect(body).toContain('C286-10');
+    expect(body).toContain('SOURCE-STATEMENT');
+    expect(body).not.toContain(
+      'Midland County, Texas Mineral Rights Value: Valuation Factors Without Obligation',
+    );
+  });
 });

@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "407d991c70838389c737b788be933742c28ac96a00392b06a3d3e3657af92298",
+  "content_fingerprint_sha256": "f07639422ca294e8d8f40942aad184221d57c2156a5c3626525217f98f38a514",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "efd8d49ca144d687b2f0a4acba94c8deebde76f845f0662064fbc2dbd96a878a",
+    "canonical_ledger_fingerprint_sha256": "255469a23eba48af28f163df467aefd3cd0f486b229c8410ea303aaeb7e8fba6",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 293,
+      "live_public_published_route": 294,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 659
+      "planning_only_inventory": 658
     }
   },
   "rows": [
@@ -49216,11 +49216,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0834",
-        "target_title": "Midland County, Texas Mineral Rights Value: Valuation Factors Without Obligation",
-        "url": "/blog/midland-county-texas-mineral-rights-value-valuation-factors-without-obligation/",
+        "target_title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+        "url": "/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49263,15 +49263,15 @@
     },
     {
       "program_row_id": "MRX1000-0834",
-      "canonical_title": "Midland County, Texas Mineral Rights Value: Valuation Factors Without Obligation",
-      "canonical_slug": "midland-county-texas-mineral-rights-value-valuation-factors-without-obligation",
-      "canonical_url": "/blog/midland-county-texas-mineral-rights-value-valuation-factors-without-obligation/",
+      "canonical_title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+      "canonical_slug": "midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification",
+      "canonical_url": "/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "royalty-income",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49293,7 +49293,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:royalty-income",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49306,7 +49306,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:royalty-income",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49320,7 +49320,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

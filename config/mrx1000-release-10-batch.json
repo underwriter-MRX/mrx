@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T06:43:19Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T07:05:41Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -639,12 +639,15 @@
     "wave212_selection_decision_sha256": "6168aa6c64bb7841dc73f9a3c475067a7f0cd4873fabd4792d24438730c71b33",
     "wave213_selection_decision_id": "MRX1000-W213-SELECT-2026-08-30",
     "wave213_selection_decision_path": "docs/governance/mrx1000-wave213-selection-decision-2026-08-30.md",
-    "wave213_selection_decision_sha256": "b752d6134bf85fa0cce64f58950ab5f11fabdb870e1e637003c454fb40effb8e"
+    "wave213_selection_decision_sha256": "b752d6134bf85fa0cce64f58950ab5f11fabdb870e1e637003c454fb40effb8e",
+    "wave214_selection_decision_id": "MRX1000-W214-SELECT-2026-08-30",
+    "wave214_selection_decision_path": "docs/governance/mrx1000-wave214-selection-decision-2026-08-30.md",
+    "wave214_selection_decision_sha256": "9442d9eb0c0fb204a9e0e6e3952457b0e989432bf56166d58c469a24b52d5faa"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "cb8171a63534ae224d1be48f9baa6bd03fffe4960fe124e0bbb9774fb5d469b2",
+    "canonical_ledger_sha256": "2c020df05908116758a8bd50fcb9af86a5e834ff505953551a4382d2c5610160",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -659,11 +662,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 284,
+    "prior_verified_article_count": 285,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 285,
-    "exact_admitted_slate_sha256": "1d08015a515323b0b7fce650b14270eb22b393aa164a4bf11b6c8e9ec225d531"
+    "exact_admitted_count": 286,
+    "exact_admitted_slate_sha256": "c5b719ada0baba2773de2b604ee2c976f45c804ed69cfa4596721c40e9aea052"
   },
   "articles": [
     {
@@ -10388,10 +10391,46 @@
       "inline_path": "/assets/articles/inline/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/midland-cad-mineral-appraisal-rfp-2026.webp",
       "inline_asset_sha256": "6dba20023ad0684070bca63dc74352442af862dc48f16514ada519b5699616b7",
       "inline_rendered_text": "Midland CAD mineral appraisal RFP 2026"
+    },
+    {
+      "selection_rank": 286,
+      "program_row_id": "MRX1000-0834",
+      "source_shortlist_program_row_id": "MRX1000-0834",
+      "slug": "midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification",
+      "title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+      "source_shortlist_title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "65a8af9987cd13907f7cb887b67af807f1a76ebc26815986eafbb59990db5f1f",
+      "repo_path": "src/content/posts/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification.mdx",
+      "repo_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+      "article_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+      "hero_path": "/assets/articles/hero/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-to-july-certification.webp",
+      "hero_sha256": "f4aec5c1d8c3925a9c01f924b5d3b70aeff2f327e7ccf2089659ccd0335548c6",
+      "hero_asset_sha256": "f4aec5c1d8c3925a9c01f924b5d3b70aeff2f327e7ccf2089659ccd0335548c6",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1916,
+      "risk_citation_remediation": [
+        "The original Midland County valuation-factors identity is rejected because it has 0.7143 token-Jaccard similarity to an existing same-cluster title and materially overlaps the live valuation corpus.",
+        "The replacement owns only the official 2025-2026 reappraisal-plan locator, physical page 69 mineral work calendar, physical page 102 January 1 and annual-reappraisal statements, physical pages 103 and 105 source-data categories, and explicit plan-versus-outcome limits.",
+        "Articles 281 through 285 separately own Midland appraisal approaches, the 2025 account statement, Open Records routes, the 2026 certified-roll archive, and the 2026 appraisal-services RFP. Article 286 does not reopen those jobs.",
+        "The article describes every date and activity as printed plan content and does not infer actual completion, a currently operative deadline, mailing, hearing, certification, or owner-level result.",
+        "No owner, account, property, appraisal, notice, protest, certification, title, tax, value, legal, offer, buyer-ranking, or transaction conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/midland-cad-mineral-work-calendar.webp",
+      "inline_asset_sha256": "743368f5aa17c5b547f3482887c21a5d2f5683183d0bc957f2da3f3189d11604",
+      "inline_rendered_text": "Midland CAD mineral work calendar"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 285,
+    "admitted_article_count": 286,
     "selection_ranks": [
       1,
       2,
@@ -10677,7 +10716,8 @@
       282,
       283,
       284,
-      285
+      285,
+      286
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10736,9 +10776,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "a50b597560e208c51bd2f5f539283d4f9d6722d699f00fa3826caa730c2c575b",
-    "public_article_count": 293,
-    "batch_article_count": 285,
+    "retrofit_manifest_sha256": "f52e8217ea01a977cfff00b0d45e3fc92086b5fd37a7fe9561206a61d6c9333b",
+    "public_article_count": 294,
+    "batch_article_count": 286,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
