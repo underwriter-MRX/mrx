@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T08:26:17Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T08:47:26Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -654,12 +654,15 @@
     "wave217_selection_decision_sha256": "9a626e64fa9f4dca087f4671e1ac78241aa11c03eea0d10a9b830651db593d86",
     "wave218_selection_decision_id": "MRX1000-W218-SELECT-2026-08-31",
     "wave218_selection_decision_path": "docs/governance/mrx1000-wave218-selection-decision-2026-08-31.md",
-    "wave218_selection_decision_sha256": "cb089df40b61a4be39c9573250fcca16e77b08e54d9f108c8e66dd4cebc1a4ac"
+    "wave218_selection_decision_sha256": "cb089df40b61a4be39c9573250fcca16e77b08e54d9f108c8e66dd4cebc1a4ac",
+    "wave219_selection_decision_id": "MRX1000-W219-SELECT-2026-08-31",
+    "wave219_selection_decision_path": "docs/governance/mrx1000-wave219-selection-decision-2026-08-31.md",
+    "wave219_selection_decision_sha256": "5b8ab385ea2fddf7c8f235230e8a864f0e7dfc52230c3fa9a2d145a86dd46750"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "08f2c23fc9510c6a7e0eaab9204865df34046d87f10a0ce0fef059365fe3a198",
+    "canonical_ledger_sha256": "f7e8c45b8f823d388026ab9f97f617d6cdacdce0a99be7d7f09e27a274b025e2",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -674,11 +677,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 289,
+    "prior_verified_article_count": 290,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 290,
-    "exact_admitted_slate_sha256": "15026744a903d79cabc3307ee95e424dc2e0229fbbc66a8635ce5821949d9856"
+    "exact_admitted_count": 291,
+    "exact_admitted_slate_sha256": "d3ab8e6fcb5776f7ecc78d6ff8b42640740b47db95877f69d5cbe29b05d834ee"
   },
   "articles": [
     {
@@ -10584,10 +10587,46 @@
       "inline_path": "/assets/articles/inline/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/pecos-cad-industrial-appraisal-assumptions.webp",
       "inline_asset_sha256": "f5485024c20e2dd2810e6841c9149f7cc1c9c3ac81110c726cad5114a845bd63",
       "inline_rendered_text": "Pecos CAD industrial appraisal assumptions"
+    },
+    {
+      "selection_rank": 291,
+      "program_row_id": "MRX1000-0839",
+      "source_shortlist_program_row_id": "MRX1000-0839",
+      "slug": "pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land",
+      "title": "Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land",
+      "source_shortlist_title": "Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land",
+      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "d358454764670281750037ed79841b7afe8de245091a5351f7d4c73963b2f83f",
+      "repo_path": "src/content/posts/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land.mdx",
+      "repo_sha256": "68064436d1077d53af8cf88ef66f56175a8385ab82f56436164b6a2891003679",
+      "article_sha256": "68064436d1077d53af8cf88ef66f56175a8385ab82f56436164b6a2891003679",
+      "hero_path": "/assets/articles/hero/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land.webp",
+      "hero_sha256": "079a2208c3acb3aafee475066b6562ac04059b1ef3d53bacfacb5c8cc4f0a9f5",
+      "hero_asset_sha256": "079a2208c3acb3aafee475066b6562ac04059b1ef3d53bacfacb5c8cc4f0a9f5",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1960,
+      "risk_citation_remediation": [
+        "The original Pecos County value-timeline identity is rejected because it overlaps the Andrews analogue at 0.6667 token-Jaccard similarity and repeats the current county-value and timeline corpus.",
+        "The replacement owns only the official Pecos CAD utility, railroad, and pipeline appraisal-model section on physical pages 54 through 59 of the controlled 2025-2026 Reappraisal Plan.",
+        "Pipeline RCNLD, conditional unit-value modeling, whole-system reconciliation, component allocation, and land-value separation remain attributed plan descriptions rather than property-specific calculations or conclusions.",
+        "The article does not convert a local ad valorem operating-property model into mineral-reserve appraisal, private mineral value, pipeline ownership, easement or right-of-way value, pipeline regulation, a tax calculation, protest strategy, legal advice, or a transaction result.",
+        "Comptroller context distinguishes local January 1 taxable-property appraisal from private valuation without validating a Pecos account, method, model input, allocation, tax, protest position, private value, offer, or transaction.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/pecos-cad-pipeline-appraisal-models.webp",
+      "inline_asset_sha256": "ec3573a0ce2e4b571fb3303c74d72d6ab30ada94613f907ea617bfe716093548",
+      "inline_rendered_text": "Pecos CAD pipeline appraisal models"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 290,
+    "admitted_article_count": 291,
     "selection_ranks": [
       1,
       2,
@@ -10878,7 +10917,8 @@
       287,
       288,
       289,
-      290
+      290,
+      291
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10937,9 +10977,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "0a3c868b370b8c967f7a8aa853236e4345e1a2cb9043c1eb682a51d0d55db791",
-    "public_article_count": 298,
-    "batch_article_count": 290,
+    "retrofit_manifest_sha256": "f7163083f74953d8cc5d03cf79182de753d9aa983c3f8f6e8670f020f59093de",
+    "public_article_count": 299,
+    "batch_article_count": 291,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

@@ -382,4 +382,37 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('SOURCE-ASSUMPTION');
     expect(body).not.toContain('Pecos County, Texas Mineral Rights Value: Risk Checklist In 2026');
   });
+
+  it('keeps Article 291 on its exact Pecos pipeline-model evidence boundary', () => {
+    const slug = 'pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Pecos CAD pipeline appraisal models',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('every pipeline receives a replacement-cost-new-less-depreciation');
+    expect(body).toContain('Unit value is conditional and system-wide');
+    expect(body).toContain('Reconciliation comes before component allocation');
+    expect(body).toContain('Land is separated under stated plan rules');
+    expect(body).toContain('C291-10');
+    expect(body).toContain('CONDITIONAL-METHOD');
+    expect(body).not.toContain('Pecos County, Texas Mineral Rights Value: Timeline In 2026');
+  });
 });

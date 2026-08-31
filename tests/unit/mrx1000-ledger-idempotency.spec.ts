@@ -50,9 +50,9 @@ const SCRIPT = path.join(MRX_ROOT, 'scripts/build-mrx-1000-content-ledger.mjs');
 const CANONICAL_JSON = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.json');
 const CANONICAL_CSV = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.csv');
 const EXPECTED_CANONICAL_JSON_SHA256 =
-  '08f2c23fc9510c6a7e0eaab9204865df34046d87f10a0ce0fef059365fe3a198';
+  'f7e8c45b8f823d388026ab9f97f617d6cdacdce0a99be7d7f09e27a274b025e2';
 const EXPECTED_CANONICAL_CSV_SHA256 =
-  '9d434b62becfdf0aeaca7cdaec4a06848925930deaf6c1dcd8aa930ac5fc24d4';
+  'ded76e3df41ff8c799307baf5acbf761f1996612f4df48ee3bb77a63947d70d3';
 const TEST_OUTPUT_DIR = mkdtempSync(path.join(tmpdir(), 'mrx1000-ledger-idempotency-'));
 const JSON_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.json');
 const CSV_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.csv');
@@ -204,6 +204,7 @@ interface Ledger {
     wave216_rekey?: { program_row_id: string };
     wave217_rekey?: { program_row_id: string };
     wave218_rekey?: { program_row_id: string };
+    wave219_rekey?: { program_row_id: string };
   };
   policy: {
     pilot_aware: boolean;
@@ -385,6 +386,7 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     expect(ledger.identity_registry.wave216_rekey?.program_row_id).toBe('MRX1000-0836');
     expect(ledger.identity_registry.wave217_rekey?.program_row_id).toBe('MRX1000-0837');
     expect(ledger.identity_registry.wave218_rekey?.program_row_id).toBe('MRX1000-0838');
+    expect(ledger.identity_registry.wave219_rekey?.program_row_id).toBe('MRX1000-0839');
     expect(
       bySlug.get('midland-cad-open-records-mineral-files-rolls-notices-source-routes')
         ?.program_row_id,
@@ -417,6 +419,10 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
       bySlug.get('pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches')
         ?.program_row_id,
     ).toBe('MRX1000-0838');
+    expect(
+      bySlug.get('pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land')
+        ?.program_row_id,
+    ).toBe('MRX1000-0839');
     expect(
       bySlug.has('midland-county-texas-mineral-rights-value-market-update-for-mineral-owners'),
     ).toBe(false);

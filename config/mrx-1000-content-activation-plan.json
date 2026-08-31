@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "eb2d070adea9c3ef4e6c4ab2be0a4622f6a1f61efe56a91f62d4c44730fa2b09",
+  "content_fingerprint_sha256": "8d09efb4da16aa279142502f9d05ac9c7d528cc6aa1ff06b61a338bfd1213dae",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "4774587c8212466ec555356079cac16194146ef36e038414f6c36b78f0ef7ab1",
+    "canonical_ledger_fingerprint_sha256": "14a3b564a78035575996b9121f3036ca66c35bfa52ec9c39a1d88d2183850775",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 298,
+      "live_public_published_route": 299,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 654
+      "planning_only_inventory": 653
     }
   },
   "rows": [
@@ -49531,11 +49531,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0839",
-        "target_title": "Pecos County, Texas Mineral Rights Value: Timeline In 2026",
-        "url": "/blog/pecos-county-texas-mineral-rights-value-timeline-in-2026/",
+        "target_title": "Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land",
+        "url": "/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49578,15 +49578,15 @@
     },
     {
       "program_row_id": "MRX1000-0839",
-      "canonical_title": "Pecos County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "pecos-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "/blog/pecos-county-texas-mineral-rights-value-timeline-in-2026/",
+      "canonical_title": "Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land",
+      "canonical_slug": "pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land",
+      "canonical_url": "/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49608,7 +49608,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49621,7 +49621,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49635,7 +49635,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

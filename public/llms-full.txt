@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (298)
+## Published article URLs (299)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land](https://mineralrightsxchange.com/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/)
 - [Pecos CAD Industrial Appraisal Limits: Title, Inspection, and Sketches](https://mineralrightsxchange.com/blog/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/)
 - [Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits](https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/)
 - [Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1](https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/)
