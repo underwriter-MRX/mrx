@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "48cd7d936c8d7b275e781747c90275cc9c63100f400baf64d31cfa63781f81c7",
-      "bytes": 4708132
+      "sha256": "abdcdd24b4335716e31c2dd86d6d47d774dd4e1bbb4e8c610c5e5aaec468a777",
+      "bytes": 4709284
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "9a872658d61e9eb76ccc53bace4b97723421a5716125dcf6ea1e5f9ac2ee8446",
-      "bytes": 3490599,
+      "sha256": "fed870798472ecdb3a03e88a470e548cd249c317108d664d44e5929ea97bf6e4",
+      "bytes": 3491084,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -366,30 +366,30 @@
     },
     "by_canonical_inventory_state": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 296,
+      "live_public_published_route": 297,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 656
+      "planning_only_inventory": 655
     },
     "by_searchatlas_action_needed": {
-      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 220,
+      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 221,
       "reconcile_artifact_bound_content_genius_record_no_creation": 2,
       "reconcile_pilot_non_creation_workflow_label_then_bind_or_conditionally_create": 23,
       "reconcile_unambiguous_exact_title_vendor_candidate_no_creation": 139,
       "resolve_ambiguous_exact_title_vendor_candidates_no_creation": 6,
-      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 610
+      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 609
     },
-    "repo_mdx_present": 344,
-    "workspace_public_route_configured": 296,
+    "repo_mdx_present": 345,
+    "workspace_public_route_configured": 297,
     "planning_searchatlas_map_id_count": 225,
     "planning_searchatlas_title_uuid_count": 200,
     "persisted_ledger_content_genius_article_uuid_count": 0,
-    "checksummed_review_candidate_rows": 320,
-    "rows_without_checksummed_review_candidate": 680,
+    "checksummed_review_candidate_rows": 321,
+    "rows_without_checksummed_review_candidate": 679,
     "by_review_candidate_state": {
-      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 296,
+      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 297,
       "CHECKSUMMED_HELD_SUBSTANTIVE_DRAFT_READY_FOR_LLM_REVIEW": 23,
       "NO_CHECKSUMMED_REVIEW_CANDIDATE_PILOT_QA_SHELL_ONLY": 24,
-      "NO_WORKSPACE_CONTENT_CANDIDATE": 656,
+      "NO_WORKSPACE_CONTENT_CANDIDATE": 655,
       "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW": 1
     },
     "pilot_workspace_qa_shell_rows": 25,
@@ -279395,28 +279395,52 @@
     },
     {
       "program_row_id": "MRX1000-0837",
-      "canonical_title": "Pecos County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "pecos-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits",
+      "canonical_slug": "pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits",
+      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "Pecos County, Texas mineral rights value",
+      "primary_keyword": "Pecos CAD oil and gas appraisal review",
       "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
+        "canonical_inventory_state": "live_public_published_route",
+        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
+          "state": "WORKSPACE_MDX_PRESENT",
+          "path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+          "mdx_exists": true,
+          "source_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+          "publication_status": "published",
           "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
+          "workspace_public_route_configured": true,
           "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
+          "content_evidence": {
+            "frontmatter_title": "Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits",
+            "frontmatter_slug": null,
+            "frontmatter_publication_status": "published",
+            "frontmatter_reviewed_at": "2026-08-31T07:58:00Z",
+            "frontmatter_reviewed_by": "mrx_compliance-continuous-wave217",
+            "frontmatter_article_id": null,
+            "frontmatter_searchatlas_uuid": null,
+            "frontmatter_workflow_status": null,
+            "frontmatter_remediated_from_sha256": null,
+            "frontmatter_body_checksum_sha256": null,
+            "frontmatter_body_length_chars": 0,
+            "frontmatter_body_word_count": 0,
+            "frontmatter_draft": false,
+            "frontmatter_noindex": false,
+            "frontmatter_indexable": null,
+            "body_sha256": "6401de1c0d8356128617b1f24981e7ad126d4fb85c2a4f461d649dd7eb7c5c41",
+            "body_bytes": 17876,
+            "body_characters": 17864,
+            "body_word_count": 2055,
+            "explicit_qa_shell_without_final_copy": false,
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true
+          }
         },
         "planning_handles": {
           "searchatlas_map_id": null,
@@ -279439,28 +279463,31 @@
           "manual_reconciliation_required": true
         },
         "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
+          "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
+          "checksummed_review_candidate_present": true,
+          "path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+          "source_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+          "body_sha256": "6401de1c0d8356128617b1f24981e7ad126d4fb85c2a4f461d649dd7eb7c5c41",
+          "body_word_count": 2055,
+          "candidate_type": "existing_public_article",
+          "readiness_evidence_verified": true,
+          "readiness_evidence_paths": [
+            "reports/mrx-1000-readiness-matrix.json",
+            "config/mrx-1000-canonical-content-ledger.json"
+          ],
           "readiness_checks": {
-            "workspace_source_checksum_present": false,
+            "workspace_source_checksum_present": true,
             "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true,
+            "substantive_body_at_least_500_words": true,
+            "explicit_qa_shell_absent": true,
+            "review_metadata_present": true,
+            "canonical_state_supports_content_review": true
           },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "workspace_mdx_is_review_candidate": true,
+          "workspace_mdx_rejection_reason": null,
           "special_candidate_validation": null
         }
       },
@@ -279471,7 +279498,7 @@
         "position_in_batch": 13,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
         "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
         "execution_eligible_now": false,
         "creation_needed_proven": false,
@@ -279485,9 +279512,9 @@
           "read_only_quota_preflight_required_before_external_write": true,
           "canonical_identity_reconciliation_required": true,
           "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
+          "checksummed_content_candidate_present": true,
+          "review_candidate_path_and_sha256_present": true,
+          "review_readiness_evidence_verified": true,
           "compliance_seo_aeo_editorial_gates_required": true
         },
         "evidence": {
@@ -279514,10 +279541,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+            "review_candidate_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
             "predecessor_pass_observed": false,
@@ -279551,10 +279578,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+            "review_candidate_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -279588,10 +279615,10 @@
           "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+            "review_candidate_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -279625,10 +279652,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+            "review_candidate_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -279662,10 +279689,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+            "review_candidate_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -279696,7 +279723,7 @@
           "perplexity",
           "microsoft_copilot"
         ],
-        "next_stage": null,
+        "next_stage": "chatgpt",
         "any_verdict_recorded": false,
         "all_required_verdicts_passed": false,
         "sequence_complete": false,
@@ -279714,7 +279741,7 @@
         "release_action_eligible_now": false,
         "index_submission_eligible_now": false,
         "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
+        "currently_in_workspace_sitemap": true,
         "production_live_verified_in_this_local_build": false,
         "release_or_index_action_performed": false,
         "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
@@ -279731,7 +279758,6 @@
         "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
         "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
         "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
         "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
       ]
     },
@@ -354158,5 +354184,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "06c5fdbe75bdefd39c1c005278e3d72023e23b2aa7a8482e48e61d0d36a32d71"
+  "content_fingerprint_sha256": "9288083ae6c3d792b356d8172ad1e2e8ec9d7c673cbb8e7c2bf38cfba128e3a1"
 }

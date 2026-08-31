@@ -318,4 +318,37 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Pecos County, Texas Mineral Rights Value: Guide For Mineral Owners',
     );
   });
+
+  it('keeps Article 289 on its exact Pecos review-and-testing evidence boundary', () => {
+    const slug = 'pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Pecos CAD oil and gas appraisal review',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(6);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('the Pecos plan describes several review signals');
+    expect(body).toContain('sales are **very infrequent**');
+    expect(body).toContain('A bundled transaction is not a one-property price');
+    expect(body).toContain('“Subject to review” is not converted into “reviewed and approved.”');
+    expect(body).toContain('C289-10');
+    expect(body).toContain('SOURCE-LIMITATION');
+    expect(body).not.toContain(
+      'Pecos County, Texas Mineral Rights Value: Market Update For Mineral Owners',
+    );
+  });
 });

@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T07:43:48Z",
+  "generated_at_utc": "2026-08-31T08:01:59Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 296,
-    "asset_count": 592,
-    "unique_source_art_count": 296,
-    "unique_hero_sha256_count": 296,
-    "unique_inline_sha256_count": 296,
-    "distinct_article_pair_count": 296,
-    "hero_ocr_pass_count": 296,
-    "inline_ocr_pass_count": 296,
-    "exact_filename_identity_count": 296
+    "article_count": 297,
+    "asset_count": 594,
+    "unique_source_art_count": 297,
+    "unique_hero_sha256_count": 297,
+    "unique_inline_sha256_count": 297,
+    "distinct_article_pair_count": 297,
+    "hero_ocr_pass_count": 297,
+    "inline_ocr_pass_count": 297,
+    "exact_filename_identity_count": 297
   },
   "contact_sheets": {
     "hero": [
@@ -7972,6 +7972,56 @@
           "actual": "Pecos CAD oil and gas\nproperty discovery",
           "normalized_expected": "pecos cad oil and gas property discovery",
           "normalized_actual": "pecos cad oil and gas property discovery",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits",
+      "title": "Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits",
+      "keyword": "Pecos CAD oil and gas appraisal review",
+      "file_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+      "source_public_path": "/assets/articles/hero/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave217-creative-sources/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits-hero-base.png",
+        "artifacts/mrx1000-wave217-creative-sources/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T07:58:18.970Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.webp",
+        "alt": "A Pecos appraisal-review desk appears beside the exact Article 289 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "059911f19a5df222c4e8978f3b45b1273792ebf30c491219bbdfbb2d06c38980",
+        "perceptual_hash": "0000000011111110000000001111111000000000111111110000000011111111000000000111111000000000000000000000000011111000000000001111111000000000111111110000000011111111000000001110001100000000000111110000000000111111000000000011111100000000011111100000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits",
+          "actual": "Pecos CAD Oil and Gas\nReview: Infrequent Sales\nand Multi-Site Limits",
+          "normalized_expected": "pecos cad oil and gas review infrequent sales and multi site limits",
+          "normalized_actual": "pecos cad oil and gas review infrequent sales and multi site limits",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/pecos-cad-oil-and-gas-appraisal-review.webp",
+        "alt": "A people-free overhead appraisal evidence workspace appears above the exact Pecos CAD oil and gas appraisal review keyword.",
+        "rendered_text": "Pecos CAD oil and gas appraisal review",
+        "visual_variant": "wave217-distinct-generated-documentary-review-desk-hero-and-people-free-strict-overhead-evidence-workspace",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "7ec05b71e9390304a496fcd1c7730de15777c8d0a8600ac9c766a7f037ed0b16",
+        "perceptual_hash": "1111100000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110001100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Pecos CAD oil and gas appraisal review",
+          "actual": "Pecos CAD oil and gas\nappraisal review",
+          "normalized_expected": "pecos cad oil and gas appraisal review",
+          "normalized_actual": "pecos cad oil and gas appraisal review",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
