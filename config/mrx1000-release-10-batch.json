@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T14:13:19Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T14:37:12Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -693,12 +693,15 @@
     "wave230_selection_decision_sha256": "e301b1654432c9f1fc261413c0c664eff980913ce841456d5081ac51845d4676",
     "wave231_selection_decision_id": "MRX1000-W231-SELECT-2026-08-31",
     "wave231_selection_decision_path": "docs/governance/mrx1000-wave231-selection-decision-2026-08-31.md",
-    "wave231_selection_decision_sha256": "486ec4acba571f5d20060c61c0a2d0746f837361096cc30f8b20e47319fbc951"
+    "wave231_selection_decision_sha256": "486ec4acba571f5d20060c61c0a2d0746f837361096cc30f8b20e47319fbc951",
+    "wave232_selection_decision_id": "MRX1000-W232-SELECT-2026-08-31",
+    "wave232_selection_decision_path": "docs/governance/mrx1000-wave232-selection-decision-2026-08-31.md",
+    "wave232_selection_decision_sha256": "3a01298857cc0888ca7534cabdb9c64f6dd75ec0870bf382cd8a6e80a24b7cb0"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "a95e50567fc1093743a008e3670ef0282f52ebb175b9b8614cfb56b59739b9b4",
+    "canonical_ledger_sha256": "da4304e0c144aea5cc9a825e7fa088abfe2be6740b3a52c462562ea1c6ec7b57",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -713,11 +716,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 302,
+    "prior_verified_article_count": 303,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 303,
-    "exact_admitted_slate_sha256": "6bcf400ff4e0d526e1ffd2def2404ef085ab055c1ac15319a692140c85f62e96"
+    "exact_admitted_count": 304,
+    "exact_admitted_slate_sha256": "272cef0102192fb9c3a910e97210847e6952c7d193e6f40fd4cbcf2b210b4737"
   },
   "articles": [
     {
@@ -11088,10 +11091,47 @@
       "inline_path": "/assets/articles/inline/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/upton-cad-2026-mineral-data-files.webp",
       "inline_asset_sha256": "441f947f5282f58f0a87d217177b3c5a688df9740fa746ac5bdf8f74266bf361",
       "inline_rendered_text": "Upton CAD 2026 mineral data files"
+    },
+    {
+      "selection_rank": 304,
+      "program_row_id": "MRX1000-0852",
+      "source_shortlist_program_row_id": "MRX1000-0852",
+      "slug": "upton-cad-open-records-policy-request-response-clarification-charge-states",
+      "title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+      "source_shortlist_title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+      "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "e583d0d2ce3cad9f41e1cb40e283856ed958254d5330273075c5b9e16c02762e",
+      "repo_path": "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+      "repo_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+      "article_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+      "hero_path": "/assets/articles/hero/upton-cad-open-records-policy-request-response-clarification-and-charge-states.webp",
+      "hero_sha256": "bcc3c13e27ab896dc8d3af344c62142d773cc8a1e8eb274d994c207337f0a33a",
+      "hero_asset_sha256": "bcc3c13e27ab896dc8d3af344c62142d773cc8a1e8eb274d994c207337f0a33a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2077,
+      "risk_citation_remediation": [
+        "The original Upton County valuation identity is rejected because it repeats the admitted county-value and valuation-guide corpus and retains a 0.6000 planning-title collision.",
+        "The replacement owns only a source-separated four-state reading of the Upton request, response, clarification, and charge policy plus a separately dated current Texas OAG verification layer and discrepancy register.",
+        "The Howard article retains blank-form fields and mineral-request preparation; Article 303 retains Upton TXT and nested-CSV parsing; the Midland article retains its county-specific source routes.",
+        "The undated Upton scan and dated 2026 OAG materials remain separate. The article does not silently select a fee threshold, response period, delivery method, or controlling rule.",
+        "No request is submitted; no live deadline or fee is calculated; no compliance, confidentiality, title, appraisal, tax, value, offer, production, or transaction conclusion is made.",
+        "No personal form contact, owner name, address, account, lease, or property result is printed, published, uploaded, or used.",
+        "Answer-first structure, stable claim IDs, discrepancy states, source-age labels, claim-adjacent primary citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/upton-cad-open-records-policy-request-response-clarification-charge-states.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/upton-cad-open-records-policy-request-response-clarification-charge-states/upton-cad-open-records-policy.webp",
+      "inline_asset_sha256": "46aa7e02b12a5645061cf732c27edf13086517e3b39eb32bce26df39b509a47d",
+      "inline_rendered_text": "Upton CAD open records policy"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 303,
+    "admitted_article_count": 304,
     "selection_ranks": [
       1,
       2,
@@ -11395,7 +11435,8 @@
       300,
       301,
       302,
-      303
+      303,
+      304
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11454,9 +11495,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "8cf48d4034e3a196ff6603564a095bc44a7c5ac1f42473f5cc6a18abb8b9dcd4",
-    "public_article_count": 311,
-    "batch_article_count": 303,
+    "retrofit_manifest_sha256": "69f3f98f024d42272f84fcac8c3a21e8b10778feedd9b0705e259949e5196d79",
+    "public_article_count": 312,
+    "batch_article_count": 304,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

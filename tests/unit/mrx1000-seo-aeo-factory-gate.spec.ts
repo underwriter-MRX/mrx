@@ -774,4 +774,36 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Upton County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
     );
   });
+
+  it('keeps Article 304 on its source-separated Upton open-records policy state boundary', () => {
+    const slug = 'upton-cad-open-records-policy-request-response-clarification-charge-states';
+    const source = readFileSync(join(postsDir, slug + '.mdx'), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Upton CAD open records policy',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(6);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('State 1: define a written request for existing information');
+    expect(body).toContain('State 2: classify the initial response without overreading it');
+    expect(body).toContain('State 3: preserve the clarification loop');
+    expect(body).toContain('State 4: separate local charge statements from the current estimate layer');
+    expect(body).toContain('C304-08');
+    expect(body).not.toContain(
+      'Upton County, Texas Mineral Rights Value: Guide For Mineral Owners',
+    );
+  });
 });

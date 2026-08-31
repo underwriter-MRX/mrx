@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "aa15d9b08c30ac4bc52b8dccb099bfcb993a2517c47783b89199dc6191f3198c",
+  "content_fingerprint_sha256": "b0a272fa50a92c225b47ecb59078d2f077bfe2a9da7581567a159a7c2bef67c8",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "9bb117e7e9b0570ba2b1c615c4b73f6d3e206d585097264bd7ddd86e4c540c39",
+    "canonical_ledger_fingerprint_sha256": "4a9def7241aca70f5c4ae774f5d0c77e33e3c2fa11c0f79d6e6198735917b301",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 311,
+      "live_public_published_route": 312,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 641
+      "planning_only_inventory": 640
     }
   },
   "rows": [
@@ -50350,11 +50350,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0852",
-        "target_title": "Upton County, Texas Mineral Rights Value: Guide For Mineral Owners",
-        "url": "/blog/upton-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+        "target_title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+        "url": "/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -50397,15 +50397,15 @@
     },
     {
       "program_row_id": "MRX1000-0852",
-      "canonical_title": "Upton County, Texas Mineral Rights Value: Guide For Mineral Owners",
-      "canonical_slug": "upton-county-texas-mineral-rights-value-guide-for-mineral-owners",
-      "canonical_url": "/blog/upton-county-texas-mineral-rights-value-guide-for-mineral-owners/",
+      "canonical_title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+      "canonical_slug": "upton-cad-open-records-policy-request-response-clarification-charge-states",
+      "canonical_url": "/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -50427,7 +50427,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -50440,7 +50440,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -50454,7 +50454,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
