@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T15:42:53Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T16:02:46Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -702,12 +702,15 @@
     "wave233_selection_decision_sha256": "21607631dbfc80db3df6fc227079221a48997f5b113ed03f02c41ef9fcee3f25",
     "wave234_selection_decision_id": "MRX1000-W234-SELECT-2026-08-31",
     "wave234_selection_decision_path": "docs/governance/mrx1000-wave234-selection-decision-2026-08-31.md",
-    "wave234_selection_decision_sha256": "7b7374466dfc3a336f40d60d06b1dd4d988715f745b89201cb21b804bb4610ad"
+    "wave234_selection_decision_sha256": "7b7374466dfc3a336f40d60d06b1dd4d988715f745b89201cb21b804bb4610ad",
+    "wave235_selection_decision_id": "MRX1000-W235-SELECT-2026-08-31",
+    "wave235_selection_decision_path": "docs/governance/mrx1000-wave235-selection-decision-2026-08-31.md",
+    "wave235_selection_decision_sha256": "a1dcafeb490bc0fb21cc6f82e74aad3be4ed4bc5c484948f148d7c48ccce2466"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "30a396421124f02afe54815008add38cb1104f81dcee52c05bd1576355b1b595",
+    "canonical_ledger_sha256": "14191e6f21517828bf176cfecf67a2678c3694f206e50707124c9ab491cd1018",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -722,11 +725,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 305,
+    "prior_verified_article_count": 306,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 306,
-    "exact_admitted_slate_sha256": "19c9423a4cf2fc2b9d40c3e31dd322375c8b510b92701719fe4c5b8674b8cfca"
+    "exact_admitted_count": 307,
+    "exact_admitted_slate_sha256": "1868b1f24f37262964a41e534fefd701d2a4e8160baeaccdf1f8ac0be31a75aa"
   },
   "articles": [
     {
@@ -11206,10 +11209,45 @@
       "inline_path": "/assets/articles/inline/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/upton-cad-mineral-appraisal-review-chain.webp",
       "inline_asset_sha256": "4bcdb233033b38ebf6c0d49adb9601a8b031c2529fefac8da0cf2dc8bf64f789",
       "inline_rendered_text": "Upton CAD mineral appraisal review chain"
+    },
+    {
+      "selection_rank": 307,
+      "program_row_id": "MRX1000-0855",
+      "source_shortlist_program_row_id": "MRX1000-0855",
+      "slug": "upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix",
+      "title": "Upton CAD 2025-2026 Plan Date-Control Register: July 2024 Print, January 1 Snapshot, and a 2020-2022 Appendix",
+      "source_shortlist_title": "Upton CAD 2025-2026 Plan Date-Control Register: July 2024 Print, January 1 Snapshot, and a 2020-2022 Appendix",
+      "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "942ea24e33d39fc71ccc4e57b0b6125bedab5f42139a4ef322dbc2ebb24683c1",
+      "repo_path": "src/content/posts/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.mdx",
+      "repo_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+      "article_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+      "hero_path": "/assets/articles/hero/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-and-a-2020-2022-appendix.webp",
+      "hero_sha256": "a142a8070cad445e82f5b9cbd6f927dd613478f83cc78e0c28fa3589f889d75e",
+      "hero_asset_sha256": "a142a8070cad445e82f5b9cbd6f927dd613478f83cc78e0c28fa3589f889d75e",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1690,
+      "risk_citation_remediation": [
+        "The original Upton County value-timeline identity is rejected because it collides with the admitted county-value, valuation-guide, and Midland work-calendar corpus.",
+        "The replacement owns only the Upton plan date layers: 2025-2026 coverage, July 2024 print, January 1 snapshot, and the embedded 2020-2022 appendix frame.",
+        "The older embedded report is not represented as current 2025-2026 evidence, and no date label is expanded into account history, a tax or protest deadline, private-value timing, or a forecast.",
+        "No personal data, account data, property search, title, ownership, taxable status, appraisal, tax, legal, private-value, offer, protest, or transaction conclusion appears.",
+        "Answer-first structure, stable claim IDs, physical and embedded page locators, claim-adjacent official citations, source-age labels, a discrepancy register, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/upton-cad-plan-date-control-register.webp",
+      "inline_asset_sha256": "a1705fe8c3ade49f1f16fa82ec38911e3a1ed07258fad163952c68c1f4d63718",
+      "inline_rendered_text": "Upton CAD plan date-control register"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 306,
+    "admitted_article_count": 307,
     "selection_ranks": [
       1,
       2,
@@ -11516,7 +11554,8 @@
       303,
       304,
       305,
-      306
+      306,
+      307
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11575,9 +11614,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "dc263e0ead4154f57d320f7354426cc92b28d3f46dc7032082d8462c64b0f439",
-    "public_article_count": 314,
-    "batch_article_count": 306,
+    "retrofit_manifest_sha256": "42387f16cda4f3b023147532298de4c1e758dcadab087acf6b989e132cdc01b3",
+    "public_article_count": 315,
+    "batch_article_count": 307,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
