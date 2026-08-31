@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "8d09efb4da16aa279142502f9d05ac9c7d528cc6aa1ff06b61a338bfd1213dae",
+  "content_fingerprint_sha256": "e310de05756bd11060d847c9cc1399c40f41c17e2cdcecbf8ec3d658cd1ac2c6",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "14a3b564a78035575996b9121f3036ca66c35bfa52ec9c39a1d88d2183850775",
+    "canonical_ledger_fingerprint_sha256": "8b8181c5c59a63ec0d16e625caae2da93197804ca8e8ff967755b2c580d87829",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 299,
+      "live_public_published_route": 300,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 653
+      "planning_only_inventory": 652
     }
   },
   "rows": [
@@ -49594,11 +49594,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0840",
-        "target_title": "Reeves County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-        "url": "/blog/reeves-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+        "target_title": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+        "url": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49641,15 +49641,15 @@
     },
     {
       "program_row_id": "MRX1000-0840",
-      "canonical_title": "Reeves County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "reeves-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "/blog/reeves-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "canonical_title": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+      "canonical_slug": "reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios",
+      "canonical_url": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "risk-check",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49671,7 +49671,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49684,7 +49684,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:risk-check",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49698,7 +49698,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

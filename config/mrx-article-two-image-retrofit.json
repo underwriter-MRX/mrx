@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T08:47:03Z",
+  "generated_at_utc": "2026-08-31T09:10:19Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 299,
-    "asset_count": 598,
-    "unique_source_art_count": 299,
-    "unique_hero_sha256_count": 299,
-    "unique_inline_sha256_count": 299,
-    "distinct_article_pair_count": 299,
-    "hero_ocr_pass_count": 299,
-    "inline_ocr_pass_count": 299,
-    "exact_filename_identity_count": 299
+    "article_count": 300,
+    "asset_count": 600,
+    "unique_source_art_count": 300,
+    "unique_hero_sha256_count": 300,
+    "unique_inline_sha256_count": 300,
+    "distinct_article_pair_count": 300,
+    "hero_ocr_pass_count": 300,
+    "inline_ocr_pass_count": 300,
+    "exact_filename_identity_count": 300
   },
   "contact_sheets": {
     "hero": [
@@ -8222,6 +8222,56 @@
           "actual": "Mineral Rights Offer\nProperty Scope Checklist",
           "normalized_expected": "mineral rights offer property scope checklist",
           "normalized_actual": "mineral rights offer property scope checklist",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios",
+      "title": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+      "keyword": "Reeves County Category G worksheets",
+      "file_path": "src/content/posts/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.mdx",
+      "source_public_path": "/assets/articles/hero/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave220-creative-sources/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios-hero-base.png",
+        "artifacts/mrx1000-wave220-creative-sources/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T09:05:03.415Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.webp",
+        "alt": "Two separate blank district worksheets appear beside the exact Article 292 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "f7a3c2b55792a8deb442cad37512823243e35665920ff13496b290c302491a24",
+        "perceptual_hash": "0000000001111111000000000111111100000000011111110000000001111111000000000111111100000000111111110000000011111111000000001111111100000000111111110000000011111110000000001110111100000000011011110000000001101111000000000111111100000000111111110000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+          "actual": "Reeves County 2024\nCategory G Worksheets:\nTwo ISDs, Strata,\nand Ratios",
+          "normalized_expected": "reeves county 2024 category g worksheets two isds strata and ratios",
+          "normalized_actual": "reeves county 2024 category g worksheets two isds strata and ratios",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/reeves-county-category-g-worksheets.webp",
+        "alt": "A strict-overhead two-source field key appears above the exact Reeves County Category G worksheets keyword.",
+        "rendered_text": "Reeves County Category G worksheets",
+        "visual_variant": "wave220-distinct-generated-straight-on-two-district-worksheet-hero-and-strict-overhead-field-key",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "34e8e128b816032aff1755b4933e365e15d655396e93ffea2ab8ba7dd4354c02",
+        "perceptual_hash": "1101100110011110110100000001100010110000000111001111000000011111101111111111101110111111111100111011111111111011101111111111101110111111111100111111111111111011111110000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves County Category G worksheets",
+          "actual": "Reeves County Category G\nworksheets",
+          "normalized_expected": "reeves county category g worksheets",
+          "normalized_actual": "reeves county category g worksheets",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

@@ -415,4 +415,39 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('CONDITIONAL-METHOD');
     expect(body).not.toContain('Pecos County, Texas Mineral Rights Value: Timeline In 2026');
   });
+
+  it('keeps Article 292 on its exact Reeves Category G worksheet evidence boundary', () => {
+    const slug = 'reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Reeves County Category G worksheets',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(6);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('two separate Category G worksheets');
+    expect(body).toContain('Resolve the 2025-versus-2024 date question first');
+    expect(body).toContain('Both pages display the same three structural layers');
+    expect(body).toContain('A ratio label is not a private value conclusion');
+    expect(body).toContain('C292-10');
+    expect(body).toContain('LINK-INVENTORY');
+    expect(body).not.toContain(
+      'Reeves County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
+    );
+  });
 });
