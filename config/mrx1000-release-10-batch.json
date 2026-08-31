@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T21:03:42Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T21:29:01Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -720,12 +720,15 @@
     "wave239_selection_decision_sha256": "ad2363e1a94b7c8a521f2cbe065b33c6effd89697f278fa5801e80410d337d54",
     "wave240_selection_decision_id": "MRX1000-W240-SELECT-2026-08-31",
     "wave240_selection_decision_path": "docs/governance/mrx1000-wave240-selection-decision-2026-08-31.md",
-    "wave240_selection_decision_sha256": "088c079bb4f6f5a1ae21bba05cc139123819b3bfb12a0b7a5438dc243de6e18b"
+    "wave240_selection_decision_sha256": "088c079bb4f6f5a1ae21bba05cc139123819b3bfb12a0b7a5438dc243de6e18b",
+    "wave241_selection_decision_id": "MRX1000-W241-SELECT-2026-08-31",
+    "wave241_selection_decision_path": "docs/governance/mrx1000-wave241-selection-decision-2026-08-31.md",
+    "wave241_selection_decision_sha256": "b2021aed8637aedde65c42ace98b17a1b54f6eeb2d6e9524c7b2cf08cf270d4d"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "9ff905bd5e361c739a7bd77ad6f744c1bcc7b440b766001094aa5246b0521682",
+    "canonical_ledger_sha256": "f1e68b91c1aa64ae45cbbc1baf8a107cce0f6fb8d99afe7370364cf516c5eb76",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -740,11 +743,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 311,
+    "prior_verified_article_count": 312,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 312,
-    "exact_admitted_slate_sha256": "3ae4195d865ece4ca955edb815a47893812a3b4c876ec27c48da5f6e5baaedd3"
+    "exact_admitted_count": 313,
+    "exact_admitted_slate_sha256": "8454a17532732086b92b11529a8eaccd4c750757d1ede492b48b575c1fd3b622"
   },
   "articles": [
     {
@@ -11437,10 +11440,45 @@
       "inline_path": "/assets/articles/inline/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/ward-cad-reappraisal-plan-mineral-sections.webp",
       "inline_asset_sha256": "4f527da8edf29963e567b27086a758f3cc6aba5b5267834ffb064f2376b9d3ee",
       "inline_rendered_text": "Ward CAD reappraisal plan mineral sections"
+    },
+    {
+      "selection_rank": 313,
+      "program_row_id": "MRX1000-0866",
+      "source_shortlist_program_row_id": "MRX1000-0866",
+      "slug": "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
+      "title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+      "source_shortlist_title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+      "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "4012b89a039d8f796a3562e6ad8fbbc84de89c25a0c030615f489eb3e7e84061",
+      "repo_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+      "repo_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+      "article_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+      "hero_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp",
+      "hero_sha256": "f1a9ad4846944e3a8137cf48dd04707475f8815d010ff59d50e23c7969144893",
+      "hero_asset_sha256": "f1a9ad4846944e3a8137cf48dd04707475f8815d010ff59d50e23c7969144893",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2308,
+      "risk_citation_remediation": [
+        "The generic Winkler County value family-decision identity is rejected because it materially collides with the admitted county-value, family-decision, local-buyer, and guide corpus.",
+        "The replacement owns only the mineral-data source categories, monthly RRC/operator update cadence, ownership-input categories, statewide collection, property-specific record enrichment, and review boundary described in the July 2024 Winkler contractor plan for the 2025-2026 plan period.",
+        "The article attributes each workflow statement to the plan, does not imply independent verification of current operations or MRX access to confidential data, and never converts a data input into title, ownership, taxability, private value, production, reserves, model validity, an appraisal outcome, a protest result, or a recommendation.",
+        "Answer-first structure, stable claim IDs, versioned primary-source identities, source-age and inference-limit labels, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/winkler-cad-mineral-data-sources.webp",
+      "inline_asset_sha256": "7f2b901b878c7bfa3fbbc5f690762a4d3c9eae070a5aa39655c7243902b6c376",
+      "inline_rendered_text": "Winkler CAD mineral data sources"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 312,
+    "admitted_article_count": 313,
     "selection_ranks": [
       1,
       2,
@@ -11753,7 +11791,8 @@
       309,
       310,
       311,
-      312
+      312,
+      313
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11812,9 +11851,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "0118e6570cc91391b41492d461cbc6333857b9cb2edeb857f69593333727e2ea",
-    "public_article_count": 320,
-    "batch_article_count": 312,
+    "retrofit_manifest_sha256": "6cbe131e59be2d5b583f8e45e589d22bf650b2148bbb635aa0d0d4632a98e811",
+    "public_article_count": 321,
+    "batch_article_count": 313,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

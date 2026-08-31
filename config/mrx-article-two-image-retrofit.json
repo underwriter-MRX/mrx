@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T21:00:38Z",
+  "generated_at_utc": "2026-08-31T21:23:04Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 320,
-    "asset_count": 640,
-    "unique_source_art_count": 320,
-    "unique_hero_sha256_count": 320,
-    "unique_inline_sha256_count": 320,
-    "distinct_article_pair_count": 320,
-    "hero_ocr_pass_count": 320,
-    "inline_ocr_pass_count": 320,
-    "exact_filename_identity_count": 320
+    "article_count": 321,
+    "asset_count": 642,
+    "unique_source_art_count": 321,
+    "unique_hero_sha256_count": 321,
+    "unique_inline_sha256_count": 321,
+    "distinct_article_pair_count": 321,
+    "hero_ocr_pass_count": 321,
+    "inline_ocr_pass_count": 321,
+    "exact_filename_identity_count": 321
   },
   "contact_sheets": {
     "hero": [
@@ -15634,6 +15634,56 @@
           "actual": "Ward and Loving CAD 2026\nmineral file layout PDF",
           "normalized_expected": "ward and loving cad 2026 mineral file layout pdf",
           "normalized_actual": "ward and loving cad 2026 mineral file layout pdf",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
+      "title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+      "keyword": "Winkler CAD mineral data sources",
+      "file_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+      "source_public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave241-creative-sources/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records-hero-base.png",
+        "artifacts/mrx1000-wave241-creative-sources/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T21:19:09.900Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp",
+        "alt": "Three abstract source stacks feed one records tray beside the exact Article 313 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "f1a9ad4846944e3a8137cf48dd04707475f8815d010ff59d50e23c7969144893",
+        "perceptual_hash": "0000000000000000000000000000000000000000000110001111100000001100111110000100011111111000111000101111110011100000111110001110011100000000111001110000000001001110000000001110011000000000111000000000000011100000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+          "actual": "Winkler CAD 2025-2026\nMineral Data Chain:\nRRC Files, Operator Inputs,\nand Taxpayer Records",
+          "normalized_expected": "winkler cad 2025 2026 mineral data chain rrc files operator inputs and taxpayer records",
+          "normalized_actual": "winkler cad 2025 2026 mineral data chain rrc files operator inputs and taxpayer records",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/winkler-cad-mineral-data-sources.webp",
+        "alt": "A top-down privacy-bounded source flow appears below the exact Winkler CAD keyword.",
+        "rendered_text": "Winkler CAD mineral data sources",
+        "visual_variant": "wave241-distinct-generated-dark-oblique-three-source-chain-hero-and-bright-strict-top-down-privacy-cadence-matrix-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "7f2b901b878c7bfa3fbbc5f690762a4d3c9eae070a5aa39655c7243902b6c376",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD mineral data sources",
+          "actual": "Winkler CAD mineral\ndata sources",
+          "normalized_expected": "winkler cad mineral data sources",
+          "normalized_actual": "winkler cad mineral data sources",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

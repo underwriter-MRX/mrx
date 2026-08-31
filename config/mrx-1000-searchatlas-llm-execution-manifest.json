@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "9ff905bd5e361c739a7bd77ad6f744c1bcc7b440b766001094aa5246b0521682",
-      "bytes": 4737568
+      "sha256": "f1e68b91c1aa64ae45cbbc1baf8a107cce0f6fb8d99afe7370364cf516c5eb76",
+      "bytes": 4738871
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "b665f4154fe399116bae8982e38586e37c040732f37383eb26d66e4db7a06d43",
-      "bytes": 3503015,
+      "sha256": "ebff6d3e4d77648850cb65d09c3ece64e65fb0f3ff73c264cf465b854cf2087d",
+      "bytes": 3503613,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -366,30 +366,30 @@
     },
     "by_canonical_inventory_state": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 320,
+      "live_public_published_route": 321,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 632
+      "planning_only_inventory": 631
     },
     "by_searchatlas_action_needed": {
-      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 244,
+      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 245,
       "reconcile_artifact_bound_content_genius_record_no_creation": 2,
       "reconcile_pilot_non_creation_workflow_label_then_bind_or_conditionally_create": 23,
       "reconcile_unambiguous_exact_title_vendor_candidate_no_creation": 139,
       "resolve_ambiguous_exact_title_vendor_candidates_no_creation": 6,
-      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 586
+      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 585
     },
-    "repo_mdx_present": 368,
-    "workspace_public_route_configured": 320,
+    "repo_mdx_present": 369,
+    "workspace_public_route_configured": 321,
     "planning_searchatlas_map_id_count": 225,
     "planning_searchatlas_title_uuid_count": 200,
     "persisted_ledger_content_genius_article_uuid_count": 0,
-    "checksummed_review_candidate_rows": 344,
-    "rows_without_checksummed_review_candidate": 656,
+    "checksummed_review_candidate_rows": 345,
+    "rows_without_checksummed_review_candidate": 655,
     "by_review_candidate_state": {
-      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 320,
+      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 321,
       "CHECKSUMMED_HELD_SUBSTANTIVE_DRAFT_READY_FOR_LLM_REVIEW": 23,
       "NO_CHECKSUMMED_REVIEW_CANDIDATE_PILOT_QA_SHELL_ONLY": 24,
-      "NO_WORKSPACE_CONTENT_CANDIDATE": 632,
+      "NO_WORKSPACE_CONTENT_CANDIDATE": 631,
       "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW": 1
     },
     "pilot_workspace_qa_shell_rows": 25,
@@ -288227,28 +288227,52 @@
     },
     {
       "program_row_id": "MRX1000-0866",
-      "canonical_title": "Winkler County, Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "winkler-county-texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "https://mineralrightsxchange.com/blog/winkler-county-texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "canonical_title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+      "canonical_slug": "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
+      "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "Winkler County, Texas mineral rights value",
+      "primary_keyword": "Winkler CAD mineral data sources",
       "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
+        "canonical_inventory_state": "live_public_published_route",
+        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
+          "state": "WORKSPACE_MDX_PRESENT",
+          "path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+          "mdx_exists": true,
+          "source_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+          "publication_status": "published",
           "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
+          "workspace_public_route_configured": true,
           "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
+          "content_evidence": {
+            "frontmatter_title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+            "frontmatter_slug": null,
+            "frontmatter_publication_status": "published",
+            "frontmatter_reviewed_at": "2026-08-31T21:20:00Z",
+            "frontmatter_reviewed_by": "mrx_compliance-continuous-wave241",
+            "frontmatter_article_id": null,
+            "frontmatter_searchatlas_uuid": null,
+            "frontmatter_workflow_status": null,
+            "frontmatter_remediated_from_sha256": null,
+            "frontmatter_body_checksum_sha256": null,
+            "frontmatter_body_length_chars": 0,
+            "frontmatter_body_word_count": 0,
+            "frontmatter_draft": false,
+            "frontmatter_noindex": false,
+            "frontmatter_indexable": null,
+            "body_sha256": "e28ad37c30c23454971f1db74892b0280392025bae4bb614105f49f0363e6eac",
+            "body_bytes": 16437,
+            "body_characters": 16429,
+            "body_word_count": 2312,
+            "explicit_qa_shell_without_final_copy": false,
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true
+          }
         },
         "planning_handles": {
           "searchatlas_map_id": null,
@@ -288271,28 +288295,31 @@
           "manual_reconciliation_required": true
         },
         "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
+          "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
+          "checksummed_review_candidate_present": true,
+          "path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+          "source_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+          "body_sha256": "e28ad37c30c23454971f1db74892b0280392025bae4bb614105f49f0363e6eac",
+          "body_word_count": 2312,
+          "candidate_type": "existing_public_article",
+          "readiness_evidence_verified": true,
+          "readiness_evidence_paths": [
+            "reports/mrx-1000-readiness-matrix.json",
+            "config/mrx-1000-canonical-content-ledger.json"
+          ],
           "readiness_checks": {
-            "workspace_source_checksum_present": false,
+            "workspace_source_checksum_present": true,
             "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true,
+            "substantive_body_at_least_500_words": true,
+            "explicit_qa_shell_absent": true,
+            "review_metadata_present": true,
+            "canonical_state_supports_content_review": true
           },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "workspace_mdx_is_review_candidate": true,
+          "workspace_mdx_rejection_reason": null,
           "special_candidate_validation": null
         }
       },
@@ -288303,7 +288330,7 @@
         "position_in_batch": 12,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
         "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
         "execution_eligible_now": false,
         "creation_needed_proven": false,
@@ -288317,9 +288344,9 @@
           "read_only_quota_preflight_required_before_external_write": true,
           "canonical_identity_reconciliation_required": true,
           "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
+          "checksummed_content_candidate_present": true,
+          "review_candidate_path_and_sha256_present": true,
+          "review_readiness_evidence_verified": true,
           "compliance_seo_aeo_editorial_gates_required": true
         },
         "evidence": {
@@ -288346,10 +288373,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+            "review_candidate_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
             "predecessor_pass_observed": false,
@@ -288383,10 +288410,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+            "review_candidate_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -288420,10 +288447,10 @@
           "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+            "review_candidate_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -288457,10 +288484,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+            "review_candidate_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -288494,10 +288521,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+            "review_candidate_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -288528,7 +288555,7 @@
           "perplexity",
           "microsoft_copilot"
         ],
-        "next_stage": null,
+        "next_stage": "chatgpt",
         "any_verdict_recorded": false,
         "all_required_verdicts_passed": false,
         "sequence_complete": false,
@@ -288546,7 +288573,7 @@
         "release_action_eligible_now": false,
         "index_submission_eligible_now": false,
         "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
+        "currently_in_workspace_sitemap": true,
         "production_live_verified_in_this_local_build": false,
         "release_or_index_action_performed": false,
         "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
@@ -288563,7 +288590,6 @@
         "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
         "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
         "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
         "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
       ]
     },
@@ -354782,5 +354808,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "3f209acd0a29a664fb9572c35db5f5928c7f76205de4eb8346a1c3597db11130"
+  "content_fingerprint_sha256": "f2c73000c380d5f4fbb2869094f512fa1d69ee6fb8206e3ddbeeb1a064118071"
 }

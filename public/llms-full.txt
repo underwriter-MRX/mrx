@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (320)
+## Published article URLs (321)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records](https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/)
 - [Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges](https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/)
 - [Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions](https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/)
 - [Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23](https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/)
