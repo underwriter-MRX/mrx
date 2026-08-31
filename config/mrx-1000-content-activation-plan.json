@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "e477fc9a7ec6eb9e8c5cab1a8117472cf2e4e091767c6dcb053b218dba137068",
+  "content_fingerprint_sha256": "f8190bdb5846ab1ad5eeebd09fb5685a67f2d7d419325371cdae5204d3f38680",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "dcfae7eeeae0aca674a1115ae6c8c75b8a03da27395aacef9fa1afe8cfa6a468",
+    "canonical_ledger_fingerprint_sha256": "39c52f875bbd6ca1c1e6b978cf84f4d1a36abbd4492e273bb37c11220cef43b2",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 301,
+      "live_public_published_route": 302,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 651
+      "planning_only_inventory": 650
     }
   },
   "rows": [
@@ -49720,11 +49720,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0842",
-        "target_title": "Reeves County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/reeves-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Reeves County 2025 Preliminary PVS: Two Category G Totals",
+        "url": "/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49767,15 +49767,15 @@
     },
     {
       "program_row_id": "MRX1000-0842",
-      "canonical_title": "Reeves County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "reeves-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/reeves-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Reeves County 2025 Preliminary PVS: Two Category G Totals",
+      "canonical_slug": "reeves-county-2025-preliminary-pvs-two-category-g-totals",
+      "canonical_url": "/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49797,7 +49797,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49810,7 +49810,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49824,7 +49824,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

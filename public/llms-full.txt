@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (301)
+## Published article URLs (302)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Reeves County 2025 Preliminary PVS: Two Category G Totals](https://mineralrightsxchange.com/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/)
 - [Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations](https://mineralrightsxchange.com/blog/reeves-cad-2025-map-review-four-passes-and-two-recommendations/)
 - [Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios](https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/)
 - [Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land](https://mineralrightsxchange.com/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/)

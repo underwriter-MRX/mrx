@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T09:39:25Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T10:04:09Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -663,12 +663,15 @@
     "wave220_selection_decision_sha256": "52c9efe972bbe1338fc60d59d45a375d05c703b670b56f3a814039caa35e0dee",
     "wave221_selection_decision_id": "MRX1000-W221-SELECT-2026-08-31",
     "wave221_selection_decision_path": "docs/governance/mrx1000-wave221-selection-decision-2026-08-31.md",
-    "wave221_selection_decision_sha256": "474f535d50a2315c3aa7e3a20e5a6ba20cd296ad562e772dbe15d2bec3559fc8"
+    "wave221_selection_decision_sha256": "474f535d50a2315c3aa7e3a20e5a6ba20cd296ad562e772dbe15d2bec3559fc8",
+    "wave222_selection_decision_id": "MRX1000-W222-SELECT-2026-08-31",
+    "wave222_selection_decision_path": "docs/governance/mrx1000-wave222-selection-decision-2026-08-31.md",
+    "wave222_selection_decision_sha256": "6d419d966584be2f42e8ed8cfffbfede09cbc78e513f4c5743a2bbbe4c0ba7d0"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "2ef716408b26b3cda2b907f587cdfe5d6a4816b304bd791dbb7ce1c2e96f416d",
+    "canonical_ledger_sha256": "88f6faa581b606306f5c9c463865754633914f4bee01cceabc99e4155c34213a",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -683,11 +686,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 292,
+    "prior_verified_article_count": 293,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 293,
-    "exact_admitted_slate_sha256": "064b6c57e6559730b9b13f4a69ec2080f967374378516eb4d1ba4ee9825c672c"
+    "exact_admitted_count": 294,
+    "exact_admitted_slate_sha256": "bc461b5530c9b23c91f1742e7d973bc40ad8045dd5109b21f235724e19716210"
   },
   "articles": [
     {
@@ -10701,10 +10704,46 @@
       "inline_path": "/assets/articles/inline/reeves-cad-2025-map-review-four-passes-and-two-recommendations/reeves-cad-2025-map-review.webp",
       "inline_asset_sha256": "56067d672e99e9946054b42bdb1ddbf3d846c836ff38a38a98a9a83e2cbf3e15",
       "inline_rendered_text": "Reeves CAD 2025 MAP review"
+    },
+    {
+      "selection_rank": 294,
+      "program_row_id": "MRX1000-0842",
+      "source_shortlist_program_row_id": "MRX1000-0842",
+      "slug": "reeves-county-2025-preliminary-pvs-two-category-g-totals",
+      "title": "Reeves County 2025 Preliminary PVS: Two Category G Totals",
+      "source_shortlist_title": "Reeves County 2025 Preliminary PVS: Two Category G Totals",
+      "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "8b2dec645d086381169818dfe23eed27b3ec5f1d5a0254f9e62e7d6c05c6b8ad",
+      "repo_path": "src/content/posts/reeves-county-2025-preliminary-pvs-two-category-g-totals.mdx",
+      "repo_sha256": "b00f317c8ad2d37dc321853d16aeaa9a90a86c29ae48f9b5b8f1f4dee4f2af6b",
+      "article_sha256": "b00f317c8ad2d37dc321853d16aeaa9a90a86c29ae48f9b5b8f1f4dee4f2af6b",
+      "hero_path": "/assets/articles/hero/reeves-county-2025-preliminary-pvs-two-category-g-totals.webp",
+      "hero_sha256": "52eb613a5910b5f8c1162bdae0701ab7dd6d7f0941f0364c375be381088d48f8",
+      "hero_asset_sha256": "52eb613a5910b5f8c1162bdae0701ab7dd6d7f0941f0364c375be381088d48f8",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1625,
+      "risk_citation_remediation": [
+        "The original Reeves County market-update identity is rejected because it scores 0.6667 against a neighboring county factory title and repeats the live private-valuation corpus.",
+        "The replacement owns only the 2025 preliminary PVS Reeves routing index and the separate Pecos-Barstow-Toyah ISD and Balmorhea ISD summary worksheets.",
+        "The two Category G figures remain attached to their district rows and are never added, averaged, compared as owner value, or converted into a private mineral valuation.",
+        "The N/A WTD mean-ratio fields and local-value-valid certifications are reported as displayed, without inferring a property-specific ratio, appraisal result, or protest outcome.",
+        "The 2025 preliminary findings remain distinct from Article 292’s 2024 final Category G strata/sample worksheet analysis and Article 293’s MAP process review.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/reeves-county-2025-preliminary-pvs-two-category-g-totals.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/reeves-county-2025-preliminary-pvs-two-category-g-totals/reeves-county-2025-preliminary-pvs.webp",
+      "inline_asset_sha256": "119d492648516c7dc0332870c048ca603a34444c68fae848ea9ef9664d82f217",
+      "inline_rendered_text": "Reeves County 2025 preliminary PVS"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 293,
+    "admitted_article_count": 294,
     "selection_ranks": [
       1,
       2,
@@ -10998,7 +11037,8 @@
       290,
       291,
       292,
-      293
+      293,
+      294
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11057,9 +11097,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "12b9caecfa6dd4d3440b9d69dc9e037b7ac440d42c9e0ccd190a345c02f0aa52",
-    "public_article_count": 301,
-    "batch_article_count": 293,
+    "retrofit_manifest_sha256": "ea858c0b32efb81cd7920c787d312e6ac68dfacb5d605ff2b110cb730f2944a6",
+    "public_article_count": 302,
+    "batch_article_count": 294,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
