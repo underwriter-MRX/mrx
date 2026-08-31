@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T07:25:39Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T07:44:02Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -645,12 +645,15 @@
     "wave214_selection_decision_sha256": "9442d9eb0c0fb204a9e0e6e3952457b0e989432bf56166d58c469a24b52d5faa",
     "wave215_selection_decision_id": "MRX1000-W215-SELECT-2026-08-31",
     "wave215_selection_decision_path": "docs/governance/mrx1000-wave215-selection-decision-2026-08-31.md",
-    "wave215_selection_decision_sha256": "a6e5fb6e3befbb4b73552020d9dff0e3e175828e59447895698300f4c64ab28f"
+    "wave215_selection_decision_sha256": "a6e5fb6e3befbb4b73552020d9dff0e3e175828e59447895698300f4c64ab28f",
+    "wave216_selection_decision_id": "MRX1000-W216-SELECT-2026-08-31",
+    "wave216_selection_decision_path": "docs/governance/mrx1000-wave216-selection-decision-2026-08-31.md",
+    "wave216_selection_decision_sha256": "e932e98dbe9d761b318fc3222a3a28c40f3d716d1d7027e6336bab766162eb6a"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "dfab5bf1bcc120ecdf34493477db38a5bb7c722069878551bb6cb6e0ed966abf",
+    "canonical_ledger_sha256": "48cd7d936c8d7b275e781747c90275cc9c63100f400baf64d31cfa63781f81c7",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -665,11 +668,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 286,
+    "prior_verified_article_count": 287,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 287,
-    "exact_admitted_slate_sha256": "9d4cb551e689a9c868468615dc07ca9412868f52bc5307b8e4c82e73f523f0e9"
+    "exact_admitted_count": 288,
+    "exact_admitted_slate_sha256": "83dc2fcd06195e641f463947a930dcde5f459959ea8056c687eac2a89b31594b"
   },
   "articles": [
     {
@@ -10466,10 +10469,47 @@
       "inline_path": "/assets/articles/inline/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/pecos-cad-category-g-parcel-counts.webp",
       "inline_asset_sha256": "9d3ca0c8991be4590c789b34b617e9042baaba8bbf87610f6a8a191f4802309c",
       "inline_rendered_text": "Pecos CAD Category G parcel counts"
+    },
+    {
+      "selection_rank": 288,
+      "program_row_id": "MRX1000-0836",
+      "source_shortlist_program_row_id": "MRX1000-0836",
+      "slug": "pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1",
+      "title": "Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1",
+      "source_shortlist_title": "Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1",
+      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "e101128ca81a77885fed62611e1db75ea789a9ab947a1e9c9c5fff278c919225",
+      "repo_path": "src/content/posts/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1.mdx",
+      "repo_sha256": "1df45564178ed5b0d1207a512c881136b9e568e0e6cacf4d6fe712df5c8e8f30",
+      "article_sha256": "1df45564178ed5b0d1207a512c881136b9e568e0e6cacf4d6fe712df5c8e8f30",
+      "hero_path": "/assets/articles/hero/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-and-january-1.webp",
+      "hero_sha256": "c147c2f52ac1fc3243b768de244c5d36220a2abdc5e9206a20b2c29e77ec6d1d",
+      "hero_asset_sha256": "c147c2f52ac1fc3243b768de244c5d36220a2abdc5e9206a20b2c29e77ec6d1d",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2109,
+      "risk_citation_remediation": [
+        "The original Pecos County value-guide identity is rejected because it has 0.60 token-Jaccard similarity to the queued Pecos market-update identity and materially overlaps the live county valuation corpus.",
+        "The replacement owns only the official Pecos CAD plan locator and physical pages 42-43 oil-and-gas property-discovery sequence.",
+        "RRCID remains the exact plan term and is not silently expanded, normalized, or equated to an API number, oil lease number, gas ID, or drilling permit number.",
+        "The three January 1 conditions remain printed plan criteria and are not applied to a named well, property, account, completion, appraisal, tax, or current status.",
+        "Completion reports, plats, jurisdictional maps, and DOI statements remain process inputs, not proof of situs, ownership, title, an interest decimal, or a current result.",
+        "The RRC pages corroborate record types and pending-lease identifier wording without proving Pecos CAD implementation or one-to-one identifier equivalence.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/pecos-cad-oil-and-gas-property-discovery.webp",
+      "inline_asset_sha256": "62634f0d6c737d917cc3b482f1cba40b22711089aedbc89730bc5c8da0c69f5d",
+      "inline_rendered_text": "Pecos CAD oil and gas property discovery"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 287,
+    "admitted_article_count": 288,
     "selection_ranks": [
       1,
       2,
@@ -10757,7 +10797,8 @@
       284,
       285,
       286,
-      287
+      287,
+      288
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10816,9 +10857,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "0f28a404268151717928667718febaa9a81fbc3d4bbcd9633fc684664cd6af20",
-    "public_article_count": 295,
-    "batch_article_count": 287,
+    "retrofit_manifest_sha256": "8c773f1106e9c84ed0d6cb698b8cd997c70b2b1008b8e17fd8241d00e37f9e80",
+    "public_article_count": 296,
+    "batch_article_count": 288,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

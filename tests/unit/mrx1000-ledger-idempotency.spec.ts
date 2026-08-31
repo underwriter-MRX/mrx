@@ -50,9 +50,9 @@ const SCRIPT = path.join(MRX_ROOT, 'scripts/build-mrx-1000-content-ledger.mjs');
 const CANONICAL_JSON = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.json');
 const CANONICAL_CSV = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.csv');
 const EXPECTED_CANONICAL_JSON_SHA256 =
-  'dfab5bf1bcc120ecdf34493477db38a5bb7c722069878551bb6cb6e0ed966abf';
+  '48cd7d936c8d7b275e781747c90275cc9c63100f400baf64d31cfa63781f81c7';
 const EXPECTED_CANONICAL_CSV_SHA256 =
-  '1927267fa3cb64610d1637fc75d921fe966dab40f20e7b38a1171a01aaf505d4';
+  '0ed7137fed984222670cff44142964ef87f516e7c06bd49270b8134072fe3566';
 const TEST_OUTPUT_DIR = mkdtempSync(path.join(tmpdir(), 'mrx1000-ledger-idempotency-'));
 const JSON_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.json');
 const CSV_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.csv');
@@ -201,6 +201,7 @@ interface Ledger {
     wave213_rekey?: { program_row_id: string };
     wave214_rekey?: { program_row_id: string };
     wave215_rekey?: { program_row_id: string };
+    wave216_rekey?: { program_row_id: string };
   };
   policy: {
     pilot_aware: boolean;
@@ -379,6 +380,7 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     expect(ledger.identity_registry.wave213_rekey?.program_row_id).toBe('MRX1000-0833');
     expect(ledger.identity_registry.wave214_rekey?.program_row_id).toBe('MRX1000-0834');
     expect(ledger.identity_registry.wave215_rekey?.program_row_id).toBe('MRX1000-0835');
+    expect(ledger.identity_registry.wave216_rekey?.program_row_id).toBe('MRX1000-0836');
     expect(
       bySlug.get('midland-cad-open-records-mineral-files-rolls-notices-source-routes')
         ?.program_row_id,
@@ -401,6 +403,9 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
         ?.program_row_id,
     ).toBe('MRX1000-0835');
     expect(
+      bySlug.get('pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1')?.program_row_id,
+    ).toBe('MRX1000-0836');
+    expect(
       bySlug.has('midland-county-texas-mineral-rights-value-market-update-for-mineral-owners'),
     ).toBe(false);
     expect(bySlug.has('midland-county-texas-mineral-rights-value-risk-checklist-in-2026')).toBe(
@@ -413,6 +418,9 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     expect(
       bySlug.has('pecos-county-texas-mineral-rights-value-family-decision-guide-step-by-step'),
     ).toBe(false);
+    expect(bySlug.has('pecos-county-texas-mineral-rights-value-guide-for-mineral-owners')).toBe(
+      false,
+    );
     expect(bySlug.has('understanding-the-true-worth-of-your-mineral-interests')).toBe(false);
     expect(
       bySlug.has(

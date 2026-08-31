@@ -285,4 +285,37 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Pecos County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
     );
   });
+
+  it('keeps Article 288 on its exact Pecos RRCID, permit, and January 1 process boundary', () => {
+    const slug = 'pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Pecos CAD oil and gas property discovery',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('the Pecos plan describes a sequence, not a current-property result');
+    expect(body).toContain('The three January 1 conditions are separate');
+    expect(body).toContain('Do not silently replace RRCID');
+    expect(body).toContain('going back up to five years');
+    expect(body).toContain('C288-10');
+    expect(body).toContain('UNRESOLVED-CONFLICT');
+    expect(body).not.toContain(
+      'Pecos County, Texas Mineral Rights Value: Guide For Mineral Owners',
+    );
+  });
 });
