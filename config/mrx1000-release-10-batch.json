@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T15:10:08Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T15:42:53Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -699,12 +699,15 @@
     "wave232_selection_decision_sha256": "3a01298857cc0888ca7534cabdb9c64f6dd75ec0870bf382cd8a6e80a24b7cb0",
     "wave233_selection_decision_id": "MRX1000-W233-SELECT-2026-08-31",
     "wave233_selection_decision_path": "docs/governance/mrx1000-wave233-selection-decision-2026-08-31.md",
-    "wave233_selection_decision_sha256": "21607631dbfc80db3df6fc227079221a48997f5b113ed03f02c41ef9fcee3f25"
+    "wave233_selection_decision_sha256": "21607631dbfc80db3df6fc227079221a48997f5b113ed03f02c41ef9fcee3f25",
+    "wave234_selection_decision_id": "MRX1000-W234-SELECT-2026-08-31",
+    "wave234_selection_decision_path": "docs/governance/mrx1000-wave234-selection-decision-2026-08-31.md",
+    "wave234_selection_decision_sha256": "7b7374466dfc3a336f40d60d06b1dd4d988715f745b89201cb21b804bb4610ad"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "55dc60d865b7ae00f158919900bdb69f7941f49a1c52c0c59aa959448d593ac5",
+    "canonical_ledger_sha256": "30a396421124f02afe54815008add38cb1104f81dcee52c05bd1576355b1b595",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -719,11 +722,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 304,
+    "prior_verified_article_count": 305,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 305,
-    "exact_admitted_slate_sha256": "63395013e4c6134d008eb4fc585472d19299d4f07e0b9f3f9cc24e3e4d1af48b"
+    "exact_admitted_count": 306,
+    "exact_admitted_slate_sha256": "19c9423a4cf2fc2b9d40c3e31dd322375c8b510b92701719fe4c5b8674b8cfca"
   },
   "articles": [
     {
@@ -11167,10 +11170,46 @@
       "inline_path": "/assets/articles/inline/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/upton-cad-2024-category-g-table.webp",
       "inline_asset_sha256": "000dcd6a046da73b61a6be6eae545c1dde7bca1b3b3c574b55efe224d16f198a",
       "inline_rendered_text": "Upton CAD 2024 Category G table"
+    },
+    {
+      "selection_rank": 306,
+      "program_row_id": "MRX1000-0854",
+      "source_shortlist_program_row_id": "MRX1000-0854",
+      "slug": "upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs",
+      "title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+      "source_shortlist_title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+      "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "2ab40dfc35d1f792d2bc2245ded98c8f0000f152e51db1571c4b522cd23de2cb",
+      "repo_path": "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+      "repo_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+      "article_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+      "hero_path": "/assets/articles/hero/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-and-pvs.webp",
+      "hero_sha256": "f10cb50324e3230eb429b577a2419cfe10073cb2f01272c1bd95471594d3a933",
+      "hero_asset_sha256": "f10cb50324e3230eb429b577a2419cfe10073cb2f01272c1bd95471594d3a933",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1830,
+      "risk_citation_remediation": [
+        "The original Upton County value-risk identity is rejected because it collides with the admitted county-value and valuation-guide corpus.",
+        "The replacement owns only the Upton plan section map for source categories, calibration, individual review, and the stated state performance test.",
+        "The document sequence is not presented as an account audit or proof of chronological execution, and no source is claimed to have been used for a particular account.",
+        "The plan PVS label remains source attribution and is kept separate from current Comptroller SDPVS and ADRS terminology; no current Upton result is inferred.",
+        "No personal data, account data, property search, title, ownership, appraisal, tax, legal, private-value, offer, protest, or transaction conclusion appears.",
+        "Answer-first structure, stable claim IDs, physical and printed page locators, claim-adjacent official citations, source-age labels, a discrepancy register, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/upton-cad-mineral-appraisal-review-chain.webp",
+      "inline_asset_sha256": "4bcdb233033b38ebf6c0d49adb9601a8b031c2529fefac8da0cf2dc8bf64f789",
+      "inline_rendered_text": "Upton CAD mineral appraisal review chain"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 305,
+    "admitted_article_count": 306,
     "selection_ranks": [
       1,
       2,
@@ -11476,7 +11515,8 @@
       302,
       303,
       304,
-      305
+      305,
+      306
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11535,9 +11575,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "50f291d6e6105ee07b379667d0c4cff74a758da49e4b3d34812dbc5cd252919e",
-    "public_article_count": 313,
-    "batch_article_count": 305,
+    "retrofit_manifest_sha256": "dc263e0ead4154f57d320f7354426cc92b28d3f46dc7032082d8462c64b0f439",
+    "public_article_count": 314,
+    "batch_article_count": 306,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "36f929c1a5f946bf9271ec679e3206d371b9c2e070a54ec548326a11e589037c",
+  "content_fingerprint_sha256": "c109ac519d3856943c9630ed23ac8dd7430ee20381e722a38b5d373349c4aa7b",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "f8a90766090c7e143f45cb687826ed175f01115a04c5881816c55723e186e855",
+    "canonical_ledger_fingerprint_sha256": "1521b0eb6d45306e9c6ebf946c75773f4c22647e463163c1f1b4766908820f30",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 313,
+      "live_public_published_route": 314,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 639
+      "planning_only_inventory": 638
     }
   },
   "rows": [
@@ -50476,11 +50476,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0854",
-        "target_title": "Upton County, Texas Mineral Rights Value: Risk Checklist In 2026",
-        "url": "/blog/upton-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+        "target_title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+        "url": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -50523,15 +50523,15 @@
     },
     {
       "program_row_id": "MRX1000-0854",
-      "canonical_title": "Upton County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "upton-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "/blog/upton-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "canonical_title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+      "canonical_slug": "upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs",
+      "canonical_url": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -50553,7 +50553,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -50566,7 +50566,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -50580,7 +50580,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
