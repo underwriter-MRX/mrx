@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T09:10:19Z",
+  "generated_at_utc": "2026-08-31T09:36:27Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 300,
-    "asset_count": 600,
-    "unique_source_art_count": 300,
-    "unique_hero_sha256_count": 300,
-    "unique_inline_sha256_count": 300,
-    "distinct_article_pair_count": 300,
-    "hero_ocr_pass_count": 300,
-    "inline_ocr_pass_count": 300,
-    "exact_filename_identity_count": 300
+    "article_count": 301,
+    "asset_count": 602,
+    "unique_source_art_count": 301,
+    "unique_hero_sha256_count": 301,
+    "unique_inline_sha256_count": 301,
+    "distinct_article_pair_count": 301,
+    "hero_ocr_pass_count": 301,
+    "inline_ocr_pass_count": 301,
+    "exact_filename_identity_count": 301
   },
   "contact_sheets": {
     "hero": [
@@ -8222,6 +8222,56 @@
           "actual": "Mineral Rights Offer\nProperty Scope Checklist",
           "normalized_expected": "mineral rights offer property scope checklist",
           "normalized_actual": "mineral rights offer property scope checklist",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "reeves-cad-2025-map-review-four-passes-and-two-recommendations",
+      "title": "Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations",
+      "keyword": "Reeves CAD 2025 MAP review",
+      "file_path": "src/content/posts/reeves-cad-2025-map-review-four-passes-and-two-recommendations.mdx",
+      "source_public_path": "/assets/articles/hero/reeves-cad-2025-map-review-four-passes-and-two-recommendations.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave221-creative-sources/reeves-cad-2025-map-review-four-passes-and-two-recommendations-hero-base.png",
+        "artifacts/mrx1000-wave221-creative-sources/reeves-cad-2025-map-review-four-passes-and-two-recommendations-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T09:35:35.285Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/reeves-cad-2025-map-review-four-passes-and-two-recommendations.webp",
+        "alt": "An oblique audit binder with four tabs and two action slips appears beside the exact Article 293 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "03b58e2bd7a8f0727f70b6b5324a239338dcf03f9834d46f66c6fa481c7d6a53",
+        "perceptual_hash": "0000000011111111000000000001111100000000000001110000000000000111010000000000011101100000000011110111100000001111011100000001111100000000000111110000000001011111000000000101111100000000011111110000000000111111000000001111111100000000111101110000000011101111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations",
+          "actual": "Reeves CAD 2025\nMAP Review:\nFour Passes and Two\nRecommendations",
+          "normalized_expected": "reeves cad 2025 map review four passes and two recommendations",
+          "normalized_actual": "reeves cad 2025 map review four passes and two recommendations",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/reeves-cad-2025-map-review-four-passes-and-two-recommendations/reeves-cad-2025-map-review.webp",
+        "alt": "A top-down four-area evidence board appears above the exact Reeves CAD 2025 MAP review keyword.",
+        "rendered_text": "Reeves CAD 2025 MAP review",
+        "visual_variant": "wave221-distinct-generated-oblique-audit-binder-hero-and-strict-overhead-four-area-evidence-board",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "56067d672e99e9946054b42bdb1ddbf3d846c836ff38a38a98a9a83e2cbf3e15",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111101010001111111000001000111111100001000011111110000000001111111010000000111111001100000011111100010000001111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves CAD 2025 MAP review",
+          "actual": "Reeves CAD 2025\nMAP review",
+          "normalized_expected": "reeves cad 2025 map review",
+          "normalized_actual": "reeves cad 2025 map review",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

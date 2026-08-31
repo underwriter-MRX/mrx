@@ -450,4 +450,39 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Reeves County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
     );
   });
+
+  it('keeps Article 293 on its exact Reeves MAP review evidence boundary', () => {
+    const slug = 'reeves-cad-2025-map-review-four-passes-and-two-recommendations';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Reeves CAD 2025 MAP review',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('PASS on all four mandatory requirements');
+    expect(body).toContain('Keep the four area scores attached to their labels');
+    expect(body).toContain('Read question 29 without widening it');
+    expect(body).toContain('Read question 74 without turning it into a property conclusion');
+    expect(body).toContain('C293-10');
+    expect(body).toContain('DOCUMENT-CONTENT');
+    expect(body).not.toContain(
+      'Reeves County, Texas Mineral Rights Value: Guide For Mineral Owners',
+    );
+  });
 });
