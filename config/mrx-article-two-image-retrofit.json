@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T04:51:48Z",
+  "generated_at_utc": "2026-08-31T06:10:03Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 291,
-    "asset_count": 582,
-    "unique_source_art_count": 291,
-    "unique_hero_sha256_count": 291,
-    "unique_inline_sha256_count": 291,
-    "distinct_article_pair_count": 291,
-    "hero_ocr_pass_count": 291,
-    "inline_ocr_pass_count": 291,
-    "exact_filename_identity_count": 291
+    "article_count": 292,
+    "asset_count": 584,
+    "unique_source_art_count": 292,
+    "unique_hero_sha256_count": 292,
+    "unique_inline_sha256_count": 292,
+    "distinct_article_pair_count": 292,
+    "hero_ocr_pass_count": 292,
+    "inline_ocr_pass_count": 292,
+    "exact_filename_identity_count": 292
   },
   "contact_sheets": {
     "hero": [
@@ -6742,6 +6742,56 @@
           "actual": "Midland CAD 419,660\nmineral interest accounts",
           "normalized_expected": "midland cad 419 660 mineral interest accounts",
           "normalized_actual": "midland cad 419 660 mineral interest accounts",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits",
+      "title": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+      "keyword": "Midland CAD certified mineral roll file layout",
+      "file_path": "src/content/posts/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits.mdx",
+      "source_public_path": "/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave212-creative-sources/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits-hero-base.png",
+        "artifacts/mrx1000-wave212-creative-sources/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T06:06:33.969Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp",
+        "alt": "A sealed archive case, seven blank member objects, and privacy barriers appear beside the exact Article 284 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "a8f6380fe702bf7067121cad7a73c05bbba7e593b9bc6ae3edbaa2831489d1d5",
+        "perceptual_hash": "0000000000100000000000000000110000000000000000000000000000000000000100000100000001111100011011000111110001111111000000000111111100000000011111110000000011111111000000001111101100000000111111010000000011111011000000001111101100000000111111110000000011111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+          "actual": "Midland CAD 2026 Certified\nMineral Roll ZIP: File Order,\nFormats, and Privacy Limits",
+          "normalized_expected": "midland cad 2026 certified mineral roll zip file order formats and privacy limits",
+          "normalized_actual": "midland cad 2026 certified mineral roll zip file order formats and privacy limits",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/midland-cad-certified-mineral-roll-file-layout.webp",
+        "alt": "A top-down control-file workflow stops before sealed data files above the exact Midland CAD file-layout keyword.",
+        "rendered_text": "Midland CAD certified mineral roll file layout",
+        "visual_variant": "wave212-distinct-generated-low-oblique-seven-member-archive-hero-and-top-down-control-file-privacy-workflow",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "7f4ee9493b7956d719a555c5ad99cf97d3de53666d1fa534c5ae062dc98698bd",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111011111111111110001111111111111000111111111111000011111111111110001111111111111000111111111111100011111111111110001111111111111000100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Midland CAD certified mineral roll file layout",
+          "actual": "Midland CAD certified mineral\nroll file layout",
+          "normalized_expected": "midland cad certified mineral roll file layout",
+          "normalized_actual": "midland cad certified mineral roll file layout",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

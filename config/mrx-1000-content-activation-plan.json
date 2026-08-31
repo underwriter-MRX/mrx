@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T17:54:44.636Z",
+  "generated_at": "2026-07-20T23:40:05.613Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "98970cd9c747a5b3e2bcee412fc006336c27f83d3bcc368e7a2c315aa7eb0136",
+  "content_fingerprint_sha256": "67560969a301005bef75bd239394786794c6abcc7810d23e747fbbd1b859dbf4",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "b5e716e91a2ea40985f05e24e4dfbabb1f0bfd187f2cc58f14a323ffdf243530",
+    "canonical_ledger_fingerprint_sha256": "74f7bbe2c3207b905fe914a649eb8de9850cc44361ffb0a9cb013a1b3c33ddef",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T17:54:44.636Z",
+    "canonical_ledger_generated_at": "2026-07-20T23:40:05.613Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 291,
+      "live_public_published_route": 292,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 661
+      "planning_only_inventory": 660
     }
   },
   "rows": [
@@ -49090,11 +49090,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0832",
-        "target_title": "Midland County, Texas Mineral Rights Value: Risk Checklist In 2026",
-        "url": "/blog/midland-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+        "target_title": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+        "url": "/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49137,15 +49137,15 @@
     },
     {
       "program_row_id": "MRX1000-0832",
-      "canonical_title": "Midland County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "midland-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "/blog/midland-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "canonical_title": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+      "canonical_slug": "midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits",
+      "canonical_url": "/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49167,7 +49167,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49180,7 +49180,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49194,7 +49194,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

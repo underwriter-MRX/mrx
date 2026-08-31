@@ -154,4 +154,38 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'They do not establish what the files contain or whether their records match.',
     );
   });
+
+  it('keeps Article 284 on its exact mixed-format archive-control and privacy boundary', () => {
+    const slug = 'midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Midland CAD certified mineral roll file layout',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(3);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('open **`2. MINERAL FILE LAYOUT.pdf` first**');
+    expect(body).toContain('2,400,158,157 uncompressed bytes');
+    expect(body).toContain(
+      'No row from any of these three members was opened, extracted, sampled, searched, copied, or reproduced',
+    );
+    expect(body).toContain('C284-09');
+    expect(body).toContain('UNRESOLVED-CONFLICT');
+    expect(body).not.toContain(
+      'Midland County, Texas Mineral Rights Value: Risk Checklist In 2026',
+    );
+  });
 });
