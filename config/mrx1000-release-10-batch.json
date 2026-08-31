@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T13:07:44Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T13:38:33Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -687,12 +687,15 @@
     "wave228_selection_decision_sha256": "0255f4afe69f9876fb8036871c5b8688d5abbdbdb351451a65b78037ffc03730",
     "wave229_selection_decision_id": "MRX1000-W229-SELECT-2026-08-31",
     "wave229_selection_decision_path": "docs/governance/mrx1000-wave229-selection-decision-2026-08-31.md",
-    "wave229_selection_decision_sha256": "c017959e750f15e21462a4468eead1346b6a1a883547574c8d56d3831a8982fc"
+    "wave229_selection_decision_sha256": "c017959e750f15e21462a4468eead1346b6a1a883547574c8d56d3831a8982fc",
+    "wave230_selection_decision_id": "MRX1000-W230-SELECT-2026-08-31",
+    "wave230_selection_decision_path": "docs/governance/mrx1000-wave230-selection-decision-2026-08-31.md",
+    "wave230_selection_decision_sha256": "e301b1654432c9f1fc261413c0c664eff980913ce841456d5081ac51845d4676"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "494cf37bad03667f89109c125123901eb9903019b419ddfe81dec8c13982f316",
+    "canonical_ledger_sha256": "013056cc385c8009c7f392cef8d35841312b9d937966a3f30b6a7481d9791bf2",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -707,11 +710,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 300,
+    "prior_verified_article_count": 301,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 301,
-    "exact_admitted_slate_sha256": "b5b0778a195b6d47a6a2b1fcc41253ed6b0c0eb908a7229fcc3cc3eb10265c3a"
+    "exact_admitted_count": 302,
+    "exact_admitted_slate_sha256": "688e9d43c45eb27e51d4d06d191062fe93579141057339b8e42b5d714090bdac"
   },
   "articles": [
     {
@@ -11009,10 +11012,46 @@
       "inline_path": "/assets/articles/inline/texas-rrc-field-classification-codes-associated-field-numbers/texas-rrc-field-classification-codes.webp",
       "inline_asset_sha256": "7a8fd40601b78aa6828c42a3aed945c32705492973128d2d0bcb50a339e85ccc",
       "inline_rendered_text": "Texas RRC field classification codes"
+    },
+    {
+      "selection_rank": 302,
+      "program_row_id": "MRX1000-0850",
+      "source_shortlist_program_row_id": "MRX1000-0850",
+      "slug": "texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates",
+      "title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+      "source_shortlist_title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "0f2ca30809568ec8c6f8fc27d292f8ebff1527097ea5bc4c05f1ea4e9c13b1c4",
+      "repo_path": "src/content/posts/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.mdx",
+      "repo_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+      "article_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+      "hero_path": "/assets/articles/hero/texas-rrc-field-rule-tables-special-rules-standard-fallbacks-and-rescission-dates.webp",
+      "hero_sha256": "e255e7df52ce683031f192c3412d5a60202ea1b7ef47aca45e805cfc935f82f5",
+      "hero_asset_sha256": "e255e7df52ce683031f192c3412d5a60202ea1b7ef47aca45e805cfc935f82f5",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2251,
+      "risk_citation_remediation": [
+        "The original statewide valuation-factor identity is rejected because it repeats the admitted valuation corpus and retains a 0.7143 planning-title collision.",
+        "The replacement owns only historical RRC field-rule table structure, special-row versus standard-fallback handling, distinct code fields, effective-versus-rescission dates, and current-verification stop states.",
+        "The article preserves exact tables, raw codes, row identities, oil-or-gas role, depth and spacing fields, dates, source object, version, current-query status, order status, and exceptions.",
+        "Articles 299 through 301 retain identifier labels, district conversion, and field classification; query worksheets retain query execution and results.",
+        "The article stops before current rule applicability, permit eligibility, spacing or density exceptions, drilling approval, compliance, property scope, ownership, production, reserves, value, offer, buyer, or transaction conclusions.",
+        "Answer-first structure, stable claim IDs, evidence labels, source-age separation, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/texas-rrc-field-rule-tables.webp",
+      "inline_asset_sha256": "c4261beac540cf9dc68e7dba992551c6de81eaf5a84682bc38d70e2977484192",
+      "inline_rendered_text": "Texas RRC field rule tables"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 301,
+    "admitted_article_count": 302,
     "selection_ranks": [
       1,
       2,
@@ -11314,7 +11353,8 @@
       298,
       299,
       300,
-      301
+      301,
+      302
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11373,9 +11413,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "df12ed6027cc97376479433f94a610bfab4a7dc2fc02c8743dd14b24d62b74e6",
-    "public_article_count": 309,
-    "batch_article_count": 301,
+    "retrofit_manifest_sha256": "f8368c04283a97149b93e7ba48dd20007d7cc183da78abb89905bf4d07eaf220",
+    "public_article_count": 310,
+    "batch_article_count": 302,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

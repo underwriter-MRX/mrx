@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "1cce3e3c75b25ca8c83cca7f11005fc50bcd6423b383253f47b060d364264a96",
+  "content_fingerprint_sha256": "0cbbf14a6514e0ccdc307c5cf87102246e7e99bc84c768702ae333db83933c0e",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "e74637273715bed2a9478d72fa22c38f3d4b093cce4e99e5bbfc0df322e05b00",
+    "canonical_ledger_fingerprint_sha256": "1210194fcd653e160c27e1ad3371848f5fde5ca5ba5efff6718e083954c99486",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 309,
+      "live_public_published_route": 310,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 643
+      "planning_only_inventory": 642
     }
   },
   "rows": [
@@ -50224,11 +50224,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0850",
-        "target_title": "Texas Mineral Rights Value: Valuation Factors Without Obligation",
-        "url": "/blog/texas-mineral-rights-value-valuation-factors-without-obligation/",
+        "target_title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+        "url": "/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -50271,15 +50271,15 @@
     },
     {
       "program_row_id": "MRX1000-0850",
-      "canonical_title": "Texas Mineral Rights Value: Valuation Factors Without Obligation",
-      "canonical_slug": "texas-mineral-rights-value-valuation-factors-without-obligation",
-      "canonical_url": "/blog/texas-mineral-rights-value-valuation-factors-without-obligation/",
+      "canonical_title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+      "canonical_slug": "texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates",
+      "canonical_url": "/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "royalty-income",
+      "search_intent": "informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -50301,7 +50301,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:royalty-income",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -50314,7 +50314,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:royalty-income",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -50328,7 +50328,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

@@ -716,4 +716,31 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('RRC-ASSOCIATED-FIELD-POINTER');
     expect(body).not.toContain('Texas Mineral Rights Value: Timeline In 2026');
   });
+
+  it('keeps Article 302 on its exact historical RRC field-rule table boundary', () => {
+    const slug = 'texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates';
+    const source = readFileSync(join(postsDir, slug + '.mdx'), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe('Texas RRC field rule tables');
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(7);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The two rule tables answer different questions');
+    expect(body).toContain('Read the historical fallback sequence exactly');
+    expect(body).toContain('Treat effective and rescission dates as different events');
+    expect(body).toContain('C302-08');
+    expect(body).not.toContain('Texas Mineral Rights Value: Valuation Factors Without Obligation');
+  });
 });

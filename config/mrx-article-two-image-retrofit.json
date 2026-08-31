@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T13:04:41Z",
+  "generated_at_utc": "2026-08-31T13:31:16Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 309,
-    "asset_count": 618,
-    "unique_source_art_count": 309,
-    "unique_hero_sha256_count": 309,
-    "unique_inline_sha256_count": 309,
-    "distinct_article_pair_count": 309,
-    "hero_ocr_pass_count": 309,
-    "inline_ocr_pass_count": 309,
-    "exact_filename_identity_count": 309
+    "article_count": 310,
+    "asset_count": 620,
+    "unique_source_art_count": 310,
+    "unique_hero_sha256_count": 310,
+    "unique_inline_sha256_count": 310,
+    "distinct_article_pair_count": 310,
+    "hero_ocr_pass_count": 310,
+    "inline_ocr_pass_count": 310,
+    "exact_filename_identity_count": 310
   },
   "contact_sheets": {
     "hero": [
@@ -9956,6 +9956,56 @@
           "actual": "Texas RRC field\nclassification codes",
           "normalized_expected": "texas rrc field classification codes",
           "normalized_actual": "texas rrc field classification codes",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates",
+      "title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+      "keyword": "Texas RRC field rule tables",
+      "file_path": "src/content/posts/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.mdx",
+      "source_public_path": "/assets/articles/hero/texas-rrc-field-rule-tables-special-rules-standard-fallbacks-and-rescission-dates.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave230-creative-sources/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates-hero-base.png",
+        "artifacts/mrx1000-wave230-creative-sources/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T13:24:47.361Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/texas-rrc-field-rule-tables-special-rules-standard-fallbacks-and-rescission-dates.webp",
+        "alt": "A frontal copper rule-routing switchboard appears beside the exact Article 302 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "e255e7df52ce683031f192c3412d5a60202ea1b7ef47aca45e805cfc935f82f5",
+        "perceptual_hash": "0000000000000000000000000111111000000000000000000111111011111100111111101111110011110000001111111111110011111111111100001111111100000000001110000000000000100000000000001110000000000000000000000000000000111110000000010000000000000001000000000000000100000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+          "actual": "Texas RRC Field Rule Tables:\nSpecial Rules,\nStandard Fallbacks, and\nRescission Dates",
+          "normalized_expected": "texas rrc field rule tables special rules standard fallbacks and rescission dates",
+          "normalized_actual": "texas rrc field rule tables special rules standard fallbacks and rescission dates",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/texas-rrc-field-rule-tables.webp",
+        "alt": "A low side-angle glass row display appears above the exact Texas RRC field rule tables keyword.",
+        "rendered_text": "Texas RRC field rule tables",
+        "visual_variant": "wave230-distinct-generated-frontal-mechanical-rule-routing-switchboard-hero-and-low-side-angle-glass-row-display-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "c4261beac540cf9dc68e7dba992551c6de81eaf5a84682bc38d70e2977484192",
+        "perceptual_hash": "0000000000011111000000000000111000000000111111110000000111111100000001111111101100111111111111110011111111111100111111101111110111111110111111101111110001111100001111100111110000000000000000000000001111000000000000011000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC field rule tables",
+          "actual": "Texas RRC field\nrule tables",
+          "normalized_expected": "texas rrc field rule tables",
+          "normalized_actual": "texas rrc field rule tables",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
