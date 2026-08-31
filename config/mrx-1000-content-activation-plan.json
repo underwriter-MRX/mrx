@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T14:26:52.205Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "28d2e5b8927038f6a273a1ad47c3832e5f85390d8e970c421ce9477695073bd4",
+  "content_fingerprint_sha256": "37818cf47793a2d78cd161d6d99d39d2ccc9a67fc052f3f0a4eadcb2480f9cb1",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "801232893cee7e8d062e461d4ceb443bd178223237b3f8e56a83ae756c665314",
+    "canonical_ledger_fingerprint_sha256": "7af0c4be74a8767d519c4c69b52221a21fc1cbf0b8c77956ca3bda4a9dca8629",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 322,
+      "live_public_published_route": 323,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 630
+      "planning_only_inventory": 629
     }
   },
   "rows": [
@@ -51043,11 +51043,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0868",
-        "target_title": "Winkler County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/winkler-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Winkler CAD 2025-2026 Mineral Appraisal: January 1 Snapshot and Later Information",
+        "url": "/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -51090,15 +51090,15 @@
     },
     {
       "program_row_id": "MRX1000-0868",
-      "canonical_title": "Winkler County, Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "winkler-county-texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/winkler-county-texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Winkler CAD 2025-2026 Mineral Appraisal: January 1 Snapshot and Later Information",
+      "canonical_slug": "winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information",
+      "canonical_url": "/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -51120,7 +51120,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -51133,7 +51133,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -51147,7 +51147,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
