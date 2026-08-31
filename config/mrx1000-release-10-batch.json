@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T08:02:57Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T08:26:17Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -651,12 +651,15 @@
     "wave216_selection_decision_sha256": "e932e98dbe9d761b318fc3222a3a28c40f3d716d1d7027e6336bab766162eb6a",
     "wave217_selection_decision_id": "MRX1000-W217-SELECT-2026-08-31",
     "wave217_selection_decision_path": "docs/governance/mrx1000-wave217-selection-decision-2026-08-31.md",
-    "wave217_selection_decision_sha256": "9a626e64fa9f4dca087f4671e1ac78241aa11c03eea0d10a9b830651db593d86"
+    "wave217_selection_decision_sha256": "9a626e64fa9f4dca087f4671e1ac78241aa11c03eea0d10a9b830651db593d86",
+    "wave218_selection_decision_id": "MRX1000-W218-SELECT-2026-08-31",
+    "wave218_selection_decision_path": "docs/governance/mrx1000-wave218-selection-decision-2026-08-31.md",
+    "wave218_selection_decision_sha256": "cb089df40b61a4be39c9573250fcca16e77b08e54d9f108c8e66dd4cebc1a4ac"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "abdcdd24b4335716e31c2dd86d6d47d774dd4e1bbb4e8c610c5e5aaec468a777",
+    "canonical_ledger_sha256": "08f2c23fc9510c6a7e0eaab9204865df34046d87f10a0ce0fef059365fe3a198",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -671,11 +674,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 288,
+    "prior_verified_article_count": 289,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 289,
-    "exact_admitted_slate_sha256": "2b08063dbca636abe2ffad324b3829dadcbd7cfef7a6efa3becf287fa07fe3e7"
+    "exact_admitted_count": 290,
+    "exact_admitted_slate_sha256": "15026744a903d79cabc3307ee95e424dc2e0229fbbc66a8635ce5821949d9856"
   },
   "articles": [
     {
@@ -10545,10 +10548,46 @@
       "inline_path": "/assets/articles/inline/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/pecos-cad-oil-and-gas-appraisal-review.webp",
       "inline_asset_sha256": "7ec05b71e9390304a496fcd1c7730de15777c8d0a8600ac9c766a7f037ed0b16",
       "inline_rendered_text": "Pecos CAD oil and gas appraisal review"
+    },
+    {
+      "selection_rank": 290,
+      "program_row_id": "MRX1000-0838",
+      "source_shortlist_program_row_id": "MRX1000-0838",
+      "slug": "pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches",
+      "title": "Pecos CAD Industrial Appraisal Limits: Title, Inspection, and Sketches",
+      "source_shortlist_title": "Pecos CAD Industrial Appraisal Limits: Title, Inspection, and Sketches",
+      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "7f801d97d4f5493a6f00cc92aa2143fbfeb7a55217bf03a71fdaaaa0bf8bfe73",
+      "repo_path": "src/content/posts/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.mdx",
+      "repo_sha256": "f310979ebfd4101919c30d42549dd3683bd6b4fb0f4533dded1396662aaf74ca",
+      "article_sha256": "f310979ebfd4101919c30d42549dd3683bd6b4fb0f4533dded1396662aaf74ca",
+      "hero_path": "/assets/articles/hero/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.webp",
+      "hero_sha256": "ea61ae02892d9d7a4843698f4cc0c5c668a25f5284cc1699418bf1dbaea86e3a",
+      "hero_asset_sha256": "ea61ae02892d9d7a4843698f4cc0c5c668a25f5284cc1699418bf1dbaea86e3a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1709,
+      "risk_citation_remediation": [
+        "The original Pecos County risk-checklist identity is rejected because it duplicates a county template at 0.7143 token-Jaccard similarity and overlaps the current valuation and risk corpus.",
+        "The replacement owns only the official Pecos CAD industrial-appraisal assumptions and limiting conditions on physical page 49 of the controlled 2025-2026 Reappraisal Plan.",
+        "Industrial-property scope is preserved as processing facilities and related personal property; the article does not apply the industrial section to a mineral interest or replace the oil-and-gas sections.",
+        "Title, legal-description, lien, inspection, sketch, ad-valorem-purpose, subsurface, and hidden-structural statements remain attributed plan limitations and are not converted into property facts or professional conclusions.",
+        "Comptroller context distinguishes local taxable-property appraisal from a private mineral valuation without validating a Pecos account, method, inspection, title, survey, engineering opinion, protest position, or value.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/pecos-cad-industrial-appraisal-assumptions.webp",
+      "inline_asset_sha256": "f5485024c20e2dd2810e6841c9149f7cc1c9c3ac81110c726cad5114a845bd63",
+      "inline_rendered_text": "Pecos CAD industrial appraisal assumptions"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 289,
+    "admitted_article_count": 290,
     "selection_ranks": [
       1,
       2,
@@ -10838,7 +10877,8 @@
       286,
       287,
       288,
-      289
+      289,
+      290
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10897,9 +10937,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "b8ae0e23c829d77197dfb3c6013113dba9469fc57b2700b97c8e53017fdea223",
-    "public_article_count": 297,
-    "batch_article_count": 289,
+    "retrofit_manifest_sha256": "0a3c868b370b8c967f7a8aa853236e4345e1a2cb9043c1eb682a51d0d55db791",
+    "public_article_count": 298,
+    "batch_article_count": 290,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

@@ -351,4 +351,35 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Pecos County, Texas Mineral Rights Value: Market Update For Mineral Owners',
     );
   });
+
+  it('keeps Article 290 on its exact Pecos industrial-appraisal limitations boundary', () => {
+    const slug = 'pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Pecos CAD Industrial Appraisal Limits: Title, Inspection, and Sketches',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Pecos CAD industrial appraisal assumptions',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('not to treat the appraisal record as proof of title');
+    expect(body).toContain('“Title is assumed” is not a title finding');
+    expect(body).toContain('A sketch can orient a reader without establishing a boundary');
+    expect(body).toContain('Hidden conditions remain outside ordinary observation');
+    expect(body).toContain('C290-10');
+    expect(body).toContain('SOURCE-ASSUMPTION');
+    expect(body).not.toContain('Pecos County, Texas Mineral Rights Value: Risk Checklist In 2026');
+  });
 });
