@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T16:37:31Z",
+  "generated_at_utc": "2026-08-31T17:28:06Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 316,
-    "asset_count": 632,
-    "unique_source_art_count": 316,
-    "unique_hero_sha256_count": 316,
-    "unique_inline_sha256_count": 316,
-    "distinct_article_pair_count": 316,
-    "hero_ocr_pass_count": 316,
-    "inline_ocr_pass_count": 316,
-    "exact_filename_identity_count": 316
+    "article_count": 317,
+    "asset_count": 634,
+    "unique_source_art_count": 317,
+    "unique_hero_sha256_count": 317,
+    "unique_inline_sha256_count": 317,
+    "distinct_article_pair_count": 317,
+    "hero_ocr_pass_count": 317,
+    "inline_ocr_pass_count": 317,
+    "exact_filename_identity_count": 317
   },
   "contact_sheets": {
     "hero": [
@@ -15434,6 +15434,56 @@
           "actual": "Reeves CAD 2025\nratio-study worksheet",
           "normalized_expected": "reeves cad 2025 ratio study worksheet",
           "normalized_actual": "reeves cad 2025 ratio study worksheet",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf",
+      "title": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+      "keyword": "Ward and Loving CAD 2026 mineral file layout PDF",
+      "file_path": "src/content/posts/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.mdx",
+      "source_public_path": "/assets/articles/hero/why-ward-and-loving-cad-share-the-same-2026-mineral-file-layout-pdf.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave237-creative-sources/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf-hero-base.png",
+        "artifacts/mrx1000-wave237-creative-sources/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T17:25:16.461Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/why-ward-and-loving-cad-share-the-same-2026-mineral-file-layout-pdf.webp",
+        "alt": "Two separate archive cases hold identical blank layout packets beside the exact Article 309 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "6000d3915d4fec0f3a4ad92549107de383ca259086a0ecc4190ada578e2e0f13",
+        "perceptual_hash": "0000000000001111000000000000111100000000001111110000000000000011011010000000111101111000111011110111100011101111000000001110111100000000111011110000000000000001000000000000111100000000000011110000000001110011000000000111011100000000000000110000000000000011",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+          "actual": "Why Ward and Loving CAD\nShare the Same 2026\nMineral File Layout PDF",
+          "normalized_expected": "why ward and loving cad share the same 2026 mineral file layout pdf",
+          "normalized_actual": "why ward and loving cad share the same 2026 mineral file layout pdf",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/ward-and-loving-cad-2026-mineral-file-layout-pdf.webp",
+        "alt": "A top-down byte-identity and provenance board appears above the exact Ward and Loving CAD keyword.",
+        "rendered_text": "Ward and Loving CAD 2026 mineral file layout PDF",
+        "visual_variant": "wave237-distinct-generated-low-oblique-dark-two-archive-provenance-hero-and-strict-top-down-light-byte-identity-register-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "f58a145115fb6aeee6f54c56410069c58c35164aee8e94c241ae4d4a8e3cc398",
+        "perceptual_hash": "1111110000111111111111000011111111111111111111111111111111111111110001111110001111100111111001111111111111111111111111111111111111111111111111111111111111111111111001111110011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Ward and Loving CAD 2026 mineral file layout PDF",
+          "actual": "Ward and Loving CAD 2026\nmineral file layout PDF",
+          "normalized_expected": "ward and loving cad 2026 mineral file layout pdf",
+          "normalized_actual": "ward and loving cad 2026 mineral file layout pdf",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

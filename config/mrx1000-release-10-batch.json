@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T16:55:02Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T17:34:08Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -708,12 +708,15 @@
     "wave235_selection_decision_sha256": "a1dcafeb490bc0fb21cc6f82e74aad3be4ed4bc5c484948f148d7c48ccce2466",
     "wave236_selection_decision_id": "MRX1000-W236-SELECT-2026-08-31",
     "wave236_selection_decision_path": "docs/governance/mrx1000-wave236-selection-decision-2026-08-31.md",
-    "wave236_selection_decision_sha256": "aabbad0c77afa708150a1dd386a7d6e2068a7a07cb23a7fe139c2d3147ecd6e2"
+    "wave236_selection_decision_sha256": "aabbad0c77afa708150a1dd386a7d6e2068a7a07cb23a7fe139c2d3147ecd6e2",
+    "wave237_selection_decision_id": "MRX1000-W237-SELECT-2026-08-31",
+    "wave237_selection_decision_path": "docs/governance/mrx1000-wave237-selection-decision-2026-08-31.md",
+    "wave237_selection_decision_sha256": "97d996a85334403afc21bf41a7a8258d40057250721a9ab836f2981135afdd84"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "6a8c039afc1e3fd763ec62adacd2de2bb53593b70c76e99af1549a426730cd9c",
+    "canonical_ledger_sha256": "6cd6f0e339e1c2107fb7210de43580c0c4c160f947eb7fb31d30c84af345bd15",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -728,11 +731,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 307,
+    "prior_verified_article_count": 308,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 308,
-    "exact_admitted_slate_sha256": "f56a631bc839b5092edcdea83f1b81f18f1ed423a636a8a5f794ee353a3ba8d6"
+    "exact_admitted_count": 309,
+    "exact_admitted_slate_sha256": "130a31fe2c6a72cce8e0888114a77e40f1660705c9334798c4d7a0d91fbb2deb"
   },
   "articles": [
     {
@@ -11283,10 +11286,46 @@
       "inline_path": "/assets/articles/inline/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/ward-cad-2026-mineral-recap-83-920-items.webp",
       "inline_asset_sha256": "e730c6b4bce68457ac87fa7022f60e81a3c04f89ca839ceffc96338f049c115f",
       "inline_rendered_text": "Ward CAD 2026 mineral recap 83,920 items"
+    },
+    {
+      "selection_rank": 309,
+      "program_row_id": "MRX1000-0857",
+      "source_shortlist_program_row_id": "MRX1000-0857",
+      "slug": "why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf",
+      "title": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+      "source_shortlist_title": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+      "canonical_url": "https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "aee0b238f37ade8b2a244c86b86b4687c474b061811a917818213e583c888ac6",
+      "repo_path": "src/content/posts/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.mdx",
+      "repo_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+      "article_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+      "hero_path": "/assets/articles/hero/why-ward-and-loving-cad-share-the-same-2026-mineral-file-layout-pdf.webp",
+      "hero_sha256": "6000d3915d4fec0f3a4ad92549107de383ca259086a0ecc4190ada578e2e0f13",
+      "hero_asset_sha256": "6000d3915d4fec0f3a4ad92549107de383ca259086a0ecc4190ada578e2e0f13",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2169,
+      "risk_citation_remediation": [
+        "The original Ward County value-guide identity is rejected because it materially collides with the admitted valuation and county-guide corpus.",
+        "A Ward-only layout map is also rejected because its inner PDF is byte-identical to the file already owned by Article 274.",
+        "The replacement owns only the cross-publisher complete-byte identity, two separate publisher and outer-archive provenance lanes, the embedded-title versus member-extension mismatch, and explicit inference stops.",
+        "No roll, TXT, CSV, owner, account, address, email, or property record is opened, sampled, searched, copied, or published, and no authorship, origin, applicability, conformance, correctness, title, ownership, appraisal, tax, private-value, offer, legal, or transaction conclusion appears.",
+        "Answer-first structure, stable claim IDs, evidence-role and inference-limit labels, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, and disclosed-buyer language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/ward-and-loving-cad-2026-mineral-file-layout-pdf.webp",
+      "inline_asset_sha256": "f58a145115fb6aeee6f54c56410069c58c35164aee8e94c241ae4d4a8e3cc398",
+      "inline_rendered_text": "Ward and Loving CAD 2026 mineral file layout PDF"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 308,
+    "admitted_article_count": 309,
     "selection_ranks": [
       1,
       2,
@@ -11595,7 +11634,8 @@
       305,
       306,
       307,
-      308
+      308,
+      309
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11654,9 +11694,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "3492507afd61bc0384a457fd8967894a2443a9e76b3ef16aba3e258d974d7175",
-    "public_article_count": 316,
-    "batch_article_count": 308,
+    "retrofit_manifest_sha256": "8604308151c403552f663d636e121b4c13e3306508891744250df9c58221dd60",
+    "public_article_count": 317,
+    "batch_article_count": 309,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
