@@ -555,4 +555,39 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026',
     );
   });
+
+  it('keeps Article 296 on its exact Reeves missing-year route boundary', () => {
+    const slug = 'why-reeves-cad-has-no-2025-ratio-study-worksheet';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Why Reeves CAD Has No 2025 Ratio-Study Worksheet',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Reeves CAD 2025 ratio-study worksheet',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('the 2025 findings list has no 195 Reeves row');
+    expect(body).toContain('Reeves appears in the separate 2025 MAP list');
+    expect(body).toContain('The statewide cycle explains the route');
+    expect(body).toContain('What the missing 2025 route does not prove');
+    expect(body).toContain('C296-06');
+    expect(body).toContain('NEGATIVE-ROUTE-CHECK');
+    expect(body).not.toContain(
+      'Reeves County, Texas Mineral Rights Value: Timeline In 2026',
+    );
+  });
 });

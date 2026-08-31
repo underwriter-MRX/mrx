@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T10:21:30Z",
+  "generated_at_utc": "2026-08-31T10:45:23Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 303,
-    "asset_count": 606,
-    "unique_source_art_count": 303,
-    "unique_hero_sha256_count": 303,
-    "unique_inline_sha256_count": 303,
-    "distinct_article_pair_count": 303,
-    "hero_ocr_pass_count": 303,
-    "inline_ocr_pass_count": 303,
-    "exact_filename_identity_count": 303
+    "article_count": 304,
+    "asset_count": 608,
+    "unique_source_art_count": 304,
+    "unique_hero_sha256_count": 304,
+    "unique_inline_sha256_count": 304,
+    "distinct_article_pair_count": 304,
+    "hero_ocr_pass_count": 304,
+    "inline_ocr_pass_count": 304,
+    "exact_filename_identity_count": 304
   },
   "contact_sheets": {
     "hero": [
@@ -14784,6 +14784,56 @@
           "actual": "mineral rights acquisition platform",
           "normalized_expected": "mineral rights acquisition platform",
           "normalized_actual": "mineral rights acquisition platform",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "why-reeves-cad-has-no-2025-ratio-study-worksheet",
+      "title": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+      "keyword": "Reeves CAD 2025 ratio-study worksheet",
+      "file_path": "src/content/posts/why-reeves-cad-has-no-2025-ratio-study-worksheet.mdx",
+      "source_public_path": "/assets/articles/hero/why-reeves-cad-has-no-2025-ratio-study-worksheet.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave224-creative-sources/why-reeves-cad-has-no-2025-ratio-study-worksheet-hero-base.png",
+        "artifacts/mrx1000-wave224-creative-sources/why-reeves-cad-has-no-2025-ratio-study-worksheet-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T10:34:51.855Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/why-reeves-cad-has-no-2025-ratio-study-worksheet.webp",
+        "alt": "A dark public-record routing desk appears beside the exact Article 296 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "8ebeeb2ffaaf6d536b46625a07124044161c359daae15aa198d2a63e639968a3",
+        "perceptual_hash": "0000000011000000000000001100000001000000011011001111100011111000111111001100000011111000110000001110000011100000000000011100001100000011110000110000001110000011000001111000101100000111000011110000111111001100000011101110110000011110111000000001111111000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+          "actual": "Why Reeves CAD Has\nNo 2025 Ratio-Study\nWorksheet",
+          "normalized_expected": "why reeves cad has no 2025 ratio study worksheet",
+          "normalized_actual": "why reeves cad has no 2025 ratio study worksheet",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/why-reeves-cad-has-no-2025-ratio-study-worksheet/reeves-cad-2025-ratio-study-worksheet.webp",
+        "alt": "A bright overhead source-routing workspace appears above the exact Reeves CAD 2025 ratio-study worksheet keyword.",
+        "rendered_text": "Reeves CAD 2025 ratio-study worksheet",
+        "visual_variant": "wave224-distinct-generated-straight-on-dark-record-routing-hero-and-bright-overhead-source-route-workspace-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "71a8bcb6df9d8095bfe3e36355023d1e631f199ca59d37b60ef0de2cb639b748",
+        "perceptual_hash": "1001111111111111000111111111101110011111111111011001111111111110000111111111111111111111111111111111111111111111111111111111111111111111111101111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves CAD 2025 ratio-study worksheet",
+          "actual": "Reeves CAD 2025\nratio-study worksheet",
+          "normalized_expected": "reeves cad 2025 ratio study worksheet",
+          "normalized_actual": "reeves cad 2025 ratio study worksheet",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
