@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (304)
+## Published article URLs (305)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Tax Year, Production Month, and Download Date in Texas Mineral Records](https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/)
 - [Why Reeves CAD Has No 2025 Ratio-Study Worksheet](https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/)
 - [Reeves CAD 2024 Ratio Study: 66 Category G Ratios](https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/)
 - [Reeves County 2025 Preliminary PVS: Two Category G Totals](https://mineralrightsxchange.com/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/)

@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "5261305db5e773d9b365197ecae104b0ae571c5226f26f4f6a5522a9023710dd",
-      "bytes": 4717030
+      "sha256": "90f1e0d30d686d91b7c207b5e7135d6255436320d870aa1590e096703ad5d89b",
+      "bytes": 4718209
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "c31f80cd38948057ba2fa05ee46b5ab00cb91a8910289d19403de3b50a05ae6a",
-      "bytes": 3494212,
+      "sha256": "d22cb083ea982c98efaf6b1d31a0e4ecbf1f5e26cfeb4beb91631eac6d64db21",
+      "bytes": 3494715,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -366,30 +366,30 @@
     },
     "by_canonical_inventory_state": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 304,
+      "live_public_published_route": 305,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 648
+      "planning_only_inventory": 647
     },
     "by_searchatlas_action_needed": {
-      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 228,
+      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 229,
       "reconcile_artifact_bound_content_genius_record_no_creation": 2,
       "reconcile_pilot_non_creation_workflow_label_then_bind_or_conditionally_create": 23,
       "reconcile_unambiguous_exact_title_vendor_candidate_no_creation": 139,
       "resolve_ambiguous_exact_title_vendor_candidates_no_creation": 6,
-      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 602
+      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 601
     },
-    "repo_mdx_present": 352,
-    "workspace_public_route_configured": 304,
+    "repo_mdx_present": 353,
+    "workspace_public_route_configured": 305,
     "planning_searchatlas_map_id_count": 225,
     "planning_searchatlas_title_uuid_count": 200,
     "persisted_ledger_content_genius_article_uuid_count": 0,
-    "checksummed_review_candidate_rows": 328,
-    "rows_without_checksummed_review_candidate": 672,
+    "checksummed_review_candidate_rows": 329,
+    "rows_without_checksummed_review_candidate": 671,
     "by_review_candidate_state": {
-      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 304,
+      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 305,
       "CHECKSUMMED_HELD_SUBSTANTIVE_DRAFT_READY_FOR_LLM_REVIEW": 23,
       "NO_CHECKSUMMED_REVIEW_CANDIDATE_PILOT_QA_SHELL_ONLY": 24,
-      "NO_WORKSPACE_CONTENT_CANDIDATE": 648,
+      "NO_WORKSPACE_CONTENT_CANDIDATE": 647,
       "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW": 1
     },
     "pilot_workspace_qa_shell_rows": 25,
@@ -282339,28 +282339,52 @@
     },
     {
       "program_row_id": "MRX1000-0845",
-      "canonical_title": "Texas Mineral Rights Value: Family Decision Guide Step By Step",
-      "canonical_slug": "texas-mineral-rights-value-family-decision-guide-step-by-step",
-      "canonical_url": "https://mineralrightsxchange.com/blog/texas-mineral-rights-value-family-decision-guide-step-by-step/",
+      "canonical_title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+      "canonical_slug": "tax-year-production-month-and-download-date-texas-mineral-records",
+      "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "Texas mineral rights value",
+      "primary_keyword": "Texas mineral record dates",
       "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
+        "canonical_inventory_state": "live_public_published_route",
+        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
+          "state": "WORKSPACE_MDX_PRESENT",
+          "path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+          "mdx_exists": true,
+          "source_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+          "publication_status": "published",
           "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
+          "workspace_public_route_configured": true,
           "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
+          "content_evidence": {
+            "frontmatter_title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+            "frontmatter_slug": null,
+            "frontmatter_publication_status": "published",
+            "frontmatter_reviewed_at": "2026-08-31T11:10:00Z",
+            "frontmatter_reviewed_by": "mrx_compliance-continuous-wave225",
+            "frontmatter_article_id": null,
+            "frontmatter_searchatlas_uuid": null,
+            "frontmatter_workflow_status": null,
+            "frontmatter_remediated_from_sha256": null,
+            "frontmatter_body_checksum_sha256": null,
+            "frontmatter_body_length_chars": 0,
+            "frontmatter_body_word_count": 0,
+            "frontmatter_draft": false,
+            "frontmatter_noindex": false,
+            "frontmatter_indexable": null,
+            "body_sha256": "6220519184f9a3f9977eaf1cbda8476157ed9a2a2eb820c17ccdf548a2fc5317",
+            "body_bytes": 12210,
+            "body_characters": 12210,
+            "body_word_count": 1661,
+            "explicit_qa_shell_without_final_copy": false,
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true
+          }
         },
         "planning_handles": {
           "searchatlas_map_id": null,
@@ -282383,28 +282407,31 @@
           "manual_reconciliation_required": true
         },
         "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
+          "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
+          "checksummed_review_candidate_present": true,
+          "path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+          "source_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+          "body_sha256": "6220519184f9a3f9977eaf1cbda8476157ed9a2a2eb820c17ccdf548a2fc5317",
+          "body_word_count": 1661,
+          "candidate_type": "existing_public_article",
+          "readiness_evidence_verified": true,
+          "readiness_evidence_paths": [
+            "reports/mrx-1000-readiness-matrix.json",
+            "config/mrx-1000-canonical-content-ledger.json"
+          ],
           "readiness_checks": {
-            "workspace_source_checksum_present": false,
+            "workspace_source_checksum_present": true,
             "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true,
+            "substantive_body_at_least_500_words": true,
+            "explicit_qa_shell_absent": true,
+            "review_metadata_present": true,
+            "canonical_state_supports_content_review": true
           },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "workspace_mdx_is_review_candidate": true,
+          "workspace_mdx_rejection_reason": null,
           "special_candidate_validation": null
         }
       },
@@ -282415,7 +282442,7 @@
         "position_in_batch": 21,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
         "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
         "execution_eligible_now": false,
         "creation_needed_proven": false,
@@ -282429,9 +282456,9 @@
           "read_only_quota_preflight_required_before_external_write": true,
           "canonical_identity_reconciliation_required": true,
           "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
+          "checksummed_content_candidate_present": true,
+          "review_candidate_path_and_sha256_present": true,
+          "review_readiness_evidence_verified": true,
           "compliance_seo_aeo_editorial_gates_required": true
         },
         "evidence": {
@@ -282458,10 +282485,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+            "review_candidate_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
             "predecessor_pass_observed": false,
@@ -282495,10 +282522,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+            "review_candidate_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -282532,10 +282559,10 @@
           "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+            "review_candidate_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -282569,10 +282596,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+            "review_candidate_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -282606,10 +282633,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+            "review_candidate_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -282640,7 +282667,7 @@
           "perplexity",
           "microsoft_copilot"
         ],
-        "next_stage": null,
+        "next_stage": "chatgpt",
         "any_verdict_recorded": false,
         "all_required_verdicts_passed": false,
         "sequence_complete": false,
@@ -282658,7 +282685,7 @@
         "release_action_eligible_now": false,
         "index_submission_eligible_now": false,
         "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
+        "currently_in_workspace_sitemap": true,
         "production_live_verified_in_this_local_build": false,
         "release_or_index_action_performed": false,
         "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
@@ -282675,7 +282702,6 @@
         "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
         "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
         "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
         "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
       ]
     },
@@ -354366,5 +354392,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "2b3d4e91a47bf66ef863c757a8cbe92f99335f042d381d84dce0404e6ec7945e"
+  "content_fingerprint_sha256": "60ba6c2c3bf743f74f1703c4dca04caa84814bae9c6bd5d5f703507a092aac07"
 }

@@ -590,4 +590,38 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Reeves County, Texas Mineral Rights Value: Timeline In 2026',
     );
   });
+
+  it('keeps Article 297 on its exact three-date record-labeling boundary', () => {
+    const slug = 'tax-year-production-month-and-download-date-texas-mineral-records';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Tax Year, Production Month, and Download Date in Texas Mineral Records',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Texas mineral record dates',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The three-date crosswalk');
+    expect(body).toContain('Production month belongs to the RRC reporting lane');
+    expect(body).toContain('Download date is provenance, not the source period');
+    expect(body).toContain('C297-06');
+    expect(body).toContain('RESEARCH-PROVENANCE');
+    expect(body).not.toContain(
+      'Texas Mineral Rights Value: Family Decision Guide Step By Step',
+    );
+  });
 });

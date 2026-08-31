@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T10:52:31Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T11:16:06Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -672,12 +672,15 @@
     "wave223_selection_decision_sha256": "23d3a7593843c67a57fd177f0ac7b5bb0e93d31431af77b0e668d72f32181912",
     "wave224_selection_decision_id": "MRX1000-W224-SELECT-2026-08-31",
     "wave224_selection_decision_path": "docs/governance/mrx1000-wave224-selection-decision-2026-08-31.md",
-    "wave224_selection_decision_sha256": "25954350dfad0eef6823966d359789b8bcf2b8d497f105addf8bda39a55a1881"
+    "wave224_selection_decision_sha256": "25954350dfad0eef6823966d359789b8bcf2b8d497f105addf8bda39a55a1881",
+    "wave225_selection_decision_id": "MRX1000-W225-SELECT-2026-08-31",
+    "wave225_selection_decision_path": "docs/governance/mrx1000-wave225-selection-decision-2026-08-31.md",
+    "wave225_selection_decision_sha256": "fb18e7716be7bc2df9530e6c99a1fd0d607075e73093544f4e72b7a89af7d69e"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "5261305db5e773d9b365197ecae104b0ae571c5226f26f4f6a5522a9023710dd",
+    "canonical_ledger_sha256": "90f1e0d30d686d91b7c207b5e7135d6255436320d870aa1590e096703ad5d89b",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -692,11 +695,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 295,
+    "prior_verified_article_count": 296,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 296,
-    "exact_admitted_slate_sha256": "7e00e52091ebedee63c46b1bae7a90bc2cfc8403d9900672aa5fa4a499a41d1f"
+    "exact_admitted_count": 297,
+    "exact_admitted_slate_sha256": "1e8dddc4d22e45621c3c45dc139728935716ea9030a839e10051c58a53c8a4c4"
   },
   "articles": [
     {
@@ -10817,10 +10820,45 @@
       "inline_path": "/assets/articles/inline/why-reeves-cad-has-no-2025-ratio-study-worksheet/reeves-cad-2025-ratio-study-worksheet.webp",
       "inline_asset_sha256": "71a8bcb6df9d8095bfe3e36355023d1e631f199ca59d37b60ef0de2cb639b748",
       "inline_rendered_text": "Reeves CAD 2025 ratio-study worksheet"
+    },
+    {
+      "selection_rank": 297,
+      "program_row_id": "MRX1000-0845",
+      "source_shortlist_program_row_id": "MRX1000-0845",
+      "slug": "tax-year-production-month-and-download-date-texas-mineral-records",
+      "title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+      "source_shortlist_title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+      "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "c298920c4d0c106e7c2e6c0d8185a624df22923d365615937f7e9aa214deaffd",
+      "repo_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+      "repo_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+      "article_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+      "hero_path": "/assets/articles/hero/tax-year-production-month-and-download-date-in-texas-mineral-records.webp",
+      "hero_sha256": "e12b081e732645293a69014e68842d3046872fc129bd3d01a1aff259b26001f3",
+      "hero_asset_sha256": "e12b081e732645293a69014e68842d3046872fc129bd3d01a1aff259b26001f3",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1661,
+      "risk_citation_remediation": [
+        "The original Texas value family-decision identity is rejected because it repeats broad valuation, family, sale, transaction, and Texas-guide jobs and retains a 0.6667 planning-title collision.",
+        "The replacement owns only a three-date source-labeling crosswalk: tax year or January 1 appraisal date, RRC production month and processed-data snapshot, and download or retrieval date.",
+        "The retrieval-date distinction is explicitly identified as a bounded recordkeeping inference rather than an agency quotation or universal source-freshness claim.",
+        "The tax-versus-sale-estimate article retains private-value comparison, the assessment-errors article retains broad input and as-of error analysis, the transaction guide retains its seven-field control record, the Midland calendar retains its local workflow, and Texas RRC worksheets retain query paths and fields.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/tax-year-production-month-and-download-date-texas-mineral-records.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/tax-year-production-month-and-download-date-texas-mineral-records/texas-mineral-record-dates.webp",
+      "inline_asset_sha256": "1925a7677db8878187dbac42b758dc9a69c7d28701bfc09e1f43706ab513f77c",
+      "inline_rendered_text": "Texas mineral record dates"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 296,
+    "admitted_article_count": 297,
     "selection_ranks": [
       1,
       2,
@@ -11117,7 +11155,8 @@
       293,
       294,
       295,
-      296
+      296,
+      297
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11176,9 +11215,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "c8d8d328c3b84fad5a2fd06662ddbbd552768d2c0ff6d2977c531c902b1832f2",
-    "public_article_count": 304,
-    "batch_article_count": 296,
+    "retrofit_manifest_sha256": "9bf15ff10bb3c1c3f486ff5e9cef83d2c4221d6ff2d2a9104b3c140a62875235",
+    "public_article_count": 305,
+    "batch_article_count": 297,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
