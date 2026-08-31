@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (306)
+## Published article URLs (307)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Texas RRC District, County, and Field Codes: A Source-Label Crosswalk](https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/)
 - [CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records](https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/)
 - [Tax Year, Production Month, and Download Date in Texas Mineral Records](https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/)
 - [Why Reeves CAD Has No 2025 Ratio-Study Worksheet](https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/)

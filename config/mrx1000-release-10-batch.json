@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T11:40:02Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T12:00:50Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -678,12 +678,15 @@
     "wave225_selection_decision_sha256": "fb18e7716be7bc2df9530e6c99a1fd0d607075e73093544f4e72b7a89af7d69e",
     "wave226_selection_decision_id": "MRX1000-W226-SELECT-2026-08-31",
     "wave226_selection_decision_path": "docs/governance/mrx1000-wave226-selection-decision-2026-08-31.md",
-    "wave226_selection_decision_sha256": "a5a3ce567569dab1d021c24ee5d42f9e57989368aabbc8787bd48a7747afb2c5"
+    "wave226_selection_decision_sha256": "a5a3ce567569dab1d021c24ee5d42f9e57989368aabbc8787bd48a7747afb2c5",
+    "wave227_selection_decision_id": "MRX1000-W227-SELECT-2026-08-31",
+    "wave227_selection_decision_path": "docs/governance/mrx1000-wave227-selection-decision-2026-08-31.md",
+    "wave227_selection_decision_sha256": "f6f00f4362d82173cbb9e2f98bbd03c0152c610a3390a5b09bd57575f1c0e7e7"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "c72ef7d3434e81ad702c74d5db15eba6276cdc2051633dbf80eaf92580905c7b",
+    "canonical_ledger_sha256": "4ef46cb0c8d1585f1a1916687f786161aa9e9105175520c0e809a324aee2409e",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -698,11 +701,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 297,
+    "prior_verified_article_count": 298,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 298,
-    "exact_admitted_slate_sha256": "a69784bd57c4d04e7ddb3e063491dfa579ae5f2c1398fba9feb3db350819ce30"
+    "exact_admitted_count": 299,
+    "exact_admitted_slate_sha256": "8029ca0c5e15bf41ba293e9f424d342dabfe57227b073ea19e545051a2a0b74e"
   },
   "articles": [
     {
@@ -10893,10 +10896,45 @@
       "inline_path": "/assets/articles/inline/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/texas-mineral-record-identifiers.webp",
       "inline_asset_sha256": "f64e3013f841345bf07dbea3b80976e2614b58bd9138a73b02cc0c62a4e52f07",
       "inline_rendered_text": "Texas mineral record identifiers"
+    },
+    {
+      "selection_rank": 299,
+      "program_row_id": "MRX1000-0847",
+      "source_shortlist_program_row_id": "MRX1000-0847",
+      "slug": "texas-rrc-district-county-field-codes-source-label-crosswalk",
+      "title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+      "source_shortlist_title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "871796302f637283539be4c89a0419868eb868277a3ece64b48c108892cb96eb",
+      "repo_path": "src/content/posts/texas-rrc-district-county-field-codes-source-label-crosswalk.mdx",
+      "repo_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+      "article_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+      "hero_path": "/assets/articles/hero/texas-rrc-district-county-and-field-codes-a-source-label-crosswalk.webp",
+      "hero_sha256": "ce1193c563f4592800693ef27c169870d5d151a7cbd60c8a2608e566f54f6429",
+      "hero_asset_sha256": "ce1193c563f4592800693ef27c169870d5d151a7cbd60c8a2608e566f54f6429",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2257,
+      "risk_citation_remediation": [
+        "The original statewide Texas-value market-update identity is rejected because it repeats the admitted valuation corpus and retains a 0.6000 planning-title collision.",
+        "The replacement owns only source-label semantics and non-equivalence for RRC district code, RRC county code, eight-digit field number, field name, and any source-page FIPS code.",
+        "The article preserves exact labels, source objects, access dates, field class, and leading characters and repeatedly stops before field-boundary, well, lease, property, title, ownership, production, reserves, value, offer, or transaction conclusions.",
+        "Article 298 retains cross-system CAD, API, lease or gas-well, and P-5 identifier roles; the Field Search worksheet retains query attempts and result states; query and field-rules worksheets retain retrieval paths; and the production locator retains search organization.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-rrc-district-county-field-codes-source-label-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-rrc-district-county-field-codes-source-label-crosswalk/texas-rrc-district-county-field-codes.webp",
+      "inline_asset_sha256": "d4351005fe220cbf3880fa37f164c0105f0e086592e1ebb27aca3a4222728396",
+      "inline_rendered_text": "Texas RRC district county field codes"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 298,
+    "admitted_article_count": 299,
     "selection_ranks": [
       1,
       2,
@@ -11195,7 +11233,8 @@
       295,
       296,
       297,
-      298
+      298,
+      299
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11254,9 +11293,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "3d9986d7b7ddaf9ebe177c1d51397757000aeb53e43a76acba7d261e28fa42ef",
-    "public_article_count": 306,
-    "batch_article_count": 298,
+    "retrofit_manifest_sha256": "e3feaff44eed7ad6d9797d1dcc88f1f75c9ed0e4df781ef5d1a2f9bf4d3561a8",
+    "public_article_count": 307,
+    "batch_article_count": 299,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

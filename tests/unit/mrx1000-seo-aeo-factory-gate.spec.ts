@@ -658,4 +658,38 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Texas Mineral Rights Value: Guide For Mineral Owners',
     );
   });
+
+  it('keeps Article 299 on its exact Texas RRC source-label crosswalk boundary', () => {
+    const slug = 'texas-rrc-district-county-field-codes-source-label-crosswalk';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Texas RRC District, County, and Field Codes: A Source-Label Crosswalk',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Texas RRC district county field codes',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The source-label crosswalk');
+    expect(body).toContain('District code is an administrative-region label');
+    expect(body).toContain('The eight-digit field number has two source-defined portions');
+    expect(body).toContain('C299-06');
+    expect(body).toContain('RRC-FIELD-COUNTY-OCCURRENCE');
+    expect(body).not.toContain(
+      'Texas Mineral Rights Value: Market Update For Mineral Owners',
+    );
+  });
 });

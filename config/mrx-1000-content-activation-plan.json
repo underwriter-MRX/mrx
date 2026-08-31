@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "ef2bbf0c0a97474e3d3931fe7086f79f42a86c784e604faee64ffcd698d39a05",
+  "content_fingerprint_sha256": "bb3187e69e4eea8f70bd6f6d036fc4d97fd75d354e5783c939ebee1c99681165",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "69da1fa6e9060915e1fea577b314bbeb6b8dec7410222892d48cbbf4ade3ef7b",
+    "canonical_ledger_fingerprint_sha256": "770c861036aaca905a14e00ecfcee9933ec30b525407b8506afb1973b87f04af",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 306,
+      "live_public_published_route": 307,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 646
+      "planning_only_inventory": 645
     }
   },
   "rows": [
@@ -50035,11 +50035,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0847",
-        "target_title": "Texas Mineral Rights Value: Market Update For Mineral Owners",
-        "url": "/blog/texas-mineral-rights-value-market-update-for-mineral-owners/",
+        "target_title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+        "url": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -50082,15 +50082,15 @@
     },
     {
       "program_row_id": "MRX1000-0847",
-      "canonical_title": "Texas Mineral Rights Value: Market Update For Mineral Owners",
-      "canonical_slug": "texas-mineral-rights-value-market-update-for-mineral-owners",
-      "canonical_url": "/blog/texas-mineral-rights-value-market-update-for-mineral-owners/",
+      "canonical_title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+      "canonical_slug": "texas-rrc-district-county-field-codes-source-label-crosswalk",
+      "canonical_url": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "education",
+      "search_intent": "informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -50112,7 +50112,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -50125,7 +50125,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:education",
+        "assignment_basis": "consideration:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -50139,7 +50139,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
