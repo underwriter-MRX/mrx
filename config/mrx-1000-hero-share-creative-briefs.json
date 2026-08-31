@@ -70,7 +70,7 @@
     "deployment_performed": false,
     "spend_performed": false
   },
-  "source_input_fingerprint_sha256": "45846a13a25700479ae9ad03e97fd3e7109b0c730b47b12b459bce3e8ebed093",
+  "source_input_fingerprint_sha256": "176288e300fc96e363db4bac20f6c70ee6e2aaf92b228a587363fea659e7c88c",
   "row_plan_fingerprint_sha256": "4462ff7445f250e57f233e57d1f9a142e4928963bfa2d6b4aa49d9a842ca2edf",
   "verification": {
     "row_count": 1000,
