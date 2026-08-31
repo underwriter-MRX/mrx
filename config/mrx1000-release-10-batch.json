@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T12:00:50Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T12:38:25Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -681,12 +681,15 @@
     "wave226_selection_decision_sha256": "a5a3ce567569dab1d021c24ee5d42f9e57989368aabbc8787bd48a7747afb2c5",
     "wave227_selection_decision_id": "MRX1000-W227-SELECT-2026-08-31",
     "wave227_selection_decision_path": "docs/governance/mrx1000-wave227-selection-decision-2026-08-31.md",
-    "wave227_selection_decision_sha256": "f6f00f4362d82173cbb9e2f98bbd03c0152c610a3390a5b09bd57575f1c0e7e7"
+    "wave227_selection_decision_sha256": "f6f00f4362d82173cbb9e2f98bbd03c0152c610a3390a5b09bd57575f1c0e7e7",
+    "wave228_selection_decision_id": "MRX1000-W228-SELECT-2026-08-31",
+    "wave228_selection_decision_path": "docs/governance/mrx1000-wave228-selection-decision-2026-08-31.md",
+    "wave228_selection_decision_sha256": "0255f4afe69f9876fb8036871c5b8688d5abbdbdb351451a65b78037ffc03730"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "4ef46cb0c8d1585f1a1916687f786161aa9e9105175520c0e809a324aee2409e",
+    "canonical_ledger_sha256": "c2983e702b33e5a69d0a75cc41139c59b369451e3432030d84c397852e26e451",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -701,11 +704,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 298,
+    "prior_verified_article_count": 299,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 299,
-    "exact_admitted_slate_sha256": "8029ca0c5e15bf41ba293e9f424d342dabfe57227b073ea19e545051a2a0b74e"
+    "exact_admitted_count": 300,
+    "exact_admitted_slate_sha256": "6a9cc7a8eb4ef9270b7ebef0fd70301cf5c4c5243a6cfe7eded7c6f9666b7993"
   },
   "articles": [
     {
@@ -10931,10 +10934,46 @@
       "inline_path": "/assets/articles/inline/texas-rrc-district-county-field-codes-source-label-crosswalk/texas-rrc-district-county-field-codes.webp",
       "inline_asset_sha256": "d4351005fe220cbf3880fa37f164c0105f0e086592e1ebb27aca3a4222728396",
       "inline_rendered_text": "Texas RRC district county field codes"
+    },
+    {
+      "selection_rank": 300,
+      "program_row_id": "MRX1000-0848",
+      "source_shortlist_program_row_id": "MRX1000-0848",
+      "slug": "texas-rrc-district-code-conversion-file-values-crosswalk",
+      "title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+      "source_shortlist_title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "e3ad59d473b8c7fda7ef4ebe9e637c7aec996cebef6b872ff28699ef99909060",
+      "repo_path": "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+      "repo_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+      "article_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+      "hero_path": "/assets/articles/hero/texas-rrc-district-code-conversion-why-file-values-07-14-need-a-crosswalk.webp",
+      "hero_sha256": "64b919c57ce9850ba02d4bddd1172a0b4fc6e527c980b7f230535adc4cc21a90",
+      "hero_asset_sha256": "64b919c57ce9850ba02d4bddd1172a0b4fc6e527c980b7f230535adc4cc21a90",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2003,
+      "risk_citation_remediation": [
+        "The original statewide valuation-risk identity is rejected because it repeats the admitted valuation corpus and retains a 0.6667 planning-title collision.",
+        "The replacement owns only source-scoped translation between numeric field-table values 01 through 14 and operational district labels, with the exact data dictionary controlling whether translation is permitted.",
+        "The article preserves raw and translated values, source object, version or access date, conversion status, exception notes, leading zeroes, letters, reserved 8B status, and the guide-specific T-1 6E/06 limitation.",
+        "Article 299 retains district, county, field-number, field-name, and page-specific FIPS non-equivalence; query worksheets retain query execution and results; and the production locator retains search organization.",
+        "The article stops before county, field-boundary, well, lease, tract, title, ownership, production, reserves, value, offer, buyer, or transaction conclusions and does not globalize a dataset-specific conversion table.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-rrc-district-code-conversion-file-values-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-rrc-district-code-conversion-file-values-crosswalk/texas-rrc-district-code-conversion.webp",
+      "inline_asset_sha256": "5e5074a2f0fc90bb04aa78d01ea85e45f59310eb5d661da394ce570888877892",
+      "inline_rendered_text": "Texas RRC district code conversion"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 299,
+    "admitted_article_count": 300,
     "selection_ranks": [
       1,
       2,
@@ -11234,7 +11273,8 @@
       296,
       297,
       298,
-      299
+      299,
+      300
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11293,9 +11333,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "e3feaff44eed7ad6d9797d1dcc88f1f75c9ed0e4df781ef5d1a2f9bf4d3561a8",
-    "public_article_count": 307,
-    "batch_article_count": 299,
+    "retrofit_manifest_sha256": "6fa30247042e8bbaf3ca0434233a0103ed201add720a3d34e71b399e00e12ab6",
+    "public_article_count": 308,
+    "batch_article_count": 300,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

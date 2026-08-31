@@ -692,4 +692,39 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Texas Mineral Rights Value: Market Update For Mineral Owners',
     );
   });
+
+  it('keeps Article 300 on its exact source-scoped RRC district conversion boundary', () => {
+    const slug = 'texas-rrc-district-code-conversion-file-values-crosswalk';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Texas RRC district code conversion',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The source-scoped district conversion');
+    expect(body).toContain('Preserve raw and translated values in separate fields');
+    expect(body).toContain('Keep 8B in the reserved lane');
+    expect(body).toContain('Keep the T-1 6E/06 exception attached to its guide');
+    expect(body).toContain('C300-06');
+    expect(body).toContain('RRC-T1-EXCEPTION');
+    expect(body).not.toContain(
+      'Texas Mineral Rights Value: Risk Checklist In 2026',
+    );
+  });
 });

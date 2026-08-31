@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T12:00:32Z",
+  "generated_at_utc": "2026-08-31T12:22:08Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 307,
-    "asset_count": 614,
-    "unique_source_art_count": 307,
-    "unique_hero_sha256_count": 307,
-    "unique_inline_sha256_count": 307,
-    "distinct_article_pair_count": 307,
-    "hero_ocr_pass_count": 307,
-    "inline_ocr_pass_count": 307,
-    "exact_filename_identity_count": 307
+    "article_count": 308,
+    "asset_count": 616,
+    "unique_source_art_count": 308,
+    "unique_hero_sha256_count": 308,
+    "unique_inline_sha256_count": 308,
+    "distinct_article_pair_count": 308,
+    "hero_ocr_pass_count": 308,
+    "inline_ocr_pass_count": 308,
+    "exact_filename_identity_count": 308
   },
   "contact_sheets": {
     "hero": [
@@ -9606,6 +9606,56 @@
           "actual": "Texas RRC Completions\nQuery retrieval",
           "normalized_expected": "texas rrc completions query retrieval",
           "normalized_actual": "texas rrc completions query retrieval",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "texas-rrc-district-code-conversion-file-values-crosswalk",
+      "title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+      "keyword": "Texas RRC district code conversion",
+      "file_path": "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+      "source_public_path": "/assets/articles/hero/texas-rrc-district-code-conversion-why-file-values-07-14-need-a-crosswalk.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave228-creative-sources/texas-rrc-district-code-conversion-file-values-crosswalk-hero-base.png",
+        "artifacts/mrx1000-wave228-creative-sources/texas-rrc-district-code-conversion-file-values-crosswalk-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T12:17:09.077Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/texas-rrc-district-code-conversion-why-file-values-07-14-need-a-crosswalk.webp",
+        "alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "64b919c57ce9850ba02d4bddd1172a0b4fc6e527c980b7f230535adc4cc21a90",
+        "perceptual_hash": "0000000000001000000000000000110000000000000111100111000000011010011100000001101011110000000111101111100000111110111110000000110000000000011111000000000001111111000000000111111000000000111111000000000011111000000000001110000000000000110000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+          "actual": "Texas RRC District\nCode Conversion:\nWhy File Values 07-14\nNeed a Crosswalk",
+          "normalized_expected": "texas rrc district code conversion why file values 07 14 need a crosswalk",
+          "normalized_actual": "texas rrc district code conversion why file values 07 14 need a crosswalk",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/texas-rrc-district-code-conversion-file-values-crosswalk/texas-rrc-district-code-conversion.webp",
+        "alt": "An overhead dual-rail audit board appears above the exact Texas RRC district code conversion keyword.",
+        "rendered_text": "Texas RRC district code conversion",
+        "visual_variant": "wave228-distinct-generated-eye-level-dark-translation-gate-hero-and-overhead-pale-stone-dual-rail-code-audit-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "5e5074a2f0fc90bb04aa78d01ea85e45f59310eb5d661da394ce570888877892",
+        "perceptual_hash": "1111111111111111111111111111111111111111111111111111111111111101111111111111111111000000000000111111111111111111111111111111111111111111111111111100000000000011111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC district code conversion",
+          "actual": "Texas RRC district\ncode conversion",
+          "normalized_expected": "texas rrc district code conversion",
+          "normalized_actual": "texas rrc district code conversion",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
