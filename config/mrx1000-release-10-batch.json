@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T20:09:55Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T21:03:42Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -717,12 +717,15 @@
     "wave238_selection_decision_sha256": "1ee80ecfbc55ab18e2ab97aca5a7742ff71e9bac1f7f59035e4c7490ff7c2f74",
     "wave239_selection_decision_id": "MRX1000-W239-SELECT-2026-08-31",
     "wave239_selection_decision_path": "docs/governance/mrx1000-wave239-selection-decision-2026-08-31.md",
-    "wave239_selection_decision_sha256": "ad2363e1a94b7c8a521f2cbe065b33c6effd89697f278fa5801e80410d337d54"
+    "wave239_selection_decision_sha256": "ad2363e1a94b7c8a521f2cbe065b33c6effd89697f278fa5801e80410d337d54",
+    "wave240_selection_decision_id": "MRX1000-W240-SELECT-2026-08-31",
+    "wave240_selection_decision_path": "docs/governance/mrx1000-wave240-selection-decision-2026-08-31.md",
+    "wave240_selection_decision_sha256": "088c079bb4f6f5a1ae21bba05cc139123819b3bfb12a0b7a5438dc243de6e18b"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "78b95be9d3edf85ca1e3ecd2fb0da530c64f59885ea75babc091d2e9cfd0d87f",
+    "canonical_ledger_sha256": "9ff905bd5e361c739a7bd77ad6f744c1bcc7b440b766001094aa5246b0521682",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -737,11 +740,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 310,
+    "prior_verified_article_count": 311,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 311,
-    "exact_admitted_slate_sha256": "8b6fd9fd47b0e560a2806ff8ec6366e16566fdf20d6f217288442984ea4b538a"
+    "exact_admitted_count": 312,
+    "exact_admitted_slate_sha256": "3ae4195d865ece4ca955edb815a47893812a3b4c876ec27c48da5f6e5baaedd3"
   },
   "articles": [
     {
@@ -11399,10 +11402,45 @@
       "inline_path": "/assets/articles/inline/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/ward-cad-mineral-property-contract-definition.webp",
       "inline_asset_sha256": "b2b009d3d82a91c95864b5201fa4e83bee9fc881fd8210608a26cd18e91fa2aa",
       "inline_rendered_text": "Ward CAD mineral property contract definition"
+    },
+    {
+      "selection_rank": 312,
+      "program_row_id": "MRX1000-0860",
+      "source_shortlist_program_row_id": "MRX1000-0860",
+      "slug": "ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges",
+      "title": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
+      "source_shortlist_title": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
+      "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "f9c1cc542b18928ed0a9b286f40e8001971271373ecbba7bf766e0587f00506e",
+      "repo_path": "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+      "repo_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+      "article_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+      "hero_path": "/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp",
+      "hero_sha256": "eadf4bdf27f04b6c2912fd868acdf7bec6a06e5b68de3cdab5d2bff3ba33f91a",
+      "hero_asset_sha256": "eadf4bdf27f04b6c2912fd868acdf7bec6a06e5b68de3cdab5d2bff3ba33f91a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1948,
+      "risk_citation_remediation": [
+        "The generic Ward County value-timeline identity is rejected because it materially collides with the admitted county-value, valuation, local-buyer, timeline, and Ward County corpus.",
+        "The replacement owns only the two separate mineral-treatment sections in the Ward CAD 2025-2026 reappraisal-plan PDF and the crosswalk among whole-PDF, district-plan printed, and Appendix B printed page numbers.",
+        "The article preserves the distinction between the district summary and contractor appendix, cites exact page ranges, and never converts either section into title, taxability, private value, production, reserves, an appraisal conclusion, or a recommendation.",
+        "Answer-first structure, stable claim IDs, versioned primary-source identities, source-age and inference-limit labels, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/ward-cad-reappraisal-plan-mineral-sections.webp",
+      "inline_asset_sha256": "4f527da8edf29963e567b27086a758f3cc6aba5b5267834ffb064f2376b9d3ee",
+      "inline_rendered_text": "Ward CAD reappraisal plan mineral sections"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 311,
+    "admitted_article_count": 312,
     "selection_ranks": [
       1,
       2,
@@ -11714,7 +11752,8 @@
       308,
       309,
       310,
-      311
+      311,
+      312
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11773,9 +11812,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "e3f24bf2f7989d952aa3fd05a696e05eea206cb5e0f3ea3e5c9df47639c980b7",
-    "public_article_count": 319,
-    "batch_article_count": 311,
+    "retrofit_manifest_sha256": "0118e6570cc91391b41492d461cbc6333857b9cb2edeb857f69593333727e2ea",
+    "public_article_count": 320,
+    "batch_article_count": 312,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
