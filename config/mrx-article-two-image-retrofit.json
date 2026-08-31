@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T09:55:09Z",
+  "generated_at_utc": "2026-08-31T10:21:30Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 302,
-    "asset_count": 604,
-    "unique_source_art_count": 302,
-    "unique_hero_sha256_count": 302,
-    "unique_inline_sha256_count": 302,
-    "distinct_article_pair_count": 302,
-    "hero_ocr_pass_count": 302,
-    "inline_ocr_pass_count": 302,
-    "exact_filename_identity_count": 302
+    "article_count": 303,
+    "asset_count": 606,
+    "unique_source_art_count": 303,
+    "unique_hero_sha256_count": 303,
+    "unique_inline_sha256_count": 303,
+    "distinct_article_pair_count": 303,
+    "hero_ocr_pass_count": 303,
+    "inline_ocr_pass_count": 303,
+    "exact_filename_identity_count": 303
   },
   "contact_sheets": {
     "hero": [
@@ -8222,6 +8222,56 @@
           "actual": "Mineral Rights Offer\nProperty Scope Checklist",
           "normalized_expected": "mineral rights offer property scope checklist",
           "normalized_actual": "mineral rights offer property scope checklist",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "reeves-cad-2024-ratio-study-66-category-g-ratios",
+      "title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+      "keyword": "Reeves CAD 2024 Category G ratio study",
+      "file_path": "src/content/posts/reeves-cad-2024-ratio-study-66-category-g-ratios.mdx",
+      "source_public_path": "/assets/articles/hero/reeves-cad-2024-ratio-study-66-category-g-ratios.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave223-creative-sources/reeves-cad-2024-ratio-study-66-category-g-ratios-hero-base.png",
+        "artifacts/mrx1000-wave223-creative-sources/reeves-cad-2024-ratio-study-66-category-g-ratios-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T10:18:27.383Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/reeves-cad-2024-ratio-study-66-category-g-ratios.webp",
+        "alt": "A dark ratio-study board appears beside the exact Article 295 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "d08ebe13c716a71413bbe8aec0cebc3b891a57e81838fcb8fb3bd32392fe9832",
+        "perceptual_hash": "0000000000110000000000000011000001000000111110001111100011111111111110011111100011110001011110001111000100110000110000110011000000000111000000000000011100000000000011110011000000001111000000000001111100011101000111110000000000111111100000000011111100000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+          "actual": "Reeves CAD 2024\nRatio Study:\n66 Category G\nRatios",
+          "normalized_expected": "reeves cad 2024 ratio study 66 category g ratios",
+          "normalized_actual": "reeves cad 2024 ratio study 66 category g ratios",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/reeves-cad-2024-ratio-study-66-category-g-ratios/reeves-cad-2024-category-g-ratio-study.webp",
+        "alt": "A bright overhead evidence grid appears above the exact Reeves CAD 2024 Category G ratio study keyword.",
+        "rendered_text": "Reeves CAD 2024 Category G ratio study",
+        "visual_variant": "wave223-distinct-generated-straight-on-dark-ratio-board-hero-and-bright-overhead-seven-column-evidence-grid-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "54b053a45d59324cce3a99c0af19ec452924472b26f67111b3efba82a1b03d2d",
+        "perceptual_hash": "1111111111111111111111111110011111111111111111111111111111111111111111111111011111111111111101111111111111110111111111111111011111111111111101111111111111110111100111111111011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Reeves CAD 2024 Category G ratio study",
+          "actual": "Reeves CAD 2024\nCategory G ratio study",
+          "normalized_expected": "reeves cad 2024 category g ratio study",
+          "normalized_actual": "reeves cad 2024 category g ratio study",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

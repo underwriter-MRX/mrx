@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T06:02:26.713Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "f8190bdb5846ab1ad5eeebd09fb5685a67f2d7d419325371cdae5204d3f38680",
+  "content_fingerprint_sha256": "2763c7628521a072a49511c037629932326119122470b166e1ab7699b5c35ae4",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "39c52f875bbd6ca1c1e6b978cf84f4d1a36abbd4492e273bb37c11220cef43b2",
+    "canonical_ledger_fingerprint_sha256": "c3c7bb9d52fd0e7e0b604c97cc3302fbc03c5d0d2279448f03ac27aacc9600d6",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 302,
+      "live_public_published_route": 303,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 650
+      "planning_only_inventory": 649
     }
   },
   "rows": [
@@ -49783,11 +49783,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0843",
-        "target_title": "Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026",
-        "url": "/blog/reeves-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+        "target_title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+        "url": "/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -49830,15 +49830,15 @@
     },
     {
       "program_row_id": "MRX1000-0843",
-      "canonical_title": "Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026",
-      "canonical_slug": "reeves-county-texas-mineral-rights-value-risk-checklist-in-2026",
-      "canonical_url": "/blog/reeves-county-texas-mineral-rights-value-risk-checklist-in-2026/",
+      "canonical_title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+      "canonical_slug": "reeves-cad-2024-ratio-study-66-category-g-ratios",
+      "canonical_url": "/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
       "cluster": "texas-county-basin-local-intent",
       "pillar": "texas-mineral-rights",
-      "search_intent": "local-buyer",
+      "search_intent": "local-informational",
       "funnel_stage": "consideration",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/mineral-rights/texas/",
         "route_evidence": "src/pages/mineral-rights/[state].astro#stateGuides:texas",
@@ -49860,7 +49860,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "primary_appointment",
         "is_appointment_cta": true,
@@ -49873,7 +49873,7 @@
         "placement_code": "contextual_inline",
         "placement_guidance": "Place after the first comparison, risk, document, or decision-framework section.",
         "assignment_rule": "consideration_stage_assisted_review",
-        "assignment_basis": "consideration:local-buyer",
+        "assignment_basis": "consideration:local-informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "same_as_primary_appointment",
         "distinct_from_primary_cta": false,
@@ -49887,7 +49887,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

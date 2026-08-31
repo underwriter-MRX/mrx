@@ -520,4 +520,39 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Reeves County, Texas Mineral Rights Value: Market Update For Mineral Owners',
     );
   });
+
+  it('keeps Article 295 on its exact Reeves aggregate ratio-study row boundary', () => {
+    const slug = 'reeves-cad-2024-ratio-study-66-category-g-ratios';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Reeves CAD 2024 Ratio Study: 66 Category G Ratios',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Reeves CAD 2024 Category G ratio study',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('read all seven fields as one row');
+    expect(body).toContain('Sixty-six is the number of ratios, not a parcel count');
+    expect(body).toContain('26,799,785,533');
+    expect(body).toContain('Do not convert 1.00 into a property finding');
+    expect(body).toContain('C295-10');
+    expect(body).toContain('AGGREGATE-ROW');
+    expect(body).not.toContain(
+      'Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026',
+    );
+  });
 });

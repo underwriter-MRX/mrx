@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T10:04:09Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T10:22:29Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -666,12 +666,15 @@
     "wave221_selection_decision_sha256": "474f535d50a2315c3aa7e3a20e5a6ba20cd296ad562e772dbe15d2bec3559fc8",
     "wave222_selection_decision_id": "MRX1000-W222-SELECT-2026-08-31",
     "wave222_selection_decision_path": "docs/governance/mrx1000-wave222-selection-decision-2026-08-31.md",
-    "wave222_selection_decision_sha256": "6d419d966584be2f42e8ed8cfffbfede09cbc78e513f4c5743a2bbbe4c0ba7d0"
+    "wave222_selection_decision_sha256": "6d419d966584be2f42e8ed8cfffbfede09cbc78e513f4c5743a2bbbe4c0ba7d0",
+    "wave223_selection_decision_id": "MRX1000-W223-SELECT-2026-08-31",
+    "wave223_selection_decision_path": "docs/governance/mrx1000-wave223-selection-decision-2026-08-31.md",
+    "wave223_selection_decision_sha256": "23d3a7593843c67a57fd177f0ac7b5bb0e93d31431af77b0e668d72f32181912"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "88f6faa581b606306f5c9c463865754633914f4bee01cceabc99e4155c34213a",
+    "canonical_ledger_sha256": "3cc14fdc65fb813fa125a5cb71ffc1fe1d7452c7810b032a765a20000093ef31",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -686,11 +689,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 293,
+    "prior_verified_article_count": 294,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 294,
-    "exact_admitted_slate_sha256": "bc461b5530c9b23c91f1742e7d973bc40ad8045dd5109b21f235724e19716210"
+    "exact_admitted_count": 295,
+    "exact_admitted_slate_sha256": "18a0e8fc8c7fa0733084ac469660a713d7aea67b08b780ff1495518f577c299c"
   },
   "articles": [
     {
@@ -10740,10 +10743,46 @@
       "inline_path": "/assets/articles/inline/reeves-county-2025-preliminary-pvs-two-category-g-totals/reeves-county-2025-preliminary-pvs.webp",
       "inline_asset_sha256": "119d492648516c7dc0332870c048ca603a34444c68fae848ea9ef9664d82f217",
       "inline_rendered_text": "Reeves County 2025 preliminary PVS"
+    },
+    {
+      "selection_rank": 295,
+      "program_row_id": "MRX1000-0843",
+      "source_shortlist_program_row_id": "MRX1000-0843",
+      "slug": "reeves-cad-2024-ratio-study-66-category-g-ratios",
+      "title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+      "source_shortlist_title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+      "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "0fe1467cd1a2ce77beb7fe65f1cfbd84a3902600c605b116609d55008cd54a08",
+      "repo_path": "src/content/posts/reeves-cad-2024-ratio-study-66-category-g-ratios.mdx",
+      "repo_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+      "article_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+      "hero_path": "/assets/articles/hero/reeves-cad-2024-ratio-study-66-category-g-ratios.webp",
+      "hero_sha256": "d08ebe13c716a71413bbe8aec0cebc3b891a57e81838fcb8fb3bd32392fe9832",
+      "hero_asset_sha256": "d08ebe13c716a71413bbe8aec0cebc3b891a57e81838fcb8fb3bd32392fe9832",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1489,
+      "risk_citation_remediation": [
+        "The original Reeves County risk-checklist identity is rejected because it scores 0.7143 against the neighboring county factory analogue and repeats the valuation, offer, seller-risk, checklist, and county-guide corpus.",
+        "The replacement owns only the statewide 2024 appraisal-district ratio-study relationship and the aggregate Reeves G.OIL, GAS, MINERALS row.",
+        "The number of ratios remains distinct from a parcel count, and CAD reported appraisal value remains distinct from private mineral-interest value.",
+        "The displayed median, coefficient of dispersion, within-median percentages, and price-related differential remain labeled aggregate study fields and are not used as owner, property, trend, protest, tax, market, or transaction conclusions.",
+        "Article 295 remains distinct from Article 292’s two school-district worksheet structures, Article 293’s MAP process review, Article 294’s preliminary district totals, and the existing Reeves records-search log.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/reeves-cad-2024-ratio-study-66-category-g-ratios.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/reeves-cad-2024-ratio-study-66-category-g-ratios/reeves-cad-2024-category-g-ratio-study.webp",
+      "inline_asset_sha256": "54b053a45d59324cce3a99c0af19ec452924472b26f67111b3efba82a1b03d2d",
+      "inline_rendered_text": "Reeves CAD 2024 Category G ratio study"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 294,
+    "admitted_article_count": 295,
     "selection_ranks": [
       1,
       2,
@@ -11038,7 +11077,8 @@
       291,
       292,
       293,
-      294
+      294,
+      295
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11097,9 +11137,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "ea858c0b32efb81cd7920c787d312e6ac68dfacb5d605ff2b110cb730f2944a6",
-    "public_article_count": 302,
-    "batch_article_count": 294,
+    "retrofit_manifest_sha256": "8371ec16100e44e3f74105442dd4527bd608c0935b925b6b6183c2cb922090a9",
+    "public_article_count": 303,
+    "batch_article_count": 295,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
