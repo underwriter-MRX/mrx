@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T14:37:12Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T15:10:08Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -696,12 +696,15 @@
     "wave231_selection_decision_sha256": "486ec4acba571f5d20060c61c0a2d0746f837361096cc30f8b20e47319fbc951",
     "wave232_selection_decision_id": "MRX1000-W232-SELECT-2026-08-31",
     "wave232_selection_decision_path": "docs/governance/mrx1000-wave232-selection-decision-2026-08-31.md",
-    "wave232_selection_decision_sha256": "3a01298857cc0888ca7534cabdb9c64f6dd75ec0870bf382cd8a6e80a24b7cb0"
+    "wave232_selection_decision_sha256": "3a01298857cc0888ca7534cabdb9c64f6dd75ec0870bf382cd8a6e80a24b7cb0",
+    "wave233_selection_decision_id": "MRX1000-W233-SELECT-2026-08-31",
+    "wave233_selection_decision_path": "docs/governance/mrx1000-wave233-selection-decision-2026-08-31.md",
+    "wave233_selection_decision_sha256": "21607631dbfc80db3df6fc227079221a48997f5b113ed03f02c41ef9fcee3f25"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "da4304e0c144aea5cc9a825e7fa088abfe2be6740b3a52c462562ea1c6ec7b57",
+    "canonical_ledger_sha256": "55dc60d865b7ae00f158919900bdb69f7941f49a1c52c0c59aa959448d593ac5",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -716,11 +719,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 303,
+    "prior_verified_article_count": 304,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 304,
-    "exact_admitted_slate_sha256": "272cef0102192fb9c3a910e97210847e6952c7d193e6f40fd4cbcf2b210b4737"
+    "exact_admitted_count": 305,
+    "exact_admitted_slate_sha256": "63395013e4c6134d008eb4fc585472d19299d4f07e0b9f3f9cc24e3e4d1af48b"
   },
   "articles": [
     {
@@ -11128,10 +11131,46 @@
       "inline_path": "/assets/articles/inline/upton-cad-open-records-policy-request-response-clarification-charge-states/upton-cad-open-records-policy.webp",
       "inline_asset_sha256": "46aa7e02b12a5645061cf732c27edf13086517e3b39eb32bce26df39b509a47d",
       "inline_rendered_text": "Upton CAD open records policy"
+    },
+    {
+      "selection_rank": 305,
+      "program_row_id": "MRX1000-0853",
+      "source_shortlist_program_row_id": "MRX1000-0853",
+      "slug": "upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation",
+      "title": "Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation",
+      "source_shortlist_title": "Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation",
+      "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "d652c536e1da92c3aced9507d470d1eda2bd8b678eaaafd36a72cd02ccf13782",
+      "repo_path": "src/content/posts/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation.mdx",
+      "repo_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+      "article_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+      "hero_path": "/assets/articles/hero/upton-cad-2024-category-g-table-g1-g1c-and-g-item-and-value-reconciliation.webp",
+      "hero_sha256": "dbd69e63be35b79411989946d8c5f85f43b3de793c32ca34ada656140d784a69",
+      "hero_asset_sha256": "dbd69e63be35b79411989946d8c5f85f43b3de793c32ca34ada656140d784a69",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1572,
+      "risk_citation_remediation": [
+        "The original Upton County market-value identity is rejected because it collides with the admitted valuation corpus and implies current market evidence that the 2024 annual report cannot support.",
+        "The replacement owns only the exact G1 plus G1C arithmetic against the G* subtotal on physical page 7 and the boundary between that subtotal and the separate Total Mineral Market Value on physical page 5.",
+        "The statewide Comptroller article retains G1, G2, and G3 definitions; the Howard article retains its single ambiguous row; the Karnes article retains parcel and ratio-study crosswalks.",
+        "Items are transcribed only under the report visible Items heading and are never equated with accounts, owners, interests, wells, leases, parcels, tax bills, or property-specific values.",
+        "No person or property search is executed; no personal name is republished; no title, acreage, ownership, production, reserve, appraisal, tax, sale-value, fair-value, offer, legal-effect, or transaction conclusion is made.",
+        "Answer-first structure, stable claim IDs, exact arithmetic, claim-adjacent official citations, source-role separation, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/upton-cad-2024-category-g-table.webp",
+      "inline_asset_sha256": "000dcd6a046da73b61a6be6eae545c1dde7bca1b3b3c574b55efe224d16f198a",
+      "inline_rendered_text": "Upton CAD 2024 Category G table"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 304,
+    "admitted_article_count": 305,
     "selection_ranks": [
       1,
       2,
@@ -11436,7 +11475,8 @@
       301,
       302,
       303,
-      304
+      304,
+      305
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11495,9 +11535,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "69f3f98f024d42272f84fcac8c3a21e8b10778feedd9b0705e259949e5196d79",
-    "public_article_count": 312,
-    "batch_article_count": 304,
+    "retrofit_manifest_sha256": "50f291d6e6105ee07b379667d0c4cff74a758da49e4b3d34812dbc5cd252919e",
+    "public_article_count": 313,
+    "batch_article_count": 305,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

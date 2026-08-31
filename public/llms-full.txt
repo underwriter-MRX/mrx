@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (312)
+## Published article URLs (313)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation](https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/)
 - [Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States](https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/)
 - [Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header](https://mineralrightsxchange.com/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/)
 - [Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates](https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/)
