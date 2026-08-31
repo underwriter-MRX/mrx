@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (294)
+## Published article URLs (295)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD](https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/)
 - [Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification](https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/)
 - [Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk](https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/)
 - [Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits](https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/)

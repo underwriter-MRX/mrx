@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T07:01:12Z",
+  "generated_at_utc": "2026-08-31T07:24:40Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 294,
-    "asset_count": 588,
-    "unique_source_art_count": 294,
-    "unique_hero_sha256_count": 294,
-    "unique_inline_sha256_count": 294,
-    "distinct_article_pair_count": 294,
-    "hero_ocr_pass_count": 294,
-    "inline_ocr_pass_count": 294,
-    "exact_filename_identity_count": 294
+    "article_count": 295,
+    "asset_count": 590,
+    "unique_source_art_count": 295,
+    "unique_hero_sha256_count": 295,
+    "unique_inline_sha256_count": 295,
+    "distinct_article_pair_count": 295,
+    "hero_ocr_pass_count": 295,
+    "inline_ocr_pass_count": 295,
+    "exact_filename_identity_count": 295
   },
   "contact_sheets": {
     "hero": [
@@ -7872,6 +7872,56 @@
           "actual": "PDP PUD undeveloped acreage\nterminology register",
           "normalized_expected": "pdp pud undeveloped acreage terminology register",
           "normalized_actual": "pdp pud undeveloped acreage terminology register",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd",
+      "title": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+      "keyword": "Pecos CAD Category G parcel counts",
+      "file_path": "src/content/posts/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.mdx",
+      "source_public_path": "/assets/articles/hero/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave215-creative-sources/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd-hero-base.png",
+        "artifacts/mrx1000-wave215-creative-sources/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T07:23:05.709Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.webp",
+        "alt": "A dark Pecos survey diorama appears beside the exact Article 287 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "102f615a8fcd5ab3a60f07c3a093bb9b0a6a1bd19a46c82a91d3a0458c17a6b4",
+        "perceptual_hash": "0000000000001100000000000000110000000000001111110111100000111111011110000111110111110000011111101111110001111111110000000011111100000000000111110000000000011110000000000100110000000000001000000000000000000000000000000000010000000000000001000000000000000100",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+          "actual": "Pecos CAD 2025-2026\nReappraisal Plan:\nCategory G Parcel Counts\nby ISD",
+          "normalized_expected": "pecos cad 2025 2026 reappraisal plan category g parcel counts by isd",
+          "normalized_actual": "pecos cad 2025 2026 reappraisal plan category g parcel counts by isd",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/pecos-cad-category-g-parcel-counts.webp",
+        "alt": "Two bright overhead evidence trays appear above the exact Pecos CAD Category G parcel counts keyword.",
+        "rendered_text": "Pecos CAD Category G parcel counts",
+        "visual_variant": "wave215-distinct-generated-low-oblique-pecos-survey-hero-and-bright-top-down-two-tray-evidence-workspace",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "9d3ca0c8991be4590c789b34b617e9042baaba8bbf87610f6a8a191f4802309c",
+        "perceptual_hash": "1111111111101101111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111111111111111111111111111111111111111111111111111111000000111100011100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Pecos CAD Category G parcel counts",
+          "actual": "Pecos CAD Category G\nparcel counts",
+          "normalized_expected": "pecos cad category g parcel counts",
+          "normalized_actual": "pecos cad category g parcel counts",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

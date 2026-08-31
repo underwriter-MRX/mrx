@@ -251,4 +251,38 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Midland County, Texas Mineral Rights Value: Valuation Factors Without Obligation',
     );
   });
+
+  it('keeps Article 287 on its exact Pecos Category G ISD estimate boundary', () => {
+    const slug = 'pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Pecos CAD Category G parcel counts',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('physical page 37 prints two separate Category G estimates');
+    expect(body).toContain('Estimated Parcel Counts by ISD');
+    expect(body).toContain('20,005');
+    expect(body).toContain('78,200');
+    expect(body).toContain('Do not add the figures');
+    expect(body).toContain('C287-10');
+    expect(body).toContain('SOURCE-BOUNDARY');
+    expect(body).not.toContain(
+      'Pecos County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
+    );
+  });
 });

@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T07:05:41Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T07:25:39Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -642,12 +642,15 @@
     "wave213_selection_decision_sha256": "b752d6134bf85fa0cce64f58950ab5f11fabdb870e1e637003c454fb40effb8e",
     "wave214_selection_decision_id": "MRX1000-W214-SELECT-2026-08-30",
     "wave214_selection_decision_path": "docs/governance/mrx1000-wave214-selection-decision-2026-08-30.md",
-    "wave214_selection_decision_sha256": "9442d9eb0c0fb204a9e0e6e3952457b0e989432bf56166d58c469a24b52d5faa"
+    "wave214_selection_decision_sha256": "9442d9eb0c0fb204a9e0e6e3952457b0e989432bf56166d58c469a24b52d5faa",
+    "wave215_selection_decision_id": "MRX1000-W215-SELECT-2026-08-31",
+    "wave215_selection_decision_path": "docs/governance/mrx1000-wave215-selection-decision-2026-08-31.md",
+    "wave215_selection_decision_sha256": "a6e5fb6e3befbb4b73552020d9dff0e3e175828e59447895698300f4c64ab28f"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "2c020df05908116758a8bd50fcb9af86a5e834ff505953551a4382d2c5610160",
+    "canonical_ledger_sha256": "dfab5bf1bcc120ecdf34493477db38a5bb7c722069878551bb6cb6e0ed966abf",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -662,11 +665,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 285,
+    "prior_verified_article_count": 286,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 286,
-    "exact_admitted_slate_sha256": "c5b719ada0baba2773de2b604ee2c976f45c804ed69cfa4596721c40e9aea052"
+    "exact_admitted_count": 287,
+    "exact_admitted_slate_sha256": "9d4cb551e689a9c868468615dc07ca9412868f52bc5307b8e4c82e73f523f0e9"
   },
   "articles": [
     {
@@ -10427,10 +10430,46 @@
       "inline_path": "/assets/articles/inline/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/midland-cad-mineral-work-calendar.webp",
       "inline_asset_sha256": "743368f5aa17c5b547f3482887c21a5d2f5683183d0bc957f2da3f3189d11604",
       "inline_rendered_text": "Midland CAD mineral work calendar"
+    },
+    {
+      "selection_rank": 287,
+      "program_row_id": "MRX1000-0835",
+      "source_shortlist_program_row_id": "MRX1000-0835",
+      "slug": "pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd",
+      "title": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+      "source_shortlist_title": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+      "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "982488cab5442bf91e513ea0caae0439913a8395d62625f6514313ea717f19ff",
+      "repo_path": "src/content/posts/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.mdx",
+      "repo_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+      "article_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+      "hero_path": "/assets/articles/hero/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.webp",
+      "hero_sha256": "102f615a8fcd5ab3a60f07c3a093bb9b0a6a1bd19a46c82a91d3a0458c17a6b4",
+      "hero_asset_sha256": "102f615a8fcd5ab3a60f07c3a093bb9b0a6a1bd19a46c82a91d3a0458c17a6b4",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1682,
+      "risk_citation_remediation": [
+        "The original Pecos County family-decision identity is rejected because it has 0.7143 token-Jaccard similarity to the existing Crane County analogue and materially overlaps the repetitive county valuation corpus.",
+        "The replacement owns only the official Pecos CAD 2025-2026 reappraisal-plan locator and physical page 37 Category G estimated parcel-count crosswalk by year and ISD.",
+        "The 20,005 and 78,200 figures remain separate plan estimates for 2025 Buena Vista ISD and 2026 Fort Stockton ISD. They are not summed as a county total and are not converted into counts of owners, wells, leases, tracts, mineral interests, notices, certified-roll entries, tax bills, values, offers, transactions, completed work, or current results.",
+        "The separate oil-and-gas-reserves appendix beginning on physical page 40 is not used to redefine physical page 37 units or scope.",
+        "No owner, account, property, title, appraisal, notice, protest, certification, tax, value, legal, offer, buyer-ranking, or transaction conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/pecos-cad-category-g-parcel-counts.webp",
+      "inline_asset_sha256": "9d3ca0c8991be4590c789b34b617e9042baaba8bbf87610f6a8a191f4802309c",
+      "inline_rendered_text": "Pecos CAD Category G parcel counts"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 286,
+    "admitted_article_count": 287,
     "selection_ranks": [
       1,
       2,
@@ -10717,7 +10756,8 @@
       283,
       284,
       285,
-      286
+      286,
+      287
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10776,9 +10816,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f52e8217ea01a977cfff00b0d45e3fc92086b5fd37a7fe9561206a61d6c9333b",
-    "public_article_count": 294,
-    "batch_article_count": 286,
+    "retrofit_manifest_sha256": "0f28a404268151717928667718febaa9a81fbc3d4bbcd9633fc684664cd6af20",
+    "public_article_count": 295,
+    "batch_article_count": 287,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
