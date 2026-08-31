@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T06:17:09Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T06:43:19Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -636,13 +636,16 @@
     "wave211_selection_decision_sha256": "3f33f1610368d0f0a9986e7b548a8c8fb628604064f1f286239752b18a46fd60",
     "wave212_selection_decision_id": "MRX1000-W212-SELECT-2026-08-30",
     "wave212_selection_decision_path": "docs/governance/mrx1000-wave212-selection-decision-2026-08-30.md",
-    "wave212_selection_decision_sha256": "6168aa6c64bb7841dc73f9a3c475067a7f0cd4873fabd4792d24438730c71b33"
+    "wave212_selection_decision_sha256": "6168aa6c64bb7841dc73f9a3c475067a7f0cd4873fabd4792d24438730c71b33",
+    "wave213_selection_decision_id": "MRX1000-W213-SELECT-2026-08-30",
+    "wave213_selection_decision_path": "docs/governance/mrx1000-wave213-selection-decision-2026-08-30.md",
+    "wave213_selection_decision_sha256": "b752d6134bf85fa0cce64f58950ab5f11fabdb870e1e637003c454fb40effb8e"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "4342c74ea1dd5be00537e2445f80a81c3f6898935c84b134b03cb5a7fb84559e",
-    "canonical_ledger_generated_at": "2026-07-20T23:40:05.613Z",
+    "canonical_ledger_sha256": "cb8171a63534ae224d1be48f9baa6bd03fffe4960fe124e0bbb9774fb5d469b2",
+    "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -656,11 +659,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 283,
+    "prior_verified_article_count": 284,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 284,
-    "exact_admitted_slate_sha256": "be4a1643f449c980b2ff9308f3146a016d6e8f6e8a39672376743b75a6772a96"
+    "exact_admitted_count": 285,
+    "exact_admitted_slate_sha256": "1d08015a515323b0b7fce650b14270eb22b393aa164a4bf11b6c8e9ec225d531"
   },
   "articles": [
     {
@@ -10349,10 +10352,46 @@
       "inline_path": "/assets/articles/inline/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/midland-cad-certified-mineral-roll-file-layout.webp",
       "inline_asset_sha256": "7f4ee9493b7956d719a555c5ad99cf97d3de53666d1fa534c5ae062dc98698bd",
       "inline_rendered_text": "Midland CAD certified mineral roll file layout"
+    },
+    {
+      "selection_rank": 285,
+      "program_row_id": "MRX1000-0833",
+      "source_shortlist_program_row_id": "MRX1000-0833",
+      "slug": "midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk",
+      "title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+      "source_shortlist_title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "290a8ae16a9b6c3cd3a21262193c7de6d49c130b1587b3d69303e1dd01e633a7",
+      "repo_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+      "repo_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+      "article_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+      "hero_path": "/assets/articles/hero/midland-cad-2026-appraisal-services-rfp-mineral-scope-and-date-control-crosswalk.webp",
+      "hero_sha256": "a83837eaf743865a1f9c9cff0ce0fc516ae3389cb27c5365f3e2acc7c95d45f7",
+      "hero_asset_sha256": "a83837eaf743865a1f9c9cff0ce0fc516ae3389cb27c5365f3e2acc7c95d45f7",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1842,
+      "risk_citation_remediation": [
+        "The original Midland County value-timeline identity is rejected because it repeats a county-template job at 0.6667 token-Jaccard similarity and overlaps the live valuation corpus.",
+        "The replacement owns only the exact official RFP procurement-scope locators, approximate Category G statement, physical-versus-printed page boundary, and unresolved proposal-date crosswalk.",
+        "Articles 281 through 284 separately own Midland appraisal approaches, the 2025 mass-appraisal account statement, Open Records route taxonomy, and the 2026 certified-mineral ZIP workflow. Article 285 does not reopen those jobs.",
+        "The article preserves March 30 and May 4 exactly as printed, flags the Thursday/May 4 calendar mismatch, and does not invent a corrected or operative deadline.",
+        "No accepted proposal, selected vendor, award, execution, contract status, owner, account, property, appraisal, title, tax, protest, value, legal, or transaction conclusion is made.",
+        "Answer-first structure, stable claim IDs, evidence labels, information gain, idempotent row ownership, claim-adjacent official citations, supported FAQs, semantic links, exact visible/schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/midland-cad-mineral-appraisal-rfp-2026.webp",
+      "inline_asset_sha256": "6dba20023ad0684070bca63dc74352442af862dc48f16514ada519b5699616b7",
+      "inline_rendered_text": "Midland CAD mineral appraisal RFP 2026"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 284,
+    "admitted_article_count": 285,
     "selection_ranks": [
       1,
       2,
@@ -10637,7 +10676,8 @@
       281,
       282,
       283,
-      284
+      284,
+      285
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -10696,9 +10736,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "40985b9e05b516e0a1e8662db531e6e04caf9321f4547550e8b00563a8fe5995",
-    "public_article_count": 292,
-    "batch_article_count": 284,
+    "retrofit_manifest_sha256": "a50b597560e208c51bd2f5f539283d4f9d6722d699f00fa3826caa730c2c575b",
+    "public_article_count": 293,
+    "batch_article_count": 285,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

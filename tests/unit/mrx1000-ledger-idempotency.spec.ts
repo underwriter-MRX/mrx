@@ -50,9 +50,9 @@ const SCRIPT = path.join(MRX_ROOT, 'scripts/build-mrx-1000-content-ledger.mjs');
 const CANONICAL_JSON = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.json');
 const CANONICAL_CSV = path.join(MRX_ROOT, 'config/mrx-1000-canonical-content-ledger.csv');
 const EXPECTED_CANONICAL_JSON_SHA256 =
-  '4342c74ea1dd5be00537e2445f80a81c3f6898935c84b134b03cb5a7fb84559e';
+  'cb8171a63534ae224d1be48f9baa6bd03fffe4960fe124e0bbb9774fb5d469b2';
 const EXPECTED_CANONICAL_CSV_SHA256 =
-  '49e4c4c873cc3d7ae833e26d9a9fbc4358b4e57137b035e8050456294f23327f';
+  '83ddefa2989b3926e5824163fadee4fa22d9b38031c29c5de61df72487c56f81';
 const TEST_OUTPUT_DIR = mkdtempSync(path.join(tmpdir(), 'mrx1000-ledger-idempotency-'));
 const JSON_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.json');
 const CSV_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger.csv');
@@ -198,6 +198,7 @@ interface Ledger {
     wave125_rekey?: { program_row_id: string };
     wave211_rekey?: { program_row_id: string };
     wave212_rekey?: { program_row_id: string };
+    wave213_rekey?: { program_row_id: string };
   };
   policy: {
     pilot_aware: boolean;
@@ -373,6 +374,7 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     expect(ledger.identity_registry.wave125_rekey?.program_row_id).toBe('MRX1000-0330');
     expect(ledger.identity_registry.wave211_rekey?.program_row_id).toBe('MRX1000-0831');
     expect(ledger.identity_registry.wave212_rekey?.program_row_id).toBe('MRX1000-0832');
+    expect(ledger.identity_registry.wave213_rekey?.program_row_id).toBe('MRX1000-0833');
     expect(
       bySlug.get('midland-cad-open-records-mineral-files-rolls-notices-source-routes')
         ?.program_row_id,
@@ -382,11 +384,16 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
         ?.program_row_id,
     ).toBe('MRX1000-0832');
     expect(
+      bySlug.get('midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk')
+        ?.program_row_id,
+    ).toBe('MRX1000-0833');
+    expect(
       bySlug.has('midland-county-texas-mineral-rights-value-market-update-for-mineral-owners'),
     ).toBe(false);
     expect(bySlug.has('midland-county-texas-mineral-rights-value-risk-checklist-in-2026')).toBe(
       false,
     );
+    expect(bySlug.has('midland-county-texas-mineral-rights-value-timeline-in-2026')).toBe(false);
     expect(bySlug.has('understanding-the-true-worth-of-your-mineral-interests')).toBe(false);
     expect(
       bySlug.has(

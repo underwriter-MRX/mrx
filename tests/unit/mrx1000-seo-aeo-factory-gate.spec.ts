@@ -188,4 +188,34 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Midland County, Texas Mineral Rights Value: Risk Checklist In 2026',
     );
   });
+
+  it('keeps Article 285 on its exact RFP mineral-scope and unresolved date-control boundary', () => {
+    const slug = 'midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Midland CAD mineral appraisal RFP 2026',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(4);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('do not rely on one proposal date from this PDF without verification');
+    expect(body).toContain('`Category G(Mineral): Approximately 424,996 accounts`');
+    expect(body).toContain('May 4, 2026 was Monday');
+    expect(body).toContain('C285-07');
+    expect(body).toContain('UNRESOLVED-CONFLICT');
+    expect(body).not.toContain('Midland County, Texas Mineral Rights Value: Timeline In 2026');
+  });
 });

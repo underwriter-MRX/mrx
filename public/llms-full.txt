@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (292)
+## Published article URLs (293)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk](https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/)
 - [Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits](https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/)
 - [Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes](https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/)
 - [Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25](https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/)

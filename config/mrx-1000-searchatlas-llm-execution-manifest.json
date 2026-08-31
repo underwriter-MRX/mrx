@@ -1,7 +1,7 @@
 {
   "program": "MRX1000",
   "artifact_type": "searchatlas_ordered_llm_local_execution_manifest",
-  "generated_at": "2026-07-20T23:40:05.613Z",
+  "generated_at": "2026-07-20T08:25:37.000Z",
   "deterministic": true,
   "local_only": true,
   "external_services_called": false,
@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "4342c74ea1dd5be00537e2445f80a81c3f6898935c84b134b03cb5a7fb84559e",
-      "bytes": 4703135
+      "sha256": "cb8171a63534ae224d1be48f9baa6bd03fffe4960fe124e0bbb9774fb5d469b2",
+      "bytes": 4704501
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "baa05b15420ab16fadba0d2a946d463a8a545d87884291ae3ab3b0572fc318cb",
-      "bytes": 3488436,
+      "sha256": "39bc0d6a288ca377d38031a5a51e7a4351653937f6ab28dc9ac5d9a5a8325288",
+      "bytes": 3489023,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -366,30 +366,30 @@
     },
     "by_canonical_inventory_state": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 292,
+      "live_public_published_route": 293,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 660
+      "planning_only_inventory": 659
     },
     "by_searchatlas_action_needed": {
-      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 216,
+      "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation": 217,
       "reconcile_artifact_bound_content_genius_record_no_creation": 2,
       "reconcile_pilot_non_creation_workflow_label_then_bind_or_conditionally_create": 23,
       "reconcile_unambiguous_exact_title_vendor_candidate_no_creation": 139,
       "resolve_ambiguous_exact_title_vendor_candidates_no_creation": 6,
-      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 614
+      "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight": 613
     },
-    "repo_mdx_present": 340,
-    "workspace_public_route_configured": 292,
+    "repo_mdx_present": 341,
+    "workspace_public_route_configured": 293,
     "planning_searchatlas_map_id_count": 225,
     "planning_searchatlas_title_uuid_count": 200,
     "persisted_ledger_content_genius_article_uuid_count": 0,
-    "checksummed_review_candidate_rows": 316,
-    "rows_without_checksummed_review_candidate": 684,
+    "checksummed_review_candidate_rows": 317,
+    "rows_without_checksummed_review_candidate": 683,
     "by_review_candidate_state": {
-      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 292,
+      "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW": 293,
       "CHECKSUMMED_HELD_SUBSTANTIVE_DRAFT_READY_FOR_LLM_REVIEW": 23,
       "NO_CHECKSUMMED_REVIEW_CANDIDATE_PILOT_QA_SHELL_ONLY": 24,
-      "NO_WORKSPACE_CONTENT_CANDIDATE": 660,
+      "NO_WORKSPACE_CONTENT_CANDIDATE": 659,
       "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW": 1
     },
     "pilot_workspace_qa_shell_rows": 25,
@@ -277923,28 +277923,52 @@
     },
     {
       "program_row_id": "MRX1000-0833",
-      "canonical_title": "Midland County, Texas Mineral Rights Value: Timeline In 2026",
-      "canonical_slug": "midland-county-texas-mineral-rights-value-timeline-in-2026",
-      "canonical_url": "https://mineralrightsxchange.com/blog/midland-county-texas-mineral-rights-value-timeline-in-2026/",
+      "canonical_title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+      "canonical_slug": "midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk",
+      "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
       "pillar": "texas-mineral-rights",
       "pillar_url": "/mineral-rights/texas/",
       "cluster": "texas-county-basin-local-intent",
-      "primary_keyword": "Midland County, Texas mineral rights value",
+      "primary_keyword": "Midland CAD mineral appraisal RFP 2026",
       "authoritative_current_state": {
-        "canonical_inventory_state": "planning_only_inventory",
-        "normalized_status": "planning_only_factory_queue_title_metadata",
-        "source_system": "factory_queue_title_metadata",
+        "canonical_inventory_state": "live_public_published_route",
+        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
-          "state": "NO_WORKSPACE_MDX",
-          "path": null,
-          "mdx_exists": false,
-          "source_sha256": null,
-          "publication_status": null,
+          "state": "WORKSPACE_MDX_PRESENT",
+          "path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+          "mdx_exists": true,
+          "source_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+          "publication_status": "published",
           "frontmatter_noindex": false,
-          "workspace_public_route_configured": false,
+          "workspace_public_route_configured": true,
           "production_live_verified_in_this_local_build": false,
-          "content_evidence": null
+          "content_evidence": {
+            "frontmatter_title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+            "frontmatter_slug": null,
+            "frontmatter_publication_status": "published",
+            "frontmatter_reviewed_at": "2026-08-31T06:35:00Z",
+            "frontmatter_reviewed_by": "mrx_compliance-continuous-wave213",
+            "frontmatter_article_id": null,
+            "frontmatter_searchatlas_uuid": null,
+            "frontmatter_workflow_status": null,
+            "frontmatter_remediated_from_sha256": null,
+            "frontmatter_body_checksum_sha256": null,
+            "frontmatter_body_length_chars": 0,
+            "frontmatter_body_word_count": 0,
+            "frontmatter_draft": false,
+            "frontmatter_noindex": false,
+            "frontmatter_indexable": null,
+            "body_sha256": "f3ec030ddfde341f7b84768725c52ece2102b8459ab8809e94b72f516919b17f",
+            "body_bytes": 14888,
+            "body_characters": 14888,
+            "body_word_count": 1842,
+            "explicit_qa_shell_without_final_copy": false,
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true
+          }
         },
         "planning_handles": {
           "searchatlas_map_id": null,
@@ -277967,28 +277991,31 @@
           "manual_reconciliation_required": true
         },
         "review_candidate": {
-          "state": "NO_WORKSPACE_CONTENT_CANDIDATE",
-          "checksummed_review_candidate_present": false,
-          "path": null,
-          "source_sha256": null,
-          "body_sha256": null,
-          "body_word_count": null,
-          "candidate_type": null,
-          "readiness_evidence_verified": false,
-          "readiness_evidence_paths": [],
+          "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
+          "checksummed_review_candidate_present": true,
+          "path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+          "source_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+          "body_sha256": "f3ec030ddfde341f7b84768725c52ece2102b8459ab8809e94b72f516919b17f",
+          "body_word_count": 1842,
+          "candidate_type": "existing_public_article",
+          "readiness_evidence_verified": true,
+          "readiness_evidence_paths": [
+            "reports/mrx-1000-readiness-matrix.json",
+            "config/mrx-1000-canonical-content-ledger.json"
+          ],
           "readiness_checks": {
-            "workspace_source_checksum_present": false,
+            "workspace_source_checksum_present": true,
             "readiness_row_identity_verified": true,
-            "filename_matches_canonical_slug": false,
-            "frontmatter_title_matches_canonical": false,
-            "frontmatter_publication_status_matches_ledger": false,
-            "substantive_body_at_least_500_words": false,
-            "explicit_qa_shell_absent": false,
-            "review_metadata_present": false,
-            "canonical_state_supports_content_review": false
+            "filename_matches_canonical_slug": true,
+            "frontmatter_title_matches_canonical": true,
+            "frontmatter_publication_status_matches_ledger": true,
+            "substantive_body_at_least_500_words": true,
+            "explicit_qa_shell_absent": true,
+            "review_metadata_present": true,
+            "canonical_state_supports_content_review": true
           },
-          "workspace_mdx_is_review_candidate": false,
-          "workspace_mdx_rejection_reason": "No workspace MDX exists.",
+          "workspace_mdx_is_review_candidate": true,
+          "workspace_mdx_rejection_reason": null,
           "special_candidate_validation": null
         }
       },
@@ -277999,7 +278026,7 @@
         "position_in_batch": 9,
         "batch_size": 25,
         "assignment_policy": "remaining_rows_by_program_row_id",
-        "action_needed": "search_vendor_identity_then_conditionally_create_after_identity_and_quality_preflight",
+        "action_needed": "preserve_workspace_public_route_and_search_vendor_identity_before_any_creation",
         "execution_state": "WAITING_FOR_IDENTITY_CONTENT_AND_REVIEW_GATES_NO_EXTERNAL_WRITE",
         "execution_eligible_now": false,
         "creation_needed_proven": false,
@@ -278013,9 +278040,9 @@
           "read_only_quota_preflight_required_before_external_write": true,
           "canonical_identity_reconciliation_required": true,
           "checksummed_content_candidate_required_before_review": true,
-          "checksummed_content_candidate_present": false,
-          "review_candidate_path_and_sha256_present": false,
-          "review_readiness_evidence_verified": false,
+          "checksummed_content_candidate_present": true,
+          "review_candidate_path_and_sha256_present": true,
+          "review_readiness_evidence_verified": true,
           "compliance_seo_aeo_editorial_gates_required": true
         },
         "evidence": {
@@ -278042,10 +278069,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+            "review_candidate_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
             "predecessor_pass_observed": false,
@@ -278079,10 +278106,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+            "review_candidate_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -278116,10 +278143,10 @@
           "availability_state": "UNAVAILABLE_PER_LOCAL_FRAMEWORK_SNAPSHOT",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+            "review_candidate_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -278153,10 +278180,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+            "review_candidate_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -278190,10 +278217,10 @@
           "availability_state": "NOT_CHECKED_BY_LOCAL_ONLY_BUILD",
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
-            "checksummed_review_candidate_present": false,
-            "review_candidate_path": null,
-            "review_candidate_sha256": null,
-            "review_candidate_readiness_evidence_verified": false,
+            "checksummed_review_candidate_present": true,
+            "review_candidate_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+            "review_candidate_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+            "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
             "predecessor_pass_observed": false,
@@ -278224,7 +278251,7 @@
           "perplexity",
           "microsoft_copilot"
         ],
-        "next_stage": null,
+        "next_stage": "chatgpt",
         "any_verdict_recorded": false,
         "all_required_verdicts_passed": false,
         "sequence_complete": false,
@@ -278242,7 +278269,7 @@
         "release_action_eligible_now": false,
         "index_submission_eligible_now": false,
         "sitemap_addition_eligible_now": false,
-        "currently_in_workspace_sitemap": false,
+        "currently_in_workspace_sitemap": true,
         "production_live_verified_in_this_local_build": false,
         "release_or_index_action_performed": false,
         "exact_claude_opus_4_6_required_before_release_or_index_transition": true,
@@ -278259,7 +278286,6 @@
         "ORDERED_LLM_REVIEW_SEQUENCE_NOT_COMPLETE",
         "LOCAL_ONLY_MANIFEST_EXTERNAL_DISPATCH_NOT_PERFORMED",
         "ARTICLE_SPECIFIC_QUALITY_CLEARANCE_NOT_COMPLETE",
-        "NO_CHECKSUMMED_REVIEW_CANDIDATE",
         "CONTENT_GENIUS_CANONICAL_ROW_UUID_BINDING_UNPROVEN"
       ]
     },
@@ -354054,5 +354080,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "125b2843f2e2d36a9e3d5497f4c30256163c25157be84dc6c30a551a8e5e6509"
+  "content_fingerprint_sha256": "9d17644508b285003c1a7e0407071b3257d3dad92c70947e9f42517f0a1b2c42"
 }
