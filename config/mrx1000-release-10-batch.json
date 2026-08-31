@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T22:43:34Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T23:12:08Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -732,12 +732,15 @@
     "wave243_selection_decision_sha256": "50d0be1d6afdde9bbb235752964738044be81bb5e772dffb811a6189de722de0",
     "wave244_selection_decision_id": "MRX1000-W244-SELECT-2026-08-31",
     "wave244_selection_decision_path": "docs/governance/mrx1000-wave244-selection-decision-2026-08-31.md",
-    "wave244_selection_decision_sha256": "318268dc5bf39daf60099bc294ac1f3ba1736fc457dcb80ff12f1a267278551d"
+    "wave244_selection_decision_sha256": "318268dc5bf39daf60099bc294ac1f3ba1736fc457dcb80ff12f1a267278551d",
+    "wave245_selection_decision_id": "MRX1000-W245-SELECT-2026-08-31",
+    "wave245_selection_decision_path": "docs/governance/mrx1000-wave245-selection-decision-2026-08-31.md",
+    "wave245_selection_decision_sha256": "10b2999a0b77640f4a1767a56e11d89cd84eac50c57a265d06119ce1230f0530"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "e4e1b23a0bd0bdeb1c21e015aa31967de6658e33ee09f06d076baeafe1d4c00f",
+    "canonical_ledger_sha256": "f0be907edcad1c471b483a8ea0dfb4f778a0fab1768aea7d032425c3529acf2f",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -752,11 +755,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 315,
+    "prior_verified_article_count": 316,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 316,
-    "exact_admitted_slate_sha256": "df8775524ebb3c1e54da7ee81d64650a7e772c1652fb0d1dc33fbe8015448aa4"
+    "exact_admitted_count": 317,
+    "exact_admitted_slate_sha256": "72307081578c141a84bc1a951efe9a4580a76990c431e2f0292748de7e9e6531"
   },
   "articles": [
     {
@@ -11589,10 +11592,45 @@
       "inline_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/winkler-cad-mineral-appraisal-owner-proration.webp",
       "inline_asset_sha256": "98c3e790a55356e6a90876251a93487551ec967c3b3053f2b4598d4b37da2721",
       "inline_rendered_text": "Winkler CAD mineral appraisal owner proration"
+    },
+    {
+      "selection_rank": 317,
+      "program_row_id": "MRX1000-0870",
+      "source_shortlist_program_row_id": "MRX1000-0870",
+      "slug": "winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare",
+      "title": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+      "source_shortlist_title": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+      "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "2f41d3a98bfadf10dd158408e11590d7214e6cc2ebba5114b90fd87f6ef7b7d6",
+      "repo_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.mdx",
+      "repo_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+      "article_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+      "hero_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-and-market-is-rare.webp",
+      "hero_sha256": "f0646b44b84916b9772a1a03961d994cb1cd97b1b0c8f1c8651851bef6f74412",
+      "hero_asset_sha256": "f0646b44b84916b9772a1a03961d994cb1cd97b1b0c8f1c8651851bef6f74412",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2333,
+      "risk_citation_remediation": [
+        "The templated Winkler County value-timeline identity is rejected because it collides with the admitted valuation corpus and is unsupported as a current county value or private transaction-timeline page by the controlled plan passage.",
+        "The replacement owns only the qualified cost, market, and income method roles on whole-PDF pages 21-22, printed pages 19-20, of the July 2024 Winkler contractor plan for the 2025-2026 plan period.",
+        "The article does not select a method for an account, build a comparable-sales analysis or forecast, perform an appraisal, or provide a tax result, title conclusion, private-market value, sale price, offer, or owner-specific conclusion.",
+        "Answer-first structure, stable claim IDs, source age, complete-file identity, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/winkler-cad-mineral-appraisal-cost-and-market-approaches.webp",
+      "inline_asset_sha256": "c37ec197bf2f8e6eb0ab861d06a529590a3080a68b9f3aaa877f69f21e310c8a",
+      "inline_rendered_text": "Winkler CAD mineral appraisal cost and market approaches"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 316,
+    "admitted_article_count": 317,
     "selection_ranks": [
       1,
       2,
@@ -11909,7 +11947,8 @@
       313,
       314,
       315,
-      316
+      316,
+      317
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11968,9 +12007,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "8427913b2315d35d9272a4169f501a9bb553ccee9b77a938fe44e81b43d73d4b",
-    "public_article_count": 324,
-    "batch_article_count": 316,
+    "retrofit_manifest_sha256": "c5c4507c6a1410f4b8c95e74ddad245b07575df2b911e8ddcbcc0b9ffe0b67b6",
+    "public_article_count": 325,
+    "batch_article_count": 317,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

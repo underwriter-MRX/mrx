@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T22:33:41Z",
+  "generated_at_utc": "2026-08-31T23:04:19Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 324,
-    "asset_count": 648,
-    "unique_source_art_count": 324,
-    "unique_hero_sha256_count": 324,
-    "unique_inline_sha256_count": 324,
-    "distinct_article_pair_count": 324,
-    "hero_ocr_pass_count": 324,
-    "inline_ocr_pass_count": 324,
-    "exact_filename_identity_count": 324
+    "article_count": 325,
+    "asset_count": 650,
+    "unique_source_art_count": 325,
+    "unique_hero_sha256_count": 325,
+    "unique_inline_sha256_count": 325,
+    "distinct_article_pair_count": 325,
+    "hero_ocr_pass_count": 325,
+    "inline_ocr_pass_count": 325,
+    "exact_filename_identity_count": 325
   },
   "contact_sheets": {
     "hero": [
@@ -15734,6 +15734,56 @@
           "actual": "Winkler CAD mineral appraisal\nowner proration",
           "normalized_expected": "winkler cad mineral appraisal owner proration",
           "normalized_actual": "winkler cad mineral appraisal owner proration",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare",
+      "title": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+      "keyword": "Winkler CAD mineral appraisal cost and market approaches",
+      "file_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.mdx",
+      "source_public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-and-market-is-rare.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave245-creative-sources/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare-hero-base.png",
+        "artifacts/mrx1000-wave245-creative-sources/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T23:01:29.210Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-and-market-is-rare.webp",
+        "alt": "Three constrained mineral-appraisal pathways appear beside the exact Article 317 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "f0646b44b84916b9772a1a03961d994cb1cd97b1b0c8f1c8651851bef6f74412",
+        "perceptual_hash": "0000000000011100000000000001110000000000000010100101100000001011011110001110100111110000010111001111110001111111111100000111111100000000001111100000000000111100000000000011100000000000011100000000000001110000000000001111000000000000111100000000000011111000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+          "actual": "Winkler CAD 2025-2026\nMineral Appraisal:\nWhy Cost Is Not Used and\nMarket Is Rare",
+          "normalized_expected": "winkler cad 2025 2026 mineral appraisal why cost is not used and market is rare",
+          "normalized_actual": "winkler cad 2025 2026 mineral appraisal why cost is not used and market is rare",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/winkler-cad-mineral-appraisal-cost-and-market-approaches.webp",
+        "alt": "A top-down evidence board appears below the exact Winkler CAD appraisal-method keyword.",
+        "rendered_text": "Winkler CAD mineral appraisal cost and market approaches",
+        "visual_variant": "wave245-distinct-generated-dark-low-three-quarter-method-selection-desk-hero-and-bright-strict-top-down-method-evidence-board-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "c37ec197bf2f8e6eb0ab861d06a529590a3080a68b9f3aaa877f69f21e310c8a",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000010011111111110001011111111111111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111101111111001111110011111100111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Winkler CAD mineral appraisal cost and market approaches",
+          "actual": "Winkler CAD mineral appraisal\ncost and market approaches",
+          "normalized_expected": "winkler cad mineral appraisal cost and market approaches",
+          "normalized_actual": "winkler cad mineral appraisal cost and market approaches",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
