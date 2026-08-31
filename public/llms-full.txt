@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (310)
+## Published article URLs (311)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header](https://mineralrightsxchange.com/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/)
 - [Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates](https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/)
 - [Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers](https://mineralrightsxchange.com/blog/texas-rrc-field-classification-codes-associated-field-numbers/)
 - [Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk](https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/)

@@ -743,4 +743,35 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('C302-08');
     expect(body).not.toContain('Texas Mineral Rights Value: Valuation Factors Without Obligation');
   });
+
+  it('keeps Article 303 on its exact Upton TXT and nested CSV-header boundary', () => {
+    const slug = 'upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header';
+    const source = readFileSync(join(postsDir, slug + '.mdx'), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Upton CAD 2026 mineral data files',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('Measure the TXT records without printing them');
+    expect(body).toContain('The CSV header requires two bounded parsing steps');
+    expect(body).toContain('Reconcile one data record, then stop');
+    expect(body).toContain('C303-08');
+    expect(body).not.toContain(
+      'Upton County, Texas Mineral Rights Value: Family Decision Guide Step By Step',
+    );
+  });
 });
