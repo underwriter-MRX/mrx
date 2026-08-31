@@ -4,9 +4,9 @@
  * confirming a real-world operating footprint (physical office vs
  * service-area business), a single canonical phone, and a service-area
  * definition. Until those facts are confirmed, this file is dormant: the
- * ProfessionalService node in site.ts already carries the published
- * nationwide scope and the canonical region/country, which is what
- * search engines see today.
+ * generic Service node in site.ts carries only the published nationwide
+ * scope and organizational provider relationship. It does not imply a
+ * physical local footprint or Google Business Profile eligibility.
  *
  * When GBP activation is approved:
  *   1. Confirm a single canonical phone (see SITE.phone in src/lib/site.ts).
@@ -43,10 +43,10 @@ export const localBusiness: LocalBusiness = {
   description: SITE.description,
   // Match the published scope in about.mdx. GBP sees "Country: US" until
   // Daryl confirms a tighter service-area definition; this stays in sync
-  // with the ProfessionalService node in site.ts.
+  // with the generic Service node in site.ts.
   areaServed: { '@type': 'Country', name: 'United States' },
   // Only emit the canonical phone once SITE.phone is populated. Same gate
-  // already used by ProfessionalService and by AiFirstHome.astro.
+  // already used by the public contact surfaces and by AiFirstHome.astro.
   telephone: SITE.phone || undefined,
   // No street address is published today. Address carries region/country
   // only, never a fabricated street/city/postal code.

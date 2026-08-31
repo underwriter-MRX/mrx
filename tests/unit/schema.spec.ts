@@ -4,12 +4,25 @@ import { siteGraph } from '../../src/structured-data/site';
 describe('site-level JSON-LD graph', () => {
   const graph = siteGraph('/', 'Mineral Rights Xchange');
 
-  it('includes Organization, ProfessionalService, WebSite, and WebPage', () => {
+  it('includes Organization, generic Service, WebSite, and WebPage without LocalBusiness types', () => {
     const types = graph.map((n: any) => n['@type']);
     expect(types).toContain('Organization');
-    expect(types).toContain('ProfessionalService');
+    expect(types).toContain('Service');
     expect(types).toContain('WebSite');
     expect(types).toContain('WebPage');
+    expect(types).not.toContain('ProfessionalService');
+    expect(types).not.toContain('LocalBusiness');
+  });
+
+  it('binds the bounded educational service to the organization without local-footprint claims', () => {
+    const service = graph.find((n: any) => n['@type'] === 'Service') as any;
+    expect(service?.provider).toEqual({
+      '@id': 'https://mineralrightsxchange.com/#org',
+    });
+    expect(service?.description).toContain('not a certified appraisal');
+    expect(service?.address).toBeUndefined();
+    expect(service?.telephone).toBeUndefined();
+    expect(service?.priceRange).toBeUndefined();
   });
 
   it('Organization has a logo, URL, and name', () => {

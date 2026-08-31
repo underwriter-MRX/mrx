@@ -59,7 +59,7 @@ const related = allPosts
 // rule. Missing or invalid frontmatter values collapse to null so the
 // dataLayer never emits an off-enum dimension.
 const authorSlug = authorEntry?.id.replace(/\.mdx?$/, '') ?? 'mrx-editorial-team';
-const pilotGuide = getGuide(post.data.featured_guide ?? '');
+const pilotGuide = getGuide(post.data.content_guide ?? '') ?? getGuide(post.data.featured_guide ?? '');
 const measurement = resolveArticleMeasurementContext({
   noindex: true,
   contentProgram: post.data.content_program ?? null,

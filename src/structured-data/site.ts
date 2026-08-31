@@ -1,4 +1,4 @@
-import type { Organization, ProfessionalService, WebPage, WebSite } from 'schema-dts';
+import type { Organization, Service, WebPage, WebSite } from 'schema-dts';
 import { SITE } from '../lib/site';
 import { buildCanonical } from '../lib/seo';
 import { speakable } from './article';
@@ -35,21 +35,17 @@ export const organization: Organization = {
   ],
 };
 
-export const professionalService: ProfessionalService = {
-  '@type': 'ProfessionalService',
+export const educationalReviewService: Service = {
+  '@type': 'Service',
   '@id': `${SITE.url}/#service`,
-  name: SITE.name,
+  name: 'Mineral Rights Education and Directional Assessment',
+  serviceType: 'Mineral-rights educational review',
+  description:
+    'Educational mineral-rights guidance and a directional assessment, not a certified appraisal or individualized legal, tax, title, accounting, engineering, or investment advice.',
   image: `${SITE.url}/assets/brand/mrx-underwriter-review-og.png`,
   url: SITE.url,
-  telephone: SITE.phone || undefined,
-  priceRange: 'Free educational review; transaction terms vary',
   areaServed: { '@type': 'Country', name: 'United States' },
-  address: {
-    '@type': 'PostalAddress',
-    addressRegion: SITE.addressRegion,
-    addressCountry: SITE.addressCountry,
-  },
-  parentOrganization: { '@id': `${SITE.url}/#org` },
+  provider: { '@id': `${SITE.url}/#org` },
 };
 
 export const webSite: WebSite = {
@@ -84,5 +80,5 @@ export function pageNode(path: string, name: string): WebPage {
 }
 
 export function siteGraph(path: string, name: string): object[] {
-  return [organization, professionalService, webSite, pageNode(path, name)] as object[];
+  return [organization, educationalReviewService, webSite, pageNode(path, name)] as object[];
 }
