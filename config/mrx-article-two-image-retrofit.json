@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T11:10:43Z",
+  "generated_at_utc": "2026-08-31T11:33:57Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 305,
-    "asset_count": 610,
-    "unique_source_art_count": 305,
-    "unique_hero_sha256_count": 305,
-    "unique_inline_sha256_count": 305,
-    "distinct_article_pair_count": 305,
-    "hero_ocr_pass_count": 305,
-    "inline_ocr_pass_count": 305,
-    "exact_filename_identity_count": 305
+    "article_count": 306,
+    "asset_count": 612,
+    "unique_source_art_count": 306,
+    "unique_hero_sha256_count": 306,
+    "unique_inline_sha256_count": 306,
+    "distinct_article_pair_count": 306,
+    "hero_ocr_pass_count": 306,
+    "inline_ocr_pass_count": 306,
+    "exact_filename_identity_count": 306
   },
   "contact_sheets": {
     "hero": [
@@ -660,6 +660,56 @@
           "actual": "Brazos County mineral rights\nproperty tax protest",
           "normalized_expected": "brazos county mineral rights property tax protest",
           "normalized_actual": "brazos county mineral rights property tax protest",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "cad-account-number-rrc-lease-id-operator-number-texas-mineral-records",
+      "title": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
+      "keyword": "Texas mineral record identifiers",
+      "file_path": "src/content/posts/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.mdx",
+      "source_public_path": "/assets/articles/hero/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave226-creative-sources/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records-hero-base.png",
+        "artifacts/mrx1000-wave226-creative-sources/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T11:29:44.393Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp",
+        "alt": "A bright records lab appears beside the exact Article 298 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "71f76509b4ebe6ff14bf2ecff7873fe248d8401bc5486a61f451bbfcd0d18ed9",
+        "perceptual_hash": "0000000000000111000000000000110000000000011111100000000001111110000000000111111100000000011111110000000011111111000000001111111100000000111111110000000011111111000000001111111100000000111111110000000011111101000000001111111000000000111111100000000011111110",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
+          "actual": "CAD Account Number,\nRRC Lease ID, and\nOperator Number in\nTexas Mineral Records",
+          "normalized_expected": "cad account number rrc lease id and operator number in texas mineral records",
+          "normalized_actual": "cad account number rrc lease id and operator number in texas mineral records",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/texas-mineral-record-identifiers.webp",
+        "alt": "An overhead five-lane board appears above the exact Texas mineral record identifiers keyword.",
+        "rendered_text": "Texas mineral record identifiers",
+        "visual_variant": "wave226-distinct-generated-low-three-quarter-bright-records-lab-hero-and-overhead-slate-five-lane-identifier-board-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "f64e3013f841345bf07dbea3b80976e2614b58bd9138a73b02cc0c62a4e52f07",
+        "perceptual_hash": "0000001111111111000000111111111100000011111111110000001111111111000000011111111111110111111111111111011011111111000000000100010100000001101111110000000110000000000111111111100000000000000000000000001111000000000000111100000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas mineral record identifiers",
+          "actual": "Texas mineral\nrecord identifiers",
+          "normalized_expected": "texas mineral record identifiers",
+          "normalized_actual": "texas mineral record identifiers",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

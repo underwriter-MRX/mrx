@@ -624,4 +624,38 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       'Texas Mineral Rights Value: Family Decision Guide Step By Step',
     );
   });
+
+  it('keeps Article 298 on its exact Texas record-identifier boundary', () => {
+    const slug = 'cad-account-number-rrc-lease-id-operator-number-texas-mineral-records';
+    const source = readFileSync(join(postsDir, `${slug}.mdx`), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
+    );
+
+    expect(scalar(fm, 'title')).toBe(
+      'CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Texas mineral record identifiers',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
+      nestedScalar(fm, 'hero_image', 'src'),
+    );
+    expect(sourceUrls).toHaveLength(5);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The identifier crosswalk');
+    expect(body).toContain('API number identifies the wellbore lane');
+    expect(body).toContain('P-5 number identifies the operator lane');
+    expect(body).toContain('C298-06');
+    expect(body).toContain('RRC-LOOKUP-SEQUENCE');
+    expect(body).not.toContain(
+      'Texas Mineral Rights Value: Guide For Mineral Owners',
+    );
+  });
 });

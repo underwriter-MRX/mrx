@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T11:16:06Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T11:40:02Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -675,12 +675,15 @@
     "wave224_selection_decision_sha256": "25954350dfad0eef6823966d359789b8bcf2b8d497f105addf8bda39a55a1881",
     "wave225_selection_decision_id": "MRX1000-W225-SELECT-2026-08-31",
     "wave225_selection_decision_path": "docs/governance/mrx1000-wave225-selection-decision-2026-08-31.md",
-    "wave225_selection_decision_sha256": "fb18e7716be7bc2df9530e6c99a1fd0d607075e73093544f4e72b7a89af7d69e"
+    "wave225_selection_decision_sha256": "fb18e7716be7bc2df9530e6c99a1fd0d607075e73093544f4e72b7a89af7d69e",
+    "wave226_selection_decision_id": "MRX1000-W226-SELECT-2026-08-31",
+    "wave226_selection_decision_path": "docs/governance/mrx1000-wave226-selection-decision-2026-08-31.md",
+    "wave226_selection_decision_sha256": "a5a3ce567569dab1d021c24ee5d42f9e57989368aabbc8787bd48a7747afb2c5"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "90f1e0d30d686d91b7c207b5e7135d6255436320d870aa1590e096703ad5d89b",
+    "canonical_ledger_sha256": "c72ef7d3434e81ad702c74d5db15eba6276cdc2051633dbf80eaf92580905c7b",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -695,11 +698,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 296,
+    "prior_verified_article_count": 297,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 297,
-    "exact_admitted_slate_sha256": "1e8dddc4d22e45621c3c45dc139728935716ea9030a839e10051c58a53c8a4c4"
+    "exact_admitted_count": 298,
+    "exact_admitted_slate_sha256": "a69784bd57c4d04e7ddb3e063491dfa579ae5f2c1398fba9feb3db350819ce30"
   },
   "articles": [
     {
@@ -10855,10 +10858,45 @@
       "inline_path": "/assets/articles/inline/tax-year-production-month-and-download-date-texas-mineral-records/texas-mineral-record-dates.webp",
       "inline_asset_sha256": "1925a7677db8878187dbac42b758dc9a69c7d28701bfc09e1f43706ab513f77c",
       "inline_rendered_text": "Texas mineral record dates"
+    },
+    {
+      "selection_rank": 298,
+      "program_row_id": "MRX1000-0846",
+      "source_shortlist_program_row_id": "MRX1000-0846",
+      "slug": "cad-account-number-rrc-lease-id-operator-number-texas-mineral-records",
+      "title": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
+      "source_shortlist_title": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
+      "canonical_url": "https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "5c6ecc67d008a87f677ed5616113e81486274f9be6f7d809d19724886c3508f2",
+      "repo_path": "src/content/posts/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.mdx",
+      "repo_sha256": "1e247094a20a0058810bfa30806f84b628bcba0d47240bcd033f80d3bdf397c3",
+      "article_sha256": "1e247094a20a0058810bfa30806f84b628bcba0d47240bcd033f80d3bdf397c3",
+      "hero_path": "/assets/articles/hero/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp",
+      "hero_sha256": "71f76509b4ebe6ff14bf2ecff7873fe248d8401bc5486a61f451bbfcd0d18ed9",
+      "hero_asset_sha256": "71f76509b4ebe6ff14bf2ecff7873fe248d8401bc5486a61f451bbfcd0d18ed9",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2035,
+      "risk_citation_remediation": [
+        "The original statewide Texas-value guide identity is rejected because it repeats the live valuation corpus and retains a 0.5000 planning-title collision.",
+        "The replacement owns only a source-labeling crosswalk for CAD long and short account identifiers, RRC API wellbore number, district plus oil lease or gas-well identifier, and RRC P-5 operator number.",
+        "The article repeatedly states that similar names or numbers do not establish a private-property connection, title, ownership, royalty entitlement, account correctness, value, offer quality, or a transaction result.",
+        "Article 297 retains date roles, query-specific RRC worksheets retain query execution and result fields, the production locator retains production-search organization, the operator-name-change log retains temporal name evidence, and title and property-connection pages retain their own conclusions.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/texas-mineral-record-identifiers.webp",
+      "inline_asset_sha256": "f64e3013f841345bf07dbea3b80976e2614b58bd9138a73b02cc0c62a4e52f07",
+      "inline_rendered_text": "Texas mineral record identifiers"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 297,
+    "admitted_article_count": 298,
     "selection_ranks": [
       1,
       2,
@@ -11156,7 +11194,8 @@
       294,
       295,
       296,
-      297
+      297,
+      298
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11215,9 +11254,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "9bf15ff10bb3c1c3f486ff5e9cef83d2c4221d6ff2d2a9104b3c140a62875235",
-    "public_article_count": 305,
-    "batch_article_count": 297,
+    "retrofit_manifest_sha256": "3d9986d7b7ddaf9ebe177c1d51397757000aeb53e43a76acba7d261e28fa42ef",
+    "public_article_count": 306,
+    "batch_article_count": 298,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
