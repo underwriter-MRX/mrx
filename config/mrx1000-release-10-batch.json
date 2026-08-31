@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T23:12:08Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T23:34:58Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -735,12 +735,15 @@
     "wave244_selection_decision_sha256": "318268dc5bf39daf60099bc294ac1f3ba1736fc457dcb80ff12f1a267278551d",
     "wave245_selection_decision_id": "MRX1000-W245-SELECT-2026-08-31",
     "wave245_selection_decision_path": "docs/governance/mrx1000-wave245-selection-decision-2026-08-31.md",
-    "wave245_selection_decision_sha256": "10b2999a0b77640f4a1767a56e11d89cd84eac50c57a265d06119ce1230f0530"
+    "wave245_selection_decision_sha256": "10b2999a0b77640f4a1767a56e11d89cd84eac50c57a265d06119ce1230f0530",
+    "wave246_selection_decision_id": "MRX1000-W246-SELECT-2026-08-31",
+    "wave246_selection_decision_path": "docs/governance/mrx1000-wave246-selection-decision-2026-08-31.md",
+    "wave246_selection_decision_sha256": "659968fa50c39705bd86921298c924077cd2bce3276db5c0d48baf5fe87b8da1"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "f0be907edcad1c471b483a8ea0dfb4f778a0fab1768aea7d032425c3529acf2f",
+    "canonical_ledger_sha256": "7338a7f0a30daf0eb9b59c97d8b305cbe28464bad35f0519a7a962c4e216ea44",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -755,11 +758,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 316,
+    "prior_verified_article_count": 317,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 317,
-    "exact_admitted_slate_sha256": "72307081578c141a84bc1a951efe9a4580a76990c431e2f0292748de7e9e6531"
+    "exact_admitted_count": 318,
+    "exact_admitted_slate_sha256": "d97aa8a6f3fb426064f32ee483ba7c24112d814e9a0b827f9d1208285c5d356d"
   },
   "articles": [
     {
@@ -11627,10 +11630,45 @@
       "inline_path": "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/winkler-cad-mineral-appraisal-cost-and-market-approaches.webp",
       "inline_asset_sha256": "c37ec197bf2f8e6eb0ab861d06a529590a3080a68b9f3aaa877f69f21e310c8a",
       "inline_rendered_text": "Winkler CAD mineral appraisal cost and market approaches"
+    },
+    {
+      "selection_rank": 318,
+      "program_row_id": "MRX1000-0891",
+      "source_shortlist_program_row_id": "MRX1000-0891",
+      "slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+      "title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+      "source_shortlist_title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "11d6799cc4d047d56c895af18637c63118e2b7c8c9085bc983bd1084b512387d",
+      "repo_path": "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+      "repo_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+      "article_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+      "hero_path": "/assets/articles/hero/texas-recorded-mineral-documents-instrument-number-volume-page-and-certified-copy-status.webp",
+      "hero_sha256": "88d7c8025c50212ddfb5d558a4035c65a65de2531361a159ecf43e6642f36a6e",
+      "hero_asset_sha256": "88d7c8025c50212ddfb5d558a4035c65a65de2531361a159ecf43e6642f36a6e",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2558,
+      "risk_citation_remediation": [
+        "The factory planning identity is rejected because it materially overlaps the existing documents-needed-to-sell, sale-package-index, redaction, and recorded-copy-retrieval corpus.",
+        "The replacement owns only a source-preserving five-field record-control job for an already-found recorded instrument: county, instrument or county-clerk file number, volume/page or film code when present, working-copy status, and county-clerk certification status.",
+        "The article does not provide a general sale-document checklist, package index, redaction workflow, retrieval walkthrough, ownership proof, title opinion, legal-sufficiency decision, or claim that certification proves current ownership.",
+        "Answer-first structure, stable claim IDs, source age, complete-file identity, exact page and section locators, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/texas-recorded-mineral-document-locator-fields.webp",
+      "inline_asset_sha256": "195482b33b309afb88a76369675f7c962c993840c6b237c3eb83159ae5f87f63",
+      "inline_rendered_text": "Texas recorded mineral document locator fields"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 317,
+    "admitted_article_count": 318,
     "selection_ranks": [
       1,
       2,
@@ -11948,7 +11986,8 @@
       314,
       315,
       316,
-      317
+      317,
+      318
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -12007,9 +12046,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "c5c4507c6a1410f4b8c95e74ddad245b07575df2b911e8ddcbcc0b9ffe0b67b6",
-    "public_article_count": 325,
-    "batch_article_count": 317,
+    "retrofit_manifest_sha256": "32dc09005bf1857508588f348286ad98ae24caaa2c838fb3fbebc2dfcc9376ee",
+    "public_article_count": 326,
+    "batch_article_count": 318,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

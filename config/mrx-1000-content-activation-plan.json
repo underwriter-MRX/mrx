@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T14:26:52.205Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "dfb98e2f7d9ad49640383c86ca6583aac3d3a6b9b58b67cb83d1b5e2e440842a",
+  "content_fingerprint_sha256": "ba8b0ed324d8a446606be1a343169d6a70abd1f1d991ebda32ddfd6dfdfba3c1",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "1f29c2211b72c5ba583cef2b69f448d1a538b54758f6af8ea2476605f8f1ab15",
+    "canonical_ledger_fingerprint_sha256": "83cf1b83ffedd6b33b1a3e7931cef0bc774a614521837ead4db7884a60751e86",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 325,
+      "live_public_published_route": 326,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 627
+      "planning_only_inventory": 626
     }
   },
   "rows": [
@@ -52177,11 +52177,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0891",
-        "target_title": "Cash For Mineral Rights: Documents Before You Sell",
-        "url": "/blog/cash-for-mineral-rights-documents-before-you-sell/",
+        "target_title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+        "url": "/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -52224,15 +52224,15 @@
     },
     {
       "program_row_id": "MRX1000-0891",
-      "canonical_title": "Cash For Mineral Rights: Documents Before You Sell",
-      "canonical_slug": "cash-for-mineral-rights-documents-before-you-sell",
-      "canonical_url": "/blog/cash-for-mineral-rights-documents-before-you-sell/",
+      "canonical_title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+      "canonical_slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+      "canonical_url": "/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
       "cluster": "title-lease-ownership-documents",
       "pillar": "title-lease-ownership",
-      "search_intent": "basin-market",
+      "search_intent": "informational",
       "funnel_stage": "education",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/learning-center/title-lease-ownership/",
         "route_evidence": "src/pages/learning-center/title-lease-ownership/index.astro",
@@ -52254,7 +52254,7 @@
         "placement_code": "mid_article",
         "placement_guidance": "Place after the direct answer or first useful checklist, before the first deep-dive section.",
         "assignment_rule": "education_stage_nurture",
-        "assignment_basis": "education:basin-market",
+        "assignment_basis": "education:informational",
         "approved_route_evidence": "src/pages/free-guide.astro",
         "role": "primary_nurture",
         "is_appointment_cta": false,
@@ -52267,7 +52267,7 @@
         "placement_code": "closing_team_handoff",
         "placement_guidance": "Place after the final takeaway and primary guide CTA, before related articles, as the optional MRX team handoff.",
         "assignment_rule": "education_stage_optional_team_handoff",
-        "assignment_basis": "education:basin-market",
+        "assignment_basis": "education:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "secondary_appointment_after_primary_nurture",
         "distinct_from_primary_cta": true,
@@ -52281,7 +52281,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

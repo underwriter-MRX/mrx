@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (325)
+## Published article URLs (326)
 
 ### Competing offers
 
@@ -90,6 +90,7 @@ Generated from Astro content at build time.
 
 ### Selling process
 
+- [Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status](https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/)
 - [How to Build a Mineral Rights Valuation Evidence-Cutoff Log](https://mineralrightsxchange.com/blog/how-to-build-a-mineral-rights-valuation-evidence-cutoff-log/)
 - [Mineral Rights Document Redaction Checklist Before You Share Records](https://mineralrightsxchange.com/blog/mineral-rights-document-redaction-checklist-before-sharing-records/)
 - [How to Build a Mineral Rights Offer Correspondence Index](https://mineralrightsxchange.com/blog/mineral-rights-offer-correspondence-index/)

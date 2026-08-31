@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T23:04:19Z",
+  "generated_at_utc": "2026-08-31T23:27:49Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 325,
-    "asset_count": 650,
-    "unique_source_art_count": 325,
-    "unique_hero_sha256_count": 325,
-    "unique_inline_sha256_count": 325,
-    "distinct_article_pair_count": 325,
-    "hero_ocr_pass_count": 325,
-    "inline_ocr_pass_count": 325,
-    "exact_filename_identity_count": 325
+    "article_count": 326,
+    "asset_count": 652,
+    "unique_source_art_count": 326,
+    "unique_hero_sha256_count": 326,
+    "unique_inline_sha256_count": 326,
+    "distinct_article_pair_count": 326,
+    "hero_ocr_pass_count": 326,
+    "inline_ocr_pass_count": 326,
+    "exact_filename_identity_count": 326
   },
   "contact_sheets": {
     "hero": [
@@ -9556,6 +9556,56 @@
           "actual": "Texas Railroad\nCommission:\nPublic Records\nfor Mineral\nRights",
           "normalized_expected": "texas railroad commission public records for mineral rights",
           "normalized_actual": "texas railroad commission public records for mineral rights",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+      "title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+      "keyword": "Texas recorded mineral document locator fields",
+      "file_path": "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+      "source_public_path": "/assets/articles/hero/texas-recorded-mineral-documents-instrument-number-volume-page-and-certified-copy-status.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave246-creative-sources/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status-hero-base.png",
+        "artifacts/mrx1000-wave246-creative-sources/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T23:27:11.640Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/texas-recorded-mineral-documents-instrument-number-volume-page-and-certified-copy-status.webp",
+        "alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "88d7c8025c50212ddfb5d558a4035c65a65de2531361a159ecf43e6642f36a6e",
+        "perceptual_hash": "0000000000000011000000000000000000000000000001000000000001100111000000001111110001010000111110000111000011111000011100001111110000000000111111100000000011111110000000001111111000000000111111100000000001111110000000000111111000000000011110000000000001111000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+          "actual": "Texas Recorded\nMineral Documents:\nInstrument Number,\nVolume/Page, and\nCertified-Copy Status",
+          "normalized_expected": "texas recorded mineral documents instrument number volume page and certified copy status",
+          "normalized_actual": "texas recorded mineral documents instrument number volume page and certified copy status",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/texas-recorded-mineral-document-locator-fields.webp",
+        "alt": "A top-down five-field record-control matrix appears below the exact Texas locator-field keyword.",
+        "rendered_text": "Texas recorded mineral document locator fields",
+        "visual_variant": "wave246-distinct-generated-dark-low-three-quarter-records-desk-hero-and-bright-strict-top-down-five-field-record-control-matrix-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "195482b33b309afb88a76369675f7c962c993840c6b237c3eb83159ae5f87f63",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000011111000000000111111111111111011111111111111101111111111111111111111111111111111111111111111111111111111111111111111111111111000100111111111100001111111111110110111111111111001",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas recorded mineral document locator fields",
+          "actual": "Texas recorded mineral\ndocument locator fields",
+          "normalized_expected": "texas recorded mineral document locator fields",
+          "normalized_actual": "texas recorded mineral document locator fields",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }
