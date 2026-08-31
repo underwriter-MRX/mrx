@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T12:38:25Z",
+  "evidence_scaffold_generated_at_utc": "2026-08-31T13:07:44Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -684,12 +684,15 @@
     "wave227_selection_decision_sha256": "f6f00f4362d82173cbb9e2f98bbd03c0152c610a3390a5b09bd57575f1c0e7e7",
     "wave228_selection_decision_id": "MRX1000-W228-SELECT-2026-08-31",
     "wave228_selection_decision_path": "docs/governance/mrx1000-wave228-selection-decision-2026-08-31.md",
-    "wave228_selection_decision_sha256": "0255f4afe69f9876fb8036871c5b8688d5abbdbdb351451a65b78037ffc03730"
+    "wave228_selection_decision_sha256": "0255f4afe69f9876fb8036871c5b8688d5abbdbdb351451a65b78037ffc03730",
+    "wave229_selection_decision_id": "MRX1000-W229-SELECT-2026-08-31",
+    "wave229_selection_decision_path": "docs/governance/mrx1000-wave229-selection-decision-2026-08-31.md",
+    "wave229_selection_decision_sha256": "c017959e750f15e21462a4468eead1346b6a1a883547574c8d56d3831a8982fc"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "c2983e702b33e5a69d0a75cc41139c59b369451e3432030d84c397852e26e451",
+    "canonical_ledger_sha256": "494cf37bad03667f89109c125123901eb9903019b419ddfe81dec8c13982f316",
     "canonical_ledger_generated_at": "2026-07-20T06:02:26.713Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -704,11 +707,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 299,
+    "prior_verified_article_count": 300,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 300,
-    "exact_admitted_slate_sha256": "6a9cc7a8eb4ef9270b7ebef0fd70301cf5c4c5243a6cfe7eded7c6f9666b7993"
+    "exact_admitted_count": 301,
+    "exact_admitted_slate_sha256": "b5b0778a195b6d47a6a2b1fcc41253ed6b0c0eb908a7229fcc3cc3eb10265c3a"
   },
   "articles": [
     {
@@ -10970,10 +10973,46 @@
       "inline_path": "/assets/articles/inline/texas-rrc-district-code-conversion-file-values-crosswalk/texas-rrc-district-code-conversion.webp",
       "inline_asset_sha256": "5e5074a2f0fc90bb04aa78d01ea85e45f59310eb5d661da394ce570888877892",
       "inline_rendered_text": "Texas RRC district code conversion"
+    },
+    {
+      "selection_rank": 301,
+      "program_row_id": "MRX1000-0849",
+      "source_shortlist_program_row_id": "MRX1000-0849",
+      "slug": "texas-rrc-field-classification-codes-associated-field-numbers",
+      "title": "Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers",
+      "source_shortlist_title": "Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-classification-codes-associated-field-numbers/",
+      "pillar": "texas-mineral-rights",
+      "cluster": "texas-county-basin-local-intent",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "b1b9e81b52a019c6fefc9e4f5f903a041e8135bc32098128b9793ff50446fb3a",
+      "repo_path": "src/content/posts/texas-rrc-field-classification-codes-associated-field-numbers.mdx",
+      "repo_sha256": "e68a683948357f74786df40bc20c2b443d898233d05643228db159c165671348",
+      "article_sha256": "e68a683948357f74786df40bc20c2b443d898233d05643228db159c165671348",
+      "hero_path": "/assets/articles/hero/texas-rrc-field-classification-codes-g-o-b-and-associated-field-numbers.webp",
+      "hero_sha256": "0f112b38a9e71ad8070b5a2440f1118772637f66135dcfe84693663a370bafae",
+      "hero_asset_sha256": "0f112b38a9e71ad8070b5a2440f1118772637f66135dcfe84693663a370bafae",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2506,
+      "risk_citation_remediation": [
+        "The original statewide valuation-timeline identity is rejected because it repeats the admitted valuation and county timeline corpus and retains a 0.6000 planning-title collision.",
+        "The replacement owns only source-scoped G/O/B field-class semantics, og_field and og_field_info row cardinality, and associated-field pointer integrity.",
+        "The article preserves exact table and field labels, raw code, field_id, field number, row role, source object, version or access date, pointer resolution status, exceptions, and the current-manual versus legacy-source distinction.",
+        "Article 299 retains identifier non-equivalence and name-only-join warnings; Article 300 retains district conversion; and the Field Search Worksheet retains query execution and results.",
+        "The article stops before field boundary, county, district, well, lease, tract, API, title, ownership, production, reserves, value, offer, buyer, or transaction conclusions and never presents classification or a pointer as proof of those relationships.",
+        "Answer-first structure, stable claim IDs, evidence labels, current-source checking, claim-adjacent official citations, supported FAQs, semantic links, exact visible and schema entities, exact-title hero and share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply under MRX1000-FACTORY-SEO-AEO-2026-08-29."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-rrc-field-classification-codes-associated-field-numbers.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-rrc-field-classification-codes-associated-field-numbers/texas-rrc-field-classification-codes.webp",
+      "inline_asset_sha256": "7a8fd40601b78aa6828c42a3aed945c32705492973128d2d0bcb50a339e85ccc",
+      "inline_rendered_text": "Texas RRC field classification codes"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 300,
+    "admitted_article_count": 301,
     "selection_ranks": [
       1,
       2,
@@ -11274,7 +11313,8 @@
       297,
       298,
       299,
-      300
+      300,
+      301
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -11333,9 +11373,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "6fa30247042e8bbaf3ca0434233a0103ed201add720a3d34e71b399e00e12ab6",
-    "public_article_count": 308,
-    "batch_article_count": 300,
+    "retrofit_manifest_sha256": "df12ed6027cc97376479433f94a610bfab4a7dc2fc02c8743dd14b24d62b74e6",
+    "public_article_count": 309,
+    "batch_article_count": 301,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

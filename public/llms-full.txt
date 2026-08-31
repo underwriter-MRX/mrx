@@ -32,7 +32,7 @@ Generated from Astro content at build time.
 - [Tommy](https://mineralrightsxchange.com/authors/tommy/)
 - [Walt](https://mineralrightsxchange.com/authors/walt/)
 
-## Published article URLs (308)
+## Published article URLs (309)
 
 ### Competing offers
 
@@ -160,6 +160,7 @@ Generated from Astro content at build time.
 
 ### Texas oil and gas
 
+- [Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers](https://mineralrightsxchange.com/blog/texas-rrc-field-classification-codes-associated-field-numbers/)
 - [Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk](https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/)
 - [Texas RRC District, County, and Field Codes: A Source-Label Crosswalk](https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/)
 - [CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records](https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/)

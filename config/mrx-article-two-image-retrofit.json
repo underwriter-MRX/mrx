@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T12:22:08Z",
+  "generated_at_utc": "2026-08-31T13:04:41Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 308,
-    "asset_count": 616,
-    "unique_source_art_count": 308,
-    "unique_hero_sha256_count": 308,
-    "unique_inline_sha256_count": 308,
-    "distinct_article_pair_count": 308,
-    "hero_ocr_pass_count": 308,
-    "inline_ocr_pass_count": 308,
-    "exact_filename_identity_count": 308
+    "article_count": 309,
+    "asset_count": 618,
+    "unique_source_art_count": 309,
+    "unique_hero_sha256_count": 309,
+    "unique_inline_sha256_count": 309,
+    "distinct_article_pair_count": 309,
+    "hero_ocr_pass_count": 309,
+    "inline_ocr_pass_count": 309,
+    "exact_filename_identity_count": 309
   },
   "contact_sheets": {
     "hero": [
@@ -9906,6 +9906,56 @@
           "actual": "Texas RRC EDMS injection\ndisposal permit document retrieval",
           "normalized_expected": "texas rrc edms injection disposal permit document retrieval",
           "normalized_actual": "texas rrc edms injection disposal permit document retrieval",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "texas-rrc-field-classification-codes-associated-field-numbers",
+      "title": "Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers",
+      "keyword": "Texas RRC field classification codes",
+      "file_path": "src/content/posts/texas-rrc-field-classification-codes-associated-field-numbers.mdx",
+      "source_public_path": "/assets/articles/hero/texas-rrc-field-classification-codes-g-o-b-and-associated-field-numbers.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave229-creative-sources/texas-rrc-field-classification-codes-associated-field-numbers-hero-base.png",
+        "artifacts/mrx1000-wave229-creative-sources/texas-rrc-field-classification-codes-associated-field-numbers-inline-base.png"
+      ],
+      "generated_at_utc": "2026-08-31T12:59:37.072Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/texas-rrc-field-classification-codes-g-o-b-and-associated-field-numbers.webp",
+        "alt": "Three unlabeled archival classification trays appear beside the exact Article 301 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "0f112b38a9e71ad8070b5a2440f1118772637f66135dcfe84693663a370bafae",
+        "perceptual_hash": "0000000000011000000000000001100100000000000110010000000000011000000000000011111101100000001111110101100001111110011000000111111000000000011111100000000001111111000000001111111100000000111111110000000011111111000000001111111100000000011111110000000000111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers",
+          "actual": "Texas RRC Field\nClassification Codes:\nG, O, B, and Associated\nField Numbers",
+          "normalized_expected": "texas rrc field classification codes g o b and associated field numbers",
+          "normalized_actual": "texas rrc field classification codes g o b and associated field numbers",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/texas-rrc-field-classification-codes-associated-field-numbers/texas-rrc-field-classification-codes.webp",
+        "alt": "An overhead row-and-pointer audit mat appears above the exact Texas RRC field classification codes keyword.",
+        "rendered_text": "Texas RRC field classification codes",
+        "visual_variant": "wave229-distinct-generated-angled-sunlit-three-tray-pointer-hero-and-overhead-graphite-row-cardinality-pointer-audit-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "7a8fd40601b78aa6828c42a3aed945c32705492973128d2d0bcb50a339e85ccc",
+        "perceptual_hash": "0000000000000000111111111100000011111111111000001111111111000000111111111110000011111111110000001111111111011110111111111101111011111111100000000000000000000000000000000000000000000000000000000000001111000000000000111100000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Texas RRC field classification codes",
+          "actual": "Texas RRC field\nclassification codes",
+          "normalized_expected": "texas rrc field classification codes",
+          "normalized_actual": "texas rrc field classification codes",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

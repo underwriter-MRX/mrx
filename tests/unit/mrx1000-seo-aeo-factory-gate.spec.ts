@@ -402,9 +402,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Pecos CAD pipeline appraisal models',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(4);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('every pipeline receives a replacement-cost-new-less-depreciation');
@@ -435,9 +433,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Reeves County Category G worksheets',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(6);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('two separate Category G worksheets');
@@ -467,12 +463,8 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       nestedScalar(fm, 'hero_image', 'social_src'),
     );
     expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
-    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
-      'Reeves CAD 2025 MAP review',
-    );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe('Reeves CAD 2025 MAP review');
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('PASS on all four mandatory requirements');
@@ -495,9 +487,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       (match) => match[1],
     );
 
-    expect(scalar(fm, 'title')).toBe(
-      'Reeves County 2025 Preliminary PVS: Two Category G Totals',
-    );
+    expect(scalar(fm, 'title')).toBe('Reeves County 2025 Preliminary PVS: Two Category G Totals');
     expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
       nestedScalar(fm, 'hero_image', 'social_src'),
     );
@@ -505,9 +495,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Reeves County 2025 preliminary PVS',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('preserve the district before the number');
@@ -530,9 +518,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       (match) => match[1],
     );
 
-    expect(scalar(fm, 'title')).toBe(
-      'Reeves CAD 2024 Ratio Study: 66 Category G Ratios',
-    );
+    expect(scalar(fm, 'title')).toBe('Reeves CAD 2024 Ratio Study: 66 Category G Ratios');
     expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
       nestedScalar(fm, 'hero_image', 'social_src'),
     );
@@ -540,9 +526,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Reeves CAD 2024 Category G ratio study',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(4);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('read all seven fields as one row');
@@ -551,9 +535,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('Do not convert 1.00 into a property finding');
     expect(body).toContain('C295-10');
     expect(body).toContain('AGGREGATE-ROW');
-    expect(body).not.toContain(
-      'Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026',
-    );
+    expect(body).not.toContain('Reeves County, Texas Mineral Rights Value: Risk Checklist In 2026');
   });
 
   it('keeps Article 296 on its exact Reeves missing-year route boundary', () => {
@@ -565,9 +547,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       (match) => match[1],
     );
 
-    expect(scalar(fm, 'title')).toBe(
-      'Why Reeves CAD Has No 2025 Ratio-Study Worksheet',
-    );
+    expect(scalar(fm, 'title')).toBe('Why Reeves CAD Has No 2025 Ratio-Study Worksheet');
     expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
       nestedScalar(fm, 'hero_image', 'social_src'),
     );
@@ -575,9 +555,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Reeves CAD 2025 ratio-study worksheet',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('the 2025 findings list has no 195 Reeves row');
@@ -586,9 +564,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('What the missing 2025 route does not prove');
     expect(body).toContain('C296-06');
     expect(body).toContain('NEGATIVE-ROUTE-CHECK');
-    expect(body).not.toContain(
-      'Reeves County, Texas Mineral Rights Value: Timeline In 2026',
-    );
+    expect(body).not.toContain('Reeves County, Texas Mineral Rights Value: Timeline In 2026');
   });
 
   it('keeps Article 297 on its exact three-date record-labeling boundary', () => {
@@ -607,12 +583,8 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       nestedScalar(fm, 'hero_image', 'social_src'),
     );
     expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
-    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
-      'Texas mineral record dates',
-    );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe('Texas mineral record dates');
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('The three-date crosswalk');
@@ -620,9 +592,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('Download date is provenance, not the source period');
     expect(body).toContain('C297-06');
     expect(body).toContain('RESEARCH-PROVENANCE');
-    expect(body).not.toContain(
-      'Texas Mineral Rights Value: Family Decision Guide Step By Step',
-    );
+    expect(body).not.toContain('Texas Mineral Rights Value: Family Decision Guide Step By Step');
   });
 
   it('keeps Article 298 on its exact Texas record-identifier boundary', () => {
@@ -644,9 +614,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Texas mineral record identifiers',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('The identifier crosswalk');
@@ -654,9 +622,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('P-5 number identifies the operator lane');
     expect(body).toContain('C298-06');
     expect(body).toContain('RRC-LOOKUP-SEQUENCE');
-    expect(body).not.toContain(
-      'Texas Mineral Rights Value: Guide For Mineral Owners',
-    );
+    expect(body).not.toContain('Texas Mineral Rights Value: Guide For Mineral Owners');
   });
 
   it('keeps Article 299 on its exact Texas RRC source-label crosswalk boundary', () => {
@@ -678,9 +644,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Texas RRC district county field codes',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('The source-label crosswalk');
@@ -688,9 +652,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('The eight-digit field number has two source-defined portions');
     expect(body).toContain('C299-06');
     expect(body).toContain('RRC-FIELD-COUNTY-OCCURRENCE');
-    expect(body).not.toContain(
-      'Texas Mineral Rights Value: Market Update For Mineral Owners',
-    );
+    expect(body).not.toContain('Texas Mineral Rights Value: Market Update For Mineral Owners');
   });
 
   it('keeps Article 300 on its exact source-scoped RRC district conversion boundary', () => {
@@ -712,9 +674,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
       'Texas RRC district code conversion',
     );
-    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(
-      nestedScalar(fm, 'hero_image', 'src'),
-    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
     expect(sourceUrls).toHaveLength(5);
     expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
     expect(body).toContain('The source-scoped district conversion');
@@ -723,8 +683,37 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('Keep the T-1 6E/06 exception attached to its guide');
     expect(body).toContain('C300-06');
     expect(body).toContain('RRC-T1-EXCEPTION');
-    expect(body).not.toContain(
-      'Texas Mineral Rights Value: Risk Checklist In 2026',
+    expect(body).not.toContain('Texas Mineral Rights Value: Risk Checklist In 2026');
+  });
+
+  it('keeps Article 301 on its exact RRC field-class and pointer boundary', () => {
+    const slug = 'texas-rrc-field-classification-codes-associated-field-numbers';
+    const source = readFileSync(join(postsDir, slug + '.mdx'), 'utf8');
+    const fm = frontmatter(source);
+    const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/, '');
+    const sourceUrls = [...fm.matchAll(/^\s+href:\s*['"](https:\/\/[^'"]+)['"]$/gm)].map(
+      (match) => match[1],
     );
+
+    expect(scalar(fm, 'title')).toBe(
+      'Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers',
+    );
+    expect(nestedScalar(fm, 'hero_image', 'src')).toBe(
+      nestedScalar(fm, 'hero_image', 'social_src'),
+    );
+    expect(nestedScalar(fm, 'hero_image', 'rendered_text')).toBe(scalar(fm, 'title'));
+    expect(nestedScalar(fm, 'inline_image', 'rendered_text')).toBe(
+      'Texas RRC field classification codes',
+    );
+    expect(nestedScalar(fm, 'inline_image', 'src')).not.toBe(nestedScalar(fm, 'hero_image', 'src'));
+    expect(sourceUrls).toHaveLength(6);
+    expect(sourceUrls.every((url) => body.includes(url))).toBe(true);
+    expect(body).toContain('The field classification and row model');
+    expect(body).toContain('One field can require two type-specific rows');
+    expect(body).toContain('Resolve an associated field number as a pointer');
+    expect(body).toContain('Preserve the manual');
+    expect(body).toContain('C301-08');
+    expect(body).toContain('RRC-ASSOCIATED-FIELD-POINTER');
+    expect(body).not.toContain('Texas Mineral Rights Value: Timeline In 2026');
   });
 });
