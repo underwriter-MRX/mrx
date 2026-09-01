@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-08-31T23:34:58Z",
+  "evidence_scaffold_generated_at_utc": "2026-09-01T00:07:07Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -738,12 +738,15 @@
     "wave245_selection_decision_sha256": "10b2999a0b77640f4a1767a56e11d89cd84eac50c57a265d06119ce1230f0530",
     "wave246_selection_decision_id": "MRX1000-W246-SELECT-2026-08-31",
     "wave246_selection_decision_path": "docs/governance/mrx1000-wave246-selection-decision-2026-08-31.md",
-    "wave246_selection_decision_sha256": "659968fa50c39705bd86921298c924077cd2bce3276db5c0d48baf5fe87b8da1"
+    "wave246_selection_decision_sha256": "659968fa50c39705bd86921298c924077cd2bce3276db5c0d48baf5fe87b8da1",
+    "wave247_selection_decision_id": "MRX1000-W247-SELECT-2026-08-31",
+    "wave247_selection_decision_path": "docs/governance/mrx1000-wave247-selection-decision-2026-08-31.md",
+    "wave247_selection_decision_sha256": "3f06b93cb9419d7155edebf2cca5ae5030bbf38daba96bea774aa85df504a3ef"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "7338a7f0a30daf0eb9b59c97d8b305cbe28464bad35f0519a7a962c4e216ea44",
+    "canonical_ledger_sha256": "be33aed991bd59c1ffc761e9c566803820901bd7349683b46fc8b3ecd910b533",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -758,11 +761,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 317,
+    "prior_verified_article_count": 318,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 318,
-    "exact_admitted_slate_sha256": "d97aa8a6f3fb426064f32ee483ba7c24112d814e9a0b827f9d1208285c5d356d"
+    "exact_admitted_count": 319,
+    "exact_admitted_slate_sha256": "3074f3dfe1656968dd47748173139753f797690200104179eb65e3807e54cd82"
   },
   "articles": [
     {
@@ -11665,10 +11668,45 @@
       "inline_path": "/assets/articles/inline/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/texas-recorded-mineral-document-locator-fields.webp",
       "inline_asset_sha256": "195482b33b309afb88a76369675f7c962c993840c6b237c3eb83159ae5f87f63",
       "inline_rendered_text": "Texas recorded mineral document locator fields"
+    },
+    {
+      "selection_rank": 319,
+      "program_row_id": "MRX1000-0892",
+      "source_shortlist_program_row_id": "MRX1000-0892",
+      "slug": "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log",
+      "title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+      "source_shortlist_title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+      "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "7f57317de55a5eabd12da829e87e41887fd0c2994b09efa292f294a1fdbfcac9",
+      "repo_path": "src/content/posts/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log.mdx",
+      "repo_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+      "article_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+      "hero_path": "/assets/articles/hero/texas-real-property-record-grantor-grantee-index-name-role-and-locator-search-log.webp",
+      "hero_sha256": "972ea03e9089473a4324794f0a9dfe82f1886af31ef43671a42c6d6fd214cf5a",
+      "hero_asset_sha256": "972ea03e9089473a4324794f0a9dfe82f1886af31ef43671a42c6d6fd214cf5a",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 2301,
+      "risk_citation_remediation": [
+        "The factory planning identity is rejected because it collides with documents-needed-to-sell, sale-package-index, first-time-owner, recorded-copy, and already-found-record-control coverage.",
+        "The replacement owns only one reproducible county real-property index search attempt: county, official route, access time, exact party-name variant, grantor or grantee role, date range, displayed locator, bounded result, controlled evidence reference, and next administrative step.",
+        "The article does not provide a sale-document inventory, package index, copy retrieval or certification, multi-source log, ownership determination, chain-of-title opinion, legal conclusion, or claim that no displayed result means no record exists.",
+        "Answer-first structure, stable claim IDs, source identity and age, exact page and section locators, claim-adjacent official citations, semantic links, exact visible and schema entities, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/texas-grantor-grantee-index-search-log.webp",
+      "inline_asset_sha256": "806d64a9ee85d219677cf2bc35bc7047f05e84e699f1f1a9eafb9cadefa4c013",
+      "inline_rendered_text": "Texas grantor grantee index search log"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 318,
+    "admitted_article_count": 319,
     "selection_ranks": [
       1,
       2,
@@ -11987,7 +12025,8 @@
       315,
       316,
       317,
-      318
+      318,
+      319
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -12046,9 +12085,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "32dc09005bf1857508588f348286ad98ae24caaa2c838fb3fbebc2dfcc9376ee",
-    "public_article_count": 326,
-    "batch_article_count": 318,
+    "retrofit_manifest_sha256": "aecaeff6e75b0e5636ac2b91e4489b6d2fb87f7462595c4bfa565a7ef3739c65",
+    "public_article_count": 327,
+    "batch_article_count": 319,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

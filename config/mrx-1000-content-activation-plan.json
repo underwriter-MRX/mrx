@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T14:26:52.205Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "ba8b0ed324d8a446606be1a343169d6a70abd1f1d991ebda32ddfd6dfdfba3c1",
+  "content_fingerprint_sha256": "1704d1b6f8c327d0d0197d2b823fe822a15662652e22745bef42a83fbf98c691",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "83cf1b83ffedd6b33b1a3e7931cef0bc774a614521837ead4db7884a60751e86",
+    "canonical_ledger_fingerprint_sha256": "b64eb58b0ae24f370d505df489c0cae71f5c268a21e12c1c0e121053b1926af9",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 326,
+      "live_public_published_route": 327,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 626
+      "planning_only_inventory": 625
     }
   },
   "rows": [
@@ -52240,11 +52240,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0892",
-        "target_title": "Cash For Mineral Rights: Documents For First-Time Sellers",
-        "url": "/blog/cash-for-mineral-rights-documents-for-first-time-sellers/",
+        "target_title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+        "url": "/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -52287,15 +52287,15 @@
     },
     {
       "program_row_id": "MRX1000-0892",
-      "canonical_title": "Cash For Mineral Rights: Documents For First-Time Sellers",
-      "canonical_slug": "cash-for-mineral-rights-documents-for-first-time-sellers",
-      "canonical_url": "/blog/cash-for-mineral-rights-documents-for-first-time-sellers/",
+      "canonical_title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+      "canonical_slug": "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log",
+      "canonical_url": "/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
       "cluster": "title-lease-ownership-documents",
       "pillar": "title-lease-ownership",
-      "search_intent": "royalty-income",
+      "search_intent": "informational",
       "funnel_stage": "education",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/learning-center/title-lease-ownership/",
         "route_evidence": "src/pages/learning-center/title-lease-ownership/index.astro",
@@ -52317,7 +52317,7 @@
         "placement_code": "mid_article",
         "placement_guidance": "Place after the direct answer or first useful checklist, before the first deep-dive section.",
         "assignment_rule": "education_stage_nurture",
-        "assignment_basis": "education:royalty-income",
+        "assignment_basis": "education:informational",
         "approved_route_evidence": "src/pages/free-guide.astro",
         "role": "primary_nurture",
         "is_appointment_cta": false,
@@ -52330,7 +52330,7 @@
         "placement_code": "closing_team_handoff",
         "placement_guidance": "Place after the final takeaway and primary guide CTA, before related articles, as the optional MRX team handoff.",
         "assignment_rule": "education_stage_optional_team_handoff",
-        "assignment_basis": "education:royalty-income",
+        "assignment_basis": "education:informational",
         "approved_route_evidence": "src/pages/book.astro",
         "role": "secondary_appointment_after_primary_nurture",
         "distinct_from_primary_cta": true,
@@ -52344,7 +52344,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },
