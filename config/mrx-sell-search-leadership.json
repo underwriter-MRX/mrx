@@ -1,6 +1,6 @@
 {
   "artifact_type": "mrx_sell_search_leadership_registry",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "approved_strategy_date": "2026-07-22",
   "program_owner": "chestyorchestrator",
   "decision_owner": "mrx_ceo",
@@ -30,18 +30,34 @@
   "release_gates": {
     "baseline_release": "mrx1000-release-10",
     "baseline_release_date": "2026-07-22",
+    "enforcement_status": "superseded_by_owner_directive_2026_08_04",
+    "current_policy": "continuous_article_specific_quality_gated_publication",
     "index_coverage_deadline": "2026-08-21",
     "minimum_index_coverage": 0.8,
-    "gsc_required": true,
-    "current_index_status": "unverified_gsc_not_connected",
-    "next_25_publication_status": "held",
-    "texas_commercial_route_status": "held",
-    "hold_reason": "Google Search Console index coverage for the July 22 release has not been verified at or above 80 percent.",
+    "gsc_required": false,
+    "gsc_measurement_tracked": true,
+    "current_index_status": "gsc_connected_index_coverage_unverified_measurement_only",
+    "gsc_connection_verified_at": "2026-09-13",
+    "gsc_connection_evidence": "Search Atlas OTTO project e4bab8bb-717e-480c-8dea-1de1b8596eb7: gsc_connected=true, gsc_property_linked=true, sc-domain:mineralrightsxchange.com. Connection does not establish index coverage or query performance.",
+    "next_25_publication_status": "mixed_published_and_semantic_review_required",
+    "texas_commercial_route_status": "identity_and_quality_review_required",
+    "hold_reason": null,
+    "historical_gate_note": "The July 22 numerical GSC threshold is retained as historical measurement context only. Daryl's 2026-08-04 owner directive supersedes numerical article caps, elapsed observation holds, index-coverage waiting periods, and missing scale-decision gates.",
     "next_50_requirements": {
+      "enforcement_status": "historical_measurement_context_only",
+      "blocks_article_publication": false,
       "prior_batches_meeting_index_coverage": 2,
       "minimum_index_coverage": 0.8,
       "minimum_nonbranded_impression_share_within_60_days": 0.6
     }
+  },
+  "portfolio_reconciliation": {
+    "reconciled_at": "2026-09-11",
+    "portfolio_role": "historical_july_22_candidate_set_reconciled_against_current_canonical_ledger",
+    "published_rows": 14,
+    "semantic_redefinition_required_rows": 11,
+    "release_rule": "A row may be marked published only when its resolved MRX1000 row has a live public article and production-verification evidence. Planning identities are not release-ready merely because they appear in this registry.",
+    "evidence_boundary": "Search Atlas keyword metrics are measured demand inputs. The maintained ChatGPT-style prompt clusters are research questions, not evidence of aggregate ChatGPT query volume or verbatim user logs."
   },
   "public_route_ownership": [
     {
@@ -54,7 +70,7 @@
       "url": "/sell-mineral-rights/texas/",
       "intent": "texas_commercial_sell",
       "primary_keyword": "sell Texas mineral rights",
-      "status": "held_pending_index_gate"
+      "status": "identity_and_quality_review_required"
     },
     {
       "url": "/blog/how-to-sell-mineral-rights-in-texas/",
@@ -495,91 +511,117 @@
       "slug": "can-you-sell-part-of-your-mineral-rights",
       "title": "Can You Sell Part of Your Mineral Rights?",
       "source_program_row_ids": ["MRX1000-0001"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0001",
+      "resolved_canonical_slug": "can-you-sell-part-of-your-mineral-rights-partial-interest-sales-explained"
     },
     {
       "order": 2,
       "slug": "how-long-does-it-take-to-sell-mineral-rights-in-texas",
       "title": "How Long Does It Take to Sell Mineral Rights in Texas?",
       "source_program_row_ids": ["MRX1000-0002"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0002",
+      "resolved_canonical_slug": "how-long-does-it-take-to-sell-mineral-rights-in-texas"
     },
     {
       "order": 3,
       "slug": "what-happens-after-you-sell-your-mineral-rights-in-texas",
       "title": "What Happens After You Sell Mineral Rights in Texas?",
       "source_program_row_ids": ["MRX1000-0004"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0004",
+      "resolved_canonical_slug": "what-happens-after-you-sell-your-mineral-rights-in-texas"
     },
     {
       "order": 4,
       "slug": "how-to-find-a-reputable-mineral-rights-buyer-in-texas",
       "title": "How to Find a Reputable Mineral Rights Buyer in Texas",
       "source_program_row_ids": ["MRX1000-0303"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0303",
+      "resolved_canonical_slug": "how-to-find-a-reputable-mineral-rights-buyer-in-texas"
     },
     {
       "order": 5,
       "slug": "how-to-get-multiple-offers-for-texas-mineral-rights",
       "title": "How to Get Multiple Offers for Texas Mineral Rights",
       "source_program_row_ids": ["MRX1000-0304"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0304",
+      "resolved_canonical_slug": "how-to-get-multiple-offers-for-your-texas-mineral-rights"
     },
     {
       "order": 6,
       "slug": "how-to-negotiate-a-mineral-rights-sale",
       "title": "How to Negotiate a Mineral Rights Sale",
       "source_program_row_ids": ["MRX1000-0310"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0310",
+      "resolved_canonical_slug": "how-to-negotiate-a-mineral-rights-sale-what-sellers-need-to-know"
     },
     {
       "order": 7,
       "slug": "risks-and-tradeoffs-of-selling-to-a-direct-buyer",
       "title": "Risks and Tradeoffs of Selling to a Direct Buyer",
       "source_program_row_ids": ["MRX1000-0315"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0315",
+      "resolved_canonical_slug": "risks-of-selling-your-mineral-rights-to-a-direct-buyer-what-to-know-before-you-sign"
     },
     {
       "order": 8,
       "slug": "mineral-rights-offer-scams-and-warning-signs",
       "title": "Mineral Rights Offer Scams and Warning Signs",
       "source_program_row_ids": ["MRX1000-0318"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0318",
+      "resolved_canonical_slug": "understanding-mineral-rights-offer-scams-what-you-need-to-know"
     },
     {
       "order": 9,
       "slug": "what-factors-determine-a-mineral-rights-offer",
       "title": "What Factors Determine a Mineral Rights Offer?",
       "source_program_row_ids": ["MRX1000-0319"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0319",
+      "resolved_canonical_slug": "understanding-the-key-factors-influencing-your-mineral-rights-offer-range"
     },
     {
       "order": 10,
       "slug": "what-texas-heirs-should-know-before-selling",
       "title": "What Texas Heirs Should Know Before Selling",
       "source_program_row_ids": ["MRX1000-0431"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0431",
+      "resolved_canonical_slug": "mineral-rights-inheritance-in-texas-what-heirs-need-to-know-before-selling"
     },
     {
       "order": 11,
       "slug": "closing-costs-and-fees-when-selling-mineral-rights-in-texas",
       "title": "Closing Costs and Fees When Selling Texas Mineral Rights",
       "source_program_row_ids": ["MRX1000-0630"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0630",
+      "resolved_canonical_slug": "closing-costs-and-fees-when-selling-mineral-rights-in-texas"
     },
     {
       "order": 12,
       "slug": "title-curative-before-a-mineral-rights-sale",
       "title": "Title Curative Before a Mineral Rights Sale",
       "source_program_row_ids": ["MRX1000-0637"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0637",
+      "resolved_canonical_slug": "title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell"
     },
     {
       "order": 13,
       "slug": "mineral-rights-purchase-agreement-explained",
       "title": "Mineral Rights Purchase Agreement Explained",
       "source_program_row_ids": ["MRX1000-0642"],
-      "release_status": "held"
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0642",
+      "resolved_canonical_slug": "what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include"
     },
     {
       "order": 14,
@@ -594,21 +636,24 @@
         "MRX1000-0316"
       ],
       "source_disposition": "merge_into_one_canonical",
-      "release_status": "held"
+      "release_status": "semantic_redefinition_required",
+      "semantic_redefinition_reason": "The historical consolidation IDs no longer form one stable semantic set in the current ledger. MRX1000-0309 is the existing live fairness owner; the remaining IDs must be reclassified before reuse."
     },
     {
       "order": 15,
       "slug": "should-i-sell-my-mineral-rights",
       "title": "Should I Sell My Mineral Rights?",
-      "source_program_row_ids": [],
-      "release_status": "planning"
+      "source_program_row_ids": ["MRX1000-0141"],
+      "release_status": "published",
+      "resolved_program_row_id": "MRX1000-0141",
+      "resolved_canonical_slug": "should-i-sell-my-mineral-rights"
     },
     {
       "order": 16,
       "slug": "never-sell-mineral-rights-when-selling-can-and-cannot-make-sense",
       "title": "Never Sell Mineral Rights: When Selling Can and Cannot Make Sense",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 17,
@@ -616,63 +661,63 @@
       "title": "Cash for Mineral Rights: Pre-Sale Checklist",
       "source_program_row_ids": ["MRX1000-0013", "MRX1000-0014"],
       "source_disposition": "merge_into_one_canonical",
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 18,
       "slug": "who-buys-mineral-rights",
       "title": "Who Buys Mineral Rights?",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 19,
       "slug": "companies-that-buy-mineral-rights-business-models-compared",
       "title": "Companies That Buy Mineral Rights: Business Models Compared",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 20,
       "slug": "direct-buyer-vs-broker-vs-marketplace",
       "title": "Direct Buyer vs. Broker vs. Marketplace",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 21,
       "slug": "selling-mineral-rights-vs-selling-a-royalty-interest",
       "title": "Selling Mineral Rights vs. Selling a Royalty Interest",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 22,
       "slug": "selling-producing-vs-non-producing-mineral-rights",
       "title": "Selling Producing vs. Non-Producing Mineral Rights",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 23,
       "slug": "when-is-the-best-time-to-sell-mineral-rights",
       "title": "When Is the Best Time to Sell Mineral Rights?",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 24,
       "slug": "how-to-sell-inherited-mineral-rights",
       "title": "How to Sell Inherited Mineral Rights",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     },
     {
       "order": 25,
       "slug": "what-to-do-when-a-buyer-reduces-the-offer-after-title-review",
       "title": "What to Do When a Buyer Reduces the Offer After Title Review",
       "source_program_row_ids": [],
-      "release_status": "planning"
+      "release_status": "semantic_redefinition_required"
     }
   ],
   "consolidations": [],

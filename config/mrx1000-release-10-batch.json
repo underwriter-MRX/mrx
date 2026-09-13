@@ -479,7 +479,7 @@
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "dc4e90b91ff6a218e1204753de861037921268252e2e989e0aed511a7f65fb2c",
+    "canonical_ledger_sha256": "8b3605cf9abdc22a1186024ca5ac34e545c73881678578a8a3aea4179f990adf",
     "canonical_ledger_generated_at": "2026-07-20T07:34:45.772Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",

@@ -25,6 +25,94 @@ const NINE_PILLAR_PATHS = [
 test.describe('MRX1000 pillar & archive navigation', () => {
   test.use({ viewport: { width: 1440, height: 900 } });
 
+  test('selling pillar preserves identity and connects reviewed owner questions to distinct guides', async ({
+    page,
+  }, testInfo) => {
+    await page.goto('/sell-mineral-rights/');
+    await expect(page).toHaveTitle('Sell Mineral Rights: Options, Process, and Review · MRX');
+    await expect(page.locator('main h1')).toHaveCount(1);
+    await expect(page.locator('main h1')).toHaveText(
+      'Sell mineral rights with the facts in front of you',
+    );
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      'href',
+      'https://mineralrightsxchange.com/sell-mineral-rights/',
+    );
+
+    const contents = page.getByRole('navigation', {
+      name: 'Start with the question you need to answer',
+    });
+    await expect(contents.locator('a')).toHaveCount(6);
+    for (const anchor of await contents.locator('a').all()) {
+      const href = await anchor.getAttribute('href');
+      expect(href).toMatch(/^#[a-z-]+$/);
+      await expect(page.locator(href!)).toHaveCount(1);
+    }
+    for (const heading of [
+      'Selling-process guides',
+      'Family and document readiness',
+      'Related offer-review guides',
+    ]) {
+      await expect(page.getByRole('heading', { name: heading, exact: true })).toBeVisible();
+    }
+    const related = page.locator('section[aria-labelledby="related-offer-review-guides-heading"]');
+    await expect(related).toContainText('canonical topic owner');
+    await expect(related.locator('a[href="/offer-review/"]')).toHaveCount(1);
+    await expect(
+      page.getByText('Not a certified appraisal, formal valuation report, or fairness opinion', {
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect(
+      page.getByText('Legal, tax, title, accounting, engineering, reserve, or investment advice', {
+        exact: true,
+      }),
+    ).toBeVisible();
+
+    const graph = await page.locator('script[type="application/ld+json"]').first().textContent();
+    const nodes = JSON.parse(graph ?? '{}')['@graph'] ?? [];
+    expect(
+      nodes.some((node: { '@type': string | string[] }) =>
+        [node['@type']].flat().includes('WebPage'),
+      ),
+    ).toBe(true);
+    expect(
+      nodes.some((node: { '@type': string | string[] }) =>
+        [node['@type']].flat().includes('BlogPosting'),
+      ),
+    ).toBe(false);
+    for (const [profile, width, height] of [
+      ['desktop', 1440, 900],
+      ['mobile', 390, 844],
+    ] as const) {
+      await page.setViewportSize({ width, height });
+      await page.evaluate(async () => {
+        await document.fonts.ready;
+        await new Promise<void>((resolve) =>
+          requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+        );
+      });
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
+        width,
+      );
+      await page.evaluate(async () => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        await new Promise<void>((resolve) =>
+          requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+        );
+      });
+      await page.screenshot({ path: testInfo.outputPath(`selling-pillar-${profile}-top.png`) });
+      await page.locator('#selling-guides-heading').scrollIntoViewIfNeeded();
+      await page.evaluate(
+        () =>
+          new Promise<void>((resolve) =>
+            requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
+          ),
+      );
+      await page.screenshot({ path: testInfo.outputPath(`selling-pillar-${profile}-guides.png`) });
+    }
+  });
+
   test('Learning Center hub visibly links all 9 canonical pillar URLs', async ({ page }) => {
     await page.goto('/learning-center/');
 
@@ -110,7 +198,9 @@ test.describe('MRX1000 pillar & archive navigation', () => {
     const curatedGuides = page.locator('[data-methodology-curated-guides]');
     await expect(curatedGuides).toBeVisible();
     await expect(curatedGuides.locator('[data-methodology-curated-card]')).toHaveCount(4);
-    await expect(curatedGuides.getByText('Read the live articles behind the review inputs')).toBeVisible();
+    await expect(
+      curatedGuides.getByText('Read the live articles behind the review inputs'),
+    ).toBeVisible();
     await expect(curatedGuides.getByText('These published MRX articles explain')).toBeVisible();
     await expect(curatedGuides.locator('.methodology-bottom__read-link')).toHaveText([
       'Read the article →',
@@ -118,7 +208,9 @@ test.describe('MRX1000 pillar & archive navigation', () => {
       'Read the article →',
       'Read the article →',
     ]);
-    await expect(curatedGuides.getByText(/live guides|published MRX guides|Read the guide/i)).toHaveCount(0);
+    await expect(
+      curatedGuides.getByText(/live guides|published MRX guides|Read the guide/i),
+    ).toHaveCount(0);
 
     for (const href of [
       '/blog/how-are-mineral-rights-valued/',

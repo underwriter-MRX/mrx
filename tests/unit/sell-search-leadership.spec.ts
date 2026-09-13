@@ -43,17 +43,35 @@ describe('sell-mineral-rights search leadership controls', () => {
     expect(queryMarkets.size).toBe(50);
   });
 
-  it('keeps the next 25 unique and nonpublic until the GSC index gate is earned', () => {
-    expect(registry.release_gates.gsc_required).toBe(true);
+  it('reconciles the historical next 25 without treating GSC measurements as a release cap', () => {
+    expect(registry.release_gates.gsc_required).toBe(false);
+    expect(registry.release_gates.gsc_measurement_tracked).toBe(true);
     expect(registry.release_gates.minimum_index_coverage).toBe(0.8);
     expect(registry.release_gates.current_index_status).not.toBe('verified_threshold_met');
+    expect(registry.release_gates.current_index_status).toBe(
+      'gsc_connected_index_coverage_unverified_measurement_only',
+    );
+    expect(registry.release_gates.enforcement_status).toBe(
+      'superseded_by_owner_directive_2026_08_04',
+    );
+    expect(registry.release_gates.next_25_publication_status).toBe(
+      'mixed_published_and_semantic_review_required',
+    );
+    expect(registry.release_gates.next_50_requirements.blocks_article_publication).toBe(false);
+    expect(registry.release_gates.hold_reason).toBeNull();
     expect(registry.next_25).toHaveLength(25);
     expect(new Set(registry.next_25.map((row: { slug: string }) => row.slug)).size).toBe(25);
     expect(
-      registry.next_25.every((row: { release_status: string }) =>
-        ['held', 'planning'].includes(row.release_status),
+      registry.next_25.filter(
+        (row: { release_status: string }) => row.release_status === 'published',
       ),
-    ).toBe(true);
+    ).toHaveLength(14);
+    expect(
+      registry.next_25.filter(
+        (row: { release_status: string }) =>
+          row.release_status === 'semantic_redefinition_required',
+      ),
+    ).toHaveLength(11);
   });
 
   it('makes the national sell pillar own the sell-mineral-rights head term', () => {
@@ -68,6 +86,20 @@ describe('sell-mineral-rights search leadership controls', () => {
     expect(source).toContain('/blog/how-to-sell-mineral-rights-in-texas/');
     expect(source).toContain('/blog/what-documents-do-you-need-to-sell-mineral-rights-in-texas/');
     expect(source).toContain('/guides/how-to-find-out-what-your-mineral-rights-are.pdf');
+    expect(source).toContain('Selling-process guides');
+    expect(source).toContain('Family and document readiness');
+    expect(source).toContain('Related offer-review guides');
+    expect(source).toContain('/blog/how-to-build-a-mineral-rights-sale-document-package-index/');
+    expect(source).toContain('canonical topic owner');
+    expect(source).toContain(
+      'Not a certified appraisal, formal valuation report, or fairness opinion',
+    );
+    expect(source).toContain(
+      'Legal, tax, title, accounting, engineering, reserve, or investment advice',
+    );
+    expect(source).not.toContain(
+      '/blog/how-to-build-a-mineral-rights-valuation-evidence-cutoff-log/',
+    );
     expect(source).toContain("href: '#ask-travis'");
     expect(source).toContain('openTravis: true');
     expect(source).not.toContain('?ask=1');
@@ -94,7 +126,7 @@ describe('sell-mineral-rights search leadership controls', () => {
     expect(existsSync(publicTexasRoutePath)).toBe(false);
   });
 
-  it('builds a passing dashboard while preserving the release hold', () => {
+  it('builds a passing dashboard under continuous article-specific quality gates', () => {
     execFileSync(
       process.execPath,
       [join(repoRoot, 'scripts', 'build-mrx-sell-search-dashboard.mjs')],
@@ -105,11 +137,12 @@ describe('sell-mineral-rights search leadership controls', () => {
     );
 
     const dashboard = JSON.parse(readFileSync(dashboardPath, 'utf8'));
-    expect(dashboard.status).toBe('pass_with_release_hold');
+    expect(dashboard.status).toBe('pass_continuous_quality_gate');
     expect(dashboard.blocking_findings).toEqual([]);
     expect(dashboard.portfolio.tracked_queries).toBe(50);
     expect(dashboard.portfolio.next_release_rows).toBe(25);
-    expect(dashboard.portfolio.next_release_published_rows).toBe(0);
+    expect(dashboard.portfolio.next_release_published_rows).toBe(14);
+    expect(dashboard.portfolio.next_release_semantic_redefinition_rows).toBe(11);
     expect(dashboard.portfolio.live_sell_pillar_posts).toHaveLength(48);
   });
 });

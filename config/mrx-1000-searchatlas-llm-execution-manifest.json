@@ -9,8 +9,8 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "dc4e90b91ff6a218e1204753de861037921268252e2e989e0aed511a7f65fb2c",
-      "bytes": 4642118
+      "sha256": "8b3605cf9abdc22a1186024ca5ac34e545c73881678578a8a3aea4179f990adf",
+      "bytes": 4642477
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
@@ -257692,7 +257692,7 @@
       "primary_keyword": "Form 50-172 Crane mineral interest",
       "authoritative_current_state": {
         "canonical_inventory_state": "live_public_published_route",
-        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "normalized_status": "live_public_published_route_release_10_verified",
         "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
@@ -352650,5 +352650,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "04668091e1f47d09a06a67dd116b6997e46418f17d94bdad72c26c5ba10fc8fa"
+  "content_fingerprint_sha256": "aa6d31c2f3932132c6a82b31e3cf980fff8be42551200c51d32a6c2adfad6a9a"
 }

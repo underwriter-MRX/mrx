@@ -41,8 +41,8 @@ compliance_signoff:
   no_named_underwriter: true
   has_footer_disclaimer: true
   money_figure_sourced: false
-  reviewed_by: 'mrx_compliance-sell-leadership-foundation'
-  reviewed_at: '2026-07-22T13:52:00Z'
+  reviewed_by: 'mrx_compliance-mrx_ceo-pillar-review-and-codex-verification'
+  reviewed_at: '2026-09-13T04:49:49Z'
 ---
 
 import Hero from '../../components/molecules/Hero.astro';
@@ -61,12 +61,38 @@ import Icon from '../../components/atoms/Icon.astro';
   secondaryCta={frontmatter.secondary_cta}
 />
 
-<section class="container section">
-  <Heading level={2} size="3xl">
+<nav class="container section" aria-labelledby="selling-guide-contents">
+  <Heading level={2} size="lg" id="selling-guide-contents">
+    Start with the question you need to answer
+  </Heading>
+  <ul class="stack stack--sm content-list content-list--disc u-mt-4 u-measure-76">
+    <li>
+      <a href="#short-answer">What changes if I sell all, part, or none?</a>
+    </li>
+    <li>
+      <a href="#selling-options-heading">Which option fits the decision I am making?</a>
+    </li>
+    <li>
+      <a href="#sale-process-heading">What happens during a mineral-rights sale?</a>
+    </li>
+    <li>
+      <a href="#comparison-heading">How do I compare the complete written terms?</a>
+    </li>
+    <li>
+      <a href="#seller-checklist-heading">Which records should I gather first?</a>
+    </li>
+    <li>
+      <a href="#selling-guides-heading">Which detailed guide should I read next?</a>
+    </li>
+  </ul>
+</nav>
+
+<section class="container section" aria-labelledby="short-answer">
+  <Heading level={2} size="3xl" id="short-answer">
     The short answer
   </Heading>
   <Text class="text--lead u-mt-3 u-measure-68">
-    Mineral rights can usually be sold in full or in part. Selling converts an ownership interest
+    An owner may be able to sell a full or partial mineral interest. Selling converts that interest
     into a negotiated payment and transfers the future benefits and risks attached to the portion
     conveyed. Holding preserves the interest but leaves future income uncertain. A partial sale can
     divide those tradeoffs.
@@ -95,6 +121,10 @@ import Icon from '../../components/atoms/Icon.astro';
           description, depths, effective date, adjustment rights, closing conditions, and payment
           terms together.
         </Text>
+        <Text class="text--small u-mt-3">
+          <strong>Clarify first:</strong> which exact interest is included and what future rights or
+          payments would no longer belong to you.
+        </Text>
       </article>
       <article class="surface-card">
         <Icon name="mineral" size={28} class="hero__icon-inline" />
@@ -105,6 +135,10 @@ import Icon from '../../components/atoms/Icon.astro';
           Convey a defined fraction or portion and retain the rest. Precision matters because the
           deed controls exactly what is sold and what remains with the owner.
         </Text>
+        <Text class="text--small u-mt-3">
+          <strong>Clarify first:</strong> whether the written fraction, acreage, formations, and
+          reservation language match the split you intend.
+        </Text>
       </article>
       <article class="surface-card">
         <Icon name="scale" size={28} class="hero__icon-inline" />
@@ -114,6 +148,10 @@ import Icon from '../../components/atoms/Icon.astro';
         <Text>
           Keep the interest and any future ownership benefits or risks. Production, commodity
           prices, operator decisions, title, and development timing can all change.
+        </Text>
+        <Text class="text--small u-mt-3">
+          <strong>Clarify first:</strong> which near-term need, uncertainty, or concentration risk
+          you are trying to manage by waiting.
         </Text>
       </article>
     </div>
@@ -152,6 +190,7 @@ import Icon from '../../components/atoms/Icon.astro';
     <a
       href="/blog/how-to-sell-mineral-rights-in-texas/"
       data-cta-name="smr-process-texas-guide"
+      aria-label="Read the Texas mineral-rights selling process guide"
     >
       Read the Texas step-by-step selling article →
     </a>
@@ -205,6 +244,7 @@ import Icon from '../../components/atoms/Icon.astro';
       <a
         href="/offer-review/"
         data-cta-name="smr-comparison-offer-review"
+        aria-label="See the MRX mineral-rights offer review process"
       >
         See how MRX organizes an offer review →
       </a>
@@ -260,6 +300,118 @@ import Icon from '../../components/atoms/Icon.astro';
   </p>
 </section>
 
+<section class="section section--alt" aria-labelledby="selling-guides-heading">
+  <div class="container">
+    <Heading level={2} size="3xl" id="selling-guides-heading">
+      Continue with the guide that matches your decision
+    </Heading>
+    <Text class="text--lead u-mt-3 u-measure-76">
+      These guides answer different questions. Use the narrowest one that matches the decision or
+      record in front of you rather than treating every mineral-rights question as a price question.
+    </Text>
+    <section class="u-mt-8" aria-labelledby="selling-process-guides-heading">
+      <Heading level={3} size="lg" id="selling-process-guides-heading">
+        Selling-process guides
+      </Heading>
+      <Text class="u-mt-2 u-measure-76">
+        Use these when the immediate question is what happens next and what can change the schedule.
+      </Text>
+      <div class="grid grid--2 u-mt-4 u-gap-6">
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/selling-mineral-rights-selling-process-for-mineral-owners/">
+              Control the selling process
+            </a>
+          </Heading>
+          <Text>
+            Map the inputs, decisions, handoffs, and stop conditions from first contact through
+            retained closing records.
+          </Text>
+        </article>
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/selling-mineral-rights-timeline-in-2026/">Build a realistic timeline</a>
+          </Heading>
+          <Text>
+            Track title review, document requests, diligence, closing conditions, and changes that
+            can move a target date.
+          </Text>
+        </article>
+      </div>
+    </section>
+
+    <section class="u-mt-8" aria-labelledby="seller-readiness-guides-heading">
+      <Heading level={3} size="lg" id="seller-readiness-guides-heading">
+        Family and document readiness
+      </Heading>
+      <Text class="u-mt-2 u-measure-76">
+        Use these before treating an ownership question, missing record, or family discussion as a
+        settled transaction decision.
+      </Text>
+      <div class="grid grid--2 u-mt-4 u-gap-6">
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights/">
+              Prepare a family decision conversation
+            </a>
+          </Heading>
+          <Text>
+            Separate shared facts, individual priorities, unresolved questions, and decision
+            authority before anyone treats silence as agreement.
+          </Text>
+        </article>
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/how-to-build-a-mineral-rights-sale-document-package-index/">
+              Build a controlled sale-document index
+            </a>
+          </Heading>
+          <Text>
+            Inventory the ownership, payment, production, offer, and correspondence records already
+            available, then identify missing items without treating the index as proof of title.
+          </Text>
+        </article>
+      </div>
+    </section>
+
+    <section class="u-mt-8" aria-labelledby="related-offer-review-guides-heading">
+      <Heading level={3} size="lg" id="related-offer-review-guides-heading">
+        Related offer-review guides
+      </Heading>
+      <Text class="u-mt-2 u-measure-76">
+        These cross-pillar resources support a selling decision, but their canonical topic owner is
+        the <a href="/offer-review/">mineral-rights offer-review pillar</a> because they focus on the
+        buyer's written terms and transaction risks.
+      </Text>
+      <div class="grid grid--2 u-mt-4 u-gap-6">
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/mineral-rights-offer-correspondence-index/">
+              Organize buyer correspondence
+            </a>
+          </Heading>
+          <Text>
+            Preserve the offer, attachments, questions, revisions, and delivery history in one
+            controlled index.
+          </Text>
+        </article>
+        <article class="surface-card">
+          <Heading level={4} size="md">
+            <a href="/blog/identifying-red-flags-in-mineral-rights-transactions/">
+              Check transaction warning signs
+            </a>
+          </Heading>
+          <Text>
+            Review pressure tactics, incomplete terms, scope ambiguity, adjustment rights, and
+            payment conditions before relying on a headline amount.
+          </Text>
+        </article>
+      </div>
+    </section>
+
+  </div>
+</section>
+
 <section class="section section--alt" aria-labelledby="mrx-role-heading">
   <div class="container">
     <Heading level={2} size="3xl" id="mrx-role-heading">
@@ -282,8 +434,8 @@ import Icon from '../../components/atoms/Icon.astro';
           The review does not provide
         </Heading>
         <ul class="stack stack--sm content-list content-list--disc">
-          <li>A formal professional valuation report or fairness opinion</li>
-          <li>Legal, tax, accounting, title, reserve, or engineering conclusions</li>
+          <li>Not a certified appraisal, formal valuation report, or fairness opinion</li>
+          <li>Legal, tax, title, accounting, engineering, reserve, or investment advice</li>
           <li>A guarantee of market value, sale price, title, or future production</li>
           <li>An obligation to sell to MRX or anyone else</li>
         </ul>
@@ -295,14 +447,14 @@ import Icon from '../../components/atoms/Icon.astro';
       disclosure remains available in the footer.
     </Text>
     <Text class="text--small u-mt-4">
-      Published by the <a href="/authors/mrx-editorial-team/">MRX Editorial Team</a>. Reviewed July
-      22, 2026 under the MRX source, editorial, and compliance process.
+      Published by the <a href="/authors/mrx-editorial-team/">MRX Editorial Team</a>. Reviewed
+      September 13, 2026 under the MRX source, editorial, and compliance process.
     </Text>
   </div>
 </section>
 
-<section class="container section">
-  <Heading level={2} size="3xl">
+<section class="container section" aria-labelledby="selling-faq-heading">
+  <Heading level={2} size="3xl" id="selling-faq-heading">
     Frequently asked
   </Heading>
   <FaqBlock pairs={frontmatter.faq} id="smr-faq" />
@@ -310,6 +462,7 @@ import Icon from '../../components/atoms/Icon.astro';
     <a
       href="/faq/"
       data-cta-name="smr-faq-more"
+      aria-label="See more mineral-rights frequently asked questions"
     >
       See the full FAQ →
     </a>

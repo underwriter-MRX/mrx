@@ -68,6 +68,17 @@ try {
         null,
         { timeout: 30_000 },
       );
+      await page.evaluate(async () => {
+        await Promise.all(
+          [
+            ...document.querySelectorAll(
+              '.article-hero-image img, [data-article-inline-image] img',
+            ),
+          ].map((image) => image.decode()),
+        );
+        await document.fonts.ready;
+        await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      });
 
       const observed = await page.evaluate(() => {
         const heroElement = document.querySelector('.article-hero-image img');
@@ -138,7 +149,19 @@ try {
         disposition,
       });
 
-      if (article === articles.at(-1)) {
+      if (process.env.MRX_BROWSER_CAPTURE_ALL === '1') {
+        await page.screenshot({
+          path: path.join(ROOT, SCREENSHOT_DIR, `${article.slug}-${profile.name}-hero.png`),
+        });
+        await inlineImage.scrollIntoViewIfNeeded();
+        await page.evaluate(
+          () =>
+            new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+        );
+        await page.screenshot({
+          path: path.join(ROOT, SCREENSHOT_DIR, `${article.slug}-${profile.name}-inline.png`),
+        });
+      } else if (article === articles.at(-1)) {
         await page.screenshot({
           path: path.join(ROOT, SCREENSHOT_DIR, `${article.slug}-${profile.name}.png`),
           fullPage: true,

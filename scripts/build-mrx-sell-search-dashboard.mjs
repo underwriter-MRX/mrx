@@ -124,14 +124,37 @@ function buildDashboard() {
     );
   }
 
+  const validReleaseStates = ['published', 'semantic_redefinition_required'];
   const invalidReleaseStates = next25.filter(
-    (row) => !['held', 'planning'].includes(row.release_status),
+    (row) => !validReleaseStates.includes(row.release_status),
   );
   if (invalidReleaseStates.length) {
     blocking.push(
-      `Next-25 rows may only be held or planning: ${invalidReleaseStates.map((row) => row.slug).join(', ')}`,
+      `Next-25 rows must use an explicit reconciled lifecycle state (${validReleaseStates.join(', ')}): ${invalidReleaseStates.map((row) => row.slug).join(', ')}`,
     );
   }
+
+  const publishedNext25 = next25.filter((row) => row.release_status === 'published');
+  const publishedWithoutReceipt = publishedNext25.filter((row) => {
+    const resolved = ledgerById.get(row.resolved_program_row_id);
+    return (
+      !resolved ||
+      resolved.publication_status !== 'published' ||
+      resolved.publication_state !== 'released_public_article' ||
+      resolved.canonical_slug !== row.resolved_canonical_slug ||
+      !resolved.production_verified_at ||
+      !resolved.production_verification_path
+    );
+  });
+  if (publishedWithoutReceipt.length) {
+    blocking.push(
+      `Published next-25 rows require an exact canonical ledger match and production receipt: ${publishedWithoutReceipt.map((row) => row.slug).join(', ')}`,
+    );
+  }
+
+  const semanticRedefinitionRows = next25.filter(
+    (row) => row.release_status === 'semantic_redefinition_required',
+  );
 
   const missingSourceIds = [
     ...new Set(next25.flatMap((row) => row.source_program_row_ids ?? [])),
@@ -159,7 +182,9 @@ function buildDashboard() {
   }
 
   const releaseGates = registry.release_gates ?? {};
-  if (releaseGates.current_index_status !== 'verified_threshold_met') {
+  const numericalIndexGateActive =
+    releaseGates.enforcement_status !== 'superseded_by_owner_directive_2026_08_04';
+  if (numericalIndexGateActive && releaseGates.current_index_status !== 'verified_threshold_met') {
     const escapedRows = next25.filter((row) => row.release_status === 'published');
     if (escapedRows.length) {
       blocking.push(
@@ -202,7 +227,7 @@ function buildDashboard() {
   const dashboard = {
     artifact_type: 'mrx_sell_search_leadership_dashboard',
     generated_at_utc: new Date().toISOString(),
-    status: blocking.length ? 'blocked' : 'pass_with_release_hold',
+    status: blocking.length ? 'blocked' : 'pass_continuous_quality_gate',
     inputs: {
       registry: { path: 'config/mrx-sell-search-leadership.json', sha256: sha256(registryPath) },
       canonical_ledger: {
@@ -217,8 +242,9 @@ function buildDashboard() {
       tracked_queries: queries.length,
       p0_queries: queries.filter((row) => row.priority === 'P0').length,
       next_release_rows: next25.length,
-      next_release_published_rows: next25.filter((row) => row.release_status === 'published')
-        .length,
+      next_release_published_rows: publishedNext25.length,
+      next_release_semantic_redefinition_rows: semanticRedefinitionRows.length,
+      next_release_lifecycle: groupCounts(next25.map((row) => row.release_status)),
       live_public_posts: publicPosts.length,
       live_sell_pillar_posts: sellPosts,
       sell_ledger_rows: sellLedgerRows.length,
@@ -226,6 +252,7 @@ function buildDashboard() {
     },
     route_ownership: registry.public_route_ownership,
     authority_assets: registry.authority_assets,
+    portfolio_reconciliation: registry.portfolio_reconciliation,
     blocking_findings: blocking,
     warnings,
   };
@@ -241,8 +268,10 @@ function renderMarkdown(dashboard) {
     `- Status: **${dashboard.status}**`,
     `- Tracked queries: ${dashboard.portfolio.tracked_queries}`,
     `- Next release rows: ${dashboard.portfolio.next_release_rows}`,
+    `- Already published with ledger receipts: ${dashboard.portfolio.next_release_published_rows}`,
+    `- Requiring semantic redefinition: ${dashboard.portfolio.next_release_semantic_redefinition_rows}`,
     `- Live sell-pillar guides: ${dashboard.portfolio.live_sell_pillar_posts.length}`,
-    `- GSC index gate: ${dashboard.release_gate.current_index_status}`,
+    `- Historical GSC measurement status: ${dashboard.release_gate.current_index_status}`,
     `- Next-25 publication state: ${dashboard.release_gate.next_25_publication_status}`,
     '',
     '## Live sell-pillar guides',
@@ -255,7 +284,9 @@ function renderMarkdown(dashboard) {
     '',
     ...(dashboard.blocking_findings.length
       ? dashboard.blocking_findings.map((finding) => `- ${finding}`)
-      : ['- None. The future release remains deliberately held by policy.']),
+      : [
+          '- None. Each article remains subject to its article-specific quality and release gates.',
+        ]),
     '',
     '## Warnings',
     '',
@@ -263,11 +294,15 @@ function renderMarkdown(dashboard) {
       ? dashboard.warnings.map((warning) => `- ${warning}`)
       : ['- None.']),
     '',
-    '## Earned release gate',
+    '## Continuous release policy',
     '',
-    `The next 25 articles and \`/sell-mineral-rights/texas/\` remain nonpublic until GSC verifies at least ${Math.round(
+    `The former ${Math.round(
       dashboard.release_gate.minimum_index_coverage * 100,
-    )}% index coverage for the July 22 release by ${dashboard.release_gate.index_coverage_deadline}.`,
+    )}% GSC coverage threshold for the July 22 release is historical measurement context, not a publication hold. Daryl's 2026-08-04 directive requires continuous publication when each article's identity, sources, originality, compliance, imagery, build, deployment, and live-verification gates pass.`,
+    '',
+    '## Evidence boundary',
+    '',
+    dashboard.portfolio_reconciliation.evidence_boundary,
     '',
   ];
   return `${lines.join('\n')}\n`;
@@ -286,6 +321,6 @@ if (dashboard.blocking_findings.length) {
   process.exitCode = 1;
 } else {
   console.log(
-    `MRX sell-search dashboard passed: ${dashboard.portfolio.tracked_queries} queries, ${dashboard.portfolio.next_release_rows} held release rows, ${dashboard.portfolio.live_sell_pillar_posts.length} live sell-pillar guides.`,
+    `MRX sell-search dashboard passed: ${dashboard.portfolio.tracked_queries} queries, ${dashboard.portfolio.next_release_published_rows} reconciled published rows, ${dashboard.portfolio.next_release_semantic_redefinition_rows} rows requiring semantic redefinition, ${dashboard.portfolio.live_sell_pillar_posts.length} live sell-pillar guides.`,
   );
 }

@@ -1,0 +1,957 @@
+{
+  "generated_at_utc": "2026-09-13T04:56:03.242Z",
+  "canonical_origin": "https://mineralrightsxchange.com",
+  "homepage": {
+    "top_disclosure_count": 0,
+    "footer_disclosure_count": 1
+  },
+  "wave10": {
+    "article_count": 10,
+    "slugs": [
+      "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+      "cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff",
+      "how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff",
+      "brazos-cad-mineral-account-search-retrieval-provenance-worksheet",
+      "brazos-cad-mineral-industrial-account-contact-routing-worksheet",
+      "brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet",
+      "brazos-cad-mineral-property-protest-status-verification-log",
+      "brazos-cad-mineral-property-arb-hearing-notice-inventory",
+      "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+      "form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests"
+    ],
+    "exact_titles_visible": true,
+    "hero_images_visible": true,
+    "hero_images_natural_1200x630": true,
+    "inline_images_visible": true,
+    "inline_images_natural_1200x675": true,
+    "inline_exact_text_visible": true,
+    "exact_alt_text": true,
+    "one_footer_disclosure_each": true,
+    "no_clipping_overlap_or_garbling": true,
+    "no_horizontal_overflow": true
+  },
+  "results": [
+    {
+      "profile": "desktop",
+      "slug": "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+      "url": "https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/",
+      "observed": {
+        "h1": "1031 Exchange Evidence Provenance Log for Mineral Interest Owners",
+        "hero": {
+          "src": "/assets/articles/hero/1031-exchange-evidence-provenance-log-for-mineral-interest-owners.webp",
+          "alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/1031-exchange-evidence-provenance-log-mineral-interest-owners/1031-exchange-recordkeeping-for-mineral-interests.webp",
+          "alt": "An overhead blank custody matrix appears above the exact 1031 exchange recordkeeping keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff",
+      "url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+      "observed": {
+        "h1": "Cash for Mineral Rights: How to Retrieve IRS Tax Transcripts for a CPA Handoff",
+        "hero": {
+          "src": "/assets/articles/hero/cash-for-mineral-rights-how-to-retrieve-irs-tax-transcripts-for-a-cpa-handoff.webp",
+          "alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/cash-for-mineral-rights-tax-transcripts.webp",
+          "alt": "An overhead blank transcript source-scope matrix appears above the exact cash-for-mineral-rights tax-transcripts keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff",
+      "url": "https://mineralrightsxchange.com/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+      "observed": {
+        "h1": "How to Retrieve a Recorded Mineral Deed Copy for a CPA Handoff",
+        "hero": {
+          "src": "/assets/articles/hero/how-to-retrieve-a-recorded-mineral-deed-copy-for-a-cpa-handoff.webp",
+          "alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/recorded-mineral-deed-copy.webp",
+          "alt": "An overhead blank county-record retrieval log appears above the exact recorded mineral deed copy keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "brazos-cad-mineral-account-search-retrieval-provenance-worksheet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Account Search Retrieval Provenance Worksheet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-account-search-retrieval-provenance-worksheet.webp",
+          "alt": "A source-scoped property-search desk appears beside the exact Brazos CAD worksheet title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/brazos-cad-mineral-account-search.webp",
+          "alt": "A top-down blank five-step attempt log appears above the exact Brazos CAD mineral account search keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "brazos-cad-mineral-industrial-account-contact-routing-worksheet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+      "observed": {
+        "h1": "Brazos CAD Mineral and Industrial Account Contact-Routing Worksheet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-and-industrial-account-contact-routing-worksheet.webp",
+          "alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-industrial-account-contact-routing-worksheet/brazos-cad-mineral-and-industrial-account-contact.webp",
+          "alt": "A top-down blank three-route board appears above the exact Brazos CAD mineral and industrial account contact keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet/",
+      "observed": {
+        "h1": "Brazos County, Texas Mineral Rights Property Tax Protest Evidence Packet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet.webp",
+          "alt": "A blank evidence folder and archival box appear beside the exact Brazos County property-tax protest packet title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet/brazos-county-mineral-rights-property-tax-protest.webp",
+          "alt": "A top-down blank four-card evidence matrix appears above the exact Brazos County mineral rights property tax protest keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "brazos-cad-mineral-property-protest-status-verification-log",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-protest-status-verification-log/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Property Protest Status Verification Log",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-property-protest-status-verification-log.webp",
+          "alt": "An abstract status timeline and closed record box appear beside the exact Brazos CAD verification-log title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-property-protest-status-verification-log/brazos-cad-mineral-property-protest-status.webp",
+          "alt": "A top-down blank observation ledger appears above the exact Brazos CAD mineral property protest status keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "brazos-cad-mineral-property-arb-hearing-notice-inventory",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-arb-hearing-notice-inventory/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Property ARB Hearing Notice Inventory",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-property-arb-hearing-notice-inventory.webp",
+          "alt": "A blank notice sleeve and archival tray appear beside the exact Brazos CAD hearing-notice inventory title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-property-arb-hearing-notice-inventory/brazos-cad-mineral-property-arb-hearing-notice.webp",
+          "alt": "A top-down blank notice inventory appears above the exact Brazos CAD mineral property ARB hearing notice keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+      "url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+      "observed": {
+        "h1": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
+        "hero": {
+          "src": "/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp",
+          "alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/form-50-843-crane-mineral-property.webp",
+          "alt": "A top-down blank six-section field grid appears above the exact Form 50-843 Crane mineral property keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "desktop",
+      "slug": "form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests",
+      "url": "https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+      "observed": {
+        "h1": "Form 50-172 Joint-Taxation Instruction Source Map for Crane Mineral Interests",
+        "hero": {
+          "src": "/assets/articles/hero/form-50-172-joint-taxation-instruction-source-map-for-crane-mineral-interests.webp",
+          "alt": "A blank source-provenance booklet appears beside the exact Form 50-172 instruction-map title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
+        },
+        "inline": {
+          "src": "/assets/articles/inline/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/form-50-172-crane-mineral-interest.webp",
+          "alt": "An overhead four-source map appears above the exact Form 50-172 Crane mineral interest keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+      "url": "https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/",
+      "observed": {
+        "h1": "1031 Exchange Evidence Provenance Log for Mineral Interest Owners",
+        "hero": {
+          "src": "/assets/articles/hero/1031-exchange-evidence-provenance-log-for-mineral-interest-owners.webp",
+          "alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/1031-exchange-evidence-provenance-log-mineral-interest-owners/1031-exchange-recordkeeping-for-mineral-interests.webp",
+          "alt": "An overhead blank custody matrix appears above the exact 1031 exchange recordkeeping keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff",
+      "url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+      "observed": {
+        "h1": "Cash for Mineral Rights: How to Retrieve IRS Tax Transcripts for a CPA Handoff",
+        "hero": {
+          "src": "/assets/articles/hero/cash-for-mineral-rights-how-to-retrieve-irs-tax-transcripts-for-a-cpa-handoff.webp",
+          "alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/cash-for-mineral-rights-tax-transcripts.webp",
+          "alt": "An overhead blank transcript source-scope matrix appears above the exact cash-for-mineral-rights tax-transcripts keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff",
+      "url": "https://mineralrightsxchange.com/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+      "observed": {
+        "h1": "How to Retrieve a Recorded Mineral Deed Copy for a CPA Handoff",
+        "hero": {
+          "src": "/assets/articles/hero/how-to-retrieve-a-recorded-mineral-deed-copy-for-a-cpa-handoff.webp",
+          "alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/recorded-mineral-deed-copy.webp",
+          "alt": "An overhead blank county-record retrieval log appears above the exact recorded mineral deed copy keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "brazos-cad-mineral-account-search-retrieval-provenance-worksheet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Account Search Retrieval Provenance Worksheet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-account-search-retrieval-provenance-worksheet.webp",
+          "alt": "A source-scoped property-search desk appears beside the exact Brazos CAD worksheet title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/brazos-cad-mineral-account-search.webp",
+          "alt": "A top-down blank five-step attempt log appears above the exact Brazos CAD mineral account search keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "brazos-cad-mineral-industrial-account-contact-routing-worksheet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+      "observed": {
+        "h1": "Brazos CAD Mineral and Industrial Account Contact-Routing Worksheet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-and-industrial-account-contact-routing-worksheet.webp",
+          "alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-industrial-account-contact-routing-worksheet/brazos-cad-mineral-and-industrial-account-contact.webp",
+          "alt": "A top-down blank three-route board appears above the exact Brazos CAD mineral and industrial account contact keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet",
+      "url": "https://mineralrightsxchange.com/blog/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet/",
+      "observed": {
+        "h1": "Brazos County, Texas Mineral Rights Property Tax Protest Evidence Packet",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet.webp",
+          "alt": "A blank evidence folder and archival box appear beside the exact Brazos County property-tax protest packet title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet/brazos-county-mineral-rights-property-tax-protest.webp",
+          "alt": "A top-down blank four-card evidence matrix appears above the exact Brazos County mineral rights property tax protest keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "brazos-cad-mineral-property-protest-status-verification-log",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-protest-status-verification-log/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Property Protest Status Verification Log",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-property-protest-status-verification-log.webp",
+          "alt": "An abstract status timeline and closed record box appear beside the exact Brazos CAD verification-log title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-property-protest-status-verification-log/brazos-cad-mineral-property-protest-status.webp",
+          "alt": "A top-down blank observation ledger appears above the exact Brazos CAD mineral property protest status keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "brazos-cad-mineral-property-arb-hearing-notice-inventory",
+      "url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-arb-hearing-notice-inventory/",
+      "observed": {
+        "h1": "Brazos CAD Mineral Property ARB Hearing Notice Inventory",
+        "hero": {
+          "src": "/assets/articles/hero/brazos-cad-mineral-property-arb-hearing-notice-inventory.webp",
+          "alt": "A blank notice sleeve and archival tray appear beside the exact Brazos CAD hearing-notice inventory title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/brazos-cad-mineral-property-arb-hearing-notice-inventory/brazos-cad-mineral-property-arb-hearing-notice.webp",
+          "alt": "A top-down blank notice inventory appears above the exact Brazos CAD mineral property ARB hearing notice keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+      "url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+      "observed": {
+        "h1": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
+        "hero": {
+          "src": "/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp",
+          "alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/form-50-843-crane-mineral-property.webp",
+          "alt": "A top-down blank six-section field grid appears above the exact Form 50-843 Crane mineral property keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests",
+      "url": "https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+      "observed": {
+        "h1": "Form 50-172 Joint-Taxation Instruction Source Map for Crane Mineral Interests",
+        "hero": {
+          "src": "/assets/articles/hero/form-50-172-joint-taxation-instruction-source-map-for-crane-mineral-interests.webp",
+          "alt": "A blank source-provenance booklet appears beside the exact Form 50-172 instruction-map title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/form-50-172-crane-mineral-interest.webp",
+          "alt": "An overhead four-source map appears above the exact Form 50-172 Crane mineral interest keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    }
+  ],
+  "visual_inspection_completed": true,
+  "disposition": "PASS"
+}
