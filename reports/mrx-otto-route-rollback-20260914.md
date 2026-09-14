@@ -42,3 +42,7 @@ The coordinator's subsequent stream failed; its saved request record independent
 Fresh gates: 77 unit suites / 641 tests passed. Full Vercel build passed, including compliance, copy, grammar, 230 passing release packets, 238 articles / 476 image binaries, and 379 rendered SEO pages with zero sitemap orphans. No public-source content changed.
 
 Neither route has been changed as of this pre-mutation record. Final release, post-fix recrawl, dashboard reconciliation and new-content resumption remain gated on fresh independent evidence.
+
+## Subsequent execution outcome
+
+The route-only repair was subsequently applied and independently verified on 2026-09-14; the preceding section remains the immutable pre-mutation observation. Both exact route patterns remain with Worker assignment `None`; the Worker version/binding and security/authentication settings remain unchanged. The selling pillar passes live HTTP/rendered checks on all four active aliases. One post-fix recrawl completed and post-processed at `2026-09-14T20:28:01.244220Z`. New-content resumption remains held on the rejected sitewide schema's unsupported dismissal and explicit source reproducibility findings. See [the final outcome and evidence boundary](mrx-otto-route-repair-outcome-20260914.md); this repair did not increment the article count.

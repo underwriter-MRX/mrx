@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T18:29:18.590Z",
+  "generated_at_utc": "2026-09-14T19:33:22.226Z",
   "canonical_origin": "https://mineralrightsxchange.com",
   "targets": [
     "https://mineralrightsxchange.com",
@@ -18,7 +18,7 @@
         "h1_exact": true,
         "canonical_exact": true,
         "metadata_parity": true,
-        "native_schema_and_reviewed_image_parity": false,
+        "native_schema_and_reviewed_image_parity": true,
         "origin_variant_identity_parity": true,
         "unsupported_keyword_overlay_absent": true,
         "page_schema_not_article": true,
@@ -41,12 +41,43 @@
         "hero_exact_live_bytes": true,
         "inline_exact_live_bytes": true
       },
-      "disposition": "FAIL"
+      "disposition": "PASS"
     },
     {
       "target": "https://www.mineralrightsxchange.com",
-      "disposition": "FAIL",
-      "error": "The operation was aborted due to timeout"
+      "final_url": "https://mineralrightsxchange.com/sell-mineral-rights/",
+      "http_status": 200,
+      "html_accept": "text/html",
+      "assertions": {
+        "http_200": true,
+        "title_exact": true,
+        "h1_exact": true,
+        "canonical_exact": true,
+        "metadata_parity": true,
+        "native_schema_and_reviewed_image_parity": true,
+        "origin_variant_identity_parity": true,
+        "unsupported_keyword_overlay_absent": true,
+        "page_schema_not_article": true,
+        "reviewed_pillar_present": true,
+        "all_curated_links_present": true,
+        "organizational_review_date": true,
+        "exclusions_preserved": true,
+        "indexable": true,
+        "security_headers": true,
+        "guide_selling-mineral-rights-selling-process-for-mineral-owners_http_200": true,
+        "guide_selling-mineral-rights-timeline-in-2026_http_200": true,
+        "guide_how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights_http_200": true,
+        "guide_how-to-build-a-mineral-rights-sale-document-package-index_http_200": true,
+        "guide_mineral-rights-offer-correspondence-index_http_200": true,
+        "guide_identifying-red-flags-in-mineral-rights-transactions_http_200": true,
+        "crawler_OAI-SearchBot_http_200": true,
+        "crawler_PerplexityBot_http_200": true,
+        "reconciled_article_http_200": true,
+        "reconciled_article_exact_title": true,
+        "hero_exact_live_bytes": true,
+        "inline_exact_live_bytes": true
+      },
+      "disposition": "PASS"
     },
     {
       "target": "https://mrx-web.vercel.app",
@@ -85,5 +116,5 @@
       "disposition": "PASS"
     }
   ],
-  "disposition": "FAIL"
+  "disposition": "PASS"
 }

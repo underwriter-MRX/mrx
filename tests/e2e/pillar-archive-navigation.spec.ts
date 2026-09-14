@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { pillarSchemaParity } from '../../scripts/lib/pillar-html-release.mjs';
+import { installVercelAuthenticatedRead } from './helpers/vercel-authenticated-read.mjs';
 
 /**
  * MRX1000-041 — verify that the Learning Center hub visibly links every
@@ -26,11 +27,16 @@ const NINE_PILLAR_PATHS = [
 
 test.describe('MRX1000 pillar & archive navigation', () => {
   test.use({ viewport: { width: 1440, height: 900 } });
+  test.beforeEach(async ({ page, baseURL }) => {
+    await installVercelAuthenticatedRead(page, baseURL);
+  });
 
   test('selling pillar preserves identity and connects reviewed owner questions to distinct guides', async ({
     page,
   }, testInfo) => {
-    await page.goto('/sell-mineral-rights/');
+    // Verify document readiness and the exact rendered assertions below rather
+    // than waiting for unrelated external requests to fire the global load event.
+    await page.goto('/sell-mineral-rights/', { waitUntil: 'domcontentloaded' });
     await expect(page).toHaveTitle('Sell Mineral Rights: Options, Process, and Review · MRX');
     await expect(page.locator('main h1')).toHaveCount(1);
     await expect(page.locator('main h1')).toHaveText(
@@ -119,12 +125,29 @@ test.describe('MRX1000 pillar & archive navigation', () => {
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
         width,
       );
+      const unloadedViewportImages = () =>
+        page.locator('img').evaluateAll((images) =>
+          images
+            .filter((image) => {
+              if (!(image instanceof HTMLImageElement)) return false;
+              const rect = image.getBoundingClientRect();
+              return (
+                rect.width > 0 &&
+                rect.height > 0 &&
+                rect.bottom > 0 &&
+                rect.top < window.innerHeight &&
+                (!image.complete || image.naturalWidth === 0)
+              );
+            })
+            .map((image) => image.getAttribute('src')),
+        );
       await page.evaluate(async () => {
         window.scrollTo({ top: 0, behavior: 'instant' });
         await new Promise<void>((resolve) =>
           requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
         );
       });
+      await expect.poll(unloadedViewportImages).toEqual([]);
       await page.screenshot({ path: testInfo.outputPath(`selling-pillar-${profile}-top.png`) });
       await page.locator('#selling-guides-heading').scrollIntoViewIfNeeded();
       await page.evaluate(
@@ -133,6 +156,7 @@ test.describe('MRX1000 pillar & archive navigation', () => {
             requestAnimationFrame(() => requestAnimationFrame(() => resolve())),
           ),
       );
+      await expect.poll(unloadedViewportImages).toEqual([]);
       await page.screenshot({ path: testInfo.outputPath(`selling-pillar-${profile}-guides.png`) });
     }
   });

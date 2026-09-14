@@ -20,7 +20,15 @@ export default defineConfig({
     actionTimeout: 30_000,
     trace: 'on-first-retry',
   },
-  projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
+  projects: [
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        ...(process.env.PLAYWRIGHT_CHANNEL === 'chrome' ? { channel: 'chrome' as const } : {}),
+      },
+    },
+  ],
   webServer: skipWebServer
     ? undefined
     : {

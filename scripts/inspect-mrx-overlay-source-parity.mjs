@@ -115,9 +115,10 @@ for (const sitemap of sitemapPaths) {
 }
 const rows = [];
 const jobs = [...urls].flatMap((pathname) => targets.map((target) => ({ pathname, target })));
+const transportRetries = [];
 let done = 0;
 await Promise.all(
-  Array.from({ length: 6 }, async () => {
+  Array.from({ length: 3 }, async () => {
     while (jobs.length) {
       const { pathname, target } = jobs.shift();
       try {
@@ -126,16 +127,33 @@ await Promise.all(
           'utf8',
         );
         const source = identity(built);
-        const response = await fetch(`${target}${pathname}`, {
-          headers: { ...PILLAR_HTML_HEADERS, 'user-agent': 'MRX-source-parity-verifier/1.0' },
-          signal: AbortSignal.timeout(25000),
-        });
+        let response;
+        let html;
+        // Retry transport failures only. HTTP/security/content failures remain
+        // release findings; do not retry them into a success or drop a URL.
+        for (let attempt = 1; attempt <= 3; attempt++) {
+          try {
+            response = await fetch(`${target}${pathname}`, {
+              headers: { ...PILLAR_HTML_HEADERS, 'user-agent': 'MRX-source-parity-verifier/1.0' },
+              signal: AbortSignal.timeout(25000),
+            });
+            if (
+              response.status === 200 &&
+              (response.headers.get('content-type') ?? '').includes('text/html')
+            )
+              html = await response.text();
+            break;
+          } catch (error) {
+            transportRetries.push({ pathname, target, attempt, error: error.message });
+            if (attempt === 3) throw error;
+          }
+        }
         if (
           response.status !== 200 ||
           !(response.headers.get('content-type') ?? '').includes('text/html')
         )
           throw new Error(`HTTP ${response.status} / non-HTML`);
-        const live = identity(await response.text());
+        const live = identity(html);
         const differences = Object.keys(source).filter(
           (key) => JSON.stringify(stable(source[key])) !== JSON.stringify(stable(live[key])),
         );
@@ -203,6 +221,7 @@ const report = {
   sitemap_url_count: urls.size,
   mode: 'READ_ONLY_PUBLIC_SOURCE_PARITY',
   summaries,
+  transport_retries: transportRetries,
   rows: compactRows,
 };
 const output = path.join(root, 'reports/mrx-overlay-source-parity-current.json');

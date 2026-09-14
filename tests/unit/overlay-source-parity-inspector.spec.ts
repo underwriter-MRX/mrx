@@ -30,4 +30,16 @@ describe('MRX public overlay/source inventory safety contract', () => {
     expect(script).toContain('live_sha256: digest(live)');
     expect(script).toContain('rows: compactRows');
   });
+
+  it('bounds and records transport retries without retrying HTTP/content failures', () => {
+    expect(script).toContain('attempt <= 3');
+    expect(script).toContain(
+      'transportRetries.push({ pathname, target, attempt, error: error.message })',
+    );
+    expect(script).toContain('if (attempt === 3) throw error');
+    expect(script).toContain('transport_retries: transportRetries');
+    expect(script.indexOf('response.status !== 200')).toBeGreaterThan(
+      script.indexOf('if (attempt === 3) throw error'),
+    );
+  });
 });
