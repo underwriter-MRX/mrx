@@ -4,6 +4,11 @@ import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  PILLAR_HTML_HEADERS,
+  pillarSchemaNodes,
+  pillarSchemaParity,
+} from './lib/pillar-html-release.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const canonical = 'https://mineralrightsxchange.com';
@@ -56,16 +61,10 @@ const canonicalUrl = (html) =>
     'href',
   );
 const h1 = (html) => clean(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? '');
-const schemaTypes = (html) =>
-  (
-    html.match(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) ?? []
-  ).flatMap((script) => {
-    const node = JSON.parse(script.replace(/^[\s\S]*?>/, '').replace(/<\/script>$/i, ''));
-    return (node['@graph'] ?? [node]).flatMap((entry) => [entry['@type']].flat());
-  });
-const request = (url, userAgent = 'MRX-Pillar-Release-Verifier/1.0') =>
+const schemaTypes = (html) => pillarSchemaNodes(html).flatMap((node) => [node['@type']].flat());
+const request = (url, userAgent = 'MRX-Pillar-Release-Verifier/1.0', accept = 'text/html') =>
   fetch(url, {
-    headers: { 'user-agent': userAgent, 'cache-control': 'no-cache' },
+    headers: { ...PILLAR_HTML_HEADERS, accept, 'user-agent': userAgent },
     signal: AbortSignal.timeout(20000),
   });
 const metadata = [
@@ -91,6 +90,8 @@ const results = await Promise.all(
     try {
       const response = await request(`${target}/sell-mineral-rights/`);
       const html = await response.text();
+      const originResponse = await request(`${target}/sell-mineral-rights/`, undefined, '*/*');
+      const originHtml = await originResponse.text();
       const types = schemaTypes(html);
       const assertions = {
         http_200: response.status === 200,
@@ -100,6 +101,16 @@ const results = await Promise.all(
         h1_exact: h1(html) === h1(expected),
         canonical_exact: canonicalUrl(html) === `${canonical}/sell-mineral-rights/`,
         metadata_parity: metadata.every((name) => meta(html, name) === meta(expected, name)),
+        native_schema_and_reviewed_image_parity: pillarSchemaParity(html, expected, {
+          allowSourceImageObjects: true,
+        }),
+        origin_variant_identity_parity:
+          originResponse.status === 200 &&
+          clean(originHtml.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? '') ===
+            clean(expected.match(/<title>([\s\S]*?)<\/title>/i)?.[1] ?? '') &&
+          metadata.every((name) => meta(originHtml, name) === meta(expected, name)) &&
+          pillarSchemaParity(originHtml, expected),
+        unsupported_keyword_overlay_absent: !meta(html, 'keywords'),
         page_schema_not_article:
           types.includes('WebPage') && !types.includes('BlogPosting') && !types.includes('Article'),
         reviewed_pillar_present:
@@ -136,7 +147,11 @@ const results = await Promise.all(
       for (const kind of ['hero', 'inline']) {
         const image = packet.asset_manifest.assets.find((asset) => asset.kind === kind);
         if (!image) throw new Error(`${kind} packet image identity missing`);
-        const imageResponse = await request(`${target}${image.public_path}`);
+        const imageResponse = await request(
+          `${target}${image.public_path}`,
+          undefined,
+          'image/webp',
+        );
         const bytes = Buffer.from(await imageResponse.arrayBuffer());
         assertions[`${kind}_exact_live_bytes`] =
           imageResponse.status === 200 &&
@@ -147,6 +162,7 @@ const results = await Promise.all(
         target,
         final_url: response.url,
         http_status: response.status,
+        html_accept: PILLAR_HTML_HEADERS.accept,
         assertions,
         disposition: Object.values(assertions).every(Boolean) ? 'PASS' : 'FAIL',
       };

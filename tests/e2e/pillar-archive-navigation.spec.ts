@@ -1,4 +1,6 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { pillarSchemaParity } from '../../scripts/lib/pillar-html-release.mjs';
 
 /**
  * MRX1000-041 — verify that the Learning Center hub visibly links every
@@ -69,8 +71,12 @@ test.describe('MRX1000 pillar & archive navigation', () => {
       }),
     ).toBeVisible();
 
-    const graph = await page.locator('script[type="application/ld+json"]').first().textContent();
-    const nodes = JSON.parse(graph ?? '{}')['@graph'] ?? [];
+    const nodes = (
+      await page.locator('script[type="application/ld+json"]').allTextContents()
+    ).flatMap((text) => {
+      const value = JSON.parse(text);
+      return Array.isArray(value) ? value : (value['@graph'] ?? [value]);
+    });
     expect(
       nodes.some((node: { '@type': string | string[] }) =>
         [node['@type']].flat().includes('WebPage'),
@@ -81,6 +87,24 @@ test.describe('MRX1000 pillar & archive navigation', () => {
         [node['@type']].flat().includes('BlogPosting'),
       ),
     ).toBe(false);
+    expect(
+      nodes.filter((node: { '@type': string }) => node['@type'] === 'Organization'),
+    ).toHaveLength(1);
+    expect(nodes.filter((node: { '@type': string }) => node['@type'] === 'WebPage')).toHaveLength(
+      1,
+    );
+    expect(
+      pillarSchemaParity(
+        await page.content(),
+        readFileSync('dist/client/sell-mineral-rights/index.html', 'utf8'),
+        { allowSourceImageObjects: true },
+      ),
+    ).toBe(true);
+    await expect(page.locator('meta[name="keywords"]')).toHaveCount(0);
+    await expect(page.locator('meta[name="twitter:description"]')).toHaveAttribute(
+      'content',
+      'Understand your options before selling mineral rights. Compare selling, holding, or a partial sale with a transparent…',
+    );
     for (const [profile, width, height] of [
       ['desktop', 1440, 900],
       ['mobile', 390, 844],

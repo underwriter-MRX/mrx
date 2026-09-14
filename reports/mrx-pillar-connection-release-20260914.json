@@ -1,0 +1,441 @@
+{
+  "generated_at_utc": "2026-09-14T07:25:06Z",
+  "repository": "underwriter-MXC/mrx",
+  "repository_write_connection": {
+    "method": "repository-specific SSH deploy key",
+    "public_fingerprint": "SHA256:kmUFiCHc61Aeh7OiWrB33UNDKCUqogmoum/ZoweffUQ",
+    "read_write_verified": true,
+    "implementation_and_evidence_remote_head": "055ba85d7f96da27532492976ffaf93fd82a5ebc",
+    "branch": "release/mrx-measurement-ai-technical-20260909",
+    "global_credentials_changed": false,
+    "github_connector_write_access_restored": false
+  },
+  "production": {
+    "implementation_commit": "cdf7bb2fb9532c422f348b26f622134a8568d9e7",
+    "deployment_id": "dpl_FXYwjqRJRbEGYuQs6DWTd6B4wgp3",
+    "origin": "https://mrx-reus73jnd-team-mrx.vercel.app",
+    "rollback_id": "dpl_7N3wuArq3fa8eX5JztZo8xUJd7bX",
+    "active_targets": [
+      "https://mineralrightsxchange.com",
+      "https://www.mineralrightsxchange.com",
+      "https://mrx-web.vercel.app",
+      "https://mrx-web-team-mrx.vercel.app"
+    ],
+    "protected_team_alias_authentication_preserved": true,
+    "new_articles": 0,
+    "strict_released_rows": 230,
+    "retained_live_checked_baseline": 8
+  },
+  "chesty_ceo": {
+    "verdict": "MRX_CEO_SCHEMA_DECISION: APPROVE CONDITIONAL SOFT-DELETE",
+    "conditions": [
+      "Only rejected duplicate sitewide Organization 182837670 in project 99913, not native #org.",
+      "Each image record must match project 99913/page 325854327 and be absent from both native graph and visible images before deletion.",
+      "Preserve legitimate FOUND/native schema and current visible images; do not deploy duplicates to clear pending counts."
+    ],
+    "actual_deletions": 0
+  },
+  "caption_corrections": [
+    {
+      "id": 266423901,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    },
+    {
+      "id": 266423902,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    },
+    {
+      "id": 266423903,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    },
+    {
+      "id": 266423904,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    },
+    {
+      "id": 266423911,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    },
+    {
+      "id": 266423912,
+      "stored_caption_matches_visible_source": true,
+      "is_deployed": false
+    }
+  ],
+  "remaining_overlay": {
+    "stale_image_ids": [
+      266423898,
+      266423899,
+      266423900,
+      266423905,
+      266423906,
+      266423907,
+      266423908,
+      266423909,
+      266423910
+    ],
+    "sitewide_duplicate_id": 182837670,
+    "duplicate_undeployed": true,
+    "sitewide_delete_http_status": 400,
+    "sitewide_delete_response": "Can't delete sitewide schema",
+    "first_party_ui": "Organization exposes Preview/Edit/Deploy, no reject/delete action. All FOUND image rows expose disabled Delete schema controls.",
+    "failed_attempt_backup": "reports/mrx-selling-pillar-overlay-cleanup-20260913.json",
+    "unsupported_mutator_removed": true,
+    "read_only_inspector": "scripts/inspect-mrx-selling-pillar-overlay.mjs"
+  },
+  "otto_dashboard": {
+    "hostname": "mineralrightsxchange.com",
+    "seo_score": 85,
+    "panels": [
+      {
+        "group": "content_strategy",
+        "label": "Content Strategy",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "dkn",
+            "Domain Knowledge Network",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "topical_maps_and_supplemental_content",
+            "Topical Maps and Supplemental Content",
+            16,
+            16,
+            0,
+            "complete"
+          ],
+          [
+            "ai_landing_page_builder",
+            "AI Landing Page Builder",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 16,
+        "approved": 16,
+        "pending": 0
+      },
+      {
+        "group": "onpage_optimizations",
+        "label": "Onpage Optimizations",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "page_title",
+            "Title Tags",
+            230,
+            230,
+            0,
+            "complete"
+          ],
+          [
+            "meta_description",
+            "Meta Descriptions",
+            318,
+            318,
+            0,
+            "complete"
+          ],
+          [
+            "headings_length",
+            "Headings Length",
+            242,
+            242,
+            0,
+            "complete"
+          ],
+          [
+            "missing_headings",
+            "Heading Optimizations",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "images",
+            "Image Alt Texts",
+            19,
+            19,
+            0,
+            "complete"
+          ],
+          [
+            "meta_keywords",
+            "Meta Keywords",
+            223,
+            223,
+            0,
+            "complete"
+          ],
+          [
+            "schema_markup",
+            "Schema Markup",
+            1,
+            0,
+            1,
+            "pending"
+          ],
+          [
+            "missing_keywords",
+            "Missing Keywords",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "semantic_analysis",
+            "Semantic Analysis and Knowledge Graph Optimization",
+            337,
+            337,
+            0,
+            "complete"
+          ],
+          [
+            "knowledge_based_trust",
+            "Knowledge Based Trust and Factual Enhancement",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 1370,
+        "approved": 1369,
+        "pending": 1
+      },
+      {
+        "group": "link_building",
+        "label": "Link Optimization",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "internal_links",
+            "Internal Linking Opportunities",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "wildfire",
+            "WILDFIRE",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "canonical_link",
+            "Canonical Link",
+            1,
+            1,
+            0,
+            "complete"
+          ],
+          [
+            "links",
+            "Issues with Links",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 1,
+        "approved": 1,
+        "pending": 0
+      },
+      {
+        "group": "indexing",
+        "label": "Indexing",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "gsc_instant_indexing",
+            "GSC Instant Indexing",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "dynamic_indexing",
+            "Dynamic Indexing",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 0,
+        "approved": 0,
+        "pending": 0
+      },
+      {
+        "group": "miscellaneous",
+        "label": "Miscellaneous",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "og_meta",
+            "Open Graph",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "twitter_meta",
+            "Twitter Card",
+            448,
+            448,
+            0,
+            "complete"
+          ],
+          [
+            "html_lang_missing",
+            "Missing Lang Attribute",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "custom_content",
+            "Custom HTML Content",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 448,
+        "approved": 448,
+        "pending": 0
+      }
+    ],
+    "rendered_total": 1835,
+    "rendered_approved": 1834,
+    "rendered_pending": 1,
+    "project_total_all_categories": 1835,
+    "project_id": 99913,
+    "project_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "notice": null
+  },
+  "post_deployment_recrawl": {
+    "audit_id": 138239,
+    "domain": "mineralrightsxchange.com",
+    "status": "completed",
+    "postprocessing_status": "completed",
+    "crawl_state": "completed",
+    "is_terminal": true,
+    "should_repoll": false,
+    "audit_started_at": "2026-09-13T23:14:39.335112Z",
+    "audit_completed_at": "2026-09-13T23:23:32.988059Z",
+    "score": 969,
+    "total_pages": 373,
+    "total_issues": 1615,
+    "detected_cms": "static-html",
+    "otto_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "issues_by_type": {
+      "images_missing_alt": 373,
+      "h2_under_20_over_70": 281,
+      "meta_keywords": 149,
+      "og_title_over_60": 122,
+      "twitter_title_over_55": 122,
+      "h1_under_20_over_70": 109,
+      "schema_type": 98,
+      "image_more_than_100_kb": 75,
+      "not_enough_internal_links": 58,
+      "js_more_than_300_kb": 51,
+      "non_unique_h1": 34,
+      "non_unique_content": 33,
+      "status_code_not_200": 24,
+      "non_unique_title": 22,
+      "has_only_one_internal_dofollow_link": 20
+    },
+    "issue_descriptions": {
+      "images_missing_alt": "Image alt tags help search engines understand the contents of images and can improve their ability to rank in Image search results.",
+      "h2_under_20_over_70": "H2 headers should be between 20 and 70 characters.",
+      "meta_keywords": "Page can implement <meta> keywords tag. This is optional.",
+      "og_title_over_60": "Open Graph Title shouldn't exceed 60 characters.",
+      "twitter_title_over_55": "Twitter Cards Title shouldn't be more than 60 characters.",
+      "h1_under_20_over_70": "H1 headers should be between 20 and 70 characters.",
+      "schema_type": "Your page is missing recommended schema markup types that could help search engines better understand your content. Common schema types include Article, Product, Organization, LocalBusiness, or WebPage depending on your content type.",
+      "image_more_than_100_kb": "Avoid using large images, which increase page load time and hurt performance. Images should be smaller than 100 KB.",
+      "not_enough_internal_links": "Page should include more internal links. Internal Links help search engines discover content on your website and improve search rankings of linked-to pages.",
+      "js_more_than_300_kb": "Avoid using large javascript files, which slow down page load time and hurt performance. Files should be smaller than 300 KB.",
+      "non_unique_h1": "Page's H1 heading should be unique and dissimilar to the H1 headings on other pages of your website.",
+      "non_unique_content": "Page's content should be unique and dissimilar to the content on other pages of your website.",
+      "status_code_not_200": "Page's response should be a \"200\" status code.",
+      "non_unique_title": "Page's title should not be similar to other Page titles on your website.",
+      "has_only_one_internal_dofollow_link": "The number of internal links pointing to a page is a signal to search engines about the relative importance of that page."
+    },
+    "indexability": {
+      "Indexable": 348,
+      "Not Indexable": 25,
+      "Not Standard": 0
+    },
+    "page_types": {
+      "Success (2xx)": 349,
+      "Redirect (3xx)": 24,
+      "Missing (4xx)": 0,
+      "Forbidden/Blocked (403, 429)": 0,
+      "Server Error (5xx)": 0
+    },
+    "issues_capped": true
+  },
+  "release_disposition": "OPEN_FAIL_CLOSED_PENDING_SEARCH_ATLAS_OVERLAY_CLEANUP",
+  "public_http_receipt": "reports/mrx-selling-pillar-production-verification.json",
+  "cost": {
+    "new_or_incremental_charge_incurred": false
+  }
+}

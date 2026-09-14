@@ -1,0 +1,240 @@
+{
+  "generated_at_utc": "2026-09-14T07:02:53.617Z",
+  "preflight": {
+    "cwd": "/Users/darylhill/Documents/MineralRightsXchange.com/.codex-isolated/mrx-measurement-ai-technical-20260909",
+    "branch": "release/mrx-measurement-ai-technical-20260909",
+    "head": "055ba85d7f96da27532492976ffaf93fd82a5ebc",
+    "status": "M reports/mrx-selling-pillar-production-verification.json\n M scripts/verify-mrx-selling-pillar-production.mjs\n M tests/e2e/pillar-archive-navigation.spec.ts\n?? scripts/cleanup-mrx-selling-pillar-overlay.mjs\n?? scripts/lib/pillar-html-release.mjs\n?? tests/unit/pillar-html-release.spec.ts"
+  },
+  "project_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+  "page_path": "/sell-mineral-rights/",
+  "authority": "Standing MRX source-first/no-approval release authority; no charge or account/security change.",
+  "reason": "Reject duplicate sitewide Organization and old overlay-only ImageObjects absent from approved native source.",
+  "recovery": "Official API documents schema DELETE as soft deletion; saved public bodies can be recreated without AI generation. No source files or image binaries are deleted.",
+  "recovery_api_docs": "https://docs.searchatlas.com/",
+  "records": [
+    {
+      "id": 182837670,
+      "project_id": 99913,
+      "page_id": null,
+      "is_sitewide": true,
+      "status": "SUGGESTED",
+      "type": "Organization",
+      "original_contents": "{\"url\": \"https://mineralrightsxchange.com\", \"logo\": \"https://storage.googleapis.com/content-assistant-images-persistent/e02932ed-acab-4dc3-b610-7627823df7b6.png\", \"name\": \"Mineral Rights Xchange\", \"@type\": \"Organization\", \"email\": \"underwriter@mineralrightsxchange.com\", \"sameAs\": [\"https://x.com/mineralrightsxchange\", \"https://www.facebook.com/profile.php?id=61590415648681&sk=about\", \"https://instagram.com/mineralrightsxchange\", \"https://linkedin.com/company/mineralrightsxchange\"], \"address\": [{\"@type\": \"PostalAddress\", \"streetAddress\": \"200 N Loraine St Suite 1450\", \"addressCountry\": \"US\", \"addressLocality\": \"Midland\"}], \"@context\": \"https://schema.org\", \"telephone\": \"+1 (432) 400-6198\", \"description\": \"Mineral Rights Xchange (MRX) provides free, no-pressure mineral-rights education, secure owner intake, and directional underwriter assessments for U.S. mineral and royalty owners comparing offers, inherited interests, royalties, production, and sell-or-hold decisions. Assessments use available public records, production data, owner-provided documents, and stated assumptions. They are not certified appraisals or legal, tax, title, accounting, engineering, investment, or guaranteed-value advice. MRX may be a buyer in a transaction resulting from a review and discloses that relationship in writing before an agreement is signed. The approved public organizational author is MRX Editorial Team. Tommy and the other named guides are fictional AI interfaces, not human authors or employees. MRX provides nationwide online education, secure intake, and directional review. Nationwide coverage and the Midland business-contact record do not establish a public storefront, staffed local office, travel-based service area, Google Business Profile eligibility, or licensed local presence. Use ProfessionalService or Organization when supported; do not activate LocalBusiness or Google Business Profile claims without separately verified eligibility evidence.\"}",
+      "edited_contents": "{\"@context\": \"https://schema.org\", \"@type\": \"Organization\", \"url\": \"https://mineralrightsxchange.com\", \"sameAs\": [\"https://x.com/mineralrightsxchange\", \"https://www.facebook.com/profile.php?id=61590415648681&sk=about\", \"https://instagram.com/mineralrightsxchange\", \"https://linkedin.com/company/mineralrightsxchange\"], \"logo\": \"https://storage.googleapis.com/content-assistant-images-persistent/e02932ed-acab-4dc3-b610-7627823df7b6.png\", \"name\": \"Mineral Rights Xchange\", \"description\": \"Mineral Rights Xchange (MRX) provides free, no-pressure mineral-rights education, secure owner intake, and directional underwriter assessments for U.S. mineral and royalty owners comparing offers, inherited interests, royalties, production, and sell-or-hold decisions. Assessments use available public records, production data, owner-provided documents, and stated assumptions. They are not certified appraisals or legal, tax, title, accounting, engineering, investment, or guaranteed-value advice. MRX may be a buyer in a transaction resulting from a review and discloses that relationship in writing before an agreement is signed. The approved public organizational author is MRX Editorial Team. Tommy and the other named guides are fictional AI interfaces, not human authors or employees. MRX provides nationwide online education, secure intake, and directional review. Nationwide coverage and the Midland business-contact record do not establish a public storefront, staffed local office, travel-based service area, Google Business Profile eligibility, or licensed local presence. Use ProfessionalService or Organization when supported; do not activate LocalBusiness or Google Business Profile claims without separately verified eligibility evidence.\", \"email\": \"underwriter@mineralrightsxchange.com\", \"telephone\": \"+1 (432) 400-6198\", \"address\": [{\"@type\": \"PostalAddress\", \"streetAddress\": \"200 N Loraine St Suite 1450\", \"addressLocality\": \"Midland\", \"addressCountry\": \"US\"}]}"
+    },
+    {
+      "id": 266423898,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral Rights Xchange logo featuring\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/brand/mrx-logo-color.png\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423899,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Tommy Hermes, Mineral Rights Xchange AI assistant, oilfield background.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/mrx-homepage-v4/avatars/tommy-hermes-128.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423900,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral Rights Xchange logo, white\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/brand/mrx-logo-white.png\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423905,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Man reviewing mineral rights assessment document and map, illustrating directional underwriting for mineral owners.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/what-a-mineral-rights-assessment-does-and-does-not-tell-you.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423906,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral rights owner reviewing documents, considering selling mineral rights in Texas.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/should-i-sell-my-mineral-rights.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423907,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Texas mineral rights documents, map, and magnifying glass illustrating valuation discrepancies.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423908,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral rights documents and decision log illustrating Texas mineral rights sale process management.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/what-should-i-do-if-a-texas-mineral-rights-sale-goes-wrong.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423909,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral rights owners reviewing valuation range on tablet, assessing royalty interests and potential offers.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/why-is-my-mineral-rights-valuation-range-so-wide.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423910,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Mineral rights owners reviewing documents with advisor, Texas landscape in background.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/unlocking-the-mystery-key-details-for-an-accurate-mineral-rights-review-process.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423901,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Woman reviewing mineral rights documents and Texas oil field in background.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/how-to-sell-mineral-rights-in-texas.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423902,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Texas mineral rights documents and glasses on desk, illustrating selling process.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/documents-needed-to-sell-texas-mineral-rights.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423903,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Open ring binder and magnifying glass illustrating mineral rights document package organization.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/how-to-build-a-mineral-rights-sale-document-package-index.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423904,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Man reviewing documents related to mineral rights sale decision log and family discussions.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/how-to-build-a-mineral-rights-sale-decision-log.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423911,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Family members discussing mineral rights inquiries and paperwork, illustrating a designated point person role.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/how-to-choose-a-family-point-person-for-mineral-rights-inquiries.webp\"}",
+      "edited_contents": null
+    },
+    {
+      "id": 266423912,
+      "project_id": 99913,
+      "page_id": 325854327,
+      "is_sitewide": false,
+      "status": "FOUND",
+      "type": "ImageObject",
+      "original_contents": "{\"@type\": \"ImageObject\", \"caption\": \"Family discussing mineral rights management and selling decisions with Mineral Rights Xchange.\", \"@context\": \"https://schema.org/\", \"contentUrl\": \"https://mineralrightsxchange.com/assets/articles/hero/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.webp\"}",
+      "edited_contents": null
+    }
+  ],
+  "corrections": [
+    {
+      "schema_id": 266423901,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/how-to-sell-mineral-rights-in-texas.webp",
+        "caption": "MRX article cover with the title “How to Sell Mineral Rights in Texas”."
+      }
+    },
+    {
+      "schema_id": 266423902,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/documents-needed-to-sell-texas-mineral-rights.webp",
+        "caption": "MRX article cover with the title “Documents Needed to Sell Texas Mineral Rights”."
+      }
+    },
+    {
+      "schema_id": 266423903,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/how-to-build-a-mineral-rights-sale-document-package-index.webp",
+        "caption": "An open document binder and page stack appear beside “How to Build a Mineral Rights Sale Document Package Index”."
+      }
+    },
+    {
+      "schema_id": 266423904,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/how-to-build-a-mineral-rights-sale-decision-log.webp",
+        "caption": "A mineral owner reviews an organized folder beside “How to Build a Mineral Rights Sale Decision Log”."
+      }
+    },
+    {
+      "schema_id": 266423911,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/how-to-choose-a-family-point-person-for-mineral-rights-inquiries.webp",
+        "caption": "A family chooses one notebook holder beside “How to Choose a Family Point Person for Mineral Rights Inquiries”."
+      }
+    },
+    {
+      "schema_id": 266423912,
+      "contents": {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "https://mineralrightsxchange.com/assets/articles/hero/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.webp",
+        "caption": "Three adult family members talk at a table beside “How to Talk to Your Family Before You Decide to Sell Mineral Rights”."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "schema_id": 182837670,
+      "error": "Scoped Search Atlas DELETE returned HTTP 400"
+    }
+  ],
+  "disposition": "FAIL"
+}
