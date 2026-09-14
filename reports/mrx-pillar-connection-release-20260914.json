@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-14T07:25:06Z",
+  "generated_at_utc": "2026-09-14T07:29:45Z",
   "repository": "underwriter-MXC/mrx",
   "repository_write_connection": {
     "method": "repository-specific SSH deploy key",
@@ -8,7 +8,8 @@
     "implementation_and_evidence_remote_head": "055ba85d7f96da27532492976ffaf93fd82a5ebc",
     "branch": "release/mrx-measurement-ai-technical-20260909",
     "global_credentials_changed": false,
-    "github_connector_write_access_restored": false
+    "github_connector_write_access_restored": false,
+    "verification_followup_remote_head": "5156c36d6b53c0d65fbc3d1cb81e2d13aa45b743"
   },
   "production": {
     "implementation_commit": "cdf7bb2fb9532c422f348b26f622134a8568d9e7",
@@ -39,32 +40,32 @@
     {
       "id": 266423901,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     },
     {
       "id": 266423902,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     },
     {
       "id": 266423903,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     },
     {
       "id": 266423904,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     },
     {
       "id": 266423911,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     },
     {
       "id": 266423912,
       "stored_caption_matches_visible_source": true,
-      "is_deployed": false
+      "is_deployed": true
     }
   ],
   "remaining_overlay": {
@@ -86,7 +87,8 @@
     "first_party_ui": "Organization exposes Preview/Edit/Deploy, no reject/delete action. All FOUND image rows expose disabled Delete schema controls.",
     "failed_attempt_backup": "reports/mrx-selling-pillar-overlay-cleanup-20260913.json",
     "unsupported_mutator_removed": true,
-    "read_only_inspector": "scripts/inspect-mrx-selling-pillar-overlay.mjs"
+    "read_only_inspector": "scripts/inspect-mrx-selling-pillar-overlay.mjs",
+    "stale_images_undeployed_in_storage": true
   },
   "otto_dashboard": {
     "hostname": "mineralrightsxchange.com",
@@ -196,10 +198,10 @@
           [
             "schema_markup",
             "Schema Markup",
+            7,
+            6,
             1,
-            0,
-            1,
-            "pending"
+            "86%"
           ],
           [
             "missing_keywords",
@@ -226,8 +228,8 @@
             "no_issues"
           ]
         ],
-        "total": 1370,
-        "approved": 1369,
+        "total": 1376,
+        "approved": 1375,
         "pending": 1
       },
       {
@@ -362,10 +364,10 @@
         "pending": 0
       }
     ],
-    "rendered_total": 1835,
-    "rendered_approved": 1834,
+    "rendered_total": 1841,
+    "rendered_approved": 1840,
     "rendered_pending": 1,
-    "project_total_all_categories": 1835,
+    "project_total_all_categories": 1841,
     "project_id": 99913,
     "project_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
     "notice": null
@@ -437,5 +439,13 @@
   "public_http_receipt": "reports/mrx-selling-pillar-production-verification.json",
   "cost": {
     "new_or_incremental_charge_incurred": false
+  },
+  "caption_deploy": {
+    "success": true,
+    "sync_complete": true,
+    "count": 6,
+    "independent_page_listing_verified": true,
+    "live_caption_parity_verified": false,
+    "live_native_source_caption_matches_at_last_probe": 0
   }
 }

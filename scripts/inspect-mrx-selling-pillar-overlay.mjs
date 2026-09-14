@@ -101,14 +101,14 @@ if (
   );
 }
 const script = (nodes) => `<script type="application/ld+json">${JSON.stringify(nodes)}</script>`;
+const storedLiveMismatches = [];
 for (const image of images) {
   if (
     image.otto_project !== projectId ||
     image.otto_url !== urlId ||
     image.is_sitewide !== false ||
     image.status !== 'FOUND' ||
-    image.schema_type !== 'ImageObject' ||
-    image.is_approved !== false
+    image.schema_type !== 'ImageObject'
   ) {
     throw new Error(
       'Image record project/page/type differs from verified evidence; no cleanup attempted.',
@@ -116,9 +116,7 @@ for (const image of images) {
   }
   const contents = JSON.parse(image.edited_contents ?? image.original_contents);
   if (!liveImages.some((node) => pillarSchemaParity(script(contents), script(node)))) {
-    throw new Error(
-      'Stored image record is not the independently observed overlay; no cleanup attempted.',
-    );
+    storedLiveMismatches.push(image.id);
   }
 }
 const remainingNative = pillarSchemaNodes(live).filter((node) => node['@type'] !== 'ImageObject');
@@ -174,6 +172,7 @@ const receipt = {
   api_docs: 'https://docs.searchatlas.com/',
   records: [...selected, ...currentImages].map(recovery),
   corrections,
+  stored_live_mismatch_ids: storedLiveMismatches,
   actions: [],
   disposition: 'OVERLAY_REVIEW_OPEN',
 };
