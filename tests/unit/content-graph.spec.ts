@@ -207,6 +207,49 @@ describe('MRX1000 internal_links triangle resolution', () => {
     expect(resolved.sibling.href).toBe(ARTICLE_PILLARS['mineral-rights-taxes'].path);
   });
 
+  it('chooses the same canonical fallback for reversed loader order without mutating input', () => {
+    const post = makePost({ content_cluster: 'tax-1031-legal-education' });
+    const candidates = [post, siblingPost, siblingPost2];
+    const before = [...candidates];
+    Object.freeze(candidates);
+    expect(resolveInternalLinks(post, candidates).sibling.href).toBe('/blog/other-sibling-guide/');
+    expect(resolveInternalLinks(post, [...candidates].reverse()).sibling.href).toBe(
+      '/blog/other-sibling-guide/',
+    );
+    expect(candidates).toEqual(before);
+  });
+
+  it('keeps a valid explicit sibling ahead of the alphabetic fallback', () => {
+    const post = makePost({
+      content_cluster: 'tax-1031-legal-education',
+      internal_links: {
+        hub: '/learning-center/',
+        sibling: '/blog/sibling-guide/',
+        conversion: '/book/',
+      },
+    });
+    expect(resolveInternalLinks(post, [siblingPost2, siblingPost]).sibling.href).toBe(
+      '/blog/sibling-guide/',
+    );
+  });
+
+  it('excludes self, unpublished and other-cluster posts before ordering the fallback', () => {
+    const post = makePost({ content_cluster: 'tax-1031-legal-education' });
+    (post as { id: string }).id = '000-current.mdx';
+    const held = makePost({
+      content_cluster: 'tax-1031-legal-education',
+      draft: true,
+      publication_status: 'draft',
+      noindex: true,
+    });
+    (held as { id: string }).id = '001-held.mdx';
+    const other = makePost({ content_cluster: 'valuation-methodology-drivers' });
+    (other as { id: string }).id = '002-other-cluster.mdx';
+    expect(resolveInternalLinks(post, [held, post, other, siblingPost]).sibling.href).toBe(
+      '/blog/sibling-guide/',
+    );
+  });
+
   it('ignores a declared sibling that equals the pillar path and substitutes a real sibling', () => {
     const post = makePost({
       content_cluster: 'tax-1031-legal-education',

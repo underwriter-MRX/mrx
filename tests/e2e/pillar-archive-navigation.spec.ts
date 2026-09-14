@@ -31,6 +31,57 @@ test.describe('MRX1000 pillar & archive navigation', () => {
     await installVercelAuthenticatedRead(page, baseURL);
   });
 
+  test('category archives render deterministic crawlable navigation', async ({ page }) => {
+    const labels = [
+      'All',
+      'Competing Offers',
+      'Mineral Rights',
+      'Selling Process',
+      'Tax & Legal',
+      'Texas Oil & Gas',
+      'Understanding Mineral Rights',
+      'Valuation',
+    ];
+    for (const path of ['/blog/category/tax-legal/', '/blog/category/valuation/page/2/']) {
+      await page.goto(path, { waitUntil: 'domcontentloaded' });
+      const nav = page.getByRole('navigation', { name: 'Blog categories' });
+      await expect(nav.locator('a')).toHaveText(labels);
+      await expect(nav.locator('a[aria-current="page"]')).toHaveCount(1);
+      expect(
+        await nav.locator('a').evaluateAll((anchors) => anchors.map((a) => a.getAttribute('href'))),
+      ).toEqual([
+        '/learning-center/',
+        '/blog/category/competing-offers/',
+        '/blog/category/mineral-rights/',
+        '/blog/category/selling-process/',
+        '/blog/category/tax-legal/',
+        '/blog/category/texas-oil-gas/',
+        '/blog/category/understanding-mineral-rights/',
+        '/blog/category/valuation/',
+      ]);
+    }
+  });
+
+  test('affected articles preserve canonical same-cluster continuation', async ({ page }) => {
+    for (const slug of [
+      'closing-costs-and-fees-when-selling-mineral-rights-in-texas',
+      'how-texas-mineral-rights-ownership-works-deeds-conveyances-and-title',
+      'title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell',
+      'what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include',
+    ]) {
+      await page.goto(`/blog/${slug}/`, { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('[data-article-link="sibling"]')).toHaveAttribute(
+        'href',
+        '/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/',
+      );
+      await expect(page.locator('[data-article-link="conversion"]')).toHaveAttribute(
+        'href',
+        '/book/',
+      );
+      await expect(page.locator('main h1')).toHaveCount(1);
+    }
+  });
+
   test('selling pillar preserves identity and connects reviewed owner questions to distinct guides', async ({
     page,
   }, testInfo) => {

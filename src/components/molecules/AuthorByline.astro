@@ -13,6 +13,7 @@ interface Props {
 
 const { authorName, authorHref, authorRole, publishedAt, reviewedAt, readingMinutes } = Astro.props;
 const formatted = new Date(publishedAt).toLocaleDateString('en-US', {
+  timeZone: 'UTC',
   month: 'long',
   day: 'numeric',
   year: 'numeric',
@@ -42,6 +43,7 @@ const formatted = new Date(publishedAt).toLocaleDateString('en-US', {
           <span>
             Reviewed{' '}
             {new Date(reviewedAt).toLocaleDateString('en-US', {
+              timeZone: 'UTC',
               month: 'short',
               day: 'numeric',
               year: 'numeric',

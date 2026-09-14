@@ -4,6 +4,7 @@
  */
 import type { CollectionEntry } from 'astro:content';
 import Tag from '../atoms/Tag.astro';
+import { orderNavigationCategories } from '../../lib/navigation-order';
 
 interface Props {
   categories: CollectionEntry<'categories'>[];
@@ -21,7 +22,7 @@ const { categories, currentSlug } = Astro.props;
       </Tag>
     </li>
     {
-      categories.map((c) => (
+      orderNavigationCategories(categories).map((c) => (
         <li>
           <Tag>
             <a

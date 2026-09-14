@@ -50,6 +50,7 @@ const renderPagination = pagination === 'auto' && lastPage > 1;
 const archiveBase = `${pillar.path}`;
 const fallbackCtaHref = `${archiveBase}page/${lastPage}/`;
 const dateFmt = new Intl.DateTimeFormat('en-US', {
+  timeZone: 'UTC',
   year: 'numeric',
   month: 'short',
   day: 'numeric',

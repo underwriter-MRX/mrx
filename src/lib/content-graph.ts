@@ -1,5 +1,6 @@
 import type { CollectionEntry } from 'astro:content';
 import type { ArticlePillar } from './astro/content';
+import { compareCanonicalPaths } from './navigation-order';
 
 export type PillarDefinition = {
   id: ArticlePillar;
@@ -245,7 +246,7 @@ export function articleCta(post: Post) {
  * Resolve the crawlable internal-links triangle. Hub is the pillar
  * path (or the canonical Learning Center fallback). Sibling is the
  * post's own `internal_links.sibling`, else a same-cluster sibling
- * resolved via relatedPosts, else the pillar path. Conversion is
+ * resolved by stable canonical-path order, else the pillar path. Conversion is
  * always /book/ per the MRX1000 contract.
  *
  * The result exposes label + href so the rendering layer can emit
@@ -274,9 +275,9 @@ export function resolveInternalLinks(post: Post, allPublished: Post[] = []): Res
     siblingHref = configuredSibling;
     siblingLabel = `Continue exploring ${pillar.label.toLowerCase()}`;
   } else {
-    const sameCluster = publishedPosts.find(
-      (candidate) => candidate.id !== post.id && resolveCluster(candidate) === cluster,
-    );
+    const sameCluster = publishedPosts
+      .filter((candidate) => candidate.id !== post.id && resolveCluster(candidate) === cluster)
+      .sort((a, b) => compareCanonicalPaths(postPublicPath(a), postPublicPath(b)))[0];
     if (sameCluster) {
       siblingHref = postPublicPath(sameCluster);
       siblingLabel = `Read another ${pillar.label.toLowerCase()} article`;

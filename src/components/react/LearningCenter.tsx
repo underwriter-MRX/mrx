@@ -247,6 +247,7 @@ export default function LearningCenter({ posts, initialFilters = {} }: Props) {
                   </span>
                   <time dateTime={post.publishedAt}>
                     {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                      timeZone: 'UTC',
                       year: 'numeric',
                       month: 'short',
                       day: 'numeric',

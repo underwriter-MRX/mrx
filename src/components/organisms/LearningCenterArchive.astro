@@ -153,6 +153,7 @@ const normalizeLearningFilterText = (value: string) =>
                 </span>
                 <time datetime={post.publishedAt}>
                   {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                    timeZone: 'UTC',
                     year: 'numeric',
                     month: 'short',
                     day: 'numeric',
