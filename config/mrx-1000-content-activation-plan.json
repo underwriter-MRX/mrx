@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T00:39:25.405Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "d780b4a2b863561464e764c31ea7ebbcb332887c7cda99470ac7c617580ad779",
+  "content_fingerprint_sha256": "5211648df1d446d5608d188ff68cf61e798e719a944d64a64354a098ed6f5e6f",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "b6990559c7b0c909c047f49a21f5cde3bb3d4499886c84f98d4a7f5b632d8778",
+    "canonical_ledger_fingerprint_sha256": "ace9c44b31fb976c923d270520c4a0aa0c70f18a5faac9b761fd42cd87b5a54b",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T00:39:25.405Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 327,
+      "live_public_published_route": 328,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 625
+      "planning_only_inventory": 624
     }
   },
   "rows": [
@@ -25024,11 +25024,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0415",
-        "target_title": "Understanding Offers: A Mineral Rights Seller's Guide",
-        "url": "/blog/understanding-offers-a-mineral-rights-seller-s-guide/",
+        "target_title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+        "url": "/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -25071,15 +25071,15 @@
     },
     {
       "program_row_id": "MRX1000-0415",
-      "canonical_title": "Understanding Offers: A Mineral Rights Seller's Guide",
-      "canonical_slug": "understanding-offers-a-mineral-rights-seller-s-guide",
-      "canonical_url": "/blog/understanding-offers-a-mineral-rights-seller-s-guide/",
+      "canonical_title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+      "canonical_slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+      "canonical_url": "/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
       "cluster": "offer-review-buyer-comparison-safety",
       "pillar": "offer-review",
       "search_intent": "commercial-investigation",
       "funnel_stage": "decision",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/offer-review/",
         "route_evidence": "src/pages/offer-review.astro",
@@ -25128,7 +25128,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

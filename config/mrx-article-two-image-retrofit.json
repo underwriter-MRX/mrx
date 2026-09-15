@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-08-31T23:59:01Z",
+  "generated_at_utc": "2026-09-15T08:59:51Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 327,
-    "asset_count": 654,
-    "unique_source_art_count": 327,
-    "unique_hero_sha256_count": 327,
-    "unique_inline_sha256_count": 327,
-    "distinct_article_pair_count": 327,
-    "hero_ocr_pass_count": 327,
-    "inline_ocr_pass_count": 327,
-    "exact_filename_identity_count": 327
+    "article_count": 328,
+    "asset_count": 656,
+    "unique_source_art_count": 328,
+    "unique_hero_sha256_count": 328,
+    "unique_inline_sha256_count": 328,
+    "distinct_article_pair_count": 328,
+    "hero_ocr_pass_count": 328,
+    "inline_ocr_pass_count": 328,
+    "exact_filename_identity_count": 328
   },
   "contact_sheets": {
     "hero": [
@@ -7384,6 +7384,56 @@
           "actual": "mineral rights offer\nversion control",
           "normalized_expected": "mineral rights offer version control",
           "normalized_actual": "mineral rights offer version control",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+      "title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+      "keyword": "mineral rights offer documents",
+      "file_path": "src/content/posts/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.mdx",
+      "source_public_path": "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave248-creative-sources/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement-hero-base.png",
+        "artifacts/mrx1000-wave248-creative-sources/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement-inline-base.png"
+      ],
+      "generated_at_utc": "2026-09-15T08:54:25.981Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+        "alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "938ab1da59ae6eada147a63d483801c4f7445f628fe92259c87d28884e079c86",
+        "perceptual_hash": "0000000000000011000000000000001100000000000000010000000000010011000000000011001100000000011111100111000011111111000000001111111100000000111111110000000011111111000000001111111100000000111111110000000011111111000000001111111100000000111111110000000001111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+          "actual": "Mineral Rights Offer vs.\nLetter of Intent vs.\nPurchase Agreement",
+          "normalized_expected": "mineral rights offer vs letter of intent vs purchase agreement",
+          "normalized_actual": "mineral rights offer vs letter of intent vs purchase agreement",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp",
+        "alt": "A people-free overhead three-stage document evidence board appears below the exact offer-documents keyword.",
+        "rendered_text": "mineral rights offer documents",
+        "visual_variant": "wave248-distinct-generated-overhead-three-stage-document-evidence-board",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "d54c7fcd85f207ba61653203af5a98e5f5425f54b4e50b084d7b1d4ae5afbb8e",
+        "perceptual_hash": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111000111111111111101011111111111111101111111111111110011111111111110001111111111111100111111111110010001111111111000000111111111100100111110001110011111111111111111",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "mineral rights offer documents",
+          "actual": "mineral rights offer documents",
+          "normalized_expected": "mineral rights offer documents",
+          "normalized_actual": "mineral rights offer documents",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

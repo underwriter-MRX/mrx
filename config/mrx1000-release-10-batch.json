@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-09-01T00:07:07Z",
+  "evidence_scaffold_generated_at_utc": "2026-09-15T09:49:34Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -741,13 +741,16 @@
     "wave246_selection_decision_sha256": "659968fa50c39705bd86921298c924077cd2bce3276db5c0d48baf5fe87b8da1",
     "wave247_selection_decision_id": "MRX1000-W247-SELECT-2026-08-31",
     "wave247_selection_decision_path": "docs/governance/mrx1000-wave247-selection-decision-2026-08-31.md",
-    "wave247_selection_decision_sha256": "3f06b93cb9419d7155edebf2cca5ae5030bbf38daba96bea774aa85df504a3ef"
+    "wave247_selection_decision_sha256": "3f06b93cb9419d7155edebf2cca5ae5030bbf38daba96bea774aa85df504a3ef",
+    "wave248_selection_decision_id": "MRX1000-W248-SELECT-2026-09-15",
+    "wave248_selection_decision_path": "docs/governance/mrx1000-wave248-selection-decision-2026-09-15.md",
+    "wave248_selection_decision_sha256": "fd60c17980809573ea9137885534c1f98c79eda4f3037d320ca44433de8559fe"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "d55aac04d483d5d41635f1263bb08b0400bcc9adfbf483ba3f4d03f002def425",
-    "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
+    "canonical_ledger_sha256": "f1523b49802ff18302438c97017953acbd9536475df5a8612a64e1cba103241a",
+    "canonical_ledger_generated_at": "2026-07-20T00:39:25.405Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
     "successor_ledger_decision_sha256": "09eca24bcd0e71563f2ac4197f564eec0ccb43a5ee955216da5c4a2543d04978",
@@ -761,11 +764,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 318,
+    "prior_verified_article_count": 319,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 319,
-    "exact_admitted_slate_sha256": "791e10b0d659cf357c5a437339046b046363656d636693f5148af98c92b4126f"
+    "exact_admitted_count": 320,
+    "exact_admitted_slate_sha256": "6df368bbf2f390a8ef92dfc94537f68a572bc4fa621b9e207e5dcf930618c750"
   },
   "articles": [
     {
@@ -11703,10 +11706,45 @@
       "inline_path": "/assets/articles/inline/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/texas-grantor-grantee-index-search-log.webp",
       "inline_asset_sha256": "806d64a9ee85d219677cf2bc35bc7047f05e84e699f1f1a9eafb9cadefa4c013",
       "inline_rendered_text": "Texas grantor grantee index search log"
+    },
+    {
+      "selection_rank": 320,
+      "program_row_id": "MRX1000-0415",
+      "source_shortlist_program_row_id": "MRX1000-0415",
+      "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+      "title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+      "source_shortlist_title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+      "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+      "pillar": "offer-review",
+      "cluster": "offer-review-buyer-comparison-safety",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "a1e9944748b8724c03c7ee4dba6fbeb9bd4bf619b9341977f72ec080a420fe43",
+      "repo_path": "src/content/posts/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.mdx",
+      "repo_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+      "article_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+      "hero_path": "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+      "hero_sha256": "938ab1da59ae6eada147a63d483801c4f7445f628fe92259c87d28884e079c86",
+      "hero_asset_sha256": "938ab1da59ae6eada147a63d483801c4f7445f628fe92259c87d28884e079c86",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1917,
+      "risk_citation_remediation": [
+        "The generic planning identity is rejected because it collides with the offer-fairness, offer-analysis, offer-comparison, buyer-comparison, and purchase-agreement corpus.",
+        "The replacement owns only the stage-to-stage roles and field changes among an offer, LOI, and purchase agreement, including section-level commitment mapping and agreement-versus-conveyance separation.",
+        "The article does not decide whether a document is binding, enforceable, valid, complete, fair, authentic, legally effective, or appropriate for an owner, and does not supply a state-specific legal conclusion.",
+        "Answer-first structure, claim-adjacent official citations, exact visible and schema entities, semantic links, exact-title hero/share identity, distinct exact-keyword inline image, accessibility, build gates, and no ranking or citation guarantee apply.",
+        "The organizational author is the MRX Editorial Team; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language remain mandatory."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp",
+      "inline_asset_sha256": "d54c7fcd85f207ba61653203af5a98e5f5425f54b4e50b084d7b1d4ae5afbb8e",
+      "inline_rendered_text": "mineral rights offer documents"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 319,
+    "admitted_article_count": 320,
     "selection_ranks": [
       1,
       2,
@@ -12026,7 +12064,8 @@
       316,
       317,
       318,
-      319
+      319,
+      320
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -12085,9 +12124,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "aecaeff6e75b0e5636ac2b91e4489b6d2fb87f7462595c4bfa565a7ef3739c65",
-    "public_article_count": 327,
-    "batch_article_count": 319,
+    "retrofit_manifest_sha256": "8c35b9c5acf5641922d23aa26f70f7500253624944d92df45bcfa59f57814d54",
+    "public_article_count": 328,
+    "batch_article_count": 320,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,
