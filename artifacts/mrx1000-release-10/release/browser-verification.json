@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-15T07:52:58.884Z",
+  "generated_at_utc": "2026-09-15T09:57:50.380Z",
   "canonical_origin": "https://mineralrightsxchange.com",
   "homepage": {
     "top_disclosure_count": 0,
@@ -8,7 +8,6 @@
   "wave10": {
     "article_count": 10,
     "slugs": [
-      "ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23",
       "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
       "ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges",
       "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
@@ -17,7 +16,8 @@
       "winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration",
       "winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare",
       "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
-      "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log"
+      "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log",
+      "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement"
     ],
     "exact_titles_visible": true,
     "hero_images_visible": true,
@@ -33,52 +33,6 @@
   "results": [
     {
       "profile": "desktop",
-      "slug": "ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23",
-      "url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
-      "observed": {
-        "h1": "Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23",
-        "hero": {
-          "src": "/assets/articles/hero/ward-cad-2026-mineral-zip-date-register-march-26-july-16-and-july-23.webp",
-          "alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
-          "naturalWidth": 1200,
-          "naturalHeight": 630,
-          "visible": true,
-          "renderedWidth": 449.421875,
-          "renderedHeight": 235.9375
-        },
-        "inline": {
-          "src": "/assets/articles/inline/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/ward-cad-2026-mineral-zip-member-dates.webp",
-          "alt": "A top-down seven-file timestamp evidence board appears above the exact Ward CAD keyword.",
-          "naturalWidth": 1200,
-          "naturalHeight": 675,
-          "visible": true,
-          "renderedWidth": 698,
-          "renderedHeight": 392.625
-        },
-        "footerDisclosureCount": 1,
-        "documentScrollWidth": 1440,
-        "viewportWidth": 1440
-      },
-      "assertions": {
-        "exact_title_visible": true,
-        "hero_visible": true,
-        "hero_natural_1200x630": true,
-        "hero_src_exact": true,
-        "hero_alt_exact": true,
-        "hero_rendered_ratio_exact": true,
-        "inline_visible": true,
-        "inline_natural_1200x675": true,
-        "inline_src_exact": true,
-        "inline_alt_exact": true,
-        "inline_rendered_ratio_exact": true,
-        "inline_exact_text_evidence": true,
-        "one_footer_disclosure": true,
-        "no_horizontal_overflow": true
-      },
-      "disposition": "PASS"
-    },
-    {
-      "profile": "desktop",
       "slug": "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
       "url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
       "observed": {
@@ -492,32 +446,32 @@
       "disposition": "PASS"
     },
     {
-      "profile": "mobile",
-      "slug": "ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23",
-      "url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+      "profile": "desktop",
+      "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+      "url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
       "observed": {
-        "h1": "Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23",
+        "h1": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
         "hero": {
-          "src": "/assets/articles/hero/ward-cad-2026-mineral-zip-date-register-march-26-july-16-and-july-23.webp",
-          "alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
+          "src": "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+          "alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
           "naturalWidth": 1200,
           "naturalHeight": 630,
           "visible": true,
-          "renderedWidth": 356,
-          "renderedHeight": 186.890625
+          "renderedWidth": 449.421875,
+          "renderedHeight": 235.9375
         },
         "inline": {
-          "src": "/assets/articles/inline/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/ward-cad-2026-mineral-zip-member-dates.webp",
-          "alt": "A top-down seven-file timestamp evidence board appears above the exact Ward CAD keyword.",
+          "src": "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp",
+          "alt": "A people-free overhead three-stage document evidence board appears below the exact offer-documents keyword.",
           "naturalWidth": 1200,
           "naturalHeight": 675,
           "visible": true,
-          "renderedWidth": 356,
-          "renderedHeight": 200.25
+          "renderedWidth": 698,
+          "renderedHeight": 392.625
         },
         "footerDisclosureCount": 1,
-        "documentScrollWidth": 390,
-        "viewportWidth": 390
+        "documentScrollWidth": 1440,
+        "viewportWidth": 1440
       },
       "assertions": {
         "exact_title_visible": true,
@@ -923,6 +877,52 @@
         "inline": {
           "src": "/assets/articles/inline/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/texas-grantor-grantee-index-search-log.webp",
           "alt": "A people-free overhead county-index search-log worksheet appears below the exact Texas grantor-grantee keyword.",
+          "naturalWidth": 1200,
+          "naturalHeight": 675,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 200.25
+        },
+        "footerDisclosureCount": 1,
+        "documentScrollWidth": 390,
+        "viewportWidth": 390
+      },
+      "assertions": {
+        "exact_title_visible": true,
+        "hero_visible": true,
+        "hero_natural_1200x630": true,
+        "hero_src_exact": true,
+        "hero_alt_exact": true,
+        "hero_rendered_ratio_exact": true,
+        "inline_visible": true,
+        "inline_natural_1200x675": true,
+        "inline_src_exact": true,
+        "inline_alt_exact": true,
+        "inline_rendered_ratio_exact": true,
+        "inline_exact_text_evidence": true,
+        "one_footer_disclosure": true,
+        "no_horizontal_overflow": true
+      },
+      "disposition": "PASS"
+    },
+    {
+      "profile": "mobile",
+      "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+      "url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+      "observed": {
+        "h1": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+        "hero": {
+          "src": "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+          "alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+          "naturalWidth": 1200,
+          "naturalHeight": 630,
+          "visible": true,
+          "renderedWidth": 356,
+          "renderedHeight": 186.890625
+        },
+        "inline": {
+          "src": "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp",
+          "alt": "A people-free overhead three-stage document evidence board appears below the exact offer-documents keyword.",
           "naturalWidth": 1200,
           "naturalHeight": 675,
           "visible": true,

@@ -1,15 +1,15 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T00:39:25.405Z",
+  "generated_at": "2026-07-20T17:45:50.397Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "5211648df1d446d5608d188ff68cf61e798e719a944d64a64354a098ed6f5e6f",
+  "content_fingerprint_sha256": "eee89edfd8ced25bd3e97bc9e7acee0e07105c4080f23dbf1e48d6c547da85d6",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "ace9c44b31fb976c923d270520c4a0aa0c70f18a5faac9b761fd42cd87b5a54b",
+    "canonical_ledger_fingerprint_sha256": "8e1a3424a21c7a65760444591c0deaab7267ee721d8fa5493c7aabd4250f301c",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T00:39:25.405Z",
+    "canonical_ledger_generated_at": "2026-07-20T17:45:50.397Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
