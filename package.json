@@ -71,7 +71,9 @@
     "regenerate-lexicons": "node scripts/regenerate-lexicons.mjs",
     "migrate-wp": "node scripts/migrate-wp.mjs",
     "import:wp-articles": "node scripts/import-wp-articles.mjs",
-    "ci": "pnpm install --frozen-lockfile && pnpm typecheck && pnpm lint && pnpm test && pnpm build"
+    "ci": "pnpm install --frozen-lockfile && pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "test:crawlers": "python3 -m unittest discover -s tests/crawler -v && node --test tests/crawler/manifest.test.mjs",
+    "notify:crawlers": "python3 scripts/crawler_sync.py --apply"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.0",

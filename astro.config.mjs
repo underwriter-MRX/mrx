@@ -122,6 +122,8 @@ const sitemapPriorityIntegration = {
       const canonicalLinksUrl = new URL('./scripts/postbuild-canonical-links.mjs', import.meta.url);
       const { rewriteRenderedInternalLinks } = await import(canonicalLinksUrl.href);
       await rewriteRenderedInternalLinks();
+      const { buildCrawlerManifest } = await import('./scripts/build-crawler-manifest.mjs');
+      await buildCrawlerManifest();
     },
   },
 };
