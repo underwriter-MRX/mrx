@@ -122,3 +122,7 @@ HTML hashes remove only the exact `<!--email_off-->` and `<!--/email_off-->`
 transport comments that Cloudflare strips. All other bytes, including OTTO metadata,
 hidden content, scripts, and visible content, remain protected by SHA-256. The
 manifest explicitly declares this hash policy; older policies are rejected.
+
+The existing Cloudflare analytics footer is also pinned by exact SHA-256
+`a7d7b1207343bf240dc3bf89442b597d9a3609888ede71e183e4ff7c9b18f290`.
+Only that exact fragment is ignored. Changed or unrecognized scripts fail closed.

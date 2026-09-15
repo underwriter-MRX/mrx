@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, rm, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
@@ -70,4 +70,10 @@ test('hash ignores only exact Cloudflare email protection comments', () => {
   assert.equal(contentHash('a<!--email_off-->b<!--/email_off-->c'), contentHash('abc'));
   assert.notEqual(contentHash('abc<p class="otto-nlp-module">hidden</p>'), contentHash('abc'));
   assert.notEqual(contentHash('abc<!--other-->'), contentHash('abc'));
+});
+
+test('only the pinned Cloudflare analytics fragment is ignored', async () => {
+  const beacon = await readFile(new URL('./approved-cloudflare-beacon.html', import.meta.url), 'utf8');
+  assert.equal(contentHash(`abc${beacon}`), contentHash('abc'));
+  assert.notEqual(contentHash(`abc${beacon.replace('crossorigin', 'changed')}`), contentHash('abc'));
 });

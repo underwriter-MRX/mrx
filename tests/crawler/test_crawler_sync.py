@@ -22,7 +22,7 @@ class SyncTests(unittest.TestCase):
                      '<meta name="description" content="Example evidence"></head><body><main><h1>Example</h1>'
                      '<script type="application/ld+json">{"@type":"Article","author":{"name":"MRX"}}</script>'
                      '<a href="https://example.gov/source">Source</a></main></body></html>').encode()
-        self.data = {'version': 2, 'hash_policy': 'sha256-html-without-cloudflare-email-comments-v1', 'origin': c.SITE, 'content_revision': 'abc',
+        self.data = {'version': 2, 'hash_policy': 'sha256-html-approved-cloudflare-transport-v1', 'origin': c.SITE, 'content_revision': 'abc',
                      'pages': [{'url': self.url, 'sha256': hashlib.sha256(self.html).hexdigest()}],
                      'indexnow': {'key': 'abcdefgh12345678', 'key_location': c.SITE + '/indexnow-key.txt'}}
         self.code = 200
@@ -161,3 +161,8 @@ class ContentHashTests(unittest.TestCase):
         self.assertEqual(c.content_hash(b'a<!--email_off-->b<!--/email_off-->c'), c.content_hash(b'abc'))
         self.assertNotEqual(c.content_hash(b'abc<p class="otto-nlp-module">hidden</p>'), c.content_hash(b'abc'))
         self.assertNotEqual(c.content_hash(b'abc<!--other-->'), c.content_hash(b'abc'))
+
+    def test_pinned_beacon_only(self):
+        beacon = Path(__file__).with_name('approved-cloudflare-beacon.html').read_bytes()
+        self.assertEqual(c.content_hash(b'abc' + beacon), c.content_hash(b'abc'))
+        self.assertNotEqual(c.content_hash(b'abc' + beacon.replace(b'crossorigin', b'changed')), c.content_hash(b'abc'))

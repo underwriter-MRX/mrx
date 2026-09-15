@@ -9,7 +9,10 @@ const PRIVATE =
   /\/(?:api|account|staff|admin|owner-intake|knowledge|staged|drafts)(?:\/|$)|\/thank-you(?:\/|$)/i;
 const hash = (value) => createHash('sha256').update(value).digest('hex');
 export const contentHash = (html) =>
-  hash(html.replaceAll('<!--email_off-->', '').replaceAll('<!--/email_off-->', ''));
+  hash(html.replaceAll('<!--email_off-->', '').replaceAll('<!--/email_off-->', '').replace(
+    /<script type="module" src="https:\/\/static\.cloudflareinsights\.com\/beacon\.min\.js\/[^>]+><\/script>\n/g,
+    (fragment) => hash(fragment) === 'a7d7b1207343bf240dc3bf89442b597d9a3609888ede71e183e4ff7c9b18f290' ? '' : fragment,
+  ));
 const attrs = (tag) =>
   Object.fromEntries(
     [...tag.matchAll(/([\w-]+)\s*=\s*["']([^"']*)["']/g)].map((m) => [m[1].toLowerCase(), m[2]]),
@@ -84,7 +87,7 @@ export async function buildCrawlerManifest(root = process.cwd()) {
   if (!/^[a-zA-Z0-9-]{8,128}$/.test(key)) throw new Error('Invalid IndexNow ownership key.');
   const manifest = {
     version: 2,
-    hash_policy: 'sha256-html-without-cloudflare-email-comments-v1',
+    hash_policy: 'sha256-html-approved-cloudflare-transport-v1',
     origin: SITE,
     pages,
     discovery: {

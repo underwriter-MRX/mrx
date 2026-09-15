@@ -127,7 +127,7 @@ class Page(HTMLParser):
 def manifest():
     _, body = get(SITE + '/crawler-manifest.json', ['application/json'])
     data = json.loads(body)
-    if data.get('version') != 2 or data.get('origin') != SITE or data.get('hash_policy') != 'sha256-html-without-cloudflare-email-comments-v1':
+    if data.get('version') != 2 or data.get('origin') != SITE or data.get('hash_policy') != 'sha256-html-approved-cloudflare-transport-v1':
         raise ValueError('Unsupported MRX manifest.')
     pages = data.get('pages')
     if not isinstance(pages, list) or not 1 <= len(pages) <= 10000:
@@ -182,7 +182,14 @@ def discovery():
 
 def content_hash(body):
     # Only these exact transport comments are ignored; all content/injections remain.
-    return hashlib.sha256(body.replace(b'<!--email_off-->', b'').replace(b'<!--/email_off-->', b'')).hexdigest()
+    body = body.replace(b'<!--email_off-->', b'').replace(b'<!--/email_off-->', b'')
+    # Captured existing Cloudflare analytics footer, pinned byte-for-byte. Unknown
+    # scripts or changed analytics configuration fail closed for review.
+    approved = 'a7d7b1207343bf240dc3bf89442b597d9a3609888ede71e183e4ff7c9b18f290'
+    def transport(match):
+        return b'' if hashlib.sha256(match.group()).hexdigest() == approved else match.group()
+    body = re.sub(rb'<script type="module" src="https://static\.cloudflareinsights\.com/beacon\.min\.js/[^>]+></script>\n', transport, body)
+    return hashlib.sha256(body).hexdigest()
 
 
 def verify_page(entry, robots):
