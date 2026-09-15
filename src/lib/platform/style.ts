@@ -14,6 +14,8 @@ const NEGATION_TOKENS = [
   'no.',
   'no ',
   'never',
+  'cannot',
+  "can't",
   "aren't",
   'arent',
   'without',
@@ -31,6 +33,11 @@ const disallowedPhrases = (disallowed as { phrases: string[] }).phrases.map((phr
 );
 
 const runtimeRegexes: Array<{ label: string; pattern: RegExp }> = [
+  {
+    label: 'numeric_estimate_claim',
+    pattern:
+      /\b(?:price per acre|dollars? per acre|npv|instant estimate|preliminary estimate|ballpark)\b[^\n.?!]{0,40}\$\s*\d[\d,]*(?:\.\d+)?/gi,
+  },
   {
     label: 'specific_value_claim',
     pattern: /\b(?:worth|value|valuation|price|offer|cash|pay)\b[^\n.?!]{0,40}\$\d{2,}/gi,

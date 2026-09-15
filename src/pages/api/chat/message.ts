@@ -16,6 +16,7 @@ import {
 import type { ChatRequest, KnowledgeCitation, StreamEvent } from '../../../lib/platform/types';
 import { runtimeComplianceCheck, normalizeMrxText } from '../../../lib/platform/style';
 import { questionForAnswer, type ConversationTurn } from '../../../lib/platform/conversation';
+import { questionCount, withoutFollowupQuestion } from '../../../lib/platform/rapport';
 import { syncVerifiedOwnerToGhl } from '../../../lib/platform/crm';
 import {
   documentLocationCardFromInterest,
@@ -36,9 +37,9 @@ const RequestSchema = z.object({
     .object({
       firstName: z.string().max(80).optional(),
       location: z.string().max(200).optional(),
-      currentPersona: z
-        .enum(['travis', 'connor', 'clay', 'owen', 'laurel', 'elena'])
-        .optional(),
+      currentPersona: z.enum(['travis', 'connor', 'clay', 'owen', 'laurel', 'elena']).optional(),
+      discoveryDeclined: z.boolean().optional(),
+      preserveCurrentPersona: z.boolean().optional(),
     })
     .optional(),
   history: z
@@ -224,10 +225,12 @@ export const POST: APIRoute = async (context) => {
         error instanceof Error ? error.message : 'failed',
       );
     }
-    const route = routeGuideDecision(
-      effectiveQuestion,
+    const currentPersona =
       body.context?.currentPersona ||
-        (typeof ownerContext.lastPersona === 'string' ? ownerContext.lastPersona : 'travis'),
+      (typeof ownerContext.lastPersona === 'string' ? ownerContext.lastPersona : 'travis');
+    const route = routeGuideDecision(
+      body.context?.preserveCurrentPersona ? '' : effectiveQuestion,
+      currentPersona,
     );
     const persona = route.guide;
     const profile = ownerContext.profile as {
@@ -295,6 +298,7 @@ export const POST: APIRoute = async (context) => {
               interests: ownerContext.interests,
               memory: ownerContext.memory,
               geography,
+              discoveryDeclined: body.context?.discoveryDeclined,
             },
             history,
           });
@@ -305,6 +309,7 @@ export const POST: APIRoute = async (context) => {
               citations,
               geography,
               history,
+              Boolean(body.context?.discoveryDeclined),
             );
             fullText = answer;
             for (const chunk of answer.match(/.{1,48}(?:\s|$)/g) ?? [answer]) {
@@ -341,6 +346,18 @@ export const POST: APIRoute = async (context) => {
             }
           }
           fullText = normalizeMrxText(fullText);
+          if (body.context?.discoveryDeclined) fullText = withoutFollowupQuestion(fullText);
+          if (questionCount(fullText) > 1) {
+            fullText = fallbackAnswer(
+              message,
+              persona.slug as any,
+              citations,
+              geography,
+              history,
+              Boolean(body.context?.discoveryDeclined),
+            );
+            send({ type: 'message.replace', content: fullText, persona: persona.slug as any });
+          }
           const compliance = runtimeComplianceCheck(fullText);
           if (compliance.flagged) {
             const originalText = fullText;
@@ -399,13 +416,21 @@ export const POST: APIRoute = async (context) => {
           // language or be pushed into booking just because a provider timed out.
           if (!fullText.trim()) {
             fullText = normalizeMrxText(
-              fallbackAnswer(message, persona.slug as any, citations, geography, history),
+              fallbackAnswer(
+                message,
+                persona.slug as any,
+                citations,
+                geography,
+                history,
+                Boolean(body.context?.discoveryDeclined),
+              ),
             );
             for (const chunk of fullText.match(/.{1,48}(?:\s|$)/g) ?? [fullText]) {
               send({ type: 'message.delta', delta: chunk, persona: persona.slug as any });
             }
           }
           fullText = normalizeMrxText(fullText);
+          if (body.context?.discoveryDeclined) fullText = withoutFollowupQuestion(fullText);
           const fallbackCompliance = runtimeComplianceCheck(fullText);
           if (fallbackCompliance.flagged) {
             const originalText = fullText;

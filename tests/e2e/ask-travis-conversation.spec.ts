@@ -29,6 +29,30 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
   });
 
+  test('starts rapport-first, honors name refusal, and keeps direct scheduling available', async ({
+    page,
+  }) => {
+    await stubAnonymousSession(page);
+    await page.goto('/');
+    await page.locator('[data-open-home-chat]').first().click();
+
+    await expect(
+      page.getByText('Hi, I’m Travis, a fictional MRX AI guide. What’s your first name?'),
+    ).toBeVisible();
+    await expect(page.getByTestId('travis-account-prompt')).toHaveCount(0);
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call' }),
+    ).toBeVisible();
+
+    await reply(page, 'I do not want to share my name');
+    await expect(page.getByText('You can stay anonymous.')).toBeVisible();
+    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+      'name',
+      'mrx-chat-open',
+    );
+    await expect(page.getByTestId('travis-account-prompt')).toHaveCount(0);
+  });
+
   test('opens homepage intent navigation in the assistant and routes inherited-rights help to Connor', async ({
     page,
   }) => {

@@ -18,6 +18,23 @@ import {
 import { normalizeMrxText } from '../../lib/platform/style';
 import { guideReplyDelay, remainingGuideReplyDelay } from '../../lib/platform/timing';
 import { fallbackConversationAnswer } from '../../lib/platform/conversation';
+import {
+  accountInvitationReady,
+  countMeaningfulExchanges,
+  discoveryWasDeclined,
+  firstNameFromReply,
+  goalFromMessage,
+  isAccountIntent,
+  isAccountRefusal,
+  isBookingIntent,
+  isMeaningfulUserTurn,
+  isNameRefusal,
+  isSubstantiveNameReply,
+  openingGreeting,
+  openingPersonaFor,
+  type OwnerGoal,
+  withoutFollowupQuestion,
+} from '../../lib/platform/rapport';
 import './AskTravis.css';
 
 type Persona = 'travis' | 'connor' | 'clay' | 'owen' | 'laurel' | 'elena';
@@ -68,6 +85,7 @@ type ConversationStep =
   | 'intro-sms-consent'
   | 'intro-call-consent'
   | 'intro-ai-voice-consent'
+  | 'confirm-intent'
   | 'open'
   | 'delivery-channel'
   | 'delivery-email'
@@ -329,6 +347,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const [documentProcessingEnabled, setDocumentProcessingEnabled] = useState(false);
   const [ownerAuthenticated, setOwnerAuthenticated] = useState(false);
   const [accountPromptDismissed, setAccountPromptDismissed] = useState(false);
+  const [rapportGoal, setRapportGoal] = useState<OwnerGoal | null>(null);
+  const [meaningfulExchanges, setMeaningfulExchanges] = useState(0);
+  const [discoveryDeclined, setDiscoveryDeclined] = useState(false);
+  const [preserveOpeningPersona, setPreserveOpeningPersona] = useState(false);
+
   const endRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -530,6 +553,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   }
 
   useEffect(() => {
+    setAccountPromptDismissed(window.sessionStorage.getItem('mrx_account_prompt_closed') === '1');
+    setDiscoveryDeclined(window.sessionStorage.getItem('mrx_discovery_declined') === '1');
     let cancelled = false;
     void (async () => {
       try {
@@ -555,6 +580,13 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               }))
           : [];
         setMessages(restored);
+        setMeaningfulExchanges(countMeaningfulExchanges(restored));
+        setRapportGoal(
+          restored
+            .filter((message) => message.role === 'user')
+            .map((message) => goalFromMessage(message.content))
+            .find((goal): goal is OwnerGoal => Boolean(goal)) ?? null,
+        );
         if (restored.length) setTypingPersona(null);
         setDocumentUploadsEnabled(Boolean(data.documentUploadsEnabled));
         setDocumentProcessingEnabled(Boolean(data.documentProcessingEnabled));
@@ -621,8 +653,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       if (sequence && handledSequences.has(sequence)) return;
       if (sequence) handledSequences.add(sequence);
       beginGuideResponseWindow();
+      const openingPersona = openingPersonaFor(detail?.prompt, detail?.booking);
       if (!introStarted.current || detail?.prompt || detail?.booking)
-        setTypingPersona(detail?.booking ? 'elena' : 'travis');
+        setTypingPersona(openingPersona);
+      if (!introStarted.current) setActivePersona(openingPersona);
+      if (!introStarted.current && openingPersona === 'clay') setPreserveOpeningPersona(true);
       setOpen(true);
       if (detail?.prompt) setPendingPrompt(detail.prompt);
       if (detail?.booking) setBookingRequested(true);
@@ -669,28 +704,31 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   }, []);
 
   useEffect(() => {
-    if (
-      !open ||
-      !sessionReady ||
-      messages.length ||
-      introStarted.current ||
-      pendingPrompt ||
-      bookingRequested
-    )
+    if (!open || !sessionReady || messages.length || introStarted.current || bookingRequested)
       return;
     introStarted.current = true;
-    setStep('open');
-    void guideSay('How may I help you?', 'travis', 520);
+    const openingPersona = openingPersonaFor(pendingPrompt);
+    const rapportPersona = openingPersona === 'elena' ? 'travis' : openingPersona;
+    setActivePersona(rapportPersona);
+    setPreserveOpeningPersona(rapportPersona === 'clay');
+    setStep('intro-name');
+    void guideSay(openingGreeting(rapportPersona), rapportPersona, 520);
   }, [open, sessionReady, messages.length, pendingPrompt, bookingRequested]);
 
   useEffect(() => {
-    if (!open || !sessionReady || !pendingPrompt) return;
-    const prompt = pendingPrompt;
-    setPendingPrompt('');
-    introStarted.current = true;
-    setStep('open');
-    void sendMessage(prompt);
-  }, [open, sessionReady, pendingPrompt]);
+    if (!open || !sessionReady || !pendingPrompt || !introStarted.current || step !== 'open')
+      return;
+    const openingPersona = openingPersonaFor(pendingPrompt);
+    if (openingPersona === 'elena') {
+      setPendingPrompt('');
+      void beginBooking();
+      return;
+    }
+    setActivePersona(openingPersona);
+    setStep('confirm-intent');
+    const focus = pendingPrompt.replace(/[?!.]+$/g, '').trim();
+    void guideSay(`I have your focus as: “${focus}.” Is that right?`, openingPersona);
+  }, [open, sessionReady, pendingPrompt, step]);
 
   useEffect(() => {
     if (!open || !sessionReady || !bookingRequested) return;
@@ -709,6 +747,39 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   async function sendMessage(forced?: string) {
     const text = (forced ?? input).trim();
     if (!text || sending) return;
+    if (isBookingIntent(text)) {
+      setInput('');
+      return beginBooking();
+    }
+    if (isAccountRefusal(text)) {
+      setInput('');
+      window.sessionStorage.setItem('mrx_account_prompt_closed', '1');
+      setAccountPromptDismissed(true);
+      await guideSay(
+        'No problem. I won’t ask for account details, and you can keep chatting here.',
+        activePersona,
+      );
+      return;
+    }
+    if (isAccountIntent(text)) {
+      setInput('');
+      setAccountPromptDismissed(true);
+      window.sessionStorage.setItem('mrx_account_prompt_closed', '1');
+      setStep('intro-email');
+      await guideSay(
+        'What email should I use to request your secure MRX sign-in link?',
+        activePersona,
+      );
+      return;
+    }
+    const detectedGoal = goalFromMessage(text);
+    if (detectedGoal) setRapportGoal(detectedGoal);
+    const declinedDiscovery = discoveryWasDeclined(text);
+    if (declinedDiscovery) {
+      window.sessionStorage.setItem('mrx_discovery_declined', '1');
+      setDiscoveryDeclined(true);
+    }
+    const meaningfulTurn = isMeaningfulUserTurn(text) && !declinedDiscovery;
     const submittedAt = beginGuideResponseWindow();
     const revealAt = submittedAt + minimumGuideReplyMs;
     const history = messages.slice(-8).map(({ role, content }) => ({ role, content }));
@@ -742,6 +813,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
             firstName: profile.firstName || undefined,
             location: profile.location || undefined,
             currentPersona: activePersona,
+            discoveryDeclined: discoveryDeclined || declinedDiscovery || undefined,
+            preserveCurrentPersona: preserveOpeningPersona || undefined,
           },
           history,
         }),
@@ -902,12 +975,16 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       };
       setLastAnswer(answer);
       setStep('open');
+      setPreserveOpeningPersona(false);
+      if (meaningfulTurn) setMeaningfulExchanges((current) => current + 1);
       if (citations.length) track('cited_answer_view', { citation_count: citations.length });
     } catch {
       const remainingDelay = revealAt - performance.now();
       if (remainingDelay > 0)
         await new Promise((resolve) => window.setTimeout(resolve, remainingDelay));
-      const content = fallbackConversationAnswer(text, undefined, history);
+      const fallback = fallbackConversationAnswer(text, undefined, history);
+      const content =
+        discoveryDeclined || declinedDiscovery ? withoutFollowupQuestion(fallback) : fallback;
       setTypingPersona(null);
       setMessages((current) =>
         current.map((message) =>
@@ -920,6 +997,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       setLastAnswer({ id: assistantId, role: 'assistant', content, persona: currentPersona });
       void persistVisibleMessage('assistant', content, currentPersona, 'notice');
       setStep('open');
+      setPreserveOpeningPersona(false);
+      if (meaningfulTurn) setMeaningfulExchanges((current) => current + 1);
     } finally {
       setTypingPersona(null);
       setSending(false);
@@ -1190,7 +1269,18 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       });
       const result = await response.json();
       setTypingPersona(null);
+      if (response.status === 409 && result.error === 'appointment_already_booked') {
+        setStep('booking-help');
+        await guideSay(
+          'MRX already has a future phone appointment for you, so I did not create another one.',
+          'elena',
+        );
+        return;
+      }
       if (!response.ok) throw new Error(result.error || 'booking_failed');
+      if (result.suppressed || typeof result.appointmentId !== 'string' || !result.appointmentId) {
+        throw new Error('booking_not_confirmed');
+      }
       const confirmations = result.notifications?.length
         ? ` I also sent the confirmation by ${result.notifications.map((channel: DeliveryChannel) => (channel === 'email' ? 'email' : 'text')).join(' and ')} as requested.`
         : ' Your confirmation is here on screen.';
@@ -1522,18 +1612,78 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     beginGuideResponseWindow();
     setTypingPersona(activePersona);
     setInput('');
-    if (step === 'intro-name') {
-      const firstName = firstNameFrom(text);
-      if (!firstName) {
-        await guideError('I didn’t catch the name. What should I call you?', 'travis');
-        return;
+    if (step === 'confirm-intent') {
+      const intent = pendingPrompt;
+      setPendingPrompt('');
+      if (!isYes(text)) {
+        setStep('open');
+        return sendMessage(text);
       }
       addUserMessage(text);
+      const detectedGoal = goalFromMessage(intent);
+      if (detectedGoal) setRapportGoal(detectedGoal);
+      setStep('open');
+      await guideSay('Thanks. What happened that made you look into it now?', activePersona);
+      return;
+    }
+    if (step === 'intro-name') {
+      if (isBookingIntent(text)) return beginBooking();
+      if (isNameRefusal(text)) {
+        addUserMessage(text);
+        setStep('open');
+        if (pendingPrompt) {
+          const intent = pendingPrompt;
+          const focus = intent.replace(/[?!.]+$/g, '').trim();
+          setStep('confirm-intent');
+          await guideSay(
+            `No problem. You can stay anonymous. I have your focus as: “${focus}.” Is that right?`,
+            activePersona,
+          );
+        } else {
+          await guideSay(
+            'No problem. You can stay anonymous. What mineral-rights question can I help with?',
+            activePersona,
+          );
+        }
+        return;
+      }
+      const firstName = firstNameFromReply(text);
+      if (isSubstantiveNameReply(text) && !firstName) {
+        setPendingPrompt('');
+        setStep('open');
+        return sendMessage(text);
+      }
+      if (!firstName) {
+        await guideError(
+          'I didn’t catch that. You can share a first name, say “skip,” or ask your mineral-rights question.',
+          activePersona,
+        );
+        return;
+      }
       const next = { ...profile, firstName };
       setProfile(next);
       void saveIntroFact({ firstName });
-      setStep('intro-last-name');
-      await guideSay(`Thanks, ${firstName}. What’s your last name?`, 'travis');
+      if (isSubstantiveNameReply(text)) {
+        setPendingPrompt('');
+        setStep('open');
+        return sendMessage(text);
+      }
+      addUserMessage(text);
+      setStep('open');
+      if (pendingPrompt) {
+        const intent = pendingPrompt;
+        const focus = intent.replace(/[?!.]+$/g, '').trim();
+        setStep('confirm-intent');
+        await guideSay(
+          `Thanks, ${firstName}. I have your focus as: “${focus}.” Is that right?`,
+          activePersona,
+        );
+      } else {
+        await guideSay(
+          `Nice to meet you, ${firstName}. What brought you here today?`,
+          activePersona,
+        );
+      }
       return;
     }
     if (step === 'intro-last-name') {
@@ -1558,6 +1708,15 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       return;
     }
     if (step === 'intro-email') {
+      if (isSkip(text) || /^(?:cancel|never mind|no thanks?)\.?$/i.test(text)) {
+        addUserMessage(text);
+        setStep('open');
+        await guideSay(
+          'No problem. No email was submitted, and you can keep chatting here.',
+          activePersona,
+        );
+        return;
+      }
       if (!/^\S+@\S+\.\S+$/.test(text)) {
         await guideError('That email looks incomplete. Please check it and try again.', 'travis');
         return;
@@ -1565,22 +1724,25 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       addUserMessage(text);
       setProfile((current) => ({ ...current, email: text }));
       try {
-        await saveIdentity({
+        const identity = await saveIdentity({
           action: 'email',
           email: text,
           redirectTo: `${location.origin}${location.pathname}?ask=1`,
         });
+        setStep('open');
         await guideSay(
-          `I sent a secure sign-in link to ${text}. You can keep talking here while you verify it. A phone number is optional. Would you like to add one for future follow-up?`,
-          'travis',
+          identity.verificationSent
+            ? `A secure sign-in link was requested for ${text}. You can keep chatting here while it arrives.`
+            : 'No verification link was sent. This conversation still works on this device, and you can keep chatting here.',
+          activePersona,
         );
       } catch {
+        setStep('open');
         await guideError(
-          'I could not send the verification link just now. We can keep talking, but this history will stay on this browser until your email is verified. Would you like to add an optional phone number?',
-          'travis',
+          'I could not request the verification link just now. We can keep talking, and this history will stay on this browser until email access is available.',
+          activePersona,
         );
       }
-      setStep('intro-phone');
       return;
     }
     if (step === 'intro-phone') {
@@ -1851,7 +2013,9 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       return lastAnswer
         ? [
             { label: 'Send me this answer', value: 'send', kind: 'primary' },
-            ...(bookedAppointment ? [] : [{ label: 'Talk to a live underwriter', value: 'book' }]),
+            ...(bookedAppointment
+              ? []
+              : [{ label: 'Schedule a human underwriter call', value: 'book' }]),
           ]
         : [];
     if (step === 'delivery-channel')
@@ -1915,6 +2079,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     'intro-sms-consent': 'Yes or no…',
     'intro-call-consent': 'Yes or no…',
     'intro-ai-voice-consent': 'Yes or no…',
+    'confirm-intent': 'Yes, or tell me what changed…',
     open: 'Ask Travis anything about your minerals…',
     'delivery-channel': 'Email, text, or both…',
     'delivery-email': 'Your email address…',
@@ -1940,9 +2105,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const isNameStep = step === 'intro-name' || step === 'intro-last-name' || step === 'booking-name';
   const showAccountPrompt =
     step === 'open' &&
-    Boolean(lastAnswer?.content) &&
-    !ownerAuthenticated &&
-    !accountPromptDismissed;
+    accountInvitationReady({
+      goal: rapportGoal,
+      meaningfulExchanges,
+      authenticated: ownerAuthenticated,
+      dismissed: accountPromptDismissed,
+    });
 
   function closeChat() {
     const browserWindow = window as typeof window & { __mrxChatOpenRequested?: boolean };
@@ -2089,21 +2257,34 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               {showAccountPrompt && (
                 <aside className="travis-account-prompt" data-testid="travis-account-prompt">
                   <div>
-                    <strong>
-                      Keep this conversation and any mineral-rights documents together
-                    </strong>
+                    <strong>Save this conversation for a human underwriter review</strong>
                     <p>
-                      Create or log in to one secure MRX owner profile so your paperwork, uploaded
-                      documents, saved questions, and property details are there when you return.
-                      Shared records can support a more exact underwriter review or assessment, but
-                      MRX does not guarantee a value, quote, offer, or outcome.
+                      A free account keeps your questions and records together. It does not promise
+                      a value, offer, or outcome.
                     </p>
                   </div>
                   <span>
-                    <a href="/account/?welcome=conversation" rel="nofollow">
-                      Log in or create an account
-                    </a>
-                    <button type="button" onClick={() => setAccountPromptDismissed(true)}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        window.sessionStorage.setItem('mrx_account_prompt_closed', '1');
+                        setAccountPromptDismissed(true);
+                        setStep('intro-email');
+                        void guideSay(
+                          'What email should I use to request your secure MRX sign-in link?',
+                          activePersona,
+                        );
+                      }}
+                    >
+                      Create a free account
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        window.sessionStorage.setItem('mrx_account_prompt_closed', '1');
+                        setAccountPromptDismissed(true);
+                      }}
+                    >
                       Keep chatting for now
                     </button>
                   </span>
@@ -2196,7 +2377,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                     onClick={beginBooking}
                     disabled={Boolean(typingPersona) || booking}
                   >
-                    Talk to a live underwriter
+                    Schedule a human underwriter call
                   </button>
                 )}
               </div>

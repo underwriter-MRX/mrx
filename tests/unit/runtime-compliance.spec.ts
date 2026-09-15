@@ -49,7 +49,7 @@ describe('runtime compliance checks for visible extracted fact values', () => {
 });
 
 describe('runtime compliance negative cases', () => {
-  it('allows currency mentions that do not guarantee a price', () => {
+  it('allows recorded currency mentions that do not fabricate a valuation', () => {
     expect(
       runtimeComplianceCheck('The royalty statement mentions a $450 payment from last month.')
         .flagged,
