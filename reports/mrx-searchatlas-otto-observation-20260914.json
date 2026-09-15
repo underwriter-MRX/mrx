@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "observed_at_utc": "2026-09-15T06:20:00.000Z",
+  "observed_at_utc": "2026-09-15T06:25:03.000Z",
   "source": {
     "audit": "Fresh authenticated Search Atlas audit 138239 read after the generated recommendation cleanup and Worker safeguard",
     "dashboard": "Fresh authenticated OTTO project-issues read: 17 total / 16 approved / 1 pending",
-    "support": "Existing human Search Atlas conversation with Jay and Firman; final backend and terminal-state request sent 2026-09-15"
+    "support": "Human specialist Firman reviewed the recording and queued the backend ImageObject/audit-state request for engineering; the authenticated chat is the case record and has no separate reference number"
   },
   "project": {
     "id": 99913,
