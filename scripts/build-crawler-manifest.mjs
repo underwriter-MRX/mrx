@@ -8,6 +8,8 @@ export const SITE = 'https://mineralrightsxchange.com';
 const PRIVATE =
   /\/(?:api|account|staff|admin|owner-intake|knowledge|staged|drafts)(?:\/|$)|\/thank-you(?:\/|$)/i;
 const hash = (value) => createHash('sha256').update(value).digest('hex');
+export const contentHash = (html) =>
+  hash(html.replaceAll('<!--email_off-->', '').replaceAll('<!--/email_off-->', ''));
 const attrs = (tag) =>
   Object.fromEntries(
     [...tag.matchAll(/([\w-]+)\s*=\s*["']([^"']*)["']/g)].map((m) => [m[1].toLowerCase(), m[2]]),
@@ -75,13 +77,14 @@ export async function buildCrawlerManifest(root = process.cwd()) {
     const html = await readFile(file, 'utf8');
     if (!indexableHtml(html, value))
       throw new Error(`Sitemap URL is not indexable/canonical: ${value}`);
-    pages.push({ url: value, sha256: hash(html) });
+    pages.push({ url: value, sha256: contentHash(html) });
   }
   if (!pages.length) throw new Error('Refusing an empty crawler manifest.');
   const key = (await readFile(join(root, 'public/indexnow-key.txt'), 'utf8')).trim();
   if (!/^[a-zA-Z0-9-]{8,128}$/.test(key)) throw new Error('Invalid IndexNow ownership key.');
   const manifest = {
-    version: 1,
+    version: 2,
+    hash_policy: 'sha256-html-without-cloudflare-email-comments-v1',
     origin: SITE,
     pages,
     discovery: {

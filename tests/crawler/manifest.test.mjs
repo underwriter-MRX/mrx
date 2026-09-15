@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
   buildCrawlerManifest,
+  contentHash,
   publicUrl,
   indexableHtml,
   SITE,
@@ -63,4 +64,10 @@ test('manifest is deterministic and changes only when public HTML changes', asyn
   } finally {
     await rm(root, { recursive: true, force: true });
   }
+});
+
+test('hash ignores only exact Cloudflare email protection comments', () => {
+  assert.equal(contentHash('a<!--email_off-->b<!--/email_off-->c'), contentHash('abc'));
+  assert.notEqual(contentHash('abc<p class="otto-nlp-module">hidden</p>'), contentHash('abc'));
+  assert.notEqual(contentHash('abc<!--other-->'), contentHash('abc'));
 });

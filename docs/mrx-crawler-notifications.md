@@ -115,3 +115,10 @@ release report; these historical records are not current production proof.
 - The old benchmark capture gap is resolved: the original 20-prompt/four-platform
   analysis now has 80 saved responses; three include explicit MRX homepage links
   on branded questions. This is baseline evidence, not improvement from this release.
+
+## Manifest integrity version 2
+
+HTML hashes remove only the exact `<!--email_off-->` and `<!--/email_off-->`
+transport comments that Cloudflare strips. All other bytes, including OTTO metadata,
+hidden content, scripts, and visible content, remain protected by SHA-256. The
+manifest explicitly declares this hash policy; older policies are rejected.

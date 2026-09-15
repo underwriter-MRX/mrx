@@ -127,7 +127,7 @@ class Page(HTMLParser):
 def manifest():
     _, body = get(SITE + '/crawler-manifest.json', ['application/json'])
     data = json.loads(body)
-    if data.get('version') != 1 or data.get('origin') != SITE:
+    if data.get('version') != 2 or data.get('origin') != SITE or data.get('hash_policy') != 'sha256-html-without-cloudflare-email-comments-v1':
         raise ValueError('Unsupported MRX manifest.')
     pages = data.get('pages')
     if not isinstance(pages, list) or not 1 <= len(pages) <= 10000:
@@ -180,12 +180,17 @@ def discovery():
     return data, robots
 
 
+def content_hash(body):
+    # Only these exact transport comments are ignored; all content/injections remain.
+    return hashlib.sha256(body.replace(b'<!--email_off-->', b'').replace(b'<!--/email_off-->', b'')).hexdigest()
+
+
 def verify_page(entry, robots):
     url = entry['url']
     if not robots.can_fetch('bingbot', url):
         raise ValueError('bingbot is blocked by robots.txt.')
     headers, body = get(url, ['text/html'])
-    if hashlib.sha256(body).hexdigest() != entry['sha256']:
+    if content_hash(body) != entry['sha256']:
         raise ValueError('Live HTML differs from the published manifest; retry after cache/deployment convergence.')
     parsed = Page()
     parsed.feed(body.decode('utf-8'))
