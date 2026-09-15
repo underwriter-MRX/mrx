@@ -4,6 +4,7 @@ import json
 import os
 import tempfile
 import unittest
+from email.message import Message
 from pathlib import Path
 from unittest.mock import patch
 
@@ -199,3 +200,51 @@ class ContentHashTests(unittest.TestCase):
         self.assertEqual(c.content_hash(b'abc' + marker), c.content_hash(b'abc'))
         self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=false')),
                             c.content_hash(b'abc'))
+
+
+class RequestRetryTests(unittest.TestCase):
+    class Response:
+        def __init__(self, status, body=b'', headers=None):
+            self.status = status
+            self.body = body
+            self.headers = Message()
+            for name, value in (headers or {}).items():
+                self.headers[name] = value
+
+        def read(self, _limit):
+            return self.body
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+    class Opener:
+        def __init__(self, responses):
+            self.responses = list(responses)
+            self.calls = 0
+
+        def open(self, *_args, **_kwargs):
+            self.calls += 1
+            return self.responses.pop(0)
+
+    def test_idempotent_get_retries_bounded_throttle(self):
+        opener = self.Opener([
+            self.Response(429, b'throttled', {'Retry-After': '1'}),
+            self.Response(200, b'ok', {'Content-Type': 'text/plain'}),
+        ])
+        with patch.object(c, 'build_opener', return_value=opener), patch.object(c.time, 'sleep') as sleep:
+            status, _, body = c.request(c.SITE + '/robots.txt')
+        self.assertEqual((status, body), (200, b'ok'))
+        self.assertEqual(opener.calls, 2)
+        sleep.assert_called_once_with(1)
+
+    def test_indexnow_submission_is_never_replayed(self):
+        opener = self.Opener([self.Response(429, b'throttled')])
+        payload = {'host': 'mineralrightsxchange.com', 'urlList': [c.SITE + '/']}
+        with patch.object(c, 'build_opener', return_value=opener), patch.object(c.time, 'sleep') as sleep:
+            status, _, _ = c.request(c.INDEXNOW, payload)
+        self.assertEqual(status, 429)
+        self.assertEqual(opener.calls, 1)
+        sleep.assert_not_called()
