@@ -132,3 +132,10 @@ production website lineage. Production and CI push filters ignore these files.
 The initial integration commit uses GitHub `[skip ci]`; Vercel Git deployment is
 already disabled in this branch. Enabling requires the repository variable and
 a successful manual live notification test.
+
+The observed Cloudflare JavaScript detection footer is pinned by template digest
+`016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36`, allowing only
+its hexadecimal request ID and base64 timestamp to vary. This transport compatibility
+fix preserves hashes of native HTML and existing manifests. Unknown template changes
+still fail. It does not change Cloudflare security settings, execute a challenge,
+or treat non-200 challenge pages as public content.
