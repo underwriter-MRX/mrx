@@ -35,6 +35,18 @@ const ownerIntakePage = readFileSync(
   new URL('../../src/pages/owner-intake.astro', import.meta.url),
   'utf8',
 );
+const accountPage = readFileSync(
+  new URL('../../src/pages/account/index.astro', import.meta.url),
+  'utf8',
+);
+const staffPage = readFileSync(
+  new URL('../../src/pages/staff/index.astro', import.meta.url),
+  'utf8',
+);
+const supabasePlatform = readFileSync(
+  new URL('../../src/lib/platform/supabase.ts', import.meta.url),
+  'utf8',
+);
 const identityLib = readFileSync(
   new URL('../../src/lib/platform/identity.ts', import.meta.url),
   'utf8',
@@ -45,6 +57,19 @@ const ownerSessionApi = readFileSync(
 );
 
 describe('account conversation onboarding source contract', () => {
+  it('binds public Supabase configuration at request time for every server-rendered portal', () => {
+    for (const page of [accountPage, ownerIntakePage, staffPage]) {
+      expect(page).toContain('export const prerender = false');
+      expect(page).toContain('getSupabasePublicConfig');
+      expect(page).toContain('supabaseUrl={supabasePublicConfig?.url}');
+      expect(page).toContain('supabaseAnonKey={supabasePublicConfig?.anonKey}');
+      expect(page).not.toContain('import.meta.env.PUBLIC_SUPABASE');
+      expect(page).not.toContain('SUPABASE_SERVICE_ROLE_KEY');
+    }
+    expect(supabasePlatform).toContain("const url = runtimeEnv('PUBLIC_SUPABASE_URL')");
+    expect(supabasePlatform).toContain("const anonKey = runtimeEnv('PUBLIC_SUPABASE_ANON_KEY')");
+  });
+
   it('collects full signup identity and keeps document upload inside protected owner access', () => {
     expect(accountHub).toContain('name="fullName"');
     expect(accountHub).toContain('name="phone"');

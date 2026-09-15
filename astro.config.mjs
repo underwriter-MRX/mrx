@@ -12,13 +12,24 @@ const DEPLOY_TARGET = process.env.DEPLOY_TARGET ?? 'cloudflare';
 const isHetzner = DEPLOY_TARGET === 'hetzner';
 const isVercel = DEPLOY_TARGET === 'vercel';
 
-// Keep previously published staff links working while the public identities use
-// their new MRX names. Astro applies these permanent redirects on every adapter.
+// Keep historical staff links working while article authorship resolves to the
+// MRX Editorial Team and fictional guide identities resolve to /team/ profiles.
+// Astro applies these permanent redirects on every adapter.
 const legacyAuthorPaginationRedirects = Object.fromEntries(
-  Array.from({ length: 7 }, (_, index) => {
+  Array.from({ length: 10 }, (_, index) => {
     const page = index + 2;
-    return [`/authors/ariana/page/${page}`, `/authors/marisol/page/${page}/`];
-  }),
+    return [
+      [`/authors/ariana/page/${page}`, '/team/marisol/'],
+      [`/authors/marisol/page/${page}`, '/team/marisol/'],
+    ];
+  }).flat(),
+);
+
+const aiGuideAuthorRedirects = Object.fromEntries(
+  ['travis', 'owen', 'laurel', 'wade', 'graham', 'marisol'].map((slug) => [
+    `/authors/${slug}`,
+    `/team/${slug}/`,
+  ]),
 );
 
 const legacyStaffRedirects = {
@@ -33,12 +44,13 @@ const legacyStaffRedirects = {
   '/team/cami': '/team/cora/',
   '/team/ariana': '/team/marisol/',
   '/team/ainsley': '/team/paige/',
-  '/authors/tommy': '/authors/travis/',
-  '/authors/dale': '/authors/owen/',
-  '/authors/rebecca': '/authors/laurel/',
-  '/authors/walt': '/authors/wade/',
-  '/authors/monty': '/authors/graham/',
-  '/authors/ariana': '/authors/marisol/',
+  '/authors/tommy': '/team/travis/',
+  '/authors/dale': '/team/owen/',
+  '/authors/rebecca': '/team/laurel/',
+  '/authors/walt': '/team/wade/',
+  '/authors/monty': '/team/graham/',
+  '/authors/ariana': '/team/marisol/',
+  ...aiGuideAuthorRedirects,
   ...legacyAuthorPaginationRedirects,
 };
 

@@ -1,6 +1,7 @@
 ---
 import MarketingLayout from '../../layouts/MarketingLayout.astro';
 import StaticPillarInventory from '../../components/organisms/StaticPillarInventory.astro';
+import StateGuideLinks from '../../components/organisms/StateGuideLinks.astro';
 import { stateGuides, type StateGuide } from '../../data/states';
 import { getPillarInventoryPage } from '../../lib/pillar-inventory';
 export const prerender = true;
@@ -76,6 +77,7 @@ const inventory =
     </div>
   </section>
   {inventory && <StaticPillarInventory inventory={inventory} />}
+  <StateGuideLinks currentState={state.slug} />
 </MarketingLayout>
 <script>
   document

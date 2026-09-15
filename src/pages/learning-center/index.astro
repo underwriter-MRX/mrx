@@ -9,4 +9,4 @@ const { items, categories, authors } = await getLearningCenterData();
 const page = paginateArchive(items, 1);
 ---
 
-<LearningCenterPage {...page} allItems={items} categories={categories} authors={authors} />
+<LearningCenterPage {...page} categories={categories} authors={authors} />

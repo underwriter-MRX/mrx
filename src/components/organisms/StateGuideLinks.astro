@@ -1,0 +1,91 @@
+---
+import { stateGuides } from '../../data/states';
+
+interface Props {
+  currentState: string;
+}
+
+const { currentState } = Astro.props;
+const otherStates = stateGuides.filter((state) => state.slug !== currentState);
+---
+
+<section class="state-guide-links" aria-labelledby="state-guide-links-title">
+  <div class="container">
+    <p class="mrx-eyebrow">Compare state starting points</p>
+    <h2 id="state-guide-links-title">Browse mineral-rights guides for other states</h2>
+    <p>
+      State rules, regulators, public records, and terminology differ. Use the guide for the state
+      where the mineral interest is located, then confirm county-specific facts.
+    </p>
+    <ul>
+      {
+        otherStates.map((state) => (
+          <li>
+            <a href={`/mineral-rights/${state.slug}/`}>
+              {state.name} mineral rights
+              <span aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .state-guide-links {
+    padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+    border-top: 1px solid #d9e0e4;
+    background: #f6f3ec;
+  }
+
+  .state-guide-links h2 {
+    max-width: 28ch;
+    margin: 0;
+    color: #071e34;
+    font-size: clamp(1.65rem, 3vw, 2.4rem);
+    line-height: 1.1;
+  }
+
+  .state-guide-links .container > p:not(.mrx-eyebrow) {
+    max-width: 68ch;
+    margin: 0.85rem 0 1.5rem;
+    color: #4f626f;
+    line-height: 1.6;
+  }
+
+  .state-guide-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .state-guide-links a {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.7rem;
+    height: 100%;
+    border: 1px solid #d9e0e4;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    color: #071e34;
+    background: #fff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .state-guide-links a:hover,
+  .state-guide-links a:focus-visible {
+    border-color: #b06a00;
+    box-shadow: 0 8px 22px rgba(7, 30, 52, 0.09);
+  }
+
+  @media (max-width: 760px) {
+    .state-guide-links ul {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

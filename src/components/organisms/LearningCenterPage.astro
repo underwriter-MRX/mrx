@@ -9,15 +9,14 @@ import type {
 } from '../../lib/learning-center';
 import LearningCenterArchive from './LearningCenterArchive.astro';
 import PillarNavGrid from './PillarNavGrid.astro';
+import OwnerSituationLinks from './OwnerSituationLinks.astro';
 
 interface Props extends ArchivePage<LearningCenterItem> {
   categories: LearningCenterCategory[];
   authors: LearningCenterAuthor[];
-  allItems: LearningCenterItem[];
 }
 
-const { items, categories, authors, allItems, currentPage, lastPage, totalItems, pageSize } =
-  Astro.props;
+const { items, categories, authors, currentPage, lastPage, totalItems, pageSize } = Astro.props;
 const path = archivePagePath('/learning-center/', currentPage);
 const pageSuffix = currentPage === 1 ? '' : ` · Page ${currentPage}`;
 const previousPath =
@@ -57,7 +56,6 @@ const nextPath =
     <div class="container">
       <LearningCenterArchive
         posts={items}
-        allPosts={allItems}
         categories={categories}
         authors={authors}
         currentPage={currentPage}
@@ -67,6 +65,7 @@ const nextPath =
       />
     </div>
   </section>
+  {currentPage === 1 && <OwnerSituationLinks />}
   <PillarNavGrid eyebrow="Browse by topic" heading="Explore mineral-rights topics" />
 </MarketingLayout>
 

@@ -1,7 +1,9 @@
 ---
 import MarketingLayout from '../../layouts/MarketingLayout.astro';
 import StaffPortal from '../../components/react/StaffPortal';
+import { getSupabasePublicConfig } from '../../lib/platform/supabase';
 export const prerender = false;
+const supabasePublicConfig = getSupabasePublicConfig();
 ---
 
 <MarketingLayout
@@ -20,8 +22,8 @@ export const prerender = false;
     <div class="container staff-portal-container">
       <StaffPortal
         client:load
-        supabaseUrl={import.meta.env.PUBLIC_SUPABASE_URL}
-        supabaseAnonKey={import.meta.env.PUBLIC_SUPABASE_ANON_KEY}
+        supabaseUrl={supabasePublicConfig?.url}
+        supabaseAnonKey={supabasePublicConfig?.anonKey}
       />
     </div>
   </section>

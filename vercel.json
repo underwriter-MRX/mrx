@@ -43,8 +43,83 @@
       "permanent": true
     },
     {
+      "source": "/authors/ariana/page/:page",
+      "destination": "/team/marisol/",
+      "permanent": true
+    },
+    {
       "source": "/authors/ariana/page/:page/",
-      "destination": "/authors/marisol/page/:page/",
+      "destination": "/team/marisol/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/marisol/page/:page",
+      "destination": "/team/marisol/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/marisol/page/:page/",
+      "destination": "/team/marisol/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/travis",
+      "destination": "/team/travis/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/travis/",
+      "destination": "/team/travis/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/owen",
+      "destination": "/team/owen/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/owen/",
+      "destination": "/team/owen/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/laurel",
+      "destination": "/team/laurel/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/laurel/",
+      "destination": "/team/laurel/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/wade",
+      "destination": "/team/wade/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/wade/",
+      "destination": "/team/wade/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/graham",
+      "destination": "/team/graham/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/graham/",
+      "destination": "/team/graham/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/marisol",
+      "destination": "/team/marisol/",
+      "permanent": true
+    },
+    {
+      "source": "/authors/marisol/",
+      "destination": "/team/marisol/",
       "permanent": true
     },
     {

@@ -64,6 +64,30 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
       </div>
     </div>
   </section>
+  <section class="mrx-guide-directory" aria-labelledby="other-guides-title">
+    <div class="container">
+      <p class="mrx-eyebrow">MRX AI Guide directory</p>
+      <h2 id="other-guides-title">Explore other fictional MRX AI guides</h2>
+      <p>
+        Each guide has a defined educational role and visible limits. MRX Editorial Team remains
+        responsible for published articles.
+      </p>
+      <ul>
+        {
+          guides
+            .filter((candidate) => candidate.slug !== guide.slug)
+            .map((candidate) => (
+              <li>
+                <a href={`/team/${candidate.slug}/`}>
+                  <strong>{candidate.name}</strong>
+                  <span>{candidate.shortRole}</span>
+                </a>
+              </li>
+            ))
+        }
+      </ul>
+    </div>
+  </section>
 </MarketingLayout>
 <script>
   document.querySelector<HTMLElement>('[data-guide-prompt]')?.addEventListener('click', (event) => {
@@ -94,5 +118,64 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
 
   .mrx-guide-profile__action {
     margin-top: 1.2rem;
+  }
+
+  .mrx-guide-directory {
+    padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+    border-top: 1px solid #d9e0e4;
+    background: #f6f3ec;
+  }
+
+  .mrx-guide-directory h2 {
+    max-width: 28ch;
+    margin: 0;
+    color: #071e34;
+    font-size: clamp(1.65rem, 3vw, 2.4rem);
+    line-height: 1.1;
+  }
+
+  .mrx-guide-directory .container > p:not(.mrx-eyebrow) {
+    max-width: 64ch;
+    margin: 0.85rem 0 1.5rem;
+    color: #4f626f;
+    line-height: 1.6;
+  }
+
+  .mrx-guide-directory ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mrx-guide-directory a {
+    display: grid;
+    gap: 0.2rem;
+    height: 100%;
+    border: 1px solid #d9e0e4;
+    border-radius: 12px;
+    padding: 0.85rem 1rem;
+    color: #071e34;
+    background: #fff;
+    text-decoration: none;
+  }
+
+  .mrx-guide-directory a:hover,
+  .mrx-guide-directory a:focus-visible {
+    border-color: #b06a00;
+    box-shadow: 0 8px 22px rgba(7, 30, 52, 0.09);
+  }
+
+  .mrx-guide-directory span {
+    color: #4f626f;
+    font-size: 0.86rem;
+  }
+
+  @media (max-width: 760px) {
+    .mrx-guide-directory ul {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

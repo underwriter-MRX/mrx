@@ -5,7 +5,7 @@ import { expect, test } from '@playwright/test';
  *
  * The form lives at /learning-center/ and progressively enhances the static
  * archive: page cards remain the unfiltered visible baseline while the full
- * corpus stays in the DOM for immediate search. The three controls (`?q=`,
+ * corpus is fetched only when a visitor searches. The three controls (`?q=`,
  * `?topic=`, `?author=`) filter cards and write the same query params via
  * history.replaceState.
  */
@@ -66,13 +66,10 @@ test.describe('Learning Center filters', () => {
     await expect.poll(async () => new URL(page.url()).searchParams.get('author')).toBe(authorValue);
 
     const summary = page.locator('[data-learning-summary]');
-    const summaryText = await summary.innerText();
-    expect(summaryText).toMatch(/\d+ matching articles? in the published library/);
+    await expect(summary).toContainText(/\d+ matching articles? in the published library/);
 
-    const visible = await cards.evaluateAll((elements) =>
-      elements.filter((el) => !el.hasAttribute('hidden')).length,
-    );
-    expect(visible).toBeLessThan(total);
+    const visible = await cards.count();
+    expect(visible).toBeLessThanOrEqual(total);
     expect(visible).toBeGreaterThan(0);
 
     // Reset via the inline reset button restores everything and clears the URL.
@@ -82,8 +79,8 @@ test.describe('Learning Center filters', () => {
     await expect(page.locator('[data-learning-topic]')).toHaveValue('');
     await expect(page.locator('[data-learning-author]')).toHaveValue('');
     await expect(summary).toContainText(/published articles/);
-    const visibleAfterReset = await cards.evaluateAll((elements) =>
-      elements.filter((el) => !el.hasAttribute('hidden')).length,
+    const visibleAfterReset = await cards.evaluateAll(
+      (elements) => elements.filter((el) => !el.hasAttribute('hidden')).length,
     );
     expect(visibleAfterReset).toBe(pageTotal);
   });
@@ -114,7 +111,9 @@ test.describe('Learning Center filters', () => {
     await expect(empty).toBeHidden();
 
     // A query that matches nothing in the article corpus.
-    await page.locator('[data-learning-search]').fill('zzzz-no-match-zzzz');
+    const search = page.locator('[data-learning-search]');
+    await expect(search).toBeVisible();
+    await search.fill('zzzz-no-match-zzzz');
 
     await expect(empty).toBeVisible();
     await expect(page.locator('[data-learning-results]')).toBeHidden();
@@ -132,8 +131,9 @@ test.describe('Learning Center filters', () => {
     await expect(page.locator('[data-learning-search]')).toHaveValue('mineral');
     // After hydration the summary is the filtered count form, not the default
     // "Showing X through Y of Z published articles" copy.
-    const summary = await page.locator('[data-learning-summary]').innerText();
-    expect(summary).toMatch(/\d+ matching articles? in the published library/);
+    await expect(page.locator('[data-learning-summary]')).toContainText(
+      /\d+ matching articles? in the published library/,
+    );
   });
 
   test('normalizes natural-language questions and can reveal a hidden full-corpus card', async ({
@@ -141,19 +141,12 @@ test.describe('Learning Center filters', () => {
   }) => {
     await page.goto('/learning-center/');
 
-    const target = page.locator(
-      '[data-learning-card] [data-article-source="learning_center"][data-article-slug="why-did-my-royalty-check-go-down"]',
-    );
-    await expect(target).toBeAttached();
-    const targetCard = target.locator('xpath=ancestor::article[@data-learning-card]');
-    const startsAsPageCard = (await targetCard.getAttribute('data-learning-page-card')) === 'true';
-
-    if (!startsAsPageCard) {
-      await expect(targetCard).toBeHidden();
-    }
-
     await page.locator('[data-learning-search]').fill('Why did my royalty check go down?');
 
+    const target = page.locator(
+      '[data-learning-card] h2 [data-article-source="learning_center"][data-article-slug="why-did-my-royalty-check-go-down"]',
+    );
+    const targetCard = target.locator('xpath=ancestor::article[@data-learning-card]');
     await expect(targetCard).toBeVisible();
     await expect(target).toContainText('Why Did My Mineral Royalty Check Go Down?');
     await expect(page.locator('[data-learning-summary]')).toContainText(
@@ -161,7 +154,7 @@ test.describe('Learning Center filters', () => {
     );
 
     const sellingTarget = page.locator(
-      '[data-learning-card] [data-article-source="learning_center"][data-article-slug="how-to-sell-mineral-rights-in-texas"]',
+      '[data-learning-card] h2 [data-article-source="learning_center"][data-article-slug="how-to-sell-mineral-rights-in-texas"]',
     );
     await page.locator('[data-learning-search]').fill('How do I sell my mineral rights?');
     await expect(sellingTarget).toBeVisible();
@@ -171,10 +164,12 @@ test.describe('Learning Center filters', () => {
       visible: cards.filter((card) => !card.hasAttribute('hidden')).length,
     }));
     expect(sellingResultCounts.visible).toBeGreaterThan(0);
-    expect(sellingResultCounts.visible).toBeLessThan(sellingResultCounts.total);
+    expect(sellingResultCounts.visible).toBe(sellingResultCounts.total);
   });
 
-  test('keeps the filter controls usable without horizontal overflow on mobile', async ({ page }) => {
+  test('keeps the filter controls usable without horizontal overflow on mobile', async ({
+    page,
+  }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/learning-center/');
 

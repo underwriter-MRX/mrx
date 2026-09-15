@@ -91,13 +91,21 @@ describe('prebuilt Vercel deployment routing', () => {
     ).toBe(false);
   });
 
-  it('redirects trailing-slash Ariana archive pages while preserving the page number', () => {
+  it('redirects obsolete AI-guide author archives directly to guide profiles', () => {
     const routes = compileDeploymentRoutes(vercelConfig) as DeploymentRoute[];
-    const redirect = matchingRoutes(routes, '/authors/ariana/page/8/').find(
+    const paginationRedirect = matchingRoutes(routes, '/authors/ariana/page/8/').find(
+      (route) => route.status === 308,
+    );
+    const currentPaginationRedirect = matchingRoutes(routes, '/authors/marisol/page/8/').find(
+      (route) => route.status === 308,
+    );
+    const guideRedirect = matchingRoutes(routes, '/authors/graham/').find(
       (route) => route.status === 308,
     );
 
-    expect(redirect?.headers?.Location).toBe('/authors/marisol/page/$1/');
+    expect(paginationRedirect?.headers?.Location).toBe('/team/marisol/');
+    expect(currentPaginationRedirect?.headers?.Location).toBe('/team/marisol/');
+    expect(guideRedirect?.headers?.Location).toBe('/team/graham/');
   });
 
   it('consolidates extensionless URLs on their canonical trailing-slash form', () => {

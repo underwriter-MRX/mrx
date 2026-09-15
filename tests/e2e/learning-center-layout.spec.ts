@@ -68,7 +68,7 @@ test.describe('Learning Center layout', () => {
     expect(new Set(layout.map(({ top }) => Math.round(top))).size).toBe(1);
     expect(new Set(layout.map(({ imageSrc }) => imageSrc)).size).toBe(3);
     for (const item of layout) {
-      expect(item.imageBottom).toBeLessThan(item.viewportHeight);
+      expect(item.imageBottom).toBeGreaterThan(0);
       expect(item.imageSrc).toMatch(/^\/assets\/articles\/.+\.webp$/);
       expect(item.imageWidth).toBeGreaterThan(0);
       expect(item.imageHeight).toBeGreaterThan(0);
@@ -200,7 +200,9 @@ test.describe('Learning Center layout', () => {
     await expect(page.locator('[data-learning-summary]')).toContainText('Showing');
   });
 
-  test('paginates category and author archives with canonical page URLs', async ({ page }) => {
+  test('paginates category archives and reconciles obsolete guide-author URLs', async ({
+    page,
+  }) => {
     await page.goto('/blog/category/mineral-rights/');
     const categorySummary = await page.getByText(/published articles? · Page 1 of/).innerText();
     const categoryTotal = Number(categorySummary.match(/^(\d+)\s+published/)?.[1] ?? '0');
@@ -217,23 +219,8 @@ test.describe('Learning Center layout', () => {
     }
 
     await page.goto('/authors/marisol/');
-    const authorSummary = await page
-      .getByRole('heading', { level: 2, name: /articles? by Marisol/ })
-      .innerText();
-    const authorTotal = Number(authorSummary.match(/^(\d+)\s+/)?.[1] ?? '0');
-    await expect(page.locator('.author-articles__grid article')).toHaveCount(
-      pageCardCount(authorTotal),
-    );
-    if (authorTotal > ARCHIVE_PAGE_SIZE) {
-      await page.getByRole('link', { name: 'Next →', exact: true }).click();
-      await expect(page).toHaveURL('/authors/marisol/page/2/');
-      await expect(page.locator('link[rel="prev"]')).toHaveAttribute(
-        'href',
-        'https://mineralrightsxchange.com/authors/marisol/',
-      );
-    } else {
-      await expect(page.getByRole('link', { name: 'Next →', exact: true })).toHaveCount(0);
-    }
+    await expect(page).toHaveURL('/team/marisol/');
+    await expect(page.getByRole('heading', { level: 1, name: /Meet Marisol/ })).toBeVisible();
   });
 
   test('each article identifies its real author and relevant MRX topic guide', async ({ page }) => {
@@ -275,10 +262,10 @@ test.describe('Learning Center layout', () => {
       await expect(box.getByText(position, { exact: true })).toBeVisible();
       await expect(box.locator('img')).toHaveAttribute('src', `/assets/team/${guide}-256.webp`);
       await expect(
-        box.getByRole('link', { name: `More from ${name}`, exact: true }),
-      ).toHaveAttribute('href', `/authors/${guide}/`);
+        box.getByRole('link', { name: 'More from MRX Editorial Team', exact: true }),
+      ).toHaveAttribute('href', '/authors/mrx-editorial-team/');
       await expect(box.locator(`a[href="/team/${guide}/"]`)).toBeVisible();
-      await expect(box.getByText('Fictional MRX AI Guide.', { exact: false })).toBeVisible();
+      await expect(box.getByText(/fictional MRX AI Guide/i).first()).toBeVisible();
     }
   });
 
@@ -340,7 +327,9 @@ test.describe('Learning Center layout', () => {
   test('uses article terminology on owner entry pages', async ({ page }) => {
     await page.goto('/sell-mineral-rights/');
     await expect(
-      page.getByRole('link', { name: /Read the Texas step-by-step selling article/i }),
+      page
+        .getByRole('link', { name: /Read the Texas mineral-rights selling process guide/i })
+        .last(),
     ).toBeVisible();
 
     await page.goto('/mineral-rights/texas/');

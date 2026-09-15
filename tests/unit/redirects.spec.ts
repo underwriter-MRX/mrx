@@ -52,13 +52,20 @@ describe('canonical owner-situation redirects', () => {
     });
   });
 
-  it('preserves every historical Ariana archive page when redirecting to Marisol', async () => {
+  it('reconciles legacy AI-guide author archives to the fictional guide directory', async () => {
     const astroConfig = (await import('../../astro.config.mjs')).default;
 
-    for (let page = 2; page <= 8; page += 1) {
+    for (const guide of ['travis', 'owen', 'laurel', 'wade', 'graham', 'marisol']) {
       expect(astroConfig.redirects).toMatchObject({
-        [`/authors/ariana/page/${page}`]: `/authors/marisol/page/${page}/`,
+        [`/authors/${guide}`]: `/team/${guide}/`,
       });
     }
-  });
+
+    for (let page = 2; page <= 11; page += 1) {
+      expect(astroConfig.redirects).toMatchObject({
+        [`/authors/ariana/page/${page}`]: '/team/marisol/',
+        [`/authors/marisol/page/${page}`]: '/team/marisol/',
+      });
+    }
+  }, 15_000);
 });

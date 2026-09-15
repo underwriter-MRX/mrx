@@ -9,7 +9,6 @@ import '../../components/react/LearningCenter.css';
 
 interface Props {
   posts: LearningCenterItem[];
-  allPosts: LearningCenterItem[];
   categories: LearningCenterCategory[];
   authors: LearningCenterAuthor[];
   currentPage: number;
@@ -18,11 +17,9 @@ interface Props {
   pageSize: number;
 }
 
-const { posts, allPosts, categories, authors, currentPage, lastPage, totalItems, pageSize } =
-  Astro.props;
+const { posts, categories, authors, currentPage, lastPage, totalItems, pageSize } = Astro.props;
 const start = totalItems === 0 ? 0 : (currentPage - 1) * pageSize + 1;
 const end = Math.min(currentPage * pageSize, totalItems);
-const currentPageSlugs = new Set(posts.map((post) => post.slug));
 const normalizeLearningFilterText = (value: string) =>
   value
     .normalize('NFKD')
@@ -94,13 +91,13 @@ const normalizeLearningFilterText = (value: string) =>
     }
   </div>
   {
-    allPosts.length ? (
+    posts.length ? (
       <div class="learning-results" data-learning-results>
-        {allPosts.map((post, index) => (
+        {posts.map((post, index) => (
           <article
             class="learning-card"
             data-learning-card
-            data-learning-page-card={currentPageSlugs.has(post.slug) ? 'true' : 'false'}
+            data-learning-page-card="true"
             data-learning-category={post.category}
             data-learning-author-slug={post.authorSlug}
             data-learning-text={normalizeLearningFilterText(
@@ -114,7 +111,6 @@ const normalizeLearningFilterText = (value: string) =>
                 ...post.tags,
               ].join(' '),
             )}
-            hidden={!currentPageSlugs.has(post.slug)}
           >
             <a
               class="learning-card__image"
@@ -128,7 +124,7 @@ const normalizeLearningFilterText = (value: string) =>
                 alt={post.heroAlt}
                 width="1200"
                 height="630"
-                loading={currentPageSlugs.has(post.slug) && index < 3 ? 'eager' : 'lazy'}
+                loading={index < 3 ? 'eager' : 'lazy'}
                 decoding="async"
               />
             </a>
@@ -194,8 +190,27 @@ const normalizeLearningFilterText = (value: string) =>
     const resetButtons = document.querySelectorAll<HTMLElement>(
       '[data-learning-reset], [data-learning-empty-reset]',
     );
-    const cards = Array.from(results.querySelectorAll<HTMLElement>('[data-learning-card]'));
+    const pageCards = Array.from(results.querySelectorAll<HTMLElement>('[data-learning-card]'));
     const defaultSummary = summary.dataset.defaultSummary || summary.textContent || '';
+    let libraryPromise: Promise<LearningSearchItem[]> | undefined;
+    let filterRequest = 0;
+
+    type LearningSearchItem = {
+      slug: string;
+      title: string;
+      excerpt: string;
+      description: string;
+      category: string;
+      categoryLabel: string;
+      tags: string[];
+      author: string;
+      authorSlug: string;
+      publishedAt: string;
+      readingMinutes: number;
+      heroImage: string;
+      heroAlt: string;
+      searchText: string;
+    };
 
     const normalized = (value: string | undefined) =>
       (value || '')
@@ -295,11 +310,96 @@ const normalizeLearningFilterText = (value: string) =>
       const label = visible === 1 ? 'article' : 'articles';
       summary.textContent = `${visible} matching ${label} in the published library`;
     };
-    const applyFilters = () => {
+    const loadLibrary = () => {
+      libraryPromise ??= fetch('/learning-center/search-index.json', {
+        headers: { Accept: 'application/json' },
+      }).then(async (response) => {
+        if (!response.ok) throw new Error(`Learning Center search failed (${response.status})`);
+        const payload = (await response.json()) as { items?: LearningSearchItem[] };
+        return Array.isArray(payload.items) ? payload.items : [];
+      });
+      return libraryPromise;
+    };
+
+    const appendText = (parent: HTMLElement, tag: string, value: string) => {
+      const element = document.createElement(tag);
+      element.textContent = value;
+      parent.append(element);
+      return element;
+    };
+
+    const articleLink = (item: LearningSearchItem, source: string, label?: string) => {
+      const link = document.createElement('a');
+      link.href = `/blog/${item.slug}/`;
+      link.dataset.articleSlug = item.slug;
+      link.dataset.articleSource = source;
+      if (label) link.textContent = label;
+      return link;
+    };
+
+    const createSearchCard = (item: LearningSearchItem) => {
+      const card = document.createElement('article');
+      card.className = 'learning-card';
+      card.dataset.learningCard = '';
+      card.dataset.learningCategory = item.category;
+      card.dataset.learningAuthorSlug = item.authorSlug;
+      card.dataset.learningText = item.searchText;
+
+      const imageLink = articleLink(item, 'learning_center_image');
+      imageLink.className = 'learning-card__image';
+      imageLink.setAttribute('aria-label', `Read ${item.title}`);
+      const image = document.createElement('img');
+      image.src = item.heroImage;
+      image.alt = item.heroAlt;
+      image.width = 1200;
+      image.height = 630;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      imageLink.append(image);
+
+      const body = document.createElement('div');
+      body.className = 'learning-card__body';
+      const meta = document.createElement('div');
+      meta.className = 'learning-card__meta';
+      const categoryLink = document.createElement('a');
+      categoryLink.href = `/blog/category/${item.category}/`;
+      categoryLink.textContent = item.categoryLabel;
+      meta.append(categoryLink);
+      appendText(meta, 'span', `${item.readingMinutes} min read`);
+
+      const heading = document.createElement('h2');
+      heading.append(articleLink(item, 'learning_center', item.title));
+      const excerpt = appendText(body, 'p', item.excerpt);
+      const footer = document.createElement('footer');
+      const byline = document.createElement('span');
+      byline.append('By ');
+      const authorLink = document.createElement('a');
+      authorLink.href = `/authors/${item.authorSlug}/`;
+      authorLink.textContent = item.author;
+      byline.append(authorLink);
+      const time = document.createElement('time');
+      time.dateTime = item.publishedAt;
+      time.textContent = new Date(item.publishedAt).toLocaleDateString('en-US', {
+        timeZone: 'UTC',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      });
+      footer.append(byline, time, articleLink(item, 'learning_center', 'Read article →'));
+      body.prepend(meta, heading);
+      body.append(excerpt, footer);
+      card.append(imageLink, body);
+      return card;
+    };
+
+    const applyFilters = async () => {
+      const requestId = ++filterRequest;
       const query = normalized(search?.value);
       const rawQueryTerms = query.split(/\s+/).filter(Boolean);
       const meaningfulQueryTerms = rawQueryTerms.filter((term) => !questionStopWords.has(term));
-      const specificQueryTerms = meaningfulQueryTerms.filter((term) => !genericDomainTerms.has(term));
+      const specificQueryTerms = meaningfulQueryTerms.filter(
+        (term) => !genericDomainTerms.has(term),
+      );
       const queryTerms = specificQueryTerms.length
         ? specificQueryTerms
         : meaningfulQueryTerms.length
@@ -307,32 +407,50 @@ const normalizeLearningFilterText = (value: string) =>
           : rawQueryTerms;
       const selectedTopic = topic?.value || '';
       const selectedAuthor = author?.value || '';
-      let visible = 0;
       const filtering = activeFilters();
+      if (!filtering) {
+        results.replaceChildren(...pageCards);
+        renderSummary(pageCards.length);
+        results.hidden = false;
+        empty.hidden = true;
+        if (pagination) pagination.hidden = false;
+        writeUrl();
+        return;
+      }
 
-      cards.forEach((card) => {
-        const searchableText = card.dataset.learningText || '';
-        const matchedTerms = queryTerms.filter((term) => {
-          if (searchableText.includes(term)) return true;
-          return term.length > 3 && term.endsWith('s') && searchableText.includes(term.slice(0, -1));
-        }).length;
-        const minimumMatches =
-          queryTerms.length <= 2 ? queryTerms.length : Math.ceil(queryTerms.length * 0.6);
-        const matchesQuery = !queryTerms.length || matchedTerms >= minimumMatches;
-        const matchesTopic = !selectedTopic || card.dataset.learningCategory === selectedTopic;
-        const matchesAuthor = !selectedAuthor || card.dataset.learningAuthorSlug === selectedAuthor;
-        const matches = filtering
-          ? matchesQuery && matchesTopic && matchesAuthor
-          : card.dataset.learningPageCard === 'true';
-        card.hidden = !matches;
-        if (matches) visible += 1;
-      });
-
-      renderSummary(visible);
-      results.hidden = filtering && visible === 0;
-      empty.hidden = !filtering || visible > 0;
-      if (pagination) pagination.hidden = filtering;
-      writeUrl();
+      try {
+        const library = await loadLibrary();
+        if (requestId !== filterRequest) return;
+        const matches = library.filter((item) => {
+          const searchableText = item.searchText;
+          const matchedTerms = queryTerms.filter((term) => {
+            if (searchableText.includes(term)) return true;
+            return (
+              term.length > 3 && term.endsWith('s') && searchableText.includes(term.slice(0, -1))
+            );
+          }).length;
+          const minimumMatches =
+            queryTerms.length <= 2 ? queryTerms.length : Math.ceil(queryTerms.length * 0.6);
+          const matchesQuery = !queryTerms.length || matchedTerms >= minimumMatches;
+          const matchesTopic = !selectedTopic || item.category === selectedTopic;
+          const matchesAuthor = !selectedAuthor || item.authorSlug === selectedAuthor;
+          return matchesQuery && matchesTopic && matchesAuthor;
+        });
+        results.replaceChildren(...matches.map(createSearchCard));
+        renderSummary(matches.length);
+        results.hidden = matches.length === 0;
+        empty.hidden = matches.length > 0;
+        if (pagination) pagination.hidden = true;
+        writeUrl();
+      } catch {
+        if (requestId !== filterRequest) return;
+        summary.textContent =
+          'Search is temporarily unavailable. Browse the current page or try again.';
+        results.replaceChildren(...pageCards);
+        results.hidden = false;
+        empty.hidden = true;
+        if (pagination) pagination.hidden = false;
+      }
     };
 
     // Debounce search input (~120ms) for keystroke storms, but apply selects
@@ -340,7 +458,7 @@ const normalizeLearningFilterText = (value: string) =>
     let debounceHandle: number | undefined;
     const debouncedApply = () => {
       if (debounceHandle !== undefined) window.clearTimeout(debounceHandle);
-      debounceHandle = window.setTimeout(applyFilters, 120);
+      debounceHandle = window.setTimeout(() => void applyFilters(), 120);
     };
 
     filterRoot.addEventListener('input', (event) => {
@@ -348,23 +466,23 @@ const normalizeLearningFilterText = (value: string) =>
       if (target instanceof HTMLInputElement && target === search) {
         debouncedApply();
       } else {
-        applyFilters();
+        void applyFilters();
       }
     });
-    filterRoot.addEventListener('change', applyFilters);
+    filterRoot.addEventListener('change', () => void applyFilters());
     filterRoot.addEventListener('submit', (event) => {
       event.preventDefault();
       if (debounceHandle !== undefined) window.clearTimeout(debounceHandle);
-      applyFilters();
+      void applyFilters();
     });
-    filterRoot.addEventListener('reset', () => window.setTimeout(applyFilters, 0));
+    filterRoot.addEventListener('reset', () => window.setTimeout(() => void applyFilters(), 0));
 
     // Esc clears all three controls and the URL.
     filterRoot.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
         if (debounceHandle !== undefined) window.clearTimeout(debounceHandle);
         filterRoot.reset();
-        applyFilters();
+        void applyFilters();
       }
     });
 
@@ -372,12 +490,12 @@ const normalizeLearningFilterText = (value: string) =>
       button.addEventListener('click', () => {
         if (debounceHandle !== undefined) window.clearTimeout(debounceHandle);
         filterRoot.reset();
-        applyFilters();
+        void applyFilters();
       }),
     );
 
     // Apply initial state (hydrated from URL above) on first paint.
-    applyFilters();
+    void applyFilters();
   }
 
   document.addEventListener('click', (event) => {
