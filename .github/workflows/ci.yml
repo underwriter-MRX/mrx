@@ -3,6 +3,11 @@ name: CI
 on:
   push:
     branches: [main, staging]
+    paths-ignore:
+      - .github/workflows/crawler-notifications.yml
+      - scripts/crawler_sync.py
+      - tests/crawler/**
+      - docs/mrx-crawler-notifications.md
   pull_request:
     branches: [main, staging]
 
