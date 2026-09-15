@@ -1,10 +1,10 @@
 # MRX OTTO Codex source remediation and recrawl — 2026-09-15
 
-Search Atlas project: `99913` / `e4bab8bb-717e-480c-8dea-1de1b8596eb7`  
-Search Atlas audit: `138239`  
-Source release commit: `d4b73c53`  
-Production deployment: `dpl_EFLH7cjrpTT3QanLKe7uAw5Dk14J` / `https://mrx-ga0e5x5pj-team-mrx.vercel.app`  
-Rollback deployment: `dpl_4a1v1xyehSzapdYueFpfLhm2Gx7s` / `https://mrx-gc0tmy646-team-mrx.vercel.app`
+- Search Atlas project: `99913` / `e4bab8bb-717e-480c-8dea-1de1b8596eb7`
+- Search Atlas audit: `138239`
+- Source release commit: `d4b73c53`
+- Production deployment: `dpl_EFLH7cjrpTT3QanLKe7uAw5Dk14J` / `https://mrx-ga0e5x5pj-team-mrx.vercel.app`
+- Rollback deployment: `dpl_4a1v1xyehSzapdYueFpfLhm2Gx7s` / `https://mrx-gc0tmy646-team-mrx.vercel.app`
 
 ## Outcome
 
@@ -76,4 +76,3 @@ The dashboard consequently moved from **671 total / 16 approved / 655 pending** 
 The separate deployment preview reports **719 candidates without recommendations**: page title 117, meta description 142, meta keywords 115, H1 31, H2 90, OG title 112, and Twitter title 112. They cannot deploy, and OTTO will not delete them because no recommendation exists. The preview's only **16 recommendation-bearing** records are the rejected 15 Dynamic Indexing rows and the vendor-locked Organization. Accurate release accounting is therefore **zero actionable generated recommendations**, not a false claim that the Search Atlas dashboard number is zero.
 
 No Search Atlas recommendation, hidden link, duplicate schema, or social-title rewrite was deployed. No generation, purchase, upgrade, top-up, or incremental monetary charge occurred.
-
