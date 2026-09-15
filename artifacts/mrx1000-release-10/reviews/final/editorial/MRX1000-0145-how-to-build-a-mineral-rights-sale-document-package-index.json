@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_editorial_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-15T06:01:08Z",
+  "reviewed_at": "2026-09-15T07:28:29Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Build a Mineral Rights Sale Document Package Index",
   "canonical_url": "https://mineralrightsxchange.com/blog/how-to-build-a-mineral-rights-sale-document-package-index/",
   "source_path": "src/content/posts/how-to-build-a-mineral-rights-sale-document-package-index.mdx",
-  "input_body_sha256": "7897d79c0254549b845aec628079e38e09dee6e96c0723fe32201ca9553bba33",
+  "input_body_sha256": "c26613281803d41de8c4c040ce1922b1b27d1158cc8443099a017945304e440b",
   "input_frontmatter_sha256": "af77cd85df3a6ed9f30dbca2e02ce0760ec520ff13fe74106ae2c4b596cf1452",
-  "expected_repo_sha256": "7897d79c0254549b845aec628079e38e09dee6e96c0723fe32201ca9553bba33",
-  "two_image_manifest_sha256": "3f195b924b26a4ec7804db2d684483d6bc1dba4b74c1b39ba4b625d689a15433",
+  "expected_repo_sha256": "c26613281803d41de8c4c040ce1922b1b27d1158cc8443099a017945304e440b",
+  "two_image_manifest_sha256": "f5adc7ca0b7ff80219e3f669625436cd336c095e1ffa06ac0b563e9e9d9e62cb",
   "visual_metadata": {
     "hero_alt": "An open document binder and page stack appear beside “How to Build a Mineral Rights Sale Document Package Index”.",
     "social_alt": "An open document binder and page stack appear beside “How to Build a Mineral Rights Sale Document Package Index”.",
     "inline_alt": "Organized document folders and tabs appear above “Mineral Rights Sale Package Index”."
   },
   "reviewer_id": "codex_wave65_editorial",
-  "review_run_id": "mrx1000-wave65-editorial-20260815T060108Z",
+  "review_run_id": "mrx1000-wave65-editorial-20260915T072829Z",
   "capability": "editorial",
   "findings": [
-    "Complete current MDX SHA-256 is 7897d79c0254549b845aec628079e38e09dee6e96c0723fe32201ca9553bba33; the answer-first article contains 2295 body tokens and five FAQs.",
+    "Complete current MDX SHA-256 is c26613281803d41de8c4c040ce1922b1b27d1158cc8443099a017945304e440b; the answer-first article contains 2277 body tokens and five FAQs.",
     "The article owns the narrow page-level package-index job for owners assembling a possible sale document package. It defines source-file intake, page-count reconciliation, cross-reference tracing, signature-copy identity, replacement chains, and privacy limits while stopping before process narration, decision tracking, contract interpretation, value, tax, payment, closing, and transaction selection.",
     "Exact-title hero/share OCR passed for “How to Build a Mineral Rights Sale Document Package Index”; distinct in-body OCR passed for “Mineral Rights Sale Package Index”; composition-accurate hero/social and inline alt metadata matched the final visual audit."
   ],
@@ -33,13 +33,13 @@
     {
       "name": "complete_file_sha256_match",
       "status": "PASS",
-      "evidence": "7897d79c0254549b845aec628079e38e09dee6e96c0723fe32201ca9553bba33"
+      "evidence": "c26613281803d41de8c4c040ce1922b1b27d1158cc8443099a017945304e440b"
     },
     {
       "name": "answer_first_article_depth_and_five_faqs",
       "status": "PASS",
       "evidence": {
-        "word_count": 2295,
+        "word_count": 2277,
         "minimum_word_count": 700,
         "faq_count": 5
       }

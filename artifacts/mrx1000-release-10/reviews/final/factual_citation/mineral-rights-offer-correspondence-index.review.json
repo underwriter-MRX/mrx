@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_factual_citation_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-22T19:36:32Z",
+  "reviewed_at": "2026-09-15T07:28:29Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Build a Mineral Rights Offer Correspondence Index",
   "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-correspondence-index/",
   "source_path": "src/content/posts/mineral-rights-offer-correspondence-index.mdx",
-  "input_body_sha256": "e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954",
+  "input_body_sha256": "70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6",
   "input_frontmatter_sha256": "7f229357b8d73b3b4e52e40b03d8d3d829eea3971a2ea60b96b783c987262993",
-  "expected_repo_sha256": "e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954",
-  "two_image_manifest_sha256": "5621b8116258e6d0a87e9a79b16e6951dd25a59e4a9573c8d5c54e2c2d467e52",
+  "expected_repo_sha256": "70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6",
+  "two_image_manifest_sha256": "015963c3455a5bf79886d0c8730f8c5799e16699441d3324501bd8ccf2a62a86",
   "visual_metadata": {
     "hero_alt": "A mineral owner organizes envelopes beside “How to Build a Mineral Rights Offer Correspondence Index”.",
     "social_alt": "A mineral owner organizes envelopes beside “How to Build a Mineral Rights Offer Correspondence Index”.",
     "inline_alt": "Blank correspondence cards and folders appear above “Mineral Rights Offer Correspondence Index”."
   },
   "reviewer_id": "codex_wave69_factual",
-  "review_run_id": "mrx1000-wave69-factual-20260822T193632Z",
+  "review_run_id": "mrx1000-wave69-factual-20260915T072829Z",
   "capability": "factual_citation",
   "findings": [
-    "Complete current MDX SHA-256 is e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954; all 6 declared sources passed current access review.",
+    "Complete current MDX SHA-256 is 70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6; all 6 declared sources passed current access review.",
     "Claims remain bounded to observable NARA message and attachment metadata as an explicitly nonbinding records-management analogy, the defined Texas Property Code mailed-offer context, and current MRX package-index, decision-log, and property-scope boundaries. No source is converted into a private delivery, legal-receipt, title, value, fairness, contract, deadline, or transaction conclusion.",
     "The article invents no real owner, message, sender, recipient, property, buyer, contract, transaction, price, deadline, testimonial, success rate, or owner-specific legal, tax, accounting, title, appraisal, investment, or transaction conclusion."
   ],
@@ -42,7 +42,7 @@
       "label": "U.S. National Archives, Email and Electronic Messages Management (accessed 2026-08-22)",
       "url": "https://www.archives.gov/records-mgmt/email-mgmt",
       "publisher": "www.archives.gov",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.archives.gov/records-mgmt/email-mgmt",
@@ -55,7 +55,7 @@
       "label": "U.S. National Archives, Appendix A: Tables of File Formats (accessed 2026-08-22)",
       "url": "https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html",
       "publisher": "www.archives.gov",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.archives.gov/records-mgmt/policy/transfer-guidance-tables.html",
@@ -68,7 +68,7 @@
       "label": "Texas Legislature, Property Code Chapter 5, Conveyances (accessed 2026-08-22)",
       "url": "https://statutes.capitol.texas.gov/Docs/PR/pdf/PR.5.pdf",
       "publisher": "statutes.capitol.texas.gov",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://statutes.capitol.texas.gov/Docs/PR/pdf/PR.5.pdf",
@@ -81,7 +81,7 @@
       "label": "Mineral Rights Xchange, How to Build a Mineral Rights Sale Document Package Index (accessed 2026-08-22)",
       "url": "https://mineralrightsxchange.com/blog/how-to-build-a-mineral-rights-sale-document-package-index/",
       "publisher": "mineralrightsxchange.com",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://mineralrightsxchange.com/blog/how-to-build-a-mineral-rights-sale-document-package-index/",
@@ -94,7 +94,7 @@
       "label": "Mineral Rights Xchange, How to Build a Mineral Rights Sale Decision Log (accessed 2026-08-22)",
       "url": "https://mineralrightsxchange.com/blog/mineral-rights-sale-decision-log/",
       "publisher": "mineralrightsxchange.com",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://mineralrightsxchange.com/blog/mineral-rights-sale-decision-log/",
@@ -107,7 +107,7 @@
       "label": "Mineral Rights Xchange, How to Build a Property-Scope Crosswalk Before Comparing Mineral Rights Offers (accessed 2026-08-22)",
       "url": "https://mineralrightsxchange.com/blog/property-scope-crosswalk-mineral-rights-offers/",
       "publisher": "mineralrightsxchange.com",
-      "accessed_at": "2026-08-22T19:36:32Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://mineralrightsxchange.com/blog/property-scope-crosswalk-mineral-rights-offers/",

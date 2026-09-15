@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_factual_citation_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-23T08:34:01Z",
+  "reviewed_at": "2026-09-15T07:28:31Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Build a Mineral Rights Operator-Name Change Log",
   "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-operator-name-change-log/",
   "source_path": "src/content/posts/mineral-rights-operator-name-change-log.mdx",
-  "input_body_sha256": "af3061d5cacb25f846f57d11018c3cf1aa2359e62ec024ce73cc1faed91130e0",
+  "input_body_sha256": "2cbba8a874b0e2fb471cf657f694b2c60678d07f339a52de61e294f5a171391a",
   "input_frontmatter_sha256": "b727953fdd91e64eceb5c5aaeab13a79908abe89d330d2104e03ff25edf571ae",
-  "expected_repo_sha256": "af3061d5cacb25f846f57d11018c3cf1aa2359e62ec024ce73cc1faed91130e0",
-  "two_image_manifest_sha256": "fd907abcd84ecd90d3f77048ac70f6003f9df39464e8dd823c989b0f833fa2de",
+  "expected_repo_sha256": "2cbba8a874b0e2fb471cf657f694b2c60678d07f339a52de61e294f5a171391a",
+  "two_image_manifest_sha256": "1b1071ba16708b6691eb3e4ef8521fdf9da27e3c98886349e344a2741345d128",
   "visual_metadata": {
     "hero_alt": "Three blank archival folders and a source-reference card appear beside the exact article title.",
     "social_alt": "Three blank archival folders and a source-reference card appear beside the exact article title.",
     "inline_alt": "An overhead three-source name-history strip and blank question-routing card appear above the exact keyword."
   },
   "reviewer_id": "codex_wave79_factual",
-  "review_run_id": "mrx1000-wave79-factual-20260823T083401Z",
+  "review_run_id": "mrx1000-wave79-factual-20260915T072831Z",
   "capability": "factual_citation",
   "findings": [
-    "Complete current MDX SHA-256 is af3061d5cacb25f846f57d11018c3cf1aa2359e62ec024ce73cc1faed91130e0; all 4 declared sources passed current HTTPS access review.",
+    "Complete current MDX SHA-256 is 2cbba8a874b0e2fb471cf657f694b2c60678d07f339a52de61e294f5a171391a; all 4 declared sources passed current HTTPS access review.",
     "Claims remain bounded to online-query limitations and displayed wellbore, organization, and drilling-permit names, identifiers, dates, statuses, and query scope. None is converted into a corporate-identity, responsibility, property, development, title, production, payment, or value conclusion.",
     "The article supplies no proprietary, universal, market, or owner-specific numerical assumptions; invents no name, identifier, date, status, relationship, property fact, payment fact, offer, or development result; and makes no owner-specific legal, tax, title, valuation, engineering, financial, or transaction conclusion."
   ],
@@ -42,7 +42,7 @@
       "label": "Railroad Commission of Texas, Online Research Queries (accessed 2026-08-23)",
       "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
       "publisher": "www.rrc.texas.gov",
-      "accessed_at": "2026-08-23T08:34:01Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
@@ -55,7 +55,7 @@
       "label": "Railroad Commission of Texas, Wellbore Query Help (accessed 2026-08-23)",
       "url": "https://webapps2.rrc.texas.gov/EWA/help/WellboreGeneralHowTo.html",
       "publisher": "webapps2.rrc.texas.gov",
-      "accessed_at": "2026-08-23T08:34:01Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://webapps2.rrc.texas.gov/EWA/help/WellboreGeneralHowTo.html",
@@ -68,7 +68,7 @@
       "label": "Railroad Commission of Texas, P-5 Organization Query About (accessed 2026-08-23)",
       "url": "https://webapps2.rrc.texas.gov/EWA/help/P5Organization_About.html",
       "publisher": "webapps2.rrc.texas.gov",
-      "accessed_at": "2026-08-23T08:34:01Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5Organization_About.html",
@@ -81,7 +81,7 @@
       "label": "Railroad Commission of Texas, Drilling Permit Query Results Help (accessed 2026-08-23)",
       "url": "https://webapps2.rrc.texas.gov/EWA/help/DPQuery_results_howto.htm",
       "publisher": "webapps2.rrc.texas.gov",
-      "accessed_at": "2026-08-23T08:34:01Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://webapps2.rrc.texas.gov/EWA/help/DPQuery_results_howto.htm",

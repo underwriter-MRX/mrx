@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_factual_citation_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-15T06:51:27Z",
+  "reviewed_at": "2026-09-15T07:28:29Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Choose a Family Point Person for Mineral Rights Inquiries",
   "canonical_url": "https://mineralrightsxchange.com/blog/how-to-choose-a-family-point-person-for-mineral-rights-inquiries/",
   "source_path": "src/content/posts/how-to-choose-a-family-point-person-for-mineral-rights-inquiries.mdx",
-  "input_body_sha256": "ae5cc492ae161e65822b5ae0e300a7a10d777e783ca713ce6436b8734110bae1",
+  "input_body_sha256": "9e64372d090cfa4dbf98ab14735b4239ea9c275ac9227e89268f3e7f24cd76fa",
   "input_frontmatter_sha256": "13d11f08cfa341b46515890dc959efd8ddd6e5dac606914f5d3ba91ac7953741",
-  "expected_repo_sha256": "ae5cc492ae161e65822b5ae0e300a7a10d777e783ca713ce6436b8734110bae1",
-  "two_image_manifest_sha256": "0d2c2f92b634861a9c60fc7dd21f9ad7ce99e82cc18706f11adf3f2a71c7804c",
+  "expected_repo_sha256": "9e64372d090cfa4dbf98ab14735b4239ea9c275ac9227e89268f3e7f24cd76fa",
+  "two_image_manifest_sha256": "18b52cc961a3e0efa5ab5eea48040809c1370fb8577dfa4db9e1d5a56568d4a4",
   "visual_metadata": {
     "hero_alt": "A family chooses one notebook holder beside “How to Choose a Family Point Person for Mineral Rights Inquiries”.",
     "social_alt": "A family chooses one notebook holder beside “How to Choose a Family Point Person for Mineral Rights Inquiries”.",
     "inline_alt": "Blank envelopes surround one notebook above “One Contact, Shared Information”."
   },
   "reviewer_id": "codex_wave67_factual",
-  "review_run_id": "mrx1000-wave67-factual-20260815T065127Z",
+  "review_run_id": "mrx1000-wave67-factual-20260915T072829Z",
   "capability": "factual_citation",
   "findings": [
-    "Complete current MDX SHA-256 is ae5cc492ae161e65822b5ae0e300a7a10d777e783ca713ce6436b8734110bae1; all 7 declared sources passed current access review.",
+    "Complete current MDX SHA-256 is 9e64372d090cfa4dbf98ab14735b4239ea9c275ac9227e89268f3e7f24cd76fa; all 7 declared sources passed current access review.",
     "Claims remain bounded to adaptable communication practices from university extension sources, professional-representation principles limited to AAPL members, the legal distinction between an informal contact and a power of attorney, and current MRX family-conversation and seller-control boundaries. No source is converted into a private title, probate, authority, consent, value, tax, contract, or transaction conclusion.",
     "The article invents no real owner, property, buyer, contract, transaction, price range, production, reserves, forecast, testimonial, success rate, or owner-specific legal, tax, accounting, title, appraisal, engineering, investment, or transaction conclusion."
   ],
@@ -42,10 +42,10 @@
       "label": "University of Minnesota Extension, Preparing to meet with your transition and estate planning team (reviewed 2023; accessed 2026-08-14)",
       "url": "https://extension.umn.edu/transfer-and-estate-planning/preparing-meet-your-transition-and-estate-planning-team",
       "publisher": "extension.umn.edu",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
-        "final_url": "https://extension.umn.edu/transfer-and-estate-planning/preparing-meet-your-transition-and-estate-planning-team",
+        "final_url": "https://extension.umn.edu/agriculture/farm-operations-and-systems/agricultural-business-management/transfer-and-estate-planning/preparing-to-meet-with-your-transition-and-estate-planning-team",
         "content_type": "text/html; charset=UTF-8"
       },
       "source_location_or_paraphrase": "University of Minnesota Extension transition-planning guidance recommends preparing goals and questions in writing and involving affected people in a fact-based planning process.",
@@ -55,10 +55,10 @@
       "label": "University of Minnesota Extension, Farm business transfer strategies (accessed 2026-08-14)",
       "url": "https://extension.umn.edu/transfer-and-estate-planning/farm-business-transfer-strategies",
       "publisher": "extension.umn.edu",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
-        "final_url": "https://extension.umn.edu/transfer-and-estate-planning/farm-business-transfer-strategies",
+        "final_url": "https://extension.umn.edu/agriculture/farm-operations-and-systems/agricultural-business-management/transfer-and-estate-planning/farm-business-transfer-strategies",
         "content_type": "text/html; charset=UTF-8"
       },
       "source_location_or_paraphrase": "University of Minnesota Extension farm-business transfer guidance recommends brief, specific communication that avoids accusation, insult, and blame and describes structured family-business communication.",
@@ -68,7 +68,7 @@
       "label": "Utah State University Extension, Estate Planning Toolkit: Starting the Estate Planning Conversation (accessed 2026-08-14)",
       "url": "https://extension.usu.edu/finance/files/estate-planning-toolkit.pdf",
       "publisher": "extension.usu.edu",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://extension.usu.edu/finance/files/estate-planning-toolkit.pdf",
@@ -81,7 +81,7 @@
       "label": "American Association of Professional Landmen, Code of Ethics and Standards of Practice (accessed 2026-08-14)",
       "url": "https://www.landman.org/discover-the-land-profession/about-us/code-of-ethic.html",
       "publisher": "www.landman.org",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.landman.org/discover-the-land-profession/about-us/code-of-ethic.html",
@@ -94,11 +94,11 @@
       "label": "Texas Law Help, Powers of Attorney Fact Sheet (last legal review 2025-07-31; accessed 2026-08-14)",
       "url": "https://texaslawhelp.org/article/powers-of-attorney-fact-sheet",
       "publisher": "texaslawhelp.org",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://texaslawhelp.org/article/powers-of-attorney-fact-sheet",
-        "content_type": "text/html; charset=UTF-8"
+        "content_type": "text/html; charset=utf-8"
       },
       "source_location_or_paraphrase": "Texas Law Help explains that a power of attorney is a legal document that grants another person specified authority and describes distinct kinds and effects of that authority.",
       "claim_scope": "The article uses the source only to contrast a non-legal administrative contact protocol with legally operative authority. It does not determine whether a power of attorney exists, is valid, is sufficient, or is appropriate for any reader."
@@ -107,7 +107,7 @@
       "label": "Mineral Rights Xchange, How to Talk to Your Family Before You Decide to Sell Mineral Rights (accessed 2026-08-14)",
       "url": "https://mineralrightsxchange.com/blog/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights/",
       "publisher": "mineralrightsxchange.com",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://mineralrightsxchange.com/blog/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights/",
@@ -120,7 +120,7 @@
       "label": "Mineral Rights Xchange, Selling Mineral Rights: Selling Process For Mineral Owners (accessed 2026-08-14)",
       "url": "https://mineralrightsxchange.com/blog/selling-mineral-rights-selling-process-for-mineral-owners/",
       "publisher": "mineralrightsxchange.com",
-      "accessed_at": "2026-08-15T06:51:27Z",
+      "accessed_at": "2026-09-15T07:28:29Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://mineralrightsxchange.com/blog/selling-mineral-rights-selling-process-for-mineral-owners/",

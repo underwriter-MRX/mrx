@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_editorial_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-22T19:36:32Z",
+  "reviewed_at": "2026-09-15T07:28:29Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Build a Mineral Rights Offer Correspondence Index",
   "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-correspondence-index/",
   "source_path": "src/content/posts/mineral-rights-offer-correspondence-index.mdx",
-  "input_body_sha256": "e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954",
+  "input_body_sha256": "70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6",
   "input_frontmatter_sha256": "7f229357b8d73b3b4e52e40b03d8d3d829eea3971a2ea60b96b783c987262993",
-  "expected_repo_sha256": "e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954",
-  "two_image_manifest_sha256": "5621b8116258e6d0a87e9a79b16e6951dd25a59e4a9573c8d5c54e2c2d467e52",
+  "expected_repo_sha256": "70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6",
+  "two_image_manifest_sha256": "015963c3455a5bf79886d0c8730f8c5799e16699441d3324501bd8ccf2a62a86",
   "visual_metadata": {
     "hero_alt": "A mineral owner organizes envelopes beside “How to Build a Mineral Rights Offer Correspondence Index”.",
     "social_alt": "A mineral owner organizes envelopes beside “How to Build a Mineral Rights Offer Correspondence Index”.",
     "inline_alt": "Blank correspondence cards and folders appear above “Mineral Rights Offer Correspondence Index”."
   },
   "reviewer_id": "codex_wave69_editorial",
-  "review_run_id": "mrx1000-wave69-editorial-20260822T193632Z",
+  "review_run_id": "mrx1000-wave69-editorial-20260915T072829Z",
   "capability": "editorial",
   "findings": [
-    "Complete current MDX SHA-256 is e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954; the answer-first article contains 1912 body tokens and five FAQs.",
+    "Complete current MDX SHA-256 is 70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6; the answer-first article contains 1894 body tokens and five FAQs.",
     "The article owns a neutral correspondence-index job after intake and package indexing. It records observable message metadata and attachment relationships using only indexed, linked to package, duplicate noted, or not available outcomes while excluding delivery, legal-receipt, deadline, offer, value, buyer, and sell-or-hold conclusions.",
     "Exact-title hero/share OCR passed for “How to Build a Mineral Rights Offer Correspondence Index”; distinct in-body OCR passed for “Mineral Rights Offer Correspondence Index”; composition-accurate hero/social and inline alt metadata matched the final visual audit."
   ],
@@ -33,13 +33,13 @@
     {
       "name": "complete_file_sha256_match",
       "status": "PASS",
-      "evidence": "e910ef76a463e675b5a6e9fc189ded6cb005c00785aff275c0643bcfd148a954"
+      "evidence": "70d94f965b0c2da3ef450069bcc06d3cd00583ffd7dbab7040dc2cfd984cf6f6"
     },
     {
       "name": "answer_first_article_depth_and_five_faqs",
       "status": "PASS",
       "evidence": {
-        "word_count": 1912,
+        "word_count": 1894,
         "minimum_word_count": 700,
         "faq_count": 5
       }

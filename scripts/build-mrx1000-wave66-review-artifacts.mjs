@@ -168,7 +168,7 @@ const sourceScopes = new Map([
     ],
   ],
   [
-    'https://www.srs.fs.usda.gov/pubs/gtr/gtr_srs225.pdf',
+    'https://research.fs.usda.gov/download/treesearch/55263.pdf',
     [
       'The USDA Forest Service overview describes heirs property as inherited real property that can involve multiple heirs and fragmented collective ownership.',
       'The article uses it only as general background that family shorthand may conceal distinct interests and unresolved records. It does not apply heirs-property law to mineral ownership or determine any reader’s title, authority, consent, signature, probate, or sale rights.',

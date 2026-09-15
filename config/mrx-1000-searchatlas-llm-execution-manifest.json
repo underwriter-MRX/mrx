@@ -1,7 +1,7 @@
 {
   "program": "MRX1000",
   "artifact_type": "searchatlas_ordered_llm_local_execution_manifest",
-  "generated_at": "2026-07-20T14:26:52.205Z",
+  "generated_at": "2026-07-20T23:03:49.582Z",
   "deterministic": true,
   "local_only": true,
   "external_services_called": false,
@@ -9,13 +9,13 @@
   "inputs": {
     "ledger": {
       "path": "config/mrx-1000-canonical-content-ledger.json",
-      "sha256": "be33aed991bd59c1ffc761e9c566803820901bd7349683b46fc8b3ecd910b533",
-      "bytes": 4747031
+      "sha256": "0579fec201b3189bd1f1625aa2c64c917b576b9212e433fb66978a0c77a1a1e7",
+      "bytes": 4747463
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "48cb45801b521136ef7ba8d7d645559af28c9bde88e559ddb10921666e0274e9",
-      "bytes": 3507103,
+      "sha256": "2e00cd8384a174a53f390828da35bbef60f4401f4cc36218f2374ce9de37aef7",
+      "bytes": 3507131,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -70,31 +70,31 @@
       "bytes": 14249
     },
     "row2RemediatedCandidate": {
-      "path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+      "path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
       "present": true,
       "sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
       "bytes": 14699
     },
     "row2RawVendorDraft": {
-      "path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.mdx",
+      "path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.mdx",
       "present": true,
       "sha256": "fa7664878de826d1fb7723d4b50dc2d2c65f5dbb72857307b39432093bc07e9e",
       "bytes": 13698
     },
     "row2RecoveryEvidence": {
-      "path": ".worktrees/t_953629dc/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
+      "path": "docs/evidence/mrx1000-row2/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
       "present": true,
       "sha256": "13e2b8b3cd9babcef42e321a177004628759cebec9b1701a195c5c85c93dd915",
       "bytes": 5201
     },
     "row2FreshComplianceAudit": {
-      "path": ".worktrees/t_953629dc/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
+      "path": "docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
       "present": true,
       "sha256": "03437048d097cd95356d99c40653fe6967f8ad9f6c37e84a777404c737b2cdca",
       "bytes": 28136
     },
     "row2FreshSeoAeoAudit": {
-      "path": ".worktrees/t_953629dc/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md",
+      "path": "docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md",
       "present": true,
       "sha256": "e4de274bccc48d4e614258fd09792c820cea3531366612187cedc4172eda6964",
       "bytes": 9711
@@ -879,31 +879,31 @@
         "review_candidate": {
           "state": "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
-          "path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+          "path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
           "source_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
           "body_sha256": "abcbcbb0eb97e9b3c03da786e092ed6f425d991cef80600018ccf19f5bb46d07",
           "body_word_count": 1894,
           "candidate_type": "row2_remediated_noindex_candidate",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
-            ".worktrees/t_953629dc/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
-            ".worktrees/t_953629dc/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
-            ".worktrees/t_953629dc/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md"
+            "docs/evidence/mrx1000-row2/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
+            "docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
+            "docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md"
           ],
           "workspace_mdx_is_review_candidate": false,
           "workspace_mdx_rejection_reason": "Pilot workspace MDX is an explicit staged QA shell; final article copy is absent.",
           "special_candidate_validation": {
             "validated": true,
             "state": "ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW",
-            "candidate_path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+            "candidate_path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
             "candidate_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
             "candidate_body_sha256": "abcbcbb0eb97e9b3c03da786e092ed6f425d991cef80600018ccf19f5bb46d07",
             "candidate_word_count": 1894,
             "readiness_evidence_verified": true,
             "readiness_evidence_paths": [
-              ".worktrees/t_953629dc/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
-              ".worktrees/t_953629dc/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
-              ".worktrees/t_953629dc/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md"
+              "docs/evidence/mrx1000-row2/reports/mrx1000-row2-exact-local-recovery-final-remediation-evidence.md",
+              "docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md",
+              "docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md"
             ],
             "rejection_reasons": [],
             "rejected_candidate_observation": null
@@ -961,7 +961,7 @@
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
-            "review_candidate_path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+            "review_candidate_path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
             "review_candidate_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
@@ -998,7 +998,7 @@
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
-            "review_candidate_path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+            "review_candidate_path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
             "review_candidate_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
@@ -1035,7 +1035,7 @@
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
-            "review_candidate_path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+            "review_candidate_path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
             "review_candidate_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
@@ -1073,7 +1073,7 @@
           "dispatch_eligible_now": false,
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
-            "review_candidate_path": ".worktrees/t_953629dc/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
+            "review_candidate_path": "docs/evidence/mrx1000-row2/drafts/mrx1000/pilot-001/searchatlas/inherited-mineral-rights-buyers-compared.remediated.noindex.mdx",
             "review_candidate_sha256": "8733083dca7e5b6417bad06c7e6d993f3589890ebfdbf7d8e8404ef2b88fd74d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_action_time_named_model",
@@ -59490,7 +59490,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
           "mdx_exists": true,
-          "source_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+          "source_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -59511,10 +59511,10 @@
             "frontmatter_draft": false,
             "frontmatter_noindex": false,
             "frontmatter_indexable": null,
-            "body_sha256": "fb66590955e6ef1dd93a87247a2d31e1bdc59b90c16bde9c17c459e16f62ef91",
-            "body_bytes": 17237,
-            "body_characters": 17173,
-            "body_word_count": 2517,
+            "body_sha256": "9a72eff8abedaac691ecb3e8180ff325b7b9b82718cac38c283d68f22a016385",
+            "body_bytes": 17244,
+            "body_characters": 17180,
+            "body_word_count": 2516,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -59545,9 +59545,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-          "source_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
-          "body_sha256": "fb66590955e6ef1dd93a87247a2d31e1bdc59b90c16bde9c17c459e16f62ef91",
-          "body_word_count": 2517,
+          "source_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
+          "body_sha256": "9a72eff8abedaac691ecb3e8180ff325b7b9b82718cac38c283d68f22a016385",
+          "body_word_count": 2516,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -59622,7 +59622,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-            "review_candidate_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+            "review_candidate_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -59659,7 +59659,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-            "review_candidate_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+            "review_candidate_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -59696,7 +59696,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-            "review_candidate_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+            "review_candidate_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -59733,7 +59733,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-            "review_candidate_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+            "review_candidate_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -59770,7 +59770,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-            "review_candidate_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+            "review_candidate_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -112656,7 +112656,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
           "mdx_exists": true,
-          "source_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+          "source_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -112677,10 +112677,10 @@
             "frontmatter_draft": null,
             "frontmatter_noindex": null,
             "frontmatter_indexable": null,
-            "body_sha256": "0d7ad07bb30104b271c0a6861a5e6dac000bb05bf85dc37da276c469ceb8753e",
-            "body_bytes": 5243,
-            "body_characters": 5243,
-            "body_word_count": 746,
+            "body_sha256": "cae01d10d889483b74fbf227019a7023d7615f5fc9f310c7e521a86c165f588f",
+            "body_bytes": 5267,
+            "body_characters": 5267,
+            "body_word_count": 755,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -112711,9 +112711,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-          "source_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
-          "body_sha256": "0d7ad07bb30104b271c0a6861a5e6dac000bb05bf85dc37da276c469ceb8753e",
-          "body_word_count": 746,
+          "source_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
+          "body_sha256": "cae01d10d889483b74fbf227019a7023d7615f5fc9f310c7e521a86c165f588f",
+          "body_word_count": 755,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -112788,7 +112788,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-            "review_candidate_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+            "review_candidate_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -112825,7 +112825,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-            "review_candidate_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+            "review_candidate_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -112862,7 +112862,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-            "review_candidate_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+            "review_candidate_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -112899,7 +112899,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-            "review_candidate_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+            "review_candidate_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -112936,7 +112936,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/how-to-compare-mineral-rights-buyers-in-texas.mdx",
-            "review_candidate_sha256": "667ae4aeadc5bfc844b1f7728791d85317149b818ff64fe5372399bca7d721bc",
+            "review_candidate_sha256": "9f7f7d49269f3f4942d583ab40ae9a7d1d4447a08e395d8810694a3a0c61d79f",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -222575,7 +222575,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
           "mdx_exists": true,
-          "source_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+          "source_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -222596,10 +222596,10 @@
             "frontmatter_draft": null,
             "frontmatter_noindex": null,
             "frontmatter_indexable": null,
-            "body_sha256": "f123ecab4d49ac55b6ae44108767a28788f6176a6cd6a95cce3be3b604b85621",
-            "body_bytes": 5227,
-            "body_characters": 5227,
-            "body_word_count": 832,
+            "body_sha256": "3c835729caef3722a038bffe8c9823c2139099dd7f3141836e3b484d9f696713",
+            "body_bytes": 5050,
+            "body_characters": 5050,
+            "body_word_count": 765,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -222630,9 +222630,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-          "source_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
-          "body_sha256": "f123ecab4d49ac55b6ae44108767a28788f6176a6cd6a95cce3be3b604b85621",
-          "body_word_count": 832,
+          "source_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
+          "body_sha256": "3c835729caef3722a038bffe8c9823c2139099dd7f3141836e3b484d9f696713",
+          "body_word_count": 765,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -222707,7 +222707,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-            "review_candidate_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+            "review_candidate_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -222744,7 +222744,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-            "review_candidate_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+            "review_candidate_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -222781,7 +222781,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-            "review_candidate_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+            "review_candidate_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -222818,7 +222818,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-            "review_candidate_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+            "review_candidate_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -222855,7 +222855,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
-            "review_candidate_sha256": "31180b650de3acf71343df787206572911dbefe103c218501234bf56f5478172",
+            "review_candidate_sha256": "b475ccb8cae2163f17d42fc148d59f75c6a393d54b0e530ea2ce5c24e6df49ed",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -257692,7 +257692,7 @@
       "primary_keyword": "Form 50-172 Crane mineral interest",
       "authoritative_current_state": {
         "canonical_inventory_state": "live_public_published_route",
-        "normalized_status": "authorized_release_candidate_pending_gate_and_deployment",
+        "normalized_status": "live_public_published_route_release_10_verified",
         "source_system": "astro_repo",
         "pilot_article_id": null,
         "repo": {
@@ -292391,7 +292391,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
           "mdx_exists": true,
-          "source_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+          "source_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -292412,10 +292412,10 @@
             "frontmatter_draft": null,
             "frontmatter_noindex": null,
             "frontmatter_indexable": null,
-            "body_sha256": "f13f154c28fda40a7b3b9bb2ec8ae4d6b1e033b6047680695829bf28db893c4b",
-            "body_bytes": 5174,
-            "body_characters": 5174,
-            "body_word_count": 795,
+            "body_sha256": "f675c88cf331a7d4de036967e0dd84d86ec038f9815dc1a36f7551816c7257bb",
+            "body_bytes": 5177,
+            "body_characters": 5177,
+            "body_word_count": 793,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -292446,9 +292446,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-          "source_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
-          "body_sha256": "f13f154c28fda40a7b3b9bb2ec8ae4d6b1e033b6047680695829bf28db893c4b",
-          "body_word_count": 795,
+          "source_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
+          "body_sha256": "f675c88cf331a7d4de036967e0dd84d86ec038f9815dc1a36f7551816c7257bb",
+          "body_word_count": 793,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -292523,7 +292523,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-            "review_candidate_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+            "review_candidate_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -292560,7 +292560,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-            "review_candidate_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+            "review_candidate_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -292597,7 +292597,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-            "review_candidate_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+            "review_candidate_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -292634,7 +292634,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-            "review_candidate_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+            "review_candidate_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -292671,7 +292671,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
-            "review_candidate_sha256": "185c6c7f8a328977ab6f179d1c5c8d68f2127d1be477d371f1910efd622e1171",
+            "review_candidate_sha256": "a2d9bb7b66aee3d70318ac67a7df2448e7650d707a150e1979edcaad0ad4a8ae",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -354964,5 +354964,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "ed9f68b05ec4b6ccfb42243d105277c4aad0f3d60be131ceebdaa5d4e0e034ca"
+  "content_fingerprint_sha256": "985511abac7c782ca3451c416f9a348f7600d3ab1c007aa1224d3da6ea679abf"
 }

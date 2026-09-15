@@ -87,6 +87,9 @@
   padding: 0.15em 0.4em;
   border-radius: var(--radius-sm);
   font-size: 0.9em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .prose pre {
@@ -103,6 +106,9 @@
   background: transparent;
   padding: 0;
   color: inherit;
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: inherit;
 }
 
 .prose table {

@@ -746,7 +746,7 @@
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "be33aed991bd59c1ffc761e9c566803820901bd7349683b46fc8b3ecd910b533",
+    "canonical_ledger_sha256": "0579fec201b3189bd1f1625aa2c64c917b576b9212e433fb66978a0c77a1a1e7",
     "canonical_ledger_generated_at": "2026-07-20T14:26:52.205Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -765,7 +765,7 @@
     "fail_closed": true,
     "earned_scale_gates": [],
     "exact_admitted_count": 319,
-    "exact_admitted_slate_sha256": "3074f3dfe1656968dd47748173139753f797690200104179eb65e3807e54cd82"
+    "exact_admitted_slate_sha256": "791e10b0d659cf357c5a437339046b046363656d636693f5148af98c92b4126f"
   },
   "articles": [
     {
@@ -5501,8 +5501,8 @@
       "content_genius_article_uuid": null,
       "archive_evidence_sha256": "6776e0ef918be54592471955ae7a343b36bcd14cdd0537664b6a11de45346cac",
       "repo_path": "src/content/posts/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.mdx",
-      "repo_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
-      "article_sha256": "c23774a06988f2f71a885d41ae2cbc1258a4fa694536a34342d67d119a4335ca",
+      "repo_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
+      "article_sha256": "97ef4f091d59bd118286d61eb3d74f3e7db129331484cda2540ac722df1635e3",
       "hero_path": "/assets/articles/hero/how-to-talk-to-your-family-before-you-decide-to-sell-mineral-rights.webp",
       "hero_sha256": "ab8c4e5b6f804186a009ba7ac802bcba7ed6bbb9627c7580baf5bc2098d29fce",
       "hero_asset_sha256": "ab8c4e5b6f804186a009ba7ac802bcba7ed6bbb9627c7580baf5bc2098d29fce",

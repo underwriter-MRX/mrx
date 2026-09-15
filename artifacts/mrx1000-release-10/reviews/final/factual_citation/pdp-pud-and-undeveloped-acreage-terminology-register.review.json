@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_factual_citation_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-23T09:26:23Z",
+  "reviewed_at": "2026-09-15T07:28:31Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,20 +12,20 @@
   "title": "How to Build a PDP, PUD, and Undeveloped Acreage Terminology Register",
   "canonical_url": "https://mineralrightsxchange.com/blog/pdp-pud-and-undeveloped-acreage-terminology-register/",
   "source_path": "src/content/posts/pdp-pud-and-undeveloped-acreage-terminology-register.mdx",
-  "input_body_sha256": "aa58e028fd589197216100eb52bc77c24335c71cbb6d6f5f6e504bae7d8e63ea",
+  "input_body_sha256": "9a96d320a5b9e1ec68a788b0e2a87b6caf894448065b99d0b460da0183b733d8",
   "input_frontmatter_sha256": "1a38cb2c81a7950c692f8d7408ad805c8b1d470e7faea7cc5a96c6a0747cbd7b",
-  "expected_repo_sha256": "aa58e028fd589197216100eb52bc77c24335c71cbb6d6f5f6e504bae7d8e63ea",
-  "two_image_manifest_sha256": "777740123846573be7cfc4d304e62e462ec2feaf01634e7403553dc3cba32cfb",
+  "expected_repo_sha256": "9a96d320a5b9e1ec68a788b0e2a87b6caf894448065b99d0b460da0183b733d8",
+  "two_image_manifest_sha256": "734d46c4584188205e30aa2a8c1eb95e8a02b2dd9fc0f6ec829ca660abe37a5b",
   "visual_metadata": {
     "hero_alt": "Three blank archival category folders and a source-reference card appear beside the exact article title.",
     "social_alt": "Three blank archival category folders and a source-reference card appear beside the exact article title.",
     "inline_alt": "An overhead three-source terminology register and neutral-question card appear above the exact keyword."
   },
   "reviewer_id": "codex_wave80_factual",
-  "review_run_id": "mrx1000-wave80-factual-20260823T092623Z",
+  "review_run_id": "mrx1000-wave80-factual-20260915T072831Z",
   "capability": "factual_citation",
   "findings": [
-    "Complete current MDX SHA-256 is aa58e028fd589197216100eb52bc77c24335c71cbb6d6f5f6e504bae7d8e63ea; all 5 declared sources passed current HTTPS access review.",
+    "Complete current MDX SHA-256 is 9a96d320a5b9e1ec68a788b0e2a87b6caf894448065b99d0b460da0183b733d8; all 5 declared sources passed current HTTPS access review.",
     "Claims remain bounded to SEC definitions and disclosure context, a named PRMS edition, and RRC production-query reporting limitations. None is converted into a reserve classification, standards-comparability decision, compliance conclusion, property attribution, development forecast, DCF input, offer, or value.",
     "The article supplies no proprietary, universal, market, or owner-specific numerical assumptions; invents no term, standard, preparer, date, scope, classification, property fact, reserve quantity, production result, offer, or development outcome; and makes no owner-specific legal, tax, title, valuation, engineering, accounting, financial, or transaction conclusion."
   ],
@@ -42,7 +42,7 @@
       "label": "GovInfo, 17 CFR 210.4-10 (2025 edition; accessed 2026-08-23)",
       "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title17-vol3/pdf/CFR-2025-title17-vol3-sec210-4-10.pdf",
       "publisher": "www.govinfo.gov",
-      "accessed_at": "2026-08-23T09:26:23Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.govinfo.gov/content/pkg/CFR-2025-title17-vol3/pdf/CFR-2025-title17-vol3-sec210-4-10.pdf",
@@ -55,7 +55,7 @@
       "label": "GovInfo, 17 CFR 229.1208 (2025 edition; accessed 2026-08-23)",
       "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title17-vol3/pdf/CFR-2025-title17-vol3-sec229-1208.pdf",
       "publisher": "www.govinfo.gov",
-      "accessed_at": "2026-08-23T09:26:23Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.govinfo.gov/content/pkg/CFR-2025-title17-vol3/pdf/CFR-2025-title17-vol3-sec229-1208.pdf",
@@ -68,7 +68,7 @@
       "label": "SEC, Oil and Gas Reporting Modernization: Small Entity Compliance Guide (accessed 2026-08-23)",
       "url": "https://www.sec.gov/rules-regulations/oil-gas-reporting-modernization-small-entity-compliance-guide",
       "publisher": "www.sec.gov",
-      "accessed_at": "2026-08-23T09:26:23Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.sec.gov/rules-regulations/oil-gas-reporting-modernization-small-entity-compliance-guide",
@@ -81,11 +81,11 @@
       "label": "Society of Petroleum Engineers, 2018 Petroleum Resources Management System (accessed 2026-08-23)",
       "url": "https://info.specommunications.org/rs/833-LLT-087/images/petroleum_resources_management_system-2018.pdf",
       "publisher": "info.specommunications.org",
-      "accessed_at": "2026-08-23T09:26:23Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://info.specommunications.org/rs/833-LLT-087/images/petroleum_resources_management_system-2018.pdf",
-        "content_type": "application/pdf"
+        "content_type": "application/pdf; charset=utf-8"
       },
       "source_location_or_paraphrase": "The 2018 Petroleum Resources Management System is a named resources-classification system with defined classes, subclasses, categories, status definitions, and terminology.",
       "claim_scope": "The article uses PRMS only as evidence that the named standard and edition must be preserved; it does not assume a document follows PRMS or translate, compare, validate, or assign a classification."
@@ -94,7 +94,7 @@
       "label": "Railroad Commission of Texas, Production Data Query FAQs (accessed 2026-08-23)",
       "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
       "publisher": "www.rrc.texas.gov",
-      "accessed_at": "2026-08-23T09:26:23Z",
+      "accessed_at": "2026-09-15T07:28:31Z",
       "http_access_result": {
         "status": 200,
         "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",

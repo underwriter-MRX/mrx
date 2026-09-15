@@ -29,7 +29,7 @@ describe('article author and guide identity', () => {
     );
 
     expect(publicRoute).toMatch(
-      /getGuide\(authorSlug\)[\s\S]+getGuide\(post\.data\.content_guide \?\? ''\)[\s\S]+getGuide\(post\.data\.featured_guide \?\? ''\)[\s\S]+getGuide\('tommy'\)/,
+      /getGuide\(legacyAuthorSlug\)[\s\S]+getGuide\(post\.data\.content_guide \?\? ''\)[\s\S]+getGuide\(post\.data\.featured_guide \?\? ''\)[\s\S]+getGuide\('travis'\)/,
     );
     expect(stagedRoute).toContain(
       "getGuide(post.data.content_guide ?? '') ?? getGuide(post.data.featured_guide ?? '')",

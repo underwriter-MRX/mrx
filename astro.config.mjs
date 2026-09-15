@@ -165,6 +165,8 @@ export default defineConfig({
           !pathname.startsWith('/owner-intake') &&
           !pathname.startsWith('/staff') &&
           !pathname.startsWith('/staged/') &&
+          (!pathname.startsWith('/authors/') ||
+            pathname.startsWith('/authors/mrx-editorial-team/')) &&
           !pathname.includes('/thank-you') &&
           pathname !== '/404/' &&
           pathname !== '/500/'

@@ -2,7 +2,7 @@
   "artifact_type": "mrx1000_two_image_compliance_review",
   "schema_version": "2.0.0",
   "disposition": "PASS",
-  "reviewed_at": "2026-08-23T05:43:53Z",
+  "reviewed_at": "2026-09-15T07:28:29Z",
   "decision_authority": {
     "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
     "policy": "MRX continuous quality-gated publication and two-image article creative directive"
@@ -12,22 +12,22 @@
   "title": "How to Locate an Unanswered Question in a Mineral Rights Worksheet",
   "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-worksheet-question-locator/",
   "source_path": "src/content/posts/mineral-rights-worksheet-question-locator.mdx",
-  "input_body_sha256": "174e87b1ab2848d86be83832ebb6f42ebaea3881bba2b1fd485efb903230cf4f",
+  "input_body_sha256": "dc3c0bc578e5a9eef946cd07120add1cc50c159b0bd97ea3a2c6029d1ca227ba",
   "input_frontmatter_sha256": "ae831c893be6350668a5b881e065e3505afc31eda226c3d518078b7153ee98e4",
-  "expected_repo_sha256": "174e87b1ab2848d86be83832ebb6f42ebaea3881bba2b1fd485efb903230cf4f",
-  "two_image_manifest_sha256": "4acf05af151194c01355de90dc950ab6ec37dd3465ed3039fb07bb24a186d13e",
+  "expected_repo_sha256": "dc3c0bc578e5a9eef946cd07120add1cc50c159b0bd97ea3a2c6029d1ca227ba",
+  "two_image_manifest_sha256": "bc182e9ab0284f1c2112a8d1e6c649361f273ea20da2feec2f0c601df50ac691",
   "visual_metadata": {
     "hero_alt": "A blank worksheet, callout bracket, and question card appear beside the exact article title.",
     "social_alt": "A blank worksheet, callout bracket, and question card appear beside the exact article title.",
     "inline_alt": "A top-down locator board outlines one blank worksheet cell beside a source tag and question-routing card."
   },
   "reviewer_id": "codex_wave77_compliance",
-  "review_run_id": "mrx1000-wave77-compliance-20260823T054353Z",
+  "review_run_id": "mrx1000-wave77-compliance-20260915T072829Z",
   "capability": "compliance",
   "expected_hero_sha256": "d830e39261c419ed2f40daec98a4ac05c5076c29a786ba9aed76a1c8b90df989",
   "expected_inline_sha256": "1bc9091084c13bed12db357ee2627fa41fce333ccf991f875aa3d88b8ad2bcc6",
   "findings": [
-    "Complete current MDX SHA-256 is 174e87b1ab2848d86be83832ebb6f42ebaea3881bba2b1fd485efb903230cf4f; hero/share and inline image hashes are separately locked.",
+    "Complete current MDX SHA-256 is dc3c0bc578e5a9eef946cd07120add1cc50c159b0bd97ea3a2c6029d1ca227ba; hero/share and inline image hashes are separately locked.",
     "The article leaves the existing worksheet unchanged, records one neutral unanswered question per locator row, avoids discrepancy or correction claims, discloses possible MRX buyer interest, and preserves owner agency and qualified-review boundaries.",
     "Image text is limited to the exact article title and approved keyword and adds no owner name, property fact, source result, model output, numerical assumption, seal, recommendation, appraisal claim, forecast, guarantee, or transaction outcome."
   ],

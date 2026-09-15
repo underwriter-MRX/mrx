@@ -12,16 +12,16 @@ Owner decision **D-2026-0804-16** is checksum-verified at `edc1d4602149558ff6d2b
 | ------------------------------------------------------------------- | ----: |
 | Canonical rows                                                      |  1000 |
 | Deterministic 25-row batches                                        |    40 |
-| Workspace MDX present                                               |   286 |
-| Workspace public-route configurations (not a production-live claim) |   238 |
-| Checksummed review candidates with readiness evidence               |   262 |
-| Rows without a validated review candidate                           |   738 |
+| Workspace MDX present                                               |   375 |
+| Workspace public-route configurations (not a production-live claim) |   327 |
+| Checksummed review candidates with readiness evidence               |   351 |
+| Rows without a validated review candidate                           |   649 |
 | Pilot QA shells (never review candidates)                           |    25 |
 | Pilot workspace shells marked as review candidates                  |     0 |
 | Pilot rows with a separately validated review candidate             |     1 |
 | Held incumbent drafts                                               |    23 |
 | Noindex pilot drafts                                                |    25 |
-| Planning-only rows                                                  |   714 |
+| Planning-only rows                                                  |   625 |
 | Rows with any normalized exact-title vendor candidate               |   147 |
 | Unambiguous exact-title candidate rows                              |   141 |
 | Ambiguous exact-title candidate rows                                |     6 |
@@ -45,7 +45,7 @@ Owner decision **D-2026-0804-16** is checksum-verified at `edc1d4602149558ff6d2b
 ## Review-candidate safety boundary
 
 - Workspace MDX existence is inventory evidence, not review-candidate proof.
-- The immutable canonical ledger is preserved, while the current workspace publication view projects only byte-proven exact-admission transitions. It therefore records **23** held incumbents and **238** public workspace articles. Checksummed review-candidate status still requires canonical identity, substantive body, review metadata, source path/SHA, publication state, and readiness-row identity to agree.
+- The immutable canonical ledger is preserved, while the current workspace publication view projects only byte-proven exact-admission transitions. It therefore records **23** held incumbents and **327** public workspace articles. Checksummed review-candidate status still requires canonical identity, substantive body, review metadata, source path/SHA, publication state, and readiness-row identity to agree.
 - All 25 pilot workspace MDX files are explicit QA shells without final article copy. Their workspace paths are never review candidates and every shell has `workspace_mdx_is_review_candidate=false`.
 - A pilot row may become reviewable only through a distinct candidate whose exact path, file SHA, body SHA, identity, containment state, and readiness evidence validate together.
 - Row 2 distinct-candidate state: `ROW2_REMEDIATED_NOINDEX_CANDIDATE_VALIDATED_FOR_ORDERED_LLM_REVIEW`. Checksummed review candidate present: `true`. Rejection reasons: none.
@@ -83,8 +83,8 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 
 | Input                                                                                                                             | SHA-256                                                            |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `config/mrx-1000-canonical-content-ledger.json`                                                                                   | `8b3605cf9abdc22a1186024ca5ac34e545c73881678578a8a3aea4179f990adf` |
-| `reports/mrx-1000-readiness-matrix.json`                                                                                          | `28284b4aa2b438776a0351855cd84123560f9c350e52438c8d6c4b88cae0cda5` |
+| `config/mrx-1000-canonical-content-ledger.json`                                                                                   | `0579fec201b3189bd1f1625aa2c64c917b576b9212e433fb66978a0c77a1a1e7` |
+| `reports/mrx-1000-readiness-matrix.json`                                                                                          | `2e00cd8384a174a53f390828da35bbef60f4401f4cc36218f2374ce9de37aef7` |
 | `reports/searchatlas-cg-reconciliation-t_0c427a87/content-genius-export-raw-by-status.json`                                       | `a357f3a95fff35d484a6050769c1b77e85ba86de4223e0770269d2cca168563b` |
 | `../program-plans/mrx-1000-ceo-decision-no-spend-capacity.md`                                                                     | `46a9d02548e97a794d1cdaa919682bb159bcfbeabb5b9d8e559431c6ca34091d` |
 | `docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md`                                                    | `edc1d4602149558ff6d2b960416839b8caf97593f5fd8fe6ea91b56617d1425f` |
@@ -101,4 +101,4 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 | `docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md`                              | `03437048d097cd95356d99c40653fe6967f8ad9f6c37e84a777404c737b2cdca` |
 | `docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md`                                 | `e4de274bccc48d4e614258fd09792c820cea3531366612187cedc4172eda6964` |
 
-Manifest content fingerprint: `aa6d31c2f3932132c6a82b31e3cf980fff8be42551200c51d32a6c2adfad6a9a`.
+Manifest content fingerprint: `985511abac7c782ca3451c416f9a348f7600d3ab1c007aa1224d3da6ea679abf`.
