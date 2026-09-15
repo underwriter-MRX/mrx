@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "observed_at_utc": "2026-09-15T06:25:03.000Z",
+  "observed_at_utc": "2026-09-15T06:29:25.000Z",
   "source": {
     "audit": "Fresh authenticated Search Atlas audit 138239 read after the generated recommendation cleanup and Worker safeguard",
     "dashboard": "Fresh authenticated OTTO project-issues read: 17 total / 16 approved / 1 pending",
@@ -12,21 +12,26 @@
     "audit_id": 138239
   },
   "audit": {
-    "status": "processing",
-    "crawl_state": "crawling",
-    "postprocessing_status": "",
-    "is_terminal": false,
-    "started_at_utc": "2026-09-15T04:36:20.296365Z",
-    "reported_completed_at_utc": "2026-09-15T05:14:11.020679Z",
-    "score": 964,
+    "status": "completed",
+    "crawl_state": "completed",
+    "postprocessing_status": "completed",
+    "is_terminal": true,
+    "started_at_utc": "2026-09-15T05:46:15.410203Z",
+    "reported_completed_at_utc": "2026-09-15T06:26:16.820004Z",
+    "score": 966,
     "total_pages": 373,
-    "total_raw_observations": 1867,
+    "total_raw_observations": 1871,
     "page_types": {
       "successful_2xx": 349,
       "redirect_3xx": 24,
       "missing_4xx": 0,
       "blocked_403_429": 0,
       "server_error_5xx": 0
+    },
+    "indexability": {
+      "indexable": 348,
+      "not_indexable": 25,
+      "not_standard": 0
     }
   },
   "dashboard": {
@@ -49,11 +54,20 @@
       "page_url": null
     }
   ],
+  "reviewed_nongenerated_opportunities": {
+    "page_title": 5,
+    "meta_description": 30,
+    "recommendations_generated": 0,
+    "deployed": 0,
+    "disposition": "retain reviewed source values; current live values are unique, page-aware, within 30-56 title characters and 133-158 description characters, and no OTTO replacement text exists"
+  },
   "production_containment": {
     "cloudflare_worker_active_version": "5dd4d805",
     "cloudflare_worker_rollback_version": "8ce062e0",
     "focused_schema_gate_passed_at_utc": "2026-09-15T06:12:00.305Z",
     "apex_source_parity": "348/348 identical; 0 errors; 0 differences",
-    "native_source_parity": "348/348 identical; 0 errors; 0 differences"
+    "native_source_parity": "348/348 identical; 0 errors; 0 differences",
+    "final_full_parity_verified_at_utc": "2026-09-15T06:33:35.165Z",
+    "final_full_parity_sha256": "adbcadd36f37eea6b446fbaaf13c6d4e2ea97a56bdf4fd43e66e30d9cffbb7c8"
   }
 }
