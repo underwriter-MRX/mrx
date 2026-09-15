@@ -1,0 +1,47 @@
+{
+  "hostname": "mineralrightsxchange.com",
+  "uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+  "site_audit_id": 138239,
+  "status": "engaged",
+  "pixel_status": "Not Installed",
+  "pixel_installed": false,
+  "seo_score": 85,
+  "found_issues": 1806,
+  "deployed_fixes": 1805,
+  "total_pages": 351,
+  "crawl_frequency": "Daily",
+  "crawl_speed": 20,
+  "crawl_in_progress": false,
+  "gsc_connected": true,
+  "gsc_property_linked": true,
+  "gsc_property_url": "sc-domain:mineralrightsxchange.com",
+  "gsc_country_code": "",
+  "gbp_connected": false,
+  "cloudflare_worker_installed": true,
+  "cloudflare_worker_status": "completed",
+  "autopilot_active": false,
+  "knowledge_graph_progress": 35.16484,
+  "time_saved": "19 days, 3 hours, 30 minutes",
+  "pillar_scores": [
+    {
+      "pillar": "Technical",
+      "score": 96,
+      "label": "Good"
+    },
+    {
+      "pillar": "Content",
+      "score": 13,
+      "label": "Critical"
+    },
+    {
+      "pillar": "Authority",
+      "score": 4,
+      "label": "Critical"
+    },
+    {
+      "pillar": "UX Signals",
+      "score": 44,
+      "label": "Poor"
+    }
+  ]
+}

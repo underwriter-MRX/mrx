@@ -1,0 +1,284 @@
+{
+  "result": {
+    "hostname": "mineralrightsxchange.com",
+    "seo_score": 85,
+    "panels": [
+      {
+        "group": "content_strategy",
+        "label": "Content Strategy",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "dkn",
+            "Domain Knowledge Network",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "topical_maps_and_supplemental_content",
+            "Topical Maps and Supplemental Content",
+            16,
+            16,
+            0,
+            "complete"
+          ],
+          [
+            "ai_landing_page_builder",
+            "AI Landing Page Builder",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 16,
+        "approved": 16,
+        "pending": 0
+      },
+      {
+        "group": "onpage_optimizations",
+        "label": "Onpage Optimizations",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "page_title",
+            "Title Tags",
+            225,
+            225,
+            0,
+            "complete"
+          ],
+          [
+            "meta_description",
+            "Meta Descriptions",
+            288,
+            288,
+            0,
+            "complete"
+          ],
+          [
+            "headings_length",
+            "Headings Length",
+            242,
+            242,
+            0,
+            "complete"
+          ],
+          [
+            "missing_headings",
+            "Heading Optimizations",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "images",
+            "Image Alt Texts",
+            19,
+            19,
+            0,
+            "complete"
+          ],
+          [
+            "meta_keywords",
+            "Meta Keywords",
+            223,
+            223,
+            0,
+            "complete"
+          ],
+          [
+            "schema_markup",
+            "Schema Markup",
+            7,
+            6,
+            1,
+            "86%"
+          ],
+          [
+            "missing_keywords",
+            "Missing Keywords",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "semantic_analysis",
+            "Semantic Analysis and Knowledge Graph Optimization",
+            337,
+            337,
+            0,
+            "complete"
+          ],
+          [
+            "knowledge_based_trust",
+            "Knowledge Based Trust and Factual Enhancement",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 1341,
+        "approved": 1340,
+        "pending": 1
+      },
+      {
+        "group": "link_building",
+        "label": "Link Optimization",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "internal_links",
+            "Internal Linking Opportunities",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "wildfire",
+            "WILDFIRE",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "canonical_link",
+            "Canonical Link",
+            1,
+            1,
+            0,
+            "complete"
+          ],
+          [
+            "links",
+            "Issues with Links",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 1,
+        "approved": 1,
+        "pending": 0
+      },
+      {
+        "group": "indexing",
+        "label": "Indexing",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "gsc_instant_indexing",
+            "GSC Instant Indexing",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "dynamic_indexing",
+            "Dynamic Indexing",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 0,
+        "approved": 0,
+        "pending": 0
+      },
+      {
+        "group": "miscellaneous",
+        "label": "Miscellaneous",
+        "columns": [
+          "key",
+          "label",
+          "total",
+          "approved",
+          "pending",
+          "status"
+        ],
+        "rows": [
+          [
+            "og_meta",
+            "Open Graph",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "twitter_meta",
+            "Twitter Card",
+            448,
+            448,
+            0,
+            "complete"
+          ],
+          [
+            "html_lang_missing",
+            "Missing Lang Attribute",
+            0,
+            0,
+            0,
+            "no_issues"
+          ],
+          [
+            "custom_content",
+            "Custom HTML Content",
+            0,
+            0,
+            0,
+            "no_issues"
+          ]
+        ],
+        "total": 448,
+        "approved": 448,
+        "pending": 0
+      }
+    ],
+    "rendered_total": 1806,
+    "rendered_approved": 1805,
+    "rendered_pending": 1,
+    "project_total_all_categories": 1806,
+    "project_id": 99913,
+    "project_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "notice": null
+  }
+}

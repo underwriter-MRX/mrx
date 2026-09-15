@@ -1,0 +1,63 @@
+{
+  "audit_id": 138239,
+  "domain": "mineralrightsxchange.com",
+  "status": "completed",
+  "postprocessing_status": "completed",
+  "crawl_state": "completed",
+  "is_terminal": true,
+  "should_repoll": false,
+  "audit_started_at": "2026-09-15T03:50:42.652248Z",
+  "audit_completed_at": "2026-09-15T03:58:23.294854Z",
+  "score": 965,
+  "total_pages": 373,
+  "total_issues": 1922,
+  "detected_cms": "static-html",
+  "otto_uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+  "issues_by_type": {
+    "images_missing_alt": 373,
+    "meta_keywords": 373,
+    "h2_under_20_over_70": 288,
+    "h1_under_20_over_70": 127,
+    "og_title_over_60": 122,
+    "twitter_title_over_55": 122,
+    "schema_type": 98,
+    "image_more_than_100_kb": 74,
+    "not_enough_internal_links": 58,
+    "js_more_than_300_kb": 54,
+    "non_unique_content": 45,
+    "non_unique_title": 39,
+    "non_unique_h1": 37,
+    "non_unique_meta_desc": 37,
+    "status_code_not_200": 24
+  },
+  "issue_descriptions": {
+    "images_missing_alt": "Image alt tags help search engines understand the contents of images and can improve their ability to rank in Image search results.",
+    "meta_keywords": "Page can implement <meta> keywords tag. This is optional.",
+    "h2_under_20_over_70": "H2 headers should be between 20 and 70 characters.",
+    "h1_under_20_over_70": "H1 headers should be between 20 and 70 characters.",
+    "og_title_over_60": "Open Graph Title shouldn't exceed 60 characters.",
+    "twitter_title_over_55": "Twitter Cards Title shouldn't be more than 60 characters.",
+    "schema_type": "Your page is missing recommended schema markup types that could help search engines better understand your content. Common schema types include Article, Product, Organization, LocalBusiness, or WebPage depending on your content type.",
+    "image_more_than_100_kb": "Avoid using large images, which increase page load time and hurt performance. Images should be smaller than 100 KB.",
+    "not_enough_internal_links": "Page should include more internal links. Internal Links help search engines discover content on your website and improve search rankings of linked-to pages.",
+    "js_more_than_300_kb": "Avoid using large javascript files, which slow down page load time and hurt performance. Files should be smaller than 300 KB.",
+    "non_unique_content": "Page's content should be unique and dissimilar to the content on other pages of your website.",
+    "non_unique_title": "Page's title should not be similar to other Page titles on your website.",
+    "non_unique_h1": "Page's H1 heading should be unique and dissimilar to the H1 headings on other pages of your website.",
+    "non_unique_meta_desc": "Page's meta description should be unique and dissimilar to the meta description on other pages of your website.",
+    "status_code_not_200": "Page's response should be a \"200\" status code."
+  },
+  "indexability": {
+    "Indexable": 348,
+    "Not Indexable": 25,
+    "Not Standard": 0
+  },
+  "page_types": {
+    "Success (2xx)": 349,
+    "Redirect (3xx)": 24,
+    "Missing (4xx)": 0,
+    "Forbidden/Blocked (403, 429)": 0,
+    "Server Error (5xx)": 0
+  },
+  "issues_capped": true
+}
