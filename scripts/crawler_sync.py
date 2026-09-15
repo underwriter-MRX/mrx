@@ -195,6 +195,25 @@ def content_hash(body):
         approved_jsd = '016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36'
         return b'' if hashlib.sha256(normalized).hexdigest() == approved_jsd else fragment
     body = re.sub(rb'<script>\(function\(\)\{function c\(\).*?</script>', security_transport, body)
+    # OTTO's Cloudflare Worker injects a fixed runtime client plus an eight-byte
+    # per-request identifier. The runtime is transport, not authored page
+    # content. Ignore it only when the request id is the sole normalized field
+    # and the remaining client is the independently pinned production version.
+    def searchatlas_transport(match):
+        fragment = match.group()
+        normalized = re.sub(rb"REQ_ID: '[a-f0-9]{8}'", b"REQ_ID: 'REQUEST'", fragment)
+        approved_otto = '801ae29b635c9a26b2ceac00a751acd2ff3b3def61fe5072f276cb96c0f80caa'
+        return b'' if hashlib.sha256(normalized).hexdigest() == approved_otto else fragment
+    body = re.sub(
+        rb"<script>\(function\(\)\{\s+'use strict';\s+const OTTO_CONFIG = \{.*?</script>\n?",
+        searchatlas_transport,
+        body,
+        flags=re.S,
+    )
+    body = body.replace(
+        b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=true;">',
+        b'',
+    )
     return hashlib.sha256(body).hexdigest()
 
 
@@ -361,9 +380,27 @@ def _sync(apply, directory, max_pages=40):
 
 def crawler_status():
     data, robots = discovery()
+    _, robots_body = get(SITE + '/robots.txt', ['text/plain'])
+    robots_text = robots_body.decode('utf-8')
+    groups = {}
+    current_agents = []
+    for raw_line in robots_text.splitlines():
+        line = raw_line.split('#', 1)[0].strip()
+        if not line or ':' not in line:
+            continue
+        field, value = (part.strip() for part in line.split(':', 1))
+        if field.lower() == 'user-agent':
+            current_agents = [value.lower()]
+            groups.setdefault(value.lower(), [])
+        elif field.lower() in ('allow', 'disallow'):
+            for agent in current_agents:
+                groups.setdefault(agent, []).append((field.lower(), value))
+    def private_account_allowed(bot):
+        rules = groups.get(bot.lower(), groups.get('*', []))
+        return not any(kind == 'disallow' and path.rstrip('/') == '/account' for kind, path in rules)
     return {'public_page_count': len(data['pages']), 'content_revision': data['content_revision'],
             'robots_policy': {bot: {'home_allowed': robots.can_fetch(bot, SITE + '/'),
-                                  'private_account_allowed': robots.can_fetch(bot, SITE + '/account/')} for bot in BOTS},
+                                  'private_account_allowed': private_account_allowed(bot)} for bot in BOTS},
             'last_notification_run': last_report(), 'real_bot_identity_verified': False,
             'note': 'robots policy is advisory; this check does not prove actual crawler visits or access through WAF rules.'}
 

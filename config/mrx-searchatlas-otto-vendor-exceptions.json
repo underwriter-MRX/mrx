@@ -27,11 +27,45 @@
       ]
     }
   ],
+  "category_exceptions": [
+    {
+      "provider": "Search Atlas",
+      "type": "dynamic_indexing",
+      "status": "SUGGESTED",
+      "is_deployed": false,
+      "reason": "No Impressions",
+      "provider_record_ids_exposed": false,
+      "classification": "reviewed_undeployed_source_conflict",
+      "disposition": "Reject deployment. Dynamic Indexing would add provider-managed hidden homepage-footer links, conflicting with MRX source-first navigation, visible-link, and production-parity controls.",
+      "urls": [
+        "https://mineralrightsxchange.com/contact/",
+        "https://mineralrightsxchange.com/privacy-policy/",
+        "https://mineralrightsxchange.com/about/",
+        "https://mineralrightsxchange.com/book/",
+        "https://mineralrightsxchange.com/methodology/",
+        "https://mineralrightsxchange.com/terms/",
+        "https://mineralrightsxchange.com/editorial-policy/",
+        "https://mineralrightsxchange.com/authors/mrx-editorial-team/",
+        "https://mineralrightsxchange.com/free-guide/",
+        "https://mineralrightsxchange.com/blog/how-are-mineral-rights-valued/",
+        "https://mineralrightsxchange.com/team/clay/",
+        "https://mineralrightsxchange.com/team/elena/",
+        "https://mineralrightsxchange.com/team/owen/",
+        "https://mineralrightsxchange.com/authors/marisol/",
+        "https://mineralrightsxchange.com/blog/how-to-compare-mineral-rights-buyers-in-texas/"
+      ],
+      "evidence": [
+        "reports/mrx1000-319-otto-ai-atom-brain-reconciliation-20260915.md#dynamic-indexing-disposition"
+      ]
+    }
+  ],
   "invalidation_conditions": [
     "project id, project UUID, or audit id differs",
     "record id, type, status, sitewide flag, validity, page assignment, or deployment state differs",
-    "the dashboard pending count differs from the supplied pending-record inventory",
-    "any pending record is not an exact configured vendor exception",
+    "dashboard total, approved, and pending arithmetic differs",
+    "the generated-recommendation preview differs from the exact record and category inventory",
+    "any pending record or category URL is not an exact configured vendor exception",
+    "a reviewed Dynamic Indexing exception becomes deployed or changes status or reason",
     "production does not expose exactly one authoritative native Organization node",
     "a Search Atlas or OTTO runtime schema injector is present on a verified production target"
   ]

@@ -114,6 +114,12 @@ class SyncTests(unittest.TestCase):
         self.assertIn('Article', result['technical_evidence']['schema_types'])
         self.assertIsNone(result['citation_rate'])
 
+    def test_status_reports_private_account_as_blocked(self):
+        status = c.crawler_status()
+        self.assertTrue(status['robots_policy']['Googlebot']['home_allowed'])
+        self.assertFalse(status['robots_policy']['Googlebot']['private_account_allowed'])
+        self.assertFalse(status['robots_policy']['OAI-SearchBot']['private_account_allowed'])
+
     def test_manifest_sitemap_parity(self):
         self.data['pages'].append({'url': c.SITE + '/not-in-sitemap/', 'sha256': 'a' * 64})
         with self.assertRaises(ValueError):
@@ -173,3 +179,29 @@ class ContentHashTests(unittest.TestCase):
         altered = fragment.replace(b'a3b4ac28eb144dd7', b'0123456789abcdef')
         self.assertEqual(c.content_hash(b'abc' + altered), c.content_hash(b'abc'))
         self.assertNotEqual(c.content_hash(b'abc' + fragment.replace(b'iframe', b'unknown')), c.content_hash(b'abc'))
+
+    def test_searchatlas_transport_requires_exact_normalized_runtime(self):
+        approved = '801ae29b635c9a26b2ceac00a751acd2ff3b3def61fe5072f276cb96c0f80caa'
+        template = (b"<script>(function(){\n    'use strict';\n\n    const OTTO_CONFIG = {\n"
+                    b"      REQ_ID: 'REQUEST'\n    };\n  })();</script>")
+        real_sha256 = hashlib.sha256
+        with patch.object(c.hashlib, 'sha256', wraps=hashlib.sha256) as digest:
+            def pinned(value=b''):
+                if value == template:
+                    class ApprovedDigest:
+                        def hexdigest(self):
+                            return approved
+                    return ApprovedDigest()
+                return real_sha256(value)
+            digest.side_effect = pinned
+            runtime = template.replace(b"REQ_ID: 'REQUEST'", b"REQ_ID: 'deadbeef'")
+            self.assertEqual(c.content_hash(b'abc' + runtime), c.content_hash(b'abc'))
+            changed = runtime.replace(b"OTTO_CONFIG", b"OTTO_CHANGED")
+            self.assertNotEqual(c.content_hash(b'abc' + changed), c.content_hash(b'abc'))
+
+    def test_only_exact_searchatlas_status_meta_is_ignored(self):
+        marker = (b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; '
+                  b'type=cloudflare; enabled=true;">')
+        self.assertEqual(c.content_hash(b'abc' + marker), c.content_hash(b'abc'))
+        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=false')),
+                            c.content_hash(b'abc'))
