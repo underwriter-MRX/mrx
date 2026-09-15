@@ -108,6 +108,15 @@ type AccountProfile = {
   residence_geography_status?: string | null;
 };
 
+export async function requestProfileSave(
+  fetcher: typeof fetch,
+  init: RequestInit,
+): Promise<{ response: Response; result: Record<string, unknown> | null }> {
+  const response = await fetcher('/api/account/profile', init);
+  const result = (await response.json().catch(() => null)) as Record<string, unknown> | null;
+  return { response, result };
+}
+
 type OwnerUnderwritingChecklist = {
   readinessStatus: 'collecting' | 'ready';
   summary: {
@@ -635,48 +644,65 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
     event.preventDefault();
     if (!hasOwnerAccess) return;
     setSavingProfile(true);
+    setStatus('');
     const form = new FormData(event.currentTarget);
-    const response = await fetch('/api/account/profile', {
-      method: 'POST',
-      headers: ownerHeaders(true),
-      body: JSON.stringify({
-        firstName: String(form.get('firstName') || ''),
-        lastName: String(form.get('lastName') || ''),
-        phone: String(form.get('phone') || '') || null,
-        residenceLocation: String(form.get('residenceLocation') || '') || null,
-      }),
-    });
-    const result = await response.json();
-    setSavingProfile(false);
-    if (!response.ok) {
-      setStatus(
-        result.error === 'invalid_phone'
-          ? 'Please include a valid phone number with area code.'
-          : 'Your profile could not be updated.',
-      );
-      return;
-    }
-    const residence = result.geography;
-    setAccountProfile((current) => ({
-      ...current,
-      first_name: String(form.get('firstName') || ''),
-      last_name: String(form.get('lastName') || ''),
+    const profile = {
+      firstName: String(form.get('firstName') || ''),
+      lastName: String(form.get('lastName') || ''),
       phone: String(form.get('phone') || '') || null,
-      residence_city: residence?.city ?? current.residence_city,
-      residence_state: residence?.state ?? current.residence_state,
-      residence_state_code: residence?.stateCode ?? current.residence_state_code,
-      residence_county: residence
-        ? residence.status === 'resolved'
-          ? residence.county
-          : null
-        : current.residence_county,
-      residence_geography_status: residence?.status ?? current.residence_geography_status,
-    }));
-    setStatus(
-      residence?.status === 'ambiguous'
-        ? `Your profile is saved. ${residence.city} crosses ${residence.counties.map((county: { name: string }) => county.name).join(', ')} counties, so add a street address or ZIP when you are comfortable.`
-        : 'Your MRX profile is saved for the next time you return.',
-    );
+      residenceLocation: String(form.get('residenceLocation') || '') || null,
+    };
+    try {
+      const { response, result } = await requestProfileSave(fetch, {
+        method: 'POST',
+        headers: ownerHeaders(true),
+        body: JSON.stringify(profile),
+      });
+      if (!result || !response.ok) {
+        setStatus(
+          result?.error === 'invalid_phone'
+            ? 'Please include a valid phone number with area code.'
+            : 'Your profile could not be updated. Your entered values are still here. Please try again.',
+        );
+        return;
+      }
+      const residence = result.geography as
+        | {
+            city?: string;
+            state?: string;
+            stateCode?: string;
+            county?: string;
+            status?: string;
+            counties?: Array<{ name: string }>;
+          }
+        | undefined;
+      setAccountProfile((current) => ({
+        ...current,
+        first_name: profile.firstName,
+        last_name: profile.lastName,
+        phone: profile.phone,
+        residence_city: residence?.city ?? current.residence_city,
+        residence_state: residence?.state ?? current.residence_state,
+        residence_state_code: residence?.stateCode ?? current.residence_state_code,
+        residence_county: residence
+          ? residence.status === 'resolved'
+            ? residence.county
+            : null
+          : current.residence_county,
+        residence_geography_status: residence?.status ?? current.residence_geography_status,
+      }));
+      setStatus(
+        residence?.status === 'ambiguous'
+          ? `Your profile is saved. ${residence.city} crosses ${(residence.counties ?? []).map((county) => county.name).join(', ')} counties, so add a street address or ZIP when you are comfortable.`
+          : 'Your MRX profile is saved for the next time you return.',
+      );
+    } catch {
+      setStatus(
+        'Your profile could not be updated just now. Your entered values are still here. Please try again.',
+      );
+    } finally {
+      setSavingProfile(false);
+    }
   }
 
   async function persistMineralInterest(data: FormData) {
@@ -1304,7 +1330,6 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
             <span className="account-device-badge">Protected on this device</span>
           )}
         </header>
-        {status && <p className="account-status">{status}</p>}
         <section className="account-profile">
           <div className="account-section-head">
             <div>
@@ -1320,7 +1345,23 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
                 : 'Current device access · email verification pending'}
             </span>
           </div>
-          <form className="account-profile-form" onSubmit={saveProfile}>
+          {status && (
+            <p
+              id="account-profile-status"
+              className="account-status"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {status}
+            </p>
+          )}
+          <form
+            className="account-profile-form"
+            onSubmit={saveProfile}
+            aria-busy={savingProfile}
+            aria-describedby="account-profile-status"
+          >
             <label>
               First name
               <input
