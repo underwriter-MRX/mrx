@@ -46,15 +46,30 @@ def request(url, payload=None):
             raise ValueError('Submission endpoint is fixed to IndexNow.')
         data = json.dumps(payload).encode()
         headers['Content-Type'] = 'application/json; charset=utf-8'
-    try:
-        response = build_opener(NoRedirect()).open(Request(url, data=data, headers=headers), timeout=20)
-    except HTTPError as error:
-        response = error
-    with response:
-        body = response.read(MAX_BODY + 1)
-        if len(body) > MAX_BODY:
-            raise ValueError('Response exceeds the discovery size limit.')
-        return response.status, dict(response.headers.items()), body
+    for attempt in range(6):
+        try:
+            response = build_opener(NoRedirect()).open(Request(url, data=data, headers=headers), timeout=20)
+        except HTTPError as error:
+            response = error
+        with response:
+            body = response.read(MAX_BODY + 1)
+            if len(body) > MAX_BODY:
+                raise ValueError('Response exceeds the discovery size limit.')
+            response_headers = dict(response.headers.items())
+            status = response.status
+        # Cloudflare can throttle a bounded verification burst. Retry only
+        # idempotent reads; IndexNow submissions keep their receipt semantics
+        # and are never replayed here. Each wait is bounded and a persistent
+        # throttle still fails closed through get().
+        if payload is None and status in (429, 503) and attempt < 5:
+            retry_after = next(
+                (value for key, value in response_headers.items() if key.lower() == 'retry-after'),
+                '',
+            )
+            delay = int(retry_after) if retry_after.isdigit() else min(30, 2 ** (attempt + 1))
+            time.sleep(max(1, min(delay, 30)))
+            continue
+        return status, response_headers, body
 
 
 def get(url, media):
@@ -324,7 +339,10 @@ def _sync(apply, directory, max_pages=40):
         if ownership.decode('utf-8').strip() != data['indexnow']['key']:
             raise ValueError('IndexNow ownership file is not deployed correctly.')
         valid = []
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        # Serial verification stays comfortably below the production edge's
+        # observed request-rate threshold. The workflow remains bounded by
+        # max_pages and its job timeout.
+        with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
             futures = {pool.submit(verify_page, entry, robots): entry for entry in candidates}
             for future in concurrent.futures.as_completed(futures):
                 entry = futures[future]
