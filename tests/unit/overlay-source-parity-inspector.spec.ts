@@ -42,4 +42,13 @@ describe('MRX public overlay/source inventory safety contract', () => {
       script.indexOf('if (attempt === 3) throw error'),
     );
   });
+
+  it('supports bounded request throttling for production rate limits', () => {
+    expect(script).toContain('MRX_OVERLAY_PARITY_CONCURRENCY');
+    expect(script).toContain('MRX_OVERLAY_PARITY_DELAY_MS');
+    expect(script).toContain('concurrency < 1 || concurrency > 10');
+    expect(script).toContain('delayMs < 0 || delayMs > 5000');
+    expect(script).toContain('Array.from({ length: concurrency }');
+    expect(script).toContain('setTimeout(resolve, delayMs)');
+  });
 });

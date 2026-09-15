@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "observed_at_utc": "2026-09-15T01:31:00.000Z",
+  "observed_at_utc": "2026-09-15T06:20:00.000Z",
   "source": {
-    "audit": "Search Atlas audit 138239 completed and post-processed at 2026-09-14T23:48:55.648116Z",
-    "dashboard": "Fresh authenticated post-processing read documented in reports/mrx-navigation-schema-cleanup-20260914.md",
-    "support": "Human Search Atlas responses from Jay at 2026-09-15T01:28:00Z and 2026-09-15T01:31:00Z"
+    "audit": "Fresh authenticated Search Atlas audit 138239 read after the generated recommendation cleanup and Worker safeguard",
+    "dashboard": "Fresh authenticated OTTO project-issues read: 17 total / 16 approved / 1 pending",
+    "support": "Existing human Search Atlas conversation with Jay and Firman; final backend and terminal-state request sent 2026-09-15"
   },
   "project": {
     "id": 99913,
@@ -12,17 +12,29 @@
     "audit_id": 138239
   },
   "audit": {
-    "status": "completed",
-    "crawl_state": "completed",
-    "postprocessing_status": "completed",
-    "is_terminal": true
+    "status": "processing",
+    "crawl_state": "crawling",
+    "postprocessing_status": "",
+    "is_terminal": false,
+    "started_at_utc": "2026-09-15T04:36:20.296365Z",
+    "reported_completed_at_utc": "2026-09-15T05:14:11.020679Z",
+    "score": 964,
+    "total_pages": 373,
+    "total_raw_observations": 1867,
+    "page_types": {
+      "successful_2xx": 349,
+      "redirect_3xx": 24,
+      "missing_4xx": 0,
+      "blocked_403_429": 0,
+      "server_error_5xx": 0
+    }
   },
   "dashboard": {
-    "total": 1806,
-    "approved_deployed": 1805,
+    "total": 17,
+    "approved_deployed": 16,
     "pending": 1,
-    "schema_total": 7,
-    "schema_approved": 6,
+    "schema_total": 1,
+    "schema_approved": 0,
     "schema_pending": 1
   },
   "pending_records": [
@@ -36,5 +48,12 @@
       "page_id": null,
       "page_url": null
     }
-  ]
+  ],
+  "production_containment": {
+    "cloudflare_worker_active_version": "5dd4d805",
+    "cloudflare_worker_rollback_version": "8ce062e0",
+    "focused_schema_gate_passed_at_utc": "2026-09-15T06:12:00.305Z",
+    "apex_source_parity": "348/348 identical; 0 errors; 0 differences",
+    "native_source_parity": "348/348 identical; 0 errors; 0 differences"
+  }
 }

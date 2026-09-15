@@ -116,11 +116,18 @@ for (const sitemap of sitemapPaths) {
 const rows = [];
 const jobs = [...urls].flatMap((pathname) => targets.map((target) => ({ pathname, target })));
 const transportRetries = [];
+const concurrency = Number(process.env.MRX_OVERLAY_PARITY_CONCURRENCY ?? 3);
+const delayMs = Number(process.env.MRX_OVERLAY_PARITY_DELAY_MS ?? 0);
+if (!Number.isInteger(concurrency) || concurrency < 1 || concurrency > 10)
+  throw new Error('MRX_OVERLAY_PARITY_CONCURRENCY must be an integer from 1 to 10');
+if (!Number.isInteger(delayMs) || delayMs < 0 || delayMs > 5000)
+  throw new Error('MRX_OVERLAY_PARITY_DELAY_MS must be an integer from 0 to 5000');
 let done = 0;
 await Promise.all(
-  Array.from({ length: 3 }, async () => {
+  Array.from({ length: concurrency }, async () => {
     while (jobs.length) {
       const { pathname, target } = jobs.shift();
+      if (delayMs) await new Promise((resolve) => setTimeout(resolve, delayMs));
       try {
         const built = await readFile(
           path.join(root, 'dist/client', pathname, 'index.html'),
