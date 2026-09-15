@@ -12118,13 +12118,13 @@
     },
     "retained_production_baseline_manifest_json": {
       "path": "artifacts/mrx1000-release-10/release/retained-production-baseline.json",
-      "sha256": "dc36f762dcc0ccfc799c9675865b73b748e1473f306aa88739f3eb5aa1f0f108"
+      "sha256": "7947e3ff512535a6b421511a7857ae382147c0720df404c220eb8937e498d389"
     }
   },
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "8c35b9c5acf5641922d23aa26f70f7500253624944d92df45bcfa59f57814d54",
+    "retrofit_manifest_sha256": "0602499718fe4efdbc17dc9ef6a5a57fa26a8d86bc062e50907b37d5f50b7a83",
     "public_article_count": 328,
     "batch_article_count": 320,
     "assets_per_article": 2,

@@ -36,9 +36,9 @@ Generated from Astro content at build time.
 
 ### Competing offers
 
-- [Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement](https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/)
 - [How to Compare Mineral Rights Buyers in Texas](https://mineralrightsxchange.com/blog/how-to-compare-mineral-rights-buyers-in-texas/)
 - [What Is a Clawback Clause in a Mineral Rights Sale](https://mineralrightsxchange.com/blog/what-is-a-clawback-clause-in-a-mineral-rights-sale/)
+- [Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement](https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/)
 - [Texas TDI Title Agent Report Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/texas-tdi-title-agent-report-retrieval-provenance-worksheet/)
 - [SEC EDGAR Mineral Rights Offeror Filing Search Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet/)
 - [Mineral Rights Retained Evidence Source-Scope Worksheet](https://mineralrightsxchange.com/blog/mineral-rights-retained-evidence-source-scope-worksheet/)
@@ -92,6 +92,7 @@ Generated from Astro content at build time.
 ### Selling process
 
 - [Documents Needed to Sell Texas Mineral Rights](https://mineralrightsxchange.com/blog/what-documents-do-you-need-to-sell-mineral-rights-in-texas/)
+- [How to Sell Mineral Rights in Texas](https://mineralrightsxchange.com/blog/how-to-sell-mineral-rights-in-texas/)
 - [Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log](https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/)
 - [Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status](https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/)
 - [How to Build a Mineral Rights Valuation Evidence-Cutoff Log](https://mineralrightsxchange.com/blog/how-to-build-a-mineral-rights-valuation-evidence-cutoff-log/)
@@ -120,7 +121,6 @@ Generated from Astro content at build time.
 - [How the Step-by-Step Process of Selling Texas Mineral Rights Works](https://mineralrightsxchange.com/blog/how-the-step-by-step-process-of-selling-texas-mineral-rights-works/)
 - [How to Find Out If You Own Mineral Rights in Texas](https://mineralrightsxchange.com/blog/how-to-find-out-if-you-own-mineral-rights-in-texas/)
 - [How to Negotiate a Mineral Rights Sale: What Sellers Need to Know](https://mineralrightsxchange.com/blog/how-to-negotiate-a-mineral-rights-sale-what-sellers-need-to-know/)
-- [How to Sell Mineral Rights in Texas](https://mineralrightsxchange.com/blog/how-to-sell-mineral-rights-in-texas/)
 - [Mineral Rights Inheritance in Texas: What Heirs Need to Know Before Selling](https://mineralrightsxchange.com/blog/mineral-rights-inheritance-in-texas-what-heirs-need-to-know-before-selling/)
 - [Risks of Selling Your Mineral Rights to a Direct Buyer: What to Know Before You Sign](https://mineralrightsxchange.com/blog/risks-of-selling-your-mineral-rights-to-a-direct-buyer-what-to-know-before-you-sign/)
 - [Understanding the Key Differences: Our Underwriter Review vs. Traditional Mineral Rights Brokers](https://mineralrightsxchange.com/blog/understanding-the-key-differences-our-underwriter-review-vs-traditional-mineral-rights-brokers/)
@@ -129,6 +129,8 @@ Generated from Astro content at build time.
 
 ### Tax and legal
 
+- [How Title Review Findings Can Change a Mineral Rights Offer](https://mineralrightsxchange.com/blog/how-title-defects-change-mineral-rights-offer/)
+- [Texas Severance Tax: What Owners Need to Know](https://mineralrightsxchange.com/blog/texas-severance-tax-what-mineral-rights-owners-need-to-know/)
 - [How to Retrieve a Recorded Mineral Deed Copy for a CPA Handoff](https://mineralrightsxchange.com/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/)
 - [Cash for Mineral Rights: How to Retrieve IRS Tax Transcripts for a CPA Handoff](https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/)
 - [1031 Exchange Evidence Provenance Log for Mineral Interest Owners](https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/)
@@ -147,11 +149,9 @@ Generated from Astro content at build time.
 - [How Divorce Affects Mineral Rights Ownership and Sales in Texas](https://mineralrightsxchange.com/blog/how-divorce-affects-mineral-rights-ownership-and-sales-in-texas/)
 - [How Selling Mineral Rights Affects Your Estate Plan in Texas](https://mineralrightsxchange.com/blog/how-selling-mineral-rights-affects-your-estate-plan-in-texas/)
 - [How Texas Mineral Rights Ownership Works: Deeds, Conveyances, and Title](https://mineralrightsxchange.com/blog/how-texas-mineral-rights-ownership-works-deeds-conveyances-and-title/)
-- [How Title Review Findings Can Change a Mineral Rights Offer](https://mineralrightsxchange.com/blog/how-title-defects-change-mineral-rights-offer/)
 - [How to Report a Mineral Rights Sale on Your Federal Tax Return](https://mineralrightsxchange.com/blog/how-to-report-a-mineral-rights-sale-on-your-federal-tax-return/)
 - [Managing Mineral Interests in Estate Planning Explained](https://mineralrightsxchange.com/blog/managing-mineral-interests-in-estate-planning-explained/)
 - [Maximize Gains With 1031 Exchange for Texas Mineral Rights](https://mineralrightsxchange.com/blog/maximize-gains-with-1031-exchange-for-texas-mineral-rights/)
-- [Texas Severance Tax: What Owners Need to Know](https://mineralrightsxchange.com/blog/texas-severance-tax-what-mineral-rights-owners-need-to-know/)
 - [Title Curative for Mineral Rights: What It Is and Why It Matters Before You Sell](https://mineralrightsxchange.com/blog/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell/)
 - [Understand the Value of Your Inherited Mineral Rights](https://mineralrightsxchange.com/blog/understand-the-value-of-your-inherited-mineral-rights/)
 - [Understanding 1031 Tax Implications for Mineral Rights Owners](https://mineralrightsxchange.com/blog/understanding-1031-tax-implications-for-mineral-rights-owners/)
@@ -286,6 +286,8 @@ Generated from Astro content at build time.
 
 ### Valuation
 
+- [What Is a Net Royalty Acre? NRI and Mineral Rights Value](https://mineralrightsxchange.com/blog/what-is-a-net-royalty-acre/)
+- [Why Did My Mineral Royalty Check Go Down?](https://mineralrightsxchange.com/blog/why-did-my-royalty-check-go-down/)
 - [Texas RRC EDMS Injection/Disposal Permit Document Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet/)
 - [Texas RRC Production by Operator of Record Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet/)
 - [Texas RRC Production by Filing Operator Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet/)
@@ -364,7 +366,6 @@ Generated from Astro content at build time.
 - [Comparable Mineral Sales: What Makes a Transaction Relevant?](https://mineralrightsxchange.com/blog/comparable-mineral-sales-what-makes-a-transaction-relevant/)
 - [Basis Differentials and Mineral Rights Cash Flow](https://mineralrightsxchange.com/blog/basis-differentials-and-mineral-rights-cash-flow/)
 - [Acreage Contiguity and Its Role in Development Potential](https://mineralrightsxchange.com/blog/acreage-contiguity-and-its-role-in-development-potential/)
-- [What Is a Net Royalty Acre? NRI and Mineral Rights Value](https://mineralrightsxchange.com/blog/what-is-a-net-royalty-acre/)
 - [How Horizontal Drilling Affects Texas Mineral Rights Values](https://mineralrightsxchange.com/blog/how-horizontal-drilling-changed-mineral-rights-values-in-texas/)
 - [How to Compare Mineral Rights Review Services Transparently](https://mineralrightsxchange.com/blog/how-to-compare-mineral-rights-review-services-transparently/)
 - [How to Determine the Value of Texas Mineral Rights](https://mineralrightsxchange.com/blog/how-to-determine-the-value-of-texas-mineral-rights/)
@@ -380,7 +381,6 @@ Generated from Astro content at build time.
 - [Unlocking Value: Assessing Your Texas Mineral Rights](https://mineralrightsxchange.com/blog/unlocking-value-assessing-your-texas-mineral-rights/)
 - [What Determines the Value of Your Mineral Rights?](https://mineralrightsxchange.com/blog/what-determines-the-value-of-your-mineral-rights/)
 - [What Is Your Texas Mineral Rights Worth?](https://mineralrightsxchange.com/blog/what-is-your-texas-mineral-rights-worth/)
-- [Why Did My Mineral Royalty Check Go Down?](https://mineralrightsxchange.com/blog/why-did-my-royalty-check-go-down/)
 - [Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services](https://mineralrightsxchange.com/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/)
 
 ## State starting points

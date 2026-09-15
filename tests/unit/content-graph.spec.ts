@@ -7,7 +7,7 @@
  *   (3) resolveCluster prefers content_cluster
  *   (4) MRX1000 internal_links triangle targets are valid and the conversion
  *       link always resolves to /book/
- *   (5) current public articles (the 6 approved live slugs) preserve their
+ *   (5) the exact 8 public legacy articles outside MRX1000 preserve their
  *       pillar/cluster invariants under the new resolvePillar
  */
 import { describe, expect, it } from 'vitest';
@@ -304,15 +304,17 @@ describe('MRX1000 internal_links triangle resolution', () => {
 
 describe('current public article invariants', () => {
   const approvedSlugs = [
-    'how-are-mineral-rights-valued',
+    'how-title-defects-change-mineral-rights-offer',
     'how-to-compare-mineral-rights-buyers-in-texas',
     'how-to-sell-mineral-rights-in-texas',
     'texas-severance-tax-what-mineral-rights-owners-need-to-know',
     'what-documents-do-you-need-to-sell-mineral-rights-in-texas',
     'what-is-a-clawback-clause-in-a-mineral-rights-sale',
+    'what-is-a-net-royalty-acre',
+    'why-did-my-royalty-check-go-down',
   ];
 
-  it('keeps the six approved articles published and inside the noindex-false gate', () => {
+  it('keeps the eight legacy articles published and inside the noindex-false gate', () => {
     for (const slug of approvedSlugs) {
       const path = join(postsDir, `${slug}.mdx`);
       const frontmatter =
