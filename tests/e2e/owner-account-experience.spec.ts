@@ -70,15 +70,15 @@ test.describe('MRX owner account experience', () => {
     await page.goto('/');
 
     await expect(
-      page.getByRole('banner').getByRole('link', { name: 'Log In', exact: true }),
-    ).toHaveAttribute('href', '/account/');
-    await expect(page.locator('#mobile-nav a[href="/account/"]')).toHaveText('Log In');
+      page.getByRole('banner').getByRole('button', { name: 'Log In', exact: true }),
+    ).toBeVisible();
+    await expect(page.locator('#mobile-nav button[data-account-route]')).toHaveText('Log In');
     await expect(
-      page.getByRole('banner').getByRole('link', { name: 'Submit details', exact: true }),
-    ).toHaveAttribute('href', '/owner-intake/');
+      page.getByRole('banner').getByRole('link', { name: 'Free review', exact: true }),
+    ).toHaveAttribute('href', '/book/');
   });
 
-  test('keeps Ask Travis available before account setup and offers optional continuity after an answer', async ({
+  test('keeps Ask Travis available before account setup and delays optional continuity until rapport', async ({
     page,
   }) => {
     await stubAnonymousSession(page);
@@ -103,6 +103,8 @@ test.describe('MRX owner account experience', () => {
     await page.locator('[data-open-home-chat]').first().click();
     const input = page.getByTestId('travis-composer-input');
     await expect(input).toBeEnabled();
+    await input.fill('Skip');
+    await input.press('Enter');
     await expect(input).toHaveAttribute('name', 'mrx-chat-open');
     await expect(page.getByText('What first name should I use?')).toHaveCount(0);
 
@@ -112,14 +114,23 @@ test.describe('MRX owner account experience', () => {
     await expect(
       page.getByText('Start by comparing the complete offer and the exact rights it would convey.'),
     ).toBeVisible();
+    await expect(page.getByTestId('travis-account-prompt')).toHaveCount(0);
+
+    await input.fill('The written offer is in front of me, and I want to understand the terms.');
+    await page.getByRole('button', { name: 'Send reply' }).click();
+    await expect(
+      page
+        .getByText('Start by comparing the complete offer and the exact rights it would convey.')
+        .last(),
+    ).toBeVisible();
     await expect(page.getByTestId('travis-account-prompt')).toContainText(
-      'Keep this conversation and any mineral-rights documents together',
+      'Save this conversation for a human underwriter review',
     );
     await expect(
       page
         .getByTestId('travis-account-prompt')
-        .getByRole('link', { name: 'Log in or create an account' }),
-    ).toHaveAttribute('href', '/account/?welcome=conversation');
+        .getByRole('button', { name: 'Create a free account' }),
+    ).toBeVisible();
     await expect(input).toBeEnabled();
   });
 

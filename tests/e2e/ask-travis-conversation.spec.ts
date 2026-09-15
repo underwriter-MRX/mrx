@@ -13,7 +13,7 @@ test.describe('Ask Travis conversational experience', () => {
     await page.goto('/');
 
     const banner = page.getByRole('banner');
-    await expect(banner.getByRole('link', { name: 'Log In', exact: true })).toBeVisible();
+    await expect(banner.getByRole('button', { name: 'Log In', exact: true })).toBeVisible();
     await expect(banner.getByText(/Owner sign in/i)).toHaveCount(0);
   });
 
@@ -92,6 +92,14 @@ test.describe('Ask Travis conversational experience', () => {
     await primaryNav.getByRole('link', { name: 'Inherited Rights', exact: true }).click();
 
     await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
+    await expect(
+      page.getByText('Hi, I’m Travis, a fictional MRX AI guide. What’s your first name?'),
+    ).toBeVisible();
+    await reply(page, 'Skip');
+    await expect(page.getByText(/I have your focus as:.*inherited mineral rights/i)).toBeVisible();
+    await reply(page, 'Yes');
+    await expect(page.getByText('What happened that made you look into it now?')).toBeVisible();
+    await reply(page, 'I inherited mineral rights and need to organize the ownership records.');
     await expect(page.getByText('Talking with Connor', { exact: true })).toBeVisible();
     await expect(
       page.getByText(
@@ -127,10 +135,14 @@ test.describe('Ask Travis conversational experience', () => {
     await page.goto('/');
     await page.locator('[data-open-home-chat]').first().click();
     await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
-    await expect(page.getByText('How may I help you?', { exact: true })).toBeVisible();
+    await expect(
+      page.getByText('Hi, I’m Travis, a fictional MRX AI guide. What’s your first name?'),
+    ).toBeVisible();
     await expect(page.getByText('Skip for now', { exact: true })).toHaveCount(0);
     await expect(page.getByRole('button', { name: 'Document uploads unavailable' })).toBeDisabled();
-    await expect(page.getByRole('button', { name: 'Talk to a live underwriter' })).toBeVisible();
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call' }),
+    ).toBeVisible();
     await reply(page, 'I received an offer for my mineral rights.');
     await expect(
       page.getByText(
@@ -147,14 +159,7 @@ test.describe('Ask Travis conversational experience', () => {
       'mrx-chat-open',
     );
 
-    await expect(page.getByTestId('travis-account-prompt')).toBeVisible();
-    await expect(
-      page.getByText('Keep this conversation and any mineral-rights documents together'),
-    ).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Log in or create an account' })).toHaveAttribute(
-      'href',
-      '/account/?welcome=conversation',
-    );
+    await expect(page.getByTestId('travis-account-prompt')).toHaveCount(0);
 
     await reply(page, 'The property is in Reeves County, Texas.');
     await expect(
@@ -167,8 +172,106 @@ test.describe('Ask Travis conversational experience', () => {
       'name',
       'mrx-chat-open',
     );
+    await expect(page.getByTestId('travis-account-prompt')).toBeVisible();
+    await expect(
+      page.getByText('Save this conversation for a human underwriter review'),
+    ).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Create a free account' })).toBeVisible();
     await page.getByRole('button', { name: 'Keep chatting for now' }).click();
     await expect(page.getByTestId('travis-account-prompt')).toHaveCount(0);
+  });
+
+  test('records a corrected prefilled intent once and keeps the opening value guide', async ({
+    page,
+  }) => {
+    await stubAnonymousSession(page);
+    const submitted: Array<Record<string, unknown>> = [];
+    await page.route('**/api/chat/message', async (route) => {
+      submitted.push(route.request().postDataJSON());
+      const body = [
+        'event: message.delta',
+        `data: ${JSON.stringify({
+          type: 'message.delta',
+          delta:
+            'The full written offer and the exact rights conveyed are the right starting point.',
+          persona: 'clay',
+        })}`,
+        '',
+        'event: done',
+        'data: {"type":"done"}',
+        '',
+        '',
+      ].join('\n');
+      await route.fulfill({ status: 200, contentType: 'text/event-stream', body });
+    });
+
+    await page.goto('/');
+    await page.waitForFunction(() =>
+      Boolean((window as Window & { __mrxChatReady?: boolean }).__mrxChatReady),
+    );
+    await page.evaluate(() =>
+      window.dispatchEvent(
+        new CustomEvent('mrx:open-chat', {
+          detail: { prompt: 'How much are my mineral rights worth?' },
+        }),
+      ),
+    );
+    await expect(page.getByText(/Hi, I’m Clay, a fictional MRX AI guide/)).toBeVisible();
+    await reply(page, 'Billy');
+    await expect(
+      page.getByText(/I have your focus as:.*How much are my mineral rights worth/i),
+    ).toBeVisible();
+    await reply(page, 'No, I want to compare a written offer.');
+
+    await expect(
+      page.getByText(
+        'The full written offer and the exact rights conveyed are the right starting point.',
+      ),
+    ).toBeVisible();
+    expect(submitted).toHaveLength(1);
+    expect(submitted[0]).toMatchObject({
+      message: 'No, I want to compare a written offer.',
+      context: { currentPersona: 'clay', preserveCurrentPersona: true },
+    });
+    await expect(
+      page.getByText('No, I want to compare a written offer.', { exact: true }),
+    ).toHaveCount(1);
+  });
+
+  test('persists a discovery-question refusal across a refresh', async ({ page }) => {
+    await stubAnonymousSession(page);
+    const contexts: Array<Record<string, unknown>> = [];
+    await page.route('**/api/chat/message', async (route) => {
+      const payload = route.request().postDataJSON();
+      contexts.push(payload.context ?? {});
+      const body = [
+        'event: message.delta',
+        `data: ${JSON.stringify({
+          type: 'message.delta',
+          delta: 'A division order confirms the decimal used to distribute production proceeds.',
+          persona: 'travis',
+        })}`,
+        '',
+        'event: done',
+        'data: {"type":"done"}',
+        '',
+        '',
+      ].join('\n');
+      await route.fulfill({ status: 200, contentType: 'text/event-stream', body });
+    });
+
+    await page.goto('/');
+    await page.locator('[data-open-home-chat]').first().click();
+    await reply(page, 'Skip');
+    await reply(page, 'Just answer and stop asking questions.');
+    await expect(page.getByText(/A division order confirms the decimal/)).toBeVisible();
+    expect(contexts.at(-1)).toMatchObject({ discoveryDeclined: true });
+
+    await page.reload();
+    await page.locator('[data-open-home-chat]').first().click();
+    await reply(page, 'Tell me what a division order does.');
+    await expect(page.getByText(/A division order confirms the decimal/).last()).toBeVisible();
+    expect(contexts.at(-1)).toMatchObject({ discoveryDeclined: true });
   });
 
   test('collects the basic owner profile before document upload', async ({ page }) => {
@@ -398,7 +501,9 @@ test.describe('Ask Travis mobile conversation', () => {
     await page.locator('[data-open-home-chat]').first().click();
     const dialog = page.getByTestId('ask-travis-dialog');
     await expect(dialog).toBeVisible();
-    await expect(page.getByText('How may I help you?', { exact: true })).toBeVisible();
+    await expect(
+      page.getByText('Hi, I’m Travis, a fictional MRX AI guide. What’s your first name?'),
+    ).toBeVisible();
     await page.waitForTimeout(350);
     const dimensions = await dialog.evaluate((element) => ({
       width: element.getBoundingClientRect().width,

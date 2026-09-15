@@ -123,6 +123,18 @@ describe('rapport source contract', () => {
     expect(messageApi).toContain("type: 'message.replace'");
   });
 
+  it('replaces already-streamed questions when the visitor declined discovery', () => {
+    expect(
+      messageApi.match(/const directText = withoutFollowupQuestion\(fullText\)/g),
+    ).toHaveLength(2);
+    expect(messageApi.match(/if \(directText !== fullText\)/g)).toHaveLength(2);
+    expect(
+      messageApi.match(
+        /const directText = withoutFollowupQuestion\(fullText\);[\s\S]*?if \(directText !== fullText\) \{[\s\S]*?send\(\{ type: 'message\.replace', content: fullText, persona: persona\.slug as any \}\);/g,
+      ),
+    ).toHaveLength(2);
+  });
+
   it('uses truthful conversational account and booking states', () => {
     expect(askTravis).toContain('No verification link was sent');
     expect(askTravis).toContain('result.suppressed');

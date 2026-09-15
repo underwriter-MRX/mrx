@@ -346,7 +346,13 @@ export const POST: APIRoute = async (context) => {
             }
           }
           fullText = normalizeMrxText(fullText);
-          if (body.context?.discoveryDeclined) fullText = withoutFollowupQuestion(fullText);
+          if (body.context?.discoveryDeclined) {
+            const directText = withoutFollowupQuestion(fullText);
+            if (directText !== fullText) {
+              fullText = directText;
+              send({ type: 'message.replace', content: fullText, persona: persona.slug as any });
+            }
+          }
           if (questionCount(fullText) > 1) {
             fullText = fallbackAnswer(
               message,
@@ -430,7 +436,13 @@ export const POST: APIRoute = async (context) => {
             }
           }
           fullText = normalizeMrxText(fullText);
-          if (body.context?.discoveryDeclined) fullText = withoutFollowupQuestion(fullText);
+          if (body.context?.discoveryDeclined) {
+            const directText = withoutFollowupQuestion(fullText);
+            if (directText !== fullText) {
+              fullText = directText;
+              send({ type: 'message.replace', content: fullText, persona: persona.slug as any });
+            }
+          }
           const fallbackCompliance = runtimeComplianceCheck(fullText);
           if (fallbackCompliance.flagged) {
             const originalText = fullText;
