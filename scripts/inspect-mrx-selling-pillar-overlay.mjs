@@ -85,6 +85,11 @@ const builtNodes = pillarSchemaNodes(built);
 if (builtNodes.some((node) => node['@type'] === 'ImageObject'))
   throw new Error('Native image schema now exists; re-review required.');
 const liveImages = pillarSchemaNodes(live).filter((node) => node['@type'] === 'ImageObject');
+const unexpectedImageRecords = pageRecords.filter(
+  (schema) => schema.schema_type === 'ImageObject' && !imageIds.has(schema.id),
+);
+if (unexpectedImageRecords.length)
+  throw new Error('Unrecognized page-level ImageObject records exist; re-review required.');
 const images = pageRecords.filter((schema) => imageIds.has(schema.id));
 const organization = sitewide.find((schema) => schema.id === sitewideId);
 if (
@@ -145,8 +150,8 @@ const corrections = currentImages.map((image) => {
   };
 });
 const selected = [...(organization ? [organization] : []), ...staleImages];
-if (images.length !== imageIds.size)
-  throw new Error('Exact stale-image set differs; re-review required.');
+if (images.length !== 0 && images.length !== imageIds.size)
+  throw new Error('Legacy ImageObject set is only partially present; re-review required.');
 const recovery = (schema) => ({
   id: schema.id,
   project_id: schema.otto_project,
@@ -166,7 +171,9 @@ const receipt = {
   authority:
     'Standing MRX source-first/no-approval release authority; no charge or account/security change.',
   reason:
-    'Identify the rejected duplicate Organization and stale overlay-only ImageObjects; preserve legitimate source graph and visible images.',
+    images.length === 0
+      ? 'Verify the rejected duplicate Organization remains undeployed and the legacy overlay-only ImageObjects are absent while preserving the legitimate source graph.'
+      : 'Identify the rejected duplicate Organization and stale overlay-only ImageObjects; preserve legitimate source graph and visible images.',
   cleanup_constraint:
     'Search Atlas rejects sitewide DELETE (HTTP 400: Cannot delete sitewide schema). FOUND schemas have no supported delete path in the connector. This inspector performs GET requests only.',
   api_docs: 'https://docs.searchatlas.com/',
@@ -174,7 +181,7 @@ const receipt = {
   corrections,
   stored_live_mismatch_ids: storedLiveMismatches,
   actions: [],
-  disposition: 'OVERLAY_REVIEW_OPEN',
+  disposition: images.length === 0 ? 'OVERLAY_RECONCILED' : 'OVERLAY_REVIEW_OPEN',
 };
 await writeFile(receiptPath, `${JSON.stringify(receipt, null, 2)}\n`);
 console.log(

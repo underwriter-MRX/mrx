@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.1.0",
-  "observed_at_utc": "2026-09-15T08:36:36Z",
+  "schema_version": "1.2.0",
+  "observed_at_utc": "2026-09-15T10:44:24Z",
   "source": {
-    "audit": "Fresh authenticated Search Atlas audit 138239 after the 319-article release and completed post-processing",
+    "audit": "Fresh authenticated Search Atlas audit 138239 after the 320-article release, corrected crawl configuration, and completed post-processing",
     "dashboard": "Fresh authenticated OTTO project-issues and deployment-preview reads after recommendation review",
-    "support": "Search Atlas support confirmed the sitewide Organization suggestion is not deployed and cannot currently be dismissed; remaining Dynamic Indexing items are retained as reviewed undeployed provider exceptions"
+    "support": "Search Atlas support confirmed the sitewide Organization suggestion is not deployed and cannot currently be dismissed. Support then identified an excessive crawl budget and disabled Smart Crawl schedule; MRX corrected the budget and enabled Smart Crawl. Remaining Dynamic Indexing items are retained as reviewed undeployed provider exceptions."
   },
   "project": {
     "id": 99913,
@@ -16,23 +16,43 @@
     "crawl_state": "completed",
     "postprocessing_status": "completed",
     "is_terminal": true,
-    "started_at_utc": "2026-09-15T08:12:00.119268Z",
-    "reported_completed_at_utc": "2026-09-15T08:16:46.493019Z",
-    "score": 963,
-    "total_pages": 484,
-    "total_raw_observations": 2630,
+    "started_at_utc": "2026-09-15T10:31:43.405818Z",
+    "reported_completed_at_utc": "2026-09-15T10:41:17.898972Z",
+    "score": 965,
+    "total_pages": 485,
+    "total_raw_observations": 2636,
     "page_types": {
-      "successful_2xx": 460,
+      "successful_2xx": 461,
       "redirect_3xx": 24,
       "missing_4xx": 0,
       "blocked_403_429": 0,
       "server_error_5xx": 0
     },
     "indexability": {
-      "indexable": 443,
+      "indexable": 444,
       "not_indexable": 41,
       "not_standard": 0
     }
+  },
+  "installation": {
+    "status": "engaged",
+    "pixel_status": "Cloudflare Worker",
+    "pixel_installed": true,
+    "cloudflare_worker_installed": true,
+    "cloudflare_worker_status": "completed",
+    "smart_crawl_enabled": true,
+    "crawl_frequency": "Daily",
+    "crawl_budget": 600,
+    "crawl_speed_pages_per_second": 20,
+    "respect_robots_txt": true,
+    "javascript_rendering": true,
+    "gsc_property": "sc-domain:mineralrightsxchange.com",
+    "project_inventory_pages": 463,
+    "article_320_inventory_state": "synchronized during corrected-settings recrawl",
+    "article_320_otto_url_id": 344881375,
+    "article_320_native_schema_count": 6,
+    "article_320_worker_marker": "enabled=true",
+    "manual_reprocess_cooldown_expires_at_utc": "2026-09-16T05:40:12.684036Z"
   },
   "dashboard": {
     "total": 671,
@@ -48,11 +68,11 @@
     "is_engaged": true,
     "is_frozen": false,
     "total_pending_with_recommendation": 16,
-    "total_pending_without_recommendation": 896,
+    "total_pending_without_recommendation": 898,
     "types_ready": 2,
     "breakdown": [
-      {"issue_type": "page_title", "total": 116, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 116},
-      {"issue_type": "meta_description", "total": 141, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 141},
+      {"issue_type": "page_title", "total": 117, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 117},
+      {"issue_type": "meta_description", "total": 142, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 142},
       {"issue_type": "meta_keywords", "total": 115, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 115},
       {"issue_type": "h1_under_20_over_70", "total": 31, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 31},
       {"issue_type": "h2_under_20_over_70", "total": 90, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 90},
@@ -110,21 +130,33 @@
     "https://mineralrightsxchange.com/team/marisol/"
   ],
   "reviewed_nongenerated_opportunities": {
-    "pending_without_recommendation_total": 896,
+    "pending_without_recommendation_total": 898,
     "recommendations_generated": 0,
     "deployed": 0,
     "disposition": "No provider copy or schema exists to review or deploy. Preserve source-controlled metadata, headings, FAQ, social identity, and page schema; continue source-first regression testing."
   },
   "production_containment": {
-    "deployment_id": "dpl_Dw1MfrbtcGVbaPYyRf1b76yw8Efw",
-    "content_revision": "1674e321891f6b82806b3065b19498f3a5c7a67504c9db013728a4232d09cbdd",
-    "schema_gate_passed_at_utc": "2026-09-15T08:28:58.546Z",
+    "deployment_id": "dpl_Dmb9Yb2NikwQkSUTDdnmexpk8Dng",
+    "content_revision": "0167ceaff7deecfbfbe94c1f0b980f53a80b17a6f88fb9341c15f457ec5aed22",
+    "schema_gate_passed_at_utc": "2026-09-15T10:43:51.739Z",
     "organization_nodes_per_target": 1,
     "runtime_schema_injectors_per_target": 0,
     "overlay_image_objects_per_target": 0,
-    "homepage_anchor_parity_verified_at_utc": "2026-09-15T08:29:55.772Z",
+    "homepage_anchor_parity_verified_at_utc": "2026-09-15T10:44:24Z",
     "homepage_anchor_count_per_target": 56,
+    "homepage_anchor_sequence_sha256": "2a7620f0e1de9da684efb5ebdb4b816dd26c96f32c081730dc2cb86b73b38c4f",
     "homepage_anchor_parity": "exact across apex, www, and native production",
     "dynamic_indexing_hidden_links_detected": 0
+  },
+  "crawler_notification": {
+    "manifest_url_count": 444,
+    "content_revision": "601377610a50f40d1dea061a9c4e628336cd9d22d10b4ae2fab0ca7f46e7d35b",
+    "article_320_verified": true,
+    "article_320_indexnow_http_status": 200,
+    "accepted_count": 1,
+    "remaining_count": 0,
+    "errors": [],
+    "indexing_verified": false,
+    "model_updated": false
   }
 }
