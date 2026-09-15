@@ -77,3 +77,10 @@ test('only the pinned Cloudflare analytics fragment is ignored', async () => {
   assert.equal(contentHash(`abc${beacon}`), contentHash('abc'));
   assert.notEqual(contentHash(`abc${beacon.replace('crossorigin', 'changed')}`), contentHash('abc'));
 });
+
+test('known security transport permits only ray/time variation', async () => {
+  const fragment = await readFile(new URL('./approved-cloudflare-jsd.html', import.meta.url), 'utf8');
+  assert.equal(contentHash(`abc${fragment}`), contentHash('abc'));
+  assert.equal(contentHash(`abc${fragment.replace('a3b4ac28eb144dd7', '0123456789abcdef')}`), contentHash('abc'));
+  assert.notEqual(contentHash(`abc${fragment.replace('iframe', 'unknown')}`), contentHash('abc'));
+});

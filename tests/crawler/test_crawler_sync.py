@@ -166,3 +166,10 @@ class ContentHashTests(unittest.TestCase):
         beacon = Path(__file__).with_name('approved-cloudflare-beacon.html').read_bytes()
         self.assertEqual(c.content_hash(b'abc' + beacon), c.content_hash(b'abc'))
         self.assertNotEqual(c.content_hash(b'abc' + beacon.replace(b'crossorigin', b'changed')), c.content_hash(b'abc'))
+
+    def test_pinned_security_template_only(self):
+        fragment = Path(__file__).with_name('approved-cloudflare-jsd.html').read_bytes()
+        self.assertEqual(c.content_hash(b'abc' + fragment), c.content_hash(b'abc'))
+        altered = fragment.replace(b'a3b4ac28eb144dd7', b'0123456789abcdef')
+        self.assertEqual(c.content_hash(b'abc' + altered), c.content_hash(b'abc'))
+        self.assertNotEqual(c.content_hash(b'abc' + fragment.replace(b'iframe', b'unknown')), c.content_hash(b'abc'))

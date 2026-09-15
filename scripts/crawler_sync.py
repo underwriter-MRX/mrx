@@ -189,6 +189,12 @@ def content_hash(body):
     def transport(match):
         return b'' if hashlib.sha256(match.group()).hexdigest() == approved else match.group()
     body = re.sub(rb'<script type="module" src="https://static\.cloudflareinsights\.com/beacon\.min\.js/[^>]+></script>\n', transport, body)
+    def security_transport(match):
+        fragment = match.group()
+        normalized = re.sub(rb"r:'[a-f0-9]{16}',t:'[A-Za-z0-9+/=]+'", b"r:'RAY',t:'TIME'", fragment)
+        approved_jsd = '016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36'
+        return b'' if hashlib.sha256(normalized).hexdigest() == approved_jsd else fragment
+    body = re.sub(rb'<script>\(function\(\)\{function c\(\).*?</script>', security_transport, body)
     return hashlib.sha256(body).hexdigest()
 
 

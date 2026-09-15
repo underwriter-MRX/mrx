@@ -12,6 +12,10 @@ export const contentHash = (html) =>
   hash(html.replaceAll('<!--email_off-->', '').replaceAll('<!--/email_off-->', '').replace(
     /<script type="module" src="https:\/\/static\.cloudflareinsights\.com\/beacon\.min\.js\/[^>]+><\/script>\n/g,
     (fragment) => hash(fragment) === 'a7d7b1207343bf240dc3bf89442b597d9a3609888ede71e183e4ff7c9b18f290' ? '' : fragment,
+  ).replace(
+    /<script>\(function\(\)\{function c\(\).*?<\/script>/g,
+    (fragment) => hash(fragment.replace(/r:'[a-f0-9]{16}',t:'[A-Za-z0-9+/=]+'/g, "r:'RAY',t:'TIME'")) ===
+      '016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36' ? '' : fragment,
   ));
 const attrs = (tag) =>
   Object.fromEntries(
