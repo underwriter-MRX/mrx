@@ -195,6 +195,25 @@ def content_hash(body):
         approved_jsd = '016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36'
         return b'' if hashlib.sha256(normalized).hexdigest() == approved_jsd else fragment
     body = re.sub(rb'<script>\(function\(\)\{function c\(\).*?</script>', security_transport, body)
+    # OTTO's Cloudflare Worker injects a fixed runtime client plus an eight-byte
+    # per-request identifier. The runtime is transport, not authored page
+    # content. Ignore it only when the request id is the sole normalized field
+    # and the remaining client is the independently pinned production version.
+    def searchatlas_transport(match):
+        fragment = match.group()
+        normalized = re.sub(rb"REQ_ID: '[a-f0-9]{8}'", b"REQ_ID: 'REQUEST'", fragment)
+        approved_otto = '801ae29b635c9a26b2ceac00a751acd2ff3b3def61fe5072f276cb96c0f80caa'
+        return b'' if hashlib.sha256(normalized).hexdigest() == approved_otto else fragment
+    body = re.sub(
+        rb"<script>\(function\(\)\{\s+'use strict';\s+const OTTO_CONFIG = \{.*?</script>\n?",
+        searchatlas_transport,
+        body,
+        flags=re.S,
+    )
+    body = body.replace(
+        b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=true;">',
+        b'',
+    )
     return hashlib.sha256(body).hexdigest()
 
 
