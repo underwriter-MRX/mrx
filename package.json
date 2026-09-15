@@ -64,7 +64,7 @@
     "check-compliance": "node compliance/scripts/check-compliance.mjs",
     "check:copy": "node scripts/check-visible-copy.mjs",
     "check:copy:rendered": "node scripts/check-visible-copy.mjs --rendered",
-    "check:seo:rendered": "node scripts/check-rendered-seo.mjs",
+    "check:seo:rendered": "node scripts/check-rendered-seo.mjs && node scripts/verify-rendered-authorship.mjs",
     "check:grammar": "node scripts/check-rendered-grammar.mjs",
     "check:legal-release": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/check-legal-release-gates.mjs",
     "icons:generate": "python3 scripts/generate_mrx_icon_library.py",

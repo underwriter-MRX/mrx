@@ -95,3 +95,23 @@ Brain source: maintained MRX project pack, `2026-09-14 AI Atom Brain Decision Re
 `2026-09-08 Outcome-Led Growth Plan.md`, and the independently verified September 9
 marketing-brain assessment. Live execution evidence belongs in a separate dated
 release report; these historical records are not current production proof.
+
+## September 14 improvement execution
+
+- Each apply processes at most 40 pages by default (`--max-pages`, range 1–1000).
+  Persisted attempt order prevents repeatedly failing URLs from starving untouched
+  pages. Accepted receipts remain durable; interruption before receipt persistence
+  can still cause replay, so delivery is not exactly once.
+- `--report` reads current progress, verified/accepted/remaining counts and lock
+  status. A stale running report becomes interrupted/resumable. MCP submissions
+  launch a detached worker and return promptly; call status and resume the next batch.
+- Hosted workflow includes release/deployment events and an hourly fallback at
+  minute 17. All runs require repository variable
+  `MRX_CRAWLER_NOTIFICATIONS_ENABLED=true`. Keep it unset until the live manual run
+  is verified, and install the workflow on the default branch without releasing
+  stale site content. The source workflow is prepared; it is not active yet.
+- The author regression gate verifies visible and structured organizational identity
+  on every rendered article. Fictional guides retain clearly labeled topic links.
+- The old benchmark capture gap is resolved: the original 20-prompt/four-platform
+  analysis now has 80 saved responses; three include explicit MRX homepage links
+  on branded questions. This is baseline evidence, not improvement from this release.

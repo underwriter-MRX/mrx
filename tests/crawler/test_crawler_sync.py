@@ -120,6 +120,37 @@ class SyncTests(unittest.TestCase):
             c.sync(True)
         self.assertEqual(self.posts, [])
 
+    def test_bounded_resume_skips_received_pages(self):
+        second = {'url': c.SITE + '/blog/second/', 'sha256': 'b' * 64}
+        self.data['pages'].append(second)
+        with patch.object(c, 'discovery', return_value=(self.data, None)), patch.object(c, 'manifest', return_value=self.data), patch.object(c, 'verify_page'):
+            first = c.sync(True, max_pages=1)
+            self.assertEqual(first['accepted_count'], 1)
+            self.assertEqual(first['remaining_count'], 1)
+            second_result = c.sync(True, max_pages=1)
+            self.assertEqual(second_result['remaining_count'], 0)
+            self.assertEqual(self.posts[1]['urlList'], [second['url']])
+
+    def test_failed_first_page_does_not_starve_remaining_queue(self):
+        second = {'url': c.SITE + '/blog/second/', 'sha256': 'b' * 64}
+        self.data['pages'].append(second)
+        with patch.object(c, 'discovery', return_value=(self.data, None)), patch.object(c, 'manifest', return_value=self.data):
+            with patch.object(c, 'verify_page', side_effect=ValueError('blocked')):
+                self.assertEqual(c.sync(True, 1)['status'], 'partial_failure')
+            with patch.object(c, 'verify_page'):
+                c.sync(True, 1)
+                self.assertEqual(self.posts[0]['urlList'], [second['url']])
+
+    def test_interrupted_report_is_resumable(self):
+        c.save_json(Path(self.temp.name) / 'last-report.json', {'status':'running'})
+        self.assertEqual(c.last_report()['status'], 'interrupted')
+        self.assertTrue(c.last_report()['resumable'])
+
+    def test_page_budget_is_validated(self):
+        for value in [0, 1001, '40']:
+            with self.assertRaises(ValueError):
+                c.sync(True, value)
+
 
 if __name__ == '__main__':
     unittest.main()

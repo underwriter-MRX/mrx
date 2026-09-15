@@ -219,16 +219,31 @@ def save_json(path, value):
 
 def last_report():
     file = state_dir() / 'last-report.json'
-    return json.loads(file.read_text()) if file.exists() else {'status': 'not_run'}
+    report = json.loads(file.read_text()) if file.exists() else {'status': 'not_run'}
+    lock_path = state_dir() / 'sync.lock'
+    report['active'] = False
+    if lock_path.exists():
+        with lock_path.open('a') as lock:
+            try:
+                fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                fcntl.flock(lock, fcntl.LOCK_UN)
+            except BlockingIOError:
+                report['active'] = True
+    if report.get('status') == 'running' and not report['active']:
+        report['status'] = 'interrupted'
+        report['resumable'] = True
+    return report
 
 
-def sync(apply=False):
+def sync(apply=False, max_pages=40):
+    if not isinstance(max_pages, int) or not 1 <= max_pages <= 1000:
+        raise ValueError("max_pages must be between 1 and 1000.")
     directory = state_dir()
     directory.mkdir(parents=True, exist_ok=True)
     with (directory / 'sync.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         try:
-            return _sync(apply, directory)
+            return _sync(apply, directory, max_pages)
         except Exception as error:
             if apply:
                 save_json(directory / 'last-report.json', {'status': 'failed', 'checked_at': time.time(),
@@ -236,7 +251,7 @@ def sync(apply=False):
             raise
 
 
-def _sync(apply, directory):
+def _sync(apply, directory, max_pages=40):
     state = read_state()
     data, robots = discovery()
     current = {entry['url']: entry['sha256'] for entry in data['pages']}
@@ -247,14 +262,24 @@ def _sync(apply, directory):
                 and time.time() - state['pending'][e['url']]['at'] < 86400]
     deferred_urls = {e['url'] for e in deferred}
     candidates = [e for e in changed if e['url'] not in deferred_urls]
+    queued_count = len(candidates)
+    progress_file = directory / 'resume.json'
+    attempts = json.loads(progress_file.read_text()) if progress_file.exists() else {}
+    candidates.sort(key=lambda entry: attempts.get(entry['url'], 0))
+    candidates = candidates[:max_pages]
     report = {'status': 'dry_run' if not apply else 'unchanged', 'checked_at': time.time(),
               'changed_count': len(changed), 'changed_urls': [e['url'] for e in changed][:200],
               'removed_urls_for_review': removed[:200], 'deferred_key_verification_count': len(deferred),
+              'queued_count': queued_count, 'selected_count': len(candidates),
+              'remaining_count': len(changed), 'verified_count': 0, 'accepted_count': 0,
               'receipts': [], 'errors': [], 'indexing_verified': False, 'model_updated': False,
               'google': 'Sitemap discovery; no general-page Google Indexing API submission.',
               'llm_crawlers': 'Updated public discovery is fetchable; no direct model-update API used.'}
     if not apply:
         return report
+    report['status'] = 'running'
+    report['phase'] = 'verification'
+    save_json(directory / 'last-report.json', report)
     if deferred:
         report['status'] = 'pending_key_verification'
     if candidates:
@@ -264,15 +289,22 @@ def _sync(apply, directory):
         valid = []
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
             futures = {pool.submit(verify_page, entry, robots): entry for entry in candidates}
-            for future, entry in futures.items():
+            for future in concurrent.futures.as_completed(futures):
+                entry = futures[future]
+                attempts[entry['url']] = time.time()
+                save_json(progress_file, attempts)
                 try:
                     future.result()
                     valid.append(entry)
+                    report['verified_count'] += 1
                 except Exception as error:
                     report['errors'].append({'url': entry['url'], 'error': str(error)})
+                save_json(directory / 'last-report.json', report)
         # A second manifest read guards against publishing a mixed deployment's URLs.
         if manifest() != data:
             raise ValueError('Deployment changed during verification; retry the current release.')
+        report['phase'] = 'submission'
+        save_json(directory / 'last-report.json', report)
         for offset in range(0, len(valid), 1000):
             batch = valid[offset:offset + 1000]
             code, _, _ = request(INDEXNOW, {'host': 'mineralrightsxchange.com',
@@ -281,6 +313,7 @@ def _sync(apply, directory):
             meaning = {200: 'received', 202: 'pending_key_verification'}.get(code, 'failed')
             report['receipts'].append({'service': 'IndexNow', 'http_status': code, 'status': meaning, 'url_count': len(batch)})
             if code == 200:
+                report['accepted_count'] += len(batch)
                 for entry in batch:
                     state['submitted'][entry['url']] = entry['sha256']
                     state['pending'].pop(entry['url'], None)
@@ -290,12 +323,18 @@ def _sync(apply, directory):
             else:
                 report['errors'].append({'service': 'IndexNow', 'http_status': code, 'retry': 'next run'})
             save_json(directory / 'state.json', state)
+            save_json(directory / 'last-report.json', report)
         if report['errors']:
             report['status'] = 'partial_failure'
         elif any(r['http_status'] == 202 for r in report['receipts']) or deferred:
             report['status'] = 'pending_key_verification'
         elif report['receipts']:
             report['status'] = 'notifications_received'
+    report['remaining_count'] = sum(state['submitted'].get(e['url']) != e['sha256'] for e in data['pages'])
+    if report['status'] == 'running':
+        report['status'] = 'unchanged'
+    report['phase'] = 'finished'
+    report['resumable'] = report['remaining_count'] > 0
     if removed:
         report['removal_review_required'] = True
     save_json(directory / 'last-report.json', report)
@@ -373,9 +412,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--apply', action='store_true')
     parser.add_argument('--status', action='store_true')
+    parser.add_argument('--report', action='store_true')
+    parser.add_argument('--max-pages', type=int, default=40)
     args = parser.parse_args()
     try:
-        result = crawler_status() if args.status else sync(args.apply)
+        result = last_report() if args.report else crawler_status() if args.status else sync(args.apply, args.max_pages)
     except Exception as error:
         result = {'status': 'failed', 'error': str(error), 'indexing_verified': False, 'model_updated': False}
     print(json.dumps(result, indent=2))

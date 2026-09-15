@@ -54,12 +54,14 @@ const nextPath = currentPage < lastPage ? archivePagePath(basePath, currentPage 
   <JsonLd
     slot="structured-data"
     data={{
-      '@type': 'Organization',
+      '@type': isEditorialTeam ? 'Organization' : 'CreativeWork',
       '@id': `${authorUrl}#author`,
       name: author.data.name,
       description: author.data.description,
       url: authorUrl,
-      parentOrganization: { '@id': `${SITE.url}/#org` },
+      ...(isEditorialTeam
+        ? { parentOrganization: { '@id': `${SITE.url}/#org` } }
+        : { creator: { '@id': `${SITE.url}/#org` } }),
     }}
   />
 
@@ -95,8 +97,8 @@ const nextPath = currentPage < lastPage ? archivePagePath(basePath, currentPage 
             </small>
           ) : (
             <small>
-              {author.data.name} is a fictional MRX AI Guide and educational author identity. MRX is
-              responsible for article sourcing, review, updates, and publication.
+              {author.data.name} is a fictional MRX AI Guide. MRX Editorial Team is responsible for
+              article sourcing, review, updates, and publication.
             </small>
           )
         }
