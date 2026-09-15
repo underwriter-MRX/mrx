@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "id": 99913,
+    "uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "audit_id": 138239
+  },
+  "authoritative_native_entity": {
+    "type": "Organization",
+    "id": "https://mineralrightsxchange.com/#org"
+  },
+  "exceptions": [
+    {
+      "provider": "Search Atlas",
+      "record_id": 182837670,
+      "type": "Organization",
+      "status": "SUGGESTED",
+      "is_sitewide": true,
+      "is_deployed": false,
+      "is_valid": true,
+      "page_id": null,
+      "page_url": null,
+      "classification": "vendor_locked_undeployed_suggestion",
+      "support_determination": "Search Atlas human representative Jay confirmed that OTTO is not deploying this suggestion, the native #org entity is unaffected, and the product currently cannot delete, dismiss, or mark the suggestion satisfied.",
+      "evidence": [
+        "reports/mrx-navigation-schema-cleanup-20260914.md#search-atlas-human-support-determination"
+      ]
+    }
+  ],
+  "invalidation_conditions": [
+    "project id, project UUID, or audit id differs",
+    "record id, type, status, sitewide flag, validity, page assignment, or deployment state differs",
+    "the dashboard pending count differs from the supplied pending-record inventory",
+    "any pending record is not an exact configured vendor exception",
+    "production does not expose exactly one authoritative native Organization node",
+    "a Search Atlas or OTTO runtime schema injector is present on a verified production target"
+  ]
+}

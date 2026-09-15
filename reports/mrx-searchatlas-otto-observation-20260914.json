@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "observed_at_utc": "2026-09-15T01:31:00.000Z",
+  "source": {
+    "audit": "Search Atlas audit 138239 completed and post-processed at 2026-09-14T23:48:55.648116Z",
+    "dashboard": "Fresh authenticated post-processing read documented in reports/mrx-navigation-schema-cleanup-20260914.md",
+    "support": "Human Search Atlas responses from Jay at 2026-09-15T01:28:00Z and 2026-09-15T01:31:00Z"
+  },
+  "project": {
+    "id": 99913,
+    "uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "audit_id": 138239
+  },
+  "audit": {
+    "status": "completed",
+    "crawl_state": "completed",
+    "postprocessing_status": "completed",
+    "is_terminal": true
+  },
+  "dashboard": {
+    "total": 1806,
+    "approved_deployed": 1805,
+    "pending": 1,
+    "schema_total": 7,
+    "schema_approved": 6,
+    "schema_pending": 1
+  },
+  "pending_records": [
+    {
+      "record_id": 182837670,
+      "type": "Organization",
+      "status": "SUGGESTED",
+      "is_sitewide": true,
+      "is_deployed": false,
+      "is_valid": true,
+      "page_id": null,
+      "page_url": null
+    }
+  ]
+}
