@@ -149,3 +149,9 @@ default and also runs on notifier-code pushes. Set repository variable
 access can activate the workflow without a new GitHub browser/API sign-in.
 Earlier instructions requiring `true` described the pre-release gate and are
 superseded by this activation step. Hourly retry and post-release events remain.
+
+The first hosted run verified and received 40 URLs with HTTP 200 and saved its
+state cache. Inspection found that artifact upload excluded the hidden state
+directory. Upload now explicitly includes only its JSON files and fails if missing.
+Each hosted run processes at most ten resumable batches of 40 URLs, stopping when
+the queue is empty or no further progress is possible; retries still run hourly.

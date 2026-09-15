@@ -54,7 +54,20 @@ jobs:
           key: mrx-crawlers-v1-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: mrx-crawlers-v1-
       - name: Verify public content and notify IndexNow
-        run: python3 scripts/crawler_sync.py --apply --max-pages 40
+        run: |
+          python3 - <<'PYTHON'
+          import json
+          import sys
+          sys.path.insert(0, 'scripts')
+          import crawler_sync
+          for batch in range(10):
+              report = crawler_sync.sync(True, 40)
+              print(json.dumps(report, indent=2), flush=True)
+              if report['status'] in ('failed', 'partial_failure'):
+                  raise SystemExit(1)
+              if not report['remaining_count'] or not report['accepted_count']:
+                  break
+          PYTHON
       - name: Preserve receipts and pending retries
         if: always()
         uses: actions/cache/save@v4
@@ -72,3 +85,5 @@ jobs:
           name: mrx-crawler-notification-${{ github.run_id }}-${{ github.run_attempt }}
           path: .crawler-state/*.json
           retention-days: 30
+          include-hidden-files: true
+          if-no-files-found: error
