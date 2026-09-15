@@ -139,3 +139,19 @@ its hexadecimal request ID and base64 timestamp to vary. This transport compatib
 fix preserves hashes of native HTML and existing manifests. Unknown template changes
 still fail. It does not change Cloudflare security settings, execute a challenge,
 or treat non-200 challenge pages as public content.
+
+## Activation after verified live receipt
+
+All 348 live public URLs received IndexNow HTTP 200 acknowledgments on 2026-09-15;
+an immediate repeat returned `unchanged`. The hosted workflow is now enabled by
+default and also runs on notifier-code pushes. Set repository variable
+`MRX_CRAWLER_NOTIFICATIONS_ENABLED=false` to pause it. Existing SSH repository write
+access can activate the workflow without a new GitHub browser/API sign-in.
+Earlier instructions requiring `true` described the pre-release gate and are
+superseded by this activation step. Hourly retry and post-release events remain.
+
+The first hosted run verified and received 40 URLs with HTTP 200 and saved its
+state cache. Inspection found that artifact upload excluded the hidden state
+directory. Upload now explicitly includes only its JSON files and fails if missing.
+Each hosted run processes at most ten resumable batches of 40 URLs, stopping when
+the queue is empty or no further progress is possible; retries still run hourly.
