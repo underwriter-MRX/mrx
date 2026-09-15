@@ -83,7 +83,7 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 
 | Input                                                                                                                             | SHA-256                                                            |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| `config/mrx-1000-canonical-content-ledger.json`                                                                                   | `0579fec201b3189bd1f1625aa2c64c917b576b9212e433fb66978a0c77a1a1e7` |
+| `config/mrx-1000-canonical-content-ledger.json`                                                                                   | `d55aac04d483d5d41635f1263bb08b0400bcc9adfbf483ba3f4d03f002def425` |
 | `reports/mrx-1000-readiness-matrix.json`                                                                                          | `2e00cd8384a174a53f390828da35bbef60f4401f4cc36218f2374ce9de37aef7` |
 | `reports/searchatlas-cg-reconciliation-t_0c427a87/content-genius-export-raw-by-status.json`                                       | `a357f3a95fff35d484a6050769c1b77e85ba86de4223e0770269d2cca168563b` |
 | `../program-plans/mrx-1000-ceo-decision-no-spend-capacity.md`                                                                     | `46a9d02548e97a794d1cdaa919682bb159bcfbeabb5b9d8e559431c6ca34091d` |
@@ -101,4 +101,4 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 | `docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md`                              | `03437048d097cd95356d99c40653fe6967f8ad9f6c37e84a777404c737b2cdca` |
 | `docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md`                                 | `e4de274bccc48d4e614258fd09792c820cea3531366612187cedc4172eda6964` |
 
-Manifest content fingerprint: `985511abac7c782ca3451c416f9a348f7600d3ab1c007aa1224d3da6ea679abf`.
+Manifest content fingerprint: `2efae12a2d905ed195d5e3d26c9e15cd6eef993eda72c24d59d2219ee165d1b5`.

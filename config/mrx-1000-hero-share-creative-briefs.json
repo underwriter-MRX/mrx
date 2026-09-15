@@ -1,9 +1,9 @@
 {
   "schema_version": "mrx1000-two-image-creative-brief-v2.0.0",
-  "generated_at": "2026-07-20T23:03:49.582Z",
+  "generated_at": "2026-07-20T00:39:25.405Z",
   "source_ledger": {
     "path": "mrx/config/mrx-1000-canonical-content-ledger.json",
-    "sha256": "0579fec201b3189bd1f1625aa2c64c917b576b9212e433fb66978a0c77a1a1e7",
+    "sha256": "d55aac04d483d5d41635f1263bb08b0400bcc9adfbf483ba3f4d03f002def425",
     "row_count": 1000
   },
   "controlling_decision": {
@@ -70,7 +70,7 @@
     "deployment_performed": false,
     "spend_performed": false
   },
-  "source_input_fingerprint_sha256": "3df2ae29ed32797384c6c0600da1224dc9987a7369856b724d5b0e14d9d6d6ac",
+  "source_input_fingerprint_sha256": "f64c9447b2fc18b6e3bcf44f10aa534671631b186534aa7206a0b391f91e22d1",
   "row_plan_fingerprint_sha256": "f476a59238d5c1f216f146f7cbbb968d849a9174662e788a3f9c38a97fd12b97",
   "verification": {
     "row_count": 1000,

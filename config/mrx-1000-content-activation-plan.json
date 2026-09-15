@@ -1,7 +1,7 @@
 {
   "artifact_type": "mrx1000_content_activation_plan",
   "plan_version": "mrx1000-content-activation-v1.1.0",
-  "generated_at": "2026-07-20T23:03:49.582Z",
+  "generated_at": "2026-07-20T00:39:25.405Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
   "content_fingerprint_sha256": "d780b4a2b863561464e764c31ea7ebbcb332887c7cda99470ac7c617580ad779",
@@ -9,7 +9,7 @@
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
     "canonical_ledger_fingerprint_sha256": "b6990559c7b0c909c047f49a21f5cde3bb3d4499886c84f98d4a7f5b632d8778",
     "canonical_ledger_fingerprint_verified": true,
-    "canonical_ledger_generated_at": "2026-07-20T23:03:49.582Z",
+    "canonical_ledger_generated_at": "2026-07-20T00:39:25.405Z",
     "owner_decision": {
       "decision_id": "D-2026-0804-16",
       "signed_disposition": "APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION",
