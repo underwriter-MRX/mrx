@@ -1,0 +1,89 @@
+name: MRX Content Discovery Notifications
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/crawler-notifications.yml
+      - scripts/crawler_sync.py
+      - tests/crawler/**
+  workflow_run:
+    workflows: ['Production Release (Vercel behind Cloudflare)']
+    types: [completed]
+  deployment_status:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: mrx-crawler-notifications
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: >-
+      vars.MRX_CRAWLER_NOTIFICATIONS_ENABLED != 'false' && (
+      github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       github.event.workflow_run.head_branch == github.event.repository.default_branch) ||
+      (github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      MRX_CRAWLER_STATE_DIR: ${{ github.workspace }}/.crawler-state
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify notifier regression tests
+        run: python3 -m unittest discover -s tests/crawler -p 'test_*.py'
+      - name: Restore prior notification receipts
+        uses: actions/cache/restore@v4
+        with:
+          path: .crawler-state
+          key: mrx-crawlers-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: mrx-crawlers-v1-
+      - name: Verify public content and notify IndexNow
+        run: |
+          python3 - <<'PYTHON'
+          import json
+          import sys
+          sys.path.insert(0, 'scripts')
+          import crawler_sync
+          for batch in range(10):
+              report = crawler_sync.sync(True, 40)
+              print(json.dumps(report, indent=2), flush=True)
+              if report['status'] in ('failed', 'partial_failure'):
+                  raise SystemExit(1)
+              if not report['remaining_count'] or not report['accepted_count']:
+                  break
+          PYTHON
+      - name: Preserve receipts and pending retries
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .crawler-state
+          key: mrx-crawlers-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Write run status
+        if: always()
+        run: |
+          python3 scripts/crawler_sync.py --report >> "$GITHUB_STEP_SUMMARY"
+      - name: Preserve notification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mrx-crawler-notification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .crawler-state/*.json
+          retention-days: 30
+          include-hidden-files: true
+          if-no-files-found: error

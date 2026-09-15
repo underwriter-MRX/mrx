@@ -16,7 +16,7 @@ const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} 
 <aside class="article-author-box" aria-labelledby="article-author-title">
   <div class="article-author-box__head">
     <div>
-      <p class="mrx-eyebrow">Article author</p>
+      <p class="mrx-eyebrow">Article guide</p>
       <h2 id="article-author-title">About {guide.name}</h2>
     </div>
     <span>Fictional MRX AI Guide</span>
@@ -37,12 +37,13 @@ const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} 
     </picture>
 
     <div class="article-author-box__bio">
-      <span>MRX Guide Author</span>
+      <span>Fictional AI Guide</span>
       <h3>{guide.name}</h3>
       <strong>{guide.chatRole}</strong>
       <p>{guide.summary}</p>
       <div class="article-author-box__actions">
         <a href={`/team/${guide.slug}/`}>Read {guide.name}'s bio →</a>
+        <a href={`/authors/${guide.slug}/`}>Browse {guide.name}'s topic collection →</a>
         <button type="button" data-article-guide-chat data-guide-prompt={guidePrompt}>
           Ask {guide.name} about this article
         </button>
@@ -57,8 +58,8 @@ const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} 
     </div>
     <p>{authorDescription}</p>
     <small>
-      {authorName} is a fictional MRX AI Guide. MRX maintains organizational responsibility for article
-      sourcing, review, updates, and publication.
+      {guide.name} is a fictional MRX AI Guide. {authorName} maintains responsibility for article sourcing,
+      review, updates, and publication.
     </small>
   </footer>
 </aside>

@@ -57,3 +57,5 @@ qa-searchatlas-*.md
 supabase/.temp/
 .env*
 !.env.example
+.crawler-state/
+__pycache__/

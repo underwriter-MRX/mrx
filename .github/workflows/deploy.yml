@@ -3,6 +3,11 @@ name: Production Release (Vercel behind Cloudflare)
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - .github/workflows/crawler-notifications.yml
+      - scripts/crawler_sync.py
+      - tests/crawler/**
+      - docs/mrx-crawler-notifications.md
   workflow_dispatch:
 
 concurrency:
@@ -35,7 +40,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20.19.5'
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
@@ -81,7 +86,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20.19.5'
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile
