@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import PillarHubPage from '../../../components/organisms/PillarHubPage.astro';
 import MarketingLayout from '../../../layouts/MarketingLayout.astro';
 import { ARTICLE_PILLARS, isPublishedPost, resolvePillar } from '../../../lib/content-graph';
+import { stateGuides } from '../../../data/states';
 import { getPillarInventoryPage } from '../../../lib/pillar-inventory';
 import { groupPillarPosts, postSearchText } from '../../../lib/pillar-hubs';
 
@@ -45,6 +46,67 @@ const topics = groupPillarPosts(posts, [
 
 const inventory = await getPillarInventoryPage(PILLAR_ID);
 
+const featuredStateSlugs = ['texas', 'new-mexico', 'oklahoma', 'pennsylvania'] as const;
+const featuredStates = featuredStateSlugs.map((slug) => {
+  const state = stateGuides.find((candidate) => candidate.slug === slug);
+  if (!state) throw new Error(`Missing state guide for ${slug}`);
+  return state;
+});
+
+const recordSourceMap = [
+  {
+    record: 'Deeds, assignments, reservations, and recorded leases',
+    start:
+      'The recording office for the county, parish, or other local jurisdiction where the property is located',
+    canShow:
+      'Recorded instrument text, parties, legal description, references, and recording details',
+    limit:
+      'One instrument does not establish the complete chain or decide the legal effect of a reservation',
+  },
+  {
+    record: 'Probate and estate records',
+    start:
+      'The court or records office that handled the estate, then the local real-property records for any filed transfer',
+    canShow:
+      'Authority, estate proceedings, distributions, or documents that may connect a decedent to later records',
+    limit:
+      'An estate record must still be matched to the correct property, interest, and recorded chain',
+  },
+  {
+    record: 'Wells, permits, units, and reported production',
+    start:
+      'The state oil-and-gas regulator or the state agency identified as the production recordkeeper',
+    canShow:
+      'Reported operational activity, identifiers, operators, permits, units, or production data',
+    limit:
+      'Operational records do not prove private title, interpret a lease, or confirm an owner decimal',
+  },
+  {
+    record: 'Tax accounts and assessments',
+    start: 'The applicable county, parish, or state tax office for the property and tax year',
+    canShow:
+      'The taxpayer name, account, assessed information, and tax-period records available in that system',
+    limit:
+      'A tax account or assessed amount is not a stand-alone title conclusion or transaction value',
+  },
+  {
+    record: 'Division orders, statements, and payment history',
+    start: 'The operator, purchaser, or payor named on the current document',
+    canShow:
+      'The property identifiers, payee, decimal used, production period, products, adjustments, and payment detail shown',
+    limit:
+      'Payor records are evidence to reconcile with title and lease documents, not a substitute for them',
+  },
+  {
+    record: 'Federal land or mineral records',
+    start: 'The Bureau of Land Management land-record system and the relevant BLM office',
+    canShow:
+      'Federal land-status, patent, survey, and federal mineral or leasing records within the system’s scope',
+    limit:
+      'Federal records do not replace the applicable local chain for a separate private interest',
+  },
+];
+
 const sources = [
   {
     label: 'Texas State Library: Land and Property History Research',
@@ -57,6 +119,18 @@ const sources = [
   {
     label: 'Railroad Commission of Texas: Oil and Gas Well Records',
     href: 'https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/',
+  },
+  {
+    label: 'New Mexico Oil Conservation Division: Public Data and Statistics',
+    href: 'https://www.emnrd.nm.gov/ocd/ocd-data/statistics/',
+  },
+  {
+    label: 'Oklahoma Corporation Commission: Oil and Gas Data Files',
+    href: 'https://www.oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html',
+  },
+  {
+    label: 'Pennsylvania DEP: Oil and Gas Reports',
+    href: 'https://www.pa.gov/agencies/dep/data-and-tools/reports/oil-and-gas-reports',
   },
 ];
 
@@ -75,6 +149,11 @@ const faq = [
     question: 'Can public well or production data confirm what I own?',
     answer:
       'Public well and production records can help identify operations and activity, but they generally do not resolve a private chain of title or interpret a lease. Ownership conclusions should be based on the controlling records and appropriate professional review.',
+  },
+  {
+    question: 'How do mineral rights laws and records differ by state?',
+    answer:
+      'The office names, online systems, available fields, filing rules, and oil-and-gas recordkeepers vary by state and sometimes by county or parish. Start with the property jurisdiction, then keep recorded title, probate, regulatory, tax, and payor records in separate source tracks. Use each state agency for the records it actually maintains, and have a qualified professional in the property’s jurisdiction address any legal or title conclusion.',
   },
 ];
 ---
@@ -109,5 +188,207 @@ const faq = [
       prompt:
         'Help me organize mineral ownership, lease, or division-order documents. Start by asking what document I have and avoid making a title or legal conclusion.',
     }}
-  />
+  >
+    <section
+      slot="decision-guide"
+      id="state-record-source-map"
+      class="container record-source-map"
+      aria-labelledby="state-record-source-map-title"
+    >
+      <header>
+        <p class="record-source-map__eyebrow">Cross-state record guide</p>
+        <h2 id="state-record-source-map-title">How do mineral-rights records differ by state?</h2>
+        <p>
+          The record categories are similar, but the office names, databases, coverage, and filing
+          rules are not. Identify the property’s state and local jurisdiction first. Then research
+          each source class separately so a well record, tax account, or royalty statement is not
+          mistaken for a title conclusion.
+        </p>
+      </header>
+
+      <div
+        class="record-source-map__table-wrap"
+        tabindex="0"
+        role="region"
+        aria-label="Mineral-rights record source map"
+      >
+        <table>
+          <caption>Where to start, what a record may show, and its evidence boundary</caption>
+          <thead>
+            <tr>
+              <th scope="col">Record class</th>
+              <th scope="col">Usual starting point</th>
+              <th scope="col">What it may show</th>
+              <th scope="col">What it cannot settle alone</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              recordSourceMap.map((row) => (
+                <tr>
+                  <th scope="row">{row.record}</th>
+                  <td>{row.start}</td>
+                  <td>{row.canShow}</td>
+                  <td>{row.limit}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="record-source-map__states" aria-labelledby="state-system-examples-title">
+        <h3 id="state-system-examples-title">Start with the correct state system</h3>
+        <p>
+          These state pages connect owner questions to the state regulator. The regulator’s well or
+          production data remains separate from the local records used to research a private
+          ownership chain.
+        </p>
+        <ul>
+          {
+            featuredStates.map((state) => (
+              <li>
+                <a href={`/mineral-rights/${state.slug}/`}>{state.name} owner guide</a>
+                <span aria-hidden="true"> · </span>
+                <a href={state.regulator.url}>{state.regulator.name}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <aside aria-label="Cross-state research boundary">
+        <strong>Keep the conclusion narrow.</strong> A source can confirm what its own system reports.
+        It may not establish current ownership, acreage, lease meaning, payment accuracy, tax treatment,
+        or the legal effect of a document. Record the source, retrieval date, property identifiers, and
+        unresolved conflicts before relying on the result.
+      </aside>
+    </section>
+  </PillarHubPage>
 </MarketingLayout>
+
+<style>
+  .record-source-map {
+    padding-block: clamp(2.75rem, 6vw, 5rem);
+  }
+
+  .record-source-map header {
+    max-width: 78ch;
+  }
+
+  .record-source-map__eyebrow {
+    margin: 0 0 var(--space-2);
+    color: var(--color-accent-700);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .record-source-map h2 {
+    color: var(--color-brand-900);
+    font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  .record-source-map header > p:last-child,
+  .record-source-map__states > p,
+  .record-source-map aside {
+    color: var(--color-ink-600);
+    line-height: 1.65;
+  }
+
+  .record-source-map header > p:last-child {
+    margin-top: var(--space-3);
+  }
+
+  .record-source-map__table-wrap {
+    margin-top: var(--space-6);
+    overflow-x: auto;
+    border: 1px solid var(--color-ink-200);
+    border-radius: var(--radius-md);
+  }
+
+  .record-source-map table {
+    width: 100%;
+    min-width: 820px;
+    border-collapse: collapse;
+    background: var(--color-white);
+  }
+
+  .record-source-map caption {
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-ink-600);
+    font-size: var(--fs-sm);
+    text-align: left;
+    background: var(--color-bg-alt);
+  }
+
+  .record-source-map th,
+  .record-source-map td {
+    padding: var(--space-4);
+    line-height: 1.55;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid var(--color-ink-100);
+  }
+
+  .record-source-map thead th {
+    color: var(--color-brand-900);
+    background: var(--color-brand-50);
+  }
+
+  .record-source-map tbody th {
+    width: 19%;
+    color: var(--color-brand-900);
+  }
+
+  .record-source-map td {
+    color: var(--color-ink-600);
+  }
+
+  .record-source-map__states {
+    margin-top: var(--space-6);
+    padding: var(--space-5);
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-md);
+  }
+
+  .record-source-map__states h3 {
+    color: var(--color-brand-900);
+    font-size: var(--fs-xl);
+  }
+
+  .record-source-map__states > p {
+    max-width: 78ch;
+    margin-top: var(--space-2);
+  }
+
+  .record-source-map__states ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .record-source-map__states li {
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid var(--color-ink-100);
+    border-radius: var(--radius-sm);
+  }
+
+  .record-source-map aside {
+    margin-top: var(--space-5);
+    padding: var(--space-4) var(--space-5);
+    border-left: 4px solid var(--color-accent-500);
+    background: var(--color-white);
+  }
+
+  @media (max-width: 700px) {
+    .record-source-map__states ul {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

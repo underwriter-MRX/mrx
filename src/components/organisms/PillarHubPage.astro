@@ -95,6 +95,14 @@ const articleCount = topics.reduce((total, topic) => total + topic.posts.length,
     </ul>
   </nav>
 
+  {
+    Astro.slots.has('decision-guide') && (
+      <div class="pillar-hub__decision-guide">
+        <slot name="decision-guide" />
+      </div>
+    )
+  }
+
   <div id="topic-guides" class="pillar-hub__topics">
     {
       topics.map((topic) => {

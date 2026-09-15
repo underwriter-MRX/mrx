@@ -1,5 +1,17 @@
+import { existsSync } from 'node:fs';
 import { readFile, readdir } from 'node:fs/promises';
-import { join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const buildCandidates = [join(ROOT, 'dist', 'client'), join(ROOT, 'dist')];
+const buildRoot = buildCandidates.find((candidate) => existsSync(join(candidate, 'blog')));
+
+if (!buildRoot) {
+  throw new Error(
+    `No rendered article directory found in ${buildCandidates.map((candidate) => join(candidate, 'blog')).join(', ')}`,
+  );
+}
 
 async function files(root) {
   const result = [];
@@ -16,7 +28,7 @@ function nodes(value) {
   return [value, ...nodes(value['@graph'])];
 }
 let count = 0;
-for (const path of await files('dist/client/blog')) {
+for (const path of await files(join(buildRoot, 'blog'))) {
   const html = await readFile(path, 'utf8');
   const schema = [
     ...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g),

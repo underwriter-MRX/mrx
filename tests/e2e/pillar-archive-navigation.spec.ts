@@ -228,6 +228,45 @@ test.describe('MRX1000 pillar & archive navigation', () => {
     }
   });
 
+  test('title and ownership pillar separates cross-state record sources from title conclusions', async ({
+    page,
+  }) => {
+    await page.goto('/learning-center/title-lease-ownership/', {
+      waitUntil: 'domcontentloaded',
+    });
+
+    const guide = page.locator('#state-record-source-map');
+    await expect(guide).toBeVisible();
+    await expect(
+      guide.getByRole('heading', {
+        name: 'How do mineral-rights records differ by state?',
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect(guide.locator('tbody tr')).toHaveCount(6);
+    await expect(guide.getByRole('link', { name: 'Texas owner guide' })).toHaveAttribute(
+      'href',
+      '/mineral-rights/texas/',
+    );
+    await expect(guide.getByRole('link', { name: 'New Mexico owner guide' })).toHaveAttribute(
+      'href',
+      '/mineral-rights/new-mexico/',
+    );
+    await expect(guide.getByRole('link', { name: 'Oklahoma owner guide' })).toHaveAttribute(
+      'href',
+      '/mineral-rights/oklahoma/',
+    );
+    await expect(guide.getByRole('link', { name: 'Pennsylvania owner guide' })).toHaveAttribute(
+      'href',
+      '/mineral-rights/pennsylvania/',
+    );
+    await expect(guide).toContainText('not establish current ownership');
+    await expect(page.locator('main h1')).toHaveCount(1);
+    expect(
+      (await page.locator('script[type="application/ld+json"]').allTextContents()).join('\n'),
+    ).toContain('How do mineral rights laws and records differ by state?');
+  });
+
   test('every pillar surface surfaces a downward article inventory with fail-closed cards', async ({
     page,
   }) => {
