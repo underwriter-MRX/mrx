@@ -3,6 +3,11 @@ name: CI
 on:
   push:
     branches: [main, staging]
+    paths-ignore:
+      - .github/workflows/crawler-notifications.yml
+      - scripts/crawler_sync.py
+      - tests/crawler/**
+      - docs/mrx-crawler-notifications.md
   pull_request:
     branches: [main, staging]
 
@@ -16,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '20'
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4

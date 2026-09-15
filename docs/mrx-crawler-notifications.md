@@ -126,3 +126,9 @@ manifest explicitly declares this hash policy; older policies are rejected.
 The existing Cloudflare analytics footer is also pinned by exact SHA-256
 `a7d7b1207343bf240dc3bf89442b597d9a3609888ede71e183e4ff7c9b18f290`.
 Only that exact fragment is ignored. Changed or unrecognized scripts fail closed.
+
+Notifier-only files are installed on the default branch independently from the
+production website lineage. Production and CI push filters ignore these files.
+The initial integration commit uses GitHub `[skip ci]`; Vercel Git deployment is
+already disabled in this branch. Enabling requires the repository variable and
+a successful manual live notification test.

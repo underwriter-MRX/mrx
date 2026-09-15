@@ -39,6 +39,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify notifier regression tests
+        run: python3 -m unittest discover -s tests/crawler -p 'test_*.py'
       - name: Restore prior notification receipts
         uses: actions/cache/restore@v4
         with:
