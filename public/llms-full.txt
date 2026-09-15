@@ -25,12 +25,7 @@ Generated from Astro content at build time.
 ## Learning center and authorship
 
 - [Learning Center](https://mineralrightsxchange.com/learning-center/)
-- [Marisol](https://mineralrightsxchange.com/authors/marisol/)
-- [Owen](https://mineralrightsxchange.com/authors/owen/)
-- [Graham](https://mineralrightsxchange.com/authors/graham/)
-- [Laurel](https://mineralrightsxchange.com/authors/laurel/)
-- [Travis](https://mineralrightsxchange.com/authors/travis/)
-- [Wade](https://mineralrightsxchange.com/authors/wade/)
+- [MRX Editorial Team](https://mineralrightsxchange.com/authors/mrx-editorial-team/)
 
 ## Published article URLs (328)
 
@@ -410,4 +405,3 @@ Generated from Astro content at build time.
 
 - [Privacy Policy](https://mineralrightsxchange.com/privacy-policy/)
 - [Terms and AI Disclosure](https://mineralrightsxchange.com/terms/)
-- [Communication Preferences](https://mineralrightsxchange.com/communication-preferences/)

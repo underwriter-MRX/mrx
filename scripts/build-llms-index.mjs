@@ -52,8 +52,9 @@ const GUIDE_PATHS = [
 const POLICY_PATHS = [
   ['Privacy Policy', '/privacy-policy/'],
   ['Terms and AI Disclosure', '/terms/'],
-  ['Communication Preferences', '/communication-preferences/'],
 ];
+
+const AUTHORSHIP_PATHS = [['MRX Editorial Team', '/authors/mrx-editorial-team/']];
 
 const CATEGORY_LABELS = new Map([
   ['competing-offers', 'Competing offers'],
@@ -120,14 +121,7 @@ const lines = [
   '## Learning center and authorship',
   '',
   linkLine(['Learning Center', '/learning-center/']),
-  ...[
-    ['Marisol', '/authors/marisol/'],
-    ['Owen', '/authors/owen/'],
-    ['Graham', '/authors/graham/'],
-    ['Laurel', '/authors/laurel/'],
-    ['Travis', '/authors/travis/'],
-    ['Wade', '/authors/wade/'],
-  ].map(linkLine),
+  ...AUTHORSHIP_PATHS.map(linkLine),
   '',
   `## Published article URLs (${posts.length})`,
   '',

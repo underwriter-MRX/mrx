@@ -21,8 +21,13 @@ describe('LLM discovery files', () => {
     expect(text).toContain('https://mineralrightsxchange.com/sell-mineral-rights/');
     expect(text).toContain('https://mineralrightsxchange.com/learning-center/');
     expect(text).toContain('https://mineralrightsxchange.com/team/');
+    expect(text).toContain('https://mineralrightsxchange.com/authors/mrx-editorial-team/');
     expect(text).toContain('## Published article URLs');
     expect(text).toContain('Use canonical mineralrightsxchange.com URLs');
+    expect(text).not.toContain('https://mineralrightsxchange.com/communication-preferences/');
+    expect(text).not.toMatch(
+      /https:\/\/mineralrightsxchange\.com\/authors\/(?:marisol|owen|graham|laurel|travis|wade)\//,
+    );
     expect(text).not.toMatch(/internal strategy|competitor research|raw knowledge index/i);
     expect(existsSync(join(publicDir, 'llm.txt'))).toBe(true);
     expect(readFileSync(join(publicDir, 'llm.txt'), 'utf-8')).toContain(
@@ -41,7 +46,12 @@ describe('LLM discovery files', () => {
           ?.trim()
           .replace(/^['"]|['"]$/g, '')
           .trim();
-        return status === 'published';
+        const noindex = source
+          .match(/^noindex:\s*(.+)$/m)?.[1]
+          ?.trim()
+          .replace(/^['"]|['"]$/g, '')
+          .trim();
+        return status === 'published' && noindex !== 'true';
       }).length;
 
     const text = readFileSync(join(publicDir, 'llms-full.txt'), 'utf-8');

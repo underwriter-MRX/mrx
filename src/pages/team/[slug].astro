@@ -36,12 +36,12 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
               ? 'Active fictional MRX AI Guide'
               : 'Fictional MRX AI Guide directory profile'
           }
-        </p><h1>Meet {guide.name}</h1><p class="mrx-guide-profile__role">
+        </p><h1>Meet {guide.name}, {guide.shortRole}</h1><p class="mrx-guide-profile__role">
           {guide.role}
         </p><p class="mrx-guide-profile__summary">{guide.summary}</p><h2>
           What {guide.name} can help organize
         </h2><ul>{guide.helpsWith.map((item) => <li>✓ {item}</li>)}</ul><h2>
-          How {guide.name} speaks
+          How {guide.name} guides the conversation
         </h2><blockquote class="mrx-guide-profile__quote">
           “{guide.greeting}”
         </blockquote><div class="mrx-guide-disclosure">

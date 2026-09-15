@@ -291,7 +291,7 @@ class ChatErrorBoundary extends Component<{ children: ReactNode }, { failed: boo
     if (this.state.failed)
       return (
         <button className="travis-fab" type="button" onClick={() => window.location.reload()}>
-          <img src={travisAvatar} alt="" />
+          <img src={travisAvatar} alt="Travis, fictional MRX AI guide" aria-hidden="true" />
           <span>
             <strong>Ask Travis</strong>
             <small>Refresh to reconnect</small>
@@ -1971,7 +1971,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           aria-label="Ask Travis for mineral-rights help"
         >
           <span className="travis-avatar">
-            <img src={travisAvatar} alt="" />
+            <img src={travisAvatar} alt="Travis, fictional MRX AI guide" aria-hidden="true" />
             <i aria-hidden="true" />
           </span>
           <span>
