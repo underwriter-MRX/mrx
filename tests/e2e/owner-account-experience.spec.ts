@@ -146,6 +146,7 @@ test.describe('MRX owner account experience', () => {
   test('explains the private account before requesting a passwordless link', async ({ page }) => {
     await stubAnonymousSession(page);
     await page.goto('/account/');
+    await page.getByRole('button', { name: 'Create account', exact: true }).click();
 
     await expect(
       page.getByRole('heading', { name: 'Create your private MRX account' }),

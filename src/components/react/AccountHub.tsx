@@ -232,6 +232,11 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(true);
   const [requestingLink, setRequestingLink] = useState(false);
+  const [accessMode, setAccessMode] = useState<'signin' | 'signup'>('signin');
+  const [accessFields, setAccessFields] = useState({ fullName: '', email: '', phone: '' });
+  const [accessError, setAccessError] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [savingProfile, setSavingProfile] = useState(false);
   const [savingInterest, setSavingInterest] = useState(false);
   const [uploadingDocument, setUploadingDocument] = useState(false);
@@ -301,6 +306,16 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
   const hasOwnerAccess = Boolean(session || deviceAccess);
 
   useEffect(() => {
+    const mode = new URLSearchParams(window.location.search).get('mode');
+    setAccessMode(
+      mode === 'signup' ||
+        (mode !== 'signin' && Boolean(accountIntent) && accountIntent !== 'appointment')
+        ? 'signup'
+        : 'signin',
+    );
+  }, [accountIntent]);
+
+  useEffect(() => {
     if (
       hasOwnerAccess &&
       ['appointment', 'elena', 'standalone', 'conversation'].includes(accountIntent)
@@ -320,29 +335,61 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
       setLoading(false);
       return;
     }
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
-      setAuthReady(true);
-    });
+    let cancelled = false;
+    const timeout = window.setTimeout(() => {
+      if (!cancelled) {
+        setLoadError(true);
+        setLoading(false);
+      }
+    }, 15_000);
+    supabase.auth
+      .getSession()
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        if (error) throw error;
+        window.clearTimeout(timeout);
+        setSession(data.session);
+        setAuthReady(true);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          window.clearTimeout(timeout);
+          setLoadError(true);
+          setLoading(false);
+        }
+      });
     const { data } = supabase.auth.onAuthStateChange((_event, next) => {
+      if (cancelled) return;
+      window.clearTimeout(timeout);
       setSession(next);
       setAuthReady(true);
     });
-    return () => data.subscription.unsubscribe();
-  }, [supabase]);
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timeout);
+      data.subscription.unsubscribe();
+    };
+  }, [supabase, loadAttempt]);
 
   useEffect(() => {
     if (!supabase || !authReady) return;
     let cancelled = false;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 15_000);
     (async () => {
       const headers = session ? { Authorization: `Bearer ${session.access_token}` } : undefined;
-      if (session) await fetch('/api/account/claim', { method: 'POST', headers });
-      const response = await fetch('/api/chat/session', { headers });
-      const data = await response.json().catch(() => ({}));
-      if (cancelled || !response.ok) {
-        if (!cancelled) setLoading(false);
-        return;
+      if (session) {
+        const claim = await fetch('/api/account/claim', {
+          method: 'POST',
+          headers,
+          signal: controller.signal,
+        });
+        if (!claim.ok) throw new Error('account_load_failed');
       }
+      const response = await fetch('/api/chat/session', { headers, signal: controller.signal });
+      const data = await response.json().catch(() => ({}));
+      if (cancelled) return;
+      if (!response.ok || !data.ok) throw new Error('account_load_failed');
       setDeviceAccess(Boolean(data.deviceAccess));
       setDocumentUploadsEnabled(Boolean(data.documentUploadsEnabled));
       setDocumentProcessingEnabled(Boolean(data.documentProcessingEnabled));
@@ -352,26 +399,47 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
       setInterests((data.interests as MineralInterest[]) ?? []);
       setActiveInterestId(data.profile?.primary_mineral_interest_id ?? null);
       setAccountProfile(data.profile ?? {});
-      const checklistResponse = await fetch('/api/account/underwriting-checklist', { headers });
-      if (checklistResponse.ok) {
-        const checklistResult = await checklistResponse.json();
-        setUnderwritingChecklist(checklistResult.checklist ?? null);
-        if (typeof checklistResult.processing?.available === 'boolean') {
-          setDocumentProcessingEnabled(checklistResult.processing.available);
-        }
-      }
       setRequestedPermissions({
         email: Boolean(data.permissions?.email),
         sms: Boolean(data.permissions?.sms),
         call: Boolean(data.permissions?.call),
         aiVoice: Boolean(data.permissions?.aiVoice),
       });
+      setLoadError(false);
       setLoading(false);
-    })();
+      // The optional checklist must not delay account access or signed-out controls.
+      if (session || data.deviceAccess) {
+        try {
+          const checklistResponse = await fetch('/api/account/underwriting-checklist', {
+            headers,
+            signal: controller.signal,
+          });
+          if (checklistResponse.ok) {
+            const checklistResult = await checklistResponse.json();
+            if (!cancelled) {
+              setUnderwritingChecklist(checklistResult.checklist ?? null);
+              if (typeof checklistResult.processing?.available === 'boolean')
+                setDocumentProcessingEnabled(checklistResult.processing.available);
+            }
+          }
+        } catch {
+          /* Account access remains usable when the optional checklist is unavailable. */
+        }
+      }
+    })()
+      .catch(() => {
+        if (!cancelled) {
+          setLoadError(true);
+          setLoading(false);
+        }
+      })
+      .finally(() => window.clearTimeout(timeout));
     return () => {
       cancelled = true;
+      window.clearTimeout(timeout);
+      controller.abort();
     };
-  }, [authReady, session, supabase]);
+  }, [authReady, session, supabase, loadAttempt]);
 
   function ownerHeaders(json = false) {
     return {
@@ -382,16 +450,43 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
 
   async function requestLink(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (requestingLink) return;
     const form = new FormData(event.currentTarget);
     const fullName = String(form.get('fullName') || '').trim();
     const email = String(form.get('email') || '').trim();
     const phone = String(form.get('phone') || '').trim();
     setRequestingLink(true);
+    setAccessError(false);
     setStatus('');
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 15_000);
     try {
+      if (accessMode === 'signin') {
+        const response = await fetch('/api/account/auth-link', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+          signal: controller.signal,
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || !result.ok) {
+          setAccessError(true);
+          setStatus(
+            response.status === 429
+              ? 'Too many requests. Please wait a few minutes and try again.'
+              : 'We couldn’t request a sign-in link. Your email is still here; please try again.',
+          );
+        } else {
+          setStatus(
+            'If an account matches this email, a secure sign-in link will be requested. Check your inbox and spam folder.',
+          );
+        }
+        return;
+      }
       const response = await fetch('/api/chat/identity', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        signal: controller.signal,
         body: JSON.stringify({
           action: 'email',
           accountSignup: true,
@@ -406,6 +501,7 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
         }),
       });
       const result = await response.json().catch(() => ({}));
+      setAccessError(!response.ok);
       if (response.ok && result.deviceAccess) {
         const nameParts = fullName.split(/\s+/).filter(Boolean);
         setDeviceAccess(true);
@@ -441,8 +537,14 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
               : 'Your private profile could not be created just now.',
       );
     } catch {
-      setStatus('Your private profile could not be created just now.');
+      setAccessError(true);
+      setStatus(
+        accessMode === 'signin'
+          ? 'We couldn’t request a sign-in link. Your email is still here; please try again.'
+          : 'We couldn’t confirm account setup. Your details are still here; please try again.',
+      );
     } finally {
+      window.clearTimeout(timeout);
       setRequestingLink(false);
     }
   }
@@ -930,41 +1032,125 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
         </p>
       </div>
     );
+  if (loadError)
+    return (
+      <section className="account-card" aria-labelledby="account-recovery-title">
+        <h2 id="account-recovery-title">We couldn’t load your account</h2>
+        <p role="alert">Please try again. This hasn’t changed your saved account or documents.</p>
+        <button
+          type="button"
+          onClick={() => {
+            setLoadError(false);
+            setLoading(true);
+            setAuthReady(false);
+            setLoadAttempt((attempt) => attempt + 1);
+          }}
+        >
+          Try again
+        </button>
+        <p>
+          You can also <a href="/learning-center/">keep researching</a> while you wait.
+        </p>
+      </section>
+    );
   if (loading)
     return (
       <div className="account-card">
-        <p>Loading your private MRX account…</p>
+        <p role="status">Loading your private MRX account…</p>
       </div>
     );
   if (!hasOwnerAccess)
     return (
       <form className="account-card account-signin" onSubmit={requestLink}>
         <p className="account-kicker">Private owner account</p>
-        <h2>{accountIntentTitle}</h2>
-        <p>{accountIntentDescription}</p>
-        <label>
-          Full name
-          <input name="fullName" type="text" required autoComplete="name" />
-        </label>
+        <div className="account-access-modes" role="group" aria-label="Account access">
+          {(['signin', 'signup'] as const).map((mode) => (
+            <button
+              key={mode}
+              type="button"
+              aria-pressed={accessMode === mode}
+              disabled={requestingLink}
+              onClick={() => {
+                setAccessMode(mode);
+                setStatus('');
+                setAccessError(false);
+              }}
+            >
+              {mode === 'signin' ? 'Sign in' : 'Create account'}
+            </button>
+          ))}
+        </div>
+        <h2>{accessMode === 'signin' ? 'Sign in to your MRX account' : accountIntentTitle}</h2>
+        <p>
+          {accessMode === 'signin'
+            ? 'Use the email connected to your account. We’ll request a secure sign-in link; you don’t need a password.'
+            : accountIntentDescription}
+        </p>
+        {accessMode === 'signup' && (
+          <label>
+            Full name
+            <input
+              name="fullName"
+              type="text"
+              required
+              autoComplete="name"
+              value={accessFields.fullName}
+              readOnly={requestingLink}
+              onChange={(event) =>
+                setAccessFields((fields) => ({ ...fields, fullName: event.target.value }))
+              }
+            />
+          </label>
+        )}
         <label>
           Email
-          <input name="email" type="email" required autoComplete="email" />
+          <input
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
+            value={accessFields.email}
+            readOnly={requestingLink}
+            onChange={(event) =>
+              setAccessFields((fields) => ({ ...fields, email: event.target.value }))
+            }
+          />
         </label>
-        <label>
-          Phone
-          <input name="phone" type="tel" required autoComplete="tel" />
-        </label>
+        {accessMode === 'signup' && (
+          <label>
+            Phone
+            <input
+              name="phone"
+              type="tel"
+              required
+              autoComplete="tel"
+              value={accessFields.phone}
+              readOnly={requestingLink}
+              onChange={(event) =>
+                setAccessFields((fields) => ({ ...fields, phone: event.target.value }))
+              }
+            />
+          </label>
+        )}
         <button type="submit" disabled={requestingLink}>
-          {requestingLink ? 'Creating private account…' : 'Create account and continue'}
+          {accessMode === 'signin'
+            ? requestingLink
+              ? 'Requesting sign-in link…'
+              : 'Send sign-in link'
+            : requestingLink
+              ? 'Creating private account…'
+              : 'Create account and continue'}
         </button>
-        <small>
-          Continue immediately on this device. MRX also requests a passwordless email link for
-          secure return access from another device. Saving your contact details does not give MRX
-          permission to send updates or place calls; you can approve each channel separately with
-          Travis.
-        </small>
+        {accessMode === 'signup' && (
+          <small>
+            Continue immediately on this device. MRX also requests a passwordless email link for
+            secure return access from another device. Saving your contact details does not give MRX
+            permission to send updates or place calls; you can approve each channel separately with
+            Travis.
+          </small>
+        )}
         {status && (
-          <p className="account-status" role="status">
+          <p className="account-status" role={accessError ? 'alert' : 'status'}>
             {status}
           </p>
         )}
