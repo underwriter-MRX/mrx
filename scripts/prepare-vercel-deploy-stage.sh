@@ -87,9 +87,13 @@ done < <(
   ' "$repo_root/config/mrx1000-release-10-batch.json"
 )
 
+# Vercel's current CLI Deployment source-file limit is 15,000. Keep a 1,000
+# file safety margin; the former 4,900 cap became obsolete as the reviewed
+# MRX1000 evidence and public two-image corpus grew.
+# https://vercel.com/docs/limits#files
 file_count=$(find "$stage_dir" -type f | wc -l | tr -d ' ')
-if (( file_count >= 4900 )); then
-  echo "Refusing Vercel staging bundle with $file_count files (limit: 4,900)." >&2
+if (( file_count >= 14000 )); then
+  echo "Refusing Vercel staging bundle with $file_count files (safety limit: 13,999; provider limit: 15,000)." >&2
   exit 1
 fi
 

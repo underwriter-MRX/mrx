@@ -17,3 +17,7 @@ The canonical MRX1000 count remains **320**, not the 328 public blog-route count
 The sitewide schema, navigation, OTTO installation, and transient probe are not a reason to blanket-deploy unsafe suggestions or spend Search Atlas generation credits. The remaining gate for a new article is article-specific: select an unused program row with a genuinely distinct, sourced owner job and obtain the required `mrx_ceo` exact-identity verdict, then run every editorial, image, build, deployment, and all-alias live gate. The prior owner stop at 320 remains reflected in the paused goal state; this reconciliation did not itself start new content production.
 
 No new or incremental monetary charge was proposed or incurred.
+
+## Deployment-stage recovery
+
+The unchanged public two-image corpus plus signed MRX1000 evidence raised the lean staging bundle to 5,836 files. The old helper's 4,900-file cutoff stopped the first staging attempt before upload; no deployment was created. [Vercel's current documented CLI Deployment source-file limit](https://vercel.com/docs/limits#files) is 15,000. The helper now retains a 1,000-file margin and refuses 14,000 or more files. A fresh staged bundle passed at 5,836 files; this corrects an obsolete local threshold rather than bypassing a provider limit. The same project reports the prior Ready production deployment `dpl_Ftq9ghxBoULrbs7Fmn7sCq4UAHQe` on apex, `www`, and `mrx-web.vercel.app`, which is the release rollback reference.
