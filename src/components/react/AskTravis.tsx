@@ -2256,7 +2256,9 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                     <p>
                       {bookedAppointment
                         ? 'Want me to send this answer? Your phone conversation is already booked.'
-                        : 'Want me to send this answer, or help you set up a phone conversation?'}
+                        : bookingDeclined
+                          ? 'Want me to send this answer?'
+                          : 'Want me to send this answer, or help you set up a phone conversation?'}
                     </p>
                   )}
                   {quickReplies.map((reply) => (

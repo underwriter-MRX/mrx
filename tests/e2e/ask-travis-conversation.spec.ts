@@ -69,6 +69,8 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(
       page.getByRole('button', { name: 'Schedule a human underwriter call', exact: true }),
     ).toHaveCount(0);
+    await expect(page.getByText('Want me to send this answer?', { exact: true })).toBeVisible();
+    await expect(page.getByText(/or help you set up a phone conversation/)).toHaveCount(0);
     expect(payloads.at(-1).context.bookingDeclined).toBe(true);
     await reply(
       page,
