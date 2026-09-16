@@ -12,10 +12,23 @@ const question =
   'To help prepare for your review, which county and state are the minerals in? It’s okay if you’re not sure yet.';
 async function fixture(
   page: Page,
-  { valid = true, declined = false, location = false, marker = true, delay = 0 } = {},
+  {
+    valid = true,
+    declined = false,
+    location = false,
+    marker = true,
+    delay = 0,
+    accountRefused = true,
+  } = {},
 ) {
   const messages: any[] = [
     { id: 'known-goal', role: 'user', content: 'I want to compare an offer.' },
+    {
+      id: 'known-answer',
+      role: 'assistant',
+      persona: 'travis',
+      content: 'We can use the written offer to understand its terms.',
+    },
   ];
   const payloads: any[] = [];
   await page.route('**/api/**', (route) =>
@@ -83,10 +96,10 @@ async function fixture(
     });
   });
   await page.addInitScript(
-    ({ conversationId, question, declined, marker }) => {
+    ({ conversationId, question, declined, marker, accountRefused }) => {
       if (!sessionStorage.getItem('fixture-initialized')) {
         sessionStorage.setItem('fixture-initialized', '1');
-        sessionStorage.setItem('mrx_account_prompt_closed', '1');
+        if (accountRefused) sessionStorage.setItem('mrx_account_prompt_closed', '1');
         if (marker)
           sessionStorage.setItem(
             'mrx_appointment_preparation',
@@ -101,7 +114,7 @@ async function fixture(
         if (declined) sessionStorage.setItem('mrx_discovery_declined', '1');
       }
     },
-    { conversationId, question, declined, marker },
+    { conversationId, question, declined, marker, accountRefused },
   );
   return { messages, payloads };
 }
@@ -109,13 +122,14 @@ async function fixture(
 test('continues with one question, saves the answer, honors pause, and restores without reopening', async ({
   page,
 }) => {
-  const { messages, payloads } = await fixture(page);
+  const { messages, payloads } = await fixture(page, { accountRefused: false });
   await page.goto('/account/?welcome=appointment&prepare=1');
   const dialog = page.getByTestId('ask-travis-dialog');
   await expect(dialog).toBeVisible();
   await expect(dialog.getByText('which county and state', { exact: false })).toBeVisible();
   await expect(dialog.getByText('How may I help you?', { exact: true })).toHaveCount(0);
   const input = page.getByTestId('travis-composer-input');
+  await expect(input).toBeFocused();
   await input.fill('Reeves County, Texas');
   await input.press('Enter');
   await expect(

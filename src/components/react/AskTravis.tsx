@@ -806,8 +806,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   }, [open, sessionReady, bookingRequested]);
 
   useEffect(() => {
-    if (open) window.setTimeout(() => inputRef.current?.focus(), 80);
-  }, [open, step]);
+    if (open && sessionReady) window.setTimeout(() => inputRef.current?.focus(), 80);
+  }, [open, step, sessionReady]);
   useEffect(() => {
     if (open) {
       wasOpenRef.current = true;
@@ -2271,6 +2271,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     step === 'intro-phone' || step === 'delivery-phone' || step === 'booking-phone';
   const isNameStep = step === 'intro-name' || step === 'intro-last-name' || step === 'booking-name';
   const showAccountPrompt =
+    !bookedAppointment &&
     step === 'open' &&
     accountInvitationReady({
       goal: rapportGoal,
