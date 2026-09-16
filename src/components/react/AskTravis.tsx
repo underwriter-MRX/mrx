@@ -20,6 +20,8 @@ import { guideReplyDelay, remainingGuideReplyDelay } from '../../lib/platform/ti
 import { fallbackConversationAnswer } from '../../lib/platform/conversation';
 import {
   accountInvitationReady,
+  bookingDeclinedFromMessages,
+  isBookingRefusal,
   countMeaningfulExchanges,
   discoveryWasDeclined,
   firstNameFromReply,
@@ -350,6 +352,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const [rapportGoal, setRapportGoal] = useState<OwnerGoal | null>(null);
   const [meaningfulExchanges, setMeaningfulExchanges] = useState(0);
   const [discoveryDeclined, setDiscoveryDeclined] = useState(false);
+  const [bookingDeclined, setBookingDeclined] = useState(false);
   const [preserveOpeningPersona, setPreserveOpeningPersona] = useState(false);
 
   const endRef = useRef<HTMLDivElement>(null);
@@ -555,6 +558,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   useEffect(() => {
     setAccountPromptDismissed(window.sessionStorage.getItem('mrx_account_prompt_closed') === '1');
     setDiscoveryDeclined(window.sessionStorage.getItem('mrx_discovery_declined') === '1');
+    setBookingDeclined(window.sessionStorage.getItem('mrx_booking_declined') === '1');
     let cancelled = false;
     void (async () => {
       try {
@@ -580,6 +584,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               }))
           : [];
         setMessages(restored);
+        setBookingDeclined(
+          bookingDeclinedFromMessages(
+            restored,
+            window.sessionStorage.getItem('mrx_booking_declined') === '1',
+          ),
+        );
         setMeaningfulExchanges(countMeaningfulExchanges(restored));
         setRapportGoal(
           restored
@@ -747,6 +757,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   async function sendMessage(forced?: string) {
     const text = (forced ?? input).trim();
     if (!text || sending) return;
+    const declinedBooking = isBookingRefusal(text);
+    if (declinedBooking) {
+      setBookingDeclined(true);
+      window.sessionStorage.setItem('mrx_booking_declined', '1');
+    }
     if (isBookingIntent(text)) {
       setInput('');
       return beginBooking();
@@ -814,6 +829,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
             location: profile.location || undefined,
             currentPersona: activePersona,
             discoveryDeclined: discoveryDeclined || declinedDiscovery || undefined,
+            bookingDeclined: bookingDeclined || declinedBooking || undefined,
             preserveCurrentPersona: preserveOpeningPersona || undefined,
           },
           history,
@@ -1123,6 +1139,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   }
 
   async function beginBooking() {
+    setBookingDeclined(false);
+    window.sessionStorage.removeItem('mrx_booking_declined');
     beginGuideResponseWindow();
     track('booking_opened', {
       source: bookedAppointment ? 'existing_appointment' : 'ask_travis',
@@ -2013,7 +2031,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       return lastAnswer
         ? [
             { label: 'Send me this answer', value: 'send', kind: 'primary' },
-            ...(bookedAppointment
+            ...(bookedAppointment || bookingDeclined
               ? []
               : [{ label: 'Schedule a human underwriter call', value: 'book' }]),
           ]
@@ -2064,6 +2082,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     sending,
     booking,
     bookedAppointment,
+    bookingDeclined,
     lastAnswer,
     options,
     profile.timezone,
@@ -2370,7 +2389,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   >
                     ✓ Call booked
                   </button>
-                ) : (
+                ) : !bookingDeclined ? (
                   <button
                     type="button"
                     className="travis-footer-action travis-footer-action--appointment"
@@ -2379,7 +2398,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   >
                     Schedule a human underwriter call
                   </button>
-                )}
+                ) : null}
               </div>
               <p>
                 Travis remembers this conversation on this device. Contact details are only used

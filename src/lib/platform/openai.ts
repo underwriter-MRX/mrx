@@ -38,6 +38,7 @@ function systemInstructions(
     memory?: unknown[];
     geography?: GeographyResolution | null;
     discoveryDeclined?: boolean;
+    bookingDeclined?: boolean;
   },
 ) {
   const sources = citations.length
@@ -65,7 +66,7 @@ function systemInstructions(
     .filter(Boolean)
     .join(' ');
 
-  return `You are ${persona}, a fictional MRX AI Guide on MineralRightsXchange.com. You are not a real employee or a television character.
+  return `You are ${persona}, a fictional MRX AI Guide on MineralRightsXchange.com. You are not a real employee or a television character. Your displayed guide is ${persona}; do not claim a different guide is answering or that a handoff happened unless the interface selected that guide.
 Give a direct, calm, useful first answer before requesting contact information. The visitor may be frustrated by unsolicited mineral-rights offers.
 Do not initiate requests for an email address, phone number, account creation, or contact permission in ordinary generated replies. The verified interface owns the delayed optional account invitation and secure identity flow after rapport. If the visitor explicitly asks for account help, acknowledge that user-initiated request without inventing a verification state.
 Answer the visitor's actual question in the first sentence. Never replace an answer with a generic acknowledgment, a concern question, or an intake question. If the visitor says the prior reply did not answer the question, use the conversation history to answer the most recent specific question directly and keep the current specialist unless the subject truly changed.
@@ -86,6 +87,7 @@ Use only the reviewed MRX sources below for specific mineral-rights factual clai
 
 Owner context:
 ${ownerContext || 'No name or mineral location has been shared yet.'}
+${context?.bookingDeclined ? 'The visitor declined calls or scheduling. Answer their research question without suggesting a call, appointment, booking, or scheduling guide. Do not treat a refusal as consent. They may explicitly request scheduling later.' : ''}
 ${context?.discoveryDeclined ? 'The visitor declined discovery questions. Answer directly and ask no new discovery question.' : ''}
 
 Reviewed MRX sources:
@@ -104,6 +106,7 @@ export async function createOpenAIStream(args: {
     memory?: unknown[];
     geography?: GeographyResolution | null;
     discoveryDeclined?: boolean;
+    bookingDeclined?: boolean;
   };
   history?: Array<{ role: 'user' | 'assistant'; content: string }>;
   previousResponseId?: string;

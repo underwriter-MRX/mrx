@@ -11,7 +11,7 @@ export type OwnerGoal =
   | 'other';
 
 const bookingIntent =
-  /\b(?:book|schedule|appointment|call me|talk (?:to|with) (?:a |an )?(?:human|underwriter|someone)|speak (?:to|with) (?:a |an )?(?:human|underwriter|someone))\b/i;
+  /\b(?:(?:book|schedule|arrange|set up)\s+(?:(?:a|an|the|my|phone|human|underwriter)\s+)*(?:call|appointment|meeting|time|slot)|(?:want|like|need|ready)\s+to\s+(?:book|schedule)|call me|(?:talk|speak)\s+(?:to|with)\s+(?:a |an )?(?:human|underwriter|someone))\b|^(?:please\s+)?(?:book|schedule)[.!?]?$/i;
 const valueIntent = /\b(?:offer|value|worth|price|sell|selling|hold|buyer)\b/i;
 const nameRefusal =
   /^(?:skip|pass|rather not|i(?:'d| would) rather not(?: say)?|i do not want to share my name|i don'?t want to share my name|anonymous|no name|not sharing|prefer not to say|just answer(?: my question)?|no thanks?)\.?$/i;
@@ -19,15 +19,33 @@ const discoveryRefusal =
   /\b(?:just answer|stop asking|don'?t ask|do not ask|not comfortable|skip (?:this|the questions)|never mind)\b/i;
 
 export function isBookingIntent(value: string) {
-  const text = value.trim();
-  if (
-    /\b(?:do not|don'?t|not|no longer|never)\s+(?:want to\s+|ready to\s+)?(?:book|schedule|call|have an appointment)\b/i.test(
+  if (isBookingRefusal(value)) return false;
+  return bookingIntent.test(value.trim());
+}
+
+export function isBookingRefusal(value: string) {
+  const text = value.replace(/[’]/g, "'");
+  return (
+    /\b(?:do not|don't|not|no longer|never)\s+(?:(?:want|need|ready|interested|looking)\s+(?:to\s+|in\s+|for\s+)?)?(?:(?:have|any|a|an|the|phone|telephone|human|underwriter)\s+)*(?:calls?|call me|book(?:ing)?|schedul\w*|appointments?|talk\s+(?:to|with)|speak\s+(?:to|with))\b/i.test(
       text,
     ) ||
-    /\bdo not want an appointment\b/i.test(text)
-  )
-    return false;
-  return bookingIntent.test(text);
+    /\bno\s+(?:phone\s+)?(?:calls?|bookings?|appointments?|scheduling)\b/i.test(text) ||
+    /\b(?:stop|avoid|skip)\s+(?:(?:offering|suggesting|the|a)\s+)*(?:calls?|bookings?|appointments?|scheduling)\b/i.test(
+      text,
+    )
+  );
+}
+
+export function bookingDeclinedFromMessages(
+  messages: Array<{ role: string; content: string }>,
+  initial = false,
+) {
+  return messages.reduce((declined, message) => {
+    if (message.role !== 'user') return declined;
+    if (isBookingRefusal(message.content)) return true;
+    if (isBookingIntent(message.content)) return false;
+    return declined;
+  }, initial);
 }
 
 export function isAccountIntent(value: string) {

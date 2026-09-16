@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { stubAnonymousSession } from './helpers/stub-session';
+import { routeGuideDecision } from '../../src/data/guides';
 
 async function reply(page: any, value: string) {
   const input = page.getByTestId('travis-composer-input');
@@ -8,6 +9,89 @@ async function reply(page: any, value: string) {
 }
 
 test.describe('Ask Travis conversational experience', () => {
+  test('honors no-booking research, explicit guide correction, and a later change of mind', async ({
+    page,
+  }) => {
+    await stubAnonymousSession(page);
+    await page.route('**/api/chat/facts', (route) =>
+      route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ ok: true }),
+      }),
+    );
+    const payloads: any[] = [];
+    await page.route('**/api/chat/message', async (route) => {
+      const payload = route.request().postDataJSON();
+      payloads.push(payload);
+      const decision = routeGuideDecision(
+        payload.message,
+        payload.context.currentPersona,
+        payload.context.preserveCurrentPersona,
+      );
+      const events: any[] = [];
+      if (decision.shouldHandoff)
+        events.push({
+          type: 'persona.handoff',
+          from: decision.from.slug,
+          to: decision.guide.slug,
+          message: decision.handoffMessage,
+        });
+      events.push(
+        {
+          type: 'message.delta',
+          delta:
+            'You can keep researching here. Start with the deed and any division orders you already have.',
+          persona: decision.guide.slug,
+        },
+        { type: 'done' },
+      );
+      await route.fulfill({
+        status: 200,
+        contentType: 'text/event-stream',
+        body: events
+          .map((event) => `event: ${event.type}\ndata: ${JSON.stringify(event)}\n\n`)
+          .join(''),
+      });
+    });
+    await page.goto('/');
+    await page.locator('[data-open-home-chat]').first().click();
+    await reply(page, 'Alex');
+    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+      'name',
+      'mrx-chat-open',
+    );
+    await reply(
+      page,
+      'This is a QA test with fictional details. I inherited mineral rights in Texas and want to know which documents to gather first. I am only researching and do not want calls or a booking.',
+    );
+    await expect(page.getByText('Talking with Connor', { exact: true })).toBeVisible();
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call', exact: true }),
+    ).toHaveCount(0);
+    expect(payloads.at(-1).context.bookingDeclined).toBe(true);
+    await reply(
+      page,
+      'Please keep this with Travis. I do not want to schedule anything. Can I keep researching without creating an account?',
+    );
+    await expect(page.getByText('Talking with Travis', { exact: true })).toBeVisible();
+    await expect(page.getByTestId('travis-composer-input')).toHaveAccessibleName('Reply to Travis');
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call', exact: true }),
+    ).toHaveCount(0);
+    await page.reload();
+    await page.locator('[data-open-home-chat]').first().click();
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call', exact: true }),
+    ).toHaveCount(0);
+    await reply(page, 'Please book a call with an underwriter.');
+    await expect(page.getByText('Talking with Elena', { exact: true })).toBeVisible();
+    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+      'name',
+      'mrx-chat-booking-timezone',
+    );
+  });
+
   test('labels the header account control as Log In', async ({ page }) => {
     await stubAnonymousSession(page);
     await page.goto('/');

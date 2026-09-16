@@ -1,3 +1,5 @@
+import { isBookingIntent, isBookingRefusal } from '../lib/platform/rapport';
+
 export type GuideStatus = 'active' | 'directory';
 
 export interface Guide {
@@ -321,19 +323,47 @@ const guideRoutes: Array<{
   },
 ];
 
-export function routeGuideDecision(question: string, currentGuideSlug = 'travis'): GuideRoute {
+export function routeGuideDecision(
+  question: string,
+  currentGuideSlug = 'travis',
+  preserveCurrent = false,
+): GuideRoute {
   const normalized = question.toLowerCase();
   const current = activeGuides.find((guide) => guide.slug === currentGuideSlug) ?? guides[0];
-  const match = guideRoutes.find((route) => route.terms.some((term) => normalized.includes(term)));
-  const guide = match ? (getGuide(match.slug) ?? current) : current;
+  const requestedName = normalized.match(
+    /\b(?:keep\s+(?:this|me|the conversation|this conversation)\s+with|stay\s+with|back\s+to|talk\s+(?:to|with)|speak\s+(?:to|with))\s+(travis|connor|clay|owen|laurel|elena)\b/,
+  )?.[1];
+  const requested =
+    requestedName && !(requestedName === 'elena' && isBookingRefusal(question))
+      ? getGuide(requestedName)
+      : undefined;
+  const match = preserveCurrent
+    ? undefined
+    : guideRoutes.find((route) =>
+        route.slug === 'elena'
+          ? isBookingIntent(question)
+          : route.terms.some((term) => normalized.includes(term)),
+      );
+  const guide =
+    requested ??
+    (match
+      ? (getGuide(match.slug) ?? current)
+      : current.slug === 'elena' && isBookingRefusal(question)
+        ? guides[0]
+        : current);
+  const reason = requested
+    ? 'your requested guide'
+    : (match?.reason ?? guide.shortRole.toLowerCase());
   const shouldHandoff = guide.slug !== current.slug;
   return {
     guide,
     from: current,
     shouldHandoff,
-    reason: shouldHandoff ? (match?.reason ?? guide.shortRole.toLowerCase()) : null,
+    reason: shouldHandoff ? reason : null,
     handoffMessage: shouldHandoff
-      ? `${guide.name} is the right MRX guide for ${match?.reason ?? guide.shortRole.toLowerCase()}. I am bringing ${guide.name} into the conversation, and ${guide.name} can use what you have already shared.`
+      ? requested
+        ? `I’ll keep this with ${guide.name}.`
+        : `${guide.name} is the right MRX guide for ${reason}. I am bringing ${guide.name} into the conversation, and ${guide.name} can use what you have already shared.`
       : null,
   };
 }

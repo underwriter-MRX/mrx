@@ -16,7 +16,11 @@ import {
 import type { ChatRequest, KnowledgeCitation, StreamEvent } from '../../../lib/platform/types';
 import { runtimeComplianceCheck, normalizeMrxText } from '../../../lib/platform/style';
 import { questionForAnswer, type ConversationTurn } from '../../../lib/platform/conversation';
-import { questionCount, withoutFollowupQuestion } from '../../../lib/platform/rapport';
+import {
+  bookingDeclinedFromMessages,
+  questionCount,
+  withoutFollowupQuestion,
+} from '../../../lib/platform/rapport';
 import { syncVerifiedOwnerToGhl } from '../../../lib/platform/crm';
 import {
   documentLocationCardFromInterest,
@@ -39,6 +43,7 @@ const RequestSchema = z.object({
       location: z.string().max(200).optional(),
       currentPersona: z.enum(['travis', 'connor', 'clay', 'owen', 'laurel', 'elena']).optional(),
       discoveryDeclined: z.boolean().optional(),
+      bookingDeclined: z.boolean().optional(),
       preserveCurrentPersona: z.boolean().optional(),
     })
     .optional(),
@@ -229,10 +234,15 @@ export const POST: APIRoute = async (context) => {
       body.context?.currentPersona ||
       (typeof ownerContext.lastPersona === 'string' ? ownerContext.lastPersona : 'travis');
     const route = routeGuideDecision(
-      body.context?.preserveCurrentPersona ? '' : effectiveQuestion,
+      effectiveQuestion,
       currentPersona,
+      body.context?.preserveCurrentPersona,
     );
     const persona = route.guide;
+    const bookingDeclined = bookingDeclinedFromMessages(
+      [...history, { role: 'user', content: message }],
+      Boolean(body.context?.bookingDeclined),
+    );
     const profile = ownerContext.profile as {
       first_name?: string;
       last_name?: string;
@@ -299,6 +309,7 @@ export const POST: APIRoute = async (context) => {
               memory: ownerContext.memory,
               geography,
               discoveryDeclined: body.context?.discoveryDeclined,
+              bookingDeclined,
             },
             history,
           });

@@ -32,11 +32,34 @@ describe('MRX AI guide routing', () => {
     expect(routeGuide(question).slug).toBe(expected);
   });
 
+  it.each([
+    [
+      'This is a QA test with fictional details. I inherited mineral rights in Texas and want to know which documents to gather first. I am only researching and do not want calls or a booking.',
+      'travis',
+      'connor',
+    ],
+    [
+      'Please keep this with Travis. I do not want to schedule anything. Can I keep researching without creating an account?',
+      'elena',
+      'travis',
+    ],
+    ["Don't call me. I need county records.", 'travis', 'connor'],
+    ['I am not ready for an appointment.', 'elena', 'travis'],
+    ['I read a book about inherited rights.', 'travis', 'connor'],
+    ['I am not sure about the county, but please schedule a call.', 'travis', 'elena'],
+  ])('honors intent and refusal: %s', (message, current, expected) => {
+    expect(routeGuideDecision(message, current).guide.slug).toBe(expected);
+  });
+
+  it('honors an explicit requested guide even when preserving the opening guide', () => {
+    expect(routeGuideDecision('Please keep this with Travis.', 'elena', true)).toMatchObject({
+      guide: { slug: 'travis' },
+      shouldHandoff: true,
+    });
+  });
+
   it('hands an active specialist to the next guide when the owner changes topics', () => {
-    const decision = routeGuideDecision(
-      'Which county records and deed should I request?',
-      'clay',
-    );
+    const decision = routeGuideDecision('Which county records and deed should I request?', 'clay');
     expect(decision).toMatchObject({
       from: { slug: 'clay' },
       guide: { slug: 'connor' },

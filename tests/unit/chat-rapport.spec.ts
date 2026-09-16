@@ -2,6 +2,8 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import {
   accountInvitationReady,
+  bookingDeclinedFromMessages,
+  isBookingRefusal,
   countMeaningfulExchanges,
   discoveryWasDeclined,
   firstNameFromReply,
@@ -35,6 +37,31 @@ describe('rapport-first chat helpers', () => {
     expect(isBookingIntent('I do not want to book')).toBe(false);
     expect(isBookingIntent('I am not ready to book')).toBe(false);
     expect(isBookingIntent('I do not want an appointment')).toBe(false);
+  });
+
+  it.each([
+    'I do not want calls or a booking.',
+    'I am not ready for an appointment.',
+    'No calls please.',
+    'I do not want a phone call.',
+    'I do not want to have an appointment.',
+    'I am not interested in telephone calls.',
+    "I don't want to talk to someone; just answer here.",
+    'Stop suggesting appointments.',
+  ])('recognizes scheduling refusal: %s', (message) => {
+    expect(isBookingRefusal(message)).toBe(true);
+    expect(isBookingIntent(message)).toBe(false);
+  });
+
+  it('keeps a scheduling refusal until the visitor explicitly asks again', () => {
+    const history = [
+      { role: 'user', content: 'No calls please.' },
+      { role: 'user', content: 'What records do I need?' },
+    ];
+    expect(bookingDeclinedFromMessages(history)).toBe(true);
+    expect(
+      bookingDeclinedFromMessages([...history, { role: 'user', content: 'Please book a call.' }]),
+    ).toBe(false);
   });
 
   it('keeps explicit account requests distinct from account refusals', () => {
@@ -145,7 +172,7 @@ describe('rapport source contract', () => {
 
   it('preserves Clay for the first deferred value response without disabling later routing', () => {
     expect(askTravis).toContain('preserveCurrentPersona: preserveOpeningPersona || undefined');
-    expect(messageApi).toContain("body.context?.preserveCurrentPersona ? '' : effectiveQuestion");
+    expect(messageApi).toContain('body.context?.preserveCurrentPersona,');
     expect(askTravis).toContain('setPreserveOpeningPersona(false)');
   });
 
