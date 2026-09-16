@@ -358,6 +358,10 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const endRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLElement>(null);
+  const openerRef = useRef<HTMLElement | null>(null);
+  const wasOpenRef = useRef(false);
   const introStarted = useRef(false);
   const responseStartedAt = useRef<number | null>(null);
   const supabase = useMemo<SupabaseClient | null>(
@@ -662,6 +666,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     const handleOpenRequest = (detail: ChatOpenDetail = {}, sequence?: number) => {
       if (sequence && handledSequences.has(sequence)) return;
       if (sequence) handledSequences.add(sequence);
+      rememberChatOpener();
       beginGuideResponseWindow();
       const openingPersona = openingPersonaFor(detail?.prompt, detail?.booking);
       if (!introStarted.current || detail?.prompt || detail?.booking)
@@ -750,6 +755,61 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   useEffect(() => {
     if (open) window.setTimeout(() => inputRef.current?.focus(), 80);
   }, [open, step]);
+  useEffect(() => {
+    if (open) {
+      wasOpenRef.current = true;
+      const handleDialogKeyDown = (event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          closeChat();
+          return;
+        }
+        if (event.key !== 'Tab' || !dialogRef.current) return;
+        const panel = dialogRef.current;
+        const focusable = Array.from(
+          panel.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+          ),
+        ).filter((element) => element.getClientRects().length && !element.hasAttribute('hidden'));
+        if (!focusable.length) {
+          event.preventDefault();
+          panel.focus();
+          return;
+        }
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        const active = document.activeElement;
+        if (event.shiftKey && (active === first || !panel.contains(active))) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && (active === last || !panel.contains(active))) {
+          event.preventDefault();
+          first.focus();
+        }
+      };
+      document.addEventListener('keydown', handleDialogKeyDown);
+      return () => document.removeEventListener('keydown', handleDialogKeyDown);
+    }
+    if (!wasOpenRef.current) return;
+    wasOpenRef.current = false;
+    const frame = window.requestAnimationFrame(() => {
+      const opener = openerRef.current;
+      openerRef.current = null;
+      const visible = (element: HTMLElement | null) =>
+        element?.isConnected && element.getClientRects().length ? element : null;
+      const mobileToggle = opener?.closest('.mobile-nav')
+        ? document.querySelector<HTMLElement>('[data-mobile-toggle]')
+        : null;
+      const fallback = [
+        launcherRef.current,
+        ...document.querySelectorAll<HTMLElement>(
+          '.header__ask, [data-open-home-chat], [data-mobile-toggle]',
+        ),
+      ].find((element) => visible(element));
+      (visible(opener) ?? visible(mobileToggle) ?? fallback)?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [open]);
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }, [messages, notice, typingPersona, options]);
@@ -2137,15 +2197,23 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     setOpen(false);
   }
 
+  function rememberChatOpener(element?: HTMLElement) {
+    if (dialogRef.current?.contains(document.activeElement)) return;
+    const active = element ?? document.activeElement;
+    if (active instanceof HTMLElement && active !== document.body) openerRef.current = active;
+  }
+
   return (
     <>
       {!hideLauncher && (
         <button
+          ref={launcherRef}
           className="travis-fab"
           data-testid="ask-travis-open"
           data-chat-ready={sessionReady ? 'true' : 'false'}
           type="button"
-          onClick={() => {
+          onClick={(event) => {
+            rememberChatOpener(event.currentTarget);
             const browserWindow = window as typeof window & {
               __mrxChatOpenRequested?: boolean;
             };
@@ -2173,11 +2241,13 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           onMouseDown={(event) => event.target === event.currentTarget && closeChat()}
         >
           <section
+            ref={dialogRef}
             className="travis-panel"
             data-testid="ask-travis-dialog"
             role="dialog"
             aria-modal="true"
             aria-labelledby="travis-title"
+            tabIndex={-1}
           >
             <header className="travis-panel__head">
               <span className="travis-avatar">
@@ -2371,14 +2441,14 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   disabled={uploading || !documentProcessingEnabled}
                   title={
                     documentProcessingEnabled
-                      ? 'Upload a private document for security scanning'
+                      ? 'Upload a private photo/document for security scanning'
                       : 'Secure document processing is temporarily unavailable'
                   }
                 >
                   {uploading
                     ? 'Uploading…'
                     : documentProcessingEnabled
-                      ? 'Upload a document'
+                      ? 'Upload a photo/document'
                       : 'Document uploads unavailable'}
                 </button>
                 {bookedAppointment ? (

@@ -115,6 +115,96 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
   });
 
+  test('keeps keyboard focus in the dialog and returns it to the header opener', async ({
+    page,
+  }) => {
+    await stubAnonymousSession(page);
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    const opener = page
+      .getByRole('banner')
+      .getByRole('button', { name: 'Ask Travis for mineral-rights help', exact: true });
+    await opener.focus();
+    await opener.press('Enter');
+    const dialog = page.getByTestId('ask-travis-dialog');
+    await expect(dialog).toBeVisible();
+    const close = dialog.getByRole('button', { name: 'Close Ask Travis' });
+    await close.focus();
+    await page.keyboard.press('Shift+Tab');
+    expect(await dialog.evaluate((element) => element.contains(document.activeElement))).toBe(true);
+    await page.keyboard.press('Tab');
+    await expect(close).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(dialog).toHaveCount(0);
+    await expect(opener).toBeFocused();
+
+    await opener.press('Enter');
+    await expect(dialog).toBeVisible();
+    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await expect(opener).toBeFocused();
+  });
+
+  test('returns focus to the floating launcher after closing the chat', async ({ page }) => {
+    await stubAnonymousSession(page);
+    await page.goto('/about/', { waitUntil: 'domcontentloaded' });
+    const launcher = page.getByTestId('ask-travis-open');
+    await expect(launcher).toHaveAttribute('data-chat-ready', 'true');
+    await launcher.focus();
+    await launcher.press('Enter');
+    const dialog = page.getByTestId('ask-travis-dialog');
+    await expect(dialog).toBeVisible();
+    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await expect(launcher).toBeFocused();
+  });
+
+  test('returns focus to the mobile menu toggle when the chat opener is hidden', async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await stubAnonymousSession(page);
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    const menuToggle = page.getByRole('button', { name: 'Open navigation menu' });
+    await menuToggle.click();
+    await page.locator('.mobile-nav__ask').click();
+    const dialog = page.getByTestId('ask-travis-dialog');
+    await expect(dialog).toBeVisible();
+    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await expect(menuToggle).toBeFocused();
+    await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('names the enabled private upload action as a photo/document', async ({ page }) => {
+    await page.route('**/api/chat/session', async (route) => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({
+          ok: true,
+          messages: [],
+          appointments: [],
+          authenticated: false,
+          documentUploadsEnabled: true,
+          documentProcessingEnabled: true,
+        }),
+      });
+    });
+    await page.goto('/', { waitUntil: 'domcontentloaded' });
+    await page
+      .getByRole('banner')
+      .getByRole('button', { name: 'Ask Travis for mineral-rights help' })
+      .click();
+    const upload = page.getByTestId('travis-document-button');
+    await expect(upload).toBeEnabled();
+    await expect(upload).toHaveAccessibleName('Upload a photo/document');
+    await expect(upload).toHaveAttribute(
+      'title',
+      'Upload a private photo/document for security scanning',
+    );
+    await expect(page.locator('.travis-file-input')).toHaveAttribute(
+      'accept',
+      '.pdf,.jpg,.jpeg,.png',
+    );
+  });
+
   test('starts rapport-first, honors name refusal, and keeps direct scheduling available', async ({
     page,
   }) => {
@@ -174,6 +264,9 @@ test.describe('Ask Travis conversational experience', () => {
     });
 
     await page.goto('/');
+    await page.waitForFunction(() =>
+      Boolean((window as Window & { __mrxChatReady?: boolean }).__mrxChatReady),
+    );
     const primaryNav = page.getByRole('navigation', { name: 'Primary' });
     await primaryNav.getByRole('link', { name: 'Inherited Rights', exact: true }).click();
 
