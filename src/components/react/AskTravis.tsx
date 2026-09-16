@@ -796,17 +796,23 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       const opener = openerRef.current;
       openerRef.current = null;
       const visible = (element: HTMLElement | null) =>
-        element?.isConnected && element.getClientRects().length ? element : null;
-      const mobileToggle = opener?.closest('.mobile-nav')
-        ? document.querySelector<HTMLElement>('[data-mobile-toggle]')
-        : null;
+        element?.isConnected &&
+        element.getClientRects().length &&
+        window.getComputedStyle(element).visibility !== 'hidden'
+          ? element
+          : null;
+      const mobileNav = opener?.closest('.mobile-nav');
+      const mobileToggle =
+        mobileNav && mobileNav.getAttribute('data-open') !== 'true'
+          ? document.querySelector<HTMLElement>('[data-mobile-toggle]')
+          : null;
       const fallback = [
         launcherRef.current,
         ...document.querySelectorAll<HTMLElement>(
           '.header__ask, [data-open-home-chat], [data-mobile-toggle]',
         ),
       ].find((element) => visible(element));
-      (visible(opener) ?? visible(mobileToggle) ?? fallback)?.focus();
+      (visible(mobileToggle) ?? visible(opener) ?? fallback)?.focus();
     });
     return () => window.cancelAnimationFrame(frame);
   }, [open]);
