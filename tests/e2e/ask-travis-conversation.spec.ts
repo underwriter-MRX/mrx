@@ -162,6 +162,9 @@ test.describe('Ask Travis conversational experience', () => {
     await page.setViewportSize({ width: 390, height: 844 });
     await stubAnonymousSession(page);
     await page.goto('/', { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(
+      () => (window as typeof window & { __mrxChatReady?: boolean }).__mrxChatReady === true,
+    );
     const menuToggle = page.getByRole('button', { name: 'Open navigation menu' });
     await menuToggle.click();
     await page.locator('.mobile-nav__ask').click();
@@ -170,6 +173,33 @@ test.describe('Ask Travis conversational experience', () => {
     await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
     await expect(menuToggle).toBeFocused();
     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('retains the mobile opener when chat loads after the menu click', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await stubAnonymousSession(page);
+    let releaseChatBundle: () => void = () => {};
+    const chatBundleGate = new Promise<void>((resolve) => {
+      releaseChatBundle = resolve;
+    });
+    await page.route('**/_astro/AskTravis.*.js', async (route) => {
+      await chatBundleGate;
+      await route.continue();
+    });
+    try {
+      await page.goto('/', { waitUntil: 'domcontentloaded' });
+      const menuToggle = page.getByRole('button', { name: 'Open navigation menu' });
+      await menuToggle.click();
+      await page.locator('.mobile-nav__ask').click();
+      await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
+      releaseChatBundle();
+      const dialog = page.getByTestId('ask-travis-dialog');
+      await expect(dialog).toBeVisible();
+      await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+      await expect(menuToggle).toBeFocused();
+    } finally {
+      releaseChatBundle();
+    }
   });
 
   test('names the enabled private upload action as a photo/document', async ({ page }) => {

@@ -145,7 +145,7 @@ const getHomeIntentPrompt = (href: string) =>
   }
   document.querySelectorAll<HTMLElement>('[data-open-travis]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('mrx:open-chat'));
+      window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { opener: trigger } }));
       nav?.setAttribute('data-open', 'false');
       btn?.setAttribute('aria-expanded', 'false');
     });

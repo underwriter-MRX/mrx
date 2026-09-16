@@ -654,7 +654,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         if (!cancelled) setSessionReady(true);
       }
     })();
-    type ChatOpenDetail = { prompt?: string; booking?: boolean };
+    type ChatOpenDetail = { prompt?: string; booking?: boolean; opener?: HTMLElement };
     type ChatOpenRequest = { detail: ChatOpenDetail; sequence: number };
     const browserWindow = window as typeof window & {
       __mrxChatReady?: boolean;
@@ -666,7 +666,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     const handleOpenRequest = (detail: ChatOpenDetail = {}, sequence?: number) => {
       if (sequence && handledSequences.has(sequence)) return;
       if (sequence) handledSequences.add(sequence);
-      rememberChatOpener();
+      rememberChatOpener(detail.opener);
       beginGuideResponseWindow();
       const openingPersona = openingPersonaFor(detail?.prompt, detail?.booking);
       if (!introStarted.current || detail?.prompt || detail?.booking)
