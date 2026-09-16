@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.2.0",
+  "observed_at_utc": "2026-09-16T21:20:50Z",
+  "source": {
+    "audit": "Authenticated Search Atlas otto_get_site_audit for audit 138239 on 2026-09-16",
+    "dashboard": "Authenticated otto_get_project_details, otto_get_project_issues, otto_preview_deployment, and OTTO Chrome dashboard on 2026-09-16",
+    "records": "Authenticated otto_list_schemas(scope=domain) and both pages of the Chrome Dynamic Indexing table on 2026-09-16"
+  },
+  "project": {
+    "id": 99913,
+    "uuid": "e4bab8bb-717e-480c-8dea-1de1b8596eb7",
+    "audit_id": 138239
+  },
+  "audit": {
+    "status": "completed",
+    "crawl_state": "completed",
+    "postprocessing_status": "completed",
+    "is_terminal": true,
+    "started_at_utc": "2026-09-15T23:58:44.729323Z",
+    "reported_completed_at_utc": "2026-09-16T00:11:05.562454Z",
+    "score": 979,
+    "total_pages": 485,
+    "total_raw_observations": 1959,
+    "page_types": {
+      "successful_2xx": 440,
+      "redirect_3xx": 40,
+      "missing_4xx": 0,
+      "blocked_403_429": 0,
+      "server_error_5xx": 0
+    },
+    "indexability": {
+      "indexable": 439,
+      "not_indexable": 46,
+      "not_standard": 0
+    }
+  },
+  "installation": {
+    "status": "engaged",
+    "pixel_status": "Cloudflare Worker",
+    "pixel_installed": true,
+    "cloudflare_worker_installed": true,
+    "cloudflare_worker_status": "completed",
+    "autopilot_active": true,
+    "gsc_property": "sc-domain:mineralrightsxchange.com",
+    "project_inventory_pages": 447
+  },
+  "dashboard": {
+    "total": 452,
+    "approved_deployed": 16,
+    "pending": 436,
+    "schema_total": 1,
+    "schema_approved": 0,
+    "schema_pending": 1
+  },
+  "preview": {
+    "prerequisites_met": true,
+    "pixel_status": "cloudflare_worker",
+    "is_engaged": true,
+    "is_frozen": false,
+    "total_pending_with_recommendation": 16,
+    "total_pending_without_recommendation": 673,
+    "types_ready": 2,
+    "breakdown": [
+      {"issue_type": "page_title", "total": 114, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 114},
+      {"issue_type": "meta_description", "total": 139, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 139},
+      {"issue_type": "meta_keywords", "total": 103, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 103},
+      {"issue_type": "h1_under_20_over_70", "total": 15, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 15},
+      {"issue_type": "h2_under_20_over_70", "total": 78, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 78},
+      {"issue_type": "og_title", "total": 112, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 112},
+      {"issue_type": "twitter_title", "total": 112, "deployed": 0, "pending_with_recommendation": 0, "pending_without_recommendation": 112},
+      {"issue_type": "domain_level_schema", "total": 1, "deployed": 0, "pending_with_recommendation": 1, "pending_without_recommendation": 0},
+      {"issue_type": "dynamic_indexing", "total": 15, "deployed": 0, "pending_with_recommendation": 15, "pending_without_recommendation": 0}
+    ]
+  },
+  "pending_records": [
+    {"record_id": 182837670, "type": "Organization", "status": "SUGGESTED", "is_sitewide": true, "is_deployed": false, "is_valid": true, "page_id": null, "page_url": null}
+  ],
+  "pending_category_records": [
+    {
+      "type": "dynamic_indexing",
+      "status": "SUGGESTED",
+      "is_deployed": false,
+      "reason": "No Impressions",
+      "provider_record_ids_exposed": false,
+      "urls": [
+        "https://mineralrightsxchange.com/contact/",
+        "https://mineralrightsxchange.com/privacy-policy/",
+        "https://mineralrightsxchange.com/about/",
+        "https://mineralrightsxchange.com/book/",
+        "https://mineralrightsxchange.com/methodology/",
+        "https://mineralrightsxchange.com/terms/",
+        "https://mineralrightsxchange.com/editorial-policy/",
+        "https://mineralrightsxchange.com/authors/mrx-editorial-team/",
+        "https://mineralrightsxchange.com/free-guide/",
+        "https://mineralrightsxchange.com/blog/how-are-mineral-rights-valued/",
+        "https://mineralrightsxchange.com/team/clay/",
+        "https://mineralrightsxchange.com/team/elena/",
+        "https://mineralrightsxchange.com/team/owen/",
+        "https://mineralrightsxchange.com/authors/marisol/",
+        "https://mineralrightsxchange.com/blog/how-to-compare-mineral-rights-buyers-in-texas/"
+      ]
+    }
+  ],
+  "production_containment": {
+    "schema_gate_passed_at_utc": "2026-09-16T21:12:42.945Z",
+    "production_targets": ["https://mineralrightsxchange.com/", "https://www.mineralrightsxchange.com/", "https://mrx-web.vercel.app/"],
+    "organization_nodes_per_target": 1,
+    "runtime_schema_injectors_per_target": 0,
+    "overlay_image_objects_per_target": 0
+  }
+}

@@ -38,8 +38,28 @@ function breakdownRow(observation, issueType) {
   return (observation?.preview?.breakdown ?? []).find((row) => row.issue_type === issueType);
 }
 
-export function reconcileSearchAtlasOtto(observation, contract) {
+export function reconcileSearchAtlasOtto(observation, contract, options = {}) {
   const failures = [];
+  if (options.maxObservationAgeMs !== undefined) {
+    const observedAt = Date.parse(observation?.observed_at_utc ?? '');
+    const now = options.now ?? Date.now();
+    const ageMs = now - observedAt;
+    if (
+      !Number.isFinite(observedAt) ||
+      !Number.isFinite(now) ||
+      !Number.isFinite(options.maxObservationAgeMs) ||
+      options.maxObservationAgeMs < 0 ||
+      ageMs > options.maxObservationAgeMs ||
+      ageMs < -5 * 60 * 1000
+    ) {
+      failures.push({
+        code: 'observation_not_current',
+        observed_at_utc: observation?.observed_at_utc ?? null,
+        age_ms: Number.isFinite(ageMs) ? ageMs : null,
+        max_age_ms: options.maxObservationAgeMs,
+      });
+    }
+  }
   const project = observation?.project ?? {};
   const expectedProject = contract?.project ?? {};
 

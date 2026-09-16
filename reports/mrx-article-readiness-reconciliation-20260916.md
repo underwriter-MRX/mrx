@@ -1,0 +1,19 @@
+# MRX article-readiness reconciliation — September 16, 2026
+
+## Production and Search Atlas
+
+The previously timed-out live schema probe was a transient client/network failure, not evidence of a production schema defect. At `2026-09-16T21:12:42.945Z`, `pnpm verify:schema:live-reconciliation` passed on apex, `www` (redirecting to apex), and `mrx-web.vercel.app`: HTTP 200, exactly one native `https://mineralrightsxchange.com/#org` Organization node, no Search Atlas runtime schema injector, and no overlay `ImageObject` node. No production schema deployment is warranted.
+
+Authenticated Search Atlas project `99913` / `e4bab8bb-717e-480c-8dea-1de1b8596eb7` is engaged, Cloudflare Worker installed, GSC linked, and autopilot active. The last audit `138239` completed and post-processed at `2026-09-16T00:11:05.562454Z`: score 979, 485 crawled URLs, 440 successful, 40 redirects, zero missing/blocked/server-error responses, 439 indexable, 46 non-indexable, and 1,959 raw observations. These raw observations are not OTTO deployment recommendations.
+
+The fresh OTTO dashboard shows **452 total / 16 approved-deployed / 436 pending**. The deployment preview has **16 generated proposals** and **673 ungenerated candidate rows**; the units and taxonomies are different and are not added together. The generated proposals are exactly one vendor-locked, undeployed sitewide Organization record `182837670` and 15 undeployed Dynamic Indexing suggestions. The Organization would duplicate native `#org`. Both pages of the authenticated Chrome Dynamic Indexing table still show the 15 exact URLs and `No Impressions` reason in the [exception contract](../config/mrx-searchatlas-otto-vendor-exceptions.json); deploying them would add hidden links in conflict with reviewed visible navigation. No generated proposal is safe to deploy, and none was deployed. The 673 ungenerated rows have no provider copy to approve or deploy. The current preview breakdown is preserved in [the September 16 observation](mrx-searchatlas-otto-observation-20260916.json).
+
+The local reconciliation command formerly defaulted to a September 15 snapshot and could report a historical pass while displaying obsolete counts. It now defaults to the fresh observation and rejects a snapshot older than 24 hours (or more than five minutes in the future). An explicit `--historical` flag permits archival replay, not a fresh release claim. `pnpm check:searchatlas:otto-reconciliation` passes on the new observation with **zero actionable generated records**, while retaining **436 dashboard-pending**, **15 reviewed undeployed source conflicts**, and **one vendor-locked undeployed Organization** as separate, truthful states.
+
+## Article selection
+
+The canonical MRX1000 count remains **320**, not the 328 public blog-route count. The next planning row `MRX1000-0416` is held by a named `mrx_ceo` executive verdict after read-only Chesty assessment. Its original current-valuation promise and tentative older/newer-offer comparability job overlap existing pages and lack owner-specific evidence. The exact decision is recorded in [the Article 321 identity record](../docs/governance/mrx1000-article321-identity-decision-2026-09-16.md). No new title, slug, keyword, article, image, ledger entry, or production deployment was created.
+
+The sitewide schema, navigation, OTTO installation, and transient probe are not a reason to blanket-deploy unsafe suggestions or spend Search Atlas generation credits. The remaining gate for a new article is article-specific: select an unused program row with a genuinely distinct, sourced owner job and obtain the required `mrx_ceo` exact-identity verdict, then run every editorial, image, build, deployment, and all-alias live gate. The prior owner stop at 320 remains reflected in the paused goal state; this reconciliation did not itself start new content production.
+
+No new or incremental monetary charge was proposed or incurred.

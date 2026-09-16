@@ -1,0 +1,13 @@
+# MRX1000 Article 321 selection — row 0416 held
+
+Date: 2026-09-16. Decision scope: identity only; no article or image was admitted, created, or published. The canonical published-and-live-verified count remains 320.
+
+The release owner verified the clean isolated worktree `/Users/darylhill/Documents/MineralRightsXchange.com/.codex-isolated/mrx-measurement-ai-technical-20260909`, branch `release/mrx-measurement-ai-technical-20260909`, at `719d6224781ada38ce2ac83a4c6dcca7665efa78` before the advisory calls. Chesty and `mrx_ceo` received only a compact read-only decision packet naming the governing `AGENTS.md`, row `MRX1000-0416` in the canonical ledger, and the exact incumbent article paths. They did not write the release tree or deploy.
+
+Chesty session `20260916_141615_fe17d5` returned `CHESTY_RECOMMENDATION: HOLD`. Its constrained toolset could not invoke the named executive profile; it expressly did not claim an executive verdict. A direct `mrx_ceo` call using `gpt-5.6-sol` with `--provider openai-codex` then returned session `20260916_141742_1a3c29` and the following decision:
+
+> MRX_CEO_DECISION: HOLD — MRX1000-0416 lacks a defensible distinct, evidence-backed job. The proposed older-versus-newer offer comparison materially overlaps the existing property-scope crosswalk, offer version/deadline register, offer comparison checklist, and dated-record guide; the broader cross-state records question belongs to the live pillar. EIA WTI history and Texas RRC production data can provide market or production context but cannot establish owner-specific offer terms, ownership, buyer assumptions, comparability, or current value. No exact title, slug, or primary keyword is approved.
+
+The original planning title, “Understanding the Difference: Comparing Past Offers to Current Market Valuations for Your Mineral Rights,” remains rejected. A shorter title or keyword change cannot clear the collision. The tentative older/newer-offer comparability job is also held. The [EIA monthly WTI series](https://www.eia.gov/dnav/pet/hist/rwtcm.htm) and [Texas RRC production-data hub](https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/) were reachable on the decision date, but neither is an owner-specific offer, title, or buyer-assumption record. The cross-state records question was already added to the existing title/lease/ownership pillar. A new Article 321 identity must come from a different unused program row or a substantive, sourced redefinition reviewed through the same executive selection gate.
+
+This is an article-specific originality hold, not a numerical cap, generic owner approval requirement, or Search Atlas credit gate. No charge was proposed or incurred.

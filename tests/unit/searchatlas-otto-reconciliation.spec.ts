@@ -120,6 +120,24 @@ function observation(
 }
 
 describe('Search Atlas OTTO reconciliation', () => {
+  it('fails closed when an otherwise valid dashboard snapshot is stale', () => {
+    const input = observation();
+    const result = reconcileSearchAtlasOtto(input, contract, {
+      now: Date.parse('2026-09-16T01:32:00.000Z'),
+      maxObservationAgeMs: 24 * 60 * 60 * 1000,
+    });
+    expect(result.pass).toBe(false);
+    expect(result.failures.map((failure) => failure.code)).toContain('observation_not_current');
+  });
+
+  it('accepts a current snapshot within the freshness window', () => {
+    const result = reconcileSearchAtlasOtto(observation(), contract, {
+      now: Date.parse('2026-09-15T02:31:00.000Z'),
+      maxObservationAgeMs: 24 * 60 * 60 * 1000,
+    });
+    expect(result.pass).toBe(true);
+  });
+
   it('classifies only the exact unchanged suggestion as vendor-locked', () => {
     const result = reconcileSearchAtlasOtto(observation(), contract);
     expect(result.pass).toBe(true);
