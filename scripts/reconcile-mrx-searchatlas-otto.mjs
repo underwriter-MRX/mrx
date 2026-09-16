@@ -5,13 +5,14 @@ import { fileURLToPath } from 'node:url';
 import { reconcileSearchAtlasOtto } from './lib/searchatlas-otto-reconciliation.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const positionalArgs = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
 const observationPath = resolve(
   root,
-  process.argv[2] ?? 'reports/mrx-searchatlas-otto-observation-20260916.json',
+  positionalArgs[0] ?? 'reports/mrx-searchatlas-otto-observation-20260916.json',
 );
 const contractPath = resolve(
   root,
-  process.argv[3] ?? 'config/mrx-searchatlas-otto-vendor-exceptions.json',
+  positionalArgs[1] ?? 'config/mrx-searchatlas-otto-vendor-exceptions.json',
 );
 
 const [observation, contract] = await Promise.all(
@@ -22,11 +23,16 @@ const [observation, contract] = await Promise.all(
 // snapshots remain inspectable with --historical, but cannot silently pass as
 // a fresh OTTO dashboard read for a new release.
 const historical = process.argv.includes('--historical');
-const result = reconcileSearchAtlasOtto(
-  observation,
-  contract,
-  historical ? {} : { maxObservationAgeMs: 24 * 60 * 60 * 1000 },
-);
+const auditNotBeforeFlag = process.argv.find((arg) => arg.startsWith('--audit-not-before='));
+const auditNotBeforeValue = auditNotBeforeFlag?.slice('--audit-not-before='.length);
+const auditNotBeforeMs = auditNotBeforeValue ? Date.parse(auditNotBeforeValue) : undefined;
+if (auditNotBeforeFlag && !Number.isFinite(auditNotBeforeMs)) {
+  throw new Error('--audit-not-before must be a valid ISO-8601 timestamp');
+}
+const result = reconcileSearchAtlasOtto(observation, contract, {
+  ...(historical ? {} : { maxObservationAgeMs: 24 * 60 * 60 * 1000 }),
+  ...(auditNotBeforeMs === undefined ? {} : { auditNotBeforeMs }),
+});
 console.log(JSON.stringify(result, null, 2));
 
 if (!result.pass) process.exitCode = 1;

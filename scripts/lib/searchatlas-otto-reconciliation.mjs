@@ -40,6 +40,22 @@ function breakdownRow(observation, issueType) {
 
 export function reconcileSearchAtlasOtto(observation, contract, options = {}) {
   const failures = [];
+  if (options.auditNotBeforeMs !== undefined) {
+    const completedAt = Date.parse(observation?.audit?.reported_completed_at_utc ?? '');
+    if (
+      !Number.isFinite(completedAt) ||
+      !Number.isFinite(options.auditNotBeforeMs) ||
+      completedAt < options.auditNotBeforeMs
+    ) {
+      failures.push({
+        code: 'audit_predates_release',
+        audit_completed_at_utc: observation?.audit?.reported_completed_at_utc ?? null,
+        audit_not_before_utc: Number.isFinite(options.auditNotBeforeMs)
+          ? new Date(options.auditNotBeforeMs).toISOString()
+          : null,
+      });
+    }
+  }
   if (options.maxObservationAgeMs !== undefined) {
     const observedAt = Date.parse(observation?.observed_at_utc ?? '');
     const now = options.now ?? Date.now();

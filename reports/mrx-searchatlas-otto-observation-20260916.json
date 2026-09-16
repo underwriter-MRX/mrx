@@ -1,9 +1,9 @@
 {
   "schema_version": "1.2.0",
-  "observed_at_utc": "2026-09-16T21:20:50Z",
+  "observed_at_utc": "2026-09-16T22:11:23Z",
   "source": {
-    "audit": "Authenticated Search Atlas otto_get_site_audit for audit 138239 on 2026-09-16",
-    "dashboard": "Authenticated otto_get_project_details, otto_get_project_issues, otto_preview_deployment, and OTTO Chrome dashboard on 2026-09-16",
+    "audit": "Authenticated Search Atlas otto_get_site_audit for post-release audit 138239 completed 2026-09-16T22:05:31.202382Z and Chrome Site Audit Issues review",
+    "dashboard": "Authenticated post-recrawl otto_get_project_details, otto_get_project_issues, otto_preview_deployment, and OTTO Chrome dashboard on 2026-09-16",
     "records": "Authenticated otto_list_schemas(scope=domain) and both pages of the Chrome Dynamic Indexing table on 2026-09-16"
   },
   "project": {
@@ -16,22 +16,28 @@
     "crawl_state": "completed",
     "postprocessing_status": "completed",
     "is_terminal": true,
-    "started_at_utc": "2026-09-15T23:58:44.729323Z",
-    "reported_completed_at_utc": "2026-09-16T00:11:05.562454Z",
-    "score": 979,
+    "started_at_utc": "2026-09-16T21:48:17.621651Z",
+    "reported_completed_at_utc": "2026-09-16T22:05:31.202382Z",
+    "score": 970,
     "total_pages": 485,
-    "total_raw_observations": 1959,
+    "total_raw_observations": 2348,
     "page_types": {
-      "successful_2xx": 440,
+      "successful_2xx": 444,
       "redirect_3xx": 40,
       "missing_4xx": 0,
       "blocked_403_429": 0,
       "server_error_5xx": 0
     },
     "indexability": {
-      "indexable": 439,
-      "not_indexable": 46,
+      "indexable": 443,
+      "not_indexable": 42,
       "not_standard": 0
+    },
+    "reviewed_raw_issue_counts": {
+      "images_invalid_alt": 388,
+      "images_missing_alt": 2,
+      "image_more_than_100_kb": 139,
+      "status_code_not_200": 40
     }
   },
   "installation": {
@@ -102,7 +108,7 @@
     }
   ],
   "production_containment": {
-    "schema_gate_passed_at_utc": "2026-09-16T21:12:42.945Z",
+    "schema_gate_passed_at_utc": "2026-09-16T21:40:22.145Z",
     "production_targets": ["https://mineralrightsxchange.com/", "https://www.mineralrightsxchange.com/", "https://mrx-web.vercel.app/"],
     "organization_nodes_per_target": 1,
     "runtime_schema_injectors_per_target": 0,

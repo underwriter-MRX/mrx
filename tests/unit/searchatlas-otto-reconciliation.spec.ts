@@ -81,6 +81,7 @@ function observation(
       crawl_state: 'completed',
       postprocessing_status: 'completed',
       is_terminal: true,
+      reported_completed_at_utc: '2026-09-15T01:30:00.000Z',
     },
     dashboard: {
       total: generatedCount,
@@ -120,6 +121,21 @@ function observation(
 }
 
 describe('Search Atlas OTTO reconciliation', () => {
+  it('rejects a completed audit that predates the production release', () => {
+    const result = reconcileSearchAtlasOtto(observation(), contract, {
+      auditNotBeforeMs: Date.parse('2026-09-15T01:31:00.000Z'),
+    });
+    expect(result.pass).toBe(false);
+    expect(result.failures.map((failure) => failure.code)).toContain('audit_predates_release');
+  });
+
+  it('accepts a completed audit after the production release', () => {
+    const result = reconcileSearchAtlasOtto(observation(), contract, {
+      auditNotBeforeMs: Date.parse('2026-09-15T01:29:00.000Z'),
+    });
+    expect(result.pass).toBe(true);
+  });
+
   it('fails closed when an otherwise valid dashboard snapshot is stale', () => {
     const input = observation();
     const result = reconcileSearchAtlasOtto(input, contract, {
