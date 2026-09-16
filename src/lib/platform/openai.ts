@@ -37,6 +37,13 @@ function systemInstructions(
     facts?: unknown[];
     interests?: unknown[];
     memory?: unknown[];
+    appointment?: {
+      id: string;
+      starts_at: string;
+      ends_at: string;
+      timezone?: string;
+      status: string;
+    };
     geography?: GeographyResolution | null;
     discoveryDeclined?: boolean;
     bookingDeclined?: boolean;
@@ -49,6 +56,9 @@ function systemInstructions(
     : 'No reviewed MRX source matched closely. Do not mention that unless the visitor asks for a source.';
 
   const ownerContext = [
+    context?.appointment
+      ? `Server-verified upcoming confirmed appointment: ${JSON.stringify(context.appointment)}. The appointment is already booked. Continue optional preparation from known goals, facts and previous answers. Never restart with a generic greeting or ask for identity, contact details, permissions or another booking. Ask at most one useful missing question (for example an offer deadline, an unresolved royalty issue, or available records). A mention is not an established fact: distinguish known, unknown and declined; give useful guidance when unknown, do not repeat the same question. Say before your call, not before we meet. Preparation is optional; skip or pause means no more discovery until requested. Do not claim notes have reached the underwriter or promise an evaluation is complete.`
+      : '',
     context?.firstName ? `The visitor asked to be called ${context.firstName}.` : '',
     context?.location ? `The visitor says the mineral interest is in ${context.location}.` : '',
     context?.facts?.length
@@ -107,6 +117,13 @@ export async function createOpenAIStream(args: {
     facts?: unknown[];
     interests?: unknown[];
     memory?: unknown[];
+    appointment?: {
+      id: string;
+      starts_at: string;
+      ends_at: string;
+      timezone?: string;
+      status: string;
+    };
     geography?: GeographyResolution | null;
     discoveryDeclined?: boolean;
     bookingDeclined?: boolean;
@@ -126,7 +143,7 @@ export async function createOpenAIStream(args: {
       model: runtimeEnv('OPENAI_CHAT_MODEL') || 'gpt-5.6-luna',
       instructions: systemInstructions(args.persona, args.citations, args.context),
       input: [
-        ...(args.history ?? []).slice(-8).map((message) => ({
+        ...(args.history ?? []).slice(args.context?.appointment ? -40 : -8).map((message) => ({
           role: message.role,
           content: [
             {

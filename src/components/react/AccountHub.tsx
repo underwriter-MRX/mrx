@@ -6,6 +6,7 @@ import {
   type UnderwritingDocumentType,
   type UnderwritingSituation,
 } from '../../lib/platform/underwriting-packet';
+import { readPreparation, preparationMatches } from '../../lib/platform/preparation';
 import './AccountHub.css';
 
 interface Props {
@@ -217,6 +218,7 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
   const [session, setSession] = useState<Session | null>(null);
   const [authReady, setAuthReady] = useState(false);
   const [deviceAccess, setDeviceAccess] = useState(false);
+  const [preparingAppointment, setPreparingAppointment] = useState(false);
   const [conversations, setConversations] = useState<Conversation[]>([]);
   const [attachments, setAttachments] = useState<Attachment[]>([]);
   const [facts, setFacts] = useState<OwnerFact[]>([]);
@@ -318,11 +320,14 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
   useEffect(() => {
     if (
       hasOwnerAccess &&
+      !loading &&
+      !loadError &&
       ['appointment', 'elena', 'standalone', 'conversation'].includes(accountIntent)
     ) {
+      if (preparingAppointment) return;
       setIntakeOpen(true);
     }
-  }, [accountIntent, hasOwnerAccess]);
+  }, [accountIntent, hasOwnerAccess, preparingAppointment, loading, loadError]);
 
   useEffect(() => {
     if (!hasOwnerAccess || !intakeOpen || intakeStartedTracked.current) return;
@@ -390,6 +395,14 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
       const data = await response.json().catch(() => ({}));
       if (cancelled) return;
       if (!response.ok || !data.ok) throw new Error('account_load_failed');
+      setPreparingAppointment(
+        new URLSearchParams(window.location.search).get('prepare') === '1' &&
+          preparationMatches(
+            readPreparation(window.sessionStorage),
+            data.conversationId,
+            data.appointments ?? [],
+          ),
+      );
       setDeviceAccess(Boolean(data.deviceAccess));
       setDocumentUploadsEnabled(Boolean(data.documentUploadsEnabled));
       setDocumentProcessingEnabled(Boolean(data.documentProcessingEnabled));

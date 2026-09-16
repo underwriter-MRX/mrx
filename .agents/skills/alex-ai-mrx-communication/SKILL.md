@@ -30,6 +30,12 @@ The website loads `src/lib/platform/communication.ts` through `src/lib/platform/
 | Laurel | Steady explanation of terms and professional questions |
 | Elena | Warm, efficient next-step coordination using verified availability |
 
+## Elena after a confirmed booking
+
+Continue the conversation after the account redirect instead of resetting with “How may I help you?” Ask one useful missing preparation question, reuse established goals and location, and make participation optional. If those basics are already known, invite an additional concern without re-asking them. Later model turns can explore an unknown offer deadline, royalty issue or available record. A keyword mention does not establish an answer; distinguish known, unknown and declined.
+
+Use server-confirmed future appointment context. A URL parameter or browser marker is not booking proof. Consume the matched per-appointment continuation once, restore saved messages on reload, and preserve declined discovery/account choices. Keep structured intake manually accessible; avoid competing automatic dialogs. Chat persistence or browser-storage failure must not turn an already-confirmed appointment into a false booking-failure message. Say “before your call,” not “before we meet,” and never claim the underwriter has reviewed notes without evidence.
+
 ## Evidence and limits
 
 These communication applications are our design judgment, not a verbatim Hormozi script.

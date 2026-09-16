@@ -1,3 +1,4 @@
+import { upcomingAppointment } from './preparation';
 import OpenAI from 'openai';
 import { zodTextFormat } from 'openai/helpers/zod';
 import { z } from 'zod';
@@ -353,15 +354,23 @@ export async function extractDocumentFacts(args: {
 export async function buildOwnerContext(conversationId: string, profileId: string, query = '') {
   const supabase = getSupabaseServer();
   if (!supabase)
-    return { history: [], profile: {}, facts: [], interests: [], memory: [], lastPersona: 'travis' };
-  const [messages, profile, facts, interests, memory] = await Promise.all([
+    return {
+      history: [],
+      profile: {},
+      facts: [],
+      interests: [],
+      memory: [],
+      appointment: undefined,
+      lastPersona: 'travis',
+    };
+  const [messages, profile, facts, interests, memory, appointments] = await Promise.all([
     supabase
       .from('messages')
       .select('role,content,persona')
       .eq('conversation_id', conversationId)
       .in('role', ['user', 'assistant', 'system'])
       .order('created_at', { ascending: false })
-      .limit(16),
+      .limit(48),
     supabase
       .from('profiles')
       .select('first_name,last_name,timezone,primary_mineral_interest_id')
@@ -389,6 +398,14 @@ export async function buildOwnerContext(conversationId: string, profileId: strin
       .eq('profile_id', profileId)
       .order('created_at', { ascending: false })
       .limit(40),
+    supabase
+      .from('appointments')
+      .select('id,starts_at,ends_at,timezone,status')
+      .eq('profile_id', profileId)
+      .eq('status', 'confirmed')
+      .gt('starts_at', new Date().toISOString())
+      .order('starts_at', { ascending: true })
+      .limit(10),
   ]);
   const relevantMemory = documentMemoryForPrompt(memory.data ?? [], query);
   const profileData = profile.data ?? {};
@@ -415,6 +432,7 @@ export async function buildOwnerContext(conversationId: string, profileId: strin
     facts: facts.data ?? [],
     interests: interestRows,
     memory: relevantMemory,
+    appointment: upcomingAppointment(appointments.data ?? []),
     lastPersona,
   };
 }

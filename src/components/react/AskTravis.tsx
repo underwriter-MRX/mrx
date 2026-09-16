@@ -37,6 +37,13 @@ import {
   type OwnerGoal,
   withoutFollowupQuestion,
 } from '../../lib/platform/rapport';
+import {
+  additionalPreparationQuestion,
+  preparationStorageKey,
+  readPreparation,
+  preparationMatches,
+  preparationQuestion,
+} from '../../lib/platform/preparation';
 import './AskTravis.css';
 
 type Persona = 'travis' | 'connor' | 'clay' | 'owen' | 'laurel' | 'elena';
@@ -363,6 +370,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const openerRef = useRef<HTMLElement | null>(null);
   const wasOpenRef = useRef(false);
   const introStarted = useRef(false);
+  const conversationIdRef = useRef('');
   const responseStartedAt = useRef<number | null>(null);
   const supabase = useMemo<SupabaseClient | null>(
     () =>
@@ -392,14 +400,22 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       | 'consent'
       | 'notice' = 'message',
   ) {
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 4_000);
     try {
-      await fetch('/api/chat/events', {
+      const response = await fetch('/api/chat/events', {
         method: 'POST',
         headers: await authHeaders(),
         body: JSON.stringify({ role, content, persona, eventType }),
+        signal: controller.signal,
+        keepalive: true,
       });
+      return response.ok;
     } catch {
-      // Keep the conversation usable during a temporary persistence outage.
+      // Best effort: a saved appointment remains confirmed even if chat persistence is unavailable.
+      return false;
+    } finally {
+      window.clearTimeout(timeout);
     }
   }
 
@@ -419,6 +435,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     persona: Persona = activePersona,
     delay = minimumGuideReplyMs,
     immediate = false,
+    persistBeforeReturn = false,
   ) {
     const visibleContent = normalizeMrxText(content);
     const startedAt = responseStartedAt.current ?? performance.now();
@@ -432,7 +449,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       ...current,
       { id: crypto.randomUUID(), role: 'assistant', content: visibleContent, persona },
     ]);
-    void persistVisibleMessage(
+    const persistence = persistVisibleMessage(
       'assistant',
       visibleContent,
       persona,
@@ -444,6 +461,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
             ? 'notice'
             : 'message',
     );
+    if (persistBeforeReturn) await persistence;
     setTypingPersona(null);
   }
 
@@ -574,6 +592,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         if (!response.ok) return;
         const data = await response.json();
         if (cancelled) return;
+        conversationIdRef.current = data.conversationId || '';
         setOwnerAuthenticated(Boolean(data.authenticated));
         const restored: Message[] = Array.isArray(data.messages)
           ? data.messages
@@ -649,6 +668,40 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         if (restored.length) {
           introStarted.current = true;
           setStep('open');
+        }
+        const preparation = readPreparation(window.sessionStorage);
+        if (
+          new URLSearchParams(window.location.search).get('prepare') === '1' &&
+          preparation?.state === 'pending' &&
+          preparationMatches(preparation, data.conversationId, data.appointments ?? [])
+        ) {
+          // Consume before displaying: rehydration/reload must never repeat the question.
+          window.sessionStorage.setItem(
+            preparationStorageKey,
+            JSON.stringify({ ...preparation, state: 'started' }),
+          );
+          introStarted.current = true;
+          setStep('open');
+          setActivePersona('elena');
+          setOpen(true);
+          const declined = window.sessionStorage.getItem('mrx_discovery_declined') === '1';
+          const hasSavedLocation = Boolean(
+            data.ownerFacts?.mineral_location ||
+            data.ownerFacts?.county ||
+            data.interests?.[0]?.county,
+          );
+          const question = declined
+            ? preparationQuestion(null, '', true)
+            : hasSavedLocation && preparation.question.includes('which county and state')
+              ? additionalPreparationQuestion
+              : preparation.question;
+          if (
+            !restored.some(
+              (message) =>
+                message.role === 'assistant' && message.content === normalizeMrxText(question),
+            )
+          )
+            await guideSay(question, 'elena', 220, false, true);
         }
       } finally {
         if (!cancelled) setSessionReady(true);
@@ -855,7 +908,14 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     }
     const detectedGoal = goalFromMessage(text);
     if (detectedGoal) setRapportGoal(detectedGoal);
-    const declinedDiscovery = discoveryWasDeclined(text);
+    const declinedDiscovery =
+      discoveryWasDeclined(text) ||
+      Boolean(
+        bookedAppointment &&
+        /^(?:skip|pause|not now|no thanks|leave (?:it|this|that|the rest) for (?:the|my) call)[.!]?$/i.test(
+          text,
+        ),
+      );
     if (declinedDiscovery) {
       window.sessionStorage.setItem('mrx_discovery_declined', '1');
       setDiscoveryDeclined(true);
@@ -1218,7 +1278,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (bookedAppointment) {
       setStep('booking-help');
       await guideSay(
-        `You already have a phone appointment booked for ${bookedAppointment.label}. I won’t book another one. What specifically would you like the MRX team to be ready to help with?`,
+        `You already have a phone appointment booked for ${bookedAppointment.label}. I won’t book another one. ${preparationQuestion(rapportGoal, profile.location, discoveryDeclined)}`,
         'elena',
         260,
       );
@@ -1333,6 +1393,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
 
   async function confirmAppointment(nextProfile: ProfileDraft) {
     if (!selectedOption) return;
+    let appointmentConfirmed = false;
     setBooking(true);
     setTypingPersona('elena');
     try {
@@ -1365,6 +1426,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       if (result.suppressed || typeof result.appointmentId !== 'string' || !result.appointmentId) {
         throw new Error('booking_not_confirmed');
       }
+      appointmentConfirmed = true;
       const confirmations = result.notifications?.length
         ? ` I also sent the confirmation by ${result.notifications.map((channel: DeliveryChannel) => (channel === 'email' ? 'email' : 'text')).join(' and ')} as requested.`
         : ' Your confirmation is here on screen.';
@@ -1389,8 +1451,25 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         `You’re booked for ${selectedOption.label}.${confirmations}${memberAccessMessage} We’ll call ${nextProfile.phone}.`,
         'elena',
         260,
+        false,
+        true,
       );
-      await guideSay('How may I help you?', 'elena', 220);
+      const earlierGoal =
+        messages
+          .filter((message) => message.role === 'user')
+          .map((message) => goalFromMessage(message.content))
+          .find((goal) => goal && goal !== 'human-call' && goal !== 'other') ?? rapportGoal;
+      if (conversationIdRef.current)
+        window.sessionStorage.setItem(
+          preparationStorageKey,
+          JSON.stringify({
+            appointmentId: result.appointmentId,
+            conversationId: conversationIdRef.current,
+            expiresAt: Math.min(Date.parse(selectedOption.start), Date.now() + 30 * 60_000),
+            state: 'pending',
+            question: preparationQuestion(earlierGoal, profile.location, discoveryDeclined),
+          }),
+        );
       // The API emits the authoritative appointment_booked event only after
       // the calendar service accepts the booking. This browser event measures confirmation UX
       // without double-counting the conversion across client and server.
@@ -1404,16 +1483,19 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         result.memberAccess?.redirectTo || '/account/?welcome=appointment',
         window.location.origin,
       );
+      if (conversationIdRef.current) requestedIntakeUrl.searchParams.set('prepare', '1');
       window.location.assign(
         requestedIntakeUrl.origin === window.location.origin
           ? requestedIntakeUrl.toString()
-          : '/account/?welcome=appointment',
+          : `/account/?welcome=appointment${conversationIdRef.current ? '&prepare=1' : ''}`,
       );
     } catch {
       setTypingPersona(null);
       setStep('open');
       await guideError(
-        'I couldn’t confirm that time, so no appointment was created. We can try the calendar again when you’re ready.',
+        appointmentConfirmed
+          ? 'Your appointment is confirmed. I couldn’t finish opening your preparation here. You can use your owner account or leave preparation for the call.'
+          : 'I couldn’t confirm that time, so no appointment was created. We can try the calendar again when you’re ready.',
         'elena',
       );
     } finally {

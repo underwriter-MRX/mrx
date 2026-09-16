@@ -191,7 +191,7 @@ export const POST: APIRoute = async (context) => {
       persistedHistory.at(-1)?.content.trim() === message
         ? persistedHistory.slice(0, -1)
         : persistedHistory;
-    const history = body.history?.length ? body.history : historyWithoutCurrent;
+    const history = historyWithoutCurrent.length ? historyWithoutCurrent : (body.history ?? []);
     const effectiveQuestion = questionForAnswer(message, history);
     ownerContext = {
       ...ownerContext,
@@ -304,6 +304,7 @@ export const POST: APIRoute = async (context) => {
                     .filter((value): value is string => typeof value === 'string' && Boolean(value))
                     .join(', ')
                 : undefined,
+              appointment: ownerContext.appointment,
               facts: ownerContext.facts,
               interests: ownerContext.interests,
               memory: ownerContext.memory,

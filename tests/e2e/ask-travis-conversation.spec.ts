@@ -547,132 +547,236 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(page.getByText(/not inventing a street address/i)).toBeVisible();
   });
 
-  test('books a requested time conversationally and honors separate confirmation choices', async ({
-    page,
-  }) => {
-    test.setTimeout(75_000);
-    await stubAnonymousSession(page);
-    await page.route('**/api/appointments/availability**', async (route) => {
-      await route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({
-          ok: true,
-          options: [
-            {
-              id: '2030-07-16T21:00:00.000Z',
-              start: '2030-07-16T21:00:00.000Z',
-              end: '2030-07-16T21:30:00.000Z',
-              label: 'Tuesday, Jul 16 at 5:00 PM',
-              timezone: 'America/New_York',
-            },
-            {
-              id: '2030-07-16T22:00:00.000Z',
-              start: '2030-07-16T22:00:00.000Z',
-              end: '2030-07-16T22:30:00.000Z',
-              label: 'Tuesday, Jul 16 at 6:00 PM',
-              timezone: 'America/New_York',
-            },
-          ],
+  for (const eventMode of [
+    'success',
+    'failure',
+    'timeout',
+    'booking-failure',
+    'suppressed',
+    'storage-failure',
+  ])
+    test(`preserves booking truth and preparation through ${eventMode}`, async ({ page }) => {
+      test.setTimeout(75_000);
+      await stubAnonymousSession(page);
+      let confirmed = false;
+      const savedMessages: any[] = [];
+      await page.route('**/api/chat/facts', (route) =>
+        route.fulfill({ status: 200, contentType: 'application/json', body: '{"ok":true}' }),
+      );
+      await page.route('**/api/chat/events', async (route) => {
+        const message = route.request().postDataJSON();
+        if (message.content.startsWith('You’re booked') && eventMode !== 'success') {
+          if (eventMode === 'timeout') await new Promise((resolve) => setTimeout(resolve, 6_000));
+          await route.fulfill({ status: 500, body: 'Unavailable' }).catch(() => {});
+          return;
+        }
+        savedMessages.push({ id: `saved-${savedMessages.length}`, ...message });
+        await route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({ ok: true, id: `saved-${savedMessages.length - 1}` }),
+        });
+      });
+      await page.route('**/api/chat/session', (route) =>
+        route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({
+            ok: true,
+            conversationId: '00000000-0000-4000-8000-000000000001',
+            authenticated: false,
+            profile: confirmed ? { first_name: 'Daryl' } : null,
+            messages: savedMessages,
+            ownerFacts: {},
+            interests: [],
+            documents: [],
+            conversations: [],
+            permissions: {},
+            appointments: confirmed
+              ? [
+                  {
+                    id: 'appt-1',
+                    status: 'confirmed',
+                    starts_at: '2030-07-16T22:00:00.000Z',
+                    ends_at: '2030-07-16T22:30:00.000Z',
+                    timezone: 'America/New_York',
+                  },
+                ]
+              : [],
+          }),
         }),
+      );
+      await page.route('**/api/appointments/availability**', async (route) => {
+        await route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({
+            ok: true,
+            options: [
+              {
+                id: '2030-07-16T21:00:00.000Z',
+                start: '2030-07-16T21:00:00.000Z',
+                end: '2030-07-16T21:30:00.000Z',
+                label: 'Tuesday, Jul 16 at 5:00 PM',
+                timezone: 'America/New_York',
+              },
+              {
+                id: '2030-07-16T22:00:00.000Z',
+                start: '2030-07-16T22:00:00.000Z',
+                end: '2030-07-16T22:30:00.000Z',
+                label: 'Tuesday, Jul 16 at 6:00 PM',
+                timezone: 'America/New_York',
+              },
+            ],
+          }),
+        });
       });
-    });
-    await page.route('**/api/appointments', async (route) => {
-      const payload = route.request().postDataJSON();
-      expect(payload.option.label).toContain('6:00 PM');
-      expect(payload.profile.permissions).toEqual({
-        email: true,
-        sms: true,
-        marketingSms: false,
-        call: true,
-        aiVoice: true,
+      await page.route('**/api/appointments', async (route) => {
+        const payload = route.request().postDataJSON();
+        expect(payload.option.label).toContain('6:00 PM');
+        expect(payload.profile.permissions).toEqual({
+          email: true,
+          sms: true,
+          marketingSms: false,
+          call: true,
+          aiVoice: true,
+        });
+        if (eventMode === 'booking-failure' || eventMode === 'suppressed') {
+          await route.fulfill({
+            status: eventMode === 'booking-failure' ? 503 : 200,
+            contentType: 'application/json',
+            body: JSON.stringify({ ok: eventMode === 'suppressed', suppressed: true }),
+          });
+          return;
+        }
+        confirmed = true;
+        await route.fulfill({
+          status: 200,
+          contentType: 'application/json',
+          body: JSON.stringify({
+            ok: true,
+            appointmentId: 'appt-1',
+            notifications: ['email', 'sms'],
+            notificationFailures: [],
+            memberAccess: {
+              status: 'link_sent',
+              linkSent: true,
+              redirectTo: 'http://127.0.0.1:4321/account/?welcome=appointment',
+            },
+          }),
+        });
       });
-      await route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        body: JSON.stringify({
-          ok: true,
-          appointmentId: 'appt-1',
-          notifications: ['email', 'sms'],
-          notificationFailures: [],
-          memberAccess: {
-            status: 'link_sent',
-            linkSent: true,
-            redirectTo: 'http://127.0.0.1:4321/account/?welcome=appointment',
-          },
+
+      if (eventMode === 'storage-failure')
+        await page.addInitScript(() => {
+          const original = Storage.prototype.setItem;
+          Storage.prototype.setItem = function (key, value) {
+            if (key === 'mrx_upcoming_appointment') throw new Error('Synthetic storage failure');
+            return original.call(this, key, value);
+          };
+        });
+      await page.goto('/?book=1');
+      await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
+      await expect(page.getByText('I’m Elena, the MRX scheduling guide.')).toBeVisible();
+      await expect(
+        page.getByText('I’ll check the live MRX calendar and offer a few real openings.'),
+      ).toBeVisible();
+      await page.locator('[data-reply="timezone-confirm"]').click();
+      await expect(
+        page.getByText(
+          'What works better for you: tomorrow afternoon, tomorrow evening, or the next available time?',
+        ),
+      ).toBeVisible();
+      await page.locator('[data-reply="tomorrow-evening"]').click();
+      await expect(page.getByText('I found these openings.')).toBeVisible();
+      await page.locator('[data-reply="2030-07-16T22:00:00.000Z"]').click();
+
+      await expect(
+        page.getByText('What first name should I put on the appointment?'),
+      ).toBeVisible();
+      await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+        'name',
+        'mrx-chat-booking-name',
+      );
+      await reply(page, 'Daryl');
+      await expect(
+        page.getByText(
+          'What email should I use for your appointment details and secure MRX member access?',
+        ),
+      ).toBeVisible();
+      await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+        'name',
+        'mrx-chat-booking-email',
+      );
+      await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
+        'autocomplete',
+        'off',
+      );
+      await expect(page.getByTestId('travis-composer-input')).toHaveAttribute('inputmode', 'email');
+      await reply(page, 'daryl@example.com');
+      await expect(
+        page.getByText('What phone number should a senior MRX underwriter team member call?'),
+      ).toBeVisible();
+      await reply(page, '212-555-0199');
+      await expect(
+        page.getByText('May MRX call 212-555-0199 for this specific appointment?'),
+      ).toBeVisible();
+      await page.locator('[data-reply="yes"]').click();
+      await expect(page.getByText('May MRX email the appointment confirmation')).toBeVisible();
+      await page.locator('[data-reply="yes"]').click();
+      await expect(page.getByText('May MRX also text the appointment confirmation')).toBeVisible();
+      await page.locator('[data-reply="yes"]').click();
+      await expect(
+        page.getByText('May Elena, MRX’s AI scheduling guide, use AI-generated voice technology'),
+      ).toBeVisible();
+      await expect(page.getByText('This AI-voice permission is optional')).toBeVisible();
+      await page.locator('[data-reply="yes"]').click();
+
+      if (
+        eventMode === 'booking-failure' ||
+        eventMode === 'suppressed' ||
+        eventMode === 'storage-failure'
+      ) {
+        await expect(
+          page.getByText(
+            eventMode === 'storage-failure'
+              ? 'Your appointment is confirmed.'
+              : 'I couldn’t confirm that time, so no appointment was created.',
+            { exact: false },
+          ),
+        ).toBeVisible();
+        expect(
+          await page.evaluate(() => sessionStorage.getItem('mrx_appointment_preparation')),
+        ).toBeNull();
+        expect(page.url()).not.toContain('/account/');
+        return;
+      }
+      await expect(page).toHaveURL(/\/account\/\?welcome=appointment&prepare=1$/);
+      await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
+      await expect(
+        page.getByText('what would you most like the underwriter to help you understand?', {
+          exact: false,
         }),
-      });
+      ).toBeVisible();
+      expect(savedMessages.some((message) => message.content === 'How may I help you?')).toBe(
+        false,
+      );
+
+      await page.goto('/');
+      await page.evaluate(() =>
+        window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { booking: true } })),
+      );
+      await expect(page.getByTestId('travis-appointment-status')).toHaveText('✓ Call booked');
+      await expect(page.getByText('I won’t book another one.').last()).toBeVisible();
+      await expect(page.getByText('already have a phone appointment booked')).toBeVisible();
+
+      await page.reload();
+      await page.evaluate(() =>
+        window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { booking: true } })),
+      );
+      await expect(page.getByTestId('travis-appointment-status')).toHaveText('✓ Call booked');
+      await expect(page.getByText('I won’t book another one.').last()).toBeVisible();
     });
-
-    await page.goto('/?book=1');
-    await expect(page.getByTestId('ask-travis-dialog')).toBeVisible();
-    await expect(page.getByText('I’m Elena, the MRX scheduling guide.')).toBeVisible();
-    await expect(
-      page.getByText('I’ll check the live MRX calendar and offer a few real openings.'),
-    ).toBeVisible();
-    await page.locator('[data-reply="timezone-confirm"]').click();
-    await expect(
-      page.getByText(
-        'What works better for you: tomorrow afternoon, tomorrow evening, or the next available time?',
-      ),
-    ).toBeVisible();
-    await page.locator('[data-reply="tomorrow-evening"]').click();
-    await expect(page.getByText('I found these openings.')).toBeVisible();
-    await page.locator('[data-reply="2030-07-16T22:00:00.000Z"]').click();
-
-    await expect(page.getByText('What first name should I put on the appointment?')).toBeVisible();
-    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
-      'name',
-      'mrx-chat-booking-name',
-    );
-    await reply(page, 'Daryl');
-    await expect(
-      page.getByText(
-        'What email should I use for your appointment details and secure MRX member access?',
-      ),
-    ).toBeVisible();
-    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
-      'name',
-      'mrx-chat-booking-email',
-    );
-    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute('autocomplete', 'off');
-    await expect(page.getByTestId('travis-composer-input')).toHaveAttribute('inputmode', 'email');
-    await reply(page, 'daryl@example.com');
-    await expect(
-      page.getByText('What phone number should a senior MRX underwriter team member call?'),
-    ).toBeVisible();
-    await reply(page, '212-555-0199');
-    await expect(
-      page.getByText('May MRX call 212-555-0199 for this specific appointment?'),
-    ).toBeVisible();
-    await page.locator('[data-reply="yes"]').click();
-    await expect(page.getByText('May MRX email the appointment confirmation')).toBeVisible();
-    await page.locator('[data-reply="yes"]').click();
-    await expect(page.getByText('May MRX also text the appointment confirmation')).toBeVisible();
-    await page.locator('[data-reply="yes"]').click();
-    await expect(
-      page.getByText('May Elena, MRX’s AI scheduling guide, use AI-generated voice technology'),
-    ).toBeVisible();
-    await expect(page.getByText('This AI-voice permission is optional')).toBeVisible();
-    await page.locator('[data-reply="yes"]').click();
-
-    await expect(page).toHaveURL(/\/account\/\?welcome=appointment$/);
-
-    await page.goto('/');
-    await page.evaluate(() =>
-      window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { booking: true } })),
-    );
-    await expect(page.getByTestId('travis-appointment-status')).toHaveText('✓ Call booked');
-    await expect(page.getByText('I won’t book another one.').last()).toBeVisible();
-    await expect(page.getByText('already have a phone appointment booked')).toBeVisible();
-
-    await page.reload();
-    await page.evaluate(() =>
-      window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { booking: true } })),
-    );
-    await expect(page.getByTestId('travis-appointment-status')).toHaveText('✓ Call booked');
-    await expect(page.getByText('I won’t book another one.').last()).toBeVisible();
-  });
 });
 
 test.describe('Ask Travis mobile conversation', () => {

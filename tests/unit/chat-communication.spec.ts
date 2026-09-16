@@ -43,6 +43,41 @@ describe('shared communication skill at the model boundary', () => {
     },
   );
 
+  it('includes verified booking context without restarting scheduling or overriding refusal', async () => {
+    vi.stubEnv('OPENAI_API_KEY', 'test-only');
+    const fetchMock = vi.fn().mockResolvedValue(new Response('data: [DONE]\n\n'));
+    vi.stubGlobal('fetch', fetchMock);
+    await createOpenAIStream({
+      message: 'Skip',
+      persona: 'elena',
+      citations: [],
+      history: [
+        { role: 'user', content: 'My offer expires Friday; I already have the deed.' },
+        ...Array.from({ length: 20 }, () => ({
+          role: 'assistant' as const,
+          content: 'Booking logistics',
+        })),
+      ],
+      context: {
+        discoveryDeclined: true,
+        appointment: {
+          id: 'verified-a',
+          starts_at: '2030-07-16T22:00:00Z',
+          ends_at: '2030-07-16T22:30:00Z',
+          status: 'confirmed',
+        },
+      },
+    });
+    const request = JSON.parse(fetchMock.mock.calls[0][1].body);
+    expect(request.input[0].content[0].text).toBe(
+      'My offer expires Friday; I already have the deed.',
+    );
+    expect(request.instructions).toContain('Server-verified upcoming confirmed appointment:');
+    expect(request.instructions).toContain('A mention is not an established fact');
+    expect(request.instructions).toContain('The visitor declined discovery questions.');
+    expect(request.instructions).toContain('Do not claim notes have reached the underwriter');
+  });
+
   it('does not present model unavailability as a completed response', async () => {
     vi.stubEnv('OPENAI_API_KEY', 'test-only');
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('Unavailable', { status: 503 })));
