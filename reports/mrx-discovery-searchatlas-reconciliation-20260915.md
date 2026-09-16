@@ -4,8 +4,8 @@
 - Search Atlas audit: `138239`
 - Source branch: `release/mrx-measurement-ai-technical-20260909`
 - Pre-release production deployment: `dpl_EFLH7cjrpTT3QanLKe7uAw5Dk14J`
-- Release commit: pending
-- Production deployment: pending
+- Release commits: `95bff4bb`, `3a4aa204`, and `a8afd7e8`
+- Production deployment: `dpl_CekBDLYcKyeEY1oLqAghUB2U2ukN` / `https://mrx-2yhm2j8nu-team-mrx.vercel.app`
 - Rollback deployment: `dpl_EFLH7cjrpTT3QanLKe7uAw5Dk14J`
 
 ## Objective
@@ -59,15 +59,52 @@ The search index contains all **328** published article records.
 ## Pre-release verification
 
 - `astro check`: zero errors; 31 existing non-blocking hints.
-- Full unit suite: **86 files / 726 tests passed**.
-- Relevant Chromium end-to-end coverage: all **16** cases passed after deterministic locator updates.
+- Full unit suite: **87 files / 740 tests passed**.
+- Integrated Chromium end-to-end coverage: all **19** chat/account cases passed locally; five release-critical cases passed again on the live apex.
 - `pnpm build:vercel`: passed every release gate, including **320/320 MRX1000 evidence packets**, **328 articles / 656 article-image binaries**, **491 rendered HTML pages**, canonical/meta/JSON-LD/accessibility/unique-title/unique-description/unique-H1 checks, organizational authorship on all 328 articles, and zero sitemap orphans.
 - Generated Vercel routing confirms obsolete AI-guide author roots and pagination redirect directly to the intended team profile while the MRX Editorial Team archive remains routable.
 
 ## Production release and live verification
 
-Pending.
+- Vercel deployment `dpl_CekBDLYcKyeEY1oLqAghUB2U2ukN` reached `READY`. Vercel inspection binds apex, `www`, and `mrx-web.vercel.app` to that exact deployment; `dpl_EFLH7cjrpTT3QanLKe7uAw5Dk14J` remains the rollback deployment.
+- Apex, `www`, and native production returned HTTP 200. The new `AskTravis.D1kVPpTn.js` bundle is byte-identical across the three aliases.
+- Live Learning Center page one contains 24 server-rendered cards. The on-demand search endpoint returns all 328 records. Live reciprocal discovery exposes all ten state guides, all eleven fictional guide profiles, and all eight owner-situation routes.
+- All thirteen retired AI-guide author URLs return one direct permanent redirect to the intended live `/team/` profile; no redirect chain or missing target remains.
+- Live schema reconciliation passed all three public aliases with exactly one authoritative native `https://mineralrightsxchange.com/#org` entity, no Search Atlas runtime injector, and no overlay `ImageObject` output.
+- Article 320 retained the exact canonical title, H1, OG/Twitter title, Article-schema headline, and canonical hero. The live hero SHA-256 is `938ab1da59ae6eada147a63d483801c4f7445f628fe92259c87d28884e079c86`; the distinct in-body asset SHA-256 is `d54c7fcd85f207ba61653203af5a98e5f5425f54b4e50b084d7b1d4ae5afbb8e`.
+- Independent visual verification confirmed that `/account/` hydrates to the full form and that the live rapport-first chat shows the first-name opening without an early account prompt. No contact form, account, booking, or message was submitted during independent verification.
+- The MRX crawler notifier verified and submitted all **444** public manifest URLs to IndexNow. Every receipt returned HTTP 200; one cache-convergence hold passed on retry. The final preview is **0 changed / 0 queued / 0 errors**. Thirteen removed author URLs remain separately accounted for by the verified redirects. These receipts do not prove indexing or model updates.
 
 ## Search Atlas recrawl and final reconciliation
 
-Pending.
+Exactly one post-release OTTO recrawl was requested. Audit `138239` started at `2026-09-15T23:58:44.729323Z` and completed and post-processed at `2026-09-16T00:11:05.562454Z`: `status=completed`, `crawl_state=completed`, `postprocessing_status=completed`, `is_terminal=true`, and `should_repoll=false`.
+
+| Raw audit metric | Before | After | Change |
+| --- | ---: | ---: | ---: |
+| Technical score | 978 | 979 | +1 |
+| Total observations | 2,020 | 1,959 | -61 |
+| Large DOM | 14 | 0 | -14 |
+| More than 500 outgoing links | 14 | 0 | -14 |
+| Orphan observations | 5 | 0 | -5 |
+| H1 length observations | 148 | 135 | -13 |
+| H2 length observations | 359 | 351 | -8 |
+| JavaScript over 300 KB | 35 | 31 | -4 |
+| Robots noindex / nofollow observations | 30 / 30 | 1 / 1 | -29 / -29 |
+| Successful responses | 460 | 440 | -20 |
+| Intentional redirects | 24 | 40 | +16 |
+| Missing / blocked / server-error URLs | 0 | 0 | 0 |
+
+The success/redirect shift is expected: legacy AI-guide archives now resolve through explicit one-hop redirects instead of remaining crawlable duplicate archives. The final audit has 439 indexable and 46 non-indexable URLs; redirects and deliberate noindex remain valid non-indexable classes, not errors.
+
+The separate OTTO dashboard remains **472 total / 16 approved / 456 pending** because the recrawl did not erase stored opportunity rows. Deployment preview proves the current composition:
+
+- **16 generated but rejected/unsupported records:** 15 Dynamic Indexing hidden-link proposals for already-discoverable or deliberately noindex routes, plus vendor-locked undeployed Organization `182837670`, which would duplicate native `#org`.
+- **699 ungenerated candidate shells:** title 117, description 142, meta keywords 115, H1 20, H2 81, OG title 112, and Twitter title 112. They contain no recommendation to deploy and were not generated.
+- Page-schema inventory detects native schemas on 461 pages and reports zero pending page schemas. The one domain suggestion remains valid, suggested, and undeployed.
+- Search Atlas AI Generation remains **2,189 of 2,500 used / 311 remaining**. The release and recrawl consumed zero AI-generation credits.
+
+The remaining raw observations are disclosed hygiene/advisory categories, not a safe bulk change list: optional meta-keywords recommendations, arbitrary heading/social-title length thresholds, exact approved article/social identity, native-schema false positives, optimized WebP size advice, and a smaller set of link heuristics. No hidden links, duplicate schema, keyword tags, title truncation, or speculative generated copy was deployed merely to reduce those counters.
+
+Post-crawl verification at `2026-09-16T00:15:08.715Z` again passed apex, the `www` redirect, and native production: HTTP 200, one authoritative native Organization, zero Search Atlas runtime injector markers, zero overlay `ImageObject` nodes, and exact Article 320 hero/inline hashes. Vercel still reports the three aliases on Ready deployment `dpl_CekBDLYcKyeEY1oLqAghUB2U2ukN`.
+
+Final release accounting is **zero actionable generated recommendations**, **15 reviewed undeployed source-conflict proposals**, and **one vendor-locked undeployed Organization suggestion**. Search indexing, crawler visits, and answer-engine citations remain separate outcome measurements and are not claimed by the successful deployment, IndexNow receipts, or audit completion.
