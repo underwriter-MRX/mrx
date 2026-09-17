@@ -8,32 +8,44 @@ const offerReviewStartingPoints = [
   {
     href: fairOfferArticle,
     question: 'Is the offer fair?',
-    description: 'Compare the exact interest, written assumptions, adjustment rights, and closing conditions before judging the headline amount.',
+    description:
+      'Compare the exact interest, written assumptions, adjustment rights, and closing conditions before judging the headline amount.',
   },
   {
     href: competingOffersArticle,
     question: 'What if I have more than one offer?',
-    description: 'Put each offer on the same property scope and written-term basis before comparing the numbers.',
+    description:
+      'Put each offer on the same property scope and written-term basis before comparing the numbers.',
   },
   {
     href: '/blog/mineral-rights-offer-sender-identity-cross-check/',
     question: 'Who sent the offer?',
-    description: 'Organize the sender details shown in the offer, selected public records, and independently located contact information.',
+    description:
+      'Organize the sender details shown in the offer, selected public records, and independently located contact information.',
   },
   {
     href: '/blog/mineral-rights-offer-version-control-and-deadline-register/',
     question: 'Which version am I reviewing?',
-    description: 'Keep every written offer, revised attachment, received time, and stated deadline in a separate record row.',
+    description:
+      'Keep every written offer, revised attachment, received time, and stated deadline in a separate record row.',
+  },
+  {
+    href: '/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/',
+    question: 'Is this an offer, letter of intent, or purchase agreement?',
+    description:
+      'Identify what each document says it does before treating an early proposal as the final sale terms.',
   },
   {
     href: '/blog/how-to-spot-predatory-mineral-rights-offers/',
     question: 'What pressure signs should slow me down?',
-    description: 'Turn urgency, missing terms, identity gaps, and unusual payment requests into neutral verification questions.',
+    description:
+      'Turn urgency, missing terms, identity gaps, and unusual payment requests into neutral verification questions.',
   },
   {
     href: '/blog/what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include/',
     question: 'What is in the purchase agreement?',
-    description: 'Identify agreement sections to read and questions to raise without treating this page as legal advice.',
+    description:
+      'Identify agreement sections to read and questions to raise without treating this page as legal advice.',
   },
 ] as const;
 
@@ -41,22 +53,26 @@ const offerReviewAdvancedWorksheets = [
   {
     href: '/blog/property-scope-crosswalk-mineral-rights-offers/',
     title: 'Property scope crosswalk',
-    description: 'Check whether two offers describe the same county, tract, depth, unit, and retained rights.',
+    description:
+      'Check whether two offers describe the same county, tract, depth, unit, and retained rights.',
   },
   {
     href: '/blog/mineral-rights-offer-correspondence-index/',
     title: 'Offer correspondence index',
-    description: 'Locate messages, attachments, contacts, and source references without exposing private correspondence.',
+    description:
+      'Locate messages, attachments, contacts, and source references without exposing private correspondence.',
   },
   {
     href: '/blog/mineral-rights-retained-evidence-source-scope-worksheet/',
     title: 'Retained evidence source scope',
-    description: 'Record what one retained artifact can and cannot support before it is used in a review.',
+    description:
+      'Record what one retained artifact can and cannot support before it is used in a review.',
   },
   {
     href: '/blog/how-title-defects-change-mineral-rights-offer/',
     title: 'Title-adjustment questions',
-    description: 'Separate title-review adjustments from owner-specific title conclusions that need qualified counsel.',
+    description:
+      'Separate title-review adjustments from owner-specific title conclusions that need qualified counsel.',
   },
 ] as const;
 
@@ -253,8 +269,7 @@ const offerReviewSourceContext = [
       <p>
         Public production data can add context but does not establish private title, future
         production, or an owner-specific transaction answer. For source limitations and royalty
-        authority boundaries, see
-        the <a
+        authority boundaries, see the <a
           href="https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/"
           >Railroad Commission of Texas production-data FAQ</a
         >
@@ -300,7 +315,9 @@ const offerReviewSourceContext = [
         {
           offerReviewAdvancedWorksheets.map((worksheet) => (
             <article>
-              <h3><a href={worksheet.href}>{worksheet.title}</a></h3>
+              <h3>
+                <a href={worksheet.href}>{worksheet.title}</a>
+              </h3>
               <p>{worksheet.description}</p>
             </article>
           ))
@@ -326,8 +343,8 @@ const offerReviewSourceContext = [
       <p>
         If an owner’s answer depends on an unverified record, missing exhibit, personal tax result,
         legal interpretation, title conclusion, or a value opinion, the hub routes the question to
-        <a href="/book/">MRX underwriter review</a> or an outside qualified professional instead of
-        supplying a personalized conclusion.
+        <a href="/book/">MRX underwriter review</a> or an outside qualified professional instead of supplying
+        a personalized conclusion.
       </p>
     </div>
   </div>

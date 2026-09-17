@@ -107,5 +107,89 @@ const faq = [
       prompt:
         'Help me understand an oil and gas royalty statement or payment change. Start by telling me which non-sensitive fields to compare and which records may matter next.',
     }}
-  />
+  >
+    <section
+      slot="decision-guide"
+      class="container royalty-question-paths"
+      aria-labelledby="royalty-question-paths-title"
+    >
+      <p class="royalty-question-paths__eyebrow">Choose the next question</p>
+      <h2 id="royalty-question-paths-title">What does your royalty record need to explain?</h2>
+      <div class="royalty-question-paths__grid">
+        <article>
+          <h3>
+            <a href="/blog/how-to-decode-your-royalty-check-statement/"
+              >How do I read the statement?</a>
+          </h3>
+          <p>
+            Work through property and payor identifiers, product, production period, volume, price,
+            deductions, adjustments, and the displayed ownership factor.
+          </p>
+        </article>
+        <article>
+          <h3><a href="/blog/why-did-my-royalty-check-go-down/">Why did my payment change?</a></h3>
+          <p>
+            Compare consecutive statement lines before attributing the difference to production,
+            price, costs, timing, or a corrected entry.
+          </p>
+        </article>
+        <article>
+          <h3>
+            <a href="/blog/converting-monthly-royalty-history-into-a-valuation-baseline/"
+              >Which month belongs in a history?</a>
+          </h3>
+          <p>
+            Keep production month, statement date, and payment date separate so a later payment is
+            not assigned to the wrong period.
+          </p>
+        </article>
+      </div>
+      <p>
+        <a
+          href="https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/"
+          >Texas RRC production data</a
+        >
+        is operator-reported at the lease level and may lag or be revised. It can provide context, but
+        it is not a private-owner royalty ledger or a title conclusion.
+      </p>
+    </section>
+  </PillarHubPage>
 </MarketingLayout>
+
+<style>
+  .royalty-question-paths {
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+  }
+
+  .royalty-question-paths__eyebrow {
+    color: var(--color-accent-700);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .royalty-question-paths__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--space-4);
+    margin-block: var(--space-5);
+  }
+
+  .royalty-question-paths__grid article {
+    border: 1px solid var(--color-ink-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    background: var(--color-white);
+  }
+
+  .royalty-question-paths__grid h3 {
+    margin: 0 0 var(--space-3);
+    color: var(--color-brand-900);
+  }
+
+  .royalty-question-paths p {
+    color: var(--color-ink-600);
+    line-height: 1.65;
+  }
+</style>
