@@ -50,7 +50,7 @@ const {
 const articleCount = topics.reduce((total, topic) => total + topic.posts.length, 0);
 ---
 
-<main id="pillar-top" class="pillar-hub" data-pillar-article-count={articleCount}>
+<div id="pillar-top" class="pillar-hub" data-pillar-article-count={articleCount}>
   <section class="pillar-hub__hero" aria-labelledby="pillar-title">
     <div class="container pillar-hub__hero-grid">
       <div>
@@ -208,7 +208,7 @@ const articleCount = topics.reduce((total, topic) => total + topic.posts.length,
       </CtaLink>
     </div>
   </section>
-</main>
+</div>
 
 <script>
   document.querySelectorAll<HTMLElement>('[data-pillar-prompt]').forEach((button) => {

@@ -50,6 +50,8 @@ describe('pillar hub routes', () => {
 
     expect(source).toContain('<CitedAnswer');
     expect(source).toContain('data-pillar-article-count');
+    expect(source).toContain('<div id="pillar-top"');
+    expect(source).not.toContain('<main id="pillar-top"');
     expect(source).toContain('<PostCard');
     expect(source).toContain('/authors/mrx-editorial-team/');
     expect(source).toContain('<details>');
