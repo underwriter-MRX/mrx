@@ -1,18 +1,18 @@
 {
   "artifact_type": "mrx_article_two_image_retrofit",
   "schema_version": 1,
-  "generated_at_utc": "2026-09-15T12:28:01Z",
+  "generated_at_utc": "2026-09-17T16:15:10Z",
   "policy_source": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
   "summary": {
-    "article_count": 328,
-    "asset_count": 656,
-    "unique_source_art_count": 328,
-    "unique_hero_sha256_count": 328,
-    "unique_inline_sha256_count": 328,
-    "distinct_article_pair_count": 328,
-    "hero_ocr_pass_count": 328,
-    "inline_ocr_pass_count": 328,
-    "exact_filename_identity_count": 328
+    "article_count": 329,
+    "asset_count": 658,
+    "unique_source_art_count": 329,
+    "unique_hero_sha256_count": 329,
+    "unique_inline_sha256_count": 329,
+    "distinct_article_pair_count": 329,
+    "hero_ocr_pass_count": 329,
+    "inline_ocr_pass_count": 329,
+    "exact_filename_identity_count": 329
   },
   "contact_sheets": {
     "hero": [
@@ -5032,6 +5032,56 @@
           "actual": "fair mineral rights offer",
           "normalized_expected": "fair mineral rights offer",
           "normalized_actual": "fair mineral rights offer",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      }
+    },
+    {
+      "slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+      "title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+      "keyword": "locate inherited Texas mineral interest from a royalty statement",
+      "file_path": "src/content/posts/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.mdx",
+      "source_public_path": "/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp",
+      "source_artifact_paths": [
+        "artifacts/mrx1000-wave249-creative-sources/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement-hero-base.png",
+        "artifacts/mrx1000-wave249-creative-sources/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement-inline-base.png"
+      ],
+      "generated_at_utc": "2026-09-17T12:38:49.758Z",
+      "hero": {
+        "public_path": "/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp",
+        "alt": "Inherited royalty statement and envelope beside a Texas map.",
+        "width": 1200,
+        "height": 630,
+        "mime_type": "image/webp",
+        "sha256": "d98c621aa43597d251e1f90489e0345a007aa50eafcc765fd1ce58130e31f276",
+        "perceptual_hash": "0000000000000000000000000100100000000000010011110000000000111111000000000111111100000000111111110110000011111111010000001111111100000000111111100000000011111100000000000111111100000000011111110000000001111111000000000111100000000000011000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+          "actual": "How to Locate a Texas\nMineral Interest From an\nInherited Royalty\nStatement",
+          "normalized_expected": "how to locate a texas mineral interest from an inherited royalty statement",
+          "normalized_actual": "how to locate a texas mineral interest from an inherited royalty statement",
+          "uppercase_i_confusable_accepted": false,
+          "pass": true
+        }
+      },
+      "inline": {
+        "public_path": "/assets/articles/inline/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/locate-inherited-texas-mineral-interest-from-a-royalty-statement.webp",
+        "alt": "Blank royalty statement, research cards, and county-record folder on a desk.",
+        "rendered_text": "locate inherited Texas mineral interest from a royalty statement",
+        "visual_variant": "wave249-distinct-generated-low-three-quarter-statement-and-map-hero-versus-strict-overhead-record-location-workspace-inline",
+        "width": 1200,
+        "height": 675,
+        "mime_type": "image/webp",
+        "sha256": "e1abcb76174328df40cd59f0c6721dbe2f3b89304cfe8de5e5a6ea8986170abc",
+        "perceptual_hash": "0011111111111111001111111111111100111111111001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "neutralized_art_text_region_count": 1,
+        "ocr": {
+          "expected": "locate inherited Texas mineral interest from a royalty statement",
+          "actual": "locate inherited Texas mineral interest\nfrom a royalty statement",
+          "normalized_expected": "locate inherited texas mineral interest from a royalty statement",
+          "normalized_actual": "locate inherited texas mineral interest from a royalty statement",
           "uppercase_i_confusable_accepted": false,
           "pass": true
         }

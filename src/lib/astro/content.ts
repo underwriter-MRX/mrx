@@ -123,7 +123,11 @@ export type PostsFrontmatter = {
     | 'rebecca'
     | 'angela';
   content_batch?: string;
-  internal_links?: { hub: string; sibling: string; conversion: '/book/' };
+  internal_links?: {
+    hub: string;
+    sibling: string;
+    conversion: '/book/' | '/learning-center/title-lease-ownership/';
+  };
   hero_image: {
     src: string;
     alt: string;

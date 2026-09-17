@@ -25,6 +25,10 @@ const articlePath = `src/content/posts/${slug}.mdx`;
 const creativePath = `artifacts/mrx1000-wave${waveNumber}-creative-qa/${slug}/creative-manifest.json`;
 const expectedSelectionRank = Number(process.env.MRX_SELECTION_RANK ?? 162);
 const expectedSourceCount = Number(process.env.MRX_EXPECTED_SOURCE_COUNT ?? 5);
+const expectedNextStep = process.env.MRX_REVIEW_NEXT_STEP ?? '/book/';
+if (!['/book/', '/learning-center/title-lease-ownership/'].includes(expectedNextStep)) {
+  throw new Error(`Unsupported reviewed next step: ${expectedNextStep}`);
+}
 const batch = JSON.parse(
   readFileSync(join(repoRoot, 'config', 'mrx1000-release-10-batch.json'), 'utf8'),
 );
@@ -269,7 +273,7 @@ const sourceFirstSeoAeoPass =
   /^\/.+\/$/.test(hubLink) &&
   /^\/.+\/$/.test(supportLink) &&
   supportLink !== hubLink &&
-  nextStepLink === '/book/' &&
+  nextStepLink === expectedNextStep &&
   bodyCitationCount >= Math.min(2, expectedSourceCount) &&
   /^https:\/\/mineralrightsxchange\.com\/blog\/.+\/$/.test(row.canonical_url);
 

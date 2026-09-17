@@ -1,7 +1,7 @@
 {
   "program": "MRX 1,000 Article SEO+AEO Production Program",
   "artifact_type": "authorized_release_10_batch",
-  "evidence_scaffold_generated_at_utc": "2026-09-15T10:01:48Z",
+  "evidence_scaffold_generated_at_utc": "2026-09-17T16:19:04Z",
   "decision_authority": {
     "successor_gate_decision_id": "D-2026-0804-16",
     "successor_gate_decision_path": "docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md",
@@ -744,12 +744,15 @@
     "wave247_selection_decision_sha256": "3f06b93cb9419d7155edebf2cca5ae5030bbf38daba96bea774aa85df504a3ef",
     "wave248_selection_decision_id": "MRX1000-W248-SELECT-2026-09-15",
     "wave248_selection_decision_path": "docs/governance/mrx1000-wave248-selection-decision-2026-09-15.md",
-    "wave248_selection_decision_sha256": "fd60c17980809573ea9137885534c1f98c79eda4f3037d320ca44433de8559fe"
+    "wave248_selection_decision_sha256": "fd60c17980809573ea9137885534c1f98c79eda4f3037d320ca44433de8559fe",
+    "wave249_selection_decision_id": "MRX1000-W249-SELECT-2026-09-17",
+    "wave249_selection_decision_path": "docs/governance/mrx1000-wave249-selection-decision-2026-09-17.md",
+    "wave249_selection_decision_sha256": "bab02cc2a780a80f58c4465e22892b6ee8da3ab7ea29762e083dfb851895cf87"
   },
   "identity_authority": {
     "scope_key": "canonical_slug",
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_sha256": "0f153ae7296eec697eba2f52e593fd02add2ccb5c292e0aa3d4cdf06a47e0426",
+    "canonical_ledger_sha256": "97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6",
     "canonical_ledger_generated_at": "2026-07-20T17:45:50.397Z",
     "successor_ledger_decision_id": "D-2026-0723-LEDGER-04",
     "successor_ledger_decision_path": "artifacts/mrx1000-release-10/decisions/mrx-ceo-ledger-provenance-successor-20260723-04.md",
@@ -764,11 +767,11 @@
     "authorization_scope": "declared_program_size_not_a_staged_release_cap",
     "admission_mode": "continuous_quality_gated",
     "continuous_quality_gated_from_selection_rank": 26,
-    "prior_verified_article_count": 319,
+    "prior_verified_article_count": 320,
     "fail_closed": true,
     "earned_scale_gates": [],
-    "exact_admitted_count": 320,
-    "exact_admitted_slate_sha256": "6df368bbf2f390a8ef92dfc94537f68a572bc4fa621b9e207e5dcf930618c750"
+    "exact_admitted_count": 321,
+    "exact_admitted_slate_sha256": "7b0964efa00c29dcc321ecf360a23f8fab6eca4ac33fa8e730ae29fd3aa8240e"
   },
   "articles": [
     {
@@ -11741,10 +11744,45 @@
       "inline_path": "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp",
       "inline_asset_sha256": "d54c7fcd85f207ba61653203af5a98e5f5425f54b4e50b084d7b1d4ae5afbb8e",
       "inline_rendered_text": "mineral rights offer documents"
+    },
+    {
+      "selection_rank": 321,
+      "program_row_id": "MRX1000-0454",
+      "source_shortlist_program_row_id": "MRX1000-0454",
+      "slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+      "title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+      "source_shortlist_title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+      "pillar": "inherited-mineral-rights",
+      "cluster": "inherited-estate-probate",
+      "content_genius_article_uuid": null,
+      "archive_evidence_sha256": "b22cf5d6e8df3c1a281686bef59a4bc1ec5ce868fe15856e4ffa687905115b63",
+      "repo_path": "src/content/posts/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.mdx",
+      "repo_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+      "article_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+      "hero_path": "/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp",
+      "hero_sha256": "d98c621aa43597d251e1f90489e0345a007aa50eafcc765fd1ce58130e31f276",
+      "hero_asset_sha256": "d98c621aa43597d251e1f90489e0345a007aa50eafcc765fd1ce58130e31f276",
+      "admission_status": "admitted_quality_gated",
+      "finalization_state": "draft_noindex_admitted",
+      "searchatlas_content_score": null,
+      "searchatlas_word_count": 1345,
+      "risk_citation_remediation": [
+        "The original selling-complexity planning answer overlaps the inherited, selling, and offer-review corpus and is not imported.",
+        "The replacement owns only the old-statement unknown-county starting problem: printed clues, verified payor crosswalk, possible RRC context, and county-record research path.",
+        "It does not determine a particular tract, heirship, title, payment entitlement, decimal, value, or sale decision; a payor or RRC match is not ownership proof.",
+        "Official RRC and Texas State Library sources support bounded, cited research steps and their limits; a fictional example remains explicitly unresolved.",
+        "MRX Editorial Team is the organizational author; the article preserves directional-not-appraisal, no individualized professional advice, privacy, disclosed-buyer, and voluntary research-path boundaries."
+      ],
+      "evidence_packet_path": "artifacts/mrx1000-release-10/evidence/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.json",
+      "evidence_packet_path_required": true,
+      "inline_path": "/assets/articles/inline/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/locate-inherited-texas-mineral-interest-from-a-royalty-statement.webp",
+      "inline_asset_sha256": "e1abcb76174328df40cd59f0c6721dbe2f3b89304cfe8de5e5a6ea8986170abc",
+      "inline_rendered_text": "locate inherited Texas mineral interest from a royalty statement"
     }
   ],
   "admission_audit": {
-    "admitted_article_count": 320,
+    "admitted_article_count": 321,
     "selection_ranks": [
       1,
       2,
@@ -12065,7 +12103,8 @@
       317,
       318,
       319,
-      320
+      320,
+      321
     ],
     "duplicate_program_row_ids": [],
     "duplicate_slugs": [],
@@ -12124,9 +12163,9 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "0602499718fe4efdbc17dc9ef6a5a57fa26a8d86bc062e50907b37d5f50b7a83",
-    "public_article_count": 328,
-    "batch_article_count": 320,
+    "retrofit_manifest_sha256": "5901725b403785f48b1cca04b843a1751002c9616f6a5a3218f7ad9b0f89b66f",
+    "public_article_count": 329,
+    "batch_article_count": 321,
     "assets_per_article": 2,
     "hero_share_identity_required": true,
     "inline_image_distinct_required": true,

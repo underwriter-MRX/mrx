@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave249_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-17T16:18:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0454",
+  "slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+  "title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+  "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+  "source_path": "src/content/posts/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.mdx",
+  "input_body_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+  "input_frontmatter_sha256": "05393b8c810f14dffe28f13c8eac8229f268003a00cf67581127fa877cea372c",
+  "expected_repo_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+  "two_image_manifest_sha256": "78bf75a2a6eb4316e8f9bf1ab7d1657b178acf5a588e05789211c4cacf67e1f0",
+  "visual_metadata": {
+    "hero_alt": "Inherited royalty statement and envelope beside a Texas map.",
+    "social_alt": "Inherited royalty statement and envelope beside a Texas map.",
+    "inline_alt": "Blank royalty statement, research cards, and county-record folder on a desk."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Trace a Texas Royalty Statement to County Records",
+    "seo_title_character_count": 49,
+    "description_character_count": 156,
+    "answer_summary_word_count": 65,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-09-17T15:32:19Z",
+    "reviewed_by": "mrx_compliance-wave249-source-review-20260917",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/inherited-mineral-rights/",
+      "support": "/blog/understanding-royalty-checks-after-inheriting-mineral-rights/",
+      "next_step": "/learning-center/title-lease-ownership/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave249_factual",
+  "review_run_id": "mrx1000-wave249-factual-20260917T161856Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4; all 5 declared sources passed current HTTPS access review.",
+    "Five current official Texas RRC and Texas State Library pages support the bounded claim-to-source map. The RRC stub identifier, PDQ scope and lag, automated-access boundary, and county deed/probate research roles are not extended into ownership conclusions.",
+    "No actual owner, statement, payor, county, tract, decimal, legal description, price, or value was provided; the worked example is fictional and explicitly unresolved."
+  ],
+  "checks": [
+    "five_official_https_sources_with_bounded_roles",
+    "rrc_payor_stub_id_versus_regulator_id_scope_pass",
+    "rrc_pdq_search_lag_revision_multi_county_scope_pass",
+    "rrc_automated_access_boundary_pass",
+    "county_deed_and_probate_source_class_separation_pass",
+    "no_private_owner_or_property_match_invention_pass",
+    "claim_adjacent_citations_and_qualified_unknowns_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Royalties FAQ (accessed 2026-09-17)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/royalties-faq/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-17T16:18:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/royalties-faq/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The RRC royalties FAQ distinguishes a payor stub identifier from an RRC identifier and describes qualified requests for lease, property, or well identifiers.",
+      "claim_scope": "It does not prove a particular heir owns an interest, that an old payor reference maps perfectly to a current RRC record, or that every statement has the same fields."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Data Query System FAQ (accessed 2026-09-17)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-17T16:18:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The RRC PDQ FAQ describes lease, field, operator, district and county search routes, reporting lag and revision, and possible multi-county scope.",
+      "claim_scope": "Operator-reported production is contextual, not an owner payment ledger, private title record, or proof of a payor-to-property match."
+    },
+    {
+      "label": "Railroad Commission of Texas, Research Queries and automated-access boundary (accessed 2026-09-17)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-17T16:18:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory provides the manual access route and its automated-use warning.",
+      "claim_scope": "The article does not automate or encourage bulk retrieval from restricted RRC queries."
+    },
+    {
+      "label": "Texas State Library and Archives Commission, Land and Property History Research (accessed 2026-09-17)",
+      "url": "https://www.tsl.texas.gov/ref/propertyresearch",
+      "publisher": "www.tsl.texas.gov",
+      "accessed_at": "2026-09-17T16:18:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tsl.texas.gov/ref/propertyresearch",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "Texas State Library land/property guidance places conveyance research in the county where the land lies.",
+      "claim_scope": "A county deed search result does not establish a complete chain of title or heirship."
+    },
+    {
+      "label": "Texas State Library and Archives Commission, County Records on Microfilm (accessed 2026-09-17)",
+      "url": "https://www.tsl.texas.gov/arc/local/index",
+      "publisher": "www.tsl.texas.gov",
+      "accessed_at": "2026-09-17T16:18:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tsl.texas.gov/arc/local/index",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "Texas State Library county-record guidance distinguishes deed, probate, and will record classes and historical coverage.",
+      "claim_scope": "Availability varies; a probate index or one recorded instrument does not resolve a person-specific title question."
+    }
+  ]
+}

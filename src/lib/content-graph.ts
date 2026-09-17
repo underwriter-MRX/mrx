@@ -106,8 +106,8 @@ export const CONTENT_CLUSTER_TO_PILLAR: Record<ContentCluster, ArticlePillar> = 
 };
 
 /**
- * Public conversion target. Article CTAs normalize to this path so the
- * MRX1000 internal_links triangle stays consistent across all articles.
+ * Default public conversion target. A reviewed research-only article may
+ * explicitly use the title-and-ownership resource in its link triangle.
  */
 export const MRX_CONVERSION_PATH = '/book/';
 
@@ -119,7 +119,11 @@ export const MRX_CONVERSION_PATH = '/book/';
 export type ResolvedInternalLinks = {
   hub: { label: string; href: string };
   sibling: { label: string; href: string };
-  conversion: { label: string; href: string; name: 'article-review-cta' };
+  conversion: {
+    label: string;
+    href: string;
+    name: 'article-review-cta' | 'article-research-cta';
+  };
 };
 
 type Post = CollectionEntry<'posts'>;
@@ -246,8 +250,8 @@ export function articleCta(post: Post) {
  * Resolve the crawlable internal-links triangle. Hub is the pillar
  * path (or the canonical Learning Center fallback). Sibling is the
  * post's own `internal_links.sibling`, else a same-cluster sibling
- * resolved by stable canonical-path order, else the pillar path. Conversion is
- * always /book/ per the MRX1000 contract.
+ * resolved by stable canonical-path order, else the pillar path. Conversion
+ * defaults to /book/ but can use a reviewed research-only destination.
  *
  * The result exposes label + href so the rendering layer can emit
  * plain <a href> tags that crawlers follow without any JS gating.
@@ -255,6 +259,7 @@ export function articleCta(post: Post) {
 export function resolveInternalLinks(post: Post, allPublished: Post[] = []): ResolvedInternalLinks {
   const pillar = resolvePillar(post);
   const triangle = post.data.internal_links;
+  const researchOnly = triangle?.conversion === '/learning-center/title-lease-ownership/';
   const cluster = resolveCluster(post);
   const publishedPosts = allPublished.filter(isPublishedPost);
   const publishedArticlePaths = new Set(publishedPosts.map(postPublicPath));
@@ -298,9 +303,9 @@ export function resolveInternalLinks(post: Post, allPublished: Post[] = []): Res
       href: siblingHref,
     },
     conversion: {
-      label: pillar.defaultCta,
-      href: MRX_CONVERSION_PATH,
-      name: 'article-review-cta',
+      label: researchOnly ? 'Explore title and ownership records' : pillar.defaultCta,
+      href: researchOnly ? '/learning-center/title-lease-ownership/' : MRX_CONVERSION_PATH,
+      name: researchOnly ? 'article-research-cta' : 'article-review-cta',
     },
   };
 }

@@ -163,7 +163,7 @@ const ContentGuide = z.enum([
 const InternalLinkTriangle = z.object({
   hub: z.string().regex(/^\/.+\/$/, 'internal_links.hub must be a trailing-slash path'),
   sibling: z.string().regex(/^\/.+\/$/, 'internal_links.sibling must be a trailing-slash path'),
-  conversion: z.literal('/book/'),
+  conversion: z.enum(['/book/', '/learning-center/title-lease-ownership/']),
 });
 
 const ImageMimeType = z.enum(['image/avif', 'image/webp', 'image/jpeg', 'image/png']);

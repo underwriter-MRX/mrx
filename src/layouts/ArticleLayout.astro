@@ -75,8 +75,8 @@ interface Props {
   /**
    * Crawlable contextual navigation (MRX1000 internal_links triangle).
    * Hub = parent pillar; sibling = a same-cluster article or pillar path;
-   * conversion = /book/. Renders as plain <a href> tags so crawlers can
-   * follow the triangle without any JS gating.
+   * conversion defaults to /book/ with a reviewed research-only exception.
+   * Renders as plain <a href> tags without JS gating.
    */
   internalLinks?: ResolvedInternalLinks;
 }

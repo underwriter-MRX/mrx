@@ -54,7 +54,11 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
       expect(scalar(fm, 'reviewed_by').length, article.slug).toBeGreaterThan(0);
       expect(nestedScalar(fm, 'internal_links', 'hub'), article.slug).toMatch(/^\/.+\/$/);
       expect(nestedScalar(fm, 'internal_links', 'sibling'), article.slug).toMatch(/^\/.+\/$/);
-      expect(nestedScalar(fm, 'internal_links', 'conversion'), article.slug).toBe('/book/');
+      const expectedNextStep =
+        article.slug === 'how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement'
+          ? '/learning-center/title-lease-ownership/'
+          : '/book/';
+      expect(nestedScalar(fm, 'internal_links', 'conversion'), article.slug).toBe(expectedNextStep);
       expect(article.canonical_url, article.slug).toBe(
         `https://mineralrightsxchange.com/blog/${article.slug}/`,
       );

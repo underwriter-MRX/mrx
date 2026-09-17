@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-17T12:38:49.758Z",
+  "article": {
+    "title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+    "keyword": "locate inherited Texas mineral interest from a royalty statement",
+    "generation_prompts": {
+      "hero": "MRX-owned low three-quarter editorial desk with a blank inherited royalty statement, cream envelope, abstract decorative Texas map, color tabs and one hand on the right; open dark navy title field on the left. No readable base text, amounts, addresses, actual tract, logos, seals, conclusions or watermarks.",
+      "inline": "Materially distinct people-free strict overhead flat-lay with blank statement, payor card, regulator reference card, county-record folder and pencil on a pale surface; broad dark navy lower typography band. No angled desk, hand, envelope, map, readable base text, numbers, real property, logos, seals, conclusions or watermarks."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave249-creative-sources/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement-hero-base.png",
+      "source_sha256": "199ac159ab4dfe9bbd607ec62911f7614403da7f28c6f36a76685452fb36b500",
+      "public_path": "/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp",
+      "sha256": "d98c621aa43597d251e1f90489e0345a007aa50eafcc765fd1ce58130e31f276",
+      "perceptual_hash": "0000000000000000000000000100100000000000010011110000000000111111000000000111111100000000111111110110000011111111010000001111111100000000111111100000000011111100000000000111111100000000011111110000000001111111000000000111100000000000011000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+        "actual": "How to Locate a Texas\nMineral Interest From an\nInherited Royalty\nStatement",
+        "normalized": "how to locate a texas mineral interest from an inherited royalty statement",
+        "normalized_expected": "how to locate a texas mineral interest from an inherited royalty statement",
+        "normalized_actual": "how to locate a texas mineral interest from an inherited royalty statement",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave249-creative-sources/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement-inline-base.png",
+      "source_sha256": "d620f0a7760d2f23193bdcf85ccb1efb8acf826e6fbf9594b37e325569f97259",
+      "public_path": "/assets/articles/inline/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/locate-inherited-texas-mineral-interest-from-a-royalty-statement.webp",
+      "sha256": "e1abcb76174328df40cd59f0c6721dbe2f3b89304cfe8de5e5a6ea8986170abc",
+      "perceptual_hash": "0011111111111111001111111111111100111111111001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "locate inherited Texas mineral interest from a royalty statement",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "locate inherited Texas mineral interest from a royalty statement",
+        "actual": "locate inherited Texas mineral interest\nfrom a royalty statement",
+        "normalized": "locate inherited texas mineral interest from a royalty statement",
+        "normalized_expected": "locate inherited texas mineral interest from a royalty statement",
+        "normalized_actual": "locate inherited texas mineral interest from a royalty statement",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

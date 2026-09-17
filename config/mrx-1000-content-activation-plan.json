@@ -4,10 +4,10 @@
   "generated_at": "2026-07-20T17:45:50.397Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "eee89edfd8ced25bd3e97bc9e7acee0e07105c4080f23dbf1e48d6c547da85d6",
+  "content_fingerprint_sha256": "91ed241c90a522337bd4f9f1f04a8cd6182a70f1f635569a2b80486734f9b352",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
-    "canonical_ledger_fingerprint_sha256": "8e1a3424a21c7a65760444591c0deaab7267ee721d8fa5493c7aabd4250f301c",
+    "canonical_ledger_fingerprint_sha256": "c95e2bb642f639b2a01d13a3e812eaec48b63adcdac23c0f8bef15f140fdcbd2",
     "canonical_ledger_fingerprint_verified": true,
     "canonical_ledger_generated_at": "2026-07-20T17:45:50.397Z",
     "owner_decision": {
@@ -115,9 +115,9 @@
     },
     "by_source_preservation_classification": {
       "incumbent_draft_nonpublic_held": 23,
-      "live_public_published_route": 328,
+      "live_public_published_route": 329,
       "pilot_draft_noindex_stage": 25,
-      "planning_only_inventory": 624
+      "planning_only_inventory": 623
     }
   },
   "rows": [
@@ -27292,11 +27292,11 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0454",
-        "target_title": "Decoding the Complexities: What You Need to Know Before Selling Mineral Rights",
-        "url": "/blog/decoding-the-complexities-what-you-need-to-know-before-selling-mineral-rights/",
+        "target_title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+        "url": "/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
-        "target_source_preservation_classification": "planning_only_inventory",
-        "target_route_live": false,
+        "target_source_preservation_classification": "live_public_published_route",
+        "target_route_live": true,
         "status": "planned_local_only"
       },
       "primary_cta": {
@@ -27339,15 +27339,15 @@
     },
     {
       "program_row_id": "MRX1000-0454",
-      "canonical_title": "Decoding the Complexities: What You Need to Know Before Selling Mineral Rights",
-      "canonical_slug": "decoding-the-complexities-what-you-need-to-know-before-selling-mineral-rights",
-      "canonical_url": "/blog/decoding-the-complexities-what-you-need-to-know-before-selling-mineral-rights/",
+      "canonical_title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+      "canonical_slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+      "canonical_url": "/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
       "cluster": "inherited-estate-probate",
       "pillar": "inherited-mineral-rights",
       "search_intent": "informational",
       "funnel_stage": "education",
-      "source_preservation_classification": "planning_only_inventory",
-      "source_route_live": false,
+      "source_preservation_classification": "live_public_published_route",
+      "source_route_live": true,
       "pillar_link": {
         "url": "/inherited-mineral-rights/",
         "route_evidence": "src/pages/inherited-mineral-rights.astro",
@@ -27396,7 +27396,7 @@
         "rendered_triangle_verified": false,
         "live_status": "not_published_or_verified_by_this_plan",
         "live_triangle_verified": false,
-        "release_status": "eligible_for_continuous_quality_review_not_yet_cleared",
+        "release_status": "released_under_d16_continuous_quality_gate",
         "numerical_release_cap_applies": false
       }
     },

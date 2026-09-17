@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave249_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-17T16:18:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0454",
+  "slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+  "title": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
+  "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+  "source_path": "src/content/posts/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.mdx",
+  "input_body_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+  "input_frontmatter_sha256": "05393b8c810f14dffe28f13c8eac8229f268003a00cf67581127fa877cea372c",
+  "expected_repo_sha256": "81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4",
+  "two_image_manifest_sha256": "78bf75a2a6eb4316e8f9bf1ab7d1657b178acf5a588e05789211c4cacf67e1f0",
+  "visual_metadata": {
+    "hero_alt": "Inherited royalty statement and envelope beside a Texas map.",
+    "social_alt": "Inherited royalty statement and envelope beside a Texas map.",
+    "inline_alt": "Blank royalty statement, research cards, and county-record folder on a desk."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Trace a Texas Royalty Statement to County Records",
+    "seo_title_character_count": 49,
+    "description_character_count": 156,
+    "answer_summary_word_count": 65,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-09-17T15:32:19Z",
+    "reviewed_by": "mrx_compliance-wave249-source-review-20260917",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/inherited-mineral-rights/",
+      "support": "/blog/understanding-royalty-checks-after-inheriting-mineral-rights/",
+      "next_step": "/learning-center/title-lease-ownership/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave249_compliance",
+  "review_run_id": "mrx1000-wave249-compliance-20260917T161856Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "d98c621aa43597d251e1f90489e0345a007aa50eafcc765fd1ce58130e31f276",
+  "expected_inline_sha256": "e1abcb76174328df40cd59f0c6721dbe2f3b89304cfe8de5e5a6ea8986170abc",
+  "findings": [
+    "Complete current MDX SHA-256 is 81c0e89c4fe9169ce63945bf329e72de15027bac439f2fbda002a2d5804905d4; hero/share and inline image hashes are separately locked.",
+    "The named mrx_compliance source-level review passed the body and five FAQs after corrections; this hash-locked repository artifact records editorial/compliance review, not a candidate-specific counsel opinion.",
+    "The article keeps account numbers and estate papers out of public search or AI-chat examples, uses a verified payor channel, discloses potential MRX buyer interest, and preserves directional-not-appraisal and no individualized legal, tax, title, accounting, engineering, investment or financial advice boundaries.",
+    "The voluntary research next step does not force an heir who is still locating the property into booking, account creation, or document upload."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_and_filename_identity_pass",
+    "five_reviewed_faqs_and_visible_schema_parity_pending_render_check",
+    "privacy_and_verified_payor_contact_boundary_pass",
+    "no_title_heirship_decimal_payment_value_or_sale_conclusion_pass",
+    "mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_pass",
+    "research_only_next_step_preserves_owner_agency",
+    "no_ranking_indexing_retrieval_citation_traffic_lead_or_revenue_guarantee"
+  ],
+  "sources_inspected": [
+    "src/content/posts/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.mdx",
+    "/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp",
+    "/assets/articles/inline/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/locate-inherited-texas-mineral-interest-from-a-royalty-statement.webp"
+  ]
+}

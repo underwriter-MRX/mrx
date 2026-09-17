@@ -6,7 +6,7 @@
  *   (2) resolvePillar prefers explicit pillar → content_cluster → legacy fallback
  *   (3) resolveCluster prefers content_cluster
  *   (4) MRX1000 internal_links triangle targets are valid and the conversion
- *       link always resolves to /book/
+ *       link defaults to /book/ unless a reviewed research route is declared
  *   (5) the exact 8 public legacy articles outside MRX1000 preserve their
  *       pillar/cluster invariants under the new resolvePillar
  */
@@ -147,7 +147,7 @@ describe('MRX1000 internal_links triangle resolution', () => {
   });
   (siblingPost2 as { id: string }).id = 'other-sibling-guide.mdx';
 
-  it('always exposes conversion.href === /book/', () => {
+  it('defaults the conversion link to /book/', () => {
     const post = makePost({
       content_cluster: 'tax-1031-legal-education',
       publication_status: 'published',
@@ -163,6 +163,26 @@ describe('MRX1000 internal_links triangle resolution', () => {
     expect(resolved.conversion.href).toBe('/book/');
     expect(resolved.conversion.name).toBe('article-review-cta');
     expect(resolved.conversion.label.length).toBeGreaterThan(0);
+  });
+
+  it('honors an explicit research-only title-and-ownership link', () => {
+    const post = makePost({
+      content_cluster: 'inherited-estate-probate',
+      publication_status: 'published',
+      draft: false,
+      noindex: false,
+      internal_links: {
+        hub: '/inherited-mineral-rights/',
+        sibling: '/blog/understanding-royalty-checks-after-inheriting-mineral-rights/',
+        conversion: '/learning-center/title-lease-ownership/',
+      },
+    });
+    const resolved = resolveInternalLinks(post, [post]);
+    expect(resolved.conversion).toEqual({
+      label: 'Explore title and ownership records',
+      href: '/learning-center/title-lease-ownership/',
+      name: 'article-research-cta',
+    });
   });
 
   it('honors the declared hub path (defaults to the pillar path when omitted)', () => {

@@ -10,7 +10,7 @@ Generated from the canonical 1,000-row ledger. This sidecar supplies a **local p
 - Rendered triangles verified: **0**. No rendered coverage claim is made by this plan.
 - Live triangles verified: **0**. No production coverage claim is made by this plan.
 
-The source ledger contains 328 public routes, but source-route publication is tracked separately from rendered/live triangle evidence.
+The source ledger contains 329 public routes, but source-route publication is tracked separately from rendered/live triangle evidence.
 
 ## Deterministic assignment
 
@@ -72,6 +72,6 @@ The source ledger contains 328 public routes, but source-route publication is tr
 
 Owner decision `D-2026-0804-16` is `APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PUBLICATION`. It removes numerical release caps and elapsed-time gates while preserving article-specific editorial, factual, compliance, creative, build, rollback, and production-verification requirements. The exact decision SHA-256 was verified as `edc1d4602149558ff6d2b960416839b8caf97593f5fd8fe6ea91b56617d1425f`.
 
-Canonical-ledger row fingerprint verified as `8e1a3424a21c7a65760444591c0deaab7267ee721d8fa5493c7aabd4250f301c`.
+Canonical-ledger row fingerprint verified as `c95e2bb642f639b2a01d13a3e812eaec48b63adcdac23c0f8bef15f140fdcbd2`.
 
-Activation-plan content fingerprint: `eee89edfd8ced25bd3e97bc9e7acee0e07105c4080f23dbf1e48d6c547da85d6`.
+Activation-plan content fingerprint: `91ed241c90a522337bd4f9f1f04a8cd6182a70f1f635569a2b80486734f9b352`.
