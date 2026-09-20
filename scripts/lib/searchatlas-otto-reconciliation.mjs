@@ -1,5 +1,4 @@
 const REQUIRED_AUDIT_STATE = Object.freeze({
-  status: 'completed',
   crawl_state: 'completed',
   postprocessing_status: 'completed',
   is_terminal: true,

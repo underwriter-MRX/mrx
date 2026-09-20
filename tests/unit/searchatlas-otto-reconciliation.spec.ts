@@ -136,6 +136,13 @@ describe('Search Atlas OTTO reconciliation', () => {
     expect(result.pass).toBe(true);
   });
 
+  it('uses the authoritative terminal crawl and post-processing tuple when the wrapper status lags', () => {
+    const input = observation();
+    input.audit.status = 'processing';
+    const result = reconcileSearchAtlasOtto(input, contract);
+    expect(result.pass).toBe(true);
+  });
+
   it('fails closed when an otherwise valid dashboard snapshot is stale', () => {
     const input = observation();
     const result = reconcileSearchAtlasOtto(input, contract, {

@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.2.0",
-  "observed_at_utc": "2026-09-16T22:11:23Z",
+  "schema_version": "1.3.0",
+  "observed_at_utc": "2026-09-20T02:53:57Z",
   "source": {
-    "audit": "Authenticated Search Atlas otto_get_site_audit for post-release audit 138239 completed 2026-09-16T22:05:31.202382Z and Chrome Site Audit Issues review",
-    "dashboard": "Authenticated post-recrawl otto_get_project_details, otto_get_project_issues, otto_preview_deployment, and OTTO Chrome dashboard on 2026-09-16",
-    "records": "Authenticated otto_list_schemas(scope=domain) and both pages of the Chrome Dynamic Indexing table on 2026-09-16"
+    "audit": "Authenticated Search Atlas otto_get_site_audit for post-pillar audit 138239 read 2026-09-20T02:53:57Z; the authoritative crawl/post-processing tuple is completed/terminal while the legacy wrapper status still says processing",
+    "dashboard": "Authenticated post-recrawl otto_get_project_details, otto_get_project_issues, and otto_preview_deployment on 2026-09-20",
+    "records": "Authenticated otto_list_schemas(scope=domain) on 2026-09-20 plus the unchanged 15-URL Dynamic Indexing exception inventory previously read in authenticated Chrome"
   },
   "project": {
     "id": 99913,
@@ -12,32 +12,35 @@
     "audit_id": 138239
   },
   "audit": {
-    "status": "completed",
+    "status": "processing",
     "crawl_state": "completed",
     "postprocessing_status": "completed",
     "is_terminal": true,
-    "started_at_utc": "2026-09-16T21:48:17.621651Z",
-    "reported_completed_at_utc": "2026-09-16T22:05:31.202382Z",
-    "score": 970,
-    "total_pages": 485,
-    "total_raw_observations": 2348,
+    "started_at_utc": "2026-09-17T12:09:16.156245Z",
+    "reported_completed_at_utc": "2026-09-20T00:45:34.722034Z",
+    "score": 969,
+    "total_pages": 445,
+    "total_raw_observations": 2279,
     "page_types": {
-      "successful_2xx": 444,
-      "redirect_3xx": 40,
+      "successful_2xx": 445,
+      "redirect_3xx": 0,
       "missing_4xx": 0,
       "blocked_403_429": 0,
       "server_error_5xx": 0
     },
     "indexability": {
-      "indexable": 443,
-      "not_indexable": 42,
+      "indexable": 444,
+      "not_indexable": 1,
       "not_standard": 0
     },
     "reviewed_raw_issue_counts": {
-      "images_invalid_alt": 388,
-      "images_missing_alt": 2,
-      "image_more_than_100_kb": 139,
-      "status_code_not_200": 40
+      "meta_keywords": 445,
+      "images_invalid_alt": 389,
+      "h2_under_20_over_70": 354,
+      "og_title_over_60": 198,
+      "twitter_title_over_55": 198,
+      "image_more_than_100_kb": 141,
+      "h1_under_20_over_70": 136
     }
   },
   "installation": {
