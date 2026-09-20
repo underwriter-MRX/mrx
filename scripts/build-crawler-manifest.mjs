@@ -16,6 +16,9 @@ export const contentHash = (html) =>
     /<script>\(function\(\)\{function c\(\).*?<\/script>/g,
     (fragment) => hash(fragment.replace(/r:'[a-f0-9]{16}',t:'[A-Za-z0-9+/=]+'/g, "r:'RAY',t:'TIME'")) ===
       '016660f3823e7f69cbe84c7b6e6e3219103232ab0ac3cf4094bb7a48cfffef36' ? '' : fragment,
+  ).replace(
+    /<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=(?:true|false);">/g,
+    '',
   ));
 const attrs = (tag) =>
   Object.fromEntries(

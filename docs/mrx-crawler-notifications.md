@@ -140,6 +140,18 @@ fix preserves hashes of native HTML and existing manifests. Unknown template cha
 still fail. It does not change Cloudflare security settings, execute a challenge,
 or treat non-200 challenge pages as public content.
 
+The Search Atlas edge worker status marker is also transport-only. Hash normalization
+accepts only the exact configured MRX UUID and the literal `enabled=true` or
+`enabled=false` boolean state; any other marker, UUID, script or content mutation
+remains hash-visible and fails closed. The OTTO runtime itself remains pinned by its
+independently verified normalized digest.
+
+When a release changes one known canonical while the durable notifier baseline also
+contains unrelated stale pages, the primary executor can be restricted to an explicit
+list of manifest-listed canonical URLs. The scoped path retains the same public-page,
+robots, live-hash, ownership-file, receipt, lock and idempotency checks; it does not
+silently mark or submit any other changed page.
+
 ## Activation after verified live receipt
 
 All 348 live public URLs received IndexNow HTTP 200 acknowledgments on 2026-09-15;

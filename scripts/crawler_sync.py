@@ -225,9 +225,13 @@ def content_hash(body):
         body,
         flags=re.S,
     )
-    body = body.replace(
-        b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=true;">',
+    # Search Atlas toggles only the boolean worker-status value in this exact
+    # transport marker. Preserve fail-closed hashing for every other marker.
+    body = re.sub(
+        rb'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; '
+        rb'type=cloudflare; enabled=(?:true|false);">',
         b'',
+        body,
     )
     return hashlib.sha256(body).hexdigest()
 
@@ -287,15 +291,21 @@ def last_report():
     return report
 
 
-def sync(apply=False, max_pages=40):
+def sync(apply=False, max_pages=40, urls=None):
     if not isinstance(max_pages, int) or not 1 <= max_pages <= 1000:
         raise ValueError("max_pages must be between 1 and 1000.")
+    if urls is not None:
+        if not isinstance(urls, list) or not 1 <= len(urls) <= max_pages:
+            raise ValueError("urls must be a non-empty list no larger than max_pages.")
+        if len(set(urls)) != len(urls):
+            raise ValueError("urls must not contain duplicates.")
+        urls = [public_url(url) for url in urls]
     directory = state_dir()
     directory.mkdir(parents=True, exist_ok=True)
     with (directory / 'sync.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         try:
-            return _sync(apply, directory, max_pages)
+            return _sync(apply, directory, max_pages, urls)
         except Exception as error:
             if apply:
                 save_json(directory / 'last-report.json', {'status': 'failed', 'checked_at': time.time(),
@@ -303,7 +313,7 @@ def sync(apply=False, max_pages=40):
             raise
 
 
-def _sync(apply, directory, max_pages=40):
+def _sync(apply, directory, max_pages=40, urls=None):
     state = read_state()
     data, robots = discovery()
     current = {entry['url']: entry['sha256'] for entry in data['pages']}
@@ -314,6 +324,12 @@ def _sync(apply, directory, max_pages=40):
                 and time.time() - state['pending'][e['url']]['at'] < 86400]
     deferred_urls = {e['url'] for e in deferred}
     candidates = [e for e in changed if e['url'] not in deferred_urls]
+    requested_urls = set(urls or [])
+    if requested_urls:
+        unknown = sorted(requested_urls - set(current))
+        if unknown:
+            raise ValueError('Every requested URL must be present in the live public manifest.')
+        candidates = [entry for entry in candidates if entry['url'] in requested_urls]
     queued_count = len(candidates)
     progress_file = directory / 'resume.json'
     attempts = json.loads(progress_file.read_text()) if progress_file.exists() else {}
@@ -327,6 +343,9 @@ def _sync(apply, directory, max_pages=40):
               'receipts': [], 'errors': [], 'indexing_verified': False, 'model_updated': False,
               'google': 'Sitemap discovery; no general-page Google Indexing API submission.',
               'llm_crawlers': 'Updated public discovery is fetchable; no direct model-update API used.'}
+    if requested_urls:
+        report['requested_urls'] = sorted(requested_urls)
+        report['notification_scope'] = 'exact_urls'
     if not apply:
         return report
     report['status'] = 'running'
@@ -487,9 +506,10 @@ if __name__ == '__main__':
     parser.add_argument('--status', action='store_true')
     parser.add_argument('--report', action='store_true')
     parser.add_argument('--max-pages', type=int, default=40)
+    parser.add_argument('--url', action='append', dest='urls')
     args = parser.parse_args()
     try:
-        result = last_report() if args.report else crawler_status() if args.status else sync(args.apply, args.max_pages)
+        result = last_report() if args.report else crawler_status() if args.status else sync(args.apply, args.max_pages, args.urls)
     except Exception as error:
         result = {'status': 'failed', 'error': str(error), 'indexing_verified': False, 'model_updated': False}
     print(json.dumps(result, indent=2))

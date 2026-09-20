@@ -138,6 +138,22 @@ class SyncTests(unittest.TestCase):
             self.assertEqual(second_result['remaining_count'], 0)
             self.assertEqual(self.posts[1]['urlList'], [second['url']])
 
+    def test_exact_url_scope_never_submits_other_changed_pages(self):
+        second = {'url': c.SITE + '/blog/second/', 'sha256': 'b' * 64}
+        self.data['pages'].append(second)
+        with patch.object(c, 'discovery', return_value=(self.data, None)), patch.object(c, 'manifest', return_value=self.data), patch.object(c, 'verify_page'):
+            result = c.sync(True, max_pages=1, urls=[second['url']])
+        self.assertEqual(result['notification_scope'], 'exact_urls')
+        self.assertEqual(result['requested_urls'], [second['url']])
+        self.assertEqual(self.posts[0]['urlList'], [second['url']])
+        self.assertEqual(result['remaining_count'], 1)
+
+    def test_exact_url_scope_rejects_unlisted_duplicate_or_private_urls(self):
+        for urls in [[c.SITE + '/blog/missing/'], [self.url, self.url], [c.SITE + '/account/']]:
+            with self.assertRaises(ValueError):
+                c.sync(True, max_pages=2, urls=urls)
+        self.assertEqual(self.posts, [])
+
     def test_failed_first_page_does_not_starve_remaining_queue(self):
         second = {'url': c.SITE + '/blog/second/', 'sha256': 'b' * 64}
         self.data['pages'].append(second)
@@ -204,7 +220,11 @@ class ContentHashTests(unittest.TestCase):
         marker = (b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; '
                   b'type=cloudflare; enabled=true;">')
         self.assertEqual(c.content_hash(b'abc' + marker), c.content_hash(b'abc'))
-        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=false')),
+        self.assertEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=false')),
+                         c.content_hash(b'abc'))
+        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=unknown')),
+                            c.content_hash(b'abc'))
+        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'e4bab8bb', b'00000000')),
                             c.content_hash(b'abc'))
 
 

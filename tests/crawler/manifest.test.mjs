@@ -84,3 +84,12 @@ test('known security transport permits only ray/time variation', async () => {
   assert.equal(contentHash(`abc${fragment.replace('a3b4ac28eb144dd7', '0123456789abcdef')}`), contentHash('abc'));
   assert.notEqual(contentHash(`abc${fragment.replace('iframe', 'unknown')}`), contentHash('abc'));
 });
+
+test('Search Atlas status transport permits only the exact boolean worker state', () => {
+  const marker =
+    '<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=true;">';
+  assert.equal(contentHash(`abc${marker}`), contentHash('abc'));
+  assert.equal(contentHash(`abc${marker.replace('enabled=true', 'enabled=false')}`), contentHash('abc'));
+  assert.notEqual(contentHash(`abc${marker.replace('enabled=true', 'enabled=unknown')}`), contentHash('abc'));
+  assert.notEqual(contentHash(`abc${marker.replace('e4bab8bb', '00000000')}`), contentHash('abc'));
+});
