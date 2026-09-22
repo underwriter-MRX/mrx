@@ -1,0 +1,32 @@
+{
+  "artifact_type": "mrx1000_incremental_post_release_verification",
+  "verified_at_utc": "2026-09-22T06:07:37.440115Z",
+  "historical_canonical_ledger_sha256": "97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6",
+  "baseline_release_10_verified_count": 320,
+  "incremental_final_recrawl_verified_count": 1,
+  "current_final_recrawl_verified_count": 321,
+  "articles": [
+    {
+      "program_row_id": "MRX1000-0454",
+      "slug": "how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/",
+      "deployment_id": "dpl_FZKTtPhgkiLMKU2imS6inxEcp9fD",
+      "deployment_url": "https://mrx-evx3spodk-team-mrx.vercel.app",
+      "production_result": "PASS",
+      "audit_id": 138239,
+      "audit_started_at": "2026-09-22T05:07:49.004670Z",
+      "audit_completed_at": "2026-09-22T06:07:37.440115Z",
+      "crawl_state": "completed",
+      "postprocessing_status": "completed",
+      "is_terminal": true,
+      "should_repoll": false,
+      "page_explorer_row_id": 105967813,
+      "page_http_status": 200,
+      "page_indexable": true,
+      "page_in_xml_sitemap": true,
+      "page_linked": true,
+      "page_h1": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement"
+    }
+  ],
+  "note": "The completed post-release audit and page inventory prove crawler visibility, not Google indexing, answer-engine citation, ownership, conversion, or revenue. The origin of the provider-side audit recovery is unknown."
+}
