@@ -58,6 +58,15 @@ rsync -a \
 # MRX1000 creative-brief evidence. Other documentation is not a build input.
 copy_parent \
   docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md
+copy_parent \
+  docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md
+copy_parent \
+  artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json
+
+mkdir -p "$stage_dir/artifacts/mrx1000-append-only/reviews"
+rsync -a \
+  "$repo_root/artifacts/mrx1000-append-only/reviews/" \
+  "$stage_dir/artifacts/mrx1000-append-only/reviews/"
 
 mkdir -p "$stage_dir/artifacts/mrx1000-release-10"
 rsync -a \

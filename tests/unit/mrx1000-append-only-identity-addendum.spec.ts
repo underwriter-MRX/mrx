@@ -41,6 +41,16 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(() => appendOnlyReviewPath('../escape', 'editorial')).toThrow('Invalid article slug.');
     expect(() => appendOnlyReviewPath(slug, '../escape')).toThrow('Invalid review capability.');
   });
+  it('includes the hash-bound append-only inputs in both Vercel source upload routes', () => {
+    const ignore = bytes('.vercelignore').toString('utf8');
+    const stage = bytes('scripts/prepare-vercel-deploy-stage.sh').toString('utf8');
+    expect(ignore).toContain('!docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
+    expect(ignore).toContain('!artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json');
+    expect(ignore).toContain('!artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/*.json.sha256');
+    expect(stage).toContain('docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
+    expect(stage).toContain('artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json');
+    expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
+  });
   it('binds the immutable historical JSON/CSV and admits only the new identity', () => {
     const result = check(addendum);
     expect(result.findings).toEqual([]);
