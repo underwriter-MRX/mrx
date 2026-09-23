@@ -1,4 +1,11 @@
 const CANONICAL_ORIGIN = 'https://mineralrightsxchange.com';
+// The default checks every sitemap entry for inclusion, then fetches a stable
+// representative set of pages. Fetching all pages at once can trigger the
+// production WAF; reserve that slower exhaustive mode for a paced audit run.
+const sitemapVerificationMode = process.env.MRX_VERIFY_SITEMAP_MODE ?? 'representative';
+if (!['all', 'representative'].includes(sitemapVerificationMode)) {
+  throw new Error(`Invalid MRX_VERIFY_SITEMAP_MODE: ${sitemapVerificationMode}`);
+}
 const activeTargets = [
   CANONICAL_ORIGIN,
   'https://www.mineralrightsxchange.com',
@@ -92,11 +99,16 @@ async function verifySitemaps() {
   invariant(sitemapUrls.length > 0, 'canonical sitemap index listed no sitemap segments');
 
   const pageUrls = [];
+  const segmentSamples = [];
   for (const sitemapUrl of sitemapUrls) {
     const response = await request(sitemapUrl);
     invariant(response.status === 200, `${sitemapUrl} returned ${response.status}`);
     const xml = await response.text();
-    pageUrls.push(...[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
+    const segmentUrls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+    pageUrls.push(...segmentUrls);
+    if (segmentUrls.length > 0) {
+      segmentSamples.push(segmentUrls[0], segmentUrls[Math.floor(segmentUrls.length / 2)], segmentUrls.at(-1));
+    }
   }
   const uniquePageUrls = [...new Set(pageUrls)];
   invariant(uniquePageUrls.length > 0, 'public sitemap segments listed no URLs');
@@ -107,11 +119,35 @@ async function verifySitemaps() {
     );
   }
 
+  let urlsToCheck = uniquePageUrls;
+  if (sitemapVerificationMode === 'representative') {
+    const byCanonical = new Map(uniquePageUrls.map((url) => [normalizePageUrl(url), url]));
+    const requiredPaths = [
+      '/',
+      '/learning-center/',
+      '/learning-center/title-lease-ownership/',
+      '/ai-assistant/',
+      ...(process.env.MRX_VERIFY_REQUIRED_PATHS ?? '').split(',').filter(Boolean),
+    ];
+    const selected = new Set(segmentSamples);
+    for (const path of requiredPaths) {
+      const requiredUrl = new URL(path.trim(), CANONICAL_ORIGIN);
+      invariant(requiredUrl.origin === CANONICAL_ORIGIN, `Required path left the canonical origin: ${path}`);
+      const listedUrl = byCanonical.get(normalizePageUrl(requiredUrl.toString()));
+      invariant(Boolean(listedUrl), `Required public path is absent from the sitemap: ${path}`);
+      selected.add(listedUrl);
+    }
+    for (let index = 0; index < 12; index += 1) {
+      selected.add(uniquePageUrls[Math.floor((index * (uniquePageUrls.length - 1)) / 11)]);
+    }
+    urlsToCheck = [...selected];
+  }
+
   const failures = [];
   let cursor = 0;
-  const workers = Array.from({ length: 8 }, async () => {
-    while (cursor < uniquePageUrls.length) {
-      const url = uniquePageUrls[cursor++];
+  const workers = Array.from({ length: sitemapVerificationMode === 'representative' ? 2 : 8 }, async () => {
+    while (cursor < urlsToCheck.length) {
+      const url = urlsToCheck[cursor++];
       try {
         const response = await request(url, { redirect: 'manual' });
         invariant(response.status === 200, `returned ${response.status}`);
@@ -130,20 +166,22 @@ async function verifySitemaps() {
   });
   await Promise.all(workers);
   invariant(failures.length === 0, `sitemap URL verification failed:\n${failures.join('\n')}`);
-  return uniquePageUrls.length;
+  return { listed: uniquePageUrls.length, checked: urlsToCheck.length };
 }
 
 for (const target of [...new Set(activeTargets)]) await verifyTarget(target);
 await verifyLegacyRedirects();
 await verifyFunnel();
-const sitemapUrlCount = await verifySitemaps();
+const sitemapVerification = await verifySitemaps();
 
 console.log(
   JSON.stringify(
     {
       ok: true,
       activeTargets: [...new Set(activeTargets)],
-      sitemapUrlCount,
+      sitemapUrlCount: sitemapVerification.listed,
+      sitemapCheckedUrlCount: sitemapVerification.checked,
+      sitemapVerificationMode,
       legacyRedirectVariants: 4,
       appointmentAvailability: 'slot displayed',
       appointmentIntakeHandoff: 'available and noindex',
