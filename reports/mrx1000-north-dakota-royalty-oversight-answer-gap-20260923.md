@@ -1,5 +1,9 @@
 # North Dakota royalty-payment routing — source-first answer-gap screen
 
+## September 23 Brand Vault grounding check
+
+A read-only Brand Vault source listing found two entries: the completed `mineralrightsxchange.com` website crawl and a processed MRX business-plan PDF. Its separate knowledge index still reported `updating`, 445 documents, and no last-build timestamp. The four North Dakota agency URLs supplied in the V5 brief were **not separate Brand Vault source entries**. This narrows what is visibly indexed; it does not prove whether V5 used the supplied URLs during generation or why its grounding step failed. No source-ingestion operation or second article-credit attempt was made.
+
 Checked 2026-09-23 UTC. **Disposition: investigate as a distinct support job; not admitted, drafted, or published.** The verified MRX1000 count stays 321. This screen does not alter the immutable release-10 ledger, the Article 322 Oklahoma private package, OTTO, IndexNow, or production.
 
 ## Signal and proposed answer contract
