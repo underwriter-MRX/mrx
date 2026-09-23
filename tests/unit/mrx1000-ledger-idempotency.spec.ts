@@ -63,6 +63,13 @@ const POST_PUBLICATION_VERIFICATION = path.join(
 const REPORT_OUT = path.join(TEST_OUTPUT_DIR, 'mrx-1000-canonical-content-ledger-report.md');
 const PILOT_MANIFEST = path.join(MRX_ROOT, 'config/mrx-1000-pilot-batch-001.json');
 const POSTS_DIR = path.join(MRX_ROOT, 'src/content/posts');
+const APPEND_ONLY_SLUGS = new Set(
+  (
+    JSON.parse(
+      readFileSync(path.join(MRX_ROOT, 'config/mrx1000-append-only-identity-addendum.json'), 'utf8'),
+    ) as { entries: Array<{ canonical_slug: string }> }
+  ).entries.map((entry) => entry.canonical_slug),
+);
 const RETIRED_REPO_SOURCE_SLUGS = new Set([
   'avoiding-predatory-offers-fair-valuation-for-mineral-rights',
   'how-to-identify-unfair-offers-for-mineral-rights',
@@ -301,8 +308,11 @@ describe('MRX1000 canonical ledger generator (pilot-aware + idempotent)', () => 
     const retiredRepoSourceCount = [...RETIRED_REPO_SOURCE_SLUGS].filter((slug) =>
       onDiskMdxSlugs.has(slug),
     ).length;
+    const appendOnlySourceCount = [...APPEND_ONLY_SLUGS].filter((slug) =>
+      onDiskMdxSlugs.has(slug),
+    ).length;
     expectedIncumbentCount =
-      onDiskMdxSlugs.size - manifest.articles.length - retiredRepoSourceCount;
+      onDiskMdxSlugs.size - manifest.articles.length - retiredRepoSourceCount - appendOnlySourceCount;
     expectedHeldCount = expectedIncumbentCount - EXPECTED_PUBLIC_COUNT;
     expectedPlanningCount = 1000 - expectedIncumbentCount - manifest.articles.length;
 

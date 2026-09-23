@@ -8,7 +8,10 @@ import {
   hasAppendOnlyAdmissionAuthority,
   validateAppendOnlyIdentityAddendum,
 } from '../../scripts/lib/mrx1000-append-only-identity-addendum.mjs';
-import { inspectAppendOnlyAdmission } from '../../scripts/check-mrx1000-append-only-admission-readiness.mjs';
+import {
+  appendOnlyReviewPath,
+  inspectAppendOnlyAdmission,
+} from '../../scripts/check-mrx1000-append-only-admission-readiness.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const bytes = (relative: string) => readFileSync(resolve(root, relative));
@@ -28,10 +31,25 @@ const check = (value: typeof addendum) =>
   );
 
 describe('MRX1000 append-only identity addendum', () => {
-  it('binds the immutable historical JSON/CSV and keeps review-only identities out of admission', () => {
+  it('isolates new review artifacts from the immutable release-10 batch', () => {
+    const slug = 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes';
+    for (const capability of ['editorial', 'factual_citation', 'compliance']) {
+      const path = appendOnlyReviewPath(slug, capability);
+      expect(path).toBe(`artifacts/mrx1000-append-only/reviews/${slug}/${capability}.json`);
+      expect(path).not.toContain('mrx1000-release-10');
+    }
+    expect(() => appendOnlyReviewPath('../escape', 'editorial')).toThrow('Invalid article slug.');
+    expect(() => appendOnlyReviewPath(slug, '../escape')).toThrow('Invalid review capability.');
+  });
+  it('binds the immutable historical JSON/CSV and admits only the new identity', () => {
     const result = check(addendum);
     expect(result.findings).toEqual([]);
-    expect(result.admittedRows).toEqual([]);
+    expect(result.admittedRows).toMatchObject([
+      {
+        program_row_id: 'MRX1000-1116',
+        canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+      },
+    ]);
     expect(historical.articles).toHaveLength(1000);
     expect(
       historical.articles.find(
@@ -97,8 +115,8 @@ describe('MRX1000 append-only identity addendum', () => {
   });
 
   it('requires an explicit publication disposition and executive verdict for an admitted identity', () => {
-    const reviewOnly = bytes(addendum.entries[0].selection_decision_path).toString('utf8');
-    expect(hasAppendOnlyAdmissionAuthority(reviewOnly)).toBe(false);
+    const admittedDecision = bytes(addendum.entries[0].selection_decision_path).toString('utf8');
+    expect(hasAppendOnlyAdmissionAuthority(admittedDecision)).toBe(true);
     expect(
       hasAppendOnlyAdmissionAuthority(
         '# Decision\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
@@ -130,7 +148,7 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);
   });
 
-  it('reports the current candidate as unadmitted without writing historical ledger bytes', () => {
+  it('verifies exact-current-byte admission without writing historical ledger bytes', () => {
     const beforeJson = sha256(bytes('config/mrx-1000-canonical-content-ledger.json'));
     const beforeCsv = sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'));
     const result = inspectAppendOnlyAdmission({
@@ -138,11 +156,14 @@ describe('MRX1000 append-only identity addendum', () => {
       creativeManifestPath:
         'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
     });
-    expect(result.ready_for_identity_and_review_admission).toBe(false);
-    expect(result.blockers).toContain('Identity remains review-only; it is not admitted.');
-    expect(result.blockers).toContain('Final public article source is absent.');
-    expect(result.blockers).toContain('editorial current-byte PASS review or sidecar is missing.');
-    expect(result.blockers).not.toContain('hero image bytes do not match the creative manifest.');
+    expect(result.ready_for_identity_and_review_admission).toBe(true);
+    expect(result.blockers).toEqual([]);
+    expect(result.article_sha256).toBe(
+      sha256(bytes('src/content/posts/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.mdx')),
+    );
+    expect(result.creative_manifest_sha256).toBe(
+      sha256(bytes('artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json')),
+    );
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.json'))).toBe(beforeJson);
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);
   });
@@ -154,5 +175,16 @@ describe('MRX1000 append-only identity addendum', () => {
     });
     expect(result.ready_for_identity_and_review_admission).toBe(false);
     expect(result.blockers).toContain('Creative manifest path is unsafe or missing.');
+  });
+
+  it('rejects a different in-repository creative manifest from the admitted identity', () => {
+    const result = inspectAppendOnlyAdmission({
+      slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+      creativeManifestPath: 'config/mrx1000-release-10-batch.json',
+    });
+    expect(result.ready_for_identity_and_review_admission).toBe(false);
+    expect(result.blockers).toContain(
+      'Creative manifest path does not match the append-only identity addendum.',
+    );
   });
 });

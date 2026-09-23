@@ -667,15 +667,15 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
     }
   });
 
-  it('blocks a candidate-state flip while its hash-bound selection decision remains review-only', () => {
+  it('blocks an admitted identity when its hash-bound selection decision is substituted', () => {
     const r = runTamperedExactGate(() => {}, {
       mutateIdentityAddendum: (addendum) => {
-        addendum.entries[0].identity_state = 'admitted_quality_gated';
+        addendum.entries[0].selection_decision_sha256 = '0'.repeat(64);
       },
     });
     expect(r.exitCode).not.toBe(0);
     expect((r.payload.blocking_findings as string[]) || []).toContain(
-      'Identity addendum decision has not authorized publication for oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.',
+      'Identity addendum decision hash mismatch for oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.',
     );
   });
 

@@ -38,6 +38,7 @@ const INPUTS = {
     'artifacts/mrx1000-release-10/release/post-publication-verification.json',
   ),
   release10Batch: path.join(MRX_ROOT, 'config/mrx1000-release-10-batch.json'),
+  appendOnlyIdentityAddendum: path.join(MRX_ROOT, 'config/mrx1000-append-only-identity-addendum.json'),
   mapRegistry: path.join(MRX_ROOT, 'config/searchatlas-topical-map-registry.json'),
   legacySearchAtlasMaps:
     process.env.MRX_SEARCHATLAS_MAP_EXPORT ??
@@ -1206,6 +1207,7 @@ async function loadRelease10ProductionVerification() {
 
 async function loadRepoCandidates({
   pilotSlugSet,
+  appendOnlySlugSet = new Set(),
   release10AdmittedSlugs = new Set(),
   release10ProductionBySlug = new Map(),
 } = {}) {
@@ -1221,6 +1223,10 @@ async function loadRepoCandidates({
     // from loadPilotCandidates so the row carries pilot manifest metadata.
     // Skip them here to avoid exact-slug collisions inside selectLedger.
     if (pilotSlugSet?.has(slug)) continue;
+    // The historical release-10 ledger is immutable. Later append-only
+    // identities have their own admission record and must not be regenerated
+    // into this 1,000-row historical snapshot.
+    if (appendOnlySlugSet.has(slug)) continue;
     const tags = Array.isArray(data.tags) ? data.tags : [];
     const haystack = [title, data.category, ...tags, fallbackSlug].filter(Boolean).join(' ');
     const cluster = CLUSTER_ORDER.includes(data.content_cluster)
@@ -1904,11 +1910,16 @@ async function main() {
   // comes from loadPilotCandidates so it carries pilot manifest metadata).
   const { pilot, slugSet: pilotSlugSet, bySlug: pilotBySlug } = await loadPilotSlugs();
   const release10Production = await loadRelease10ProductionVerification();
+  const appendOnlyAddendum = JSON.parse(await readFile(INPUTS.appendOnlyIdentityAddendum, 'utf8'));
+  const appendOnlySlugSet = new Set(
+    (appendOnlyAddendum.entries ?? []).map((entry) => entry.canonical_slug),
+  );
   const [quotaPlan, mapRegistry, repo, pilotRows, searchatlas, factory] = await Promise.all([
     readFile(INPUTS.quotaPlan, 'utf8').then(JSON.parse),
     readFile(INPUTS.mapRegistry, 'utf8').then(JSON.parse),
     loadRepoCandidates({
       pilotSlugSet,
+      appendOnlySlugSet,
       release10AdmittedSlugs: release10Production.batchSlugs,
       release10ProductionBySlug: release10Production.bySlug,
     }),

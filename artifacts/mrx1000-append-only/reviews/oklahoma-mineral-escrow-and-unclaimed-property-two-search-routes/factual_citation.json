@@ -1,0 +1,24 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "capability": "factual_citation",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1116",
+  "slug": "oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes",
+  "source_path": "src/content/posts/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.mdx",
+  "input_body_sha256": "8963ee6c0f8d907b9e73e4101a18447f9aace4aa26d559e6b38477ab97533d5b",
+  "two_image_manifest_sha256": "6c83ef5f9f675cd1e42865c37b44e2ca60b9e3cc54b7a332c99a61281918e888",
+  "review_method": "prior_final_source_and_manifest_review_plus_executive_punctuation_delta",
+  "named_specialist": "mrx_research",
+  "specialist_session": "20260923_031843_e52bff",
+  "private_full_review_session": "20260923_030830_7e75bd",
+  "final_delta_decision_by": "mrx_ceo",
+  "final_delta_decision_session": "20260923_034225_2c7d4d",
+  "punctuation_delta_decision_session": "20260923_035603_fc3df9",
+  "punctuation_delta_decision": "APPROVE_PUNCTUATION_DELTA",
+  "provenance_note": "The research specialist checked the prior public SHA 28377922c6c28e703c1a055846be0d1b77a40444cfcf43b6467b899b64df6ebf and creative manifest. The executive checked this exact current SHA and accepted only punctuation changes in one source label, one claimant sentence, and six official-source labels; cited URLs did not change. This is not a claim of a new direct research-specialist verdict or public deployment.",
+  "findings": [
+    "Official OCC MOEA and pooling materials, Oklahoma Treasurer, Title 52 sections 552-556, and HB 1371 remained available in the prior final-source check; the current punctuation change leaves URLs unchanged.",
+    "The two-route and fund-transfer boundaries remain qualified; HB 1371 is identified as effective November 1, 2026, not current law."
+  ]
+}

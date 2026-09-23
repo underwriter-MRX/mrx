@@ -1,0 +1,25 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "capability": "compliance",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1116",
+  "slug": "oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes",
+  "source_path": "src/content/posts/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.mdx",
+  "input_body_sha256": "8963ee6c0f8d907b9e73e4101a18447f9aace4aa26d559e6b38477ab97533d5b",
+  "two_image_manifest_sha256": "6c83ef5f9f675cd1e42865c37b44e2ca60b9e3cc54b7a332c99a61281918e888",
+  "review_method": "private_full_review_plus_executive_final_frontmatter_and_punctuation_delta",
+  "private_source_sha256": "38e54315cb8606dfdd13beb9814553a0f9b67ac231a0ac9220704502667d0325",
+  "named_specialist": "mrx_compliance",
+  "specialist_session": "20260923_031202_c29f72",
+  "final_delta_decision_by": "mrx_ceo",
+  "final_delta_decision_session": "20260923_034225_2c7d4d",
+  "punctuation_delta_decision_session": "20260923_035603_fc3df9",
+  "punctuation_delta_decision": "APPROVE_PUNCTUATION_DELTA",
+  "final_delta_decision": "MRX_CEO_DECISION: APPROVE_REDEFINED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION",
+  "provenance_note": "The compliance specialist reviewed the private full MDX, not this final file. The public body is not byte-identical: the executive reviewed and accepted the release-frontmatter delta plus punctuation normalization in one source label, one claimant sentence, and six official-source labels against this exact final SHA. This receipt does not waive automated compliance or legal-release gates.",
+  "findings": [
+    "The private specialist found no content-safety correction needed for title, heirship, payment, privacy, buyer disclosure, Title 52 routing, or the HB 1371 future-effective-date boundary.",
+    "The executive found the claimant instruction and compliance boundaries unchanged by punctuation normalization and accepted this exact final file."
+  ]
+}

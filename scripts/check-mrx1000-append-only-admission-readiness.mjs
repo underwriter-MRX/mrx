@@ -16,6 +16,15 @@ const read = (relative) => readFileSync(resolve(repoRoot, relative));
 const readJson = (relative) => JSON.parse(read(relative).toString('utf8'));
 const isHash = (value) => /^[a-f0-9]{64}$/.test(value ?? '');
 
+// Keep post-release-10 reviews out of the immutable release-10 batch assembler.
+export function appendOnlyReviewPath(slug, capability) {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Invalid article slug.');
+  if (!['editorial', 'factual_citation', 'compliance'].includes(capability)) {
+    throw new Error('Invalid review capability.');
+  }
+  return `artifacts/mrx1000-append-only/reviews/${slug}/${capability}.json`;
+}
+
 function safeRelativePath(value) {
   if (!value || value.startsWith('/') || value.includes('\\')) return false;
   const absolute = resolve(repoRoot, value);
@@ -74,6 +83,9 @@ export function inspectAppendOnlyAdmission({ slug, creativeManifestPath }) {
 
   let creativeSha256 = null;
   let creative = null;
+  if (creativeManifestPath !== entry.creative_manifest_path) {
+    blockers.push('Creative manifest path does not match the append-only identity addendum.');
+  }
   if (!safeRelativePath(creativeManifestPath)) {
     blockers.push('Creative manifest path is unsafe or missing.');
   } else if (!existsSync(resolve(repoRoot, creativeManifestPath))) {
@@ -123,17 +135,10 @@ export function inspectAppendOnlyAdmission({ slug, creativeManifestPath }) {
     }
   }
 
-  const reviews = [
-    [
-      'editorial',
-      `artifacts/mrx1000-release-10/reviews/final/editorial/${entry.program_row_id}-${slug}.json`,
-    ],
-    [
-      'factual_citation',
-      `artifacts/mrx1000-release-10/reviews/final/factual_citation/${slug}.review.json`,
-    ],
-    ['compliance', `artifacts/mrx1000-release-10/reviews/final/compliance/${slug}.json`],
-  ];
+  const reviews = ['editorial', 'factual_citation', 'compliance'].map((capability) => [
+    capability,
+    appendOnlyReviewPath(slug, capability),
+  ]);
   for (const [capability, path] of reviews) {
     if (!existsSync(resolve(repoRoot, path)) || !existsSync(resolve(repoRoot, `${path}.sha256`))) {
       blockers.push(`${capability} current-byte PASS review or sidecar is missing.`);

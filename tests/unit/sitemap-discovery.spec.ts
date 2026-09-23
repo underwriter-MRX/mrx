@@ -64,7 +64,15 @@ describe('canonical sitemap discovery', () => {
         };
       }
     ).verification.preservation_classification_counts.live_public_published_route;
-    expect(publicPostCount).toBe(canonicalPublicRouteCount);
+    const appendOnlyAdmittedCount = (
+      JSON.parse(
+        readFileSync(
+          join(process.cwd(), 'config', 'mrx1000-append-only-identity-addendum.json'),
+          'utf8',
+        ),
+      ) as { entries: Array<{ identity_state: string }> }
+    ).entries.filter((entry) => entry.identity_state === 'admitted_quality_gated').length;
+    expect(publicPostCount).toBe(canonicalPublicRouteCount + appendOnlyAdmittedCount);
     expect(archivePageNumbers(publicPostCount)).toEqual([
       2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
     ]);

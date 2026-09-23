@@ -10,6 +10,13 @@ const releaseBatch = JSON.parse(
 const canonicalLedger = JSON.parse(
   readFileSync(join(repoRoot, 'config', 'mrx-1000-canonical-content-ledger.json'), 'utf8'),
 ) as { verification: { incumbent_repo_count: number; pilot_001_count: number } };
+const appendOnlyAdmittedSlugs = (
+  JSON.parse(
+    readFileSync(join(repoRoot, 'config/mrx1000-append-only-identity-addendum.json'), 'utf8'),
+  ) as { entries: Array<{ canonical_slug: string; identity_state: string }> }
+).entries
+  .filter((entry) => entry.identity_state === 'admitted_quality_gated')
+  .map((entry) => entry.canonical_slug);
 
 const approvedLiveSlugs = [
   'how-title-defects-change-mineral-rights-offer',
@@ -23,7 +30,7 @@ const approvedLiveSlugs = [
   'why-did-my-royalty-check-go-down',
 ].sort();
 const approvedPublicationShapedSlugs = [
-  ...new Set([...approvedLiveSlugs, ...releaseBatch.articles.map(({ slug }) => slug)]),
+  ...new Set([...approvedLiveSlugs, ...releaseBatch.articles.map(({ slug }) => slug), ...appendOnlyAdmittedSlugs]),
 ].sort();
 const retiredHistoricalSourceSlugs = new Set([
   'avoiding-predatory-offers-fair-valuation-for-mineral-rights',
@@ -65,7 +72,7 @@ describe('article publication gate', () => {
     });
     expect(publishedAndNoindex).toEqual([]);
   });
-  it('keeps only legacy-live and authorized-batch articles publication-shaped', () => {
+  it('keeps only legacy-live, authorized-batch, and admitted append-only articles publication-shaped', () => {
     const articleFiles = readdirSync(postsDir).filter((file) => file.endsWith('.mdx'));
     const articleSlugs = new Set(articleFiles.map((file) => file.replace(/\.mdx$/, '')));
     const retiredHistoricalSourceCount = [...retiredHistoricalSourceSlugs].filter((slug) =>
@@ -86,7 +93,8 @@ describe('article publication gate', () => {
     expect(articleFiles).toHaveLength(
       canonicalLedger.verification.incumbent_repo_count +
         canonicalLedger.verification.pilot_001_count +
-        retiredHistoricalSourceCount,
+        retiredHistoricalSourceCount +
+        appendOnlyAdmittedSlugs.length,
     );
     expect(
       statuses

@@ -13,6 +13,45 @@ const canonicalOrigin = 'https://mineralrightsxchange.com';
 
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const failures = [];
+const appendOnlyAddendum = JSON.parse(
+  readFileSync(join(root, 'config/mrx1000-append-only-identity-addendum.json'), 'utf8'),
+);
+const appendOnlyRows = [];
+for (const entry of appendOnlyAddendum.entries ?? []) {
+  if (entry.identity_state !== 'admitted_quality_gated') continue;
+  const creativeRelative = entry.creative_manifest_path;
+  if (
+    typeof creativeRelative !== 'string' ||
+    !/^artifacts\/mrx1000-wave\d+-creative-qa\/[a-z0-9-]+\/creative-manifest\.json$/.test(
+      creativeRelative,
+    ) ||
+    !creativeRelative.includes(`/${entry.canonical_slug}/`)
+  ) {
+    failures.push(`${entry.canonical_slug}: append-only creative manifest path is invalid`);
+    continue;
+  }
+  const creativePath = join(root, creativeRelative);
+  if (!existsSync(creativePath)) {
+    failures.push(`${entry.canonical_slug}: append-only creative manifest missing`);
+    continue;
+  }
+  const creative = JSON.parse(readFileSync(creativePath, 'utf8'));
+  if (
+    creative.article?.title !== entry.canonical_title ||
+    creative.article?.hero?.rendered_text !== entry.canonical_title ||
+    creative.article?.hero?.ocr?.pass !== true ||
+    creative.article?.inline?.ocr?.pass !== true ||
+    creative.verification?.distinct_output_binaries !== true
+  ) {
+    failures.push(`${entry.canonical_slug}: append-only creative identity or OCR mismatch`);
+    continue;
+  }
+  appendOnlyRows.push({
+    slug: entry.canonical_slug,
+    hero: creative.article.hero,
+    inline: creative.article.inline,
+  });
+}
 
 function sha256(path) {
   return createHash('sha256').update(readFileSync(path)).digest('hex');
@@ -66,7 +105,7 @@ if (
   failures.push('manifest summary must match the complete current public article corpus');
 }
 
-for (const row of manifest.rows ?? []) {
+for (const row of [...(manifest.rows ?? []), ...appendOnlyRows]) {
   const htmlPath = join(renderedRoot, 'blog', row.slug, 'index.html');
   if (!existsSync(htmlPath)) {
     failures.push(`${row.slug}: rendered HTML missing`);
@@ -101,7 +140,7 @@ for (const row of manifest.rows ?? []) {
 
   const checks = [
     [heroSrc === row.hero.public_path, 'rendered hero src mismatch'],
-    [heroAlt === row.hero.alt, 'rendered hero alt mismatch'],
+    [row.hero.alt ? heroAlt === row.hero.alt : heroAlt.trim().length > 0, 'rendered hero alt mismatch'],
     [heroWidth === String(row.hero.width), 'rendered hero width mismatch'],
     [heroHeight === String(row.hero.height), 'rendered hero height mismatch'],
     [ogImage === absoluteHero, 'og:image is not the canonical hero'],
@@ -111,7 +150,7 @@ for (const row of manifest.rows ?? []) {
       'Article schema image mismatch',
     ],
     [inlineSrc === row.inline.public_path, 'rendered in-body src mismatch'],
-    [inlineAlt === row.inline.alt, 'rendered in-body alt mismatch'],
+    [row.inline.alt ? inlineAlt === row.inline.alt : inlineAlt.trim().length > 0, 'rendered in-body alt mismatch'],
     [inlineWidth === String(row.inline.width), 'rendered in-body width mismatch'],
     [inlineHeight === String(row.inline.height), 'rendered in-body height mismatch'],
     [inlineRenderedText === row.inline.rendered_text, 'rendered in-body text identity mismatch'],
@@ -141,5 +180,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `MRX rendered two-image verification passed: ${manifest.rows.length} articles, ${manifest.rows.length * 2} binaries.`,
+  `MRX rendered two-image verification passed: ${manifest.rows.length} historical + ${appendOnlyRows.length} append-only articles, ${(manifest.rows.length + appendOnlyRows.length) * 2} binaries.`,
 );

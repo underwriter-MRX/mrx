@@ -9,6 +9,15 @@ const releaseBatch = JSON.parse(
   readFileSync(join(repoRoot, 'config', 'mrx1000-release-10-batch.json'), 'utf8'),
 ) as { articles: Array<{ slug: string; admission_status?: string }> };
 const admittedArticleCount = releaseBatch.articles.length;
+const appendOnlyAdmittedSlugs = new Set(
+  (
+    JSON.parse(
+      readFileSync(join(repoRoot, 'config', 'mrx1000-append-only-identity-addendum.json'), 'utf8'),
+    ) as { entries: Array<{ canonical_slug: string; identity_state: string }> }
+  ).entries
+    .filter((entry) => entry.identity_state === 'admitted_quality_gated')
+    .map((entry) => entry.canonical_slug),
+);
 const canonicalPublicRouteCount = (
   JSON.parse(
     readFileSync(join(repoRoot, 'config', 'mrx-1000-canonical-content-ledger.json'), 'utf8'),
@@ -75,7 +84,10 @@ describe('published article image guardrails', () => {
 
     // The canonical public-route count is a set cardinality. An incumbent route
     // admitted into the growing release slate must not be counted a second time.
-    expect(published).toHaveLength(canonicalPublicRouteCount);
+    expect(published).toHaveLength(canonicalPublicRouteCount + appendOnlyAdmittedSlugs.size);
+    for (const slug of appendOnlyAdmittedSlugs) {
+      expect(published.some((post) => post.slug === slug), slug).toBe(true);
+    }
     expect(new Set(heroPaths).size).toBe(heroPaths.length);
     expect(new Set(inlinePaths).size).toBe(inlinePaths.length);
     for (const post of published) {
@@ -128,10 +140,10 @@ describe('published article image guardrails', () => {
       (post) => imagePolicyViolations(post, { requireDistinctSocial: true }).length > 0,
     );
 
-    expect(mrx1000Posts).toHaveLength(admittedArticleCount + 25);
+    expect(mrx1000Posts).toHaveLength(admittedArticleCount + appendOnlyAdmittedSlugs.size + 25);
     expect(
       mrx1000Posts.filter((post) => post.publicationStatus === 'published' && post.draft !== true),
-    ).toHaveLength(admittedArticleCount);
+    ).toHaveLength(admittedArticleCount + appendOnlyAdmittedSlugs.size);
     expect(
       mrx1000Posts.filter(
         (post) => post.publicationStatus === 'draft' && post.draft && post.noindex,
