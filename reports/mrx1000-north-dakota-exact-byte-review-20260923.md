@@ -49,3 +49,19 @@ Deterministic creative composition used two previously generated, visually disti
 | OCR/creative manifest | `artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json` | `ee75447dac01a24980c90d323cbf51dd76740474658d3f68c87f8229b0aca1ee` |
 
 These assets are currently local release candidates, not live public bytes or complete article evidence. The private body remains unchanged; final MDX, frontmatter, schema, internal links, final-file hash-bound specialist receipts, append-only admission, full tests/build, all-target release verification, and post-release Search Atlas evidence remain open.
+
+## Private MDX exact-byte recovery — later September 23
+
+The wave251 private MDX source is `docs/evidence/mrx1000-wave251/north-dakota-inherited-royalty-questions-records-and-ombudsman.private.mdx`, outside `src/content/posts` while candidate-only. Its current SHA-256 is `ca4da091626b74eb740486b5393c657f0b30d79375fde6f4960c854cc050d0ea`. The unchanged two-image manifest SHA-256 is `ee75447dac01a24980c90d323cbf51dd76740474658d3f68c87f8229b0aca1ee`. The MDX has `draft: true`, `publication_status: draft`, and `noindex: true`; it is not a public route or admitted article. The earlier private release-body specialist receipts do not substitute for these MDX reviews.
+
+Chesty job `bd387536-9ba3-4331-ae7d-f6ae06b79a37` timed out with only `Unknown toolsets: moa`; no current-MDX verdict came from that job. Codex moved the unadmitted source outside the publishable article inventory and changed the educational disclaimer into explicit separate legal, tax, and appraisal exclusions. That first private MDX was SHA `539474f8253a2bbef4f29820de1f27934e5c07b4007e5098979db4aed5f824c5`. Direct named `mrx_research/20260923_081923_af50e7` and `mrx_compliance/20260923_081923_d7e9b4` returned current-byte PASS, but `mrx_copy/20260923_081923_4f58cc` correctly returned **HOLD**: line 149 named the Agriculture program in anchor text linked to the DMR routing page. None of those verdicts carries automatically to a changed file.
+
+Codex corrected only that line so the DMR URL is labeled `DMR royalty-owner routing page` and the Agriculture URL is labeled `Agriculture program page`. Three new read-only named profile reviews checked all 167 lines and both hashes before and after, with no reviewer writes:
+
+| Review lane | Session | Current-byte disposition |
+| --- | --- | --- |
+| Editorial/originality | `mrx_copy/20260923_082310_c71755` | **PASS**. The link mismatch is resolved; answer-first structure, distinct North Dakota routing job, privacy and no-pressure next step remain sound. |
+| Factual/citation | `mrx_research/20260923_082310_0db91f` | **PASS**. The line-149 URLs and descriptions were rechecked against the official DMR and Agriculture pages; prior full factual findings were reapplied only to unchanged bytes. |
+| Compliance | `mrx_compliance/20260923_082310_6b7616` | **PASS**. The correction does not create title, legal, payment, appraisal, privacy, or agency-outcome overclaims. |
+
+Codex independently rehashed the current MDX and creative manifest. The full local Vitest run passed **93 files / 800 tests**, the source compliance scanner passed, Prettier passed on the private candidate and selection artifacts, and `git diff --check` was clean. These are preparation results, not an append-only admission, public build, deployment, live assertion, recrawl, or count increment. A new executive publication decision must inspect the exact candidate and named reviews; public frontmatter changes will create new bytes requiring bounded final-byte review and hash-bound receipts.
