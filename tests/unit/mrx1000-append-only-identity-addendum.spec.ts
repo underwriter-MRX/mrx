@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
@@ -31,9 +32,11 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(result.findings).toEqual([]);
     expect(result.admittedRows).toEqual([]);
     expect(historical.articles).toHaveLength(1000);
-    expect(historical.articles.find((row: { program_row_id: string }) =>
-      row.program_row_id === 'MRX1000-0440',
-    )?.canonical_slug).toBe('royalty-management-for-inherited-mineral-rights');
+    expect(
+      historical.articles.find(
+        (row: { program_row_id: string }) => row.program_row_id === 'MRX1000-0440',
+      )?.canonical_slug,
+    ).toBe('royalty-management-for-inherited-mineral-rights');
     expect(addendum.entries[0].program_row_id).toBe('MRX1000-1116');
   });
 
@@ -51,9 +54,11 @@ describe('MRX1000 append-only identity addendum', () => {
         frontmatter_noindex: true,
       },
     ]);
-    expect(historical.articles.find((row: { program_row_id: string }) =>
-      row.program_row_id === 'MRX1000-0440',
-    )?.canonical_slug).toBe('royalty-management-for-inherited-mineral-rights');
+    expect(
+      historical.articles.find(
+        (row: { program_row_id: string }) => row.program_row_id === 'MRX1000-0440',
+      )?.canonical_slug,
+    ).toBe('royalty-management-for-inherited-mineral-rights');
   });
 
   it('fails on changed historical bytes or a duplicated historical identity', () => {
@@ -108,5 +113,19 @@ describe('MRX1000 append-only identity addendum', () => {
         '# Decision\nMRX_CEO_DECISION: APPROVE_REDEFINED\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
       ),
     ).toBe(true);
+  });
+
+  it('refuses to run the legacy ledger-rewriting admission helper for wave 250', () => {
+    const beforeJson = sha256(bytes('config/mrx-1000-canonical-content-ledger.json'));
+    const beforeCsv = sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'));
+    const run = spawnSync(process.execPath, ['scripts/admit-mrx1000-wave82.mjs'], {
+      cwd: root,
+      env: { ...process.env, MRX_WAVE_NUMBER: '250' },
+      encoding: 'utf8',
+    });
+    expect(run.status).not.toBe(0);
+    expect(run.stderr).toContain('requires append-only admission');
+    expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.json'))).toBe(beforeJson);
+    expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);
   });
 });

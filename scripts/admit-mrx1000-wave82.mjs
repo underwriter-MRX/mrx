@@ -14,6 +14,14 @@ const unknownArgs = process.argv.slice(2).filter((arg) => arg !== '--stage-candi
 if (unknownArgs.length) {
   throw new Error(`Unknown Wave ${waveNumber} admission argument(s): ${unknownArgs.join(', ')}`);
 }
+// This legacy admission helper re-keys and rewrites the historical release-10
+// canonical JSON/CSV. Post-wave249 identities must use the append-only
+// addendum instead, even when a candidate's content and images are ready.
+if (!Number.isInteger(Number(waveNumber)) || Number(waveNumber) >= 250) {
+  throw new Error(
+    `Wave ${waveNumber} requires append-only admission; legacy canonical-ledger rewrites are forbidden`,
+  );
+}
 
 const slug =
   process.env.MRX_ARTICLE_SLUG ??
