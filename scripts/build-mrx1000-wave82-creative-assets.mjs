@@ -33,11 +33,13 @@ const inlineBandPosition = process.env.MRX_INLINE_BAND_POSITION ?? 'bottom';
 const paths = {
   heroSource: join(
     root,
-    `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-hero-base.png`,
+    process.env.MRX_HERO_SOURCE_PATH ??
+      `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-hero-base.png`,
   ),
   inlineSource: join(
     root,
-    `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-inline-base.png`,
+    process.env.MRX_INLINE_SOURCE_PATH ??
+      `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-inline-base.png`,
   ),
   hero: join(root, `public/assets/articles/hero/${heroFilename}.webp`),
   inline: join(root, `public/assets/articles/inline/${slug}/${inlineFilename}.webp`),

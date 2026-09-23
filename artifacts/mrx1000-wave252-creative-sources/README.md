@@ -11,4 +11,13 @@ Hero prompt: “Use case: photorealistic-natural. Text-free base artwork for an 
 
 In-body prompt: “Use case: photorealistic-natural. Text-free base artwork for researching North Dakota county probate-deed records. Eye-level documentary view down an archival records room with open wooden index drawers and one blank buff folder partly pulled out, realistic oak/paper texture, warm maple/sage/cream palette, wide 16:9 perspective, uncluttered lower-right area. Different from the tabletop hero and prior overhead still life. No words, numbers, labeled tabs, forms, logos, seals, signatures, watermarks, fake references, or identifiable government building.”
 
-Next gates: decide and lock exact title plus supporting phrase after current-byte review; compose exact text deterministically; produce new correctly named WebP hero/share and distinct in-body binary; check OCR, image bytes/dimensions/MIME/hash/perceptual uniqueness, full and card-size visual legibility, metadata identity, and all active-target live behavior. Do not refer to these source PNGs from public MDX.
+## Composed private assets — later September 23
+
+The read-only `mrx_ceo` decision locked the exact title **North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12** and the in-body phrase **North Dakota probate deed records**. `scripts/build-mrx1000-wave252-creative-assets.mjs` composes them from the two source PNGs without copying or replacing those original binaries. The deterministic build produced the following **local candidate assets**, not a published article:
+
+| Role | Public asset path | SHA-256 | Pixels | OCR result |
+| --- | --- | --- | --- | --- |
+| Canonical hero/share | `/assets/articles/hero/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12.webp` | `9d181672040c88de4c34b7a20503aa8b577145ee936f6a92ed87c8596f1562d3` | 1200 × 630 WebP | Exact locked title, PASS |
+| Distinct in-body | `/assets/articles/inline/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/north-dakota-probate-deed-records.webp` | `3f446465c5b2e8c3e641f4c57e1eb84b6cfa13695c8863eca9d164e23ad01990` | 1200 × 675 WebP | Exact supporting phrase, PASS |
+
+The generated manifest under `artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json` records source/output hashes, perceptual hashes, dimensions, and exact OCR. Codex visually inspected the 600-pixel and 300-/360-pixel preview cards: both titles are legible, inside their dark caption fields, and do not claim to depict a real deed or county instrument. The desk and county-archive compositions are materially distinct from each other and from Article 323's panel/overhead art. The final MDX still needs to reuse the hero for page/OG/Twitter and pass current-byte editorial, factual, compliance, build, and live gates. Do not refer to the source PNGs from public MDX.
