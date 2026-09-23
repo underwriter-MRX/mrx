@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T14:36:30.094Z",
+  "article": {
+    "title": "North Dakota Inherited Royalty Questions: Records and Ombudsman",
+    "keyword": "North Dakota inherited royalty questions",
+    "generation_prompts": {
+      "hero": "MRX-owned conceptual front-facing still life of four unlabeled translucent paper and glass panels in northern prairie light, with a dark navy left title field. No text, maps, official marks, real records, people, amounts, arrows, or conclusions.",
+      "inline": "Materially distinct strict-overhead four-station research still life on pale stone, with a folded paper sleeve, non-geographic grid tile, copper conversation-loop shape, stone archival tab, and clear lower caption area. No text, agency marks, real records, people, amounts, maps, or conclusions."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave251-creative-sources/north-dakota-inherited-royalty-questions-records-and-ombudsman-hero-base.png",
+      "source_sha256": "577687a3c210bb723bf2ffdddb96f080d8585926051559b717e5082a228a046d",
+      "public_path": "/assets/articles/hero/north-dakota-inherited-royalty-questions-records-and-ombudsman.webp",
+      "sha256": "d7a0367a6b55ddb788b445b26de34e0d5c7c20e7adf2f5bfdd25ce923958842b",
+      "perceptual_hash": "0000000000011111000000000001111100000000000111110000000000111111000000000111111101111000111111110111111001111110000000001111111000000000010111110000000001011111000000000101111100000000000111110000000000011110000000000001111100000000000110000000000000011000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "North Dakota Inherited Royalty Questions: Records and Ombudsman",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "North Dakota Inherited Royalty Questions: Records and Ombudsman",
+        "actual": "North Dakota Inherited\nRoyalty Questions:\nRecords and Ombudsman",
+        "normalized": "north dakota inherited royalty questions records and ombudsman",
+        "normalized_expected": "north dakota inherited royalty questions records and ombudsman",
+        "normalized_actual": "north dakota inherited royalty questions records and ombudsman",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave251-creative-sources/north-dakota-inherited-royalty-questions-records-and-ombudsman-inline-base.png",
+      "source_sha256": "201ca2a5358cd39425cbbe233cedae7388a1cc57d06b02e8c305260b4a934567",
+      "public_path": "/assets/articles/inline/north-dakota-inherited-royalty-questions-records-and-ombudsman/north-dakota-inherited-royalty-questions.webp",
+      "sha256": "3d30b6b6bd1d34da545eabbbb1da2a3887736086597338d3e0241baa95af6190",
+      "perceptual_hash": "1111111111111100001111111111110000111111111111000111111111111110011111111111111001111111111111110111111111111111111111111111111111111111111111111111111110111111111100010001111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "North Dakota inherited royalty questions",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "North Dakota inherited royalty questions",
+        "actual": "North Dakota inherited\nroyalty questions",
+        "normalized": "north dakota inherited royalty questions",
+        "normalized_expected": "north dakota inherited royalty questions",
+        "normalized_actual": "north dakota inherited royalty questions",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

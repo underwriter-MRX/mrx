@@ -11,7 +11,8 @@ import sharp from 'sharp';
 const root = resolve(import.meta.dirname, '..');
 const waveNumber = process.env.MRX_WAVE_NUMBER ?? '82';
 const slug =
-  process.env.MRX_ARTICLE_SLUG ?? 'compare-public-oil-and-gas-price-decks-without-mixing-assumptions';
+  process.env.MRX_ARTICLE_SLUG ??
+  'compare-public-oil-and-gas-price-decks-without-mixing-assumptions';
 const title =
   process.env.MRX_ARTICLE_TITLE ??
   'How to Compare Public Oil and Gas Price Decks Without Mixing Assumptions';
@@ -25,14 +26,19 @@ const heroLines = JSON.parse(
 const inlineLines = JSON.parse(
   process.env.MRX_INLINE_LINES_JSON ?? '["compare public oil and gas","price decks"]',
 );
-const heroFontFamily =
-  process.env.MRX_HERO_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
-const inlineFontFamily =
-  process.env.MRX_INLINE_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
+const heroFontFamily = process.env.MRX_HERO_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
+const heroFontSize = Number(process.env.MRX_HERO_FONT_SIZE ?? 32);
+const inlineFontFamily = process.env.MRX_INLINE_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
 const inlineBandPosition = process.env.MRX_INLINE_BAND_POSITION ?? 'bottom';
 const paths = {
-  heroSource: join(root, `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-hero-base.png`),
-  inlineSource: join(root, `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-inline-base.png`),
+  heroSource: join(
+    root,
+    `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-hero-base.png`,
+  ),
+  inlineSource: join(
+    root,
+    `artifacts/mrx1000-wave${waveNumber}-creative-sources/${slug}-inline-base.png`,
+  ),
   hero: join(root, `public/assets/articles/hero/${heroFilename}.webp`),
   inline: join(root, `public/assets/articles/inline/${slug}/${inlineFilename}.webp`),
   qa: join(root, `artifacts/mrx1000-wave${waveNumber}-creative-qa/${slug}`),
@@ -68,7 +74,9 @@ function textSlug(value) {
     .replace(/^-+|-+$/g, '');
 }
 const svgTextLines = (lines, x, lineHeight) =>
-  lines.map((line, index) => `<tspan x="${x}" dy="${index === 0 ? 0 : lineHeight}">${line}</tspan>`).join('');
+  lines
+    .map((line, index) => `<tspan x="${x}" dy="${index === 0 ? 0 : lineHeight}">${line}</tspan>`)
+    .join('');
 
 function heroTypography() {
   return Buffer.from(`
@@ -80,7 +88,7 @@ function heroTypography() {
         </linearGradient>
       </defs>
       <style>
-        .title { fill: #fffaf0; font-family: ${heroFontFamily}; font-size: 32px; font-weight: 700; letter-spacing: -0.4px; }
+        .title { fill: #fffaf0; font-family: ${heroFontFamily}; font-size: ${heroFontSize}px; font-weight: 700; letter-spacing: -0.4px; }
         .rule { fill: #d79a2b; }
       </style>
       <rect x="0" y="0" width="640" height="630" fill="url(#navy)" />
