@@ -1,0 +1,31 @@
+<!-- PRIVATE REVIEW DRAFT. Not a public article, canonical identity, approved title, legal advice, or release artifact. Do not copy into src/content/posts without current-byte review, image, metadata, admission, and production gates. -->
+
+# North Dakota Inherited Royalty Payment Help: Records and Ombudsman
+
+An heir with a North Dakota royalty-payment question may need **different sources for different parts of the problem**. The county recorder is the starting place for recorded instruments affecting a private mineral interest; North Dakota's Department of Mineral Resources (DMR) provides well and production context; and the Department of Agriculture's Royalty Oversight Program can help a royalty owner with operator contact or understanding payments when the issue fits its scope. None of those routes, by itself, proves that a particular heir owns a stated interest or is owed a stated amount. [ND DMR mineral-owner information](https://www.dmr.nd.gov/dmr/oilgas/mineralownerinfo) and [royalty-owner routing](https://www.dmr.nd.gov/dmr/oilgas/surfacemineralinfo) explain these roles.
+
+This is educational source navigation, not a title opinion, probate instruction, payment calculation, legal advice, tax advice, or certified appraisal. A qualified North Dakota professional may be needed for an owner-specific estate, title, contract, or dispute question.
+
+## First, identify which question you actually have
+
+If the question is *“What did the prior owner hold, and what record connects that interest to the heir?”*, start with the property description and the relevant county recorder's documents. DMR says mineral-interest records and leases are handled through the county recorder, while its Oil and Gas Division does not review private leases or contracts. Its [mineral-owner page](https://www.dmr.nd.gov/dmr/oilgas/mineralownerinfo) links to county-recording information. A name match or a statement-of-claim form is not, on its own, a determination that a particular heir owns the interest. Preserve the record references and ask a qualified professional what they establish in the specific estate chain.
+
+If the question is *“Which well or operator might be associated with the described area?”*, DMR's same [owner page](https://www.dmr.nd.gov/dmr/oilgas/mineralownerinfo) points to its GIS map and Well Search. Search with the legal description or available well identifiers and record the query and result reference. A nearby well, map layer, or listed operator can give context for the next inquiry, but it does not establish the heir's payee decimal, contractual deductions, private ownership, or entitlement to a check.
+
+If the question is *“How do I contact the operator or understand a royalty-payment discrepancy?”*, DMR directs royalty owners to the [North Dakota Department of Agriculture Royalty Oversight Program](https://www.dmr.nd.gov/dmr/oilgas/surfacemineralinfo). The [program page](https://www.ndda.nd.gov/divisions/administrative-services/royalty-oversight-program) describes an independent ombudsman who works with royalty owners and well operators on payment issues. It provides the current request route and contact details. Check that page rather than relying on a copied phone number or a third-party form.
+
+## Know the program's boundary before making a request
+
+The Agriculture Department says the program does not work on royalty issues already under regulatory review or state or federal litigation, and does not work on issues beyond the previous six years. It also notes limits in some working-interest situations. These are the agency's stated program limits, not a conclusion about any heir's legal rights or what a court might decide. The agency's current [Royalty Oversight Program page](https://www.ndda.nd.gov/divisions/administrative-services/royalty-oversight-program) controls the request process and should be checked before submitting information.
+
+An heir can prepare a focused question without sending private estate documents to an unverified contact. Note the prior owner's name as it appears on the statement, the tract or legal description shown there, the payor/operator named on the statement, the payment periods in question, and dated correspondence already available. Keep sensitive identifiers and complete documents for a verified agency, operator, or professional channel only. If the payor has not recognized the heir or the ownership chain is disputed, the program's general contact/payment role should not be mistaken for a title-curative service. Ask the payor what documentation it requires and seek qualified title or estate advice as appropriate.
+
+## Keep state-owned mineral records separate
+
+The [Department of Trust Lands Minerals Management Division](https://www.land.nd.gov/minerals-management) manages state-owned mineral interests and offers a portal for state mineral tracts and leases. That portal is not a comprehensive private-ownership search for an inherited family interest. Do not infer that a private interest is absent merely because it does not appear there.
+
+## A useful next step
+
+Keep a one-page source log: question asked, exact property or well identifier used, agency/record searched, date, record reference, what the source actually displayed, and the unresolved question. The [North Dakota mineral-rights page](/mineral-rights/north-dakota/) provides broader state context; [royalty checks after inheritance](/blog/understanding-royalty-checks-after-inheriting-mineral-rights/) explains the separate estate and payor-account workstreams. Neither replaces North Dakota-specific professional review.
+
+If the owner is only researching a payment issue, the official records and program route above are a complete next step; there is no need to book a sales conversation. If the owner separately wants a no-cost, no-obligation discussion about the *readiness of an inherited-interest file for a potential mineral-rights decision*, MRX can review the documents and questions the owner chooses to share through its [review route](/book/). That is not an ombudsman service, title certification, or promise of an offer. MRX may be a buyer in a transaction arising from a review and discloses that role before an agreement.
