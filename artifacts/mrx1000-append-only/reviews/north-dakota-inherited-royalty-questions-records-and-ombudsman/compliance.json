@@ -1,0 +1,24 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "capability": "compliance",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1117",
+  "slug": "north-dakota-inherited-royalty-questions-records-and-ombudsman",
+  "source_path": "src/content/posts/north-dakota-inherited-royalty-questions-records-and-ombudsman.mdx",
+  "input_body_sha256": "7106cc53bbed4c25e0748e52ad13364a98cedf065034305a2464af58d4280354",
+  "two_image_manifest_sha256": "ee75447dac01a24980c90d323cbf51dd76740474658d3f68c87f8229b0aca1ee",
+  "private_full_source_sha256": "ca4da091626b74eb740486b5393c657f0b30d79375fde6f4960c854cc050d0ea",
+  "private_public_body_sha256": "3720b4c3b109f8ea5051ebbb9946e5edc5a9adce1f85779f2054ec53721a13f6",
+  "review_method": "direct_exact_current_public_source_and_manifest_review_after_private_full_review",
+  "executive_admission_session": "20260923_083939_fa4319",
+  "executive_admission_token": "MRX_CEO_DECISION: APPROVE_REDEFINED",
+  "executive_admission_detail": "APPROVE_REDEFINED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION",
+  "named_specialist": "mrx_compliance",
+  "specialist_session": "20260923_083539_07f21d",
+  "provenance_note": "The direct named compliance specialist read the exact final public source and manifest, checked publication-frontmatter-only deltas and body parity, and verified the corrected hero/inline manifest hashes. An earlier compliance PASS for a different public SHA is not counted here.",
+  "findings": [
+    "Legal, tax, title, appraisal, probate, payment, and agency-outcome limitations remain explicit and bounded.",
+    "Privacy guidance keeps sensitive estate/payment information out of public worksheets; no MRX North Dakota transaction review or ombudsman result is promised."
+  ]
+}

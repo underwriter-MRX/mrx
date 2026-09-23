@@ -27,7 +27,7 @@ Generated from Astro content at build time.
 - [Learning Center](https://mineralrightsxchange.com/learning-center/)
 - [MRX Editorial Team](https://mineralrightsxchange.com/authors/mrx-editorial-team/)
 
-## Published article URLs (330)
+## Published article URLs (331)
 
 ### Competing offers
 
@@ -69,6 +69,7 @@ Generated from Astro content at build time.
 
 ### Mineral rights
 
+- [North Dakota Inherited Royalty Questions: Records and Ombudsman](https://mineralrightsxchange.com/blog/north-dakota-inherited-royalty-questions-records-and-ombudsman/)
 - [Oklahoma Mineral Escrow and Unclaimed Property: Two Search Routes](https://mineralrightsxchange.com/blog/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/)
 - [How to Locate a Texas Mineral Interest From an Inherited Royalty Statement](https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/)
 - [How Royalty Payments Work for Texas Mineral Owners](https://mineralrightsxchange.com/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/)

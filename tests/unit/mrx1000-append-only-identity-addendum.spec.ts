@@ -45,19 +45,40 @@ describe('MRX1000 append-only identity addendum', () => {
     const ignore = bytes('.vercelignore').toString('utf8');
     const stage = bytes('scripts/prepare-vercel-deploy-stage.sh').toString('utf8');
     expect(ignore).toContain('!docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
-    expect(ignore).toContain('!artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json');
-    expect(ignore).toContain('!artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/*.json.sha256');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/*.json.sha256',
+    );
+    expect(ignore).toContain('!docs/governance/mrx1000-wave251-selection-decision-2026-09-23.md');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/north-dakota-inherited-royalty-questions-records-and-ombudsman/*.json.sha256',
+    );
     expect(stage).toContain('docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
-    expect(stage).toContain('artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
+    );
+    expect(stage).toContain('docs/governance/mrx1000-wave251-selection-decision-2026-09-23.md');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json',
+    );
     expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
   });
-  it('binds the immutable historical JSON/CSV and admits only the new identity', () => {
+  it('binds the immutable historical JSON/CSV and admits only the append-only identities', () => {
     const result = check(addendum);
     expect(result.findings).toEqual([]);
     expect(result.admittedRows).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+      },
+      {
+        program_row_id: 'MRX1000-1117',
+        canonical_slug: 'north-dakota-inherited-royalty-questions-records-and-ombudsman',
       },
     ]);
     expect(historical.articles).toHaveLength(1000);
@@ -69,15 +90,27 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(addendum.entries[0].program_row_id).toBe('MRX1000-1116');
   });
 
-  it('would expose an admitted row without changing or replacing the historical pilot identity', () => {
-    const promoted = structuredClone(addendum);
-    promoted.entries[0].identity_state = 'admitted_quality_gated';
+  it('keeps the second row out of the admitted projection until its identity state advances', () => {
+    const candidate = structuredClone(addendum);
+    candidate.entries[1].identity_state = 'candidate_review_only';
+    const before = check(candidate);
+    expect(before.findings).toEqual([]);
+    expect(before.admittedRows).toHaveLength(1);
+    const promoted = structuredClone(candidate);
+    promoted.entries[1].identity_state = 'admitted_quality_gated';
     const result = check(promoted);
     expect(result.findings).toEqual([]);
     expect(result.admittedRows).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+        publication_status: 'draft',
+        draft: true,
+        frontmatter_noindex: true,
+      },
+      {
+        program_row_id: 'MRX1000-1117',
+        canonical_slug: 'north-dakota-inherited-royalty-questions-records-and-ombudsman',
         publication_status: 'draft',
         draft: true,
         frontmatter_noindex: true,
@@ -169,10 +202,18 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(result.ready_for_identity_and_review_admission).toBe(true);
     expect(result.blockers).toEqual([]);
     expect(result.article_sha256).toBe(
-      sha256(bytes('src/content/posts/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.mdx')),
+      sha256(
+        bytes(
+          'src/content/posts/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.mdx',
+        ),
+      ),
     );
     expect(result.creative_manifest_sha256).toBe(
-      sha256(bytes('artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json')),
+      sha256(
+        bytes(
+          'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
+        ),
+      ),
     );
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.json'))).toBe(beforeJson);
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);

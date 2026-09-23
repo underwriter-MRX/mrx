@@ -34,6 +34,7 @@ docs/*
 docs/governance/*
 !docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md
 !docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md
+!docs/governance/mrx1000-wave251-selection-decision-2026-09-23.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -47,10 +48,17 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
 !artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/*.json
 !artifacts/mrx1000-append-only/reviews/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/north-dakota-inherited-royalty-questions-records-and-ombudsman
+!artifacts/mrx1000-append-only/reviews/north-dakota-inherited-royalty-questions-records-and-ombudsman/*.json
+!artifacts/mrx1000-append-only/reviews/north-dakota-inherited-royalty-questions-records-and-ombudsman/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json
+!artifacts/mrx1000-wave251-creative-qa
+artifacts/mrx1000-wave251-creative-qa/*
+!artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman
+!artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews
