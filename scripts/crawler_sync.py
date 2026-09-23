@@ -36,16 +36,21 @@ class NoRedirect(HTTPRedirectHandler):
         return None
 
 
-def request(url, payload=None):
+def request(url, payload=None, fresh=False):
     if url != INDEXNOW:
         public_url(url)
     headers = {'User-Agent': 'MRX-Content-Discovery/1.0', 'Accept-Encoding': 'identity'}
     data = None
     if payload is not None:
+        if fresh:
+            raise ValueError('Fresh-read controls are not valid for IndexNow submissions.')
         if url != INDEXNOW:
             raise ValueError('Submission endpoint is fixed to IndexNow.')
         data = json.dumps(payload).encode()
         headers['Content-Type'] = 'application/json; charset=utf-8'
+    elif fresh:
+        headers['Cache-Control'] = 'no-cache'
+        headers['Pragma'] = 'no-cache'
     for attempt in range(6):
         try:
             response = build_opener(NoRedirect()).open(Request(url, data=data, headers=headers), timeout=20)
@@ -57,6 +62,8 @@ def request(url, payload=None):
                 raise ValueError('Response exceeds the discovery size limit.')
             response_headers = dict(response.headers.items())
             status = response.status
+            if not isinstance(status, int):
+                raise ValueError('Discovery response is missing an HTTP status.')
         # Cloudflare can throttle a bounded verification burst. Retry only
         # idempotent reads; IndexNow submissions keep their receipt semantics
         # and are never replayed here. Each wait is bounded and a persistent
@@ -70,10 +77,11 @@ def request(url, payload=None):
             time.sleep(max(1, min(delay, 30)))
             continue
         return status, response_headers, body
+    raise RuntimeError('HTTP retry loop ended without a response.')
 
 
-def get(url, media):
-    status, headers, body = request(url)
+def get(url, media, fresh=False):
+    status, headers, body = request(url, fresh=True) if fresh else request(url)
     content_type = next((v for k, v in headers.items() if k.lower() == 'content-type'), '').lower()
     if status != 200 or not any(m in content_type for m in media):
         raise ValueError(f'Discovery fetch failed: {url}, HTTP {status}, type {content_type}')
@@ -225,10 +233,14 @@ def content_hash(body):
         body,
         flags=re.S,
     )
-    body = body.replace(
+    # OTTO emits either status for the same fixed MRX Cloudflare project. These
+    # exact markers are transport state, not authored content. Different UUIDs,
+    # types, states, spacing, or extra configuration remain hash-significant.
+    for marker in (
         b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=true;">',
-        b'',
-    )
+        b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; type=cloudflare; enabled=false;">',
+    ):
+        body = body.replace(marker, b'')
     return hashlib.sha256(body).hexdigest()
 
 
@@ -236,9 +248,19 @@ def verify_page(entry, robots):
     url = entry['url']
     if not robots.can_fetch('bingbot', url):
         raise ValueError('bingbot is blocked by robots.txt.')
-    headers, body = get(url, ['text/html'])
-    if content_hash(body) != entry['sha256']:
-        raise ValueError('Live HTML differs from the published manifest; retry after cache/deployment convergence.')
+    actual_hash = None
+    for attempt, delay in enumerate((0, 5, 15)):
+        if delay:
+            time.sleep(delay)
+        headers, body = get(url, ['text/html'], fresh=attempt > 0)
+        actual_hash = content_hash(body)
+        if actual_hash == entry['sha256']:
+            break
+    else:
+        raise ValueError(
+            'Live HTML differs from the published manifest after bounded fresh-read retries; '
+            f"expected {entry['sha256']}, got {actual_hash}."
+        )
     parsed = Page()
     parsed.feed(body.decode('utf-8'))
     xrobots = ' '.join(v for k, v in headers.items() if k.lower() == 'x-robots-tag')
