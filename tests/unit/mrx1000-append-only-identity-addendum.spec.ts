@@ -58,6 +58,13 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(ignore).toContain(
       '!artifacts/mrx1000-append-only/reviews/north-dakota-inherited-royalty-questions-records-and-ombudsman/*.json.sha256',
     );
+    expect(ignore).toContain('!docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/*.json.sha256',
+    );
     expect(stage).toContain('docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
     expect(stage).toContain(
       'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
@@ -65,6 +72,10 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(stage).toContain('docs/governance/mrx1000-wave251-selection-decision-2026-09-23.md');
     expect(stage).toContain(
       'artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json',
+    );
+    expect(stage).toContain('docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json',
     );
     expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
   });
@@ -80,6 +91,10 @@ describe('MRX1000 append-only identity addendum', () => {
         program_row_id: 'MRX1000-1117',
         canonical_slug: 'north-dakota-inherited-royalty-questions-records-and-ombudsman',
       },
+      {
+        program_row_id: 'MRX1000-1118',
+        canonical_slug: 'north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12',
+      },
     ]);
     expect(historical.articles).toHaveLength(1000);
     expect(
@@ -90,14 +105,14 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(addendum.entries[0].program_row_id).toBe('MRX1000-1116');
   });
 
-  it('keeps the second row out of the admitted projection until its identity state advances', () => {
+  it('keeps the newest row out of the admitted projection until its identity state advances', () => {
     const candidate = structuredClone(addendum);
-    candidate.entries[1].identity_state = 'candidate_review_only';
+    candidate.entries[2].identity_state = 'candidate_review_only';
     const before = check(candidate);
     expect(before.findings).toEqual([]);
-    expect(before.admittedRows).toHaveLength(1);
+    expect(before.admittedRows).toHaveLength(2);
     const promoted = structuredClone(candidate);
-    promoted.entries[1].identity_state = 'admitted_quality_gated';
+    promoted.entries[2].identity_state = 'admitted_quality_gated';
     const result = check(promoted);
     expect(result.findings).toEqual([]);
     expect(result.admittedRows).toMatchObject([
@@ -111,6 +126,13 @@ describe('MRX1000 append-only identity addendum', () => {
       {
         program_row_id: 'MRX1000-1117',
         canonical_slug: 'north-dakota-inherited-royalty-questions-records-and-ombudsman',
+        publication_status: 'draft',
+        draft: true,
+        frontmatter_noindex: true,
+      },
+      {
+        program_row_id: 'MRX1000-1118',
+        canonical_slug: 'north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12',
         publication_status: 'draft',
         draft: true,
         frontmatter_noindex: true,
@@ -173,6 +195,11 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(
       hasAppendOnlyAdmissionAuthority(
         '# Decision\nMRX_CEO_DECISION: APPROVE_REDEFINED\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
+      ),
+    ).toBe(true);
+    expect(
+      hasAppendOnlyAdmissionAuthority(
+        '# Decision\nMRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
       ),
     ).toBe(true);
   });

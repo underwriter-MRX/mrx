@@ -47,26 +47,33 @@ export function validateAppendOnlyIdentityAddendum(
   for (const [index, entry] of addendum.entries.entries()) {
     const label = `Identity addendum entry ${index + 1}`;
     const id = entry?.program_row_id;
-    const sequence = /^MRX1000-\d{4,}$/.test(id ?? '')
-      ? Number(id.slice('MRX1000-'.length))
-      : NaN;
+    const sequence = /^MRX1000-\d{4,}$/.test(id ?? '') ? Number(id.slice('MRX1000-'.length)) : NaN;
     if (!Number.isInteger(sequence) || sequence <= previousSequence) {
-      findings.push(`${label} must allocate a new, ascending program row ID after historical sequence ${maxHistoricalSequence}.`);
+      findings.push(
+        `${label} must allocate a new, ascending program row ID after historical sequence ${maxHistoricalSequence}.`,
+      );
     }
     if (Number.isInteger(sequence)) previousSequence = sequence;
     if (baseIds.has(id) || ids.has(id)) findings.push(`${label} duplicates a program row ID.`);
     ids.add(id);
-    if (!entry?.canonical_slug || baseSlugs.has(entry.canonical_slug) || slugs.has(entry.canonical_slug)) {
+    if (
+      !entry?.canonical_slug ||
+      baseSlugs.has(entry.canonical_slug) ||
+      slugs.has(entry.canonical_slug)
+    ) {
       findings.push(`${label} has a missing or duplicate canonical slug.`);
     }
     slugs.add(entry?.canonical_slug);
-    if (!entry?.canonical_url || baseUrls.has(entry.canonical_url) || urls.has(entry.canonical_url)) {
+    if (
+      !entry?.canonical_url ||
+      baseUrls.has(entry.canonical_url) ||
+      urls.has(entry.canonical_url)
+    ) {
       findings.push(`${label} has a missing or duplicate canonical URL.`);
     }
     urls.add(entry?.canonical_url);
     if (
-      entry?.canonical_url !==
-      `https://mineralrightsxchange.com/blog/${entry?.canonical_slug}/`
+      entry?.canonical_url !== `https://mineralrightsxchange.com/blog/${entry?.canonical_slug}/`
     ) {
       findings.push(`${label} canonical URL does not match its slug on the apex blog route.`);
     }
@@ -83,7 +90,9 @@ export function validateAppendOnlyIdentityAddendum(
     if (entry?.redefines_historical_program_row_id != null) {
       const historical = baseById.get(entry.redefines_historical_program_row_id);
       if (!historical || historical.canonical_slug !== entry.redefines_historical_slug) {
-        findings.push(`${label} historical redefinition identity does not match the immutable ledger.`);
+        findings.push(
+          `${label} historical redefinition identity does not match the immutable ledger.`,
+        );
       } else if (
         historical.publication_status === 'published' ||
         historical.preservation_classification === 'live_public_published_route' ||
@@ -127,6 +136,8 @@ export function hasAppendOnlyAdmissionAuthority(decisionSource) {
     /^-\s*Disposition:\s*`APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\s*$/m.test(
       decisionSource,
     ) &&
-    /^MRX_CEO_DECISION:\s+(?:APPROVE_REDEFINED|SELECT_ONE)\b.*$/m.test(decisionSource)
+    /^MRX_CEO_DECISION:\s+(?:APPROVE_REDEFINED|SELECT_ONE|APPROVE_FOR_PUBLIC_ADMISSION)\b.*$/m.test(
+      decisionSource,
+    )
   );
 }

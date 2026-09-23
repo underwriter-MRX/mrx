@@ -36,6 +36,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave251-selection-decision-2026-09-23.md",
       "selection_decision_sha256": "dcbbe4c365944ce3aeca5b28c80871ee4f4496df5d0054dc5810f7028182dd7f"
+    },
+    {
+      "selection_rank": 324,
+      "program_row_id": "MRX1000-1118",
+      "canonical_title": "North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12",
+      "canonical_slug": "north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12",
+      "canonical_url": "https://mineralrightsxchange.com/blog/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/",
+      "pillar": "inherited-mineral-rights",
+      "cluster": "inherited-estate-probate",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md",
+      "selection_decision_sha256": "6890cc95cc68978c89e848a7052eb50b183773608f7452a04ed4b9d0e01f223a"
     }
   ]
 }

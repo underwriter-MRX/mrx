@@ -1,0 +1,25 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1118",
+  "slug": "north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12",
+  "source_path": "src/content/posts/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12.mdx",
+  "input_body_sha256": "6d9a5d19781e3bfe242add7319a5e362f9f095f6df2cb3bc60e02836c0560555",
+  "two_image_manifest_sha256": "6888446ee0b1c90a58f039ddbc21a093444292efd92f0fe2a4764e1b9a5a1b5f",
+  "private_full_source_sha256": "afb0b0303557e8357c1532b1311801d01a35ea9bc947e81513dd010c3ee14894",
+  "private_body_sha256": "311a5a9ae794160c0fe6968cb2d3f1e3f6ea4b6e721d9295dabc09fc50972c41",
+  "public_body_sha256": "5c519bd201d05983fcc489caa23ad6b42769b3bd005a37ef8811e552effeb1f7",
+  "review_method": "direct_public_source_pass_then_three_exact_copy_and_grammar_edit_pass_extends_on_current_bytes",
+  "executive_admission_session": "20260923_111505_3eab31",
+  "executive_admission_token": "MRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION",
+  "executive_admission_detail": "Private-byte source admission only; final public-source specialist reviews and full release gates remain separate",
+  "capability": "factual_citation",
+  "named_specialist": "mrx_research",
+  "specialist_session": "20260923_112613_7a152f",
+  "provenance_note": "The named read-only specialist independently retrieved the official 63-page North Dakota Courts PDF and two official web pages, checked precise PDF pages, passed the initial public source, then verified the two copy edits and later certified-copy grammar clarification against the exact final public SHA before and after with PASS-EXTENDS. Codex separately opened the official pages and confirmed the key claims.",
+  "findings": [
+    "The inventory example on PDF page 4, distribution discussion on page 10, Form 11 instructions on page 41, and Form 12 instructions on page 45 support the article's narrow source-role claims.",
+    "The court's county-recorder and certified-letters directions are described as source text, not owner-specific advice; DMR well data is not represented as title or probate proof."
+  ]
+}

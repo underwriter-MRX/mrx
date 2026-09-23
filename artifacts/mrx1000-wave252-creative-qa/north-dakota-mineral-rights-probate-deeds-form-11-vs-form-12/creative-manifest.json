@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T17:54:04.500Z",
+  "article": {
+    "title": "North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12",
+    "keyword": "North Dakota probate deed records",
+    "generation_prompts": {
+      "hero": "Original text-free sunlit stone-table still life with one unlabeled archival box, two separate blank paper portfolios, northern-plains window, and left negative space. No real deed, labels, numbers, official marks, signatures, forms, or conclusions.",
+      "inline": "Materially distinct text-free eye-level county-record archive with wooden index drawers, one blank buff folder partly pulled out, and clear lower caption area. No labels, forms, real references, official marks, signatures, or conclusions."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave252-creative-sources/probate-two-path-hero-base.png",
+      "source_sha256": "48e8a9393644356575e83e6f23df5ca2c50f70d9d3c178dd6804fdd8cc99a3ef",
+      "public_path": "/assets/articles/hero/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12.webp",
+      "sha256": "9d181672040c88de4c34b7a20503aa8b577145ee936f6a92ed87c8596f1562d3",
+      "perceptual_hash": "0000000011111111000000001111111100000000011111110000000001011111000000000101111100000000010111110000000001111111000000000111111100000000111111110000000011111111000000001111111100000000000011110000000001111101000000000111111100000000011111110000000001111111",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12",
+        "actual": "North Dakota Mineral\nRights Probate Deeds:\nForm 11 vs. Form 12",
+        "normalized": "north dakota mineral rights probate deeds form 11 vs form 12",
+        "normalized_expected": "north dakota mineral rights probate deeds form 11 vs form 12",
+        "normalized_actual": "north dakota mineral rights probate deeds form 11 vs form 12",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave252-creative-sources/county-record-archive-inline-base.png",
+      "source_sha256": "40b4e0aad6404d46beb62e93af279a083c9277ff1f374dc476d965445ec55851",
+      "public_path": "/assets/articles/inline/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/north-dakota-probate-deed-records.webp",
+      "sha256": "3f446465c5b2e8c3e641f4c57e1eb84b6cfa13695c8863eca9d164e23ad01990",
+      "perceptual_hash": "1111111111111100101111111111111110111111111010101111000011001000110011000000001100001110000000010011111111111000111111111111101011111111111110101111111111111110000000000011110000000000000000000000001111000000000000011000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "North Dakota probate deed records",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "North Dakota probate deed records",
+        "actual": "North Dakota probate\ndeed records",
+        "normalized": "north dakota probate deed records",
+        "normalized_expected": "north dakota probate deed records",
+        "normalized_actual": "north dakota probate deed records",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
