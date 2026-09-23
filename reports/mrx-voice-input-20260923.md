@@ -1,6 +1,6 @@
 # MRX voice input — 2026-09-23
 
-Status: source verified; production release pending Cloudflare microphone policy access and release-gate reconciliation. No live deployment or real-device audio success is claimed.
+Status: source and protected deployment verified; public promotion pending Cloudflare microphone policy access and release-gate reconciliation. No live activation or real-device audio success is claimed.
 
 ## Change
 
@@ -22,3 +22,15 @@ The Vercel source policy permits microphone=(self), retaining camera=() and geol
 - Search Atlas audit 138239 completed/postprocessed before this voice release. Last independently reported OTTO dashboard has 906 total, 16 approved/deployed, 890 pending. Do not equate that with raw technical findings or deploy unreviewed recommendations to obtain zero.
 
 Evidence directory: /Users/darylhill/Documents/MineralRightsXchange.com/outputs/20260923-voice-independent/ (build.log, unit.log, e2e.log, mobile-voice-listening.png, baseline.json and saved response headers).
+
+## Protected deployment and owner handoff
+
+Source commit cc453d1267661482d42dca256ad3ac29d6cb38eb is pushed to feature/mrx-asktravis-voice-20260923. Protected production-environment deployment dpl_31hgCWA74JgPFosKADrSWXvLNezC (https://mrx-knnhuzfm7-team-mrx.vercel.app) reached READY at 2026-09-23T22:08:23.571Z with --skip-domain. The remote build confirmed five legal approvals, zero Astro errors/warnings, source/rendered checks, 664 article images, 495 SEO pages, and the full configured build succeeded.
+
+Authenticated Vercel GET on the protected homepage returned 200, microphone=(self), the existing canonical title and one H1. The offer-review page retained its title and one H1. Both load AskTravis.O611g1e2.js; its SHA-256 is a3e82951f30d65ffebf2c8d850b5344bbcc0648d1f9a379f5ab9eb1d0e3fc1c0 and it contains the new microphone, finishing panel, recognition API and audio-service disclosure. The protected noindex header is expected and is not a public indexing claim.
+
+After READY, fresh Vercel inspection still resolves mrx-web.vercel.app to baseline dpl_9fonekhTtMaucu1mntMbPBa2JRFu. Apex still serves AskTravis.BzfI41oT.js and microphone=(). No promote command has run, and no post-release recrawl was triggered for this unpromoted change. Existing OTTO 890-pending state remains unresolved.
+
+A dedicated normal Chrome window is open at https://dash.cloudflare.com/login for the owner. An asynchronous request asks Daryl to sign in to the account managing mineralrightsxchange.com. API token scope is insufficient for Workers or header-rule edits; no credential should be pasted into chat. Preserve the other tasks' Google-password and incognito-signup windows. Kanban t_ded49a4d remains blocked against duplicate dispatch; Codex owns this release lane.
+
+Upload recovery: the first archive upload and first ordinary upload failed with network fetch errors. A subsequent ordinary upload reused stored hashes, uploaded only eight remaining files, and completed. The large remaining file was an existing planning manifest; no source, evidence, or release gate was removed to work around the network failure.
