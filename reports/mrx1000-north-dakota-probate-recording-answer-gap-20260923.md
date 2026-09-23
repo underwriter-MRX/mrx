@@ -1,0 +1,31 @@
+# North Dakota inherited-mineral distribution record — source-first screen
+
+Checked September 23, 2026 UTC. **Disposition: candidate answer gap for identity review only; not an admitted, drafted, or published MRX1000 article.** This does not change the verified count of 321, the immutable release-10 ledger, the North Dakota royalty-ombudsman manuscript under specialist review, Search Atlas, or production.
+
+## Reader job and evidence signal
+
+An heir who has identified a North Dakota mineral interest asks which *estate and county record path* may document distribution of real property to heirs, as distinct from a personal representative's sale. The useful output is a map of source records and questions to take to North Dakota counsel, not instructions to choose, complete, sign, or record a deed for a particular estate.
+
+Search Atlas GSC for `sc-domain:mineralrightsxchange.com`, August 25 through September 22, 2026, returned `how to transfer mineral rights in north dakota` with 12 impressions and average position 43 in a minimum-10-impression sample; clicks were unavailable. This is a small observational signal, not proof of lead demand, owner eligibility, ranking durability, or permission to use the query as an article title.
+
+## Current primary-source roles
+
+| Question | Issuer and locator, read September 23 | Narrow supported statement and limit |
+| --- | --- | --- |
+| Are oil/mineral rights treated as real property in the court's informal-administration guide? | [North Dakota Courts, Guidebook and Forms for Informal Administration of an Estate](https://www.ndcourts.gov/Media/Default/Legal%20Resources/Legal%20Self%20Help/Probate/Guidebook-for-Informal-Admin-of-Estate.pdf), printed page 4, inventory Figure A | The guide explicitly lists oil or mineral rights among examples of real property. That does not establish whether a particular interest was owned by the decedent or follows the guide's informal route. |
+| Which forms does the guide distinguish? | Same guide, printed page 10, Distribution of the Estate, and Form 11 instructions, PDF pages 40–42; Form 12 instructions, PDF page 45 | Form 11 is the Personal Representative's Deed of Distribution for real property to heirs/devisees. Form 12 is the Personal Representative's Deed for a sale of real property. Do not infer that either form fits the reader's title, administration, trust, joint-tenancy, or sale facts. |
+| Where does the guide say a distribution deed is recorded? | Same guide, Form 11 instructions, PDF page 41 | It says the deed is recorded with the county recorder where the real property is located, with a certified copy of the personal representative's Letters Testamentary or Letters of Administration certified on or after the deed date. The actual form, county, legal description, and legal effect require case-specific review. |
+| What are the court self-help limits? | [North Dakota Courts, Informal Probate](https://www.ndcourts.gov/legal-self-help/informal-probate), Overview and Forms | Informal probate is a specific estate path, not a universal mineral-transfer method. The court says its forms do not cover every situation and advises consulting a lawyer when the path or form is uncertain. |
+| Can a regulator's well search or claim form substitute for transfer evidence? | [North Dakota DMR, Mineral Owner](https://www.dmr.nd.gov/dmr/oilgas/mineralownerinfo), owner FAQ | DMR routes owners to county recorder instruments and offers GIS/Well Search context. The regulator's well-data or claim route is not itself a probate distribution deed or title opinion. |
+
+Avoid quoting the guide's dollar threshold, timing rules, filing fee, tax instructions, or form-completion directions in a future article without separate current-law review; they are not needed for this answer. Do not construe the court guide as individualized legal advice or suggest that a royalty check identifies heirs or shares.
+
+## Answer ownership and collision check
+
+The published `what-happens-to-mineral-rights-in-probate.mdx` and `understanding-the-probate-process-for-mineral-interests.mdx` are explicitly **Texas** articles using Texas Estates Code sources. The inherited-rights pillar owns the broad document-first answer. The separately approved North Dakota royalty-ombudsman candidate owns agency routing for operator contact and payment questions, not the court's distribution-versus-sale deed distinction. A targeted check found no North Dakota, Form 11, deed-of-distribution, or informal-probate phrase in the published post corpus, the hash-locked canonical JSON, or the append-only identity addendum. A Texas post's related-article slug mentions `how-to-transfer-mineral-rights-after-death-in-texas`, but no file or canonical-ledger entry for that slug was found. None of this alone establishes a unique final article identity: a full semantic/planned-job review and executive title decision remain necessary.
+
+If the answer passes that review, its likely primary hub is `/inherited-mineral-rights/`, with a contextual route to the North Dakota state page and a clear separation from the pending royalty-ombudsman support article. The research-only next step is to locate the decedent's actual interest and estate/county references, then ask qualified North Dakota counsel which estate and recording path applies. Do not promise MRX transaction or probate services in North Dakota.
+
+## Next gate
+
+Hold drafting and admission until the active North Dakota article's review completes, the reader job is compared against all four active Search Atlas topical maps and the full planned corpus, and `mrx_ceo` decides whether this is a distinct article rather than a paragraph in an existing hub. If admitted later, require current-byte factual/editorial/compliance review, final-title creative identity, full article/SEO gates, and verified production before counting it. No second Search Atlas V5 generation or credit-consuming retry was made during this screen.
