@@ -1,0 +1,135 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import Prose from '../components/prose/Prose.astro';
+import CtaBlock from '../components/molecules/CtaBlock.astro';
+
+export const prerender = true;
+---
+
+<MarketingLayout
+  title="Use MRX in Your AI Assistant | Public MCP Setup"
+  description="Connect a compatible AI assistant to MRX public mineral-rights guides. Find the MCP endpoint, setup steps, example questions, source links, and privacy limits."
+  path="/ai-assistant/"
+  pageCategory="education"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Learning Center', path: '/learning-center/' },
+    { name: 'Use MRX in Your AI Assistant', path: '/ai-assistant/' },
+  ]}
+>
+  <section class="section">
+    <div class="container">
+      <Prose>
+        <h1>Use MRX in your AI assistant</h1>
+        <p data-answer-first="true">
+          Connect a compatible AI assistant to Mineral Rights Xchange's public guides with the MRX
+          Model Context Protocol (MCP) service. Ask an educational question, find relevant pages,
+          and follow the source links to read the original MRX guidance.
+        </p>
+        <p>
+          Public MCP release: <a
+            href="https://github.com/underwriter-MRX/mrx-mcp/releases/tag/v0.2.0">v0.2.0</a
+          >. Setup information updated September 23, 2026.
+        </p>
+        <h2>Connect a compatible assistant</h2>
+        <ol>
+          <li>
+            Use an AI client that supports remote MCP servers over HTTPS with Streamable HTTP.
+          </li>
+          <li>Add the server URL: <code>https://mrx-public-mcp.vercel.app/mcp</code>.</li>
+          <li>
+            Select no authentication if the client asks. The public MRX service requires no API key
+            or MRX account.
+          </li>
+          <li>
+            Enable the connection and ask the assistant to search MRX's public guides and include
+            source links.
+          </li>
+        </ol>
+        <p>
+          Connection controls and availability depend on your client, plan, and workspace settings.
+          This setup page does not mean MRX is approved or listed in the ChatGPT app directory.
+          Developers can use the <a href="https://github.com/underwriter-MRX/mrx-mcp#readme"
+            >MRX MCP README</a
+          >
+          for client configuration, local installation, and troubleshooting.
+        </p>
+        <p>
+          A fresh server instance may need time to prepare its public-content index. If your first
+          request reports that the index is incomplete, wait briefly and retry. You can always use
+          the <a href="/learning-center/">Learning Center</a> in your browser.
+        </p>
+        <h2>Try a question with source links</h2>
+        <ul>
+          <li>
+            “Search MRX for inherited mineral rights. What records should I organize before a human
+            review? Include the source links.”
+          </li>
+          <li>
+            “Find MRX guides explaining why a royalty check might shrink. Separate possible causes
+            from facts I would need to verify.”
+          </li>
+          <li>
+            “Find MRX's explanation of an offer, a letter of intent, and a purchase agreement. Link
+            to the original guide.”
+          </li>
+        </ul>
+        <p>
+          Read those topics directly: <a href="/inherited-mineral-rights/"
+            >inherited mineral rights</a
+          >,
+          <a href="/blog/why-did-my-royalty-check-go-down/">why a royalty check may go down</a>, and
+          <a href="/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/"
+            >offer, letter of intent, and purchase agreement differences</a
+          >.
+        </p>
+        <h2>What the public service can do</h2>
+        <p>
+          Six read-only tools help a client search published guides, retrieve a public page, check
+          service readiness, and find an appropriate starting point. Standard <code>search</code>
+          and <code>fetch</code> tools return source-linked results. MRX-specific tools are
+          <code>mrx_search_guides</code>, <code>mrx_read_page</code>, <code>mrx_status</code>, and
+          <code>mrx_get_started</code>.
+        </p>
+        <p>
+          Results are educational public content. They do not establish ownership, verify a
+          document, determine the value of an interest, or provide individualized legal, tax, or
+          investment advice. Read the cited page and consult an appropriately qualified professional
+          for decisions that require one.
+        </p>
+        <h2>Keep personal information private</h2>
+        <p>
+          The MCP service cannot access private customer accounts or documents, change records, book
+          appointments, or submit a request for you. Do not include personal documents, account
+          numbers, contact details, or other private information in MCP questions.
+        </p>
+        <p>
+          The application processes requests transiently and caches public source content in memory.
+          Vercel retains operational and security logs, and your AI provider has its own data
+          policies. Read the <a href="/privacy-policy/#public-mrx-mcp-service"
+            >public MCP privacy disclosure</a
+          >
+          before connecting.
+        </p>
+        <h2>Continue with a human review</h2>
+        <p>
+          Use the guides to organize your questions, then <a href="/book/"
+            >request a free MRX review</a
+          >
+          when you want to discuss your situation with the team. Connecting an assistant or receiving
+          an AI answer does not start or complete a human review.
+        </p>
+      </Prose>
+    </div>
+  </section>
+  <CtaBlock
+    title="Choose your next step"
+    body="Browse the public guides or request a conversation with the MRX team about your situation."
+    primaryCta={{
+      label: 'Explore the Learning Center',
+      href: '/learning-center/',
+      ctaName: 'mcp-learning-center',
+    }}
+    secondaryCta={{ label: 'Request a Free Review', href: '/book/', ctaName: 'mcp-human-review' }}
+  />
+</MarketingLayout>

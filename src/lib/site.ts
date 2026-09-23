@@ -45,6 +45,7 @@ export const NAV = {
       { label: 'Review My Offer', href: '/offer-review/' },
       { label: 'Inherited Rights', href: '/inherited-mineral-rights/' },
       { label: 'Learning Center', href: '/learning-center/' },
+      { label: 'Use MRX in Your AI Assistant', href: '/ai-assistant/' },
     ],
     legal: [
       { label: 'Privacy Policy', href: '/privacy-policy' },
