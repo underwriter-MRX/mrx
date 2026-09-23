@@ -51,6 +51,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md",
       "selection_decision_sha256": "6890cc95cc68978c89e848a7052eb50b183773608f7452a04ed4b9d0e01f223a"
+    },
+    {
+      "selection_rank": 325,
+      "program_row_id": "MRX1000-1119",
+      "canonical_title": "How to Check Federal Mineral Reservations in Wyoming",
+      "canonical_slug": "how-to-check-federal-mineral-reservations-in-wyoming",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-to-check-federal-mineral-reservations-in-wyoming/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_topical_map_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md",
+      "selection_decision_sha256": "a1f8402f9f4162392f12367a5cb4492ab4f9517a4323a12d59a70dccd7367a08"
     }
   ]
 }

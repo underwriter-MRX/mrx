@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-23T22:09:49.267Z",
+  "article": {
+    "title": "How to Check Federal Mineral Reservations in Wyoming",
+    "keyword": "Wyoming federal mineral estate records",
+    "generation_prompts": {
+      "hero": "Original text-free Wyoming high-plains landscape with sage, distant mountains and generous left negative space. No parcel claim, record, labels, official marks or conclusions.",
+      "inline": "Materially distinct text-free overhead research desk with blank paper and folder, unmarked straightedge and magnifier. No real record, labels, official marks, signatures or conclusions."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave253-creative-sources/wyoming-high-plains-hero-base.png",
+      "source_sha256": "5a47c5ccbc99bc29764e6fa75c4a20e12131ea0fa9944d5f94dce2d8a8203c3f",
+      "public_path": "/assets/articles/hero/how-to-check-federal-mineral-reservations-in-wyoming.webp",
+      "sha256": "cb89a2b9b056c24618adbb63553d7d0ee81d09d7b2c64f2cae4f2e1f314f1b7c",
+      "perceptual_hash": "0000000011111111000000001111111100000000111111110000000011111111000000001111111001111100111111110110000011111111000000001111111100000000011110010000000001111111000000000111111100000000011111010000000011111101000000001101111100000000001100110000000001110010",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "How to Check Federal Mineral Reservations in Wyoming",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "How to Check Federal Mineral Reservations in Wyoming",
+        "actual": "How to Check Federal\nMineral Reservations\nin Wyoming",
+        "normalized": "how to check federal mineral reservations in wyoming",
+        "normalized_expected": "how to check federal mineral reservations in wyoming",
+        "normalized_actual": "how to check federal mineral reservations in wyoming",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave253-creative-sources/blank-record-research-inline-base.png",
+      "source_sha256": "3e9d9240f1fdb27a1285c68946e2150432e885c05ab85f6c491eb156e112c954",
+      "public_path": "/assets/articles/inline/how-to-check-federal-mineral-reservations-in-wyoming/wyoming-federal-mineral-estate-records.webp",
+      "sha256": "667c3cc4a6242a5e1a540d3b3e797d7880455c437c2f099e97a802bd8ebbdabd",
+      "perceptual_hash": "1001111110000000110111111111000000011111111100000001111111111100100111111111111100111111111111111011111111111111100011111111111110000111111111111000000011111111000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Wyoming federal mineral estate records",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Wyoming federal mineral estate records",
+        "actual": "Wyoming federal mineral\nestate records",
+        "normalized": "wyoming federal mineral estate records",
+        "normalized_expected": "wyoming federal mineral estate records",
+        "normalized_actual": "wyoming federal mineral estate records",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
