@@ -615,6 +615,40 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
     );
   });
 
+  it('reports append-only candidates separately from admitted identities and leaves the historical ledger immutable', () => {
+    const r = runCheckAndRead();
+    expect(r.exitCode).toBe(0);
+    const addendum = JSON.parse(
+      readFileSync(join(repoRoot, 'config', 'mrx1000-append-only-identity-addendum.json'), 'utf8'),
+    ) as { entries: Array<{ identity_state: string; canonical_slug: string }> };
+    const candidateCount = addendum.entries.filter(
+      (entry) => entry.identity_state === 'candidate_review_only',
+    ).length;
+    const admittedCount = addendum.entries.filter(
+      (entry) => entry.identity_state === 'admitted_quality_gated',
+    ).length;
+    const inputs = r.payload.inputs as {
+      ledger: {
+        total_rows: number;
+        identity_addendum: { candidate_count: number; admitted_count: number; findings: string[] };
+      };
+    };
+    expect(inputs.ledger.total_rows).toBe(1000);
+    expect(inputs.ledger.identity_addendum).toMatchObject({
+      candidate_count: candidateCount,
+      admitted_count: admittedCount,
+      findings: [],
+    });
+    const batch = JSON.parse(
+      readFileSync(join(repoRoot, 'config', 'mrx1000-release-10-batch.json'), 'utf8'),
+    ) as { articles: Array<{ slug: string }> };
+    for (const candidate of addendum.entries.filter(
+      (entry) => entry.identity_state === 'candidate_review_only',
+    )) {
+      expect(batch.articles.some((entry) => entry.slug === candidate.canonical_slug)).toBe(false);
+    }
+  });
+
   it('treats 1,000 as program scope and observes every quality-cleared public row', () => {
     const r = runCheckAndRead();
     const cap = r.payload.cap as {
