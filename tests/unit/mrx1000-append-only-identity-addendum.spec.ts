@@ -3,7 +3,10 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-import { validateAppendOnlyIdentityAddendum } from '../../scripts/lib/mrx1000-append-only-identity-addendum.mjs';
+import {
+  hasAppendOnlyAdmissionAuthority,
+  validateAppendOnlyIdentityAddendum,
+} from '../../scripts/lib/mrx1000-append-only-identity-addendum.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const bytes = (relative: string) => readFileSync(resolve(root, relative));
@@ -85,5 +88,25 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(check(unsupportedState).findings).toContain(
       'Identity addendum entry 1 has an unsupported identity state.',
     );
+  });
+
+  it('requires an explicit publication disposition and executive verdict for an admitted identity', () => {
+    const reviewOnly = bytes(addendum.entries[0].selection_decision_path).toString('utf8');
+    expect(hasAppendOnlyAdmissionAuthority(reviewOnly)).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(
+        '# Decision\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
+      ),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(
+        '# Decision\nMRX_CEO_DECISION: APPROVE_REDEFINED\n- Disposition: `APPROVED_FOR_DETAILED_REVIEW_ONLY`\n',
+      ),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(
+        '# Decision\nMRX_CEO_DECISION: APPROVE_REDEFINED\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
+      ),
+    ).toBe(true);
   });
 });

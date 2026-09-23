@@ -119,7 +119,10 @@ function exactSlateSha(rows: unknown[]): string {
 
 function runTamperedExactGate(
   mutate: (batch: Record<string, any>) => void,
-  opts: { mutateGscJson?: (receipt: Record<string, any>) => void } = {},
+  opts: {
+    mutateGscJson?: (receipt: Record<string, any>) => void;
+    mutateIdentityAddendum?: (addendum: Record<string, any>) => void;
+  } = {},
 ): CheckRunResult {
   const tree = mkdtempSync(join(tmpdir(), 'mrx-exact-gate-'));
   try {
@@ -137,6 +140,21 @@ function runTamperedExactGate(
       join(tree, 'config', 'mrx-1000-canonical-content-ledger.json'),
       'file',
     );
+    if (opts.mutateIdentityAddendum) {
+      symlinkSync(
+        join(repoRoot, 'config', 'mrx-1000-canonical-content-ledger.csv'),
+        join(tree, 'config', 'mrx-1000-canonical-content-ledger.csv'),
+        'file',
+      );
+      const addendum = JSON.parse(
+        readFileSync(join(repoRoot, 'config', 'mrx1000-append-only-identity-addendum.json'), 'utf8'),
+      );
+      opts.mutateIdentityAddendum(addendum);
+      writeFileSync(
+        join(tree, 'config', 'mrx1000-append-only-identity-addendum.json'),
+        `${JSON.stringify(addendum, null, 2)}\n`,
+      );
+    }
     for (const name of [
       'mrx1000-wave2-pre-release-qa.json',
       'mrx1000-wave2-pre-release-qa.json.sha256',
@@ -647,6 +665,18 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
     )) {
       expect(batch.articles.some((entry) => entry.slug === candidate.canonical_slug)).toBe(false);
     }
+  });
+
+  it('blocks a candidate-state flip while its hash-bound selection decision remains review-only', () => {
+    const r = runTamperedExactGate(() => {}, {
+      mutateIdentityAddendum: (addendum) => {
+        addendum.entries[0].identity_state = 'admitted_quality_gated';
+      },
+    });
+    expect(r.exitCode).not.toBe(0);
+    expect((r.payload.blocking_findings as string[]) || []).toContain(
+      'Identity addendum decision has not authorized publication for oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes.',
+    );
   });
 
   it('treats 1,000 as program scope and observes every quality-cleared public row', () => {

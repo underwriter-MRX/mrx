@@ -120,3 +120,13 @@ export function validateAppendOnlyIdentityAddendum(
   }
   return { findings, admittedRows };
 }
+
+/** A hash-bound decision must explicitly authorize publication before admission. */
+export function hasAppendOnlyAdmissionAuthority(decisionSource) {
+  return (
+    /^-\s*Disposition:\s*`APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\s*$/m.test(
+      decisionSource,
+    ) &&
+    /^MRX_CEO_DECISION:\s+(?:APPROVE_REDEFINED|SELECT_ONE)\b.*$/m.test(decisionSource)
+  );
+}

@@ -69,7 +69,10 @@ import {
   analyzeControlledPublicationTransition,
   transitionProofMatches,
 } from './_mrx1000-controlled-publication-transition.mjs';
-import { validateAppendOnlyIdentityAddendum } from './lib/mrx1000-append-only-identity-addendum.mjs';
+import {
+  hasAppendOnlyAdmissionAuthority,
+  validateAppendOnlyIdentityAddendum,
+} from './lib/mrx1000-append-only-identity-addendum.mjs';
 
 // Allow override via --tree=<abs-path> (used by tests) or MRX_TREE
 // environment variable. Otherwise default to the script's parent dir.
@@ -1613,6 +1616,13 @@ function buildCheck() {
       ) {
         blocking.push(
           `Identity addendum decision hash mismatch for ${entry.canonical_slug ?? '(unknown)'}.`,
+        );
+      } else if (
+        entry.identity_state === 'admitted_quality_gated' &&
+        !hasAppendOnlyAdmissionAuthority(readFileSync(decisionPath, 'utf8'))
+      ) {
+        blocking.push(
+          `Identity addendum decision has not authorized publication for ${entry.canonical_slug ?? '(unknown)'}.`,
         );
       }
     }
