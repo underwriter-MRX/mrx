@@ -6,13 +6,13 @@
 - Source and corpus contract: `reports/mrx1000-oklahoma-moea-unclaimed-property-source-screen-20260923.md`
 - Private editorial draft: `reports/mrx1000-oklahoma-two-route-article-draft-20260923.md`
 - Read-only Chesty/mrx_ceo identity job: `b269a624-bac6-4d1c-8b41-06a12f7a5e31`, `APPROVE_REDEFINED` for the bounded two-route answer
-- Article-specific factual/compliance review: pending; the first job `c581a6c8-ae1f-4502-9e83-6ba4fb20791e` timed out after a browser-preparation approval expired and returned no verdict. The changed-route read-only retry is `d6feef1d-3b46-4b0f-a4b8-5600ca9d4642`.
+- Article-specific factual/compliance review: **HOLD on two now-corrected private-draft interface claims**. The first job `c581a6c8-ae1f-4502-9e83-6ba4fb20791e` timed out after a browser-preparation approval expired and returned no verdict. Changed-route read-only job `d6feef1d-3b46-4b0f-a4b8-5600ca9d4642` supported the substantive two-route, entitlement, future-law, privacy, and differentiation boundaries but could not independently verify the rendered MOEA filters or in-app FAQ. Codex independently checked the official MOEA page and Title 52 §554(C), removed those two public-draft claims, and retains HOLD until changed-bytes re-review.
 
 ## Retired planning identity and preservation boundary
 
 The nearest historical inherited-rights planning row is `MRX1000-0440` from Search Atlas topical map `261159`. Its title, **Royalty Management for Inherited Mineral Rights**, and slug `royalty-management-for-inherited-mineral-rights` are broad prompts, not approved article copy. The row refers to a noindex pilot QA shell at `src/content/posts/royalty-management-for-inherited-mineral-rights.mdx`. That shell has placeholder art and explicitly says it is not final copy. It is neither a published article nor an additional verified MRX1000 count.
 
-Do not overwrite, publish, silently re-key, or double-count the shell. Preserve the original planning row and shell identity in an append-only redefinition/admission record if this candidate passes review. The historical release-10 canonical JSON and CSV must remain byte-identical: SHA-256 `97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6` and `0ac3e3ea4f1316e3154c0faa120090d031105c401065c28f790fe4771f82bcef`, respectively. The shell MDX SHA-256 is `927ff38a9cec6772d03424088710e94c98462b628bd29595d1706b28e14b7c34` at this decision.
+Do not overwrite, publish, silently re-key, or double-count the shell. Reserve distinct new row `MRX1000-1116` for the candidate, with `MRX1000-0440` retained as historical planning/shell provenance in `config/mrx1000-append-only-identity-addendum.json`. Its present state is `candidate_review_only`, not admission. The historical release-10 canonical JSON and CSV must remain byte-identical: SHA-256 `97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6` and `0ac3e3ea4f1316e3154c0faa120090d031105c401065c28f790fe4771f82bcef`, respectively. The shell MDX SHA-256 is `927ff38a9cec6772d03424088710e94c98462b628bd29595d1706b28e14b7c34` at this decision.
 
 ## Bounded replacement candidate
 

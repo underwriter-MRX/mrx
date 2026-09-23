@@ -69,6 +69,7 @@ import {
   analyzeControlledPublicationTransition,
   transitionProofMatches,
 } from './_mrx1000-controlled-publication-transition.mjs';
+import { validateAppendOnlyIdentityAddendum } from './lib/mrx1000-append-only-identity-addendum.mjs';
 
 // Allow override via --tree=<abs-path> (used by tests) or MRX_TREE
 // environment variable. Otherwise default to the script's parent dir.
@@ -1584,8 +1585,50 @@ function buildCheck() {
     );
   }
 
+  // The release-10 JSON/CSV are immutable provenance, not a writable place
+  // to add post-321 article identities. Only reviewed, admitted addendum
+  // entries participate in this runtime identity lookup; review-only
+  // candidates do not become authorized articles or count as publications.
+  const addendumRel = 'config/mrx1000-append-only-identity-addendum.json';
+  const addendumPath = join(repoRoot, addendumRel);
+  let addendumRows = [];
+  if (existsSync(addendumPath)) {
+    const addendum = readJson(addendumPath);
+    const csvPath = join(repoRoot, 'config/mrx-1000-canonical-content-ledger.csv');
+    const checked = validateAppendOnlyIdentityAddendum(
+      ledger,
+      addendum,
+      identityLedgerSha,
+      existsSync(csvPath) ? sha256File(csvPath) : null,
+    );
+    addendumRows = checked.admittedRows;
+    blocking.push(...checked.findings);
+    for (const entry of Array.isArray(addendum.entries) ? addendum.entries : []) {
+      const decisionRel = entry.selection_decision_path;
+      const decisionPath = decisionRel ? join(repoRoot, decisionRel) : null;
+      if (
+        !decisionPath ||
+        !existsSync(decisionPath) ||
+        sha256File(decisionPath) !== entry.selection_decision_sha256
+      ) {
+        blocking.push(
+          `Identity addendum decision hash mismatch for ${entry.canonical_slug ?? '(unknown)'}.`,
+        );
+      }
+    }
+    inputs.ledger.identity_addendum = {
+      path: addendumRel,
+      sha256: sha256File(addendumPath),
+      candidate_count: (Array.isArray(addendum.entries) ? addendum.entries.length : 0) - addendumRows.length,
+      admitted_count: addendumRows.length,
+      findings: checked.findings,
+    };
+  }
+
+  const effectiveLedgerRows = [...(ledger.articles ?? []), ...addendumRows];
+
   const ledgerBySlug = new Map(
-    (ledger.articles ?? []).map((article) => [article.canonical_slug, article]),
+    effectiveLedgerRows.map((article) => [article.canonical_slug, article]),
   );
   const identityMismatches = [];
   for (const entry of authorizedArticles) {
@@ -1662,7 +1705,7 @@ function buildCheck() {
   inputs.ledger.runtime_publication_overrides = publicationOverrideSummary;
 
   const rows = deriveStagesForLedger(
-    ledger.articles ?? [],
+    effectiveLedgerRows,
     sitemapUrls,
     admittedLookup,
     legacyLookup,
