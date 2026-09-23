@@ -38,17 +38,17 @@ jobs:
     env:
       MRX_CRAWLER_STATE_DIR: ${{ github.workspace }}/.crawler-state
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Verify notifier regression tests
         run: python3 -m unittest discover -s tests/crawler -p 'test_*.py'
       - name: Restore prior notification receipts
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v6
         with:
           path: .crawler-state
           key: mrx-crawlers-v1-${{ github.run_id }}-${{ github.run_attempt }}
@@ -70,7 +70,7 @@ jobs:
           PYTHON
       - name: Preserve receipts and pending retries
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v6
         with:
           path: .crawler-state
           key: mrx-crawlers-v1-${{ github.run_id }}-${{ github.run_attempt }}
@@ -80,7 +80,7 @@ jobs:
           python3 scripts/crawler_sync.py --report >> "$GITHUB_STEP_SUMMARY"
       - name: Preserve notification evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: mrx-crawler-notification-${{ github.run_id }}-${{ github.run_attempt }}
           path: .crawler-state/*.json

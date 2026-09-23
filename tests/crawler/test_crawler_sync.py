@@ -37,7 +37,7 @@ class SyncTests(unittest.TestCase):
         self.env.stop()
         self.temp.cleanup()
 
-    def request(self, url, payload=None):
+    def request(self, url, payload=None, fresh=False):
         if payload:
             self.posts.append(payload)
             return self.code, {}, b''
@@ -93,8 +93,30 @@ class SyncTests(unittest.TestCase):
 
     def test_live_mismatch_never_submits(self):
         self.mismatch = True
-        self.assertEqual(c.sync(True)['status'], 'partial_failure')
+        with patch.object(c.time, 'sleep') as sleep:
+            self.assertEqual(c.sync(True)['status'], 'partial_failure')
         self.assertEqual(self.posts, [])
+        self.assertEqual([call.args[0] for call in sleep.call_args_list], [5, 15])
+
+    def test_transient_live_mismatch_retries_fresh_without_duplicate_submission(self):
+        original_request = self.request
+        page_reads = 0
+
+        def converging_request(url, payload=None, fresh=False):
+            nonlocal page_reads
+            if url == self.url and payload is None:
+                page_reads += 1
+                if page_reads == 1:
+                    return 200, {'Content-Type': 'text/html'}, self.html + b'transient-edge-bytes'
+            return original_request(url, payload)
+
+        with patch.object(c, 'request', converging_request), patch.object(c.time, 'sleep') as sleep:
+            result = c.sync(True)
+
+        self.assertEqual(result['status'], 'notifications_received')
+        self.assertEqual(page_reads, 2)
+        self.assertEqual(len(self.posts), 1)
+        sleep.assert_called_once_with(5)
 
     def test_noindex_never_submits(self):
         self.html += b'<meta name="robots" content="noindex">'
@@ -217,15 +239,36 @@ class ContentHashTests(unittest.TestCase):
             self.assertNotEqual(c.content_hash(b'abc' + changed), c.content_hash(b'abc'))
 
     def test_only_exact_searchatlas_status_meta_is_ignored(self):
+        true_marker = (b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; '
+                       b'type=cloudflare; enabled=true;">')
+        false_marker = true_marker.replace(b'enabled=true', b'enabled=false')
+        self.assertEqual(c.content_hash(b'abc' + true_marker), c.content_hash(b'abc'))
+        self.assertEqual(c.content_hash(b'abc' + false_marker), c.content_hash(b'abc'))
+        for changed in [
+            false_marker.replace(b'e4bab8bb', b'f4bab8bb'),
+            false_marker.replace(b'type=cloudflare', b'type=unknown'),
+            false_marker.replace(b'enabled=false', b'enabled=unknown'),
+            false_marker.replace(b'enabled=false;', b'enabled=false; extra=1;'),
+        ]:
+            self.assertNotEqual(c.content_hash(b'abc' + changed), c.content_hash(b'abc'))
+
+    def test_captured_disabled_otto_response_and_negative_variants(self):
+        body = Path(__file__).with_name('mismatch-202.html').read_bytes()
+        expected = 'ec3038bacfe234e82de5f025e945a99f0d832f168ab4dab4686c9652f98d7ab6'
         marker = (b'<meta name="otto" content="uuid=e4bab8bb-717e-480c-8dea-1de1b8596eb7; '
-                  b'type=cloudflare; enabled=true;">')
-        self.assertEqual(c.content_hash(b'abc' + marker), c.content_hash(b'abc'))
-        self.assertEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=false')),
-                         c.content_hash(b'abc'))
-        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'enabled=true', b'enabled=unknown')),
-                            c.content_hash(b'abc'))
-        self.assertNotEqual(c.content_hash(b'abc' + marker.replace(b'e4bab8bb', b'00000000')),
-                            c.content_hash(b'abc'))
+                  b'type=cloudflare; enabled=false;">')
+        self.assertEqual(body.count(marker), 1)
+        self.assertEqual(c.content_hash(body), expected)
+        for changed in [
+            body.replace(marker, marker.replace(b'e4bab8bb', b'f4bab8bb')),
+            body.replace(marker, marker.replace(b'type=cloudflare', b'type=unknown')),
+            body.replace(marker, marker.replace(b'enabled=false', b'enabled=unknown')),
+            body.replace(marker, marker.replace(b'enabled=false;', b'enabled=false; extra=1;')),
+            body.replace(b'<title>', b'<title>Altered ', 1),
+            body + b'<div hidden class="otto-nlp-module">injected</div>',
+            body.replace(b'RECHECK_INTERVAL: 3000', b'RECHECK_INTERVAL: 9999'),
+        ]:
+            self.assertNotEqual(c.content_hash(changed), expected)
 
 
 class RequestRetryTests(unittest.TestCase):
