@@ -47,6 +47,28 @@ import {
 import './AskTravis.css';
 
 type Persona = 'travis' | 'connor' | 'clay' | 'owen' | 'laurel' | 'elena';
+type VoiceState = 'idle' | 'starting' | 'listening' | 'transcribing' | 'stopping' | 'error';
+type SpeechRecognitionEventLike = {
+  resultIndex: number;
+  results: ArrayLike<{
+    isFinal: boolean;
+    0?: { transcript?: string };
+  }>;
+};
+type SpeechRecognitionErrorEventLike = { error?: string };
+type BrowserSpeechRecognition = {
+  continuous: boolean;
+  interimResults: boolean;
+  lang: string;
+  onstart: (() => void) | null;
+  onresult: ((event: SpeechRecognitionEventLike) => void) | null;
+  onerror: ((event: SpeechRecognitionErrorEventLike) => void) | null;
+  onend: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+  abort?: () => void;
+};
+type BrowserSpeechRecognitionConstructor = new () => BrowserSpeechRecognition;
 type Citation = { id: string; title: string; url: string; excerpt: string };
 type LocationCard = {
   label: string;
@@ -361,6 +383,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const [discoveryDeclined, setDiscoveryDeclined] = useState(false);
   const [bookingDeclined, setBookingDeclined] = useState(false);
   const [preserveOpeningPersona, setPreserveOpeningPersona] = useState(false);
+  const [speechSupported, setSpeechSupported] = useState<boolean | null>(null);
+  const [voiceState, setVoiceState] = useState<VoiceState>('idle');
+  const [voiceMessage, setVoiceMessage] = useState(
+    'Use the microphone to dictate, then review your words and tap Send.',
+  );
 
   const endRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -372,6 +399,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const introStarted = useRef(false);
   const conversationIdRef = useRef('');
   const responseStartedAt = useRef<number | null>(null);
+  const recognitionRef = useRef<BrowserSpeechRecognition | null>(null);
+  const voiceSessionRef = useRef(0);
+  const voiceBaseDraftRef = useRef('');
+  const voiceFinalTranscriptRef = useRef('');
+  const voiceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const voiceStoppingRef = useRef(false);
   const supabase = useMemo<SupabaseClient | null>(
     () =>
       typeof window !== 'undefined' && supabaseUrl && supabaseAnonKey
@@ -379,6 +412,168 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         : null,
     [supabaseUrl, supabaseAnonKey],
   );
+
+  function speechRecognitionConstructor() {
+    const speechWindow = window as typeof window & {
+      SpeechRecognition?: BrowserSpeechRecognitionConstructor;
+      webkitSpeechRecognition?: BrowserSpeechRecognitionConstructor;
+    };
+    return speechWindow.SpeechRecognition ?? speechWindow.webkitSpeechRecognition ?? null;
+  }
+
+  function joinDraftAndTranscript(base: string, transcript: string) {
+    const cleanBase = base.trimEnd();
+    const cleanTranscript = transcript.trim();
+    if (!cleanBase) return cleanTranscript;
+    if (!cleanTranscript) return cleanBase;
+    return `${cleanBase} ${cleanTranscript}`;
+  }
+
+  function voiceErrorMessage(error?: string) {
+    if (error === 'not-allowed' || error === 'service-not-allowed')
+      return 'Microphone access was denied. Allow microphone access in browser settings, then try again.';
+    if (error === 'audio-capture')
+      return 'No microphone is available. Check the device microphone and browser input settings.';
+    if (error === 'no-speech')
+      return 'No speech was detected. Tap the microphone and try again when you are ready.';
+    if (error === 'network')
+      return 'Speech recognition could not connect. Check your connection or use your device keyboard’s dictation.';
+    return 'Speech recognition stopped unexpectedly. Your existing draft is still here; tap the microphone to try again.';
+  }
+
+  function clearVoiceTimer() {
+    if (voiceTimerRef.current) clearTimeout(voiceTimerRef.current);
+    voiceTimerRef.current = null;
+  }
+
+  function stopVoiceRecognition(message: string, abort = false) {
+    const recognition = recognitionRef.current;
+    if (!recognition) return;
+    if (!abort) {
+      if (voiceStoppingRef.current) return;
+      voiceStoppingRef.current = true;
+      clearVoiceTimer();
+      setVoiceState('stopping');
+      setVoiceMessage('Finishing your words…');
+      // stop() may deliver a final result asynchronously. Keep handlers attached.
+      voiceTimerRef.current = setTimeout(() => {
+        stopVoiceRecognition('Dictation stopped. Review your words, then tap Send.', true);
+      }, 8000);
+      try {
+        recognition.stop();
+      } catch {
+        stopVoiceRecognition(message, true);
+      }
+      return;
+    }
+    clearVoiceTimer();
+    voiceSessionRef.current += 1;
+    recognitionRef.current = null;
+    voiceStoppingRef.current = false;
+    recognition.onstart = null;
+    recognition.onresult = null;
+    recognition.onerror = null;
+    recognition.onend = null;
+    try {
+      if (recognition.abort) recognition.abort();
+      else recognition.stop();
+    } catch {
+      // The browser may already have ended this session.
+    }
+    setVoiceState('idle');
+    setVoiceMessage(message);
+  }
+
+  function toggleVoiceRecognition() {
+    if (recognitionRef.current) {
+      stopVoiceRecognition('Dictation stopped. Review your words, then tap Send.');
+      return;
+    }
+    if (step === 'loading' || typingPersona || sending || booking) return;
+    const Recognition = speechRecognitionConstructor();
+    if (!Recognition || !window.isSecureContext) {
+      setSpeechSupported(false);
+      setVoiceState('error');
+      setVoiceMessage(
+        'Voice input is unavailable in this browser. Try your device keyboard’s microphone or a supported browser on the secure MRX site.',
+      );
+      return;
+    }
+    const session = ++voiceSessionRef.current;
+    voiceBaseDraftRef.current = input;
+    voiceFinalTranscriptRef.current = '';
+    voiceStoppingRef.current = false;
+    try {
+      const recognition = new Recognition();
+      recognition.continuous = true;
+      recognition.interimResults = true;
+      recognition.lang = document.documentElement.lang || navigator.language || 'en-US';
+      recognition.onstart = () => {
+        if (voiceSessionRef.current !== session || voiceStoppingRef.current) return;
+        setVoiceState('listening');
+        setVoiceMessage('Listening… Speak naturally. Tap Stop when you are finished.');
+      };
+      recognition.onresult = (event) => {
+        if (voiceSessionRef.current !== session) return;
+        // Results contain the complete session: rebuild to avoid repeated finals.
+        let transcript = '';
+        let interim = false;
+        for (let index = 0; index < event.results.length; index += 1) {
+          const result = event.results[index];
+          transcript = joinDraftAndTranscript(transcript, result?.[0]?.transcript ?? '');
+          interim ||= !result.isFinal;
+        }
+        voiceFinalTranscriptRef.current = transcript;
+        setInput(joinDraftAndTranscript(voiceBaseDraftRef.current, transcript).slice(0, 4000));
+        if (!voiceStoppingRef.current) {
+          setVoiceState(interim ? 'transcribing' : 'listening');
+          setVoiceMessage(
+            interim
+              ? 'Transcribing… Tap Stop when you are finished.'
+              : 'Listening… Your words are in the message box.',
+          );
+        }
+      };
+      recognition.onerror = (event) => {
+        if (voiceSessionRef.current !== session) return;
+        const message =
+          event.error === 'aborted'
+            ? 'Dictation stopped. Your draft is preserved.'
+            : voiceErrorMessage(event.error);
+        stopVoiceRecognition(message, true);
+        if (event.error !== 'aborted') setVoiceState('error');
+      };
+      recognition.onend = () => {
+        if (voiceSessionRef.current !== session) return;
+        clearVoiceTimer();
+        voiceSessionRef.current += 1;
+        recognitionRef.current = null;
+        voiceStoppingRef.current = false;
+        setVoiceState('idle');
+        setVoiceMessage(
+          voiceFinalTranscriptRef.current
+            ? 'Review your words, then tap Send.'
+            : 'No speech was captured. Tap the microphone to try again.',
+        );
+        inputRef.current?.focus();
+      };
+      recognitionRef.current = recognition;
+      setVoiceState('starting');
+      setVoiceMessage('Starting microphone… Allow access if your browser asks.');
+      // Bound recording length; never restart a microphone without another tap.
+      voiceTimerRef.current = setTimeout(() => {
+        stopVoiceRecognition('Dictation stopped. Review your words, then tap Send.');
+      }, 60000);
+      recognition.start();
+    } catch {
+      stopVoiceRecognition(
+        'The microphone could not start. Your draft is unchanged; tap to try again.',
+        true,
+      );
+      setVoiceState('error');
+      setVoiceMessage('The microphone could not start. Your draft is unchanged; tap to try again.');
+    }
+  }
 
   async function authHeaders(json = true) {
     const headers: Record<string, string> = {};
@@ -576,6 +771,51 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (!response.ok) throw new Error(result.error || 'permissions_not_saved');
     return result;
   }
+
+  useEffect(() => {
+    const supported = window.isSecureContext && Boolean(speechRecognitionConstructor());
+    setSpeechSupported(supported);
+    if (!supported)
+      setVoiceMessage(
+        'Voice input is not supported in this browser. Try your device keyboard’s microphone or a browser that supports speech recognition.',
+      );
+    const stopWhenHidden = () => {
+      if (document.hidden)
+        stopVoiceRecognition('Dictation stopped. Your draft is preserved.', true);
+    };
+    const stopWhenLeaving = () =>
+      stopVoiceRecognition('Dictation stopped. Your draft is preserved.', true);
+    document.addEventListener('visibilitychange', stopWhenHidden);
+    window.addEventListener('pagehide', stopWhenLeaving);
+    return () => {
+      document.removeEventListener('visibilitychange', stopWhenHidden);
+      window.removeEventListener('pagehide', stopWhenLeaving);
+      clearVoiceTimer();
+      voiceSessionRef.current += 1;
+      const recognition = recognitionRef.current;
+      recognitionRef.current = null;
+      if (!recognition) return;
+      recognition.onstart = null;
+      recognition.onresult = null;
+      recognition.onerror = null;
+      recognition.onend = null;
+      try {
+        if (recognition.abort) recognition.abort();
+        else recognition.stop();
+      } catch {
+        // The recognition service may already be closed.
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    stopVoiceRecognition('Dictation stopped. Your draft is preserved.', true);
+  }, [activePersona, open]);
+
+  useEffect(() => {
+    if (typingPersona || sending || booking)
+      stopVoiceRecognition('Dictation stopped. Your draft is preserved.', true);
+  }, [typingPersona, sending, booking]);
 
   useEffect(() => {
     setAccountPromptDismissed(window.sessionStorage.getItem('mrx_account_prompt_closed') === '1');
@@ -1774,7 +2014,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   async function handleComposer(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const text = input.trim();
-    if (!text || typingPersona || sending || booking) return;
+    if (!text || typingPersona || sending || booking || recognitionRef.current) return;
     beginGuideResponseWindow();
     setTypingPersona(activePersona);
     setInput('');
@@ -2281,6 +2521,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     });
 
   function closeChat() {
+    if (recognitionRef.current)
+      stopVoiceRecognition('Dictation stopped. Your draft is preserved.', true);
     const browserWindow = window as typeof window & { __mrxChatOpenRequested?: boolean };
     browserWindow.__mrxChatOpenRequested = false;
     setOpen(false);
@@ -2488,6 +2730,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   inputMode={isEmailStep ? 'email' : isPhoneStep ? 'tel' : 'text'}
                   autoComplete="off"
                   aria-autocomplete="none"
+                  aria-describedby="travis-voice-status"
                   autoCapitalize={
                     isNameStep ? 'words' : isEmailStep || isPhoneStep ? 'none' : 'sentences'
                   }
@@ -2495,19 +2738,91 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   spellCheck={!isEmailStep && !isPhoneStep}
                   enterKeyHint="send"
                   value={input}
-                  onChange={(event) => setInput(event.target.value)}
+                  onChange={(event) => {
+                    if (recognitionRef.current)
+                      stopVoiceRecognition('Dictation stopped so you can edit your message.', true);
+                    setInput(event.target.value);
+                  }}
                   placeholder={placeholder[step]}
                   maxLength={4000}
                   disabled={step === 'loading' || Boolean(typingPersona) || sending || booking}
                 />
                 <button
+                  type="button"
+                  className={`travis-voice-button travis-voice-button--${voiceState}`}
+                  data-testid="travis-voice-button"
+                  onClick={toggleVoiceRecognition}
+                  disabled={
+                    speechSupported === false ||
+                    voiceState === 'stopping' ||
+                    (!recognitionRef.current &&
+                      (step === 'loading' || Boolean(typingPersona) || sending || booking))
+                  }
+                  aria-label={
+                    recognitionRef.current
+                      ? 'Stop voice input'
+                      : 'Start voice input with microphone'
+                  }
+                  aria-pressed={Boolean(recognitionRef.current)}
+                  aria-expanded={Boolean(recognitionRef.current)}
+                  aria-controls="travis-voice-panel"
+                  title={
+                    speechSupported === false
+                      ? 'Voice input is not supported in this browser'
+                      : recognitionRef.current
+                        ? 'Stop voice input'
+                        : 'Start voice input'
+                  }
+                >
+                  <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                    <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21H8v2h8v-2h-3v-2.08A7 7 0 0 0 19 12h-2Z" />
+                  </svg>
+                </button>
+                <button
                   type="submit"
-                  disabled={Boolean(typingPersona) || sending || booking || !input.trim()}
+                  disabled={
+                    Boolean(typingPersona) ||
+                    sending ||
+                    booking ||
+                    !input.trim() ||
+                    Boolean(recognitionRef.current)
+                  }
                   aria-label="Send reply"
                 >
                   ↑
                 </button>
               </form>
+              {Boolean(recognitionRef.current) && (
+                <div className="travis-voice-panel" id="travis-voice-panel">
+                  <span className="travis-voice-indicator" aria-hidden="true">
+                    ●
+                  </span>
+                  <span>
+                    {voiceState === 'stopping'
+                      ? 'Finishing…'
+                      : `Speak to ${personaLabels[activePersona]}`}
+                  </span>
+                  <button
+                    type="button"
+                    disabled={voiceState === 'stopping'}
+                    onClick={() => stopVoiceRecognition('Review your words, then tap Send.')}
+                  >
+                    Stop
+                  </button>
+                </div>
+              )}
+              <p
+                id="travis-voice-status"
+                className={`travis-voice-status travis-voice-status--${voiceState}`}
+                role="status"
+                aria-live="polite"
+              >
+                {voiceMessage}
+              </p>
+              <p className="travis-voice-privacy">
+                Your browser may send audio to its speech service. MRX receives the text when you
+                tap Send.
+              </p>
               <div className="travis-composer__actions">
                 <input
                   ref={fileInputRef}
