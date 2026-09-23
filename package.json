@@ -35,6 +35,7 @@
     "build:mrx1000:lifecycle-dashboard": "node scripts/build-mrx1000-lifecycle-dashboard.mjs",
     "build:sell-search-dashboard": "node scripts/build-mrx-sell-search-dashboard.mjs",
     "check:mrx1000:release-gates": "node scripts/check-mrx1000-release-gates.mjs",
+    "check:article:pillar-support": "vitest run tests/unit/mrx1000-pillar-frontmatter.spec.ts --minWorkers=1 --maxWorkers=1",
     "audit:staged-content": "node scripts/audit-staged-content.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
