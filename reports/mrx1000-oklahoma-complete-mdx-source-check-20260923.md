@@ -24,3 +24,9 @@ Checked 2026-09-23 UTC. This is Codex's independent factual/citation and release
 ## Disposition and next gate
 
 No material source contradiction was found in this exact staged file. **Hold publication** until a fresh complete-file editorial, factual/citation, and compliance review is recorded against the *current* SHA-256 with the repository's required distinct reviewer identities; the hash-bound executive selection decision authorizes detailed review only, not admission. The review service's timeout and connection error are process failures, not content verdicts. Only after those gates should the candidate be admitted through a new append-only path that leaves the historical release-10 JSON/CSV byte-identical, then undergo full tests/build, all-active-target deployment and rendered verification, bounded notification, and a completed/postprocessed Search Atlas read. No IndexNow submission, redeployment, recrawl, or count increment occurred in this check.
+
+## Read-only append-only handoff preflight
+
+The new `scripts/check-mrx1000-append-only-admission-readiness.mjs` checks the immutable-ledger binding, decision hash and admission language, final public MDX bytes, distinct exact-title/phrase creative bytes, and editorial/factual/compliance PASS sidecars bound to those same bytes. It does not write, admit, publish, or replace the full release gate. Run it with the exact candidate slug and repo-relative creative-manifest path; a nonzero exit means the handoff is not ready.
+
+For this candidate it correctly reports a valid decision hash and creative-manifest hash, but fails closed on the review-only decision/state, absent final public MDX, and all three missing current-byte PASS reviews. Both historical canonical-ledger hashes remained unchanged. The full unit suite passed **93 files / 796 tests** after this guard was introduced; no deployment or crawl followed.

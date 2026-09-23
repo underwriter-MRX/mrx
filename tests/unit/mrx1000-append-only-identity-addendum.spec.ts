@@ -8,6 +8,7 @@ import {
   hasAppendOnlyAdmissionAuthority,
   validateAppendOnlyIdentityAddendum,
 } from '../../scripts/lib/mrx1000-append-only-identity-addendum.mjs';
+import { inspectAppendOnlyAdmission } from '../../scripts/check-mrx1000-append-only-admission-readiness.mjs';
 
 const root = resolve(import.meta.dirname, '../..');
 const bytes = (relative: string) => readFileSync(resolve(root, relative));
@@ -127,5 +128,31 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(run.stderr).toContain('requires append-only admission');
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.json'))).toBe(beforeJson);
     expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);
+  });
+
+  it('reports the current candidate as unadmitted without writing historical ledger bytes', () => {
+    const beforeJson = sha256(bytes('config/mrx-1000-canonical-content-ledger.json'));
+    const beforeCsv = sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'));
+    const result = inspectAppendOnlyAdmission({
+      slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+      creativeManifestPath:
+        'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
+    });
+    expect(result.ready_for_identity_and_review_admission).toBe(false);
+    expect(result.blockers).toContain('Identity remains review-only; it is not admitted.');
+    expect(result.blockers).toContain('Final public article source is absent.');
+    expect(result.blockers).toContain('editorial current-byte PASS review or sidecar is missing.');
+    expect(result.blockers).not.toContain('hero image bytes do not match the creative manifest.');
+    expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.json'))).toBe(beforeJson);
+    expect(sha256(bytes('config/mrx-1000-canonical-content-ledger.csv'))).toBe(beforeCsv);
+  });
+
+  it('rejects an unsafe creative-manifest path without leaving the repository', () => {
+    const result = inspectAppendOnlyAdmission({
+      slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
+      creativeManifestPath: '../outside-repo.json',
+    });
+    expect(result.ready_for_identity_and_review_admission).toBe(false);
+    expect(result.blockers).toContain('Creative manifest path is unsafe or missing.');
   });
 });
