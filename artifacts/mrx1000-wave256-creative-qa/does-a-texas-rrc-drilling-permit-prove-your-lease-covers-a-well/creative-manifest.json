@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-24T03:30:45.476Z",
+  "article": {
+    "title": "Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?",
+    "keyword": "Texas drilling permit versus mineral lease",
+    "generation_prompts": {
+      "hero": "Original text-free dark editorial still life: separate generic drilling-permit and mineral-lease folders, a fictional blank wellbore sketch, objects on the left and navy negative space on the right. No official seals, readable text, numbers, owner details, or title conclusion.",
+      "inline": "Distinct text-free strict-overhead light editorial scene: generic permit/plat packet and private lease/deed packet separated by a blank comparison worksheet, leaving a clear bottom caption zone. No official seals, readable text, numbers, owner details, or title conclusion."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave256-creative-sources/texas-permit-private-lease-hero-base.png",
+      "source_sha256": "20df77b0c8b695b4487e287e424b254f3a7b8f6a8d7a8cf8749b49d62e2a3f96",
+      "public_path": "/assets/articles/hero/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well.webp",
+      "sha256": "f68a4ad29da15012e86a50b2b1ce481fb92a20a5f184ad827ec901125c6c63f8",
+      "perceptual_hash": "1100000000000000100000000000000010000000000000000000000000000000011110001000000001111000111100001111111011110000111111111100000011111111000000000111111100000000100011110000000011011111000000000100111100000000100000110000000010000000000000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?",
+        "actual": "Does a Texas RRC\nDrilling Permit Prove\nYour Lease Covers\na Well?",
+        "normalized": "does a texas rrc drilling permit prove your lease covers a well",
+        "normalized_expected": "does a texas rrc drilling permit prove your lease covers a well",
+        "normalized_actual": "does a texas rrc drilling permit prove your lease covers a well",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave256-creative-sources/texas-permit-private-lease-inline-base.png",
+      "source_sha256": "364a965e22f04f58719b5ae76469dd4606542f0c99243c6b00d1a21850019c52",
+      "public_path": "/assets/articles/inline/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/texas-drilling-permit-versus-mineral-lease.webp",
+      "sha256": "2fd8e03eb80ab9278126e95c61db678dbd516660ce61e56c1506741d3fdfe049",
+      "perceptual_hash": "0001111111111110001111111111111000111111111111100011111111111111101111111111111011111111111111101111111111111110111111111111111011111111111111101111111111111110001110111101110000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Texas drilling permit versus mineral lease",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Texas drilling permit versus mineral lease",
+        "actual": "Texas drilling permit\nversus mineral lease",
+        "normalized": "texas drilling permit versus mineral lease",
+        "normalized_expected": "texas drilling permit versus mineral lease",
+        "normalized_actual": "texas drilling permit versus mineral lease",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

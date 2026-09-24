@@ -1,0 +1,24 @@
+# Wyoming federal-reservation manuscript exact-source review — 2026-09-23
+
+Status: **private manuscript admitted for public-source packaging.** Article 325 MDX and two public image assets now exist locally and passed current-byte source preflight, full unit tests before the final disclaimer edit, and the full production build after that edit. No Article 325 deployment, IndexNow notification or new recrawl exists at this writing.
+
+- Source: `reports/mrx1000-wyoming-federal-mineral-reservation-manuscript-review-20260923.md`
+- Current full-file SHA-256: `b6268b609829044542c515db1da1bdba2dcf575600a1ee43c5bc2399e649940e`
+- Locked title: **How to Check Federal Mineral Reservations in Wyoming**
+- Parent pillar: `/learning-center/title-lease-ownership/`; state context: `/mineral-rights/wyoming/`
+
+The first exact manuscript hash `c4df1f1f6fb77ca8314c761f599adfbea9cc8094ca9c4284b70608cc40904aba` received editorial and compliance PASS findings but `mrx_research` returned CHANGES_REQUIRED after retrieving all three official BLM sources. It identified private-chain, map/tract-match and state-system statements that exceeded those sources. Codex revised those statements in the private manuscript, attributed practical guidance to MRX, removed the unsupported state-system comparison and private-deed table row, and preserved the federal-record/private-title boundary. The first-hash PASS findings are **not** approval for the revision.
+
+On the current exact SHA above, three separate read-only specialist sessions returned bounded PASS findings:
+
+| Capability | Profile session | Verified scope and result |
+| --- | --- | --- |
+| Factual/citation | `mrx_research` `20260923_145903_e309d0` | Independently retrieved the official BLM split-estate/SRHA page, Federal Land Records page, and Wyoming Federal Mineral Estate layer JSON with HTTP 200; checked the previous objections against the revised text; found no remaining material sentence requiring change within the proposed article copy. **PASS**, not a tract-specific title opinion. |
+| Compliance/legal-risk wording | `mrx_compliance` `20260923_145903_84e76d` | Fetched the same official BLM sources; checked reservation scope, private title, sale authority, no-advice, privacy and non-compulsory-call boundaries on revised bytes. **PASS** for the copy only, not metadata, assets, or release. |
+| Editorial/copy | `mrx_copy` `20260923_145903_8f4ace` | Checked exact title, distinct question, answer-first structure, repetition, source adjacency, pillar/state links and research-only next step on revised bytes. **PASS** for copy only. |
+
+Codex separately opened the official [BLM split-estate guidance](https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/split-estate), [Federal Land Records page](https://www.blm.gov/services/land-records), and [Wyoming layer description](https://gis.blm.gov/wyarcgis/rest/services/Lands/BLM_WY_FederalMineralEstate/FeatureServer/0) on September 23. A fresh `?f=pjson` read confirmed the layer's explicit statement that it does not depict private mineral ownership patterns. The exact manuscript hash was rechecked after the three final reviews. Specialist sessions used `openai-codex` subscription-included billing with $0 estimated incremental cost; they did not write the site.
+
+The failed Chesty/MRX MCP manuscript review job `9da679c5-41f8-4819-aaed-466f9de87d17` timed out without a verdict. The changed recovery route used absolute file paths; a relative-path probe had returned `File not found` despite a correct session worktree. Two earlier direct fallback probes used metered OpenRouter at an estimated combined $0.0161; no further metered invocation is authorized without an exact charge/purpose confirmation. The later absolute-path specialist runs explicitly overrode to the observed subscription-included model.
+
+Read-only `mrx_ceo` session `20260923_150311_08cd3b` returned `MRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION` on this exact private hash as a distinct answer under the title/ownership pillar. Public MDX and creative composition were reviewed separately; the current public MDX SHA is `0c34d54011e7356b8583e6fb5df0c6b2dbfcbd8caa8880a72f747dffb08e301c` and creative manifest SHA is `8c99701aba9a526c224ba1e485cd6b6ab98eafba37528423dad292e8f373ad86`. On these current bytes, `mrx_copy/20260923_152805_ed94d2`, `mrx_research/20260923_152805_b2527e`, and `mrx_compliance/20260923_152805_2f48e9` each returned PASS-EXTENDS from the previous public SHA after reconstructing and verifying the sole disclaimer edit. The Article 325 append-only preflight has zero blockers, and the full production build passed with 329 historical plus 4 append-only articles, 666 image binaries, 496 rendered SEO pages, and 333 organizational-author pages. Full unit tests and live all-target/postrelease evidence remain separate required gates. A specialist PASS on a private report is not a release PASS.

@@ -66,9 +66,9 @@ export function inspectAppendOnlyAdmission({ slug, creativeManifestPath }) {
     if (decisionSha256 !== entry.selection_decision_sha256) {
       blockers.push('Selection-decision SHA-256 does not match the addendum.');
     }
-    if (!hasAppendOnlyAdmissionAuthority(decision.toString('utf8'))) {
+    if (!hasAppendOnlyAdmissionAuthority(decision.toString('utf8'), entry)) {
       blockers.push(
-        'Selection decision has no explicit publication disposition and executive verdict.',
+        'Selection decision has no explicit publication disposition and executive or standing-owner authority.',
       );
     }
   }

@@ -130,14 +130,34 @@ export function validateAppendOnlyIdentityAddendum(
   return { findings, admittedRows };
 }
 
-/** A hash-bound decision must explicitly authorize publication before admission. */
-export function hasAppendOnlyAdmissionAuthority(decisionSource) {
-  return (
+/**
+ * A hash-bound decision must explicitly authorize publication before admission.
+ * @param {string} decisionSource
+ * @param {{program_row_id: string, selection_rank: number} | null} [expectedEntry]
+ */
+export function hasAppendOnlyAdmissionAuthority(decisionSource, expectedEntry = null) {
+  const publicationDisposition =
     /^-\s*Disposition:\s*`APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\s*$/m.test(
       decisionSource,
-    ) &&
+    );
+  const executiveVerdict =
     /^MRX_CEO_DECISION:\s+(?:APPROVE_REDEFINED|SELECT_ONE|APPROVE_FOR_PUBLIC_ADMISSION)\b.*$/m.test(
       decisionSource,
-    )
-  );
+    );
+  // The owner's standing no-approval directive supersedes an agent-authored
+  // second executive signoff for an independently reviewed new article. Keep
+  // the authority scoped to a specific rank/row and all ordinary quality gates.
+  const ownerAuthorityMatch =
+    /^OWNER_ARTICLE_AUTHORITY:\s+APPROVE_PUBLIC_ADMISSION\s+(MRX1000-\d{4,})\s+RANK-(\d+)\s*$/m.exec(
+      decisionSource,
+    );
+  const ownerAuthorizedAdmission =
+    ownerAuthorityMatch != null &&
+    (!expectedEntry ||
+      (ownerAuthorityMatch[1] === expectedEntry.program_row_id &&
+        Number(ownerAuthorityMatch[2]) === expectedEntry.selection_rank)) &&
+    /^-\s*Authority source:\s*`AGENTS\.md MRX Article No-Approval Execution Authority — Owner Directive 2026-08-14`\s*$/m.test(
+      decisionSource,
+    );
+  return publicationDisposition && (executiveVerdict || ownerAuthorizedAdmission);
 }

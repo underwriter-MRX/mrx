@@ -65,11 +65,19 @@ copy_parent \
 copy_parent \
   docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md
 copy_parent \
+  docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md
+copy_parent \
+  docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md
+copy_parent \
   artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json
+copy_parent \
+  artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json
+copy_parent \
+  artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json
 
 mkdir -p "$stage_dir/artifacts/mrx1000-append-only/reviews"
 rsync -a \

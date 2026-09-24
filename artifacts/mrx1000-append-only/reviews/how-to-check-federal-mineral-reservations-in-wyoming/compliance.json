@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1119",
+  "slug": "how-to-check-federal-mineral-reservations-in-wyoming",
+  "source_path": "src/content/posts/how-to-check-federal-mineral-reservations-in-wyoming.mdx",
+  "input_body_sha256": "0c34d54011e7356b8583e6fb5df0c6b2dbfcbd8caa8880a72f747dffb08e301c",
+  "two_image_manifest_sha256": "8c99701aba9a526c224ba1e485cd6b6ab98eafba37528423dad292e8f373ad86",
+  "private_full_source_sha256": "b6268b609829044542c515db1da1bdba2dcf575600a1ee43c5bc2399e649940e",
+  "review_method": "direct_exact_public_source_pass_then_one_line_disclaimer_edit_pass_extends_on_current_bytes",
+  "executive_admission_session": "20260923_150311_08cd3b",
+  "executive_admission_token": "MRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION",
+  "executive_admission_detail": "Private-byte source admission only; final public-source specialist reviews and full release gates remain separate",
+  "capability": "compliance",
+  "named_specialist": "mrx_compliance",
+  "specialist_session": "20260923_152805_2f48e9",
+  "provenance_note": "Named read-only specialist passed initial public SHA 39490c79d44fa2cc427e726430cddcdf2da1e6608903921f349b50ddab50842f, independently reconstructed that prior hash from the one-line disclaimer change, verified current article SHA and unchanged manifest SHA, and returned PASS-EXTENDS. Session billing is openai-codex subscription_included, estimated incremental cost $0. Codex independently checked current hashes and official BLM source reachability.",
+  "findings": [
+    "The specialist checked title, reservation, ownership and sale-authority limits, no-advice/no-appraisal language, privacy, frontmatter FAQ/CTA and image metadata on exact public bytes.",
+    "No mandatory MRX contact, private-document submission, transaction promise, or unsupported legal conclusion was found; production release remains a separate gate."
+  ]
+}

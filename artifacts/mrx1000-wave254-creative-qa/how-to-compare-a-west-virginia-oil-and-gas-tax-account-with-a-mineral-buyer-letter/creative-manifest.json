@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-24T00:09:46.342Z",
+  "article": {
+    "title": "How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter",
+    "keyword": "West Virginia tax account and buyer letter",
+    "generation_prompts": {
+      "hero": "Original text-free West Virginia Appalachian foothills landscape with soft morning light and generous left negative space. No parcel claim, map, labels, documents, official marks, people, or conclusions.",
+      "inline": "Materially distinct text-free overhead research desk with three entirely blank papers, folder, pencil, and magnifier. No real notice, records, text, official marks, signatures, numbers, or conclusions."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave254-creative-sources/west-virginia-foothills-hero-base.png",
+      "source_sha256": "70966431dd89f6a21a6ac90cae968c318b8616c20ea9d18502a939962f4b983e",
+      "public_path": "/assets/articles/hero/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter.webp",
+      "sha256": "5f514f77d7c1868a4415c5b59342b4241c785ba6475cd4fd2b0767e4a0682154",
+      "perceptual_hash": "0000000011111111000000001111111100000000111111110000000011111111000000001111111100100000111111110001000011111101011010001111110100000000011111000000000001110000000000000000000100000000000001110000000000000111000000000110010000000000000000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter",
+        "actual": "How to Compare a\nWest Virginia Oil and Gas\nTax Account With a\nMineral Buyer Letter",
+        "normalized": "how to compare a west virginia oil and gas tax account with a mineral buyer letter",
+        "normalized_expected": "how to compare a west virginia oil and gas tax account with a mineral buyer letter",
+        "normalized_actual": "how to compare a west virginia oil and gas tax account with a mineral buyer letter",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave254-creative-sources/blank-record-sources-inline-base.png",
+      "source_sha256": "c235e5d0854dd59628bd56203d7ab1768fb9ce5381f76f4cb2b694f7cafb7f50",
+      "public_path": "/assets/articles/inline/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/west-virginia-tax-account-and-buyer-letter.webp",
+      "sha256": "49ac9b8bf7b974ed61abd10d32c93fe129d1977b62d3f00857c248c15b83df89",
+      "perceptual_hash": "0001110000000000000011111101110000011111111111100011111111111110001111111111111000111111111111100011111111111110001111111111110000111111111111000001110001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "West Virginia tax account and buyer letter",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "West Virginia tax account and buyer letter",
+        "actual": "West Virginia tax account\nand buyer letter",
+        "normalized": "west virginia tax account and buyer letter",
+        "normalized_expected": "west virginia tax account and buyer letter",
+        "normalized_actual": "west virginia tax account and buyer letter",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

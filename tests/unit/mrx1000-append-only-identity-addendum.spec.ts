@@ -65,6 +65,20 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(ignore).toContain(
       '!artifacts/mrx1000-append-only/reviews/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/*.json.sha256',
     );
+    expect(ignore).toContain('!docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/how-to-check-federal-mineral-reservations-in-wyoming/*.json.sha256',
+    );
+    expect(ignore).toContain('!docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/*.json.sha256',
+    );
     expect(stage).toContain('docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
     expect(stage).toContain(
       'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
@@ -77,12 +91,27 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(stage).toContain(
       'artifacts/mrx1000-wave252-creative-qa/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/creative-manifest.json',
     );
+    expect(stage).toContain('docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json',
+    );
+    expect(stage).toContain('docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json',
+    );
     expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
   });
   it('binds the immutable historical JSON/CSV and admits only the append-only identities', () => {
     const result = check(addendum);
     expect(result.findings).toEqual([]);
-    expect(result.admittedRows).toMatchObject([
+    expect(result.admittedRows).toHaveLength(addendum.entries.length);
+    expect(result.admittedRows.map((row) => [row.program_row_id, row.canonical_slug])).toEqual(
+      addendum.entries.map((entry: { program_row_id: string; canonical_slug: string }) => [
+        entry.program_row_id,
+        entry.canonical_slug,
+      ]),
+    );
+    expect(result.admittedRows.slice(0, 4)).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
@@ -94,6 +123,10 @@ describe('MRX1000 append-only identity addendum', () => {
       {
         program_row_id: 'MRX1000-1118',
         canonical_slug: 'north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12',
+      },
+      {
+        program_row_id: 'MRX1000-1119',
+        canonical_slug: 'how-to-check-federal-mineral-reservations-in-wyoming',
       },
     ]);
     expect(historical.articles).toHaveLength(1000);
@@ -107,15 +140,23 @@ describe('MRX1000 append-only identity addendum', () => {
 
   it('keeps the newest row out of the admitted projection until its identity state advances', () => {
     const candidate = structuredClone(addendum);
-    candidate.entries[2].identity_state = 'candidate_review_only';
+    const newestIndex = candidate.entries.length - 1;
+    candidate.entries[newestIndex].identity_state = 'candidate_review_only';
     const before = check(candidate);
     expect(before.findings).toEqual([]);
-    expect(before.admittedRows).toHaveLength(2);
+    expect(before.admittedRows).toHaveLength(addendum.entries.length - 1);
     const promoted = structuredClone(candidate);
-    promoted.entries[2].identity_state = 'admitted_quality_gated';
+    promoted.entries[newestIndex].identity_state = 'admitted_quality_gated';
     const result = check(promoted);
     expect(result.findings).toEqual([]);
-    expect(result.admittedRows).toMatchObject([
+    expect(result.admittedRows).toHaveLength(addendum.entries.length);
+    expect(result.admittedRows.map((row) => [row.program_row_id, row.canonical_slug])).toEqual(
+      addendum.entries.map((entry: { program_row_id: string; canonical_slug: string }) => [
+        entry.program_row_id,
+        entry.canonical_slug,
+      ]),
+    );
+    expect(result.admittedRows.slice(0, 4)).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
@@ -133,6 +174,13 @@ describe('MRX1000 append-only identity addendum', () => {
       {
         program_row_id: 'MRX1000-1118',
         canonical_slug: 'north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12',
+        publication_status: 'draft',
+        draft: true,
+        frontmatter_noindex: true,
+      },
+      {
+        program_row_id: 'MRX1000-1119',
+        canonical_slug: 'how-to-check-federal-mineral-reservations-in-wyoming',
         publication_status: 'draft',
         draft: true,
         frontmatter_noindex: true,
@@ -179,7 +227,7 @@ describe('MRX1000 append-only identity addendum', () => {
     );
   });
 
-  it('requires an explicit publication disposition and executive verdict for an admitted identity', () => {
+  it('requires an explicit publication disposition and executive or standing-owner authority for an admitted identity', () => {
     const admittedDecision = bytes(addendum.entries[0].selection_decision_path).toString('utf8');
     expect(hasAppendOnlyAdmissionAuthority(admittedDecision)).toBe(true);
     expect(
@@ -202,6 +250,27 @@ describe('MRX1000 append-only identity addendum', () => {
         '# Decision\nMRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
       ),
     ).toBe(true);
+    const ownerAuthority =
+      '# Decision\nOWNER_ARTICLE_AUTHORITY: APPROVE_PUBLIC_ADMISSION MRX1000-1122 RANK-328\n- Authority source: `AGENTS.md MRX Article No-Approval Execution Authority — Owner Directive 2026-08-14`\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n';
+    expect(hasAppendOnlyAdmissionAuthority(ownerAuthority)).toBe(true);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority, {
+        program_row_id: 'MRX1000-1122',
+        selection_rank: 328,
+      }),
+    ).toBe(true);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority, {
+        program_row_id: 'MRX1000-1123',
+        selection_rank: 329,
+      }),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority.replace('MRX1000-1122 RANK-328', 'any article')),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority.replace('Owner Directive 2026-08-14', 'unknown source')),
+    ).toBe(false);
   });
 
   it('refuses to run the legacy ledger-rewriting admission helper for wave 250', () => {

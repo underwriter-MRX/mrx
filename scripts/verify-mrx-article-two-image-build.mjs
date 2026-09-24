@@ -73,6 +73,12 @@ function attribute(html, selectorPattern, attributeName) {
   return decodeHtml(tag.match(new RegExp(`\\b${attributeName}="([^"]*)"`, 'i'))?.[1] ?? '');
 }
 
+function imageUseCount(html, publicPath) {
+  return [...html.matchAll(/<img\b[^>]*>/gi)].filter(
+    ([tag]) => attribute(tag, /<img\b[^>]*>/i, 'src') === publicPath,
+  ).length;
+}
+
 function jsonLdObjects(html) {
   const objects = [];
   const pattern = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/gi;
@@ -155,6 +161,8 @@ for (const row of [...(manifest.rows ?? []), ...appendOnlyRows]) {
     [inlineHeight === String(row.inline.height), 'rendered in-body height mismatch'],
     [inlineRenderedText === row.inline.rendered_text, 'rendered in-body text identity mismatch'],
     [heroSrc !== inlineSrc, 'hero and in-body paths are not distinct'],
+    [imageUseCount(html, row.hero.public_path) === 1, 'hero image must render exactly once'],
+    [imageUseCount(html, row.inline.public_path) === 1, 'in-body image must render exactly once'],
   ];
   for (const [pass, message] of checks) {
     if (!pass) failures.push(`${row.slug}: ${message}`);

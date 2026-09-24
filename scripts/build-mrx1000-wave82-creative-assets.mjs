@@ -28,6 +28,10 @@ const inlineLines = JSON.parse(
 );
 const heroFontFamily = process.env.MRX_HERO_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
 const heroFontSize = Number(process.env.MRX_HERO_FONT_SIZE ?? 32);
+const heroBandPosition = process.env.MRX_HERO_BAND_POSITION ?? 'left';
+if (!['left', 'right'].includes(heroBandPosition)) {
+  throw new Error(`Invalid MRX_HERO_BAND_POSITION: ${heroBandPosition}`);
+}
 const inlineFontFamily = process.env.MRX_INLINE_FONT_FAMILY ?? "Georgia, 'Times New Roman', serif";
 const inlineBandPosition = process.env.MRX_INLINE_BAND_POSITION ?? 'bottom';
 const paths = {
@@ -81,6 +85,8 @@ const svgTextLines = (lines, x, lineHeight) =>
     .join('');
 
 function heroTypography() {
+  const bandX = heroBandPosition === 'right' ? 560 : 0;
+  const titleX = bandX + 46;
   return Buffer.from(`
     <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -93,10 +99,10 @@ function heroTypography() {
         .title { fill: #fffaf0; font-family: ${heroFontFamily}; font-size: ${heroFontSize}px; font-weight: 700; letter-spacing: -0.4px; }
         .rule { fill: #d79a2b; }
       </style>
-      <rect x="0" y="0" width="640" height="630" fill="url(#navy)" />
-      <rect class="rule" x="46" y="102" width="82" height="5" rx="2.5" />
-      <text class="title" x="46" y="168">
-        ${svgTextLines(heroLines, 46, 48)}
+      <rect x="${bandX}" y="0" width="640" height="630" fill="url(#navy)" />
+      <rect class="rule" x="${titleX}" y="102" width="82" height="5" rx="2.5" />
+      <text class="title" x="${titleX}" y="168">
+        ${svgTextLines(heroLines, titleX, 48)}
       </text>
     </svg>
   `);
@@ -246,7 +252,7 @@ async function main() {
   const tempDirectory = await mkdtemp(join(tmpdir(), `mrx-wave${waveNumber}-ocr-`));
   try {
     const heroOcr = await runOcr(paths.hero, title, tempDirectory, {
-      left: 0,
+      left: heroBandPosition === 'right' ? 560 : 0,
       top: 0,
       width: 640,
       height: 630,

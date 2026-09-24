@@ -1,0 +1,27 @@
+# MRX1000 Wave 253 source admission — 2026-09-23
+
+- Decision ID: `MRX1000-W253-CANDIDATE-2026-09-23`
+- Selection rank: `325`; final-recrawl-verified count before this decision: `321`
+- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`
+- Scope: append-only identity and exact reviewed local public-source admission. This is **not** deployment, live verification, Search Atlas page-row proof, or a count increment.
+
+MRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION
+
+Read-only `mrx_ceo` session `20260923_150311_08cd3b` admitted the revised private manuscript as a distinct, bounded pillar-support answer. Its decision authorized public-source packaging, not publication. The exact private manuscript SHA-256 was `b6268b609829044542c515db1da1bdba2dcf575600a1ee43c5bc2399e649940e`. A first private hash received a factual CHANGES_REQUIRED result; that copy was narrowed and all three named specialists passed the revised private hash. The private manuscript and current-public-byte reviews remain separate evidence.
+
+## Distinct answer and source boundary
+
+The approved title is **How to Check Federal Mineral Reservations in Wyoming**. The answer directs a reader with a tract description to the relevant BLM office, Master Title Plat, original patent and governing act, then states what the BLM Wyoming Federal Mineral Estate layer cannot prove. It supports the [title, lease and ownership pillar](/learning-center/title-lease-ownership/) and [Wyoming state page](/mineral-rights/wyoming/). It is narrower than a general ownership explainer and does not duplicate the held Wyoming state-land-map concept. Source map 261162 supplied a topic cluster, not editorial approval. This article is authored from official BLM source review, not a generated-title acceptance.
+
+The primary sources are BLM's [split-estate and SRHA guidance](https://www.blm.gov/programs/energy-and-minerals/mining-and-minerals/split-estate), [Federal Land Records page](https://www.blm.gov/services/land-records), and [Wyoming Federal Mineral Estate layer metadata](https://gis.blm.gov/wyarcgis/rest/services/Lands/BLM_WY_FederalMineralEstate/FeatureServer/0). The article does not identify any reader's parcel status, private mineral ownership, title, sale authority, reservation scope, or value. A qualified Wyoming title professional or attorney is the case-specific next step for unclear instruments; no private-document submission or call is compulsory.
+
+## Exact current-byte evidence
+
+- New append-only row: `MRX1000-1119`, selection rank `325`; canonical slug `how-to-check-federal-mineral-reservations-in-wyoming`; canonical URL `https://mineralrightsxchange.com/blog/how-to-check-federal-mineral-reservations-in-wyoming/`.
+- Pillar `title-lease-ownership`; cluster `title-lease-ownership-documents`. This is a new identity and does not alter or redefine the immutable historical release-10 canonical JSON/CSV.
+- Final public MDX SHA-256: `0c34d54011e7356b8583e6fb5df0c6b2dbfcbd8caa8880a72f747dffb08e301c`. The initial public SHA `39490c79d44fa2cc427e726430cddcdf2da1e6608903921f349b50ddab50842f` passed exact-byte specialist review, but the production compliance scanner rejected the negated phrase “certified appraisal.” The sole source edit changed that phrase to “a valuation”; all three specialists independently reconstructed the prior hash, verified the one-line diff, and returned PASS-EXTENDS on current bytes. The current compliance scanner passes.
+- Two-image creative-manifest SHA-256: `8c99701aba9a526c224ba1e485cd6b6ab98eafba37528423dad292e8f373ad86`. Unique title-bearing hero is also the page social asset; materially distinct in-body image carries **Wyoming federal mineral estate records**. Both passed exact OCR and visual inspection.
+- Initial public-byte editorial PASS: `mrx_copy/20260923_151439_fc7256`; factual/citation PASS: `mrx_research/20260923_151439_1a3a08`; compliance PASS: `mrx_compliance/20260923_151439_ccd6e7`. Current-byte PASS-EXTENDS: `mrx_copy/20260923_152805_ed94d2`, `mrx_research/20260923_152805_b2527e`, and `mrx_compliance/20260923_152805_2f48e9`. Each verified the current article and unchanged manifest hashes. The first factual session independently fetched all three official BLM sources with HTTP 200; Codex and the compliance extender independently rechecked the official pages after a transient factual-review timeout. Session records show `openai-codex` subscription-included billing and $0 estimated incremental cost.
+- Astro content/schema check passed with zero errors; source visible-copy, heading, and pillar-link checks passed. Earlier local drafts failed frontmatter constraints and were stopped before reviewer verdicts. The first full test run on the current MDX showed only append-only identity/count and discovery-alignment failures because this new row had not yet been registered; it was not a passing release run.
+
+Remaining gates include current-byte review receipts, append-only admission preflight, full tests and production build, rollback readiness, active-target HTTP/rendered/image verification, a bounded exact-canonical notification, and a justified completed/postprocessed audit with exact Article 325 page-row plus fresh OTTO dashboard. No private manuscript or specialist PASS by itself satisfies those gates. The historical final-recrawl-verified count stays `321` until its own evidence exists; OTTO pending, generated proposals, and raw technical observations remain separate.

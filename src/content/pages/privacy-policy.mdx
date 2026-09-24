@@ -18,8 +18,8 @@ compliance_signoff:
   no_named_underwriter: true
   has_footer_disclaimer: true
   money_figure_sourced: false
-  reviewed_by: 'mrx_compliance-stage06-initial'
-  reviewed_at: '2026-06-11T00:00:00Z'
+  reviewed_by: 'mrx_compliance-mcp-launch-mrx-ceo-review-20260923'
+  reviewed_at: '2026-09-23T22:20:35Z'
 ---
 
 import Prose from '../../components/prose/Prose.astro';
@@ -29,7 +29,7 @@ import CtaBlock from '../../components/molecules/CtaBlock.astro';
 
 # Privacy Policy
 
-Last updated: September 3, 2026
+Last updated: September 23, 2026
 
 Mineral Rights Xchange ("MRX", "we", "us") respects your privacy. This policy explains what information we collect, how we use it, who we share it with, how long we keep it, and the choices available to you. It applies to mineralrightsxchange.com, Ask Travis and the other fictional MRX AI Guides, private owner accounts and documents, appointment communications, and direct correspondence with MRX.
 
@@ -69,6 +69,16 @@ We share information only as needed to operate the service:
 - **Business transfers.** If MRX is acquired or sells substantially all of its assets, your information may be transferred as part of that transaction; we will notify you before your information becomes subject to a different privacy policy.
 
 Original owner files and raw OCR remain in private Supabase Storage. The website conversation, email and SMS events, AI voice transcripts, and redacted document summaries/status may also be copied into the restricted customer communications record so assigned MRX personnel can review the case in context. Raw document binaries and raw OCR are not copied into the customer communications platform by this website. OCR can reproduce sensitive text present in a file, so owners should avoid uploading Social Security numbers, bank or routing numbers, signatures, or unrelated personal information. We do not share this information with unrelated mineral-rights buyers, marketplaces, or third-party advertisers for their own marketing.
+
+## Public MRX MCP service
+
+The public MRX Model Context Protocol (MCP) service at `https://mrx-public-mcp.vercel.app/mcp` lets compatible AI clients search and retrieve published MRX educational pages. It is separate from Ask Travis, private owner accounts, and document uploads. It cannot read private customer records or submit a review request on your behalf.
+
+The MCP application processes tool queries and requested public URLs transiently. It has no application query database, user accounts, or cookies. Public source content is cached in memory for up to one hour, with refreshes scheduled every 30 minutes while the service is running. This cache contains public website content, not a saved history of your conversations.
+
+Vercel, the hosting provider, receives network metadata and retains operational and security logs. Provider logging and retention are separate from the application's in-memory cache; the cache duration is not a deletion promise for provider logs. Your AI client or model provider also handles your prompts, tool requests, and responses under its own privacy policy and settings.
+
+Do not send personal documents, names, contact details, account numbers, or other private information through the public MCP service. Use general educational questions and the site's designated private channels when an MRX human review requires personal information. See [MRX MCP setup and scope](/ai-assistant/) for connection details.
 
 ## Cookies and analytics
 
