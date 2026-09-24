@@ -2,7 +2,11 @@
 
 Status: **private research draft only**. Not an admitted MRX1000 row, public MDX, published article, or part of the 328 live count. Its title, claims, sources, originality, and legal/compliance wording still require current-byte review. No image has been made.
 
-Proposed title: **Does Louisiana's Office of Mineral Resources Show My Private Mineral Lease?**
+Proposed title: **Can Louisiana OMR Records Prove My Private Mineral Lease?**
+
+Proposed exact title slug: `can-louisiana-omr-records-prove-my-private-mineral-lease`
+
+Proposed distinct in-body phrase: **Louisiana parish conveyance records** (not yet an asset)
 
 Proposed parent pillar: `/learning-center/title-lease-ownership/`
 
@@ -10,7 +14,7 @@ Reader job: distinguish Louisiana's state mineral-lease files from parish convey
 
 ## Direct answer
 
-Do not use the Louisiana Office of Mineral Resources (OMR) or a SONRIS result as a complete index or proof of **your private mineral lease**. The state's [archived description of OMR](https://denr.louisiana.gov/page/divisions) says it manages the state's mineral assets and that its Energy Lands Division maintains **state** mineral-lease ownership data and official **state** lease files. Its [division detail](https://www.denr.louisiana.gov/page/divisions-energy-lands) describes transfers of interests in state leases and SONRIS access to those state files. Those descriptions do not establish whether a particular private lease was recorded, is effective, covers your tract, or gives you a payment right. Louisiana's [R.S. 44:71](https://www.legis.la.gov/legis/Law.aspx?d=99755) identifies a different record-office class: parish offices for conveyances and mortgages, with district-court clerks serving as parish recorders.
+No. Do not treat records described by Louisiana's archived Office of Mineral Resources (OMR) pages, or a SONRIS result by itself, as proof of **your private mineral lease**. The state's [archived description of OMR](https://denr.louisiana.gov/page/divisions) says it manages the state's mineral assets and that its Energy Lands Division maintains **state** mineral-lease ownership data and official **state** lease files. Its [division detail](https://www.denr.louisiana.gov/page/divisions-energy-lands) describes transfers of interests in state leases and SONRIS access to those state files. Those descriptions do not establish whether a particular private lease was recorded, is effective, covers your tract, or gives you a payment right. Louisiana's [R.S. 44:71](https://www.legis.la.gov/legis/Law.aspx?d=99755) identifies a different record-office class: parish offices for conveyances and mortgages, with district-court clerks serving as parish recorders.
 
 This is a distinction between record sources. It does not mean that an OMR record can never mention a private person or that a parish-index result proves title. Keep the actual instrument and its source locator separate from any conclusion about ownership or lease coverage.
 
@@ -18,11 +22,11 @@ This is a distinction between record sources. It does not mean that an OMR recor
 
 OMR's archived site says it administers leasing of state-owned lands and water bottoms. Its Energy Lands Division maintains state mineral-lease files, state-lease ownership/property data, and a docket for the State Mineral and Energy Board. The division's archived description says the Docket and Ownership Section reviews transfers of interests in **state leases**, while its Records Management Section keeps state lease files and describes document/database access through SONRIS. These are useful leads when the question actually involves a state lease or state tract; they are not a universal private-owner title index. [Source: Louisiana OMR divisions](https://denr.louisiana.gov/page/divisions); [Energy Lands detail](https://www.denr.louisiana.gov/page/divisions-energy-lands).
 
-The archive now labels itself the former Department of Energy and Natural Resources. Its notice says the department became the [Department of Conservation and Energy](https://www.dce.louisiana.gov/) in October 2025. We cite the archived OMR descriptions for their stated record scope, not as a claim that any specific SONRIS function or document is available today.
+As verified September 24, 2026, the cited archive's notice said the Department of Energy and Natural Resources became the [Department of Conservation and Energy](https://www.dce.louisiana.gov/) in October 2025, and that agency's home page listed an Office of State Resources. We cite the archived OMR descriptions for their stated record scope, not as a claim that OMR remains the current office name or that any specific SONRIS function or document is available today. Recheck the agency description before release.
 
 ## Where the separate parish question begins
 
-[R.S. 44:71](https://www.legis.la.gov/legis/Law.aspx?d=99755) establishes parish offices for recording conveyances and mortgages and identifies district-court clerks as parish recorders. That law identifies where a parish-record question belongs; it does **not** tell us whether your instrument exists, was recorded correctly, remains effective, or covers an identified mineral interest. A name or property-label match is only a possible record lead. A search that fails to locate a record is not proof that no right or instrument exists.
+[R.S. 44:71](https://www.legis.la.gov/legis/Law.aspx?d=99755) identifies parish offices for recording conveyances and mortgages and states that district-court clerks serve as parish recorders. That statute points to the relevant parish recording-office category; it does **not** tell us whether your instrument exists, was recorded correctly, remains effective, or covers an identified mineral interest. A name or property-label match is only a possible record lead. A search that fails to locate a record is not proof that no right or instrument exists.
 
 If you have a private lease, deed, reservation, or assignment, preserve its exact parties, dates, property description, parish, and any recording reference. Do not substitute a state-lease number, a well map, or a royalty statement for the instrument. If the names or tract descriptions differ, keep the difference visible rather than resolving it yourself from a portal result.
 
