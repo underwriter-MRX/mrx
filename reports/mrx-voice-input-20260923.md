@@ -1,6 +1,6 @@
 # MRX voice input — 2026-09-23
 
-Status: source and protected deployment verified; public promotion pending Cloudflare microphone policy access and release-gate reconciliation. No live activation is claimed. Real desktop Chrome microphone capture, transcription, and Stop were verified in the local preview during the owner-requested retest.
+Status: microphone dictation is live on all active production aliases and verified. The post-release Search Atlas recrawl is queued; existing OTTO pending recommendations remain unresolved. Historical blockers below describe earlier stages and are superseded by the public-release record at the end.
 
 ## Change
 
@@ -48,3 +48,17 @@ Daryl explicitly requested finishing and going live. Existing MRX Google sign-in
 Merged current Article 328 production source `5b20a69a` into the voice branch at `2842224e`. Production rollback baseline is `dpl_64SqSY6F8Cy3staXcUgxrHGF63oG` (`mrx-7f684zura-team-mrx.vercel.app`). All newer articles and MCP setup/privacy changes are preserved.
 
 Integrated verification: 94 unit files / 801 tests passed; 12 voice Chrome integration tests passed. Initial manifest fingerprint failure was a stale generated readiness input; after regenerating readiness and its derived manifest, the full suite passed with no source-test bypass. Initial browser attempts ran before the dev server was ready and failed connection-refused; discarded and rerun after readiness, all 12 passed. Local full build passed 501 rendered SEO pages, 336 articles, 672 image binaries, no sitemap orphans, copy/compliance/authorship/grammar checks. Production-environment build and public UI activation verification are still in progress.
+
+## Public release verified — 2026-09-24
+
+Promoted production deployment `dpl_Ahiy9Yk9qfWmw72R51E1PqQnYCBr`, immutable URL `https://mrx-gs4qkkl0h-team-mrx.vercel.app`, from integrated source `51cebd13` (implementation merge `2842224e`, Article 328 base `5b20a69a`). Vercel remote build passed all five legal receipts, compliance, zero Astro errors/warnings, 501 rendered SEO pages, 336 articles/672 image binaries, authorship and grammar. Rollback: `dpl_64SqSY6F8Cy3staXcUgxrHGF63oG`.
+
+Fresh HTTP checks passed on apex, www (canonical redirect), and mrx-web.vercel.app for homepage, Travis profile, offer review, MCP setup page and Article 328. All serve `AskTravis.CXF8xGqS.js` and self-only microphone policy. Candidate bundle SHA256: `a3e82951f30d65ffebf2c8d850b5344bbcc0648d1f9a379f5ab9eb1d0e3fc1c0`. Article 328 hero and inline bytes match current source exactly. Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User and GPTBot user-agent HTTP probes returned non-challenge 200 bodies; these probes do not prove indexing or actual bot access.
+
+All 12 voice tests passed against the public URL in 58.8 seconds, with mocked recognition/session data and mobile layouts for all six personas. Native Chrome additionally verified the real public microphone permission prompt, actual recording/Listening, explicit Stop releasing capture, and helpful no-speech retry state. No test message was sent. Earlier local native Chrome captured real speech into a draft. No physical phone hardware or spoken-AI-reply test is claimed: the feature is dictation, review and Send.
+
+Source-upload transport failed repeatedly. Git-based remote build correctly failed because only 172 of 321 editorial receipts were in Git. The final complete archive included all 963 local signed review files and current wave 255/256 inputs; it passed the unchanged gates remotely. No approval receipt was fabricated or gate disabled.
+
+Post-release crawl trigger returned queued, already_in_progress=false, sync_complete=false for audit 138239. Existing last completed crawl ended 2026-09-24T05:04:18.126957Z, before this voice release; its 2,454 raw observations are not a post-voice result. The prior OTTO dashboard remained 906 total / 16 deployed / 890 pending. Zero-pending release closeout is not claimed.
+
+Evidence: `outputs/20260923-voice-independent/public-voice-release-http.json`, `public-voice-crawlers-assets.json`, `public-voice-e2e-12.log`, `public-voice-remote-build-deploy.log`, `public-voice-promote.log`, `public-voice-deployment.json`, `public-mobile-voice-listening.png`, `edge-microphone-release.json`.
