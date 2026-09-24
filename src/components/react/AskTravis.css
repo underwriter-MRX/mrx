@@ -361,7 +361,7 @@
 }
 .travis-composer form {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 0.5rem;
 }
 .travis-composer form input {
@@ -388,9 +388,44 @@
   font-size: 1.2rem;
   transition: background 0.15s;
 }
+.travis-composer form .travis-voice-button {
+  min-height: 44px;
+  border: 1px solid #365f7a;
+  background: #fff;
+  color: #173e58;
+}
+.travis-composer form .travis-voice-button:hover:not(:disabled) {
+  background: #edf4f7;
+}
+.travis-composer form .travis-voice-button[aria-pressed='true'] {
+  border-color: #9b2f2f;
+  background: #fff1f1;
+  color: #8a2424;
+  box-shadow: 0 0 0 3px rgba(155, 47, 47, 0.12);
+}
+.travis-voice-button svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
 .travis-composer form button:disabled {
   cursor: not-allowed;
   opacity: 0.38;
+}
+.travis-voice-status {
+  min-height: 1.05rem;
+  margin: 0.38rem 0 0;
+  color: #526775;
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+.travis-voice-status--listening,
+.travis-voice-status--transcribing {
+  color: #173e58;
+  font-weight: 700;
+}
+.travis-voice-status--error {
+  color: #842727;
 }
 .travis-composer__actions {
   display: grid;
@@ -556,4 +591,41 @@
   .travis-quick-replies button {
     transition: none;
   }
+}
+
+.travis-voice-panel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #c2d4df;
+  border-radius: 13px;
+  background: #f0f6fa;
+  color: #173e58;
+  font-size: 0.85rem;
+}
+.travis-voice-panel button {
+  margin-left: auto;
+  min-width: 60px;
+  min-height: 44px;
+  border: 1px solid #365f7a;
+  border-radius: 10px;
+  background: #fff;
+  color: #173e58;
+  cursor: pointer;
+}
+.travis-voice-indicator {
+  color: #9b2f2f;
+}
+.travis-voice-privacy {
+  margin: 0.25rem 0 0;
+  color: #526775;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+.travis-voice-button:focus-visible,
+.travis-voice-panel button:focus-visible {
+  outline: 3px solid #365f7a;
+  outline-offset: 3px;
 }
