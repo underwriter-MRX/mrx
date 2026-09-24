@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { archivePageNumbers } from '../../src/lib/archive-pagination';
+import { ARCHIVE_PAGE_SIZE, archivePageNumbers } from '../../src/lib/archive-pagination';
 import { selectCanonicalArticlesSitemap } from '../../scripts/build-mrx-1000-readiness-matrix.mjs';
 
 const articleSitemapCandidates = [
@@ -73,9 +73,13 @@ describe('canonical sitemap discovery', () => {
       ) as { entries: Array<{ identity_state: string }> }
     ).entries.filter((entry) => entry.identity_state === 'admitted_quality_gated').length;
     expect(publicPostCount).toBe(canonicalPublicRouteCount + appendOnlyAdmittedCount);
-    expect(archivePageNumbers(publicPostCount)).toEqual([
-      2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
-    ]);
+    const lastPopulatedPage = Math.ceil(publicPostCount / ARCHIVE_PAGE_SIZE);
+    expect(archivePageNumbers(publicPostCount)).toEqual(
+      Array.from({ length: lastPopulatedPage - 1 }, (_, index) => index + 2),
+    );
+    expect(archivePageNumbers((lastPopulatedPage - 1) * ARCHIVE_PAGE_SIZE)).not.toContain(
+      lastPopulatedPage,
+    );
 
     const continuationRoute = readFileSync(
       join(process.cwd(), 'src', 'pages', 'blog', 'category', '[category]', 'page', '[page].astro'),

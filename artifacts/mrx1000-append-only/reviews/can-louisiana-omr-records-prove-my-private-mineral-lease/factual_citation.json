@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1123",
+  "slug": "can-louisiana-omr-records-prove-my-private-mineral-lease",
+  "source_path": "src/content/posts/can-louisiana-omr-records-prove-my-private-mineral-lease.mdx",
+  "input_body_sha256": "297e010b5b24ad244544513be045cc452e66c69b8b98571a253044cd3d130b40",
+  "two_image_manifest_sha256": "7c9aa942325a0d28ba376f15ff99e840dde277af6612e3cb1d0cc857e80a8770",
+  "private_full_source_sha256": "296705fa004375e7f9c20b676de3c59a558a3164b801b9779a5414df09e72056",
+  "review_method": "codex_current_public_claim_to_primary_source_crosswalk",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte factual and citation review",
+  "advisory_review": "The direct mrx_research attempt did not return a verdict and is not counted as a PASS. Codex independently reopened the four cited official sources on 2026-09-24.",
+  "findings": [
+    "The archived Louisiana OMR divisions page describes administration of state mineral assets and leases and state lease ownership data and files; the article does not claim the archive is an exhaustive private-title database.",
+    "The archived Energy Lands detail describes transfers of interests in state leases, state lease files, and historical SONRIS access. The article does not promise a current portal function or claim a particular owner document exists there.",
+    "Louisiana R.S. 44:71 identifies parish conveyance and mortgage offices and district-court clerks as parish recorders. The article explicitly rejects any inference that this statute proves a particular instrument, title, validity, priority, or tract coverage.",
+    "The current Louisiana Department of Conservation and Energy site supports the dated agency-name note; the article labels OMR descriptions as archived and date-stamps the check.",
+    "No case-specific owner document, lease, portal result, tract, payment, or offer was examined. Missing search results are not converted into absence-of-rights conclusions. The short FAQ restates the body and introduces no separate unsupported claim."
+  ]
+}

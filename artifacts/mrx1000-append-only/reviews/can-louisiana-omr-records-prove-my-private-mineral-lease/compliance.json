@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1123",
+  "slug": "can-louisiana-omr-records-prove-my-private-mineral-lease",
+  "source_path": "src/content/posts/can-louisiana-omr-records-prove-my-private-mineral-lease.mdx",
+  "input_body_sha256": "297e010b5b24ad244544513be045cc452e66c69b8b98571a253044cd3d130b40",
+  "two_image_manifest_sha256": "7c9aa942325a0d28ba376f15ff99e840dde277af6612e3cb1d0cc857e80a8770",
+  "private_full_source_sha256": "296705fa004375e7f9c20b676de3c59a558a3164b801b9779a5414df09e72056",
+  "review_method": "codex_current_public_source_compliance_and_image_byte_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte internal compliance review",
+  "advisory_review": "Read-only mrx_compliance internal source-scope PASS on exact private manuscript SHA 296705fa004375e7f9c20b676de3c59a558a3164b801b9779a5414df09e72056, session 20260924_094858_5dc570. This is not Louisiana counsel certification.",
+  "findings": [
+    "The article disclaims owner-specific title, lease validity, tract coverage, payment, valuation, and signing conclusions; conflicting or missing instruments go to a qualified Louisiana-licensed mineral-title attorney.",
+    "The text treats OMR/SONRIS and parish hits as possible locators, not proof; missing results are not evidence of no right. The archive and current agency name are distinguished and date-stamped.",
+    "No unreviewed servitude, prescription, unit, priority, lease-effect, or remedy opinion is made. Sensitive private-document sharing is cautioned and MRX's possible later economic interest is disclosed.",
+    "The canonical 1200x630 WebP is specified for hero and social metadata with the exact title; the separate 1200x675 in-body WebP has different bytes and the locked supporting phrase. Both binaries match the creative manifest and passed visual and OCR inspection.",
+    "Focused pillar, visible-copy, and heading checks passed. Local legal-release script reported that its environment-specific enforcement was unavailable; full build, rendered and active-host release checks are still required separately."
+  ]
+}

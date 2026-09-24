@@ -111,6 +111,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave256-creative-qa/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave256-selection-decision-2026-09-24.md",
       "selection_decision_sha256": "d98d618b3f27fc3403ba1d425e2b4eb1cd2a797c27309d8bda77328770f0080a"
+    },
+    {
+      "selection_rank": 329,
+      "program_row_id": "MRX1000-1123",
+      "canonical_title": "Can Louisiana OMR Records Prove My Private Mineral Lease?",
+      "canonical_slug": "can-louisiana-omr-records-prove-my-private-mineral-lease",
+      "canonical_url": "https://mineralrightsxchange.com/blog/can-louisiana-omr-records-prove-my-private-mineral-lease/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave257-creative-qa/can-louisiana-omr-records-prove-my-private-mineral-lease/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md",
+      "selection_decision_sha256": "54b6605a252b4fcefb13793107eb395ceac970599aa34e11a3fe3f8ac8626702"
     }
   ]
 }

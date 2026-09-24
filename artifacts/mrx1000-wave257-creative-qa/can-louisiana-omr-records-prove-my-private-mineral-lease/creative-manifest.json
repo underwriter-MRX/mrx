@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-24T16:59:53.672Z",
+  "article": {
+    "title": "Can Louisiana OMR Records Prove My Private Mineral Lease?",
+    "keyword": "Louisiana parish conveyance records",
+    "generation_prompts": {
+      "hero": "Original text-free photorealistic-natural editorial still life: a quiet archival reading-room desk with one plain navy state-file folder and a separate unmarked aged ledger on the left, soft humid southern daylight, and dark negative space on the right. No people, readable text, numbers, logos, seals, maps, signatures, ownership or title conclusion.",
+      "inline": "Distinct text-free strict-overhead pale archival flat lay: separate generic muted-blue and cream document stacks with a blank index card and magnifying glass above an uncluttered lower caption zone. No people, readable text, numbers, logos, seals, maps, signatures, ownership or title conclusion."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave257-creative-sources/louisiana-omr-parish-records-hero-base.png",
+      "source_sha256": "d61775edf4f02fc05879e4a2e729d9c16e9fc3aca633d5fa6c0e5bf132d18eb6",
+      "public_path": "/assets/articles/hero/can-louisiana-omr-records-prove-my-private-mineral-lease.webp",
+      "sha256": "f6adadf78a5c7995af56361b1f557486eddb6a74b2eab90e95c4b4f26e8488f2",
+      "perceptual_hash": "1111000000000000111100000000000001110000000000001111000011111000111100001111100011101110111110001110000011111100100000000000000010000000000000001111000000000000111100000000000010011000000000001000000000000000111100000000000000111000000000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "Can Louisiana OMR Records Prove My Private Mineral Lease?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Can Louisiana OMR Records Prove My Private Mineral Lease?",
+        "actual": "Can Louisiana OMR\nRecords Prove My\nPrivate Mineral Lease?",
+        "normalized": "can louisiana omr records prove my private mineral lease",
+        "normalized_expected": "can louisiana omr records prove my private mineral lease",
+        "normalized_actual": "can louisiana omr records prove my private mineral lease",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave257-creative-sources/louisiana-omr-parish-records-inline-base.png",
+      "source_sha256": "67780a753585c55ad25b7484484f604faad962a204d9f1c46816755a36e816b4",
+      "public_path": "/assets/articles/inline/can-louisiana-omr-records-prove-my-private-mineral-lease/louisiana-parish-conveyance-records.webp",
+      "sha256": "bd121eb5d23872a98b7a228b42d9386f194051769eafb503bf9459145c6d418d",
+      "perceptual_hash": "1111111111111111011111111111111001111111111111100010111101111111000010111111111111001011111111111110101111111110111000111111111011000011111111001111111111111110111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Louisiana parish conveyance records",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Louisiana parish conveyance records",
+        "actual": "Louisiana parish\nconveyance records",
+        "normalized": "louisiana parish conveyance records",
+        "normalized_expected": "louisiana parish conveyance records",
+        "normalized_actual": "louisiana parish conveyance records",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

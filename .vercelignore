@@ -38,6 +38,9 @@ docs/governance/*
 !docs/governance/mrx1000-wave252-selection-decision-2026-09-23.md
 !docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md
 !docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md
+!docs/governance/mrx1000-wave255-selection-decision-2026-09-24.md
+!docs/governance/mrx1000-wave256-selection-decision-2026-09-24.md
+!docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -63,6 +66,15 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter
 !artifacts/mrx1000-append-only/reviews/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/*.json
 !artifacts/mrx1000-append-only/reviews/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer
+!artifacts/mrx1000-append-only/reviews/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/*.json
+!artifacts/mrx1000-append-only/reviews/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well
+!artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/*.json
+!artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/can-louisiana-omr-records-prove-my-private-mineral-lease
+!artifacts/mrx1000-append-only/reviews/can-louisiana-omr-records-prove-my-private-mineral-lease/*.json
+!artifacts/mrx1000-append-only/reviews/can-louisiana-omr-records-prove-my-private-mineral-lease/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
@@ -83,6 +95,18 @@ artifacts/mrx1000-wave253-creative-qa/*
 artifacts/mrx1000-wave254-creative-qa/*
 !artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter
 !artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json
+!artifacts/mrx1000-wave255-creative-qa
+artifacts/mrx1000-wave255-creative-qa/*
+!artifacts/mrx1000-wave255-creative-qa/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer
+!artifacts/mrx1000-wave255-creative-qa/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/creative-manifest.json
+!artifacts/mrx1000-wave256-creative-qa
+artifacts/mrx1000-wave256-creative-qa/*
+!artifacts/mrx1000-wave256-creative-qa/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well
+!artifacts/mrx1000-wave256-creative-qa/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/creative-manifest.json
+!artifacts/mrx1000-wave257-creative-qa
+artifacts/mrx1000-wave257-creative-qa/*
+!artifacts/mrx1000-wave257-creative-qa/can-louisiana-omr-records-prove-my-private-mineral-lease
+!artifacts/mrx1000-wave257-creative-qa/can-louisiana-omr-records-prove-my-private-mineral-lease/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews
