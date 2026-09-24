@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1120",
+  "slug": "how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter",
+  "source_path": "src/content/posts/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter.mdx",
+  "input_body_sha256": "77a1edc6f0dd2c6f5cc0e6197ae6997c7a00959bed2d69388209dff850ad4aac",
+  "two_image_manifest_sha256": "4e7d8a300666e6dd2574c4e366f44890c087444efe3a1d86b620dff4b7fca845",
+  "private_full_source_sha256": "640cc53cc4404cb56d9e1147268878ab9f0be8a3580d6e10d9a13c2a1d526d2b",
+  "review_method": "direct_current_public_source_review_after_initial_hold_then_targeted_private_faq_pass_extends",
+  "executive_admission_session": "20260923_174120_cd48d2",
+  "executive_admission_token": "MRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION",
+  "executive_admission_detail": "Exact corrected-byte public-source admission into ordinary release gates only; no deployment or final-recrawl verification",
+  "capability": "editorial",
+  "named_specialist": "mrx_copy",
+  "specialist_session": "20260923_173852_542b5d",
+  "provenance_note": "Initial public hash received HOLD for duplicate/mismatched FAQs. Read-only reviewer verified corrected public, private, and manifest hashes, exact five-question/five-answer parity, template single FAQ rendering, answer-first originality, title and pillar/secondary link intent, and returned PASS-EXTENDS. Codex independently checked template and source hashes.",
+  "findings": [
+    "The five private FAQ questions and answers exactly match public frontmatter, and ArticleLayout renders them once; the MDX body has no duplicate FAQ section.",
+    "The specific West Virginia two-document crosswalk supports the title/ownership pillar without asserting ownership, value, or ChatGPT citation."
+  ]
+}

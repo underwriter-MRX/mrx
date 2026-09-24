@@ -72,6 +72,13 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(ignore).toContain(
       '!artifacts/mrx1000-append-only/reviews/how-to-check-federal-mineral-reservations-in-wyoming/*.json.sha256',
     );
+    expect(ignore).toContain('!docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md');
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json',
+    );
+    expect(ignore).toContain(
+      '!artifacts/mrx1000-append-only/reviews/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/*.json.sha256',
+    );
     expect(stage).toContain('docs/governance/mrx1000-wave250-selection-decision-2026-09-23.md');
     expect(stage).toContain(
       'artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json',
@@ -88,12 +95,23 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(stage).toContain(
       'artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json',
     );
+    expect(stage).toContain('docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md');
+    expect(stage).toContain(
+      'artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json',
+    );
     expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
   });
   it('binds the immutable historical JSON/CSV and admits only the append-only identities', () => {
     const result = check(addendum);
     expect(result.findings).toEqual([]);
-    expect(result.admittedRows).toMatchObject([
+    expect(result.admittedRows).toHaveLength(addendum.entries.length);
+    expect(result.admittedRows.map((row) => [row.program_row_id, row.canonical_slug])).toEqual(
+      addendum.entries.map((entry: { program_row_id: string; canonical_slug: string }) => [
+        entry.program_row_id,
+        entry.canonical_slug,
+      ]),
+    );
+    expect(result.admittedRows.slice(0, 4)).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',
@@ -131,7 +149,14 @@ describe('MRX1000 append-only identity addendum', () => {
     promoted.entries[newestIndex].identity_state = 'admitted_quality_gated';
     const result = check(promoted);
     expect(result.findings).toEqual([]);
-    expect(result.admittedRows).toMatchObject([
+    expect(result.admittedRows).toHaveLength(addendum.entries.length);
+    expect(result.admittedRows.map((row) => [row.program_row_id, row.canonical_slug])).toEqual(
+      addendum.entries.map((entry: { program_row_id: string; canonical_slug: string }) => [
+        entry.program_row_id,
+        entry.canonical_slug,
+      ]),
+    );
+    expect(result.admittedRows.slice(0, 4)).toMatchObject([
       {
         program_row_id: 'MRX1000-1116',
         canonical_slug: 'oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes',

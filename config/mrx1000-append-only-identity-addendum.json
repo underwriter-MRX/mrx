@@ -66,6 +66,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave253-creative-qa/how-to-check-federal-mineral-reservations-in-wyoming/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave253-selection-decision-2026-09-23.md",
       "selection_decision_sha256": "a1f8402f9f4162392f12367a5cb4492ab4f9517a4323a12d59a70dccd7367a08"
+    },
+    {
+      "selection_rank": 326,
+      "program_row_id": "MRX1000-1120",
+      "canonical_title": "How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter",
+      "canonical_slug": "how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_topical_map_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md",
+      "selection_decision_sha256": "fad9be1ce5869fa994b6b160b3b464c59fd78718e3b11ff9577736ca0f480d83"
     }
   ]
 }
