@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1124",
+  "slug": "can-pennsylvania-dep-production-data-verify-my-royalty-check",
+  "source_path": "src/content/posts/can-pennsylvania-dep-production-data-verify-my-royalty-check.mdx",
+  "input_body_sha256": "a9801522585a119df10b5cf0ce512753b4197984ce74cf618de1b0c457ddff68",
+  "two_image_manifest_sha256": "43a7a8770759d904fbbc99bd9e2a52fd0fda4518d6e172bd37409b6e02aeacde",
+  "private_full_source_sha256": "737b21091df7c02514f00174b1875ac5a9eccdcbec7e350670fbe2bb2803a3c7",
+  "review_method": "codex_current_public_source_compliance_and_image_byte_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte internal compliance review",
+  "advisory_review": "Read-only mrx_compliance Pennsylvania source-scope PASS-EXTENDS in session 20260924_154919_2a19bd for the exact private manuscript; this is not Pennsylvania counsel certification.",
+  "findings": [
+    "The opening and visible disclaimer distinguish operator-reported well data from private owner entitlement, payment, lease coverage, underpayment and value; there is no calculation, accusation, title opinion or engineering conclusion.",
+    "The dated DEP reporting-cadence and data-dictionary statements are source-attributed and cannot diagnose a particular check. The suggested payor question is bounded to identifiers, periods and supporting allocation/accounting records.",
+    "Private-statement details are not requested through MRX; readers are warned against public upload or untrusted channels. The text discloses MRX's potential later economic interest and states it is not an independent royalty auditor.",
+    "The 1200x630 exact-title hero specified for page and social metadata matches the creative manifest; the distinct 1200x675 inline WebP carries the declared keyword and different bytes. Local OCR and visual inspection passed.",
+    "A qualified Pennsylvania professional is the next step for a disputed private right. This internal source-scope PASS is not a licensed legal opinion or release verification; tests, rendered build and live-host checks remain separate gates."
+  ]
+}

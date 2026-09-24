@@ -126,6 +126,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave257-creative-qa/can-louisiana-omr-records-prove-my-private-mineral-lease/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md",
       "selection_decision_sha256": "54b6605a252b4fcefb13793107eb395ceac970599aa34e11a3fe3f8ac8626702"
+    },
+    {
+      "selection_rank": 330,
+      "program_row_id": "MRX1000-1124",
+      "canonical_title": "Can Pennsylvania DEP Production Data Verify My Royalty Check?",
+      "canonical_slug": "can-pennsylvania-dep-production-data-verify-my-royalty-check",
+      "canonical_url": "https://mineralrightsxchange.com/blog/can-pennsylvania-dep-production-data-verify-my-royalty-check/",
+      "pillar": "oil-and-gas-royalties",
+      "cluster": "royalties-owner-operations",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_topical_map_primary_source_refinement",
+      "source_map_id": 266118,
+      "creative_manifest_path": "artifacts/mrx1000-wave258-creative-qa/can-pennsylvania-dep-production-data-verify-my-royalty-check/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave258-selection-decision-2026-09-24.md",
+      "selection_decision_sha256": "ccdee89f7f04ba541b416ad97ef445157474dc2d6deef88c8235538a47363b23"
     }
   ]
 }

@@ -75,6 +75,8 @@ copy_parent \
 copy_parent \
   docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md
 copy_parent \
+  docs/governance/mrx1000-wave258-selection-decision-2026-09-24.md
+copy_parent \
   artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json
@@ -90,6 +92,8 @@ copy_parent \
   artifacts/mrx1000-wave256-creative-qa/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave257-creative-qa/can-louisiana-omr-records-prove-my-private-mineral-lease/creative-manifest.json
+copy_parent \
+  artifacts/mrx1000-wave258-creative-qa/can-pennsylvania-dep-production-data-verify-my-royalty-check/creative-manifest.json
 
 mkdir -p "$stage_dir/artifacts/mrx1000-append-only/reviews"
 rsync -a \

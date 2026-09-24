@@ -27,7 +27,7 @@ Generated from Astro content at build time.
 - [Learning Center](https://mineralrightsxchange.com/learning-center/)
 - [MRX Editorial Team](https://mineralrightsxchange.com/authors/mrx-editorial-team/)
 
-## Published article URLs (337)
+## Published article URLs (338)
 
 ### Competing offers
 
@@ -69,6 +69,7 @@ Generated from Astro content at build time.
 
 ### Mineral rights
 
+- [Can Pennsylvania DEP Production Data Verify My Royalty Check?](https://mineralrightsxchange.com/blog/can-pennsylvania-dep-production-data-verify-my-royalty-check/)
 - [Can Louisiana OMR Records Prove My Private Mineral Lease?](https://mineralrightsxchange.com/blog/can-louisiana-omr-records-prove-my-private-mineral-lease/)
 - [Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?](https://mineralrightsxchange.com/blog/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/)
 - [How to Check a Texas Mineral Ownership Report Before Comparing a Buyer Offer](https://mineralrightsxchange.com/blog/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/)
