@@ -1619,7 +1619,7 @@ function buildCheck() {
         );
       } else if (
         entry.identity_state === 'admitted_quality_gated' &&
-        !hasAppendOnlyAdmissionAuthority(readFileSync(decisionPath, 'utf8'))
+        !hasAppendOnlyAdmissionAuthority(readFileSync(decisionPath, 'utf8'), entry)
       ) {
         blocking.push(
           `Identity addendum decision has not authorized publication for ${entry.canonical_slug ?? '(unknown)'}.`,

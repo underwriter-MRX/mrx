@@ -227,7 +227,7 @@ describe('MRX1000 append-only identity addendum', () => {
     );
   });
 
-  it('requires an explicit publication disposition and executive verdict for an admitted identity', () => {
+  it('requires an explicit publication disposition and executive or standing-owner authority for an admitted identity', () => {
     const admittedDecision = bytes(addendum.entries[0].selection_decision_path).toString('utf8');
     expect(hasAppendOnlyAdmissionAuthority(admittedDecision)).toBe(true);
     expect(
@@ -250,6 +250,27 @@ describe('MRX1000 append-only identity addendum', () => {
         '# Decision\nMRX_CEO_DECISION: APPROVE_FOR_PUBLIC_ADMISSION\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n',
       ),
     ).toBe(true);
+    const ownerAuthority =
+      '# Decision\nOWNER_ARTICLE_AUTHORITY: APPROVE_PUBLIC_ADMISSION MRX1000-1122 RANK-328\n- Authority source: `AGENTS.md MRX Article No-Approval Execution Authority — Owner Directive 2026-08-14`\n- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`\n';
+    expect(hasAppendOnlyAdmissionAuthority(ownerAuthority)).toBe(true);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority, {
+        program_row_id: 'MRX1000-1122',
+        selection_rank: 328,
+      }),
+    ).toBe(true);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority, {
+        program_row_id: 'MRX1000-1123',
+        selection_rank: 329,
+      }),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority.replace('MRX1000-1122 RANK-328', 'any article')),
+    ).toBe(false);
+    expect(
+      hasAppendOnlyAdmissionAuthority(ownerAuthority.replace('Owner Directive 2026-08-14', 'unknown source')),
+    ).toBe(false);
   });
 
   it('refuses to run the legacy ledger-rewriting admission helper for wave 250', () => {
