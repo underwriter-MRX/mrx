@@ -1,6 +1,6 @@
 # MRX voice input — 2026-09-23
 
-Status: source and protected deployment verified; public promotion pending Cloudflare microphone policy access and release-gate reconciliation. No live activation or real-device audio success is claimed.
+Status: source and protected deployment verified; public promotion pending Cloudflare microphone policy access and release-gate reconciliation. No live activation is claimed. Real desktop Chrome microphone capture, transcription, and Stop were verified in the local preview during the owner-requested retest.
 
 ## Change
 
@@ -16,8 +16,8 @@ The Vercel source policy permits microphone=(self), retaining camera=() and geol
 - Full unit suite: 93 files, 800 tests passed.
 - Full local build:vercel passed all source/rendered copy, compliance, article evidence, image, SEO, authorship, and grammar checks; Astro diagnostics: zero errors and zero warnings (31 hints).
 - Preserved existing article corpus: 332 articles, 664 image binaries, 495 rendered SEO pages, zero sitemap orphans. Source base 31f72f6879b1eef413ff0d0917e419f75f15448a preserves Article 324.
-- Inspected the saved 390×844 mobile listening screenshot. Synthetic recognition events test UI integration; physical audio capture and recognition-service availability remain real-device checks.
-- Local legal secrets are unavailable, so local build does not prove legal-signoff enforcement; a production-environment remote build must verify the five existing approval receipts before promotion.
+- Inspected the saved 390×844 mobile listening screenshot. Synthetic recognition events test UI integration; actual desktop Chrome audio capture and speech recognition subsequently passed in the local preview; physical phone testing remains outstanding.
+- Local legal secrets are unavailable, so local build does not prove legal-signoff enforcement; the subsequent production-environment remote build verified all five existing approval receipts, as recorded below.
 - Before release, recheck active aliases and rollback identity. Observed baseline is dpl_9fonekhTtMaucu1mntMbPBa2JRFu, with apex, www and mrx-web.vercel.app aliases.
 - Search Atlas audit 138239 completed/postprocessed before this voice release. Last independently reported OTTO dashboard has 906 total, 16 approved/deployed, 890 pending. Do not equate that with raw technical findings or deploy unreviewed recommendations to obtain zero.
 
@@ -34,3 +34,9 @@ After READY, fresh Vercel inspection still resolves mrx-web.vercel.app to baseli
 A dedicated normal Chrome window is open at https://dash.cloudflare.com/login for the owner. An asynchronous request asks Daryl to sign in to the account managing mineralrightsxchange.com. API token scope is insufficient for Workers or header-rule edits; no credential should be pasted into chat. Preserve the other tasks' Google-password and incognito-signup windows. Kanban t_ded49a4d remains blocked against duplicate dispatch; Codex owns this release lane.
 
 Upload recovery: the first archive upload and first ordinary upload failed with network fetch errors. A subsequent ordinary upload reused stored hashes, uploaded only eight remaining files, and completed. The large remaining file was an existing planning manifest; no source, evidence, or release gate was removed to work around the network failure.
+
+## Owner-requested retest and resumed live check
+
+The 12 voice integration tests passed again. In native Chrome at localhost:4397, the microphone button opened the expected browser permission prompt. Allow this time started actual microphone recording and the Listening panel. Stop ended recording and recognized speech appeared in the editable draft. No message was sent; the test draft was cleared. The speech contents were not retained in this report. This is desktop speech-to-text evidence, not a physical-phone or spoken-AI-reply test. Detailed record: outputs/20260923-voice-independent/requested-retest-summary.md.
+
+On resuming this task, a fresh apex HTTP GET still returned microphone=() and AskTravis.D-sCNo2h.js. The active public site has advanced beyond the original voice base. Coordinate with the article release owner and integrate current production source before any promotion; do not promote the older protected voice artifact over newer articles and MCP changes.
