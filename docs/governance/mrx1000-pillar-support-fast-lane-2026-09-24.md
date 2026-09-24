@@ -2,6 +2,10 @@
 
 Purpose: increase publication throughput without treating generated titles, crawler eligibility, or an IndexNow receipt as proof of search ranking or ChatGPT citation. Codex remains the sole writer of the verified release worktree.
 
+## Owner stop condition — September 23, 2026
+
+Stop new MRX1000 article production at **350 published, live, independently release-verified MRX1000 articles**. Count neither working drafts nor unrelated site posts. The separate final-recrawl-verified ledger may lag while Search Atlas processes a crawl; its lag does not change the live publication count or authorize article 351. Finish the release verification and durable evidence for article 350, then end the recurring production task without archiving this workspace. Before each release, compute the remaining slots and do not ship a batch that crosses 350. The owner can explicitly change this ceiling later; no article-count waiting period is a quality gate below it.
+
 ## Select by answer gap, not title count
 
 For each candidate, lock a named primary pillar, one narrow owner question, an answer object, and at least one useful reciprocal pillar/support link before drafting. Screen the live corpus for the same answer in existing guides. Reject state-name swaps, broad duplicates, unsupported claims, and topics whose source role cannot be explained. Use Search Atlas topical maps as idea inventories; demand and generated text are not approval. Record the source date and what each primary source can and cannot establish.
