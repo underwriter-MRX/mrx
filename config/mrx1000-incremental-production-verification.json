@@ -1,10 +1,10 @@
 {
   "artifact_type": "mrx1000_incremental_post_release_verification",
-  "verified_at_utc": "2026-09-24T14:29:34Z",
+  "verified_at_utc": "2026-09-24T21:40:03Z",
   "historical_canonical_ledger_sha256": "97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6",
   "baseline_release_10_verified_count": 320,
-  "incremental_final_recrawl_verified_count": 8,
-  "current_final_recrawl_verified_count": 328,
+  "incremental_final_recrawl_verified_count": 9,
+  "current_final_recrawl_verified_count": 329,
   "articles": [
     {
       "program_row_id": "MRX1000-0454",
@@ -173,7 +173,28 @@
       "page_in_xml_sitemap": true,
       "page_linked": true,
       "page_h1": "Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?"
+    },
+    {
+      "program_row_id": "MRX1000-1123",
+      "slug": "can-louisiana-omr-records-prove-my-private-mineral-lease",
+      "canonical_url": "https://mineralrightsxchange.com/blog/can-louisiana-omr-records-prove-my-private-mineral-lease/",
+      "deployment_id": "dpl_GjWX8p9d4FLVDmFooXuNqSwt8hLP",
+      "deployment_url": "https://mrx-4cmlxvyke-team-mrx.vercel.app",
+      "production_result": "PASS",
+      "audit_id": 138239,
+      "audit_started_at": "2026-09-24T17:47:16.004330Z",
+      "audit_completed_at": "2026-09-24T18:58:37.248938Z",
+      "crawl_state": "completed",
+      "postprocessing_status": "completed",
+      "is_terminal": true,
+      "should_repoll": false,
+      "page_explorer_row_id": 106593780,
+      "page_http_status": 200,
+      "page_indexable": true,
+      "page_in_xml_sitemap": true,
+      "page_linked": true,
+      "page_h1": "Can Louisiana OMR Records Prove My Private Mineral Lease?"
     }
   ],
-  "note": "The completed September 24 post-release audit and exact Page Explorer rows establish crawler visibility for Articles 322-328, not Google indexing, answer-engine citation, ownership, conversion, or revenue. The origin of the earlier provider-side audit recovery is unknown."
+  "note": "The completed September 24 post-release audits and exact Page Explorer rows establish crawler visibility for Articles 322-329, not Google indexing, answer-engine citation, ownership, conversion, or revenue. The origin of the earlier provider-side audit recovery is unknown."
 }
