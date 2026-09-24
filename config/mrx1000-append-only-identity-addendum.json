@@ -81,6 +81,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave254-selection-decision-2026-09-24.md",
       "selection_decision_sha256": "fad9be1ce5869fa994b6b160b3b464c59fd78718e3b11ff9577736ca0f480d83"
+    },
+    {
+      "selection_rank": 327,
+      "program_row_id": "MRX1000-1121",
+      "canonical_title": "How to Check a Texas Mineral Ownership Report Before Comparing a Buyer Offer",
+      "canonical_slug": "how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 266118,
+      "creative_manifest_path": "artifacts/mrx1000-wave255-creative-qa/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave255-selection-decision-2026-09-24.md",
+      "selection_decision_sha256": "89dde55d2e822eab384716035cd63cd0878da76d5e5bb42135b2cca595bc95e0"
     }
   ]
 }

@@ -27,7 +27,7 @@ Generated from Astro content at build time.
 - [Learning Center](https://mineralrightsxchange.com/learning-center/)
 - [MRX Editorial Team](https://mineralrightsxchange.com/authors/mrx-editorial-team/)
 
-## Published article URLs (334)
+## Published article URLs (335)
 
 ### Competing offers
 
@@ -69,6 +69,7 @@ Generated from Astro content at build time.
 
 ### Mineral rights
 
+- [How to Check a Texas Mineral Ownership Report Before Comparing a Buyer Offer](https://mineralrightsxchange.com/blog/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/)
 - [How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter](https://mineralrightsxchange.com/blog/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/)
 - [How to Check Federal Mineral Reservations in Wyoming](https://mineralrightsxchange.com/blog/how-to-check-federal-mineral-reservations-in-wyoming/)
 - [North Dakota Mineral Rights Probate Deeds: Form 11 vs. Form 12](https://mineralrightsxchange.com/blog/north-dakota-mineral-rights-probate-deeds-form-11-vs-form-12/)
