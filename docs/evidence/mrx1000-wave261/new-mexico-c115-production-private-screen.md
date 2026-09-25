@@ -1,6 +1,6 @@
 # Private candidate screen: New Mexico C-115 well-production retrieval
 
-Status: **source-screened candidate only** (2026-09-25 UTC). No admitted MRX1000 row, public MDX, image, published article, IndexNow submission, or Search Atlas recrawl. Article 332 remains live but outside the owner's independently verified published count while its Chrome presentation check is unresolved; that count stays 331.
+Status: **source-screened candidate only** (2026-09-25 UTC). No admitted MRX1000 row, public MDX, image, published article, IndexNow submission, or Search Atlas recrawl. Article 332 subsequently passed its Chrome presentation check and the independently verified published count is 332; this private candidate is not included.
 
 ## Reader job and pillar
 
@@ -32,7 +32,7 @@ Potential structure: direct answer; exact API and month precondition; current OC
 
 ## Open gates
 
-- Verify the current read-only OCD Well Search and production/Excel controls without using a private owner's record or accepting an operator submission flow. Recheck whether the current manual's menu path still matches the live public UI.
+- Verify the current read-only OCD Well Search and production/Excel controls without using a private owner's record or accepting an operator submission flow. Recheck whether the current manual's menu path still matches the live public UI. On a 2026-09-25 source recheck, the official OCD Permitting link redirected to a **Human Verification Required** screen before the interface; do not bypass it or claim the live controls were seen. The official statistics page and C-115 manual remain readable and support the source-labeled route and timing, but a present-day interactive walkthrough is still unavailable.
 - Compare the complete proposed answer with Article 330, the royalty-statement decoder, the royalties pillar and other production-record posts to prevent a state-name duplicate.
 - Draft privately; run current-byte New Mexico factual/citation, legal/compliance, editorial and originality review. No attorney or payment-auditor opinion is implied.
 - Only after a unique title and article admission: exact-title unique hero/share and a distinct phrase-bearing in-body image, focused pillar guard, full tests/build, newest active production baseline, every active-host HTTP/asset/Chrome/MCP proof, then justified notification and post-release audit/dashboard/exact-row gates. The historical release-10 canonical JSON/CSV remain immutable. No new article consumes a slot until independently live verified.
