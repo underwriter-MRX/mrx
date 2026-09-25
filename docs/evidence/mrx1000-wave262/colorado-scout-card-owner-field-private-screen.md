@@ -2,7 +2,7 @@
 
 Status: source-screened **candidate only** (2026-09-25 UTC). Not an admitted MRX1000 row, public MDX, image, published article, notification, or recrawl. Verified published count remains 332. Do not treat this as an approved Article 333.
 
-A private, unreviewed manuscript now exists at `colorado-scout-card-owner-field-private-manuscript.md`, SHA-256 `a4c55a5913543287fac38bd6587efc2a0857da9ecc1954bf73a21062eda8b174`. It is not a release packet.
+A private, unadmitted manuscript now exists at `colorado-scout-card-owner-field-private-manuscript.md`, current SHA-256 `457d1d2aa7cf6c065bcdcb4c41349da985f1d0391e32a9b5b7183db267ed7d6f`. It is not a release packet. The September 25 source-scope review narrowed its opening to observed card fields and explicitly marks the current Yes/No data lineage unknown; current ECMC field guidance and independent editorial/legal-compliance gates remain open.
 
 ## Reader job and pillar
 
@@ -33,3 +33,11 @@ Full-body search of `src/content/posts` found no `COGIS`, `ECMC`, `Surface Miner
 5. Only after admission: finalize a unique title; create the exact-title hero/share and a materially distinct exact-phrase in-body image; run focused and full tests, typecheck and production build; preserve latest voice/source baseline; verify every active host with HTTP, image bytes, Chrome render, sitemap/reciprocal pillar and MCP. Then use at most one justified notification/recrawl and require exact postprocessed Page Explorer row before advancing the separate recrawl ledger.
 
 No new paid capacity, public write, OTTO action, IndexNow submission, or Search Atlas recrawl was initiated by this private screen.
+
+## September 25 current-byte source-scope review
+
+The [ECMC No/FEE/FEE card](https://ecmc.state.co.us/cogisdb/Facility/FacilityDetail?api=12319839), [ECMC Yes/FEE/FEE card](https://ecmc.state.co.us/cogisdb/Facility/FacilityDetail?api=12331228), and [ECMC No/STATE/STATE card](https://ecmc.state.co.us/cogisdb/Facility/FacilityDetail?api=00507593) reopened directly on September 25. Their visible permit-section values support the display comparison; none identifies the reader or explains present-day field data lineage. The [historical Form 2 instructions](https://ecmc.state.co.us/forms/instructions/Form2_inst.pdf) separately describe ownership *types* and the surface/mineral-owner question, but are not current field guidance. Searches of ECMC's current public site did not locate a current field definition or data dictionary. Absence from those searches is not proof that none exists. The manuscript now says the public card does not explain how its Yes/No value was determined and distinguishes the displayed status date from the date of viewing.
+
+The [Weld recording FAQs](https://www.weld.gov/Government/Departments/Clerk-and-Recorder/Recording-Department/Recording-FAQs) support only the Weld-specific free-index/paid-image access claim; the [Weld recording guidance](https://www.weld.gov/Government/Departments/Clerk-and-Recorder/Recording-Department/Recording-a-Document) supports the caveat that recording does not confer legality or authenticity. The direct browser fetch of both Weld pages returned an internal error in this review, while the official-domain search extracts remained available; re-open current pages before any release. No fee amount is asserted in the manuscript.
+
+Full-body comparison with published Texas Article 328 confirms a potentially distinct Colorado display-decoding job: the `Same: No` with matching `FEE/FEE` and `STATE/STATE` categories has no counterpart in the Texas permit answer. The generic permit-versus-private-rights and exception-list passages overlap in *method*, so the Colorado article must keep the field-pairing interpretation as its center of gravity. This is a conditional originality finding, not admission. No current ECMC field explanation, independent Colorado legal-compliance verdict, or independent editorial verdict was obtained in this review; the candidate remains held, unpublished and uncounted. Do not replace the missing guidance with an invented operator-reported or agency-verified provenance claim.
