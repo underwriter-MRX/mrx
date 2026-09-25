@@ -1,0 +1,25 @@
+# Private candidate screen — Oklahoma pooling-order retrieval
+
+Status: **source-screened candidate only** (2026-09-25 UTC). No admitted row/rank, public MDX, image, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. Exact-title and article-specific reviews have not begun.
+
+## Reader job and pillar
+
+- Candidate question: **How Do I Find an Oklahoma Pooling Order After Getting a Notice?**
+- Reader situation: an Oklahoma mineral owner has a pooling-related notice or case reference and needs to locate the commission's actual case/order before asking a payor, counsel or operator a bounded question.
+- Primary parent: `/learning-center/title-lease-ownership/`; secondary sibling: the existing Oklahoma mineral-owner escrow/unclaimed-property guide only if a verified order or payor later points to missing funds. This proposed page is a document-location route, not an escrow or title verdict.
+- Useful first action: preserve the notice and its case/docket number, dates, land/formation description and sender; search the correct OCC case system for the actual order, save the source URL and result date, and seek qualified Oklahoma advice promptly if a real notice/order calls for an election or response. Do not upload a private notice to a public search or assume a similar name/case is yours.
+- Demand: no reliable query demand or observed ChatGPT citation evidence for this exact question was established. Search Atlas title suggestions in map 261162's “Lease Agreements Explained” cluster are generic lease-topic variants, not source or approval for this distinct identity.
+
+## Current official source and claim map
+
+1. [OCC Pooling Order Information](https://www.oklahoma.gov/occ/divisions/admin-court-services/court-services/pooling.html), last modified July 8, 2026, reviewed September 25: OCC describes notice, respondent Exhibit A, the hearing, order mailing, election alternatives, and a case-number search route. It states a general 20-day election period, but a public article must not calculate a reader's actual deadline or recommend an election. The actual order and qualified Oklahoma counsel govern a case-specific response.
+2. [OCC Case Processing instructions](https://oklahoma.gov/occ/court-dockets/case-processing.html), last modified July 8, 2026, reviewed September 25: the legacy application contains case information before March 21, 2022; its case-type legend identifies `CD` as Conservation Docket and relief code `41` as Pooling. The instructions say to search identifiers and use `Link to Imaging` for the result. This supports the pre-transition retrieval branch, not a claim of complete records or ownership.
+3. [OCC Electronic Case Filing](https://oklahoma.gov/occ/court-dockets/electronic-case-filing.html), last modified July 8, 2026, reviewed September 25: the public Case Document Search is for documents and orders from March 21, 2022; OCC separately directs pre-transition users to Case Processing and archived documents. The page distinguishes OCC regulatory cases from district-court/probate matters and county-clerk records. This supports the newer retrieval branch and a title-source boundary.
+4. [OCC Consumer Services Department](https://www.oklahoma.gov/occ/divisions/oil-gas/consumer-services-department.html), last modified January 7, 2025, reviewed September 25: OCC describes this department as a contact/information resource for mineral and surface owners on pooling, databases, leasing, royalties and related matters. Do not present it as an owner-specific legal opinion or payment audit.
+
+## Distinctness and stop lines
+
+- Corpus screen: `src/content/posts` has the Oklahoma escrow/unclaimed-property two-route guide and broad lease/pooling discussions, but no Oklahoma OCC pre-/post-March-2022 pooling-order document-location guide. The historical Texas RRC pooling-filing retrieval worksheet is a different regulator, records system and use case; neither establishes Oklahoma case navigation.
+- The distinctive answer is the **OCC case-system split plus notice/case/order evidence path**, with preservation of the source and a stop before election, title, ownership, lease effect, payment, value or development conclusions. Do not make it a Texas worksheet with a state name swapped in or repeat the general “what is pooling” explanation.
+- A respondent name on Exhibit A or an OCC order is a regulatory-case record, not independently verified chain of title, present ownership fraction, lease coverage, royalty decimal, payment entitlement, or a binding reading of a private instrument. Do not infer a result for a real owner.
+- No article should be admitted until current official route behavior is rechecked, the full live corpus/ledger is reviewed for overlap, a current-byte factual/editorial/Oklahoma compliance review passes, and the proposed title/body/unique two-image package is bound to an append-only identity. The Search Atlas audit for Article330 is still in flight and is a separate ledger gate, not a reason to miscount this private candidate.
