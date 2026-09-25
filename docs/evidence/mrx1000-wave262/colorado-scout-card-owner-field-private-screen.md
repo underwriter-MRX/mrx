@@ -1,0 +1,32 @@
+# Private candidate screen: Colorado COGIS surface/mineral-owner field
+
+Status: source-screened **candidate only** (2026-09-25 UTC). Not an admitted MRX1000 row, public MDX, image, published article, notification, or recrawl. Verified published count remains 332. Do not treat this as an approved Article 333.
+
+## Reader job and pillar
+
+A Colorado mineral owner sees `Surface Mineral Owner Same: Yes` or `No` and `Mineral Owner: FEE` / `Surface Owner: FEE` on an ECMC COGIS Well Scout Card and asks whether those labels establish the owner's own title or a right to royalties. The narrow answer is **no conclusion about that person's title follows from the card alone**. The potentially useful task is to preserve the exact API, status/date, displayed field values, and wellbore-permit context, then compare the *separate* recorded instruments and private papers with a qualified Colorado land/title professional if the connection matters. Primary parent: `/learning-center/title-lease-ownership/`; Colorado state page is contextual, not a competing parent. Do not convert this into an offer or royalty-value conclusion.
+
+## Primary source observations and limits
+
+| Source checked September 25 | Supported observation | Boundary |
+| --- | --- | --- |
+| [ECMC COGIS example, API 05-123-19839](https://ecmc.state.co.us/cogisdb/Facility/FacilityDetail?api=12319839) | Current public Well Scout Card displays `Surface Mineral Owner Same: No` immediately below `Wellbore Permit`, while both `Mineral Owner` and `Surface Owner` display `FEE`; it also displays an API, well name, operator, status/date and location. The two `FEE` labels therefore cannot be read as a named-person identity match. | This single record is an illustration of field placement/values, not a title determination or proof of the field's full current data lineage. Do not include its well-specific commercial or operational facts in a general claim. |
+| [ECMC COGIS example, API 05-123-15114](https://ecmc.state.co.us/cogisdb/Facility/FacilityDetail?api=12315114) | Search result showed `Surface Mineral Owner Same: Yes`, `Mineral Owner: STATE`, `Surface Owner: STATE` in the permit section. | Direct open failed once, so recheck before using this as a public worked example. |
+| [Historical Colorado Form 2 instructions](https://ecmc.state.co.us/forms/instructions/Form2_inst.pdf) and [historical Form 2 example](https://ecmc.state.co.us/forms/ExampleForms/form2_example.pdf) | An older application asked whether the surface owner was also the mineral owner. | Historical forms do **not** establish the present field definition, its provenance for every card, or current permitting practice. Obtain current ECMC guidance before claiming those details. |
+| [Weld County recording FAQs](https://www.weld.gov/Government/Departments/Clerk-and-Recorder/Recording-Department/Recording-FAQs) and [recording guidance](https://www.weld.gov/Government/Departments/Clerk-and-Recorder/Recording-Department/Recording-a-Document) | Weld offers an online recorded-document index and copies; its recording office says recording itself does not confer legality or authenticity and the clerk does not provide legal advice. | Weld is an example only; do not generalize its online coverage, fees, interface, or document availability to other Colorado counties. An index hit is not a title opinion. |
+
+The direct non-title answer is an **inference from the record's limited fields and purpose**, not a quoted ECMC adjudication statement. The card does not name this reader, identify a deed chain or private royalty decimal, or resolve a particular tract/interval. Do not claim the agency independently verified ownership or that a Yes/No value proves inclusion/exclusion. A false certainty here could harm an owner.
+
+## Distinctness and demand screen
+
+Full-body search of `src/content/posts` found no `COGIS`, `ECMC`, `Surface Mineral Owner Same`, or Colorado permit/ownership explanation. The Colorado state page is broad. Published Article 328, [Does a Texas RRC Drilling Permit Prove Your Lease Covers a Well?](/blog/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well/), already owns the general regulatory-permit-versus-private-lease distinction. This candidate is viable only if the final answer decodes the **specific Colorado Scout Card field pairing** (`Same` with both `FEE` labels), establishes the current ECMC source role, and gives a Colorado-appropriate record handoff. If it merely says that permits are not title proof with Colorado substituted for Texas, reject/consolidate it. An August 25–September 23 Search Console slice showed 10 impressions for the broad `colorado mineral rights` query, not the exact field question; clicks were unavailable. That is weak context, not demand, ChatGPT retrieval, or citation proof.
+
+## Before admission or publication
+
+1. Recheck current ECMC field documentation or obtain a current agency explanation; keep historic Form 2 material explicitly historical. Check the current COGIS page itself and the reader-accessible navigation without bypassing challenges.
+2. Verify the current Colorado recorded-instrument path with a relevant county source, and limit any Weld-specific detail to Weld. Do not tell an owner that a county index, assessor entry, permit, or COGIS flag itself proves title.
+3. Compare the complete proposed answer, not just title strings, with Article 328, the title/lease/ownership pillar, Colorado state page, and the planned ledger. Reject if the field-specific utility is too thin.
+4. Complete current-byte factual/citation, Colorado legal/compliance, editorial/originality and professional-boundary review. No person-specific ownership, lease coverage, royalty entitlement, remedy, or deadline advice.
+5. Only after admission: finalize a unique title; create the exact-title hero/share and a materially distinct exact-phrase in-body image; run focused and full tests, typecheck and production build; preserve latest voice/source baseline; verify every active host with HTTP, image bytes, Chrome render, sitemap/reciprocal pillar and MCP. Then use at most one justified notification/recrawl and require exact postprocessed Page Explorer row before advancing the separate recrawl ledger.
+
+No new paid capacity, public write, OTTO action, IndexNow submission, or Search Atlas recrawl was initiated by this private screen.
