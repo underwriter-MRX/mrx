@@ -156,6 +156,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave259-selection-decision-2026-09-25.md",
       "selection_decision_sha256": "a73762195e1479d326b7b3e14e17a125a94352d05131056b7842a08b00b8d09a"
+    },
+    {
+      "selection_rank": 332,
+      "program_row_id": "MRX1000-1126",
+      "canonical_title": "Where Can I Find Ohio Mineral Deeds and Leases Before a Title Review?",
+      "canonical_slug": "where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review",
+      "canonical_url": "https://mineralrightsxchange.com/blog/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave260-creative-qa/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave260-selection-decision-2026-09-25.md",
+      "selection_decision_sha256": "abe5044b9c83598e022ef072691759dc2b0381a98068d925e89e8cb1bbfb0865"
     }
   ]
 }

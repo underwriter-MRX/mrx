@@ -43,6 +43,7 @@ docs/governance/*
 !docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md
 !docs/governance/mrx1000-wave258-selection-decision-2026-09-24.md
 !docs/governance/mrx1000-wave259-selection-decision-2026-09-25.md
+!docs/governance/mrx1000-wave260-selection-decision-2026-09-25.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -83,6 +84,9 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice
 !artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/*.json
 !artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review
+!artifacts/mrx1000-append-only/reviews/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/*.json
+!artifacts/mrx1000-append-only/reviews/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
@@ -123,6 +127,10 @@ artifacts/mrx1000-wave258-creative-qa/*
 artifacts/mrx1000-wave259-creative-qa/*
 !artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice
 !artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/creative-manifest.json
+!artifacts/mrx1000-wave260-creative-qa
+artifacts/mrx1000-wave260-creative-qa/*
+!artifacts/mrx1000-wave260-creative-qa/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review
+!artifacts/mrx1000-wave260-creative-qa/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews

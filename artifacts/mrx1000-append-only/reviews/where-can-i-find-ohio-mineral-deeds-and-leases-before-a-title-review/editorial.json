@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1126",
+  "slug": "where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review",
+  "source_path": "src/content/posts/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review.mdx",
+  "input_body_sha256": "50d680faf16f6e98ccaa1aec3982f94fa4ccb5f8b6c12819ac4994e9162b2ac5",
+  "two_image_manifest_sha256": "79387f238c09fa3c06d2746686f6a390b902b9bb41c6fc34c5f8263ab5ff726e",
+  "private_full_source_sha256": "18b973b676455815554b42e2d0c15427e823c43124d1d5fe9826e19b3f1ca402",
+  "review_method": "codex_current_public_editorial_and_full_body_corpus_overlap_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "advisory_review": "Earlier mrx_copy route returned HTTP401 and supplied no review; no external editorial pass is claimed.",
+  "findings": [
+    "The opening answers the exact Ohio document-location question first. Ohio statutory recorder classes and Erie-only older/online access, not generic county search logging, carry the distinct reader value.",
+    "Full-body comparison found Texas recorded-deed CPA handoff and Robertson County locator cover generic log and missing-result limits, but not Ohio Revised Code §§5301.25(A)/317.08(A) or Erie and Ashtabula recorder routes. Current published corpus and append-only identity contain no Ohio mineral-deeds-and-leases article or exact-title collision.",
+    "The title/lease/ownership pillar is the primary parent and research CTA. The redaction checklist is a relevant sibling; official Ohio sources and an optional offer-review route are crawlable, and a research-only reader is not required to contact MRX.",
+    "Five frontmatter FAQs correspond to five visible question answers; the direct opening answers the H1. No ranking, indexing, answer-engine citation or owner-specific title result is promised.",
+    "The unique hero and social image use the same exact-title 1200x630 binary. The distinct 1200x675 in-body image carries the Ohio mineral deeds and leases phrase. OCR, binary hashes and small-card visual inspections passed."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1126",
+  "slug": "where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review",
+  "source_path": "src/content/posts/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review.mdx",
+  "input_body_sha256": "50d680faf16f6e98ccaa1aec3982f94fa4ccb5f8b6c12819ac4994e9162b2ac5",
+  "two_image_manifest_sha256": "79387f238c09fa3c06d2746686f6a390b902b9bb41c6fc34c5f8263ab5ff726e",
+  "private_full_source_sha256": "18b973b676455815554b42e2d0c15427e823c43124d1d5fe9826e19b3f1ca402",
+  "review_method": "codex_current_public_official_primary_source_claim_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte official-source review",
+  "findings": [
+    "Ohio Revised Code §5301.25(A) gives the county-of-premises recording rule for the instrument classes it covers; the article does not represent that rule as a complete title conclusion.",
+    "Current §317.08(A)(1), (2), (5), (11) and (25) lists the described deed/conveyance, specified notice/affidavit/order, and lease/memorandum/amendment categories. The public checklist states their record roles without declaring a mineral owner or statutory outcome.",
+    "The Ohio Recorders' Association current page says it connects the public with all 88 county recorder offices; the article correctly treats it as a directory rather than a unified deed index.",
+    "Erie County Recorder FAQ currently says online indexing and images go back to 1990 with earlier material being added, identifies its county document-search and Both Names input, describes copy requests, and disclaims full title-history searches. The article limits every detail to Erie County.",
+    "Ashtabula County Recorder currently identifies its own land-record search and deeds/leases among its records and says staff do not perform title examinations. The public copy does not invent another county's field layout or online coverage."
+  ],
+  "sources_reviewed_2026_09_25": [
+    "https://codes.ohio.gov/ohio-revised-code/section-5301.25",
+    "https://codes.ohio.gov/ohio-revised-code/section-317.08",
+    "https://www.ohiorecorders.com/aws/ORA/pt/sp/home_page",
+    "https://www.eriecounty.oh.gov/RecorderFAQs.aspx",
+    "https://www.ashtabulacounty.us/Recorder"
+  ]
+}

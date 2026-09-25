@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1126",
+  "slug": "where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review",
+  "source_path": "src/content/posts/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review.mdx",
+  "input_body_sha256": "50d680faf16f6e98ccaa1aec3982f94fa4ccb5f8b6c12819ac4994e9162b2ac5",
+  "two_image_manifest_sha256": "79387f238c09fa3c06d2746686f6a390b902b9bb41c6fc34c5f8263ab5ff726e",
+  "private_full_source_sha256": "18b973b676455815554b42e2d0c15427e823c43124d1d5fe9826e19b3f1ca402",
+  "review_method": "codex_current_public_ohio_source_scope_and_content_safety_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte compliance-scope review; not Ohio counsel",
+  "advisory_review": "Prior mrx_compliance source-scope PASS was bound to an older private manuscript hash and is not treated as a public-byte or professional legal review.",
+  "findings": [
+    "The answer is educational record location. It does not decide Ohio mineral ownership, title, interest fraction, lease validity, payor decimal, payment correctness, appraisal or offer value.",
+    "The statutory notice/affidavit/order list is explicitly a record category, not an instruction to file, disregard, elect or calculate a Dormant Mineral Act deadline. Owner-specific legal effect is routed to qualified Ohio review.",
+    "Erie's 1990 digital boundary and Both Names workflow are clearly labeled county-specific. A missing online result is not presented as absence of a recorded instrument.",
+    "The article avoids public disclosure of private owner documents and sends record handoff to a qualified reviewer. The research-only route needs no MRX contact or booking, and the footer discloses MRX's potential buyer interest.",
+    "No new financial charge, customer outreach, legal certification, indexed-search guarantee or ChatGPT citation claim appears in the copy."
+  ]
+}
