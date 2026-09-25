@@ -1,6 +1,6 @@
 # Private candidate screen — Oklahoma pooling-order retrieval
 
-Status: **source-screened candidate only** (2026-09-25 UTC). No admitted row/rank, public MDX, image, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. Exact-title and article-specific reviews have not begun.
+Status: **source-screened, privately reviewed candidate only** (2026-09-25 UTC). No admitted row/rank, public MDX, image, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. The current-byte private-manuscript reviews passed as recorded below; public-byte and release gates have not begun.
 
 ## Reader job and pillar
 
@@ -27,7 +27,7 @@ Status: **source-screened candidate only** (2026-09-25 UTC). No admitted row/ran
 ## Subsequent screen and review availability — later September 25
 
 - The one post-Article330 audit has since completed and postprocessed, but its exact Article330 Page Explorer row is not yet observed. This does not advance the separate final-recrawl ledger.
-- Private manuscript SHA-256 `009008f79e449df21ef9bea5e16d99424eadf69ad137fa1956ec652279600c02` was submitted for read-only Chesty/specialist factual, editorial and Oklahoma-compliance review as job `d3b38926-6b13-417a-a7d4-8cbb2d84af79`. After about twelve minutes it had returned only `Warning: Unknown toolsets: moa` and no verdict; Codex cancelled the still-running local coordinator. The warning is a tool-path observation, not PASS/HOLD/FAIL on the manuscript. No public source, article, notification, recrawl, deployment or account state was changed by this attempt. Current-byte article-specific review remains open; do not infer approval from silence.
+- Private manuscript SHA-256 `009008f79e449df21ef9bea5e16d99424eadf69ad137fa1956ec652279600c02` was submitted for read-only Chesty/specialist factual, editorial and Oklahoma-compliance review as job `d3b38926-6b13-417a-a7d4-8cbb2d84af79`. After about twelve minutes it had returned only `Warning: Unknown toolsets: moa` and no verdict; Codex cancelled the still-running local coordinator. The warning is a tool-path observation, not PASS/HOLD/FAIL on the manuscript. No public source, article, notification, recrawl, deployment or account state was changed by this attempt. At that check, current-byte article-specific review remained open; do not infer approval from silence.
 
 ## Direct specialist recovery — later September 25
 
