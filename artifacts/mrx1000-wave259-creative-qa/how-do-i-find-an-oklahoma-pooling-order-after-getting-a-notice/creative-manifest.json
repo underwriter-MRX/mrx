@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-25T05:14:06.957Z",
+  "article": {
+    "title": "How Do I Find an Oklahoma Pooling Order After Getting a Notice?",
+    "keyword": "Oklahoma pooling order search",
+    "generation_prompts": {
+      "hero": "Text-free Oklahoma public-records research scene: open steel filing drawer and plain unlabeled case folder on the left, red-earth prairie with a small distant oil-well silhouette through a window, dark right-side negative space. No readable data, numbers, logos, seals, or real case document.",
+      "inline": "Distinct text-free overhead comparison of older and newer record-location routes: unmarked archival microfilm reel and closed binder on the left, blank-screen tablet and blank paper sleeve on the right, slate tabletop, dark lower caption band. No readable data, dates, UI labels, logos, seals, or title/payment conclusion."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave259-creative-sources/oklahoma-pooling-order-hero-base.png",
+      "source_sha256": "caeee73261d105efd69e52682b0f492fa8efd7874ae188817ccbac24946178d0",
+      "public_path": "/assets/articles/hero/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice.webp",
+      "sha256": "72d99e2ea57b11d8b08ec81270440692c5ac0347e66e4e52c534e68c0b0779d0",
+      "perceptual_hash": "1111111100000000001111110000000011111111000000001111111100000000111111110000000011111111011100000001111011111000111111001100000011111110000000001111111000000000011110000000000000110110000000000000011000000000000000100000000000000110000000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "How Do I Find an Oklahoma Pooling Order After Getting a Notice?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "How Do I Find an Oklahoma Pooling Order After Getting a Notice?",
+        "actual": "How Do I Find an\nOklahoma Pooling\nOrder After Getting\na Notice?",
+        "normalized": "how do i find an oklahoma pooling order after getting a notice",
+        "normalized_expected": "how do i find an oklahoma pooling order after getting a notice",
+        "normalized_actual": "how do i find an oklahoma pooling order after getting a notice",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave259-creative-sources/oklahoma-pooling-order-inline-base.png",
+      "source_sha256": "12d13d982e46b7cfc698c262859403b64bf8aab641d0e46dba7ec13dc6b0213f",
+      "public_path": "/assets/articles/inline/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/oklahoma-pooling-order-search.webp",
+      "sha256": "24090bd476f60d4dfed99fe4aa9574c690b3fd0345dacde2ce8aa0e700751ed3",
+      "perceptual_hash": "0000111111111110000011111111000000001111111111000000111111011110000011111000011100001111100001110000111110000111000011111000011100001111100001110000000111111111000000011111111100000000000000000000001111000000000000011000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Oklahoma pooling order search",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Oklahoma pooling order search",
+        "actual": "Oklahoma pooling\norder search",
+        "normalized": "oklahoma pooling order search",
+        "normalized_expected": "oklahoma pooling order search",
+        "normalized_actual": "oklahoma pooling order search",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}

@@ -1,6 +1,6 @@
 # Private candidate screen — Oklahoma pooling-order retrieval
 
-Status: **source-screened, privately reviewed candidate only** (2026-09-25 UTC). No admitted row/rank, public MDX, image, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. The current-byte private-manuscript reviews passed as recorded below; public-byte and release gates have not begun.
+Status: **source-screened, privately reviewed candidate with prepared image package only** (2026-09-25 UTC). No admitted row/rank, public MDX, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. The current-byte private-manuscript reviews and image composition passed as recorded below; public-byte and release gates have not begun.
 
 ## Reader job and pillar
 
@@ -39,4 +39,14 @@ The stalled Chesty wrapper was not retried. Using the previously verified per-in
 
 Codex independently re-read all four official OCC pages and verified the exact source statements and manuscript hash. Exported session records for each named profile show `billing_provider=openai-codex`, `billing_mode=subscription_included`, `estimated_cost_usd=0`, and `cost_status=included`; no shared provider settings or approval controls changed. These are separate role reviews on one subscription model, not independent-provider corroboration. The earlier wrapper warning remains an integration observation; its root cause is not proven.
 
-This clears the **private-manuscript review gate only**. There is still no admitted row/rank, public MDX, exact-title two-image package, current-public-byte review, tests/build, production deployment, IndexNow, recrawl or published-count advance. Preserve the reviewed legal caveats verbatim when packaging, and re-review any material change. Article330 exact Page Explorer proof and the separate final-recrawl ledger remain open independently.
+This clears the **private-manuscript review gate only**. Preserve the reviewed legal caveats verbatim when packaging, and re-review any material change. Article330 exact Page Explorer proof and the separate final-recrawl ledger remain open independently.
+
+## Candidate image package — later September 25
+
+The exact title is provisionally locked as **How Do I Find an Oklahoma Pooling Order After Getting a Notice?** and the distinct in-body phrase as **Oklahoma pooling order search**. Using the built-in image generator for text-free base art and the existing deterministic composition script, Codex prepared two separate WebP assets in the article worktree. This is an image-preparation step, **not** public article admission or deployment:
+
+- Hero/share: `/assets/articles/hero/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice.webp`, 1200×630, SHA-256 `72d99e2ea57b11d8b08ec81270440692c5ac0347e66e4e52c534e68c0b0779d0`. The exact title is visibly rendered in the right navy field over a distinct Oklahoma filing-drawer/prairie scene.
+- In-body: `/assets/articles/inline/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/oklahoma-pooling-order-search.webp`, 1200×675, SHA-256 `24090bd476f60d4dfed99fe4aa9574c690b3fd0345dacde2ce8aa0e700751ed3`. The exact phrase is visibly rendered over a materially different overhead archival-versus-digital record-route scene.
+- The creative manifest at `artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/creative-manifest.json` has SHA-256 `9056b2881c3e72bf41c26e90c61071981d3f97232981d559b81740ad1fa642cc`. Automated OCR, exact slug/phrase identity, binary distinction, MIME/dimensions and manual 600×315, 300×158 and 600×338 preview inspection passed. No real OCC case text, seals, numbers or logos appear in the art. Generation/composition prompts and source-art hashes are in the manifest; reproducible composition is `scripts/build-mrx1000-wave259-creative-assets.mjs`.
+
+There is still no admitted row/rank, public MDX, current-public-byte review, combined tests/build, production release, IndexNow, recrawl or published-count advance. A title, image, or generated topical-map suggestion alone is not admission.
