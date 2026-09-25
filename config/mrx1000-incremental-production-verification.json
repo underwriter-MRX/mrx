@@ -1,10 +1,10 @@
 {
   "artifact_type": "mrx1000_incremental_post_release_verification",
-  "verified_at_utc": "2026-09-24T21:40:03Z",
+  "verified_at_utc": "2026-09-25T06:40:32Z",
   "historical_canonical_ledger_sha256": "97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6",
   "baseline_release_10_verified_count": 320,
-  "incremental_final_recrawl_verified_count": 9,
-  "current_final_recrawl_verified_count": 329,
+  "incremental_final_recrawl_verified_count": 10,
+  "current_final_recrawl_verified_count": 330,
   "articles": [
     {
       "program_row_id": "MRX1000-0454",
@@ -194,7 +194,28 @@
       "page_in_xml_sitemap": true,
       "page_linked": true,
       "page_h1": "Can Louisiana OMR Records Prove My Private Mineral Lease?"
+    },
+    {
+      "program_row_id": "MRX1000-1124",
+      "slug": "can-pennsylvania-dep-production-data-verify-my-royalty-check",
+      "canonical_url": "https://mineralrightsxchange.com/blog/can-pennsylvania-dep-production-data-verify-my-royalty-check/",
+      "deployment_id": "dpl_RjALzVCcZFtYeL8APesMRgkQGA7P",
+      "deployment_url": "https://mrx-87965zsdi-team-mrx.vercel.app",
+      "production_result": "PASS",
+      "audit_id": 138239,
+      "audit_started_at": "2026-09-25T05:18:51.627423Z",
+      "audit_completed_at": "2026-09-25T06:26:42.133487Z",
+      "crawl_state": "completed",
+      "postprocessing_status": "completed",
+      "is_terminal": true,
+      "should_repoll": false,
+      "page_explorer_row_id": 106659732,
+      "page_http_status": 200,
+      "page_indexable": true,
+      "page_in_xml_sitemap": true,
+      "page_linked": true,
+      "page_h1": "Can Pennsylvania DEP Production Data Verify My Royalty Check?"
     }
   ],
-  "note": "The completed September 24 post-release audits and exact Page Explorer rows establish crawler visibility for Articles 322-329, not Google indexing, answer-engine citation, ownership, conversion, or revenue. The origin of the earlier provider-side audit recovery is unknown."
+  "note": "Completed post-release audits and exact Page Explorer rows establish crawler visibility for Articles 321-330, not Google indexing, answer-engine citation, ownership, conversion, or revenue. Article 331 remains independently published but its exact Page Explorer row is not yet observed. The origin of the earlier provider-side audit recovery is unknown."
 }

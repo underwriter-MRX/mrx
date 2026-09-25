@@ -112,4 +112,15 @@ describe('MRX1000 post-release verification overlay', () => {
     expect(evidence.audit_completed_at).toBe('2026-09-24T18:58:37.248938Z');
     expect(evidence.page_explorer_row_id).toBe(106593780);
   });
+
+  it('binds Article 330 to its exact post-release Page Explorer row', () => {
+    const evidence = addendum.articles.find(
+      (article: { program_row_id: string }) => article.program_row_id === 'MRX1000-1124',
+    );
+    expect(evidence).toBeTruthy();
+    expect(evidence.slug).toBe('can-pennsylvania-dep-production-data-verify-my-royalty-check');
+    expect(evidence.deployment_id).toBe('dpl_RjALzVCcZFtYeL8APesMRgkQGA7P');
+    expect(evidence.audit_completed_at).toBe('2026-09-25T06:26:42.133487Z');
+    expect(evidence.page_explorer_row_id).toBe(106659732);
+  });
 });
