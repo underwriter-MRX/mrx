@@ -1,0 +1,25 @@
+# MRX1000 Wave 262 source admission — 2026-09-25 UTC
+
+- Decision ID: `MRX1000-W262-CANDIDATE-2026-09-25`
+- Selection rank: `333`; below the owner's stop point of 350 independently live-verified MRX1000 articles.
+- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`
+- Authority source: `AGENTS.md MRX Article No-Approval Execution Authority — Owner Directive 2026-08-14`
+- This admits one append-only identity to exact-public-byte quality gates, **not** deployment, IndexNow submission, Search Atlas proof, ChatGPT citation, or a change to the 332 live / 330 exact-final-recrawl counts.
+
+OWNER_ARTICLE_AUTHORITY: APPROVE_PUBLIC_ADMISSION MRX1000-1127 RANK-333
+
+The [source screen](../evidence/mrx1000-wave262/colorado-scout-card-owner-field-private-screen.md), [private manuscript](../evidence/mrx1000-wave262/colorado-scout-card-owner-field-private-manuscript.md) SHA-256 `457d1d2aa7cf6c065bcdcb4c41349da985f1d0391e32a9b5b7183db267ed7d6f`, and [review boundary](../evidence/mrx1000-wave262/colorado-scout-card-owner-field-current-byte-review-20260925.md) define one reader job: interpret the specific Colorado COGIS `Surface Mineral Owner Same` flag **beside** the ownership-category labels without inferring a named owner's title. Current direct ECMC cards show `No/FEE/FEE`, `Yes/FEE/FEE`, and `No/STATE/STATE`. Historical Form 2 instructions explain separate questions only as old context. Present field data lineage is unverified and the public answer must not claim an operator source, independent agency verification, or current form provenance.
+
+## Distinct pillar-support answer
+
+**Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?** supports `/learning-center/title-lease-ownership/`. The useful Colorado-specific answer is that opposite Yes/No values appear next to the same `FEE/FEE` category pair on current cards, so a reader must preserve the exact card/API/date and keep the public display apart from recorded and private instruments. That field-pairing task is not answered by the published Texas RRC permit article, which focuses on a regulatory `Lease` label and private lease coverage. Generic permit-versus-title warnings and exception-list language are subordinate. Search Atlas map `261162` was a discovery lead, not topic approval. A broad GSC Colorado-mineral-rights query is weak context, not evidence of exact-question demand or answer-engine citation.
+
+The current ECMC cards, historical instruction and current Weld County recording pages were rechecked September 25. Weld's free index/paid-image access and recording-not-legality caveat are Weld-only. No source determines a particular owner's title, mineral fraction, tract inclusion, lease status, royalty entitlement, remedy, deadline or value. The answer is educational and directs disputed rights to qualified Colorado review. MRX's possible later buyer interest is disclosed; the research path does not require contact or booking. A read-only `mrx_copy` review found conditional editorial/originality value on the private manuscript; failed `mrx_compliance` provider routes supplied **no verdict**. No external legal opinion is claimed. Current public bytes require Codex's independent exact-byte factual/citation, editorial/originality and source/compliance-scope reviews; specialist failure is not to be mislabeled as a pass.
+
+## Creative and release boundary
+
+The [creative manifest](../../artifacts/mrx1000-wave262-creative-qa/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/creative-manifest.json) binds a unique 1200×630 exact-title hero/share WebP SHA-256 `f18c1ada9fc646115d32e2a6e3f9c7e53a0bc8b0a1f7b2c6bea78987ced5d7cc` and a distinct 1200×675 in-body image with **Colorado COGIS owner-same field** SHA-256 `5fd1f24eaf6a717c571de557bca28cc3a1bd71869fb3a1479b7e179ae219f2ca`. Built-in generation supplied text-free bases; deterministic composition, OCR and visual card review passed. Title-bearing imagery is the owner's social-preview/distribution policy, not a proven direct ranking factor.
+
+- Append-only identity: `MRX1000-1127`, rank `333`, slug `does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title`, canonical `https://mineralrightsxchange.com/blog/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/`, pillar `title-lease-ownership`, cluster `title-lease-ownership-documents`, source map `261162` as primary-source reader-field refinement. Historical release-10 canonical JSON/CSV remain immutable.
+- Public MDX must remain on directly observed field pairs, unknown current field provenance, historical-instruction boundary, Weld-only recorder details, and no owner-specific rights determination. Final article and creative bytes must match all hash-bound PASS reviews.
+- Full tests/build, reciprocal pillar link, newest active voice-production baseline, every active-host HTTP/asset/Chrome/MCP proof, one exact-canonical notification, a justified post-release audit, fresh OTTO, and exact successful/indexable/sitemap-listed/linked Page Explorer row are separate gates. Do not auto-deploy OTTO or trigger a duplicate crawl to clear older Article331/332 row gaps.

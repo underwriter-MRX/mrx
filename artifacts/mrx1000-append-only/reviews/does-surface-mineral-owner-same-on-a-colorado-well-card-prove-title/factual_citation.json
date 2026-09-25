@@ -1,0 +1,22 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1127",
+  "slug": "does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title",
+  "source_path": "src/content/posts/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title.mdx",
+  "input_body_sha256": "b28d445a758ac35756ea9aa7c3bfd83c2d4d91d9bc666aef0175b823a539ceb9",
+  "two_image_manifest_sha256": "cf8a01b8b71eb6e532280bfbc000b7595e14c35cf14e32298194f0fbd75557ac",
+  "private_full_source_sha256": "457d1d2aa7cf6c065bcdcb4c41349da985f1d0391e32a9b5b7183db267ed7d6f",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "review_method": "codex_exact_public_byte_current_primary_source_claim_map",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent direct official-source and public-copy check, 2026-09-25",
+  "findings": [
+    "Current ECMC API 05-123-19839 directly shows Same: No with Mineral Owner: FEE and Surface Owner: FEE in Wellbore Permit; API 05-123-31228 directly shows Same: Yes with FEE/FEE. The article cites both next to the comparison and does not treat either as a reader's record.",
+    "Historical ECMC Form 2 instruction Ownership items 21-23 separately call mineral and surface entries ownership types and ask whether surface owner is also mineral owner. Public copy labels that document historical and explicitly refuses to infer current COGIS field lineage or verification.",
+    "Current official Weld Recording FAQs directly support free document-index viewing with paid image or printing options. Weld Recording a Document directly says recording does not confer legality or authenticity. The article confines those claims to Weld and quotes no fee amount.",
+    "ECMC public cards display API and status date; the copy separately tells a reader to record the date viewed. It does not equate a displayed status date with a fetch date or infer a particular tract or royalty decimal.",
+    "Internal Texas RRC permit and title/lease/ownership pillar URLs exist in source. All material field, historical-context and county-access claims have nearby primary-source links; exact-question GSC demand and ChatGPT retrieval are not asserted."
+  ]
+}

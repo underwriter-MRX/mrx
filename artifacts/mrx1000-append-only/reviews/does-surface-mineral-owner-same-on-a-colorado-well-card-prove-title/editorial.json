@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1127",
+  "slug": "does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title",
+  "source_path": "src/content/posts/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title.mdx",
+  "input_body_sha256": "b28d445a758ac35756ea9aa7c3bfd83c2d4d91d9bc666aef0175b823a539ceb9",
+  "two_image_manifest_sha256": "cf8a01b8b71eb6e532280bfbc000b7595e14c35cf14e32298194f0fbd75557ac",
+  "private_full_source_sha256": "457d1d2aa7cf6c065bcdcb4c41349da985f1d0391e32a9b5b7183db267ed7d6f",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "review_method": "codex_exact_public_editorial_and_full_body_overlap_review",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-public-byte editorial and originality review",
+  "advisory_review": "Read-only mrx_copy reviewed the private manuscript conditionally; it did not issue an exact-public-byte PASS. Codex independently checked this changed public MDX.",
+  "findings": [
+    "The opening answers the exact displayed-field question in one sentence before explaining what the card lacks. Opposite Same values beside identical FEE/FEE categories carry the page's distinctive Colorado value.",
+    "Complete answer comparison found Texas Article328 addresses an RRC regulatory Lease name against private lease coverage, not Colorado's separate owner-same and category labels. Generic public-versus-private record advice is subordinate to the COGIS field comparison, so this is not a title-only or state-name swap.",
+    "The four-section structure keeps a research-only next step and five visible questions consistent with the five frontmatter FAQs. No contact, booking, document upload or buyer offer is required to research the public record.",
+    "The title, source, answer summary, tags, keyword, social hero and in-body phrase are internally consistent. Hero and social source are the same exact-title 1200x630 WebP; the separate overhead 1200x675 image has a different scene and the exact Colorado COGIS owner-same field phrase.",
+    "The copy does not promise ranking, indexing, ChatGPT citation, title certainty or a business result. The site organizational author and possible MRX buyer interest are visible."
+  ]
+}

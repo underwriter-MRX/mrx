@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1127",
+  "slug": "does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title",
+  "source_path": "src/content/posts/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title.mdx",
+  "input_body_sha256": "b28d445a758ac35756ea9aa7c3bfd83c2d4d91d9bc666aef0175b823a539ceb9",
+  "two_image_manifest_sha256": "cf8a01b8b71eb6e532280bfbc000b7595e14c35cf14e32298194f0fbd75557ac",
+  "private_full_source_sha256": "457d1d2aa7cf6c065bcdcb4c41349da985f1d0391e32a9b5b7183db267ed7d6f",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "review_method": "codex_exact_public_colorado_source_scope_and_content_safety_check",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-public-byte Colorado source/compliance-scope review; not Colorado counsel",
+  "advisory_review": "mrx_compliance gpt-5.5 route timed out with no verdict; gpt-5.4 route was unsupported. No external specialist or legal opinion is claimed.",
+  "findings": [
+    "The page limits its answer to directly displayed ECMC card fields and a negative owner-specific inference. It does not claim a current form definition, operator reporting provenance, independent ECMC verification, adjudication or accuracy of the Yes/No field.",
+    "No public card example is treated as proof of the reader's title, tract inclusion, lease coverage, fractional interest, payment, remedy, deadline or value. Disputed instrument and property connections are reserved for qualified Colorado land or title review.",
+    "Historical Form 2 instructions are explicitly historical, not current rules; no outdated notice, bond or permitting instructions from that document are repeated. Weld index and recording caveats are labeled Weld-only, with no statewide coverage or fee amount.",
+    "The article asks for no unredacted personal documents via a public interface, provides a research route without MRX contact, and discloses potential MRX buyer interest before a later agreement. It states MRX does not issue title opinions or decide private rights.",
+    "The title-bearing image is described only as a social-preview/distribution policy; the public copy makes no ranking, indexing, answer-engine citation or legal-certification promise. This is a bounded content-safety review, not legal advice."
+  ]
+}

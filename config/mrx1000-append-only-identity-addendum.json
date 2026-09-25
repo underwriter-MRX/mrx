@@ -171,6 +171,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave260-creative-qa/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave260-selection-decision-2026-09-25.md",
       "selection_decision_sha256": "abe5044b9c83598e022ef072691759dc2b0381a98068d925e89e8cb1bbfb0865"
+    },
+    {
+      "selection_rank": 333,
+      "program_row_id": "MRX1000-1127",
+      "canonical_title": "Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?",
+      "canonical_slug": "does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title",
+      "canonical_url": "https://mineralrightsxchange.com/blog/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_topical_map_primary_source_field_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave262-creative-qa/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave262-selection-decision-2026-09-25.md",
+      "selection_decision_sha256": "05cbfbd193e59c61b1e707fb618113f9541a7dccf8158bcb85e37169570588d0"
     }
   ]
 }
