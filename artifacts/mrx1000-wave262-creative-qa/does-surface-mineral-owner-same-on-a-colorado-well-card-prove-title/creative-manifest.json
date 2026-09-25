@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-25T20:56:39.699Z",
+  "article": {
+    "title": "Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?",
+    "keyword": "Colorado COGIS owner-same field",
+    "generation_prompts": {
+      "hero": "Text-free editorial Colorado mineral-record research desk with blank papers, a magnifying glass, mountain view, and left-side negative space. No readable data, names, numbers, logos, seals, or real instrument.",
+      "inline": "Distinct text-free overhead record-comparison scene with three blank index cards, a magnifying glass, and a dark lower caption field. No agency UI, values, words, numbers, logos, seals, or real instrument."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave262-creative-qa/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/hero-base.png",
+      "source_sha256": "4b10263ef1dc9985b9913002933f2166a986ee0e32454ff643ceef9c6ac7d7ca",
+      "public_path": "/assets/articles/hero/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title.webp",
+      "sha256": "f18c1ada9fc646115d32e2a6e3f9c7e53a0bc8b0a1f7b2c6bea78987ced5d7cc",
+      "perceptual_hash": "0000000011111111000000001111111100000000111111110000000001111111000000000111111101001000011111100011100001011011010100001111100100000000111110000000000011111100000000001111111000000000011111110000000011111110000000001111110000000000011110000000000001110000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?",
+        "actual": "Does \"Surface\nMineral Owner Same\"\non a Colorado Well\nCard Prove Title?",
+        "normalized": "does surface mineral owner same on a colorado well card prove title",
+        "normalized_expected": "does surface mineral owner same on a colorado well card prove title",
+        "normalized_actual": "does surface mineral owner same on a colorado well card prove title",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave262-creative-qa/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/inline-base.png",
+      "source_sha256": "86dfed3aa5ae9de61aca1abef81723ec68e31634606de5f1cc61286e82dcd075",
+      "public_path": "/assets/articles/inline/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/colorado-cogis-owner-same-field.webp",
+      "sha256": "5fd1f24eaf6a717c571de557bca28cc3a1bd71869fb3a1479b7e179ae219f2ca",
+      "perceptual_hash": "0010000000000000110000000000001111000000100000110011111111111111001111111111111100111111111111010011111111111101001111100111110100000000000000010000000000000001000000000000000000000000000000000000000111000000000000011100000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Colorado COGIS owner-same field",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Colorado COGIS owner-same field",
+        "actual": "Colorado COGIS\nowner-same field",
+        "normalized": "colorado cogis owner same field",
+        "normalized_expected": "colorado cogis owner same field",
+        "normalized_actual": "colorado cogis owner same field",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
