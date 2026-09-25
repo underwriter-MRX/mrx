@@ -6,6 +6,7 @@ type VoiceHarness = {
   stops: number;
   aborts: number;
   finalOnStop?: string;
+  stopDelay?: number;
   late?: () => void;
   emit: (transcript: string, isFinal?: boolean) => void;
   fail: (error: string) => void;
@@ -68,7 +69,7 @@ async function installSpeechRecognition(page: Page) {
         setTimeout(() => {
           if (harness.finalOnStop) harness.emit(harness.finalOnStop);
           this.onend?.();
-        }, 100);
+        }, harness.stopDelay ?? 100);
       }
 
       abort() {
@@ -193,8 +194,8 @@ test('keeps the asynchronous final result after Stop and waits before Send', asy
   await page.evaluate(() => {
     window.__voiceHarness.finalOnStop = 'Which county records do I need?';
   });
-  await expect(page.getByRole('button', { name: 'Send reply', exact: true })).toBeDisabled();
-  await page.getByRole('button', { name: 'Stop', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Send reply', exact: true })).toBeEnabled();
+  await page.getByRole('button', { name: 'Stop dictation', exact: true }).last().click();
   await expect(input).toHaveValue('My question: Which county records do I need?');
   await expect(page.getByRole('button', { name: 'Send reply', exact: true })).toBeEnabled();
   await expect(page.locator('#travis-voice-panel')).toHaveCount(0);
@@ -266,3 +267,96 @@ for (const persona of ['travis', 'connor', 'clay', 'owen', 'laurel', 'elena']) {
     ).toBe(true);
   });
 }
+
+test('long dictation expands upward, follows speech, and stays editable after Stop', async ({
+  page,
+}, testInfo) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await installSpeechRecognition(page);
+  await stubAnonymousSession(page);
+  await openReadyChat(page);
+  const input = page.getByTestId('travis-composer-input');
+  const initial = await input.boundingBox();
+  await page.getByTestId('travis-voice-button').click();
+  const transcript =
+    'I inherited mineral rights and would like to understand the records before making a decision. '
+      .repeat(12)
+      .trim();
+  await page.evaluate((text) => window.__voiceHarness.emit(text), transcript);
+  await expect(input).toHaveValue(transcript);
+  await expect.poll(async () => (await input.boundingBox())!.height).toBeGreaterThan(150);
+  const expanded = (await input.boundingBox())!;
+  expect(expanded.y).toBeLessThan(initial!.y);
+  expect(expanded.height).toBeLessThanOrEqual(180);
+  expect(await input.evaluate((el) => el.scrollTop + el.clientHeight >= el.scrollHeight - 2)).toBe(
+    true,
+  );
+  await page.getByRole('button', { name: 'Stop dictation', exact: true }).last().click();
+  await expect(page.locator('#travis-voice-panel')).toHaveCount(0);
+  await expect(input).toHaveValue(transcript);
+  await input.evaluate((el) => {
+    el.scrollTop = 0;
+  });
+  expect(await input.evaluate((el) => el.scrollTop)).toBe(0);
+  await page.screenshot({ path: testInfo.outputPath('mobile-dictation-review.png') });
+  await input.fill('My corrected question.');
+  await expect(input).toHaveValue('My corrected question.');
+  await expect(page.locator('.travis-message--user')).toHaveCount(0);
+  await expect(page.getByRole('button', { name: 'Send reply', exact: true })).toBeEnabled();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('the arrow finishes dictation and submits the final words exactly once', async ({ page }) => {
+  await installSpeechRecognition(page);
+  await stubAnonymousSession(page);
+  await openReadyChat(page);
+  await page.getByTestId('travis-voice-button').click();
+  await page.evaluate(() => {
+    window.__voiceHarness.emit('Prefer not', false);
+    window.__voiceHarness.finalOnStop = 'Prefer not to say';
+    window.__voiceHarness.stopDelay = 500;
+  });
+  await page.getByRole('button', { name: 'Send reply', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('Finishing');
+  await expect(page.locator('.travis-message--user')).toHaveCount(0);
+  await expect(page.locator('.travis-message--user')).toHaveText(['Prefer not to say']);
+  await expect(page.getByTestId('travis-composer-input')).toHaveValue('');
+  expect(await page.evaluate(() => window.__voiceHarness.stops)).toBe(1);
+});
+
+test('closing while the arrow finishes cancels submission and preserves the draft', async ({
+  page,
+}) => {
+  await installSpeechRecognition(page);
+  await stubAnonymousSession(page);
+  await openReadyChat(page);
+  await page.getByTestId('travis-voice-button').click();
+  await page.evaluate(() => {
+    window.__voiceHarness.emit('Keep my question');
+    window.__voiceHarness.finalOnStop = 'Do not send this';
+    window.__voiceHarness.stopDelay = 1500;
+  });
+  await page.getByRole('button', { name: 'Send reply', exact: true }).click();
+  await page.getByRole('button', { name: 'Close Ask Travis' }).click();
+  await page
+    .getByRole('button', { name: 'Ask Travis for mineral-rights help', exact: true })
+    .click();
+  await expect(page.getByTestId('travis-composer-input')).toHaveValue('Keep my question');
+  await page.evaluate(() => window.__voiceHarness.late?.());
+  await expect(page.locator('.travis-message--user')).toHaveCount(0);
+  expect(await page.evaluate(() => window.__voiceHarness.aborts)).toBe(1);
+});
+
+test('Shift+Enter keeps a newline for editing and Enter sends the reviewed draft', async ({
+  page,
+}) => {
+  await stubAnonymousSession(page);
+  await openReadyChat(page);
+  const input = page.getByTestId('travis-composer-input');
+  await input.fill('Prefer not to say');
+  await input.press('Shift+Enter');
+  await expect(input).toHaveValue('Prefer not to say\n');
+  await expect(page.locator('.travis-message--user')).toHaveCount(0);
+  await input.press('Enter');
+  await expect(page.locator('.travis-message--user')).toHaveText(['Prefer not to say']);
+});
