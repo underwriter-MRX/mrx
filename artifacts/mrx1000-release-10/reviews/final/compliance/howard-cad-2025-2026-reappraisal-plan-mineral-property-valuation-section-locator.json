@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave191_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0794",
+  "slug": "howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator",
+  "title": "Howard CAD 2025-2026 Reappraisal Plan: Mineral Property Valuation Section Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+  "source_path": "src/content/posts/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.mdx",
+  "input_body_sha256": "f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637",
+  "input_frontmatter_sha256": "7141841e0a617c1c44f8d60eee6dc19a8b743f29f6a2ae82bdeea026ba7de45c",
+  "expected_repo_sha256": "f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637",
+  "two_image_manifest_sha256": "3eec4a7296510c85aa0371145e0fb40c53da0778c7aacbee1b8554352650bbab",
+  "visual_metadata": {
+    "hero_alt": "A navy archive drawer and blank reflowing sheets appear beside the exact Howard CAD mineral-section locator title.",
+    "social_alt": "A navy archive drawer and blank reflowing sheets appear beside the exact Howard CAD mineral-section locator title.",
+    "inline_alt": "An overhead source-versus-render document board appears above the Howard CAD 2025-2026 mineral property valuation phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2025-2026 Mineral Section Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 134,
+    "answer_summary_word_count": 77,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave191",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave191_compliance",
+  "review_run_id": "mrx1000-wave191-compliance-20260915T071309Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "8ffeafb8c204d9e3d0c7ae205d9f78fb222ed4b53ba05ad3255fe4edcfa45bef",
+  "expected_inline_sha256": "ee16aa32f009735dd9bbd4177175fa8054a4c1899796a32ffd3a4eebd847dae1",
+  "findings": [
+    "Complete current MDX SHA-256 is f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects statutory interpretation, current-contract inference outside the plan period, person or property identification, ownership, account, tract, lease, well, acreage, reserves, production, appraisal, taxable value, tax owed, title, offer, sale value, filing, protest, legal, or outcome conclusions.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, government identity, document content, contractor claim, numerical result, property fact, appraisal result, tax direction, title, sale value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "reappraisal_plan_locator_no_current_contract_statutory_interpretation_person_property_owner_account_tract_lease_well_acreage_reserve_production_appraisal_tax_title_offer_sale_or_legal_claim_pass",
+    "source_bytes_and_renderer_specific_page_locator_separation_pass",
+    "embedded_ector_title_observation_without_cause_or_affiliation_inference_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_government_mark_logo_seal_microsoft_word_branding_official_page_person_hand_map_money_oilfield_chart_value_signature_ui_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.mdx",
+    "/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp",
+    "/assets/articles/inline/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/howard-cad-2025-2026-mineral-property-valuation.webp"
+  ]
+}

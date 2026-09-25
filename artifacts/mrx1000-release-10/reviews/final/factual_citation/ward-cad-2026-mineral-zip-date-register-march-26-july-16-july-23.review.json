@@ -1,0 +1,122 @@
+{
+  "artifact_type": "mrx1000_wave238_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:26Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0858",
+  "slug": "ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23",
+  "title": "Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+  "source_path": "src/content/posts/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23.mdx",
+  "input_body_sha256": "23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde",
+  "input_frontmatter_sha256": "dd468087aef91eb344e35e05187d36b0001cb497983796fcf3fd817e7c5f62a0",
+  "expected_repo_sha256": "23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde",
+  "two_image_manifest_sha256": "84e2a614f918cc73a8219c3bc920bd7354018145b87c8307d94267dc6dd05a7a",
+  "visual_metadata": {
+    "hero_alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
+    "social_alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
+    "inline_alt": "A top-down seven-file timestamp evidence board appears above the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026 Mineral ZIP Date Register · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 144,
+    "answer_summary_word_count": 54,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T18:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave238",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave238_factual",
+  "review_run_id": "mrx1000-wave238-factual-20260915T071326Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde; all 4 declared sources passed current HTTPS access review.",
+    "The Ward outer ZIP is 35,266,126 bytes with SHA-256 7993b427ee51193ce86d5490102054e2e30e26f5811cacfd3791819803d07752 and seven central-directory entries.",
+    "Every entry contains a conventional DOS date/time plus a five-byte 0x5455 extended timestamp field. APPNOTE 4.4.6 describes the MS-DOS representation and its two-second precision; APPNOTE 4.6.1 maps 0x5455 to extended timestamp.",
+    "ZipInfo 3.00 in America/Los_Angeles reports member 2 on March 26; members 1, 3, 5, 6, and 7 on July 16; and member 4 on July 23 across the displayed representations. Member 1 is DOS 18:52:44, UT local 16:52:44, and UT UTC 23:52:44.",
+    "The article does not infer publication, certification, creation, update, effective, filing, delivery, upload, approval, or data-as-of chronology, interpret member contents, or repeat the Ward recap aggregate or cross-publisher layout-byte comparison."
+  ],
+  "checks": [
+    "four_official_https_sources_with_exact_source_roles",
+    "ward_publisher_page_and_exact_outer_zip_identity_pass",
+    "seven_central_directory_entry_names_dates_and_byte_counts_pass",
+    "dos_and_0x5455_extended_timestamp_representation_pass",
+    "zipinfo_3_00_environment_and_representation_disclosure_pass",
+    "three_calendar_date_grouping_and_file_number_order_distinction_pass",
+    "no_business_chronology_inference_pass",
+    "no_member_payload_content_use_or_personal_data_reproduction_pass",
+    "adjacent_article_nonduplication_and_information_gain_pass",
+    "answer_first_claim_adjacent_citation_and_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ward CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/home/DataRecords",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:26Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Ward CAD Data and Records page supplies the publisher route and visible 2026 Certified Mineral Appraisal Roll (Zip) relationship.",
+      "claim_scope": "It does not establish any member timestamp, publication chronology, owner record, appraisal result, private value, title, tax, legal effect, or transaction conclusion."
+    },
+    {
+      "label": "Ward CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:26Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact Ward archive supplies the outer-container identity, seven central-directory rows, conventional DOS date/time fields, 0x5455 extended-timestamp fields, member labels, byte counts, and archive integrity context.",
+      "claim_scope": "The article uses central-directory metadata only. It does not treat any field as publication, certification, creation, update, effective, filing, delivery, upload, approval, or data-as-of chronology and does not inspect or reproduce member payload content."
+    },
+    {
+      "label": "PKWARE ZIP APPNOTE page (accessed 2026-08-31)",
+      "url": "https://support.pkware.com/pkzip/appnote",
+      "publisher": "pkware.my.site.com",
+      "accessed_at": "2026-09-15T07:13:26Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://pkware.my.site.com/s/pkzip-and-securezip",
+        "content_type": "text/html;charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The PKWARE APPNOTE publisher page supplies first-party context for the maintained ZIP format specification. The hash-locked APPNOTE 6.3.10 text defines the conventional MS-DOS date/time fields and maps 0x5455 to the extended timestamp field.",
+      "claim_scope": "The specification describes storage fields. It does not interpret the Ward archive, identify its creator, certify member dates, or assign business chronology to the entries."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:26Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing context for local appraisal and tax questions.",
+      "claim_scope": "It does not validate the Ward archive, interpret a ZIP timestamp, decide title or ownership, establish private value, or provide legal or tax advice."
+    }
+  ]
+}

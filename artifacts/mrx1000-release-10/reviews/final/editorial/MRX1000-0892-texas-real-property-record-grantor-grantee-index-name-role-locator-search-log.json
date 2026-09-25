@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave247_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0892",
+  "slug": "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log",
+  "title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+  "source_path": "src/content/posts/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log.mdx",
+  "input_body_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+  "input_frontmatter_sha256": "d9db5acbbc801234bf0f074e458a0cb461dac75579043644102f06dd9f65242c",
+  "expected_repo_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+  "two_image_manifest_sha256": "43ce69294f49add8b2550e53ed6ed0d4c91c8e3eed649243e3acf490c0fc8e60",
+  "visual_metadata": {
+    "hero_alt": "An archival index drawer and a selected blank card appear beside the exact Article 319 title.",
+    "social_alt": "An archival index drawer and a selected blank card appear beside the exact Article 319 title.",
+    "inline_alt": "A people-free overhead county-index search-log worksheet appears below the exact Texas grantor-grantee keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Grantor-Grantee Index Search Log · MRX",
+    "seo_title_character_count": 44,
+    "description_character_count": 150,
+    "answer_summary_word_count": 52,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:50:54Z",
+    "reviewed_by": "mrx_compliance-continuous-wave247",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/learning-center/title-lease-ownership/",
+      "support": "/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave247_editorial",
+  "review_run_id": "mrx1000-wave247-editorial-20260915T071334Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19; the answer-first article contains 2301 body tokens and five FAQs.",
+    "The planning cash-for-mineral-rights document identity is rejected. The final article answers one narrow question: how should one Texas county grantor/grantee index attempt be recorded so another authorized reviewer can reproduce it?",
+    "Information gain is concrete: a ten-field attempt row, separate name-variant and role controls, four bounded result states, source age and complete-file identity, stable claim IDs, a source-to-conclusion stop table, and explicit adjacent-article ownership boundaries.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the low side-angle archival-drawer hero and bright people-free strict-overhead search-log worksheet are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2301,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 52
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 44,
+        "description_character_count": 150,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T23:50:54Z",
+        "reviewed_by": "mrx_compliance-continuous-wave247",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/learning-center/title-lease-ownership/",
+        "support": "/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log.mdx",
+    "/assets/articles/hero/texas-real-property-record-grantor-grantee-index-name-role-and-locator-search-log.webp",
+    "/assets/articles/inline/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/texas-grantor-grantee-index-search-log.webp"
+  ]
+}

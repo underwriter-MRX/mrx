@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave138_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T11:15:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0343",
+  "slug": "texas-tdi-title-agent-report-retrieval-provenance-worksheet",
+  "title": "Texas TDI Title Agent Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-tdi-title-agent-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-tdi-title-agent-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "input_frontmatter_sha256": "82ac612575b5deb4c5044d88cdffd0529052e2eecc265936b5bf8aaf64e58455",
+  "expected_repo_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "two_image_manifest_sha256": "d94ba8ad967110d17cb505355a82f86bbf7303306616eba598f582059e3a3ad7",
+  "visual_metadata": {
+    "hero_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "social_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "inline_alt": "A top-down blank report-attempt worksheet appears above the exact Texas TDI title-agent keyword."
+  },
+  "reviewer_id": "codex_wave138_editorial",
+  "review_run_id": "mrx1000-wave138-editorial-20260826T111518Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7; the answer-first article contains 1526 body tokens and five FAQs.",
+    "The article rejects both colliding comparison identities and owns one distinct deliverable: a blank provenance record for one authorized manual TDI Title Agent and Escrow Officer report route and one named-report attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The low-oblique public-report station and strict-overhead blank report-attempt worksheet are materially distinct compositions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1526,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-tdi-title-agent-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-tdi-title-agent-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-tdi-title-agent-report-retrieval-provenance-worksheet/texas-tdi-title-agent-report-retrieval.webp"
+  ]
+}

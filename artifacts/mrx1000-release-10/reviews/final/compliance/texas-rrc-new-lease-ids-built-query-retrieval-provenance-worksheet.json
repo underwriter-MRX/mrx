@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave107_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0292",
+  "slug": "texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "input_frontmatter_sha256": "e89854a204e676ee6a5a82a09f671f1a8032e02ab59ca7c1f1a787b2eb1029c2",
+  "expected_repo_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "two_image_manifest_sha256": "14fb005cea9ae4561dd0522cc88ccd0d5aff9a9eb924c62d0424c6c91a424368",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "social_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "inline_alt": "A people-free overhead query worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 66,
+    "description_character_count": 155,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T14:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave107",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-drilling-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave107_compliance",
+  "review_run_id": "mrx1000-wave107-compliance-20260915T072833Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "2a0322aefcf7f540eff49a32d37a05cfff894496a7e0b889ce02631afb82435f",
+  "expected_inline_sha256": "43c26bf13ab003cf762234e1673b4172c78354b2dea9824b772ef385951b781f",
+  "findings": [
+    "Complete current MDX SHA-256 is 527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541; hero/share and inline image hashes are separately locked.",
+    "The article keeps New Lease IDs Built Query separate from Production Report Queries, Production Data Query, Drilling Permit, Field Search, Wellbore, P-4, proration, and other RRC routes; preserves source uncertainty; controls identifiers; and stops before regulatory, legal, title, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, criterion, result, signature, seal, logo, lease, operator, permit, production, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_new_lease_ids_built_query_retrieval_no_lease_operator_permit_api_field_production_status_compliance_property_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/texas-rrc-new-lease-ids-built-query-retrieval.webp"
+  ]
+}

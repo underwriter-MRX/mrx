@@ -1,0 +1,123 @@
+{
+  "artifact_type": "mrx1000_wave247_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0892",
+  "slug": "texas-real-property-record-grantor-grantee-index-name-role-locator-search-log",
+  "title": "Texas Real-Property Record Grantor-Grantee Index: Name, Role, and Locator Search Log",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+  "source_path": "src/content/posts/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log.mdx",
+  "input_body_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+  "input_frontmatter_sha256": "d9db5acbbc801234bf0f074e458a0cb461dac75579043644102f06dd9f65242c",
+  "expected_repo_sha256": "ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19",
+  "two_image_manifest_sha256": "43ce69294f49add8b2550e53ed6ed0d4c91c8e3eed649243e3acf490c0fc8e60",
+  "visual_metadata": {
+    "hero_alt": "An archival index drawer and a selected blank card appear beside the exact Article 319 title.",
+    "social_alt": "An archival index drawer and a selected blank card appear beside the exact Article 319 title.",
+    "inline_alt": "A people-free overhead county-index search-log worksheet appears below the exact Texas grantor-grantee keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Grantor-Grantee Index Search Log · MRX",
+    "seo_title_character_count": 44,
+    "description_character_count": 150,
+    "answer_summary_word_count": 52,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:50:54Z",
+    "reviewed_by": "mrx_compliance-continuous-wave247",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/learning-center/title-lease-ownership/",
+      "support": "/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave247_factual",
+  "review_run_id": "mrx1000-wave247-factual-20260915T071334Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is ae897b5414a5d61cab5be209a876c66d931fa2adec51ca8fa82dc6d57a01db19; all 4 declared sources passed current HTTPS access review.",
+    "The captured official statutes response is 250,874 bytes with SHA-256 dbfba8a96dc3cd584157ca66aaafdf67e0ed15dd5a0c8a58f3d4bd0f109fc646; Local Government Code Section 193.003 requires an alphabetical real-property index, specific recording location, and grantor/grantee cross-index.",
+    "The captured County Clerk Manual is 2,809,948 bytes, 279 PDF pages, and SHA-256 3a9d4200c52a10651949c6a9009020f177153159867e24f9eab0c28c01a2396f; PDF page 28, printed page II-6, was rendered and visually inspected.",
+    "The captured TSLAC About County Records page is 51,720 bytes with SHA-256 ce8efdbd335ecfb9581468e8cb159e4aa7174743349413e03db04981a69fa05b and supplies the direct-grantor, reverse-grantee, and imperfect historical-alphabetization boundaries.",
+    "The captured TSLAC property-research page is 48,344 bytes with SHA-256 4caebc2be12f3b85f8f88b269b69df398e67365f06fbf5b39d5baa2e9564aa24 and supplies county-custodian, online-availability, and older-record variability context.",
+    "No source supports treating an index hit as proof of identity, current ownership, chain of title, instrument completeness, legal effect, or a transaction result; no displayed result is bounded to that exact attempt."
+  ],
+  "checks": [
+    "four_official_https_sources_with_exact_source_roles",
+    "texas_local_government_code_section_193_003_index_and_cross_index_scope_pass",
+    "texas_county_clerk_manual_complete_file_hash_page_count_and_visual_page_map_pass",
+    "tslac_about_county_records_hash_direct_reverse_and_historical_index_boundary_pass",
+    "tslac_property_research_hash_county_custodian_and_interface_variability_scope_pass",
+    "exact_name_variant_role_date_range_and_route_reproducibility_controls_pass",
+    "no_result_displayed_does_not_prove_absence_boundary_pass",
+    "index_hit_is_locator_lead_not_identity_ownership_title_or_legal_effect_boundary_pass",
+    "adjacent_package_record_control_copy_retrieval_and_multi_source_log_nonduplication_pass",
+    "answer_first_claim_adjacent_citation_source_age_and_known_unknowns_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Local Government Code Chapter 193, §193.003 (accessed 2026-08-31)",
+      "url": "https://statutes.capitol.texas.gov/Docs/SDocs/LOCALGOVERNMENTCODE.pdf",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/SDocs/LOCALGOVERNMENTCODE.pdf",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Local Government Code Section 193.003 supplies the statewide requirement for an alphabetical real-property-record index, a specific recording-location reference, and grantor/grantee cross-indexing.",
+      "claim_scope": "It does not prove that a displayed person is the intended person, that a search is exhaustive, that an instrument affects a mineral interest, or that any person currently owns an interest."
+    },
+    {
+      "label": "Texas Judicial Branch, County Clerk Manual, 2023 edition, PDF page 28 (accessed 2026-08-31)",
+      "url": "https://www.txcourts.gov/media/1457469/county-clerk-manual-2023-edition.pdf",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-09-15T07:13:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/media/1457469/county-clerk-manual-2023-edition.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 2023 County Clerk Manual explains party-name indexing, specific record location, and separate grantor and grantee indexes on PDF page 28, printed page II-6.",
+      "claim_scope": "The manual does not make an online interface complete, resolve a name ambiguity, certify a copy, determine title, or supply individualized legal advice."
+    },
+    {
+      "label": "Texas State Library and Archives Commission, About County Records (accessed 2026-08-31)",
+      "url": "https://www.tsl.texas.gov/arc/local/aboutrecords.html",
+      "publisher": "www.tsl.texas.gov",
+      "accessed_at": "2026-09-15T07:13:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tsl.texas.gov/arc/local/aboutrecords.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas State Library and Archives Commission About County Records page explains direct grantor and reverse grantee indexing and cautions that older county indexes may not be in perfect alphabetical sequence.",
+      "claim_scope": "It does not establish the coverage of a current county portal, prove that a name variant was indexed, or decide ownership or legal effect."
+    },
+    {
+      "label": "Texas State Library and Archives Commission, Land and Property History Research (accessed 2026-08-31)",
+      "url": "https://www.tsl.texas.gov/ref/propertyresearch",
+      "publisher": "www.tsl.texas.gov",
+      "accessed_at": "2026-09-15T07:13:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tsl.texas.gov/ref/propertyresearch",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas State Library and Archives Commission property-research page explains that real-property records are maintained by the county where the property is located and that online availability and older-record practices vary by county.",
+      "claim_scope": "It does not provide the instrument, prove absence after a failed search, or replace the county custodian or qualified title and legal review."
+    }
+  ]
+}

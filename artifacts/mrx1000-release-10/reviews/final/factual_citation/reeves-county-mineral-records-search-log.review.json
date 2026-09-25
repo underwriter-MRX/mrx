@@ -1,0 +1,107 @@
+{
+  "artifact_type": "mrx1000_wave132_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T08:27:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0337",
+  "slug": "reeves-county-mineral-records-search-log",
+  "title": "Reeves County Mineral Records: A Source-by-Source Search Log",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-mineral-records-search-log/",
+  "source_path": "src/content/posts/reeves-county-mineral-records-search-log.mdx",
+  "input_body_sha256": "fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714",
+  "input_frontmatter_sha256": "b5b985cc3690ad3f328245c241a9fbb0c7771cdf5b476d901f31ee2b3aba6b11",
+  "expected_repo_sha256": "fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714",
+  "two_image_manifest_sha256": "e6898598161bf5e2bd35e2bb2c7151970045d8de9ba5cab264ac9ddeeef61241",
+  "visual_metadata": {
+    "hero_alt": "Four separated records stations appear beside the exact Reeves County search-log title.",
+    "social_alt": "Four separated records stations appear beside the exact Reeves County search-log title.",
+    "inline_alt": "Four separate overhead source-log zones appear above the exact Reeves County search keyword."
+  },
+  "reviewer_id": "codex_wave132_factual",
+  "review_run_id": "mrx1000-wave132-factual-20260826T082723Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five current official sources, their route identities, displayed search-field context, separate source roles, and four non-conclusive result labels.",
+    "The article invents no result, record reference, interface relationship, person, tract, amount, ownership, title, acreage, value, tax, lease, well, property-connection, legal-effect, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Reeves County Clerk, Official Records Search (accessed 2026-08-26)",
+      "url": "https://reeves.tx.ds.search.govos.com/",
+      "publisher": "reeves.tx.ds.search.govos.com",
+      "accessed_at": "2026-08-26T08:27:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://reeves.tx.ds.search.govos.com/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Reeves County Clerk-branded portal identifies the official property-record search route and exposes index-search context including party, subdivision, document-type, document-number, and recorded-date controls.",
+      "claim_scope": "It supports route identity and recorded-instrument index leads only; it does not prove ownership, title, property connection, instrument effect, identity, acreage, value, or completeness."
+    },
+    {
+      "label": "Reeves County Appraisal District, Property Search (accessed 2026-08-26)",
+      "url": "https://www.reevescountytax.org/search",
+      "publisher": "www.reevescountytax.org",
+      "accessed_at": "2026-08-26T08:27:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.reevescountytax.org/search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Reeves County appraisal or tax search exposes account, owner-name, owner-address, and property-location search choices.",
+      "claim_scope": "It supports a separately documented appraisal or tax observation only; it does not establish deed identity, mineral title, acreage, lease status, amount owed, market value, or property connection."
+    },
+    {
+      "label": "Texas Comptroller, Reeves County Directory (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/reeves.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T08:27:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/reeves.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the current Reeves County appraisal-district contact and website.",
+      "claim_scope": "It supports current route provenance only; it does not validate an individual account, value, tax status, ownership, title, or private-record relationship."
+    },
+    {
+      "label": "Texas General Land Office, Mineral Rights FAQ (accessed 2026-08-26)",
+      "url": "https://www.glo.texas.gov/sites/default/files/2025-01/Minerals%20FAQ_updated%202023.pdf",
+      "publisher": "www.glo.texas.gov",
+      "accessed_at": "2026-08-26T08:27:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glo.texas.gov/sites/default/files/2025-01/Minerals%20FAQ_updated%202023.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The Texas GLO FAQ describes its original land-grant record role and distinguishes later county deed records maintained by county clerks.",
+      "claim_scope": "It supports original land-grant context and the source-role boundary only; it does not establish present mineral ownership, title, property connection, acreage, value, or legal effect."
+    },
+    {
+      "label": "Railroad Commission of Texas, Public GIS Viewer (accessed 2026-08-26)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/gis-viewer/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-26T08:27:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/gis-viewer/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Railroad Commission page identifies the current Public GIS Viewer route for regulator-hosted oil, gas, and pipeline data and links current guidance.",
+      "claim_scope": "It supports regulator-data route identity and displayed feature observations only; it does not prove a private owner, title, lease interest, royalty decimal, acreage, payment right, value, or property connection."
+    }
+  ]
+}

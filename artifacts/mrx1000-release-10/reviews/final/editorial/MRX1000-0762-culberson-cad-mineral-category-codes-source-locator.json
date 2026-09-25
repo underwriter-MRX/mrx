@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave163_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0762",
+  "slug": "culberson-cad-mineral-category-codes-source-locator",
+  "title": "Culberson CAD Mineral Category Codes Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+  "source_path": "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+  "input_body_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "input_frontmatter_sha256": "89909c88695a402c4e8b27c7459ba2529d8e2ab99b3f5180cb89429d310e0e73",
+  "expected_repo_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "two_image_manifest_sha256": "76f9802f766927a66ff5e93859749835b8413bf7f19fbeba60f03c106853e291",
+  "visual_metadata": {
+    "hero_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "social_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "inline_alt": "Three separate source tiles appear above the exact Culberson CAD mineral category codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Mineral Category Codes Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 142,
+    "answer_summary_word_count": 72,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T10:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave163",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave163_editorial",
+  "review_run_id": "mrx1000-wave163-editorial-20260915T071254Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee; the answer-first article contains 2262 body tokens and five FAQs.",
+    "The article rejects the generic Culberson County valuation-guide identity and owns one distinct deliverable: a source locator for the current official 2025 mass-appraisal report, 2025 annual report, current statewide classification guide, and their literal displayed mineral category labels and page locations.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique closed-index-cabinet hero and strict-overhead three-source-role layout are materially distinct and contain no person, real record, code, number, row data, owner data, property fact, government mark, appraisal conclusion, tax or protest direction, legal conclusion, recommendation, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2262,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 72
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 44,
+        "description_character_count": 142,
+        "author": "ariana",
+        "reviewed_at": "2026-08-27T10:45:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave163",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+    "/assets/articles/hero/culberson-cad-mineral-category-codes-source-locator.webp",
+    "/assets/articles/inline/culberson-cad-mineral-category-codes-source-locator/culberson-cad-mineral-category-codes.webp"
+  ]
+}

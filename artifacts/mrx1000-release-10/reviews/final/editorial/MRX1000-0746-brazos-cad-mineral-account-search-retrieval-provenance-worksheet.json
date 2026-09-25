@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave152_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T16:53:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0746",
+  "slug": "brazos-cad-mineral-account-search-retrieval-provenance-worksheet",
+  "title": "Brazos CAD Mineral Account Search Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/brazos-cad-mineral-account-search-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "157fca4e473245656beabab610a1f57422ce454bd295ca813fb7541d4a7fd3da",
+  "input_frontmatter_sha256": "dc05b792fe2ee08eb0cf7f738be15a94b6f8302b78ae516ecc3f1d63aaa31b15",
+  "expected_repo_sha256": "157fca4e473245656beabab610a1f57422ce454bd295ca813fb7541d4a7fd3da",
+  "two_image_manifest_sha256": "96c00e667819886deb46731f9a7d7734248323679d3afeb0c754d3819dbf73a8",
+  "visual_metadata": {
+    "hero_alt": "A source-scoped property-search desk appears beside the exact Brazos CAD worksheet title.",
+    "social_alt": "A source-scoped property-search desk appears beside the exact Brazos CAD worksheet title.",
+    "inline_alt": "A top-down blank five-step attempt log appears above the exact Brazos CAD mineral account search keyword."
+  },
+  "reviewer_id": "codex_wave152_editorial",
+  "review_run_id": "mrx1000-wave152-editorial-20260826T165324Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 157fca4e473245656beabab610a1f57422ce454bd295ca813fb7541d4a7fd3da; the answer-first article contains 2321 body tokens and five FAQs.",
+    "The article rejects the broad county-value and family-decision factory identity and owns one distinct deliverable: a blank provenance record for one no-login attempt in one official Brazos CAD destination search.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The low-three-quarter laptop-and-folder hero and bright strict-overhead five-card attempt log are materially distinct and contain no person, county outline, identifier, tax amount, appraisal value, deed, well, offer, result, or conclusion."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "157fca4e473245656beabab610a1f57422ce454bd295ca813fb7541d4a7fd3da"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2321,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/brazos-cad-mineral-account-search-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/brazos-cad-mineral-account-search-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/brazos-cad-mineral-account-search.webp"
+  ]
+}

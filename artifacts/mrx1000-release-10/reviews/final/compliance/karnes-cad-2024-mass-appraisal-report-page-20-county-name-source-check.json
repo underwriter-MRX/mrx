@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave196_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:12Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0799",
+  "slug": "karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check",
+  "title": "Karnes CAD 2024 Mass Appraisal Report: Page 20 County-Name Source Check",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+  "source_path": "src/content/posts/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.mdx",
+  "input_body_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+  "input_frontmatter_sha256": "c05ce20208511197b7630c9bc11e93386cd82819733a6d64e4d8d33f9658e174",
+  "expected_repo_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+  "two_image_manifest_sha256": "56442d8238c354ad7a2ea7a3cdff65d4aaa8d4d791bfff1b4cec7d06b3e656b2",
+  "visual_metadata": {
+    "hero_alt": "An upright blank report folio and source tabs appear beside the exact Karnes CAD page 20 source-check title.",
+    "social_alt": "An upright blank report folio and source tabs appear beside the exact Karnes CAD page 20 source-check title.",
+    "inline_alt": "Two overhead blank evidence cards appear above the Karnes CAD 2024 mass appraisal report page 20 phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD Page 20 County-Name Source Check · MRX",
+    "seo_title_character_count": 49,
+    "description_character_count": 152,
+    "answer_summary_word_count": 45,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T09:52:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave196",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave196_compliance",
+  "review_run_id": "mrx1000-wave196-compliance-20260915T071312Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "06dd26bbb0e770ee67fbe83738be18439488b51890e1ba8f6d1d3e0ac1257044",
+  "expected_inline_sha256": "a38ff02cc7b7c550356416db90d61c3c2007a5515c83cb4150d005ac1168aabb",
+  "findings": [
+    "Complete current MDX SHA-256 is 024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b; hero/share and inline image hashes are separately locked.",
+    "The article prohibits silent correction, causation inference, local-applicability claims, and use of the sentence as property-specific appraisal-methodology, appraisal, tax, valuation, transaction, or legal evidence.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, county conclusion, correction, property fact, appraisal, tax, value, offer, outcome, or ranking/citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "source_conflict_no_correction_causation_local_applicability_property_method_appraisal_tax_owner_account_title_acreage_production_royalty_value_offer_transaction_or_legal_claim_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_county_names_official_form_seal_logo_map_property_person_hand_money_chart_graph_arrow_government_mark_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.mdx",
+    "/assets/articles/hero/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.webp",
+    "/assets/articles/inline/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/karnes-cad-2024-mass-appraisal-report-page-20.webp"
+  ]
+}

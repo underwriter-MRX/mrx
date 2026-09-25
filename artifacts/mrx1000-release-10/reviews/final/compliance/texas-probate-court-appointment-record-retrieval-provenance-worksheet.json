@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave144_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:20:49Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0442",
+  "slug": "texas-probate-court-appointment-record-retrieval-provenance-worksheet",
+  "title": "Texas Probate Court Appointment Record Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-probate-court-appointment-record-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-probate-court-appointment-record-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "input_frontmatter_sha256": "4802028274bdbd753de8c0284d9fc328ffd140d944ab40c0a5a5661e032206e7",
+  "expected_repo_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "two_image_manifest_sha256": "a6d99937274b0f06881b7638d4f26fa5859d7f2d32f918bfff8c0dee27067353",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "social_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "inline_alt": "A top-down blank probate record retrieval worksheet appears above the exact Texas appointment-record keyword."
+  },
+  "reviewer_id": "codex_wave144_compliance",
+  "review_run_id": "mrx1000-wave144-compliance-20260826T122049Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "0083923b75605f53ef10d0041d289a11c197d045bfa542b205c44e9bc9499ab8",
+  "expected_inline_sha256": "aa3d9a4f266666fbf3c31ee3b2f0f03b167746167563b96ea972366ef9b25c7b",
+  "findings": [
+    "Complete current MDX SHA-256 is 584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442; hero/share and inline image hashes are separately locked.",
+    "The reusable public worksheet is blank, covers one manual official route and one controlled search attempt, keeps real criteria and retained evidence in separate controlled references, places non-verification warnings beside the result and outcome fields, and stops at authorized-human review.",
+    "Image text is limited to the exact title and keyword and adds no case, identity, appointment, authority, legal-effect, property, mineral, valuation, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_authorized_manual_official_texas_court_or_county_route_and_probate_appointment_order_or_letters_record_search_attempt_exact_source_displayed_fields_only_controlled_private_references_located_not_located_unverified_outcomes_login_contact_payment_order_certified_copy_submission_bypass_scrape_or_bulk_collection_stop_no_identity_match_authentication_certification_appointment_authority_legal_effect_title_ownership_mineral_value_offer_or_transaction_conclusion_authorized_human_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-probate-court-appointment-record-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-probate-court-appointment-record-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-probate-court-appointment-record-retrieval-provenance-worksheet/texas-probate-court-appointment-record-retrieval.webp"
+  ]
+}

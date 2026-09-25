@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave237_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0857",
+  "slug": "why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf",
+  "title": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+  "canonical_url": "https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+  "source_path": "src/content/posts/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.mdx",
+  "input_body_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+  "input_frontmatter_sha256": "40cb62d24a145e8521e63dfc7a7737460d0a4cff0d8d0ef1dc08231366308d69",
+  "expected_repo_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+  "two_image_manifest_sha256": "870f8b4398fd9f8536db7e7237e4b54efa32633ed25ed93b9ffbd51f5a3f01c7",
+  "visual_metadata": {
+    "hero_alt": "Two separate archive cases hold identical blank layout packets beside the exact Article 309 title.",
+    "social_alt": "Two separate archive cases hold identical blank layout packets beside the exact Article 309 title.",
+    "inline_alt": "A top-down byte-identity and provenance board appears above the exact Ward and Loving CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward and Loving CAD Shared 2026 File Layout PDF · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 156,
+    "answer_summary_word_count": 62,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T17:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave237",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave237_factual",
+  "review_run_id": "mrx1000-wave237-factual-20260915T071325Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630; all 5 declared sources passed current HTTPS access review.",
+    "The Ward outer ZIP is 35,266,126 bytes with SHA-256 7993b427ee51193ce86d5490102054e2e30e26f5811cacfd3791819803d07752; the Loving outer ZIP is 53,251,242 bytes with SHA-256 b55aaa930f85eeb684ca5784af7280f169e1f226624369fcdc60e15b21da3ce6.",
+    "Each exact 2. MINERAL FILE LAYOUT.pdf member is 46,370 bytes with SHA-256 f0b34cc4b7a96e6cd5480f350f28554b3af72fc9cfd45959763f76d0aef1b020; the matching complete-file hash establishes byte identity for those two retrieved inner objects.",
+    "The embedded PDF Title value is MINERAL FILE LAYOUT.xlsx while the archive member name ends in .pdf; the mismatch is preserved without attributing a cause.",
+    "The article does not repeat Article 274 page mapping, interpret A/N/P, test TXT or CSV conformance, identify an author or originator, or infer applicability, accuracy, completeness, privacy, ownership, title, appraisal, tax, private value, offer quality, or legal effect."
+  ],
+  "checks": [
+    "five_official_https_sources_with_exact_source_roles",
+    "two_publisher_routes_and_two_outer_archives_separate_provenance_pass",
+    "ward_and_loving_outer_zip_bytes_and_sha256_identity_pass",
+    "matching_inner_member_bytes_and_sha256_complete_byte_identity_pass",
+    "embedded_title_xlsx_and_member_extension_pdf_mismatch_preserved_pass",
+    "article274_page_map_and_field_interpretation_nonduplication_pass",
+    "no_owner_level_file_access_or_record_reproduction_pass",
+    "stable_claim_ids_evidence_roles_inference_limits_and_source_dates_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ward CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/home/DataRecords",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Ward CAD Data and Records page supplies the Ward publisher route and visible 2026 certified mineral appraisal roll ZIP relationship.",
+      "claim_scope": "It supports the Ward provenance lane only and does not validate a Loving route, file authorship, origin, applicability, record content, title, appraisal, tax, private value, or legal effect."
+    },
+    {
+      "label": "Ward CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact Ward archive supplies the outer-container bytes, SHA-256, seven-member identity, and the selected layout-member bytes and SHA-256.",
+      "claim_scope": "No owner-level member is opened or sampled, and the archive does not establish authorship, applicability, conformance, correctness, ownership, title, appraisal, tax, private value, or legal effect."
+    },
+    {
+      "label": "Loving CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://lovingcad.org/home/DataRecords",
+      "publisher": "lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://lovingcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Loving CAD Data and Records page supplies the Loving publisher route and visible 2026 certified mineral appraisal roll ZIP relationship.",
+      "claim_scope": "It supports the Loving provenance lane only and does not validate a Ward route, file authorship, origin, applicability, record content, title, appraisal, tax, private value, or legal effect."
+    },
+    {
+      "label": "Loving CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-31)",
+      "url": "https://www.lovingcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785193258_LOVING+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+      "publisher": "www.lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.lovingcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785193258_LOVING+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact Loving archive supplies the separate outer-container bytes and SHA-256 plus the previously hash-locked selected layout-member identity.",
+      "claim_scope": "The matching inner hash proves complete-byte identity between the two retrieved inner objects only; it does not establish common authorship, origin, current applicability, export conformance, field meaning, privacy status, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing context for local appraisal and tax questions.",
+      "claim_scope": "It does not validate either archive, identify the layout author, interpret a field, decide applicability, answer a property question, establish private value, or provide legal or tax advice."
+    }
+  ]
+}

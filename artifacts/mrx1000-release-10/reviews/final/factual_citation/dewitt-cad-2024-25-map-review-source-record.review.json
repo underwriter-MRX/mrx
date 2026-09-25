@@ -1,0 +1,119 @@
+{
+  "artifact_type": "mrx1000_wave168_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:55Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0767",
+  "slug": "dewitt-cad-2024-25-map-review-source-record",
+  "title": "DeWitt CAD 2024-25 MAP Review Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-25-map-review-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-2024-25-map-review-source-record.mdx",
+  "input_body_sha256": "14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee",
+  "input_frontmatter_sha256": "cbc9eae33105eeb49161cd1b7bc9b4e896d8262ccc07643fd90157b4af9fd709",
+  "expected_repo_sha256": "14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee",
+  "two_image_manifest_sha256": "cd3a2404a907cb21d566e00a36f25b7f94d7295c6ef4eb8d59a7eec1e924dfca",
+  "visual_metadata": {
+    "hero_alt": "A navy review folio with four blank sections appears beside the exact DeWitt CAD MAP review source-record title.",
+    "social_alt": "A navy review folio with four blank sections appears beside the exact DeWitt CAD MAP review source-record title.",
+    "inline_alt": "Four abstract review lanes and a cycle boundary appear above the exact DeWitt CAD 2025 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD 2024-25 MAP Review Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 146,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave168",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-25-map-review-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave168_factual",
+  "review_run_id": "mrx1000-wave168-factual-20260915T071255Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official MAP overview, current 2025 results-page relationship, exact 15-page DeWitt final-review PDF, complete-file hash, page-2 summary, pages 3-15 Tier 3 detail, literal review labels, limited guide context, and retrieval provenance.",
+    "The article does not invent a source relationship, report result, owner, account, property, calculation, aggregate, normalization, benchmark, rank, trend, comparison, label equivalence, compliance conclusion, appraisal result, tax result, protest result, mineral valuation, offer, sale price, or owner-specific conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "canonical_entity_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_texas_comptroller_source_priority_pass",
+    "fifteen_page_complete_visual_review_and_exact_page_locator_pass",
+    "literal_report_labels_not_converted_into_independent_certification_comparison_property_appraisal_tax_protest_valuation_offer_sale_or_owner_outcome_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Methods and Assistance Program (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:55Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller MAP overview supplies the statutory program scope, biennial cadence, approximate annual review split, and three-tier question context.",
+      "claim_scope": "It supports program-purpose and cadence context only. It does not supply a DeWitt result, property result, appraisal conclusion, tax result, protest position, mineral valuation, offer, sale, or owner action."
+    },
+    {
+      "label": "Texas Comptroller, 2025 MAP Review Results (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:55Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2025 MAP Review Results page supplies the current publisher relationship and exact link to the DeWitt report.",
+      "claim_scope": "It supports publisher and current-link provenance only. It does not independently reproduce, certify, expand, compare, or apply the report findings."
+    },
+    {
+      "label": "Texas Comptroller, DeWitt CAD 2024-25 Final MAP Review (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/dewitt-2025.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:55Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/dewitt-2025.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official 15-page DeWitt final MAP review supplies the cover identity, page-2 summary, Tier 3 label, pages 3-15 detailed questions, literal answers and recommendation labels, and complete-file identity.",
+      "claim_scope": "It supports complete visual-review transcription and source-control limitations only. No finding is recalculated, aggregated, normalized, benchmarked, ranked, trended, compared, combined with another source, or applied to a person, property, appraisal, tax, protest, mineral valuation, offer, or sale."
+    },
+    {
+      "label": "Texas Comptroller, Guide to the Methods and Assistance Program (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1818.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:55Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1818.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official Comptroller guide supplies limited current context for reviewer inputs, question types, the review cycle, and final-report publication.",
+      "claim_scope": "It supports process context only. It does not change the DeWitt report, certify a district or property, interpret law for an owner, or direct an appraisal, tax, protest, valuation, offer, or transaction action."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave218_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:21Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0838",
+  "slug": "pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches",
+  "title": "Pecos CAD Industrial Appraisal Limits: Title, Inspection, and Sketches",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/",
+  "source_path": "src/content/posts/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.mdx",
+  "input_body_sha256": "f310979ebfd4101919c30d42549dd3683bd6b4fb0f4533dded1396662aaf74ca",
+  "input_frontmatter_sha256": "22a82b07ca576e962bf7e0fad91a7326482a1cc45bf4b40c73000d141100351c",
+  "expected_repo_sha256": "f310979ebfd4101919c30d42549dd3683bd6b4fb0f4533dded1396662aaf74ca",
+  "two_image_manifest_sha256": "2ec689a0a5eeb086f456178075e82fe916dbde794e3c63689df4037d92965d5e",
+  "visual_metadata": {
+    "hero_alt": "An unmarked Pecos industrial inspection workspace appears beside the exact Article 290 title.",
+    "social_alt": "An unmarked Pecos industrial inspection workspace appears beside the exact Article 290 title.",
+    "inline_alt": "A strict-overhead evidence-limit workspace appears above the exact Pecos CAD industrial appraisal assumptions keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Industrial Appraisal Limits Explained · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 142,
+    "answer_summary_word_count": 32,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T08:18:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave218",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave218_compliance",
+  "review_run_id": "mrx1000-wave218-compliance-20260915T071321Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "ea61ae02892d9d7a4843698f4cc0c5c668a25f5284cc1699418bf1dbaea86e3a",
+  "expected_inline_sha256": "f5485024c20e2dd2810e6841c9149f7cc1c9c3ac81110c726cad5114a845bd63",
+  "findings": [
+    "Complete current MDX SHA-256 is f310979ebfd4101919c30d42549dd3683bd6b4fb0f4533dded1396662aaf74ca; hero/share and inline image hashes are separately locked.",
+    "Every plan statement remains attributed to the controlled Pecos PDF and attached to its physical-page locator.",
+    "No industrial record is applied to a mineral interest, and no title, inspection, survey, engineering, hidden-condition, tax, protest, private-value, offer, or transaction conclusion is made.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, owner, account, property, value, status, result, or approval claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "industrial_section_not_applied_to_mineral_interest_or_oil_and_gas_appraisal_pass",
+    "plan_assumptions_not_converted_to_title_inspection_survey_engineering_hidden_condition_tax_protest_private_value_offer_or_transaction_result_pass",
+    "local_appraisal_and_state_context_layers_preserved_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unrelated_readable_text_forms_signatures_seals_logos_account_records_owner_data_property_records_money_values_results_government_symbols_approval_claims_conclusions_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.mdx",
+    "/assets/articles/hero/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches.webp",
+    "/assets/articles/inline/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/pecos-cad-industrial-appraisal-assumptions.webp"
+  ]
+}

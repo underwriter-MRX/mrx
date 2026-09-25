@@ -1,0 +1,166 @@
+{
+  "artifact_type": "mrx1000_wave104_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0288",
+  "slug": "texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC P-5 Renewal Status Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5",
+  "input_frontmatter_sha256": "572cbf986fc792c6dff1ba9a7a31980f2cf7c0186c077c5a3fff5453323992a2",
+  "expected_repo_sha256": "f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5",
+  "two_image_manifest_sha256": "768726707c4452f23ed353c8de54ce9e8d4af588e7516af30de99ed444d88f5d",
+  "visual_metadata": {
+    "hero_alt": "An archival route desk and blank criterion tabs appear beside the exact article title.",
+    "social_alt": "An archival route desk and blank criterion tabs appear beside the exact article title.",
+    "inline_alt": "A people-free overhead query-state board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC P-5 Renewal Status Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 65,
+    "description_character_count": 154,
+    "answer_summary_word_count": 70,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T12:52:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave104",
+    "declared_source_count": 8,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-inactive-well-aging-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave104_factual",
+  "review_run_id": "mrx1000-wave104-factual-20260915T072832Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5; all 8 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, exact source labels, source-displayed P-5 Renewal Status criteria and filters, help navigation, result-field labels, detail navigation, and download behavior. None is used to establish a private-property relationship or a filing, renewal, operator, inactive-well, compliance, violation, extension, plugging, production, title, ownership, value, offer, legal, or transaction conclusion.",
+    "The article publishes no actual operator, API, lease, well, district, county, field, filter selection, result, status, violation, extension, form detail, cost, shut-in date, screenshot, export, property identifier, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "eight_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory supplies the P-5 Renewal Status Query index label, launch relationship, and global online-query limitation.",
+      "claim_scope": "The article uses the directory only to preserve the official route, label, source identity, and limitation; it does not treat a result as authoritative, legally effective, complete, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official About Oil & Gas Data Queries page supplies bounded system context for the separately named P-5 Renewal Status, IWAR, Inactive Well, and Organization P-5 routes.",
+      "claim_scope": "The article uses that context only to keep the routes separate and does not infer record equivalence, operator status, inactive-well status, compliance, renewal, or legal effect."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil & Gas Data Query menu (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil & Gas Data Query menu displays P-5 Renewal Status Query, Inactive Well Aging Report Query, Inactive Well Query, and Organization P-5 Query as separate launch routes.",
+      "claim_scope": "The article records the menu labels and route separation only; a shared criterion or P-5 label does not establish that separate query systems describe the same record or private interest."
+    },
+    {
+      "label": "Railroad Commission of Texas, P-5 Renewal Status Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/inactiveWellStatusQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/inactiveWellStatusQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The launched official application supplies the P-5 Renewal Status Query HTML title and visible heading, criteria labels, filter labels, navigation controls, and exact execution route.",
+      "claim_scope": "The article preserves labels and records selected criteria and displayed state without submitting, reproducing, or interpreting a property-specific result."
+    },
+    {
+      "label": "Railroad Commission of Texas, P-5 Renewal Status Query Help (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/P5Query_TOC.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5Query_TOC.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official P-5 Renewal help table of contents supplies the source-defined separation among query, results, download, and contact-help pages.",
+      "claim_scope": "The article records only the help navigation used during one attempt and does not infer a substantive status from opening a help route."
+    },
+    {
+      "label": "Railroad Commission of Texas, P-5 Renewal Status Query How To (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_HowTo.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_HowTo.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official How To page supplies operator and other-criteria search paths, operator and lease selector behavior, source-displayed filter labels, and submit, reset, and return navigation.",
+      "claim_scope": "The article records only the path and source-displayed instructions used in one attempt and does not turn a criterion, filter, selector, or result into a compliance or renewal conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, P-5 Renewal Status Query About (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_About.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_About.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official About page supplies the source description of the query and the names of result-header and result-table fields.",
+      "claim_scope": "The article treats those items only as source descriptions and does not interpret a renewal reminder, operator status, cost field, inactive period, form, compliance field, lease, well, or county."
+    },
+    {
+      "label": "Railroad Commission of Texas, P-5 Renewal Status Query Results Help (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_results_howto.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5RenewalQuery_results_howto.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official results help supplies bounded result-column, navigation, sorting, detail-link, tab, and download context.",
+      "claim_scope": "The article records the displayed result state and retained-reference provenance only and does not interpret a form status, extension, violation, shut-in date, cost calculation, or downstream relationship."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave160_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0759",
+  "slug": "form-50-150-confidentiality-boundary-map-crane-oil-gas-property",
+  "title": "Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+  "source_path": "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+  "input_body_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f",
+  "input_frontmatter_sha256": "233061786aa80cbcfef2ace0a1e2cdb825896caa7e8761e5ecacd92892d239b3",
+  "expected_repo_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f",
+  "two_image_manifest_sha256": "1a91cba9423159c7e30d825247f5cd2397390adbf2e9072e23d9c9d8efd46b41",
+  "visual_metadata": {
+    "hero_alt": "A lockable archival case appears beside the exact Form 50-150 confidentiality-boundary title.",
+    "social_alt": "A lockable archival case appears beside the exact Form 50-150 confidentiality-boundary title.",
+    "inline_alt": "A public-versus-controlled boundary appears above the exact Form 50-150 Crane oil and gas property keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-150 Confidentiality Boundary",
+    "seo_title_character_count": 42,
+    "description_character_count": 153,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T08:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave160",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave160_editorial",
+  "review_run_id": "mrx1000-wave160-editorial-20260915T071254Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f; the answer-first article contains 2433 body tokens and five FAQs.",
+    "The article rejects the generic valuation-risk identity and owns one distinct deliverable: a source-controlled map of the blank Form 50-150 identity, displayed CONFIDENTIAL treatment, four-section structure, broad field and attachment categories, Important Information subjects, official-source relationships, retrieval provenance, and public-versus-controlled record boundary.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique lockable-case hero and strict-overhead two-zone boundary are materially distinct and contain no person, real form, owner data, property fact, government mark, filing result, legal conclusion, tax conclusion, recommendation, deadline, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2433,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 63
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 42,
+        "description_character_count": 153,
+        "author": "ariana",
+        "reviewed_at": "2026-08-27T08:30:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave160",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+    "/assets/articles/hero/form-50-150-confidentiality-boundary-map-for-crane-oil-and-gas-property.webp",
+    "/assets/articles/inline/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/form-50-150-crane-oil-and-gas-property.webp"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave179_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:03Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0778",
+  "slug": "ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record",
+  "title": "Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+  "source_path": "src/content/posts/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.mdx",
+  "input_body_sha256": "cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591",
+  "input_frontmatter_sha256": "979df411dcd16401867c458c16a2398e3bb8bd31f2594f8500fca7de2831687b",
+  "expected_repo_sha256": "cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591",
+  "two_image_manifest_sha256": "f24514dcc663fc6f97ee9089950d3f890285673a6436906108b17b3d0dddd3ed",
+  "visual_metadata": {
+    "hero_alt": "A sealed navy archive lockbox and one cream data cartridge appear beside the exact Ector CAD ZIP source-control title.",
+    "social_alt": "A sealed navy archive lockbox and one cream data cartridge appear beside the exact Ector CAD ZIP source-control title.",
+    "inline_alt": "One overhead sealed file tile appears above the exact Ector CAD 2026 certified mineral appraisal roll keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mineral Roll ZIP Source Control",
+    "seo_title_character_count": 46,
+    "description_character_count": 147,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T03:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave179",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave179_compliance",
+  "review_run_id": "mrx1000-wave179-compliance-20260915T071303Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "3b44072f529f7f964a74b7f369ea3eac07032f0a1d09136589384ded6097a291",
+  "expected_inline_sha256": "fab156ce82ad7d8cab6e29a29d4ae9c7ded2a3b5fc409f7f369fbbe14f13e9b5",
+  "findings": [
+    "Complete current MDX SHA-256 is cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects member-content and row-data access, private-data review, statutory interpretation, district-compliance judgment, appraisal judgment, tax or protest direction, ownership or title findings, market-offer valuation, investment analysis, sale advice, and promised outcomes.",
+    "Any numeric observation is limited to publisher display facts, complete-file retrieval facts, and generic central-directory metadata. No row count, owner count, property count, appraisal amount, tax amount, price, value, rate, formula, example, or personal-data field is reproduced or inferred.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, property fact, appraisal claim, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "certified_roll_source_control_no_member_content_row_data_private_data_property_application_legal_interpretation_appraisal_tax_protest_title_ownership_market_offer_investment_sale_or_owner_action_pass",
+    "adjacent_ector_parameters_mass_report_culberson_dimmit_and_property_sources_not_combined_or_used_as_ector_row_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_property_record_personal_data_official_page_government_mark_seal_signature_logo_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.mdx",
+    "/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp",
+    "/assets/articles/inline/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/ector-cad-2026-certified-mineral-appraisal-roll.webp"
+  ]
+}

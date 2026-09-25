@@ -1,0 +1,81 @@
+{
+  "artifact_type": "mrx1000_wave146_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T13:10:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0521",
+  "slug": "texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller County Tax Assessor-Collector Directory Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397",
+  "input_frontmatter_sha256": "ed20b69bad9c4772ab3bb9d547bfcd4e5526ce544a73d7cd5b8754dc6d007c9c",
+  "expected_repo_sha256": "add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397",
+  "two_image_manifest_sha256": "fe766247552b7a72de623092f8b391713b26e5e3d323d1b5b1645e979a8adcfa",
+  "visual_metadata": {
+    "hero_alt": "A front-facing civic-office directory panel appears beside the exact Texas tax-assessor worksheet title.",
+    "social_alt": "A front-facing civic-office directory panel appears beside the exact Texas tax-assessor worksheet title.",
+    "inline_alt": "A top-down blank collecting-unit card set appears above the exact Texas tax-assessor directory keyword."
+  },
+  "reviewer_id": "codex_wave146_factual",
+  "review_run_id": "mrx1000-wave146-factual-20260826T131024Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397; all 3 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to three current official Texas Comptroller sources, exact tax-office directory scope, exact displayed-field labels, collecting-unit statement variants, and attempt-level outcomes.",
+    "The article invents no officeholder, contact, address, collecting unit, taxing unit, owner, heir, estate, property, tax status, title, mineral connection, value, offer, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "three_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Local Property Appraisal and Tax Information county directory (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T13:10:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Comptroller county-directory index distinguishes appraisal-district questions from county tax-office questions, says the agency does not have local appraisal or tax information, and describes the directory as contact information plus taxing units served.",
+      "claim_scope": "It supports the official starting route, county selection, tax-office directory scope, and source limitation. It does not identify a property or owner, prove collecting responsibility, retrieve a local record, or establish tax status, title, mineral connection, value, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Montgomery County directory page (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/montgomery.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T13:10:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/montgomery.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current representative official county page displays a Tax Assessor/Collector section, Last Updated label, officeholder/contact/address fields, a Collecting Unit label, and Consolidated Taxing Units Served codes and names.",
+      "claim_scope": "It validates the blank worksheet field structure only. The article does not republish values, certify an officeholder, infer property service or collection responsibility, contact the office, or expand into local tax or property records."
+    },
+    {
+      "label": "Texas Comptroller, Austin County directory page (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/austin.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T13:10:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/austin.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current representative official Austin County page displays a Tax Assessor/Collector section and an alternative Collecting Unit statement that the tax office does not collect property taxes.",
+      "claim_scope": "It supports preserving collecting-unit language exactly and forbids inferring responsibility from the county name or a different page section. It does not authorize a local-system search, contact, appraisal, tax, title, mineral, valuation, offer, or transaction conclusion."
+    }
+  ]
+}

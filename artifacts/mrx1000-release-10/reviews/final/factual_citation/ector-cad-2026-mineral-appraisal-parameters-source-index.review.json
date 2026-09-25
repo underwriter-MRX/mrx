@@ -1,0 +1,148 @@
+{
+  "artifact_type": "mrx1000_wave177_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0776",
+  "slug": "ector-cad-2026-mineral-appraisal-parameters-source-index",
+  "title": "Ector CAD 2026 Mineral Appraisal Parameters Source Index",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+  "source_path": "src/content/posts/ector-cad-2026-mineral-appraisal-parameters-source-index.mdx",
+  "input_body_sha256": "c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd",
+  "input_frontmatter_sha256": "54cbe80dd336f65b95ccc06a8e1e6e8c0b6fb1cb023e1c8675eba4a0601d7892",
+  "expected_repo_sha256": "c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd",
+  "two_image_manifest_sha256": "03329e5471b3d038d4d58c23e9b78d4b869a66f6a5b00180c1fedad77d089f08",
+  "visual_metadata": {
+    "hero_alt": "A navy source folio and section tabs sit beside the exact Ector CAD mineral-parameters source-index title.",
+    "social_alt": "A navy source folio and section tabs sit beside the exact Ector CAD mineral-parameters source-index title.",
+    "inline_alt": "An overhead route card, report stack, and page grid appear above the exact Ector CAD parameters keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mineral Appraisal Parameters Index",
+    "seo_title_character_count": 49,
+    "description_character_count": 142,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T02:26:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave177",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave177_factual",
+  "review_run_id": "mrx1000-wave177-factual-20260915T071302Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official publisher relationship, exact 2,723,252-byte 60-page PDF, SHA-256 c079ccae2f7e5d5817e42edc17a658a6dc3c1fe3097809603b031a29264608f1, HTTP Last-Modified field, page-1 identity, page-3 contents map, page-5 policy categories, and printed pages 40 through 48.",
+    "The article preserves the internal 2021 Comptroller-manual and 2025 Property Value Study source years and does not invent, infer, recalculate, normalize, compare, apply, recommend, or validate a property-specific parameter, price, rate, factor, schedule, tax, appraisal, value, offer, or sale result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_issuer_document_year_page_route_retrieval_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "versioned_prompt_universe_and_execution_vs_performance_measurement_contract_pass",
+    "all_sixty_pdf_pages_visual_review_and_printed_pages_one_three_five_and_forty_through_forty_eight_detail_pass",
+    "bundle_2021_2025_and_2026_source_year_roles_preserved_pass",
+    "tax_appraisal_parameters_not_converted_into_owner_fair_value_or_market_offer_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ector County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Ector CAD home page supplies the current publisher surface and displayed Annual Reports link labeled Mineral Appraisal Parameters.",
+      "claim_scope": "It does not establish PDF contents, a property record, appraisal result, tax result, ownership, title, market-offer value, or transaction conclusion."
+    },
+    {
+      "label": "Ector CAD, 2026 Mineral Appraisal Parameters PDF (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/pdf/mineral_appraisal_parameters.pdf",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/pdf/mineral_appraisal_parameters.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact 60-page official PDF supplies one 2,723,252-byte retrieval, SHA-256, document identity, contents map, policy page, and bounded section observations.",
+      "claim_scope": "The article does not reproduce private data, apply a table value, calculate a property result, judge appraisal correctness, or decide tax, title, offer, sale, or legal effect."
+    },
+    {
+      "label": "Texas Tax Code, Section 23.175 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm#23.175",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 23.175 supplies current official statutory provenance for oil or gas interests.",
+      "claim_scope": "The article does not interpret the section, calculate a value, decide compliance, or apply it to a district, property, owner, appraisal, tax, protest, offer, or transaction."
+    },
+    {
+      "label": "Texas Comptroller, School District Property Value Study resources (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/pvs/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/pvs/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller School District Property Value Study page supplies the current official resource relationship for the oil-and-gas discount-rate publication and appraisal manual.",
+      "claim_scope": "It does not validate an Ector property result or authorize MRX to apply the district schedules."
+    },
+    {
+      "label": "Texas Comptroller, Manual for Discounting Oil and Gas Income (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1703.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1703.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official June 2021 Comptroller manual supplies its own issuer, date, and discounting-method context as a separate source object.",
+      "claim_scope": "It does not make a 2026 Ector parameter, property appraisal, market offer, or sale conclusion."
+    },
+    {
+      "label": "Texas Comptroller, Ector County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Ector County directory supplies limited current public district-directory context.",
+      "claim_scope": "It is not the source for the PDF contents and does not validate a page observation, property record, appraisal, tax, title, value, offer, or transaction conclusion."
+    }
+  ]
+}

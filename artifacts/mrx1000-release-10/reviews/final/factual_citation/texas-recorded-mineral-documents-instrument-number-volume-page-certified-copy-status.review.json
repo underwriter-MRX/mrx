@@ -1,0 +1,112 @@
+{
+  "artifact_type": "mrx1000_wave246_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0891",
+  "slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+  "title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+  "source_path": "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+  "input_body_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "input_frontmatter_sha256": "56c8c60b0742360c78314db5a7fa8b2a716999795cc0caa6cb319ffcee94a701",
+  "expected_repo_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "two_image_manifest_sha256": "46cb2136cfa72765ed7b6f70f2b6955ba5412ff0a37a3b0e8a70ec737eda80cd",
+  "visual_metadata": {
+    "hero_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "social_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "inline_alt": "A top-down five-field record-control matrix appears below the exact Texas locator-field keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Locator Fields and Copy Status · MRX",
+    "seo_title_character_count": 57,
+    "description_character_count": 153,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:23:29Z",
+    "reviewed_by": "mrx_compliance-continuous-wave246",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/learning-center/title-lease-ownership/",
+      "support": "/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave246_factual",
+  "review_run_id": "mrx1000-wave246-factual-20260915T071332Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e; all 3 declared sources passed current HTTPS access review.",
+    "The captured Texas Property Code Chapter 11 HTML is 22,639 bytes with SHA-256 274fa3cfda2b15d503c12bf5ea439fbaab1a262ab7acc3623db757855f1fe5f3.",
+    "Section 11.001 ties effective recording to the county containing part of the property; Section 11.007 recognizes volume/page, film code, or county-clerk file number references to county real-property records.",
+    "Section 11.008(a) includes a mineral lease within that section’s recorded real-property instrument definition, while Section 11.008(k) warns that an online database is not the official repository and may not reflect complete or unaltered official-record contents.",
+    "The captured Texas County Clerk Manual is 2,809,948 bytes, 279 PDF pages, and SHA-256 3a9d4200c52a10651949c6a9009020f177153159867e24f9eab0c28c01a2396f; PDF pages 27 and 45 were rendered and visually inspected.",
+    "PDF page 27, printed II-5, distinguishes book volume/page location from the unique instrument number that may identify an electronically recorded and stored instrument; PDF page 45, printed II-23, describes a clerk-certified or attested copy and notes scanned-instrument certifications generally reference an instrument number.",
+    "The captured TSLAC research page is 48,344 bytes with SHA-256 4caebc2be12f3b85f8f88b269b69df398e67365f06fbf5b39d5baa2e9564aa24 and was last modified February 18, 2025."
+  ],
+  "checks": [
+    "three_official_https_sources_with_exact_source_roles",
+    "texas_property_code_complete_html_hash_and_section_locator_pass",
+    "texas_county_clerk_manual_complete_file_hash_page_count_and_visual_page_map_pass",
+    "tslac_page_hash_last_modified_and_county_custodian_scope_pass",
+    "recording_county_rule_attribution_without_owner_specific_legal_conclusion_pass",
+    "volume_page_film_code_and_county_clerk_file_number_locator_forms_pass",
+    "online_database_not_official_repository_and_may_be_incomplete_boundary_pass",
+    "certified_copy_attests_replica_not_current_ownership_boundary_pass",
+    "already_found_instrument_no_retrieval_walkthrough_boundary_pass",
+    "adjacent_document_package_redaction_sale_checklist_and_cpa_handoff_nonduplication_pass",
+    "answer_first_claim_adjacent_citation_source_age_and_known_unknowns_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Property Code Chapter 11, §§11.001, 11.007, and 11.008 (accessed 2026-08-31)",
+      "url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.11.htm",
+      "publisher": "tcss.legis.texas.gov",
+      "accessed_at": "2026-09-15T07:13:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://tcss.legis.texas.gov/resources/PR/htm/PR.11.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Property Code Chapter 11 supplies the statewide recording-county rule in Section 11.001, the recognized volume/page, film-code, and county-clerk-file-number locator forms in Section 11.007, the mineral-lease example in Section 11.008(a), and the online-database completeness warning in Section 11.008(k).",
+      "claim_scope": "It does not identify a particular owner, determine current title, certify a retrieved copy, select a legally sufficient document, or resolve an owner-specific transaction."
+    },
+    {
+      "label": "Texas Judicial Branch, County Clerk Manual, 2023 edition, PDF pages 27 and 45 (accessed 2026-08-31)",
+      "url": "https://www.txcourts.gov/media/1457469/county-clerk-manual-2023-edition.pdf",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-09-15T07:13:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/media/1457469/county-clerk-manual-2023-edition.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 2023 County Clerk Manual supplies the recording-location distinction on PDF page 27, printed page II-5, and the clerk-certified-copy description on PDF page 45, printed page II-23.",
+      "claim_scope": "The manual does not prove that an online image is complete, that a particular copy is certified, that a person currently owns an interest, or that an instrument is sufficient for an individualized legal, title, tax, or transaction purpose."
+    },
+    {
+      "label": "Texas State Library and Archives Commission, Land and Property History Research (accessed 2026-08-31)",
+      "url": "https://www.tsl.texas.gov/ref/propertyresearch",
+      "publisher": "www.tsl.texas.gov",
+      "accessed_at": "2026-09-15T07:13:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tsl.texas.gov/ref/propertyresearch",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas State Library and Archives Commission page supplies the statewide research direction that real-property records are maintained by the county where the property is located and that researchers should contact the County Clerk for locating help.",
+      "claim_scope": "It does not provide the record itself, certify a copy, determine title, or replace the applicable county custodian or qualified adviser."
+    }
+  ]
+}

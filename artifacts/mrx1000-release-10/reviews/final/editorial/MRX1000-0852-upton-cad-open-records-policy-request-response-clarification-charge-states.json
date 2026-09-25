@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave232_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0852",
+  "slug": "upton-cad-open-records-policy-request-response-clarification-charge-states",
+  "title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+  "source_path": "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+  "input_body_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+  "input_frontmatter_sha256": "960e0f680fdecba44b209427e7f80f60e1e2c28f0c4261a24ed0e6967cdecb58",
+  "expected_repo_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+  "two_image_manifest_sha256": "fd19a0256238a9bbfecb5e840118f1f976cacbde22b6d7a35a22ec82b91f7c5b",
+  "visual_metadata": {
+    "hero_alt": "Four blank records-process gates appear beside the exact Article 304 title.",
+    "social_alt": "Four blank records-process gates appear beside the exact Article 304 title.",
+    "inline_alt": "A top-down navy and ivory discrepancy register appears above the exact Upton CAD open records policy keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Open Records Policy States · MRX",
+    "seo_title_character_count": 42,
+    "description_character_count": 152,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T14:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave232",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave232_editorial",
+  "review_run_id": "mrx1000-wave232-editorial-20260915T071323Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd; the answer-first article contains 2077 body tokens and five FAQs.",
+    "The original valuation identity is rejected. The final article answers one distinct Upton policy-reading job through a two-layer, four-state model and a discrepancy register.",
+    "Information gain is concrete: source-age labeling, request/response/clarification/charge states, local-versus-current discrepancy rows, stable claim IDs, and explicit live-request stop states.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the four-state front-angle paper-process scene and strict top-down two-stack discrepancy register are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2077,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 54
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 42,
+        "description_character_count": 152,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T14:30:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave232",
+        "declared_source_count": 6,
+        "visible_body_citation_count": 6,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+    "/assets/articles/hero/upton-cad-open-records-policy-request-response-clarification-and-charge-states.webp",
+    "/assets/articles/inline/upton-cad-open-records-policy-request-response-clarification-charge-states/upton-cad-open-records-policy.webp"
+  ]
+}

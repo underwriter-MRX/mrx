@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave114_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0298",
+  "slug": "texas-comptroller-lease-drop-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller Lease Drop Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-lease-drop-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-lease-drop-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b",
+  "input_frontmatter_sha256": "8be161c8eea77a06a5557951541705229c4489f137e79c525e0aec5a60913f52",
+  "expected_repo_sha256": "097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b",
+  "two_image_manifest_sha256": "343ff465b51e1161c12ed6a2c78672feb166288785cfec9eff923cff50d12838",
+  "visual_metadata": {
+    "hero_alt": "A Texas mineral owner records a public Lease Drop attempt beside the exact article title.",
+    "social_alt": "A Texas mineral owner records a public Lease Drop attempt beside the exact article title.",
+    "inline_alt": "A people-free overhead two-path Lease Drop worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Comptroller Lease Drop Retrieval Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 153,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T17:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave114",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/understanding-your-mineral-royalty-checks-breakdown/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-lease-drop-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave114_compliance",
+  "review_run_id": "mrx1000-wave114-compliance-20260915T072834Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "728b104a36204786cba4051832d1eac7e51433a9c22fbc279ef10a417a412a25",
+  "expected_inline_sha256": "135b5a18f146cc18d57b04ef272671ae682f9ec88a0a6c7959138f261e49997b",
+  "findings": [
+    "Complete current MDX SHA-256 is 097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b; hero/share and inline image hashes are separately locked.",
+    "The article keeps the public no-login Lease Drop path separate from secure CONG functions, registration, login, account data, open-records submission, RRC route worksheets, the broad production locator, tax advice, payment advice, and all valuation or transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no identifier, production figure, result, status, seal, logo, tax rate, payment, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_comptroller_public_lease_drop_manual_retrieval_no_secure_account_automation_tax_payment_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-lease-drop-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-comptroller-lease-drop-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-comptroller-lease-drop-retrieval-provenance-worksheet/texas-comptroller-lease-drop-retrieval.webp"
+  ]
+}

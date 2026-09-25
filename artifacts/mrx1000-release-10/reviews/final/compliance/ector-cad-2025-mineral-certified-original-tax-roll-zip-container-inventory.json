@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave181_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0780",
+  "slug": "ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory",
+  "title": "Ector CAD 2025 Mineral Certified Original Tax Roll ZIP Container Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/",
+  "source_path": "src/content/posts/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.mdx",
+  "input_body_sha256": "0281645a61560af19a9eb09beb2b3e77e093f3df3995d84d01b24a2b4a21d1a5",
+  "input_frontmatter_sha256": "04e7cfb0d600e13f5588784ea8e459382cdd3a8ec5c262a2cbcc185a001b9553",
+  "expected_repo_sha256": "0281645a61560af19a9eb09beb2b3e77e093f3df3995d84d01b24a2b4a21d1a5",
+  "two_image_manifest_sha256": "4d997e540d21bd72e311366336f16de3b53a20469f68df2197d33fe258114aab",
+  "visual_metadata": {
+    "hero_alt": "A three-bay archive carousel appears beside the exact Ector CAD 2025 original-tax-roll container-inventory title.",
+    "social_alt": "A three-bay archive carousel appears beside the exact Ector CAD 2025 original-tax-roll container-inventory title.",
+    "inline_alt": "Three overhead evidence plates surround the exact Ector CAD 2025 mineral original tax roll keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2025 Mineral Original Tax Roll ZIP",
+    "seo_title_character_count": 44,
+    "description_character_count": 145,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T03:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave181",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave181_compliance",
+  "review_run_id": "mrx1000-wave181-compliance-20260915T071304Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "adf2b7f892ec19c92b454318482e054b6cdd231fd2c4c2df72d92dbb60a19c4c",
+  "expected_inline_sha256": "3064a55064f2a6a64a8ba2d54f81d82fd9009836a620c77f265c161429bf9198",
+  "findings": [
+    "Complete current MDX SHA-256 is 0281645a61560af19a9eb09beb2b3e77e093f3df3995d84d01b24a2b4a21d1a5; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects member-content and row-data access, private-data review, statutory interpretation, district-compliance judgment, tax or penalty calculation, appraisal judgment, protest or filing direction, ownership or title findings, market-offer valuation, investment analysis, sale advice, and promised outcomes.",
+    "Any numeric observation is limited to publisher display facts, complete-file retrieval facts, and generic central-directory metadata. No row count, owner count, property count, tax amount, appraisal amount, price, value, rate, formula, example, or personal-data field is reproduced or inferred.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, property fact, tax direction, appraisal claim, ownership, title, value, offer, recommendation, filing instruction, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "original_tax_roll_container_no_member_content_row_data_private_data_property_application_legal_interpretation_tax_penalty_interest_appraisal_protest_filing_title_ownership_market_offer_investment_sale_or_owner_action_pass",
+    "adjacent_ector_parameters_mass_report_certified_appraisal_roll_reappraisal_plan_unpaid_balance_and_other_county_sources_not_combined_or_used_as_row_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_property_record_personal_data_official_page_government_mark_seal_signature_logo_tax_amount_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.mdx",
+    "/assets/articles/hero/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory.webp",
+    "/assets/articles/inline/ector-cad-2025-mineral-certified-original-tax-roll-zip-container-inventory/ector-cad-2025-mineral-original-tax-roll.webp"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave204_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0819",
+  "slug": "martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label",
+  "title": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/",
+  "source_path": "src/content/posts/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.mdx",
+  "input_body_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+  "input_frontmatter_sha256": "e38336c95b5fb18fd7199910e7a1733ccf361ea02839a8612b0403864c8e87b2",
+  "expected_repo_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+  "two_image_manifest_sha256": "9bed670e35424b7f57b447a293665ab8cfcb2cecefd4bfd6c98d7a11d627e066",
+  "visual_metadata": {
+    "hero_alt": "Two contrasting evidence sleeves and a magnifier sit beside the exact Martin CAD archive conflict title.",
+    "social_alt": "Two contrasting evidence sleeves and a magnifier sit beside the exact Martin CAD archive conflict title.",
+    "inline_alt": "Two blank source cards feed a conflict log above the exact Martin CAD 2026 mineral archive label conflict phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD Certified vs Preliminary PDF Label · MRX",
+    "seo_title_character_count": 51,
+    "description_character_count": 142,
+    "answer_summary_word_count": 67,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T13:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave204",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave204_compliance",
+  "review_run_id": "mrx1000-wave204-compliance-20260915T071316Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "7b68eb5f13fcb30dfdedf0ebc3d198d7bb4ca8b26b066ad44d91d2195412c2d1",
+  "expected_inline_sha256": "b330ee1ed4fc43fe75de1711e0f71909f09cfb884163f1d37aebcc99930253c1",
+  "findings": [
+    "Complete current MDX SHA-256 is 397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e; hero/share and inline image hashes are separately locked.",
+    "The article prohibits treating publisher placement, an inner PDF label, file hash, page count, extraction result, or report identity as proof of certification state, currency, completeness, record validity, appraisal, tax, value, transaction, or legal conclusion.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, certification determination, property identity, record data, appraisal, tax, monetary, offer, outcome, or ranking or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_record_names_addresses_identifiers_account_property_monetary_ownership_appraisal_tax_value_offer_transaction_or_legal_claim_pass",
+    "publisher_certified_grouping_and_pdf_preliminary_label_preserved_as_unresolved_conflict_pass",
+    "pdf_text_extraction_and_ocr_explicitly_non_validating_with_page_1_manual_render_review_pass",
+    "pages_2_through_2225_excluded_from_public_claims_and_images_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_names_identifiers_labels_stamps_official_forms_seals_logos_owner_or_property_data_people_hands_money_maps_rigs_courthouses_legal_symbols_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.mdx",
+    "/assets/articles/hero/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.webp",
+    "/assets/articles/inline/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/martin-cad-2026-mineral-archive-label-conflict.webp"
+  ]
+}

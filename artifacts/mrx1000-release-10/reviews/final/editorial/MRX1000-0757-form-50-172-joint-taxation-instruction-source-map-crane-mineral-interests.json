@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave158_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:38Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0757",
+  "slug": "form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests",
+  "title": "Form 50-172 Joint-Taxation Instruction Source Map for Crane Mineral Interests",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+  "source_path": "src/content/posts/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests.mdx",
+  "input_body_sha256": "9c695a01799820ea884bd386eeaca4c53d3e03f71c18c239a6e1beb371bd7498",
+  "input_frontmatter_sha256": "69e3eb5a59feec0b31ead413db1f42da53fc139fd021a804f6fe9dd8d32a8112",
+  "expected_repo_sha256": "9c695a01799820ea884bd386eeaca4c53d3e03f71c18c239a6e1beb371bd7498",
+  "two_image_manifest_sha256": "4ef2606cc8aed4fc53269353d0c0d1e817b8859e0d86af6fab051f3e7a57b20e",
+  "visual_metadata": {
+    "hero_alt": "A blank source-provenance booklet appears beside the exact Form 50-172 instruction-map title.",
+    "social_alt": "A blank source-provenance booklet appears beside the exact Form 50-172 instruction-map title.",
+    "inline_alt": "An overhead four-source map appears above the exact Form 50-172 Crane mineral interest keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-172 Instruction Map",
+    "seo_title_character_count": 33,
+    "description_character_count": 157,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T21:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave158",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave158_editorial",
+  "review_run_id": "mrx1000-wave158-editorial-20260915T072838Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 9c695a01799820ea884bd386eeaca4c53d3e03f71c18c239a6e1beb371bd7498; the answer-first article contains 2329 body tokens and five FAQs.",
+    "The article rejects the generic Crane County valuation identity and owns one distinct deliverable: a source-controlled map of the identity, instruction subjects, five-step structure, official-source relationships, retrieval provenance, and limitations of the current official Form 50-172.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique open-book provenance hero and strict-overhead four-tile source map are materially distinct and contain no person, real form, owner data, property fact, government mark, instruction, filing result, legal conclusion, tax conclusion, recommendation, deadline, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "9c695a01799820ea884bd386eeaca4c53d3e03f71c18c239a6e1beb371bd7498"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2329,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 64
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 33,
+        "description_character_count": 157,
+        "author": "ariana",
+        "reviewed_at": "2026-08-26T21:10:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave158",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests.mdx",
+    "/assets/articles/hero/form-50-172-joint-taxation-instruction-source-map-for-crane-mineral-interests.webp",
+    "/assets/articles/inline/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/form-50-172-crane-mineral-interest.webp"
+  ]
+}

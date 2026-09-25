@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave160_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0759",
+  "slug": "form-50-150-confidentiality-boundary-map-crane-oil-gas-property",
+  "title": "Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+  "source_path": "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+  "input_body_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f",
+  "input_frontmatter_sha256": "233061786aa80cbcfef2ace0a1e2cdb825896caa7e8761e5ecacd92892d239b3",
+  "expected_repo_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f",
+  "two_image_manifest_sha256": "1a91cba9423159c7e30d825247f5cd2397390adbf2e9072e23d9c9d8efd46b41",
+  "visual_metadata": {
+    "hero_alt": "A lockable archival case appears beside the exact Form 50-150 confidentiality-boundary title.",
+    "social_alt": "A lockable archival case appears beside the exact Form 50-150 confidentiality-boundary title.",
+    "inline_alt": "A public-versus-controlled boundary appears above the exact Form 50-150 Crane oil and gas property keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-150 Confidentiality Boundary",
+    "seo_title_character_count": 42,
+    "description_character_count": 153,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T08:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave160",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave160_factual",
+  "review_run_id": "mrx1000-wave160-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official Form 50-150 displayed identity, 10-25/12 revision line, three-page structure, CONFIDENTIAL display, Sections 1 through 4, broad blank field and attachment categories, Important Information subjects, Texas Comptroller source context, Crane local-source context, county-directory context, and Texas Tax Code Chapter 22 provenance.",
+    "The article invents no owner, party, address, phone, account, jurisdiction, property description, Railroad Commission identifier, interest type, value, supporting record, signature, date, notary fact, applicability decision, authority, deadline, filing, receipt, acceptance, confidentiality result, disclosure result, penalty, tax result, valuation, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_texas_comptroller_crane_cad_county_directory_and_texas_statute_source_priority_pass",
+    "form_structure_and_confidential_display_not_converted_into_applicability_authority_value_timing_completion_submission_confidentiality_disclosure_penalty_tax_or_legal_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Form 50-150 (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/forms/50-150.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/forms/50-150.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current official three-page blank PDF supplies the displayed title, form number, 10-25/12 revision line, CONFIDENTIAL display, Sections 1 through 4, broad blank field and attachment categories, and Important Information subjects.",
+      "claim_scope": "It supports a literal blank-source identity and boundary map only. The article does not reproduce a completed rendition, enter owner or property values, decide applicability or authority, determine an interest type or value, personalize timing, complete or sign the source, submit anything, or claim confidentiality, acceptance, appraisal treatment, tax treatment, or another result."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Forms (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller property-tax forms index supplies current statewide form-source context.",
+      "claim_scope": "It supports current-source and revision rechecking only. It does not supply owner-specific applicability, form selection, timing, completion, proof, filing, acceptance, confidentiality, or legal-effect conclusions."
+    },
+    {
+      "label": "Crane CAD, Forms (accessed 2026-08-27)",
+      "url": "https://www.cranecad.org/Forms",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/Forms",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Crane CAD forms surface supplies local forms-publisher context and links to statewide property-tax form resources.",
+      "claim_scope": "It supports local source context only. It does not establish that Form 50-150 applies to a particular Crane oil and gas property, identify a filer, choose a form or recipient, or authorize contact or submission."
+    },
+    {
+      "label": "Texas Comptroller, Crane County Directory (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the official Crane County appraisal-district website and local property-tax offices.",
+      "claim_scope": "It supports source identity and jurisdictional separation only. The article does not choose an office, official, recipient, channel, or filing destination."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 22 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.22.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.22.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 22 supplies current official governing-source provenance for the rendition subject represented by the form.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret the statute, decide applicability or authority, determine ownership, interest type, value, timing, confidentiality, disclosure, penalty, tax treatment, or another owner-specific result."
+    }
+  ]
+}

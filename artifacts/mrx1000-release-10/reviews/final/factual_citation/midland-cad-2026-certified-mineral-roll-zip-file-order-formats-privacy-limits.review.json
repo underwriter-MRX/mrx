@@ -1,0 +1,112 @@
+{
+  "artifact_type": "mrx1000_wave212_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0832",
+  "slug": "midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits",
+  "title": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
+  "source_path": "src/content/posts/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits.mdx",
+  "input_body_sha256": "117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907",
+  "input_frontmatter_sha256": "679ffd905d820e3f17b00dadaf1a6dd0ac4c48044ce380bd34ddee91fd4690a1",
+  "expected_repo_sha256": "117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907",
+  "two_image_manifest_sha256": "ccd8b050bd74af9e8f3ace79ff54fda298fdb6b7258f38721cd691a5c8b163ae",
+  "visual_metadata": {
+    "hero_alt": "A sealed archive case, seven blank member objects, and privacy barriers appear beside the exact Article 284 title.",
+    "social_alt": "A sealed archive case, seven blank member objects, and privacy barriers appear beside the exact Article 284 title.",
+    "inline_alt": "A top-down control-file workflow stops before sealed data files above the exact Midland CAD file-layout keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Roll ZIP File Layout & Privacy · MRX",
+    "seo_title_character_count": 56,
+    "description_character_count": 154,
+    "answer_summary_word_count": 43,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave212",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave212_factual",
+  "review_run_id": "mrx1000-wave212-factual-20260915T071318Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907; all 3 declared sources passed current HTTPS access review.",
+    "The archive was retrieved from the official Midland CAD route at 140,096,354 bytes with SHA-256 61ac40ece8e0f52224c9c95e9d4a22491c040057caa72859a3918de222e7eaa4; its seven members total 2,400,158,157 uncompressed bytes.",
+    "The eight-page 46,370-byte file-layout PDF has SHA-256 f0b34cc4b7a96e6cd5480f350f28554b3af72fc9cfd45959763f76d0aef1b020 and describes a 2,260-position record with owner/contact, account, acreage, interest, jurisdiction, and value fields.",
+    "The three-page 4,699-byte recap has SHA-256 8ac7f7b8231ffbb31ce2c31db46a4a54546d62605b3d9519cec9c58ced2ab589 and reports 442,395 total records on tape; the article keeps this separate from Article 282 and any owner-level conclusion.",
+    "No row in the appraisal-roll PDF, TXT, or CSV was opened, extracted, sampled, searched, copied, or republished."
+  ],
+  "checks": [
+    "three_distinct_https_sources",
+    "current_official_open_records_route_pass",
+    "archive_http_metadata_bytes_and_sha256_pass",
+    "seven_member_central_directory_names_sizes_and_total_pass",
+    "file_layout_eight_physical_pages_metadata_bytes_sha_and_field_categories_pass",
+    "recap_three_physical_pages_bytes_sha_aggregate_count_pass",
+    "master_inventory_control_report_scope_pass",
+    "no_owner_level_row_open_extract_sample_search_copy_or_republication_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "archive_identity_vs_record_validity_boundary_pass",
+    "no_silent_normalization_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland Central Appraisal District Open Records page (accessed 2026-08-30)",
+      "url": "https://midcad.org/open-records/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/open-records/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Open Records page supplies the visible 2026 Midland Certified Mineral Roll link under Mineral Files.",
+      "claim_scope": "The link is routing evidence only and does not validate archive contents, completeness, owner identity, property applicability, ownership, title, appraisal, tax, value, production, royalties, or legal effect."
+    },
+    {
+      "label": "Midland CAD 2026 Certified Mineral Roll ZIP (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-content/uploads/2026/07/MIDLAND-CAD-2026-CERTIFIED-MINERAL-OPEN-RECORDS.zip",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-content/uploads/2026/07/MIDLAND-CAD-2026-CERTIFIED-MINERAL-OPEN-RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The controlled ZIP supplies exact response metadata, archive bytes, SHA-256 identity, seven member names and sizes, the file-layout control document, the aggregate recap, and the inventory-listing control report.",
+      "claim_scope": "Archive structure and control-document fields do not prove owner-level data accuracy, completeness, currency, property applicability, title, appraisal correctness, tax treatment, private value, or legal effect; no owner-level row was inspected or reproduced."
+    },
+    {
+      "label": "Texas Comptroller Midland county directory (accessed 2026-08-30)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller directory supplies issuer and official-domain routing evidence for Midland Central Appraisal District and midcad.org.",
+      "claim_scope": "Issuer provenance does not endorse every district file or validate any record, account, appraisal, tax, title, value, production, royalty, or transaction result."
+    }
+  ]
+}

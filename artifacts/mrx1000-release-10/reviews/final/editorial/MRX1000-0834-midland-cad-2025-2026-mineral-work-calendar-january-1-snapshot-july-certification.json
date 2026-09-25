@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave214_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:19Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0834",
+  "slug": "midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification",
+  "title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+  "source_path": "src/content/posts/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification.mdx",
+  "input_body_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+  "input_frontmatter_sha256": "cfab35909a17a2239b2a0e74e274d63b34221bf3f31d1c560da63d74333cbd97",
+  "expected_repo_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+  "two_image_manifest_sha256": "7c2b22ea68252eae05eed40d73d337413b8195764a71deedf97a5a47ad163341",
+  "visual_metadata": {
+    "hero_alt": "A dark planning folio and timeline rail appear beside the exact Article 286 title.",
+    "social_alt": "A dark planning folio and timeline rail appear beside the exact Article 286 title.",
+    "inline_alt": "A bright top-down evidence timeline appears above the exact Midland CAD mineral work calendar keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Work Calendar: January 1 to July · MRX",
+    "seo_title_character_count": 58,
+    "description_character_count": 149,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:59:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave214",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave214_editorial",
+  "review_run_id": "mrx1000-wave214-editorial-20260915T071319Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3; the answer-first article contains 1916 body tokens and five FAQs.",
+    "The original generic Midland County valuation-factors identity is rejected. The replacement owns one answer-first official-plan calendar, effective-date, and data-source crosswalk job.",
+    "Information gain is concrete: exact PDF identity, board-approval locator, physical page 69 work schedule, physical page 102 January 1 and annual-reappraisal statements, physical pages 103 and 105 data-source and snapshot controls, and a plan-versus-outcome boundary.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-oblique archival planning scene and bright strict-overhead evidence workflow are materially distinct."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1916,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 54
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 58,
+        "description_character_count": 149,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T06:59:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave214",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification.mdx",
+    "/assets/articles/hero/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-to-july-certification.webp",
+    "/assets/articles/inline/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/midland-cad-mineral-work-calendar.webp"
+  ]
+}

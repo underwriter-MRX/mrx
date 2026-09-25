@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave124_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:12Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0329",
+  "slug": "texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Form T-1 Monthly Transportation and Storage Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f",
+  "input_frontmatter_sha256": "034f6f907b9b5d941cd2b828ade89d70243370b1b8bb3f2b64274d3d1934594c",
+  "expected_repo_sha256": "e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f",
+  "two_image_manifest_sha256": "6982566f2fa3e58f6faf789f496a8eba656987b98c6a3409453bfe52a9d87a7f",
+  "visual_metadata": {
+    "hero_alt": "A Texas records researcher reviews blank transportation-and-storage folders beside the exact title.",
+    "social_alt": "A Texas records researcher reviews blank transportation-and-storage folders beside the exact title.",
+    "inline_alt": "A people-free overhead T-1 retrieval evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Form T-1 Report Retrieval Worksheet",
+    "seo_title_character_count": 45,
+    "description_character_count": 152,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T12:27:22Z",
+    "reviewed_by": "mrx_compliance-continuous-wave124",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave124_editorial",
+  "review_run_id": "mrx1000-wave124-editorial-20260915T073212Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f; the answer-first article contains 1742 body tokens and five FAQs.",
+    "The article fully rejects the colliding hidden-cost identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Imaged Records Form T-1 profile retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The wide eye-level one-researcher archive scene and people-free strict-overhead T-1 evidence board are materially distinct in camera angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1742,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 65
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 45,
+        "description_character_count": 152,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T12:27:22Z",
+        "reviewed_by": "mrx_compliance-continuous-wave124",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-form-t-1-monthly-transportation-and-storage-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/texas-rrc-form-t-1-report-retrieval.webp"
+  ]
+}

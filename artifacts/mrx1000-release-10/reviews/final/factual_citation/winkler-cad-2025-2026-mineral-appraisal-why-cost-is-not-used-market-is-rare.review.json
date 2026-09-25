@@ -1,0 +1,99 @@
+{
+  "artifact_type": "mrx1000_wave245_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0870",
+  "slug": "winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare",
+  "title": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.mdx",
+  "input_body_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+  "input_frontmatter_sha256": "c0fd0ea294dc54a201dc8f2d152f96aafcd2257952bc5e1999da01ec845acf58",
+  "expected_repo_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+  "two_image_manifest_sha256": "0001bf37332954ebd8631ecf09357f40d12b0b230cb814c144eeda40ac4f1dba",
+  "visual_metadata": {
+    "hero_alt": "Three constrained mineral-appraisal pathways appear beside the exact Article 317 title.",
+    "social_alt": "Three constrained mineral-appraisal pathways appear beside the exact Article 317 title.",
+    "inline_alt": "A top-down evidence board appears below the exact Winkler CAD appraisal-method keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Cost and Market Appraisal Limits · MRX",
+    "seo_title_character_count": 50,
+    "description_character_count": 143,
+    "answer_summary_word_count": 73,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:05:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave245",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave245_factual",
+  "review_run_id": "mrx1000-wave245-factual-20260915T071332Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa; all 2 declared sources passed current HTTPS access review.",
+    "The official PDF is 378,650 bytes with SHA-256 91df8414af2aee0c7609545f4a31385f54f46f06e980a87e89d9a99a8f85dff6 and contains 30 PDF pages; its footer says printed July 2024 and its heading identifies tax years 2025 and 2026.",
+    "Whole-PDF page 21, printed page 19, says acquisition and development costs may bear no relation to present worth and that, as a general rule, P&A does not employ the cost approach for mineral interests.",
+    "Whole-PDF pages 21-22, printed pages 19-20, describe actual transactions as market evidence, identify limited disclosed data, required sale-condition knowledge, and multi-asset allocation complications, and say P&A rarely employs a rigorous market approach as a general rule.",
+    "Whole-PDF page 22, printed page 20, says the income approach most readily lends itself to mineral-interest appraisal, that P&A predominantly relies on it as a general rule, and that a result is no better than input reliability."
+  ],
+  "checks": [
+    "two_official_https_sources_with_exact_source_roles",
+    "winkler_contractor_plan_complete_file_hash_page_count_and_visual_page_map_pass",
+    "plan_period_july_2024_print_date_and_retrieval_date_kept_distinct_pass",
+    "cost_acquisition_development_present_worth_mismatch_attribution_pass",
+    "cost_not_readily_applicable_general_rule_qualifier_preserved_pass",
+    "market_actual_transaction_evidence_definition_without_comparable_claim_pass",
+    "seldom_disclosed_not_all_sales_undisclosed_boundary_pass",
+    "sale_conditions_and_multi_asset_allocation_as_plan_reasons_not_owner_checklist_pass",
+    "rarely_rigorous_as_general_rule_not_never_boundary_pass",
+    "income_predominant_reliance_and_input_reliability_warning_pass",
+    "no_owner_method_selection_comparable_analysis_forecast_appraisal_tax_title_private_value_sale_price_offer_or_current_practice_inference_pass",
+    "adjacent_winkler_and_midland_article_nonduplication_and_information_gain_pass",
+    "answer_first_claim_adjacent_citation_source_age_and_known_unknowns_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Winkler CAD 2025-2026 Biennial Reappraisal Plan, printed July 2024 (accessed 2026-08-31)",
+      "url": "https://www.winklercad.org/Forms/GetDocument?fileName=1764618216_Biennial-Reappraisal-Plan.PA_.MIUP_.2025-2026.pdf&subPath=Data+Records",
+      "publisher": "www.winklercad.org",
+      "accessed_at": "2026-09-15T07:13:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.winklercad.org/Forms/GetDocument?fileName=1764618216_Biennial-Reappraisal-Plan.PA_.MIUP_.2025-2026.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 30-page Winkler CAD contractor plan supplies the July 2024 print date, 2025-2026 plan period, cost-approach present-worth mismatch, qualified cost-practice statement, market-transaction evidence definition and limits, qualified rare rigorous-market statement, predominant income-method statement, and input-reliability warning used by this article.",
+      "claim_scope": "It does not provide a current owner-specific method selection, comparable-sales dataset, forecast, appraisal, tax result, title conclusion, private value, sale price, offer, or current post-plan procedure."
+    },
+    {
+      "label": "Winkler CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.winklercad.org/home/DataRecords",
+      "publisher": "www.winklercad.org",
+      "accessed_at": "2026-09-15T07:13:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.winklercad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Winkler CAD Data and Records page supplies the official publisher/index route used to locate the 2025-2026 Biennial Reappraisal Plan.",
+      "claim_scope": "It does not prove that every plan statement remains current, establish usable comparable transactions or income inputs, select a method for an account, or support an owner-specific conclusion."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave223_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0843",
+  "slug": "reeves-cad-2024-ratio-study-66-category-g-ratios",
+  "title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+  "source_path": "src/content/posts/reeves-cad-2024-ratio-study-66-category-g-ratios.mdx",
+  "input_body_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+  "input_frontmatter_sha256": "5e1247a470b4ddb63e561d8fad903cdedbb79c4903daa839f979ef1badb4682a",
+  "expected_repo_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+  "two_image_manifest_sha256": "f1b9de7e3c7437c9d9a483511378395a389e24a391217a28ce10876f6682e07b",
+  "visual_metadata": {
+    "hero_alt": "A dark ratio-study board appears beside the exact Article 295 title.",
+    "social_alt": "A dark ratio-study board appears beside the exact Article 295 title.",
+    "inline_alt": "A bright overhead evidence grid appears above the exact Reeves CAD 2024 Category G ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+    "seo_title_character_count": 49,
+    "description_character_count": 148,
+    "answer_summary_word_count": 69,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T10:18:40Z",
+    "reviewed_by": "mrx_compliance-continuous-wave223",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave223_factual",
+  "review_run_id": "mrx1000-wave223-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee; all 4 declared sources passed current HTTPS access review.",
+    "Four controlled official source objects total 495,256 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The official findings page identifies the 2024 tax year, August 15, 2025 publication date, Tax Code Section 5.10 context, and 195 Reeves route.",
+    "The Reeves summary says updated August 31, 2025 and displays 66 ratios, CAD reported appraisal value 26,799,785,533, median level 1.00, coefficient of dispersion 0.94, two 100.00 within-median fields, and price-related differential 1.00.",
+    "The official overview describes major-category uniformity and median-level measurement using statistical analysis of PVS data.",
+    "The current county directory identifies Reeves Appraisal District and carries a May 7, 2026 update date."
+  ],
+  "checks": [
+    "four_distinct_current_official_https_sources",
+    "2024_tax_year_and_publication_date_pass",
+    "195_reeves_route_and_update_date_pass",
+    "category_g_number_of_ratios_66_pass",
+    "category_g_cad_reported_appraisal_value_26799785533_pass",
+    "category_g_median_level_1_00_pass",
+    "category_g_coefficient_of_dispersion_0_94_pass",
+    "category_g_within_10_and_25_percent_100_00_pass",
+    "category_g_price_related_differential_1_00_pass",
+    "ratio_count_not_parcel_count_and_cad_value_not_private_value_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller 2024 Appraisal District Ratio Study Findings (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official findings page supplies the 2024 tax-year identity, August 15, 2025 publication date, Tax Code Section 5.10 context, and 195 Reeves route.",
+      "claim_scope": "The findings index is a routing record and does not state a property, owner, private value, tax bill, offer, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller 195-Reeves 2024 Appraisal District Summary Worksheet (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2024/1950000001A.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2024/1950000001A.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Reeves summary supplies the last-updated date and the exact seven displayed fields in the aggregate G.OIL, GAS, MINERALS row.",
+      "claim_scope": "The aggregate district row does not identify a parcel, mineral account, owner, title, acreage, private market value, offer, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Appraisal District Ratio Study Results overview (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/ratio-study/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/ratio-study/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official overview supplies the ratio-study purpose, cadence, PVS-data relationship, and general measure types.",
+      "claim_scope": "The overview does not validate a property-specific appraisal or explain any private mineral-interest value."
+    },
+    {
+      "label": "Texas Comptroller Reeves County appraisal district directory (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/reeves.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/reeves.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official county directory identifies Reeves Appraisal District and its current public contact route.",
+      "claim_scope": "Directory identity does not validate the historical row, any property record, title, appraisal result, tax, private value, or transaction conclusion."
+    }
+  ]
+}

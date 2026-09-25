@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave101_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0284",
+  "slug": "texas-rrc-completions-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Completions Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-completions-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-completions-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "74806d0c6b500be329ddc02060b04a7ea61fc87641f294680501ad0b6a3439fd",
+  "input_frontmatter_sha256": "81ca3b029b6d04621a8831dd8b2547e3403932e09cda150adaca4e4a07097acc",
+  "expected_repo_sha256": "74806d0c6b500be329ddc02060b04a7ea61fc87641f294680501ad0b6a3439fd",
+  "two_image_manifest_sha256": "c0c5e4e2f9c7b4666d299dff27c1d5436f4810e43d36507c7408765ac54f03c6",
+  "visual_metadata": {
+    "hero_alt": "A blank completion-packet archive appears beside the exact article title.",
+    "social_alt": "A blank completion-packet archive appears beside the exact article title.",
+    "inline_alt": "A people-free overhead Completions Query criteria worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Completions Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 58,
+    "description_character_count": 147,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T10:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave101",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-completions-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave101_editorial",
+  "review_run_id": "mrx1000-wave101-editorial-20260915T072831Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 74806d0c6b500be329ddc02060b04a7ea61fc87641f294680501ad0b6a3439fd; the answer-first article contains 1702 body tokens and five FAQs.",
+    "The article replaces a colliding eligibility explainer with one administrative job: preserve a reproducible provenance trail for a single official RRC Completions Query retrieval attempt through its route, coverage statement, criteria snapshot, visible instructions, result or packet navigation, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The oblique dark completion-packet archive and people-free strict-overhead pale criteria worksheet differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "74806d0c6b500be329ddc02060b04a7ea61fc87641f294680501ad0b6a3439fd"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1702,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 61
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 58,
+        "description_character_count": 147,
+        "author": "ariana",
+        "reviewed_at": "2026-08-24T10:55:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave101",
+        "declared_source_count": 7,
+        "visible_body_citation_count": 7,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-completions-query-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-completions-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-completions-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-completions-query-retrieval-provenance-worksheet/texas-rrc-completions-query-retrieval.webp"
+  ]
+}

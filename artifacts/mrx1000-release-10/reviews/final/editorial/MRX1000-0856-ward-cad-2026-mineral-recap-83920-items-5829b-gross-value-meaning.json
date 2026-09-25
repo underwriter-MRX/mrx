@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave236_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0856",
+  "slug": "ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning",
+  "title": "Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/",
+  "source_path": "src/content/posts/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning.mdx",
+  "input_body_sha256": "9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2",
+  "input_frontmatter_sha256": "c73aac8dba9a285ccae819147398f630f49185a2509dd4b767c953fb5aa3766a",
+  "expected_repo_sha256": "9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2",
+  "two_image_manifest_sha256": "1aa7c4ad38fbbef23b715b33852df2c84e6edf7356efdbd2420e4193da1aca84",
+  "visual_metadata": {
+    "hero_alt": "A Ward archive and blank recap packet appear beside the exact Article 308 title.",
+    "social_alt": "A Ward archive and blank recap packet appear beside the exact Article 308 title.",
+    "inline_alt": "A top-down aggregate-versus-private-value board appears above the exact Ward CAD recap keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026 Mineral Recap Items & Gross Value · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 147,
+    "answer_summary_word_count": 44,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T16:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave236",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave236_editorial",
+  "review_run_id": "mrx1000-wave236-editorial-20260915T071325Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2; the answer-first article contains 1961 body tokens and five FAQs.",
+    "The original Ward County family-value identity is rejected. The replacement answers one Ward-specific aggregate-reading job with a literal district row, an explicit rounding note, and a no-private-value boundary.",
+    "Information gain is concrete: official route and ZIP provenance, complete-file and inner-member identity, three physical-page render hashes, stable claim IDs, source-versus-transformation labels, and the 83,920-items versus 84,343-total-records discrepancy register.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-oblique archive scene and bright strict-overhead aggregate-boundary board are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1961,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 44
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 53,
+        "description_character_count": 147,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T16:30:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave236",
+        "declared_source_count": 3,
+        "visible_body_citation_count": 3,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning.mdx",
+    "/assets/articles/hero/ward-cad-2026-mineral-recap-what-83-920-items-and-5-829b-gross-value-do-and-do-not-mean.webp",
+    "/assets/articles/inline/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/ward-cad-2026-mineral-recap-83-920-items.webp"
+  ]
+}

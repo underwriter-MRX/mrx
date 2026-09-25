@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave137_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T10:40:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0342",
+  "slug": "sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet",
+  "title": "SEC EDGAR Mineral Rights Offeror Filing Search Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189",
+  "input_frontmatter_sha256": "42693ecf17f8cc4a70bd9373c5a42e1f95803b2ab0dd8f4247b4b278fd69fba2",
+  "expected_repo_sha256": "01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189",
+  "two_image_manifest_sha256": "a53aa0d45389c5aac3a5cb617c4497f89901576d1a91072f80e721cdb2026582",
+  "visual_metadata": {
+    "hero_alt": "An oblique public-filings research station appears beside the exact SEC EDGAR offeror worksheet title.",
+    "social_alt": "An oblique public-filings research station appears beside the exact SEC EDGAR offeror worksheet title.",
+    "inline_alt": "A top-down blank search-attempt worksheet appears above the exact SEC EDGAR offeror filing-search keyword."
+  },
+  "reviewer_id": "codex_wave137_compliance",
+  "review_run_id": "mrx1000-wave137-compliance-20260826T104024Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "51df8f04514a3b602e607ec7c1e5c95074621c997f6714ec584b1aa77c34a204",
+  "expected_inline_sha256": "92ea3c8eceb4b26baed6560bec8880542432a6e285dc3bac499686093cebe38b",
+  "findings": [
+    "Complete current MDX SHA-256 is 01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189; hero/share and inline image hashes are separately locked.",
+    "The reusable public worksheet is blank, covers one manual route and one attempt, separates retained correspondence from SEC evidence, places non-verification warnings beside result and outcome fields, and stops at authorized-human review.",
+    "Image text is limited to the exact title and keyword and adds no identity, legitimacy, authorization, capacity, affiliation, offer-quality, value, legal, filing-relevance, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_authorized_manual_sec_edgar_route_and_attempt_source_displayed_fields_only_separate_correspondence_and_filing_evidence_controlled_outcomes_no_identity_legitimacy_capacity_offer_quality_legal_valuation_or_transaction_conclusion_authorized_human_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet/sec-edgar-mineral-rights-offeror-filing-search.webp"
+  ]
+}

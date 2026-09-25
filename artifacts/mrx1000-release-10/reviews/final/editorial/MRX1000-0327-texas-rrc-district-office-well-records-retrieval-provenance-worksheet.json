@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave122_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0327",
+  "slug": "texas-rrc-district-office-well-records-retrieval-provenance-worksheet",
+  "title": "Texas RRC District Office Well Records Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "input_frontmatter_sha256": "369707ef0b660a38717ff89d683cc9e53645a0089eec8a7db131805e8d04b940",
+  "expected_repo_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "two_image_manifest_sha256": "9b775e1f7a7219f812def33aefa3c1dd617c17bc1f882a4fa5d480d35bba2a89",
+  "visual_metadata": {
+    "hero_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "social_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "inline_alt": "A people-free overhead archival evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Office Records Retrieval Worksheet",
+    "seo_title_character_count": 53,
+    "description_character_count": 159,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T11:28:13Z",
+    "reviewed_by": "mrx_compliance-continuous-wave122",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave122_editorial",
+  "review_run_id": "mrx1000-wave122-editorial-20260915T073156Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9; the answer-first article contains 1717 body tokens and five FAQs.",
+    "The article fully rejects the colliding hidden-fee identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Imaged Records District Office Well Records profile retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The wide eye-level one-researcher archive scene and people-free strict-overhead archival evidence board are materially distinct in camera angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1717,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 66
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 53,
+        "description_character_count": 159,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T11:28:13Z",
+        "reviewed_by": "mrx_compliance-continuous-wave122",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/texas-rrc-district-office-well-records-retrieval.webp"
+  ]
+}

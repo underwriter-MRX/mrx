@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave161_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0760",
+  "slug": "crane-cad-oil-gas-reappraisal-plan-source-locator",
+  "title": "Crane CAD Oil and Gas Reappraisal Plan Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/",
+  "source_path": "src/content/posts/crane-cad-oil-gas-reappraisal-plan-source-locator.mdx",
+  "input_body_sha256": "15cb634d1532d5d62dad4c693a17ea044eb10c121bb4309225d22850a072cc5f",
+  "input_frontmatter_sha256": "bc1db7bb74e7bbaf4064c935f4afb97fc1f0464b15f57e47d722b92706d2312f",
+  "expected_repo_sha256": "15cb634d1532d5d62dad4c693a17ea044eb10c121bb4309225d22850a072cc5f",
+  "two_image_manifest_sha256": "af82c02f68b7f0e392e6e119d71c44dc80d3682acc436743ab7144168f202009",
+  "visual_metadata": {
+    "hero_alt": "A navy plan folio appears beside the exact Crane CAD oil and gas reappraisal plan source-locator title.",
+    "social_alt": "A navy plan folio appears beside the exact Crane CAD oil and gas reappraisal plan source-locator title.",
+    "inline_alt": "An overhead section path appears above the exact Crane CAD oil and gas reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane CAD Reappraisal Plan Source Locator",
+    "seo_title_character_count": 41,
+    "description_character_count": 137,
+    "answer_summary_word_count": 74,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T09:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave161",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave161_factual",
+  "review_run_id": "mrx1000-wave161-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 15cb634d1532d5d62dad4c693a17ea044eb10c121bb4309225d22850a072cc5f; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official records-page link, the linked PDF identity, 56-page count, broad plan contents, displayed oil-and-gas section identity, broad section locators, displayed contractor and date context, Crane directory context, and Texas Tax Code Chapters 23 and 25 provenance.",
+    "The article invents no owner, account, property, lease, Railroad Commission identifier, division-of-interest record, production fact, price, expense, discount rate, formula, model input, notice, deadline, applicability conclusion, classification, appraisal treatment, protest position, tax position, value, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_crane_cad_texas_comptroller_and_texas_statute_source_priority_pass",
+    "plan_identity_and_section_locator_facts_not_converted_into_formula_method_input_applicability_appraisal_protest_tax_value_sale_or_outcome_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Crane CAD, Data and Records (accessed 2026-08-27)",
+      "url": "https://www.cranecad.org/home/DataRecords",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Crane CAD Data and Records page supplies the Reappraisal Plans publisher context and the current 2025-2026 plan link.",
+      "claim_scope": "It supports the records-page relationship and current-link recheck only. It does not establish owner-specific applicability, property classification, appraisal treatment, notice correctness, protest position, tax treatment, value, or another result."
+    },
+    {
+      "label": "Crane CAD, 2025-2026 Reappraisal Plan (accessed 2026-08-27)",
+      "url": "https://www.cranecad.org/Forms/GetDocument?fileName=1729083604_2025+-+2026+Reappraisal+Plan.pdf&subPath=Data+Records",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/Forms/GetDocument?fileName=1729083604_2025+-+2026+Reappraisal+Plan.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current linked 56-page PDF supplies the displayed periodic-reappraisal-plan identity, broad plan contents, oil-and-gas-reserves section identity, displayed August 7, 2024 date and Thomas Y. Pickett & Company attribution, broad section locators, and broad displayed source categories.",
+      "claim_scope": "It supports source identity and a non-operational locator only. The article does not reproduce or apply formulas, assumptions, amounts, schedules, deadlines, model inputs, price or expense data, discount rates, owner facts, property facts, methods, appraisal conclusions, protest positions, tax positions, values, or outcomes."
+    },
+    {
+      "label": "Texas Comptroller, Crane County Directory (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the official Crane County appraisal-district website and directory context.",
+      "claim_scope": "It supports publisher identity and jurisdictional context only. The article does not choose an official, office, recipient, channel, contact action, filing destination, or owner-specific next step."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 23 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 23 supplies current official statutory provenance for a chapter referenced by the plan.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret Chapter 23, select a method or input, apply a provision, calculate value, or make an appraisal, protest, tax, legal, or transaction conclusion."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 25 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and reappraisal subjects referenced by the plan.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret Chapter 25, decide applicability, compare a notice or record, calculate timing, direct a protest or filing, or make an owner-specific conclusion."
+    }
+  ]
+}

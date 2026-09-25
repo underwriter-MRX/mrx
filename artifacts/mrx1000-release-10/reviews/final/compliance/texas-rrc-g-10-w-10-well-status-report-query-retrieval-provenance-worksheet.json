@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave108_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0293",
+  "slug": "texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC G-10/W-10 Well Status Report Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f",
+  "input_frontmatter_sha256": "de1fbac021e77c13e58c3621e183ae69eb114b9bbc9a560d0de47c60521c3758",
+  "expected_repo_sha256": "ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f",
+  "two_image_manifest_sha256": "0c48732f8f2cd9357163af46bf4d2ef0c00447cf1b25bb9d92cd03123f9fc13f",
+  "visual_metadata": {
+    "hero_alt": "Two source-neutral route gates appear beside the exact article title.",
+    "social_alt": "Two source-neutral route gates appear beside the exact article title.",
+    "inline_alt": "A people-free overhead two-route ledger appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC G-10/W-10 Retrieval Provenance Worksheet",
+    "seo_title_character_count": 50,
+    "description_character_count": 136,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T14:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave108",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave108_compliance",
+  "review_run_id": "mrx1000-wave108-compliance-20260915T072833Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a9fe5791dad858671225e4098d523abe0aa5172c1700c2457a7800d4b2aba881",
+  "expected_inline_sha256": "b92ea48b6680a23b3f12ef4da894591a1a80133abe5d8f09ba6550032252c547",
+  "findings": [
+    "Complete current MDX SHA-256 is ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f; hero/share and inline image hashes are separately locked.",
+    "The article keeps GW10 separate from H-10, Wellbore, RRC OIL, production, and all other routes; preserves uncertainty and stops before regulatory, legal, title, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no record, identifier, result, signature, seal, logo, status, approval, rejection, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_g10_w10_retrieval_no_status_report_compliance_condition_production_property_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet/texas-rrc-g-10-w-10-well-status-report-query-retrieval.webp"
+  ]
+}

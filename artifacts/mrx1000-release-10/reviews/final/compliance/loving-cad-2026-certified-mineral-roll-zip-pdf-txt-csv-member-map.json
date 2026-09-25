@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave200_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0815",
+  "slug": "loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map",
+  "title": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+  "source_path": "src/content/posts/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map.mdx",
+  "input_body_sha256": "f4829bddd563253cb70b84a145a12fa0b6f19eb633569945b2d7e765acac5983",
+  "input_frontmatter_sha256": "878ae9d67b1dd34e01d993b205708925eb3a768efd8db9eb1296c3e0aff5ed00",
+  "expected_repo_sha256": "f4829bddd563253cb70b84a145a12fa0b6f19eb633569945b2d7e765acac5983",
+  "two_image_manifest_sha256": "1673be2dfd06dc5c03ecc44cf9e96f9808bea8dda65922660eee6cab1f173699",
+  "visual_metadata": {
+    "hero_alt": "A navy archive box with blank file dividers appears beside the exact Loving CAD 2026 mineral-roll ZIP member-map title.",
+    "social_alt": "A navy archive box with blank file dividers appears beside the exact Loving CAD 2026 mineral-roll ZIP member-map title.",
+    "inline_alt": "Blank PDF sheets, a text strip, and a spreadsheet grid sit above the exact Loving CAD 2026 certified mineral roll ZIP phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Mineral Roll ZIP Member Map · MRX",
+    "seo_title_character_count": 49,
+    "description_character_count": 144,
+    "answer_summary_word_count": 50,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T11:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave200",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave200_compliance",
+  "review_run_id": "mrx1000-wave200-compliance-20260915T071313Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
+  "expected_inline_sha256": "ea325b366be48383ce02ba13d3391ebdb93ddf2e0fc98122701bc37adcced47e",
+  "findings": [
+    "Complete current MDX SHA-256 is f4829bddd563253cb70b84a145a12fa0b6f19eb633569945b2d7e765acac5983; hero/share and inline image hashes are separately locked.",
+    "The article prohibits treating member presence, file extension, size, CRC success, or layout-document wording as validation of property data or owner-specific conclusions.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, property identity, appraisal, tax, value, offer, outcome, or ranking/citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_archive_completeness_data_correctness_row_parity_schema_ownership_title_acreage_production_royalty_appraisal_accuracy_tax_protest_value_offer_transaction_or_legal_claim_pass",
+    "pdf_text_extraction_and_filename_extensions_explicitly_non_validating_with_manual_render_review_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_names_identifiers_labels_official_forms_seals_logos_owner_or_property_data_people_hands_money_rigs_maps_legal_symbols_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map.mdx",
+    "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp",
+    "/assets/articles/inline/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/loving-cad-2026-certified-mineral-roll-zip.webp"
+  ]
+}

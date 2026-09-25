@@ -1,0 +1,22 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1122",
+  "slug": "does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well",
+  "source_path": "src/content/posts/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well.mdx",
+  "input_body_sha256": "a602a2ccd5fb4ffd47eace74cb65fda23b5299c11072e7ea3f63622626e573bb",
+  "two_image_manifest_sha256": "5c2170fe28296b7973e12b11541c0f9846ac357de4170ad5fb4daf6b63ceb050",
+  "private_full_source_sha256": "194acf3ab718ff6eda24c1fb89f9baa196f9f9988bb9ea0cad993e1361e0e458",
+  "review_method": "codex_current_public_claim_to_primary_source_crosswalk",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte factual and citation review",
+  "advisory_review": "Read-only Chesty mrx_research ticket t_810c7605 returned PASS-EXTENDS on corrected private manuscript SHA-256 194acf3ab718ff6eda24c1fb89f9baa196f9f9988bb9ea0cad993e1361e0e458.",
+  "findings": [
+    "RRC Permian Basin FAQs support the no-private-lease-validity jurisdiction boundary, legal-lease requirement, and off-lease horizontal-well surface-location example.",
+    "RRC drilling-permit results help supports regulatory Lease/operator labels, listed result fields, W-1/permit/plat links, and status dates; none is represented as owner-specific title proof.",
+    "RRC well-records guidance and the GLO mineral-rights FAQ support keeping agency well records distinct from private deed and lease examination. No case-specific instrument or well was reviewed.",
+    "The two additional public FAQ answers restate the body comparison list and the permit-versus-drilling/production distinction without introducing a new unsupported claim."
+  ]
+}

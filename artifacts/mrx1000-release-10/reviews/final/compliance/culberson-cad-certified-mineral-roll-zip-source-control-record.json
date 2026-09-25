@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave162_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0761",
+  "slug": "culberson-cad-certified-mineral-roll-zip-source-control-record",
+  "title": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+  "source_path": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+  "input_body_sha256": "1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf",
+  "input_frontmatter_sha256": "e0abb1974bca538c4dc57cecbfbb06e4105814cdfd57599c8cf20a95fd2fcb88",
+  "expected_repo_sha256": "1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf",
+  "two_image_manifest_sha256": "9bae9374a438b4ceaf8d76b591609041329f3ef1a1e7c30c7fd5b79ffadf5006",
+  "visual_metadata": {
+    "hero_alt": "A sealed archive appears beside the exact Culberson CAD certified mineral roll ZIP source-control title.",
+    "social_alt": "A sealed archive appears beside the exact Culberson CAD certified mineral roll ZIP source-control title.",
+    "inline_alt": "Seven closed file tokens appear above the exact Culberson CAD certified mineral roll ZIP keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Mineral Roll ZIP Source Control",
+    "seo_title_character_count": 45,
+    "description_character_count": 141,
+    "answer_summary_word_count": 59,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T10:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave162",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave162_compliance",
+  "review_run_id": "mrx1000-wave162-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a1267353957618297cf7183bf00998d63f767437ab1c577a4a35bb7da7d7a802",
+  "expected_inline_sha256": "bc1c4df0eb22af149d72ec08b137d69650bfb791d2417cfd562662590cf9d93f",
+  "findings": [
+    "Complete current MDX SHA-256 is 1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf; hero/share and inline image hashes are separately locked.",
+    "The reusable public source-control record contains only source identity, exact URL, retrieval provenance, complete-file hash, and generic central-directory metadata. It stops before member extraction, row-data access, matching, enrichment, evidence review, individualized interpretation, appraisal judgment, protest strategy, legal interpretation, tax guidance, valuation, representation, contact, submission, payment, or sale advice.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real record, member content, row data, owner or property fact, appraisal claim, protest direction, legal position, tax conclusion, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "source_control_only_no_member_extraction_row_data_matching_enrichment_private_data_evidence_review_appraisal_judgment_protest_strategy_legal_tax_valuation_contact_submission_payment_sale_advice_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_record_member_content_row_data_owner_data_property_fact_government_mark_appraisal_legal_tax_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+    "/assets/articles/hero/culberson-cad-certified-mineral-roll-zip-source-control-record.webp",
+    "/assets/articles/inline/culberson-cad-certified-mineral-roll-zip-source-control-record/culberson-cad-certified-mineral-roll-zip.webp"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave131_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T07:56:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0336",
+  "slug": "search-unclaimed-mineral-royalty-payments-texas",
+  "title": "How to Search for Unclaimed Mineral Royalty Payments in Texas",
+  "canonical_url": "https://mineralrightsxchange.com/blog/search-unclaimed-mineral-royalty-payments-texas/",
+  "source_path": "src/content/posts/search-unclaimed-mineral-royalty-payments-texas.mdx",
+  "input_body_sha256": "19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a",
+  "input_frontmatter_sha256": "eb4a3c9b18a988a78d12d441024956862dc8b1623219a59239bb3e9ec59e21ef",
+  "expected_repo_sha256": "19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a",
+  "two_image_manifest_sha256": "3bf53fd50d1c1a3a173209a1dcdaaedd842255a8199a904ac5eaf959d91ecc2b",
+  "visual_metadata": {
+    "hero_alt": "An archival search desk appears beside the exact unclaimed mineral royalty payments title.",
+    "social_alt": "An archival search desk appears beside the exact unclaimed mineral royalty payments title.",
+    "inline_alt": "A top-down redacted search-log board appears above the exact Texas unclaimed royalty keyword."
+  },
+  "reviewer_id": "codex_wave131_compliance",
+  "review_run_id": "mrx1000-wave131-compliance-20260826T075633Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "7b9a64124d96218ffcd9ac6ac68c65fb745cf36c5cf55209037e079e28948bec",
+  "expected_inline_sha256": "16e0385d50748a560af6f96d7763074cd029ea72315478369a396f877d9bdb3f",
+  "findings": [
+    "Complete current MDX SHA-256 is 19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a; hero/share and inline image hashes are separately locked.",
+    "The article separates a public state search lead from authenticated claim requirements, entitlement, ownership, title, heirship, operator suspense, payment interruption, valuation, offer review, and transaction advice.",
+    "Image text is limited to the exact title and keyword and adds no real personal data, identifier, amount, official mark, result, ownership, entitlement, legal, tax, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_unclaimed_mineral_royalty_one_official_search_route_variant_holder_property_reference_evidence_checkpoint_bounded_result_no_entitlement_title_heirship_suspense_payment_diagnosis_valuation_offer_legal_tax_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/search-unclaimed-mineral-royalty-payments-texas.mdx",
+    "/assets/articles/hero/how-to-search-for-unclaimed-mineral-royalty-payments-in-texas.webp",
+    "/assets/articles/inline/search-unclaimed-mineral-royalty-payments-texas/texas-unclaimed-mineral-royalty-payments-search.webp"
+  ]
+}

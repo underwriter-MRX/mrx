@@ -1,0 +1,153 @@
+{
+  "artifact_type": "mrx1000_wave108_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0293",
+  "slug": "texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC G-10/W-10 Well Status Report Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f",
+  "input_frontmatter_sha256": "de1fbac021e77c13e58c3621e183ae69eb114b9bbc9a560d0de47c60521c3758",
+  "expected_repo_sha256": "ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f",
+  "two_image_manifest_sha256": "0c48732f8f2cd9357163af46bf4d2ef0c00447cf1b25bb9d92cd03123f9fc13f",
+  "visual_metadata": {
+    "hero_alt": "Two source-neutral route gates appear beside the exact article title.",
+    "social_alt": "Two source-neutral route gates appear beside the exact article title.",
+    "inline_alt": "A people-free overhead two-route ledger appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC G-10/W-10 Retrieval Provenance Worksheet",
+    "seo_title_character_count": 50,
+    "description_character_count": 136,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T14:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave108",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-g-10-w-10-well-status-report-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave108_factual",
+  "review_run_id": "mrx1000-wave108-factual-20260915T072833Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is ff8f234f02ac5f2d99e51c231ad4a1472ca00cda1901621200c053eea031c62f; all 7 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to seven current official RRC routes, exact source labels, query-path separation, source-displayed criteria, help navigation, and PDF mechanics. None establishes substantive status, compliance, condition, production, property, ownership, title, value, legal, offer, or transaction conclusions.",
+    "The article publishes no actual report, status, lease or gas-well ID, field, operator, tracking number, result, screenshot, PDF, property identifier, production, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "seven_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory supplies the Well Status Report Query (W-10, G-10) label, launch relationship, nightly update label, and online-query limitations.",
+      "claim_scope": "The article preserves only route provenance and limitations, not a substantive conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, G-10/W-10 Well Status Reports (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/publicHomeAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/publicHomeAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official GW10 home supplies the G-10/W-10 application title and the Individual Well Status Reports and Report Summary Status choices.",
+      "claim_scope": "The article records the chosen path and navigation only and does not merge the two result types or interpret status."
+    },
+    {
+      "label": "Railroad Commission of Texas, G-10/W-10 Public Query Help (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelp.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelp.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official main help page describes the two source-labeled searches and view, print, save, and PDF mechanics.",
+      "claim_scope": "The article uses these as retrieval mechanics only."
+    },
+    {
+      "label": "Railroad Commission of Texas, Individual Well Status Reports Query (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/gw10PublicProcessLogSearchAction.do?methodToCall=init",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/gw10PublicProcessLogSearchAction.do?methodToCall=init",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The Individual Well Status Reports route supplies source-displayed process-status, report-type, filing-reason, date, district, identifier, field, operator, and tracking criteria.",
+      "claim_scope": "The article records labels and controlled criteria without interpreting any value."
+    },
+    {
+      "label": "Railroad Commission of Texas, the Report Summary Status Query (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/gw10PublicSearchAction.do?methodToCall=init",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/gw10PublicSearchAction.do?methodToCall=init",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The Report Summary Status route supplies source-displayed submission-status, report-type, filing-reason, date, district, identifier, field, operator, and tracking criteria.",
+      "claim_scope": "The article records labels and controlled criteria without interpreting any value."
+    },
+    {
+      "label": "Railroad Commission of Texas, Individual Well Status Reports Help (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelpProcessed.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelpProcessed.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Individual Well Status Reports help supplies bounded query, navigation, result, and PDF guidance.",
+      "claim_scope": "The article preserves only mechanics and source wording."
+    },
+    {
+      "label": "Railroad Commission of Texas, the Report Summary Status Help page (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelpSummary.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/GW10/help/gw10PublicQueryHelpSummary.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Report Summary Status help supplies bounded query, navigation, result, and PDF guidance.",
+      "claim_scope": "The article preserves only mechanics and source wording."
+    }
+  ]
+}

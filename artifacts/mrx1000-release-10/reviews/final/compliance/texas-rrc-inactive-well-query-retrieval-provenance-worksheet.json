@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave95_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T04:20:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0278",
+  "slug": "texas-rrc-inactive-well-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Inactive Well Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-inactive-well-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f",
+  "input_frontmatter_sha256": "c017799a1b164791d3ff4b8bf8644ab2ced15b14a58080f180cd8ed93517d5ba",
+  "expected_repo_sha256": "c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f",
+  "two_image_manifest_sha256": "911604e338968629fb1a6e624e38aaef232c2bd1a82586329272b4be281b5fd5",
+  "visual_metadata": {
+    "hero_alt": "A Texas inactive-well query research counter appears beside the exact article title.",
+    "social_alt": "A Texas inactive-well query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead inactive-well query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave95_compliance",
+  "review_run_id": "mrx1000-wave95-compliance-20260824T042013Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "98a4248e315f398de26dcb339281c1ea0fb9508251285435ac2b3ba97fdaa22c",
+  "expected_inline_sha256": "e886e95b2b05eea421f48e8e7eeaf7c5094a30dd17b8867e7312ba9ca9e8fa27",
+  "findings": [
+    "Complete current MDX SHA-256 is c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, result headers, links, and routes; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, environmental, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_inactive_well_query_retrieval_no_property_connection_title_ownership_acreage_lease_payment_entitlement_compliance_environmental_operating_status_production_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-inactive-well-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-inactive-well-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/texas-rrc-inactive-well-query-retrieval.webp"
+  ]
+}

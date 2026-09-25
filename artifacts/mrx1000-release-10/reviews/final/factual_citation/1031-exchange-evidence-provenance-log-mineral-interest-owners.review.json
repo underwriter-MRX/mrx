@@ -1,0 +1,94 @@
+{
+  "artifact_type": "mrx1000_wave149_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:32:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0648",
+  "slug": "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+  "title": "1031 Exchange Evidence Provenance Log for Mineral Interest Owners",
+  "canonical_url": "https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/",
+  "source_path": "src/content/posts/1031-exchange-evidence-provenance-log-mineral-interest-owners.mdx",
+  "input_body_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "input_frontmatter_sha256": "a8b235e87c3a03eb71a137ab010391c47b7bc878180fd330f545142fd87308ae",
+  "expected_repo_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "two_image_manifest_sha256": "ae284ca45eb73ace75e478b11882d9accf24c0a02ed980671be1573788998b7b",
+  "visual_metadata": {
+    "hero_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "social_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "inline_alt": "An overhead blank custody matrix appears above the exact 1031 exchange recordkeeping keyword."
+  },
+  "reviewer_id": "codex_wave149_factual",
+  "review_run_id": "mrx1000-wave149-factual-20260826T143217Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official statutory, regulatory, IRS publication, and IRS retention context, plus administrative source provenance and controlled professional handoff.",
+    "The article invents no taxpayer, property, transaction, agreement, notice, intermediary, transfer, date, amount, source copy, requirement, retention period, eligibility result, deadline result, calculation, filing position, or legal effect."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Office of the Law Revision Counsel, 26 U.S.C. § 1031 (accessed 2026-08-26)",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1031&num=0&edition=prelim",
+      "publisher": "uscode.house.gov",
+      "accessed_at": "2026-08-26T14:32:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section1031&num=0&edition=prelim",
+        "content_type": "text/html;charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Office of the Law Revision Counsel current/preliminary Section 1031 text supplies the federal statutory context for exchanges of real property held for productive use or investment.",
+      "claim_scope": "It supports a strict professional-review boundary only. It does not establish that a mineral-related interest is real property or like kind, determine holding purpose, apply a period, validate a transfer, or resolve an owner-specific transaction, tax, legal, title, valuation, or filing result."
+    },
+    {
+      "label": "GovInfo, 26 C.F.R. § 1.1031(k)-1, 2025 annual edition (accessed 2026-08-26)",
+      "url": "https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1031k-1.pdf",
+      "publisher": "www.govinfo.gov",
+      "accessed_at": "2026-08-26T14:32:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.govinfo.gov/content/pkg/CFR-2025-title26-vol13/pdf/CFR-2025-title26-vol13-sec1-1031k-1.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 2025 annual-edition text of 26 C.F.R. section 1.1031(k)-1 supplies bounded deferred-exchange context, including written agreements, assignment notices, qualified-intermediary arrangements, restrictions, and property-transfer mechanics.",
+      "claim_scope": "It supports source-class and provenance labels only. It does not validate an agreement, notice, intermediary, restriction, transfer, safe harbor, eligibility result, deadline, form position, tax treatment, or owner-specific transaction."
+    },
+    {
+      "label": "IRS, Publication 544 (2025), Sales and Other Dispositions of Assets (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/publications/p544",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T14:32:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/publications/p544",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS Publication 544 page is labeled for the 2025 publication and supplies general federal sales, exchanges, basis, gain-or-loss, and reporting context.",
+      "claim_scope": "It supports the need for controlled professional review of source records only. The article does not apply its tax rules, calculate gain or basis, classify property, select a form, or advise an owner-specific position."
+    },
+    {
+      "label": "IRS, How long should I keep records? (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T14:32:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/businesses/small-businesses-self-employed/how-long-should-i-keep-records",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS record-retention page states that retention depends on the action, expense, or event recorded and specifically discusses records on old and new property after a nontaxable exchange.",
+      "claim_scope": "It supports a retention-policy pointer and professional handoff only. The article does not calculate a limitations period, set a destruction date, determine whether an exchange is nontaxable, or override contract, title, lender, insurance, litigation-hold, privacy, or state-law requirements."
+    }
+  ]
+}

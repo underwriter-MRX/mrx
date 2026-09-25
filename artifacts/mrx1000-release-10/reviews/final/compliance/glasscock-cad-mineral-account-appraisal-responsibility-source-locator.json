@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave182_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0781",
+  "slug": "glasscock-cad-mineral-account-appraisal-responsibility-source-locator",
+  "title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
+  "source_path": "src/content/posts/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.mdx",
+  "input_body_sha256": "fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271",
+  "input_frontmatter_sha256": "be3c26e05a7835e205ad2699f542cc5f96f583dec28a7926636c281305a8a441",
+  "expected_repo_sha256": "fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271",
+  "two_image_manifest_sha256": "5dc2602d822d09984d7875dfce5f4bfb8faf8d48f62f50fceefc6acde7dc3433",
+  "visual_metadata": {
+    "hero_alt": "Separate appraisal-role trays appear beside the exact Glasscock CAD responsibility source-locator title.",
+    "social_alt": "Separate appraisal-role trays appear beside the exact Glasscock CAD responsibility source-locator title.",
+    "inline_alt": "Two overhead role lanes connect below the exact Glasscock CAD mineral account appraiser keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Mineral Account Appraiser Source",
+    "seo_title_character_count": 46,
+    "description_character_count": 158,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T04:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave182",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave182_compliance",
+  "review_run_id": "mrx1000-wave182-compliance-20260915T071304Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a8d8b79bbb9797c2080f3af794d5f9b56e868cf03e6bdf780dc21a3350e80673",
+  "expected_inline_sha256": "fb3210a2d984dfbe516a390ffbd99adcbe1b86db7d4accda3b5ab7a3c868019e",
+  "findings": [
+    "Complete current MDX SHA-256 is fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects property-search activity, private-data access, contract authentication, statutory interpretation, district-compliance judgment, appraisal judgment, tax calculation, protest direction, ownership or title findings, market-offer valuation, investment analysis, sale advice, and promised outcomes.",
+    "The second account-category attribution is used only as a visible boundary against merging publisher statements and is not expanded into a real-estate, personal-property, contract, appraisal, or tax guide.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, contract claim, property fact, appraisal result, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "page_level_role_statement_no_contract_authentication_authority_compliance_completed_work_property_search_private_data_appraisal_tax_protest_title_ownership_value_offer_investment_sale_or_owner_action_pass",
+    "adjacent_glasscock_records_rolls_reports_plans_property_search_and_other_county_responsibility_sources_not_combined_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_contract_property_record_personal_data_official_page_government_mark_seal_signature_logo_tax_amount_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.mdx",
+    "/assets/articles/hero/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.webp",
+    "/assets/articles/inline/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/glasscock-cad-mineral-account-appraiser.webp"
+  ]
+}

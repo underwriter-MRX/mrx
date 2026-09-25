@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave173_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:59Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0772",
+  "slug": "dimmit-cad-2024-25-map-review-source-record",
+  "title": "Dimmit CAD 2024-25 MAP Review Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+  "source_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+  "input_body_sha256": "39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14",
+  "input_frontmatter_sha256": "43ea7e2ca0592f2f7593ea01efdad107dfb3b692734ad4742422ebf02f8c3b01",
+  "expected_repo_sha256": "39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14",
+  "two_image_manifest_sha256": "1c9fe13a6b9edd2ae263de5cbe9028dc34467e8f8f3d2958977ee62139fd6f8c",
+  "visual_metadata": {
+    "hero_alt": "A navy review folio and four blank tiles appear beside the exact Dimmit CAD 2024-25 MAP review source-record title.",
+    "social_alt": "A navy review folio and four blank tiles appear beside the exact Dimmit CAD 2024-25 MAP review source-record title.",
+    "inline_alt": "Four overhead evidence cards form a provenance path above the exact Dimmit CAD 2024-25 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2024-25 MAP Review Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 143,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T00:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave173",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave173_editorial",
+  "review_run_id": "mrx1000-wave173-editorial-20260915T071259Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14; the answer-first article contains 1434 body tokens and five FAQs.",
+    "The article rejects the generic Dimmit County valuation-guide identity and owns one distinct deliverable: official-source retrieval and bounded interpretation of the Dimmit CAD 2024-25 final MAP review.",
+    "The current AI Atom Brain and Search Atlas SEO/AEO factory prompt is applied through an immediate bounded answer, five visible official citations with explicit evidence roles, page-level material-claim adjacency, exact issuer/document/district entity consistency, five citation-oriented FAQs, author/reviewer/date parity, semantic hub/support/next-step links, native schema, sitemap and LLM-discovery eligibility, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The straight-on five-tab review-folio hero and strict-overhead four-card provenance pathway are materially distinct and contain no person, hand, readable base text, number, logo, seal, government mark, authentic report screenshot, map, chart, money, property record, value, grade, recommendation, result, or watermark."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1434,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 54
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 43,
+        "description_character_count": 143,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T00:50:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave173",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+    "/assets/articles/hero/dimmit-cad-2024-25-map-review-source-record.webp",
+    "/assets/articles/inline/dimmit-cad-2024-25-map-review-source-record/dimmit-cad-2024-25-map-review.webp"
+  ]
+}

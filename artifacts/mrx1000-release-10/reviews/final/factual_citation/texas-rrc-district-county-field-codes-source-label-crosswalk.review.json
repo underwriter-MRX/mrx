@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave227_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0847",
+  "slug": "texas-rrc-district-county-field-codes-source-label-crosswalk",
+  "title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+  "source_path": "src/content/posts/texas-rrc-district-county-field-codes-source-label-crosswalk.mdx",
+  "input_body_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+  "input_frontmatter_sha256": "f310f53e255d1a6104ba8680c610f36c50fc9628e4901d253ce4e2d96f043550",
+  "expected_repo_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+  "two_image_manifest_sha256": "8d980ff41a83e8af61fc4469afea3ab05d56895cc08923f8435ed10f4ad936a4",
+  "visual_metadata": {
+    "hero_alt": "A bright records archive appears beside the exact Article 299 title.",
+    "social_alt": "A bright records archive appears beside the exact Article 299 title.",
+    "inline_alt": "An overhead five-card crosswalk appears above the exact Texas RRC district county field codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District, County & Field Codes",
+    "seo_title_character_count": 40,
+    "description_character_count": 132,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T11:57:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave227",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave227_factual",
+  "review_run_id": "mrx1000-wave227-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 1,647,508 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The current RRC catalog and district page supply the separately named district, county, field-number, field-name, FIPS, and office labels.",
+    "The official RRC Field Information manual supplies district geography, eight-digit field-number composition, field-name, county-code, and associated-file-key boundaries.",
+    "The current Field Search and district-and-operator pages establish query-job separation and co-displayed context without establishing a private-property relationship."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "district_code_county_code_field_number_field_name_and_page_fips_non_equivalence_pass",
+    "rrc_district_administrative_geography_and_multi_district_field_boundary_pass",
+    "eight_digit_field_number_composition_pass",
+    "field_name_and_associated_field_distinction_pass",
+    "multi_county_field_and_repeated_county_code_occurrence_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC Data Sets Available for Download (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC catalog describes Oil & Gas Field Name & Numbers records with district, field number, county code, and field name as separately named data elements.",
+      "claim_scope": "The article uses the catalog only to support label separation and does not infer a field boundary, well or lease relationship, ownership, production, reserves, or value."
+    },
+    {
+      "label": "Texas RRC Oil and Gas Counties and Districts (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/about-us/locations/oil-gas-counties-districts/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/locations/oil-gas-counties-districts/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC page displays County, District Code, FIPS Code, and District Office in separate columns.",
+      "claim_scope": "The article preserves the page-specific FIPS label and does not silently rename it as an RRC county code or use it as a private-property key."
+    },
+    {
+      "label": "Texas RRC Field Information manual (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/media/sn4f1nyy/field_information_oga090.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/sn4f1nyy/field_information_oga090.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official RRC manual supplies district geography, eight-digit field-number composition, separate field-name definitions, county-code occurrences, and file-key boundaries.",
+      "claim_scope": "The article does not convert administrative geography or file relationships into field boundaries, title, ownership, production, reserves, value, or a transaction conclusion."
+    },
+    {
+      "label": "Texas RRC Field Search (accessed 2026-08-31)",
+      "url": "https://webapps.rrc.texas.gov/DP/initializeFieldSearchAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/DP/initializeFieldSearchAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The current official Field Search surface establishes that query execution is a separate operational job.",
+      "claim_scope": "The article does not provide query inputs, execute a search, or record a result state."
+    },
+    {
+      "label": "Texas RRC Oil Leases and Gas Wells by District and Operator (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/well-information/oil-leases-and-gas-wells-by-district-and-operator/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/well-information/oil-leases-and-gas-wells-by-district-and-operator/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official monthly index displays district, operator, lease, field, county, and oil-or-gas labels as separate context fields.",
+      "claim_scope": "The article does not treat co-display as equivalence or proof that a record belongs to a specific private mineral interest."
+    }
+  ]
+}

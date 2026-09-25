@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave100_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T10:23:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0283",
+  "slug": "texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Flare/Vent Exception Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "input_frontmatter_sha256": "675e0482fa2e0991d13d05b30cf34eb29f06ed94db4d0f2628a2625284bc9653",
+  "expected_repo_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "two_image_manifest_sha256": "f206605379995fa30288e248b7d21e6aabdd3fed7e602e8a5f428d8f54719480",
+  "visual_metadata": {
+    "hero_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "social_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "inline_alt": "A people-free overhead Flare/Vent Exception query checklist appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave100_compliance",
+  "review_run_id": "mrx1000-wave100-compliance-metadata-remediation-20260824T102320Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e51ace1da2c6394dd7d2c2eff9be6b16c0ac944a29754104e639866894f9075b",
+  "expected_inline_sha256": "0f4a0e58f15703fbb34d697bf65e2ca54b8d3ce355b6ed9dbc7194346d8ef16a",
+  "findings": [
+    "Complete current MDX SHA-256 is 56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4; hero/share and inline image hashes are separately locked, and the metadata-only title remediation preserves all compliance boundaries.",
+    "The article preserves source identity, online-system coverage, and uncertainty; uses only located, not located, or unverified; separates query criteria, result details, attachments, rule text, and other official channels; controls private identifiers; and stops before property, occurrence, compliance, environmental, legal, operational, production, royalty, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no RRC seal, actual record, identifier, application status, attachment, operator allegation, environmental event, compliance conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_swr32_query_retrieval_no_property_occurrence_compliance_environmental_production_royalty_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet/texas-rrc-flare-vent-exception-query-retrieval.webp"
+  ]
+}

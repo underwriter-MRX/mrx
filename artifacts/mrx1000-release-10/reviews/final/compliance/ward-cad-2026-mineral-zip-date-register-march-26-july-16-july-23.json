@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave238_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:26Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0858",
+  "slug": "ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23",
+  "title": "Ward CAD 2026 Mineral ZIP Date Register: March 26, July 16, and July 23",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+  "source_path": "src/content/posts/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23.mdx",
+  "input_body_sha256": "23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde",
+  "input_frontmatter_sha256": "dd468087aef91eb344e35e05187d36b0001cb497983796fcf3fd817e7c5f62a0",
+  "expected_repo_sha256": "23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde",
+  "two_image_manifest_sha256": "84e2a614f918cc73a8219c3bc920bd7354018145b87c8307d94267dc6dd05a7a",
+  "visual_metadata": {
+    "hero_alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
+    "social_alt": "Seven blank file sleeves and three brass date markers appear beside the exact Article 310 title.",
+    "inline_alt": "A top-down seven-file timestamp evidence board appears above the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026 Mineral ZIP Date Register · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 144,
+    "answer_summary_word_count": 54,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T18:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave238",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave238_compliance",
+  "review_run_id": "mrx1000-wave238-compliance-20260915T071326Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "95c0a054a05767e4b72792f268b87bcd1e07527deef64c397a54ef713a4e77d6",
+  "expected_inline_sha256": "9b656b51013e5be7e9be75f22f3885c9622b87677787e773bdae1f944b652922",
+  "findings": [
+    "Complete current MDX SHA-256 is 23bec2175bc47a026b76943608689037d3bb79ffb93cd79c235241128f4cccde; hero/share and inline image hashes are separately locked.",
+    "No member payload is extracted to disk, displayed, parsed for content, searched, sampled, summarized, or reproduced. No owner, account, address, email, property, title, acreage, production, appraisal, tax, private-value, offer, or legal conclusion appears.",
+    "Any quoted time identifies ZipInfo 3.00, the America/Los_Angeles environment, and the DOS, UT-local, or UT-UTC representation. Calendar dates are presented as archive-entry metadata only.",
+    "The organizational author is the MRX Editorial Team; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, and disclosed-buyer language are present without implying LocalBusiness or Google Business Profile eligibility.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, date finding, identifier, record content, value conclusion, approval statement, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_member_payload_extraction_display_content_parse_search_sample_summary_or_reproduction_pass",
+    "no_publication_certification_creation_update_effective_filing_delivery_upload_approval_or_data_as_of_inference_pass",
+    "no_owner_account_address_email_property_title_acreage_production_appraisal_tax_private_value_offer_legal_or_transaction_conclusion_pass",
+    "mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article308_article309_karnes_howard_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_dates_maps_county_outlines_logos_seals_official_forms_personal_data_property_identifiers_values_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23.mdx",
+    "/assets/articles/hero/ward-cad-2026-mineral-zip-date-register-march-26-july-16-and-july-23.webp",
+    "/assets/articles/inline/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/ward-cad-2026-mineral-zip-member-dates.webp"
+  ]
+}

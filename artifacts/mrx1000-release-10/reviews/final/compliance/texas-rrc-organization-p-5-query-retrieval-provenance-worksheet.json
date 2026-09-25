@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave93_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T02:26:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0169",
+  "slug": "texas-rrc-organization-p-5-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Organization (P-5) Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90",
+  "input_frontmatter_sha256": "8fa64be43f1a3a1f45f63c106fff195d3431ece361513998dbd844b402afb973",
+  "expected_repo_sha256": "870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90",
+  "two_image_manifest_sha256": "0e4b408253002452ac7d4a57fe721d942e021173e63c8ab3490a44aad4dfb940",
+  "visual_metadata": {
+    "hero_alt": "A Texas organization-query research counter appears beside the exact article title.",
+    "social_alt": "A Texas organization-query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead organization P-5 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave93_compliance",
+  "review_run_id": "mrx1000-wave93-compliance-20260824T022622Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e445e6f692d7506dcd28fdc8a1e9165cac6d0b8ee50263a5cf76cca4362f47a2",
+  "expected_inline_sha256": "c4f038cef6fabb732ea826b71884cc9c2d014dc2794cdfd156c2e1eafbcafaf6",
+  "findings": [
+    "Complete current MDX SHA-256 is 870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, result headers, and rows; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real P-5 record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_organization_p5_query_retrieval_no_property_connection_title_ownership_acreage_lease_payment_entitlement_compliance_production_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet/texas-rrc-organization-p-5-query-retrieval.webp"
+  ]
+}

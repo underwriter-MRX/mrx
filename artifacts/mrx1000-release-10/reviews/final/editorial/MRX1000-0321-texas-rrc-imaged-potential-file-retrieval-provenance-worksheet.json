@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave120_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0321",
+  "slug": "texas-rrc-imaged-potential-file-retrieval-provenance-worksheet",
+  "title": "Texas RRC Imaged Potential File Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6",
+  "input_frontmatter_sha256": "7a8f73fc1bfb5d9d20f169b14a2115589ec7771b82a1233bc0f32f774aa15cc0",
+  "expected_repo_sha256": "cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6",
+  "two_image_manifest_sha256": "5900b6c5e3b7383c0ec94ab370028ea300d6ca4a4a237ea8c3af26054c642eb7",
+  "visual_metadata": {
+    "hero_alt": "A researcher opens a generic archive drawer beside the exact article title.",
+    "social_alt": "A researcher opens a generic archive drawer beside the exact article title.",
+    "inline_alt": "A people-free overhead potential-file evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Imaged Potential File Retrieval Worksheet",
+    "seo_title_character_count": 51,
+    "description_character_count": 148,
+    "answer_summary_word_count": 70,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T10:15:57Z",
+    "reviewed_by": "mrx_compliance-continuous-wave120",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave120_editorial",
+  "review_run_id": "mrx1000-wave120-editorial-20260915T073133Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6; the answer-first article contains 2364 body tokens and five FAQs.",
+    "The article fully rejects the colliding multiple-offers identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Imaged Records Oil and Gas Potential profile retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The wide eye-level one-researcher archive scene and people-free strict-overhead potential-file evidence board are materially distinct in camera angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2364,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 70
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 51,
+        "description_character_count": 148,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T10:15:57Z",
+        "reviewed_by": "mrx_compliance-continuous-wave120",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/texas-rrc-potential-file-retrieval.webp"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "artifact_type": "mrx1000_wave199_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0814",
+  "slug": "loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk",
+  "title": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+  "source_path": "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+  "input_body_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "input_frontmatter_sha256": "e890263b86c89a39cf506cc10485c4c817b438440df97cd0414d759a09ddf0ed",
+  "expected_repo_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "two_image_manifest_sha256": "e7ab0c9166f65d350a4c58de1b769f37c8d68b5166466c30baf35905ed9389ee",
+  "visual_metadata": {
+    "hero_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "social_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "inline_alt": "Four blank roster tabs sit on two offset pages above the exact Loving CAD 2026 mineral appraisal assistance roster phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Mineral Assistance Roster · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 140,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T11:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave199",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave199_factual",
+  "review_run_id": "mrx1000-wave199-factual-20260915T071313Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Loving CAD publisher page, exact 2026 Mass Appraisal Report, Loving CAD homepage context, and Texas Comptroller local-contact routing page.",
+    "The exact report controls are HTTP 200, application/pdf, 19,898,366 bytes, 55 unencrypted pages, and SHA-256 9b1e52c1fbbc8c87a405eeed72736a064995138438655a556c397e6e634e1932.",
+    "Physical/PDF page 1 and physical/PDF page 11 were rendered and manually reviewed; physical page 11 carries printed footer 10 and controls the four-row transcription.",
+    "No current employment, contact, role, registration, license, property assignment, appraisal accuracy, tax, value, offer, transaction, or legal-status conclusion is made."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_label_and_exact_2026_report_target_relationship_pass",
+    "pdf_http_size_page_count_encryption_and_sha256_pass",
+    "physical_page_one_document_identity_render_pass",
+    "physical_page_ten_certification_context_pass",
+    "physical_page_eleven_printed_page_ten_roster_render_and_manual_transcription_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_current_status_and_property_assignment_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Loving CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://lovingcad.org/home/DataRecords",
+      "publisher": "lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://lovingcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible 2026 Mass Appraisal Report label and exact target relationship.",
+      "claim_scope": "It does not establish report contents, roster currency, current professional status, or a property-specific fact."
+    },
+    {
+      "label": "Loving CAD 2026 Mass Appraisal Report (accessed 2026-08-29)",
+      "url": "https://www.lovingcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1784136171_2026+Mass+Appraisal+Report.pdf",
+      "publisher": "www.lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.lovingcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1784136171_2026+Mass+Appraisal+Report.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact 55-page report supplies document identity, complete-file controls, physical-page and printed-page locators, certification context, and the four-row significant-assistance roster.",
+      "claim_scope": "It does not prove current employment, contact, role, registration or license status, assignment to a property, appraisal accuracy, value, tax, offer, transaction, or legal effect."
+    },
+    {
+      "label": "Loving County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://lovingcad.org/",
+      "publisher": "lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://lovingcad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies current Loving CAD public-site identity and publisher-stated contractor context.",
+      "claim_scope": "It does not identify the roster page, verify a named person, or prove a property-specific assignment or result."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing guidance for local appraisal and tax questions.",
+      "claim_scope": "It does not inspect or interpret the Loving report, verify a roster entry, or support a property-specific conclusion."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "artifact_type": "mrx1000_wave215_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0835",
+  "slug": "pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd",
+  "title": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+  "source_path": "src/content/posts/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.mdx",
+  "input_body_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+  "input_frontmatter_sha256": "c02cfdd43ea3fa3e8d171085853e4c1f143e0059c9e405f365f4ce5ca2d85cbe",
+  "expected_repo_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+  "two_image_manifest_sha256": "c69c7595f28716b54ff849235973a04bcd74bc404e28e7c0f6ac5a156ef2f332",
+  "visual_metadata": {
+    "hero_alt": "A dark Pecos survey diorama appears beside the exact Article 287 title.",
+    "social_alt": "A dark Pecos survey diorama appears beside the exact Article 287 title.",
+    "inline_alt": "Two bright overhead evidence trays appear above the exact Pecos CAD Category G parcel counts keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Category G Parcel Counts by ISD · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 138,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T07:22:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave215",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave215_factual",
+  "review_run_id": "mrx1000-wave215-factual-20260915T071320Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca; all 4 declared sources passed current HTTPS access review.",
+    "The official plan PDF was retrieved at 971,223 bytes with SHA-256 c95d84641a0d024c04b9d8ba491e5972085b29a05a9aba4038128d78e8e12d01; it is unencrypted, has no JavaScript, contains 75 physical pages, and records creation on 2024-08-08 and modification on 2024-09-02.",
+    "Physical page 1 prints board approval on August 19, 2024. Physical page 2 schedules Buena Vista ISD real property for 2025, Fort Stockton ISD for 2026, Iraan/Sheffield ISD for 2027, and points to Exhibit A.",
+    "Physical page 37 labels the table Estimated Parcel Counts by ISD, pairs 2025 with Buena Vista ISD and 2026 with Fort Stockton ISD, and prints Category G Real: Oil, Gas and Other Minerals estimates of 20,005 and 78,200 with separate all-category totals of 28,038 and 101,979.",
+    "Physical page 40 begins a separate oil-and-gas-reserves appendix. It is recorded only to prevent its producing-lease language from redefining physical page 37 units."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_official_data_records_route_pass",
+    "reappraisal_plan_http_bytes_sha256_encryption_javascript_metadata_and_page_count_pass",
+    "physical_page_1_board_approval_statement_pass",
+    "physical_page_2_year_to_isd_schedule_pass",
+    "physical_page_37_category_g_row_estimate_year_isd_and_total_separation_pass",
+    "physical_page_40_separate_appendix_boundary_pass",
+    "tax_code_chapter_25_context_only_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "estimated_counts_not_converted_to_completion_certification_or_owner_level_result_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Pecos CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.pecoscad.org/home/DataRecords",
+      "publisher": "www.pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.pecoscad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Data and Records page supplies the visible 2025-2026 Reappraisal Plan route.",
+      "claim_scope": "The page is routing evidence only and does not prove the plan was completed, the estimates became certified counts, or any owner, account, property, notice, appraisal, title, tax, value, offer, or transaction result."
+    },
+    {
+      "label": "Pecos CAD 2025-2026 Reappraisal Plan (accessed 2026-08-31)",
+      "url": "https://pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+      "publisher": "pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The controlled PDF supplies exact bytes, SHA-256 identity, page count, cover approval statement, year-to-ISD schedule, physical page 37 estimated parcel-count table, and the start of the separate oil-and-gas-reserves appendix.",
+      "claim_scope": "The plan does not prove implementation, completion, certification, current status, or any owner, well, lease, tract, interest, notice, tax bill, value, offer, or transaction result. The two Category G figures remain separate year-and-ISD estimates and are not summed."
+    },
+    {
+      "label": "Pecos County Appraisal District homepage (accessed 2026-08-31)",
+      "url": "https://pecoscad.org/",
+      "publisher": "pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://pecoscad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official homepage identifies Pecos County Appraisal District and states that mineral, utility, and industrial accounts are appraised for the district by Thos. Y. Pickett and Company.",
+      "claim_scope": "The homepage does not define the physical page 37 parcel unit, validate the plan estimates, establish completion, or determine an owner-specific account, title, appraisal, tax, value, offer, or transaction result."
+    },
+    {
+      "label": "Texas Tax Code Chapter 25 (accessed 2026-08-31)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies statutory context for periodic reappraisal plans and appraisal-roll administration.",
+      "claim_scope": "The statute is context only. The article does not interpret a legal duty, calculate an appraisal, apply law to an owner or account, or prove that a Pecos CAD plan item was completed or certified."
+    }
+  ]
+}

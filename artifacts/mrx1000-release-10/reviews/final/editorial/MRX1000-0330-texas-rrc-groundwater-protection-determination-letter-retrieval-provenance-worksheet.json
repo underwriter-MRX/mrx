@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave125_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0330",
+  "slug": "texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet",
+  "title": "Texas RRC Groundwater Protection Determination Letter Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d",
+  "input_frontmatter_sha256": "c8951fca053b2a21521e903cb7f3fcc0d79f679019c0356f7d053589d402857a",
+  "expected_repo_sha256": "30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d",
+  "two_image_manifest_sha256": "aa34740f74b8cd99a1045b0718febbf3649e20c0b9dbc147a96f442646714199",
+  "visual_metadata": {
+    "hero_alt": "A people-free microfilm station appears beside the exact groundwater-letter worksheet title.",
+    "social_alt": "A people-free microfilm station appears beside the exact groundwater-letter worksheet title.",
+    "inline_alt": "Three blank groundwater-letter evidence sleeves appear above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Groundwater Letter Retrieval Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 154,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T14:23:32Z",
+    "reviewed_by": "mrx_compliance-continuous-wave125",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave125_editorial",
+  "review_run_id": "mrx1000-wave125-editorial-20260915T073223Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d; the answer-first article contains 1364 body tokens and five FAQs.",
+    "The article fully rejects the colliding offer-mistakes identity and owns one distinct administrative reader job: preserve one authorized manual Texas RRC Groundwater Protection Determination Letters profileId 23 retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The people-free wide microfilm reading station and close oblique three-sleeve evidence scene are materially distinct in camera angle, composition, subject arrangement, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1364,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 68
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 48,
+        "description_character_count": 154,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T14:23:32Z",
+        "reviewed_by": "mrx_compliance-continuous-wave125",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/texas-rrc-groundwater-determination-letter-retrieval.webp"
+  ]
+}

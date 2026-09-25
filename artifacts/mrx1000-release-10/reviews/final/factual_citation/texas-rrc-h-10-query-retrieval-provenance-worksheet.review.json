@@ -1,0 +1,107 @@
+{
+  "artifact_type": "mrx1000_wave94_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T03:03:45Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0277",
+  "slug": "texas-rrc-h-10-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC H-10 Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-h-10-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "input_frontmatter_sha256": "e8ec303df12bda717645a288c25d939ed4f144fb920a1f0351d094cbd46a43d6",
+  "expected_repo_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "two_image_manifest_sha256": "04c5546df8e6b55117f5d8feaba916f42c46db37746aefc5f63bc464fc57d511",
+  "visual_metadata": {
+    "hero_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "social_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead H-10 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave94_factual",
+  "review_run_id": "mrx1000-wave94-factual-20260824T030345Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed Search for H10 criteria and instructions, separate public-query menu identity, limited H-10 context, and published limitations. None of the sources is used to establish property connection, title, ownership, acreage, lease effect, payment responsibility, entitlement, compliance, environmental condition, injection fact, production, value, or a transaction result.",
+    "The article publishes no actual query values, owner document, signature, address, legal description, property identifier, result screenshot, operator allegation, H-10 conclusion, well conclusion, production result, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T03:03:45Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC directory identifies the H-10 Annual Disposal/Injection Well Monitoring Report Query as a named route and states an online-query use limitation.",
+      "claim_scope": "The article records the named route, access time, and published limitation without treating a query result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, Annual Disposal/Injection Well Monitoring Report (Form H-10) Online Filing (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-h-10-query/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T03:03:45Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-h-10-query/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official H-10 information page supplies bounded online-filing and historical-context statements.",
+      "claim_scope": "The article preserves source-stated time and route context without deciding whether a report exists, was required, is complete, or has a property or regulatory effect."
+    },
+    {
+      "label": "Railroad Commission of Texas, H10 Public Main (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/H10/h10PublicMain.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-08-24T03:03:45Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/H10/h10PublicMain.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official H10 Public Main menu presents separate Search for H10, injection-volume, fluid-type, filing-cycle, UIC, and violation public-query routes.",
+      "claim_scope": "The article preserves route identity so information from separate systems is not merged or mislabeled."
+    },
+    {
+      "label": "Railroad Commission of Texas, Search for H10 (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/H10/searchH10.do?fromMain=yes",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-08-24T03:03:45Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/H10/searchH10.do?fromMain=yes",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official Search for H10 entry displays current criteria labels and source-displayed instructions for one query attempt.",
+      "claim_scope": "The article records only criteria actually used, displayed instructions, navigation steps that occurred, and bounded retrieval state. It does not submit an actual property query or reproduce an actual result."
+    },
+    {
+      "label": "Railroad Commission of Texas, H10 Public Queries Help (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/H10/help/PQ_Public.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-08-24T03:03:45Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/H10/help/PQ_Public.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official H10 Public Queries Help page supplies bounded public-query and navigation context.",
+      "claim_scope": "The article uses that context only to keep result links and separate routes distinct; it does not interpret an H-10 report, well, operator, status, volume, or violation."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave147_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T13:34:51Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0586",
+  "slug": "irs-form-1099-misc-royalty-box-2-source-scope-worksheet",
+  "title": "IRS Form 1099-MISC Royalty Box 2 Source-Scope Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-1099-misc-royalty-box-2-source-scope-worksheet/",
+  "source_path": "src/content/posts/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.mdx",
+  "input_body_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "input_frontmatter_sha256": "3e541319059175320a15ff1cadd744a46bf104c58dabcb79a9f3988632205ed2",
+  "expected_repo_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "two_image_manifest_sha256": "b47eecb2481e82cdd5115f3028eca20ae8388a0502c16bdf64e52558de2d48bf",
+  "visual_metadata": {
+    "hero_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "social_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "inline_alt": "A top-down blank source-scope matrix appears above the exact IRS Form 1099-MISC Box 2 keyword."
+  },
+  "reviewer_id": "codex_wave147_editorial",
+  "review_run_id": "mrx1000-wave147-editorial-20260826T133451Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d; the answer-first article contains 1724 body tokens and five FAQs.",
+    "The article rejects the colliding broad sale-guide identity and owns one distinct deliverable: a blank source-scope record for one already-retained Form 1099-MISC, exact source-displayed bounded fields, controlled pointers, limitations, and captured, incomplete, or unverified outcomes.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The front-facing secure provenance case and strict-overhead blank source-scope matrix are materially distinct and contain no taxpayer data or tax-form facsimile."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1724,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.mdx",
+    "/assets/articles/hero/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.webp",
+    "/assets/articles/inline/irs-form-1099-misc-royalty-box-2-source-scope-worksheet/irs-form-1099-misc-royalty-box-2.webp"
+  ]
+}

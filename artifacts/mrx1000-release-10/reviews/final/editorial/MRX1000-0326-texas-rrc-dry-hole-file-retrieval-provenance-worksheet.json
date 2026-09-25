@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave121_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:47Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0326",
+  "slug": "texas-rrc-dry-hole-file-retrieval-provenance-worksheet",
+  "title": "Texas RRC Dry Hole File Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-dry-hole-file-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "1f54ae2d172fc29b88e74d380fac3f53c6952e4e1ddc2ddcba78b1c1c42862a9",
+  "input_frontmatter_sha256": "b82a081f1749692a3ff574fffb53ebc03a4ac5a737e1751b423c3aa9af8acf5c",
+  "expected_repo_sha256": "1f54ae2d172fc29b88e74d380fac3f53c6952e4e1ddc2ddcba78b1c1c42862a9",
+  "two_image_manifest_sha256": "8dd1a50f7292354518f0436df474a6768d7ba3ca918ce9b786626657c9bbd1ff",
+  "visual_metadata": {
+    "hero_alt": "A researcher opens a public-record archive drawer beside the exact article title.",
+    "social_alt": "A researcher opens a public-record archive drawer beside the exact article title.",
+    "inline_alt": "A people-free overhead dry-hole retrieval evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Dry Hole File Retrieval Worksheet",
+    "seo_title_character_count": 43,
+    "description_character_count": 145,
+    "answer_summary_word_count": 73,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T10:46:29Z",
+    "reviewed_by": "mrx_compliance-continuous-wave121",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave121_editorial",
+  "review_run_id": "mrx1000-wave121-editorial-20260915T073147Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 1f54ae2d172fc29b88e74d380fac3f53c6952e4e1ddc2ddcba78b1c1c42862a9; the answer-first article contains 1836 body tokens and five FAQs.",
+    "The article fully rejects the colliding offer-legitimacy identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Imaged Records Dry Hole Files profile retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The wide eye-level one-researcher archive scene and people-free strict-overhead dry-hole retrieval evidence board are materially distinct in camera angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "1f54ae2d172fc29b88e74d380fac3f53c6952e4e1ddc2ddcba78b1c1c42862a9"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1836,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 73
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 43,
+        "description_character_count": 145,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T10:46:29Z",
+        "reviewed_by": "mrx_compliance-continuous-wave121",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-dry-hole-file-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-dry-hole-file-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/texas-rrc-dry-hole-file-retrieval.webp"
+  ]
+}

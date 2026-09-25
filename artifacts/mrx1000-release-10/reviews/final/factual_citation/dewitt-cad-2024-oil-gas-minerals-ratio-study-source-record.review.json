@@ -1,0 +1,132 @@
+{
+  "artifact_type": "mrx1000_wave169_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0768",
+  "slug": "dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record",
+  "title": "DeWitt CAD 2024 Oil, Gas, Minerals Ratio Study Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record.mdx",
+  "input_body_sha256": "641b0e425fc73a61554f2d0f1709c0923395c38f2dfc0c42fa8c1f9dac036dbb",
+  "input_frontmatter_sha256": "39b837191e615df892cd13d448f91b7c81065db1f9f4637f0aed28b084eeea83",
+  "expected_repo_sha256": "641b0e425fc73a61554f2d0f1709c0923395c38f2dfc0c42fa8c1f9dac036dbb",
+  "two_image_manifest_sha256": "b8f2fe842b7b59791821b8549547951bb5b69e7a9b37dc056d7c079fb4750958",
+  "visual_metadata": {
+    "hero_alt": "An open navy ledger case with seven blank dividers appears beside the exact DeWitt CAD ratio-study source-record title.",
+    "social_alt": "An open navy ledger case with seven blank dividers appears beside the exact DeWitt CAD ratio-study source-record title.",
+    "inline_alt": "Seven overhead abstract measurement frames appear above the exact DeWitt CAD 2024 mineral ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD 2024 Mineral Ratio Study Record",
+    "seo_title_character_count": 42,
+    "description_character_count": 143,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:25:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave169",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2024-25-map-review-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave169_factual",
+  "review_run_id": "mrx1000-wave169-factual-20260915T071256Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 641b0e425fc73a61554f2d0f1709c0923395c38f2dfc0c42fa8c1f9dac036dbb; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official 2024 findings page, current linked 062-Dewitt district summary, displayed source dates, literal row and measures, adjacent warning, limited official program context, retrieval provenance, and document-control state.",
+    "The article does not invent a source relationship, owner, account, property, calculation, aggregate, normalization, benchmark, rank, grade, trend, comparison, label equivalence, appraisal result, tax or protest result, mineral valuation, offer, sale price, or owner-specific conclusion."
+  ],
+  "checks": [
+    "primary_html_response_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "canonical_entity_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_texas_comptroller_source_priority_pass",
+    "literal_row_values_source_dates_and_small_sample_warning_pass",
+    "district_statistics_not_converted_into_property_appraisal_tax_protest_valuation_offer_sale_or_owner_outcome_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, 2024 Appraisal District Ratio Study findings (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2024 findings page supplies the study-year identity, August 15, 2025 publication date, and exact 062-Dewitt district-summary link.",
+      "claim_scope": "It supports study-set and publisher-link provenance only. It does not supply a property result, appraisal conclusion, tax or protest result, mineral valuation, offer, sale, or owner action."
+    },
+    {
+      "label": "Texas Comptroller, 062-Dewitt 2024 district summary (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2024/0620000001A.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2024/0620000001A.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official district page supplies the 2024 study identity, summary-worksheet label, 062-Dewitt label, August 31, 2025 displayed update date, literal G.OIL, GAS, MINERALS row, seven displayed measures, and small-sample warning.",
+      "claim_scope": "It supports exact source transcription only. No field is recalculated, normalized, benchmarked, ranked, graded, compared, or applied to an owner, property, appraisal, tax, protest, valuation, offer, sale, or outcome."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Data Reports and Surveys (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official reports page supplies limited program-purpose context for appraisal-district ratio studies and named statistical report components.",
+      "claim_scope": "It does not define an owner-specific use, validate the DeWitt row, select a benchmark, establish reliability, or authorize a property, appraisal, tax, protest, valuation, offer, or sale conclusion."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 5 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official Texas Legislature page supplies Section 5.10 provenance.",
+      "claim_scope": "The article does not interpret law, decide compliance, or apply the statute to a district, owner, property, notice, protest, tax, valuation, offer, sale, or transaction."
+    },
+    {
+      "label": "Texas Comptroller, DeWitt County Directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dewitt.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dewitt.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official county directory supplies DeWitt appraisal-district directory context only.",
+      "claim_scope": "It does not validate a ratio-study value, identify a sample, establish a property result, or direct an owner action."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave98_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T06:44:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0281",
+  "slug": "texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Injection-Storage Permit Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "input_frontmatter_sha256": "d5ab201465dc432291f7c980cbdb49d3e5108f32d6559e109b13892a0449b3f2",
+  "expected_repo_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "two_image_manifest_sha256": "fe0679bd188acafe00b25e39d614ca45548b1ba0316751df3ae57e4735ae8e7f",
+  "visual_metadata": {
+    "hero_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "social_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead injection-storage permit query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave98_editorial",
+  "review_run_id": "mrx1000-wave98-editorial-20260824T064435Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b; the answer-first article contains 1280 body tokens and five FAQs.",
+    "The article replaces a colliding valuation explainer with one administrative job: preserve a reproducible provenance trail for a single official RRC UIC / Injection-Storage Permit Query attempt through its entry route, criteria snapshot, visible instructions, navigation steps, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The oblique limestone-and-steel public-record counter and people-free strict-overhead slate technical worksheet differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1280,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/texas-rrc-injection-storage-permit-query-retrieval.webp"
+  ]
+}

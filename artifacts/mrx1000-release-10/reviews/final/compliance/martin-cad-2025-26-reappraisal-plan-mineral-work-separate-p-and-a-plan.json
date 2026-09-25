@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave207_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0822",
+  "slug": "martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan",
+  "title": "Martin CAD 2025-26 Reappraisal Plan: Mineral Work and the Separate P&A Plan",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/",
+  "source_path": "src/content/posts/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan.mdx",
+  "input_body_sha256": "550b498d8599709060b5706786c8f29094a8f050ee0bcff9f14d3a4c546a242c",
+  "input_frontmatter_sha256": "1f64c536850a5fed6ee4c232924f88796d2f30374b062e3205e9e3b324143bb4",
+  "expected_repo_sha256": "550b498d8599709060b5706786c8f29094a8f050ee0bcff9f14d3a4c546a242c",
+  "two_image_manifest_sha256": "358679b44a4df7210205cb703b51ca83536cceb5389ab63be89105cd6cdc7523",
+  "visual_metadata": {
+    "hero_alt": "Two separate plan volumes are joined by a brass route beside the exact Martin CAD reappraisal-plan title.",
+    "social_alt": "Two separate plan volumes are joined by a brass route beside the exact Martin CAD reappraisal-plan title.",
+    "inline_alt": "A top-down source card and separate plan token sit above the exact Martin CAD separate mineral reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD Mineral Reappraisal Plan Route · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 143,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T17:26:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave207",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave207_compliance",
+  "review_run_id": "mrx1000-wave207-compliance-20260915T071316Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "c106e62c555278c7d506da29b006d841b930e9fdd4c16f938b0edab0654f1ae1",
+  "expected_inline_sha256": "b9f566a6c54f334367bfd130a8aa21736fbf0b08264ac4e6e9e3845544af2a67",
+  "findings": [
+    "Complete current MDX SHA-256 is 550b498d8599709060b5706786c8f29094a8f050ee0bcff9f14d3a4c546a242c; hero/share and inline image hashes are separately locked.",
+    "The article separates source routing from current-law interpretation, contractor performance, plan validation, ownership, title, property appraisal, tax, transaction, production, royalty, and legal outcomes and preserves MRX buyer-interest disclosure.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, contractor endorsement, property identity, record data, monetary figure, appraisal, tax, offer, ownership, outcome, or ranking or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_current_law_contractor_performance_plan_validation_title_ownership_property_appraisal_tax_sale_value_offer_production_royalty_or_legal_advice_claim_pass",
+    "separate_plan_identity_not_silently_normalized_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_maps_property_records_money_charts_offers_prices_government_symbols_conclusions_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan.mdx",
+    "/assets/articles/hero/martin-cad-2025-26-reappraisal-plan-mineral-work-and-the-separate-p-and-a-plan.webp",
+    "/assets/articles/inline/martin-cad-2025-26-reappraisal-plan-mineral-work-separate-p-and-a-plan/martin-cad-separate-mineral-reappraisal-plan.webp"
+  ]
+}

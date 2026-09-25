@@ -1,0 +1,121 @@
+{
+  "artifact_type": "mrx1000_wave188_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:07Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0791",
+  "slug": "texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table",
+  "title": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+  "source_path": "src/content/posts/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.mdx",
+  "input_body_sha256": "f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff",
+  "input_frontmatter_sha256": "a2e7d4832768a544a7507d480b91e568b784fbbd68a119dc21c3ebbb7b061d78",
+  "expected_repo_sha256": "f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff",
+  "two_image_manifest_sha256": "46735cbaf265640f7ea177a947085235eb558a36d5b51a283057e21743a550e2",
+  "visual_metadata": {
+    "hero_alt": "Three symbolic category cards appear beside the exact Texas Comptroller mineral-classification boundary-table title.",
+    "social_alt": "Three symbolic category cards appear beside the exact Texas Comptroller mineral-classification boundary-table title.",
+    "inline_alt": "An overhead three-lane worksheet appears above the Texas Comptroller mineral categories G1 G2 G3 phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Comptroller G1, G2, G3 Mineral Category Table",
+    "seo_title_character_count": 51,
+    "description_character_count": 150,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave188",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave188_factual",
+  "review_run_id": "mrx1000-wave188-factual-20260915T071307Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official publications surface, current 36-page guide, printed page 20/PDF page 23, the PVS context page, and the dated July 2026 update notice.",
+    "The recorded guide controls include the exact publisher URL, HTTP 200, application/pdf, 1,170,975 bytes, 36 pages, creation 2026-03-30, modification 2026-04-01, and SHA-256 81d36ed8286ae58a17a464ab2a7772a04dfebce6ad9a9a4556fc6e3abf3cf218."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_36_page_file_and_sha256_control_pass",
+    "printed_page_20_pdf_page_23_locator_reconciliation_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_document_page_route_date_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "classification_not_valuation_or_property_application_boundary_pass",
+    "adjacent_dewitt_culberson_glasscock_jobs_preserved_pass",
+    "search_atlas_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller property-tax publications (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:07Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller publications page supplies the current publisher relationship for the Property Classification Guide and related PVS materials.",
+      "claim_scope": "It does not establish a property classification, appraisal, ownership interest, tax result, mineral-rights sale value, offer, or legal conclusion for any owner or account."
+    },
+    {
+      "label": "Texas Comptroller Property Classification Guide (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:07Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official 36-page guide supplies the Category G1, G2, and G3 definitions, surface-land boundary, producing and nonproducing mineral note, and classification examples on printed page 20/PDF page 23.",
+      "claim_scope": "The article does not apply the guide to a person, account, parcel, lease, appraisal, tax, ownership, title, mineral-rights sale value, offer, transaction, or legal position."
+    },
+    {
+      "label": "Texas Comptroller School District Property Value Study (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/pvs/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:07Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/pvs/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official School District Property Value Study page supplies the program context and links to the classification guide and oil-and-gas appraisal resources.",
+      "claim_scope": "It is not a property-specific appraisal, tax determination, ownership record, sale estimate, offer analysis, or legal instruction."
+    },
+    {
+      "label": "Texas Comptroller Property Tax Today, July 2026 (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/newsletter/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:07Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/newsletter/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official July 2026 Property Tax Today page supplies dated evidence that PTAD identified the updated 2026 classification guide for appraisal-roll reporting.",
+      "claim_scope": "The newsletter does not replace the guide text or decide how a specific property, owner, account, tax, appraisal, sale value, or transaction should be treated."
+    }
+  ]
+}

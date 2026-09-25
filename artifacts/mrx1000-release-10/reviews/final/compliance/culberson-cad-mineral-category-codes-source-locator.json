@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave163_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0762",
+  "slug": "culberson-cad-mineral-category-codes-source-locator",
+  "title": "Culberson CAD Mineral Category Codes Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+  "source_path": "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+  "input_body_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "input_frontmatter_sha256": "89909c88695a402c4e8b27c7459ba2529d8e2ab99b3f5180cb89429d310e0e73",
+  "expected_repo_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "two_image_manifest_sha256": "76f9802f766927a66ff5e93859749835b8413bf7f19fbeba60f03c106853e291",
+  "visual_metadata": {
+    "hero_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "social_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "inline_alt": "Three separate source tiles appear above the exact Culberson CAD mineral category codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Mineral Category Codes Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 142,
+    "answer_summary_word_count": 72,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T10:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave163",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave163_compliance",
+  "review_run_id": "mrx1000-wave163-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "bea5224bc889874ef5d337f75c635e01311512e6bffc4fe9e553baf875b9d718",
+  "expected_inline_sha256": "b8bf2cba1e1b4337b53c6e2279dcdac0306447851bc43e3bde04a1e62119a14b",
+  "findings": [
+    "Complete current MDX SHA-256 is 0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee; hero/share and inline image hashes are separately locked.",
+    "The reusable public locator contains only source identity, exact URLs, retrieval provenance, broad section names, page locators, literal displayed labels, and document-control states. It stops before ZIP work, code-equivalence inference, property search, row-data access, matching, evidence review, individualized classification, appraisal judgment, protest strategy, legal interpretation, tax guidance, valuation, representation, contact, submission, payment, or sale advice.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real record, code, number, row data, owner or property fact, classification claim, appraisal claim, protest direction, legal position, tax conclusion, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "source_locator_only_no_zip_work_code_equivalence_row_data_matching_private_data_evidence_review_account_classification_appraisal_judgment_protest_strategy_legal_tax_valuation_contact_submission_payment_sale_advice_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_record_code_number_row_data_owner_data_property_fact_government_mark_classification_appraisal_legal_tax_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+    "/assets/articles/hero/culberson-cad-mineral-category-codes-source-locator.webp",
+    "/assets/articles/inline/culberson-cad-mineral-category-codes-source-locator/culberson-cad-mineral-category-codes.webp"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "artifact_type": "mrx1000_wave239_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:27Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0859",
+  "slug": "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
+  "title": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+  "source_path": "src/content/posts/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.mdx",
+  "input_body_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+  "input_frontmatter_sha256": "b0ed4e54e6186030cbbb105bc8256ac6f02dc0c583a19a55c545eb1eafa1b61a",
+  "expected_repo_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+  "two_image_manifest_sha256": "a18bdb173ca98975ca7df32f46d568f1d10f59f7608fdb15d4e3e9839a82b7df",
+  "visual_metadata": {
+    "hero_alt": "A contract binder, four interest markers, and three material samples appear beside the exact Article 311 title.",
+    "social_alt": "A contract binder, four interest markers, and three material samples appear beside the exact Article 311 title.",
+    "inline_alt": "A top-down evidence table separates four interest markers from three material samples below the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026-2029 Mineral Contract Scope · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 154,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T19:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave239",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave239_factual",
+  "review_run_id": "mrx1000-wave239-factual-20260915T071327Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017; all 3 declared sources passed current HTTPS access review.",
+    "The official board packet is 1,663,784 bytes with SHA-256 f41283bcb1b349dac1d088160864a7785a0864a89941b8f984308518d818864f and contains 32 PDF pages.",
+    "Packet page 25 titles a professional appraisal services contract for mineral, industrial, utility, and personal property for tax years 2026, 2027, 2028, and 2029.",
+    "Packet page 26 lists working interests, oil payments, overriding royalties, royalty interests, and other related interests within Mineral Property, while expressly excluding sand, gravel, caliche, and other non-fuel minerals; it separately defines Personal Property used in exploration and production.",
+    "The same page states the four tax years, a January 1 information date for each year, and a Section 23.01 and USPAP ad valorem appraisal context. The statute source independently supports only the statutory statements attributed to it."
+  ],
+  "checks": [
+    "three_official_https_sources_with_exact_source_roles",
+    "ward_board_packet_complete_file_hash_page_count_and_page_map_pass",
+    "mineral_property_listed_interests_and_non_exhaustive_boundary_pass",
+    "sand_gravel_caliche_and_other_non_fuel_exclusions_pass",
+    "separate_personal_property_definition_pass",
+    "tax_years_2026_2029_and_january_1_information_date_pass",
+    "section_23_01_uspap_attribution_and_statute_source_pass",
+    "no_owner_title_tax_value_production_reserves_or_enforceability_inference_pass",
+    "adjacent_article_nonduplication_and_information_gain_pass",
+    "answer_first_claim_adjacent_citation_source_age_and_inference_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ward CAD May 12, 2025 board packet, contract pages 1-2 (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/Forms/GetDocument?fileName=1748537643_Agenda+for+Monday+May+12%2C+2025+BOD+Meeting.pdf&subPath=Latest+News",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:27Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/Forms/GetDocument?fileName=1748537643_Agenda+for+Monday+May+12%2C+2025+BOD+Meeting.pdf&subPath=Latest+News",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official May 12, 2025 Ward CAD board packet supplies the contract title, tax-year term, defined Mineral Property and Personal Property classes, listed interests, non-fuel exclusions, January 1 information date, and stated Section 23.01 and USPAP context on packet pages 25 and 26.",
+      "claim_scope": "It does not establish any owners title, current tax result, private-sale value, production, reserves, enforceability, or facts outside the contract language."
+    },
+    {
+      "label": "Ward CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/home/DataRecords",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:27Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Ward CAD Data and Records page supplies a current official publisher route and confirms the separate 2026 USPAP report listing.",
+      "claim_scope": "It does not expand or replace the contract definitions in the May 12, 2025 board packet and does not establish a property-specific conclusion."
+    },
+    {
+      "label": "Texas Tax Code Section 23.01 (accessed 2026-08-31)",
+      "url": "https://statutes.capitol.texas.gov/?artSec=23.01&chapter=TX.23&code=TX&tab=1",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:27Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/?artSec=23.01&chapter=TX.23&code=TX&tab=1",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The Texas Legislature statutes site supplies the current Section 23.01 text for the January 1 appraisal date, generally accepted methods, and the USPAP mass-appraisal requirement.",
+      "claim_scope": "It does not interpret the Ward contract, determine whether a particular interest is taxable, resolve title, establish private value, or provide individualized legal or tax advice."
+    }
+  ]
+}

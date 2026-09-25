@@ -1,0 +1,120 @@
+{
+  "artifact_type": "mrx1000_wave186_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0785",
+  "slug": "glasscock-cad-property-search-result-field-inventory-for-mineral-research",
+  "title": "Glasscock CAD Property Search Result Field Inventory for Mineral Research",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+  "source_path": "src/content/posts/glasscock-cad-property-search-result-field-inventory-for-mineral-research.mdx",
+  "input_body_sha256": "12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0",
+  "input_frontmatter_sha256": "b129e1f83a4f324c1ba1fc3492952d098674e6409fe97de78bf870a60ffbe3e0",
+  "expected_repo_sha256": "12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0",
+  "two_image_manifest_sha256": "de695ab94ca842faa0b4e83799fa6c26d06da2eb4416bf96e0d041e38cd605ff",
+  "visual_metadata": {
+    "hero_alt": "A navy card-catalog tray with blank dividers appears beside the exact Glasscock CAD field-inventory title.",
+    "social_alt": "A navy card-catalog tray with blank dividers appears beside the exact Glasscock CAD field-inventory title.",
+    "inline_alt": "An overhead eighteen-tile inventory board appears above the exact Glasscock CAD property search result fields phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Property Search Result Field Inventory",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave186",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave186_factual",
+  "review_run_id": "mrx1000-wave186-factual-20260915T071305Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the empty official Search Results route, its HTTP 200 state on 2026-08-28, and the eighteen exact displayed grid-header labels; no query or result row is used.",
+    "Market Value and Base Tax Due are preserved only as interface labels and are expressly not treated as mineral-rights sale valuation, offer, proceeds, transaction, or legal metrics."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "empty_search_results_grid_eighteen_label_inventory_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_route_date_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "no_query_no_result_row_no_person_or_property_data_boundary_pass",
+    "adjacent_glasscock_appraiser_roll_category_and_plan_jobs_preserved_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Glasscock CAD Search Results page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/Home/Search",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official empty Glasscock CAD Search Results interface supplies the eighteen displayed grid-header labels observed without a query on 2026-08-28.",
+      "claim_scope": "The page supports a dated no-query field inventory only; it does not prove that a field is populated, current, accurate, complete, legally sufficient, or applicable to a person, account, property, lease, appraisal, tax, title, value, offer, sale, or transaction."
+    },
+    {
+      "label": "Glasscock County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Glasscock CAD home page supplies the publisher surface and public property-search navigation context.",
+      "claim_scope": "It does not establish a search result, field population, property fact, appraisal accuracy, tax amount, ownership, title, mineral-rights sale value, offer quality, transaction readiness, or legal effect."
+    },
+    {
+      "label": "Glasscock CAD website-use disclaimer (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/home/privacypolicy",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/home/privacypolicy",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Glasscock CAD disclaimer page supplies the publishers stated public-interactive, research-use, as-is, possible-inaccuracy, and no-electronic-transfer limitations.",
+      "claim_scope": "The article preserves those source-stated limitations without interpreting law, granting permission to scrape or transfer data, or deciding accuracy, completeness, reliance, title, ownership, appraisal, tax, value, offer, sale, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Glasscock County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Glasscock County directory supplies limited current county and appraisal-district directory provenance.",
+      "claim_scope": "It is not the source for the search-grid labels, a query result, property identity, appraisal, tax, title, value, offer, transaction, or legal conclusion."
+    }
+  ]
+}

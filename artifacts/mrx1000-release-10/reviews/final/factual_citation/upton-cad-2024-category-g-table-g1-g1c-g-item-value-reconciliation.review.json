@@ -1,0 +1,122 @@
+{
+  "artifact_type": "mrx1000_wave233_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0853",
+  "slug": "upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation",
+  "title": "Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/",
+  "source_path": "src/content/posts/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation.mdx",
+  "input_body_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+  "input_frontmatter_sha256": "6358e9c6a31c15f55e7f7025cb1df3f11f1a450abc9627b50dcd9e466977abcb",
+  "expected_repo_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+  "two_image_manifest_sha256": "6255c4323708dc7615227d305b38e790240f8dcaac88c9fb26d605bf4a93eb29",
+  "visual_metadata": {
+    "hero_alt": "A navy report binder and adding machine appear beside the exact Article 305 title.",
+    "social_alt": "A navy report binder and adding machine appear beside the exact Article 305 title.",
+    "inline_alt": "A top-down three-row reconciliation worksheet appears above the exact Upton CAD 2024 Category G table keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD 2024 Category G Table Reconciliation · MRX",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 50,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T15:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave233",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave233_factual",
+  "review_run_id": "mrx1000-wave233-factual-20260915T071324Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7; all 4 declared sources passed current HTTPS access review.",
+    "The controlled Upton annual-report PDF is 1,208,999 bytes with SHA-256 aeae887f78b740cee6545292c59382abf7b2ba0626a805e6aeaa89203b90a496 and 11 visually reviewed physical pages.",
+    "G1 plus G1C exactly reconciles to G* for Items, Mineral, Total Market Taxable, and Total Net Taxable as transcribed from physical page 7.",
+    "The separate 258,233-item and 16,516,807,470 Total Mineral Market Value recap is preserved as a distinct report figure rather than merged with G*.",
+    "The article does not define G1C, infer units beyond visible headings, use derived ratios, or equate items with accounts, people, interests, wells, leases, parcels, or tax bills."
+  ],
+  "checks": [
+    "four_distinct_official_https_sources_with_exact_source_roles",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "physical_and_printed_page_locator_pass",
+    "g1_g1c_gstar_literal_row_transcription_pass",
+    "items_mineral_market_taxable_and_net_taxable_arithmetic_pass",
+    "gstar_and_total_mineral_market_value_separation_pass",
+    "no_derived_ratio_or_interchangeable_count_claim_pass",
+    "stable_claim_ids_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Upton CAD 2024 Annual Report PDF (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1731513258_2024%20Annual%20Report.pdf",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1731513258_2024%20Annual%20Report.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official Upton CAD 2024 annual report supplies the G1, G1C, and G* rows on physical page 7 and the separate Total Mineral Market Value recap on physical page 5.",
+      "claim_scope": "The article transcribes and reconciles only the visible report columns and exact row arithmetic. It does not turn an aggregate into a property-specific, current-market, legal, tax, appraisal, offer, or transaction conclusion."
+    },
+    {
+      "label": "Upton County Appraisal District Data and Records (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/home/DataRecords",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Upton CAD Data and Records page supplies the official publisher route from which the annual report was retrieved.",
+      "claim_scope": "The page is used for provenance only and does not establish completeness, ownership, appraisal correctness, tax, title, private value, or a transaction result."
+    },
+    {
+      "label": "Upton CAD Property Search (accessed 2026-08-31)",
+      "url": "https://www.uptoncad.org/Home/Search",
+      "publisher": "www.uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.uptoncad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Upton CAD Property Search page supplies an adjacent current interface route.",
+      "claim_scope": "The article does not execute a person or property search or claim a result, owner, account, parcel, appraisal, tax, title, or value conclusion."
+    },
+    {
+      "label": "Texas Comptroller Property Classification Guide (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Property Classification Guide supplies the statewide G1 reporting-category definition and its official classification context.",
+      "claim_scope": "The statewide guide does not define the local Upton G1C suffix, validate the Upton arithmetic, or turn a CAD reporting category into ownership, tax, appraisal, or mineral-rights sale value."
+    }
+  ]
+}

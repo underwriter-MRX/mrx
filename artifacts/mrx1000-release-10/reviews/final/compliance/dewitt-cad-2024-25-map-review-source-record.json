@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave168_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:55Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0767",
+  "slug": "dewitt-cad-2024-25-map-review-source-record",
+  "title": "DeWitt CAD 2024-25 MAP Review Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-25-map-review-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-2024-25-map-review-source-record.mdx",
+  "input_body_sha256": "14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee",
+  "input_frontmatter_sha256": "cbc9eae33105eeb49161cd1b7bc9b4e896d8262ccc07643fd90157b4af9fd709",
+  "expected_repo_sha256": "14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee",
+  "two_image_manifest_sha256": "cd3a2404a907cb21d566e00a36f25b7f94d7295c6ef4eb8d59a7eec1e924dfca",
+  "visual_metadata": {
+    "hero_alt": "A navy review folio with four blank sections appears beside the exact DeWitt CAD MAP review source-record title.",
+    "social_alt": "A navy review folio with four blank sections appears beside the exact DeWitt CAD MAP review source-record title.",
+    "inline_alt": "Four abstract review lanes and a cycle boundary appear above the exact DeWitt CAD 2025 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD 2024-25 MAP Review Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 146,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave168",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2024-25-map-review-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave168_compliance",
+  "review_run_id": "mrx1000-wave168-compliance-20260915T071255Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "28c02d6209b83596d187f3de73130a687cc200b4073c8eb4bfd50a7d60394604",
+  "expected_inline_sha256": "e10b93d5d970b5023c8df632dbfbfe3e600904df12dd5a2c86503b8c30fe979d",
+  "findings": [
+    "Complete current MDX SHA-256 is 14a89e33bb4aacb28dba393a47d9ce4bce388dea0e62d73f630319999a6118ee; hero/share and inline image hashes are separately locked.",
+    "The public article attributes every result to the Texas Comptroller report and does not independently certify or generalize district quality, compliance, accuracy, fairness, appraisal quality, current property status, or future performance.",
+    "The MAP review remains separate from the DeWitt annual-report G1 row and is not converted into a person, owner, parcel, mineral interest, property classification, appraisal, tax, protest, reserve, valuation, offer, sale, or transaction conclusion.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, report value, district grade, property fact, appraisal claim, tax or protest direction, legal position, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "map_review_no_recalculation_aggregation_normalization_benchmark_ranking_trend_comparison_cross_source_combination_or_independent_certification_pass",
+    "district_review_not_applied_to_person_property_mineral_interest_appraisal_tax_protest_valuation_offer_sale_or_transaction_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_logo_seal_government_mark_texas_outline_real_report_page_real_table_readable_source_text_number_property_record_score_checkmark_chart_result_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dewitt-cad-2024-25-map-review-source-record.mdx",
+    "/assets/articles/hero/dewitt-cad-2024-25-map-review-source-record.webp",
+    "/assets/articles/inline/dewitt-cad-2024-25-map-review-source-record/dewitt-cad-2025-map-review.webp"
+  ]
+}

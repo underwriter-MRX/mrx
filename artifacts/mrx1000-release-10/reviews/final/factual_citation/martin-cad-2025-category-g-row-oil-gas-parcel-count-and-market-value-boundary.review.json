@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave205_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0820",
+  "slug": "martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary",
+  "title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+  "source_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+  "input_body_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "input_frontmatter_sha256": "01e22748942d7281dbe923870e34c72df09f92f29a91c28c936f9b4a7872afc5",
+  "expected_repo_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "two_image_manifest_sha256": "a19e3bd7ea6e5a7c5f4a5add60bd8c32c338c9c317f5a2895d15a566e1b011b1",
+  "visual_metadata": {
+    "hero_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "social_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "inline_alt": "A top-down evidence worksheet sits above the exact Martin CAD 2025 Category G parcel count phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD 2025 Category G Parcel Count · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 134,
+    "answer_summary_word_count": 76,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T13:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave205",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave205_factual",
+  "review_run_id": "mrx1000-wave205-factual-20260915T071316Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Martin CAD publisher page, exact 2025 scanned mass-appraisal report, manually reviewed physical pages 1 and 2, and current Texas Comptroller context and routing pages.",
+    "The exact PDF is 564,367 bytes with SHA-256 6736133a1892cc2b9bf63b2032845ef9a7307bfd4d09ea71ca664169564bcdaf; metadata reports six pages, no encryption, no rotation, and page size 610.92 by 785.52 points.",
+    "Physical page 1 render SHA-256 339368372b02541510c21ad4152744effc4e66af771737d27c98a7d2214d267e controls issuer, title, report purpose, 2025 total statement, and the start of the property-type table.",
+    "Physical page 2 render SHA-256 5574715dc3974a20d4eae0b816f6c9a80e97d2cfb43922d16ffbff5b4644025e controls the visible Oil & Gas (G*) row, parcel count 191,742, and market value 24,541,668,989.",
+    "The aggregate row is not interpreted as an owner count, interest count, reader-specific appraisal, tax bill, sale value, offer, title, production, royalty, or legal or tax result.",
+    "Physical pages 3 through 6 supply no public content claims; automated extraction and OCR remain non-validating because the PDF is scanned and manual renders control."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_2025_mass_appraisal_report_link_relationship_pass",
+    "exact_pdf_size_sha256_page_count_geometry_encryption_and_rotation_pass",
+    "physical_page_1_manual_render_hash_report_identity_purpose_total_and_table_start_pass",
+    "physical_page_2_manual_render_hash_category_g_row_parcel_count_and_market_value_pass",
+    "aggregate_row_not_owner_interest_or_reader_specific_result_pass",
+    "pages_3_through_6_no_public_content_claim_pass",
+    "pdf_text_extraction_and_ocr_non_validating_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Martin CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://martincad.org/home/DataRecords",
+      "publisher": "martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://martincad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible Mass Appraisal Reports section and its displayed 2025 link relationship.",
+      "claim_scope": "It does not validate the PDF contents, prove that an aggregate row applies to a reader, or support a property, tax, sale, title, production, royalty, legal, or tax conclusion."
+    },
+    {
+      "label": "Martin CAD 2025 Summary/Mass Appraisal Report (accessed 2026-08-29)",
+      "url": "https://www.martincad.org/Forms/GetDocument?fileName=1755782901_2025+Mass+Appraisal+Report.pdf&subPath=Data+Records",
+      "publisher": "www.martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.martincad.org/Forms/GetDocument?fileName=1755782901_2025+Mass+Appraisal+Report.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact scanned PDF supplies the six-page file identity and the manually verified physical-page-1 and physical-page-2 report and Category G aggregate observations.",
+      "claim_scope": "It does not map the aggregate parcel count one-to-one to owners or interests and does not establish a reader property value, tax bill, sale value, offer, title, production, royalty, or legal or tax result."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller page supplies current statewide context for appraisal-district market-value and mass-appraisal roles.",
+      "claim_scope": "It does not verify the Martin report row or translate a district aggregate into a reader-specific appraisal, tax, transaction, or legal conclusion."
+    },
+    {
+      "label": "Texas Comptroller Local Property Appraisal and Tax Information directory (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory supplies current routing guidance for local appraisal and property-tax questions.",
+      "claim_scope": "It does not inspect or interpret the Martin report or support a mineral-rights transaction result."
+    }
+  ]
+}

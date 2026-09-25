@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave180_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0779",
+  "slug": "ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator",
+  "title": "Ector CAD 2027-2028 Reappraisal Plan Oil and Gas Section Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/",
+  "source_path": "src/content/posts/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator.mdx",
+  "input_body_sha256": "344e31952f2366c64af38b6cf2e12258122639817bb965c0535f2b41af149e16",
+  "input_frontmatter_sha256": "8a5081dfd582b930ec5671f3016b002c4e4226e50a047b50712def0b0ebf2a9f",
+  "expected_repo_sha256": "344e31952f2366c64af38b6cf2e12258122639817bb965c0535f2b41af149e16",
+  "two_image_manifest_sha256": "fcb03153875492eacdc76181df13bf179f5161fbdddd4cecea3f7935a54a36ea",
+  "visual_metadata": {
+    "hero_alt": "A navy plan drawer and cream roll appear beside the exact Ector CAD 2027-2028 reappraisal-plan source-locator title.",
+    "social_alt": "A navy plan drawer and cream roll appear beside the exact Ector CAD 2027-2028 reappraisal-plan source-locator title.",
+    "inline_alt": "Seven overhead locator cards appear above the exact Ector CAD 2027-2028 oil and gas reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2027-2028 Oil and Gas Plan Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 141,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T03:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave180",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave180_editorial",
+  "review_run_id": "mrx1000-wave180-editorial-20260915T071304Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 344e31952f2366c64af38b6cf2e12258122639817bb965c0535f2b41af149e16; the answer-first article contains 1312 body tokens and five FAQs.",
+    "The article rejects the colliding generic Ector County risk-checklist identity and owns one distinct deliverable: a source-controlled locator for the official Ector CAD 2027-2028 reappraisal plan and its bounded oil-and-gas section pages.",
+    "The information-gain and AI-citation factory contract is applied through a concise direct answer, one canonical reader job, five visible official sources with separate roles, exact issuer/file/year/URL/page/retrieval identity, claim-adjacent citations, five useful FAQs, semantic hub/support/next-step links, native nonduplicative schema, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique plan-drawer scene and strict-overhead seven-card locator path are materially distinct and contain no person, hand, readable base text, property record, official page, government mark, signature, logo, value, result, or watermark."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "344e31952f2366c64af38b6cf2e12258122639817bb965c0535f2b41af149e16"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1312,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 68
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 44,
+        "description_character_count": 141,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T03:30:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave180",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator.mdx",
+    "/assets/articles/hero/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator.webp",
+    "/assets/articles/inline/ector-cad-2027-2028-reappraisal-plan-oil-and-gas-section-source-locator/ector-cad-2027-2028-oil-and-gas-reappraisal-plan.webp"
+  ]
+}

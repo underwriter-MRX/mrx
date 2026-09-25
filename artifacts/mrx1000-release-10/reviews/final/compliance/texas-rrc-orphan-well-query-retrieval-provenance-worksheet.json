@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave105_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0289",
+  "slug": "texas-rrc-orphan-well-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Orphan Well Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5",
+  "input_frontmatter_sha256": "1d9ea7139cfc95c512ed823aa9f127c5efde4b8b5b79b197e3a8bfa9546c0716",
+  "expected_repo_sha256": "a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5",
+  "two_image_manifest_sha256": "0569ce4579fd5e1ba14115236b614a21c2d96810d0e00eca1463e9e5ee56ed62",
+  "visual_metadata": {
+    "hero_alt": "An archival locator rack and blank reference cards appear beside the exact article title.",
+    "social_alt": "An archival locator rack and blank reference cards appear beside the exact article title.",
+    "inline_alt": "A people-free overhead criteria grid appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Orphan Well Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 58,
+    "description_character_count": 147,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T13:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave105",
+    "declared_source_count": 8,
+    "visible_body_citation_count": 8,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave105_compliance",
+  "review_run_id": "mrx1000-wave105-compliance-20260915T072832Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "0962a2c2135624720052e6ea7828d856e858f2b60cc70deb55f010abf5e9e1a8",
+  "expected_inline_sha256": "78257d8452a0a305c39a4ecbae19c0570f626a7c927ca17ede98ca28396c87da",
+  "findings": [
+    "Complete current MDX SHA-256 is a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5; hero/share and inline image hashes are separately locked.",
+    "The article keeps the Orphan Well, IWAR, general Inactive Well, P-5 Renewal Status, Organization P-5, Wellbore, production, and other RRC routes separate; preserves source uncertainty; controls private identifiers; and stops before regulatory, legal, title, engineering, environmental, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, criterion, result, signature, seal, logo, operator, inactive period, compliance, delinquency, plugging, environmental, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_orphan_well_query_retrieval_no_orphan_classification_operator_compliance_plugging_environmental_property_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/texas-rrc-orphan-well-query-retrieval.webp"
+  ]
+}

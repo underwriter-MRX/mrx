@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave122_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0327",
+  "slug": "texas-rrc-district-office-well-records-retrieval-provenance-worksheet",
+  "title": "Texas RRC District Office Well Records Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "input_frontmatter_sha256": "369707ef0b660a38717ff89d683cc9e53645a0089eec8a7db131805e8d04b940",
+  "expected_repo_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "two_image_manifest_sha256": "9b775e1f7a7219f812def33aefa3c1dd617c17bc1f882a4fa5d480d35bba2a89",
+  "visual_metadata": {
+    "hero_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "social_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "inline_alt": "A people-free overhead archival evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Office Records Retrieval Worksheet",
+    "seo_title_character_count": 53,
+    "description_character_count": 159,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T11:28:13Z",
+    "reviewed_by": "mrx_compliance-continuous-wave122",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave122_compliance",
+  "review_run_id": "mrx1000-wave122-compliance-20260915T073156Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "c5c41f1628709e326ef06d9de9e9aa2ca2eb70d4459d9056deb987e4601715e6",
+  "expected_inline_sha256": "207f80340fc51d3b1178fcd05c91e421aa7a2d99a5cb9953aa657172265dea47",
+  "findings": [
+    "Complete current MDX SHA-256 is 952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9; hero/share and inline image hashes are separately locked.",
+    "The article keeps District Office Well Records profileId 27 separate from Potential, Dry Hole, and Well Log profiles, Wellbore, Drilling Permit, Completions, P-4, P-17, production, GIS, EDMS, hearings, other district-office profiles, Energy Depot, paid research, automation, bulk retrieval, interpretation, valuation, offer, and decision tasks.",
+    "Image text is limited to the exact title and keyword and adds no identifier, actual record, source result, seal, logo, well or property fact, ownership, payment, production, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_district_office_well_records_profile27_one_manual_attempt_http403_unverified_no_adjacent_route_paid_research_automation_bulk_interpretation_well_property_ownership_lease_production_environmental_compliance_value_offer_legal_tax_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/texas-rrc-district-office-well-records-retrieval.webp"
+  ]
+}

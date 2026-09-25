@@ -1,0 +1,121 @@
+{
+  "artifact_type": "mrx1000_wave189_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:08Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0792",
+  "slug": "howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record",
+  "title": "Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+  "source_path": "src/content/posts/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.mdx",
+  "input_body_sha256": "8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa",
+  "input_frontmatter_sha256": "2eb6f8c6026947d100f8aa6a25ad0b00f04d6418ff21de64cb51e688b972e602",
+  "expected_repo_sha256": "8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa",
+  "two_image_manifest_sha256": "193933acc6aa4ddedcc4523a228f9ee716e321bf286fce9852d1672c0d9e6b00",
+  "visual_metadata": {
+    "hero_alt": "A navy archive capsule and one blank file sleeve appear beside the exact Howard CAD ZIP integrity-record title.",
+    "social_alt": "A navy archive capsule and one blank file sleeve appear beside the exact Howard CAD ZIP integrity-record title.",
+    "inline_alt": "An overhead one-container, one-member evidence board appears above the Howard CAD 2025 certified mineral dataset phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2025 Mineral Dataset ZIP Integrity Record",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 59,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T07:16:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave189",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave189_factual",
+  "review_run_id": "mrx1000-wave189-factual-20260915T071308Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official publisher page, exact 2025 ZIP, Howard CAD homepage, no-query search disclaimer, complete-file response controls, and central-directory metadata.",
+    "The recorded ZIP controls include HTTP 200, application/zip, 25,248,834 bytes, Last-Modified Fri 08 Aug 2025 19:46:00 GMT, ETag 689653f8-1814442, SHA-256 6689f36042fae4befed0175ffa240cbb997081cdbd445e7654f3a4d5f42ca141, one unencrypted deflated XLSX member, its two stored sizes, UTC timestamp, CRC 35f6a274, no archive comment, and passing unzip test."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_zip_complete_file_sha256_and_byte_control_pass",
+    "one_member_central_directory_inventory_and_unzip_integrity_pass",
+    "xlsx_member_not_opened_extracted_parsed_queried_or_read_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_publisher_label_route_file_date_hash_member_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "2025_zip_2026_zip_real_property_pdf_and_property_search_lanes_separated_pass",
+    "search_atlas_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Howard CAD downloads page (accessed 2026-08-29)",
+      "url": "https://howardcad.org/downloads/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/downloads/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Howard CAD downloads page supplies the visible 2025 Certified Mineral Roll label, exact destination relationship, and separate 2026 and 2025 file lanes.",
+      "claim_scope": "It does not establish workbook contents, a person or property match, ownership, title, acreage, appraisal, tax, mineral-rights sale value, offer quality, or legal effect."
+    },
+    {
+      "label": "Howard CAD 2025 Certified Mineral Roll ZIP (accessed 2026-08-29)",
+      "url": "https://howardcad.org/wp-content/uploads/2025/08/HOWARD_2025Certified_Mineral_AppraisalRoll_Dataset-1.zip",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/wp-content/uploads/2025/08/HOWARD_2025Certified_Mineral_AppraisalRoll_Dataset-1.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact official ZIP supplies the complete-file HTTP, MIME, byte, Last-Modified, ETag, SHA-256, central-directory, member-metadata, CRC, and bounded integrity-test evidence.",
+      "claim_scope": "The XLSX member was not opened or read, and the file evidence does not establish fields, rows, owners, properties, accuracy, completeness, currency, privacy status, title, appraisal, tax, value, offer, transaction, or legal effect."
+    },
+    {
+      "label": "Howard Central Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://howardcad.org/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies the Howard Central Appraisal District publisher identity and public-site context.",
+      "claim_scope": "It is not evidence for the exact ZIP bytes, workbook contents, a property, owner, account, title, appraisal, tax, value, offer, or transaction."
+    },
+    {
+      "label": "Howard CAD property-search disclaimer (accessed 2026-08-29)",
+      "url": "https://esearch.howardcad.org/?valid=false",
+      "publisher": "esearch.howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://esearch.howardcad.org/?valid=false",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official property-search surface supplies a separate research-purpose and verification disclaimer context.",
+      "claim_scope": "No query was performed and no result row, person, property, account, legal description, acreage, value, tax, title, ownership, or private data was retrieved."
+    }
+  ]
+}

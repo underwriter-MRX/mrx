@@ -1,0 +1,143 @@
+{
+  "artifact_type": "mrx1000_wave210_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0830",
+  "slug": "midland-cad-2025-report-419660-mineral-interest-accounts-page-25",
+  "title": "Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+  "source_path": "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+  "input_body_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+  "input_frontmatter_sha256": "e3f69ee046c042a6ae4f38d3e252f0627bd13a7f094c0a6240608cd577e4ae25",
+  "expected_repo_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+  "two_image_manifest_sha256": "2da99eda7348ff2895779236cf1b72181e3e6e25bcd0acf7cd579a55d5923b51",
+  "visual_metadata": {
+    "hero_alt": "An annual-report folio, page locator, and account tokens appear beside the exact Midland CAD report title.",
+    "social_alt": "An annual-report folio, page locator, and account tokens appear beside the exact Midland CAD report title.",
+    "inline_alt": "A top-down account-marker field stops before three separate denominator trays above the exact Midland CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD 419,660 Accounts: PDF Page 25 · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 150,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-30T05:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave210",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave210_factual",
+  "review_run_id": "mrx1000-wave210-factual-20260915T071317Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2; all 5 declared sources passed current HTTPS access review.",
+    "Claims are bounded to five official sources: the 2025 Midland CAD Mass Appraisal Report, current Publications, Open Records, and Mineral Property pages, and the Texas Comptroller Midland directory.",
+    "The official report is a 392,040-byte, 35-page PDF with SHA-256 18f2c391a8618b1713280f7d2dfa3f78c0f5770c924133314d9e8c0636b5e1a2; physical PDF page 25 was independently extracted and visually reviewed.",
+    "The physical-page-25 rendering has SHA-256 197d45c775b70fc23ea92ece9943c2ae34669e8fbe5b28b38c535b7836fce439 and shows the statement that industrial appraisers are responsible for the valuation of 419,660 mineral interest accounts.",
+    "The report uses approximately before the count, and the article retains that qualifier rather than silently normalizing the statement into an exact current inventory.",
+    "The controlled Publications, Open Records, Mineral Property, and Comptroller directory artifacts have SHA-256 values ecfab3416d57144355170bdea0d5dbfcc087ee932bdae62c0da46545d7d987de, 9a5465430a510a716ab162a0ad2287ea83da12d677bd17456ef525272d4af482, dbab9120e18eb86b81130445a5aa12aa959ca5a0af162ba2847248bee58ce1d5, and 236fb5f5686a90b91c02047d50361f8639c498facad7ecb4cc3d973f6e28d813.",
+    "No owner, property, account, roll, notice, or mineral-file search was performed and no record was reproduced."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "official_pdf_http_review_pass",
+    "pdf_file_identity_bytes_sha256_page_count_and_physical_page_locator_pass",
+    "physical_page_25_rendered_visual_review_pass",
+    "publications_document_route_pass",
+    "open_records_source_lane_separation_pass",
+    "current_mineral_property_page_not_silently_imported_pass",
+    "comptroller_official_domain_routing_pass",
+    "approximately_qualifier_preserved_pass",
+    "mineral_interest_accounts_label_preserved_pass",
+    "no_owner_property_account_roll_notice_or_mineral_file_search_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "no_silent_normalization_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland Central Appraisal District 2025 Mass Appraisal Report (accessed 2026-08-29)",
+      "url": "https://midcad.org/wp-content/uploads/2025/09/2025-Midland-CAD-Mass-Appraisal-Report-Final.pdf",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-content/uploads/2025/09/2025-Midland-CAD-Mass-Appraisal-Report-Final.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 2025 Midland CAD Mass Appraisal Report supplies the approximately 419,660 mineral interest accounts statement in the Industrial Valuation Process section on physical PDF page 25.",
+      "claim_scope": "The report does not establish 419,660 unique owners, tracts, wells, leases, producing interests, net mineral acres, current live accounts, current ownership, or any account-specific appraisal, title, tax, value, sale, offer, production, royalty, or contractor-performance conclusion."
+    },
+    {
+      "label": "Midland Central Appraisal District Publications page (accessed 2026-08-29)",
+      "url": "https://midcad.org/publications-2/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/publications-2/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Publications page links the 2025 Mass Appraisal Report and supplies the document-discovery route.",
+      "claim_scope": "A link establishes document routing, not the report statement’s current operational status, accuracy, completeness, account-level application, or validity for another purpose."
+    },
+    {
+      "label": "Midland Central Appraisal District Open Records page (accessed 2026-08-29)",
+      "url": "https://midcad.org/open-records/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/open-records/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Open Records page separately routes users to rolls, notices, and mineral files.",
+      "claim_scope": "A listed file is a separate source lane and does not convert the report-wide approximate account count into ownership, title, appraisal validity, tax liability, sale value, or another property-specific conclusion."
+    },
+    {
+      "label": "Midland Central Appraisal District Mineral Property page (accessed 2026-08-29)",
+      "url": "https://midcad.org/mineral-property/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/mineral-property/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Mineral Property page supplies a separate current web statement about mineral-property appraisal approaches.",
+      "claim_scope": "That current page does not silently update, restate, validate, or replace the 2025 report’s approximate account-count statement."
+    },
+    {
+      "label": "Texas Comptroller Midland county directory (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller directory supplies current issuer-routing evidence for Midland Central Appraisal District and midcad.org.",
+      "claim_scope": "Directory provenance does not endorse every district publication or validate a count, account, appraisal, tax, title, contractor, or transaction result."
+    }
+  ]
+}

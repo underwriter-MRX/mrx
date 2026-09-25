@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave179_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:03Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0778",
+  "slug": "ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record",
+  "title": "Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+  "source_path": "src/content/posts/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.mdx",
+  "input_body_sha256": "cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591",
+  "input_frontmatter_sha256": "979df411dcd16401867c458c16a2398e3bb8bd31f2594f8500fca7de2831687b",
+  "expected_repo_sha256": "cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591",
+  "two_image_manifest_sha256": "f24514dcc663fc6f97ee9089950d3f890285673a6436906108b17b3d0dddd3ed",
+  "visual_metadata": {
+    "hero_alt": "A sealed navy archive lockbox and one cream data cartridge appear beside the exact Ector CAD ZIP source-control title.",
+    "social_alt": "A sealed navy archive lockbox and one cream data cartridge appear beside the exact Ector CAD ZIP source-control title.",
+    "inline_alt": "One overhead sealed file tile appears above the exact Ector CAD 2026 certified mineral appraisal roll keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mineral Roll ZIP Source Control",
+    "seo_title_character_count": 46,
+    "description_character_count": 147,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T03:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave179",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave179_factual",
+  "review_run_id": "mrx1000-wave179-factual-20260915T071303Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is cd582492ba81f7f06dca09b1ebdedbb8cbe818dc9d0b60ec0a755e7ad25dc591; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official publisher relationship, displayed 2026 ZIP label, displayed 5.67 MB size and 7/22/2026 creation date, exact 5,944,285-byte complete-file retrieval, SHA-256 1a756063972e7008dc0b33b8fe9260f73dc576a1dfe46b0fdcc12490922b17c8, application/zip response, HTTP Last-Modified field, integrity result, and generic one-member central-directory facts.",
+    "The article does not extract, open, read, search, index, transform, sample, copy, display, reproduce, summarize, match, or interpret member content or row data and does not invent or decide a person, property, appraisal, tax, ownership, title, value, offer, or transaction result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_issuer_file_year_route_retrieval_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "versioned_prompt_universe_and_execution_vs_performance_measurement_contract_pass",
+    "complete_zip_integrity_and_one_member_central_directory_inventory_pass",
+    "archive_member_not_extracted_opened_read_searched_indexed_transformed_sampled_copied_displayed_reproduced_summarized_matched_or_interpreted_pass",
+    "adjacent_ector_parameters_mass_report_and_certified_roll_source_roles_preserved_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ector County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:03Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Ector CAD home page supplies the current publisher surface and district context.",
+      "claim_scope": "It does not establish the downloads-page label, archive bytes, member metadata, row contents, appraisal, tax, ownership, title, value, offer, or transaction result."
+    },
+    {
+      "label": "Ector CAD downloads page (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/home/downloads",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:03Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/home/downloads",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official downloads page supplies the displayed Certified Mineral Appraisal Roll heading, exact 2026 ZIP label, displayed size, displayed creation date, description, and link relationship observed on 2026-08-28.",
+      "claim_scope": "It does not prove member contents, row accuracy, completeness, application, legal effect, appraisal correctness, tax treatment, ownership, title, value, or a transaction result."
+    },
+    {
+      "label": "Ector CAD, 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/downloads/car/2026_CERTIFIED_MIN_APPRAISAL_ROLL-7222026.ZIP",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:03Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/downloads/car/2026_CERTIFIED_MIN_APPRAISAL_ROLL-7222026.ZIP",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact official ZIP supplies one complete 5,944,285-byte retrieval, SHA-256 1a756063972e7008dc0b33b8fe9260f73dc576a1dfe46b0fdcc12490922b17c8, application/zip response, Last-Modified field, successful integrity test, and generic one-member central-directory metadata.",
+      "claim_scope": "The article does not extract or read the member, expose row data, perform a lookup, match a dataset, analyze a property, interpret tax or legal effect, calculate value, review an offer, or recommend a transaction."
+    },
+    {
+      "label": "Texas Comptroller, Ector County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:03Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Ector County directory supplies limited current public district-directory and official-website context.",
+      "claim_scope": "It is not the source for the downloads-page label, ZIP bytes, member metadata, row content, property fact, appraisal, tax, title, value, offer, or transaction conclusion."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 25 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:03Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and appraisal-roll subjects.",
+      "claim_scope": "The article does not interpret the chapter, decide whether a file or row satisfies it, apply it to a person or property, direct a protest, calculate tax, or reach a legal conclusion."
+    }
+  ]
+}

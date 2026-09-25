@@ -1,0 +1,68 @@
+{
+  "artifact_type": "mrx1000_wave147_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T13:34:51Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0586",
+  "slug": "irs-form-1099-misc-royalty-box-2-source-scope-worksheet",
+  "title": "IRS Form 1099-MISC Royalty Box 2 Source-Scope Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-1099-misc-royalty-box-2-source-scope-worksheet/",
+  "source_path": "src/content/posts/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.mdx",
+  "input_body_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "input_frontmatter_sha256": "3e541319059175320a15ff1cadd744a46bf104c58dabcb79a9f3988632205ed2",
+  "expected_repo_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "two_image_manifest_sha256": "b47eecb2481e82cdd5115f3028eca20ae8388a0502c16bdf64e52558de2d48bf",
+  "visual_metadata": {
+    "hero_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "social_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "inline_alt": "A top-down blank source-scope matrix appears above the exact IRS Form 1099-MISC Box 2 keyword."
+  },
+  "reviewer_id": "codex_wave147_factual",
+  "review_run_id": "mrx1000-wave147-factual-20260826T133451Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d; all 2 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official IRS form and instructions, exact revision and field labels, copy-specific presentation, and source-record outcomes.",
+    "The article invents no form, year, payer, recipient, TIN, address, account, amount, checkbox state, authenticity result, payment reconciliation, tax treatment, filing status, title, value, offer, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "two_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "IRS, Form 1099-MISC, Rev. December 2026 (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/pub/irs-pdf/f1099msc.pdf",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T13:34:51Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/pub/irs-pdf/f1099msc.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current official IRS-hosted Form 1099-MISC PDF is Rev. December 2026 and displays the form title, calendar-year and copy labels, payer and recipient blocks, TIN fields, FATCA checkbox, account-number field, Box 2 Royalties, Box 4 Federal income tax withheld, and Boxes 16 through 18 state information. Copy presentation differs, including the display of VOID on Copy A and Copy 1 but not in the same way on recipient copies.",
+      "claim_scope": "It supports exact source-displayed label capture and copy-specific caution only. It does not authenticate a retained form, identify a payer or recipient, prove an amount, reconcile a payment, determine tax treatment, authorize public values, or support a title, valuation, offer, or transaction conclusion."
+    },
+    {
+      "label": "IRS, Instructions for Forms 1099-MISC and 1099-NEC, Rev. December 2026 (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/instructions/i1099mec",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T13:34:51Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/instructions/i1099mec",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official IRS instructions page identifies the December 2026 continuous-use revision, explains that it applies first to calendar year 2026 and later years until superseded, and provides specific context for the calendar-year, account-number, FATCA, Box 2 royalty, Box 4, and state-information fields.",
+      "claim_scope": "It supports revision-use context and exact field-scope boundaries only. The article does not apply filing rules, calculate or characterize income, decide withholding, basis, depletion, deduction, state treatment, correction, amendment, or any owner-specific legal or tax result."
+    }
+  ]
+}

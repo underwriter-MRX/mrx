@@ -1,0 +1,67 @@
+{
+  "artifact_type": "mrx1000_wave100_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T10:23:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0283",
+  "slug": "texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Flare/Vent Exception Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "input_frontmatter_sha256": "675e0482fa2e0991d13d05b30cf34eb29f06ed94db4d0f2628a2625284bc9653",
+  "expected_repo_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "two_image_manifest_sha256": "f206605379995fa30288e248b7d21e6aabdd3fed7e602e8a5f428d8f54719480",
+  "visual_metadata": {
+    "hero_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "social_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "inline_alt": "A people-free overhead Flare/Vent Exception query checklist appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave100_editorial",
+  "review_run_id": "mrx1000-wave100-editorial-metadata-remediation-20260824T102320Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4; the answer-first article contains 1569 body words and five FAQs, and seo_title now preserves the exact finalized canonical title.",
+    "The article replaces a colliding valuation explainer with one administrative job: preserve a reproducible provenance trail for a single official SWR 32 public-query retrieval through its route, criteria snapshot, source coverage, visible statuses, result or attachment navigation, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The people-free oblique dark evidence desk and people-free strict-overhead pale checklist differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1569,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true,
+        "materially_distinct_compositions": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet/texas-rrc-flare-vent-exception-query-retrieval.webp"
+  ]
+}

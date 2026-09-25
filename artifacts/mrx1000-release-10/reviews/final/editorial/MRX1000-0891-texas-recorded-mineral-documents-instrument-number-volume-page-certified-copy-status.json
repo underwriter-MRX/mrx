@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave246_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0891",
+  "slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+  "title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+  "source_path": "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+  "input_body_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "input_frontmatter_sha256": "56c8c60b0742360c78314db5a7fa8b2a716999795cc0caa6cb319ffcee94a701",
+  "expected_repo_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "two_image_manifest_sha256": "46cb2136cfa72765ed7b6f70f2b6955ba5412ff0a37a3b0e8a70ec737eda80cd",
+  "visual_metadata": {
+    "hero_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "social_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "inline_alt": "A top-down five-field record-control matrix appears below the exact Texas locator-field keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Locator Fields and Copy Status · MRX",
+    "seo_title_character_count": 57,
+    "description_character_count": 153,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:23:29Z",
+    "reviewed_by": "mrx_compliance-continuous-wave246",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/learning-center/title-lease-ownership/",
+      "support": "/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave246_editorial",
+  "review_run_id": "mrx1000-wave246-editorial-20260915T071332Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e; the answer-first article contains 2558 body tokens and five FAQs.",
+    "The original cash-for-mineral-rights document identity is rejected. The final article answers one narrow question: which locator and copy-status fields should be transcribed separately from an already-found Texas recorded mineral document?",
+    "Information gain is concrete: a five-field control model, statewide statutory locator forms, separate online/plain/certified copy states, exact source-object hashes and page locators, stable claim IDs, a source-to-conclusion stop table, and explicit adjacent-article ownership boundaries.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-oblique hand-and-archive-drawer hero and bright people-free strict-overhead five-column matrix are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2558,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 64
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 57,
+        "description_character_count": 153,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T23:23:29Z",
+        "reviewed_by": "mrx_compliance-continuous-wave246",
+        "declared_source_count": 3,
+        "visible_body_citation_count": 3,
+        "hub": "/learning-center/title-lease-ownership/",
+        "support": "/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+    "/assets/articles/hero/texas-recorded-mineral-documents-instrument-number-volume-page-and-certified-copy-status.webp",
+    "/assets/articles/inline/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/texas-recorded-mineral-document-locator-fields.webp"
+  ]
+}

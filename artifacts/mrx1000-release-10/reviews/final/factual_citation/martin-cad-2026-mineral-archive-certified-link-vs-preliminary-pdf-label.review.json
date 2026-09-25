@@ -1,0 +1,130 @@
+{
+  "artifact_type": "mrx1000_wave204_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0819",
+  "slug": "martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label",
+  "title": "Martin CAD 2026 Mineral Archive: Certified Link vs Preliminary PDF Label",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/",
+  "source_path": "src/content/posts/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.mdx",
+  "input_body_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+  "input_frontmatter_sha256": "e38336c95b5fb18fd7199910e7a1733ccf361ea02839a8612b0403864c8e87b2",
+  "expected_repo_sha256": "397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e",
+  "two_image_manifest_sha256": "9bed670e35424b7f57b447a293665ab8cfcb2cecefd4bfd6c98d7a11d627e066",
+  "visual_metadata": {
+    "hero_alt": "Two contrasting evidence sleeves and a magnifier sit beside the exact Martin CAD archive conflict title.",
+    "social_alt": "Two contrasting evidence sleeves and a magnifier sit beside the exact Martin CAD archive conflict title.",
+    "inline_alt": "Two blank source cards feed a conflict log above the exact Martin CAD 2026 mineral archive label conflict phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD Certified vs Preliminary PDF Label · MRX",
+    "seo_title_character_count": 51,
+    "description_character_count": 142,
+    "answer_summary_word_count": 67,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T13:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave204",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave204_factual",
+  "review_run_id": "mrx1000-wave204-factual-20260915T071316Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 397144c566bdaee55625eca1fcdce2615e051f08714053d631a231b3ff3c398e; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Martin CAD publisher page, exact 2026 ZIP, exact master-inventory PDF member, complete-file controls, manually reviewed physical page 1, Martin CAD homepage context, and Texas Comptroller local-contact routing.",
+    "The ZIP is 90,664,945 bytes with SHA-256 e5cd428bb26a2148fe9c9ab5b9086b89d32f7515bc047f5dcfea6c82e5d6c21e.",
+    "The master-inventory member is 3,099,690 bytes, SHA-256 b3adb05b75a562926fd210c9bafdb27d4d7bafa2280dd43f87fcbbf1b8e6af61, 2,225 letter-size pages, unencrypted, with rotation 0.",
+    "Physical page 1 render SHA-256 48ff3f6011c8c4caa810c1af9d11112b22f4d5d5355d978b28c3363911e44455 controls visible date, publisher, report identity, select-page role, district job identity, PRELIMINARY label, and selection and print controls.",
+    "The publisher page groups the ZIP under 2026 Certified Appraisal Rolls while physical page 1 says PRELIMINARY; this is preserved as UNRESOLVED-CONFLICT and neither label is silently normalized.",
+    "Physical page 2 was reviewed only to establish the exclusion boundary; pages 2 through 2,225 supply no public content claims and no names, addresses, identifiers, property details, or values are reproduced.",
+    "PDF extraction and OCR remain supporting or non-validating evidence only; manual render review controls visible wording."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_certified_grouping_and_exact_zip_target_relationship_pass",
+    "zip_size_and_sha256_pass",
+    "master_inventory_pdf_size_sha256_page_count_geometry_encryption_and_rotation_pass",
+    "physical_page_1_manual_render_hash_and_visible_preliminary_label_pass",
+    "publisher_certified_grouping_vs_pdf_preliminary_unresolved_conflict_pass",
+    "no_silent_normalization_pass",
+    "physical_page_2_record_specific_content_exclusion_boundary_pass",
+    "pages_2_through_2225_no_public_content_claim_pass",
+    "pdf_extraction_and_ocr_supporting_only_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Martin CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://martincad.org/home/DataRecords",
+      "publisher": "martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://martincad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible 2026 Certified Appraisal Rolls placement and exact 2026 Certified Mineral Appraisal Roll Zip link relationship.",
+      "claim_scope": "It does not resolve the conflicting PRELIMINARY label inside the PDF or establish report state, record validity, appraisal accuracy, or a property conclusion."
+    },
+    {
+      "label": "Martin CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-29)",
+      "url": "https://martincad.org/Forms/ZipFileDownload?fileName=1785193935_MARTIN+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+      "publisher": "martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://martincad.org/Forms/ZipFileDownload?fileName=1785193935_MARTIN+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact ZIP supplies the observed master-inventory PDF bytes, complete-file controls, and physical page-1 artifact.",
+      "claim_scope": "It does not prove whether the inner report should be treated as certified or preliminary, or validate completeness, records, appraisal, tax, value, transaction, or legal effect."
+    },
+    {
+      "label": "Martin County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://www.martincad.org/",
+      "publisher": "www.martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.martincad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies current Martin CAD public-site identity and publisher-stated appraisal responsibilities.",
+      "claim_scope": "It does not resolve the archive label conflict or validate the PDF or a property record."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing guidance for local appraisal and tax questions.",
+      "claim_scope": "It does not inspect or interpret the archive and cannot resolve the source-label conflict or support a property-specific conclusion."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave239_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:27Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0859",
+  "slug": "ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions",
+  "title": "Ward CAD 2026-2029 Mineral Contract: Listed Interests and Non-Fuel Mineral Exclusions",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+  "source_path": "src/content/posts/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.mdx",
+  "input_body_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+  "input_frontmatter_sha256": "b0ed4e54e6186030cbbb105bc8256ac6f02dc0c583a19a55c545eb1eafa1b61a",
+  "expected_repo_sha256": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017",
+  "two_image_manifest_sha256": "a18bdb173ca98975ca7df32f46d568f1d10f59f7608fdb15d4e3e9839a82b7df",
+  "visual_metadata": {
+    "hero_alt": "A contract binder, four interest markers, and three material samples appear beside the exact Article 311 title.",
+    "social_alt": "A contract binder, four interest markers, and three material samples appear beside the exact Article 311 title.",
+    "inline_alt": "A top-down evidence table separates four interest markers from three material samples below the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026-2029 Mineral Contract Scope · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 154,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T19:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave239",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave239_editorial",
+  "review_run_id": "mrx1000-wave239-editorial-20260915T071327Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017; the answer-first article contains 2114 body tokens and five FAQs.",
+    "The original Ward County risk checklist is rejected. The final article answers one narrow public-record question about how the Ward contract defines Mineral Property, what it expressly excludes, and how that class differs from Personal Property.",
+    "Information gain is concrete: exact packet-page provenance, a definition-and-limit matrix, the non-exhaustive listed-interest boundary, the separate property class, the 2026-2029 term, the January 1 date, stable claim IDs, and explicit stops against ownership, tax, value, production, reserves, and enforceability conclusions.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark oblique binder-and-sample scene and bright strict-overhead definition board are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "ac3a6ee41a3a2bcc99b22ef63667feaecbed7747bb5d8153bbd1447945d7f017"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2114,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 64
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 47,
+        "description_character_count": 154,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T19:50:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave239",
+        "declared_source_count": 3,
+        "visible_body_citation_count": 3,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ward-cad-2026-mineral-zip-date-register-march-26-july-16-july-23/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions.mdx",
+    "/assets/articles/hero/ward-cad-2026-2029-mineral-contract-listed-interests-and-non-fuel-mineral-exclusions.webp",
+    "/assets/articles/inline/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/ward-cad-mineral-property-contract-definition.webp"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "artifact_type": "mrx1000_wave138_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T11:15:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0343",
+  "slug": "texas-tdi-title-agent-report-retrieval-provenance-worksheet",
+  "title": "Texas TDI Title Agent Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-tdi-title-agent-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-tdi-title-agent-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "input_frontmatter_sha256": "82ac612575b5deb4c5044d88cdffd0529052e2eecc265936b5bf8aaf64e58455",
+  "expected_repo_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "two_image_manifest_sha256": "d94ba8ad967110d17cb505355a82f86bbf7303306616eba598f582059e3a3ad7",
+  "visual_metadata": {
+    "hero_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "social_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "inline_alt": "A top-down blank report-attempt worksheet appears above the exact Texas TDI title-agent keyword."
+  },
+  "reviewer_id": "codex_wave138_factual",
+  "review_run_id": "mrx1000-wave138-factual-20260826T111518Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7; all 2 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the two current official TDI pages, their source-displayed report route, report group, licensing context, and attempt-level fields.",
+    "The article invents no party, license, appointment, address, county, correspondence, offer, property, report row, result, status, identity match, legitimacy statement, license interpretation, legal effect, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "two_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Department of Insurance, Title Insurance (accessed 2026-08-26)",
+      "url": "https://tdi.texas.gov/title/",
+      "publisher": "tdi.texas.gov",
+      "accessed_at": "2026-08-26T11:15:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://tdi.texas.gov/title/",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The current Texas Department of Insurance Title Insurance page links to Title Agent and Escrow Officer reports, says the reports list licensed title agents and escrow officers, and instructs users to select a report under that source-displayed group.",
+      "claim_scope": "It supports only accurate route, report-group, and source-display recording for one manual attempt. It does not connect a report row to retained correspondence, interpret licensure or appointment, validate a party, evaluate an offer, or produce a legal or transaction conclusion."
+    },
+    {
+      "label": "Texas Department of Insurance, How TDI Regulates and Oversees Title Insurance Agents (accessed 2026-08-26)",
+      "url": "https://www.tdi.texas.gov/title/overctitleagnt.html",
+      "publisher": "www.tdi.texas.gov",
+      "accessed_at": "2026-08-26T11:15:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tdi.texas.gov/title/overctitleagnt.html",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The current TDI oversight page states that lists of active title agents and escrow officers are available on the TDI reports site and separately describes licensing and county-appointment conditions.",
+      "claim_scope": "It supports preserving source-stated regulatory context and the official report location only. It does not establish that a displayed party is involved in a mineral transaction or authorize an interpretation of license status, appointment, conduct, authority, legitimacy, safety, or suitability."
+    }
+  ]
+}

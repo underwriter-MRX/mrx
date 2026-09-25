@@ -1,0 +1,132 @@
+{
+  "artifact_type": "mrx1000_wave172_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:58Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0771",
+  "slug": "dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record",
+  "title": "Dimmit CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+  "source_path": "src/content/posts/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+  "input_body_sha256": "d2935a236dfe66a68d69b09bc8e718415a051f8f6c4a999ce7a4051ca4578538",
+  "input_frontmatter_sha256": "86f13377062494e3f3818a003867e1d8a6c53d5807d6142b3001b02183b3ea85",
+  "expected_repo_sha256": "d2935a236dfe66a68d69b09bc8e718415a051f8f6c4a999ce7a4051ca4578538",
+  "two_image_manifest_sha256": "401060fa108f91c6f2556654fdcba48ec3381605ca3b40844dfe942bb5c17ff6",
+  "visual_metadata": {
+    "hero_alt": "An open navy source drawer appears beside the exact Dimmit CAD 2025 ratio-study source-record title.",
+    "social_alt": "An open navy source drawer appears beside the exact Dimmit CAD 2025 ratio-study source-record title.",
+    "inline_alt": "Seven overhead measurement cells appear above the exact Dimmit CAD 2025 mineral ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2025 Mineral Ratio Study Source Record",
+    "seo_title_character_count": 49,
+    "description_character_count": 144,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T00:30:44Z",
+    "reviewed_by": "mrx_compliance-continuous-wave172",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave172_factual",
+  "review_run_id": "mrx1000-wave172-factual-20260915T071258Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is d2935a236dfe66a68d69b09bc8e718415a051f8f6c4a999ce7a4051ca4578538; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official 2025 findings relationship, 064-Dimmit summary URL, displayed study/publication/update labels, literal Category G row and headings, displayed values, official program-purpose context, small-sample warning, and directory/statutory provenance.",
+    "The article does not invent an owner, account, property, source relationship, sample member, recalculation, normalization, benchmark, grade, rank, trend, comparison, compliance result, appraisal result, tax result, protest result, mineral valuation, market price, offer, sale price, or owner-specific conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "canonical_entity_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_texas_comptroller_texas_legislature_and_dimmit_directory_source_priority_pass",
+    "literal_source_row_and_adjacent_small_sample_warning_pass",
+    "displayed_measures_not_converted_into_recalculation_comparison_property_appraisal_tax_protest_valuation_offer_sale_or_owner_outcome_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, 2025 Appraisal District Ratio Study findings (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:58Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2025 Texas Comptroller findings page supplies the study-year identity, displayed publication date, Section 5.10 provenance statement, and exact 064 Dimmit link relationship.",
+      "claim_scope": "It does not supply a property, account, owner, sample-member, appraisal, tax, protest, mineral-value, offer, sale, or transaction conclusion."
+    },
+    {
+      "label": "Texas Comptroller, 064-Dimmit 2025 district summary (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2025/0640000001A.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:58Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2025/0640000001A.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 064-Dimmit summary supplies the displayed update label, literal table headings, literal G.OIL, GAS, MINERALS row, displayed values, and small-sample warning.",
+      "claim_scope": "The article transcribes these fields without recalculation, normalization, comparison, grading, property inference, valuation, tax or protest advice, or transaction use."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Data Reports and Surveys (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:58Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Property Tax Data Reports and Surveys page supplies the stated ratio-study purpose and classes of published statistical measures.",
+      "claim_scope": "It does not turn a district-level source row into evidence about a property, owner, mineral interest, market value, offer, sale, or recommended action."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 5 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:58Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 5 supplies current official Section 5.10 statutory provenance for the appraisal-district ratio study.",
+      "claim_scope": "The article does not interpret the statute, decide compliance, or apply it to a district, property, owner, appraisal, tax, protest, value, offer, or transaction."
+    },
+    {
+      "label": "Texas Comptroller, Dimmit County Directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dimmitt.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:58Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dimmitt.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Dimmit County directory supplies district-number and appraisal-district directory context only.",
+      "claim_scope": "It does not validate a ratio-study measure, identify a sample, establish a property result, select a contact, or direct an owner action."
+    }
+  ]
+}

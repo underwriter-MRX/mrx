@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave163_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0762",
+  "slug": "culberson-cad-mineral-category-codes-source-locator",
+  "title": "Culberson CAD Mineral Category Codes Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+  "source_path": "src/content/posts/culberson-cad-mineral-category-codes-source-locator.mdx",
+  "input_body_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "input_frontmatter_sha256": "89909c88695a402c4e8b27c7459ba2529d8e2ab99b3f5180cb89429d310e0e73",
+  "expected_repo_sha256": "0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee",
+  "two_image_manifest_sha256": "76f9802f766927a66ff5e93859749835b8413bf7f19fbeba60f03c106853e291",
+  "visual_metadata": {
+    "hero_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "social_alt": "A closed source index appears beside the exact Culberson CAD mineral category codes locator title.",
+    "inline_alt": "Three separate source tiles appear above the exact Culberson CAD mineral category codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Mineral Category Codes Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 142,
+    "answer_summary_word_count": 72,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T10:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave163",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-mineral-category-codes-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave163_factual",
+  "review_run_id": "mrx1000-wave163-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 0c89114395ad49e9d780a693e2f89f0cbfdbbd59b6eeabec3cae246522bf23ee; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official publisher-page relationships, 21-page mass-report identity and page 5/page 7 locators, five-page annual-report identity and page 3 locator, current 36-page statewide guide identity and page 20 locator, complete-file hashes and bytes, literal displayed category labels, and Chapter 25 provenance.",
+    "The article invents and exposes no code equivalence, parcel count, market value, ratio, formula, method, assumption, schedule, deadline, account, owner, property, legal description, lease, operator, regulatory identifier, production, exemption, protest, notice, contact, classification result, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_culberson_cad_texas_comptroller_and_texas_statute_source_priority_pass",
+    "literal_category_labels_not_converted_into_code_equivalence_row_data_account_classification_appraisal_tax_protest_legal_valuation_sale_or_outcome_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Culberson CAD, Data and Records (accessed 2026-08-27)",
+      "url": "https://www.culbersoncad.org/home/DataRecords",
+      "publisher": "www.culbersoncad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.culbersoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Culberson CAD Data and Records page supplies the publisher surface and current links to the 2025 Mass Appraisal Report and 2025 Annual Report.",
+      "claim_scope": "It supports publisher identity and current link-relationship rechecking only. It does not establish code equivalence, owner-specific applicability, property classification, appraisal treatment, taxation, protest position, legal effect, value, or another result."
+    },
+    {
+      "label": "Culberson CAD, 2025 Mass Appraisal Report (accessed 2026-08-27)",
+      "url": "https://www.culbersoncad.org/Forms/GetDocument?fileName=1777396622_2025+Mass+Appraisal.pdf&subPath=Data+Records",
+      "publisher": "www.culbersoncad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.culbersoncad.org/Forms/GetDocument?fileName=1777396622_2025+Mass+Appraisal.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current linked 21-page PDF supplies the displayed mass-appraisal-report identity, displayed April 2025 parcel-category-summary context on PDF page 5, and the literal PROPERTY CATEGORY CODES table and mineral-related local labels on PDF page 7.",
+      "claim_scope": "It supports source identity, broad section location, and literal displayed-label inventory only. The article does not reproduce counts, values, ratios, formulas, methods, assumptions, schedules, deadlines, account facts, owner facts, property facts, or appraisal conclusions."
+    },
+    {
+      "label": "Culberson CAD, 2025 Annual Report (accessed 2026-08-27)",
+      "url": "https://www.culbersoncad.org/Forms/GetDocument?fileName=1777396231_2025+Annual+Report.pdf&subPath=Data+Records",
+      "publisher": "www.culbersoncad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.culbersoncad.org/Forms/GetDocument?fileName=1777396231_2025+Annual+Report.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current linked five-page PDF supplies the displayed 2025 annual-report identity and the broad Property Categories section and Category G Mineral row location on PDF page 3.",
+      "claim_scope": "It supports a separate source-role and page locator only. The article does not reproduce or use the displayed parcel count, market value, notices, appeals, jurisdiction facts, operational statements, or other numerical results."
+    },
+    {
+      "label": "Texas Comptroller, Property Classification Guide (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current 36-page Texas Property Tax Assistance Property Classification Guide supplies statewide Category G, G1, G2, and G3 displayed definitions on printed page 20, which is PDF page 23 in the retrieved file.",
+      "claim_scope": "It supports current statewide source provenance and literal label comparison only. The article does not silently equate local displayed codes with current statewide categories, classify an owner or property, apply an example, or decide appraisal, tax, protest, legal, value, or transaction consequences."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 25 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and appraisal-roll subjects.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret Chapter 25, decide applicability, read or compare a row, calculate timing, direct a protest or filing, or make an owner-specific conclusion."
+    }
+  ]
+}

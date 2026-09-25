@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave189_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:08Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0792",
+  "slug": "howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record",
+  "title": "Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+  "source_path": "src/content/posts/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.mdx",
+  "input_body_sha256": "8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa",
+  "input_frontmatter_sha256": "2eb6f8c6026947d100f8aa6a25ad0b00f04d6418ff21de64cb51e688b972e602",
+  "expected_repo_sha256": "8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa",
+  "two_image_manifest_sha256": "193933acc6aa4ddedcc4523a228f9ee716e321bf286fce9852d1672c0d9e6b00",
+  "visual_metadata": {
+    "hero_alt": "A navy archive capsule and one blank file sleeve appear beside the exact Howard CAD ZIP integrity-record title.",
+    "social_alt": "A navy archive capsule and one blank file sleeve appear beside the exact Howard CAD ZIP integrity-record title.",
+    "inline_alt": "An overhead one-container, one-member evidence board appears above the Howard CAD 2025 certified mineral dataset phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2025 Mineral Dataset ZIP Integrity Record",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 59,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T07:16:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave189",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave189_editorial",
+  "review_run_id": "mrx1000-wave189-editorial-20260915T071308Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa; the answer-first article contains 1140 body tokens and five FAQs.",
+    "The article rejects the colliding Howard County valuation and family-decision identity and owns one distinct deliverable: a complete-file and one-member integrity record for one exact official 2025 ZIP.",
+    "The current information-gain and answer-citation contract is applied through a concise direct answer, one canonical file-control job, four official sources with separate roles, exact publisher/route/file/date/hash/member provenance, claim-adjacent citations, supported FAQs, semantic internal links, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The low three-quarter capsule scene and strict-overhead evidence board are materially distinct and make no government-affiliation, property, owner, appraisal, tax, title, value, offer, legal, or outcome claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "8886761ee86c2987a0b7098286cee1791af3db3f3c07310b3dd6ab661b3848fa"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1140,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 59
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 52,
+        "description_character_count": 141,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T07:16:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave189",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 3,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.mdx",
+    "/assets/articles/hero/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.webp",
+    "/assets/articles/inline/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/howard-cad-2025-certified-mineral-dataset.webp"
+  ]
+}

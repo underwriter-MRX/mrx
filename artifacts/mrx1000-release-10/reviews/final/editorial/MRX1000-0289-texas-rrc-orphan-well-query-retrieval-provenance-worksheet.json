@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave105_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0289",
+  "slug": "texas-rrc-orphan-well-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Orphan Well Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5",
+  "input_frontmatter_sha256": "1d9ea7139cfc95c512ed823aa9f127c5efde4b8b5b79b197e3a8bfa9546c0716",
+  "expected_repo_sha256": "a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5",
+  "two_image_manifest_sha256": "0569ce4579fd5e1ba14115236b614a21c2d96810d0e00eca1463e9e5ee56ed62",
+  "visual_metadata": {
+    "hero_alt": "An archival locator rack and blank reference cards appear beside the exact article title.",
+    "social_alt": "An archival locator rack and blank reference cards appear beside the exact article title.",
+    "inline_alt": "A people-free overhead criteria grid appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Orphan Well Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 58,
+    "description_character_count": 147,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T13:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave105",
+    "declared_source_count": 8,
+    "visible_body_citation_count": 8,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave105_editorial",
+  "review_run_id": "mrx1000-wave105-editorial-20260915T072832Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5; the answer-first article contains 1785 body tokens and five FAQs.",
+    "The article replaces a colliding spacing, permit, drilling-inventory, and valuation explainer with one administrative job: preserve a reproducible provenance trail for one official Orphan Well Query attempt through its exact routes, labels, controlled criteria, displayed state, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The low-oblique dark archival locator rack and people-free strict-overhead pale criteria grid differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "a8dbdccae2b843ab8773e9c81506681dcca3b97be80f27e9779c8cb2cec51bb5"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1785,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 52
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 58,
+        "description_character_count": 147,
+        "author": "ariana",
+        "reviewed_at": "2026-08-24T13:20:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave105",
+        "declared_source_count": 8,
+        "visible_body_citation_count": 8,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-orphan-well-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/texas-rrc-orphan-well-query-retrieval.webp"
+  ]
+}

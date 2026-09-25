@@ -1,0 +1,129 @@
+{
+  "artifact_type": "mrx1000_wave206_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0821",
+  "slug": "martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place",
+  "title": "Martin CAD 2025-26 MIUP Plan: Mineral Interests, Not Minerals in Place",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/",
+  "source_path": "src/content/posts/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.mdx",
+  "input_body_sha256": "48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07",
+  "input_frontmatter_sha256": "e71e4733434365a8af86a1ed39f4899b60c38fceb51156c6bd9df0c9adb9ce27",
+  "expected_repo_sha256": "48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07",
+  "two_image_manifest_sha256": "eea2c218a3ce45b0282d36b4b252088651c5a16089f25cd0d157316d448661a7",
+  "visual_metadata": {
+    "hero_alt": "A translucent interest frame sits above layered stone beside the exact Martin CAD MIUP plan title.",
+    "social_alt": "A translucent interest frame sits above layered stone beside the exact Martin CAD MIUP plan title.",
+    "inline_alt": "A top-down lens and evidence tabs sit above the exact Martin CAD mineral-interest boundary keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD MIUP Plan: Mineral Interests · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 146,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T14:18:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave206",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave206_factual",
+  "review_run_id": "mrx1000-wave206-factual-20260915T071316Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Martin CAD publisher page, exact 2025-2026 MIUP appraisal plan, four manually reviewed physical pages, and current Texas Comptroller context and routing pages.",
+    "The exact PDF is 378,602 bytes with SHA-256 bb52841e59180ee66d59e50af6e245af42172678fbe83efa9efe9890ea882b7a; metadata reports 30 letter-size pages, no encryption, and PDF 1.6.",
+    "Physical page 1 render SHA-256 08cee9a864c265bd40c527053309f9460c8b4e0541fce3305dbca26e52ccfec6 controls the plan identity, tax years, and print statement.",
+    "Physical page 3 render SHA-256 ef9c801ab0e968df31f80e271207844459abe9e76f45e21871572a46a9cb7f84 controls the mineral-interest section locator.",
+    "Physical page 19 render SHA-256 37a8b60fdf5d7917c909f116f0531e6df168d92ff2f1cb0f8875bded780f4e22 controls the section heading and scope; physical page 20 render SHA-256 881b5038dc3afa225ce6d59edef0506ee4b723fdf75a24afa5ee8fc1485c8ca4 controls the plan-attributed terminology boundary.",
+    "The code-section reference and interest-versus-mineral distinction remain source-attributed and are not interpreted as current law, ownership, title, a property appraisal, tax result, sale value, offer, production, royalty, or a property-specific legal conclusion.",
+    "PDF text extraction is navigation-only; the four manual renders control visible wording and pagination."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_reappraisal_plan_link_relationship_pass",
+    "exact_pdf_size_sha256_page_count_geometry_encryption_and_version_pass",
+    "physical_page_1_manual_render_hash_plan_identity_pass",
+    "physical_page_3_manual_render_hash_section_locator_pass",
+    "physical_page_19_manual_render_hash_section_scope_pass",
+    "physical_page_20_manual_render_hash_source_attributed_interest_boundary_pass",
+    "legal_attribution_not_independently_validated_or_interpreted_pass",
+    "pdf_text_extraction_navigation_only_manual_renders_control_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Martin CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://martincad.org/home/DataRecords",
+      "publisher": "martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://martincad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible Reappraisal Plans section and its displayed 2025-2026 MIUP appraisal-plan link relationship.",
+      "claim_scope": "It does not validate every plan statement, determine current law, prove ownership, or support a property-specific appraisal, tax, transaction, production, royalty, or legal conclusion."
+    },
+    {
+      "label": "Martin CAD 2025-2026 MIUP Appraisal Plan (accessed 2026-08-29)",
+      "url": "https://www.martincad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1734123448_Biennial+Reappraisal+Plan.P%26A.MIUP.2025-26.pdf",
+      "publisher": "www.martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.martincad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1734123448_Biennial+Reappraisal+Plan.P%26A.MIUP.2025-26.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact PDF supplies the complete-file controls and the manually verified physical-page-1, page-3, page-19, and page-20 observations about document identity, section location, scope, and source-attributed terminology.",
+      "claim_scope": "It does not independently validate current law, determine title or ownership, provide a property-specific appraisal or tax result, estimate a sale value or offer, or calculate production or royalties."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller page supplies current statewide context for appraisal-district and mass-appraisal roles.",
+      "claim_scope": "It does not validate the Martin plan’s code-section attribution, identify a reader’s interest, or translate appraisal terminology into ownership, value, tax, transaction, or legal conclusions."
+    },
+    {
+      "label": "Texas Comptroller Local Property Appraisal and Tax Information directory (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory supplies current routing guidance for local appraisal and property-tax questions.",
+      "claim_scope": "It does not inspect or interpret the Martin plan, decide ownership or title, or support a mineral-rights transaction result."
+    }
+  ]
+}

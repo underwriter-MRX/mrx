@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave244_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0869",
+  "slug": "winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration",
+  "title": "Winkler CAD 2025-2026 Mineral Appraisal: Lease-Level Full Value and Owner Proration",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration.mdx",
+  "input_body_sha256": "256561e4de010482058ac172d9a75ccc44a1770aef1194e477b31db5d5312f01",
+  "input_frontmatter_sha256": "c29abdd2111e48f30afadd5497cfa950624ae4e665940a41c5a6bdf6f87b1cb0",
+  "expected_repo_sha256": "256561e4de010482058ac172d9a75ccc44a1770aef1194e477b31db5d5312f01",
+  "two_image_manifest_sha256": "0a9fc5c49687d397e07f4607c427650c4a181be9416098de9af3e92e89da6223",
+  "visual_metadata": {
+    "hero_alt": "A lease folio branches into interest-type folders and owner slips beside the exact Article 316 title.",
+    "social_alt": "A lease folio branches into interest-type folders and owner slips beside the exact Article 316 title.",
+    "inline_alt": "A top-down lease-to-owner proration flow appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Lease-Level Value and Owner Proration · MRX",
+    "seo_title_character_count": 55,
+    "description_character_count": 145,
+    "answer_summary_word_count": 70,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T22:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave244",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave244_compliance",
+  "review_run_id": "mrx1000-wave244-compliance-20260915T071332Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "2a6b8a96167c012471ab1e5719fefa780e60b8dc9ae556cab118e30d64e1a3da",
+  "expected_inline_sha256": "98c3e790a55356e6a90876251a93487551ec967c3b3053f2b4598d4b37da2721",
+  "findings": [
+    "Complete current MDX SHA-256 is 256561e4de010482058ac172d9a75ccc44a1770aef1194e477b31db5d5312f01; hero/share and inline image hashes are separately locked.",
+    "The article attributes each process statement to the plan, preserves typically, and does not independently determine title, classify an interest, calculate a decimal, perform an appraisal, or reach an account-specific result.",
+    "The factory body is not evidence. No owner, account, address, personal data, parcel, value, tax bill, legal description, production figure, reserve estimate, decimal, title instrument, notice, protest record, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, owner percentage, formula, value, title conclusion, appraisal result, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_county_risk_checklist_reuse_pass",
+    "no_owner_account_address_personal_data_parcel_value_tax_bill_legal_description_production_reserve_decimal_title_instrument_notice_protest_or_transaction_data_pass",
+    "no_owner_interest_type_decimal_title_appraisal_tax_value_sale_price_offer_or_current_post_plan_claim_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article313_source_chain_article314_report_user_and_article315_date_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_digits_formulas_percentages_currency_values_maps_wells_rigs_graphs_logos_seals_signatures_government_emblems_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-and-owner-proration.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration/winkler-cad-mineral-appraisal-owner-proration.webp"
+  ]
+}

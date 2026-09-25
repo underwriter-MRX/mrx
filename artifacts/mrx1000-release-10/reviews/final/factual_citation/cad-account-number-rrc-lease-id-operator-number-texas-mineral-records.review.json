@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave226_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0846",
+  "slug": "cad-account-number-rrc-lease-id-operator-number-texas-mineral-records",
+  "title": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
+  "canonical_url": "https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+  "source_path": "src/content/posts/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.mdx",
+  "input_body_sha256": "1e247094a20a0058810bfa30806f84b628bcba0d47240bcd033f80d3bdf397c3",
+  "input_frontmatter_sha256": "11fda8b51dcdaefdad59ca4823d296dff82c686cf0722bc7eac20af43d2ae07d",
+  "expected_repo_sha256": "1e247094a20a0058810bfa30806f84b628bcba0d47240bcd033f80d3bdf397c3",
+  "two_image_manifest_sha256": "47f2a8eaa1d9f1189750af9127529d7a44d94a5e93202d51e38fbf7582f08381",
+  "visual_metadata": {
+    "hero_alt": "A bright records lab appears beside the exact Article 298 title.",
+    "social_alt": "A bright records lab appears beside the exact Article 298 title.",
+    "inline_alt": "An overhead five-lane board appears above the exact Texas mineral record identifiers keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Identifiers: CAD, RRC & P-5",
+    "seo_title_character_count": 48,
+    "description_character_count": 137,
+    "answer_summary_word_count": 70,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T11:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave226",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/how-to-build-a-texas-mineral-production-record-locator-sheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave226_factual",
+  "review_run_id": "mrx1000-wave226-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 1e247094a20a0058810bfa30806f84b628bcba0d47240bcd033f80d3bdf397c3; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 9,528,232 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The current Comptroller manuals supply long-account, short-account, R-number, parcel-number, GIS-ID, and separate-record boundaries.",
+    "The current RRC query guide supplies API wellbore, district-plus-lease or gas-well, and unique P-5 operator-number roles.",
+    "The RRC district-and-operator index and PDQ FAQ supply the co-displayed-field and bounded API-to-lease lookup contexts without establishing private-property identity."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "cad_long_account_short_account_r_number_and_gis_boundary_pass",
+    "rrc_api_wellbore_identifier_role_pass",
+    "rrc_district_plus_oil_lease_or_gas_well_identifier_role_pass",
+    "rrc_unique_p5_operator_number_role_pass",
+    "bounded_api_to_lease_information_sequence_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC About Oil and Gas Data Queries (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC query guide distinguishes an API wellbore number, district plus oil lease number or gas-well ID for a completion, and the unique P-5 operator number.",
+      "claim_scope": "The article treats those labels as regulatory identifiers and does not use them to establish a private-property connection, title, ownership, royalty entitlement, production, value, or transaction result."
+    },
+    {
+      "label": "Texas RRC Oil Leases and Gas Wells by District and Operator (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/well-information/oil-leases-and-gas-wells-by-district-and-operator/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/well-information/oil-leases-and-gas-wells-by-district-and-operator/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official monthly index supplies the co-displayed operator, lease, field, county, and oil-or-gas labels.",
+      "claim_scope": "The article does not infer that co-display makes the fields interchangeable or that a similar name proves a join to an owner record."
+    },
+    {
+      "label": "Texas RRC Production Data Query System FAQs (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC FAQ supplies the bounded API-to-lease-information lookup sequence and the monthly, revisable production-snapshot limitation.",
+      "claim_scope": "The article does not reproduce a PDQ query worksheet or claim that a regulatory identifier establishes final data or owner-specific facts."
+    },
+    {
+      "label": "Texas Comptroller Electronic Appraisal Roll Submission Manual (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1051.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1051.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current Comptroller manual distinguishes the appraisal district long or geographic account number, short account or R-number, and potentially different GIS parcel ID.",
+      "claim_scope": "The article does not use an appraisal identifier to decide account correctness, legal description, title, tax amount, private value, or an offer."
+    },
+    {
+      "label": "Texas Comptroller Electronic Property Transaction Submission Manual (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1208.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-1208.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current Comptroller transaction manual describes the short account or R-number as locally assigned and requires a separate record when a transaction contains multiple accounts.",
+      "claim_scope": "The article uses that rule only to support separate identifier rows and does not interpret a sale, deed, appraisal, or owner-specific transaction."
+    }
+  ]
+}

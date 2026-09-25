@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave178_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0777",
+  "slug": "ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk",
+  "title": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+  "source_path": "src/content/posts/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.mdx",
+  "input_body_sha256": "3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1",
+  "input_frontmatter_sha256": "ca7f4389490f84b1820fa526f79ecbad296063e88089944fee0ab2b8584dc59e",
+  "expected_repo_sha256": "3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1",
+  "two_image_manifest_sha256": "521d6a199feaf03d9294a52bf8895d0fc417a841c3b8e9649188b8fabfdc66b0",
+  "visual_metadata": {
+    "hero_alt": "An upright report folio and four page dividers appear beside the exact Ector CAD mass-report crosswalk title.",
+    "social_alt": "An upright report folio and four page dividers appear beside the exact Ector CAD mass-report crosswalk title.",
+    "inline_alt": "Four overhead page cards form a crosswalk above the exact Ector CAD mineral-section keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mass Appraisal Mineral Section",
+    "seo_title_character_count": 45,
+    "description_character_count": 157,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T02:47:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave178",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave178_editorial",
+  "review_run_id": "mrx1000-wave178-editorial-20260915T071302Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1; the answer-first article contains 1571 body tokens and five FAQs.",
+    "The article rejects the colliding generic Ector County value-guide identity and owns one distinct deliverable: an official 2026 mass-report publisher-and-document page crosswalk with an explicit tax-appraisal-versus-market-offer boundary.",
+    "The information-gain and AI-citation factory contract is applied through a concise direct answer, one canonical reader job, seven visible official sources with separate roles, exact issuer/document/year/page/URL/retrieval identity, claim-adjacent citations, five useful FAQs, semantic hub/support/next-step links, native nonduplicative schema, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The eye-level report-divider archive and strict-overhead four-card crosswalk are materially distinct and contain no person, hand, readable base text, property record, personal data, official page, government mark, signature, logo, value, result, or watermark."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1571,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 60
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 45,
+        "description_character_count": 157,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T02:47:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave178",
+        "declared_source_count": 7,
+        "visible_body_citation_count": 7,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.mdx",
+    "/assets/articles/hero/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.webp",
+    "/assets/articles/inline/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/ector-cad-2026-mineral-section.webp"
+  ]
+}

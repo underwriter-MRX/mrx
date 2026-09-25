@@ -1,0 +1,110 @@
+{
+  "artifact_type": "mrx1000_wave236_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0856",
+  "slug": "ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning",
+  "title": "Ward CAD 2026 Mineral Recap: What 83,920 Items and $5.829B Gross Value Do and Do Not Mean",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/",
+  "source_path": "src/content/posts/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning.mdx",
+  "input_body_sha256": "9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2",
+  "input_frontmatter_sha256": "c73aac8dba9a285ccae819147398f630f49185a2509dd4b767c953fb5aa3766a",
+  "expected_repo_sha256": "9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2",
+  "two_image_manifest_sha256": "1aa7c4ad38fbbef23b715b33852df2c84e6edf7356efdbd2420e4193da1aca84",
+  "visual_metadata": {
+    "hero_alt": "A Ward archive and blank recap packet appear beside the exact Article 308 title.",
+    "social_alt": "A Ward archive and blank recap packet appear beside the exact Article 308 title.",
+    "inline_alt": "A top-down aggregate-versus-private-value board appears above the exact Ward CAD recap keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD 2026 Mineral Recap Items & Gross Value · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 147,
+    "answer_summary_word_count": 44,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T16:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave236",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-mineral-recap-pdf-three-page-column-jurisdiction-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2026-mineral-recap-83920-items-5829b-gross-value-meaning/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave236_factual",
+  "review_run_id": "mrx1000-wave236-factual-20260915T071325Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 9933d5087ebaebb1ae4914fc557508ccc705adcfb8fa605ca40cff381a1b9dc2; all 3 declared sources passed current HTTPS access review.",
+    "The controlled Ward ZIP is 35,266,126 bytes, SHA-256 7993b427ee51193ce86d5490102054e2e30e26f5811cacfd3791819803d07752, contains seven members totaling 465,352,945 uncompressed bytes, and passed CRC testing.",
+    "The exact recap member is 5,578 bytes, SHA-256 9072dc555157546b48f76a6fcaf43104d90fd54bbee653a33d388e38f09ec709, three pages, unencrypted, without JavaScript, and rotated 270 degrees.",
+    "Manual review of physical page 1 verifies the literal district row label 00 WARD COUNTY CENTRAL APPR DIST, ITEMS 83,920, and GROSS VALUE 5,829,111,590.",
+    "The title form $5.829B is explicitly labeled as MRX rounding of the exact source figure; physical page 3 separately displays 84,343 TOTAL RECORDS ON TAPE, which is preserved without reconciliation to the district-row items field."
+  ],
+  "checks": [
+    "three_distinct_official_https_sources_with_exact_source_roles",
+    "controlled_zip_bytes_sha256_member_count_and_crc_identity_pass",
+    "controlled_recap_member_bytes_sha256_page_count_rotation_encryption_and_javascript_identity_pass",
+    "physical_page_one_manual_render_district_row_pass",
+    "exact_83920_items_and_5829111590_gross_value_literal_source_pass",
+    "5829b_rounding_transformation_label_pass",
+    "83920_items_versus_84343_total_records_discrepancy_preserved_unreconciled_pass",
+    "no_owner_level_file_access_or_record_reproduction_pass",
+    "stable_claim_ids_source_roles_transformations_limits_and_render_hashes_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ward CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/home/DataRecords",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Ward CAD Data and Records page supplies the current official publisher route, 2026 Certified Appraisal Rolls section, and visible 2026 Certified Mineral Appraisal Roll ZIP link.",
+      "claim_scope": "The route establishes publisher provenance only; it does not validate every archive member, row, figure, account, or interpretation."
+    },
+    {
+      "label": "Ward CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785190692_WARD+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The controlled Ward CAD ZIP and exact 5. MINERAL RECAP.PDF member support archive identity, member identity, physical-page locators, and the literal district-row items and gross-value fields.",
+      "claim_scope": "The archive does not establish owner count, title, ownership, record correctness, current applicability, private mineral-rights sale value, offer quality, tax owed, or a transaction result."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:25Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing context for local appraisal and tax questions.",
+      "claim_scope": "It does not validate the Ward recap, interpret its fields, answer a property question, establish private value, or provide legal or tax advice."
+    }
+  ]
+}

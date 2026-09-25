@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave194_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:10Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0797",
+  "slug": "karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk",
+  "title": "Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+  "source_path": "src/content/posts/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.mdx",
+  "input_body_sha256": "f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597",
+  "input_frontmatter_sha256": "d862abe0376d07bd61d9556d95338778fed69faf48f90c963a155a3474cac6f3",
+  "expected_repo_sha256": "f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597",
+  "two_image_manifest_sha256": "bce096cc1f9236fb8b77f40d22e81581be05383766cc4f53616d56fc80bf4399",
+  "visual_metadata": {
+    "hero_alt": "An upright report folio with two blank table windows appears beside the exact Karnes CAD Category G crosswalk title.",
+    "social_alt": "An upright report folio with two blank table windows appears beside the exact Karnes CAD Category G crosswalk title.",
+    "inline_alt": "Two overhead blank evidence tables appear above the Karnes CAD 2024 annual report Category G phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD 2024 Category G Table Crosswalk",
+    "seo_title_character_count": 42,
+    "description_character_count": 135,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T09:09:39Z",
+    "reviewed_by": "mrx_compliance-continuous-wave194",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave194_editorial",
+  "review_run_id": "mrx1000-wave194-editorial-20260915T071310Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597; the answer-first article contains 1267 body tokens and five FAQs.",
+    "The article rejects the broad Karnes valuation/family-guide identity and owns one distinct physical-page-3 two-table crosswalk.",
+    "The current information-gain contract is applied through an answer-first distinction, exact table headers, claim-adjacent primary citations, separate-source roles, five supported FAQs, semantic links, and no ranking/citation promise.",
+    "Exact-title hero/share OCR passed; exact-keyword inline OCR passed; the upright report folio and overhead two-table crosswalk are materially different compositions and contain no factual data claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1267,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 56
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 42,
+        "description_character_count": 135,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T09:09:39Z",
+        "reviewed_by": "mrx_compliance-continuous-wave194",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.mdx",
+    "/assets/articles/hero/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.webp",
+    "/assets/articles/inline/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/karnes-cad-2024-annual-report-category-g.webp"
+  ]
+}

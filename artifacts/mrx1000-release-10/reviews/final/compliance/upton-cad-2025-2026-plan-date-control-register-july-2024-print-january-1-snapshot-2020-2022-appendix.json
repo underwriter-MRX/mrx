@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave235_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0855",
+  "slug": "upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix",
+  "title": "Upton CAD 2025-2026 Plan Date-Control Register: July 2024 Print, January 1 Snapshot, and a 2020-2022 Appendix",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+  "source_path": "src/content/posts/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.mdx",
+  "input_body_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+  "input_frontmatter_sha256": "21d3482f4fd6b1fb76d2c1147d410a9fe52e6a40597a2efbbef2bd9bc08c2b7b",
+  "expected_repo_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+  "two_image_manifest_sha256": "7b5d7d671abc42364778ca22a44f86c8f2bcc95767ac17fc239b517c7c37abb1",
+  "visual_metadata": {
+    "hero_alt": "A layered plan binder appears beside the exact Article 307 title.",
+    "social_alt": "A layered plan binder appears beside the exact Article 307 title.",
+    "inline_alt": "A top-down four-card register appears above the exact Upton CAD plan date-control register keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Plan Date-Control Register · MRX",
+    "seo_title_character_count": 42,
+    "description_character_count": 150,
+    "answer_summary_word_count": 48,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T16:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave235",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave235_compliance",
+  "review_run_id": "mrx1000-wave235-compliance-20260915T071325Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a142a8070cad445e82f5b9cbd6f927dd613478f83cc78e0c28fa3589f889d75e",
+  "expected_inline_sha256": "a1705fe8c3ade49f1f16fa82ec38911e3a1ed07258fad163952c68c1f4d63718",
+  "findings": [
+    "Complete current MDX SHA-256 is 0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e; hero/share and inline image hashes are separately locked.",
+    "No personal or account data is copied, no property search is executed, and no title, ownership, taxable-status, appraisal, tax, legal, private-value, offer, deadline, protest, or transaction conclusion appears.",
+    "The date layers remain source-control labels rather than a tax calendar, private-value timeline, forecast, legal interpretation, or recommendation.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, numerical result, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_person_account_or_property_data_copy_or_search_pass",
+    "no_title_ownership_taxable_status_appraisal_tax_legal_private_value_offer_deadline_protest_or_transaction_conclusion_pass",
+    "no_date_layer_as_tax_calendar_private_value_timeline_forecast_or_recommendation_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_logos_seals_official_forms_personal_data_account_identifiers_tax_amounts_property_values_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.mdx",
+    "/assets/articles/hero/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-and-a-2020-2022-appendix.webp",
+    "/assets/articles/inline/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/upton-cad-plan-date-control-register.webp"
+  ]
+}

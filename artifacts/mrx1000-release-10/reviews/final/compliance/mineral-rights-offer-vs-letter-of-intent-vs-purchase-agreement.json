@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave248_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T09:49:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0415",
+  "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+  "title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+  "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+  "source_path": "src/content/posts/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.mdx",
+  "input_body_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+  "input_frontmatter_sha256": "74eb89692792fb86c1e19667f31141bf39053fdaacd5a1c7bdfe7c381d26db8a",
+  "expected_repo_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+  "two_image_manifest_sha256": "a268c1c3e7aae2a4f648d857020cf6b16529b0b9445e0566d174c375584a699e",
+  "visual_metadata": {
+    "hero_alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+    "social_alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+    "inline_alt": "A people-free overhead three-stage document evidence board appears below the exact offer-documents keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Mineral Rights Offer vs. LOI vs. Purchase Agreement",
+    "seo_title_character_count": 51,
+    "description_character_count": 152,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-09-15T08:53:13Z",
+    "reviewed_by": "mrx_compliance-continuous-wave248",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/mineral-rights-offer-version-control-and-deadline-register/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave248_compliance",
+  "review_run_id": "mrx1000-wave248-compliance-20260915T094933Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "938ab1da59ae6eada147a63d483801c4f7445f628fe92259c87d28884e079c86",
+  "expected_inline_sha256": "d54c7fcd85f207ba61653203af5a98e5f5425f54b4e50b084d7b1d4ae5afbb8e",
+  "findings": [
+    "Complete current MDX SHA-256 is f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb; hero/share and inline image hashes are separately locked.",
+    "The article is educational and does not interpret a reader's document, determine whether any document is binding, or advise whether to sign, reject, negotiate, convey, or close.",
+    "The organizational author is the MRX Editorial Team; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "No real owner, parcel, legal description, instrument identifier, signature, price, tax result, title conclusion, offer, or transaction record appears.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no government affiliation, legal conclusion, recommendation, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_offer_guide_reuse_pass",
+    "no_real_owner_parcel_legal_description_instrument_id_signature_price_tax_title_offer_or_transaction_data_pass",
+    "no_binding_enforceability_validity_title_legal_effect_or_transaction_outcome_determination_pass",
+    "mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "offer_fairness_offer_analysis_offer_comparison_version_control_and_purchase_agreement_primer_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_signatures_addresses_official_seals_logos_watermarks_cash_dollar_signs_handshakes_gavels_or_legal_status_claims_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.mdx",
+    "/assets/articles/hero/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.webp",
+    "/assets/articles/inline/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/mineral-rights-offer-documents.webp"
+  ]
+}

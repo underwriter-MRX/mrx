@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave208_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0823",
+  "slug": "martin-cad-property-search-lease-fields-not-ownership-proof",
+  "title": "Martin CAD Property Search: Lease Fields Are Search Inputs, Not Ownership Proof",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-property-search-lease-fields-not-ownership-proof/",
+  "source_path": "src/content/posts/martin-cad-property-search-lease-fields-not-ownership-proof.mdx",
+  "input_body_sha256": "552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1",
+  "input_frontmatter_sha256": "a916855358e8a15e9e8c34bf82dfd2503109402a0db98003ad73187f37446459",
+  "expected_repo_sha256": "552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1",
+  "two_image_manifest_sha256": "198b9b166d08294ed73b888d5a35901f70c6f25a615843503939e01ccd2b7bde",
+  "visual_metadata": {
+    "hero_alt": "Blank search tiles stop at a sealed evidence folder beside the exact Martin CAD property-search title.",
+    "social_alt": "Blank search tiles stop at a sealed evidence folder beside the exact Martin CAD property-search title.",
+    "inline_alt": "A top-down evidence ladder appears above the exact Martin CAD mineral lease search fields keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD Lease Search Fields: Retrieval, Not Proof · MRX",
+    "seo_title_character_count": 58,
+    "description_character_count": 151,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T17:51:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave208",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-property-search-lease-fields-not-ownership-proof/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave208_compliance",
+  "review_run_id": "mrx1000-wave208-compliance-20260915T071316Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "8df9daccbe56ec3c687824dd862e48a990444ed1bd22aee8e82315f6602a8ab2",
+  "expected_inline_sha256": "1de00a1c10edf508c906b2688ea569307027047bc4b1921f71dae9578d8b6967",
+  "findings": [
+    "Complete current MDX SHA-256 is 552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1; hero/share and inline image hashes are separately locked.",
+    "The article separates interface retrieval provenance from ownership, title, agency, authority, lease validity, decimal interest, appraisal, tax, sale value, offer, production, royalty, transaction, and legal conclusions and preserves MRX buyer-interest disclosure.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, personal data, property identity, result, value, tax, ownership, outcome, or ranking or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_owner_property_account_agent_or_lease_search_and_no_personal_record_reproduction_pass",
+    "no_ownership_title_agency_authority_lease_validity_decimal_appraisal_tax_sale_value_offer_production_royalty_transaction_or_legal_advice_claim_pass",
+    "owner_address_and_address_labels_not_normalized_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_maps_property_records_money_charts_offers_prices_government_symbols_conclusions_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-property-search-lease-fields-not-ownership-proof.mdx",
+    "/assets/articles/hero/martin-cad-property-search-lease-fields-are-search-inputs-not-ownership-proof.webp",
+    "/assets/articles/inline/martin-cad-property-search-lease-fields-not-ownership-proof/martin-cad-mineral-lease-search-fields.webp"
+  ]
+}

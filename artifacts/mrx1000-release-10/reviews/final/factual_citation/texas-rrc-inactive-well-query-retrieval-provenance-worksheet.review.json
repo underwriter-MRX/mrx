@@ -1,0 +1,107 @@
+{
+  "artifact_type": "mrx1000_wave95_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T04:20:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0278",
+  "slug": "texas-rrc-inactive-well-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Inactive Well Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-inactive-well-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-inactive-well-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f",
+  "input_frontmatter_sha256": "c017799a1b164791d3ff4b8bf8644ab2ced15b14a58080f180cd8ed93517d5ba",
+  "expected_repo_sha256": "c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f",
+  "two_image_manifest_sha256": "911604e338968629fb1a6e624e38aaef232c2bd1a82586329272b4be281b5fd5",
+  "visual_metadata": {
+    "hero_alt": "A Texas inactive-well query research counter appears beside the exact article title.",
+    "social_alt": "A Texas inactive-well query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead inactive-well query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave95_factual",
+  "review_run_id": "mrx1000-wave95-factual-20260824T042013Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is c3fb89f51f5a1704665bf3c08d8ffd88b8db2ff1045b788d642259bc27b8de0f; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed Inactive Well Query criteria and instructions, separate route identity, limited result-screen navigation context, and published limitations. None of the sources is used to establish property connection, title, ownership, acreage, lease effect, payment responsibility, entitlement, compliance, environmental condition, operating status, production, value, or a transaction result.",
+    "The article publishes no actual query values, owner document, signature, address, legal description, property identifier, result screenshot, operator allegation, well-status conclusion, production result, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:20:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC directory identifies the Inactive Well Query as a named route and states online-query use and information limitations.",
+      "claim_scope": "The article records the named route, access time, and published limitation without treating a query result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:20:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil & Gas Data Queries page supplies bounded context for the RRC query system.",
+      "claim_scope": "The article uses that context only to identify the public query environment and preserves uncertainty about individual results, records, and relationships."
+    },
+    {
+      "label": "Railroad Commission of Texas, Inactive Well Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/inactiveWellAllQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:20:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/inactiveWellAllQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Inactive Well Query entry displays the separately named route and current criteria labels for one query attempt.",
+      "claim_scope": "The article records only criteria actually used, source-displayed instructions, navigation steps that occurred, and bounded retrieval state. It does not submit an actual property query or reproduce an actual result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Inactive Well Query Help: How To (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/InactiveWellQuery_HowTo.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:20:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/InactiveWellQuery_HowTo.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official help page supplies bounded operator, criterion, lease-search, field-search, and navigation instructions.",
+      "claim_scope": "The article preserves the separate retrieval steps and does not interpret a selected operator, lease, field, well, or result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Inactive Well Query Results Help (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/InactiveWellQuery_results_howto.htm",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:20:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/InactiveWellQuery_results_howto.htm",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official results help page supplies bounded result-screen navigation context.",
+      "claim_scope": "The article uses that context only to keep result headers, links, and later routes distinct; it does not interpret a result, well status, property connection, title, lease, compliance, production, value, or transaction effect."
+    }
+  ]
+}

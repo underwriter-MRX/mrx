@@ -1,0 +1,133 @@
+{
+  "artifact_type": "mrx1000_wave99_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T08:55:15Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0282",
+  "slug": "texas-rrc-severance-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Severance Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-severance-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-severance-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "input_frontmatter_sha256": "81dee50e642c6f5c077edf1efc6d53766b58fa293bb90b0acf0eb646b73e2d8d",
+  "expected_repo_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "two_image_manifest_sha256": "3bd633f8ca34a849887cf89e2cbfb87b47c6f3b3c598f5c105e71cb95de7d976",
+  "visual_metadata": {
+    "hero_alt": "A public-record archive counter appears beside the exact article title.",
+    "social_alt": "A public-record archive counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead severance-query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave99_factual",
+  "review_run_id": "mrx1000-wave99-factual-20260824T085515Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f; all 7 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed Severance Query criteria and instructions, separate route identity, help context, result-column labels, displayed record-limit context, and published limitations. None is used to establish severance status, legal effect, compliance, reconnection eligibility, production, property connection, title, ownership, acreage, lease effect, value, offer quality, or a transaction result.",
+    "The article publishes no actual query value, owner document, address, property identifier, result screenshot, operator allegation, compliance conclusion, production conclusion, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "seven_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory supplies the agency public-query context and entry route.",
+      "claim_scope": "The article records the route, access time, and bounded query-system context without treating a result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Data Queries page identifies Severance Query as a separate public query slice and describes its bounded purpose and criteria context.",
+      "claim_scope": "The article uses the page only to identify the official query environment and preserves uncertainty about individual records and relationships."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil & Gas Data Query Main Page (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil & Gas Data Query main page identifies Severance Query as a named route among separate query types.",
+      "claim_scope": "The article uses the menu label only to preserve an entry path and does not collapse record classes or draw a conclusion from a displayed result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Severance Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/severanceQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/severanceQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Severance Query entry displays the separately named route and current source labels for one retrieval attempt.",
+      "claim_scope": "The article records only criteria actually used, source-displayed instructions, navigation that occurred, and bounded retrieval state. It does not submit or reproduce an actual property-specific query result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Severance Query Help Contents (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/Severance_TOC.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/Severance_TOC.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Severance Query help table of contents preserves the source navigation and help context.",
+      "claim_scope": "The article uses the help route only to document the source path and does not infer the meaning or legal effect of a query result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Severance Query How To (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/Severance_HowTo.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/Severance_HowTo.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Severance Query How To page provides bounded search, result-column, navigation, and displayed result-limit context.",
+      "claim_scope": "The article preserves those source-stated labels and limitations without deciding severance status, compliance, production, property connection, or another downstream fact."
+    },
+    {
+      "label": "Railroad Commission of Texas, Severance/Reconnect Process (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/compliance-enforcement/severance-reconnect-process/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T08:55:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/compliance-enforcement/severance-reconnect-process/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Severance/Reconnect Process page is a separate explanatory route about the agency process.",
+      "claim_scope": "The article keeps that explanatory page separate from query retrieval and does not use a query result to decide compliance, reconnection eligibility, or legal effect."
+    }
+  ]
+}

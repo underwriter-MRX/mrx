@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave159_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0758",
+  "slug": "form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests",
+  "title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+  "source_path": "src/content/posts/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.mdx",
+  "input_body_sha256": "eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7",
+  "input_frontmatter_sha256": "0cfa5289a1ef1c1fede2e0e97fc294f32d05ea12cc01f466583832733f637016",
+  "expected_repo_sha256": "eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7",
+  "two_image_manifest_sha256": "016a8f59ea26220115a354ca2a4159e02cde26f55c9df594a053be8afe3359fc",
+  "visual_metadata": {
+    "hero_alt": "A five-divider archival source station appears beside the exact Form 50-171 field-inventory title.",
+    "social_alt": "A five-divider archival source station appears beside the exact Form 50-171 field-inventory title.",
+    "inline_alt": "An overhead five-part blank field inventory appears above the exact Form 50-171 Crane mineral interest keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-171 Field Inventory",
+    "seo_title_character_count": 33,
+    "description_character_count": 154,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T07:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave159",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave159_factual",
+  "review_run_id": "mrx1000-wave159-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official Form 50-171 displayed identity, 04-17/3 revision line, two-page structure, General and Filing Instructions headings, five displayed steps, blank field and attachment categories, Texas Comptroller source context, Crane local-source context, county-directory context, and Texas Tax Code Section 25.11 provenance.",
+    "The article invents no owner, agent, address, phone, property description, interest proportion, recorded instrument, signature, date, taxable value, applicability decision, qualification, deadline, filing, receipt, acceptance, tax result, valuation, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_texas_comptroller_crane_cad_county_directory_and_texas_statute_source_priority_pass",
+    "form_field_categories_not_converted_into_applicability_proof_timing_completion_submission_qualification_tax_or_legal_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Form 50-171 (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/forms/50-171.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/forms/50-171.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current official two-page blank PDF supplies the displayed title, form number, 04-17/3 revision line, General Instructions, Filing Instructions, five printed step headings, blank field and attachment categories, statutory reference, and printed limitation language.",
+      "claim_scope": "It supports a literal blank-source field inventory only. The article does not reproduce a completed form, enter owner or property values, review a recorded instrument, decide applicability or qualification, select a form or destination, personalize timing, complete or sign the request, interpret law, submit anything, or claim receipt, acceptance, qualification, or a tax result."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Forms (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller property-tax forms index supplies current statewide form-source context.",
+      "claim_scope": "It supports current-source and revision rechecking only. It does not supply owner-specific applicability, form selection, timing, completion, proof, filing, acceptance, or legal-effect conclusions."
+    },
+    {
+      "label": "Crane CAD, Forms (accessed 2026-08-27)",
+      "url": "https://www.cranecad.org/Forms",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/Forms",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Crane CAD forms surface supplies local forms-publisher context and links to statewide property-tax form resources.",
+      "claim_scope": "It supports local source context only. It does not establish that Form 50-171 applies to a particular Crane mineral interest, identify an owner, choose a form or recipient, or authorize contact or submission."
+    },
+    {
+      "label": "Texas Comptroller, Crane County Directory (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the official Crane County appraisal-district website and local property-tax offices.",
+      "claim_scope": "It supports source identity and jurisdictional separation only. The article does not choose an office, official, recipient, channel, or filing destination."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 25 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official provenance for Section 25.11 and the statutory subject referenced by the form.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret the statute, decide applicability or qualification, determine ownership or proportion, calculate timing, choose a tax treatment, or replace qualified legal or tax review."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave145_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:48:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0460",
+  "slug": "texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller County Appraisal District Directory Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "input_frontmatter_sha256": "960c9f12e875e5c1289c2a284aec0a2ef8495774e2c9173162fe4be57e0a1605",
+  "expected_repo_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "two_image_manifest_sha256": "919528292fd165df7bc39461414575f683b81ca52be4276b89a1e18a41ddbb84",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "social_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "inline_alt": "A top-down blank directory worksheet appears above the exact Texas county appraisal-district retrieval keyword."
+  },
+  "reviewer_id": "codex_wave145_compliance",
+  "review_run_id": "mrx1000-wave145-compliance-20260826T124816Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "12f47957a3807e8cfde171d14237d005d6c8d6959f08cee2a787f5faaf957c27",
+  "expected_inline_sha256": "6d951209c551b6a44d92fb1a34f3e4daa54cc3c0ae84d581637839d10900ca07",
+  "findings": [
+    "Complete current MDX SHA-256 is 61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6; hero/share and inline image hashes are separately locked.",
+    "The reusable public worksheet is blank, covers one manual official index route and one selected county page, keeps completed contact values and evidence in controlled records, places non-verification warnings beside the outcome, and stops at authorized-human review.",
+    "Image text is limited to the exact title and keyword and adds no identity, officeholder, contact, property, appraisal, tax, title, ownership, mineral, valuation, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_authorized_manual_official_texas_comptroller_county_directory_index_and_selected_county_page_attempt_exact_source_displayed_fields_only_controlled_retained_evidence_located_not_located_unverified_outcomes_login_contact_submission_payment_captcha_bypass_scrape_or_bulk_collection_stop_no_property_search_identity_match_authenticity_currentness_appraisal_tax_title_ownership_mineral_value_offer_transaction_or_legal_conclusion_authorized_human_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet/texas-county-appraisal-district-directory-retrieval.webp"
+  ]
+}

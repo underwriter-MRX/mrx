@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave106_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0291",
+  "slug": "texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet",
+  "title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "input_frontmatter_sha256": "ca948694d0c31d5ab16140cc09c50b09a0a059253aa6ef2ca0aef557e49b03d9",
+  "expected_repo_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "two_image_manifest_sha256": "151a6d2bd04e44b5e2a2b23474345123da4f012bd735f40b4c15e9909689651f",
+  "visual_metadata": {
+    "hero_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "social_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "inline_alt": "A people-free overhead retrieval-state matrix appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+    "seo_title_character_count": 65,
+    "description_character_count": 154,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T13:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave106",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave106_editorial",
+  "review_run_id": "mrx1000-wave106-editorial-20260915T072832Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7; the answer-first article contains 2033 body tokens and five FAQs.",
+    "The article replaces a colliding mineral-value-factor explainer with one administrative job: preserve a reproducible provenance trail for one official RRC Online Inspection Lookup attempt through its exact routes, labels, controlled criteria, displayed state, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The low-oblique dark evidence station and people-free strict-overhead pale retrieval-state matrix differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2033,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 54
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 65,
+        "description_character_count": 154,
+        "author": "ariana",
+        "reviewed_at": "2026-08-24T13:50:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave106",
+        "declared_source_count": 6,
+        "visible_body_citation_count": 6,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/texas-rrc-online-inspection-lookup-retrieval.webp"
+  ]
+}

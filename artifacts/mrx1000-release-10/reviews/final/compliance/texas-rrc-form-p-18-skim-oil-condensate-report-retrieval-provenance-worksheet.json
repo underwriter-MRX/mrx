@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave123_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0328",
+  "slug": "texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Form P-18 Skim Oil/Condensate Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d",
+  "input_frontmatter_sha256": "466fd2b24c40d49978713ae717c5fd9548dac091fd0d02eddf0e7f85040a15fc",
+  "expected_repo_sha256": "e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d",
+  "two_image_manifest_sha256": "898b16bb9c14f220b770da00044493021bd2f07e3b22ba9ff3702c70bc8e974e",
+  "visual_metadata": {
+    "hero_alt": "A researcher reviews blank public-record folders beside the exact article title.",
+    "social_alt": "A researcher reviews blank public-record folders beside the exact article title.",
+    "inline_alt": "A people-free overhead P-18 retrieval evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Form P-18 Report Retrieval Worksheet",
+    "seo_title_character_count": 46,
+    "description_character_count": 153,
+    "answer_summary_word_count": 62,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T12:02:40Z",
+    "reviewed_by": "mrx_compliance-continuous-wave123",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave123_compliance",
+  "review_run_id": "mrx1000-wave123-compliance-20260915T073204Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "d6852c23e5e76d4125a1de0baf6bfa96047f89b58d4f427f37f4624c6e15db6b",
+  "expected_inline_sha256": "d10d23c96fa6921d8a83b3e8a874ee9847598956e146ae2dcc7e4a7bf264f895",
+  "findings": [
+    "Complete current MDX SHA-256 is e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d; hero/share and inline image hashes are separately locked.",
+    "The article keeps Form P-18 profileId 28 separate from other Imaged Records profiles, P-17, T-1, G-10/W-10, production queries, downloadable P-18 JSON, LoneSTAR filing, Energy Depot, paid research, automation, bulk retrieval, interpretation, valuation, offer, and decision tasks.",
+    "Image text is limited to the exact title and keyword and adds no identifier, actual report, source result, seal, logo, facility or well fact, production, storage, disposal, ownership, payment, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_form_p18_profile28_one_manual_attempt_http403_unverified_no_adjacent_route_paid_research_automation_bulk_interpretation_facility_well_production_storage_disposal_environmental_compliance_property_ownership_value_offer_legal_tax_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/texas-rrc-form-p-18-report-retrieval.webp"
+  ]
+}

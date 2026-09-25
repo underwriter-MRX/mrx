@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave211_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0831",
+  "slug": "midland-cad-open-records-mineral-files-rolls-notices-source-routes",
+  "title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+  "source_path": "src/content/posts/midland-cad-open-records-mineral-files-rolls-notices-source-routes.mdx",
+  "input_body_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+  "input_frontmatter_sha256": "995ca832ee44e6ac00b3ffb623d94727186efd5640087d7280ee3569e7f6ece7",
+  "expected_repo_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+  "two_image_manifest_sha256": "a5bde291566d33f653a6a5ad74bd6a1cb20740e6468346888508439e0c5e6a32",
+  "visual_metadata": {
+    "hero_alt": "A blank origin card and three separate archive lanes appear beside the exact Midland CAD Open Records article title.",
+    "social_alt": "A blank origin card and three separate archive lanes appear beside the exact Midland CAD Open Records article title.",
+    "inline_alt": "A bright top-down route map branches to roll, stack, and notice motifs above the exact Midland CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Files, Rolls & Notices · MRX",
+    "seo_title_character_count": 48,
+    "description_character_count": 144,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T04:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave211",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave211_compliance",
+  "review_run_id": "mrx1000-wave211-compliance-20260915T071318Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "50f492afeed7a04ce3b1635398a6c352331a26de96ad64d5bd6baf27023ec43f",
+  "expected_inline_sha256": "d3b610530a78b9aac51d4674d5377b6fa81c5a86c6cbeef15dc276a51e43157e",
+  "findings": [
+    "Complete current MDX SHA-256 is b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53; hero/share and inline image hashes are separately locked.",
+    "The article treats headings, labels, target suffixes, timestamps, contacts, and hashes as bounded routing or byte-identity evidence and prohibits archive-content, completeness, property-applicability, ownership, title, appraisal, tax, value, production, royalty, legal-effect, or transaction inferences.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, source validation, record, account, property, result, ranking, or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "route_metadata_not_converted_to_archive_content_completeness_currency_applicability_ownership_title_appraisal_tax_value_production_royalty_legal_effect_or_transaction_result_pass",
+    "preliminary_certified_and_mineral_files_labels_not_silently_reconciled_pass",
+    "request_link_label_and_pdf_title_conflict_not_silently_corrected_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_maps_property_records_money_formulas_charts_values_results_government_symbols_conclusions_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-open-records-mineral-files-rolls-notices-source-routes.mdx",
+    "/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp",
+    "/assets/articles/inline/midland-cad-open-records-mineral-files-rolls-notices-source-routes/midland-cad-mineral-files-rolls-and-notices.webp"
+  ]
+}

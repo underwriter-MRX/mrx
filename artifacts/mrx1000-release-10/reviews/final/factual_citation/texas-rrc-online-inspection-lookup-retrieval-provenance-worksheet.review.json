@@ -1,0 +1,141 @@
+{
+  "artifact_type": "mrx1000_wave106_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0291",
+  "slug": "texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet",
+  "title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "input_frontmatter_sha256": "ca948694d0c31d5ab16140cc09c50b09a0a059253aa6ef2ca0aef557e49b03d9",
+  "expected_repo_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "two_image_manifest_sha256": "151a6d2bd04e44b5e2a2b23474345123da4f012bd735f40b4c15e9909689651f",
+  "visual_metadata": {
+    "hero_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "social_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "inline_alt": "A people-free overhead retrieval-state matrix appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+    "seo_title_character_count": 65,
+    "description_character_count": 154,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T13:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave106",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave106_factual",
+  "review_run_id": "mrx1000-wave106-factual-20260915T072832Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, exact source labels, source-displayed criteria, completed-inspection display boundary, August 2015 coverage statement, nightly update statement, result navigation, filtering, export mechanics, source limitations, and district-contact routing. None is used to establish a private-property relationship or a substantive inspection, violation, compliance, operator, condition, complaint, enforcement, liability, regulatory, environmental, title, ownership, value, offer, legal, or transaction conclusion.",
+    "The article publishes no actual operator, API, lease, well, facility, permit, complaint, district, county, criterion selection, result, violation, compliance value, inspection date, enforcement action, screenshot, export, property identifier, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_source_access_review_pass",
+    "official_pdf_full_document_and_visual_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory supplies the RRC Online Inspection Lookup label, launch relationship, and global online-query limitation.",
+      "claim_scope": "The article uses the directory only to preserve the official route, label, source identity, and limitation; it does not treat a displayed state as authoritative, legally effective, complete, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About RRC Online Inspection Lookup (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-rrc-online-inspection-lookup/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-rrc-online-inspection-lookup/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official About RRC Online Inspection Lookup page supplies the source scope, completed-inspection display boundary, August 2015 coverage statement, nightly update statement, Excel-download context, and informational-use limitation.",
+      "claim_scope": "The article preserves those source statements and does not infer an inspection status, violation, compliance, operator, condition, complaint, enforcement, liability, regulatory, environmental, property, legal, valuation, offer, or transaction conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, RRC Online Inspection Lookup (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/PDA/ice/pdaIceHome.xhtml",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/PDA/ice/pdaIceHome.xhtml",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official RRC OIL application supplies the current Inspections and Violations tabs, source-displayed search labels, search and reset controls, result-grid labels, pagination, and Excel control.",
+      "claim_scope": "The article records only exact labels, selected-criteria provenance, navigation, and displayed state without publishing or interpreting a property-specific query result."
+    },
+    {
+      "label": "Railroad Commission of Texas, RRC OIL User Guide (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/PDA/resources/docs/RRC_OIL_User_Guide.pdf",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/PDA/resources/docs/RRC_OIL_User_Guide.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 18-page RRC OIL User Guide supplies bounded descriptions of the application, criteria, result navigation, filtering, Excel export, full-data-set downloads, coverage, and source limitations.",
+      "claim_scope": "The article uses guide mechanics only for reproducible retrieval documentation and does not convert a criterion, empty field, placeholder, row, column, detail, export, or full data set into a substantive finding."
+    },
+    {
+      "label": "Railroad Commission of Texas, Inspections and Violations (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/inspections-and-violations/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/inspections-and-violations/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Inspections and Violations page supplies agency-level context and links for the RRC inspection and violation information ecosystem.",
+      "claim_scope": "The article uses that page only to preserve source context and route identity; it does not infer a particular inspection, violation, compliance, enforcement, condition, or responsibility."
+    },
+    {
+      "label": "Railroad Commission of Texas, Locations (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/about-us/locations/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/locations/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Locations page supplies neutral district-office routing context when a source question requires agency contact.",
+      "claim_scope": "The article records only the contact route selected and does not treat contact, nonresponse, or referral as confirmation of any record or conclusion."
+    }
+  ]
+}

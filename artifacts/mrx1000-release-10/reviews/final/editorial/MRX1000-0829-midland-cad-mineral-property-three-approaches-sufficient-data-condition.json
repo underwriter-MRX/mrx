@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave209_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0829",
+  "slug": "midland-cad-mineral-property-three-approaches-sufficient-data-condition",
+  "title": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+  "source_path": "src/content/posts/midland-cad-mineral-property-three-approaches-sufficient-data-condition.mdx",
+  "input_body_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+  "input_frontmatter_sha256": "8c327e4bb99950b4e754c5afcbbfbc0f305fd7ff74220154b3039014e6fa7e8b",
+  "expected_repo_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+  "two_image_manifest_sha256": "4c92edf78b83e05c61e38a45fb19831a693f863e57081f2ce67406683fdb5afc",
+  "visual_metadata": {
+    "hero_alt": "Three evidence stations meet a translucent data gate beside the exact Midland CAD mineral-property title.",
+    "social_alt": "Three evidence stations meet a translucent data gate beside the exact Midland CAD mineral-property title.",
+    "inline_alt": "Three top-down evidence plates flow through a data sieve above the exact Midland CAD appraisal-approaches keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Appraisal Approaches: Sufficient Data · MRX",
+    "seo_title_character_count": 55,
+    "description_character_count": 149,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T18:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave209",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave209_editorial",
+  "review_run_id": "mrx1000-wave209-editorial-20260915T071317Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485; the answer-first article contains 1801 body tokens and five FAQs.",
+    "The article rejects the generic Midland County valuation and family-decision identity and owns one distinct current-source conditionality job.",
+    "The 2026-08-29 factory directive is applied through a direct answer, stable claim IDs, evidence labels, provenance-versus-validity separation, controlled source hashes, supported FAQs, semantic links, and no ranking or citation promise.",
+    "Exact-title hero/share OCR passed; exact-keyword inline OCR passed; the dark low-oblique three-station gate hero and bright strict top-down three-plate data-sieve image are materially distinct and contain no official record, property data, result, or conclusion."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1801,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 66
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 55,
+        "description_character_count": 149,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T18:45:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave209",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-mineral-property-three-approaches-sufficient-data-condition.mdx",
+    "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp",
+    "/assets/articles/inline/midland-cad-mineral-property-three-approaches-sufficient-data-condition/midland-cad-mineral-property-appraisal-approaches.webp"
+  ]
+}

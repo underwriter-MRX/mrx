@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave132_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T08:27:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0337",
+  "slug": "reeves-county-mineral-records-search-log",
+  "title": "Reeves County Mineral Records: A Source-by-Source Search Log",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-mineral-records-search-log/",
+  "source_path": "src/content/posts/reeves-county-mineral-records-search-log.mdx",
+  "input_body_sha256": "fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714",
+  "input_frontmatter_sha256": "b5b985cc3690ad3f328245c241a9fbb0c7771cdf5b476d901f31ee2b3aba6b11",
+  "expected_repo_sha256": "fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714",
+  "two_image_manifest_sha256": "e6898598161bf5e2bd35e2bb2c7151970045d8de9ba5cab264ac9ddeeef61241",
+  "visual_metadata": {
+    "hero_alt": "Four separated records stations appear beside the exact Reeves County search-log title.",
+    "social_alt": "Four separated records stations appear beside the exact Reeves County search-log title.",
+    "inline_alt": "Four separate overhead source-log zones appear above the exact Reeves County search keyword."
+  },
+  "reviewer_id": "codex_wave132_editorial",
+  "review_run_id": "mrx1000-wave132-editorial-20260826T082723Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714; the answer-first article contains 1392 body tokens and five FAQs.",
+    "The article rejects both the colliding valuation-offer identity and the already-owned page-and-exhibit job, then owns one distinct deliverable: a four-row Reeves County source-separated search log.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The oblique four-station archive scene and strict-overhead four-zone evidence log are materially distinct compositions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "fa7d798db8e290dfd6273e58cab7b69b597a4027cfb209bbf32560daca6e6714"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1392,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-county-mineral-records-search-log.mdx",
+    "/assets/articles/hero/reeves-county-mineral-records-a-source-by-source-search-log.webp",
+    "/assets/articles/inline/reeves-county-mineral-records-search-log/reeves-county-mineral-records-search.webp"
+  ]
+}

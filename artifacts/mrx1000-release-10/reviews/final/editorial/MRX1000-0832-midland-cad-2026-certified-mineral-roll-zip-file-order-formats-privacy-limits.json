@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave212_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0832",
+  "slug": "midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits",
+  "title": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
+  "source_path": "src/content/posts/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits.mdx",
+  "input_body_sha256": "117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907",
+  "input_frontmatter_sha256": "679ffd905d820e3f17b00dadaf1a6dd0ac4c48044ce380bd34ddee91fd4690a1",
+  "expected_repo_sha256": "117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907",
+  "two_image_manifest_sha256": "ccd8b050bd74af9e8f3ace79ff54fda298fdb6b7258f38721cd691a5c8b163ae",
+  "visual_metadata": {
+    "hero_alt": "A sealed archive case, seven blank member objects, and privacy barriers appear beside the exact Article 284 title.",
+    "social_alt": "A sealed archive case, seven blank member objects, and privacy barriers appear beside the exact Article 284 title.",
+    "inline_alt": "A top-down control-file workflow stops before sealed data files above the exact Midland CAD file-layout keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Roll ZIP File Layout & Privacy · MRX",
+    "seo_title_character_count": 56,
+    "description_character_count": 154,
+    "answer_summary_word_count": 43,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave212",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave212_editorial",
+  "review_run_id": "mrx1000-wave212-editorial-20260915T071318Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907; the answer-first article contains 2238 body tokens and five FAQs.",
+    "The original generic Midland County value-risk identity is rejected. The replacement owns one answer-first privacy-safe file-opening sequence inside the exact certified-mineral archive.",
+    "Information gain is concrete: exact response metadata, archive hash, seven-member inventory, uncompressed size, control-file order, field-category boundaries, aggregate recap role, and an explicit stop before record-level inspection.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the low-oblique sealed archive scene and bright strict top-down control-file workflow are materially distinct."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "117377cd40548ea5eae325dacb785a2660a89c9b075a84d5d3fad6101247b907"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2238,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 43
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 56,
+        "description_character_count": 154,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T06:10:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave212",
+        "declared_source_count": 3,
+        "visible_body_citation_count": 3,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits.mdx",
+    "/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp",
+    "/assets/articles/inline/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-privacy-limits/midland-cad-certified-mineral-roll-file-layout.webp"
+  ]
+}

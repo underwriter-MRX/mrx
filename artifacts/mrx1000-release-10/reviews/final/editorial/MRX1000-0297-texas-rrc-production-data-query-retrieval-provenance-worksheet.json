@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave112_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0297",
+  "slug": "texas-rrc-production-data-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production Data Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-data-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b",
+  "input_frontmatter_sha256": "da53b425adec6f32d71114c9c16a1c922c36503895cb3c1c2a2928ab2a231ea3",
+  "expected_repo_sha256": "2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b",
+  "two_image_manifest_sha256": "cb0efe1d4f0fe3ee12a4e1a50423065e4339ae6a58a3c69425d2b94c4b2fcf9a",
+  "visual_metadata": {
+    "hero_alt": "One mineral owner reviews a blank two-path production-query board beside the exact article title.",
+    "social_alt": "One mineral owner reviews a blank two-path production-query board beside the exact article title.",
+    "inline_alt": "A people-free overhead two-path production-query worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Production Data Query Retrieval Worksheet",
+    "seo_title_character_count": 51,
+    "description_character_count": 158,
+    "answer_summary_word_count": 53,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T16:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave112",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/how-to-build-a-texas-mineral-production-record-locator-sheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave112_editorial",
+  "review_run_id": "mrx1000-wave112-editorial-20260915T072834Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b; the answer-first article contains 1795 body tokens and five FAQs.",
+    "The article replaces a colliding evaluation-benefits explainer with one administrative reader job: preserve a reproducible provenance trail for one authorized manual limited-area PDQ attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The low-eye-level person-at-desk route-board hero and people-free strict-overhead two-path worksheet are materially distinct in angle, composition, palette, subject arrangement, and evidence function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1795,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 53
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 51,
+        "description_character_count": 158,
+        "author": "ariana",
+        "reviewed_at": "2026-08-24T16:00:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave112",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/how-to-build-a-texas-mineral-production-record-locator-sheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-production-data-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-production-data-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-production-data-query-retrieval-provenance-worksheet/texas-rrc-production-data-query-retrieval.webp"
+  ]
+}

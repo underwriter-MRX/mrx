@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave177_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0776",
+  "slug": "ector-cad-2026-mineral-appraisal-parameters-source-index",
+  "title": "Ector CAD 2026 Mineral Appraisal Parameters Source Index",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+  "source_path": "src/content/posts/ector-cad-2026-mineral-appraisal-parameters-source-index.mdx",
+  "input_body_sha256": "c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd",
+  "input_frontmatter_sha256": "54cbe80dd336f65b95ccc06a8e1e6e8c0b6fb1cb023e1c8675eba4a0601d7892",
+  "expected_repo_sha256": "c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd",
+  "two_image_manifest_sha256": "03329e5471b3d038d4d58c23e9b78d4b869a66f6a5b00180c1fedad77d089f08",
+  "visual_metadata": {
+    "hero_alt": "A navy source folio and section tabs sit beside the exact Ector CAD mineral-parameters source-index title.",
+    "social_alt": "A navy source folio and section tabs sit beside the exact Ector CAD mineral-parameters source-index title.",
+    "inline_alt": "An overhead route card, report stack, and page grid appear above the exact Ector CAD parameters keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mineral Appraisal Parameters Index",
+    "seo_title_character_count": 49,
+    "description_character_count": 142,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T02:26:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave177",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave177_compliance",
+  "review_run_id": "mrx1000-wave177-compliance-20260915T071302Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "b8d7a75be7be72e5f20a2b404d57adadfbcec19f3954a4c3ba04b5ea077a90f6",
+  "expected_inline_sha256": "d446cdf27a855c969015760c785482c2aaac72aa92597e54905c77c2fb09cec2",
+  "findings": [
+    "Complete current MDX SHA-256 is c82a4bd7a97ce86a312a8a0a3b3fdd04779706725f1beea5e6a3b34964acbcbd; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects private-record access, statutory interpretation, district-compliance judgment, appraisal judgment, tax or protest direction, ownership or title findings, market-offer valuation, investment analysis, sale advice, and promised outcomes.",
+    "Any numeric table is described only by document section and printed page. No displayed amount, rate, factor, formula, schedule, or example is reproduced as a recommendation or applied result.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, property fact, appraisal claim, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "parameters_source_index_no_private_record_numeric_application_legal_interpretation_appraisal_tax_protest_title_ownership_market_offer_investment_sale_or_owner_action_pass",
+    "adjacent_ector_mass_report_annual_report_ratio_study_roll_and_property_sources_not_combined_or_used_as_property_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_property_record_personal_data_official_page_government_mark_seal_signature_logo_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/ector-cad-2026-mineral-appraisal-parameters-source-index.mdx",
+    "/assets/articles/hero/ector-cad-2026-mineral-appraisal-parameters-source-index.webp",
+    "/assets/articles/inline/ector-cad-2026-mineral-appraisal-parameters-source-index/ector-cad-2026-mineral-appraisal-parameters.webp"
+  ]
+}

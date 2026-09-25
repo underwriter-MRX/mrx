@@ -1,0 +1,120 @@
+{
+  "artifact_type": "mrx1000_wave96_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T04:57:28Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0279",
+  "slug": "texas-rrc-oil-proration-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Oil Proration Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-proration-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-oil-proration-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485",
+  "input_frontmatter_sha256": "8e3eba3fa66e3ad3ef660623d956df01ff58efa8e7187d4e96d5d7fdf542ab8f",
+  "expected_repo_sha256": "fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485",
+  "two_image_manifest_sha256": "420e4e403128fda5fa54cb3afb63964f2f681d740e772508f29a96c458cfbb54",
+  "visual_metadata": {
+    "hero_alt": "A Texas oil-proration query research counter appears beside the exact article title.",
+    "social_alt": "A Texas oil-proration query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead oil-proration query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave96_factual",
+  "review_run_id": "mrx1000-wave96-factual-20260824T045728Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed Oil Proration Schedule Query criteria and instructions, separate route identity, query-help context, and published limitations. None of the sources is used to establish property connection, title, ownership, acreage, lease effect, payment responsibility, entitlement, compliance, environmental condition, operating status, production, value, or a transaction result.",
+    "The article publishes no actual query values, owner document, signature, address, legal description, property identifier, result screenshot, operator allegation, production conclusion, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC directory identifies the Oil Proration Query as a named public route and supplies bounded query-system context.",
+      "claim_scope": "The article records the named route, access time, and published context without treating a query result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Data Queries page supplies bounded context for the RRC query environment.",
+      "claim_scope": "The article uses that context only to identify the public query environment and preserves uncertainty about individual results, records, and relationships."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil Proration Schedule Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/oilProQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/oilProQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil Proration Schedule Query entry displays the separately named route and current criteria labels for one query attempt.",
+      "claim_scope": "The article records only criteria actually used, source-displayed instructions, navigation steps that occurred, and bounded retrieval state. It does not submit an actual property query or reproduce an actual result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil Proration Query Help Contents (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/Oil_Proration_TOC.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/Oil_Proration_TOC.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil Proration contents page identifies the query-specific help path and its named sections.",
+      "claim_scope": "The article uses that path only as a retained source reference and does not treat it as evidence of an individual lease, operator, field, or production conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil Proration Search Help (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/Oil_Proration_HowTo.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/Oil_Proration_HowTo.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official help page supplies bounded district, lease, field, operator, county, and navigation instructions.",
+      "claim_scope": "The article preserves the separate retrieval steps and does not interpret a selected district, lease, field, operator, county, or result."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil Proration (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/OilProration_About.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T04:57:28Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/OilProration_About.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official about page supplies bounded Oil Proration query context.",
+      "claim_scope": "The article uses that context only to distinguish source labels and retained references from any conclusion about records, operations, production, value, or transactions."
+    }
+  ]
+}

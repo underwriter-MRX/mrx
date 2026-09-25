@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave245_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0870",
+  "slug": "winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare",
+  "title": "Winkler CAD 2025-2026 Mineral Appraisal: Why Cost Is Not Used and Market Is Rare",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.mdx",
+  "input_body_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+  "input_frontmatter_sha256": "c0fd0ea294dc54a201dc8f2d152f96aafcd2257952bc5e1999da01ec845acf58",
+  "expected_repo_sha256": "e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa",
+  "two_image_manifest_sha256": "0001bf37332954ebd8631ecf09357f40d12b0b230cb814c144eeda40ac4f1dba",
+  "visual_metadata": {
+    "hero_alt": "Three constrained mineral-appraisal pathways appear beside the exact Article 317 title.",
+    "social_alt": "Three constrained mineral-appraisal pathways appear beside the exact Article 317 title.",
+    "inline_alt": "A top-down evidence board appears below the exact Winkler CAD appraisal-method keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Cost and Market Appraisal Limits · MRX",
+    "seo_title_character_count": 50,
+    "description_character_count": 143,
+    "answer_summary_word_count": 73,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:05:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave245",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave245_compliance",
+  "review_run_id": "mrx1000-wave245-compliance-20260915T071332Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f0646b44b84916b9772a1a03961d994cb1cd97b1b0c8f1c8651851bef6f74412",
+  "expected_inline_sha256": "c37ec197bf2f8e6eb0ab861d06a529590a3080a68b9f3aaa877f69f21e310c8a",
+  "findings": [
+    "Complete current MDX SHA-256 is e2397664410c8109add14bb8f70f4a6f77418116de1e8545ac08d3800fa392aa; hero/share and inline image hashes are separately locked.",
+    "The article attributes each method statement to the plan, preserves as a general rule, rarely, rigorous, and predominantly, and does not independently select an account method, create a market or income analysis, perform an appraisal, or reach an account-specific result.",
+    "The factory body is not evidence. No owner, account, address, personal data, parcel, value, tax bill, legal description, production figure, reserve estimate, decimal, title instrument, notice, protest record, comparable-sale record, forecast input, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, formula, value, market conclusion, appraisal result, recommendation, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_county_value_timeline_reuse_pass",
+    "no_owner_account_address_personal_data_parcel_value_tax_bill_legal_description_production_reserve_decimal_title_instrument_notice_protest_comparable_sale_forecast_input_or_transaction_data_pass",
+    "no_owner_method_selection_comparable_analysis_forecast_appraisal_tax_title_private_value_sale_price_offer_or_current_post_plan_claim_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article313_source_chain_article314_report_user_article315_date_and_article316_owner_proration_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_digits_formulas_percentages_currency_values_charts_graphs_logos_seals_signatures_government_emblems_conclusions_approval_marks_oil_derrick_silhouettes_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-and-market-is-rare.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-why-cost-is-not-used-market-is-rare/winkler-cad-mineral-appraisal-cost-and-market-approaches.webp"
+  ]
+}

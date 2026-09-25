@@ -1,0 +1,136 @@
+{
+  "artifact_type": "mrx1000_wave228_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0848",
+  "slug": "texas-rrc-district-code-conversion-file-values-crosswalk",
+  "title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+  "source_path": "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+  "input_body_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "input_frontmatter_sha256": "fed4df55dbfd6b4173003006fc1ad8d549203d85dfd5cf74c56a5731332386d0",
+  "expected_repo_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "two_image_manifest_sha256": "6b466b1885d9fcd6998db2a6b0279b69545dd15195a27fe921bce00a6b95da2d",
+  "visual_metadata": {
+    "hero_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "social_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "inline_alt": "An overhead dual-rail audit board appears above the exact Texas RRC district code conversion keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Code Conversion Crosswalk",
+    "seo_title_character_count": 44,
+    "description_character_count": 146,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T12:17:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave228",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave228_factual",
+  "review_run_id": "mrx1000-wave228-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 1,481,362 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "Two RRC data dictionaries independently supply the 01-through-14 conversion and mark 8B reserved for future use.",
+    "The T-1 guide supplies the limited 6E/06 reporting exception, while the W-10/G-10 specification supports two-character text storage and omits reserved 8B from its accepted list.",
+    "The current RRC county-and-district page confirms current alphanumeric labels without supplying a universal conversion rule."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "field_table_values_01_through_14_to_district_label_mapping_pass",
+    "non_identity_rows_07_through_14_pass",
+    "reserved_8b_future_use_and_not_currently_accepted_pass",
+    "t1_6e_06_exception_confined_to_guide_context_pass",
+    "w10_g10_varchar_two_and_accepted_code_list_pass",
+    "raw_translated_dictionary_version_status_exception_and_text_type_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC Oil and Gas Field Information data dictionary (accessed 2026-08-31)",
+      "url": "https://rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official RRC Oil and Gas Field Information data dictionary supplies a field-table-value to district-value conversion for 01 through 14 and marks 8B reserved for future use.",
+      "claim_scope": "The article treats the mapping as source-specific and does not apply it to another file, screen, form, query, or regulatory workflow without its own dictionary."
+    },
+    {
+      "label": "Texas RRC Tight Sands Gas Leases data dictionary (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/media/503hufzj/gasleaseswithinhighcostgas.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/503hufzj/gasleaseswithinhighcostgas.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official Tight Sands Gas Leases data dictionary independently supplies the same district-column conversion and reserved 8B status.",
+      "claim_scope": "The article uses this source as corroboration for that dataset context, not as a universal district-code replacement rule."
+    },
+    {
+      "label": "Texas RRC T-1 EDI User Guide (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/media/tnrfu143/t-1_edi_user_guide.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/tnrfu143/t-1_edi_user_guide.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official T-1 EDI User Guide distinguishes normal alphanumeric district designations from a special numeric district field.",
+      "claim_scope": "The article confines the guide statement that East Texas oil field production in district 06 may use 06 or 6E to the T-1 reporting context."
+    },
+    {
+      "label": "Texas RRC W-10/G-10 EDI specifications (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/media/iupjnrjn/w10_g10-edi-specifications.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/iupjnrjn/w10_g10-edi-specifications.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official W-10/G-10 EDI specification defines District Code as Varchar (2) and lists accepted alphanumeric values.",
+      "claim_scope": "The accepted list omits reserved 8B, so the article does not describe 8B as a currently accepted filing value."
+    },
+    {
+      "label": "Texas RRC Oil and Gas Counties and Districts (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/about-us/locations/oil-gas-counties-districts/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/locations/oil-gas-counties-districts/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official RRC page visibly uses alphanumeric public district labels including 7B, 7C, and 8A.",
+      "claim_scope": "The article uses the page only to confirm current label form and does not infer county, field, asset, ownership, production, or value relationships."
+    }
+  ]
+}

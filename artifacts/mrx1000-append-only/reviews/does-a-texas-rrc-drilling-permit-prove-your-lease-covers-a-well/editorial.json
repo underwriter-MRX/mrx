@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1122",
+  "slug": "does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well",
+  "source_path": "src/content/posts/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well.mdx",
+  "input_body_sha256": "a602a2ccd5fb4ffd47eace74cb65fda23b5299c11072e7ea3f63622626e573bb",
+  "two_image_manifest_sha256": "5c2170fe28296b7973e12b11541c0f9846ac357de4170ad5fb4daf6b63ceb050",
+  "private_full_source_sha256": "194acf3ab718ff6eda24c1fb89f9baa196f9f9988bb9ea0cad993e1361e0e458",
+  "review_method": "codex_current_public_source_and_private_pass_extends_comparison",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial review",
+  "advisory_review": "Read-only Chesty job 66455 returned PASS-EXTENDS on the corrected private manuscript; it did not review these later public MDX bytes.",
+  "findings": [
+    "The answer starts with the bounded no answer, identifies the primary title-and-ownership pillar, and separates this job from the earlier RRC query-provenance worksheet and general private-lease primer.",
+    "Five questions_answered align with five frontmatter FAQ pairs; the body has no duplicate FAQ section and the article template is responsible for FAQ rendering.",
+    "A permit-to-private-record exception list supplies a concrete next step without asserting title, well coverage, royalty entitlement, value, or a ChatGPT citation."
+  ]
+}

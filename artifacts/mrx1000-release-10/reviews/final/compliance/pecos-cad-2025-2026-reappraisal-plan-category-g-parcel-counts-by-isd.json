@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave215_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0835",
+  "slug": "pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd",
+  "title": "Pecos CAD 2025-2026 Reappraisal Plan: Category G Parcel Counts by ISD",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+  "source_path": "src/content/posts/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.mdx",
+  "input_body_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+  "input_frontmatter_sha256": "c02cfdd43ea3fa3e8d171085853e4c1f143e0059c9e405f365f4ce5ca2d85cbe",
+  "expected_repo_sha256": "53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca",
+  "two_image_manifest_sha256": "c69c7595f28716b54ff849235973a04bcd74bc404e28e7c0f6ac5a156ef2f332",
+  "visual_metadata": {
+    "hero_alt": "A dark Pecos survey diorama appears beside the exact Article 287 title.",
+    "social_alt": "A dark Pecos survey diorama appears beside the exact Article 287 title.",
+    "inline_alt": "Two bright overhead evidence trays appear above the exact Pecos CAD Category G parcel counts keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Category G Parcel Counts by ISD · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 138,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T07:22:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave215",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave215_compliance",
+  "review_run_id": "mrx1000-wave215-compliance-20260915T071320Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "102f615a8fcd5ab3a60f07c3a093bb9b0a6a1bd19a46c82a91d3a0458c17a6b4",
+  "expected_inline_sha256": "9d3ca0c8991be4590c789b34b617e9042baaba8bbf87610f6a8a191f4802309c",
+  "findings": [
+    "Complete current MDX SHA-256 is 53a0c26e96953e994d9e5dd25db4c817177585a6751d8739bcdea4548d1fa2ca; hero/share and inline image hashes are separately locked.",
+    "Every number remains attached to its plan label, estimate status, year, ISD, category, table, and physical-page locator.",
+    "The article does not sum the Category G estimates, explain their difference, or convert them into owners, wells, leases, tracts, mineral interests, notices, certified-roll entries, tax bills, values, offers, transactions, completed work, or current results.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, numerical estimate, ranking, owner, account, property, appraisal, certification, value, or result claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "estimated_parcel_count_table_not_converted_to_owner_well_lease_tract_interest_notice_certified_roll_tax_bill_value_offer_transaction_completed_work_or_current_result_pass",
+    "year_isd_category_table_and_physical_page_qualifiers_preserved_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_account_records_owner_data_property_records_money_charts_values_results_government_symbols_completion_claims_conclusions_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.mdx",
+    "/assets/articles/hero/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.webp",
+    "/assets/articles/inline/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/pecos-cad-category-g-parcel-counts.webp"
+  ]
+}

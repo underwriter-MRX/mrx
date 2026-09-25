@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave205_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0820",
+  "slug": "martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary",
+  "title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+  "source_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+  "input_body_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "input_frontmatter_sha256": "01e22748942d7281dbe923870e34c72df09f92f29a91c28c936f9b4a7872afc5",
+  "expected_repo_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "two_image_manifest_sha256": "a19e3bd7ea6e5a7c5f4a5add60bd8c32c338c9c317f5a2895d15a566e1b011b1",
+  "visual_metadata": {
+    "hero_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "social_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "inline_alt": "A top-down evidence worksheet sits above the exact Martin CAD 2025 Category G parcel count phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD 2025 Category G Parcel Count · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 134,
+    "answer_summary_word_count": 76,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T13:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave205",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave205_compliance",
+  "review_run_id": "mrx1000-wave205-compliance-20260915T071316Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "d4def416c580a429e282f5d0cc801fc6197e7bb9ed019b9c04499d5ba2432f4b",
+  "expected_inline_sha256": "5ff3e49d701dd0550c6c74f11d45120baa851a9cc26a4f24a22c2be4a73aadd4",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f; hero/share and inline image hashes are separately locked.",
+    "The article keeps official report-level monetary and parcel figures adjacent to the exact source and repeatedly distinguishes appraisal-report aggregates from property-specific, transactional, tax, and legal outcomes.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, property identity, record data, monetary figure, appraisal, tax, offer, outcome, or ranking or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "official_aggregate_money_figure_source_adjacent_and_non_transactional_boundary_pass",
+    "no_reader_name_address_identifier_account_property_ownership_appraisal_tax_bill_sale_value_offer_title_production_royalty_or_legal_tax_result_claim_pass",
+    "scanned_pdf_text_extraction_and_ocr_explicitly_non_validating_with_manual_page_1_and_page_2_render_review_pass",
+    "pages_3_through_6_excluded_from_public_claims_and_images_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_names_identifiers_labels_stamps_official_forms_seals_logos_owner_or_property_data_people_hands_money_maps_rigs_courthouses_legal_symbols_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+    "/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp",
+    "/assets/articles/inline/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/martin-cad-2025-category-g-parcel-count.webp"
+  ]
+}

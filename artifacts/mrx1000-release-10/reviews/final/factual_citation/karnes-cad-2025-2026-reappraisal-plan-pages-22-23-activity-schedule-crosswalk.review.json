@@ -1,0 +1,134 @@
+{
+  "artifact_type": "mrx1000_wave195_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:12Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0798",
+  "slug": "karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk",
+  "title": "Karnes CAD 2025-2026 Reappraisal Plan: Pages 22-23 Activity Schedule Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk/",
+  "source_path": "src/content/posts/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk.mdx",
+  "input_body_sha256": "72782fd237ac0f063fcfcf7b3fb7d52b692ce54cd6fa46cbab94765589097509",
+  "input_frontmatter_sha256": "e894bbce72d56ec5fe48bc586deeb24da4f3247d01dd3d26473d13c598cac667",
+  "expected_repo_sha256": "72782fd237ac0f063fcfcf7b3fb7d52b692ce54cd6fa46cbab94765589097509",
+  "two_image_manifest_sha256": "5be96e03220fbee10e8182af437ec389553b62011ee310c7f275eeb227340521",
+  "visual_metadata": {
+    "hero_alt": "An upright blank reappraisal-plan folio appears beside the exact Karnes CAD activity-schedule crosswalk title.",
+    "social_alt": "An upright blank reappraisal-plan folio appears beside the exact Karnes CAD activity-schedule crosswalk title.",
+    "inline_alt": "Six overhead blank schedule cards appear above the Karnes CAD 2025-2026 reappraisal schedule phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD 2025-2026 Reappraisal Schedule · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 137,
+    "answer_summary_word_count": 50,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T09:26:18Z",
+    "reviewed_by": "mrx_compliance-continuous-wave195",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-2026-reappraisal-plan-pages-22-23-activity-schedule-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave195_factual",
+  "review_run_id": "mrx1000-wave195-factual-20260915T071312Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 72782fd237ac0f063fcfcf7b3fb7d52b692ce54cd6fa46cbab94765589097509; all 5 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the current Data and Records page, exact 24-page 2025-2026 Reappraisal Plan PDF, Karnes CAD homepage, Texas Comptroller reappraisal-plan one-pager, and Texas Tax Code Section 25.18.",
+    "The exact Karnes PDF controls are HTTP 200, application/pdf, 1,850,946 bytes, 24 pages, and SHA-256 ee36224b930395b38514873b6dd4363d1d84e081ad2fec6a495ed3eda4781e2f.",
+    "Physical page 22 visibly labels six 2025 activity bands; physical page 23 adds the year-round protest note and says the same timetable and duties apply in 2026, with an Area Three physical-inspection statement."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_complete_file_sha256_size_and_page_count_pass",
+    "rendered_physical_pages_22_23_visual_review_pass",
+    "schedule_time_band_and_activity_transcription_pass",
+    "year_round_and_2026_same_timetable_statement_pass",
+    "area_three_non_identification_boundary_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Karnes CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://karnescad.org/home/DataRecords",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page supplies the Karnes CAD publisher route, Reappraisal Plans section, and visible 2025 - 2026 Reappraisal Plan link.",
+      "claim_scope": "It does not supply the exact PDF hash, prove a pages-22-23 statement, identify an Area Three property, or establish a personal deadline, appraisal, tax, title, value, offer, or legal effect."
+    },
+    {
+      "label": "Karnes CAD 2025-2026 Reappraisal Plan PDF (accessed 2026-08-29)",
+      "url": "https://karnescad.org/Forms/GetDocument?fileName=1715867857_2025-2026+Reappraisal+Plan+with+Resolution.pdf&subPath=Data+Records",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/Forms/GetDocument?fileName=1715867857_2025-2026+Reappraisal+Plan+with+Resolution.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact 24-page PDF supplies physical pages 22-23, the visible time-band labels, scheduled activity descriptions, year-round protest note, 2026 same-timetable statement, and Area Three wording.",
+      "claim_scope": "The district plan does not establish an individual notice, protest, hearing, certification, inspection, payment, or legal deadline; identify a property in Area Three; or prove appraisal change, tax amount, ownership, acreage, title, production, royalty, offer, sale value, or outcome."
+    },
+    {
+      "label": "Karnes County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://karnescad.org/",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies Karnes CAD public-site identity and its statement about appraisal responsibility for Mineral, Utility, and Industrial accounts.",
+      "claim_scope": "It does not prove the exact reappraisal-plan bytes, pages 22-23, an individual schedule, property status, tax result, sale value, offer, or legal conclusion."
+    },
+    {
+      "label": "Texas Comptroller Appraisal District Reappraisal Plan (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1202.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1202.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller one-pager supplies statewide context for appraisal-district reappraisal plans and the statutory three-year and biennial-plan framework.",
+      "claim_scope": "It does not replace the Karnes plan, set the local pages-22-23 activity bands, identify a property, or establish an individual deadline, appraisal result, tax result, title, sale value, or legal conclusion."
+    },
+    {
+      "label": "Texas Tax Code Section 25.18 (accessed 2026-08-29)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm#25.18",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official Texas statute supplies the current Section 25.18 periodic-reappraisal framework.",
+      "claim_scope": "It does not transcribe the Karnes schedule, identify Area Three property, establish a personal calendar, or determine a property, appraisal, tax, title, offer, transaction, or legal result."
+    }
+  ]
+}

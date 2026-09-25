@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave192_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0795",
+  "slug": "howard-cad-open-records-request-form-mineral-record-field-inventory",
+  "title": "Howard CAD Open Records Request Form: Mineral-Record Field Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+  "source_path": "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+  "input_body_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "input_frontmatter_sha256": "ae6ecffeea70cba5175cad5fba6dcd50c3cc46040123eb906b0b0a5a719aff85",
+  "expected_repo_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "two_image_manifest_sha256": "86688e6a3a9f269eb6d9b4912b2749c1c5e95b6d63b5cf1576a218cbeae54579",
+  "visual_metadata": {
+    "hero_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "social_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "inline_alt": "An overhead blank field-classification board appears above the Howard CAD mineral records request form phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD Open Records Form Field Inventory",
+    "seo_title_character_count": 44,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave192",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave192_compliance",
+  "review_run_id": "mrx1000-wave192-compliance-20260915T071309Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "ffe5c78a22d963698259d5fced16c836fa351b33bfb9af6e14360fe29a8395a7",
+  "expected_inline_sha256": "405ecf9858428bb663d96548543721b56b06eea48e4d2e246714b0f423bd2220",
+  "findings": [
+    "Complete current MDX SHA-256 is b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects request submission, district contact, real personal or property identifiers, record-existence or public-status determinations, responsiveness, completeness, confidentiality, exemptions, cost, timing, agency-duty, appraisal, tax, title, offer, sale-value, transaction, legal, or outcome conclusions.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, government identity, form content, personal data, property identifier, delivery promise, fee, deadline, result, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "request_form_inventory_no_submit_contact_personal_data_record_existence_public_status_responsiveness_completeness_confidentiality_exemption_cost_deadline_agency_duty_property_appraisal_tax_title_offer_sale_or_legal_claim_pass",
+    "visible_page_rest_contact_and_oag_source_role_separation_pass",
+    "rest_modified_timestamp_not_presented_as_visible_publication_date_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_personal_data_name_phone_address_email_signature_property_id_account_logo_seal_government_mark_official_form_screenshot_person_hand_map_money_value_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+    "/assets/articles/hero/howard-cad-open-records-request-form-mineral-record-field-inventory.webp",
+    "/assets/articles/inline/howard-cad-open-records-request-form-mineral-record-field-inventory/howard-cad-mineral-records-request-form.webp"
+  ]
+}

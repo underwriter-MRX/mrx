@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave159_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0758",
+  "slug": "form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests",
+  "title": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+  "source_path": "src/content/posts/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.mdx",
+  "input_body_sha256": "eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7",
+  "input_frontmatter_sha256": "0cfa5289a1ef1c1fede2e0e97fc294f32d05ea12cc01f466583832733f637016",
+  "expected_repo_sha256": "eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7",
+  "two_image_manifest_sha256": "016a8f59ea26220115a354ca2a4159e02cde26f55c9df594a053be8afe3359fc",
+  "visual_metadata": {
+    "hero_alt": "A five-divider archival source station appears beside the exact Form 50-171 field-inventory title.",
+    "social_alt": "A five-divider archival source station appears beside the exact Form 50-171 field-inventory title.",
+    "inline_alt": "An overhead five-part blank field inventory appears above the exact Form 50-171 Crane mineral interest keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-171 Field Inventory",
+    "seo_title_character_count": 33,
+    "description_character_count": 154,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T07:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave159",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/form-50-172-joint-taxation-instruction-source-map-crane-mineral-interests/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave159_compliance",
+  "review_run_id": "mrx1000-wave159-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "25418c33c39b4c4c6cccdc2a23ef1bc674d74d0062a375f4d3723e7bca456959",
+  "expected_inline_sha256": "92cab31eade55f9b5dce2df18a794a26f7ac7bd2e28dd147a6ea5458f049259d",
+  "findings": [
+    "Complete current MDX SHA-256 is eeaaa46f4b7cc6dfc4ce01be7beb2bbd5ae98d30b3a2821c82ea90cbc61010c7; hero/share and inline image hashes are separately locked.",
+    "The reusable public inventory contains only blank field-category and source-provenance records, keeps any owner-specific working record in an authorized controlled system, and stops before private-data entry, proof or instrument review, applicability or qualification decisions, form choice, completion, signature, contact, upload, submission, timing calculation, legal interpretation, tax guidance, appraisal judgment, valuation, representation, or strategy.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real form, owner data, filing claim, professional endorsement, legal position, tax conclusion, deadline, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "field_inventory_only_no_private_data_proof_review_applicability_form_choice_destination_deadline_completion_signature_contact_submission_legal_tax_valuation_advice_qualification_acceptance_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_form_owner_data_property_fact_government_mark_recommendation_legal_tax_filing_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests.mdx",
+    "/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp",
+    "/assets/articles/inline/form-50-171-separate-taxation-request-field-inventory-crane-mineral-interests/form-50-171-crane-mineral-interest.webp"
+  ]
+}

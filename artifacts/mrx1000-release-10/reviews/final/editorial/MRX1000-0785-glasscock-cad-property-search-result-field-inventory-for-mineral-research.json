@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave186_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0785",
+  "slug": "glasscock-cad-property-search-result-field-inventory-for-mineral-research",
+  "title": "Glasscock CAD Property Search Result Field Inventory for Mineral Research",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+  "source_path": "src/content/posts/glasscock-cad-property-search-result-field-inventory-for-mineral-research.mdx",
+  "input_body_sha256": "12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0",
+  "input_frontmatter_sha256": "b129e1f83a4f324c1ba1fc3492952d098674e6409fe97de78bf870a60ffbe3e0",
+  "expected_repo_sha256": "12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0",
+  "two_image_manifest_sha256": "de695ab94ca842faa0b4e83799fa6c26d06da2eb4416bf96e0d041e38cd605ff",
+  "visual_metadata": {
+    "hero_alt": "A navy card-catalog tray with blank dividers appears beside the exact Glasscock CAD field-inventory title.",
+    "social_alt": "A navy card-catalog tray with blank dividers appears beside the exact Glasscock CAD field-inventory title.",
+    "inline_alt": "An overhead eighteen-tile inventory board appears above the exact Glasscock CAD property search result fields phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Property Search Result Field Inventory",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave186",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave186_editorial",
+  "review_run_id": "mrx1000-wave186-editorial-20260915T071305Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0; the answer-first article contains 1571 body tokens and five FAQs.",
+    "The article rejects the colliding Glasscock County mineral-rights value timeline seed and owns one distinct deliverable: a dated inventory of eighteen labels displayed by the empty official Glasscock CAD Search Results grid before any query.",
+    "The current information-gain and answer-citation contract is applied through a concise direct answer, one canonical no-query job, four visible official sources with separate roles, exact entity/route/date provenance, claim-adjacent citations, five useful FAQs, semantic hub/support/sibling/next-step links, native nonduplicative schema, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The three-quarter card-catalog scene and strict-overhead eighteen-tile inventory board are materially distinct and make no government-affiliation, person, property, appraisal, tax, value, offer, legal, or outcome claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "12ac5450dffb095d6c2f6aa4583f9ceb1da73f6f1b61b2015b44f6f2fda42aa0"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1571,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 58
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 52,
+        "description_character_count": 141,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T06:10:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave186",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/glasscock-cad-property-search-result-field-inventory-for-mineral-research.mdx",
+    "/assets/articles/hero/glasscock-cad-property-search-result-field-inventory-for-mineral-research.webp",
+    "/assets/articles/inline/glasscock-cad-property-search-result-field-inventory-for-mineral-research/glasscock-cad-property-search-result-fields.webp"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "artifact_type": "mrx1000_wave170_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0769",
+  "slug": "dewitt-cad-resolution-2024-01-reappraisal-plan-source-record",
+  "title": "DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+  "input_body_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "input_frontmatter_sha256": "631470b29bb7bcf6486b5fee0acbc55bace1ec9790daffbb8e12737d07371273",
+  "expected_repo_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "two_image_manifest_sha256": "c9d404b6bd5b773df34042e2de56caff9b26f6cd0850817477e02f3f14ffa55a",
+  "visual_metadata": {
+    "hero_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "social_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "inline_alt": "Four overhead blank source tiles appear above the exact DeWitt CAD Resolution 2024-01 keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD Resolution 2024-01 Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave170",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave170_factual",
+  "review_run_id": "mrx1000-wave170-factual-20260915T071256Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official publisher-page link, exact plan-file identity, visually confirmed cover and page-2 resolution locators, separate notice identity, displayed scheduled date/time/place, complete-file hashes, limited official context, retrieval provenance, and document-control state.",
+    "The article does not invent a meeting, notice delivery, quorum, authority, authenticity, compliance result, legal effect, plan-body interpretation, property, owner, account, appraisal method, tax result, protest result, mineral value, offer, sale, or transaction conclusion."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "complete_plan_and_notice_file_sha256_match",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "canonical_entity_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_official_source_priority_pass",
+    "visual_page_1_page_2_and_notice_review_pass",
+    "notice_not_converted_to_hearing_occurrence_delivery_quorum_timeliness_compliance_or_legal_effect_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "DeWitt CAD, Data and Records (accessed 2026-08-28)",
+      "url": "https://www.dewittcad.org/home/DataRecords",
+      "publisher": "www.dewittcad.org",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.dewittcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the current Reappraisal Plans section and displayed 2025-2026 Reappraisal Plan link.",
+      "claim_scope": "It supports publisher-link provenance only. It does not supply resolution content, authenticate a file, establish legal effect, identify a property, or direct an owner action."
+    },
+    {
+      "label": "DeWitt CAD, 2025-2026 Reappraisal Plan (accessed 2026-08-28)",
+      "url": "https://www.dewittcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1724879248_25-26%20Reappraisal%20Plan.pdf",
+      "publisher": "www.dewittcad.org",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.dewittcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1724879248_25-26%20Reappraisal%20Plan.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact plan file supplies the 57-page container identity, cover labels, page-2 Resolution 2024-01 heading, adoption heading, displayed adopted date, byte count, complete-file hash, and page locators.",
+      "claim_scope": "It supports bounded source transcription only. The article does not reproduce names or signatures, authenticate a document or signer, interpret the plan body, or infer authority, compliance, legal effect, property treatment, appraisal, tax, protest, value, offer, sale, or outcome."
+    },
+    {
+      "label": "DeWitt CAD, Notice of Public Hearing on Reappraisal Plan (accessed 2026-08-28)",
+      "url": "https://www.dewittcad.org/Forms/GetDocument?fileName=1722268435_Public%20Hearing%20Notice%20on%20Reappraisal%20Plan.pdf&subPath=Latest%20News",
+      "publisher": "www.dewittcad.org",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.dewittcad.org/Forms/GetDocument?fileName=1722268435_Public%20Hearing%20Notice%20on%20Reappraisal%20Plan.pdf&subPath=Latest%20News",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The separate official one-page notice supplies its identity, displayed scheduled hearing date, time, place, distribution statement, byte count, and complete-file hash.",
+      "claim_scope": "It supports notice-source provenance only. The article does not state that the hearing occurred, notice was delivered, a quorum existed, a deadline was met, or a legal requirement was satisfied."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 6 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official Texas Legislature page supplies current Chapter 6 and Section 6.05(i) provenance.",
+      "claim_scope": "The article does not interpret law, compare a local record to a legal requirement, calculate a deadline, or decide compliance, timeliness, authority, validity, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Appraisal District Reappraisal Plan (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1202.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1202.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller publication supplies limited statewide reappraisal-plan context.",
+      "claim_scope": "It does not validate the DeWitt plan, resolution, notice, meeting, delivery, adoption process, property treatment, appraisal, tax, protest, mineral value, offer, sale, or transaction conclusion."
+    }
+  ]
+}

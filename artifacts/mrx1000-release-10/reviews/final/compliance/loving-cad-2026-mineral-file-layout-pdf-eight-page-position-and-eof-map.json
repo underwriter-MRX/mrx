@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave202_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:14Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0817",
+  "slug": "loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map",
+  "title": "Loving CAD 2026 Mineral File Layout PDF: Eight-Page Position and EOF Map",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/",
+  "source_path": "src/content/posts/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.mdx",
+  "input_body_sha256": "78b2e29642c1e08175452287544d031b8664f7d071f0350153ebe01d3509b75c",
+  "input_frontmatter_sha256": "4eec047944892b119f434cfd32bea8a6ce71096bfc8a0a1f5a123fb10234b1bc",
+  "expected_repo_sha256": "78b2e29642c1e08175452287544d031b8664f7d071f0350153ebe01d3509b75c",
+  "two_image_manifest_sha256": "a416304eacc4a2b4da2c0776093f1327bec634a39cc1ee378b38f2b1ad966780",
+  "visual_metadata": {
+    "hero_alt": "A navy archive binder and staggered blank sheets appear beside the exact Loving CAD 2026 mineral file-layout PDF title.",
+    "social_alt": "A navy archive binder and staggered blank sheets appear beside the exact Loving CAD 2026 mineral file-layout PDF title.",
+    "inline_alt": "Blank horizontal page bands and offset endpoint markers sit above the exact Loving CAD 2026 mineral file layout PDF phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Mineral File Layout PDF Map · MRX",
+    "seo_title_character_count": 49,
+    "description_character_count": 148,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T12:18:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave202",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave202_compliance",
+  "review_run_id": "mrx1000-wave202-compliance-20260915T071314Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "173df06d745b82e70ad7804e1473610f2ca99f0a68d5109e9710f42c5fd62abc",
+  "expected_inline_sha256": "8474c22a67dcca2afa026012720a5bf736554570ae9bfa5ebe9e0d95e1f4dfc3",
+  "findings": [
+    "Complete current MDX SHA-256 is 78b2e29642c1e08175452287544d031b8664f7d071f0350153ebe01d3509b75c; hero/share and inline image hashes are separately locked.",
+    "The article prohibits treating a displayed label, position range, source note, extraction result, or file hash as validation of field meaning, data-export conformance, record completeness, appraisal, tax, value, or owner-specific conclusions.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, property identity, appraisal, tax, monetary, offer, outcome, or ranking/citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_monetary_threshold_record_level_personal_owner_property_appraisal_code_statutory_tax_value_offer_transaction_or_legal_claim_pass",
+    "pdf_text_extraction_and_ocr_explicitly_non_validating_with_manual_render_review_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_names_identifiers_labels_official_forms_seals_logos_owner_or_property_data_people_hands_money_maps_rigs_courthouses_legal_symbols_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.mdx",
+    "/assets/articles/hero/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.webp",
+    "/assets/articles/inline/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/loving-cad-2026-mineral-file-layout-pdf.webp"
+  ]
+}

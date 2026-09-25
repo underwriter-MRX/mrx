@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave166_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0765",
+  "slug": "culberson-cad-2025-oil-gas-minerals-ratio-study-source-record",
+  "title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+  "source_path": "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+  "input_body_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "input_frontmatter_sha256": "6bae5d5796606afba347eea3944c83edd2784f5b49b0dcfdfffde8ba2926a386",
+  "expected_repo_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "two_image_manifest_sha256": "ae2e6e2c21b5e2ff1f74218458fdbaf55bf9f591f0563e5548738a9eb1fff183",
+  "visual_metadata": {
+    "hero_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "social_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "inline_alt": "Seven blank measurement cells and a caution marker appear above the exact Culberson CAD 2025 mineral ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD 2025 Mineral Ratio Study Record",
+    "seo_title_character_count": 45,
+    "description_character_count": 152,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T18:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave166",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave166_compliance",
+  "review_run_id": "mrx1000-wave166-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "39b6fdd80eb5024ced5c477d6cee113e392f9d830a5808ed33590bc7c4ed391b",
+  "expected_inline_sha256": "a34d871aa12326723f5faf413b60d49ad261d0cf4110d9c67641ee873a95f019",
+  "findings": [
+    "Complete current MDX SHA-256 is f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef; hero/share and inline image hashes are separately locked.",
+    "The public article keeps the source-stated small-sample warning immediately adjacent to the literal row and does not convert any displayed field into a property, account, appraisal, tax, protest, valuation, offer, sale, fairness, compliance, ranking, or owner-action conclusion.",
+    "The article opens no local certified-roll, annual-report, mass-report, reappraisal-plan, PDF, spreadsheet, ZIP, property-search, account, notice, tax-bill, or private-data body and stops before any individualized or professional service.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, data value, statistical conclusion, property fact, district grade, appraisal claim, tax or protest direction, legal position, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "ratio_study_no_recalculation_normalization_benchmark_ranking_grading_trend_comparison_property_inference_or_district_judgment_pass",
+    "no_local_roll_report_plan_pdf_spreadsheet_zip_property_account_notice_tax_bill_private_data_or_personal_data_access_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_logo_seal_government_mark_real_table_readable_source_text_number_property_record_value_grade_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+    "/assets/articles/hero/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.webp",
+    "/assets/articles/inline/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/culberson-cad-2025-mineral-ratio-study.webp"
+  ]
+}

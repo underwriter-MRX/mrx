@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave175_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0774",
+  "slug": "dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory",
+  "title": "Dimmit CAD 2026 Certified Mineral Roll ZIP Archive Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/",
+  "source_path": "src/content/posts/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.mdx",
+  "input_body_sha256": "a863e5829d07de572705a9557553f549f4510e557c0c4839a5d59e3e375ed73b",
+  "input_frontmatter_sha256": "7eeeb82b5cc83de65ab73fce8e4a143cee5585f3b8c4598774e5056cf11275fd",
+  "expected_repo_sha256": "a863e5829d07de572705a9557553f549f4510e557c0c4839a5d59e3e375ed73b",
+  "two_image_manifest_sha256": "7dcd670f44f41ce790fc960ac1a7435ec80f56099b55fe971556a4120a2fb32e",
+  "visual_metadata": {
+    "hero_alt": "A sealed navy archive case and blank file tabs appear beside the exact Dimmit CAD 2026 mineral-roll archive title.",
+    "social_alt": "A sealed navy archive case and blank file tabs appear beside the exact Dimmit CAD 2026 mineral-roll archive title.",
+    "inline_alt": "Blank archive tiles and three empty outlines sit above the exact Dimmit CAD 2026 certified mineral roll keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2026 Certified Mineral Roll ZIP Archive Inventory",
+    "seo_title_character_count": 60,
+    "description_character_count": 143,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T01:37:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave175",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave175_compliance",
+  "review_run_id": "mrx1000-wave175-compliance-20260915T071302Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "feb5a364c4071e0947772d19075281b3e2b537f670c6357ff13578f797420301",
+  "expected_inline_sha256": "96073fc63fa57dad767f121b20a5709df834e357f0f8318d350508ac421ca504",
+  "findings": [
+    "Complete current MDX SHA-256 is a863e5829d07de572705a9557553f549f4510e557c0c4839a5d59e3e375ed73b; hero/share and inline image hashes are separately locked.",
+    "The public article uses archive-level metadata only and expressly rejects member-content extraction, record-level search or exposure, EARS equivalence, statutory interpretation, district certification, appraisal judgment, tax or protest direction, ownership or title findings, valuation, offer analysis, sale advice, and promised outcomes.",
+    "The preliminary mineral, BPP, real/MH, Dimmit plan, MAP review, ratio study, Culberson ZIP, and DeWitt locator sources retain separate canonical evidence ownership and are not combined, compared, or used to validate one another.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, archive certification, record fact, appraisal claim, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "archive_inventory_no_record_exposure_ears_equivalence_authenticity_legal_interpretation_appraisal_tax_protest_title_ownership_valuation_offer_sale_or_owner_action_pass",
+    "adjacent_rolls_archives_and_source_records_not_combined_compared_or_used_as_property_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_filename_record_row_personal_data_official_page_government_mark_seal_signature_logo_map_chart_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.mdx",
+    "/assets/articles/hero/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory.webp",
+    "/assets/articles/inline/dimmit-cad-2026-certified-mineral-roll-zip-archive-inventory/dimmit-cad-2026-certified-mineral-roll.webp"
+  ]
+}

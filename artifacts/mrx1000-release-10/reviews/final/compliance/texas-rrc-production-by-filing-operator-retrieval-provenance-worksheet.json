@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave116_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0300",
+  "slug": "texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production by Filing Operator Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "e0566552c7d74e1f949917bbc04caad263ba7498817c9a5bb9a02aa395b2769c",
+  "input_frontmatter_sha256": "5fc165ccc52e988c160fa33d5ce9d02bd20650a612d5a54b9c4b1fe50c3abd07",
+  "expected_repo_sha256": "e0566552c7d74e1f949917bbc04caad263ba7498817c9a5bb9a02aa395b2769c",
+  "two_image_manifest_sha256": "3a68cfe70ade071ed5084592e184f57b4a0fe72c25e7016a3c31142bbc94bbe5",
+  "visual_metadata": {
+    "hero_alt": "An archival retrieval desk with one hand appears beside the exact article title.",
+    "social_alt": "An archival retrieval desk with one hand appears beside the exact article title.",
+    "inline_alt": "A people-free overhead evidence chain appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Filing Operator Retrieval Worksheet",
+    "seo_title_character_count": 45,
+    "description_character_count": 159,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T07:58:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave116",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave116_compliance",
+  "review_run_id": "mrx1000-wave116-compliance-20260915T072835Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a6924493c066f1ba3f6152db3e0f6274e2c7a04a753b23d90e22451f4936e089",
+  "expected_inline_sha256": "447be20d9f865bb22d6772299b78b6e17ac148b918024dc6bd6fc5ae70e0da34",
+  "findings": [
+    "Complete current MDX SHA-256 is e0566552c7d74e1f949917bbc04caad263ba7498817c9a5bb9a02aa395b2769c; hero/share and inline image hashes are separately locked.",
+    "The article keeps Production by Filing Operator separate from Production by Lease, Operator of Record, Production Data Query, New Lease IDs, proration, Wellbore, broad production-record locator, automation, bulk retrieval, and every interpretation or decision task.",
+    "Image text is limited to the exact title and keyword and adds no identifier, production figure, status, result, seal, logo, property, ownership, payment, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_production_by_filing_operator_one_manual_attempt_no_adjacent_route_automation_bulk_interpretation_property_title_current_operator_ownership_payment_acreage_tax_reserve_forecast_value_legal_compliance_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet/texas-rrc-production-by-filing-operator-retrieval.webp"
+  ]
+}

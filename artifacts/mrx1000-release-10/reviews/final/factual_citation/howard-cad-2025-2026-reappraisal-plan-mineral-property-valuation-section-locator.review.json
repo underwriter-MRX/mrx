@@ -1,0 +1,124 @@
+{
+  "artifact_type": "mrx1000_wave191_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0794",
+  "slug": "howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator",
+  "title": "Howard CAD 2025-2026 Reappraisal Plan: Mineral Property Valuation Section Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+  "source_path": "src/content/posts/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.mdx",
+  "input_body_sha256": "f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637",
+  "input_frontmatter_sha256": "7141841e0a617c1c44f8d60eee6dc19a8b743f29f6a2ae82bdeea026ba7de45c",
+  "expected_repo_sha256": "f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637",
+  "two_image_manifest_sha256": "3eec4a7296510c85aa0371145e0fb40c53da0778c7aacbee1b8554352650bbab",
+  "visual_metadata": {
+    "hero_alt": "A navy archive drawer and blank reflowing sheets appear beside the exact Howard CAD mineral-section locator title.",
+    "social_alt": "A navy archive drawer and blank reflowing sheets appear beside the exact Howard CAD mineral-section locator title.",
+    "inline_alt": "An overhead source-versus-render document board appears above the Howard CAD 2025-2026 mineral property valuation phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2025-2026 Mineral Section Locator",
+    "seo_title_character_count": 44,
+    "description_character_count": 134,
+    "answer_summary_word_count": 77,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave191",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave191_factual",
+  "review_run_id": "mrx1000-wave191-factual-20260915T071309Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f8fb1cd7c467e49e104d4f7236fa57f0fb1f499575478206e1deff1a242a9637; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official Howard CAD Reports and Plans page, exact 2025-2026 plan Word file, Howard CAD homepage, official Texas Legislature route, and direct inspection of a controlled local conversion.",
+    "The source controls include HTTP 200, application/msword, 218,624 bytes, Last-Modified Fri 10 Jan 2025 16:34:46 GMT, ETag 67814c26-35600, SHA-256 8fbc52a5d021ded0ee6f9b99f4dde7bc99d3249bc2d1f2b9be1515ca97548a73, Compound File Binary type, 42 embedded pages, security 0, title ECTOR COUNTY APPRAISAL DISTRICT, author eddie, last editor Cara Nichols, and recorded timestamps.",
+    "A controlled LibreOffice conversion produced 43 pages and placed MINERAL PROPERTY VALUATION on rendered physical page 17. The article labels both facts as renderer-specific inspection evidence and does not replace the source bytes or assert a universal page locator."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_word_complete_file_sha256_byte_header_and_container_control_pass",
+    "controlled_libreoffice_render_and_physical_page_17_visual_section_review_pass",
+    "source_bytes_and_noncanonical_rendering_separation_pass",
+    "embedded_42_page_and_rendered_43_page_word_reflow_boundary_pass",
+    "embedded_ector_title_discrepancy_no_cause_inference_pass",
+    "period_bound_section_23175_and_contractor_attribution_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_publisher_label_route_file_date_hash_metadata_section_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "article261_zip_article262_annual_report_and_ector_source_lanes_separated_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Howard CAD Reports and Plans page (accessed 2026-08-29)",
+      "url": "https://howardcad.org/reports-plans/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/reports-plans/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Howard CAD Reports and Plans page supplies the visible 2025-2026 Reappraisal Plan link and publisher-route relationship.",
+      "claim_scope": "It does not establish the Word-file bytes, section wording, embedded metadata, current contractor status, statutory meaning, property facts, appraisal, tax, title, offer, sale value, or legal effect."
+    },
+    {
+      "label": "Howard CAD 2025-2026 Reappraisal Plan Word file (accessed 2026-08-29)",
+      "url": "https://howardcad.org/wp-content/uploads/2025/01/Howard-Reappraisal-Plan-Amended-2025-2026.doc",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/wp-content/uploads/2025/01/Howard-Reappraisal-Plan-Amended-2025-2026.doc",
+        "content_type": "application/msword"
+      },
+      "source_location_or_paraphrase": "The exact official Word file supplies the complete-file controls, embedded metadata, named mineral section, and recorded period-bound plan statements used here.",
+      "claim_scope": "It does not establish a current contractor relationship outside the plan period, a stable page number across renderers, statutory interpretation, or a property-specific appraisal, tax, ownership, title, offer, sale value, or legal conclusion."
+    },
+    {
+      "label": "Howard Central Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://howardcad.org/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies the Howard Central Appraisal District publisher identity and public-site context.",
+      "claim_scope": "It is not evidence for the exact Word-file bytes, embedded metadata, section wording, current contract, statutory meaning, property, appraisal, tax, title, offer, sale value, or legal effect."
+    },
+    {
+      "label": "Texas Tax Code Chapter 23, including Section 23.175 (accessed 2026-08-29)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm#23.175",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official Texas Legislature route supplies current Chapter 23 statutory text, including Section 23.175.",
+      "claim_scope": "This article does not interpret or apply the statute, decide compliance, select a method, calculate a value, or reach a property, tax, title, offer, sale-value, or legal conclusion."
+    }
+  ]
+}

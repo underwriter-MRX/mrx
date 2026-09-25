@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave112_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0297",
+  "slug": "texas-rrc-production-data-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production Data Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-data-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b",
+  "input_frontmatter_sha256": "da53b425adec6f32d71114c9c16a1c922c36503895cb3c1c2a2928ab2a231ea3",
+  "expected_repo_sha256": "2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b",
+  "two_image_manifest_sha256": "cb0efe1d4f0fe3ee12a4e1a50423065e4339ae6a58a3c69425d2b94c4b2fcf9a",
+  "visual_metadata": {
+    "hero_alt": "One mineral owner reviews a blank two-path production-query board beside the exact article title.",
+    "social_alt": "One mineral owner reviews a blank two-path production-query board beside the exact article title.",
+    "inline_alt": "A people-free overhead two-path production-query worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Production Data Query Retrieval Worksheet",
+    "seo_title_character_count": 51,
+    "description_character_count": 158,
+    "answer_summary_word_count": 53,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T16:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave112",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/how-to-build-a-texas-mineral-production-record-locator-sheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave112_factual",
+  "review_run_id": "mrx1000-wave112-factual-20260915T072834Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 2ee74201e1f033633149205d59e0d8b4b864d04cbfe3e456127db986768a8b9b; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official RRC sources, route identity, General versus Specific path separation, source-displayed coverage and update state, navigation guidance, operator-report context, lag, revision risk, and retrieval mechanics. None establishes production attribution, property connection, title, ownership, acreage, payment, reserves, value, legal effect, offer quality, or a transaction conclusion.",
+    "The article publishes no actual lease, well, operator, field, county, district, period, production figure, controlled value, result, screenshot, record, property identifier, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory supplies the limited-area Production Data Query label, monthly update label, separate Production Reports Query route, restrictions on automated volume retrieval, and online-query limitations.",
+      "claim_scope": "The article preserves route provenance, manual-use constraints, and limitations only and does not interpret production or connect a result to private property."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Data Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/ewaPdqMain.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/ewaPdqMain.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official limited-area PDQ application supplies the Production Data Query, General Production Query, and Specific Lease Query labels, source-displayed coverage and update state, and Query Path or Return navigation warning.",
+      "claim_scope": "The article records one selected path and displayed state without merging paths or interpreting any criterion or result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Data Query System FAQs (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official FAQ supplies operator-report basis, oil-lease and gas-well reporting context, reporting lag, revisions, historical coverage, Query Path guidance, and monthly-update context.",
+      "claim_scope": "The article uses those statements only as source limitations and does not establish completeness, attribution, reserves, title, ownership, payment, or value."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Data (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official production-data page lists PDQ and Production Reports Query as separate production-query routes and describes the broader page as compilations and summaries reported by Texas operators.",
+      "claim_scope": "The article uses the page only to preserve route separation and does not merge or compare outputs."
+    }
+  ]
+}

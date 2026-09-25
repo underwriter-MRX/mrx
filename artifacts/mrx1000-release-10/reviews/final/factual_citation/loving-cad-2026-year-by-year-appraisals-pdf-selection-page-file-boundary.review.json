@@ -1,0 +1,126 @@
+{
+  "artifact_type": "mrx1000_wave203_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:15Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0818",
+  "slug": "loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary",
+  "title": "Loving CAD 2026 Year-by-Year Appraisals PDF: Selection Page and File Boundary",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/",
+  "source_path": "src/content/posts/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary.mdx",
+  "input_body_sha256": "d6835fdde2d2572565c4b6fe26c69cc2c3e460bcb0ed97badcb63e4f6ff02348",
+  "input_frontmatter_sha256": "61ff4f0f5a6997a89d21c79819d7d600d01db5654661153e9e64e9de12ea48bb",
+  "expected_repo_sha256": "d6835fdde2d2572565c4b6fe26c69cc2c3e460bcb0ed97badcb63e4f6ff02348",
+  "two_image_manifest_sha256": "4686161dccf62611a811428415b5496a49c492ed0d861a53e045e19b4cfb8cbe",
+  "visual_metadata": {
+    "hero_alt": "A dark report volume and blank selection card sit beside the exact Loving CAD year-by-year PDF title.",
+    "social_alt": "A dark report volume and blank selection card sit beside the exact Loving CAD year-by-year PDF title.",
+    "inline_alt": "A blank selection sheet and privacy divider sit above the exact Loving CAD year-by-year appraisals PDF phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Year-by-Year PDF Boundary · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 135,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T12:48:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave203",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-year-by-year-appraisals-pdf-selection-page-file-boundary/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave203_factual",
+  "review_run_id": "mrx1000-wave203-factual-20260915T071315Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is d6835fdde2d2572565c4b6fe26c69cc2c3e460bcb0ed97badcb63e4f6ff02348; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Loving CAD publisher page, exact 2026 ZIP, exact year-by-year PDF member, complete-file controls, manually reviewed physical page 1, Loving CAD homepage context, and Texas Comptroller local-contact routing.",
+    "The member is 12,541,791 bytes, SHA-256 7bf2c237a7a3404b34932c77e598676b559d5664c1b64be299a417ae1643bf08, 4,264 letter-size pages, unencrypted, with rotation 0.",
+    "Physical page 1 render SHA-256 ff8f008a0b8c4e12aa8cd44fb24f1a8bfe88a757715ef974fdab273141113cbf controls visible report identity, run date, district job identity, and selection-control labels.",
+    "Physical page 2 was reviewed only to establish the exclusion boundary; pages 2 through 4,264 supply no public content claims and no source record values are reproduced.",
+    "PDF extraction and OCR remain supporting or non-validating evidence only; manual render review controls visible wording."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_label_and_exact_zip_target_relationship_pass",
+    "year_by_year_pdf_size_sha256_page_count_geometry_encryption_and_rotation_pass",
+    "physical_page_1_manual_render_hash_and_selection_page_role_pass",
+    "visible_page_1_header_run_date_job_identity_and_control_label_map_pass",
+    "physical_page_2_record_specific_content_exclusion_boundary_pass",
+    "pages_2_through_4264_no_public_content_claim_pass",
+    "pdf_extraction_and_ocr_supporting_only_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Loving CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://lovingcad.org/home/DataRecords",
+      "publisher": "lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://lovingcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible 2026 Certified Mineral Appraisal Roll Zip label and exact download relationship.",
+      "claim_scope": "It does not establish member contents, report validity, filter behavior, or a property conclusion."
+    },
+    {
+      "label": "Loving CAD 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-29)",
+      "url": "https://www.lovingcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785193258_LOVING+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+      "publisher": "www.lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.lovingcad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1785193258_LOVING+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact ZIP supplies the observed year-by-year PDF bytes, complete-file controls, and physical page-1 artifact.",
+      "claim_scope": "It does not prove report completeness, record meaning, appraisal accuracy, tax, value, offer, transaction, or legal effect."
+    },
+    {
+      "label": "Loving County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://lovingcad.org/",
+      "publisher": "lovingcad.org",
+      "accessed_at": "2026-09-15T07:13:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://lovingcad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies current Loving CAD public-site identity and publisher-stated appraisal context.",
+      "claim_scope": "It does not validate the year-by-year PDF, a filter state, or a property record."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:15Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing guidance for local appraisal and tax questions.",
+      "claim_scope": "It does not inspect or interpret the report or support a property-specific conclusion."
+    }
+  ]
+}

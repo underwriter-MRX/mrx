@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave157_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:38Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0756",
+  "slug": "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+  "title": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+  "source_path": "src/content/posts/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties.mdx",
+  "input_body_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "input_frontmatter_sha256": "438d2fa394f3bc40cb8f735822c92e03f26d923efcde93e3f3c8b1c59468b20c",
+  "expected_repo_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "two_image_manifest_sha256": "c59a2628ff4be0955e6804036bc9a2fbeb601f7414576ca158944489ae0b1ec1",
+  "visual_metadata": {
+    "hero_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "social_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "inline_alt": "A top-down blank six-section field grid appears above the exact Form 50-843 Crane mineral property keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-843 Field Inventory",
+    "seo_title_character_count": 33,
+    "description_character_count": 151,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T20:09:45Z",
+    "reviewed_by": "mrx_compliance-continuous-wave157",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave157_compliance",
+  "review_run_id": "mrx1000-wave157-compliance-20260915T072838Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e57751b48e6606400b921e087892bbbbe8c178bdeff2803330d396fa25da1a5b",
+  "expected_inline_sha256": "3d5f1a4e05610ad83d0bf91811fe4407e425d7801add07f3fb206ef470ea2184",
+  "findings": [
+    "Complete current MDX SHA-256 is 42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8; hero/share and inline image hashes are separately locked.",
+    "The reusable public inventory contains only blank document-control fields, keeps any completed record in an authorized controlled system, and stops before selection, private-data entry, completion, signature, contact, upload, submission, timing calculation, legal interpretation, tax guidance, appraisal judgment, valuation, representation, or strategy.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real form, checkbox selection, owner data, delivery claim, professional endorsement, legal position, tax conclusion, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "blank_form_field_inventory_only_no_selection_private_data_completion_signature_contact_submission_deadline_interpretation_valuation_advice_delivery_claim_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_form_owner_data_property_fact_government_mark_recommendation_legal_tax_delivery_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties.mdx",
+    "/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp",
+    "/assets/articles/inline/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/form-50-843-crane-mineral-property.webp"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "artifact_type": "mrx1000_wave229_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0849",
+  "slug": "texas-rrc-field-classification-codes-associated-field-numbers",
+  "title": "Texas RRC Field Classification Codes: G, O, B, and Associated Field Numbers",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-classification-codes-associated-field-numbers/",
+  "source_path": "src/content/posts/texas-rrc-field-classification-codes-associated-field-numbers.mdx",
+  "input_body_sha256": "e68a683948357f74786df40bc20c2b443d898233d05643228db159c165671348",
+  "input_frontmatter_sha256": "5a14eca1478cfd5975c4abdeb7bb8d36a7329927072dc18783ca3c9763797dfb",
+  "expected_repo_sha256": "e68a683948357f74786df40bc20c2b443d898233d05643228db159c165671348",
+  "two_image_manifest_sha256": "4a683ea7bcfbb61c0455c7030b7c4d0645505bda47fa5cff8e9cfd155a7c6f24",
+  "visual_metadata": {
+    "hero_alt": "Three unlabeled archival classification trays appear beside the exact Article 301 title.",
+    "social_alt": "Three unlabeled archival classification trays appear beside the exact Article 301 title.",
+    "inline_alt": "An overhead row-and-pointer audit mat appears above the exact Texas RRC field classification codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Field Classification Codes G O B",
+    "seo_title_character_count": 42,
+    "description_character_count": 148,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T13:02:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave229",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-classification-codes-associated-field-numbers/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave229_factual",
+  "review_run_id": "mrx1000-wave229-factual-20260915T071323Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is e68a683948357f74786df40bc20c2b443d898233d05643228db159c165671348; all 6 declared sources passed current HTTPS access review.",
+    "Six controlled official RRC source objects total 1,727,228 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The current-catalog manual endpoint defines og_field and og_field_info columns, G/O/B semantics, row cardinality, and the related-field-number pointer while retaining 2008 document metadata.",
+    "The 2019 tape-layout manual is used only as legacy corroboration, and the current catalog and query pages establish product and system separation rather than row-level facts.",
+    "The article preserves the associated_field_id table label and associate_field_id narrative label instead of silently normalizing the source inconsistency."
+  ],
+  "checks": [
+    "six_distinct_official_https_sources_with_current_and_legacy_roles",
+    "og_field_field_class_code_g_o_b_semantics_pass",
+    "og_field_info_one_row_or_two_row_cardinality_pass",
+    "oil_or_gas_code_context_pass",
+    "associated_field_id_and_associate_field_id_label_preservation_pass",
+    "related_field_number_pointer_scope_pass",
+    "raw_code_table_field_field_id_field_number_row_role_source_version_pointer_status_exception_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC Oil and Gas Field Information data dictionary (accessed 2026-08-31)",
+      "url": "https://rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official RRC Oil and Gas Field Information data dictionary defines og_field, field_class_code, og_field_info, oil_or_gas_code, field_id, field number, and the associated-field pointer.",
+      "claim_scope": "The article preserves the manual endpoint, document age, exact table and field labels, and source-scoped g, o, and b semantics without treating them as a property relationship."
+    },
+    {
+      "label": "Texas RRC legacy Field Information tape layout (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/media/sn4f1nyy/field_information_oga090.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/sn4f1nyy/field_information_oga090.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official legacy Field Information tape-layout manual corroborates G, O, and B class values and separate associated-gas-field pointer records.",
+      "claim_scope": "The article labels this source legacy and never represents its tape layout as proof of current Oracle schema parity."
+    },
+    {
+      "label": "Texas RRC Data Sets Available for Download (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official RRC catalog presents Oil and Gas Field Name and Numbers and Oil and Gas Field Rules as separate monthly products.",
+      "claim_scope": "The article uses the catalog only for current product identity, cadence, and separation, not for row-level field claims."
+    },
+    {
+      "label": "Texas RRC Field Data (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/field-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/field-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official RRC field-data page identifies the Field Information Query and Proration Schedule by Field as separate field-level entry points.",
+      "claim_scope": "The article uses the page to distinguish entry points, not to claim a query result or property match."
+    },
+    {
+      "label": "Texas RRC Online Research Queries (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official query catalog lists Field Rules Query as a nightly system and separates it from wellbore, production, and proration queries.",
+      "claim_scope": "The article uses the page only to preserve query-system boundaries and does not report query execution or results."
+    },
+    {
+      "label": "Texas RRC About Oil and Gas Data Queries (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official RRC explanation states that each query is one slice of the larger Oil and Gas System and distinguishes wellbore, completion, API, lease or well ID, district, field, and operator contexts.",
+      "claim_scope": "The article uses that separation to stop false joins and never promotes a field code or pointer into evidence about a well, lease, tract, ownership, production, or value."
+    }
+  ]
+}

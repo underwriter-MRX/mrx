@@ -1,0 +1,121 @@
+{
+  "artifact_type": "mrx1000_wave248_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T09:49:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0415",
+  "slug": "mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement",
+  "title": "Mineral Rights Offer vs. Letter of Intent vs. Purchase Agreement",
+  "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+  "source_path": "src/content/posts/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement.mdx",
+  "input_body_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+  "input_frontmatter_sha256": "74eb89692792fb86c1e19667f31141bf39053fdaacd5a1c7bdfe7c381d26db8a",
+  "expected_repo_sha256": "f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb",
+  "two_image_manifest_sha256": "a268c1c3e7aae2a4f648d857020cf6b16529b0b9445e0566d174c375584a699e",
+  "visual_metadata": {
+    "hero_alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+    "social_alt": "Three blank transaction folders and a tract map appear beside the exact Article 320 title.",
+    "inline_alt": "A people-free overhead three-stage document evidence board appears below the exact offer-documents keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Mineral Rights Offer vs. LOI vs. Purchase Agreement",
+    "seo_title_character_count": 51,
+    "description_character_count": 152,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-09-15T08:53:13Z",
+    "reviewed_by": "mrx_compliance-continuous-wave248",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/mineral-rights-offer-version-control-and-deadline-register/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-vs-letter-of-intent-vs-purchase-agreement/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave248_factual",
+  "review_run_id": "mrx1000-wave248-factual-20260915T094933Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f31b0974d809ad69346540bb1f4d14c5b5563036a1c56afef273a68d63ef45bb; all 4 declared sources passed current HTTPS access review.",
+    "Texas Business and Commerce Code Section 26.01 and Texas Property Code Section 5.021 are cited only for bounded Texas writing, signature, and conveyance-instrument propositions.",
+    "Energy Transfer Partners and Chalker Energy are used only as concrete examples showing why exact document language, separate obligations, definitive-agreement conditions, and execution conditions matter.",
+    "No source supports assigning an automatic legal status to a document label, deciding enforceability, interpreting a reader's document, determining title, or predicting a transaction result.",
+    "The article keeps the purchase agreement separate from the deed or other closing conveyance and preserves jurisdiction-specific professional-review boundaries."
+  ],
+  "checks": [
+    "four_official_https_sources_with_exact_source_roles",
+    "texas_business_and_commerce_code_section_26_01_scope_pass",
+    "texas_property_code_section_5_021_scope_pass",
+    "energy_transfer_exact_language_and_definitive_agreement_example_scope_pass",
+    "chalker_energy_execution_condition_example_scope_pass",
+    "document_label_is_not_automatic_legal_status_boundary_pass",
+    "agreement_and_closing_conveyance_separation_pass",
+    "cross_document_field_change_matrix_pass",
+    "claim_adjacent_citation_and_known_unknowns_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Business and Commerce Code Section 26.01 (accessed 2026-09-15)",
+      "url": "https://statutes.capitol.texas.gov/Docs/BC/htm/BC.26.htm#26.01",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T09:49:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/BC/htm/BC.26.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Business and Commerce Code Section 26.01 supplies the Texas writing-and-signature requirement for specified agreements, including a contract for the sale of real estate.",
+      "claim_scope": "It does not classify a reader's offer or LOI, decide enforceability, or provide individualized legal advice."
+    },
+    {
+      "label": "Texas Property Code Section 5.021 (accessed 2026-09-15)",
+      "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm#5.021",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T09:49:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.5.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Property Code Section 5.021 supplies the separate written, subscribed, and delivered instrument rule for a Texas estate conveyance.",
+      "claim_scope": "It does not prove that an agreement is the closing conveyance or determine title, validity, or legal effect."
+    },
+    {
+      "label": "Supreme Court of Texas, Energy Transfer Partners v. Enterprise Products Partners, No. 17-0862 (2020)",
+      "url": "https://www.txcourts.gov/media/1445666/170862.pdf",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-09-15T09:49:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/media/1445666/170862.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "Energy Transfer Partners v. Enterprise Products Partners supplies a concrete Texas example of nonbinding term-sheet language, separately stated obligations, and a definitive-agreement condition.",
+      "claim_scope": "It is an example of why exact language and stated conditions must be preserved, not a template or a decision about a reader's document."
+    },
+    {
+      "label": "Supreme Court of Texas, Chalker Energy Partners III v. Le Norman Operating, No. 18-0352 (2020)",
+      "url": "https://www.txcourts.gov/media/1445957/180352.pdf",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-09-15T09:49:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/media/1445957/180352.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "Chalker Energy Partners III v. Le Norman Operating supplies a Texas example involving a definitive-agreement and execution condition in an asset-sale negotiation.",
+      "claim_scope": "It does not establish that every offer, LOI, email, or purchase agreement is binding or nonbinding."
+    }
+  ]
+}

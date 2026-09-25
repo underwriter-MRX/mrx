@@ -1,0 +1,138 @@
+{
+  "artifact_type": "mrx1000_wave221_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0841",
+  "slug": "reeves-cad-2025-map-review-four-passes-and-two-recommendations",
+  "title": "Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2025-map-review-four-passes-and-two-recommendations/",
+  "source_path": "src/content/posts/reeves-cad-2025-map-review-four-passes-and-two-recommendations.mdx",
+  "input_body_sha256": "609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7",
+  "input_frontmatter_sha256": "74cda6f7a6a7fb68e439b7e8ae23f91716d3cfb9364699d6e5e9a928ac6fc512",
+  "expected_repo_sha256": "609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7",
+  "two_image_manifest_sha256": "d9d9045f4c43aa92da3f9e9455c4d7ae7ca2f8928aa59cdb731bd1358d9128ef",
+  "visual_metadata": {
+    "hero_alt": "An oblique audit binder with four tabs and two action slips appears beside the exact Article 293 title.",
+    "social_alt": "An oblique audit binder with four tabs and two action slips appears beside the exact Article 293 title.",
+    "inline_alt": "A top-down four-area evidence board appears above the exact Reeves CAD 2025 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves CAD 2025 MAP Review: Four Passes, Two Actions",
+    "seo_title_character_count": 52,
+    "description_character_count": 145,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T09:31:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave221",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2025-map-review-four-passes-and-two-recommendations/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave221_factual",
+  "review_run_id": "mrx1000-wave221-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 2,772,293 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The MAP overview describes an at-least-biennial review of governance, taxpayer assistance, operating procedures, and appraisal standards, procedures and methodology.",
+    "The 2025 results inventory lists Reeves and states that 2025-reviewed districts have until January 2027 to complete recommendations.",
+    "The Reeves report records PASS on all four mandatory requirements and review-area scores of 100, 92, 100, and 96.",
+    "The two No answers and recommendations are question 29 on the Tax Code 11.43(q) cancellation procedure for certain over-65 residence homestead exemptions and question 74 on rendition-penalty notice delivery."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "map_biennial_four_area_scope_pass",
+    "2025_results_reeves_inventory_and_january_2027_boundary_pass",
+    "reeves_four_mandatory_pass_results_pass",
+    "reeves_review_area_scores_100_92_100_96_pass",
+    "question_29_over_65_homestead_cancellation_process_recommendation_pass",
+    "question_74_rendition_penalty_notice_recommendation_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "no_mineral_account_or_property_specific_result_inference_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller Methods and Assistance Program overview (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official MAP overview supplies the biennial review purpose, four review areas, PTAD role, and tier context.",
+      "claim_scope": "The overview does not establish a Reeves property fact, mineral-account result, ownership, appraisal correctness, tax, protest, private value, offer, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller 2025 MAP Review Results (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2025 results inventory identifies Reeves as a completed 2025 MAP review and states the January 2027 recommendation-completion boundary.",
+      "claim_scope": "The inventory is routing and deadline context only; it does not establish that a particular recommendation is complete or apply a report finding to any property."
+    },
+    {
+      "label": "Texas Comptroller Reeves County Appraisal District 2025 Final MAP Report (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/reeves-2025.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/reeves-2025.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official 15-page Reeves final report supplies the four mandatory PASS results, the four review-area scores, and recommendation text at questions 29 and 74.",
+      "claim_scope": "The report reviews district operations and does not identify or determine a mineral account, title, ownership, classification, property appraisal, ratio outcome, tax bill, protest result, private value, offer, or transaction."
+    },
+    {
+      "label": "Texas Comptroller MAP Review Documents (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/review-documents.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/review-documents.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official review-documents page supplies the role and limits of the 2024-25 MAP guidelines used to help reviewers answer instrument questions.",
+      "claim_scope": "The guidelines are not property-specific instructions and do not convert a review question into an owner-specific conclusion."
+    },
+    {
+      "label": "Texas Comptroller Methods and Assistance Program flyer (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1061.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/98-1061.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official MAP program flyer supplies the two-year cycle, mandatory and yes-or-no question structure, tier framework, and general recommendation follow-up context.",
+      "claim_scope": "The flyer does not prove current completion of either Reeves recommendation or establish any property-specific result."
+    }
+  ]
+}

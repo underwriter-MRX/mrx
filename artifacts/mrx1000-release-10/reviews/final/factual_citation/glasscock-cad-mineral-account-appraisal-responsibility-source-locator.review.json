@@ -1,0 +1,134 @@
+{
+  "artifact_type": "mrx1000_wave182_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0781",
+  "slug": "glasscock-cad-mineral-account-appraisal-responsibility-source-locator",
+  "title": "Glasscock CAD Mineral Account Appraisal Responsibility Source Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
+  "source_path": "src/content/posts/glasscock-cad-mineral-account-appraisal-responsibility-source-locator.mdx",
+  "input_body_sha256": "fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271",
+  "input_frontmatter_sha256": "be3c26e05a7835e205ad2699f542cc5f96f583dec28a7926636c281305a8a441",
+  "expected_repo_sha256": "fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271",
+  "two_image_manifest_sha256": "5dc2602d822d09984d7875dfce5f4bfb8faf8d48f62f50fceefc6acde7dc3433",
+  "visual_metadata": {
+    "hero_alt": "Separate appraisal-role trays appear beside the exact Glasscock CAD responsibility source-locator title.",
+    "social_alt": "Separate appraisal-role trays appear beside the exact Glasscock CAD responsibility source-locator title.",
+    "inline_alt": "Two overhead role lanes connect below the exact Glasscock CAD mineral account appraiser keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Mineral Account Appraiser Source",
+    "seo_title_character_count": 46,
+    "description_character_count": 158,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T04:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave182",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-mineral-account-appraisal-responsibility-source-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave182_factual",
+  "review_run_id": "mrx1000-wave182-factual-20260915T071304Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is fb553a0ee41fa0f607983abbf6ff650481c76463295dc943f2b2cd394d578271; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official home-page route, 2026-08-28 retrieval date, HTTP 200 text/html observation, page-level grouping of mineral, utility, and industrial accounts with the displayed T.Y. Pickett attribution, and the separately displayed real-estate and personal-property attribution to Eagle Property Tax Appraisal and Consulting.",
+    "The article does not authenticate a contract, establish current authority, infer completed work, search a property, expose private data, judge an appraisal, calculate tax or value, direct a protest, decide title or ownership, evaluate an offer, advise a sale, or invent an outcome."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_page_route_retrieval_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "versioned_prompt_universe_and_execution_vs_performance_measurement_contract_pass",
+    "two_separate_account_appraisal_role_statements_preserved_without_merger_pass",
+    "no_contract_authentication_property_search_private_data_or_property_connection_pass",
+    "adjacent_dimmit_brazos_ector_and_glasscock_source_roles_preserved_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Glasscock County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:04Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Glasscock CAD home page supplies the current publisher surface, district context, and the two separate account-appraisal attributions observed on 2026-08-28.",
+      "claim_scope": "The page observation does not authenticate a contract, establish authority or compliance, prove completed work, connect a firm to a particular property, validate an appraisal, calculate tax or value, establish title, evaluate an offer, or support a transaction decision."
+    },
+    {
+      "label": "Glasscock CAD Data and Records page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/home/DataRecords",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:04Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Data and Records page supplies district-controlled navigation context for public report and roll categories.",
+      "claim_scope": "The article does not open a roll, inspect supporting data, read a report, apply a plan, search a property, reproduce row content, or infer an owner-specific result."
+    },
+    {
+      "label": "Texas Comptroller, Glasscock County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:04Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Glasscock County directory supplies limited current public county, appraisal-district, and official-website context.",
+      "claim_scope": "It is not the source for the Glasscock CAD home-page wording and does not authenticate a contract, prove a property connection, validate an appraisal, or establish tax, title, value, offer, or transaction facts."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 6 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:04Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 6 supplies current official statutory provenance for appraisal-district administration.",
+      "claim_scope": "The article does not interpret the chapter, decide district authority or compliance, authenticate a contract, apply law to a property, direct a protest, or reach a legal conclusion."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 25 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:04Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and appraisal-roll subjects.",
+      "claim_scope": "The article does not interpret the chapter, open a roll, decide whether a record satisfies law, apply a record to a person or property, calculate tax or value, or reach a legal conclusion."
+    }
+  ]
+}

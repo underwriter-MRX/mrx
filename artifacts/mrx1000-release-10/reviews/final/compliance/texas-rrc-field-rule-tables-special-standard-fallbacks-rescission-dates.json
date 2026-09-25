@@ -1,0 +1,74 @@
+{
+  "artifact_type": "mrx1000_wave230_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0850",
+  "slug": "texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates",
+  "title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
+  "source_path": "src/content/posts/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.mdx",
+  "input_body_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+  "input_frontmatter_sha256": "7aa06c9998ac8a9fd54adba35e1dfcbb55b5e093a7417cf3b9910346fd54eea7",
+  "expected_repo_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+  "two_image_manifest_sha256": "4e0cfd85830d6ac0d6511a5071198ed11d1fb9a9b266c246d9a02b0f2cefef37",
+  "visual_metadata": {
+    "hero_alt": "A frontal copper rule-routing switchboard appears beside the exact Article 302 title.",
+    "social_alt": "A frontal copper rule-routing switchboard appears beside the exact Article 302 title.",
+    "inline_alt": "A low side-angle glass row display appears above the exact Texas RRC field rule tables keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Field Rule Tables and Fallbacks",
+    "seo_title_character_count": 41,
+    "description_character_count": 154,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T13:23:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave230",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-field-classification-codes-associated-field-numbers/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave230_compliance",
+  "review_run_id": "mrx1000-wave230-compliance-20260915T071323Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e255e7df52ce683031f192c3412d5a60202ea1b7ef47aca45e805cfc935f82f5",
+  "expected_inline_sha256": "c4261beac540cf9dc68e7dba992551c6de81eaf5a84682bc38d70e2977484192",
+  "findings": [
+    "Complete current MDX SHA-256 is 09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515; hero/share and inline image hashes are separately locked.",
+    "The article does not decide current rule applicability, a spacing or density exception, permit eligibility, drilling approval, compliance, property scope, ownership, production, reserves, value, offer, or transaction outcome.",
+    "The owner-agency boundary and possible MRX buyer-interest disclosure are visible at the top and bottom.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "historical_manual_not_presented_as_current_legal_authority_pass",
+    "field_specific_row_presence_or_absence_not_presented_as_current_applicability_pass",
+    "effective_and_rescission_dates_not_collapsed_pass",
+    "no_rule_permit_spacing_density_exception_compliance_property_ownership_production_reserve_value_offer_or_transaction_conclusion_pass",
+    "adjacent_article_and_query_worksheet_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_readable_base_text_letters_numbers_charts_maps_diagrams_logos_seals_government_marks_official_forms_real_identifiers_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.mdx",
+    "/assets/articles/hero/texas-rrc-field-rule-tables-special-rules-standard-fallbacks-and-rescission-dates.webp",
+    "/assets/articles/inline/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/texas-rrc-field-rule-tables.webp"
+  ]
+}

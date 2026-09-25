@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave213_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0833",
+  "slug": "midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk",
+  "title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+  "source_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+  "input_body_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+  "input_frontmatter_sha256": "182d672b49efaa3571f40470479d884a7ffa20b88e6bc8cae1d201b570e5f995",
+  "expected_repo_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+  "two_image_manifest_sha256": "d25a9f0cc910a91de24df5ea4b20a3ef7c0370469cda6047e481ce2896be332d",
+  "visual_metadata": {
+    "hero_alt": "A sealed proposal folio, blank calendar cards, and mineral core tray appear beside the exact Article 285 title.",
+    "social_alt": "A sealed proposal folio, blank calendar cards, and mineral core tray appear beside the exact Article 285 title.",
+    "inline_alt": "A top-down date-control crosswalk and mineral token appear above the exact Midland CAD RFP keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Appraisal RFP Date Crosswalk · MRX",
+    "seo_title_character_count": 54,
+    "description_character_count": 149,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave213",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave213_compliance",
+  "review_run_id": "mrx1000-wave213-compliance-20260915T071318Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "a83837eaf743865a1f9c9cff0ce0fc516ae3389cb27c5365f3e2acc7c95d45f7",
+  "expected_inline_sha256": "6dba20023ad0684070bca63dc74352442af862dc48f16514ada519b5699616b7",
+  "findings": [
+    "Complete current MDX SHA-256 is 8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560; hero/share and inline image hashes are separately locked.",
+    "The article directs readers to Midland CAD for current instructions and does not claim a proposal was accepted, a vendor selected, a contract awarded or executed, or any printed deadline remains operative.",
+    "The article supplies no owner, account, property, appraisal, title, tax, protest, value, legal, vendor-ranking, procurement-result, or transaction conclusion.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, contract status, award, vendor, date, account, property, value, or result claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "rfp_procurement_scope_not_converted_to_operational_deadline_vendor_award_contract_status_owner_account_property_appraisal_title_tax_protest_value_or_transaction_result_pass",
+    "conflicting_date_strings_and_weekday_mismatch_preserved_without_correction_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_vendor_marks_account_records_owner_data_property_records_money_charts_values_results_government_symbols_award_claims_conclusions_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+    "/assets/articles/hero/midland-cad-2026-appraisal-services-rfp-mineral-scope-and-date-control-crosswalk.webp",
+    "/assets/articles/inline/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/midland-cad-mineral-appraisal-rfp-2026.webp"
+  ]
+}

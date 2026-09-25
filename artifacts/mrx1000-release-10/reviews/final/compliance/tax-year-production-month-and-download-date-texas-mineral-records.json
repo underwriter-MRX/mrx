@@ -1,0 +1,74 @@
+{
+  "artifact_type": "mrx1000_wave225_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0845",
+  "slug": "tax-year-production-month-and-download-date-texas-mineral-records",
+  "title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+  "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
+  "source_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+  "input_body_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+  "input_frontmatter_sha256": "6c678df690567877221aaec02a726b09fc69faee67b0bd74b93838fd539c742f",
+  "expected_repo_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+  "two_image_manifest_sha256": "4156205ac87cae929c42cc3929e2be33e528b0f1376adc8a2b5f2ebd966bae3d",
+  "visual_metadata": {
+    "hero_alt": "A dark archival desk appears beside the exact Article 297 title.",
+    "social_alt": "A dark archival desk appears beside the exact Article 297 title.",
+    "inline_alt": "A bright overhead three-zone workspace appears above the exact Texas mineral record dates keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Dates: Tax Year, Month & Download",
+    "seo_title_character_count": 54,
+    "description_character_count": 134,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T11:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave225",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave225_compliance",
+  "review_run_id": "mrx1000-wave225-compliance-20260915T071322Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e12b081e732645293a69014e68842d3046872fc129bd3d01a1aff259b26001f3",
+  "expected_inline_sha256": "1925a7677db8878187dbac42b758dc9a69c7d28701bfc09e1f43706ab513f77c",
+  "findings": [
+    "Complete current MDX SHA-256 is ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attached to an official source, exact date role, source period, processing status, or explicit recordkeeping inference.",
+    "The article does not use a date label to establish title, authority, account correctness, appraisal result, tax amount, protest deadline, private value, offer quality, buyer status, future production, or transaction outcome.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, reporting period, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "retrieval_date_not_misrepresented_as_source_period_pass",
+    "production_snapshot_not_misrepresented_as_final_pass",
+    "dataset_schedule_not_generalized_to_every_source_pass",
+    "no_title_account_appraisal_tax_protest_private_value_offer_or_transaction_conclusion_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_logos_seals_government_marks_official_forms_property_identifiers_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+    "/assets/articles/hero/tax-year-production-month-and-download-date-in-texas-mineral-records.webp",
+    "/assets/articles/inline/tax-year-production-month-and-download-date-texas-mineral-records/texas-mineral-record-dates.webp"
+  ]
+}

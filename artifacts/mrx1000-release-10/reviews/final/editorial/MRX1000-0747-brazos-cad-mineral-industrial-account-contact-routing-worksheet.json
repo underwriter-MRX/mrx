@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave153_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0747",
+  "slug": "brazos-cad-mineral-industrial-account-contact-routing-worksheet",
+  "title": "Brazos CAD Mineral and Industrial Account Contact-Routing Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+  "source_path": "src/content/posts/brazos-cad-mineral-industrial-account-contact-routing-worksheet.mdx",
+  "input_body_sha256": "76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a",
+  "input_frontmatter_sha256": "b001c0f1ce955421624cb9dd510d9749e3a755eaf963fc616ab935fc91b638bb",
+  "expected_repo_sha256": "76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a",
+  "two_image_manifest_sha256": "1ed018d88c7c92c4454da3f9391ca1ef5ee377b8908869873018e3c105a0151d",
+  "visual_metadata": {
+    "hero_alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+    "social_alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+    "inline_alt": "A top-down blank three-route board appears above the exact Brazos CAD mineral and industrial account contact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Brazos CAD Mineral Account Contact Routing",
+    "seo_title_character_count": 42,
+    "description_character_count": 153,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T17:33:10Z",
+    "reviewed_by": "mrx_compliance-continuous-wave153",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave153_editorial",
+  "review_run_id": "mrx1000-wave153-editorial-20260915T072837Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a; the answer-first article contains 1883 body tokens and five FAQs.",
+    "The article rejects the generic Brazos value-guide identity and owns one distinct deliverable: a blank pre-contact routing record for one already-existing administrative question. It neither searches the Brazos CAD interface nor performs the resulting outreach.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The eye-level three-destination wayfinding wall and bright strict-overhead triangular routing board are materially distinct compositions and contain no person, real contact detail, account identifier, value, tax amount, property, legal document, map, logo, seal, recommendation, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1883,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 61
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 42,
+        "description_character_count": 153,
+        "author": "ariana",
+        "reviewed_at": "2026-08-26T17:33:10Z",
+        "reviewed_by": "mrx_compliance-continuous-wave153",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/brazos-cad-mineral-industrial-account-contact-routing-worksheet.mdx",
+    "/assets/articles/hero/brazos-cad-mineral-and-industrial-account-contact-routing-worksheet.webp",
+    "/assets/articles/inline/brazos-cad-mineral-industrial-account-contact-routing-worksheet/brazos-cad-mineral-and-industrial-account-contact.webp"
+  ]
+}

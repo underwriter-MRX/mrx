@@ -1,0 +1,136 @@
+{
+  "artifact_type": "mrx1000_wave225_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0845",
+  "slug": "tax-year-production-month-and-download-date-texas-mineral-records",
+  "title": "Tax Year, Production Month, and Download Date in Texas Mineral Records",
+  "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
+  "source_path": "src/content/posts/tax-year-production-month-and-download-date-texas-mineral-records.mdx",
+  "input_body_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+  "input_frontmatter_sha256": "6c678df690567877221aaec02a726b09fc69faee67b0bd74b93838fd539c742f",
+  "expected_repo_sha256": "ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5",
+  "two_image_manifest_sha256": "4156205ac87cae929c42cc3929e2be33e528b0f1376adc8a2b5f2ebd966bae3d",
+  "visual_metadata": {
+    "hero_alt": "A dark archival desk appears beside the exact Article 297 title.",
+    "social_alt": "A dark archival desk appears beside the exact Article 297 title.",
+    "inline_alt": "A bright overhead three-zone workspace appears above the exact Texas mineral record dates keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Dates: Tax Year, Month & Download",
+    "seo_title_character_count": 54,
+    "description_character_count": 134,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T11:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave225",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/tax-year-production-month-and-download-date-texas-mineral-records/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave225_factual",
+  "review_run_id": "mrx1000-wave225-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is ba9288f50cc1074d83d9e94cb7bc21b07c0c81497ef7be8d9f9fc0e0aca105b5; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 485,324 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The Comptroller Valuing Property page supplies the general January 1 appraisal-date context, while its reports page supplies appraisal-district-submitted-data and report-scope context.",
+    "The RRC Production Data page identifies operator-reported production, and the PDQ FAQ supplies lag, snapshot, and revision limits.",
+    "The RRC download page supplies product-specific update schedules; retrieval-date meaning is presented only as a bounded provenance inference."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "january_1_appraisal_date_context_pass",
+    "appraisal_district_submitted_data_and_report_scope_pass",
+    "rrc_operator_reported_production_context_pass",
+    "production_month_lag_snapshot_and_revision_limits_pass",
+    "dataset_specific_update_schedules_pass",
+    "retrieval_date_bounded_recordkeeping_inference_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller Valuing Property (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Comptroller page supplies the general January 1 taxable-property appraisal context under Tax Code Section 23.01.",
+      "claim_scope": "The article does not convert an ad valorem appraisal date or market-value definition into an owner-specific account conclusion, private mineral-interest price, offer, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Property Tax Data Reports and Surveys (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official reports page says report data and values are submitted by appraisal districts and describes year-specific report scope.",
+      "claim_scope": "The article uses that page only to keep tax year, report scope, publication identity, and retrieval date separate and does not reproduce ratio-study findings."
+    },
+    {
+      "label": "Texas RRC Oil and Gas Production Data (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC page supplies the operator-reported production context and routes to monthly production products and queries.",
+      "claim_scope": "The article does not use reported production to establish ownership, royalty entitlement, a decimal, private value, or future production."
+    },
+    {
+      "label": "Texas RRC Production Data Query System FAQs (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC FAQ supplies the post-production-month filing cadence, online lag, snapshot limitation, and possibility of revised, corrected, or delinquent reports.",
+      "claim_scope": "The article does not claim a snapshot is final or that a retrieval proves no later correction exists."
+    },
+    {
+      "label": "Texas RRC Data Sets Available for Download (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC download page supplies dataset-specific update schedules, including monthly and last-Saturday-of-month products.",
+      "claim_scope": "The article does not generalize one schedule to every RRC source and labels the download-date distinction as a recordkeeping inference."
+    }
+  ]
+}

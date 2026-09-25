@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave147_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T13:34:51Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0586",
+  "slug": "irs-form-1099-misc-royalty-box-2-source-scope-worksheet",
+  "title": "IRS Form 1099-MISC Royalty Box 2 Source-Scope Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-1099-misc-royalty-box-2-source-scope-worksheet/",
+  "source_path": "src/content/posts/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.mdx",
+  "input_body_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "input_frontmatter_sha256": "3e541319059175320a15ff1cadd744a46bf104c58dabcb79a9f3988632205ed2",
+  "expected_repo_sha256": "3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d",
+  "two_image_manifest_sha256": "b47eecb2481e82cdd5115f3028eca20ae8388a0502c16bdf64e52558de2d48bf",
+  "visual_metadata": {
+    "hero_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "social_alt": "A secure blank provenance case appears beside the exact IRS Form 1099-MISC royalty worksheet title.",
+    "inline_alt": "A top-down blank source-scope matrix appears above the exact IRS Form 1099-MISC Box 2 keyword."
+  },
+  "reviewer_id": "codex_wave147_compliance",
+  "review_run_id": "mrx1000-wave147-compliance-20260826T133451Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "390d96b98ef83c237ed7ef6ee1016106b587df7918ff30411c8bf3b7622c95f3",
+  "expected_inline_sha256": "f571140418c139e1cc5936f0c25f3397504ca04a7434d137c69b7f233d7c8c28",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d3620c5efa153f31a2214f5289c5f26ddf72a2a3a8b15e5022c7227d83f571d; hero/share and inline image hashes are separately locked.",
+    "The reusable public worksheet is blank, covers one already-retained source and one controlled capture event, keeps every identity and value controlled, and stops at authorized-human review before retrieval, payer contact, identity matching, reconciliation, return work, tax interpretation, title, valuation, offer, or transaction activity.",
+    "Image text is limited to the exact title and keyword and adds no taxpayer, payment, form, correction, tax, title, valuation, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_already_retained_irs_form_1099_misc_exact_source_displayed_revision_calendar_year_copy_correction_identity_block_fatca_account_box_2_box_4_and_boxes_16_18_controlled_pointers_only_captured_incomplete_unverified_no_public_values_or_form_facsimile_retrieval_payer_contact_identity_match_authentication_reconciliation_tax_calculation_filing_amendment_depletion_withholding_title_value_offer_transaction_or_legal_tax_conclusion_authorized_human_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.mdx",
+    "/assets/articles/hero/irs-form-1099-misc-royalty-box-2-source-scope-worksheet.webp",
+    "/assets/articles/inline/irs-form-1099-misc-royalty-box-2-source-scope-worksheet/irs-form-1099-misc-royalty-box-2.webp"
+  ]
+}
