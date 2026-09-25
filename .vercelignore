@@ -42,6 +42,7 @@ docs/governance/*
 !docs/governance/mrx1000-wave256-selection-decision-2026-09-24.md
 !docs/governance/mrx1000-wave257-selection-decision-2026-09-24.md
 !docs/governance/mrx1000-wave258-selection-decision-2026-09-24.md
+!docs/governance/mrx1000-wave259-selection-decision-2026-09-25.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -79,6 +80,9 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/can-pennsylvania-dep-production-data-verify-my-royalty-check
 !artifacts/mrx1000-append-only/reviews/can-pennsylvania-dep-production-data-verify-my-royalty-check/*.json
 !artifacts/mrx1000-append-only/reviews/can-pennsylvania-dep-production-data-verify-my-royalty-check/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice
+!artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/*.json
+!artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
@@ -115,6 +119,10 @@ artifacts/mrx1000-wave257-creative-qa/*
 artifacts/mrx1000-wave258-creative-qa/*
 !artifacts/mrx1000-wave258-creative-qa/can-pennsylvania-dep-production-data-verify-my-royalty-check
 !artifacts/mrx1000-wave258-creative-qa/can-pennsylvania-dep-production-data-verify-my-royalty-check/creative-manifest.json
+!artifacts/mrx1000-wave259-creative-qa
+artifacts/mrx1000-wave259-creative-qa/*
+!artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice
+!artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews

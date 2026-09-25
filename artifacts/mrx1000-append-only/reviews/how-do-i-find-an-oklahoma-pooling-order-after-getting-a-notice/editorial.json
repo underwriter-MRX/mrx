@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1125",
+  "slug": "how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice",
+  "source_path": "src/content/posts/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice.mdx",
+  "input_body_sha256": "d4267126d21201e0c6d80720e17e775d6b4be9732d4d4d9eef6d5a6d68577f35",
+  "two_image_manifest_sha256": "9056b2881c3e72bf41c26e90c61071981d3f97232981d559b81740ad1fa642cc",
+  "private_full_source_sha256": "009008f79e449df21ef9bea5e16d99424eadf69ad137fa1956ec652279600c02",
+  "review_method": "codex_current_public_editorial_and_corpus_overlap_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial review",
+  "advisory_review": "Read-only mrx_copy exact-private-byte editorial/originality PASS in session 20260924_215455_c4a510; this public-byte review is separate.",
+  "findings": [
+    "The opening answers the exact document-location question before supporting detail and gives a usable newer-versus-legacy OCC records workflow; it is not a generic pooling explainer.",
+    "Current post-corpus screening found no Oklahoma OCC pooling-order retrieval article or exact-title collision. The Oklahoma escrow guide is a later payment-location job; the Texas pooling worksheet concerns a different regulator and records system.",
+    "The title/lease/ownership pillar is the primary parent and research CTA, with crawlable links to the official OCC routes, a separate Oklahoma sibling and the pillar. The reader can complete the research-only route without contacting MRX.",
+    "Five frontmatter FAQs match five visible Common Questions answers; the sixth questions_answered entry is the H1 and answer-first opening. The article does not promise ranking, indexing, ChatGPT citation or reader-specific legal resolution.",
+    "The page hero and social asset are the same unique exact-title 1200x630 binary, and the phrase-bearing 1200x675 in-body image is visually different. OCR, binary hashes and small-card visual inspections passed."
+  ]
+}

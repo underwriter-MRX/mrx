@@ -1,6 +1,6 @@
 # Private candidate screen — Oklahoma pooling-order retrieval
 
-Status: **source-screened, privately reviewed candidate with prepared image package only** (2026-09-25 UTC). No admitted row/rank, public MDX, publication, IndexNow submission, recrawl or MRX1000 count change. Current independently live count remains 330/350. The current-byte private-manuscript reviews and image composition passed as recorded below; public-byte and release gates have not begun.
+Status: **admitted, exact-public-byte reviewed, not deployed** (2026-09-25 UTC). Rank 331 and public MDX are present on the article branch, but there has been no publication, IndexNow submission, post-article recrawl or MRX1000 live-count change. Current independently live count remains 330/350. Private-manuscript reviews, image composition, and separate public-byte reviews passed; full release build and live gates remain open.
 
 ## Reader job and pillar
 
@@ -49,4 +49,10 @@ The exact title is provisionally locked as **How Do I Find an Oklahoma Pooling O
 - In-body: `/assets/articles/inline/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/oklahoma-pooling-order-search.webp`, 1200×675, SHA-256 `24090bd476f60d4dfed99fe4aa9574c690b3fd0345dacde2ce8aa0e700751ed3`. The exact phrase is visibly rendered over a materially different overhead archival-versus-digital record-route scene.
 - The creative manifest at `artifacts/mrx1000-wave259-creative-qa/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/creative-manifest.json` has SHA-256 `9056b2881c3e72bf41c26e90c61071981d3f97232981d559b81740ad1fa642cc`. Automated OCR, exact slug/phrase identity, binary distinction, MIME/dimensions and manual 600×315, 300×158 and 600×338 preview inspection passed. No real OCC case text, seals, numbers or logos appear in the art. Generation/composition prompts and source-art hashes are in the manifest; reproducible composition is `scripts/build-mrx1000-wave259-creative-assets.mjs`.
 
-There is still no admitted row/rank, public MDX, current-public-byte review, combined tests/build, production release, IndexNow, recrawl or published-count advance. A title, image, or generated topical-map suggestion alone is not admission.
+The image package alone did not admit or publish the article. A title, image, or generated topical-map suggestion is not article approval.
+
+## Public-byte admission and review — later September 25
+
+Standing owner article authority admitted only this distinct identity as append-only row `MRX1000-1125`, rank 331, through the hash-bound [selection decision](../../governance/mrx1000-wave259-selection-decision-2026-09-25.md). The public MDX at `src/content/posts/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice.mdx` has SHA-256 `d4267126d21201e0c6d80720e17e775d6b4be9732d4d4d9eef6d5a6d68577f35`. Its body preserves the reviewed private manuscript's claims and boundaries, with three non-substantive wording adjustments to satisfy the rendered grammar scanner; it is no longer byte-identical to the private manuscript. Codex separately cross-checked the complete final public frontmatter/body against the four current OCC pages, corpus overlap, image hashes and Oklahoma source-scope limits. Three exact-byte PASS review artifacts (factual/citation, editorial/originality, compliance) are under `artifacts/mrx1000-append-only/reviews/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/`, each with a SHA-256 sidecar. Read-only admission preflight passed with no blockers. These internal reviews are not licensed Oklahoma counsel certification.
+
+Focused source copy, heading, pillar-frontmatter and compliance checks passed. Full tests, typecheck, production build, current voice-baseline preservation, deployment, live-host proof and postrelease audit/dashboard checks still remain; the public-shaped MDX in source is **not yet a live published Article331**. Do not count it toward 350 until active-host release verification passes.
