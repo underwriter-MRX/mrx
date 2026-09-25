@@ -1,6 +1,7 @@
 import {
   Component,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -390,7 +391,9 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   );
 
   const endRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLTextAreaElement>(null);
+  const composerFormRef = useRef<HTMLFormElement>(null);
+  const voiceSubmitRequestedRef = useRef(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const launcherRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLElement>(null);
@@ -466,6 +469,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       }
       return;
     }
+    voiceSubmitRequestedRef.current = false;
     clearVoiceTimer();
     voiceSessionRef.current += 1;
     recognitionRef.current = null;
@@ -486,6 +490,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
 
   function toggleVoiceRecognition() {
     if (recognitionRef.current) {
+      voiceSubmitRequestedRef.current = false;
       stopVoiceRecognition('Dictation stopped. Review your words, then tap Send.');
       return;
     }
@@ -499,6 +504,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       );
       return;
     }
+    voiceSubmitRequestedRef.current = false;
     const session = ++voiceSessionRef.current;
     voiceBaseDraftRef.current = input;
     voiceFinalTranscriptRef.current = '';
@@ -511,7 +517,9 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       recognition.onstart = () => {
         if (voiceSessionRef.current !== session || voiceStoppingRef.current) return;
         setVoiceState('listening');
-        setVoiceMessage('Listening… Speak naturally. Tap Stop when you are finished.');
+        setVoiceMessage(
+          'Listening… Speak naturally. Tap Stop dictation to review, or the arrow to send.',
+        );
       };
       recognition.onresult = (event) => {
         if (voiceSessionRef.current !== session) return;
@@ -529,7 +537,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           setVoiceState(interim ? 'transcribing' : 'listening');
           setVoiceMessage(
             interim
-              ? 'Transcribing… Tap Stop when you are finished.'
+              ? 'Transcribing… Tap Stop dictation to review, or the arrow to send.'
               : 'Listening… Your words are in the message box.',
           );
         }
@@ -555,7 +563,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
             ? 'Review your words, then tap Send.'
             : 'No speech was captured. Tap the microphone to try again.',
         );
-        inputRef.current?.focus();
+        if (!voiceSubmitRequestedRef.current) inputRef.current?.focus({ preventScroll: true });
       };
       recognitionRef.current = recognition;
       setVoiceState('starting');
@@ -771,6 +779,21 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (!response.ok) throw new Error(result.error || 'permissions_not_saved');
     return result;
   }
+
+  useLayoutEffect(() => {
+    const textarea = inputRef.current;
+    if (!textarea) return;
+    textarea.style.height = 'auto';
+    textarea.style.height = `${textarea.scrollHeight + 2}px`;
+    // Follow new speech, but leave manual review/edit scrolling under the user's control.
+    if (recognitionRef.current) textarea.scrollTop = textarea.scrollHeight;
+  }, [input, open, step]);
+
+  useEffect(() => {
+    if (!voiceSubmitRequestedRef.current || recognitionRef.current) return;
+    voiceSubmitRequestedRef.current = false;
+    if (open && voiceState === 'idle') composerFormRef.current?.requestSubmit();
+  }, [input, open, voiceState]);
 
   useEffect(() => {
     const supported = window.isSecureContext && Boolean(speechRecognitionConstructor());
@@ -2014,7 +2037,13 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   async function handleComposer(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const text = input.trim();
-    if (!text || typingPersona || sending || booking || recognitionRef.current) return;
+    if (typingPersona || sending || booking) return;
+    if (recognitionRef.current) {
+      voiceSubmitRequestedRef.current = true;
+      stopVoiceRecognition('Review your words, then tap Send.');
+      return;
+    }
+    if (!text) return;
     beginGuideResponseWindow();
     setTypingPersona(activePersona);
     setInput('');
@@ -2716,17 +2745,17 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               <div ref={endRef} />
             </div>
             <footer className="travis-composer">
-              <form onSubmit={handleComposer} autoComplete="off">
+              <form ref={composerFormRef} onSubmit={handleComposer} autoComplete="off">
                 <label className="visually-hidden" htmlFor={composerInputId}>
                   Reply to {personaLabels[activePersona]}
                 </label>
-                <input
+                <textarea
+                  rows={1}
                   key={composerInputId}
                   id={composerInputId}
                   name={`mrx-chat-${step}`}
                   data-testid="travis-composer-input"
                   ref={inputRef}
-                  type="text"
                   inputMode={isEmailStep ? 'email' : isPhoneStep ? 'tel' : 'text'}
                   autoComplete="off"
                   aria-autocomplete="none"
@@ -2738,6 +2767,16 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   spellCheck={!isEmailStep && !isPhoneStep}
                   enterKeyHint="send"
                   value={input}
+                  onKeyDown={(event) => {
+                    if (
+                      event.key === 'Enter' &&
+                      !event.shiftKey &&
+                      !event.nativeEvent.isComposing
+                    ) {
+                      event.preventDefault();
+                      event.currentTarget.form?.requestSubmit();
+                    }
+                  }}
                   onChange={(event) => {
                     if (recognitionRef.current)
                       stopVoiceRecognition('Dictation stopped so you can edit your message.', true);
@@ -2759,9 +2798,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                       (step === 'loading' || Boolean(typingPersona) || sending || booking))
                   }
                   aria-label={
-                    recognitionRef.current
-                      ? 'Stop voice input'
-                      : 'Start voice input with microphone'
+                    recognitionRef.current ? 'Stop dictation' : 'Start voice input with microphone'
                   }
                   aria-pressed={Boolean(recognitionRef.current)}
                   aria-expanded={Boolean(recognitionRef.current)}
@@ -2770,12 +2807,16 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                     speechSupported === false
                       ? 'Voice input is not supported in this browser'
                       : recognitionRef.current
-                        ? 'Stop voice input'
+                        ? 'Stop dictation'
                         : 'Start voice input'
                   }
                 >
                   <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-                    <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21H8v2h8v-2h-3v-2.08A7 7 0 0 0 19 12h-2Z" />
+                    {recognitionRef.current ? (
+                      <rect x="5" y="5" width="14" height="14" rx="2" />
+                    ) : (
+                      <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21H8v2h8v-2h-3v-2.08A7 7 0 0 0 19 12h-2Z" />
+                    )}
                   </svg>
                 </button>
                 <button
@@ -2784,8 +2825,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                     Boolean(typingPersona) ||
                     sending ||
                     booking ||
-                    !input.trim() ||
-                    Boolean(recognitionRef.current)
+                    (!input.trim() && !recognitionRef.current) ||
+                    voiceState === 'stopping'
                   }
                   aria-label="Send reply"
                 >
@@ -2805,9 +2846,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   <button
                     type="button"
                     disabled={voiceState === 'stopping'}
-                    onClick={() => stopVoiceRecognition('Review your words, then tap Send.')}
+                    onClick={() => {
+                      voiceSubmitRequestedRef.current = false;
+                      stopVoiceRecognition('Review your words, then tap Send.');
+                    }}
                   >
-                    Stop
+                    Stop dictation
                   </button>
                 </div>
               )}

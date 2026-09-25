@@ -1,6 +1,6 @@
 # MRX voice input — 2026-09-23
 
-Status: microphone dictation is live on all active production aliases and verified. The post-release Search Atlas recrawl is queued; existing OTTO pending recommendations remain unresolved. Historical blockers below describe earlier stages and are superseded by the public-release record at the end.
+Status: microphone dictation is live on all active production aliases and verified. The post-release Search Atlas crawl and post-processing completed; existing OTTO pending recommendations remain unresolved. Historical blockers below describe earlier stages and are superseded by the public-release record at the end.
 
 ## Change
 
@@ -62,3 +62,9 @@ Source-upload transport failed repeatedly. Git-based remote build correctly fail
 Post-release crawl trigger returned queued, already_in_progress=false, sync_complete=false for audit 138239. Existing last completed crawl ended 2026-09-24T05:04:18.126957Z, before this voice release; its 2,454 raw observations are not a post-voice result. The prior OTTO dashboard remained 906 total / 16 deployed / 890 pending. Zero-pending release closeout is not claimed.
 
 Evidence: `outputs/20260923-voice-independent/public-voice-release-http.json`, `public-voice-crawlers-assets.json`, `public-voice-e2e-12.log`, `public-voice-remote-build-deploy.log`, `public-voice-promote.log`, `public-voice-deployment.json`, `public-mobile-voice-listening.png`, `edge-microphone-release.json`.
+
+## Post-release crawl completion independently verified
+
+Audit 138239 completed and postprocessed, authoritative terminal=true/should_repoll=false. Started 2026-09-24T14:52:06.753074Z; completed 2026-09-24T16:50:54.231896Z. Aggregate results: score 952; 495 pages; 455 successful/40 redirects; 454 indexable/41 nonindexable; zero 4xx, blocked, or 5xx pages; 2,408 raw observations. Aggregate crawl success does not separately prove exact Travis-page inventory or microphone functionality; those are supported by the direct live HTTP/browser tests above.
+
+Fresh post-recrawl OTTO dashboard remains 906 total, 16 deployed, 890 pending. No recommendations were bulk deployed, and zero-pending closeout is not claimed. Evidence: post-voice-terminal-audit.json and post-voice-otto-dashboard.json in the release evidence directory. No duplicate crawl was triggered.
