@@ -1,0 +1,134 @@
+{
+  "artifact_type": "mrx1000_wave187_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0787",
+  "slug": "gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator",
+  "title": "Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/",
+  "source_path": "src/content/posts/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.mdx",
+  "input_body_sha256": "7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260",
+  "input_frontmatter_sha256": "8baf9679e1ac83619918b4611b9c2a7b3069b4a973880fc8b41b949fe68d822e",
+  "expected_repo_sha256": "7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260",
+  "two_image_manifest_sha256": "bace12f4c3e12420dd69b4d51f8cbdb38840119b0294885222f9ed1bccb685f7",
+  "visual_metadata": {
+    "hero_alt": "An open report binder and page marker appear beside the exact Gonzales CAD mineral-responsibility page-locator title.",
+    "social_alt": "An open report binder and page marker appear beside the exact Gonzales CAD mineral-responsibility page-locator title.",
+    "inline_alt": "An overhead print-and-PDF locator board appears above the Gonzales CAD mineral appraisal responsibility phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Gonzales CAD 2025 Mineral Responsibility Page Locator",
+    "seo_title_character_count": 53,
+    "description_character_count": 147,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave187",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave187_factual",
+  "review_run_id": "mrx1000-wave187-factual-20260915T071305Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official index, the 26-page PDF recorded on 2026-08-28, printed page 18/PDF page 22, the attributed responsibility statements, and separate publisher/directory/search context.",
+    "The recorded file controls include the exact publisher URL, HTTP 200, application/pdf, 1,923,601 bytes, 26 pages, and SHA-256 e00edabe13fa5453662eeebcd82ebeee1cbeb4a0050e7c989f67459a0d8090db."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_26_page_file_and_sha256_control_pass",
+    "printed_page_18_pdf_page_22_locator_reconciliation_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_document_page_route_date_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "no_query_no_result_row_no_person_or_property_data_boundary_pass",
+    "adjacent_dimmit_ector_glasscock_and_state_directory_jobs_preserved_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Gonzales CAD Data and Records index (accessed 2026-08-28)",
+      "url": "https://www.gonzalescad.org/home/DataRecords",
+      "publisher": "www.gonzalescad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.gonzalescad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Gonzales CAD Data and Records index supplies the displayed 2025 Mass Appraisal Report link and publisher-controlled route context.",
+      "claim_scope": "The index does not establish the contents, completeness, currentness, applicability, legal effect, appraisal result, tax result, property value, mineral-rights sale value, offer, or transaction conclusion of any linked file."
+    },
+    {
+      "label": "Gonzales CAD 2025 Mass Appraisal Report (accessed 2026-08-28)",
+      "url": "https://www.gonzalescad.org/Forms/GetDocument?fileName=1773844462_2025+Mass+Appraisal+Reprot.pdf&subPath=Data+Records",
+      "publisher": "www.gonzalescad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.gonzalescad.org/Forms/GetDocument?fileName=1773844462_2025+Mass+Appraisal+Reprot.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 26-page PDF supplies the Industrial, Utility and Mineral Valuation section on printed page 18/PDF page 22 and the attributed Appraisal Responsibility statements recorded by this locator.",
+      "claim_scope": "The article does not import the report body, retrieve a property appraisal, validate methodology, replicate a model, infer title or ownership, calculate tax or value, or convert a CAD source into mineral-rights sale value, an offer, or a recommendation."
+    },
+    {
+      "label": "Gonzales Central Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.gonzalescad.org/",
+      "publisher": "www.gonzalescad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.gonzalescad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Gonzales CAD home page supplies a separate dated publisher statement that mineral, utility, and industrial accounts are appraised for the district by Pritchard & Abbott, Inc.",
+      "claim_scope": "It corroborates the general relationship only and does not replace the 2025 report citation, establish a particular account or appraisal, or determine tax, title, ownership, mineral-rights sale value, offer quality, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Gonzales County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/gonzales.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/gonzales.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Gonzales County directory supplies limited current appraisal-district and tax-office directory provenance.",
+      "claim_scope": "It is not the source for the report-page statement, an appraisal, tax amount, property identity, title, value, offer, transaction, or legal conclusion."
+    },
+    {
+      "label": "Gonzales CAD property-search interface (accessed 2026-08-28)",
+      "url": "https://www.gonzalescad.org/Home/Search",
+      "publisher": "www.gonzalescad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.gonzalescad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official empty Gonzales CAD property-search interface supplies navigation context only; no query was entered and no result row was retrieved.",
+      "claim_scope": "The interface does not establish that a particular owner, lease, parcel, account, appraisal, tax amount, mineral interest, value, offer, or transaction fact exists."
+    }
+  ]
+}

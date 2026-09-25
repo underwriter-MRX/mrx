@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave124_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:12Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0329",
+  "slug": "texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Form T-1 Monthly Transportation and Storage Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f",
+  "input_frontmatter_sha256": "034f6f907b9b5d941cd2b828ade89d70243370b1b8bb3f2b64274d3d1934594c",
+  "expected_repo_sha256": "e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f",
+  "two_image_manifest_sha256": "6982566f2fa3e58f6faf789f496a8eba656987b98c6a3409453bfe52a9d87a7f",
+  "visual_metadata": {
+    "hero_alt": "A Texas records researcher reviews blank transportation-and-storage folders beside the exact title.",
+    "social_alt": "A Texas records researcher reviews blank transportation-and-storage folders beside the exact title.",
+    "inline_alt": "A people-free overhead T-1 retrieval evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Form T-1 Report Retrieval Worksheet",
+    "seo_title_character_count": 45,
+    "description_character_count": 152,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T12:27:22Z",
+    "reviewed_by": "mrx_compliance-continuous-wave124",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave124_factual",
+  "review_run_id": "mrx1000-wave124-factual-20260915T073212Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is e2ed87bb79fd33a78b6d576d5a93965247760061400e9266cb4ac613ce43299f; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five current official RRC surfaces, source and profile identity, profileId 29 routing, January 2013-forward source-described coverage, current form context, adjacent-route separation, and attempt-state rules. None establishes a completed retrieval, report completeness, facility or operator identity, production, transportation, storage, inventory, property connection, ownership, title, lease, royalty, value, offer, legal effect, tax effect, or transaction conclusion.",
+    "The direct profile request returned HTTP 403, no profile page was captured, and no query completed. The article publishes no actual organization number, facility, report identifier, district, location, reporting period, party, result, image, document, property, owner, payment, production, transportation, storage, inventory, value, offer, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory identifies the Oil and Gas Imaged Records Menu and supplies the current official entry route and public-source context.",
+      "claim_scope": "The article uses the directory only for source identity and routing. It does not establish a completed query, report completeness, a facility or operator fact, property relationship, ownership, production, transportation, storage, inventory, value, offer, legal effect, or transaction conclusion."
+    },
+    {
+      "label": "Texas RRC, Imaged Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Imaged Records page supplies the official imaged-record family route and archive context.",
+      "claim_scope": "The article uses the page only for route provenance and family separation. It makes no completeness, association, facility, operator, property, ownership, production, transportation, storage, inventory, value, legal, offer, or transaction inference."
+    },
+    {
+      "label": "Texas RRC, Imaged Records Query Menu (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official menu identifies Monthly Transportation and Storage Reports (Form T-1) profileId 29 and states January 2013-forward coverage.",
+      "claim_scope": "The article preserves that statement only as dated source-described collection scope and records only one authorized manual attempt. It does not convert the scope note, profile identity, or access response into a document, facility, operator, property, ownership, production, transportation, storage, inventory, value, offer, legal, or transaction fact."
+    },
+    {
+      "label": "Texas RRC, Oil and Gas Forms (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/oil-and-gas-forms/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/oil-and-gas-forms/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Forms page identifies Form T-1 as the Monthly Transportation and Storage Report and supplies current form and instructions links.",
+      "claim_scope": "The article uses the page only to identify the form family and keep form materials separate from the imaged-record retrieval attempt. It does not prepare or submit a filing, interpret form entries, or infer any production, transportation, storage, inventory, facility, operator, property, ownership, value, legal, offer, or transaction fact."
+    },
+    {
+      "label": "Texas RRC, New Form T-1 Notice (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/announcements/021524-nto-new-monthly-transportation-storage-report-and-skim-oilcondensate-report-available/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/announcements/021524-nto-new-monthly-transportation-storage-report-and-skim-oilcondensate-report-available/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official February 15, 2024 notice states that revised Form T-1 versions became required on May 1, 2024 and describes the added filing fields.",
+      "claim_scope": "The article uses the notice only as dated current-form context. It does not establish that any report was filed, accepted, complete, retrievable, connected to a reader, or substantively accurate, and it does not provide filing or compliance advice."
+    }
+  ]
+}

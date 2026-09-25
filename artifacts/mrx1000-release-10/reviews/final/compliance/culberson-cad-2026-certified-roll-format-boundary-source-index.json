@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave165_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0764",
+  "slug": "culberson-cad-2026-certified-roll-format-boundary-source-index",
+  "title": "Culberson CAD 2026 Certified Roll Format Boundary Source Index",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2026-certified-roll-format-boundary-source-index/",
+  "source_path": "src/content/posts/culberson-cad-2026-certified-roll-format-boundary-source-index.mdx",
+  "input_body_sha256": "34076731211b877434db39ee61aaf9f7edf321e65ab6aa8515d2b15627620b8a",
+  "input_frontmatter_sha256": "4cbe5f83732fbccf72cf02ee6ba2f3532cdb4e041e0d84be73dcb4d6d37532c2",
+  "expected_repo_sha256": "34076731211b877434db39ee61aaf9f7edf321e65ab6aa8515d2b15627620b8a",
+  "two_image_manifest_sha256": "7ce5368f88316f3575c9911515abbe0c8b3739c6f3401ed947986e98ceb64274",
+  "visual_metadata": {
+    "hero_alt": "A four-tab source folio appears beside the exact Culberson CAD certified-roll format-boundary title.",
+    "social_alt": "A four-tab source folio appears beside the exact Culberson CAD certified-roll format-boundary title.",
+    "inline_alt": "Four blank format objects appear above the exact Culberson CAD 2026 certified roll formats keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD 2026 Certified Roll Format Index",
+    "seo_title_character_count": 46,
+    "description_character_count": 149,
+    "answer_summary_word_count": 67,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T14:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave165",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2026-certified-roll-format-boundary-source-index/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave165_compliance",
+  "review_run_id": "mrx1000-wave165-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "5effe079d791703609ff2df1d937b418e20a3acc3d10c0812c9c0ff8433dbea4",
+  "expected_inline_sha256": "ae1af384a1f9da3e1b756c3a064b1c3f3233dcb8b96548f685e6374a1292bb0c",
+  "findings": [
+    "Complete current MDX SHA-256 is 34076731211b877434db39ee61aaf9f7edf321e65ab6aa8515d2b15627620b8a; hero/share and inline image hashes are separately locked.",
+    "The reusable public source index contains only publisher and endpoint identity, exact URLs, endpoint families, retrieval provenance, safely observable response headers, limitations, and document-control states. It stops before file-body access, data matching, private-data review, property or account search, schema comparison, equivalence testing, appraisal judgment, protest strategy, tax guidance, legal interpretation, valuation, representation, contact, submission, payment, offer analysis, or sale advice.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real record, personal data, property fact, format-equivalence claim, certification conclusion, appraisal claim, protest direction, legal position, tax conclusion, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "publisher_link_and_header_only_no_file_body_personal_data_record_content_matching_schema_comparison_appraisal_protest_tax_legal_valuation_contact_submission_payment_offer_sale_advice_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_record_personal_data_property_fact_government_mark_equivalence_certification_appraisal_legal_tax_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-2026-certified-roll-format-boundary-source-index.mdx",
+    "/assets/articles/hero/culberson-cad-2026-certified-roll-format-boundary-source-index.webp",
+    "/assets/articles/inline/culberson-cad-2026-certified-roll-format-boundary-source-index/culberson-cad-2026-certified-roll-formats.webp"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave206_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0821",
+  "slug": "martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place",
+  "title": "Martin CAD 2025-26 MIUP Plan: Mineral Interests, Not Minerals in Place",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/",
+  "source_path": "src/content/posts/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.mdx",
+  "input_body_sha256": "48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07",
+  "input_frontmatter_sha256": "e71e4733434365a8af86a1ed39f4899b60c38fceb51156c6bd9df0c9adb9ce27",
+  "expected_repo_sha256": "48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07",
+  "two_image_manifest_sha256": "eea2c218a3ce45b0282d36b4b252088651c5a16089f25cd0d157316d448661a7",
+  "visual_metadata": {
+    "hero_alt": "A translucent interest frame sits above layered stone beside the exact Martin CAD MIUP plan title.",
+    "social_alt": "A translucent interest frame sits above layered stone beside the exact Martin CAD MIUP plan title.",
+    "inline_alt": "A top-down lens and evidence tabs sit above the exact Martin CAD mineral-interest boundary keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD MIUP Plan: Mineral Interests · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 146,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T14:18:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave206",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave206_compliance",
+  "review_run_id": "mrx1000-wave206-compliance-20260915T071316Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "bb2a1aa90f55b5cb669ba1df3b6d7694ca07d1acbbe0e49c9fd463d862852d9f",
+  "expected_inline_sha256": "867d4c26953955ee4dfb024e8d88f2fb2e47aaccc7080c0acdd37efbc7c67bad",
+  "findings": [
+    "Complete current MDX SHA-256 is 48e5aeb060d05c51bf8e948f188ce7da52bdebe0980431f64e3a68908ceb6d07; hero/share and inline image hashes are separately locked.",
+    "The article repeatedly separates appraisal-plan terminology from ownership, title, legal interpretation, property appraisal, tax, transaction, production, and royalty outcomes and preserves MRX buyer-interest disclosure.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, legal statement, property identity, record data, monetary figure, appraisal, tax, offer, ownership, outcome, or ranking or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_current_law_title_ownership_property_appraisal_tax_sale_value_offer_production_royalty_or_legal_advice_claim_pass",
+    "source_attributed_plan_wording_and_code_section_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_maps_property_records_money_rigs_legal_symbols_conclusions_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.mdx",
+    "/assets/articles/hero/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place.webp",
+    "/assets/articles/inline/martin-cad-2025-26-miup-plan-mineral-interests-not-minerals-in-place/martin-cad-mineral-interests-not-minerals-in-place.webp"
+  ]
+}

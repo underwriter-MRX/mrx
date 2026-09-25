@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave228_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0848",
+  "slug": "texas-rrc-district-code-conversion-file-values-crosswalk",
+  "title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+  "source_path": "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+  "input_body_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "input_frontmatter_sha256": "fed4df55dbfd6b4173003006fc1ad8d549203d85dfd5cf74c56a5731332386d0",
+  "expected_repo_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "two_image_manifest_sha256": "6b466b1885d9fcd6998db2a6b0279b69545dd15195a27fe921bce00a6b95da2d",
+  "visual_metadata": {
+    "hero_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "social_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "inline_alt": "An overhead dual-rail audit board appears above the exact Texas RRC district code conversion keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Code Conversion Crosswalk",
+    "seo_title_character_count": 44,
+    "description_character_count": 146,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T12:17:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave228",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave228_editorial",
+  "review_run_id": "mrx1000-wave228-editorial-20260915T071322Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b; the answer-first article contains 2003 body tokens and five FAQs.",
+    "The original broad valuation-risk identity is rejected. The replacement answers one distinct file-import question with a source-scoped conversion table and a reproducible validation pattern.",
+    "Information gain is concrete: the article identifies eight non-identity rows, the reserved 8B row, raw-versus-translated storage, text typing, conversion status, exception handling, and a checksum workflow.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark eye-level translation-gate studio and strict-overhead pale-stone dual-rail audit board are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2003,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 66
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 44,
+        "description_character_count": 146,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T12:17:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave228",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+    "/assets/articles/hero/texas-rrc-district-code-conversion-why-file-values-07-14-need-a-crosswalk.webp",
+    "/assets/articles/inline/texas-rrc-district-code-conversion-file-values-crosswalk/texas-rrc-district-code-conversion.webp"
+  ]
+}

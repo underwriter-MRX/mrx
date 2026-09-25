@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave190_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:08Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0793",
+  "slug": "howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator",
+  "title": "Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+  "source_path": "src/content/posts/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.mdx",
+  "input_body_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+  "input_frontmatter_sha256": "d35b6026ecfa08680b7fea9320aeab175764fb2b6c833ceb124fa422a0a81997",
+  "expected_repo_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+  "two_image_manifest_sha256": "31b6993014dea09d0ebc60fa80c5d9b63d5f2bc4d3dc0fe824f0909e2be1a25e",
+  "visual_metadata": {
+    "hero_alt": "An open annual-report binder and brass page marker appear beside the exact Howard CAD Category G totals page-locator title.",
+    "social_alt": "An open annual-report binder and brass page marker appear beside the exact Howard CAD Category G totals page-locator title.",
+    "inline_alt": "An overhead source-and-row evidence board appears above the Howard CAD 2024 Category G oil and gas property totals phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2024 Category G Totals Page Locator",
+    "seo_title_character_count": 46,
+    "description_character_count": 137,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T07:44:47Z",
+    "reviewed_by": "mrx_compliance-continuous-wave190",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave190_compliance",
+  "review_run_id": "mrx1000-wave190-compliance-20260915T071308Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "724dcbc6773e9aa58c820ba35580b8af2c398fed21bb776ea2a2630c7e316d8d",
+  "expected_inline_sha256": "6641b81dcdea585f8643eb6bd379b73cd6a84e81c6eeb6601e981066075f962f",
+  "findings": [
+    "Complete current MDX SHA-256 is fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects a person or property query, inferred field label, current-count claim, owner or account count, acreage, parcel, well, reserve, production, title, tax-owed, current-value, mineral-rights sale-value, offer-quality, transaction, legal, filing, or outcome conclusion.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, field label, numerical result, property fact, account data, appraisal result, tax direction, ownership, title, sale value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "annual_report_page_locator_no_person_property_owner_account_parcel_acreage_well_reserve_production_title_tax_current_value_current_count_offer_sale_or_legal_claim_pass",
+    "middle_value_145117_no_inferred_field_label_pass",
+    "right_value_report_market_value_not_current_2026_or_mineral_rights_sale_value_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_government_mark_agency_logo_seal_person_hand_map_money_oilfield_scene_official_page_price_property_data_appraisal_result_signature_ui_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.mdx",
+    "/assets/articles/hero/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.webp",
+    "/assets/articles/inline/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/howard-cad-2024-category-g-oil-and-gas-property-totals.webp"
+  ]
+}

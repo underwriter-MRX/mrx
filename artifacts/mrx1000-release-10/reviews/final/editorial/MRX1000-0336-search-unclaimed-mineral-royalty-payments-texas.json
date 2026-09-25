@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave131_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T07:56:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0336",
+  "slug": "search-unclaimed-mineral-royalty-payments-texas",
+  "title": "How to Search for Unclaimed Mineral Royalty Payments in Texas",
+  "canonical_url": "https://mineralrightsxchange.com/blog/search-unclaimed-mineral-royalty-payments-texas/",
+  "source_path": "src/content/posts/search-unclaimed-mineral-royalty-payments-texas.mdx",
+  "input_body_sha256": "19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a",
+  "input_frontmatter_sha256": "eb4a3c9b18a988a78d12d441024956862dc8b1623219a59239bb3e9ec59e21ef",
+  "expected_repo_sha256": "19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a",
+  "two_image_manifest_sha256": "3bf53fd50d1c1a3a173209a1dcdaaedd842255a8199a904ac5eaf959d91ecc2b",
+  "visual_metadata": {
+    "hero_alt": "An archival search desk appears beside the exact unclaimed mineral royalty payments title.",
+    "social_alt": "An archival search desk appears beside the exact unclaimed mineral royalty payments title.",
+    "inline_alt": "A top-down redacted search-log board appears above the exact Texas unclaimed royalty keyword."
+  },
+  "reviewer_id": "codex_wave131_editorial",
+  "review_run_id": "mrx1000-wave131-editorial-20260826T075633Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a; the answer-first article contains 1531 body tokens and five FAQs.",
+    "The article rejects the colliding offer-comparison identity and owns one distinct administrative job: document one official Texas unclaimed-property search for a possible mineral royalty payment.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The oblique archival search desk and strict-overhead redacted search-log board are materially distinct."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "19550339ed261c5db1dddf0738b9eb3d7811d9a39f5e9aeaa0508f733fb6b37a"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1531,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/search-unclaimed-mineral-royalty-payments-texas.mdx",
+    "/assets/articles/hero/how-to-search-for-unclaimed-mineral-royalty-payments-in-texas.webp",
+    "/assets/articles/inline/search-unclaimed-mineral-royalty-payments-texas/texas-unclaimed-mineral-royalty-payments-search.webp"
+  ]
+}

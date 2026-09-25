@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave129_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0334",
+  "slug": "mineral-rights-offer-version-control-and-deadline-register",
+  "title": "Mineral Rights Offer Version-Control and Deadline Register",
+  "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-version-control-and-deadline-register/",
+  "source_path": "src/content/posts/mineral-rights-offer-version-control-and-deadline-register.mdx",
+  "input_body_sha256": "06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419",
+  "input_frontmatter_sha256": "0f0c3a170bd2ee6e224855569f2dedc0b3ec97cd3221993591219a31f8a0eab2",
+  "expected_repo_sha256": "06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419",
+  "two_image_manifest_sha256": "ed0763fb83ba94b67b4c594cdf3318339a781a507dc585eb23f987ee0f462246",
+  "visual_metadata": {
+    "hero_alt": "A dark oblique offer-version archive station appears beside the exact version-control register title.",
+    "social_alt": "A dark oblique offer-version archive station appears beside the exact version-control register title.",
+    "inline_alt": "A top-down offer-version register board appears above the exact version-control keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Mineral Rights Offer Version-Control Register",
+    "seo_title_character_count": 45,
+    "description_character_count": 154,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T06:48:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave129",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/mineral-rights-offer-correspondence-index/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-version-control-and-deadline-register/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave129_compliance",
+  "review_run_id": "mrx1000-wave129-compliance-20260915T072837Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "2ffba27845e4d317221d493a21249e9266999e2a528306d3eaeb3a7e92faae40",
+  "expected_inline_sha256": "05a5ca56ae38fceb71df378a08288b6337ff5c32683dbd7d2d310e9e258c046f",
+  "findings": [
+    "Complete current MDX SHA-256 is 06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419; hero/share and inline image hashes are separately locked.",
+    "The article keeps version preservation separate from correspondence indexing, buyer comparison, fairness, lowball, red-flag, valuation, negotiation, agreement interpretation, deadline calculation, and transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no party, price, deadline, contract, ownership, legal, fraud, or decision claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "written_offer_version_received_timestamp_stated_deadline_text_source_filename_optional_sha256_change_detection_state_changed_field_and_controlled_reference_no_offer_ranking_fairness_value_contract_interpretation_acceptance_negotiation_ownership_deadline_calculation_authentication_legal_effect_or_fraud_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/mineral-rights-offer-version-control-and-deadline-register.mdx",
+    "/assets/articles/hero/mineral-rights-offer-version-control-and-deadline-register.webp",
+    "/assets/articles/inline/mineral-rights-offer-version-control-and-deadline-register/mineral-rights-offer-version-control.webp"
+  ]
+}

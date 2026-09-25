@@ -1,0 +1,68 @@
+{
+  "artifact_type": "mrx1000_wave137_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T10:40:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0342",
+  "slug": "sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet",
+  "title": "SEC EDGAR Mineral Rights Offeror Filing Search Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189",
+  "input_frontmatter_sha256": "42693ecf17f8cc4a70bd9373c5a42e1f95803b2ab0dd8f4247b4b278fd69fba2",
+  "expected_repo_sha256": "01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189",
+  "two_image_manifest_sha256": "a53aa0d45389c5aac3a5cb617c4497f89901576d1a91072f80e721cdb2026582",
+  "visual_metadata": {
+    "hero_alt": "An oblique public-filings research station appears beside the exact SEC EDGAR offeror worksheet title.",
+    "social_alt": "An oblique public-filings research station appears beside the exact SEC EDGAR offeror worksheet title.",
+    "inline_alt": "A top-down blank search-attempt worksheet appears above the exact SEC EDGAR offeror filing-search keyword."
+  },
+  "reviewer_id": "codex_wave137_factual",
+  "review_run_id": "mrx1000-wave137-factual-20260826T104024Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 01a56f87d916b676f3b973051cd18ea9f0a551136d99165a5fb1f6845b010189; all 2 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current source-displayed inputs, match or filter controls, filing categories, and result columns on the two official SEC routes.",
+    "The article invents no filer, entity, person, CIK, ticker, filing, offer, correspondence, address, property, result, identity match, capacity statement, legal effect, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "two_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "U.S. SEC, Search Filings (accessed 2026-08-26)",
+      "url": "https://www.sec.gov/search-filings",
+      "publisher": "www.sec.gov",
+      "accessed_at": "2026-08-26T10:40:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.sec.gov/search-filings",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current SEC Search Filings page describes free public EDGAR access, a company search that accepts a name, ticker symbol, or CIK, match options, and access to registration statements, periodic reports, and other forms.",
+      "claim_scope": "It supports only accurate description and attempt-level recording of the current official company-search route and its source-displayed fields. It does not verify an offer sender, reconcile names, establish legitimacy or authorization, prove financial capacity, connect a filer to property, validate an offer, or supply a legal or transaction conclusion."
+    },
+    {
+      "label": "U.S. SEC, EDGAR Full Text Search (accessed 2026-08-26)",
+      "url": "https://www.sec.gov/edgar/search/",
+      "publisher": "www.sec.gov",
+      "accessed_at": "2026-08-26T10:40:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.sec.gov/edgar/search/",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The current SEC EDGAR Full Text Search page displays keyword, ticker, company-name, CIK, filing-type, entity, location, and related filters plus result columns including form, filed date, reporting-for field, filing entity or person, and CIK.",
+      "claim_scope": "It supports only source-preserving transcription for one manual search attempt and one route. It does not establish identity, filing relevance, contractual meaning, legitimacy, authorization, solvency, funding, offer quality, fair value, or a due-diligence result."
+    }
+  ]
+}

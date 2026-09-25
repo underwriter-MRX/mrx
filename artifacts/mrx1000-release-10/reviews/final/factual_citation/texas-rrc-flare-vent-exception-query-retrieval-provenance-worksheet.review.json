@@ -1,0 +1,120 @@
+{
+  "artifact_type": "mrx1000_wave100_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T10:23:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0283",
+  "slug": "texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Flare/Vent Exception Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-flare-vent-exception-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "input_frontmatter_sha256": "675e0482fa2e0991d13d05b30cf34eb29f06ed94db4d0f2628a2625284bc9653",
+  "expected_repo_sha256": "56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4",
+  "two_image_manifest_sha256": "f206605379995fa30288e248b7d21e6aabdd3fed7e602e8a5f428d8f54719480",
+  "visual_metadata": {
+    "hero_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "social_alt": "A Flare/Vent Exception source-provenance worksheet appears beside the exact article title.",
+    "inline_alt": "A people-free overhead Flare/Vent Exception query checklist appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave100_factual",
+  "review_run_id": "mrx1000-wave100-factual-metadata-remediation-20260824T102320Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 56d9d09a31dc911b7b68aad5d1fe73e8e871d29c501605c10f704f186f4f17c4; all six declared official sources passed current HTTPS access review, and the metadata-only title remediation does not alter any factual claim.",
+    "Claims remain bounded to current official RRC routes, the separately named SWR 32 query, online-system coverage beginning May 2, 2021, source-displayed criteria and statuses, result and attachment navigation, rule-source context, and published query limitations. None is used to establish a private-property connection, an occurrence, compliance, environmental effect, production, royalty impact, value, offer quality, or a transaction result.",
+    "The article publishes no actual filing number, exception number, property identifier, operator detail, result screenshot, attachment, occurrence allegation, environmental conclusion, compliance conclusion, production conclusion, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_official_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory identifies Flare/Vent Exceptions Statewide Rule 32 Query as a separately named oil-and-gas query, labels its update frequency as nightly, and publishes the agency data-set limitation.",
+      "claim_scope": "The article preserves the official entry route, update context, and source limitation without treating a displayed result as authoritative, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About the Flare/Vent Exceptions SWR 32 Query (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-swr32-query/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-swr32-query/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official About page says the query searches Form R-32 applications submitted on or after May 2, 2021 and makes authorized exception information available through the query when an application has been approved.",
+      "claim_scope": "The article uses those statements only for source coverage and interface context, not as evidence that an exception applies to a reader, an event occurred, or a property or private interest is connected."
+    },
+    {
+      "label": "Railroad Commission of Texas, SWR 32 Public Query (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.state.tx.us/swr32/publicquery.xhtml",
+      "publisher": "webapps.rrc.state.tx.us",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.state.tx.us/swr32/publicquery.xhtml",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official query screen supplies the named route and current source-displayed criteria, status, property, operator, location, date, search, and reset labels.",
+      "claim_scope": "The article records only criteria and interface states actually used or observed and does not submit, reproduce, or interpret a property-specific result."
+    },
+    {
+      "label": "Railroad Commission of Texas, SWR 32 Public Query User Guide (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/media/u4hc253p/swr-32-public-query-user_guide_1-0.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/u4hc253p/swr-32-public-query-user_guide_1-0.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official guide describes search criteria, all-criteria matching behavior, statuses, date and identifier formats, result-grid navigation, application details, and attachments.",
+      "claim_scope": "The article preserves source-displayed instructions and route states without deciding application meaning, regulatory effect, occurrence, compliance, environmental effect, or a private-property relationship."
+    },
+    {
+      "label": "Railroad Commission of Texas, Current Rules (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/general-counsel/rules/current-rules/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/general-counsel/rules/current-rules/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The RRC Current Rules page identifies the official rule location and supplies current chapter links and informational PDFs.",
+      "claim_scope": "The article uses the page only to keep rule-source context separate from query retrieval and makes no legal or compliance interpretation."
+    },
+    {
+      "label": "Railroad Commission of Texas, Chapter 3 Oil and Gas Division rules PDF effective 2025-12-08 (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/media/f32dm04x/chapter3-all-text-effective-dec8-2025.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T09:50:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/f32dm04x/chapter3-all-text-effective-dec8-2025.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official informational Chapter 3 PDF identifies its effective date and includes Statewide Rule 32 in the Oil and Gas Division rules corpus.",
+      "claim_scope": "The article records the rule-source route and version only; it does not interpret the rule, decide whether an exception was required, or determine compliance."
+    }
+  ]
+}

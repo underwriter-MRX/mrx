@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave115_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0299",
+  "slug": "texas-rrc-production-by-lease-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production by Lease Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-by-lease-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5",
+  "input_frontmatter_sha256": "e49247d995e65b6d50765430f9358cf2cd111e6fbb404ff57d129978e438736b",
+  "expected_repo_sha256": "3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5",
+  "two_image_manifest_sha256": "f8f64b50e383fdd8ba43aa75b22a071f197c9a0c096f6bde105ec82ad1ef515c",
+  "visual_metadata": {
+    "hero_alt": "A researcher records a Production by Lease attempt beside the exact article title.",
+    "social_alt": "A researcher records a Production by Lease attempt beside the exact article title.",
+    "inline_alt": "An overhead one-attempt provenance worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Production by Lease Retrieval Worksheet",
+    "seo_title_character_count": 49,
+    "description_character_count": 149,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T07:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave115",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave115_factual",
+  "review_run_id": "mrx1000-wave115-factual-20260915T072834Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official RRC surfaces, route identity, the three separate application choices, visible Production by Lease criteria labels, displayed source state, and source-scope limitations. None establishes production interpretation, lease-to-property connection, title, ownership, payment entitlement, acreage, decimals, taxes, reserves, forecasts, value, offer quality, legal effect, compliance, or a transaction conclusion.",
+    "The article publishes no actual lease type, district, RRC identifier, month range, result row, party name, production figure, screenshot, property identifier, owner record, payment, decimal, tax, reserve, forecast, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official research-query directory identifies Production Reports Query (Form PR) and supplies the current official entry route.",
+      "claim_scope": "The directory does not establish production attribution, private-property connection, title, ownership, payment, value, legal effect, or a transaction conclusion."
+    },
+    {
+      "label": "Texas RRC, Production Report Queries (accessed 2026-08-25)",
+      "url": "https://webapps.rrc.texas.gov/PR/publicQueriesMainAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/publicQueriesMainAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The current official application supplies the distinct Production by Lease, Production by Filing Operator, and Production by Operator of Record paths and the visible Production by Lease criteria labels.",
+      "claim_scope": "The article records one manual Production by Lease attempt and does not interpret any displayed result or join it to an adjacent route."
+    },
+    {
+      "label": "Texas RRC, Oil and Gas Production Data (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official production-data page supplies agency data-resource context only.",
+      "claim_scope": "The article does not use it to establish lease, well, operator, property, owner, title, payment, acreage, reserve, forecast, value, or legal conclusions."
+    },
+    {
+      "label": "Texas RRC, About Oil and Gas Data Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official query-information page supplies current-system scope and historical-data limitations only.",
+      "claim_scope": "The article keeps other query systems in separately named retrieval records and makes no completeness claim."
+    }
+  ]
+}

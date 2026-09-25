@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave220_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:21Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0840",
+  "slug": "reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios",
+  "title": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+  "source_path": "src/content/posts/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.mdx",
+  "input_body_sha256": "5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe",
+  "input_frontmatter_sha256": "22887b30e79dd84d73ba0fd69f8f426a7b384c5a3d3f0bff6bcedc1179cc7315",
+  "expected_repo_sha256": "5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe",
+  "two_image_manifest_sha256": "4c671598926b621c2e8eee33a9f5a855fa99e62c0fda88764b2c0d508e2101f9",
+  "visual_metadata": {
+    "hero_alt": "Two separate blank district worksheets appear beside the exact Article 292 title.",
+    "social_alt": "Two separate blank district worksheets appear beside the exact Article 292 title.",
+    "inline_alt": "A strict-overhead two-source field key appears above the exact Reeves County Category G worksheets keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves County Category G Worksheets: Two ISDs · MRX",
+    "seo_title_character_count": 51,
+    "description_character_count": 153,
+    "answer_summary_word_count": 72,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T09:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave220",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-mineral-records-search-log/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave220_editorial",
+  "review_run_id": "mrx1000-wave220-editorial-20260915T071321Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe; the answer-first article contains 1810 body tokens and five FAQs.",
+    "The original Reeves County family-decision valuation identity is rejected. The replacement owns one answer-first official PVS two-district Category G worksheet-reading guide.",
+    "Information gain is concrete: a 2025-versus-2024 freshness boundary, exact county-to-district routing, three worksheet aggregation layers, a sample-versus-stratum field distinction, a seven-field citation record, controlled source hashes, and explicit stop conditions.",
+    "Exact-title hero and share OCR and exact-keyword inline OCR passed; the straight-on two-folio hero and strict-overhead field-key composition are materially distinct and contain no incidental readable text."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1810,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 72
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 51,
+        "description_character_count": 153,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T09:10:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave220",
+        "declared_source_count": 6,
+        "visible_body_citation_count": 6,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/reeves-county-mineral-records-search-log/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.mdx",
+    "/assets/articles/hero/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.webp",
+    "/assets/articles/inline/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/reeves-county-category-g-worksheets.webp"
+  ]
+}

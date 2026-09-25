@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave94_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T03:03:45Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0277",
+  "slug": "texas-rrc-h-10-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC H-10 Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-h-10-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "input_frontmatter_sha256": "e8ec303df12bda717645a288c25d939ed4f144fb920a1f0351d094cbd46a43d6",
+  "expected_repo_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "two_image_manifest_sha256": "04c5546df8e6b55117f5d8feaba916f42c46db37746aefc5f63bc464fc57d511",
+  "visual_metadata": {
+    "hero_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "social_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead H-10 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave94_compliance",
+  "review_run_id": "mrx1000-wave94-compliance-20260824T030345Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "bbbe14377f39b4ecd61d0b87e4de145eed6dab3f2a15b6ef50c09f2a8b291bb8",
+  "expected_inline_sha256": "7d77d65b1a4dbb5135090a0d140bfdf81e0dc79a9cd9a33c0d7c6982278aa02e",
+  "findings": [
+    "Complete current MDX SHA-256 is 858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, result headers, links, and routes; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, environmental, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real H-10 record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_h10_query_retrieval_no_property_connection_title_ownership_acreage_lease_payment_entitlement_compliance_environmental_injection_production_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-h-10-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-h-10-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-h-10-query-retrieval-provenance-worksheet/texas-rrc-h-10-query-retrieval.webp"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "artifact_type": "mrx1000_wave178_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0777",
+  "slug": "ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk",
+  "title": "Ector CAD 2026 Mass Appraisal Report Mineral Section Page Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+  "source_path": "src/content/posts/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.mdx",
+  "input_body_sha256": "3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1",
+  "input_frontmatter_sha256": "ca7f4389490f84b1820fa526f79ecbad296063e88089944fee0ab2b8584dc59e",
+  "expected_repo_sha256": "3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1",
+  "two_image_manifest_sha256": "521d6a199feaf03d9294a52bf8895d0fc417a841c3b8e9649188b8fabfdc66b0",
+  "visual_metadata": {
+    "hero_alt": "An upright report folio and four page dividers appear beside the exact Ector CAD mass-report crosswalk title.",
+    "social_alt": "An upright report folio and four page dividers appear beside the exact Ector CAD mass-report crosswalk title.",
+    "inline_alt": "Four overhead page cards form a crosswalk above the exact Ector CAD mineral-section keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ector CAD 2026 Mass Appraisal Mineral Section",
+    "seo_title_character_count": 45,
+    "description_character_count": 157,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T02:47:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave178",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mineral-appraisal-parameters-source-index/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave178_factual",
+  "review_run_id": "mrx1000-wave178-factual-20260915T071302Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3eb1b071083c7e72eb2490b943654f8a644a4d60fd5f05e77eb014b4ac1934e1; all 7 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official publisher relationship, exact 1,192,966-byte 45-page PDF, SHA-256 4afb680b61f3306174c349b00d6cd68ae93d5be3001b406cb13e65e222d8fd49, HTTP Last-Modified field, physical page 1 identity and purpose, physical page 10 annual-cycle locator, and physical pages 42 through 45 section roles.",
+    "The article does not invent, infer, recalculate, normalize, compare, apply, recommend, or validate a property-specific value, price, rate, factor, schedule, tax, appraisal, title, offer, or sale result, and it does not reproduce staff names or professional identifiers."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "seven_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_issuer_document_year_page_route_retrieval_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "versioned_prompt_universe_and_execution_vs_performance_measurement_contract_pass",
+    "all_forty_five_pdf_pages_visual_review_and_physical_pages_one_two_ten_and_forty_two_through_forty_five_detail_pass",
+    "mass_report_and_parameters_pdf_source_roles_preserved_pass",
+    "tax_appraisal_scope_not_converted_into_owner_fair_value_or_market_offer_pass",
+    "staff_names_and_professional_identifiers_not_reproduced_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ector County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Ector CAD home page supplies the current publisher surface and displayed Annual Reports link labeled Mass Appraisal Report.",
+      "claim_scope": "It does not establish PDF contents, a property record, appraisal result, tax result, ownership, title, market-offer value, or transaction conclusion."
+    },
+    {
+      "label": "Ector CAD, 2026 Mass Appraisal Report PDF (accessed 2026-08-28)",
+      "url": "https://www.ectorcad.org/pdf/mass_appraisal_report.pdf",
+      "publisher": "www.ectorcad.org",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.ectorcad.org/pdf/mass_appraisal_report.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact 45-page official PDF supplies one 1,192,966-byte retrieval, SHA-256, document identity, physical page 10 annual-cycle locator, and bounded physical page 42 through 45 section observations.",
+      "claim_scope": "The article does not reproduce private data or staff identifiers, apply a value or method, calculate a property result, judge appraisal correctness, or decide tax, title, offer, sale, or legal effect."
+    },
+    {
+      "label": "Texas Tax Code, Section 23.175 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm#23.175",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 23.175 supplies current official statutory provenance for oil or gas interests.",
+      "claim_scope": "The article does not interpret the section, calculate a value, decide compliance, or apply it to a district, property, owner, appraisal, tax, protest, offer, or transaction."
+    },
+    {
+      "label": "Texas Tax Code, Section 25.18 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm#25.18",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 25.18 supplies current official periodic-reappraisal provenance.",
+      "claim_scope": "The article does not decide whether a report, cycle, appraisal, account, district action, or property complies with the statute."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Data (accessed 2026-08-28)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Railroad Commission production-data page supplies current official context for the state production-data source family named by the district report.",
+      "claim_scope": "It does not validate an Ector property, lease, well, owner, production history, appraisal input, value, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller, School District Property Value Study resources (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/pvs/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/pvs/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Property Value Study page supplies current official context for the state review source family named by the district report.",
+      "claim_scope": "It does not validate an Ector property result or authorize MRX to apply a district method."
+    },
+    {
+      "label": "Texas Comptroller, Ector County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:02Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/ector.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Ector County directory supplies limited current public district-directory context.",
+      "claim_scope": "It is not the source for the PDF contents and does not validate a page observation, property record, appraisal, tax, title, value, offer, or transaction conclusion."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave167_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:55Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0766",
+  "slug": "dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record",
+  "title": "DeWitt CAD 2025 G1 Oil, Gas and Mineral Reserve Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.mdx",
+  "input_body_sha256": "5679e35e86b530e9f16933100cf73c5b0d6360242d6eef99a4c86ad972acfead",
+  "input_frontmatter_sha256": "d85f7c1b324055ab4661af8e3ff726b9615ac9827dd6de67180dcb8462f08523",
+  "expected_repo_sha256": "5679e35e86b530e9f16933100cf73c5b0d6360242d6eef99a4c86ad972acfead",
+  "two_image_manifest_sha256": "1957ebc419c9aa88bffde6bdcb180a05a4e5257223ea7059d0e38ec73b3f0bd3",
+  "visual_metadata": {
+    "hero_alt": "A navy annual-report folio with four blank cells appears beside the exact DeWitt CAD G1 source-record title.",
+    "social_alt": "A navy annual-report folio with four blank cells appears beside the exact DeWitt CAD G1 source-record title.",
+    "inline_alt": "Four blank cells, a source locator, and a divider appear above the exact DeWitt CAD 2025 mineral reserve category keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD 2025 G1 Mineral Source Record",
+    "seo_title_character_count": 40,
+    "description_character_count": 146,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T18:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave167",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave167_compliance",
+  "review_run_id": "mrx1000-wave167-compliance-20260915T071255Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "8d3c837cdb4a1de2a486dce1163b73cf1d08797937fd1ca7a8e9ad93debd3282",
+  "expected_inline_sha256": "5d7ee4867ebccf6d7395060cc50305645cc799344ddc04950d370ee415f0d671",
+  "findings": [
+    "Complete current MDX SHA-256 is 5679e35e86b530e9f16933100cf73c5b0d6360242d6eef99a4c86ad972acfead; hero/share and inline image hashes are separately locked.",
+    "The public article binds the scanned-report claims to complete visual review and exact page locators and does not convert any displayed field into a property, account, appraisal, tax, protest, valuation, offer, sale, fairness, compliance, ranking, or owner-action conclusion.",
+    "Parcel count is not converted into people, owners, acres, wells, leases, tracts, accounts, or unique mineral interests; local and statewide label wording remains source-separated.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, data value, property fact, district grade, appraisal claim, tax or protest direction, legal position, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "annual_report_no_calculation_aggregation_division_normalization_benchmark_ranking_trend_comparison_property_inference_or_district_judgment_pass",
+    "parcel_count_not_reclassified_as_people_owners_acres_wells_leases_tracts_accounts_or_unique_interests_pass",
+    "local_and_statewide_category_labels_preserved_as_separate_source_contexts_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_logo_seal_government_mark_real_table_readable_source_text_number_property_record_value_score_chart_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.mdx",
+    "/assets/articles/hero/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record.webp",
+    "/assets/articles/inline/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/dewitt-cad-2025-mineral-reserve-category.webp"
+  ]
+}

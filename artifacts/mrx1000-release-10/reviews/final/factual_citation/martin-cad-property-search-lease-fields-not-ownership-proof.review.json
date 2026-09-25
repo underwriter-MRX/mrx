@@ -1,0 +1,139 @@
+{
+  "artifact_type": "mrx1000_wave208_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0823",
+  "slug": "martin-cad-property-search-lease-fields-not-ownership-proof",
+  "title": "Martin CAD Property Search: Lease Fields Are Search Inputs, Not Ownership Proof",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-property-search-lease-fields-not-ownership-proof/",
+  "source_path": "src/content/posts/martin-cad-property-search-lease-fields-not-ownership-proof.mdx",
+  "input_body_sha256": "552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1",
+  "input_frontmatter_sha256": "a916855358e8a15e9e8c34bf82dfd2503109402a0db98003ad73187f37446459",
+  "expected_repo_sha256": "552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1",
+  "two_image_manifest_sha256": "198b9b166d08294ed73b888d5a35901f70c6f25a615843503939e01ccd2b7bde",
+  "visual_metadata": {
+    "hero_alt": "Blank search tiles stop at a sealed evidence folder beside the exact Martin CAD property-search title.",
+    "social_alt": "Blank search tiles stop at a sealed evidence folder beside the exact Martin CAD property-search title.",
+    "inline_alt": "A top-down evidence ladder appears above the exact Martin CAD mineral lease search fields keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD Lease Search Fields: Retrieval, Not Proof · MRX",
+    "seo_title_character_count": 58,
+    "description_character_count": 151,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T17:51:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave208",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-property-search-result-field-inventory-for-mineral-research/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-property-search-lease-fields-not-ownership-proof/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave208_factual",
+  "review_run_id": "mrx1000-wave208-factual-20260915T071316Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 552b4ec57f53c5d79c2011a9cd78fd43bee53edb2af2654966810618d24a72e1; all 5 declared sources passed current HTTPS access review.",
+    "Claims are bounded to five official sources: current Martin CAD home search, a no-query Search Results response, Data and Records routing, and two current Texas Comptroller context and routing pages.",
+    "The exact home response is 286,695 bytes with SHA-256 40762c8f711aae3d69b28f9cefaedfd9baba424b89671f2b09abb2c2ec84bb9a.",
+    "The exact no-query Search Results response is 113,445 bytes with SHA-256 61b5cccd322f6fbcb7e39fed14fd7f6187cc2baee557b3d271de4a1a88dda2e4.",
+    "The exact Data and Records response is 85,639 bytes with SHA-256 10b1c8c4e00610e91abaef690f59728fdc5668d87da8b909c603e7bdf654a3fb.",
+    "The Texas Comptroller valuing and county-directory responses are 134,841 and 138,875 bytes with SHA-256 values f8a36293f7b7d40a74d1116ff2dfe9e96a3d2e02a944f7955a43ab741f6f604d and b302ecd7f4728adcbeb4d2440645d16906f74fd30cceac84f3e653c69655dd86.",
+    "The stable ordered field manifest has SHA-256 73edc6bb38fd5d2aa0baef265052162954e712742c0e993a4613c1cc837e4b7c and preserves Owner Address and Address as separate labels.",
+    "No query was submitted, the table body was empty, no Agent option values were reproduced, and no owner, agent, address, property, account, or lease record was reviewed or reproduced."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "no_query_interface_field_inventory_pass",
+    "exact_response_size_and_sha256_controls_pass",
+    "ordered_field_manifest_sha256_pass",
+    "owner_address_vs_address_not_silently_normalized_pass",
+    "no_agent_option_or_personal_record_reproduction_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Martin CAD public property-search home page (accessed 2026-08-29)",
+      "url": "https://www.martincad.org/",
+      "publisher": "www.martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.martincad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current public advanced property-search form supplies exact search-input labels and the Mineral property-type option.",
+      "claim_scope": "Field presence does not validate an entered term, result, ownership, title, agency, lease, value, tax, production, royalty, transaction, or legal conclusion."
+    },
+    {
+      "label": "Martin CAD Search Results page without a query (accessed 2026-08-29)",
+      "url": "https://www.martincad.org/Home/Search",
+      "publisher": "www.martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.martincad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The no-query Search Results page supplies the Mineral Property filter, visible-column labels, empty table headers, and the Owner Address versus Address label boundary.",
+      "claim_scope": "No query was submitted, no result was returned, and no record or underlying data was validated."
+    },
+    {
+      "label": "Martin CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://martincad.org/home/DataRecords",
+      "publisher": "martincad.org",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://martincad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Data and Records page separately routes readers to reports, plans, and certified mineral-roll downloads.",
+      "claim_scope": "A dataset link does not validate a search hit, ownership, title, lease status, appraisal, tax, sale value, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller page supplies current general appraisal-district and mass-appraisal context.",
+      "claim_scope": "Statewide context does not establish mineral title, lease validity, a Martin search result, or a sale value."
+    },
+    {
+      "label": "Texas Comptroller Local Property Appraisal and Tax Information directory (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory routes current local appraisal and property-tax questions to the applicable office.",
+      "claim_scope": "The directory does not verify a record, ownership, agency, title, value, tax liability, or transaction result."
+    }
+  ]
+}

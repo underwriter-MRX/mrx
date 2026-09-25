@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1124",
+  "slug": "can-pennsylvania-dep-production-data-verify-my-royalty-check",
+  "source_path": "src/content/posts/can-pennsylvania-dep-production-data-verify-my-royalty-check.mdx",
+  "input_body_sha256": "a9801522585a119df10b5cf0ce512753b4197984ce74cf618de1b0c457ddff68",
+  "two_image_manifest_sha256": "43a7a8770759d904fbbc99bd9e2a52fd0fda4518d6e172bd37409b6e02aeacde",
+  "private_full_source_sha256": "737b21091df7c02514f00174b1875ac5a9eccdcbec7e350670fbe2bb2803a3c7",
+  "review_method": "codex_current_public_editorial_and_corpus_overlap_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial review",
+  "advisory_review": "Read-only mrx_copy exact-private-byte editorial/originality PASS in session 20260924_154840_ec4b9f; this public-byte review is separate.",
+  "findings": [
+    "The exact question receives a concise No answer first. The body adds a specific Pennsylvania DEP GreenPort period/filter/export workflow and the unconventional versus conventional reporting-cadence boundary, beyond a generic public-data/payment caveat.",
+    "Local corpus screening found no existing Pennsylvania DEP/royalty article or exact-title collision. The published royalty-statement decoder and Texas examples solve broader private-statement or different-state jobs and are linked as next steps, not copied.",
+    "The royalties pillar is the canonical parent, internal hub and CTA; the body and FAQ offer a crawlable research-only route without required contact, document upload or a ChatGPT citation promise.",
+    "Five metadata FAQs match five visible Common Questions answers. The sixth questions_answered entry is the H1's answer-first question, represented by the visible opening and answer_summary.",
+    "The exact-title hero/share and separate phrase-bearing in-body image have different binary hashes and roles; full-size and small-card visual checks and OCR passed."
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave117_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0301",
+  "slug": "texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production by Operator of Record Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "c1e498cb785aa1f54c0ef14cfc462bc69d0b04daefe30d169627d574381ba96b",
+  "input_frontmatter_sha256": "470264c09a0446bbde35007e2dd56e55e9806d906de8c942c8be19f35b33cb48",
+  "expected_repo_sha256": "c1e498cb785aa1f54c0ef14cfc462bc69d0b04daefe30d169627d574381ba96b",
+  "two_image_manifest_sha256": "4fc236aed682365f944783ae6695babb8afd9660b3517edac23efc3f4758e615",
+  "visual_metadata": {
+    "hero_alt": "A one-hand operator-of-record retrieval desk appears beside the exact article title.",
+    "social_alt": "A one-hand operator-of-record retrieval desk appears beside the exact article title.",
+    "inline_alt": "A people-free overhead provenance-card system appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Operator of Record Retrieval Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 151,
+    "answer_summary_word_count": 69,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T08:43:01Z",
+    "reviewed_by": "mrx_compliance-continuous-wave117",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-production-by-filing-operator-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave117_compliance",
+  "review_run_id": "mrx1000-wave117-compliance-20260915T072835Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "429991657af45e3ff731c3de3d4d3dba2b618975728e10f4a408ad36d53bc4e7",
+  "expected_inline_sha256": "152bd548157f9f0d6e7f7553316062993a0437fdf66934eb40161a32f96474db",
+  "findings": [
+    "Complete current MDX SHA-256 is c1e498cb785aa1f54c0ef14cfc462bc69d0b04daefe30d169627d574381ba96b; hero/share and inline image hashes are separately locked.",
+    "The article keeps Production by Operator of Record separate from Production by Lease, Production by Filing Operator, Production Data Query, P-4 Gatherer/Purchaser, Organization P-5, proration, Wellbore, broad production-record locator, automation, bulk retrieval, and every interpretation or decision task.",
+    "Image text is limited to the exact title and keyword and adds no identifier, production figure, status, result, seal, logo, property, ownership, payment, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_production_by_operator_of_record_one_manual_attempt_no_adjacent_route_automation_bulk_interpretation_property_title_current_operator_ownership_payment_acreage_tax_reserve_forecast_value_legal_compliance_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-production-by-operator-of-record-retrieval-provenance-worksheet/texas-rrc-production-by-operator-of-record-retrieval.webp"
+  ]
+}

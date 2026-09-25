@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave223_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0843",
+  "slug": "reeves-cad-2024-ratio-study-66-category-g-ratios",
+  "title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+  "source_path": "src/content/posts/reeves-cad-2024-ratio-study-66-category-g-ratios.mdx",
+  "input_body_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+  "input_frontmatter_sha256": "5e1247a470b4ddb63e561d8fad903cdedbb79c4903daa839f979ef1badb4682a",
+  "expected_repo_sha256": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee",
+  "two_image_manifest_sha256": "f1b9de7e3c7437c9d9a483511378395a389e24a391217a28ce10876f6682e07b",
+  "visual_metadata": {
+    "hero_alt": "A dark ratio-study board appears beside the exact Article 295 title.",
+    "social_alt": "A dark ratio-study board appears beside the exact Article 295 title.",
+    "inline_alt": "A bright overhead evidence grid appears above the exact Reeves CAD 2024 Category G ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves CAD 2024 Ratio Study: 66 Category G Ratios",
+    "seo_title_character_count": 49,
+    "description_character_count": 148,
+    "answer_summary_word_count": 69,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T10:18:40Z",
+    "reviewed_by": "mrx_compliance-continuous-wave223",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave223_editorial",
+  "review_run_id": "mrx1000-wave223-editorial-20260915T071322Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee; the answer-first article contains 1489 body tokens and five FAQs.",
+    "The original generic Reeves risk-checklist identity is rejected. The replacement owns one answer-first aggregate ratio-study row and does not duplicate the Reeves records log, two 2024 PVS worksheet structures, 2025 MAP review, or two 2025 preliminary district totals.",
+    "Information gain is concrete: authoritative year and route, seven labeled Category G fields, measure-role explanations, a citation-ready capture record, stable claim IDs, and explicit stop conditions.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark straight-on archival board and bright overhead evidence grid are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "8ff5c625cbc598966627cc240a218943efc9ba27ed5254682fb153099475d9ee"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1489,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 69
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 49,
+        "description_character_count": 148,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T10:18:40Z",
+        "reviewed_by": "mrx_compliance-continuous-wave223",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-cad-2024-ratio-study-66-category-g-ratios.mdx",
+    "/assets/articles/hero/reeves-cad-2024-ratio-study-66-category-g-ratios.webp",
+    "/assets/articles/inline/reeves-cad-2024-ratio-study-66-category-g-ratios/reeves-cad-2024-category-g-ratio-study.webp"
+  ]
+}

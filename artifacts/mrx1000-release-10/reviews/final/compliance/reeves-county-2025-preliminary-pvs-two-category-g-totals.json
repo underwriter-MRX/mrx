@@ -1,0 +1,74 @@
+{
+  "artifact_type": "mrx1000_wave222_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0842",
+  "slug": "reeves-county-2025-preliminary-pvs-two-category-g-totals",
+  "title": "Reeves County 2025 Preliminary PVS: Two Category G Totals",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/",
+  "source_path": "src/content/posts/reeves-county-2025-preliminary-pvs-two-category-g-totals.mdx",
+  "input_body_sha256": "b00f317c8ad2d37dc321853d16aeaa9a90a86c29ae48f9b5b8f1f4dee4f2af6b",
+  "input_frontmatter_sha256": "4c6eacd63541623e3989ccab0888239d45518567dd9a8bed8b1b7531910c93f5",
+  "expected_repo_sha256": "b00f317c8ad2d37dc321853d16aeaa9a90a86c29ae48f9b5b8f1f4dee4f2af6b",
+  "two_image_manifest_sha256": "b10e59644ef043ef693bb2554b2bd3d454ee5e7aba12bff47a31a84d3334b9fa",
+  "visual_metadata": {
+    "hero_alt": "Two separate district worksheet trays appear beside the exact Article 294 title.",
+    "social_alt": "Two separate district worksheet trays appear beside the exact Article 294 title.",
+    "inline_alt": "A bright overhead evidence-routing scene appears above the exact Reeves County 2025 preliminary PVS keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves County 2025 PVS: Two Category G Totals",
+    "seo_title_character_count": 45,
+    "description_character_count": 140,
+    "answer_summary_word_count": 71,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T09:51:09Z",
+    "reviewed_by": "mrx_compliance-continuous-wave222",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2025-preliminary-pvs-two-category-g-totals/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave222_compliance",
+  "review_run_id": "mrx1000-wave222-compliance-20260915T071322Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "52eb613a5910b5f8c1162bdae0701ab7dd6d7f0941f0364c375be381088d48f8",
+  "expected_inline_sha256": "119d492648516c7dc0332870c048ca603a34444c68fae848ea9ef9664d82f217",
+  "findings": [
+    "Complete current MDX SHA-256 is b00f317c8ad2d37dc321853d16aeaa9a90a86c29ae48f9b5b8f1f4dee4f2af6b; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attributed to one of five official Comptroller source objects with the year, preliminary status, district, county split, displayed field, and bounded role preserved.",
+    "The two district figures are not added, averaged, used as owner values, or converted into a mineral account, title, ownership, appraisal, tax, protest, offer, or transaction conclusion.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, district figure, certification claim, ratio, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "preliminary_pvs_not_misrepresented_as_private_market_update_pass",
+    "district_category_g_rows_not_added_or_misrepresented_as_owner_value_pass",
+    "na_ratio_fields_not_misrepresented_as_zero_or_missing_data_pass",
+    "certification_not_misrepresented_as_property_specific_approval_pass",
+    "no_title_ownership_account_classification_appraisal_tax_protest_private_value_offer_or_transaction_conclusion_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_numbers_logos_seals_flags_government_marks_screenshots_property_identifiers_money_certification_claims_ratios_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-county-2025-preliminary-pvs-two-category-g-totals.mdx",
+    "/assets/articles/hero/reeves-county-2025-preliminary-pvs-two-category-g-totals.webp",
+    "/assets/articles/inline/reeves-county-2025-preliminary-pvs-two-category-g-totals/reeves-county-2025-preliminary-pvs.webp"
+  ]
+}

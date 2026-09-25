@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave99_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T08:55:15Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0282",
+  "slug": "texas-rrc-severance-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Severance Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-severance-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-severance-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "input_frontmatter_sha256": "81dee50e642c6f5c077edf1efc6d53766b58fa293bb90b0acf0eb646b73e2d8d",
+  "expected_repo_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "two_image_manifest_sha256": "3bd633f8ca34a849887cf89e2cbfb87b47c6f3b3c598f5c105e71cb95de7d976",
+  "visual_metadata": {
+    "hero_alt": "A public-record archive counter appears beside the exact article title.",
+    "social_alt": "A public-record archive counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead severance-query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave99_compliance",
+  "review_run_id": "mrx1000-wave99-compliance-20260824T085515Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "9070f72c800de39f2ed677b4eb04b70cc19c0f0ec131bc749da9c9140a23ed60",
+  "expected_inline_sha256": "7e6ca65b7cf3f759d004e5e3fe18f365ee3db48e9991a6561b76894f168093d5",
+  "findings": [
+    "Complete current MDX SHA-256 is aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, result/help navigation, and the agency explanatory route; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, result, signature, seal, logo, acreage, compliance conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_severance_query_retrieval_no_severance_status_legal_effect_compliance_reconnect_eligibility_production_property_connection_title_ownership_acreage_lease_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-severance-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-severance-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-severance-query-retrieval-provenance-worksheet/texas-rrc-severance-query-retrieval.webp"
+  ]
+}

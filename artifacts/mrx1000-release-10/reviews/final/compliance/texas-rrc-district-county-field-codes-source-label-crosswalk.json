@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave227_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0847",
+  "slug": "texas-rrc-district-county-field-codes-source-label-crosswalk",
+  "title": "Texas RRC District, County, and Field Codes: A Source-Label Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+  "source_path": "src/content/posts/texas-rrc-district-county-field-codes-source-label-crosswalk.mdx",
+  "input_body_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+  "input_frontmatter_sha256": "f310f53e255d1a6104ba8680c610f36c50fc9628e4901d253ce4e2d96f043550",
+  "expected_repo_sha256": "4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494",
+  "two_image_manifest_sha256": "8d980ff41a83e8af61fc4469afea3ab05d56895cc08923f8435ed10f4ad936a4",
+  "visual_metadata": {
+    "hero_alt": "A bright records archive appears beside the exact Article 299 title.",
+    "social_alt": "A bright records archive appears beside the exact Article 299 title.",
+    "inline_alt": "An overhead five-card crosswalk appears above the exact Texas RRC district county field codes keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District, County & Field Codes",
+    "seo_title_character_count": 40,
+    "description_character_count": 132,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T11:57:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave227",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave227_compliance",
+  "review_run_id": "mrx1000-wave227-compliance-20260915T071322Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "ce1193c563f4592800693ef27c169870d5d151a7cbd60c8a2608e566f54f6429",
+  "expected_inline_sha256": "d4351005fe220cbf3880fa37f164c0105f0e086592e1ebb27aca3a4222728396",
+  "findings": [
+    "Complete current MDX SHA-256 is 4ea142c84914f2f16c4662a5db6e54da8ef264a5eec5803436d4e6761a6cf494; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attached to an official source, source-owned label, or explicit non-equivalence and stop condition.",
+    "The article does not use a source label to establish a field boundary, well or lease relationship, title, ownership, authority, production, reserves, private value, offer quality, buyer status, or transaction outcome.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, real identifier, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "rrc_district_county_field_and_fips_labels_not_merged_pass",
+    "source_label_not_misrepresented_as_field_boundary_well_lease_or_property_connection_pass",
+    "no_title_ownership_production_reserves_private_value_offer_or_transaction_conclusion_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_readable_base_text_letters_numbers_logos_seals_government_marks_official_forms_real_identifiers_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-district-county-field-codes-source-label-crosswalk.mdx",
+    "/assets/articles/hero/texas-rrc-district-county-and-field-codes-a-source-label-crosswalk.webp",
+    "/assets/articles/inline/texas-rrc-district-county-field-codes-source-label-crosswalk/texas-rrc-district-county-field-codes.webp"
+  ]
+}

@@ -99,6 +99,15 @@ describe('MRX1000 append-only identity addendum', () => {
     expect(stage).toContain(
       'artifacts/mrx1000-wave254-creative-qa/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/creative-manifest.json',
     );
+    for (const entry of addendum.entries.slice(5)) {
+      expect(ignore).toContain(`!${entry.selection_decision_path}`);
+      expect(ignore).toContain(`!${entry.creative_manifest_path}`);
+      expect(ignore).toContain(
+        `!artifacts/mrx1000-append-only/reviews/${entry.canonical_slug}/*.json.sha256`,
+      );
+      expect(stage).toContain(entry.selection_decision_path);
+      expect(stage).toContain(entry.creative_manifest_path);
+    }
     expect(stage).toContain('artifacts/mrx1000-append-only/reviews/');
   });
   it('binds the immutable historical JSON/CSV and admits only the append-only identities', () => {

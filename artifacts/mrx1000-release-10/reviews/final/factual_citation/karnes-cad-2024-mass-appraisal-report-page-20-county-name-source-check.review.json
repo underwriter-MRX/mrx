@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave196_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:12Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0799",
+  "slug": "karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check",
+  "title": "Karnes CAD 2024 Mass Appraisal Report: Page 20 County-Name Source Check",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+  "source_path": "src/content/posts/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.mdx",
+  "input_body_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+  "input_frontmatter_sha256": "c05ce20208511197b7630c9bc11e93386cd82819733a6d64e4d8d33f9658e174",
+  "expected_repo_sha256": "024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b",
+  "two_image_manifest_sha256": "56442d8238c354ad7a2ea7a3cdff65d4aaa8d4d791bfff1b4cec7d06b3e656b2",
+  "visual_metadata": {
+    "hero_alt": "An upright blank report folio and source tabs appear beside the exact Karnes CAD page 20 source-check title.",
+    "social_alt": "An upright blank report folio and source tabs appear beside the exact Karnes CAD page 20 source-check title.",
+    "inline_alt": "Two overhead blank evidence cards appear above the Karnes CAD 2024 mass appraisal report page 20 phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD Page 20 County-Name Source Check · MRX",
+    "seo_title_character_count": 49,
+    "description_character_count": 152,
+    "answer_summary_word_count": 45,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T09:52:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave196",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave196_factual",
+  "review_run_id": "mrx1000-wave196-factual-20260915T071312Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 024181928cd830181222fa748841b8cea1a9b690a0b67b5966b387e7d2fa259b; all 5 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Karnes CAD publisher route, exact 31-page 2024 Mass Appraisal Report PDF, Karnes CAD homepage, Texas Comptroller MAP context page, and Texas Comptroller local-contact routing page.",
+    "The exact PDF controls are HTTP 200, application/pdf, 2,425,778 bytes, 31 pages, and SHA-256 b025d256d68a89664ae1ea6a027ed648c6efd1bdbf890a7e36ddec7c0373b4bb.",
+    "The cover visibly identifies Karnes County Appraisal District; rendered physical/PDF page 20 under Cost Schedules visibly says specifically for Bee County; the conflict remains unresolved.",
+    "The image-only scan was verified from physical/PDF page 20 with render SHA-256 69befa498a32ba5d0a48d4ef2c529ef6d60f7ef06b57bbaae9d0ba2b790684e2 and manual visual transcription, not an unreviewed text layer."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_complete_file_sha256_size_and_page_count_pass",
+    "image_only_physical_pdf_page_20_render_hash_and_manual_transcription_pass",
+    "cover_karnes_and_page_20_bee_observation_pass",
+    "unresolved_conflict_no_silent_correction_pass",
+    "provenance_vs_validity_boundary_pass",
+    "claim_level_evidence_ids_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Karnes CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://karnescad.org/home/DataRecords",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page supplies the Karnes CAD publisher route and visible 2024 Mass Appraisal Report link.",
+      "claim_scope": "It does not establish the PDF wording, validate the page-20 sentence, resolve the county-name conflict, or prove a property, appraisal, tax, value, offer, or legal result."
+    },
+    {
+      "label": "Karnes CAD 2024 Mass Appraisal Report PDF (accessed 2026-08-29)",
+      "url": "https://karnescad.org/Forms/GetDocument?fileName=1740434312_2024+Mass+Appraisal+Report.pdf&subPath=Data+Records",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/Forms/GetDocument?fileName=1740434312_2024+Mass+Appraisal+Report.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact 31-page PDF supplies the Karnes cover identity and the physical/PDF page-20 Cost Schedules phrase specifically for Bee County.",
+      "claim_scope": "The file does not explain the mismatch, prove either label is substantively correct, establish local applicability, or support a property-specific methodology, appraisal, tax, title, value, offer, or legal conclusion."
+    },
+    {
+      "label": "Karnes County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://karnescad.org/",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies the current Karnes CAD public-site identity.",
+      "claim_scope": "It does not validate or correct the report wording, resolve the page-20 conflict, or prove property-specific facts or outcomes."
+    },
+    {
+      "label": "Texas Comptroller Methods and Assistance Program page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller MAP page supplies statewide review-category context.",
+      "claim_scope": "It does not validate, correct, or apply the Karnes PDF sentence and is not evidence of a property-specific method or result."
+    },
+    {
+      "label": "Texas Comptroller property-tax contact page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:12Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller contact page supplies routing guidance for local appraisal and tax questions.",
+      "claim_scope": "It does not resolve the report wording or provide the local records, intended county label, property facts, appraisal result, tax result, value, offer, or legal conclusion."
+    }
+  ]
+}

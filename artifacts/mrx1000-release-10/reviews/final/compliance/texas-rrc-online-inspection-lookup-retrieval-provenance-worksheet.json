@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave106_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0291",
+  "slug": "texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet",
+  "title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "input_frontmatter_sha256": "ca948694d0c31d5ab16140cc09c50b09a0a059253aa6ef2ca0aef557e49b03d9",
+  "expected_repo_sha256": "4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7",
+  "two_image_manifest_sha256": "151a6d2bd04e44b5e2a2b23474345123da4f012bd735f40b4c15e9909689651f",
+  "visual_metadata": {
+    "hero_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "social_alt": "A modern inspection-retrieval evidence station appears beside the exact article title.",
+    "inline_alt": "A people-free overhead retrieval-state matrix appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Online Inspection Lookup Retrieval Provenance Worksheet",
+    "seo_title_character_count": 65,
+    "description_character_count": 154,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T13:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave106",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-orphan-well-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave106_compliance",
+  "review_run_id": "mrx1000-wave106-compliance-20260915T072832Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "09aaa259356609e9c2b13dfbc4293b7d7428a0d92031a5cbbbce95a477f6d391",
+  "expected_inline_sha256": "1d8c40a9ad42d79407b325d96dcf3000f53a3219c5ce357af752a6f7181433bf",
+  "findings": [
+    "Complete current MDX SHA-256 is 4b9f81d1d06fdb80747c64d0b6f9873d20a9498405782fef4fa335c8d17d11c7; hero/share and inline image hashes are separately locked.",
+    "The article keeps RRC OIL separate from Orphan Well, Inactive Well, IWAR, P-5 Renewal Status, Wellbore, production, and other RRC routes; preserves source uncertainty; controls private identifiers; and stops before regulatory, legal, title, engineering, environmental, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, criterion, result, signature, seal, logo, operator, inspection, violation, compliance, condition, enforcement, environmental, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_online_inspection_lookup_retrieval_no_inspection_violation_compliance_operator_condition_complaint_enforcement_liability_regulatory_environmental_property_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-online-inspection-lookup-retrieval-provenance-worksheet/texas-rrc-online-inspection-lookup-retrieval.webp"
+  ]
+}

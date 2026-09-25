@@ -1,0 +1,124 @@
+{
+  "artifact_type": "mrx1000_wave192_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0795",
+  "slug": "howard-cad-open-records-request-form-mineral-record-field-inventory",
+  "title": "Howard CAD Open Records Request Form: Mineral-Record Field Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+  "source_path": "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+  "input_body_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "input_frontmatter_sha256": "ae6ecffeea70cba5175cad5fba6dcd50c3cc46040123eb906b0b0a5a719aff85",
+  "expected_repo_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "two_image_manifest_sha256": "86688e6a3a9f269eb6d9b4912b2749c1c5e95b6d63b5cf1576a218cbeae54579",
+  "visual_metadata": {
+    "hero_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "social_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "inline_alt": "An overhead blank field-classification board appears above the Howard CAD mineral records request form phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD Open Records Form Field Inventory",
+    "seo_title_character_count": 44,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave192",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave192_factual",
+  "review_run_id": "mrx1000-wave192-factual-20260915T071309Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official Howard CAD request page, its exact REST record, the separate Howard CAD contact page, and the official Texas Attorney General request-information page.",
+    "The observed field inventory includes the page title, required-field note, date, phone, name, mailing address, email, property-address/property-ID, detailed-description, Email/US Mail/Will Pick Up, pickup-date, requestor-signature, final-date, and anti-spam labels or controls.",
+    "The exact REST retrieval recorded page ID 3641, slug open-records-request-form, title Open Records Request Form, modified_gmt 2022-11-17T05:12:30, and SHA-256 36122bbe640d9a3b3237705c6b359bf7357d8627cf21e37560d361e3d07446ed. The article labels these as retrieval controls, not outcome or publication-date proof."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "visible_page_title_required_marker_field_and_delivery_inventory_pass",
+    "rest_page_3641_slug_title_modified_gmt_content_and_exact_json_sha256_control_pass",
+    "rest_timestamp_not_visible_publication_date_boundary_pass",
+    "contact_page_separate_source_role_pass",
+    "texas_attorney_general_no_strict_form_written_request_existing_information_attribution_pass",
+    "public_page_rest_contact_and_oag_source_role_separation_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_publisher_page_label_rest_id_date_hash_field_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "howard_zip_annual_report_property_search_and_request_form_lanes_separated_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Howard CAD Open Records Request Form page (accessed 2026-08-29)",
+      "url": "https://howardcad.org/open-records-request-form/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/open-records-request-form/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Howard CAD page supplies the visible page title, required-field note, requestor/contact labels, property locator, detailed-description label, delivery choices, pickup timing, signature/date fields, and anti-spam control.",
+      "claim_scope": "It does not establish that a record exists, is held by the district, is public, is responsive, is complete, is confidential, is exempt, will be delivered in a chosen format, or will have a particular cost or timing."
+    },
+    {
+      "label": "Howard CAD WordPress REST record for page 3641 (accessed 2026-08-29)",
+      "url": "https://howardcad.org/wp-json/wp/v2/pages/3641?_fields=id,modified_gmt,link,slug,title,content",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/wp-json/wp/v2/pages/3641?_fields=id,modified_gmt,link,slug,title,content",
+        "content_type": "application/json; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official REST record supplies page ID 3641, slug, title, modified_gmt metadata, content snapshot, and an exact-JSON hashable evidence object.",
+      "claim_scope": "The REST metadata is not treated as a visible publication date and does not establish a request submission, response, record holding, public status, completeness, confidentiality, exemption, cost, timing, or legal effect."
+    },
+    {
+      "label": "Howard CAD Contact Us page (accessed 2026-08-29)",
+      "url": "https://howardcad.org/contact-us/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/contact-us/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Contact Us page supplies a separate Howard CAD publisher contact surface only.",
+      "claim_scope": "It is not evidence for the open-records form fields, a submitted request, a particular custodian, record existence, response, delivery, cost, deadline, property fact, or legal conclusion."
+    },
+    {
+      "label": "Texas Attorney General: How to Request Public Information (accessed 2026-08-29)",
+      "url": "https://www.texasattorneygeneral.gov/open-government/members-public/how-request-public-information",
+      "publisher": "www.texasattorneygeneral.gov",
+      "accessed_at": "2026-09-15T07:13:09Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.texasattorneygeneral.gov/open-government/members-public/how-request-public-information",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Texas Attorney General page supplies attributed statewide context about no strict form, written requests, the entity believed to hold records, and seeking existing documents or information.",
+      "claim_scope": "This article does not interpret or apply the law, decide Howard CAD procedure or duties, identify a record holder, calculate a deadline or fee, decide an exception, or reach a property, title, tax, transaction, or legal conclusion."
+    }
+  ]
+}

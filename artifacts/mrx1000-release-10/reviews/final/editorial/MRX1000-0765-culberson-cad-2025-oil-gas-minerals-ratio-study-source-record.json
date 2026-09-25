@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave166_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0765",
+  "slug": "culberson-cad-2025-oil-gas-minerals-ratio-study-source-record",
+  "title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+  "source_path": "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+  "input_body_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "input_frontmatter_sha256": "6bae5d5796606afba347eea3944c83edd2784f5b49b0dcfdfffde8ba2926a386",
+  "expected_repo_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "two_image_manifest_sha256": "ae2e6e2c21b5e2ff1f74218458fdbaf55bf9f591f0563e5548738a9eb1fff183",
+  "visual_metadata": {
+    "hero_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "social_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "inline_alt": "Seven blank measurement cells and a caution marker appear above the exact Culberson CAD 2025 mineral ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD 2025 Mineral Ratio Study Record",
+    "seo_title_character_count": 45,
+    "description_character_count": 152,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T18:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave166",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave166_editorial",
+  "review_run_id": "mrx1000-wave166-editorial-20260915T071254Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef; the answer-first article contains 1520 body tokens and five FAQs.",
+    "The article rejects the generic Culberson County valuation-timeline identity and owns one distinct deliverable: a current official source record for the 2025 ratio-study landing page and 055-Culberson summary, ending at accurate literal transcription, visible limitations, and controlled stops.",
+    "The source-first website SEO/AEO gate is applied through a concise answer summary, five visible official citations, author/reviewer/date attribution, semantic hub/support/next-step links, exact canonical identity, native matching schema, sitemap and LLM-discovery eligibility, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique single-card hero and strict-overhead seven-cell measurement boundary are materially distinct and contain no person, logo, seal, government mark, real table, readable source text, number, signature, property record, address, money, value, recommendation, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1520,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 55
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 45,
+        "description_character_count": 152,
+        "author": "ariana",
+        "reviewed_at": "2026-08-28T18:40:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave166",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+    "/assets/articles/hero/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.webp",
+    "/assets/articles/inline/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/culberson-cad-2025-mineral-ratio-study.webp"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "artifact_type": "mrx1000_wave228_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0848",
+  "slug": "texas-rrc-district-code-conversion-file-values-crosswalk",
+  "title": "Texas RRC District Code Conversion: Why File Values 07-14 Need a Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+  "source_path": "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+  "input_body_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "input_frontmatter_sha256": "fed4df55dbfd6b4173003006fc1ad8d549203d85dfd5cf74c56a5731332386d0",
+  "expected_repo_sha256": "759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b",
+  "two_image_manifest_sha256": "6b466b1885d9fcd6998db2a6b0279b69545dd15195a27fe921bce00a6b95da2d",
+  "visual_metadata": {
+    "hero_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "social_alt": "A dark data-quality studio appears beside the exact Article 300 title.",
+    "inline_alt": "An overhead dual-rail audit board appears above the exact Texas RRC district code conversion keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Code Conversion Crosswalk",
+    "seo_title_character_count": 44,
+    "description_character_count": 146,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T12:17:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave228",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-district-county-field-codes-source-label-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-code-conversion-file-values-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave228_compliance",
+  "review_run_id": "mrx1000-wave228-compliance-20260915T071322Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "64b919c57ce9850ba02d4bddd1172a0b4fc6e527c980b7f230535adc4cc21a90",
+  "expected_inline_sha256": "5e5074a2f0fc90bb04aa78d01ea85e45f59310eb5d661da394ce570888877892",
+  "findings": [
+    "Complete current MDX SHA-256 is 759faf1450afff5a716a9d655d04516955031bba056075526ff5a94951c7018b; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attached to an official source, a dataset-specific mapping, or an explicit stop condition.",
+    "The article does not globalize the conversion, treat 8B as accepted, expand the T-1 6E/06 exception, or infer county, field, well, lease, tract, title, ownership, production, reserves, value, offer, buyer, or transaction conclusions.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, real identifier, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "dataset_specific_conversion_not_universal_rewrite_pass",
+    "reserved_8b_not_presented_as_currently_accepted_pass",
+    "t1_6e_06_rule_not_generalized_pass",
+    "no_county_field_boundary_well_lease_tract_title_ownership_production_reserves_value_offer_buyer_or_transaction_conclusion_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_readable_base_text_letters_numbers_logos_seals_government_marks_official_forms_real_identifiers_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-district-code-conversion-file-values-crosswalk.mdx",
+    "/assets/articles/hero/texas-rrc-district-code-conversion-why-file-values-07-14-need-a-crosswalk.webp",
+    "/assets/articles/inline/texas-rrc-district-code-conversion-file-values-crosswalk/texas-rrc-district-code-conversion.webp"
+  ]
+}

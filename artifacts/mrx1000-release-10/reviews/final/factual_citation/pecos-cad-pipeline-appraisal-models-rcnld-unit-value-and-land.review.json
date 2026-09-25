@@ -1,0 +1,126 @@
+{
+  "artifact_type": "mrx1000_wave219_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:21Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0839",
+  "slug": "pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land",
+  "title": "Pecos CAD Pipeline Appraisal Models: RCNLD, Unit Value, and Land",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/",
+  "source_path": "src/content/posts/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land.mdx",
+  "input_body_sha256": "68064436d1077d53af8cf88ef66f56175a8385ab82f56436164b6a2891003679",
+  "input_frontmatter_sha256": "5b90469a55ebdd7c2399a4fbb043c8d2c9edd93fb71dfa9da70c7ae87466a022",
+  "expected_repo_sha256": "68064436d1077d53af8cf88ef66f56175a8385ab82f56436164b6a2891003679",
+  "two_image_manifest_sha256": "98c068e71643bff80e3bedd10f10724c660887ea596d339bdc16557d34e4f639",
+  "visual_metadata": {
+    "hero_alt": "A people-free Pecos pipeline system appears beside the exact Article 291 title.",
+    "social_alt": "A people-free Pecos pipeline system appears beside the exact Article 291 title.",
+    "inline_alt": "A strict-overhead pipeline-model evidence table appears above the exact Pecos CAD pipeline appraisal models keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Pipeline Models: RCNLD, Unit Value, and Land · MRX",
+    "seo_title_character_count": 60,
+    "description_character_count": 144,
+    "answer_summary_word_count": 41,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T08:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave219",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/pecos-cad-industrial-appraisal-limits-title-inspection-and-sketches/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-pipeline-appraisal-models-rcnld-unit-value-and-land/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave219_factual",
+  "review_run_id": "mrx1000-wave219-factual-20260915T071321Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 68064436d1077d53af8cf88ef66f56175a8385ab82f56436164b6a2891003679; all 4 declared sources passed current HTTPS access review.",
+    "The official plan PDF was retrieved at 971,223 bytes with SHA-256 c95d84641a0d024c04b9d8ba491e5972085b29a05a9aba4038128d78e8e12d01; it is unencrypted, has no JavaScript, and contains 75 physical pages.",
+    "Physical page 54 limits the section to utility, railroad, and pipeline operating property excluding land plus related personal property and improvements, describes the appraisals as retrospective, and states a January 1 effective date.",
+    "Physical page 56 says all pipelines receive an RCNLD model in which replacement cost depends on location, length, diameter, and composition and physical, functional, and economic depreciation are deducted.",
+    "Physical page 57 says a unit-value model may also be used when appropriate income statements and balance sheets are available, generally for regulated common carriers, and describes whole-system reconciliation and component allocation.",
+    "Physical page 58 separates appraisal-district land responsibility and says specified model indicators are reduced by land value to isolate improvements, personal property, and other operating property; physical page 59 states sales-review limitations.",
+    "Current official Comptroller sources support only the bounded local-appraisal, January 1, and general-method context stated in the article."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_official_data_records_route_pass",
+    "reappraisal_plan_http_bytes_sha256_encryption_javascript_and_page_count_pass",
+    "physical_page_54_pipeline_operating_property_excluding_land_scope_and_january_1_pass",
+    "physical_page_56_pipeline_rcnld_inputs_and_three_depreciation_forms_pass",
+    "physical_page_57_conditional_unit_value_whole_system_reconciliation_and_allocation_pass",
+    "physical_page_58_land_responsibility_and_land_value_reduction_pass",
+    "physical_page_59_infrequent_sales_and_mixed_transaction_limit_pass",
+    "comptroller_local_value_and_state_context_separation_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Pecos CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.pecoscad.org/home/DataRecords",
+      "publisher": "www.pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:21Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.pecoscad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Data and Records page supplies the visible route to the 2025-2026 Reappraisal Plan.",
+      "claim_scope": "The page is routing evidence only and does not prove current implementation, pipeline ownership, model inputs, an allocation, an account result, tax, value, offer, or transaction result."
+    },
+    {
+      "label": "Pecos CAD 2025-2026 Reappraisal Plan (accessed 2026-08-31)",
+      "url": "https://www.pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+      "publisher": "www.pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:21Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The controlled PDF supplies exact bytes, SHA-256 identity, page count, the utility, railroad, and pipeline scope on physical page 54, model descriptions on pages 56 through 58, and review limits on page 59.",
+      "claim_scope": "The plan does not prove that a stated model or input was used for a named property, establish ownership or an easement, calculate tax or private value, support a protest, regulate a pipeline, or determine an offer or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Property Tax System Basics (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:21Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official basics page supplies statewide context that appraisal districts appraise local property value as of January 1.",
+      "claim_scope": "The page does not validate the Pecos plan, a pipeline model, property ownership, model inputs, allocation, tax, protest, private value, offer, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:21Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official valuing-property page supplies statewide context for January 1 taxable-property appraisal and generally accepted appraisal methods.",
+      "claim_scope": "The page provides general context only and does not validate a Pecos pipeline account, model choice, input, depreciation, unit value, land separation, tax, protest position, private value, offer, or transaction result."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave150_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0651",
+  "slug": "cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff",
+  "title": "Cash for Mineral Rights: How to Retrieve IRS Tax Transcripts for a CPA Handoff",
+  "canonical_url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+  "source_path": "src/content/posts/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff.mdx",
+  "input_body_sha256": "395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e",
+  "input_frontmatter_sha256": "985b9dbdb3b20fea15bd94effc478690d8a66034ce92a1500a0b64f9b87d0f6a",
+  "expected_repo_sha256": "395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e",
+  "two_image_manifest_sha256": "0470703795667f9111531c397d6f31ccf80cd46be5e8368381ec95c9b782a821",
+  "visual_metadata": {
+    "hero_alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+    "social_alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+    "inline_alt": "An overhead blank transcript source-scope matrix appears above the exact cash-for-mineral-rights tax-transcripts keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "IRS Tax Transcripts Before a Mineral Rights Cash Offer",
+    "seo_title_character_count": 54,
+    "description_character_count": 142,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T15:02:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave150",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/learning-center/mineral-rights-taxes/",
+      "support": "/blog/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave150_compliance",
+  "review_run_id": "mrx1000-wave150-compliance-20260915T072837Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "893b088fd925d30605618c8bedf34aac0b51db296b8d5d83f4e99113b58007b1",
+  "expected_inline_sha256": "ccedcd2e7aad249bf5ec7ba46beb2600cc5ae67cf2879a205cddef7e3e9025ee",
+  "findings": [
+    "Complete current MDX SHA-256 is 395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e; hero/share and inline image hashes are separately locked.",
+    "The reusable public record contains controlled pointers only, keeps taxpayer information and transcript copies inside an authorized system, and stops at the CPA or attorney before transcript selection, interpretation, completeness, basis, gain, character, filing, retention, title, offer, valuation, or transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no IRS affiliation, taxpayer fact, tax conclusion, title evidence, valuation result, offer result, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "irs_tax_transcript_retrieval_source_scope_unaltered_copy_limitation_and_cpa_handoff_only_no_transcript_selection_interpretation_completeness_title_basis_gain_character_tax_calculation_offer_validation_valuation_transaction_recommendation_form_completion_filing_retention_or_owner_specific_advice_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_taxpayer_data_irs_affiliation_or_unsupported_visual_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff.mdx",
+    "/assets/articles/hero/cash-for-mineral-rights-how-to-retrieve-irs-tax-transcripts-for-a-cpa-handoff.webp",
+    "/assets/articles/inline/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/cash-for-mineral-rights-tax-transcripts.webp"
+  ]
+}

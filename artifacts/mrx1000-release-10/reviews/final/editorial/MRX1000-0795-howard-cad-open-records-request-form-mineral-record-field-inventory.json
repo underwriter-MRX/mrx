@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave192_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0795",
+  "slug": "howard-cad-open-records-request-form-mineral-record-field-inventory",
+  "title": "Howard CAD Open Records Request Form: Mineral-Record Field Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+  "source_path": "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+  "input_body_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "input_frontmatter_sha256": "ae6ecffeea70cba5175cad5fba6dcd50c3cc46040123eb906b0b0a5a719aff85",
+  "expected_repo_sha256": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36",
+  "two_image_manifest_sha256": "86688e6a3a9f269eb6d9b4912b2749c1c5e95b6d63b5cf1576a218cbeae54579",
+  "visual_metadata": {
+    "hero_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "social_alt": "A blank request folder and sealed privacy capsule appear beside the exact Howard CAD field-inventory title.",
+    "inline_alt": "An overhead blank field-classification board appears above the Howard CAD mineral records request form phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD Open Records Form Field Inventory",
+    "seo_title_character_count": 44,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave192",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave192_editorial",
+  "review_run_id": "mrx1000-wave192-editorial-20260915T071309Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36; the answer-first article contains 1361 body tokens and five FAQs.",
+    "The article rejects the colliding Howard County value-risk identity and owns one distinct deliverable: the official request-page field inventory, source controls, privacy classifications, exact delivery labels, and blank no-submit worksheet.",
+    "The current AI Atom Brain and Search Atlas information-gain contract is applied through a concise citation-target answer, source-role separation, exact publisher/page/date/REST/hash/field provenance, one canonical entity, five supported FAQs, semantic hub/support/next-step links, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The low-three-quarter request-folder scene and strict-overhead four-zone field board are materially distinct and make no government-affiliation, official-form, personal-data, record-existence, property, appraisal, tax, title, cost, delivery, legal, or outcome claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "b058d8388828e58c52a91040a437befbcdce89b90770a1144f070313d0adfe36"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1361,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 57
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 44,
+        "description_character_count": 144,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T08:45:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave192",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-open-records-request-form-mineral-record-field-inventory/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-open-records-request-form-mineral-record-field-inventory.mdx",
+    "/assets/articles/hero/howard-cad-open-records-request-form-mineral-record-field-inventory.webp",
+    "/assets/articles/inline/howard-cad-open-records-request-form-mineral-record-field-inventory/howard-cad-mineral-records-request-form.webp"
+  ]
+}

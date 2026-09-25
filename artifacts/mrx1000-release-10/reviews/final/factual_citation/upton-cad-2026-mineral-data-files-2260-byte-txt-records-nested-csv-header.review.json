@@ -1,0 +1,135 @@
+{
+  "artifact_type": "mrx1000_wave231_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0851",
+  "slug": "upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header",
+  "title": "Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+  "source_path": "src/content/posts/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header.mdx",
+  "input_body_sha256": "0f6cec8c70d61c26ea3a168a21b6ca2fe43e84184f8b84497b6a4665e5c89dd0",
+  "input_frontmatter_sha256": "b3da736c3fd7ac92872d645e3ffaf954dd9b8aa077d620fa535cc58ed0752188",
+  "expected_repo_sha256": "0f6cec8c70d61c26ea3a168a21b6ca2fe43e84184f8b84497b6a4665e5c89dd0",
+  "two_image_manifest_sha256": "002ff771bc32b46e2e269c0b70fa9a7d9b588dcd836c6e6325f1b72a99f02432",
+  "visual_metadata": {
+    "hero_alt": "A navy archive case and blank data ribbon appear beside the exact Article 303 title.",
+    "social_alt": "A navy archive case and blank data ribbon appear beside the exact Article 303 title.",
+    "inline_alt": "A side-angle data ribbon inspection gate appears above the exact Upton CAD 2026 mineral data files keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD TXT and Nested CSV Header · MRX",
+    "seo_title_character_count": 41,
+    "description_character_count": 149,
+    "answer_summary_word_count": 67,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T14:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave231",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-csv-member-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave231_factual",
+  "review_run_id": "mrx1000-wave231-factual-20260915T071323Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 0f6cec8c70d61c26ea3a168a21b6ca2fe43e84184f8b84497b6a4665e5c89dd0; all 5 declared sources passed current HTTPS access review.",
+    "Six controlled first-party objects total 87,515,855 bytes with individual SHA-256 identities; five support article claims and the reappraisal plan remains controlled background only.",
+    "The retained ZIP is 79,434,297 bytes, lists seven members totaling 946,089,069 uncompressed bytes, and binds exact TXT and CSV member hashes.",
+    "The first two TXT records measured 2,260 bytes after CRLF removal; the first CSV physical line measured 5,233 bytes including CRLF and parsed first to one outer field, then to 244 nested labels in a bounded second pass.",
+    "The first inspected CSV data record measured 2,993 bytes including CRLF and parsed to 244 fields; this is explicitly not full-file parity, encoding, schema, or semantic proof."
+  ],
+  "checks": [
+    "five_distinct_official_https_sources_with_exact_source_roles",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "seven_member_archive_total_and_txt_csv_member_hashes_pass",
+    "first_two_txt_record_raw_byte_and_crlf_scope_pass",
+    "nested_csv_header_two_pass_parser_scope_pass",
+    "one_data_record_244_field_reconciliation_scope_pass",
+    "no_full_file_parity_encoding_schema_or_semantic_claim_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Upton County Appraisal District Data and Records (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/home/DataRecords",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Upton CAD page visibly labels a 2026 Certified Mineral Appraisal Roll ZIP.",
+      "claim_scope": "The article uses the page only for publisher route, visible label, and access date."
+    },
+    {
+      "label": "Upton CAD 2026 Certified Mineral Open Records ZIP (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/Forms/ZipFileDownload?fileName=1784839292_UPTON+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/Forms/ZipFileDownload?fileName=1784839292_UPTON+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The retained official ZIP supports archive bytes, SHA-256, seven-member central-directory identity, and exact TXT and CSV member identities.",
+      "claim_scope": "Bounded byte-level inspection supports only the first two TXT record lengths, one physical CSV header, one nested-header parse, and one data-record field count."
+    },
+    {
+      "label": "Upton CAD Property Search (accessed 2026-08-31)",
+      "url": "https://www.uptoncad.org/Home/Search",
+      "publisher": "www.uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.uptoncad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The visible property-search interface includes property type, lease number, and lease name fields.",
+      "claim_scope": "The article does not claim execution, a result, ownership, correctness, completeness, or legal sufficiency."
+    },
+    {
+      "label": "Upton CAD Open Records Request form (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/Forms/GetDocument?fileName=1749827956_open+records+request.pdf&subPath=Data+Records",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/Forms/GetDocument?fileName=1749827956_open+records+request.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current district form supplies an official route for a record or source clarification.",
+      "claim_scope": "The article does not claim that a request was submitted or answered."
+    },
+    {
+      "label": "Texas Comptroller Upton County property-tax directory (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/upton.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/upton.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Comptroller directory separates Upton appraisal-district and tax-office contacts.",
+      "claim_scope": "The article uses that directory only for role routing, not a property, tax, title, or valuation conclusion."
+    }
+  ]
+}

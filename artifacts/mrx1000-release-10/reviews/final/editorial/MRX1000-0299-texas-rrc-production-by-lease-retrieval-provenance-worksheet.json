@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave115_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0299",
+  "slug": "texas-rrc-production-by-lease-retrieval-provenance-worksheet",
+  "title": "Texas RRC Production by Lease Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-production-by-lease-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5",
+  "input_frontmatter_sha256": "e49247d995e65b6d50765430f9358cf2cd111e6fbb404ff57d129978e438736b",
+  "expected_repo_sha256": "3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5",
+  "two_image_manifest_sha256": "f8f64b50e383fdd8ba43aa75b22a071f197c9a0c096f6bde105ec82ad1ef515c",
+  "visual_metadata": {
+    "hero_alt": "A researcher records a Production by Lease attempt beside the exact article title.",
+    "social_alt": "A researcher records a Production by Lease attempt beside the exact article title.",
+    "inline_alt": "An overhead one-attempt provenance worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Production by Lease Retrieval Worksheet",
+    "seo_title_character_count": 49,
+    "description_character_count": 149,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T07:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave115",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave115_editorial",
+  "review_run_id": "mrx1000-wave115-editorial-20260915T072834Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5; the answer-first article contains 1601 body tokens and five FAQs.",
+    "The article rejects the colliding generic assessment and valuation identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Production by Lease attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The straight-on one-researcher workstation hero and strict-overhead single-hand worksheet are materially distinct in angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "3fb3b83c3ff69a1f1853f9b3228b025511e3576ad6acd1ae78071a3f816876e5"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1601,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 66
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 49,
+        "description_character_count": 149,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T07:20:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave115",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/texas-rrc-production-data-query-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-production-by-lease-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-production-by-lease-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-production-by-lease-retrieval-provenance-worksheet/texas-rrc-production-by-lease-retrieval.webp"
+  ]
+}

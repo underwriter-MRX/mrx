@@ -1,0 +1,126 @@
+{
+  "artifact_type": "mrx1000_wave214_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:19Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0834",
+  "slug": "midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification",
+  "title": "Midland CAD 2025-2026 Mineral Work Calendar: January 1 Snapshot to July Certification",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+  "source_path": "src/content/posts/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification.mdx",
+  "input_body_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+  "input_frontmatter_sha256": "cfab35909a17a2239b2a0e74e274d63b34221bf3f31d1c560da63d74333cbd97",
+  "expected_repo_sha256": "0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3",
+  "two_image_manifest_sha256": "7c2b22ea68252eae05eed40d73d337413b8195764a71deedf97a5a47ad163341",
+  "visual_metadata": {
+    "hero_alt": "A dark planning folio and timeline rail appear beside the exact Article 286 title.",
+    "social_alt": "A dark planning folio and timeline rail appear beside the exact Article 286 title.",
+    "inline_alt": "A bright top-down evidence timeline appears above the exact Midland CAD mineral work calendar keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Work Calendar: January 1 to July · MRX",
+    "seo_title_character_count": 58,
+    "description_character_count": 149,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:59:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave214",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-2026-mineral-work-calendar-january-1-snapshot-july-certification/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave214_factual",
+  "review_run_id": "mrx1000-wave214-factual-20260915T071319Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 0f46dc5c6ad1280a515b7b09d9334245135d9e04e76a1818a6c3487df792c1f3; all 4 declared sources passed current HTTPS access review.",
+    "The official reappraisal-plan PDF was retrieved at 5,779,473 bytes with SHA-256 eeb1406994514383da7c5c77a96225bfa0e5020e8c11d954f38bc1b675c74bf4; it is unencrypted, has no JavaScript, contains 159 physical pages, and records PDF creation and modification on 2024-09-03.",
+    "Physical page 1 prints a 2025 and 2026 plan and board approval on September 12, 2024. Physical page 69 prints Mineral Property Valuation January-May, mail notices in the first week of May, informal reviews May-July, a formal ARB hearing in the first week of July, and certification before July 25.",
+    "Physical page 102 states a January 1 Texas effective date and annual reappraisal of mineral interests. Physical page 103 describes historical production, price, and expense data plus state and private sources and calls lien-date value a snapshot. Physical page 105 describes monthly RRC operator-data receipts and additional sources.",
+    "Texas Tax Code Chapters 23 and 25 are used only for bounded statutory context; no law is applied to an owner, account, deadline, protest, appraisal, certification, or outcome."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_official_publications_route_pass",
+    "reappraisal_plan_http_bytes_sha256_encryption_javascript_metadata_and_page_count_pass",
+    "physical_page_1_plan_year_and_board_approval_statement_pass",
+    "physical_page_69_contractor_work_calendar_pass",
+    "physical_page_102_january_1_and_annual_reappraisal_statement_pass",
+    "physical_page_103_resources_and_snapshot_statement_pass",
+    "physical_page_105_monthly_rrc_and_other_data_sources_statement_pass",
+    "tax_code_chapter_23_context_only_pass",
+    "tax_code_chapter_25_context_only_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "plan_language_not_converted_to_completion_or_current_deadline_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland CAD Publications page (accessed 2026-08-30)",
+      "url": "https://midcad.org/publications-2/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:19Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/publications-2/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Publications page supplies the visible 2025-2026 Reappraisal Plan route.",
+      "claim_scope": "The page is routing evidence only and does not prove that a planned activity occurred, that a date remains operative, or any owner, account, property, appraisal, notice, protest, certification, title, tax, value, offer, or transaction result."
+    },
+    {
+      "label": "Midland CAD 2025-2026 Reappraisal Plan (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-content/uploads/2024/12/2025-2026-Reappraisal-Plan.pdf",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:19Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-content/uploads/2024/12/2025-2026-Reappraisal-Plan.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The controlled PDF supplies exact bytes, SHA-256 identity, page count, board-approval statement, printed contractor work calendar, January 1 effective-date statement, annual mineral-interest reappraisal statement, source-data categories, and stated limitations.",
+      "claim_scope": "A planning and methodology document is not proof that a scheduled activity occurred, a current deadline is operative, an account was certified, or an owner-specific appraisal, notice, protest, title, tax, value, offer, legal, or transaction conclusion is correct."
+    },
+    {
+      "label": "Texas Tax Code Chapter 23 (accessed 2026-08-30)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:19Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 23 supplies statutory context for appraisal at market value as of January 1.",
+      "claim_scope": "The statute is context only. The article does not interpret a legal duty, calculate an appraisal, apply the law to an owner or account, or provide legal or tax advice."
+    },
+    {
+      "label": "Texas Tax Code Chapter 25 (accessed 2026-08-30)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:19Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies statutory context for periodic reappraisal plans and appraisal-roll administration.",
+      "claim_scope": "The statute does not prove that a printed Midland CAD schedule was completed, that any current deadline remains operative, or that an owner-specific appraisal, notice, protest, certification, title, tax, or legal result is correct."
+    }
+  ]
+}

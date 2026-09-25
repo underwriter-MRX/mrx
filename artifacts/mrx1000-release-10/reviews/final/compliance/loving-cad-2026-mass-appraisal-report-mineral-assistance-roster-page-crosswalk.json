@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave199_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0814",
+  "slug": "loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk",
+  "title": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+  "source_path": "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+  "input_body_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "input_frontmatter_sha256": "e890263b86c89a39cf506cc10485c4c817b438440df97cd0414d759a09ddf0ed",
+  "expected_repo_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "two_image_manifest_sha256": "e7ab0c9166f65d350a4c58de1b769f37c8d68b5166466c30baf35905ed9389ee",
+  "visual_metadata": {
+    "hero_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "social_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "inline_alt": "Four blank roster tabs sit on two offset pages above the exact Loving CAD 2026 mineral appraisal assistance roster phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Mineral Assistance Roster · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 140,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T11:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave199",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave199_compliance",
+  "review_run_id": "mrx1000-wave199-compliance-20260915T071313Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "0fac4c853ade6c7d3a66407965f4085ab6807da78ba4a34b12a2034474d74bbb",
+  "expected_inline_sha256": "9f510376ab26d5c6e316fc2ef84f24364f117d5b3c332f2fb3c2a531c89e4109",
+  "findings": [
+    "Complete current MDX SHA-256 is 792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26; hero/share and inline image hashes are separately locked.",
+    "The article prohibits treating report-era names, titles, TDLR numbers, or assistance labels as current-status verification or property-specific evidence.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, person identity, property identity, professional-status claim, appraisal, tax, value, offer, outcome, or ranking/citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_current_employment_contact_role_registration_license_property_assignment_ownership_title_acreage_production_royalty_appraisal_accuracy_tax_protest_value_offer_transaction_or_legal_claim_pass",
+    "pdf_text_extraction_explicitly_non_validating_and_manual_render_review_controlling_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_names_roles_identifiers_labels_official_forms_seals_logos_property_data_people_hands_money_rigs_maps_legal_symbols_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+    "/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp",
+    "/assets/articles/inline/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/loving-cad-2026-mineral-appraisal-assistance-roster.webp"
+  ]
+}

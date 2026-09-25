@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave104_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0288",
+  "slug": "texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC P-5 Renewal Status Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5",
+  "input_frontmatter_sha256": "572cbf986fc792c6dff1ba9a7a31980f2cf7c0186c077c5a3fff5453323992a2",
+  "expected_repo_sha256": "f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5",
+  "two_image_manifest_sha256": "768726707c4452f23ed353c8de54ce9e8d4af588e7516af30de99ed444d88f5d",
+  "visual_metadata": {
+    "hero_alt": "An archival route desk and blank criterion tabs appear beside the exact article title.",
+    "social_alt": "An archival route desk and blank criterion tabs appear beside the exact article title.",
+    "inline_alt": "A people-free overhead query-state board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC P-5 Renewal Status Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 65,
+    "description_character_count": 154,
+    "answer_summary_word_count": 70,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T12:52:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave104",
+    "declared_source_count": 8,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-inactive-well-aging-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave104_compliance",
+  "review_run_id": "mrx1000-wave104-compliance-20260915T072832Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "0ad87fe4c54ca465ece67250f585e1f5d35970d305c8a60ecb5d4080d8f4969a",
+  "expected_inline_sha256": "68aa156304b830fc2548dd4bafacdd55a685c3fd8d374ec06827b4344db55845",
+  "findings": [
+    "Complete current MDX SHA-256 is f2d1467f9f7d0db607aeabe9c6369038832f72aa9b3f02b7c1e31408f1dbd6b5; hero/share and inline image hashes are separately locked.",
+    "The article keeps the P-5 Renewal Status, IWAR, general Inactive Well, Organization P-5, Wellbore, production, and other RRC routes separate; preserves source uncertainty; controls private identifiers; and stops before regulatory, legal, title, engineering, operational, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, criterion, result, signature, seal, logo, operator, form, inactive period, violation, extension, compliance, renewal, plugging, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_p5_renewal_status_retrieval_no_form_renewal_operator_inactive_well_compliance_violation_extension_plugging_production_property_title_ownership_value_legal_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-p-5-renewal-status-query-retrieval-provenance-worksheet/texas-rrc-p-5-renewal-status-query-retrieval.webp"
+  ]
+}

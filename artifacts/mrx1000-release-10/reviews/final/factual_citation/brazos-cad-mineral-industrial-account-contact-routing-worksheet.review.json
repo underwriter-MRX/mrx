@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave153_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0747",
+  "slug": "brazos-cad-mineral-industrial-account-contact-routing-worksheet",
+  "title": "Brazos CAD Mineral and Industrial Account Contact-Routing Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+  "source_path": "src/content/posts/brazos-cad-mineral-industrial-account-contact-routing-worksheet.mdx",
+  "input_body_sha256": "76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a",
+  "input_frontmatter_sha256": "b001c0f1ce955421624cb9dd510d9749e3a755eaf963fc616ab935fc91b638bb",
+  "expected_repo_sha256": "76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a",
+  "two_image_manifest_sha256": "1ed018d88c7c92c4454da3f9391ca1ef5ee377b8908869873018e3c105a0151d",
+  "visual_metadata": {
+    "hero_alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+    "social_alt": "A three-destination records wayfinding wall appears beside the exact Brazos CAD contact-routing title.",
+    "inline_alt": "A top-down blank three-route board appears above the exact Brazos CAD mineral and industrial account contact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Brazos CAD Mineral Account Contact Routing",
+    "seo_title_character_count": 42,
+    "description_character_count": 153,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T17:33:10Z",
+    "reviewed_by": "mrx_compliance-continuous-wave153",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-account-search-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave153_factual",
+  "review_run_id": "mrx1000-wave153-factual-20260915T072837Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 76fc9804b12ad570972cd1e2dc80f0de6ffa1a715b8ccc3722540e68e17aa85a; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current source-displayed contractor route labels, the current Brazos assignment and client rows, the official Brazos CAD search identity and limitations, and the Texas Comptroller local-office boundary.",
+    "The article invents no person, contact detail, owner, account, owner key, property ID, geographic ID, notice, legal description, acreage, interest, appraisal result, tax amount, value, lease, well, operator, payor, offer, response, or professional conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_cagi_brazos_cad_and_texas_comptroller_source_priority_pass",
+    "source_displayed_role_labels_and_brazos_client_context_verified",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Capitol Appraisal Group, Mineral Appraisal Interface (accessed 2026-08-26)",
+      "url": "https://mineral.cagi.com/Main?modulenum=242",
+      "publisher": "mineral.cagi.com",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://mineral.cagi.com/Main?modulenum=242",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Capitol Appraisal Group mineral interface displays a Mineral Oil and Gas owner-relations route for value or ownership questions, concerns, and updates, and separately displays a corporate route for clients, appraisal, and software services.",
+      "claim_scope": "It supports exact source-displayed route-label capture and the login stop only. The article does not sign in, register, submit data, disclose a notice or identifier, treat either label as legal authority, or predict a response or result."
+    },
+    {
+      "label": "Capitol Appraisal Group, Current Appraisal Assignments (accessed 2026-08-26)",
+      "url": "https://cagi.com/clients-_-appraisers",
+      "publisher": "cagi.com",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://cagi.com/clients-_-appraisers",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Capitol Appraisal Group assignment table identifies a Brazos row and separates industrial appraiser, mineral appraiser value, and mineral analyst ownership columns.",
+      "claim_scope": "It supports a current role-label distinction only. The article does not publish a named employee, endorse a professional, determine who must handle an owner-specific issue, or infer identity, ownership, title, appraisal correctness, or legal effect."
+    },
+    {
+      "label": "Capitol Appraisal Group, Appraisal Client Base (accessed 2026-08-26)",
+      "url": "https://www.cagi.com/client-base",
+      "publisher": "www.cagi.com",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cagi.com/client-base",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Capitol Appraisal Group client page lists Brazos County Appraisal District among its appraisal clients.",
+      "claim_scope": "It supports the bounded current-source relationship context only. The article does not define a contract scope, duration, authority, independence, qualification, service level, or outcome."
+    },
+    {
+      "label": "Brazos CAD Property Search (accessed 2026-08-26)",
+      "url": "https://esearch.brazoscad.org/",
+      "publisher": "esearch.brazoscad.org",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://esearch.brazoscad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Brazos CAD Property Search identifies the local district destination and states that displayed 2026 values are preliminary, the information is for research, and legal descriptions and acreage should be verified before legal use.",
+      "claim_scope": "It supports district identity and source limitations only. This article does not perform a search, retrieve or interpret an account, infer title or ownership, validate acreage or a legal description, or use a displayed appraisal amount as mineral market value."
+    },
+    {
+      "label": "Texas Comptroller, Local Property Appraisal and Tax Information (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller local-property directory states that most local appraisal questions belong with the county appraisal district, while tax-payment questions belong with the applicable tax assessor-collector.",
+      "claim_scope": "It supports institutional routing context only. The article does not repeat the statewide directory worksheet, decide an owner-specific jurisdiction, interpret property-tax law, determine tax liability, or provide legal or tax advice."
+    }
+  ]
+}

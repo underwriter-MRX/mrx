@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave114_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:34Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0298",
+  "slug": "texas-comptroller-lease-drop-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller Lease Drop Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-lease-drop-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-lease-drop-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b",
+  "input_frontmatter_sha256": "8be161c8eea77a06a5557951541705229c4489f137e79c525e0aec5a60913f52",
+  "expected_repo_sha256": "097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b",
+  "two_image_manifest_sha256": "343ff465b51e1161c12ed6a2c78672feb166288785cfec9eff923cff50d12838",
+  "visual_metadata": {
+    "hero_alt": "A Texas mineral owner records a public Lease Drop attempt beside the exact article title.",
+    "social_alt": "A Texas mineral owner records a public Lease Drop attempt beside the exact article title.",
+    "inline_alt": "A people-free overhead two-path Lease Drop worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Comptroller Lease Drop Retrieval Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 153,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T17:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave114",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/understanding-your-mineral-royalty-checks-breakdown/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-lease-drop-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave114_factual",
+  "review_run_id": "mrx1000-wave114-factual-20260915T072834Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 097ba70fe4dacacc186b2b4341f1e5f27d00475b43f723794d4ac390c2c59b8b; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official Comptroller surfaces, route identity, Crude Oil versus Natural Gas path separation, no-login public access, RRC reference categories, and displayed access or result state. None establishes production attribution, payer liability, property connection, title, ownership, payment entitlement, value, legal effect, offer quality, or a transaction conclusion.",
+    "The article publishes no actual lease ID, drilling-permit number, production period, account data, tax record, payer or producer detail, result, screenshot, tax rate, royalty amount, owner decimal, property identifier, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Crude Oil and Natural Gas Taxes FAQs (accessed 2026-08-24)",
+      "url": "https://comptroller.texas.gov/taxes/crude-oil/oil-gas-faq.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/crude-oil/oil-gas-faq.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official FAQ supplies the royalty-interest boundary, the no-login public CONG Lease Drop route, Crude Oil and Natural Gas path labels, RRC lease ID or drilling-permit reference categories, and separation from open-records assistance.",
+      "claim_scope": "The article records one retrieval attempt only and does not decide why royalties were not paid or what a displayed tax record means for a private owner."
+    },
+    {
+      "label": "Texas Comptroller, CONG Web Inquiry (accessed 2026-08-24)",
+      "url": "https://mycpa.cpa.state.tx.us/cong/",
+      "publisher": "mycpa.cpa.state.tx.us",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://mycpa.cpa.state.tx.us/cong/loginForward.do?phase=check",
+        "content_type": "text/html;charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official CONG application supplies the time-bound JavaScript, cookie, public navigation, access, validation, result, and error state presented during an attempt.",
+      "claim_scope": "The article records a displayed state without bypassing it and excludes every secure or account-specific function."
+    },
+    {
+      "label": "Texas Comptroller, Crude Oil Production Tax (accessed 2026-08-24)",
+      "url": "https://comptroller.texas.gov/taxes/crude-oil/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/crude-oil/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official crude-oil page supplies product-specific Texas tax-administration context only.",
+      "claim_scope": "The article does not publish a rate, calculate tax, determine liability, or interpret a royalty-statement line."
+    },
+    {
+      "label": "Texas Comptroller, Natural Gas Production Tax (accessed 2026-08-24)",
+      "url": "https://comptroller.texas.gov/taxes/natural-gas/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:34Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/natural-gas/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official natural-gas page supplies product-specific Texas tax-administration context only.",
+      "claim_scope": "The article does not publish a rate, calculate tax, determine liability, or interpret a royalty-statement line."
+    }
+  ]
+}

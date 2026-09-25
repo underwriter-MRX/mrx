@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave119_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0317",
+  "slug": "texas-rrc-imaged-well-log-retrieval-provenance-worksheet",
+  "title": "Texas RRC Imaged Well Log Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-imaged-well-log-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "a0fe6bf8ada7925dd848c6946a85033e75a086f71e635c9a3429bb53ed1c8e15",
+  "input_frontmatter_sha256": "56ebe37022d41b3d3c460ee4b9a3991612828a5dc421b26007ae733dedf63c05",
+  "expected_repo_sha256": "a0fe6bf8ada7925dd848c6946a85033e75a086f71e635c9a3429bb53ed1c8e15",
+  "two_image_manifest_sha256": "d2481e57c1ab698bb9c3f23790b14e14a7fce3bd7f02b7a3941abb4ff45832a8",
+  "visual_metadata": {
+    "hero_alt": "A single-hand generic well-log retrieval desk appears beside the exact article title.",
+    "social_alt": "A single-hand generic well-log retrieval desk appears beside the exact article title.",
+    "inline_alt": "A people-free overhead TIFF evidence-transfer board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Imaged Well Log Retrieval Worksheet",
+    "seo_title_character_count": 45,
+    "description_character_count": 157,
+    "answer_summary_word_count": 69,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T09:48:02Z",
+    "reviewed_by": "mrx_compliance-continuous-wave119",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-wellbore-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave119_compliance",
+  "review_run_id": "mrx1000-wave119-compliance-20260915T072835Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e2a682b44fb9536c92ce92bb131e02e6b85ef08536fdf4e3172f7120f8e89ac2",
+  "expected_inline_sha256": "aa9f54121eb256e16988e9d8b6ea971f5ede9525864379a6975ec2751a43c8df",
+  "findings": [
+    "Complete current MDX SHA-256 is a0fe6bf8ada7925dd848c6946a85033e75a086f71e635c9a3429bb53ed1c8e15; hero/share and inline image hashes are separately locked.",
+    "The article keeps the Imaged Records Well Log profile separate from Wellbore Query, Drilling Permit, Completions, potential files, production, GIS interpretation, EDMS, hearings, dry-hole files, historical research, automation, bulk retrieval, and every valuation, offer, or decision task.",
+    "Image text is limited to the exact title and keyword and adds no identifier, actual record, source result, seal, logo, well status, formation, property, ownership, payment, production, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_imaged_well_log_one_manual_attempt_access_and_tiff_state_no_adjacent_route_automation_bulk_interpretation_well_property_ownership_production_value_offer_legal_tax_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-imaged-well-log-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-imaged-well-log-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/texas-rrc-well-log-retrieval.webp"
+  ]
+}

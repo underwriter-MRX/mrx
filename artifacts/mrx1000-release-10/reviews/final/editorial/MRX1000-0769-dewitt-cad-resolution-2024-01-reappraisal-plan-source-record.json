@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave170_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0769",
+  "slug": "dewitt-cad-resolution-2024-01-reappraisal-plan-source-record",
+  "title": "DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+  "input_body_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "input_frontmatter_sha256": "631470b29bb7bcf6486b5fee0acbc55bace1ec9790daffbb8e12737d07371273",
+  "expected_repo_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "two_image_manifest_sha256": "c9d404b6bd5b773df34042e2de56caff9b26f6cd0850817477e02f3f14ffa55a",
+  "visual_metadata": {
+    "hero_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "social_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "inline_alt": "Four overhead blank source tiles appear above the exact DeWitt CAD Resolution 2024-01 keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD Resolution 2024-01 Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave170",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave170_editorial",
+  "review_run_id": "mrx1000-wave170-editorial-20260915T071256Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337; the answer-first article contains 1407 body tokens and five FAQs.",
+    "The article rejects the generic DeWitt County valuation risk-checklist identity and owns one distinct deliverable: the page-located Resolution 2024-01 relationship among the current publisher page, exact plan file, and separate hearing notice.",
+    "The current AI Atom Brain and Search Atlas SEO/AEO factory prompt is applied through a concise direct answer, five visible official citations, author/reviewer/date attribution, semantic hub/support/next-step links, exact canonical identity, matching native schema, sitemap and LLM-discovery eligibility, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique plan-folio hero and strict-overhead four-stage source-chain image are materially distinct and contain no person, seal, logo, government mark, signature, readable base text, number, date, property record, money, legal conclusion, result, or watermark."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1407,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 57
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 43,
+        "description_character_count": 144,
+        "author": "ariana",
+        "reviewed_at": "2026-08-28T19:55:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave170",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+    "/assets/articles/hero/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.webp",
+    "/assets/articles/inline/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/dewitt-cad-resolution-2024-01.webp"
+  ]
+}

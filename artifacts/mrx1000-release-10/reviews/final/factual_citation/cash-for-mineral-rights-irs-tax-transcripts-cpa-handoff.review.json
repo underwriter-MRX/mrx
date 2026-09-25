@@ -1,0 +1,141 @@
+{
+  "artifact_type": "mrx1000_wave150_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0651",
+  "slug": "cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff",
+  "title": "Cash for Mineral Rights: How to Retrieve IRS Tax Transcripts for a CPA Handoff",
+  "canonical_url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+  "source_path": "src/content/posts/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff.mdx",
+  "input_body_sha256": "395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e",
+  "input_frontmatter_sha256": "985b9dbdb3b20fea15bd94effc478690d8a66034ce92a1500a0b64f9b87d0f6a",
+  "expected_repo_sha256": "395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e",
+  "two_image_manifest_sha256": "0470703795667f9111531c397d6f31ccf80cd46be5e8368381ec95c9b782a821",
+  "visual_metadata": {
+    "hero_alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+    "social_alt": "A dark secure record-retrieval handoff station appears beside the exact IRS tax-transcript article title.",
+    "inline_alt": "An overhead blank transcript source-scope matrix appears above the exact cash-for-mineral-rights tax-transcripts keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "IRS Tax Transcripts Before a Mineral Rights Cash Offer",
+    "seo_title_character_count": 54,
+    "description_character_count": 142,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T15:02:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave150",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/learning-center/mineral-rights-taxes/",
+      "support": "/blog/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/cash-for-mineral-rights-irs-tax-transcripts-cpa-handoff/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave150_factual",
+  "review_run_id": "mrx1000-wave150-factual-20260915T072837Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 395c7b3214722f12ffc9e65ff9e297b089d09e6b1f86f55d3f2ed8753b1ea28e; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current IRS retrieval routes, transcript-type descriptions, availability limits, privacy safeguards, April 2025 Form 4506-T revision, and the transcript-versus-return-copy distinction.",
+    "The article invents no taxpayer, tax year, return, transcript entry, mineral interest, property, payer, offer, basis, income character, calculation, form selection, filing, retention period, or professional conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_irs_source_priority_pass",
+    "form_4506_t_april_2025_revision_verified",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "IRS, Get your tax records and transcripts (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/individuals/get-transcript",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/individuals/get-transcript",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS Get your tax records and transcripts page supplies official online-account, mail, and automated-phone retrieval routes, the five-to-ten-calendar-day mail estimate, address-of-record boundary, masking notice, and link to Form 4506-T.",
+      "claim_scope": "It supports retrieval-channel and handoff documentation only. It does not select a transcript, prove mineral ownership or basis, establish completeness, characterize income, calculate tax, validate an offer, or recommend a transaction."
+    },
+    {
+      "label": "IRS, Transcript types for individuals and ways to order them (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/individuals/transcript-types-for-individuals-and-ways-to-order-them",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/individuals/transcript-types-for-individuals-and-ways-to-order-them",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS transcript-types page defines the limited contents and stated availability of return, account, record-of-account, wage-and-income, and verification-of-non-filing records and identifies the routes through which they may be requested.",
+      "claim_scope": "It supports a source-scope matrix and neutral availability notes only. The article does not decide which transcript an owner needs, interpret an entry, treat missing data as negative proof, or convert a tax record into title, basis, offer, or transaction evidence."
+    },
+    {
+      "label": "IRS, About tax transcripts (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/individuals/about-tax-transcripts",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/individuals/about-tax-transcripts",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS About tax transcripts page supplies the masking, fully visible financial-entry, customer-file-number, no-IRS-fax, and no-third-party-mailing boundaries.",
+      "claim_scope": "It supports privacy cautions, unaltered-copy handling, and secure professional handoff only. It does not establish that a transmission method is universally secure or authorize public exposure of taxpayer information."
+    },
+    {
+      "label": "IRS, About Form 4506-T (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/forms-pubs/about-form-4506-t",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/forms-pubs/about-form-4506-t",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current IRS About Form 4506-T page identifies the form as the official paper request route for listed transcript types and links to the current revision.",
+      "claim_scope": "It supports a current-source pointer only. The article does not complete the form, choose a request, supply an address, authorize a signer, or provide owner-specific filing instructions."
+    },
+    {
+      "label": "IRS, Form 4506-T, revision April 2025 (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/pub/irs-pdf/f4506t.pdf",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/pub/irs-pdf/f4506t.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official Form 4506-T PDF is revision April 2025 and supplies IRS-stated transcript descriptions, availability notes, processing statements, signature timing, and the instruction to consult the official landing page for developments.",
+      "claim_scope": "It supports a revision-control and professional-review boundary only. The article does not reproduce the form, fill a field, select a transcript or year, decide authority to sign, state a mailing destination, or promise processing time."
+    },
+    {
+      "label": "IRS, Topic 156, transcript or copy of a tax return (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/taxtopics/tc156",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/taxtopics/tc156",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "IRS Topic 156 distinguishes a transcript from a complete return copy, identifies Form 4506-T as a mail route for transcript types, and identifies Form 4506 as the separate route for a complete return copy.",
+      "claim_scope": "It supports the transcript-versus-copy boundary only. The article does not recommend ordering a paid copy, state a current copy fee, or decide which record an owner or CPA requires."
+    }
+  ]
+}

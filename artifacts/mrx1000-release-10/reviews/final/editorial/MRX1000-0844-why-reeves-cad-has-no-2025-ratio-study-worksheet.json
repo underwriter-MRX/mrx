@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave224_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0844",
+  "slug": "why-reeves-cad-has-no-2025-ratio-study-worksheet",
+  "title": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/",
+  "source_path": "src/content/posts/why-reeves-cad-has-no-2025-ratio-study-worksheet.mdx",
+  "input_body_sha256": "9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b",
+  "input_frontmatter_sha256": "7dc3da5bffc73b151c0c1204788169dce11d9ae3b0dc874d9dc8c4b2ff47587b",
+  "expected_repo_sha256": "9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b",
+  "two_image_manifest_sha256": "82a413550682742a8915ea196265601d9b070cc16c3e7ebe57e1bc856cdf5530",
+  "visual_metadata": {
+    "hero_alt": "A dark public-record routing desk appears beside the exact Article 296 title.",
+    "social_alt": "A dark public-record routing desk appears beside the exact Article 296 title.",
+    "inline_alt": "A bright overhead source-routing workspace appears above the exact Reeves CAD 2025 ratio-study worksheet keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 144,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T10:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave224",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave224_editorial",
+  "review_run_id": "mrx1000-wave224-editorial-20260915T071322Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b; the answer-first article contains 1676 body tokens and five FAQs.",
+    "The original generic Reeves value-timeline identity is rejected. The replacement answers one missing-record retrieval question with exact year, program, issuer, district number, negative-route check, cycle context, and prior-year route.",
+    "Information gain is concrete: it prevents users and answer systems from fabricating a 2025 Reeves worksheet, confusing MAP with ADRS, or silently relabeling the official 2024 Reeves route as 2025.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark straight-on records desk and bright overhead source-routing workspace are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1676,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 60
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 48,
+        "description_character_count": 144,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T10:35:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave224",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/why-reeves-cad-has-no-2025-ratio-study-worksheet.mdx",
+    "/assets/articles/hero/why-reeves-cad-has-no-2025-ratio-study-worksheet.webp",
+    "/assets/articles/inline/why-reeves-cad-has-no-2025-ratio-study-worksheet/reeves-cad-2025-ratio-study-worksheet.webp"
+  ]
+}

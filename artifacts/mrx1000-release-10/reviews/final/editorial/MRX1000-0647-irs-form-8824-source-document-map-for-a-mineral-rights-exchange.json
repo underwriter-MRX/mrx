@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave148_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:05:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0647",
+  "slug": "irs-form-8824-source-document-map-for-a-mineral-rights-exchange",
+  "title": "IRS Form 8824 Source-Document Map for a Mineral Rights Exchange",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-8824-source-document-map-for-a-mineral-rights-exchange/",
+  "source_path": "src/content/posts/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.mdx",
+  "input_body_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "input_frontmatter_sha256": "63697ced5b04f503902462dd39123d6448f1f5a227203da05b3e85cdb5d27ea2",
+  "expected_repo_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "two_image_manifest_sha256": "0f3dd35cb6f175f772c9953253691fcc958268c3b4bd9ef24693f772211f2ba1",
+  "visual_metadata": {
+    "hero_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "social_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "inline_alt": "An overhead blank source matrix appears above the exact IRS Form 8824 source documents keyword."
+  },
+  "reviewer_id": "codex_wave148_editorial",
+  "review_run_id": "mrx1000-wave148-editorial-20260826T140554Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8; the answer-first article contains 1911 body tokens and five FAQs.",
+    "The article rejects the colliding broad 1031 decision identity and owns one distinct deliverable: a blank current-Form-8824 request-category-to-controlled-source map for an already-structured exchange, plus mapped, incomplete, or professional-review-required outcomes.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The front-facing archival source station and strict-overhead blank provenance matrix are materially distinct and contain no personal data, tax-form facsimile, selected answer, amount, or conclusion."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1911,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.mdx",
+    "/assets/articles/hero/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.webp",
+    "/assets/articles/inline/irs-form-8824-source-document-map-for-a-mineral-rights-exchange/irs-form-8824-source-documents.webp"
+  ]
+}

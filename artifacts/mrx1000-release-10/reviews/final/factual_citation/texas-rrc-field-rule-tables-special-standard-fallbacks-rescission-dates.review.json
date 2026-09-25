@@ -1,0 +1,162 @@
+{
+  "artifact_type": "mrx1000_wave230_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0850",
+  "slug": "texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates",
+  "title": "Texas RRC Field Rule Tables: Special Rules, Standard Fallbacks, and Rescission Dates",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
+  "source_path": "src/content/posts/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates.mdx",
+  "input_body_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+  "input_frontmatter_sha256": "7aa06c9998ac8a9fd54adba35e1dfcbb55b5e093a7417cf3b9910346fd54eea7",
+  "expected_repo_sha256": "09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515",
+  "two_image_manifest_sha256": "4e0cfd85830d6ac0d6511a5071198ed11d1fb9a9b266c246d9a02b0f2cefef37",
+  "visual_metadata": {
+    "hero_alt": "A frontal copper rule-routing switchboard appears beside the exact Article 302 title.",
+    "social_alt": "A frontal copper rule-routing switchboard appears beside the exact Article 302 title.",
+    "inline_alt": "A low side-angle glass row display appears above the exact Texas RRC field rule tables keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Field Rule Tables and Fallbacks",
+    "seo_title_character_count": 41,
+    "description_character_count": 154,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T13:23:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave230",
+    "declared_source_count": 7,
+    "visible_body_citation_count": 7,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-rrc-field-classification-codes-associated-field-numbers/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-rule-tables-special-standard-fallbacks-rescission-dates/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave230_factual",
+  "review_run_id": "mrx1000-wave230-factual-20260915T071323Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 09b77c3761129d4f67ccf269c1ce74938e534d9b6115b3e7c4fda4f80dfdb515; all 7 declared sources passed current HTTPS access review.",
+    "Seven controlled first-party RRC source objects total 3,708,417 bytes with individual SHA-256 identities in the selection decision.",
+    "The historical manual supports the table, code, fallback, effective-date, and gas-rule rescission claims; current pages support only routes, cadence, disclaimers, and order/current-rule verification boundaries.",
+    "The article preserves rule_type_code, derived_rule_type_code, std_field_rule_code, and std_field_rule_id as separate fields.",
+    "Current applicability is never inferred from the historical export, a missing row, a found row, a query page, or a current catalog entry."
+  ],
+  "checks": [
+    "seven_distinct_official_https_sources_with_historical_and_current_roles",
+    "og_field_rule_and_og_std_field_rule_separation_pass",
+    "historical_fallback_sequence_source_scope_pass",
+    "rule_type_derived_rule_type_and_standard_code_non_equivalence_pass",
+    "effective_dt_and_rescind_dt_non_equivalence_pass",
+    "current_field_rules_query_catalog_and_order_route_pass",
+    "current_tac_official_route_boundary_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC Oil and Gas Field Information data dictionary (accessed 2026-08-31)",
+      "url": "https://rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/01wfdxlx/oilgasfieldrules.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The historical RRC manual defines og_field_rule, og_std_field_rule, rule_type_code, derived_rule_type_code, effective_dt, rescind_dt, and its dated fallback procedure.",
+      "claim_scope": "The article labels the August 10, 2005 Oracle export as historical and never presents it as a current legal determination."
+    },
+    {
+      "label": "Texas RRC Data Sets Available for Download (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current RRC catalog lists Oil and Gas Field Rules as a separate monthly product.",
+      "claim_scope": "The article uses the catalog only for current product identity and cadence, not as row-level or legal-applicability evidence."
+    },
+    {
+      "label": "Texas RRC Field Data (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/field-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/field-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current field-data page identifies the Field Information Query and Proration Schedule by Field as separate routes.",
+      "claim_scope": "The article does not claim execution or results from either route."
+    },
+    {
+      "label": "Texas RRC Online Research Queries (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current query catalog lists Field Rules Query as nightly and supplies an informational/non-authoritative disclaimer.",
+      "claim_scope": "The article converts that limitation into current-source verification and stop states."
+    },
+    {
+      "label": "Texas RRC Oil and Gas Well Records (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current records page identifies field-rule hearing files and possible final or special order contents.",
+      "claim_scope": "The article uses the page only to route order-history verification, not to interpret any specific order."
+    },
+    {
+      "label": "Texas RRC Drilling Permits W-1 Online Filing User Guide (accessed 2026-08-31)",
+      "url": "https://rrc.texas.gov/media/qqmhxxex/dpmanual.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/qqmhxxex/dpmanual.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The W-1 guide distinguishes statewide, county-regular, and special-field-rule contexts and shows a final-order history link for fields with special rules.",
+      "claim_scope": "The article stops before a permit, spacing, density, notification, or exception decision."
+    },
+    {
+      "label": "Texas RRC Current Rules (accessed 2026-08-31)",
+      "url": "https://www.rrc.texas.gov/general-counsel/rules/current-rules/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/general-counsel/rules/current-rules/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current rules page identifies the Texas Administrative Code as the official rules source and labels printable chapter PDFs informational snapshots.",
+      "claim_scope": "The article routes current rule questions to that official path and qualified review."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave193_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:09Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0796",
+  "slug": "howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index",
+  "title": "Howard CAD 2026 Certified Mineral Roll ZIP: 16-Member PACS Export Container Index",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/",
+  "source_path": "src/content/posts/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index.mdx",
+  "input_body_sha256": "5e8f103b71c5420d5b0cd9402191c3d9699b06b0250810bbd67ede51baa09d88",
+  "input_frontmatter_sha256": "33e4cbd0293167c6700b459d9771972a1e06e0ef45eb138a3451e3c1a6eacb5a",
+  "expected_repo_sha256": "5e8f103b71c5420d5b0cd9402191c3d9699b06b0250810bbd67ede51baa09d88",
+  "two_image_manifest_sha256": "0829b48a5fa2171c6099014b88297c261ff422d5ac267d344966ee82bba1083d",
+  "visual_metadata": {
+    "hero_alt": "A sealed navy archive drum appears beside the exact Howard CAD 2026 container-index title.",
+    "social_alt": "A sealed navy archive drum appears beside the exact Howard CAD 2026 container-index title.",
+    "inline_alt": "An overhead container topology board appears above the Howard CAD 2026 certified mineral roll ZIP phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2026 Mineral Roll ZIP Container Index",
+    "seo_title_character_count": 48,
+    "description_character_count": 140,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T08:58:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave193",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave193_compliance",
+  "review_run_id": "mrx1000-wave193-compliance-20260915T071309Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "ce434425fe063c34a82e20c7e569b808f755b49869bf5a79a57ac168c1550430",
+  "expected_inline_sha256": "d12c9bf3ca351834cab62b6884d62f15ad592b1e05289d4e7ce944a23d37710f",
+  "findings": [
+    "Complete current MDX SHA-256 is 5e8f103b71c5420d5b0cd9402191c3d9699b06b0250810bbd67ede51baa09d88; hero/share and inline image hashes are separately locked.",
+    "The article rejects extraction, member-content interpretation, prefix or empty-file inference, nested-ZIP inventory, personal/property data, appraisal, tax, title, value, offer, legal, and outcome conclusions.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, record content, property fact, value, or result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "container_index_no_extraction_person_property_owner_account_appraisal_tax_title_value_offer_or_legal_claim_pass",
+    "prefix_empty_file_and_nested_content_no_inference_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_data_filenames_rows_cells_records_spreadsheet_person_hand_map_money_logo_seal_government_mark_official_form_screenshot_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index.mdx",
+    "/assets/articles/hero/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index.webp",
+    "/assets/articles/inline/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index/howard-cad-2026-certified-mineral-roll-zip.webp"
+  ]
+}

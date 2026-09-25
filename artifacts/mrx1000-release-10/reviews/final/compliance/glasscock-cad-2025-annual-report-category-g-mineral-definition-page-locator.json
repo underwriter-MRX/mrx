@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave184_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0783",
+  "slug": "glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator",
+  "title": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+  "source_path": "src/content/posts/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.mdx",
+  "input_body_sha256": "7d3f6bdbf0e72a629f6207d91753e3eee24fcbf75439e0972c2586991ed934f6",
+  "input_frontmatter_sha256": "b559e3feb305df694611121fd7640075ec8a0be80e6ddc439668a1bbc496e127",
+  "expected_repo_sha256": "7d3f6bdbf0e72a629f6207d91753e3eee24fcbf75439e0972c2586991ed934f6",
+  "two_image_manifest_sha256": "f3e556de307c43b0b842e3db188af757a4df2401164f52d89da926fe5db4e738",
+  "visual_metadata": {
+    "hero_alt": "A cream report stack and page marker appear beside the exact Glasscock CAD Category G page-locator title.",
+    "social_alt": "A cream report stack and page marker appear beside the exact Glasscock CAD Category G page-locator title.",
+    "inline_alt": "An overhead blank category table appears above the exact Glasscock CAD Category G mineral definition phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Category G Definition Page Locator",
+    "seo_title_character_count": 48,
+    "description_character_count": 143,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T04:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave184",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-certified-mineral-roll-zip-link-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave184_compliance",
+  "review_run_id": "mrx1000-wave184-compliance-20260915T071305Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "62194ee9dafa6fe75e58ac529137d95d2e6f3a9168c3671a167bbf4567857080",
+  "expected_inline_sha256": "36e80794b546676c7bf71160fd2553cd98189592a1e0b68a2d5bb115e3b291f2",
+  "findings": [
+    "Complete current MDX SHA-256 is 7d3f6bdbf0e72a629f6207d91753e3eee24fcbf75439e0972c2586991ed934f6; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects person or property search, private-data access, category application, statutory interpretation, compliance judgment, appraisal judgment, tax calculation, ownership or title findings, market valuation, offer analysis, sale advice, filing direction, and promised outcomes.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, property fact, appraisal result, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "official_file_and_page_locator_no_category_interpretation_property_application_appraisal_tax_title_ownership_value_offer_sale_filing_compliance_or_legal_claim_pass",
+    "adjacent_glasscock_records_link_and_appraisal_responsibility_sources_not_combined_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_official_page_government_mark_property_record_personal_data_tax_amount_money_result_logo_seal_signature_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.mdx",
+    "/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp",
+    "/assets/articles/inline/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/glasscock-cad-category-g-mineral-definition.webp"
+  ]
+}

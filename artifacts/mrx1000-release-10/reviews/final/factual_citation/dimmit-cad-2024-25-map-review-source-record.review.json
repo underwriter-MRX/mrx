@@ -1,0 +1,132 @@
+{
+  "artifact_type": "mrx1000_wave173_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:59Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0772",
+  "slug": "dimmit-cad-2024-25-map-review-source-record",
+  "title": "Dimmit CAD 2024-25 MAP Review Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+  "source_path": "src/content/posts/dimmit-cad-2024-25-map-review-source-record.mdx",
+  "input_body_sha256": "39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14",
+  "input_frontmatter_sha256": "43ea7e2ca0592f2f7593ea01efdad107dfb3b692734ad4742422ebf02f8c3b01",
+  "expected_repo_sha256": "39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14",
+  "two_image_manifest_sha256": "1c9fe13a6b9edd2ae263de5cbe9028dc34467e8f8f3d2958977ee62139fd6f8c",
+  "visual_metadata": {
+    "hero_alt": "A navy review folio and four blank tiles appear beside the exact Dimmit CAD 2024-25 MAP review source-record title.",
+    "social_alt": "A navy review folio and four blank tiles appear beside the exact Dimmit CAD 2024-25 MAP review source-record title.",
+    "inline_alt": "Four overhead evidence cards form a provenance path above the exact Dimmit CAD 2024-25 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2024-25 MAP Review Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 143,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T00:50:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave173",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2024-25-map-review-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave173_factual",
+  "review_run_id": "mrx1000-wave173-factual-20260915T071259Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 39296b9448d7ade614c697e018adb10e12a46e41211ab3148695673331ef9c14; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official MAP overview, 2024 results-page relationship, exact 15-page Dimmit report, page-2 authority and summary fields, pages 3 through 15 question range and displayed responses, official review-material context, statutory provenance, complete-file hash, and retrieval date.",
+    "The article does not invent a current district status, recommendation obligation, owner, account, property, title, source relationship, appraisal result, tax result, protest result, mineral valuation, market price, offer, sale price, comparison, grade, certification, endorsement, or owner-specific conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "exact_issuer_document_period_district_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_texas_comptroller_and_texas_legislature_source_priority_pass",
+    "page_level_pass_rating_score_and_question_range_adjacency_pass",
+    "dated_source_language_not_converted_into_current_status_deadline_or_recommendation_obligation_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Methods and Assistance Program (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:59Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official MAP overview supplies the program identity, Section 5.102 cadence, reviewed activity-area context, and approximate annual review coverage.",
+      "claim_scope": "It does not supply the Dimmit result or any property, appraisal, tax, protest, mineral-value, offer, sale, or transaction conclusion."
+    },
+    {
+      "label": "Texas Comptroller, 2024 MAP Review Results (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2024/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:59Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2024/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2024 results page supplies the publisher-to-report relationship, 2024 completion-year statement, Dimmit link, and dated January 2026 recommendation-completion language.",
+      "claim_scope": "The article does not treat the dated language as a current deadline or infer that Dimmit had a recommendation to complete."
+    },
+    {
+      "label": "Texas Comptroller, Dimmit CAD 2024-25 Final MAP Review (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2024/dimmit-2024.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:59Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2024/dimmit-2024.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The exact official 15-page Dimmit report supplies its document identity, district, page-2 authority statement, five PASS results, four Meets All ratings, displayed counts and scores, detailed questions 1 through 88, and Yes or N/A response labels with no recommendation displayed.",
+      "claim_scope": "The article preserves literal report observations and file identity without an independent audit, recalculation, current-status claim, property inference, appraisal judgment, tax or protest advice, valuation, offer analysis, or transaction use."
+    },
+    {
+      "label": "Texas Comptroller, MAP Review Documents (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/review-documents.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:59Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/review-documents.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official MAP Review Documents page supplies current review-cycle materials and process context only.",
+      "claim_scope": "It does not expand the meaning of a Dimmit report label, validate a property, or create a mineral appraisal, value, tax, protest, offer, or sale conclusion."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 5 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:59Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 5 supplies current official statutory text for the program authority cited by the report.",
+      "claim_scope": "The article does not interpret the statute, decide compliance, or apply it to a district, property, owner, appraisal, tax, protest, value, offer, or transaction."
+    }
+  ]
+}

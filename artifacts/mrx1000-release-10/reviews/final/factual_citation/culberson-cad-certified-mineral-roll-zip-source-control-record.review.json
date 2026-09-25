@@ -1,0 +1,128 @@
+{
+  "artifact_type": "mrx1000_wave162_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0761",
+  "slug": "culberson-cad-certified-mineral-roll-zip-source-control-record",
+  "title": "Culberson CAD Certified Mineral Roll ZIP Source-Control Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+  "source_path": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+  "input_body_sha256": "1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf",
+  "input_frontmatter_sha256": "e0abb1974bca538c4dc57cecbfbb06e4105814cdfd57599c8cf20a95fd2fcb88",
+  "expected_repo_sha256": "1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf",
+  "two_image_manifest_sha256": "9bae9374a438b4ceaf8d76b591609041329f3ef1a1e7c30c7fd5b79ffadf5006",
+  "visual_metadata": {
+    "hero_alt": "A sealed archive appears beside the exact Culberson CAD certified mineral roll ZIP source-control title.",
+    "social_alt": "A sealed archive appears beside the exact Culberson CAD certified mineral roll ZIP source-control title.",
+    "inline_alt": "Seven closed file tokens appear above the exact Culberson CAD certified mineral roll ZIP keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Mineral Roll ZIP Source Control",
+    "seo_title_character_count": 45,
+    "description_character_count": 141,
+    "answer_summary_word_count": 59,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T10:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave162",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/crane-cad-oil-gas-reappraisal-plan-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave162_factual",
+  "review_run_id": "mrx1000-wave162-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 1594e30082e2954d6b66a3092c1b2eb5bbbefb82db18f3b1831a5dce8937edaf; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official Data and Records page relationship, displayed 2026 Certified Mineral Appraisal Roll ZIP label, exact linked ZIP URL, HTTP retrieval result, MIME, compressed bytes, complete-file SHA-256, and generic central-directory metadata for seven non-directory unencrypted members.",
+    "The article invents and exposes no owner, address, account, property, legal description, lease, operator, Railroad Commission identifier, interest, jurisdiction, production, appraisal, tax, exemption, protest, notice, contact, row value, matching result, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_culberson_cad_texas_comptroller_and_texas_statute_source_priority_pass",
+    "zip_source_identity_and_central_directory_metadata_not_converted_into_member_content_row_data_matching_appraisal_tax_protest_legal_valuation_sale_or_outcome_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Culberson CAD, Data and Records (accessed 2026-08-27)",
+      "url": "https://www.culbersoncad.org/home/DataRecords",
+      "publisher": "www.culbersoncad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.culbersoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Culberson CAD Data and Records page supplies the publisher surface and displays a 2026 Certified Mineral Appraisal Roll ZIP link under 2026 Certified Appraisal Rolls.",
+      "claim_scope": "It supports current publisher-surface identity, displayed link label, and link-relationship rechecking only. It does not establish row accuracy, completeness, owner-specific applicability, property classification, appraisal treatment, taxation, protest position, legal effect, value, or another result."
+    },
+    {
+      "label": "Culberson CAD, 2026 Certified Mineral Appraisal Roll ZIP (accessed 2026-08-27)",
+      "url": "https://www.culbersoncad.org/Forms/ZipFileDownload?fileName=1784838558_CULBERSON+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+      "publisher": "www.culbersoncad.org",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.culbersoncad.org/Forms/ZipFileDownload?fileName=1784838558_CULBERSON+CAD+2026+CERTIFIED+MINERAL+OPEN+RECORDS.zip&subPath=Data+Records",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The exact current official ZIP supplies the complete downloadable archive bytes and generic central-directory metadata: seven non-directory unencrypted members, their generic filenames and extensions, aggregate uncompressed bytes, compressed-file bytes, and complete-file SHA-256.",
+      "claim_scope": "It supports complete-file source control and a generic central-directory inventory only. The article does not extract, open, read, search, index, transform, copy, display, summarize, match, or interpret any member content or row data."
+    },
+    {
+      "label": "Texas Comptroller, Culberson County Directory (accessed 2026-08-27)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/culberson.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/culberson.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the official Culberson County appraisal-district website and directory context.",
+      "claim_scope": "It supports publisher identity and jurisdictional context only. The article does not choose an official, office, recipient, channel, contact action, filing destination, or owner-specific next step."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 25 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and appraisal-roll subjects.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret Chapter 25, decide applicability, read or compare a row, calculate timing, direct a protest or filing, or make an owner-specific conclusion."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 26 (accessed 2026-08-27)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.26.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.26.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 26 supplies current official statutory provenance for assessment and tax-rate subjects that may be associated with appraisal-roll use.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret Chapter 26, calculate a tax, determine jurisdiction, choose a rate, apply a provision, or make an owner-specific conclusion."
+    }
+  ]
+}

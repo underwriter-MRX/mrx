@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave144_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:20:49Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0442",
+  "slug": "texas-probate-court-appointment-record-retrieval-provenance-worksheet",
+  "title": "Texas Probate Court Appointment Record Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-probate-court-appointment-record-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-probate-court-appointment-record-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "input_frontmatter_sha256": "4802028274bdbd753de8c0284d9fc328ffd140d944ab40c0a5a5661e032206e7",
+  "expected_repo_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "two_image_manifest_sha256": "a6d99937274b0f06881b7638d4f26fa5859d7f2d32f918bfff8c0dee27067353",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "social_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "inline_alt": "A top-down blank probate record retrieval worksheet appears above the exact Texas appointment-record keyword."
+  },
+  "reviewer_id": "codex_wave144_editorial",
+  "review_run_id": "mrx1000-wave144-editorial-20260826T122049Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442; the answer-first article contains 1886 body tokens and five FAQs.",
+    "The article rejects the colliding broad inherited-mineral identity and owns one distinct deliverable: a blank provenance record for one authorized manual official Texas court or county route and one probate appointment, order, or letters record-search attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The low-oblique court-directory station and strict-overhead blank probate record worksheet are materially distinct compositions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1886,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-probate-court-appointment-record-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-probate-court-appointment-record-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-probate-court-appointment-record-retrieval-provenance-worksheet/texas-probate-court-appointment-record-retrieval.webp"
+  ]
+}

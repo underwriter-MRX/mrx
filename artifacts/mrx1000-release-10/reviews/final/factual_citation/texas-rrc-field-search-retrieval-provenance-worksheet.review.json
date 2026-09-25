@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave102_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0285",
+  "slug": "texas-rrc-field-search-retrieval-provenance-worksheet",
+  "title": "Texas RRC Field Search Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-search-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-field-search-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "9f6e0f0e68c040dc288b2a12dbd5ff245849f18a608ab958e3082a1dcb414d13",
+  "input_frontmatter_sha256": "286ef337c89a26cc1f340db6e093716832af0085d423e30ef934a3acdec49973",
+  "expected_repo_sha256": "9f6e0f0e68c040dc288b2a12dbd5ff245849f18a608ab958e3082a1dcb414d13",
+  "two_image_manifest_sha256": "86de1a5311a7eb31a4837ff5d992226e0e1f3e278ec50f8550008407b484167b",
+  "visual_metadata": {
+    "hero_alt": "A blank Field Search terminal and neutral retained-reference desk appear beside the exact article title.",
+    "social_alt": "A blank Field Search terminal and neutral retained-reference desk appear beside the exact article title.",
+    "inline_alt": "A people-free overhead three-mode Field Search criteria worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Field Search Retrieval Provenance Worksheet",
+    "seo_title_character_count": 53,
+    "description_character_count": 152,
+    "answer_summary_word_count": 62,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T12:05:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave102",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-field-search-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave102_factual",
+  "review_run_id": "mrx1000-wave102-factual-20260915T072831Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 9f6e0f0e68c040dc288b2a12dbd5ff245849f18a608ab958e3082a1dcb414d13; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, the exact Field Rules Query and Field Search source labels, source-displayed search modes and minimum-character instruction, separate well-record and downloadable-data channels, and published limitations. None is used to establish a field identity or boundary, rule meaning, well or property connection, ownership, title, acreage, lease effect, production, reserves, compliance, legal effect, value, offer quality, or a transaction result.",
+    "The article publishes no actual field name, field number, query value, result screen, property identifier, well record, field rule, map, production claim, compliance conclusion, title claim, acreage, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory supplies the Field Rules Query index label, launch relationship, update context, and global online-query disclaimer.",
+      "claim_scope": "The article uses the directory only to preserve the official index route, exact link label, source identity, and limitation; it does not treat a result as authoritative, legally effective, complete, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, Field Search (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/DP/initializeFieldSearchAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/DP/initializeFieldSearchAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The launched official application supplies the distinct Field Search page label, three displayed search modes, and minimum three-character instruction.",
+      "claim_scope": "The article records only the source-displayed modes, criterion actually used, visible instruction, navigation, displayed state, and bounded retrieval status. It does not submit or reproduce an actual property-specific result or interpret field rules."
+    },
+    {
+      "label": "Railroad Commission of Texas, Well Records FAQs (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Well Records FAQs describe separate well-record contents and search troubleshooting.",
+      "claim_scope": "The article uses the FAQ only to distinguish the separate well-record channel and preserve uncertainty; it does not infer that a field reference identifies a well, lease, property, owner, or private interest."
+    },
+    {
+      "label": "Railroad Commission of Texas, Data Sets Available for Download (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/data-sets-available-for-download/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official download page separately lists Oil & Gas Field Name & Numbers, Oil & Gas Field Rules, annual report field tables, and statewide field data with source-displayed formats and update labels.",
+      "claim_scope": "The article uses the page only to separate bulk-data provenance from the public Field Search and does not treat a download as equivalent to a query result or as interpreted evidence."
+    },
+    {
+      "label": "Railroad Commission of Texas, Website Queries training slides (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/media/ilapc3ix/website-queries-how-to-stay-in-compliance-powerpoint-slides.pdf",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/media/ilapc3ix/website-queries-how-to-stay-in-compliance-powerpoint-slides.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official RRC training slide deck supplies agency-authored website-query navigation context.",
+      "claim_scope": "The article retains the deck only as bounded navigation context and does not use it to establish a current requirement, field-rule interpretation, compliance conclusion, property connection, or transaction decision."
+    }
+  ]
+}

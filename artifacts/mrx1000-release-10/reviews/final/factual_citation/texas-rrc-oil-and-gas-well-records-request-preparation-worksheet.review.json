@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave127_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:39Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0332",
+  "slug": "texas-rrc-oil-and-gas-well-records-request-preparation-worksheet",
+  "title": "Texas RRC Oil and Gas Well Records Request Preparation Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-and-gas-well-records-request-preparation-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-oil-and-gas-well-records-request-preparation-worksheet.mdx",
+  "input_body_sha256": "156adbb65450a7de350f94a39d01fec00ec53d4057cf6a190b149e3e111045c8",
+  "input_frontmatter_sha256": "db0b36df068e6da1189416bafda5a92d09e67856be67453f1f87066ad1c62f1e",
+  "expected_repo_sha256": "156adbb65450a7de350f94a39d01fec00ec53d4057cf6a190b149e3e111045c8",
+  "two_image_manifest_sha256": "39beeefff14a747912802930d0b7fcfa5db7b84d21b127b3347199fc6899daa2",
+  "visual_metadata": {
+    "hero_alt": "A no-submit well-record request preparation desk appears beside the exact article title.",
+    "social_alt": "A no-submit well-record request preparation desk appears beside the exact article title.",
+    "inline_alt": "Five blank locator-field groups appear above the exact request-preparation keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Well Records Request Preparation Worksheet",
+    "seo_title_character_count": 52,
+    "description_character_count": 152,
+    "answer_summary_word_count": 76,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T05:28:18Z",
+    "reviewed_by": "mrx_compliance-continuous-wave127",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-and-gas-well-records-request-preparation-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave127_factual",
+  "review_run_id": "mrx1000-wave127-factual-20260915T073239Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 156adbb65450a7de350f94a39d01fec00ec53d4057cf6a190b149e3e111045c8; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official RRC sources, source-listed locator fields, route and record-class context, agency limitations, and no-submit preparation states.",
+    "The article publishes no actual identifier, request, response, record, well, operator, property, ownership, production, value, offer, legal, tax, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_source_http_200_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory identifies distinct research systems and supplies the current anti-automation and informational-data limitations.",
+      "claim_scope": "It establishes route and data-use boundaries only, not record completeness or a substantive result."
+    },
+    {
+      "label": "Texas RRC, Oil and Gas Well Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page lists useful request fields, request channels, record categories, historical context, and agency-scope limitations.",
+      "claim_scope": "It supports preparation only and does not establish ownership, property connection, availability, cost, timing, completeness, or request outcome."
+    },
+    {
+      "label": "Texas RRC, Well Records FAQs (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official FAQ supplies record-type and search-troubleshooting context.",
+      "claim_scope": "It does not authorize record interpretation or private-rights conclusions."
+    },
+    {
+      "label": "Texas RRC, Well Records Online (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page describes online well-record categories, stated coverage, and identifier context.",
+      "claim_scope": "It does not prove that a particular record is online, that a request is unnecessary, or that a record applies to an owner interest."
+    }
+  ]
+}

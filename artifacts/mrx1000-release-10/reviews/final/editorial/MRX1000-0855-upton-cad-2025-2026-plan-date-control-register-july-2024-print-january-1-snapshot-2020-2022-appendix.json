@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave235_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0855",
+  "slug": "upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix",
+  "title": "Upton CAD 2025-2026 Plan Date-Control Register: July 2024 Print, January 1 Snapshot, and a 2020-2022 Appendix",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+  "source_path": "src/content/posts/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.mdx",
+  "input_body_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+  "input_frontmatter_sha256": "21d3482f4fd6b1fb76d2c1147d410a9fe52e6a40597a2efbbef2bd9bc08c2b7b",
+  "expected_repo_sha256": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e",
+  "two_image_manifest_sha256": "7b5d7d671abc42364778ca22a44f86c8f2bcc95767ac17fc239b517c7c37abb1",
+  "visual_metadata": {
+    "hero_alt": "A layered plan binder appears beside the exact Article 307 title.",
+    "social_alt": "A layered plan binder appears beside the exact Article 307 title.",
+    "inline_alt": "A top-down four-card register appears above the exact Upton CAD plan date-control register keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Plan Date-Control Register · MRX",
+    "seo_title_character_count": 42,
+    "description_character_count": 150,
+    "answer_summary_word_count": 48,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T16:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave235",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave235_editorial",
+  "review_run_id": "mrx1000-wave235-editorial-20260915T071325Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e; the answer-first article contains 1690 body tokens and five FAQs.",
+    "The original Upton County value-timeline identity is rejected. The replacement answers one distinct document-control job through four explicit date layers and a no-inference register.",
+    "Information gain is concrete: dual page locators, source roles, source-age labels, stable claim IDs, a discrepancy register, retained-byte identity, and source-versus-current-verification-versus-inference separation.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-oblique binder scene and bright strict-overhead four-card register are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "0b39feefe3f75abb45f1626e4d4371f3b26cc1cba8759233e95d4038180ed43e"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1690,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 48
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 42,
+        "description_character_count": 150,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T16:00:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave235",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix.mdx",
+    "/assets/articles/hero/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-and-a-2020-2022-appendix.webp",
+    "/assets/articles/inline/upton-cad-2025-2026-plan-date-control-register-july-2024-print-january-1-snapshot-2020-2022-appendix/upton-cad-plan-date-control-register.webp"
+  ]
+}

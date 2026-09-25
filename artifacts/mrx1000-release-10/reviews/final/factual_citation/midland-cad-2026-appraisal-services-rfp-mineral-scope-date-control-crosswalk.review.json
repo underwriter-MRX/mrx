@@ -1,0 +1,126 @@
+{
+  "artifact_type": "mrx1000_wave213_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0833",
+  "slug": "midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk",
+  "title": "Midland CAD 2026 Appraisal Services RFP: Mineral Scope and Date-Control Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+  "source_path": "src/content/posts/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk.mdx",
+  "input_body_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+  "input_frontmatter_sha256": "182d672b49efaa3571f40470479d884a7ffa20b88e6bc8cae1d201b570e5f995",
+  "expected_repo_sha256": "8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560",
+  "two_image_manifest_sha256": "d25a9f0cc910a91de24df5ea4b20a3ef7c0370469cda6047e481ce2896be332d",
+  "visual_metadata": {
+    "hero_alt": "A sealed proposal folio, blank calendar cards, and mineral core tray appear beside the exact Article 285 title.",
+    "social_alt": "A sealed proposal folio, blank calendar cards, and mineral core tray appear beside the exact Article 285 title.",
+    "inline_alt": "A top-down date-control crosswalk and mineral token appear above the exact Midland CAD RFP keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Appraisal RFP Date Crosswalk · MRX",
+    "seo_title_character_count": 54,
+    "description_character_count": 149,
+    "answer_summary_word_count": 52,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T06:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave213",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2026-appraisal-services-rfp-mineral-scope-date-control-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave213_factual",
+  "review_run_id": "mrx1000-wave213-factual-20260915T071318Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 8b4da6195c8369c1a2170f5fd9f456acc2191be6daa07cffd592298d77a93560; all 4 declared sources passed current HTTPS access review.",
+    "The official RFP was retrieved at 313,142 bytes with SHA-256 1ab899f61ff1bb7c7d7ed26140fd8440b970f25df57a4b4898a5e7d86bc7cdb1; it is unencrypted, has no JavaScript, and contains 22 physical PDF pages while printed footers run through Page 21 of 21.",
+    "Physical page 4 prints March 30, 2026 at 2:00 p.m. CST; physical page 8 prints Thursday, May 4, 2026 at 2:00 p.m. CST; physical page 22 / printed Page 21 of 21 prints May 4, 2026. A calendar check identifies May 4, 2026 as Monday, so the article preserves the conflict and supplies no corrected deadline.",
+    "Physical page 10 prints Category G (Mineral): Approximately 424,996 accounts and lists procurement scope; the article does not reconcile that statement with Article 282 or apply it to an owner or account.",
+    "Texas Tax Code 25.01 and the Comptroller Category G guide are used only for bounded statutory and classification context."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_official_publications_route_pass",
+    "rfp_http_bytes_sha256_encryption_javascript_and_page_count_pass",
+    "physical_page_1_scope_and_anticipated_award_statement_pass",
+    "physical_page_4_march_30_statement_pass",
+    "physical_page_8_thursday_may_4_statement_and_calendar_mismatch_pass",
+    "physical_page_10_category_g_approximate_count_and_scope_pass",
+    "physical_page_22_printed_page_21_schedule_8_statement_pass",
+    "statute_25_01_context_only_pass",
+    "comptroller_category_g_classification_context_only_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "unresolved_conflict_no_silent_correction_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland CAD Publications page (accessed 2026-08-30)",
+      "url": "https://midcad.org/publications-2/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/publications-2/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Publications page supplies the visible 2026 appraisal-services RFP route.",
+      "claim_scope": "The page is routing evidence only and does not establish which proposal date controls, whether a proposal was accepted, whether a contract was awarded or executed, which vendor was selected, or any owner, account, property, appraisal, tax, title, protest, value, or transaction outcome."
+    },
+    {
+      "label": "Midland CAD 2026 Appraisal Services RFP (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-content/uploads/2026/03/MCAD-Appraisal-RFP-2026-FINAL.pdf",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-content/uploads/2026/03/MCAD-Appraisal-RFP-2026-FINAL.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The controlled PDF supplies exact bytes, SHA-256 identity, physical-versus-printed page counts, mineral procurement scope, approximate Category G account statement, and conflicting proposal-date representations.",
+      "claim_scope": "The RFP is a solicitation record, not proof of an operative deadline, accepted proposal, selected vendor, award, executed contract, current contract status, owner-level fact, account appraisal, title, tax, protest result, private value, or transaction result."
+    },
+    {
+      "label": "Texas Tax Code Chapter 25, Section 25.01 (accessed 2026-08-30)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 25.01 supplies statutory context for contracting with a private appraisal firm and the contingent-compensation prohibition.",
+      "claim_scope": "The statute is context only. The article does not interpret legal duties, apply the law to a contract, decide validity, or provide legal advice."
+    },
+    {
+      "label": "Texas Comptroller Property Classification Guide (accessed 2026-08-30)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller classification guide supplies the official Category G label and its G1, G2, and G3 subcategory context.",
+      "claim_scope": "The guide decodes the classification label only; it does not validate or recalculate the RFP account count, prove coverage, or establish an owner, account, property, appraisal, tax, title, value, or transaction fact."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave171_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0770",
+  "slug": "dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator",
+  "title": "DeWitt CAD 2025 Certified Mineral Appraisal Roll Download Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/",
+  "source_path": "src/content/posts/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.mdx",
+  "input_body_sha256": "c151ec625cfca698fe2290e93d025fe3af577e84abc92f888d35dc20d1c12c76",
+  "input_frontmatter_sha256": "535038c7897908caa0a9ad413c9ef85a4091d357354722aa4bdc0e62b853d674",
+  "expected_repo_sha256": "c151ec625cfca698fe2290e93d025fe3af577e84abc92f888d35dc20d1c12c76",
+  "two_image_manifest_sha256": "bd98557835f76ed1288af3c96e86b55cf343db693724bbbfad5bb4a4e6a483a9",
+  "visual_metadata": {
+    "hero_alt": "A sealed archive pouch sits in an open navy locker beside the exact DeWitt CAD 2025 mineral-roll locator title.",
+    "social_alt": "A sealed archive pouch sits in an open navy locker beside the exact DeWitt CAD 2025 mineral-roll locator title.",
+    "inline_alt": "An overhead publisher tile and sealed pouch appear above the exact DeWitt CAD 2025 certified mineral appraisal roll keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD 2025 Certified Mineral Roll Download",
+    "seo_title_character_count": 47,
+    "description_character_count": 151,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T00:02:36Z",
+    "reviewed_by": "mrx_compliance-continuous-wave171",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave171_compliance",
+  "review_run_id": "mrx1000-wave171-compliance-20260915T071256Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "b5288898939fa5f6960b6a229143c2e6c198d06055d7a2c0bb3f6e3f4e87bd93",
+  "expected_inline_sha256": "a443d7e24a65a39531fecbc71fc27f41beb653b365d2b885c19e5a56919bac1b",
+  "findings": [
+    "Complete current MDX SHA-256 is c151ec625cfca698fe2290e93d025fe3af577e84abc92f888d35dc20d1c12c76; hero/share and inline image hashes are separately locked.",
+    "The public article treats the direct ZIP address only as a publisher-displayed routing target and stops before archive inspection, record-level data, private information, property matching, or legal interpretation.",
+    "The district policy, Comptroller publication index, statutes, DeWitt source records, and Culberson archive record retain separate roles and are not converted into a property, appraisal, tax, protest, mineral-value, offer, sale, or transaction conclusion.",
+    "Image text is limited to the exact title and keyword and adds no affiliation, seal, government mark, personal data, property fact, legal position, appraisal claim, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "no_archive_byte_hash_member_row_field_format_or_content_claim_pass",
+    "no_name_address_account_property_identifier_value_acreage_ownership_title_or_personal_data_reproduction_or_inference_pass",
+    "no_authentication_appraisal_tax_protest_valuation_offer_sale_transaction_or_legal_conclusion_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_date_name_address_account_property_data_map_chart_browser_ui_screenshot_seal_government_mark_logo_money_legal_conclusion_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.mdx",
+    "/assets/articles/hero/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator.webp",
+    "/assets/articles/inline/dewitt-cad-2025-certified-mineral-appraisal-roll-download-locator/dewitt-cad-2025-certified-mineral-appraisal-roll.webp"
+  ]
+}

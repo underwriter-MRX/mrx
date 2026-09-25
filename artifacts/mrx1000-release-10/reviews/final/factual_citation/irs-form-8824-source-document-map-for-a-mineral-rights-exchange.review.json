@@ -1,0 +1,68 @@
+{
+  "artifact_type": "mrx1000_wave148_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:05:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0647",
+  "slug": "irs-form-8824-source-document-map-for-a-mineral-rights-exchange",
+  "title": "IRS Form 8824 Source-Document Map for a Mineral Rights Exchange",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-8824-source-document-map-for-a-mineral-rights-exchange/",
+  "source_path": "src/content/posts/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.mdx",
+  "input_body_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "input_frontmatter_sha256": "63697ced5b04f503902462dd39123d6448f1f5a227203da05b3e85cdb5d27ea2",
+  "expected_repo_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "two_image_manifest_sha256": "0f3dd35cb6f175f772c9953253691fcc958268c3b4bd9ef24693f772211f2ba1",
+  "visual_metadata": {
+    "hero_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "social_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "inline_alt": "An overhead blank source matrix appears above the exact IRS Form 8824 source documents keyword."
+  },
+  "reviewer_id": "codex_wave148_factual",
+  "review_run_id": "mrx1000-wave148-factual-20260826T140554Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8; all 2 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official 2025 IRS form and instructions, exact form parts and request categories, controlled source locations, and professional handoff.",
+    "The article invents no taxpayer, TIN, address, account, property identifier, date, amount, answer, eligibility result, deadline result, calculation, filing route, title, value, offer, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "two_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "IRS, Form 8824, Like-Kind Exchanges, 2025 (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/pub/irs-pdf/f8824.pdf",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T14:05:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/pub/irs-pdf/f8824.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The current official IRS-hosted Form 8824 PDF is the 2025 form. It displays taxpayer identity fields; Part I property-description, acquisition, transfer, written-identification, receipt-date, and related-party requests; Part II related-party identity, disposition, and exception requests; and Part III consideration, property, liability, basis, gain, and recapture calculation requests.",
+      "claim_scope": "It supports exact request-category names for a blank controlled-source map only. It does not establish that a mineral interest or exchange qualifies, select an answer, validate a date or amount, determine deadline compliance, calculate a field, authorize form completion, or support an owner-specific tax, legal, title, valuation, or transaction conclusion."
+    },
+    {
+      "label": "IRS, Instructions for Form 8824, 2025 (accessed 2026-08-26)",
+      "url": "https://www.irs.gov/instructions/i8824",
+      "publisher": "www.irs.gov",
+      "accessed_at": "2026-08-26T14:05:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.irs.gov/instructions/i8824",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official IRS instructions page is labeled Instructions for Form 8824 (2025). It explains the form purpose, Parts I through III, current request context, and professional tax calculations and reporting associated with the form.",
+      "claim_scope": "It supports current source-preparation context and the professional-handoff boundary only. The article does not apply qualification rules, deadline rules, related-party rules, calculations, line instructions, attachment rules, filing routes, amendments, or any owner-specific legal or tax result."
+    }
+  ]
+}

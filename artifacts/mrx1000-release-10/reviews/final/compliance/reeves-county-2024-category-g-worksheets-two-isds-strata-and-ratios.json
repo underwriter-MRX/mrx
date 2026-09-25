@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave220_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:21Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0840",
+  "slug": "reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios",
+  "title": "Reeves County 2024 Category G Worksheets: Two ISDs, Strata, and Ratios",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+  "source_path": "src/content/posts/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.mdx",
+  "input_body_sha256": "5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe",
+  "input_frontmatter_sha256": "22887b30e79dd84d73ba0fd69f8f426a7b384c5a3d3f0bff6bcedc1179cc7315",
+  "expected_repo_sha256": "5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe",
+  "two_image_manifest_sha256": "4c671598926b621c2e8eee33a9f5a855fa99e62c0fda88764b2c0d508e2101f9",
+  "visual_metadata": {
+    "hero_alt": "Two separate blank district worksheets appear beside the exact Article 292 title.",
+    "social_alt": "Two separate blank district worksheets appear beside the exact Article 292 title.",
+    "inline_alt": "A strict-overhead two-source field key appears above the exact Reeves County Category G worksheets keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves County Category G Worksheets: Two ISDs · MRX",
+    "seo_title_character_count": 51,
+    "description_character_count": 153,
+    "answer_summary_word_count": 72,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T09:10:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave220",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-mineral-records-search-log/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave220_compliance",
+  "review_run_id": "mrx1000-wave220-compliance-20260915T071321Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f7a3c2b55792a8deb442cad37512823243e35665920ff13496b290c302491a24",
+  "expected_inline_sha256": "34e8e128b816032aff1755b4933e365e15d655396e93ffea2ab8ba7dd4354c02",
+  "findings": [
+    "Complete current MDX SHA-256 is 5906c15189bd2a3929301a696512229d848d82bf3f2bcdd0fe66766d1b18cebe; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attributed to one of six official Comptroller source objects with its year, district, route, and bounded role preserved.",
+    "No source label or ratio is converted into ownership, title, acreage, a property connection, appraisal-roll status, tax, protest advice, legal effect, market value, private mineral value, offer, or transaction conclusion.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, property identifier, value, ratio result, grade, recommendation, or approval claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "2024_worksheet_not_misrepresented_as_latest_overall_pvs_release_pass",
+    "two_school_district_pages_not_merged_pass",
+    "pvs_ratio_and_value_labels_not_converted_to_private_mineral_valuation_tax_protest_or_transaction_result_pass",
+    "no_owner_title_acreage_property_connection_appraisal_roll_tax_legal_market_offer_or_transaction_conclusion_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_logos_seals_government_marks_screenshots_maps_property_records_identifiers_money_values_labeled_charts_grades_recommendations_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.mdx",
+    "/assets/articles/hero/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios.webp",
+    "/assets/articles/inline/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/reeves-county-category-g-worksheets.webp"
+  ]
+}

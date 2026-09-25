@@ -1,0 +1,148 @@
+{
+  "artifact_type": "mrx1000_wave232_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0852",
+  "slug": "upton-cad-open-records-policy-request-response-clarification-charge-states",
+  "title": "Upton CAD Open Records Policy: Request, Response, Clarification, and Charge States",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+  "source_path": "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+  "input_body_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+  "input_frontmatter_sha256": "960e0f680fdecba44b209427e7f80f60e1e2c28f0c4261a24ed0e6967cdecb58",
+  "expected_repo_sha256": "a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd",
+  "two_image_manifest_sha256": "fd19a0256238a9bbfecb5e840118f1f976cacbde22b6d7a35a22ec82b91f7c5b",
+  "visual_metadata": {
+    "hero_alt": "Four blank records-process gates appear beside the exact Article 304 title.",
+    "social_alt": "Four blank records-process gates appear beside the exact Article 304 title.",
+    "inline_alt": "A top-down navy and ivory discrepancy register appears above the exact Upton CAD open records policy keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Open Records Policy States · MRX",
+    "seo_title_character_count": 42,
+    "description_character_count": 152,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T14:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave232",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave232_factual",
+  "review_run_id": "mrx1000-wave232-factual-20260915T071323Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is a421e82f5df33c5373405e87264c87c90345f5c47dd130983c1a45d0c796fefd; all 6 declared sources passed current HTTPS access review.",
+    "Six controlled official objects total 10,161,637 bytes with individual SHA-256 identities and bounded claim roles.",
+    "The reviewed Upton scan has no visible adoption, effective, or revision date and supports only local-source observations about the four state categories and its displayed dollar and timing language.",
+    "The dated 2026 OAG layer supports the existing-information, approved-delivery, itemized-estimate, and context-dependent timing boundaries without resolving a live request.",
+    "Local and statewide statements are displayed separately; the article does not silently reconcile, supersede, calculate, or select among them."
+  ],
+  "checks": [
+    "six_distinct_official_https_sources_with_exact_source_roles",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "undated_local_scan_source_age_label_pass",
+    "request_response_clarification_charge_state_separation_pass",
+    "local_and_2026_oag_layer_separation_pass",
+    "twenty_dollar_fifty_cent_twenty_five_dollar_and_forty_dollar_claim_scope_pass",
+    "no_live_deadline_fee_calculation_or_controlling_rule_selection_pass",
+    "stable_claim_ids_discrepancy_register_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Upton CAD Open Records Request policy PDF (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/Forms/GetDocument?fileName=1749827956_open+records+request.pdf&subPath=Data+Records",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/Forms/GetDocument?fileName=1749827956_open+records+request.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The reviewed Upton CAD scan supports only its local statements about written requests, five initial-response paths, clarification, local timing language, charge figures, estimate notice, and completed-request filing.",
+      "claim_scope": "The scan has no visible adoption, effective, or revision date. The article does not treat it as current statewide law, choose a controlling rule, calculate a fee, set a live deadline, or reproduce personal contact information."
+    },
+    {
+      "label": "Upton County Appraisal District Data and Records (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/home/DataRecords",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Upton CAD page supplies a current official publisher route for data and records that a requester can check before asking for a duplicate.",
+      "claim_scope": "The article does not claim that posted files are complete, legally sufficient, or connected to a particular person or property."
+    },
+    {
+      "label": "Upton CAD Property Search (accessed 2026-08-31)",
+      "url": "https://www.uptoncad.org/Home/Search",
+      "publisher": "www.uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.uptoncad.org/Home/Search",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The visible property-search interface supplies a current district search route.",
+      "claim_scope": "The article does not execute a person or property search or claim a result, ownership, correctness, completeness, appraisal, tax, title, or value conclusion."
+    },
+    {
+      "label": "Texas Comptroller Upton County property-tax directory (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/upton.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/upton.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Comptroller directory separates Upton appraisal-district and tax-office contacts.",
+      "claim_scope": "The article uses that directory only for role routing, not a property, tax, title, or valuation conclusion."
+    },
+    {
+      "label": "Texas Attorney General How to Request Public Information (accessed 2026-08-31)",
+      "url": "https://www.texasattorneygeneral.gov/open-government/members-public/how-request-public-information",
+      "publisher": "www.texasattorneygeneral.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.texasattorneygeneral.gov/open-government/members-public/how-request-public-information",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current OAG page supplies a public-facing Texas public-information request layer and route to official guidance.",
+      "claim_scope": "The article does not submit a request, decide an exception, determine compliance, or give legal advice."
+    },
+    {
+      "label": "Texas Attorney General 2026 Public Information Act Handbook (accessed 2026-08-31)",
+      "url": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/open-government/PIA-Handbook-2026.pdf",
+      "publisher": "www.texasattorneygeneral.gov",
+      "accessed_at": "2026-09-15T07:13:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.texasattorneygeneral.gov/sites/default/files/files/divisions/open-government/PIA-Handbook-2026.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The dated 2026 OAG handbook supports bounded statements about requests for existing information, approved delivery methods, current itemized-estimate language above $40, and context-dependent response periods.",
+      "claim_scope": "The article keeps those statements separate from the undated Upton scan and does not choose a live threshold, calculate a fee, or set a deadline."
+    }
+  ]
+}

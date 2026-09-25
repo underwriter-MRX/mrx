@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave243_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0868",
+  "slug": "winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information",
+  "title": "Winkler CAD 2025-2026 Mineral Appraisal: January 1 Snapshot and Later Information",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+  "input_body_sha256": "02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8",
+  "input_frontmatter_sha256": "e01ef8d2bb03a0c27d5341e83b8ff7e76e0d26cc40ab711f889d0c9fb921631a",
+  "expected_repo_sha256": "02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8",
+  "two_image_manifest_sha256": "c7a52508a0413f58c78b7535b981cc1bce5487dcbec9b0cc44dbe648c4f268fa",
+  "visual_metadata": {
+    "hero_alt": "An appraisal evidence desk sits beside the exact Article 315 title.",
+    "social_alt": "An appraisal evidence desk sits beside the exact Article 315 title.",
+    "inline_alt": "A top-down evidence-timing matrix appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD January 1 Mineral Appraisal Snapshot · MRX",
+    "seo_title_character_count": 54,
+    "description_character_count": 141,
+    "answer_summary_word_count": 66,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T22:05:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave243",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave243_editorial",
+  "review_run_id": "mrx1000-wave243-editorial-20260915T071331Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8; the answer-first article contains 1962 body tokens and five FAQs.",
+    "The original Winkler County market-update identity is rejected. The final article answers one narrow public-record question about the difference between the January 1 appraisal snapshot and later appraisal or report dates.",
+    "Information gain is concrete: exact whole-PDF and printed-page provenance, complete-file hash and size, separate date roles, the two-part later-information boundary, annual-reappraisal context, a four-field worksheet, source-age register, stable claim IDs, and explicit inference stops.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-angle appraisal-evidence desk and bright strict-overhead evidence-timing matrix are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1962,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 66
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 54,
+        "description_character_count": 141,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T22:05:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave243",
+        "declared_source_count": 2,
+        "visible_body_citation_count": 2,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-and-later-information.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/winkler-cad-mineral-appraisal-january-1-snapshot.webp"
+  ]
+}

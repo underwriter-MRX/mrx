@@ -1,0 +1,121 @@
+{
+  "artifact_type": "mrx1000_wave151_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T15:55:39Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0652",
+  "slug": "how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff",
+  "title": "How to Retrieve a Recorded Mineral Deed Copy for a CPA Handoff",
+  "canonical_url": "https://mineralrightsxchange.com/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+  "source_path": "src/content/posts/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff.mdx",
+  "input_body_sha256": "3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133",
+  "input_frontmatter_sha256": "5228783febafd003ae8b9f11869d4e104fafdb0d3949067f956594ad909a3dd5",
+  "expected_repo_sha256": "3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133",
+  "two_image_manifest_sha256": "6a1fd1eadabb96dbe0c0af155e406d7761964d3792fa997f441081c96e539b38",
+  "visual_metadata": {
+    "hero_alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+    "social_alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+    "inline_alt": "An overhead blank county-record retrieval log appears above the exact recorded mineral deed copy keyword."
+  },
+  "reviewer_id": "codex_wave151_factual",
+  "review_run_id": "mrx1000-wave151-factual-20260826T155539Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current Texas recording and copy statutes plus current Tarrant and Harris County Clerk search, access, certification, fee, and limitation examples.",
+    "The article invents no county, person, entity, instrument, document number, recording date, volume or page, legal description, property, ownership fact, deed meaning, tax fact, amount, offer, calculation, or professional conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_texas_statute_and_county_clerk_source_priority_pass",
+    "tarrant_and_harris_county_variability_boundary_verified",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Property Code Chapter 11, §11.001 (accessed 2026-08-26)",
+      "url": "https://statutes.capitol.texas.gov/Docs/PR/pdf/PR.11.pdf",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/PR/pdf/PR.11.pdf",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Property Code Chapter 11, including §11.001, supplies the county-of-recording context for an eligible real-property instrument.",
+      "claim_scope": "It supports office-identification context only. It does not identify the correct instrument for an owner, determine current ownership or title, interpret a deed, establish completeness, or support a tax, valuation, offer, or transaction conclusion."
+    },
+    {
+      "label": "Texas Local Government Code Chapter 191, §§191.004 and 191.0041 (accessed 2026-08-26)",
+      "url": "https://statutes.capitol.texas.gov/Docs/LG/pdf/LG.191.pdf",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/LG/pdf/LG.191.pdf",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Local Government Code §§191.004 and 191.0041 supply the attested-copy obligation, fee context, and elements required for a certified copy made from an original document on file with a county clerk.",
+      "claim_scope": "They support plain-versus-certified source context only. The article does not choose a copy type, claim certification proves ownership or legal effect, or decide whether a copy is sufficient for a professional purpose."
+    },
+    {
+      "label": "Tarrant County Clerk, Copies of Official Public Records (Real Property) (accessed 2026-08-26)",
+      "url": "https://www.tarrantcountytx.gov/en/county-clerk/real-estate-records/copies-of-official-public-records--real-property-.html",
+      "publisher": "www.tarrantcountytx.gov",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tarrantcountytx.gov/en/county-clerk/real-estate-records/copies-of-official-public-records--real-property-.html",
+        "content_type": "text/html;charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Tarrant County Clerk page supplies four copy routes, free unofficial watermarked-copy context, online certified-copy routing, current in-person and mail copy-fee examples, and the no-title-search or restriction-determination boundary.",
+      "claim_scope": "It supports a dated county example only. The article does not generalize Tarrant methods or fees statewide, purchase a copy, promise availability, conduct a title search, or determine restrictions."
+    },
+    {
+      "label": "Tarrant County Clerk, Central Library FAQs (accessed 2026-08-26)",
+      "url": "https://www.tarrantcountytx.gov/en/county-clerk/real-estate-records/central-library-faqs--frequently-asked-questions-.html",
+      "publisher": "www.tarrantcountytx.gov",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.tarrantcountytx.gov/en/county-clerk/real-estate-records/central-library-faqs--frequently-asked-questions-.html",
+        "content_type": "text/html;charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Tarrant County Central Library FAQ confirms that deeds and related real-estate records can be printed or certified, that the public may use the designated official-records search, and that staff do not provide legal advice or perform the user's search.",
+      "claim_scope": "It supports current navigation and professional-boundary context only. It does not establish which deed is operative, prove title, or authorize legal interpretation."
+    },
+    {
+      "label": "Harris County Clerk, Real Property Document Search Portal (accessed 2026-08-26)",
+      "url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx/Registration/Home.aspx",
+      "publisher": "www.cclerk.hctx.net",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx/Registration/Home.aspx",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Harris County Clerk portal supplies supported real-property search fields, stated online image coverage, posting-delay context, the warning that the online database is not the official repository, and plain or certified copy ordering routes.",
+      "claim_scope": "It supports a second current county example and negative-result limitations only. The article does not treat its fields, range, delay, copy options, or certification format as universal."
+    },
+    {
+      "label": "Harris County Clerk, Public Records Ordering Copies (accessed 2026-08-26)",
+      "url": "https://www.cclerk.hctx.net/applications/websearch/PublicRecords.aspx",
+      "publisher": "www.cclerk.hctx.net",
+      "accessed_at": "2026-08-26T15:55:39Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cclerk.hctx.net/applications/websearch/PublicRecords.aspx",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Harris County Clerk public-records page supplies free watermarked viewing, paper and electronic copy routes, current plain and certified fee examples, a search-fee condition, and the owner-name and legal-description deed-request context.",
+      "claim_scope": "It supports a dated county example only. The article does not quote Harris fees as statewide, infer owner identity or a legal description, recommend purchasing a format, or claim the resulting copy resolves title or tax questions."
+    }
+  ]
+}

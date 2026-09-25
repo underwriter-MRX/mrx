@@ -1,0 +1,123 @@
+{
+  "artifact_type": "mrx1000_wave197_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0800",
+  "slug": "karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check",
+  "title": "Karnes CAD 2025 Certified Mineral Roll: Corrected ZIP Identity Check",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/",
+  "source_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
+  "input_body_sha256": "9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001",
+  "input_frontmatter_sha256": "f579d42e1ac19876efbc54dfd6afd4eddd0150fd412ae5491cd3c2eb83fcb692",
+  "expected_repo_sha256": "9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001",
+  "two_image_manifest_sha256": "82809adb51645175c7fbcbc843c632196fa0f9c0a26b1c93adaeabd4cc7790c7",
+  "visual_metadata": {
+    "hero_alt": "A closed navy archive case and seven blank tabs appear beside the exact Karnes CAD corrected ZIP identity title.",
+    "social_alt": "A closed navy archive case and seven blank tabs appear beside the exact Karnes CAD corrected ZIP identity title.",
+    "inline_alt": "Seven overhead blank file tiles appear above the exact Karnes CAD 2025 corrected mineral roll ZIP phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD 2025 Corrected Mineral Roll ZIP Check",
+    "seo_title_character_count": 48,
+    "description_character_count": 139,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T10:26:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave197",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave197_factual",
+  "review_run_id": "mrx1000-wave197-factual-20260915T071313Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the Karnes CAD publisher page, exact corrected ZIP target and response, Karnes CAD homepage identity, and Texas Comptroller local-contact routing page.",
+    "The exact archive controls are HTTP 200, application/zip, 59,280,554 bytes, Content-Disposition filename containing Corrected, and SHA-256 c0dd3e7b5ac525caed2f54d1434e74b41a46a2e43a0d315d3ae0a34f2905bb90.",
+    "The ZIP is single-disk, unencrypted, has no archive comment, contains seven central-directory entries totaling 681,467,554 uncompressed bytes, and passed unzip -t.",
+    "No member was extracted, opened, read, searched, sampled, reproduced, matched, or used for a person, account, property, ownership, appraisal, tax, value, offer, or legal conclusion."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "publisher_label_and_exact_corrected_target_relationship_pass",
+    "archive_http_content_disposition_size_and_sha256_pass",
+    "seven_member_generic_central_directory_inventory_pass",
+    "single_disk_unencrypted_no_comment_integrity_test_pass",
+    "no_member_extraction_read_search_sampling_or_row_exposure_pass",
+    "provenance_vs_validity_boundary_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Karnes CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://karnescad.org/home/DataRecords",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official publisher page supplies the visible 2025 Certified Mineral Appraisal Roll ZIP label and its exact target relationship.",
+      "claim_scope": "It does not establish archive contents, explain the Corrected filename, validate member data, or prove ownership, appraisal, tax, value, offer, or legal effect."
+    },
+    {
+      "label": "Karnes CAD 2025 Certified Mineral Open Records Corrected ZIP (accessed 2026-08-29)",
+      "url": "https://karnescad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1755235042_KARNES+CAD+2025+CERTIFIED+MINERAL+OPEN+RECORDS+Corrected.zip",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/Forms/ZipFileDownload?subPath=Data%20Records&fileName=1755235042_KARNES+CAD+2025+CERTIFIED+MINERAL+OPEN+RECORDS+Corrected.zip",
+        "content_type": "application/zip"
+      },
+      "source_location_or_paraphrase": "The direct response and complete archive supply the Corrected response filename, HTTP controls, byte count, hash, seven-member central-directory metadata, and passing integrity result.",
+      "claim_scope": "They do not validate member content, completeness, accuracy, currency, applicability, ownership, appraisal, tax, value, offer quality, transaction outcome, or legal effect."
+    },
+    {
+      "label": "Karnes County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://karnescad.org/",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies the current Karnes CAD public-site identity.",
+      "claim_scope": "It does not interpret the archive, explain the Corrected filename, validate member data, or prove a property-specific fact or outcome."
+    },
+    {
+      "label": "Texas Comptroller property-tax contacts (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:13Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/contact.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller contact page supplies routing guidance for local appraisal and tax questions.",
+      "claim_scope": "It does not inspect or interpret the archive and is not evidence of ownership, title, appraisal, tax, value, offer, or legal effect."
+    }
+  ]
+}

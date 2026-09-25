@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1124",
+  "slug": "can-pennsylvania-dep-production-data-verify-my-royalty-check",
+  "source_path": "src/content/posts/can-pennsylvania-dep-production-data-verify-my-royalty-check.mdx",
+  "input_body_sha256": "a9801522585a119df10b5cf0ce512753b4197984ce74cf618de1b0c457ddff68",
+  "two_image_manifest_sha256": "43a7a8770759d904fbbc99bd9e2a52fd0fda4518d6e172bd37409b6e02aeacde",
+  "private_full_source_sha256": "737b21091df7c02514f00174b1875ac5a9eccdcbec7e350670fbe2bb2803a3c7",
+  "review_method": "codex_current_public_claim_to_primary_source_crosswalk",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte factual and citation review",
+  "advisory_review": "Read-only mrx_research exact-private-byte PASS in session 20260924_154800_fc1e77; this public-byte review is separate.",
+  "findings": [
+    "The live Pennsylvania DEP GreenPort production-report description supports reporting-period and operator/permit filters, CSV export and operator-reported data. The quoted 13-selection constraint is an interface rule, not a royalty reporting or payment rule.",
+    "DEP's dated 2023 annual account supports monthly unconventional natural-gas reporting and annual conventional production reporting. The article attributes cadence to that account and makes no current deadline or owner-payment diagnosis.",
+    "DEP's laws-and-regulations page explicitly says the Commonwealth does not regulate private mineral-owner/producer leases and DEP does not audit payments. The article does not infer that no private remedy exists.",
+    "DEP's mapping description supplies possible permit/operator and location leads with locational-data limits, not tract or lease coverage. No particular map point or owner file was assessed.",
+    "The version 1.8, April 7 2022 DEP report data dictionary describes operator-submitted gas, condensate and oil and cautions about accuracy, completeness and timeliness. Current CSV fields were not inspected and are not claimed; the article instructs readers to confirm labels in a current export."
+  ]
+}

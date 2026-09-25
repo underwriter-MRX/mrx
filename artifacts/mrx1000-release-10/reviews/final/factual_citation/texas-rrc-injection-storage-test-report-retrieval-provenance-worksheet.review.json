@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave126_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0331",
+  "slug": "texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Injection-Storage Test Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8",
+  "input_frontmatter_sha256": "edc0566eacd5ac61111f3cc28aa767c6930dece128bba0ee1c5d4d203aa00947",
+  "expected_repo_sha256": "c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8",
+  "two_image_manifest_sha256": "ef0d4a7e7e3ed9cbdfb247848a043faf86c6e4668076f402e5f982a601c2cd49",
+  "visual_metadata": {
+    "hero_alt": "An archival research station appears beside the exact injection-storage worksheet title.",
+    "social_alt": "An archival research station appears beside the exact injection-storage worksheet title.",
+    "inline_alt": "Three evidence sleeves and a pressure-chart roll appear above the exact retrieval keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Injection-Storage Report Retrieval Worksheet",
+    "seo_title_character_count": 54,
+    "description_character_count": 154,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T14:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave126",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave126_factual",
+  "review_run_id": "mrx1000-wave126-factual-20260915T073231Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five official RRC sources, profileId 7 routing, source-described scope, adjacent-route separation, and attempt-state rules.",
+    "The direct profile request returned HTTP 403, no profile page was captured, and no query completed. The article publishes no actual identifier, result, report, well, operator, property, pressure, compliance, value, offer, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory supplies the current Oil and Gas Imaged Records route.",
+      "claim_scope": "It establishes route identity only, not a completed query or substantive result."
+    },
+    {
+      "label": "Texas RRC, Imaged Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page supplies Imaged Records context.",
+      "claim_scope": "It establishes collection context only, not completeness or a report conclusion."
+    },
+    {
+      "label": "Texas RRC, Imaged Records Query Menu (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official menu identifies Injection-Storage Test Reports at profileId 7 and states Form H-5 online filing and May 2021 through current-date scope.",
+      "claim_scope": "The article preserves those statements as source-described routing and scope only."
+    },
+    {
+      "label": "Texas RRC, Injection-Storage Resources (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/injection-storage-permits/resources/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/injection-storage-permits/resources/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official resources page distinguishes H-5 filing, permit queries, H-10 monitoring, and Injection-Storage Test Reports.",
+      "claim_scope": "It is used only for adjacent-route separation and provides no filing or interpretation instruction here."
+    },
+    {
+      "label": "Texas RRC, Electronic Document Management System (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official EDMS page identifies older H-5 image coverage and separates it from current Imaged Records routes.",
+      "claim_scope": "It is used only as source-described route separation, not as a substituted query."
+    }
+  ]
+}

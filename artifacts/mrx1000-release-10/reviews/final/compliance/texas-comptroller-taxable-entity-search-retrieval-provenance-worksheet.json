@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave133_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T08:52:26Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0338",
+  "slug": "texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller Taxable Entity Search Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "47df850aeaaab0846da4495cbf372af4819c5368f69948fc5f7f6cb662012275",
+  "input_frontmatter_sha256": "28b4de2a75a508bd9aec743b9b14165e1eeedf601ef2a76ee7511f535b207d2e",
+  "expected_repo_sha256": "47df850aeaaab0846da4495cbf372af4819c5368f69948fc5f7f6cb662012275",
+  "two_image_manifest_sha256": "703d88c7b27d133e157ecd4010ee00896c102f220558dcfcb5844707c334615b",
+  "visual_metadata": {
+    "hero_alt": "A public-record research workstation appears beside the exact Taxable Entity Search worksheet title.",
+    "social_alt": "A public-record research workstation appears beside the exact Taxable Entity Search worksheet title.",
+    "inline_alt": "A people-free overhead three-field provenance board appears above the exact Taxable Entity Search keyword."
+  },
+  "reviewer_id": "codex_wave133_compliance",
+  "review_run_id": "mrx1000-wave133-compliance-20260826T085226Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "33a00c7524e65b011f24a5c3b2c15d488c06376b0621f84b8688897f1c9e5aaa",
+  "expected_inline_sha256": "d611d63afa069119292b57864e66cf8e8e08346b81b9509e095b3fd973ae444b",
+  "findings": [
+    "Complete current MDX SHA-256 is 47df850aeaaab0846da4495cbf372af4819c5368f69948fc5f7f6cb662012275; hero/share and inline image hashes are separately locked.",
+    "The article stores real Tax ID, entity-name, file-number, result, address, registered-agent, screenshot, and evidence values outside the reusable public template.",
+    "Image text is limited to the exact title and keyword and adds no real entity, identifier, status, address, sender, authority, legitimacy, offer, legal, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_comptroller_account_status_single_manual_attempt_tax_id_entity_name_or_sos_file_number_query_time_record_context_located_not_located_or_unverified_no_offer_sender_identity_legitimacy_authority_endorsement_capacity_fairness_legal_effect_transaction_conclusion_certificate_request_open_records_submission_automation_or_public_sensitive_values_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-comptroller-taxable-entity-search-retrieval-provenance-worksheet/texas-comptroller-taxable-entity-search-retrieval.webp"
+  ]
+}

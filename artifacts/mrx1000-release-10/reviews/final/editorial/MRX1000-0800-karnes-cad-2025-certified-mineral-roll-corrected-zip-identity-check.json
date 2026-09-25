@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave197_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0800",
+  "slug": "karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check",
+  "title": "Karnes CAD 2025 Certified Mineral Roll: Corrected ZIP Identity Check",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/",
+  "source_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
+  "input_body_sha256": "9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001",
+  "input_frontmatter_sha256": "f579d42e1ac19876efbc54dfd6afd4eddd0150fd412ae5491cd3c2eb83fcb692",
+  "expected_repo_sha256": "9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001",
+  "two_image_manifest_sha256": "82809adb51645175c7fbcbc843c632196fa0f9c0a26b1c93adaeabd4cc7790c7",
+  "visual_metadata": {
+    "hero_alt": "A closed navy archive case and seven blank tabs appear beside the exact Karnes CAD corrected ZIP identity title.",
+    "social_alt": "A closed navy archive case and seven blank tabs appear beside the exact Karnes CAD corrected ZIP identity title.",
+    "inline_alt": "Seven overhead blank file tiles appear above the exact Karnes CAD 2025 corrected mineral roll ZIP phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD 2025 Corrected Mineral Roll ZIP Check",
+    "seo_title_character_count": 48,
+    "description_character_count": 139,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T10:26:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave197",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave197_editorial",
+  "review_run_id": "mrx1000-wave197-editorial-20260915T071313Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001; the answer-first article contains 1355 body tokens and five FAQs.",
+    "The article rejects the generic Karnes valuation risk-checklist identity and owns one distinct publisher-label-versus-Corrected-target and seven-member container question.",
+    "The Article 268 evidence contract is carried forward through a direct answer, stable claim IDs, evidence labels, exact retrieval controls, claim-adjacent official citations, a source-role table, member inventory, explicit non-validating integrity label, supported FAQs, semantic links, and no ranking or citation promise.",
+    "Exact-title hero/share OCR passed; exact-keyword inline OCR passed; the three-quarter archive case and strict-overhead seven-tile evidence inventory are materially distinct compositions and make no factual record claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "9f4f45ff0512df5fe0688a477ea9c8374f327ec5e7026351fc660201ab770001"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1355,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 55
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 48,
+        "description_character_count": 139,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T10:26:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave197",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
+    "/assets/articles/hero/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.webp",
+    "/assets/articles/inline/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check/karnes-cad-2025-corrected-mineral-roll-zip.webp"
+  ]
+}

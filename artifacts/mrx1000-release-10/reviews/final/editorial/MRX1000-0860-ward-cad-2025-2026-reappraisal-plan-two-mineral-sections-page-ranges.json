@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave240_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0860",
+  "slug": "ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges",
+  "title": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+  "source_path": "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+  "input_body_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "input_frontmatter_sha256": "9ef2c7fb5eb0d5a842d19e731f2031d1d349e40be4e34c65dc4cb54106164510",
+  "expected_repo_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "two_image_manifest_sha256": "32f0ed4565ce1a62da7eb713053a7be3b772af4d10c35a98585d5cb46c2142b7",
+  "visual_metadata": {
+    "hero_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "social_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "inline_alt": "A top-down source crosswalk links two document-section stacks below the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD Mineral Sections and Page Ranges · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 138,
+    "answer_summary_word_count": 48,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T20:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave240",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave240_editorial",
+  "review_run_id": "mrx1000-wave240-editorial-20260915T071331Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd; the answer-first article contains 1948 body tokens and five FAQs.",
+    "The original Ward County value timeline is rejected. The final article answers one narrow public-record navigation question: where the district mineral section and contractor Appendix B mineral section appear in the same official PDF and how their page numbers differ.",
+    "Information gain is concrete: exact whole-PDF and printed page ranges, the Appendix B numbering restart, the district-to-contractor handoff, a source-age register, stable claim IDs, and explicit stops against value, title, tax, production, reserves, or appraisal conclusions.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark oblique tabbed-binder scene and bright strict-overhead two-stack source crosswalk are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1948,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 48
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 47,
+        "description_character_count": 138,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T20:55:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave240",
+        "declared_source_count": 2,
+        "visible_body_citation_count": 2,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+    "/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp",
+    "/assets/articles/inline/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/ward-cad-reappraisal-plan-mineral-sections.webp"
+  ]
+}

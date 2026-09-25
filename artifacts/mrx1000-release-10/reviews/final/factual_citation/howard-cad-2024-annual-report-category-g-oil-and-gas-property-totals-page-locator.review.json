@@ -1,0 +1,124 @@
+{
+  "artifact_type": "mrx1000_wave190_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:08Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0793",
+  "slug": "howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator",
+  "title": "Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+  "source_path": "src/content/posts/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.mdx",
+  "input_body_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+  "input_frontmatter_sha256": "d35b6026ecfa08680b7fea9320aeab175764fb2b6c833ceb124fa422a0a81997",
+  "expected_repo_sha256": "fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d",
+  "two_image_manifest_sha256": "31b6993014dea09d0ebc60fa80c5d9b63d5f2bc4d3dc0fe824f0909e2be1a25e",
+  "visual_metadata": {
+    "hero_alt": "An open annual-report binder and brass page marker appear beside the exact Howard CAD Category G totals page-locator title.",
+    "social_alt": "An open annual-report binder and brass page marker appear beside the exact Howard CAD Category G totals page-locator title.",
+    "inline_alt": "An overhead source-and-row evidence board appears above the Howard CAD 2024 Category G oil and gas property totals phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Howard CAD 2024 Category G Totals Page Locator",
+    "seo_title_character_count": 46,
+    "description_character_count": 137,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T07:44:47Z",
+    "reviewed_by": "mrx_compliance-continuous-wave190",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave190_factual",
+  "review_run_id": "mrx1000-wave190-factual-20260915T071308Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is fbf9b37ef655b2540c7f802822c86c92fbaec02e854a35f1fb28fe4d7c543b5d; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official Howard CAD Reports and Plans page, exact 2024 PDF, Howard CAD homepage, Texas Comptroller classification guide, and direct visual review of physical page 4.",
+    "The PDF controls include HTTP 200, application/pdf, 149,885 bytes, Last-Modified Fri 19 Jan 2024 15:20:37 GMT, ETag 65aa9345-2497d, SHA-256 87d6bfcbbbe650d8ecd4ed55d3bc71f4089c81310d3d0dacef1dfd2e71b2242b, four pages, unencrypted and tagged state, no JavaScript, PDF title HOWARD COUNTY APPRAISAL DISTRICT, the visible page-4 heading, and the literal four-field row.",
+    "The middle value 145,117 is preserved without an inferred label. The right value 6,793,424,516 is attributed only as the report Category G market-value total under the visible page heading and not as a 2026 current value or mineral-rights sale value."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_complete_file_sha256_byte_page_and_security_control_pass",
+    "physical_page_4_visual_heading_and_literal_row_review_pass",
+    "literal_value_before_interpretation_pass",
+    "middle_numeric_field_unlabeled_no_inference_pass",
+    "report_market_value_and_mineral_rights_sale_value_separation_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_publisher_label_route_file_date_hash_page_heading_row_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "article260_classification_and_article261_zip_integrity_lanes_separated_pass",
+    "search_atlas_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Howard CAD Reports and Plans page (accessed 2026-08-29)",
+      "url": "https://howardcad.org/reports-plans/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/reports-plans/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Howard CAD Reports and Plans page supplies the visible 2024 annual-report link and publisher-route relationship.",
+      "claim_scope": "It does not establish the PDF byte identity, page-4 row, field meanings, current values or counts, property facts, ownership, title, tax, sale value, offer quality, or legal effect."
+    },
+    {
+      "label": "Howard CAD 2024 Annual Report PDF (accessed 2026-08-29)",
+      "url": "https://howardcad.org/wp-content/uploads/2024/01/HCAD-LOCAL-ANNUAL-REPORT-2024.pdf",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/wp-content/uploads/2024/01/HCAD-LOCAL-ANNUAL-REPORT-2024.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact official PDF supplies the complete-file controls, four-page count, physical-page-4 heading, and literal Category G row used here.",
+      "claim_scope": "The middle numeric field remains unlabeled in this article. The row does not establish owners, accounts, parcels, acreage, wells, reserves, production, title, tax owed, current values or counts, mineral-rights sale value, offer quality, or a transaction result."
+    },
+    {
+      "label": "Howard Central Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://howardcad.org/",
+      "publisher": "howardcad.org",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://howardcad.org/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies the Howard Central Appraisal District publisher identity and public-site context.",
+      "claim_scope": "It is not evidence for the exact PDF bytes, page-4 row, field labels, a property, owner, title, appraisal, tax, sale value, offer, or transaction."
+    },
+    {
+      "label": "Texas Comptroller Property Classification Guide (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:08Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official Texas Comptroller guide supplies separate statewide appraisal-roll classification context and a route to the G1, G2, and G3 distinctions owned by Article 260.",
+      "claim_scope": "It does not relabel the Howard report middle field, validate the Howard row total, classify a specific property, or establish ownership, title, appraisal, tax, mineral-rights sale value, offer quality, or legal effect."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave187_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0787",
+  "slug": "gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator",
+  "title": "Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/",
+  "source_path": "src/content/posts/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.mdx",
+  "input_body_sha256": "7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260",
+  "input_frontmatter_sha256": "8baf9679e1ac83619918b4611b9c2a7b3069b4a973880fc8b41b949fe68d822e",
+  "expected_repo_sha256": "7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260",
+  "two_image_manifest_sha256": "bace12f4c3e12420dd69b4d51f8cbdb38840119b0294885222f9ed1bccb685f7",
+  "visual_metadata": {
+    "hero_alt": "An open report binder and page marker appear beside the exact Gonzales CAD mineral-responsibility page-locator title.",
+    "social_alt": "An open report binder and page marker appear beside the exact Gonzales CAD mineral-responsibility page-locator title.",
+    "inline_alt": "An overhead print-and-PDF locator board appears above the Gonzales CAD mineral appraisal responsibility phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Gonzales CAD 2025 Mineral Responsibility Page Locator",
+    "seo_title_character_count": 53,
+    "description_character_count": 147,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave187",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave187_editorial",
+  "review_run_id": "mrx1000-wave187-editorial-20260915T071305Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260; the answer-first article contains 1410 body tokens and five FAQs.",
+    "The article rejects the colliding Gonzales County mineral-rights value guide and owns one distinct deliverable: the official 2025 mass-appraisal-report mineral-responsibility page locator with printed page 18/PDF page 22 reconciliation and a source-control record.",
+    "The current information-gain and answer-citation contract is applied through a concise direct answer, one canonical page-locator job, five visible official sources with separate roles, exact entity/document/page/route/date provenance, claim-adjacent citations, five useful FAQs, semantic hub/support/sibling/next-step links, native nonduplicative schema, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The low three-quarter report-binder scene and strict-overhead two-page locator board are materially distinct and make no government-affiliation, person, property, appraisal, tax, value, offer, legal, or outcome claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "7fa4bb4015dfbbf2a24ee4597f1bbd7ca13116a8b45b4d6fc28f1af5e2694260"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1410,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 64
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 53,
+        "description_character_count": 147,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T06:35:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave187",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.mdx",
+    "/assets/articles/hero/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp",
+    "/assets/articles/inline/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator/gonzales-cad-mineral-appraisal-responsibility.webp"
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "artifact_type": "mrx1000_wave107_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0292",
+  "slug": "texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "input_frontmatter_sha256": "e89854a204e676ee6a5a82a09f671f1a8032e02ab59ca7c1f1a787b2eb1029c2",
+  "expected_repo_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "two_image_manifest_sha256": "14fb005cea9ae4561dd0522cc88ccd0d5aff9a9eb924c62d0424c6c91a424368",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "social_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "inline_alt": "A people-free overhead query worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 66,
+    "description_character_count": 155,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T14:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave107",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-drilling-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave107_factual",
+  "review_run_id": "mrx1000-wave107-factual-20260915T072833Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, exact source labels, source-displayed criteria, 90-day and date-format constraints, selector and control mechanics, post-November 1, 2006 help limitation, route separation, help navigation, and source terminology context. None is used to establish a private-property relationship or a substantive lease, operator, permit, API, field, production, status, compliance, title, ownership, value, offer, legal, or transaction conclusion.",
+    "The article publishes no actual operator, API, lease, permit, field, district, county, date range, criterion selection, result, screenshot, property identifier, production, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC Research Queries directory supplies the New Lease IDs Built Query label, launch relationship, nightly update label, access caution, and global online-query limitation.",
+      "claim_scope": "The article uses the directory only to preserve the route, label, update statement, source identity, access caution, and limitation; it does not treat a result as authoritative, legally effective, complete, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, New Lease IDs Built Query (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/PR/publicQueriesNewLeaseAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/publicQueriesNewLeaseAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official application supplies the New Lease IDs Built Query title and visible label, date-range, drilling-permit, API, district, county, field, operator, selector-mode, Submit, Reset, Restart Search, and result-area labels.",
+      "claim_scope": "The article preserves labels, controlled criteria, navigation, and displayed state without submitting, reproducing, or interpreting a property-specific result."
+    },
+    {
+      "label": "Railroad Commission of Texas, New Lease Query Help (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/PR/help/new_lease.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/help/new_lease.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official New Lease Query help page supplies the 90-day maximum date-range and MM/DD/YYYY format, selector instructions, control sequence, and statement that results are only for lease IDs built after November 1, 2006.",
+      "claim_scope": "The article treats those statements only as query mechanics and source limitations; it does not interpret new, built, lease identity, or the meaning of any result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Report Queries (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/PR/publicQueriesMainAction.do",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/publicQueriesMainAction.do",
+        "content_type": "text/html; charset=ISO-8859-1"
+      },
+      "source_location_or_paraphrase": "The official Production Report Queries home supplies a separate route and separately labeled production-report query forms.",
+      "claim_scope": "The article uses the page only to preserve route separation and does not merge New Lease IDs Built Query provenance with production data, a filing, an operator-of-record result, or a production conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, Production Reports Help Contents (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/PR/help/rpt_toc.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/help/rpt_toc.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Production Reports Help Contents page supplies the separate New Lease Query, PR Queries, operator-search, error-message, and glossary help navigation labels.",
+      "claim_scope": "The article records only a help route actually opened during the attempt and does not infer a substantive result from help navigation."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil and Gas Glossary (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.texas.gov/PR/help/prod_gloss.html",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/PR/help/prod_gloss.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official glossary supplies source terminology context when a displayed label requires exact source wording.",
+      "claim_scope": "The article may preserve the glossary route and quoted source term in controlled evidence but may not turn a glossary definition into a property-specific lease, well, operator, production, title, valuation, legal, or transaction conclusion."
+    }
+  ]
+}

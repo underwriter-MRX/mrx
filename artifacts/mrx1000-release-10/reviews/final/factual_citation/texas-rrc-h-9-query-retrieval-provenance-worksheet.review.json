@@ -1,0 +1,140 @@
+{
+  "artifact_type": "mrx1000_wave110_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0295",
+  "slug": "texas-rrc-h-9-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC H-9 Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-h-9-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-h-9-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "f06319bc11ea0eb8a7e48684d6969e4974cc27f6c80962ea0e41729c91ffa56d",
+  "input_frontmatter_sha256": "4869773c005c8c7db93c664b64886472be746ac0e57566dcfcc0e388c655ea3b",
+  "expected_repo_sha256": "f06319bc11ea0eb8a7e48684d6969e4974cc27f6c80962ea0e41729c91ffa56d",
+  "two_image_manifest_sha256": "c8533c87c6a4f52e943f8eb98e3e6695ecc34e528a0aa365255cb3a4d112a9f9",
+  "visual_metadata": {
+    "hero_alt": "An upright source-neutral H-9 route card appears beside the exact article title.",
+    "social_alt": "An upright source-neutral H-9 route card appears beside the exact article title.",
+    "inline_alt": "A people-free overhead H-9 provenance worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC H-9 Query Retrieval Worksheet",
+    "seo_title_character_count": 39,
+    "description_character_count": 149,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T16:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave110",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-h-9-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave110_factual",
+  "review_run_id": "mrx1000-wave110-factual-20260915T072833Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f06319bc11ea0eb8a7e48684d6969e4974cc27f6c80962ea0e41729c91ffa56d; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to six current official RRC sources, route identity, exact query labels, current-versus-legacy channel separation, source-displayed criteria and state labels, and retrieval mechanics. None establishes substantive status, compliance, regulatory condition, production, property, ownership, title, value, legal effect, offer, or transaction conclusions.",
+    "The article publishes no actual certificate, filing, controlled value, result, screenshot, record, property identifier, production statement, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory supplies the H-9 Certificate of Compliance Statewide Rule 36 query label, nightly update label, and online-query limitations.",
+      "claim_scope": "The article preserves route provenance and limitations only and does not interpret a filing, certificate, rule, status, or compliance condition."
+    },
+    {
+      "label": "Railroad Commission of Texas, H-9 Public Query (accessed 2026-08-24)",
+      "url": "https://webapps.rrc.state.tx.us/H9/publicquery.xhtml",
+      "publisher": "webapps.rrc.state.tx.us",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.state.tx.us/H9/publicquery.xhtml",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official H-9 application supplies current query labels, controlled choices, result labels, and the separately named Mainframe or Legacy Certification Lookup.",
+      "claim_scope": "The article records one chosen route and its displayed state without merging channels or interpreting any value."
+    },
+    {
+      "label": "Railroad Commission of Texas, H-9 Query Launch Notice (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/announcements/092419-rrc-launches-h-9-certificate-of-compliance-statewide-rule-36-query/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/announcements/092419-rrc-launches-h-9-certificate-of-compliance-statewide-rule-36-query/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official launch notice supplies the H-9 query-option labels and directs requests for records before July 15, 2019 to Imaged Records.",
+      "claim_scope": "The article uses the notice only for source-route and legacy-channel provenance."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil and Gas Forms (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/oil-and-gas-forms/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/oil-and-gas-forms/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official forms directory supplies bounded H-9 form and instruction context.",
+      "claim_scope": "The article does not explain how to complete, file, approve, contest, or rely on a form."
+    },
+    {
+      "label": "Railroad Commission of Texas, Statewide Rule 36 Index (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/publications-and-notices/publications/swr36-index/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/publications-and-notices/publications/swr36-index/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Statewide Rule 36 index supplies the publication and manual context associated with H-9.",
+      "claim_scope": "The article does not interpret the rule, decide applicability, or make a compliance conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, Imaged Records (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Imaged Records page supplies bounded retrieval context for older records.",
+      "claim_scope": "The article records a separate legacy channel only and does not claim equivalence, completeness, authenticity, or legal effect."
+    }
+  ]
+}

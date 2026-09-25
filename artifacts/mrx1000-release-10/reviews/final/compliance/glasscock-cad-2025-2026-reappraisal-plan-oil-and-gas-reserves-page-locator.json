@@ -1,0 +1,70 @@
+{
+  "artifact_type": "mrx1000_wave185_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0784",
+  "slug": "glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator",
+  "title": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+  "source_path": "src/content/posts/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.mdx",
+  "input_body_sha256": "99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91",
+  "input_frontmatter_sha256": "c512fe0a456a956f93314b1fea25cfd119c180707a0c983d79380d17008965b1",
+  "expected_repo_sha256": "99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91",
+  "two_image_manifest_sha256": "737b74dc5f552aa149655617e1571a0b949e81639f3c16330ab77b4bfe42767b",
+  "visual_metadata": {
+    "hero_alt": "A navy archival binder with eight blank tabs appears beside the exact Glasscock CAD reappraisal-plan page-locator title.",
+    "social_alt": "A navy archival binder with eight blank tabs appears beside the exact Glasscock CAD reappraisal-plan page-locator title.",
+    "inline_alt": "An overhead eight-segment page strip appears above the exact Glasscock CAD oil and gas reserves reappraisal plan phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Oil and Gas Reserves Plan Locator",
+    "seo_title_character_count": 47,
+    "description_character_count": 148,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T05:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave185",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave185_compliance",
+  "review_run_id": "mrx1000-wave185-compliance-20260915T071305Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "5b92f79dadacc088c5a18d47b4b8687b94e65d565ff6f0611f39e881ec2dba4e",
+  "expected_inline_sha256": "69bd148d35381d71786219a053939f2c3335ecf4afe39deb40aa97eeddcc8660",
+  "findings": [
+    "Complete current MDX SHA-256 is 99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects person or property search, private-data access, procedure application, statutory interpretation, compliance judgment, appraisal judgment, tax calculation, ownership or title findings, market valuation, offer analysis, sale advice, filing direction, and promised outcomes.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, property fact, appraisal result, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "official_file_and_page_locator_no_procedure_interpretation_property_application_appraisal_tax_title_ownership_value_offer_sale_filing_compliance_or_legal_claim_pass",
+    "adjacent_glasscock_annual_report_records_link_and_appraisal_responsibility_sources_not_combined_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_official_page_government_mark_agency_logo_seal_property_record_personal_data_map_money_tax_amount_appraisal_value_offer_result_signature_ui_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.mdx",
+    "/assets/articles/hero/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.webp",
+    "/assets/articles/inline/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/glasscock-cad-oil-and-gas-reserves-reappraisal-plan.webp"
+  ]
+}

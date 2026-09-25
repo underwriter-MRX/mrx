@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave237_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:25Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0857",
+  "slug": "why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf",
+  "title": "Why Ward and Loving CAD Share the Same 2026 Mineral File Layout PDF",
+  "canonical_url": "https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+  "source_path": "src/content/posts/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.mdx",
+  "input_body_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+  "input_frontmatter_sha256": "40cb62d24a145e8521e63dfc7a7737460d0a4cff0d8d0ef1dc08231366308d69",
+  "expected_repo_sha256": "234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630",
+  "two_image_manifest_sha256": "870f8b4398fd9f8536db7e7237e4b54efa32633ed25ed93b9ffbd51f5a3f01c7",
+  "visual_metadata": {
+    "hero_alt": "Two separate archive cases hold identical blank layout packets beside the exact Article 309 title.",
+    "social_alt": "Two separate archive cases hold identical blank layout packets beside the exact Article 309 title.",
+    "inline_alt": "A top-down byte-identity and provenance board appears above the exact Ward and Loving CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward and Loving CAD Shared 2026 File Layout PDF · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 156,
+    "answer_summary_word_count": 62,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T17:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave237",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave237_compliance",
+  "review_run_id": "mrx1000-wave237-compliance-20260915T071325Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "6000d3915d4fec0f3a4ad92549107de383ca259086a0ecc4190ada578e2e0f13",
+  "expected_inline_sha256": "f58a145115fb6aeee6f54c56410069c58c35164aee8e94c241ae4d4a8e3cc398",
+  "findings": [
+    "Complete current MDX SHA-256 is 234837900960d1eaf8c15854bf3353a4a77dbfe44ea5105bd4e84ed803f01630; hero/share and inline image hashes are separately locked.",
+    "No owner-level roll, TXT, CSV, account, address, email, owner, or property data was reopened, sampled, searched, copied, or published.",
+    "Each publisher route and outer archive remains a separate provenance lane; one district route is never presented as evidence for the other.",
+    "The organizational author is the MRX Editorial Team; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, and disclosed-buyer language are present without implying LocalBusiness or Google Business Profile eligibility.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, record content, value conclusion, finding, approval statement, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_roll_txt_csv_owner_account_address_email_or_property_data_copy_search_sampling_or_matching_pass",
+    "no_authorship_origin_applicability_conformance_correctness_privacy_title_ownership_appraisal_tax_private_value_offer_legal_or_transaction_conclusion_pass",
+    "no_one_district_route_as_evidence_for_the_other_pass",
+    "mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_maps_county_outlines_logos_seals_official_forms_personal_data_property_identifiers_values_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf.mdx",
+    "/assets/articles/hero/why-ward-and-loving-cad-share-the-same-2026-mineral-file-layout-pdf.webp",
+    "/assets/articles/inline/why-ward-and-loving-cad-share-same-2026-mineral-file-layout-pdf/ward-and-loving-cad-2026-mineral-file-layout-pdf.webp"
+  ]
+}

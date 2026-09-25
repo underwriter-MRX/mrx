@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave233_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0853",
+  "slug": "upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation",
+  "title": "Upton CAD 2024 Category G Table: G1, G1C, and G* Item and Value Reconciliation",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/",
+  "source_path": "src/content/posts/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation.mdx",
+  "input_body_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+  "input_frontmatter_sha256": "6358e9c6a31c15f55e7f7025cb1df3f11f1a450abc9627b50dcd9e466977abcb",
+  "expected_repo_sha256": "3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7",
+  "two_image_manifest_sha256": "6255c4323708dc7615227d305b38e790240f8dcaac88c9fb26d605bf4a93eb29",
+  "visual_metadata": {
+    "hero_alt": "A navy report binder and adding machine appear beside the exact Article 305 title.",
+    "social_alt": "A navy report binder and adding machine appear beside the exact Article 305 title.",
+    "inline_alt": "A top-down three-row reconciliation worksheet appears above the exact Upton CAD 2024 Category G table keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD 2024 Category G Table Reconciliation · MRX",
+    "seo_title_character_count": 52,
+    "description_character_count": 141,
+    "answer_summary_word_count": 50,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T15:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave233",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave233_compliance",
+  "review_run_id": "mrx1000-wave233-compliance-20260915T071324Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "dbd69e63be35b79411989946d8c5f85f43b3de793c32ca34ada656140d784a69",
+  "expected_inline_sha256": "000dcd6a046da73b61a6be6eae545c1dde7bca1b3b3c574b55efe224d16f198a",
+  "findings": [
+    "Complete current MDX SHA-256 is 3a7185aaaa815796f492fb00108a52bb7f4b4ded5db95e64c6e2b81035af2ef7; hero/share and inline image hashes are separately locked.",
+    "No personal names are republished and no person, owner, account, property, parcel, tract, lease, well, or deed search is performed.",
+    "No title, acreage, ownership, production, reserve, appraisal, tax, sale-value, fair-value, offer-quality, legal-effect, or transaction-advice conclusion appears; 2024 aggregates are not presented as current 2026 market evidence.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, numerical result, finding, conclusion, or approval statement."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_person_owner_account_property_parcel_tract_lease_well_or_deed_search_pass",
+    "no_title_acreage_ownership_production_reserve_appraisal_tax_sale_value_fair_value_offer_legal_effect_or_transaction_advice_pass",
+    "no_2024_aggregate_as_current_market_or_property_specific_value_pass",
+    "adjacent_article_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_readable_base_text_numbers_names_logos_seals_official_forms_property_identifiers_prices_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation.mdx",
+    "/assets/articles/hero/upton-cad-2024-category-g-table-g1-g1c-and-g-item-and-value-reconciliation.webp",
+    "/assets/articles/inline/upton-cad-2024-category-g-table-g1-g1c-g-item-value-reconciliation/upton-cad-2024-category-g-table.webp"
+  ]
+}

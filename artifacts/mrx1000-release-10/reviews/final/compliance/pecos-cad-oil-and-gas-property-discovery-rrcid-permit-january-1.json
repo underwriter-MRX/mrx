@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave216_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0836",
+  "slug": "pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1",
+  "title": "Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/",
+  "source_path": "src/content/posts/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1.mdx",
+  "input_body_sha256": "1df45564178ed5b0d1207a512c881136b9e568e0e6cacf4d6fe712df5c8e8f30",
+  "input_frontmatter_sha256": "a3f7a84d7eb210f39c06e1dfa53da2b4d1598d5ae4c169428e5a9dc2121647dc",
+  "expected_repo_sha256": "1df45564178ed5b0d1207a512c881136b9e568e0e6cacf4d6fe712df5c8e8f30",
+  "two_image_manifest_sha256": "2866315280f11b6b6929e613267fe3ea99d7be108a8ab355425338b9f1d998be",
+  "visual_metadata": {
+    "hero_alt": "A dark Pecos records-routing board appears beside the exact Article 288 title.",
+    "social_alt": "A dark Pecos records-routing board appears beside the exact Article 288 title.",
+    "inline_alt": "A bright overhead evidence flow appears above the exact Pecos CAD oil and gas property discovery keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Property Discovery: RRCID & January 1 · MRX",
+    "seo_title_character_count": 53,
+    "description_character_count": 147,
+    "answer_summary_word_count": 49,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T07:38:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave216",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave216_compliance",
+  "review_run_id": "mrx1000-wave216-compliance-20260915T071320Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "c147c2f52ac1fc3243b768de244c5d36220a2abdc5e9206a20b2c29e77ec6d1d",
+  "expected_inline_sha256": "62634f0d6c737d917cc3b482f1cba40b22711089aedbc89730bc5c8da0c69f5d",
+  "findings": [
+    "Complete current MDX SHA-256 is 1df45564178ed5b0d1207a512c881136b9e568e0e6cacf4d6fe712df5c8e8f30; hero/share and inline image hashes are separately locked.",
+    "Every procedural statement remains attributed to the Pecos plan and attached to its physical-page locator.",
+    "No plan condition is applied to a named well, property, account, owner, interest, permit, completion, appraisal, tax, value, offer, or transaction.",
+    "Image text is limited to the exact title, keyword, and a redundant January 1 scene marker already contained in the title; it adds no official affiliation, owner, account, property, value, status, or result claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "plan_process_not_converted_to_present_property_status_ownership_title_situs_interest_decimal_appraisal_tax_value_offer_or_transaction_result_pass",
+    "publisher_provenance_and_observed_identifier_wording_preserved_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unrelated_readable_text_forms_signatures_seals_logos_account_records_owner_data_property_records_money_values_results_government_symbols_completion_claims_conclusions_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1.mdx",
+    "/assets/articles/hero/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-and-january-1.webp",
+    "/assets/articles/inline/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/pecos-cad-oil-and-gas-property-discovery.webp"
+  ]
+}

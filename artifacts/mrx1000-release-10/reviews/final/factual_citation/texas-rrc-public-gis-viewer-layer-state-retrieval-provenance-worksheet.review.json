@@ -1,0 +1,94 @@
+{
+  "artifact_type": "mrx1000_wave130_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T07:33:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0335",
+  "slug": "texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet",
+  "title": "Texas RRC Public GIS Viewer Layer-State Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "input_frontmatter_sha256": "46abb36e7eb72f0fedd7ff6d0b3f3f90d69c067cb07f4e25accd19a4948f37b8",
+  "expected_repo_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "two_image_manifest_sha256": "163a535e7ca75056f24ba8570175f7c11823f4ad22a852290ee2308252006cc0",
+  "visual_metadata": {
+    "hero_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "social_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "inline_alt": "A top-down layer-state evidence board appears above the exact Public GIS Viewer retrieval keyword."
+  },
+  "reviewer_id": "codex_wave130_factual",
+  "review_run_id": "mrx1000-wave130-factual-20260826T073332Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official RRC sources, current interface controls, live-displayed viewer state, source limitations, transparent provenance fields, and one-attempt outcomes.",
+    "The article publishes no actual selector, label, capture, owner, property, lease, well, pipeline, coordinate, identifier, boundary, coverage, ownership, title, value, offer, legal, tax, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Public GIS Viewer (Map) (accessed 2026-08-26)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/gis-viewer/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-26T07:33:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/gis-viewer/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official landing page identifies the Public GIS Viewer, current technical notices, nightly update description, layer visibility, basemaps, print formats, measurement, coordinate, identify, and consolidated search features.",
+      "claim_scope": "It supports route and interface-state claims only, not geographic accuracy, a survey, private-rights coverage, ownership, title, value, or a transaction result."
+    },
+    {
+      "label": "Texas RRC, live Public GIS Viewer (accessed 2026-08-26)",
+      "url": "https://gis.rrc.texas.gov/",
+      "publisher": "gis.rrc.texas.gov",
+      "accessed_at": "2026-08-26T07:33:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://gis.rrc.texas.gov/gisviewer/",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The live official viewer exposes a displayed version and release date plus the current layer, search, and map controls available during a session.",
+      "claim_scope": "The article records the live-displayed state for one session and does not freeze a reviewed version or release date as a permanent fact."
+    },
+    {
+      "label": "Texas RRC, Public GIS Viewer User Guide (accessed 2026-08-26)",
+      "url": "https://gis.rrc.texas.gov/gisviewer/GISViewer/docs/userguide.pdf",
+      "publisher": "gis.rrc.texas.gov",
+      "accessed_at": "2026-08-26T07:33:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://gis.rrc.texas.gov/gisviewer/GISViewer/docs/userguide.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official guide describes visibility, legend, county navigation, print, basemap, measure, identify, coordinates, search, radius, and download-wells tools.",
+      "claim_scope": "It supports field selection and provenance design only; it does not establish a result for any owner, property, lease, well, coordinate, boundary, or private right."
+    },
+    {
+      "label": "Texas RRC, Download Wells Help (accessed 2026-08-26)",
+      "url": "https://gis.rrc.texas.gov/gisviewer/GISViewer/docs/WebHelp/Download_Wells.htm",
+      "publisher": "gis.rrc.texas.gov",
+      "accessed_at": "2026-08-26T07:33:32Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://gis.rrc.texas.gov/gisviewer/GISViewer/docs/WebHelp/Download_Wells.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official help page states that Public GIS Viewer data are informational, are not authoritative public records, have no legal force or effect, and require users to verify accuracy, completeness, currency, and suitability.",
+      "claim_scope": "The article applies those limitations to every session record and does not convert displayed data or an exported artifact into ownership, boundary, coverage, legal, valuation, or transaction evidence."
+    }
+  ]
+}

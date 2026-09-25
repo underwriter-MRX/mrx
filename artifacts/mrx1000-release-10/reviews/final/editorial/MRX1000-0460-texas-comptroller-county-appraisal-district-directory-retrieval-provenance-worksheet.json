@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave145_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:48:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0460",
+  "slug": "texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller County Appraisal District Directory Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "input_frontmatter_sha256": "960c9f12e875e5c1289c2a284aec0a2ef8495774e2c9173162fe4be57e0a1605",
+  "expected_repo_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "two_image_manifest_sha256": "919528292fd165df7bc39461414575f683b81ca52be4276b89a1e18a41ddbb84",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "social_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "inline_alt": "A top-down blank directory worksheet appears above the exact Texas county appraisal-district retrieval keyword."
+  },
+  "reviewer_id": "codex_wave145_editorial",
+  "review_run_id": "mrx1000-wave145-editorial-20260826T124816Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6; the answer-first article contains 1781 body tokens and five FAQs.",
+    "The article rejects the colliding broad inherited-mineral identity and owns one distinct deliverable: a blank provenance record for one authorized manual official Texas Comptroller county-directory attempt and one selected county appraisal-district directory entry.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The low-oblique county-directory archive and strict-overhead blank directory worksheet are materially distinct compositions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1781,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet/texas-county-appraisal-district-directory-retrieval.webp"
+  ]
+}

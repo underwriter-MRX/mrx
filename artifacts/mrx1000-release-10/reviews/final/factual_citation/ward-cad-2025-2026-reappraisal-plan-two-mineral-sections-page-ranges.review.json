@@ -1,0 +1,96 @@
+{
+  "artifact_type": "mrx1000_wave240_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0860",
+  "slug": "ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges",
+  "title": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+  "source_path": "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+  "input_body_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "input_frontmatter_sha256": "9ef2c7fb5eb0d5a842d19e731f2031d1d349e40be4e34c65dc4cb54106164510",
+  "expected_repo_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "two_image_manifest_sha256": "32f0ed4565ce1a62da7eb713053a7be3b772af4d10c35a98585d5cb46c2142b7",
+  "visual_metadata": {
+    "hero_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "social_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "inline_alt": "A top-down source crosswalk links two document-section stacks below the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD Mineral Sections and Page Ranges · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 138,
+    "answer_summary_word_count": 48,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T20:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave240",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave240_factual",
+  "review_run_id": "mrx1000-wave240-factual-20260915T071331Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd; all 2 declared sources passed current HTTPS access review.",
+    "The official scanned PDF is 6,186,036 bytes with SHA-256 271bc4bd3712ed158e25aef6a0977602348e50854dbaac8da1916b191053bd36 and contains 75 PDF pages.",
+    "PDF page 26, district-plan printed page 24, begins the district mineral valuation-process section; it continues through PDF page 28, printed page 26, and PDF page 29 begins the next property topic.",
+    "PDF page 45 identifies Appendix B, PDF page 48 supplies its table of contents, and PDF pages 64-69 correspond to Appendix B printed pages 17-22 for the contractor mineral-interests section.",
+    "The district section summarizes responsibility, data/resources, model inputs, and review; the contractor section separately addresses scope and assumptions, data collection, calibration, individual review, and performance testing. The article reports locations and boundaries only."
+  ],
+  "checks": [
+    "two_official_https_sources_with_exact_source_roles",
+    "ward_reappraisal_plan_complete_file_hash_page_count_and_visual_page_map_pass",
+    "district_section_pdf_pages_26_28_printed_pages_24_26_pass",
+    "appendix_identity_toc_and_numbering_restart_pass",
+    "contractor_section_pdf_pages_64_69_appendix_pages_17_22_pass",
+    "pdf_page_29_next_topic_boundary_pass",
+    "district_and_contractor_process_descriptions_kept_separate_pass",
+    "no_owner_title_tax_value_production_reserves_or_appraisal_inference_pass",
+    "adjacent_article_nonduplication_and_information_gain_pass",
+    "answer_first_claim_adjacent_citation_source_age_and_inference_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Ward CAD 2025-2026 Biennial Reappraisal Plan (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1723654611_2025+%26+2026+Ward+County+Biennial+Reappraisal+Plan.pdf",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1723654611_2025+%26+2026+Ward+County+Biennial+Reappraisal+Plan.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official 75-page Ward CAD 2025-2026 Biennial Reappraisal Plan supplies the adoption/effective date and the two separate mineral-treatment sections, their whole-PDF positions, their printed page numbers, the Appendix B handoff, and the bounded process descriptions used by this article.",
+      "claim_scope": "It does not establish a specific owner, title, tax result, private-sale value, production, reserves, appraisal conclusion, offer, or transaction recommendation."
+    },
+    {
+      "label": "Ward CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.wardcad.org/home/DataRecords",
+      "publisher": "www.wardcad.org",
+      "accessed_at": "2026-09-15T07:13:31Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.wardcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Ward CAD Data and Records page supplies a current official publisher and index route for the source family.",
+      "claim_scope": "It does not replace the hash-locked PDF, change its page-number systems, or establish a property-specific conclusion."
+    }
+  ]
+}

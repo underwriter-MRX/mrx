@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave94_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T03:03:45Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0277",
+  "slug": "texas-rrc-h-10-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC H-10 Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-h-10-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-h-10-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "input_frontmatter_sha256": "e8ec303df12bda717645a288c25d939ed4f144fb920a1f0351d094cbd46a43d6",
+  "expected_repo_sha256": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49",
+  "two_image_manifest_sha256": "04c5546df8e6b55117f5d8feaba916f42c46db37746aefc5f63bc464fc57d511",
+  "visual_metadata": {
+    "hero_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "social_alt": "A Texas H-10 query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead H-10 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave94_editorial",
+  "review_run_id": "mrx1000-wave94-editorial-20260824T030345Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49; the answer-first article contains 1865 body tokens and five FAQs.",
+    "The article replaces a colliding valuation-calculation explainer with one administrative job: preserve a reproducible provenance trail for a single official RRC Search for H10 attempt through its entry route, criteria snapshot, visible limitations, navigation steps, result-header state, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The oblique warm public-record counter and people-free strict-overhead cool-slate technical worksheet differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "858740d9b76f3b57d13a6c10e6d827864c9d88c61d1ef92bc8955fbe80db6d49"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1865,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-h-10-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-h-10-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-h-10-query-retrieval-provenance-worksheet/texas-rrc-h-10-query-retrieval.webp"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave234_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0854",
+  "slug": "upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs",
+  "title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+  "source_path": "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+  "input_body_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+  "input_frontmatter_sha256": "6263c306ac36c3c5c7bd8dc2eef24b6809aa9730de8de82966c69ccb665ca0a0",
+  "expected_repo_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+  "two_image_manifest_sha256": "ac153aac0396c9d6a70d0e20e878c1182dfce3eed7249a8227078b0aab98f233",
+  "visual_metadata": {
+    "hero_alt": "A four-stage records workspace appears beside the exact Article 306 title.",
+    "social_alt": "A four-stage records workspace appears beside the exact Article 306 title.",
+    "inline_alt": "A top-down four-card review chain appears above the exact Upton CAD mineral appraisal review chain keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Mineral Appraisal Review Chain · MRX",
+    "seo_title_character_count": 46,
+    "description_character_count": 133,
+    "answer_summary_word_count": 49,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T15:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave234",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave234_editorial",
+  "review_run_id": "mrx1000-wave234-editorial-20260915T071324Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6; the answer-first article contains 1830 body tokens and five FAQs.",
+    "The original Upton County value-risk identity is rejected. The replacement answers one distinct source-reading job through a four-section Upton plan map and current terminology boundary.",
+    "Information gain is concrete: dual page locators, source roles, section-sequence labels, stable claim IDs, a discrepancy register, source-age controls, and explicit evidence-versus-inference stops.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-oblique landscape workspace and light strict-overhead four-card scene are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1830,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 49
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 46,
+        "description_character_count": 133,
+        "author": "ariana",
+        "reviewed_at": "2026-08-31T15:30:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave234",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+    "/assets/articles/hero/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-and-pvs.webp",
+    "/assets/articles/inline/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/upton-cad-mineral-appraisal-review-chain.webp"
+  ]
+}

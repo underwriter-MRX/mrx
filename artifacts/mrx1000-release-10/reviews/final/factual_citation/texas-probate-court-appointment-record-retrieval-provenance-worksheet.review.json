@@ -1,0 +1,95 @@
+{
+  "artifact_type": "mrx1000_wave144_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:20:49Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0442",
+  "slug": "texas-probate-court-appointment-record-retrieval-provenance-worksheet",
+  "title": "Texas Probate Court Appointment Record Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-probate-court-appointment-record-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-probate-court-appointment-record-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "input_frontmatter_sha256": "4802028274bdbd753de8c0284d9fc328ffd140d944ab40c0a5a5661e032206e7",
+  "expected_repo_sha256": "584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442",
+  "two_image_manifest_sha256": "a6d99937274b0f06881b7638d4f26fa5859d7f2d32f918bfff8c0dee27067353",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "social_alt": "A low-oblique court-directory retrieval station appears beside the exact Texas probate worksheet title.",
+    "inline_alt": "A top-down blank probate record retrieval worksheet appears above the exact Texas appointment-record keyword."
+  },
+  "reviewer_id": "codex_wave144_factual",
+  "review_run_id": "mrx1000-wave144-factual-20260826T122049Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 584c8a669188504bdd4f9890b02dd31b4df0cd7dae808de5e0dabe426da64442; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official Texas sources, exact court-routing context, exact displayed labels, the verified Chapter 32 and 306 distinctions, and attempt-level fields.",
+    "The article invents no person, case, cause, docket, document, court result, appointment, qualification, authority, record authenticity, certification, title, ownership, mineral connection, value, offer, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_estates_code_pdf_text_extraction_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Judicial Branch, Trial Courts (accessed 2026-08-26)",
+      "url": "https://www.txcourts.gov/about-texas-courts/trial-courts/",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-08-26T12:20:49Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/about-texas-courts/trial-courts/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Judicial Branch Trial Courts page states that Texas has several trial-court levels with some overlap and separately describes constitutional county courts, county courts at law, district courts, and statutory probate courts.",
+      "claim_scope": "It supports preserving exact court and county routing labels and explains why one statewide interface cannot be assumed. It does not select the legally correct court for a matter or establish case existence, appointment, authority, title, ownership, or legal effect."
+    },
+    {
+      "label": "Texas Judicial Branch, Judicial Directory (accessed 2026-08-26)",
+      "url": "https://www.txcourts.gov/judicial-directory/",
+      "publisher": "www.txcourts.gov",
+      "accessed_at": "2026-08-26T12:20:49Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.txcourts.gov/judicial-directory/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Judicial Branch Judicial Directory page says its annual information is current as of April 2026 unless otherwise noted and links to the live directory database for more current court information.",
+      "claim_scope": "It supports the official starting-route and access-time fields only. A directory listing is not a probate case record and does not establish venue, jurisdiction for a particular matter, filing location, case existence, appointment, or authority."
+    },
+    {
+      "label": "Texas Office of Court Administration, Public Directory Search (accessed 2026-08-26)",
+      "url": "https://card.txcourts.gov/DirectorySearch.aspx",
+      "publisher": "card.txcourts.gov",
+      "accessed_at": "2026-08-26T12:20:49Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://card.txcourts.gov/DirectorySearch.aspx",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Texas Office of Court Administration public page identifies itself as the Court Activity Reporting and Directory System Directory Search and displays court-search controls.",
+      "claim_scope": "It supports recording exact source-displayed search controls and court-routing context. It does not authenticate a probate record, identify a representative, or provide title, ownership, mineral, valuation, offer, or transaction evidence."
+    },
+    {
+      "label": "Texas Estates Code, official full-code PDF, Chapters 32 and 306 (rendered 2026-04-10; accessed 2026-08-26)",
+      "url": "https://tcss.legis.texas.gov/resources/SDocs/ESTATESCODE.pdf",
+      "publisher": "tcss.legis.texas.gov",
+      "accessed_at": "2026-08-26T12:20:49Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://tcss.legis.texas.gov/resources/SDocs/ESTATESCODE.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official Estates Code PDF rendered April 10, 2026 contains Chapter 32 probate-jurisdiction text and Chapter 306 provisions distinguishing orders granting letters, issuance, form/content, and statutory effect.",
+      "claim_scope": "It supports preserving exact source-displayed court and document labels and the strict non-interpretation boundary. The article does not apply the statutes to select a court, determine authenticity or certification, interpret appointment or qualification, decide present authority, connect a record to minerals, or state legal effect."
+    }
+  ]
+}

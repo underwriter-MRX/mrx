@@ -1,0 +1,134 @@
+{
+  "artifact_type": "mrx1000_wave174_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:00Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0773",
+  "slug": "dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record",
+  "title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+  "source_path": "src/content/posts/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+  "input_body_sha256": "47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c",
+  "input_frontmatter_sha256": "56702abcf854a2f3f8ccc056a585c0062019828662eea58c95b3cc9ba9a89dd6",
+  "expected_repo_sha256": "47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c",
+  "two_image_manifest_sha256": "c8b047590fc0f926cc583d4c4c6eba4eaa6e20d93345b9721393410c5f61ad02",
+  "visual_metadata": {
+    "hero_alt": "An archival navy plan binder and blank adoption markers appear beside the exact Dimmit CAD source-record title.",
+    "social_alt": "An archival navy plan binder and blank adoption markers appear beside the exact Dimmit CAD source-record title.",
+    "inline_alt": "Five overhead page cards form an evidence path above the exact Dimmit CAD 2025-2026 reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+    "seo_title_character_count": 60,
+    "description_character_count": 141,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T01:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave174",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2024-25-map-review-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave174_factual",
+  "review_run_id": "mrx1000-wave174-factual-20260915T071300Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official district publisher relationship, exact 148-page and 2,360,073-byte PDF, complete-file SHA-256, page 1 identity and adoption record, pages 4 through 8 purpose and schedule context, page 31 contractor and attachment statement, page 124 Document 3D locator and described source inputs, and separate statutory and directory provenance roles.",
+    "The article keeps the July 2024 parcel estimate historical and district-wide, does not transform pages 136 through 138 into a formula or conclusion, and invents no current account count, mineral-only count, property fact, appraisal result, tax result, title fact, value, market price, offer, sale result, contractor endorsement, or owner-specific conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_issuer_document_district_resolution_date_page_route_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "versioned_prompt_universe_and_execution_vs_performance_measurement_contract_pass",
+    "historical_district_wide_parcel_estimate_not_converted_into_current_mineral_only_property_or_value_claim_pass",
+    "page_level_adoption_purpose_schedule_contractor_attachment_and_document_3d_locator_adjacency_pass",
+    "summit_search_atlas_and_prompt_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Dimmit CAD, Reappraisal Plans (accessed 2026-08-28)",
+      "url": "https://dimmit-cad.org/reappraisal-plans/",
+      "publisher": "dimmit-cad.org",
+      "accessed_at": "2026-09-15T07:13:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://dimmit-cad.org/reappraisal-plans/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Dimmit CAD Reappraisal Plans page supplies the current district publisher surface and displayed relationship to the 2025-2026 plan PDF.",
+      "claim_scope": "It does not determine document effectiveness, district compliance, implementation, appraisal correctness, property treatment, tax, title, value, an offer, or a transaction result."
+    },
+    {
+      "label": "Dimmit CAD, 2025-2026 Reappraisal Plan PDF (accessed 2026-08-28)",
+      "url": "https://dimmit-cad.org/wp-content/uploads/2024/10/2025-2026-Dimmit-CAD-Reappraisal-Plans-003.pdf",
+      "publisher": "dimmit-cad.org",
+      "accessed_at": "2026-09-15T07:13:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://dimmit-cad.org/wp-content/uploads/2024/10/2025-2026-Dimmit-CAD-Reappraisal-Plans-003.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact official 148-page PDF supplies its title, Resolution 2024-05 label, August 21, 2024 adoption date, stated two-year organizational purpose, plan-year and parcel-estimate context, annual reappraisal language, contractor assignments, attached-plan structure, and Document 3D oil-and-gas locator.",
+      "claim_scope": "The article preserves complete-file identity and page-specific observations without authenticating a resolution, interpreting law, judging compliance or appraisal correctness, applying a method, searching a property, calculating tax or value, evaluating an offer, or advising a sale."
+    },
+    {
+      "label": "Texas Tax Code, Section 6.05 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm#6.05",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.6.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 6.05 supplies current official statutory provenance for the section cited in the district plan.",
+      "claim_scope": "The article does not interpret Section 6.05, decide authority or compliance, validate adoption, calculate timing, or apply the provision to a district, property, owner, appraisal, tax, value, offer, or transaction."
+    },
+    {
+      "label": "Texas Tax Code, Section 25.18 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm#25.18",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Section 25.18 supplies current official statutory provenance for periodic reappraisal subject matter cited by the plan.",
+      "claim_scope": "The article does not interpret Section 25.18, determine applicability or compliance, predict reappraisal activity, or make a property, appraisal, tax, protest, title, value, offer, or sale conclusion."
+    },
+    {
+      "label": "Texas Comptroller, Dimmit County Directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dimmitt.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:00Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/dimmitt.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Dimmit County directory page supplies limited current public directory context for the appraisal district.",
+      "claim_scope": "It is not the source for the plan contents and does not establish ownership, property facts, appraisal treatment, tax, title, value, an offer, or a transaction result."
+    }
+  ]
+}

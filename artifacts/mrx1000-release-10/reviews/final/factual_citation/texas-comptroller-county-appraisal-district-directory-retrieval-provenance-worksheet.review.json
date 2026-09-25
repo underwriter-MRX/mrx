@@ -1,0 +1,81 @@
+{
+  "artifact_type": "mrx1000_wave145_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T12:48:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0460",
+  "slug": "texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller County Appraisal District Directory Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "input_frontmatter_sha256": "960c9f12e875e5c1289c2a284aec0a2ef8495774e2c9173162fe4be57e0a1605",
+  "expected_repo_sha256": "61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6",
+  "two_image_manifest_sha256": "919528292fd165df7bc39461414575f683b81ca52be4276b89a1e18a41ddbb84",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "social_alt": "A low-oblique county-directory archive appears beside the exact Texas appraisal-district worksheet title.",
+    "inline_alt": "A top-down blank directory worksheet appears above the exact Texas county appraisal-district retrieval keyword."
+  },
+  "reviewer_id": "codex_wave145_factual",
+  "review_run_id": "mrx1000-wave145-factual-20260826T124816Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 61c106c419af5d6ee4389779fd635f4bd8e2c7c00a8dc1a519e6cba404a5f9f6; all 3 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to three current official Texas Comptroller sources, exact directory scope, exact displayed-field labels, and attempt-level outcomes.",
+    "The article invents no person, contact, address, taxing unit, property, owner, heir, estate, title, mineral connection, appraisal, tax result, value, offer, or transaction conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "three_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, Local Property Appraisal and Tax Information county directory (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T12:48:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Comptroller county-directory index says the agency does not have local appraisal or tax information, directs most local questions to appraisal districts or tax offices, lists all 254 counties, and describes the directory as contact information plus taxing units served.",
+      "claim_scope": "It supports the official starting route, selected county code and name, directory scope, and source limitation. It does not identify a property or owner, retrieve a local record, prove contact accuracy or currency, or establish title, mineral connection, appraisal, tax treatment, value, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Montgomery County directory page (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/montgomery.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T12:48:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/montgomery.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current representative official county page displays an Appraisal District section, Last Updated label, chief-appraiser and taxpayer-liaison labels, contact and address fields, and active-taxing-unit codes and names.",
+      "claim_scope": "It validates the blank worksheet field structure only. The article does not republish contact values, certify an officeholder, infer that a blank field means none, connect a taxing unit to a property, or expand into local appraisal or tax-record research."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax System Basics (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-08-26T12:48:16Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Comptroller Property Tax System Basics page describes local appraisal-district functions and directs local appraisal-process questions to the applicable district.",
+      "claim_scope": "It supports the stop-and-handoff boundary only. The article does not interpret an appraisal, tax bill, exemption, protest, ownership, title, mineral interest, valuation, offer, or transaction."
+    }
+  ]
+}

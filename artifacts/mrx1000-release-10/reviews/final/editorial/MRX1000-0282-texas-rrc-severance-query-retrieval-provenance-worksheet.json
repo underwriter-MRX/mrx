@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave99_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T08:55:15Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0282",
+  "slug": "texas-rrc-severance-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Severance Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-severance-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-severance-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "input_frontmatter_sha256": "81dee50e642c6f5c077edf1efc6d53766b58fa293bb90b0acf0eb646b73e2d8d",
+  "expected_repo_sha256": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f",
+  "two_image_manifest_sha256": "3bd633f8ca34a849887cf89e2cbfb87b47c6f3b3c598f5c105e71cb95de7d976",
+  "visual_metadata": {
+    "hero_alt": "A public-record archive counter appears beside the exact article title.",
+    "social_alt": "A public-record archive counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead severance-query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave99_editorial",
+  "review_run_id": "mrx1000-wave99-editorial-20260824T085515Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f; the answer-first article contains 1413 body tokens and five FAQs.",
+    "The article replaces a colliding valuation explainer with one administrative job: preserve a reproducible provenance trail for a single official RRC Severance Query retrieval attempt through its route, criteria snapshot, visible instructions, result/help navigation, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The eye-level dark archive counter and people-free strict-overhead pale worksheet differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "aa62274b05a43efab1645c96038f336cc5c8a3310275bbff76c3675227dae86f"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1413,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-severance-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-severance-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-severance-query-retrieval-provenance-worksheet/texas-rrc-severance-query-retrieval.webp"
+  ]
+}

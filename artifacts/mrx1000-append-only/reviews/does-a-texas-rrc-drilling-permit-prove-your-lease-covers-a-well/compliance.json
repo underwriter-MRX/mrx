@@ -1,0 +1,22 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1122",
+  "slug": "does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well",
+  "source_path": "src/content/posts/does-a-texas-rrc-drilling-permit-prove-your-lease-covers-a-well.mdx",
+  "input_body_sha256": "a602a2ccd5fb4ffd47eace74cb65fda23b5299c11072e7ea3f63622626e573bb",
+  "two_image_manifest_sha256": "5c2170fe28296b7973e12b11541c0f9846ac357de4170ad5fb4daf6b63ceb050",
+  "private_full_source_sha256": "194acf3ab718ff6eda24c1fb89f9baa196f9f9988bb9ea0cad993e1361e0e458",
+  "review_method": "codex_current_public_source_compliance_and_image_byte_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte compliance review",
+  "advisory_review": "Read-only Chesty mrx_compliance ticket t_a6971f1f returned PASS-EXTENDS on corrected private manuscript SHA-256 194acf3ab718ff6eda24c1fb89f9baa196f9f9988bb9ea0cad993e1361e0e458.",
+  "findings": [
+    "The article disclaims owner-specific lease coverage, title, royalty, trespass, and legal conclusions, sends disputes to qualified Texas land/title review, and cautions against unredacted private-record sharing.",
+    "MRX's possible later economic interest is disclosed before an agreement; the educational next step does not promise an underwriter determination or pressure a transaction.",
+    "The same exact-title 1200x630 WebP is specified for hero and social metadata; the separate 1200x675 in-body WebP has different bytes and the locked supporting phrase. Public binaries match their SHA-256 manifest entries.",
+    "Source compliance scanner, visible-copy check, content schema/type check, and lint passed before this review; rendered and live checks remain required."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave107_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0292",
+  "slug": "texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "input_frontmatter_sha256": "e89854a204e676ee6a5a82a09f671f1a8032e02ab59ca7c1f1a787b2eb1029c2",
+  "expected_repo_sha256": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541",
+  "two_image_manifest_sha256": "14fb005cea9ae4561dd0522cc88ccd0d5aff9a9eb924c62d0424c6c91a424368",
+  "visual_metadata": {
+    "hero_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "social_alt": "A low-oblique routing light-table appears beside the exact article title.",
+    "inline_alt": "A people-free overhead query worksheet appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC New Lease IDs Built Query Retrieval Provenance Worksheet",
+    "seo_title_character_count": 66,
+    "description_character_count": 155,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-24T14:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave107",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-drilling-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave107_editorial",
+  "review_run_id": "mrx1000-wave107-editorial-20260915T072833Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541; the answer-first article contains 1864 body tokens and five FAQs.",
+    "The article replaces a colliding valuation-factor explainer with one administrative job: preserve a reproducible provenance trail for one official New Lease IDs Built Query attempt through its exact routes, labels, controlled criteria, displayed state, retained reference, bounded status, and neutral next question.",
+    "Exact-title hero/share OCR passed and distinct in-body keyword OCR passed. The low-oblique dark routing light-table and people-free strict-overhead pale query worksheet differ materially in camera angle, subject arrangement, composition, palette, and evidence function with matching alt metadata."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "527629cebcbd6e3f480a2638110f7ca0b8129c2065012b569e8390448b8db541"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1864,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 55
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 66,
+        "description_character_count": 155,
+        "author": "ariana",
+        "reviewed_at": "2026-08-24T14:15:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave107",
+        "declared_source_count": 6,
+        "visible_body_citation_count": 6,
+        "hub": "/mineral-rights-value/",
+        "support": "/blog/texas-rrc-drilling-permit-query-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-new-lease-ids-built-query-retrieval-provenance-worksheet/texas-rrc-new-lease-ids-built-query-retrieval.webp"
+  ]
+}

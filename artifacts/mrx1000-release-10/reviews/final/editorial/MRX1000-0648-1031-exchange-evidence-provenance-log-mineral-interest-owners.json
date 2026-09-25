@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave149_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:32:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0648",
+  "slug": "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+  "title": "1031 Exchange Evidence Provenance Log for Mineral Interest Owners",
+  "canonical_url": "https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/",
+  "source_path": "src/content/posts/1031-exchange-evidence-provenance-log-mineral-interest-owners.mdx",
+  "input_body_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "input_frontmatter_sha256": "a8b235e87c3a03eb71a137ab010391c47b7bc878180fd330f545142fd87308ae",
+  "expected_repo_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "two_image_manifest_sha256": "ae284ca45eb73ace75e478b11882d9accf24c0a02ed980671be1573788998b7b",
+  "visual_metadata": {
+    "hero_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "social_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "inline_alt": "An overhead blank custody matrix appears above the exact 1031 exchange recordkeeping keyword."
+  },
+  "reviewer_id": "codex_wave149_editorial",
+  "review_run_id": "mrx1000-wave149-editorial-20260826T143217Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98; the answer-first article contains 2132 body tokens and five FAQs.",
+    "The article rejects the colliding comparison identity and owns one distinct deliverable: a blank provenance log for source origin, custody, retrieval, controlled storage, limitations, and professional handoff for records that already exist in one controlled exchange file.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The dark low-oblique provenance relay and pale strict-overhead custody matrix are materially distinct and contain no personal data, simulated form, date, amount, deadline, tax result, or conclusion."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2132,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/1031-exchange-evidence-provenance-log-mineral-interest-owners.mdx",
+    "/assets/articles/hero/1031-exchange-evidence-provenance-log-for-mineral-interest-owners.webp",
+    "/assets/articles/inline/1031-exchange-evidence-provenance-log-mineral-interest-owners/1031-exchange-recordkeeping-for-mineral-interests.webp"
+  ]
+}

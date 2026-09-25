@@ -1,0 +1,122 @@
+{
+  "artifact_type": "mrx1000_wave234_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0854",
+  "slug": "upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs",
+  "title": "Upton CAD 2025-2026 Mineral Appraisal Review Chain: Sources, Calibration, and PVS",
+  "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+  "source_path": "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+  "input_body_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+  "input_frontmatter_sha256": "6263c306ac36c3c5c7bd8dc2eef24b6809aa9730de8de82966c69ccb665ca0a0",
+  "expected_repo_sha256": "18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6",
+  "two_image_manifest_sha256": "ac153aac0396c9d6a70d0e20e878c1182dfce3eed7249a8227078b0aab98f233",
+  "visual_metadata": {
+    "hero_alt": "A four-stage records workspace appears beside the exact Article 306 title.",
+    "social_alt": "A four-stage records workspace appears beside the exact Article 306 title.",
+    "inline_alt": "A top-down four-card review chain appears above the exact Upton CAD mineral appraisal review chain keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Upton CAD Mineral Appraisal Review Chain · MRX",
+    "seo_title_character_count": 46,
+    "description_character_count": 133,
+    "answer_summary_word_count": 49,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T15:30:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave234",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2026-mineral-data-files-2260-byte-txt-records-nested-csv-header/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave234_factual",
+  "review_run_id": "mrx1000-wave234-factual-20260915T071324Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 18e4fc9f50c00853dab20df95954329e28825c32871abe53bd846acb6c9024e6; all 4 declared sources passed current HTTPS access review.",
+    "The controlled Upton plan is 7,275,413 bytes, SHA-256 216ea3d58ddc8117385a8c8338250460d39bcc91020f2306affeaf59cd071daf, and 94 visually reviewed physical pages; the relevant claim set is limited to physical pages 21 through 24.",
+    "The article preserves the plan statements about source categories, annual discounted-cash-flow calibration tests, multiple individual reviews, taxpayer and protest review opportunities, and the stated Comptroller performance test as source attribution.",
+    "The current Comptroller layer separates SDPVS from ADRS and prevents the plan PVS label from being expanded into a current Upton finding.",
+    "No source category is claimed to have been used for a particular account, and section order is not presented as proof of chronological account execution."
+  ],
+  "checks": [
+    "four_distinct_official_https_sources_with_exact_source_roles",
+    "controlled_source_bytes_page_count_and_sha256_identity_pass",
+    "physical_and_printed_page_locator_pass",
+    "source_calibration_individual_review_and_performance_test_section_map_pass",
+    "section_order_not_account_chronology_boundary_pass",
+    "plan_pvs_and_current_sdpvs_adrs_terminology_separation_pass",
+    "no_current_upton_result_or_account_specific_source_use_inference_pass",
+    "stable_claim_ids_discrepancy_register_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Upton CAD 2025-2026 Reappraisal Plan (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1750881192_REAPPRRAISAL%20PLAN%2025%20%26%2026.pdf",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/Forms/GetDocument?subPath=Data%20Records&fileName=1750881192_REAPPRRAISAL%20PLAN%2025%20%26%2026.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The official scanned Upton CAD plan supplies the document-section statements for source categories, calibration, individual review, and the stated performance test on physical pages 21 through 24.",
+      "claim_scope": "The article treats section order as a source-reading map, not an account audit, chronological proof, validation of a source, valuation recommendation, protest strategy, or property-specific result."
+    },
+    {
+      "label": "Upton County Appraisal District Data and Records (accessed 2026-08-31)",
+      "url": "https://uptoncad.org/home/DataRecords",
+      "publisher": "uptoncad.org",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://uptoncad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Upton CAD Data and Records page supplies the official publisher route and visible 2025-and-2026 reappraisal-plan link.",
+      "claim_scope": "The route establishes provenance only and does not prove current application, account treatment, ownership, appraisal correctness, tax, title, private value, or a transaction result."
+    },
+    {
+      "label": "Texas Comptroller Property Tax Assistance About Us (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/about.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/about.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Comptroller page distinguishes the School District Property Value Study from the Appraisal District Ratio Study and states their different purposes.",
+      "claim_scope": "The page does not validate the Upton plan, prove a current Upton result, audit an account, or determine appraisal, tax, title, private value, an offer, or a transaction result."
+    },
+    {
+      "label": "Texas Comptroller Property Tax Data Reports and Surveys (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:24Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current Texas Comptroller reports page describes ADRS purpose and published measures, including median level and coefficient of dispersion.",
+      "claim_scope": "The article uses that page only to prevent PVS, SDPVS, and ADRS from being collapsed into one label and does not infer a current Upton study finding."
+    }
+  ]
+}

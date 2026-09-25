@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave98_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T06:44:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0281",
+  "slug": "texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Injection-Storage Permit Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "input_frontmatter_sha256": "d5ab201465dc432291f7c980cbdb49d3e5108f32d6559e109b13892a0449b3f2",
+  "expected_repo_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "two_image_manifest_sha256": "fe0679bd188acafe00b25e39d614ca45548b1ba0316751df3ae57e4735ae8e7f",
+  "visual_metadata": {
+    "hero_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "social_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead injection-storage permit query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave98_compliance",
+  "review_run_id": "mrx1000-wave98-compliance-20260824T064435Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "d6d7c4aaeecbf0bb391c42235d61098e69d8dbc8bd39a3e3a5fddbbd98f50059",
+  "expected_inline_sha256": "def21a52c824d4bc4fe69d9d36bf3ee44b6fc35685b6a19e7a76598d1557f6a6",
+  "findings": [
+    "Complete current MDX SHA-256 is 0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, query-screen labels, links, and routes; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, operational, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_injection_storage_permit_query_retrieval_no_property_connection_title_ownership_acreage_lease_permit_compliance_operating_condition_injection_activity_production_economics_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/texas-rrc-injection-storage-permit-query-retrieval.webp"
+  ]
+}

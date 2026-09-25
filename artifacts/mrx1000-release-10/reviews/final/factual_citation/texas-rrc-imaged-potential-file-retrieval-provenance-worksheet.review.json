@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave120_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:33Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0321",
+  "slug": "texas-rrc-imaged-potential-file-retrieval-provenance-worksheet",
+  "title": "Texas RRC Imaged Potential File Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6",
+  "input_frontmatter_sha256": "7a8f73fc1bfb5d9d20f169b14a2115589ec7771b82a1233bc0f32f774aa15cc0",
+  "expected_repo_sha256": "cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6",
+  "two_image_manifest_sha256": "5900b6c5e3b7383c0ec94ab370028ea300d6ca4a4a237ea8c3af26054c642eb7",
+  "visual_metadata": {
+    "hero_alt": "A researcher opens a generic archive drawer beside the exact article title.",
+    "social_alt": "A researcher opens a generic archive drawer beside the exact article title.",
+    "inline_alt": "A people-free overhead potential-file evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Imaged Potential File Retrieval Worksheet",
+    "seo_title_character_count": 51,
+    "description_character_count": 148,
+    "answer_summary_word_count": 70,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T10:15:57Z",
+    "reviewed_by": "mrx_compliance-continuous-wave120",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-potential-file-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave120_factual",
+  "review_run_id": "mrx1000-wave120-factual-20260915T073133Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is cef551907583a2e3d275639e05a1e20a95a689f3f84fa584142bd07f21c5baf6; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five current official RRC surfaces, route and profile identity, stated record categories and coverage, later electronic-route separation, FILM YR and viewer context, agency-scope limitations, and attempt-state rules. None establishes a completed retrieval, record completeness, well fact, property connection, ownership, title, production, value, offer quality, legal effect, tax effect, or transaction conclusion.",
+    "The article publishes no actual API number, district, field, lease, well, operator, location, date range, party, result, Potential image, document, property, owner, payment, production, reserve, value, offer, or transaction data and does not claim a completed direct-profile query."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory identifies the Oil and Gas Imaged Records Menu and supplies the current official entry route and public-source context.",
+      "claim_scope": "The article uses the directory only for source identity and routing. It does not establish a completed query, record completeness, a well fact, property relationship, ownership, production, value, offer, legal effect, or transaction conclusion."
+    },
+    {
+      "label": "Texas RRC, Imaged Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Imaged Records page separately lists Oil and Gas Well Records Potential files, Dry Hole Files, and Oil and Gas Well Logs and supplies the Oil and Gas Well Records launch route.",
+      "claim_scope": "The article uses the page only for record-family identity, route separation, stated source coverage, and manual source mechanics. It makes no completeness, association, well, property, ownership, production, value, legal, offer, or transaction inference."
+    },
+    {
+      "label": "Texas RRC, Imaged Records Query Menu (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official menu is the source-controlled entry surface for the imaged-record families referenced by the article.",
+      "claim_scope": "The article records only the displayed menu, family, profile, access, criteria-reference, and result-state facts from one authorized manual attempt. It does not substitute a neighboring profile or claim a direct-profile result."
+    },
+    {
+      "label": "Texas RRC, Oil and Gas Well Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Well Records page separately identifies the Oil and Gas Potential and Well Log profiles, describes the Potential profile record categories and stated coverage, distinguishes later electronic routes, and states limits on RRC authority over private-rights matters.",
+      "claim_scope": "The article uses the page only for profile identity, coverage notes, route separation, request-category context, and agency-scope boundaries. It makes no permit, completion, plugging, property, title, payment, production, value, offer, legal, or transaction claim."
+    },
+    {
+      "label": "Texas RRC, Well Records FAQs (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:33Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/well-records-faqs/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official FAQ explains that a displayed FILM YR notation beneath a Potential link indicates an image taken from microfilm and supplies source-specific film-cycle and viewer context.",
+      "claim_scope": "The article preserves any actually displayed FILM YR or viewer state as a source note only. It does not infer age, completeness, identity, status, property connection, ownership, production, value, or legal effect from that notation."
+    }
+  ]
+}

@@ -101,4 +101,15 @@ describe('MRX1000 post-release verification overlay', () => {
     expect(evidence.audit_completed_at).toBe('2026-09-22T06:07:37.440115Z');
     expect(evidence.page_explorer_row_id).toBe(105967813);
   });
+
+  it('binds Article 329 to its exact post-release Page Explorer row', () => {
+    const evidence = addendum.articles.find(
+      (article: { program_row_id: string }) => article.program_row_id === 'MRX1000-1123',
+    );
+    expect(evidence).toBeTruthy();
+    expect(evidence.slug).toBe('can-louisiana-omr-records-prove-my-private-mineral-lease');
+    expect(evidence.deployment_id).toBe('dpl_GjWX8p9d4FLVDmFooXuNqSwt8hLP');
+    expect(evidence.audit_completed_at).toBe('2026-09-24T18:58:37.248938Z');
+    expect(evidence.page_explorer_row_id).toBe(106593780);
+  });
 });

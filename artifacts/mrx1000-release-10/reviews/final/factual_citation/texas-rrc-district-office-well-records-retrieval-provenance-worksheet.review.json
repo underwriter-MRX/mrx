@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave122_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:31:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0327",
+  "slug": "texas-rrc-district-office-well-records-retrieval-provenance-worksheet",
+  "title": "Texas RRC District Office Well Records Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-district-office-well-records-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "input_frontmatter_sha256": "369707ef0b660a38717ff89d683cc9e53645a0089eec8a7db131805e8d04b940",
+  "expected_repo_sha256": "952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9",
+  "two_image_manifest_sha256": "9b775e1f7a7219f812def33aefa3c1dd617c17bc1f882a4fa5d480d35bba2a89",
+  "visual_metadata": {
+    "hero_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "social_alt": "A researcher examines blank archival folders beside the exact article title.",
+    "inline_alt": "A people-free overhead archival evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC District Office Records Retrieval Worksheet",
+    "seo_title_character_count": 53,
+    "description_character_count": 159,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T11:28:13Z",
+    "reviewed_by": "mrx_compliance-continuous-wave122",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-dry-hole-file-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave122_factual",
+  "review_run_id": "mrx1000-wave122-factual-20260915T073156Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 952cb77b9254cd5a055ee44082eabe11c02a978b5e84991f32789386547e11d9; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five current official RRC surfaces, source and profile identity, profileId 27 routing, source-described historical scope, digitization context, adjacent-route separation, agency-scope limitations, and attempt-state rules. None establishes a completed retrieval, record completeness, well identity or status, permit, completion, property connection, ownership, title, lease, royalty, production, reserves, safety, environmental or compliance status, value, offer, legal effect, tax effect, or transaction conclusion.",
+    "The direct profile request returned HTTP 403, no profile page was captured, and no query completed. The article publishes no actual lease number, API number, district, field, well, operator, location, date, party, result, image, document, property, owner, payment, production, reserve, value, offer, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory identifies the Oil and Gas Imaged Records Menu and supplies the current official entry route and public-source context.",
+      "claim_scope": "The article uses the directory only for source identity and routing. It does not establish a completed query, record completeness, a well fact, property relationship, ownership, production, value, offer, legal effect, or transaction conclusion."
+    },
+    {
+      "label": "Texas RRC, Imaged Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Imaged Records page supplies the official imaged-record family route and archive context.",
+      "claim_scope": "The article uses the page only for route provenance and family separation. It makes no completeness, association, well, property, ownership, production, value, legal, offer, or transaction inference."
+    },
+    {
+      "label": "Texas RRC, Imaged Records Query Menu (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official menu identifies District Office Well Records profileId 27 and states that the collection concerns records predating 1980 that lacked a lease number or API number when created.",
+      "claim_scope": "The article preserves that statement only as dated source-described collection scope and records only one authorized manual attempt. It does not convert the scope note, profile identity, or access response into a document, well, property, ownership, production, value, offer, legal, or transaction fact."
+    },
+    {
+      "label": "Texas RRC, Oil and Gas Well Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Well Records page supplies historical record-format and request context and states limits on RRC authority over private-rights matters.",
+      "claim_scope": "The article uses the page only for record-route, historical-format, request, and agency-scope boundaries. It makes no well, permit, completion, property, title, ownership, lease, royalty, production, value, offer, legal, or transaction claim."
+    },
+    {
+      "label": "Texas RRC, Digitally Imaged Records Top 83 Million (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/news/102924rrc-s-digitally-imaged-oil-and-gas-records-top-83-million/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:31:56Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/news/102924rrc-s-digitally-imaged-oil-and-gas-records-top-83-million/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC announcement supplies district-office paper and microfilm digitization context and directs researchers to the Imaged Records menu.",
+      "claim_scope": "The article uses the announcement only for general digitization and official-route context. A broad digitization count does not establish profile completeness, a particular document, source result, well fact, property relationship, ownership, production, value, offer, legal effect, or transaction outcome."
+    }
+  ]
+}

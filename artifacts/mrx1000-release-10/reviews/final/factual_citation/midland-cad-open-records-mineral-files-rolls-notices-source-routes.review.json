@@ -1,0 +1,154 @@
+{
+  "artifact_type": "mrx1000_wave211_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0831",
+  "slug": "midland-cad-open-records-mineral-files-rolls-notices-source-routes",
+  "title": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+  "source_path": "src/content/posts/midland-cad-open-records-mineral-files-rolls-notices-source-routes.mdx",
+  "input_body_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+  "input_frontmatter_sha256": "995ca832ee44e6ac00b3ffb623d94727186efd5640087d7280ee3569e7f6ece7",
+  "expected_repo_sha256": "b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53",
+  "two_image_manifest_sha256": "a5bde291566d33f653a6a5ad74bd6a1cb20740e6468346888508439e0c5e6a32",
+  "visual_metadata": {
+    "hero_alt": "A blank origin card and three separate archive lanes appear beside the exact Midland CAD Open Records article title.",
+    "social_alt": "A blank origin card and three separate archive lanes appear beside the exact Midland CAD Open Records article title.",
+    "inline_alt": "A bright top-down route map branches to roll, stack, and notice motifs above the exact Midland CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Mineral Files, Rolls & Notices · MRX",
+    "seo_title_character_count": 48,
+    "description_character_count": 144,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T04:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave211",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-open-records-mineral-files-rolls-notices-source-routes/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave211_factual",
+  "review_run_id": "mrx1000-wave211-factual-20260915T071318Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is b4024a5aa3ba12ed5f66d36aff6784613f34c4f1620e9240b3ecaeda09a27f53; all 6 declared sources passed current HTTPS access review.",
+    "Claims are bounded to six official sources: the current Open Records page, its REST record, the linked request-form PDF, Department Emails and Publications REST records, and the Texas Comptroller Midland directory.",
+    "The controlled Open Records, Publications, and Department Emails responses are 9,992, 10,240, and 3,557 bytes with SHA-256 values 5ffbcf5487d2de4c88e65eb507ce5edb4df427fba4cc06e099944963079cbce7, e00996ca7cc38f9a0a59366da35d572602692a21352ca4a760edffd70bd971e9, and 60c67082f0e81a5cfcc86a0a8dc46c5b2ed0f47d6508595e7839e3371e8250a1.",
+    "The one-page request-form PDF is 263,637 bytes with SHA-256 c96a51aeb3984b0c551861727f8cd5465d21b939bac8789afc97d7a91c1b2ee0; physical page 1 was rendered and visually inspected, and the rendering SHA-256 is 6f301e8c13b8f6169d04f5941d565530e99d661734b5eb22aab692ebea393c4a.",
+    "The page hierarchy is preserved exactly: Preliminary Mineral Roll under Preliminary Rolls; Certified Mineral Roll and Mineral Notices under Mineral Files; the request-link label and PDF title mismatch remains explicit.",
+    "No roll, notice, or mineral-file archive was downloaded, opened, extracted, sampled, searched, or reproduced, and no owner or property search was performed."
+  ],
+  "checks": [
+    "six_distinct_https_sources",
+    "current_open_records_visible_page_pass",
+    "open_records_rest_identity_modified_metadata_bytes_and_sha_pass",
+    "request_form_pdf_file_identity_physical_page_render_and_visual_review_pass",
+    "department_emails_route_separation_pass",
+    "publications_source_lane_separation_pass",
+    "comptroller_official_domain_routing_pass",
+    "preliminary_certified_and_notice_heading_placement_preserved_pass",
+    "displayed_request_link_and_pdf_title_mismatch_preserved_pass",
+    "no_archive_download_open_extract_sample_search_or_reproduction_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "no_silent_normalization_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland Central Appraisal District Open Records page (accessed 2026-08-30)",
+      "url": "https://midcad.org/open-records/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/open-records/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current visible Open Records page supplies the exact section headings, displayed link labels, and human-facing route relationships.",
+      "claim_scope": "The page does not establish archive contents, current completeness, property applicability, owner or account identity, ownership, title, appraisal accuracy, tax results, mineral value, production, royalties, or legal effect."
+    },
+    {
+      "label": "Midland CAD Open Records WordPress REST record (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-json/wp/v2/pages?slug=open-records&_fields=id,modified_gmt,link,slug,title,content",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-json/wp/v2/pages?slug=open-records&_fields=id,modified_gmt,link,slug,title,content",
+        "content_type": "application/json; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The controlled WordPress REST record supplies page ID 5797, slug open-records, title Open Records, modified_gmt metadata, exact link targets, and a hashable machine-readable response.",
+      "claim_scope": "WordPress modification metadata is not a visible publication date or an effective date for every linked file; route metadata does not validate target contents."
+    },
+    {
+      "label": "Midland CAD Request for Information PDF (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-content/uploads/2025/05/ORR-Form-request.pdf",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-content/uploads/2025/05/ORR-Form-request.pdf",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The one-page Request for Information PDF supplies the visible title, inspection-or-copies choices, specific-information instruction, and blank requester fields.",
+      "claim_scope": "A blank form does not prove responsive records, cost, timing, completeness, delivery, applicability, or outcome and supplies no property-specific conclusion."
+    },
+    {
+      "label": "Midland CAD Department Emails REST record (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-json/wp/v2/pages?slug=contact-us&_fields=id,modified_gmt,link,slug,title,content",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-json/wp/v2/pages?slug=contact-us&_fields=id,modified_gmt,link,slug,title,content",
+        "content_type": "application/json; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The controlled Department Emails record separately labels Minerals and Open Records Request contact routes and supplies page identity metadata.",
+      "claim_scope": "Contact labels do not establish which office owns a specific question, that a message was received, that a record exists, or what conclusion an office will reach."
+    },
+    {
+      "label": "Midland CAD Publications REST record (accessed 2026-08-30)",
+      "url": "https://midcad.org/wp-json/wp/v2/pages?slug=publications-2&_fields=id,modified_gmt,link,slug,title,content",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/wp-json/wp/v2/pages?slug=publications-2&_fields=id,modified_gmt,link,slug,title,content",
+        "content_type": "application/json; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The controlled Publications record supplies a separate official document-discovery route for annual reports, mass appraisal reports, reappraisal plans, and other publications.",
+      "claim_scope": "The Publications route does not update, replace, or validate the Open Records page, a linked archive, or a property-specific question."
+    },
+    {
+      "label": "Texas Comptroller Midland county directory (accessed 2026-08-30)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:18Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller directory supplies current issuer and domain-routing evidence for Midland Central Appraisal District and midcad.org.",
+      "claim_scope": "Directory provenance does not endorse every district page or file and validates no record, account, appraisal, tax, title, value, production, royalty, or transaction result."
+    }
+  ]
+}

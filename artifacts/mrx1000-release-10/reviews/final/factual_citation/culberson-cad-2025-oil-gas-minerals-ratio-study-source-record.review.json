@@ -1,0 +1,132 @@
+{
+  "artifact_type": "mrx1000_wave166_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0765",
+  "slug": "culberson-cad-2025-oil-gas-minerals-ratio-study-source-record",
+  "title": "Culberson CAD 2025 Oil, Gas, Minerals Ratio Study Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+  "source_path": "src/content/posts/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record.mdx",
+  "input_body_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "input_frontmatter_sha256": "6bae5d5796606afba347eea3944c83edd2784f5b49b0dcfdfffde8ba2926a386",
+  "expected_repo_sha256": "f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef",
+  "two_image_manifest_sha256": "ae2e6e2c21b5e2ff1f74218458fdbaf55bf9f591f0563e5548738a9eb1fff183",
+  "visual_metadata": {
+    "hero_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "social_alt": "A navy source-record card with seven blank cells appears beside the exact Culberson CAD ratio-study source-record title.",
+    "inline_alt": "Seven blank measurement cells and a caution marker appear above the exact Culberson CAD 2025 mineral ratio study keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD 2025 Mineral Ratio Study Record",
+    "seo_title_character_count": 45,
+    "description_character_count": 152,
+    "answer_summary_word_count": 55,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T18:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave166",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-oil-gas-minerals-ratio-study-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave166_factual",
+  "review_run_id": "mrx1000-wave166-factual-20260915T071254Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f9fdd5d3308f2d800433128f6c3e18bf4057b8ff9f5cb6877b06911b492a15ef; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official 2025 findings landing-page relationship, 055-Culberson summary URL, displayed study/publication/update labels, literal Category G row and headings, displayed source values, official program-purpose context, small-sample warning, and district/statutory provenance.",
+    "The article does not invent an owner, account, property, source relationship, sample member, recalculation, normalization, benchmark, grade, rank, trend, comparison, compliance result, appraisal result, tax result, protest result, mineral valuation, market price, offer, sale price, or owner-specific conclusion."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "answer_first_summary_and_visible_authoritative_citation_integrity_pass",
+    "canonical_entity_author_reviewer_date_and_url_parity_pass",
+    "semantic_hub_support_and_next_step_internal_link_roles_pass",
+    "current_texas_comptroller_texas_legislature_and_culberson_directory_source_priority_pass",
+    "literal_source_row_and_adjacent_small_sample_warning_pass",
+    "displayed_measures_not_converted_into_recalculation_comparison_property_appraisal_tax_protest_valuation_offer_sale_or_owner_outcome_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller, 2025 Appraisal District Ratio Study findings (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Texas Comptroller 2025 Appraisal District Ratio Study findings page supplies the study-year identity, displayed publication date, Section 5.10 provenance statement, and 055 Culberson link relationship.",
+      "claim_scope": "It supports the landing-page relationship, study year, publication date, district-link identity, and retrieval provenance only. It does not supply a property, account, appraisal notice, tax bill, protest result, mineral valuation, market value, offer, sale price, district grade, or owner action."
+    },
+    {
+      "label": "Texas Comptroller, 055-Culberson 2025 district summary (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2025/0550000001A.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/auto-data/PT2/ratio-study/2025/0550000001A.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 055-Culberson district summary supplies the displayed update label, literal table headings, literal Oil, Gas, Minerals row, displayed values, and source-stated small-sample warning.",
+      "claim_scope": "It supports literal transcription and source-control limitations only. No field is recalculated, normalized, benchmarked, ranked, graded, trended, compared, matched, or applied to a property, owner, appraisal, tax, protest, valuation, offer, or sale."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Data Reports and Surveys (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Property Tax Data Reports and Surveys page supplies the stated ratio-study purpose and the classes of published statistical measures.",
+      "claim_scope": "It supports program-purpose and measure-type context only. The article does not create a formula, recalculate a measure, decide statistical reliability, judge a district, or make a property-level or owner-level conclusion."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 5 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.5.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 5 supplies current official Section 5.10 statutory provenance for the appraisal-district ratio study.",
+      "claim_scope": "It supports statutory provenance only. The article does not interpret Chapter 5, decide compliance, apply law to a district or property, direct a protest, calculate tax, or make a legal, appraisal, valuation, offer, or sale conclusion."
+    },
+    {
+      "label": "Texas Comptroller, Culberson County Directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/culberson.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:12:54Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/culberson.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Culberson County directory supplies current appraisal-district identity and website context.",
+      "claim_scope": "It supports district-directory provenance only. It does not validate a ratio-study value, identify a sample, establish a property result, select a contact, or direct an owner action."
+    }
+  ]
+}

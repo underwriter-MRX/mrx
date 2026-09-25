@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave92_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T01:22:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0290",
+  "slug": "texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC P-4 Gatherer/Purchaser Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "b69508cce2db98f96fef9136e7f50573354dea2861962f42885e50d4c44d84a0",
+  "input_frontmatter_sha256": "bb18b6181ed4e720e1d0cfe66f7d9aca9ec981c2b781bb29d247ee6a8dcd6146",
+  "expected_repo_sha256": "b69508cce2db98f96fef9136e7f50573354dea2861962f42885e50d4c44d84a0",
+  "two_image_manifest_sha256": "91851b887e8d4411b8a1354c7c9a0e18391e1635b28a49136c2fb7811a166864",
+  "visual_metadata": {
+    "hero_alt": "A Texas P-4 query research counter appears beside the exact article title.",
+    "social_alt": "A Texas P-4 query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead P-4 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave92_compliance",
+  "review_run_id": "mrx1000-wave92-compliance-20260824T012237Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f6e33f9dc6f5b7573c6156fa257c4ca301272eed14670ba3b926e8afd7f19044",
+  "expected_inline_sha256": "b419c212037b461eceb62bb73cd676e2358504fdce219603e164b49fb161491a",
+  "findings": [
+    "Complete current MDX SHA-256 is b69508cce2db98f96fef9136e7f50573354dea2861962f42885e50d4c44d84a0; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, result headers, and rows; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real P-4 record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_p4_gatherer_purchaser_query_retrieval_no_property_connection_title_ownership_acreage_lease_payment_entitlement_production_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_privacy_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-p-4-gatherer-purchaser-query-retrieval-provenance-worksheet/texas-rrc-p-4-gatherer-purchaser-query-retrieval.webp"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave176_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:02Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0775",
+  "slug": "dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map",
+  "title": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+  "source_path": "src/content/posts/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.mdx",
+  "input_body_sha256": "fbee9406b0de7e196ceebae9e0b73ff9738f6b9e94bed77896b1257414d41418",
+  "input_frontmatter_sha256": "0e6231dd65566d93ffd79964c134afc310787787559793586c7dac9292c5baaa",
+  "expected_repo_sha256": "fbee9406b0de7e196ceebae9e0b73ff9738f6b9e94bed77896b1257414d41418",
+  "two_image_manifest_sha256": "00afced066f4961ee4e6c4bdf44116878b16ea6d28d206fa42ac65291bb4dc94",
+  "visual_metadata": {
+    "hero_alt": "A blank navy report folio and three page tabs sit beside the exact Dimmit CAD responsibility source-map title.",
+    "social_alt": "A blank navy report folio and three page tabs sit beside the exact Dimmit CAD responsibility source-map title.",
+    "inline_alt": "Three blank page cards connect above the exact Dimmit CAD mineral appraisal responsibility keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2025 Mineral Appraisal Responsibility Map",
+    "seo_title_character_count": 52,
+    "description_character_count": 142,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T02:00:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave176",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave176_compliance",
+  "review_run_id": "mrx1000-wave176-compliance-20260915T071302Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "bc1b8cded2439f5a01e02c3b96222d8149fbb461090d79a14c382d113ebe6e5e",
+  "expected_inline_sha256": "a5fb8970a59c770d90e18ad58e41983302ad17c702b54c5c44625d3ba7c0bda2",
+  "findings": [
+    "Complete current MDX SHA-256 is fbee9406b0de7e196ceebae9e0b73ff9738f6b9e94bed77896b1257414d41418; hero/share and inline image hashes are separately locked.",
+    "The public article expressly rejects property-record access, signature reproduction, contract authentication, statutory interpretation, district-compliance judgment, contractor endorsement, appraisal judgment, tax or protest direction, ownership or title findings, market-offer valuation, sale advice, and promised outcomes.",
+    "The approximately 80,994 figure remains a combined district-wide real-and-personal-property account inventory that includes mineral and industrial accounts and is not converted into a mineral, owner, property, tract, lease, well, appraisal, offer, or transaction count.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, contractor endorsement, property fact, appraisal claim, tax direction, ownership, title, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "mass_appraisal_report_no_property_record_signature_contract_authentication_legal_interpretation_appraisal_tax_protest_title_ownership_market_offer_sale_or_owner_action_pass",
+    "adjacent_dimmit_plan_study_review_roll_and_archive_sources_not_combined_compared_or_used_as_property_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_filename_property_record_personal_data_official_page_government_mark_seal_signature_logo_map_chart_money_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.mdx",
+    "/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp",
+    "/assets/articles/inline/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map/dimmit-cad-mineral-appraisal-responsibility.webp"
+  ]
+}

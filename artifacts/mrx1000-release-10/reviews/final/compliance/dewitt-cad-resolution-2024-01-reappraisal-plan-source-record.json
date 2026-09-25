@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave170_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:56Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0769",
+  "slug": "dewitt-cad-resolution-2024-01-reappraisal-plan-source-record",
+  "title": "DeWitt CAD Resolution 2024-01 Reappraisal Plan Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+  "source_path": "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+  "input_body_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "input_frontmatter_sha256": "631470b29bb7bcf6486b5fee0acbc55bace1ec9790daffbb8e12737d07371273",
+  "expected_repo_sha256": "bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337",
+  "two_image_manifest_sha256": "c9d404b6bd5b773df34042e2de56caff9b26f6cd0850817477e02f3f14ffa55a",
+  "visual_metadata": {
+    "hero_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "social_alt": "A closed navy plan folio and blank resolution card appear beside the exact DeWitt CAD Resolution 2024-01 source-record title.",
+    "inline_alt": "Four overhead blank source tiles appear above the exact DeWitt CAD Resolution 2024-01 keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "DeWitt CAD Resolution 2024-01 Source Record",
+    "seo_title_character_count": 43,
+    "description_character_count": 144,
+    "answer_summary_word_count": 57,
+    "author": "ariana",
+    "reviewed_at": "2026-08-28T19:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave170",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2024-oil-gas-minerals-ratio-study-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave170_compliance",
+  "review_run_id": "mrx1000-wave170-compliance-20260915T071256Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "2d023c49d30486ab701f6fc880bcc44e6ca975cbab7f957b924b65d5f0acc9ce",
+  "expected_inline_sha256": "9fca6fed49d2d18d245fbd17c1d4357d112d85521c5a703549eaecb7979b8e17",
+  "findings": [
+    "Complete current MDX SHA-256 is bcfbad2419261345df9c8f921e826634c8052a1d766c652d7785315a2aab8337; hero/share and inline image hashes are separately locked.",
+    "The public article excludes displayed names and signatures, describes the hearing notice only as a notice of a scheduled event, and does not authenticate or decide the legal or compliance status of any source.",
+    "The resolution remains separate from the DeWitt annual-report, MAP-review, and ratio-study records and is not converted into a property, appraisal, tax, protest, mineral-value, offer, sale, or transaction conclusion.",
+    "Image text is limited to the exact title and keyword and adds no affiliation, signature, seal, government mark, date, legal position, compliance claim, property fact, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_citation_guarantee_pass",
+    "no_names_signatures_authentication_authority_quorum_notice_delivery_hearing_occurrence_compliance_timeliness_or_legal_effect_claim_pass",
+    "no_plan_body_interpretation_summary_operationalization_comparison_scoring_or_property_application_pass",
+    "resolution_not_applied_to_person_property_appraisal_tax_protest_mineral_value_offer_sale_or_transaction_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_seal_logo_government_mark_signature_handwriting_readable_base_text_number_date_chart_map_form_ui_money_gavel_flag_legal_conclusion_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.mdx",
+    "/assets/articles/hero/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record.webp",
+    "/assets/articles/inline/dewitt-cad-resolution-2024-01-reappraisal-plan-source-record/dewitt-cad-resolution-2024-01.webp"
+  ]
+}

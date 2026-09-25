@@ -1,0 +1,146 @@
+{
+  "artifact_type": "mrx1000_wave185_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:05Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0784",
+  "slug": "glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator",
+  "title": "Glasscock CAD 2025-2026 Reappraisal Plan Oil and Gas Reserves Page Locator",
+  "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+  "source_path": "src/content/posts/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.mdx",
+  "input_body_sha256": "99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91",
+  "input_frontmatter_sha256": "c512fe0a456a956f93314b1fea25cfd119c180707a0c983d79380d17008965b1",
+  "expected_repo_sha256": "99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91",
+  "two_image_manifest_sha256": "737b74dc5f552aa149655617e1571a0b949e81639f3c16330ab77b4bfe42767b",
+  "visual_metadata": {
+    "hero_alt": "A navy archival binder with eight blank tabs appears beside the exact Glasscock CAD reappraisal-plan page-locator title.",
+    "social_alt": "A navy archival binder with eight blank tabs appears beside the exact Glasscock CAD reappraisal-plan page-locator title.",
+    "inline_alt": "An overhead eight-segment page strip appears above the exact Glasscock CAD oil and gas reserves reappraisal plan phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Glasscock CAD Oil and Gas Reserves Plan Locator",
+    "seo_title_character_count": 47,
+    "description_character_count": 148,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T05:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave185",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave185_factual",
+  "review_run_id": "mrx1000-wave185-factual-20260915T071305Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 99c4674c26601a7ecd1dba8ba3b2b92479374aa11fbedb857587662f13945c91; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the official Data and Records route, direct PDF route, complete 5,547,084-byte file with SHA-256 00d4e6db7e122f119fccfa4d838e4df64e86500162b69704e730a914a3356093, its 90 physical pages, and the attachment boundary on physical pages 31-38.",
+    "The article preserves physical page 31 as the attachment cover, physical pages 32-38 as internally numbered pages 1-7, and physical page 39 as the Industrial Property stop boundary without interpreting or applying the attachment procedures."
+  ],
+  "checks": [
+    "six_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "complete_pdf_byte_count_sha256_page_count_and_physical_pages_31_through_39_visual_review_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_summary_and_claim_adjacent_official_citation_integrity_pass",
+    "exact_entity_issuer_file_page_route_date_author_reviewer_and_url_parity_pass",
+    "semantic_hub_support_sibling_and_next_step_internal_link_roles_pass",
+    "attachment_cover_internal_numbering_and_next_attachment_stop_boundary_pass",
+    "adjacent_glasscock_annual_report_records_link_appraisal_role_and_value_jobs_preserved_pass",
+    "summit_search_atlas_and_answer_engine_observations_not_used_as_factual_article_evidence_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Glasscock CAD Data and Records page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/home/DataRecords",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Glasscock CAD Data and Records page supplies the publisher-controlled route and its displayed 2025-2026 Biennial Reappraisal Plan link observed on 2026-08-28.",
+      "claim_scope": "The page supplies route provenance only; it does not establish the PDF byte identity, attachment pages, procedure application, a property fact, appraisal, tax, title, value, transaction, compliance, or legal conclusion."
+    },
+    {
+      "label": "Glasscock CAD 2025-2026 Biennial Reappraisal Plan PDF (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/Forms/GetDocument?fileName=1731447832_2025-2026+Biennial+Reappraisal+Plan.pdf&subPath=Data+Records",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/Forms/GetDocument?fileName=1731447832_2025-2026+Biennial+Reappraisal+Plan.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The complete official PDF supplies the 5,547,084-byte identity, SHA-256, 90 physical pages, the Oil and Gas Reserves cover on physical page 31, internal pages 1-7 on physical pages 32-38, and the Industrial Property stop boundary on physical page 39.",
+      "claim_scope": "Only file and page-boundary observations are used; the article does not interpret or apply appraisal procedures or decide a property, appraisal, tax, title, value, offer, sale, compliance, or legal issue."
+    },
+    {
+      "label": "Glasscock County Appraisal District home page (accessed 2026-08-28)",
+      "url": "https://www.glasscockcad.org/",
+      "publisher": "www.glasscockcad.org",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.glasscockcad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Glasscock CAD home page supplies the district publisher surface and identity context.",
+      "claim_scope": "It does not prove the plan file identity, attachment boundary, procedure application, property connection, appraisal accuracy, tax treatment, ownership, title, value, offer quality, sale readiness, or legal effect."
+    },
+    {
+      "label": "Texas Comptroller, Glasscock County directory (accessed 2026-08-28)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/glasscock.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller Glasscock County directory supplies limited current county and appraisal-district directory context.",
+      "claim_scope": "It is not the source for the plan file, physical pages, procedure application, property fact, appraisal, tax, title, value, or transaction conclusion."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 25 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.25.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 25 supplies current official statutory provenance for appraisal-record and appraisal-roll subjects.",
+      "claim_scope": "The article does not interpret the chapter, apply it to a person or property, decide whether the plan satisfies law, calculate tax or value, or reach a legal conclusion."
+    },
+    {
+      "label": "Texas Tax Code, Chapter 23 (accessed 2026-08-28)",
+      "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:05Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.23.htm",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 23 supplies current official statutory provenance for appraisal-method and procedure subjects.",
+      "claim_scope": "The article does not interpret the chapter, convert the attachment into a universal appraisal rule, apply it to a person or property, calculate tax or value, or reach a legal conclusion."
+    }
+  ]
+}

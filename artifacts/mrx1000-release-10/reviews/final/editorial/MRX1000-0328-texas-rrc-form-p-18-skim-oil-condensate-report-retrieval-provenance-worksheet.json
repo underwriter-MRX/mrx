@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave123_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:04Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0328",
+  "slug": "texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Form P-18 Skim Oil/Condensate Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d",
+  "input_frontmatter_sha256": "466fd2b24c40d49978713ae717c5fd9548dac091fd0d02eddf0e7f85040a15fc",
+  "expected_repo_sha256": "e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d",
+  "two_image_manifest_sha256": "898b16bb9c14f220b770da00044493021bd2f07e3b22ba9ff3702c70bc8e974e",
+  "visual_metadata": {
+    "hero_alt": "A researcher reviews blank public-record folders beside the exact article title.",
+    "social_alt": "A researcher reviews blank public-record folders beside the exact article title.",
+    "inline_alt": "A people-free overhead P-18 retrieval evidence board appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Form P-18 Report Retrieval Worksheet",
+    "seo_title_character_count": 46,
+    "description_character_count": 153,
+    "answer_summary_word_count": 62,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T12:02:40Z",
+    "reviewed_by": "mrx_compliance-continuous-wave123",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave123_editorial",
+  "review_run_id": "mrx1000-wave123-editorial-20260915T073204Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d; the answer-first article contains 1777 body tokens and five FAQs.",
+    "The article fully rejects the colliding competing-offers identity and owns one distinct administrative reader job: preserve a reproducible provenance trail for one authorized manual Texas RRC Imaged Records Form P-18 profile retrieval attempt.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The wide eye-level one-researcher archive scene and people-free strict-overhead P-18 evidence board are materially distinct in camera angle, composition, subject arrangement, evidence scene, and function."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "e021751f02c2e3e11367433d48e35dab2a35691f18a7a16a7f6a4c27ed6b1e4d"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1777,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 62
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 46,
+        "description_character_count": 153,
+        "author": "ariana",
+        "reviewed_at": "2026-08-25T12:02:40Z",
+        "reviewed_by": "mrx_compliance-continuous-wave123",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/offer-review/",
+        "support": "/blog/texas-rrc-district-office-well-records-retrieval-provenance-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-form-p-18-skim-oil-condensate-report-retrieval-provenance-worksheet/texas-rrc-form-p-18-report-retrieval.webp"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "artifact_type": "mrx1000_wave224_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0844",
+  "slug": "why-reeves-cad-has-no-2025-ratio-study-worksheet",
+  "title": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/",
+  "source_path": "src/content/posts/why-reeves-cad-has-no-2025-ratio-study-worksheet.mdx",
+  "input_body_sha256": "9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b",
+  "input_frontmatter_sha256": "7dc3da5bffc73b151c0c1204788169dce11d9ae3b0dc874d9dc8c4b2ff47587b",
+  "expected_repo_sha256": "9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b",
+  "two_image_manifest_sha256": "82a413550682742a8915ea196265601d9b070cc16c3e7ebe57e1bc856cdf5530",
+  "visual_metadata": {
+    "hero_alt": "A dark public-record routing desk appears beside the exact Article 296 title.",
+    "social_alt": "A dark public-record routing desk appears beside the exact Article 296 title.",
+    "inline_alt": "A bright overhead source-routing workspace appears above the exact Reeves CAD 2025 ratio-study worksheet keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Why Reeves CAD Has No 2025 Ratio-Study Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 144,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T10:35:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave224",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-cad-2024-ratio-study-66-category-g-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/why-reeves-cad-has-no-2025-ratio-study-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave224_factual",
+  "review_run_id": "mrx1000-wave224-factual-20260915T071322Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 9dbf86e3fcbe7629dadefda1f04269db83c91722cf12e517825739b82369e13b; all 5 declared sources passed current HTTPS access review.",
+    "Five controlled official source objects total 651,810 bytes and retain individual SHA-256 identities documented in the selection decision and article.",
+    "The official 2025 ADRS page identifies the tax year, January 30, 2026 publication date, and studied-district list; the controlled page has no 195 Reeves entry.",
+    "The official 2025 MAP list includes Reeves, while the official basics and reports pages provide the alternating review-study and at-least-once-every-two-years cadence.",
+    "The official 2024 ADRS findings page includes the 195 Reeves district route."
+  ],
+  "checks": [
+    "five_distinct_current_official_https_sources",
+    "2025_tax_year_and_publication_date_pass",
+    "2025_studied_district_list_no_195_reeves_pass",
+    "2025_map_results_reeves_entry_pass",
+    "map_sdpvs_adrs_cycle_context_pass",
+    "adrs_at_least_once_every_two_years_pass",
+    "2024_findings_195_reeves_route_pass",
+    "controlled_source_bytes_and_sha256_identity_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_claim_adjacent_citation_and_current_source_boundary_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas Comptroller 2025 Appraisal District Ratio Study Findings (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2025 findings page supplies the 2025 tax-year identity, January 30, 2026 publication date, Tax Code Section 5.10 context, and complete studied-district link list.",
+      "claim_scope": "The article uses the page only to establish that the published studied-district list has no 195 Reeves route; it does not infer missing local data, submission failure, property coverage, appraisal, tax, protest, value, offer, or transaction results."
+    },
+    {
+      "label": "Texas Comptroller 2025 MAP Review Results (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/2025/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2025 MAP results page says the listed reviews were completed in 2025 and includes Reeves.",
+      "claim_scope": "The Reeves list entry is used only as program-cycle context; the article does not reproduce or reinterpret the review report findings or recommendations."
+    },
+    {
+      "label": "Texas Comptroller Property Tax System Basics (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official basics page supplies the approximately-half-each-year MAP cadence and the relationship to SDPVS and ADRS coverage in counties not receiving a MAP review that year.",
+      "claim_scope": "The cadence supports record routing only and does not establish local performance, a future publication date, property coverage, or any owner-level conclusion."
+    },
+    {
+      "label": "Texas Comptroller Property Tax Data Reports and Surveys (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/reports/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official reports page supplies the at-least-once-every-two-years ADRS requirement and says published results cover each district studied that year.",
+      "claim_scope": "The article does not turn the statewide cadence into a guarantee, predict the next Reeves study, or infer appraisal, tax, protest, value, offer, or transaction outcomes."
+    },
+    {
+      "label": "Texas Comptroller 2024 Appraisal District Ratio Study Findings (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/data/property-tax/ratio-study/2024/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official 2024 findings page supplies the prior tax-year identity and the 195 Reeves district route.",
+      "claim_scope": "The article uses the page only to identify the controlled Reeves ADRS route and does not reproduce the aggregate Category G row owned by Article 295."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "artifact_type": "mrx1000_wave157_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:38Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0756",
+  "slug": "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+  "title": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+  "source_path": "src/content/posts/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties.mdx",
+  "input_body_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "input_frontmatter_sha256": "438d2fa394f3bc40cb8f735822c92e03f26d923efcde93e3f3c8b1c59468b20c",
+  "expected_repo_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "two_image_manifest_sha256": "c59a2628ff4be0955e6804036bc9a2fbeb601f7414576ca158944489ae0b1ec1",
+  "visual_metadata": {
+    "hero_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "social_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "inline_alt": "A top-down blank six-section field grid appears above the exact Form 50-843 Crane mineral property keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-843 Field Inventory",
+    "seo_title_character_count": 33,
+    "description_character_count": 151,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T20:09:45Z",
+    "reviewed_by": "mrx_compliance-continuous-wave157",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave157_factual",
+  "review_run_id": "mrx1000-wave157-factual-20260915T072838Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to the current official Crane CAD forms link and local identity, current Form 50-843 printed structure and revision line, Texas Comptroller directory and forms context, and Texas Tax Code Chapter 1 provenance.",
+    "The article invents no owner, representative, tax official, office choice, account, legal description, email, signature, form value, filing, delivery, acceptance, deadline, legal effect, tax result, valuation, recommendation, or outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "current_crane_cad_texas_comptroller_and_texas_statute_source_priority_pass",
+    "form_fields_not_converted_into_selection_completion_submission_delivery_or_legal_effect_conclusions_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Crane CAD, Forms (accessed 2026-08-26)",
+      "url": "https://www.cranecad.org/Forms",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/Forms",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Crane CAD forms page currently links Request for Electronic Delivery of Communications with a Tax Official, Form 50-843.",
+      "claim_scope": "It supports local source provenance and current-link verification only. The article does not select a destination, submit a form, contact an office, or claim that the link controls an owner-specific result."
+    },
+    {
+      "label": "Crane CAD-linked Texas Comptroller Form 50-843 (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/forms/50-843.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/forms/50-843.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The current official linked blank PDF supplies the form title, 50-843 identifier, 3-24/2 revision line, six printed sections, field labels, filing instructions, and important-information headings.",
+      "claim_scope": "It supports a literal blank-field inventory only. The article does not reproduce a completed form, choose a checkbox, collect private values, complete or sign the request, interpret legal effect, calculate timing, submit anything, or claim delivery or acceptance."
+    },
+    {
+      "label": "Crane CAD Property Search (accessed 2026-08-26)",
+      "url": "https://www.cranecad.org/home",
+      "publisher": "www.cranecad.org",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.cranecad.org/home",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Crane CAD property-search surface supplies local publisher identity and shows mineral and industrial as a searchable property type.",
+      "claim_scope": "It supports local mineral-property context only. This workflow performs no account search, retrieves no record, and infers no ownership, value, tax status, notice, or communication result."
+    },
+    {
+      "label": "Texas Comptroller, Crane County Directory (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/crane.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller county directory identifies the official Crane County appraisal-district website and local property-tax offices.",
+      "claim_scope": "It supports source identity and jurisdictional separation only. The article does not choose an office or recipient, route contact, or state where an owner must file."
+    },
+    {
+      "label": "Texas Comptroller, Property Tax Forms (accessed 2026-08-26)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/forms/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller property-tax forms index supplies current statewide form-source context.",
+      "claim_scope": "It supports revision awareness and current-source rechecking only. It does not supply owner-specific advice, completion, submission, deadline, or legal-effect conclusions."
+    },
+    {
+      "label": "Texas Legislature, Tax Code Chapter 1 (accessed 2026-08-26)",
+      "url": "https://statutes.capitol.texas.gov/docs/tx/pdf/tx.1.pdf",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:28:38Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/docs/tx/pdf/tx.1.pdf",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "Texas Tax Code Chapter 1 supplies current official statutory context for electronic communications with tax officials.",
+      "claim_scope": "It supports governing-source provenance only. The article does not interpret the statute, determine consent or delivery, identify a duty or deadline, or replace qualified legal or tax review."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "artifact_type": "mrx1000_wave98_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T06:44:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0281",
+  "slug": "texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Injection-Storage Permit Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "input_frontmatter_sha256": "d5ab201465dc432291f7c980cbdb49d3e5108f32d6559e109b13892a0449b3f2",
+  "expected_repo_sha256": "0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b",
+  "two_image_manifest_sha256": "fe0679bd188acafe00b25e39d614ca45548b1ba0316751df3ae57e4735ae8e7f",
+  "visual_metadata": {
+    "hero_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "social_alt": "An injection-storage permit query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead injection-storage permit query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave98_factual",
+  "review_run_id": "mrx1000-wave98-factual-20260824T064435Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 0faa39a325dd2e0f922644082550d95aa1f79955a078fd96e29d9ae44213039b; all 6 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed UIC / Injection-Storage Permit Query criteria and instructions, separate route identity, query-help context, and published limitations. None of the sources is used to establish property connection, title, ownership, acreage, lease effect, permit compliance, operating condition, injection activity, production, economics, value, or a transaction result.",
+    "The article publishes no actual query values, owner document, signature, address, legal description, property identifier, result screenshot, operator allegation, operational conclusion, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "six_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC directory identifies public research-query context and provides the entry point to the agency query environment.",
+      "claim_scope": "The article records the named route, access time, and bounded query-system context without treating a query result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Oil and Gas Data Queries page describes the Underground Injection Control query as a separate public query slice and lists its bounded searchable criteria.",
+      "claim_scope": "The article uses this page only to identify the UIC query environment and preserves uncertainty about individual results, records, and relationships."
+    },
+    {
+      "label": "Railroad Commission of Texas, Injection-Storage Resources (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/injection-storage-permits/resources/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/injection-storage-permits/resources/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Injection-Storage Resources page identifies the Injection-Storage Permit Query among separate agency resources and query channels.",
+      "claim_scope": "The article uses the page only to preserve the official route family and does not infer a permit, well, property, compliance, operational, or transaction fact."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil & Gas Data Query Main Page (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil & Gas Data Query main page identifies Injection-Storage Permit Query as a named route among separate query types.",
+      "claim_scope": "The article uses the menu label only to preserve an entry path; it does not collapse record classes or draw any conclusion from a displayed result."
+    },
+    {
+      "label": "Railroad Commission of Texas, Underground Injection Control Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/uicQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/uicQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Injection-Storage Query entry displays the separately named route and current criteria labels for one query attempt.",
+      "claim_scope": "The article records only criteria actually used, source-displayed instructions, navigation steps that occurred, and bounded retrieval state. It does not submit an actual property query or reproduce an actual result."
+    },
+    {
+      "label": "Railroad Commission of Texas, UIC Query How To (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/UICGeneralHowTo.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T06:44:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/UICGeneralHowTo.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official UIC Query help supplies bounded search, navigation, result-limit, and result-detail context.",
+      "claim_scope": "The article preserves separate retrieval steps and does not interpret a selected well type, district, identifier, county, field, operator, UIC number, date, status, or result."
+    }
+  ]
+}

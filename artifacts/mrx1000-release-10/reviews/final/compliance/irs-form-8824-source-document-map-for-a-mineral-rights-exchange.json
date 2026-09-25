@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave148_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:05:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0647",
+  "slug": "irs-form-8824-source-document-map-for-a-mineral-rights-exchange",
+  "title": "IRS Form 8824 Source-Document Map for a Mineral Rights Exchange",
+  "canonical_url": "https://mineralrightsxchange.com/blog/irs-form-8824-source-document-map-for-a-mineral-rights-exchange/",
+  "source_path": "src/content/posts/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.mdx",
+  "input_body_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "input_frontmatter_sha256": "63697ced5b04f503902462dd39123d6448f1f5a227203da05b3e85cdb5d27ea2",
+  "expected_repo_sha256": "f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8",
+  "two_image_manifest_sha256": "0f3dd35cb6f175f772c9953253691fcc958268c3b4bd9ef24693f772211f2ba1",
+  "visual_metadata": {
+    "hero_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "social_alt": "A blank archival source station appears beside the exact IRS Form 8824 source-document map title.",
+    "inline_alt": "An overhead blank source matrix appears above the exact IRS Form 8824 source documents keyword."
+  },
+  "reviewer_id": "codex_wave148_compliance",
+  "review_run_id": "mrx1000-wave148-compliance-20260826T140554Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "106fb3f66e6cdf8452200331031296f37b39abe679df971f6473af7c49eb55f0",
+  "expected_inline_sha256": "4dfec730fe16e66f45b2f6271977f8ed0f5e05f00d2ccf8c28dbfd74a4ba1ace",
+  "findings": [
+    "Complete current MDX SHA-256 is f2376778e849e60f30122f1852b874dceb9fb6a519f57726df76cace2a4e4cc8; hero/share and inline image hashes are separately locked.",
+    "The reusable public map is blank, covers one already-structured exchange file and one controlled preparation event, keeps every owner-specific fact in controlled records, and stops at an authorized tax professional, attorney, or qualified intermediary before interpretation, selection, calculation, deadline, filing, amendment, structuring, or eligibility work.",
+    "Image text is limited to the exact title and keyword and adds no taxpayer, form, exchange, tax, title, valuation, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_already_structured_exchange_current_irs_form_8824_request_category_to_controlled_source_location_map_only_mapped_incomplete_professional_review_required_no_personal_values_form_facsimile_eligibility_interpretation_selection_calculation_deadline_analysis_line_attachment_choice_form_completion_transaction_design_filing_amendment_qi_recommendation_or_owner_specific_legal_tax_title_value_conclusion_authorized_professional_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.mdx",
+    "/assets/articles/hero/irs-form-8824-source-document-map-for-a-mineral-rights-exchange.webp",
+    "/assets/articles/inline/irs-form-8824-source-document-map-for-a-mineral-rights-exchange/irs-form-8824-source-documents.webp"
+  ]
+}

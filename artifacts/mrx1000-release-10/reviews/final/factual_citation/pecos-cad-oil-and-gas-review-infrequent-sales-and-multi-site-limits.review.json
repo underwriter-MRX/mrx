@@ -1,0 +1,154 @@
+{
+  "artifact_type": "mrx1000_wave217_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:20Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0837",
+  "slug": "pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits",
+  "title": "Pecos CAD Oil and Gas Review: Infrequent Sales and Multi-Site Limits",
+  "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/",
+  "source_path": "src/content/posts/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits.mdx",
+  "input_body_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+  "input_frontmatter_sha256": "485b09a9eec6df85f8dfa75e018720b5f9cde9f3e6867afdbf7b66cfbef95578",
+  "expected_repo_sha256": "b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3",
+  "two_image_manifest_sha256": "7fc2ca8ffed2f3ae4b21580f54fdc7c0ebdc0fef333488383fb240516de6d625",
+  "visual_metadata": {
+    "hero_alt": "A Pecos appraisal-review desk appears beside the exact Article 289 title.",
+    "social_alt": "A Pecos appraisal-review desk appears beside the exact Article 289 title.",
+    "inline_alt": "A people-free overhead appraisal evidence workspace appears above the exact Pecos CAD oil and gas appraisal review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Pecos CAD Oil & Gas Review Evidence Limits · MRX",
+    "seo_title_character_count": 48,
+    "description_character_count": 156,
+    "answer_summary_word_count": 29,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T07:58:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave217",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-january-1/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/pecos-cad-oil-and-gas-review-infrequent-sales-and-multi-site-limits/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave217_factual",
+  "review_run_id": "mrx1000-wave217-factual-20260915T071320Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is b5a1e75ee766b30ee473e95e61e0e973416be5c76f35e958a79c7fe67d2dc5f3; all 6 declared sources passed current HTTPS access review.",
+    "The official plan PDF was retrieved at 971,223 bytes with SHA-256 c95d84641a0d024c04b9d8ba491e5972085b29a05a9aba4038128d78e8e12d01; it is unencrypted, has no JavaScript, contains 75 physical pages, and records creation on 2024-08-08 and modification on 2024-09-02.",
+    "Physical pages 44-45 describe annual comparison with income indicators, year-to-year changes, and Section 23.175 compliance, plus reassignment or experienced-appraiser review.",
+    "Physical page 45 calls appraisal-to-sales ratios preferred but says sales are very infrequent, conditions often are not public, and transactions normally cover multiple sites and mixed property and asset types.",
+    "Physical page 45 identifies valid single-property appraisals submitted for staff review as another comparison and says methods and procedures are subject to PTAD review.",
+    "Current official Texas sources support only the bounded statutory, MAP-program, local-value, and mass-appraisal review context stated in the article."
+  ],
+  "checks": [
+    "six_distinct_https_sources",
+    "current_official_data_records_route_pass",
+    "reappraisal_plan_http_bytes_sha256_encryption_javascript_metadata_and_page_count_pass",
+    "physical_pages_44_45_complete_review_sentence_pass",
+    "annual_income_indicator_year_change_and_section_23_175_review_signals_pass",
+    "experienced_appraiser_review_qualified_source_statement_pass",
+    "preferred_appraisal_to_sales_ratio_with_infrequent_nonpublic_sales_limit_pass",
+    "multi_site_real_personal_tangible_intangible_bundle_limit_pass",
+    "valid_single_property_appraisal_submitted_for_staff_review_qualification_pass",
+    "ptad_review_subject_not_current_outcome_pass",
+    "tax_code_section_23_175_context_only_pass",
+    "comptroller_local_value_and_state_oversight_separation_pass",
+    "stable_claim_ids_allowed_evidence_labels_and_source_roles_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Pecos CAD Data and Records page (accessed 2026-08-31)",
+      "url": "https://www.pecoscad.org/home/DataRecords",
+      "publisher": "www.pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.pecoscad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The current official Data and Records page supplies the visible 2025-2026 Reappraisal Plan route.",
+      "claim_scope": "The page is routing evidence only and does not prove implementation, current account status, appraisal review, tax, value, offer, or transaction result."
+    },
+    {
+      "label": "Pecos CAD 2025-2026 Reappraisal Plan (accessed 2026-08-31)",
+      "url": "https://pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+      "publisher": "pecoscad.org",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://pecoscad.org/Forms/GetDocument?fileName=1725366925_2025-2026+reappraisal+plan.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The controlled PDF supplies exact bytes, SHA-256 identity, page count, and physical pages 44-45 review signals, sales-evidence limitations, single-property-appraisal comparison, and PTAD-review statements.",
+      "claim_scope": "The plan is not proof that a step occurred for a named property, a sale is comparable, an appraisal was accepted, a method passed review, or any current appraisal, tax, private value, offer, or transaction result exists."
+    },
+    {
+      "label": "Texas Tax Code Section 23.175 (accessed 2026-08-31)",
+      "url": "https://statutes.capitol.texas.gov/?artSec=23.56&chapter=TX.23&code=TX&tab=1",
+      "publisher": "statutes.capitol.texas.gov",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://statutes.capitol.texas.gov/?artSec=23.56&chapter=TX.23&code=TX&tab=1",
+        "content_type": "text/html"
+      },
+      "source_location_or_paraphrase": "The official statute supplies the Section 23.175 oil-or-gas-interest context expressly named by the Pecos plan for specified income-based appraisal methods.",
+      "claim_scope": "The statute is used only as legal-source context and is not converted into legal advice, a model audit, input selection, calculation, compliance finding, appraisal result, or private value."
+    },
+    {
+      "label": "Texas Comptroller Methods and Assistance Program (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/map/index.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official MAP overview says PTAD reviews appraisal-district governance, taxpayer assistance, operating procedures, and appraisal standards, procedures, and methodology.",
+      "claim_scope": "The page establishes program scope only and does not prove a current Pecos review, finding, score, recommendation, approval, or follow-up result."
+    },
+    {
+      "label": "Texas Comptroller Property Tax System Basics (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/basics.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official basics page distinguishes local appraisal-district value decisions from Comptroller studies and reviews.",
+      "claim_scope": "The page does not determine a Pecos account, validate the plan, calculate tax, or establish a private mineral value."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property (accessed 2026-08-31)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:20Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official valuing-property page supplies statewide context for appraisal-district responsibility, January 1 market-value timing, mass-appraisal models, and review of model results.",
+      "claim_scope": "The page provides general context only and does not validate a Pecos method, account, model, input, appraisal, tax, protest position, private value, offer, or transaction result."
+    }
+  ]
+}

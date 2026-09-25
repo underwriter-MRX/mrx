@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave164_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0763",
+  "slug": "culberson-cad-2025-2026-reappraisal-plan-adoption-source-record",
+  "title": "Culberson CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+  "source_path": "src/content/posts/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+  "input_body_sha256": "1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442",
+  "input_frontmatter_sha256": "c52ce3a9ebe908b5f82622e468977d69c69e3e0230fd04ee854770a155368454",
+  "expected_repo_sha256": "1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442",
+  "two_image_manifest_sha256": "5a3e7454f3d6268c3864325e09dcc05ef0805b1efafe10e33288adb45559791c",
+  "visual_metadata": {
+    "hero_alt": "A closed plan folio appears beside the exact Culberson CAD reappraisal plan adoption source-record title.",
+    "social_alt": "A closed plan folio appears beside the exact Culberson CAD reappraisal plan adoption source-record title.",
+    "inline_alt": "Two blank page tiles appear above the exact Culberson CAD 2025-2026 reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Reappraisal Plan Adoption Record",
+    "seo_title_character_count": 46,
+    "description_character_count": 151,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T14:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave164",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave164_editorial",
+  "review_run_id": "mrx1000-wave164-editorial-20260915T071254Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442; the answer-first article contains 2310 body tokens and five FAQs.",
+    "The article rejects the generic Culberson County market-update identity and owns one distinct deliverable: a source-control record for the current official 2025-2026 plan link, complete-file identity, broad structure, and literal public-meeting and adoption-page locators.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The oblique closed-plan-folio hero and strict-overhead two-page locator path are materially distinct and contain no person, real document, name, signature, number, government mark, property fact, appraisal claim, tax or protest direction, legal conclusion, recommendation, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2310,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 65
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 46,
+        "description_character_count": 151,
+        "author": "ariana",
+        "reviewed_at": "2026-08-27T14:15:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave164",
+        "declared_source_count": 5,
+        "visible_body_citation_count": 5,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+    "/assets/articles/hero/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+    "/assets/articles/inline/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/culberson-cad-2025-2026-reappraisal-plan.webp"
+  ]
+}

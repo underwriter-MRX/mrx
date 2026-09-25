@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave118_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:35Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0308",
+  "slug": "texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet",
+  "title": "Texas RRC EDMS Injection/Disposal Permit Document Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "5abaa6df9ea86c4c0cc779da733edfc9168537b2832b0d7206646db21c1f6c85",
+  "input_frontmatter_sha256": "1f216e7d27b799ee98d319ac479411a542e703ad77d6a58928cba644c562b077",
+  "expected_repo_sha256": "5abaa6df9ea86c4c0cc779da733edfc9168537b2832b0d7206646db21c1f6c85",
+  "two_image_manifest_sha256": "9f62722626a02ca5fa294957226faad4a22940f17384f8358e4bbac00c75d567",
+  "visual_metadata": {
+    "hero_alt": "A one-hand EDMS permit-document retrieval desk appears beside the exact article title.",
+    "social_alt": "A one-hand EDMS permit-document retrieval desk appears beside the exact article title.",
+    "inline_alt": "A people-free overhead permit-document evidence-transfer system appears above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC EDMS Permit Document Retrieval Worksheet",
+    "seo_title_character_count": 50,
+    "description_character_count": 152,
+    "answer_summary_word_count": 61,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T09:24:22Z",
+    "reviewed_by": "mrx_compliance-continuous-wave118",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights-value/",
+      "support": "/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave118_factual",
+  "review_run_id": "mrx1000-wave118-factual-20260915T072835Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 5abaa6df9ea86c4c0cc779da733edfc9168537b2832b0d7206646db21c1f6c85; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current official RRC surfaces, route identity, visible search and result labels, source-displayed search mechanics, dated coverage and availability statements, adjacent-route separation, and source-scope limitations. None establishes well status, permit validity, approval effect, compliance, safety, environmental condition, property connection, ownership, title, payment, acreage, production, reserves, value, offer quality, legal effect, or a transaction conclusion.",
+    "The article publishes no actual tracking, permit, operator, field, lease, API, well, district, county, date, party, result, status, document, property, owner, payment, production, reserve, value, offer, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official research-query directory separately identifies the Electronic Document Management System, labels it nightly, warns against automated volume retrieval, and supplies the current official entry route.",
+      "claim_scope": "The directory states that online query data are informational, continually updated, non-authoritative, and without legal force; it does not establish permit effect, well status, compliance, property connection, ownership, title, payment, value, or a transaction conclusion."
+    },
+    {
+      "label": "Texas RRC, Electronic Document Management System (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official About EDMS page describes H-1, H-1A, and W-14 application and correspondence images, applications beginning September 2000, source-displayed application categories, signed-approved-file image timing, older H-5 coverage, and separate adjacent routes.",
+      "claim_scope": "The article uses those statements as dated source coverage and availability notes only, not as proof of current permit validity, approval effect, compliance, safety, environmental condition, or legal effect."
+    },
+    {
+      "label": "Texas RRC, Electronic Document Search (accessed 2026-08-25)",
+      "url": "https://webapps.rrc.texas.gov/eds/eds_searchUic.xhtml",
+      "publisher": "webapps.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps.rrc.texas.gov/eds/eds_searchUic.xhtml",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official application is labeled Search Injection/Disposal Permit Application Documents and visibly exposes Tracking Number, Group Results By, Permit Number, Document Type, Field, Operator, Lease, District, County, and RRC Stamp Date criteria plus result and document-list fields.",
+      "claim_scope": "The application states that all entered criteria must be present for an application to display and supplies specific criteria-count instructions; the article distinguishes its initial default zero-result screen from a valid completed empty search."
+    },
+    {
+      "label": "Texas RRC, About Oil and Gas Data Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:28:35Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official query-information page identifies the separately routed Injection-Storage Permit Query and supplies general oil-and-gas query scope context.",
+      "claim_scope": "The article uses that page only to enforce route separation and makes no completeness, permit, well, property, ownership, production, value, compliance, or legal claim."
+    }
+  ]
+}

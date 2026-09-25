@@ -1,0 +1,127 @@
+{
+  "artifact_type": "mrx1000_wave125_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:23Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0330",
+  "slug": "texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet",
+  "title": "Texas RRC Groundwater Protection Determination Letter Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d",
+  "input_frontmatter_sha256": "c8951fca053b2a21521e903cb7f3fcc0d79f679019c0356f7d053589d402857a",
+  "expected_repo_sha256": "30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d",
+  "two_image_manifest_sha256": "aa34740f74b8cd99a1045b0718febbf3649e20c0b9dbc147a96f442646714199",
+  "visual_metadata": {
+    "hero_alt": "A people-free microfilm station appears beside the exact groundwater-letter worksheet title.",
+    "social_alt": "A people-free microfilm station appears beside the exact groundwater-letter worksheet title.",
+    "inline_alt": "Three blank groundwater-letter evidence sleeves appear above the exact keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Groundwater Letter Retrieval Worksheet",
+    "seo_title_character_count": 48,
+    "description_character_count": 154,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T14:23:32Z",
+    "reviewed_by": "mrx_compliance-continuous-wave125",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-form-t-1-monthly-transportation-storage-report-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-groundwater-protection-determination-letter-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave125_factual",
+  "review_run_id": "mrx1000-wave125-factual-20260915T073223Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 30a0043fc67522b569f21e99a1177996a0dbb1bd10d55b95b9c3b3acc6bf2b0d; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to five current official RRC surfaces, profileId 23 routing, source-described era coverage, separate later and earlier routes, and attempt-state rules. None establishes a completed retrieval, letter completeness, water-zone, casing, cementing, groundwater, drilling, injection, disposal, environmental, engineering, compliance, facility, operator, well, property, ownership, royalty, value, offer, legal, tax, or transaction conclusion.",
+    "The direct profile request returned HTTP 403, no profile page was captured, and no query completed. The article publishes no actual GAU number, coordinate, county, lease, operator, well, property, owner, result, letter, depth, environmental finding, payment, value, offer, or transaction data."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Texas RRC, Research Queries (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official directory supplies the current Oil and Gas Imaged Records entry route.",
+      "claim_scope": "The article uses it only for source identity and routing; it establishes no completed query, letter, environmental, engineering, property, ownership, value, offer, legal, or transaction fact."
+    },
+    {
+      "label": "Texas RRC, Imaged Records (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Imaged Records page supplies the collection route and bounded historical context for Groundwater Protection Determination Letters.",
+      "claim_scope": "The article uses it only for route provenance and source-described context; it makes no completeness, water-zone, casing, environmental, engineering, compliance, property, ownership, or value inference."
+    },
+    {
+      "label": "Texas RRC, Imaged Records Query Menu (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/imaged-records/imaged-records-menu/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official menu identifies Groundwater Protection Determination Letters profileId 23, Fall 2008 through June 6 2015 coverage, and separate later, earlier, and microfilm routes.",
+      "claim_scope": "The article preserves those statements only as dated source-described collection scope and route boundaries. It does not convert them into a letter, water-zone, well, operator, property, environmental, engineering, compliance, ownership, or transaction fact."
+    },
+    {
+      "label": "Texas RRC, Groundwater Advisory Unit (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/groundwater-advisory-unit/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/groundwater-advisory-unit/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official Groundwater Advisory Unit page identifies the unit and Form GW-2 determination-letter context.",
+      "claim_scope": "The article uses it only to distinguish current unit and form context from the imaged-record profile attempt. It provides no application, payment, filing, water-zone, casing, environmental, engineering, compliance, or legal guidance."
+    },
+    {
+      "label": "Texas RRC, Researching Groundwater Determinations and Data (accessed 2026-08-25)",
+      "url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/groundwater-advisory-unit/researching-groundwater-protection-determinations-and-data/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-09-15T07:32:23Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/oil-and-gas/applications-and-permits/groundwater-advisory-unit/researching-groundwater-protection-determinations-and-data/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official research page identifies a separate All Applications search for GW-1 and GW-2 materials.",
+      "claim_scope": "The article uses it only to separate the current online research route from profileId 23. It performs no login, application, submission, payment, interpretation, or substantive determination."
+    }
+  ]
+}

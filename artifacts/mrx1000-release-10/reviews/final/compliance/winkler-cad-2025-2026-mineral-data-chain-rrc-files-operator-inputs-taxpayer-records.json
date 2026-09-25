@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave241_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0866",
+  "slug": "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
+  "title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+  "input_body_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+  "input_frontmatter_sha256": "a0eab70c916c5132e8e83de6c7f3b3ef57313d59b9fa621585692676a0f72b54",
+  "expected_repo_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+  "two_image_manifest_sha256": "7741f45773ace6ccc62f0a637df78176264945b32cf9df06d9e290222ede6747",
+  "visual_metadata": {
+    "hero_alt": "Three abstract source stacks feed one records tray beside the exact Article 313 title.",
+    "social_alt": "Three abstract source stacks feed one records tray beside the exact Article 313 title.",
+    "inline_alt": "A top-down privacy-bounded source flow appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Mineral Data Sources · MRX",
+    "seo_title_character_count": 38,
+    "description_character_count": 142,
+    "answer_summary_word_count": 59,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T21:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave241",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave241_compliance",
+  "review_run_id": "mrx1000-wave241-compliance-20260915T071331Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f1a9ad4846944e3a8137cf48dd04707475f8815d010ff59d50e23c7969144893",
+  "expected_inline_sha256": "7f2b901b878c7bfa3fbbc5f690762a4d3c9eae070a5aa39655c7243902b6c376",
+  "findings": [
+    "Complete current MDX SHA-256 is de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c; hero/share and inline image hashes are separately locked.",
+    "The article attributes every workflow statement to the plan and does not imply that MRX independently verified current operations or possesses, reviewed, can retrieve, or can disclose any confidential data.",
+    "The factory body is not evidence. No owner, account, address, personal data, parcel, value, tax bill, legal description, production figure, reserve estimate, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, confidential-data access claim, owner identity, tax conclusion, appraisal finding, approval statement, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_county_value_family_decision_reuse_pass",
+    "no_owner_account_address_personal_data_parcel_value_tax_bill_legal_description_production_reserve_title_or_transaction_data_pass",
+    "no_confidential_data_access_taxability_ownership_private_value_production_reserve_model_validity_appraisal_or_protest_outcome_claim_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "ward_upton_public_data_file_and_rrc_retrieval_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_readable_base_text_letters_numbers_filenames_property_details_maps_wells_rigs_money_logos_seals_signatures_government_emblems_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/winkler-cad-mineral-data-sources.webp"
+  ]
+}

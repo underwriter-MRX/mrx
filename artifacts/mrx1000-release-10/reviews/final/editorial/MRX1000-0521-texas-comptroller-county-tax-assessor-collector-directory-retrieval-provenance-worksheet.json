@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave146_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T13:10:24Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0521",
+  "slug": "texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet",
+  "title": "Texas Comptroller County Tax Assessor-Collector Directory Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397",
+  "input_frontmatter_sha256": "ed20b69bad9c4772ab3bb9d547bfcd4e5526ce544a73d7cd5b8754dc6d007c9c",
+  "expected_repo_sha256": "add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397",
+  "two_image_manifest_sha256": "fe766247552b7a72de623092f8b391713b26e5e3d323d1b5b1645e979a8adcfa",
+  "visual_metadata": {
+    "hero_alt": "A front-facing civic-office directory panel appears beside the exact Texas tax-assessor worksheet title.",
+    "social_alt": "A front-facing civic-office directory panel appears beside the exact Texas tax-assessor worksheet title.",
+    "inline_alt": "A top-down blank collecting-unit card set appears above the exact Texas tax-assessor directory keyword."
+  },
+  "reviewer_id": "codex_wave146_editorial",
+  "review_run_id": "mrx1000-wave146-editorial-20260826T131024Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397; the answer-first article contains 1682 body tokens and five FAQs.",
+    "The article rejects the colliding broad heir identity and owns one distinct deliverable: a blank provenance record for one authorized manual official Texas Comptroller county-directory attempt and only one selected county page Tax Assessor/Collector section.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The front-facing civic-office directory panel and strict-overhead collecting-unit card layout are materially distinct from one another and from Article 217 assets."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "add3911067ebb24e9fcd8ce8bf54899099d60d42f7df5a2efacd49d9711dd397"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1682,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet/texas-county-tax-assessor-collector-directory-retrieval.webp"
+  ]
+}

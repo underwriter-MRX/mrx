@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave128_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:41Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0333",
+  "slug": "texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet",
+  "title": "Texas RRC Oil and Gas Lease Name Index Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "87f0bf0aa1e5c14edc43e5d6881177aafafa3894f0c17b2825d8a1ed484d1e54",
+  "input_frontmatter_sha256": "0e4230e8de17c72c9c391684027b7f94ba8188b99cb8d21a8a26d05c11bb6f38",
+  "expected_repo_sha256": "87f0bf0aa1e5c14edc43e5d6881177aafafa3894f0c17b2825d8a1ed484d1e54",
+  "two_image_manifest_sha256": "b38a25a952866b82f02d8c1046076bfd91a89d7308cee000fa44e21dda47546f",
+  "visual_metadata": {
+    "hero_alt": "A dark archival index station appears beside the exact Lease Name Index worksheet title.",
+    "social_alt": "A dark archival index station appears beside the exact Lease Name Index worksheet title.",
+    "inline_alt": "A top-down PDF retrieval evidence board appears above the exact Lease Name Index retrieval keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Lease Name Index Retrieval Worksheet",
+    "seo_title_character_count": 46,
+    "description_character_count": 156,
+    "answer_summary_word_count": 74,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T06:12:37Z",
+    "reviewed_by": "mrx_compliance-continuous-wave128",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-production-by-lease-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave128_compliance",
+  "review_run_id": "mrx1000-wave128-compliance-20260915T073241Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f05c4459bf4e5d0828ea5e4e33eba9e4f807bfe05b33bbf4004ddc0f73ce7d92",
+  "expected_inline_sha256": "197cf6402706b8d8cbdc6042c9b131d2eb3c0a5fc0895572caade68adbc362cd",
+  "findings": [
+    "Complete current MDX SHA-256 is 87f0bf0aa1e5c14edc43e5d6881177aafafa3894f0c17b2825d8a1ed484d1e54; hero/share and inline image hashes are separately locked.",
+    "The article keeps one monthly Lease Name Index PDF separate from Production by Lease, New Lease IDs Built, Wellbore, GIS, broad record locators, automation, interpretation, and decision tasks.",
+    "Image text is limited to the exact title and keyword and adds no identifier, official mark, result, property, ownership, production, valuation, legal, tax, compliance, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_lease_name_index_one_month_one_oil_or_gas_column_one_district_one_pdf_manual_retrieval_provenance_no_property_current_operator_ownership_title_payment_production_value_offer_legal_tax_compliance_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-oil-and-gas-lease-name-index-retrieval-provenance-worksheet/texas-rrc-oil-and-gas-lease-name-index-retrieval.webp"
+  ]
+}

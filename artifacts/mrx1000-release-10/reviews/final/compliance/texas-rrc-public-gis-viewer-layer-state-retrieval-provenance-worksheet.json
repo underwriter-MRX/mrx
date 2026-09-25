@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave130_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T07:33:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0335",
+  "slug": "texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet",
+  "title": "Texas RRC Public GIS Viewer Layer-State Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "input_frontmatter_sha256": "46abb36e7eb72f0fedd7ff6d0b3f3f90d69c067cb07f4e25accd19a4948f37b8",
+  "expected_repo_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "two_image_manifest_sha256": "163a535e7ca75056f24ba8570175f7c11823f4ad22a852290ee2308252006cc0",
+  "visual_metadata": {
+    "hero_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "social_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "inline_alt": "A top-down layer-state evidence board appears above the exact Public GIS Viewer retrieval keyword."
+  },
+  "reviewer_id": "codex_wave130_compliance",
+  "review_run_id": "mrx1000-wave130-compliance-20260826T073332Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "0d599679a1e6befdcba18cdc93e23cbd625750eba86503488aa8814d2fadad89",
+  "expected_inline_sha256": "428efb0ed4b6b14d3383ddd7f5b25d93f30e1a691885255f1ca7c4f1ea58185e",
+  "findings": [
+    "Complete current MDX SHA-256 is 9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63; hero/share and inline image hashes are separately locked.",
+    "The article keeps one manual Public GIS Viewer session separate from automated or bulk retrieval, source-specific RRC query records, survey or title work, private-rights inference, valuation, offer review, legal interpretation, and transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no identifier, official mark, result, coordinate, property, ownership, boundary, valuation, legal, tax, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_public_gis_viewer_one_manual_session_visible_layer_basemap_selector_scale_label_capture_and_bounded_outcome_no_automation_authoritative_coordinate_boundary_ownership_title_coverage_value_offer_legal_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet/texas-rrc-public-gis-viewer-layer-state-retrieval.webp"
+  ]
+}

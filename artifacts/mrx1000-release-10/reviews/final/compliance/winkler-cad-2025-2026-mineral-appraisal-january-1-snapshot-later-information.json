@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave243_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0868",
+  "slug": "winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information",
+  "title": "Winkler CAD 2025-2026 Mineral Appraisal: January 1 Snapshot and Later Information",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+  "input_body_sha256": "02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8",
+  "input_frontmatter_sha256": "e01ef8d2bb03a0c27d5341e83b8ff7e76e0d26cc40ab711f889d0c9fb921631a",
+  "expected_repo_sha256": "02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8",
+  "two_image_manifest_sha256": "c7a52508a0413f58c78b7535b981cc1bce5487dcbec9b0cc44dbe648c4f268fa",
+  "visual_metadata": {
+    "hero_alt": "An appraisal evidence desk sits beside the exact Article 315 title.",
+    "social_alt": "An appraisal evidence desk sits beside the exact Article 315 title.",
+    "inline_alt": "A top-down evidence-timing matrix appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD January 1 Mineral Appraisal Snapshot · MRX",
+    "seo_title_character_count": 54,
+    "description_character_count": 141,
+    "answer_summary_word_count": 66,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T22:05:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave243",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave243_compliance",
+  "review_run_id": "mrx1000-wave243-compliance-20260915T071331Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "e7fb97ec2a767baad97a8f4f0d9ef90044f65395685e5b6ff42542c439341644",
+  "expected_inline_sha256": "edd512b146e05041f89f6427b9b13fa78a7402a4972d9c0d1e6adce1dbf31409",
+  "findings": [
+    "Complete current MDX SHA-256 is 02896d24e25039c071d7f4dcb840efe0b47790cb2e58d65de8b8df9fb363cdd8; hero/share and inline image hashes are separately locked.",
+    "The article attributes each date statement to the plan and does not independently interpret the Texas Property Tax Code, professional appraisal standards, a later record, a deadline, a protest, or an account-specific result.",
+    "The factory body is not evidence. No owner, account, address, personal data, parcel, value, tax bill, legal description, production figure, reserve estimate, report result, deadline, protest record, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, effective-date decision, property detail, legal conclusion, appraisal result, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_county_market_update_reuse_pass",
+    "no_owner_account_address_personal_data_parcel_value_tax_bill_legal_description_production_reserve_title_report_result_deadline_protest_or_transaction_data_pass",
+    "no_account_specific_effective_date_later_record_classification_legal_tax_appraisal_standard_or_protest_claim_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article313_source_chain_article314_report_user_and_midland_upton_date_record_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_digits_dates_filenames_property_details_maps_wells_rigs_money_clocks_graphs_values_logos_seals_signatures_government_emblems_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-and-later-information.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/winkler-cad-mineral-appraisal-january-1-snapshot.webp"
+  ]
+}

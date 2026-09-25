@@ -1,0 +1,107 @@
+{
+  "artifact_type": "mrx1000_wave93_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T02:26:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0169",
+  "slug": "texas-rrc-organization-p-5-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Organization (P-5) Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-organization-p-5-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90",
+  "input_frontmatter_sha256": "8fa64be43f1a3a1f45f63c106fff195d3431ece361513998dbd844b402afb973",
+  "expected_repo_sha256": "870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90",
+  "two_image_manifest_sha256": "0e4b408253002452ac7d4a57fe721d942e021173e63c8ab3490a44aad4dfb940",
+  "visual_metadata": {
+    "hero_alt": "A Texas organization-query research counter appears beside the exact article title.",
+    "social_alt": "A Texas organization-query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead organization P-5 query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave93_factual",
+  "review_run_id": "mrx1000-wave93-factual-20260824T022622Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 870391db42ef2bd8f72a833b05b9da9081913ec5966bd1227965a957ad334a90; all 5 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to current official RRC routes, source-displayed query criteria and labels, organization-information and daily-update context, separate record-access context, and published data limitations. None of the sources is used to establish property connection, title, ownership, acreage, lease effect, payee status, payment responsibility, entitlement, compliance, production, value, or a transaction result.",
+    "The article publishes no actual query values, owner document, signature, address, legal description, property identifier, result screenshot, operator allegation, organization conclusion, well conclusion, production result, valuation input, price, value, offer, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "five_distinct_https_sources",
+    "current_source_access_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Railroad Commission of Texas, Research Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T02:26:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official RRC directory identifies Organization (P-5) Query as a named oil-and-gas route and says online query data is continually updated, informational, non-authoritative, and without legal force.",
+      "claim_scope": "The article records the named route, access time, and published limitation without treating a query result as complete, legally controlling, connected to private property, or sufficient for a downstream conclusion."
+    },
+    {
+      "label": "Railroad Commission of Texas, About Oil & Gas Data Queries (accessed 2026-08-24)",
+      "url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+      "publisher": "www.rrc.texas.gov",
+      "accessed_at": "2026-08-24T02:26:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official overview describes the Organization (P-5) route, the organization-information context, operator-name or number search, and daily-update context.",
+      "claim_scope": "The article uses those source-stated categories only to build a criteria snapshot and record displayed labels; it does not interpret an organization or P-5 record."
+    },
+    {
+      "label": "Railroad Commission of Texas, Oil & Gas Data Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T02:26:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/ewaMain.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official Oil & Gas Data Query menu presents Organization (P-5) Query as a separate route from production, wellbore, severance, proration, P-4, inactive-well, orphan-well, drilling-permit, inspection, and violation routes.",
+      "claim_scope": "The article preserves that route identity so records from separate systems are not merged or mislabeled."
+    },
+    {
+      "label": "Railroad Commission of Texas, Organization (P-5) Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/organizationQueryAction.do",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T02:26:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/organizationQueryAction.do",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official public Organization (P-5) Query entry displays its current operator-selection, organization-status, organization-type, and P-5-related date criteria labels and the route used for one query attempt.",
+      "claim_scope": "The article records only criteria actually used, navigation steps that occurred, and bounded retrieval state. It does not submit a filing or reproduce an actual property query."
+    },
+    {
+      "label": "Railroad Commission of Texas, About P-5 Organization Query (accessed 2026-08-24)",
+      "url": "https://webapps2.rrc.texas.gov/EWA/help/P5Organization_About.html",
+      "publisher": "webapps2.rrc.texas.gov",
+      "accessed_at": "2026-08-24T02:26:22Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://webapps2.rrc.texas.gov/EWA/help/P5Organization_About.html",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The official P-5 Organization Query help page identifies the available search criteria, displayed result columns, and the operator-number detail route with its displayed organization fields.",
+      "claim_scope": "The article uses those field descriptions only to preserve a distinct retrieval step; it does not interpret a name, number, address, status, financial-assurance field, resident-agent field, or officer field as a property connection, payment obligation, legal authority, or compliance conclusion."
+    }
+  ]
+}

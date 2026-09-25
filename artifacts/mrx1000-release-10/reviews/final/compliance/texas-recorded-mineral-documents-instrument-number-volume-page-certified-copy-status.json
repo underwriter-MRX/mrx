@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave246_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0891",
+  "slug": "texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status",
+  "title": "Texas Recorded Mineral Documents: Instrument Number, Volume/Page, and Certified-Copy Status",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+  "source_path": "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+  "input_body_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "input_frontmatter_sha256": "56c8c60b0742360c78314db5a7fa8b2a716999795cc0caa6cb319ffcee94a701",
+  "expected_repo_sha256": "8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e",
+  "two_image_manifest_sha256": "46cb2136cfa72765ed7b6f70f2b6955ba5412ff0a37a3b0e8a70ec737eda80cd",
+  "visual_metadata": {
+    "hero_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "social_alt": "A county-records desk and two copy treatments appear beside the exact Article 318 title.",
+    "inline_alt": "A top-down five-field record-control matrix appears below the exact Texas locator-field keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Mineral Record Locator Fields and Copy Status · MRX",
+    "seo_title_character_count": 57,
+    "description_character_count": 153,
+    "answer_summary_word_count": 64,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T23:23:29Z",
+    "reviewed_by": "mrx_compliance-continuous-wave246",
+    "declared_source_count": 3,
+    "visible_body_citation_count": 3,
+    "internal_link_roles": {
+      "hub": "/learning-center/title-lease-ownership/",
+      "support": "/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave246_compliance",
+  "review_run_id": "mrx1000-wave246-compliance-20260915T071332Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "88d7c8025c50212ddfb5d558a4035c65a65de2531361a159ecf43e6642f36a6e",
+  "expected_inline_sha256": "195482b33b309afb88a76369675f7c962c993840c6b237c3eb83159ae5f87f63",
+  "findings": [
+    "Complete current MDX SHA-256 is 8a274b8664e552c6399f2d7816d4fee9f2d90d690128039b464423989e5bb86e; hero/share and inline image hashes are separately locked.",
+    "The article reports locator and copy-status distinctions only and does not tell an owner what instrument transfers an interest, whether the record chain is complete, whether a copy is admissible or sufficient, or who currently owns the interest.",
+    "The factory body is not evidence. No owner, parcel, legal description, instrument identifier, volume, page, film code, signature, seal, certification, value, tax result, title conclusion, production figure, offer, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no government affiliation, seal, certification, title conclusion, ownership conclusion, recommendation, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_cash_for_mineral_rights_document_checklist_reuse_pass",
+    "no_owner_parcel_legal_description_instrument_id_volume_page_film_code_signature_seal_certification_value_tax_title_production_offer_or_transaction_data_pass",
+    "no_retrieval_walkthrough_ownership_proof_title_opinion_legal_sufficiency_or_certification_proves_current_ownership_claim_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article0145_package_index_article0007_redaction_article0882_sale_documents_article0652_retrieval_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_pseudo_text_letters_digits_dates_coordinates_signatures_addresses_logos_watermarks_seals_flags_courthouse_emblems_badges_cash_coins_dollar_signs_handshakes_gavels_oil_rigs_or_ownership_conclusions_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status.mdx",
+    "/assets/articles/hero/texas-recorded-mineral-documents-instrument-number-volume-page-and-certified-copy-status.webp",
+    "/assets/articles/inline/texas-recorded-mineral-documents-instrument-number-volume-page-certified-copy-status/texas-recorded-mineral-document-locator-fields.webp"
+  ]
+}

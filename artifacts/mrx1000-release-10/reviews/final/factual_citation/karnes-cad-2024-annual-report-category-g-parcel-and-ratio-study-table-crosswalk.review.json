@@ -1,0 +1,121 @@
+{
+  "artifact_type": "mrx1000_wave194_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:10Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0797",
+  "slug": "karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk",
+  "title": "Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+  "source_path": "src/content/posts/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.mdx",
+  "input_body_sha256": "f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597",
+  "input_frontmatter_sha256": "d862abe0376d07bd61d9556d95338778fed69faf48f90c963a155a3474cac6f3",
+  "expected_repo_sha256": "f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597",
+  "two_image_manifest_sha256": "bce096cc1f9236fb8b77f40d22e81581be05383766cc4f53616d56fc80bf4399",
+  "visual_metadata": {
+    "hero_alt": "An upright report folio with two blank table windows appears beside the exact Karnes CAD Category G crosswalk title.",
+    "social_alt": "An upright report folio with two blank table windows appears beside the exact Karnes CAD Category G crosswalk title.",
+    "inline_alt": "Two overhead blank evidence tables appear above the Karnes CAD 2024 annual report Category G phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Karnes CAD 2024 Category G Table Crosswalk",
+    "seo_title_character_count": 42,
+    "description_character_count": 135,
+    "answer_summary_word_count": 56,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T09:09:39Z",
+    "reviewed_by": "mrx_compliance-continuous-wave194",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave194_factual",
+  "review_run_id": "mrx1000-wave194-factual-20260915T071310Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is f9b2f601667dea6cf7afb886d878ef623dedb16c965fbb8f3940bc4f383f2597; all 4 declared sources passed current HTTPS access review.",
+    "Claims are bounded to the current Data and Records page, exact eight-page 2024 Annual Report PDF, Karnes CAD homepage, and Texas Comptroller classification guide.",
+    "The exact PDF controls are HTTP 200, application/pdf, 254,728 bytes, eight pages, and SHA-256 9668e955ec3c733575b08e164a14603c950eba9c5d24cdde50c5e60bf93df6a7.",
+    "Physical page 3 visibly separates Property Types Appraised G Oil/Gas/Minerals with 146,099 parcel count and 9,060,120,750 market value from Ratio Study Analysis G. Oil, Gas, Minerals with 193 ratios, 9,059,846,390 appraised value, and five displayed statistical measures."
+  ],
+  "checks": [
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "official_pdf_complete_file_sha256_and_page_count_pass",
+    "rendered_physical_page_3_visual_review_pass",
+    "property_types_appraised_row_header_and_value_transcription_pass",
+    "ratio_study_row_header_and_value_transcription_pass",
+    "two_table_non_reconciliation_boundary_pass",
+    "claim_to_source_scope_present",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Karnes CAD Data and Records page (accessed 2026-08-29)",
+      "url": "https://karnescad.org/home/DataRecords",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:10Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/home/DataRecords",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official page supplies the Karnes CAD publisher route, Annual Reports section, and visible 2024 Annual Report link.",
+      "claim_scope": "It does not supply the exact PDF hash, prove a page-3 row, identify a person or property, or establish appraisal, tax, title, value, offer, or legal effect."
+    },
+    {
+      "label": "Karnes CAD 2024 Annual Report PDF (accessed 2026-08-29)",
+      "url": "https://karnescad.org/Forms/GetDocument?fileName=1740603796_2024+Annual+Report.pdf&subPath=Data+Records",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:10Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/Forms/GetDocument?fileName=1740603796_2024+Annual+Report.pdf&subPath=Data+Records",
+        "content_type": "application/pdf"
+      },
+      "source_location_or_paraphrase": "The exact eight-page PDF supplies physical page 3, the two section names, visible headers, and literal Category G rows.",
+      "claim_scope": "The aggregate report rows do not identify an owner, tract, lease, well, royalty, title, tax due, current value, sale value, offer, transaction, or legal effect."
+    },
+    {
+      "label": "Karnes County Appraisal District homepage (accessed 2026-08-29)",
+      "url": "https://karnescad.org/",
+      "publisher": "karnescad.org",
+      "accessed_at": "2026-09-15T07:13:10Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://karnescad.org/",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The official homepage supplies Karnes CAD public-site identity and its statement about appraisal responsibility for Mineral, Utility, and Industrial accounts.",
+      "claim_scope": "It does not prove the exact annual-report bytes, either page-3 row, a property fact, tax result, sale value, offer, or legal conclusion."
+    },
+    {
+      "label": "Texas Comptroller Property Classification Guide (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:10Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/docs/96-313.pdf",
+        "content_type": "application/octet-stream"
+      },
+      "source_location_or_paraphrase": "The official state guide supplies separate statewide appraisal-roll classification context.",
+      "claim_scope": "It does not rewrite the Karnes report wording, reconcile the two local totals, or establish a person, property, tax, title, value, offer, or legal result."
+    }
+  ]
+}

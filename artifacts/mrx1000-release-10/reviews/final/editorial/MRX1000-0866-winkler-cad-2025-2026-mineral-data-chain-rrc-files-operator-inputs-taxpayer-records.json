@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave241_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0866",
+  "slug": "winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records",
+  "title": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+  "input_body_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+  "input_frontmatter_sha256": "a0eab70c916c5132e8e83de6c7f3b3ef57313d59b9fa621585692676a0f72b54",
+  "expected_repo_sha256": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c",
+  "two_image_manifest_sha256": "7741f45773ace6ccc62f0a637df78176264945b32cf9df06d9e290222ede6747",
+  "visual_metadata": {
+    "hero_alt": "Three abstract source stacks feed one records tray beside the exact Article 313 title.",
+    "social_alt": "Three abstract source stacks feed one records tray beside the exact Article 313 title.",
+    "inline_alt": "A top-down privacy-bounded source flow appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Mineral Data Sources · MRX",
+    "seo_title_character_count": 38,
+    "description_character_count": 142,
+    "answer_summary_word_count": 59,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T21:20:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave241",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave241_editorial",
+  "review_run_id": "mrx1000-wave241-editorial-20260915T071331Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c; the answer-first article contains 2308 body tokens and five FAQs.",
+    "The original Winkler County value family-decision guide is rejected. The final article answers one narrow public-record question about which mineral-data source categories and collection roles the official Winkler contractor plan describes.",
+    "Information gain is concrete: the July 2024 print date versus 2025-2026 plan period, exact PDF/printed-page provenance, monthly RRC/operator file cadence, supplemental source categories, confidential ownership-input boundary, statewide download versus individual record enrichment, source-age register, stable claim IDs, and explicit inference stops.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark oblique three-stack-to-records-tray scene and bright strict-overhead privacy-and-cadence source matrix are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "de1b38431ff6b40e29416b463b2dae6f498dae1c21a285ea1515126ded456e9c"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 2308,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 59
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 38,
+        "description_character_count": 142,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T21:20:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave241",
+        "declared_source_count": 2,
+        "visible_body_citation_count": 2,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/winkler-cad-mineral-data-sources.webp"
+  ]
+}

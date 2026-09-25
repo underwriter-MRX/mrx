@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave149_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T14:32:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0648",
+  "slug": "1031-exchange-evidence-provenance-log-mineral-interest-owners",
+  "title": "1031 Exchange Evidence Provenance Log for Mineral Interest Owners",
+  "canonical_url": "https://mineralrightsxchange.com/blog/1031-exchange-evidence-provenance-log-mineral-interest-owners/",
+  "source_path": "src/content/posts/1031-exchange-evidence-provenance-log-mineral-interest-owners.mdx",
+  "input_body_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "input_frontmatter_sha256": "a8b235e87c3a03eb71a137ab010391c47b7bc878180fd330f545142fd87308ae",
+  "expected_repo_sha256": "889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98",
+  "two_image_manifest_sha256": "ae284ca45eb73ace75e478b11882d9accf24c0a02ed980671be1573788998b7b",
+  "visual_metadata": {
+    "hero_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "social_alt": "A dark evidence-provenance relay appears beside the exact 1031 exchange provenance-log title.",
+    "inline_alt": "An overhead blank custody matrix appears above the exact 1031 exchange recordkeeping keyword."
+  },
+  "reviewer_id": "codex_wave149_compliance",
+  "review_run_id": "mrx1000-wave149-compliance-20260826T143217Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "51c29ae16fcee1e41bee67364b38f45b54e7f39af8edb0e0fc7408c572700a89",
+  "expected_inline_sha256": "3b356082519f3a7e6fd0588293f43f5e2d4e03dba90f18813e0dbb4586f12c33",
+  "findings": [
+    "Complete current MDX SHA-256 is 889a1f16e3074b7008d70ebb898f202e10556026387c7b58160f5ce89723ba98; hero/share and inline image hashes are separately locked.",
+    "The reusable public log is blank, covers one controlled exchange file and one bounded record-organizing event, keeps all owner-specific facts and source copies in an authorized system, and stops at the qualified intermediary, CPA, and attorney before requirements, interpretation, characterization, retention, eligibility, deadlines, calculations, forms, filings, transaction design, or advice.",
+    "Image text is limited to the exact title and keyword and adds no exchange, tax, title, valuation, offer, deadline, eligibility, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_controlled_exchange_file_existing_record_source_origin_custody_retrieval_controlled_location_limitation_and_professional_handoff_log_only_retrievable_gap_open_or_professional_review_required_no_personal_values_source_copies_requirements_comparison_benefits_eligibility_property_classification_holding_purpose_like_kind_intermediary_validation_assignment_notice_transfer_safe_harbor_deadline_calculation_form_filing_retention_period_transaction_design_cure_or_owner_specific_legal_tax_title_value_conclusion_authorized_professional_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/1031-exchange-evidence-provenance-log-mineral-interest-owners.mdx",
+    "/assets/articles/hero/1031-exchange-evidence-provenance-log-for-mineral-interest-owners.webp",
+    "/assets/articles/inline/1031-exchange-evidence-provenance-log-mineral-interest-owners/1031-exchange-recordkeeping-for-mineral-interests.webp"
+  ]
+}

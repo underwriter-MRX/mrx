@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave188_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:07Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0791",
+  "slug": "texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table",
+  "title": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+  "source_path": "src/content/posts/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.mdx",
+  "input_body_sha256": "f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff",
+  "input_frontmatter_sha256": "a2e7d4832768a544a7507d480b91e568b784fbbd68a119dc21c3ebbb7b061d78",
+  "expected_repo_sha256": "f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff",
+  "two_image_manifest_sha256": "46735cbaf265640f7ea177a947085235eb558a36d5b51a283057e21743a550e2",
+  "visual_metadata": {
+    "hero_alt": "Three symbolic category cards appear beside the exact Texas Comptroller mineral-classification boundary-table title.",
+    "social_alt": "Three symbolic category cards appear beside the exact Texas Comptroller mineral-classification boundary-table title.",
+    "inline_alt": "An overhead three-lane worksheet appears above the Texas Comptroller mineral categories G1 G2 G3 phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas Comptroller G1, G2, G3 Mineral Category Table",
+    "seo_title_character_count": 51,
+    "description_character_count": 150,
+    "answer_summary_word_count": 63,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T06:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave188",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave188_editorial",
+  "review_run_id": "mrx1000-wave188-editorial-20260915T071307Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff; the answer-first article contains 1033 body tokens and five FAQs.",
+    "The article rejects the colliding statewide valuation explainer and owns one distinct deliverable: a current official-source G1/G2/G3 classification boundary table with printed page 20/PDF page 23 reconciliation.",
+    "The current information-gain and answer-citation contract is applied through a concise direct answer, one canonical classification job, four official sources with separate roles, exact document/page/version provenance, claim-adjacent citations, supported FAQs, semantic internal links, and no ranking or citation guarantee.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The three-card three-quarter scene and strict-overhead three-lane worksheet are materially distinct and make no government-affiliation, property, appraisal, tax, ownership, value, offer, legal, or outcome claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "f73c73d5724350512d4873c9e662cccf1bf722768c5a48accff11fa2c5a312ff"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1033,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 63
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 51,
+        "description_character_count": 150,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T06:55:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave188",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table.mdx",
+    "/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp",
+    "/assets/articles/inline/texas-comptroller-category-g1-g2-g3-mineral-classification-boundary-table/texas-comptroller-mineral-categories-g1-g2-g3.webp"
+  ]
+}

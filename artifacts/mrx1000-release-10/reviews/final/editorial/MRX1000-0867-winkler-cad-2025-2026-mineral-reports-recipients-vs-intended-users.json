@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave242_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0867",
+  "slug": "winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users",
+  "title": "Winkler CAD 2025-2026 Mineral Reports: Recipients vs. Intended Users",
+  "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+  "source_path": "src/content/posts/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users.mdx",
+  "input_body_sha256": "a0dde962f22a0763fbf8c48b3cc59e9ed91cff3b11aadbadc7211f5de2b0e2d1",
+  "input_frontmatter_sha256": "2f78a7927222022ae1b0bcb81ddc5071edebf759b8d45710c8860a7709053040",
+  "expected_repo_sha256": "a0dde962f22a0763fbf8c48b3cc59e9ed91cff3b11aadbadc7211f5de2b0e2d1",
+  "two_image_manifest_sha256": "8b5c6a52e28497909d4f9786be2068e264e3cc05342b5e0f12ca1df5b5dcd589",
+  "visual_metadata": {
+    "hero_alt": "A dark mineral-report folio and recipient cards sit beside the exact Article 314 title.",
+    "social_alt": "A dark mineral-report folio and recipient cards sit beside the exact Article 314 title.",
+    "inline_alt": "A top-down report-routing matrix appears below the exact Winkler CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Winkler CAD Mineral Report Intended Users · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 148,
+    "answer_summary_word_count": 47,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T21:40:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave242",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave242_editorial",
+  "review_run_id": "mrx1000-wave242-editorial-20260915T071331Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is a0dde962f22a0763fbf8c48b3cc59e9ed91cff3b11aadbadc7211f5de2b0e2d1; the answer-first article contains 1940 body tokens and five FAQs.",
+    "The original Winkler County value guide is rejected. The final article answers one narrow public-record question about how one official plan distinguishes receiving a report from assignment-specific intended-user identification.",
+    "Information gain is concrete: exact whole-PDF and printed-page provenance, complete-file hash and size, direct-contract-client language, taxpayer and agent receipt, disclosure receipt, potential-other-user categories, open-records recipients, service-scope exception, source-age register, stable claim IDs, and explicit inference stops.",
+    "Exact-title hero/share OCR and exact-keyword inline OCR passed; the dark low-angle report-folio and recipient-card scene and bright strict-overhead routing matrix are materially distinct and contain no incidental readable assertions."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "a0dde962f22a0763fbf8c48b3cc59e9ed91cff3b11aadbadc7211f5de2b0e2d1"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1940,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 47
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 47,
+        "description_character_count": 148,
+        "author": "mrx-editorial-team",
+        "reviewed_at": "2026-08-31T21:40:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave242",
+        "declared_source_count": 2,
+        "visible_body_citation_count": 2,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-taxpayer-records/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users.mdx",
+    "/assets/articles/hero/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users.webp",
+    "/assets/articles/inline/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users/winkler-cad-mineral-report-intended-users.webp"
+  ]
+}

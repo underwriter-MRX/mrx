@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave138_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T11:15:18Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0343",
+  "slug": "texas-tdi-title-agent-report-retrieval-provenance-worksheet",
+  "title": "Texas TDI Title Agent Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-tdi-title-agent-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-tdi-title-agent-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "input_frontmatter_sha256": "82ac612575b5deb4c5044d88cdffd0529052e2eecc265936b5bf8aaf64e58455",
+  "expected_repo_sha256": "147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7",
+  "two_image_manifest_sha256": "d94ba8ad967110d17cb505355a82f86bbf7303306616eba598f582059e3a3ad7",
+  "visual_metadata": {
+    "hero_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "social_alt": "An oblique public-report retrieval station appears beside the exact Texas TDI worksheet title.",
+    "inline_alt": "A top-down blank report-attempt worksheet appears above the exact Texas TDI title-agent keyword."
+  },
+  "reviewer_id": "codex_wave138_compliance",
+  "review_run_id": "mrx1000-wave138-compliance-20260826T111518Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "2f675282e78717809f9a157676270753d3e0b280713a3b0fa0e7b9a7b32ebe8d",
+  "expected_inline_sha256": "f1f32c8cca06becb75c8af7f186987775cb01248ad86829e035737fc05813805",
+  "findings": [
+    "Complete current MDX SHA-256 is 147efa11fe28f2cfd4e801b560aab69d4a92067e1b90fe15af77e4a28f6261c7; hero/share and inline image hashes are separately locked.",
+    "The reusable public worksheet is blank, covers one manual route and one named report attempt, keeps correspondence as a separate controlled reference, places non-verification warnings beside the report and outcome fields, and stops at authorized-human review.",
+    "Image text is limited to the exact title and keyword and adds no identity, licensure, appointment, legitimacy, authority, offer-quality, value, legal, complaint, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "one_authorized_manual_tdi_title_agent_and_escrow_officer_report_route_and_attempt_source_displayed_fields_only_separate_controlled_correspondence_reference_controlled_outcomes_no_sender_or_property_comparison_no_license_interpretation_legitimacy_offer_quality_legal_valuation_or_transaction_conclusion_authorized_human_stop_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-tdi-title-agent-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-tdi-title-agent-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-tdi-title-agent-report-retrieval-provenance-worksheet/texas-tdi-title-agent-report-retrieval.webp"
+  ]
+}

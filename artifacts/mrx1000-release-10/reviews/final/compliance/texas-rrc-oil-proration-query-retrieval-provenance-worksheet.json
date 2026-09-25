@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave96_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-24T04:57:28Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0279",
+  "slug": "texas-rrc-oil-proration-query-retrieval-provenance-worksheet",
+  "title": "Texas RRC Oil Proration Query Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-oil-proration-query-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-oil-proration-query-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485",
+  "input_frontmatter_sha256": "8e3eba3fa66e3ad3ef660623d956df01ff58efa8e7187d4e96d5d7fdf542ab8f",
+  "expected_repo_sha256": "fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485",
+  "two_image_manifest_sha256": "420e4e403128fda5fa54cb3afb63964f2f681d740e772508f29a96c458cfbb54",
+  "visual_metadata": {
+    "hero_alt": "A Texas oil-proration query research counter appears beside the exact article title.",
+    "social_alt": "A Texas oil-proration query research counter appears beside the exact article title.",
+    "inline_alt": "A people-free overhead oil-proration query provenance worksheet appears above the exact keyword."
+  },
+  "reviewer_id": "codex_wave96_compliance",
+  "review_run_id": "mrx1000-wave96-compliance-20260824T045728Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "1742d7994676d46bd29183f0a4d0d487cf04c1f3524ecb8695ed1f7805214c6f",
+  "expected_inline_sha256": "c224b2149afce99998c32b946e13743a8e9c41f257a9c7889ec8b03cc99c5118",
+  "findings": [
+    "Complete current MDX SHA-256 is fdbcfcac7082b4aac6b8fcb3c2e9711528ffeef7b5cf5cc0674d7bdcbed55485; hero/share and inline image hashes are separately locked.",
+    "The article preserves source identity and uncertainty; uses only located, not located, or unverified; separates query criteria, query-screen labels, links, and routes; converts gaps into neutral retrieval questions; controls private identifiers; and stops before legal, title, regulatory, environmental, engineering, geological, production, valuation, offer, or transaction decisions.",
+    "Image text is limited to the exact article title and approved keyword and adds no real RRC record, identifier, result, signature, seal, logo, acreage, legal conclusion, value, recommendation, guarantee, or transaction outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_oil_proration_query_retrieval_no_property_connection_title_ownership_acreage_lease_payment_entitlement_compliance_environmental_operating_status_production_value_offer_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-oil-proration-query-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-oil-proration-query-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-oil-proration-query-retrieval-provenance-worksheet/texas-rrc-oil-proration-query-retrieval.webp"
+  ]
+}

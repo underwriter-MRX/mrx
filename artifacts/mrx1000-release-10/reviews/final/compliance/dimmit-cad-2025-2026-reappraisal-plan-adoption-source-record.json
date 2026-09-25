@@ -1,0 +1,72 @@
+{
+  "artifact_type": "mrx1000_wave174_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:00Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0773",
+  "slug": "dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record",
+  "title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+  "source_path": "src/content/posts/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+  "input_body_sha256": "47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c",
+  "input_frontmatter_sha256": "56702abcf854a2f3f8ccc056a585c0062019828662eea58c95b3cc9ba9a89dd6",
+  "expected_repo_sha256": "47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c",
+  "two_image_manifest_sha256": "c8b047590fc0f926cc583d4c4c6eba4eaa6e20d93345b9721393410c5f61ad02",
+  "visual_metadata": {
+    "hero_alt": "An archival navy plan binder and blank adoption markers appear beside the exact Dimmit CAD source-record title.",
+    "social_alt": "An archival navy plan binder and blank adoption markers appear beside the exact Dimmit CAD source-record title.",
+    "inline_alt": "Five overhead page cards form an evidence path above the exact Dimmit CAD 2025-2026 reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Dimmit CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+    "seo_title_character_count": 60,
+    "description_character_count": 141,
+    "answer_summary_word_count": 60,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T01:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave174",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dimmit-cad-2024-25-map-review-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave174_compliance",
+  "review_run_id": "mrx1000-wave174-compliance-20260915T071300Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "13b1afe191c0cb87f4d4c561a310db84d1863ad8b72a44cc30272985903c20b5",
+  "expected_inline_sha256": "f0dcf89c3c111c70f8fcc430b06bd769d87f384dcdcaee7aa8a52b93a68f1c83",
+  "findings": [
+    "Complete current MDX SHA-256 is 47ada186bd526ef51aab1d3260949a12215212408ab0023cd2c15c4a314b4f0c; hero/share and inline image hashes are separately locked.",
+    "The public article uses plan identity and page locators only and expressly rejects document authentication, statutory interpretation, district compliance judgment, appraisal correctness, property matching, tax or protest direction, title or ownership findings, valuation, offer analysis, sale advice, or promised outcomes.",
+    "The Culberson plan, Dimmit MAP review, and Dimmit ratio study retain separate canonical evidence ownership and are not combined, ranked, benchmarked, or used to validate one another.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, official mark, resolution effect, property fact, appraisal claim, tax direction, value, offer, recommendation, or promised result."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_relationship_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "plan_source_record_no_authentication_legal_interpretation_compliance_appraisal_tax_protest_title_ownership_valuation_offer_sale_or_owner_action_pass",
+    "adjacent_source_records_not_combined_compared_benchmarked_ranked_or_used_as_property_evidence_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_hand_readable_base_text_number_official_page_seal_signature_logo_government_mark_map_money_property_record_value_chart_badge_result_or_watermark_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+    "/assets/articles/hero/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+    "/assets/articles/inline/dimmit-cad-2025-2026-reappraisal-plan-adoption-source-record/dimmit-cad-2025-2026-reappraisal-plan.webp"
+  ]
+}

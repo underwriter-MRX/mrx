@@ -1,0 +1,66 @@
+{
+  "artifact_type": "mrx1000_wave130_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T07:33:32Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0335",
+  "slug": "texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet",
+  "title": "Texas RRC Public GIS Viewer Layer-State Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "input_frontmatter_sha256": "46abb36e7eb72f0fedd7ff6d0b3f3f90d69c067cb07f4e25accd19a4948f37b8",
+  "expected_repo_sha256": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63",
+  "two_image_manifest_sha256": "163a535e7ca75056f24ba8570175f7c11823f4ad22a852290ee2308252006cc0",
+  "visual_metadata": {
+    "hero_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "social_alt": "A dark oblique GIS session archive appears beside the exact Public GIS Viewer worksheet title.",
+    "inline_alt": "A top-down layer-state evidence board appears above the exact Public GIS Viewer retrieval keyword."
+  },
+  "reviewer_id": "codex_wave130_editorial",
+  "review_run_id": "mrx1000-wave130-editorial-20260826T073332Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63; the answer-first article contains 1486 body tokens and five FAQs.",
+    "The article rejects the colliding comparative-valuation identity and owns one distinct administrative job: preserve the visible layer state and provenance of one manual Texas RRC Public GIS Viewer session.",
+    "Exact-title hero/share OCR and in-body keyword OCR passed. The dark oblique GIS-session archive and cream strict-overhead layer-state evidence board are materially distinct."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "9334e1c182d37753bd91f20a051e4bac270211f094e19f535257690a83a1ed63"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1486,
+        "minimum_word_count": 700,
+        "faq_count": 5
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-public-gis-viewer-layer-state-retrieval-provenance-worksheet/texas-rrc-public-gis-viewer-layer-state-retrieval.webp"
+  ]
+}

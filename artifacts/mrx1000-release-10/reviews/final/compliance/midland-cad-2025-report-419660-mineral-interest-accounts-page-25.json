@@ -1,0 +1,71 @@
+{
+  "artifact_type": "mrx1000_wave210_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0830",
+  "slug": "midland-cad-2025-report-419660-mineral-interest-accounts-page-25",
+  "title": "Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+  "source_path": "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+  "input_body_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+  "input_frontmatter_sha256": "e3f69ee046c042a6ae4f38d3e252f0627bd13a7f094c0a6240608cd577e4ae25",
+  "expected_repo_sha256": "5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2",
+  "two_image_manifest_sha256": "2da99eda7348ff2895779236cf1b72181e3e6e25bcd0acf7cd579a55d5923b51",
+  "visual_metadata": {
+    "hero_alt": "An annual-report folio, page locator, and account tokens appear beside the exact Midland CAD report title.",
+    "social_alt": "An annual-report folio, page locator, and account tokens appear beside the exact Midland CAD report title.",
+    "inline_alt": "A top-down account-marker field stops before three separate denominator trays above the exact Midland CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD 419,660 Accounts: PDF Page 25 · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 150,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-30T05:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave210",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave210_compliance",
+  "review_run_id": "mrx1000-wave210-compliance-20260915T071317Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "f423547520f7c407c28996a29fee3a0bad77d69825aa2d4770a509cd33329225",
+  "expected_inline_sha256": "a31e7c58c548c3264effc9513c082ad859224ce7eebc4d255aab9c4d42b9ddec",
+  "findings": [
+    "Complete current MDX SHA-256 is 5bb086a5bcf86e58204afd9491530a445b380aa2760995f84676b3eb4ffb30c2; hero/share and inline image hashes are separately locked.",
+    "The article preserves approximately, mineral interest accounts, report-year context, and physical PDF page 25 while prohibiting owner, tract, well, lease, acreage, current-status, appraisal, title, tax, value, transaction, production, royalty, and contractor-performance inferences.",
+    "Image text is limited to the exact title and keyword and adds no official affiliation, count interpretation, owner or property data, account result, value, outcome, ranking, or citation claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "approximate_account_count_not_converted_to_unique_owners_tracts_wells_leases_producing_interests_net_mineral_acres_current_live_accounts_or_current_ownership_pass",
+    "report_statement_not_converted_to_account_specific_appraisal_title_tax_value_sale_offer_production_royalty_or_contractor_performance_pass",
+    "property_tax_source_not_converted_to_private_transaction_value_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_readable_base_text_letters_numbers_dates_forms_signatures_seals_logos_maps_property_records_money_formulas_charts_values_results_government_symbols_conclusions_decorative_pseudo_writing_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+    "/assets/articles/hero/midland-cad-2025-report-419-660-mineral-interest-accounts-on-pdf-page-25.webp",
+    "/assets/articles/inline/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/midland-cad-419-660-mineral-interest-accounts.webp"
+  ]
+}

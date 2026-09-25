@@ -1,0 +1,114 @@
+{
+  "artifact_type": "mrx1000_wave129_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0334",
+  "slug": "mineral-rights-offer-version-control-and-deadline-register",
+  "title": "Mineral Rights Offer Version-Control and Deadline Register",
+  "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-version-control-and-deadline-register/",
+  "source_path": "src/content/posts/mineral-rights-offer-version-control-and-deadline-register.mdx",
+  "input_body_sha256": "06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419",
+  "input_frontmatter_sha256": "0f0c3a170bd2ee6e224855569f2dedc0b3ec97cd3221993591219a31f8a0eab2",
+  "expected_repo_sha256": "06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419",
+  "two_image_manifest_sha256": "ed0763fb83ba94b67b4c594cdf3318339a781a507dc585eb23f987ee0f462246",
+  "visual_metadata": {
+    "hero_alt": "A dark oblique offer-version archive station appears beside the exact version-control register title.",
+    "social_alt": "A dark oblique offer-version archive station appears beside the exact version-control register title.",
+    "inline_alt": "A top-down offer-version register board appears above the exact version-control keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Mineral Rights Offer Version-Control Register",
+    "seo_title_character_count": 45,
+    "description_character_count": 154,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T06:48:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave129",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/mineral-rights-offer-correspondence-index/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/mineral-rights-offer-version-control-and-deadline-register/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave129_factual",
+  "review_run_id": "mrx1000-wave129-factual-20260915T072837Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 06f74560aa3c5eda450716976dfc87c3a1fbfed2e135aac224e00e4af1f2a419; all 4 declared sources passed current HTTPS access review.",
+    "Claims remain bounded to four current primary sources, transparent administrative conventions, exact-as-received transcription, and a byte-change digest limitation.",
+    "The article publishes no actual offer, owner, buyer, property, price, contract term, signature, account, private filename, private deadline, fairness conclusion, or transaction recommendation."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "four_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "claim_to_source_scope_present",
+    "official_source_priority_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "National Archives, NARA Bulletin 2015-04 Appendix B (accessed 2026-08-25)",
+      "url": "https://www.archives.gov/records-mgmt/bulletins/2015/2015-04-appendix-b.html",
+      "publisher": "www.archives.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.archives.gov/records-mgmt/bulletins/2015/2015-04-appendix-b.html",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The NARA appendix supports descriptive, consistent file naming and placing dates or version numbers in a consistent location.",
+      "claim_scope": "Its federal records-management guidance is used as an administrative naming principle only, not as a mineral-rights requirement or legal-retention rule."
+    },
+    {
+      "label": "NIST, FIPS 180-4 Secure Hash Standard (accessed 2026-08-25)",
+      "url": "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+      "publisher": "csrc.nist.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://csrc.nist.gov/pubs/fips/180-4/upd1/final",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "NIST FIPS 180-4 specifies secure hash algorithms that generate message digests for messages or files.",
+      "claim_scope": "The article limits an optional SHA-256 digest to byte-change detection and does not claim identity, authorship, authenticity, completeness, legal validity, or fraud detection."
+    },
+    {
+      "label": "Texas Attorney General, How to Avoid Home Improvement Scams (accessed 2026-08-25)",
+      "url": "https://www.texasattorneygeneral.gov/consumer-protection/home-real-estate-and-travel/how-avoid-home-improvement-scams",
+      "publisher": "www.texasattorneygeneral.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.texasattorneygeneral.gov/consumer-protection/home-real-estate-and-travel/how-avoid-home-improvement-scams",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Texas Attorney General page supports the general consumer practice of reading written terms and keeping copies.",
+      "claim_scope": "It is expressly labeled general consumer guidance from a different transaction context, not mineral-rights law, contract interpretation, or a deadline rule."
+    },
+    {
+      "label": "Texas Attorney General, How to Spot and Report Phone Scams (accessed 2026-08-25)",
+      "url": "https://www.texasattorneygeneral.gov/consumer-protection/phone-mail-and-fax-scams/how-spot-and-report-phone-scams",
+      "publisher": "www.texasattorneygeneral.gov",
+      "accessed_at": "2026-09-15T07:28:37Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://www.texasattorneygeneral.gov/consumer-protection/phone-mail-and-fax-scams/how-spot-and-report-phone-scams",
+        "content_type": "text/html; charset=utf-8"
+      },
+      "source_location_or_paraphrase": "The Texas Attorney General page identifies pressure and limited-time tactics as general consumer warning signs.",
+      "claim_scope": "The article uses that point only to support preserving communications and asking bounded follow-up questions, not to label a mineral-rights offer or party fraudulent or illegitimate."
+    }
+  ]
+}

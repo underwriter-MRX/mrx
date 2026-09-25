@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave199_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:13Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0814",
+  "slug": "loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk",
+  "title": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
+  "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+  "source_path": "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+  "input_body_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "input_frontmatter_sha256": "e890263b86c89a39cf506cc10485c4c817b438440df97cd0414d759a09ddf0ed",
+  "expected_repo_sha256": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26",
+  "two_image_manifest_sha256": "e7ab0c9166f65d350a4c58de1b769f37c8d68b5166466c30baf35905ed9389ee",
+  "visual_metadata": {
+    "hero_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "social_alt": "A blank report binder and four roster cards appear beside the exact Loving CAD 2026 roster-crosswalk title.",
+    "inline_alt": "Four blank roster tabs sit on two offset pages above the exact Loving CAD 2026 mineral appraisal assistance roster phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Loving CAD 2026 Mineral Assistance Roster · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 140,
+    "answer_summary_word_count": 58,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T11:08:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave199",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave199_editorial",
+  "review_run_id": "mrx1000-wave199-editorial-20260915T071313Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26; the answer-first article contains 1363 body tokens and five FAQs.",
+    "The article rejects the broad Loving County valuation family-guide identity and owns one distinct official-document roster page-crosswalk question.",
+    "The current evidence contract is applied through a direct answer, stable claim IDs, evidence labels, exact retrieval controls, physical-versus-printed page alignment, render hashes, a source-role table, exact four-row transcription, supported FAQs, semantic links, and no ranking or citation promise.",
+    "Exact-title hero/share OCR passed; exact-keyword inline OCR passed; the three-quarter report-and-four-card hero and top-down two-page four-tab inline image are materially distinct compositions and make no official-record claim."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "792a4f49459e111e9c591d714daa778175193391174b480e2f80caf9cd564f26"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1363,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 58
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 47,
+        "description_character_count": 140,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T11:08:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave199",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.mdx",
+    "/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp",
+    "/assets/articles/inline/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk/loving-cad-2026-mineral-appraisal-assistance-roster.webp"
+  ]
+}

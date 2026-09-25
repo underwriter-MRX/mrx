@@ -1,0 +1,137 @@
+{
+  "artifact_type": "mrx1000_wave209_two_image_factual_citation_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:17Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0829",
+  "slug": "midland-cad-mineral-property-three-approaches-sufficient-data-condition",
+  "title": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
+  "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+  "source_path": "src/content/posts/midland-cad-mineral-property-three-approaches-sufficient-data-condition.mdx",
+  "input_body_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+  "input_frontmatter_sha256": "8c327e4bb99950b4e754c5afcbbfbc0f305fd7ff74220154b3039014e6fa7e8b",
+  "expected_repo_sha256": "78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485",
+  "two_image_manifest_sha256": "4c92edf78b83e05c61e38a45fb19831a693f863e57081f2ce67406683fdb5afc",
+  "visual_metadata": {
+    "hero_alt": "Three evidence stations meet a translucent data gate beside the exact Midland CAD mineral-property title.",
+    "social_alt": "Three evidence stations meet a translucent data gate beside the exact Midland CAD mineral-property title.",
+    "inline_alt": "Three top-down evidence plates flow through a data sieve above the exact Midland CAD appraisal-approaches keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Midland CAD Appraisal Approaches: Sufficient Data · MRX",
+    "seo_title_character_count": 55,
+    "description_character_count": 149,
+    "answer_summary_word_count": 66,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T18:45:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave209",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/dewitt-cad-2025-g1-oil-gas-and-mineral-reserve-source-record/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/midland-cad-mineral-property-three-approaches-sufficient-data-condition/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave209_factual",
+  "review_run_id": "mrx1000-wave209-factual-20260915T071317Z",
+  "capability": "factual_citation",
+  "findings": [
+    "Complete current MDX SHA-256 is 78718e2f086b20bf3144ce0be33661dbb7626f199b81b5fd4414f63d39899485; all 5 declared sources passed current HTTPS access review.",
+    "Claims are bounded to five official sources: the current Midland CAD Mineral Property, Publications, and Open Records pages plus the Texas Comptroller Midland directory and Valuing Property page.",
+    "The controlled Mineral Property API response is 669 bytes with SHA-256 dbab9120e18eb86b81130445a5aa12aa959ca5a0af162ba2847248bee58ce1d5, page ID 5533, modified timestamp 2025-04-10T16:32:11, and canonical URL https://midcad.org/mineral-property/.",
+    "The controlled Publications and Open Records API responses are 10,236 and 9,988 bytes with SHA-256 values ecfab3416d57144355170bdea0d5dbfcc087ee932bdae62c0da46545d7d987de and 9a5465430a510a716ab162a0ad2287ea83da12d677bd17456ef525272d4af482.",
+    "The Texas Comptroller Midland directory and Valuing Property responses are 121,531 and 134,841 bytes with SHA-256 values 236fb5f5686a90b91c02047d50361f8639c498facad7ecb4cc3d973f6e28d813 and f8a36293f7b7d40a74d1116ff2dfe9e96a3d2e02a944f7955a43ab741f6f604d.",
+    "No owner, property, account, or mineral-file search was performed and no record was reviewed or reproduced."
+  ],
+  "checks": [
+    "five_distinct_https_sources",
+    "current_primary_source_http_review_pass",
+    "controlled_wp_api_identity_bytes_sha256_and_modified_timestamp_pass",
+    "publications_and_open_records_source_lane_separation_pass",
+    "comptroller_official_domain_routing_pass",
+    "no_owner_property_account_or_mineral_file_search_pass",
+    "stable_claim_ids_evidence_labels_and_source_roles_pass",
+    "provenance_vs_validity_boundary_pass",
+    "sufficient_data_condition_not_silently_normalized_pass",
+    "information_gain_distinct_job_and_canonical_owner_pass",
+    "answer_first_and_claim_adjacent_citation_integrity_pass",
+    "semantic_internal_link_roles_pass",
+    "unsupported_high_risk_claim_scan_pass"
+  ],
+  "sources_inspected": [
+    {
+      "label": "Midland Central Appraisal District Mineral Property page (accessed 2026-08-29)",
+      "url": "https://midcad.org/mineral-property/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/mineral-property/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Midland CAD page supplies the contractor statement, stated mineral-property scope, three named approach labels, and sufficient-data condition.",
+      "claim_scope": "The page does not identify an account-specific method, data-sufficiency result, input, reconciliation, appraisal accuracy, ownership, title, tax, protest, sale value, offer, production, royalty, transaction, or legal conclusion."
+    },
+    {
+      "label": "Midland Central Appraisal District Publications page (accessed 2026-08-29)",
+      "url": "https://midcad.org/publications-2/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/publications-2/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Publications page separately lists annual reports, mass appraisal reports, reappraisal plans, and other documents.",
+      "claim_scope": "A listing does not import a report into the Mineral Property page or validate an account, appraisal, title, tax, sale value, or transaction result."
+    },
+    {
+      "label": "Midland Central Appraisal District Open Records page (accessed 2026-08-29)",
+      "url": "https://midcad.org/open-records/",
+      "publisher": "midcad.org",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://midcad.org/open-records/",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The current official Open Records page separately lists certified and preliminary rolls, notices, and mineral files.",
+      "claim_scope": "A listed file does not prove ownership, title, account-level method, appraisal validity, tax liability, private sale value, or another property-specific conclusion."
+    },
+    {
+      "label": "Texas Comptroller Midland county directory (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/county-directory/midland.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller directory supplies current issuer-routing evidence for Midland Central Appraisal District and midcad.org.",
+      "claim_scope": "Directory provenance does not endorse every district statement or validate a contract, account, appraisal, tax, title, or transaction result."
+    },
+    {
+      "label": "Texas Comptroller Valuing Property page (accessed 2026-08-29)",
+      "url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+      "publisher": "comptroller.texas.gov",
+      "accessed_at": "2026-09-15T07:13:17Z",
+      "http_access_result": {
+        "status": 200,
+        "final_url": "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      "source_location_or_paraphrase": "The Texas Comptroller page supplies current statewide context for common appraisal approaches, appraisal districts, and mass appraisal.",
+      "claim_scope": "Statewide context does not determine the approach, data sufficiency, input, result, or private transaction value for a Midland mineral account."
+    }
+  ]
+}

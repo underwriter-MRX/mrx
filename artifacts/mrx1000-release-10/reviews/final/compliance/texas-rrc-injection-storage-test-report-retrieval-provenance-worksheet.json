@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave126_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:32:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0331",
+  "slug": "texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet",
+  "title": "Texas RRC Injection-Storage Test Report Retrieval Provenance Worksheet",
+  "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet/",
+  "source_path": "src/content/posts/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet.mdx",
+  "input_body_sha256": "c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8",
+  "input_frontmatter_sha256": "edc0566eacd5ac61111f3cc28aa767c6930dece128bba0ee1c5d4d203aa00947",
+  "expected_repo_sha256": "c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8",
+  "two_image_manifest_sha256": "ef0d4a7e7e3ed9cbdfb247848a043faf86c6e4668076f402e5f982a601c2cd49",
+  "visual_metadata": {
+    "hero_alt": "An archival research station appears beside the exact injection-storage worksheet title.",
+    "social_alt": "An archival research station appears beside the exact injection-storage worksheet title.",
+    "inline_alt": "Three evidence sleeves and a pressure-chart roll appear above the exact retrieval keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Texas RRC Injection-Storage Report Retrieval Worksheet",
+    "seo_title_character_count": 54,
+    "description_character_count": 154,
+    "answer_summary_word_count": 68,
+    "author": "ariana",
+    "reviewed_at": "2026-08-25T14:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave126",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/offer-review/",
+      "support": "/blog/texas-rrc-injection-storage-permit-query-retrieval-provenance-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave126_compliance",
+  "review_run_id": "mrx1000-wave126-compliance-20260915T073231Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "5d45616ec3968c781920b3d1c72a424e43b3fd3d09b7b0ff40a992578c30bd82",
+  "expected_inline_sha256": "b27aa6a2e96ad217482748d9050f89367058191d9a96a774d67d7fbda3ef9ecf",
+  "findings": [
+    "Complete current MDX SHA-256 is c59e24c88ccd99c9d2d1fe0391059f6a8f096c08fb5c665926908996164d71a8; hero/share and inline image hashes are separately locked.",
+    "The article keeps profileId 7 separate from UIC permits, EDMS H-1/H-1A/W-14 documents, H-10 monitoring, H-5 filing, paid research, automation, interpretation, and decision tasks.",
+    "Image text is limited to the exact title and keyword and adds no identifier, result, official mark, compliance, engineering, environmental, valuation, or transaction claim."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "texas_rrc_injection_storage_test_reports_profile7_one_manual_attempt_http403_unverified_no_login_payment_filing_automation_interpretation_compliance_engineering_environmental_property_production_value_offer_legal_tax_or_transaction_conclusion_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_unsupported_visual_or_decision_claims"
+  ],
+  "sources_inspected": [
+    "src/content/posts/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet.mdx",
+    "/assets/articles/hero/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet.webp",
+    "/assets/articles/inline/texas-rrc-injection-storage-test-report-retrieval-provenance-worksheet/texas-rrc-injection-storage-test-report-retrieval.webp"
+  ]
+}

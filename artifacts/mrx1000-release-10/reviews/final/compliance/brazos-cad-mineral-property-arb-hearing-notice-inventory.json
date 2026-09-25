@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave156_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:37Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0750",
+  "slug": "brazos-cad-mineral-property-arb-hearing-notice-inventory",
+  "title": "Brazos CAD Mineral Property ARB Hearing Notice Inventory",
+  "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-arb-hearing-notice-inventory/",
+  "source_path": "src/content/posts/brazos-cad-mineral-property-arb-hearing-notice-inventory.mdx",
+  "input_body_sha256": "3ceca60a214c444e37ca7f420968165912dd8b5821df9e8ff081daf3832b11f1",
+  "input_frontmatter_sha256": "e195ab78ff144971e81791613b251f9b47ab2d8ce67d09366f1b5687fc5e0e1a",
+  "expected_repo_sha256": "3ceca60a214c444e37ca7f420968165912dd8b5821df9e8ff081daf3832b11f1",
+  "two_image_manifest_sha256": "5b26fe8200de70f9685fdc454817d1457b1fc4aff8e00c1c2d09edbc7fd04883",
+  "visual_metadata": {
+    "hero_alt": "A blank notice sleeve and archival tray appear beside the exact Brazos CAD hearing-notice inventory title.",
+    "social_alt": "A blank notice sleeve and archival tray appear beside the exact Brazos CAD hearing-notice inventory title.",
+    "inline_alt": "A top-down blank notice inventory appears above the exact Brazos CAD mineral property ARB hearing notice keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Brazos CAD ARB Hearing Notice Inventory",
+    "seo_title_character_count": 39,
+    "description_character_count": 154,
+    "answer_summary_word_count": 67,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T19:26:46Z",
+    "reviewed_by": "mrx_compliance-continuous-wave156",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-property-protest-status-verification-log/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/brazos-cad-mineral-property-arb-hearing-notice-inventory/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave156_compliance",
+  "review_run_id": "mrx1000-wave156-compliance-20260915T072837Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "3ef96c97e0279f86d1349ae3576d95cdb44885f693a4c7eb16879e7e76d892e2",
+  "expected_inline_sha256": "1a5468bc557a15c80b13656b8b82b8a4686d0f615eda1037b6687596491093cb",
+  "findings": [
+    "Complete current MDX SHA-256 is 3ceca60a214c444e37ca7f420968165912dd8b5821df9e8ff081daf3832b11f1; hero/share and inline image hashes are separately locked.",
+    "The reusable public inventory contains blank document-control fields only, keeps completed records in an authorized system, and stops before private-data disclosure, login, contact, change request, signature, upload, submission, payment, deadline calculation, legal interpretation, tax guidance, appraisal judgment, valuation, representation, or strategy.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real notice, form, identifier, scheduling claim, tax or appraisal fact, legal position, professional endorsement, recommendation, hearing result, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "post_filing_retained_written_notice_inventory_only_no_search_routing_evidence_preparation_status_query_deadline_interpretation_contact_submission_private_data_valuation_advice_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_notice_form_identifier_date_time_place_value_government_mark_recommendation_legal_appraisal_hearing_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/brazos-cad-mineral-property-arb-hearing-notice-inventory.mdx",
+    "/assets/articles/hero/brazos-cad-mineral-property-arb-hearing-notice-inventory.webp",
+    "/assets/articles/inline/brazos-cad-mineral-property-arb-hearing-notice-inventory/brazos-cad-mineral-property-arb-hearing-notice.webp"
+  ]
+}

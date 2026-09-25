@@ -1,0 +1,49 @@
+{
+  "artifact_type": "mrx1000_wave151_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-08-26T15:55:39Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14",
+    "policy": "MRX continuous quality-gated publication and two-image article creative directive"
+  },
+  "program_row_id": "MRX1000-0652",
+  "slug": "how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff",
+  "title": "How to Retrieve a Recorded Mineral Deed Copy for a CPA Handoff",
+  "canonical_url": "https://mineralrightsxchange.com/blog/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/",
+  "source_path": "src/content/posts/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff.mdx",
+  "input_body_sha256": "3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133",
+  "input_frontmatter_sha256": "5228783febafd003ae8b9f11869d4e104fafdb0d3949067f956594ad909a3dd5",
+  "expected_repo_sha256": "3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133",
+  "two_image_manifest_sha256": "6a1fd1eadabb96dbe0c0af155e406d7761964d3792fa997f441081c96e539b38",
+  "visual_metadata": {
+    "hero_alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+    "social_alt": "A county archive retrieval counter appears beside the exact recorded-mineral-deed-copy article title.",
+    "inline_alt": "An overhead blank county-record retrieval log appears above the exact recorded mineral deed copy keyword."
+  },
+  "reviewer_id": "codex_wave151_compliance",
+  "review_run_id": "mrx1000-wave151-compliance-20260826T155539Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "19217b69726bf21808044b5df07b48c3baae96c40661b84cdbcc91281f725ede",
+  "expected_inline_sha256": "dce0d4e56120c4e4a37aeb15f89043f788674c5141865d177021f7e65a0d7070",
+  "findings": [
+    "Complete current MDX SHA-256 is 3a056ea6eaf55acdc582f103f09a1c19f077200541f1ccf4880cbbb7c93a8133; hero/share and inline image hashes are separately locked.",
+    "The reusable public record contains blank administrative pointers only, keeps source copies and transaction details inside an authorized system, and stops at the CPA, attorney, or title professional before interpretation, completeness, ownership, title, validity, priority, basis, character, filing, retention, offer, valuation, or transaction decisions.",
+    "Image text is limited to the exact title and keyword and adds no county affiliation, seal, deed facsimile, legal conclusion, title evidence, tax result, valuation result, offer result, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "county_record_copy_retrieval_provenance_unaltered_source_receipt_limitation_and_cpa_handoff_only_no_ownership_title_deed_validity_legal_effect_reservation_record_priority_completeness_sufficiency_basis_gain_character_tax_offer_valuation_transaction_or_owner_specific_advice_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_county_identifier_deed_facsimile_seal_property_tax_amount_offer_or_unsupported_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff.mdx",
+    "/assets/articles/hero/how-to-retrieve-a-recorded-mineral-deed-copy-for-a-cpa-handoff.webp",
+    "/assets/articles/inline/how-to-retrieve-recorded-mineral-deed-copy-for-cpa-handoff/recorded-mineral-deed-copy.webp"
+  ]
+}

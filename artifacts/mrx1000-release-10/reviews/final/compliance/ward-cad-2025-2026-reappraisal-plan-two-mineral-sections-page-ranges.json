@@ -1,0 +1,75 @@
+{
+  "artifact_type": "mrx1000_wave240_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:31Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0860",
+  "slug": "ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges",
+  "title": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
+  "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+  "source_path": "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+  "input_body_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "input_frontmatter_sha256": "9ef2c7fb5eb0d5a842d19e731f2031d1d349e40be4e34c65dc4cb54106164510",
+  "expected_repo_sha256": "1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd",
+  "two_image_manifest_sha256": "32f0ed4565ce1a62da7eb713053a7be3b772af4d10c35a98585d5cb46c2142b7",
+  "visual_metadata": {
+    "hero_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "social_alt": "An open appraisal-plan binder shows two section groups beside the exact Article 312 title.",
+    "inline_alt": "A top-down source crosswalk links two document-section stacks below the exact Ward CAD keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Ward CAD Mineral Sections and Page Ranges · MRX",
+    "seo_title_character_count": 47,
+    "description_character_count": 138,
+    "answer_summary_word_count": 48,
+    "author": "mrx-editorial-team",
+    "reviewed_at": "2026-08-31T20:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave240",
+    "declared_source_count": 2,
+    "visible_body_citation_count": 2,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/ward-cad-2026-2029-mineral-contract-listed-interests-non-fuel-mineral-exclusions/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave240_compliance",
+  "review_run_id": "mrx1000-wave240-compliance-20260915T071331Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "eadf4bdf27f04b6c2912fd868acdf7bec6a06e5b68de3cdab5d2bff3ba33f91a",
+  "expected_inline_sha256": "4f527da8edf29963e567b27086a758f3cc6aba5b5267834ffb064f2376b9d3ee",
+  "findings": [
+    "Complete current MDX SHA-256 is 1bc1909e90369eacd25f87002379bdd539929c73c4e9d7ae98cd38c5f2ec45bd; hero/share and inline image hashes are separately locked.",
+    "The article distinguishes whole-PDF page positions from two printed numbering systems and does not imply that a process description proves title, taxability, private value, production, reserves, or a property-specific appraisal result.",
+    "The factory body is not evidence. No owner, account, address, personal data, parcel, value, tax bill, legal description, production figure, reserve estimate, or transaction record appears.",
+    "The organizational author is the MRX Editorial Team; fictional guides are not authors; directional-assessment, not-certified-appraisal, no legal-tax-title-accounting-engineering-investment-advice, disclosed-buyer, and no LocalBusiness or Google Business Profile implication language are present.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, owner identity, tax conclusion, appraisal finding, approval statement, or watermark."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "no_factory_body_or_generic_county_value_timeline_reuse_pass",
+    "no_owner_account_address_personal_data_parcel_value_tax_bill_legal_description_production_reserve_title_or_transaction_data_pass",
+    "no_taxability_ownership_private_value_production_reserve_or_appraisal_conclusion_pass",
+    "mrx_editorial_team_author_fictional_guide_not_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_and_no_localbusiness_gbp_implication_pass",
+    "article308_article309_article310_article311_and_other_district_locator_ownership_boundaries_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_page_numbers_logos_seals_signatures_official_marks_findings_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges.mdx",
+    "/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp",
+    "/assets/articles/inline/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-page-ranges/ward-cad-reappraisal-plan-mineral-sections.webp"
+  ]
+}

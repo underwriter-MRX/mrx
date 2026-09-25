@@ -1,0 +1,69 @@
+{
+  "artifact_type": "mrx1000_wave164_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:12:54Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0763",
+  "slug": "culberson-cad-2025-2026-reappraisal-plan-adoption-source-record",
+  "title": "Culberson CAD 2025-2026 Reappraisal Plan Adoption Source Record",
+  "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+  "source_path": "src/content/posts/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+  "input_body_sha256": "1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442",
+  "input_frontmatter_sha256": "c52ce3a9ebe908b5f82622e468977d69c69e3e0230fd04ee854770a155368454",
+  "expected_repo_sha256": "1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442",
+  "two_image_manifest_sha256": "5a3e7454f3d6268c3864325e09dcc05ef0805b1efafe10e33288adb45559791c",
+  "visual_metadata": {
+    "hero_alt": "A closed plan folio appears beside the exact Culberson CAD reappraisal plan adoption source-record title.",
+    "social_alt": "A closed plan folio appears beside the exact Culberson CAD reappraisal plan adoption source-record title.",
+    "inline_alt": "Two blank page tiles appear above the exact Culberson CAD 2025-2026 reappraisal plan keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Culberson CAD Reappraisal Plan Adoption Record",
+    "seo_title_character_count": 46,
+    "description_character_count": 151,
+    "answer_summary_word_count": 65,
+    "author": "ariana",
+    "reviewed_at": "2026-08-27T14:15:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave164",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/culberson-cad-mineral-category-codes-source-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave164_compliance",
+  "review_run_id": "mrx1000-wave164-compliance-20260915T071254Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "1fd59df647d8037ee217bbc46f8ab9834599b6d28cbfda1ffd0eda4bfe89975e",
+  "expected_inline_sha256": "49b143791943280d1cd0f887314f8b0d49ef4620f8842e8522fca97208ba9131",
+  "findings": [
+    "Complete current MDX SHA-256 is 1a5ac2a65326b2dd3ece0167e9178d69adeffae6bb7eeda422e8c279912b3442; hero/share and inline image hashes are separately locked.",
+    "The reusable public source record contains only source identity, exact URLs, complete-file identity, retrieval provenance, broad structure, page locators, literal date fields, and document-control states. It stops before personal-data extraction, authentication, authority review, compliance review, legal interpretation, timing calculation, private-data access, property or account search, row-data access, appraisal judgment, protest strategy, tax guidance, valuation, representation, contact, submission, payment, or sale advice.",
+    "Image text is limited to the exact title and keyword and adds no government affiliation, real record, name, signature, number, property fact, adoption-effect claim, appraisal claim, protest direction, legal position, tax conclusion, recommendation, or promised outcome."
+  ],
+  "checks": [
+    "complete_file_sha256_match",
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "source_record_only_no_personal_data_signature_name_extraction_authentication_authority_review_compliance_review_legal_interpretation_timing_calculation_private_data_property_search_row_data_appraisal_protest_tax_valuation_contact_submission_payment_sale_advice_or_outcome_boundary_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_person_real_document_name_signature_number_property_fact_government_mark_adoption_effect_appraisal_legal_tax_recommendation_or_outcome_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.mdx",
+    "/assets/articles/hero/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record.webp",
+    "/assets/articles/inline/culberson-cad-2025-2026-reappraisal-plan-adoption-source-record/culberson-cad-2025-2026-reappraisal-plan.webp"
+  ]
+}

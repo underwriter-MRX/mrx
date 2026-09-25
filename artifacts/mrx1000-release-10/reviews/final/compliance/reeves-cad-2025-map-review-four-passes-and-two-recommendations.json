@@ -1,0 +1,73 @@
+{
+  "artifact_type": "mrx1000_wave221_two_image_compliance_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:22Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0841",
+  "slug": "reeves-cad-2025-map-review-four-passes-and-two-recommendations",
+  "title": "Reeves CAD 2025 MAP Review: Four Passes and Two Recommendations",
+  "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2025-map-review-four-passes-and-two-recommendations/",
+  "source_path": "src/content/posts/reeves-cad-2025-map-review-four-passes-and-two-recommendations.mdx",
+  "input_body_sha256": "609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7",
+  "input_frontmatter_sha256": "74cda6f7a6a7fb68e439b7e8ae23f91716d3cfb9364699d6e5e9a928ac6fc512",
+  "expected_repo_sha256": "609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7",
+  "two_image_manifest_sha256": "d9d9045f4c43aa92da3f9e9455c4d7ae7ca2f8928aa59cdb731bd1358d9128ef",
+  "visual_metadata": {
+    "hero_alt": "An oblique audit binder with four tabs and two action slips appears beside the exact Article 293 title.",
+    "social_alt": "An oblique audit binder with four tabs and two action slips appears beside the exact Article 293 title.",
+    "inline_alt": "A top-down four-area evidence board appears above the exact Reeves CAD 2025 MAP review keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Reeves CAD 2025 MAP Review: Four Passes, Two Actions",
+    "seo_title_character_count": 52,
+    "description_character_count": 145,
+    "answer_summary_word_count": 54,
+    "author": "ariana",
+    "reviewed_at": "2026-08-31T09:31:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave221",
+    "declared_source_count": 5,
+    "visible_body_citation_count": 5,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/reeves-county-2024-category-g-worksheets-two-isds-strata-and-ratios/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/reeves-cad-2025-map-review-four-passes-and-two-recommendations/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave221_compliance",
+  "review_run_id": "mrx1000-wave221-compliance-20260915T071322Z",
+  "capability": "compliance",
+  "expected_hero_sha256": "03b58e2bd7a8f0727f70b6b5324a239338dcf03f9834d46f66c6fa481c7d6a53",
+  "expected_inline_sha256": "56067d672e99e9946054b42bdb1ddbf3d846c836ff38a38a98a9a83e2cbf3e15",
+  "findings": [
+    "Complete current MDX SHA-256 is 609a275ab0ec89769a957fa1fa535f9562e3273a3eda7f1ef5aa95c4ffe36bc7; hero/share and inline image hashes are separately locked.",
+    "Every material statement remains attributed to one of five official Comptroller source objects with the document, report section, question, and bounded role preserved.",
+    "No MAP pass, score, question, or recommendation is converted into proof about title, ownership, a mineral account, classification, appraisal correctness, ratio results, a tax bill, protest rights, private value, an offer, or a transaction.",
+    "Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, property identifier, numerical score, recommendation text, grade, conclusion, or approval claim."
+  ],
+  "checks": [
+    "hero_share_sha256_identity",
+    "inline_image_distinct_sha256",
+    "exact_text_ocr_pass",
+    "filename_text_identity_pass",
+    "website_seo_aeo_gate_no_keyword_stuffing_unsupported_faq_duplicate_schema_bad_geography_fabricated_entity_or_ranking_indexing_retrieval_citation_traffic_lead_revenue_guarantee_pass",
+    "map_report_not_misrepresented_as_property_specific_audit_or_valuation_pass",
+    "recommendations_not_misrepresented_as_mineral_account_findings_pass",
+    "january_2027_deadline_not_misrepresented_as_completion_evidence_pass",
+    "no_title_ownership_classification_appraisal_ratio_tax_protest_private_value_offer_or_transaction_conclusion_pass",
+    "owner_agency_and_possible_buyer_interest_disclosure_preserved",
+    "no_people_hands_readable_base_text_letters_numbers_logos_seals_government_marks_screenshots_property_records_identifiers_money_values_labeled_charts_grades_recommendation_text_conclusions_approval_marks_or_watermarks_visual_claim"
+  ],
+  "sources_inspected": [
+    "src/content/posts/reeves-cad-2025-map-review-four-passes-and-two-recommendations.mdx",
+    "/assets/articles/hero/reeves-cad-2025-map-review-four-passes-and-two-recommendations.webp",
+    "/assets/articles/inline/reeves-cad-2025-map-review-four-passes-and-two-recommendations/reeves-cad-2025-map-review.webp"
+  ]
+}

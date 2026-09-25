@@ -1,0 +1,105 @@
+{
+  "artifact_type": "mrx1000_wave157_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:28:38Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0756",
+  "slug": "form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties",
+  "title": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
+  "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+  "source_path": "src/content/posts/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties.mdx",
+  "input_body_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "input_frontmatter_sha256": "438d2fa394f3bc40cb8f735822c92e03f26d923efcde93e3f3c8b1c59468b20c",
+  "expected_repo_sha256": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8",
+  "two_image_manifest_sha256": "c59a2628ff4be0955e6804036bc9a2fbeb601f7414576ca158944489ae0b1ec1",
+  "visual_metadata": {
+    "hero_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "social_alt": "A blank form-control tray appears beside the exact Form 50-843 field-inventory title.",
+    "inline_alt": "A top-down blank six-section field grid appears above the exact Form 50-843 Crane mineral property keyword."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Crane Form 50-843 Field Inventory",
+    "seo_title_character_count": 33,
+    "description_character_count": 151,
+    "answer_summary_word_count": 64,
+    "author": "ariana",
+    "reviewed_at": "2026-08-26T20:09:45Z",
+    "reviewed_by": "mrx_compliance-continuous-wave157",
+    "declared_source_count": 6,
+    "visible_body_citation_count": 6,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave157_editorial",
+  "review_run_id": "mrx1000-wave157-editorial-20260915T072838Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8; the answer-first article contains 1896 body tokens and five FAQs.",
+    "The article rejects the generic Crane County valuation identity and owns one distinct deliverable: a blank, source-controlled inventory of the printed sections and field labels in the current official Form 50-843 linked by Crane CAD.",
+    "Exact-title hero/share OCR and exact-keyword in-body OCR passed. The eye-level archive-tray hero and strict-overhead six-card field grid are materially distinct and contain no person, real form, owner data, property fact, government mark, instruction, recommendation, delivery result, legal conclusion, tax conclusion, or outcome."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "42cfe9dfd777b59fc11edb448fadda4ff7aef742195a5be42a22c2b7c4aebcc8"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1896,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 64
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 33,
+        "description_character_count": 151,
+        "author": "ariana",
+        "reviewed_at": "2026-08-26T20:09:45Z",
+        "reviewed_by": "mrx_compliance-continuous-wave157",
+        "declared_source_count": 6,
+        "visible_body_citation_count": 6,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/brazos-cad-mineral-industrial-account-contact-routing-worksheet/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties.mdx",
+    "/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp",
+    "/assets/articles/inline/form-50-843-electronic-delivery-request-field-inventory-crane-mineral-properties/form-50-843-crane-mineral-property.webp"
+  ]
+}

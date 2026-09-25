@@ -1,0 +1,106 @@
+{
+  "artifact_type": "mrx1000_wave205_two_image_editorial_review",
+  "schema_version": "2.0.0",
+  "disposition": "PASS",
+  "reviewed_at": "2026-09-15T07:13:16Z",
+  "decision_authority": {
+    "source": "Daryl owner directives, 2026-08-04 and 2026-08-14; MRX Website OTTO Zero-Pending Release Gate, 2026-08-27",
+    "policy": "MRX continuous quality-gated publication, two-image article creative directive, and source-first website SEO/AEO release prevention"
+  },
+  "program_row_id": "MRX1000-0820",
+  "slug": "martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary",
+  "title": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
+  "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+  "source_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+  "input_body_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "input_frontmatter_sha256": "01e22748942d7281dbe923870e34c72df09f92f29a91c28c936f9b4a7872afc5",
+  "expected_repo_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+  "two_image_manifest_sha256": "a19e3bd7ea6e5a7c5f4a5add60bd8c32c338c9c317f5a2895d15a566e1b011b1",
+  "visual_metadata": {
+    "hero_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "social_alt": "A highlighted aggregate table row sits beside the exact Martin CAD 2025 Category G boundary title.",
+    "inline_alt": "A top-down evidence worksheet sits above the exact Martin CAD 2025 Category G parcel count phrase."
+  },
+  "answer_engine_controls": {
+    "gate": "website-seo-release-gate",
+    "evidence_boundary": "source-backed; no transcript-derived Summit tactics asserted",
+    "seo_title": "Martin CAD 2025 Category G Parcel Count · MRX",
+    "seo_title_character_count": 45,
+    "description_character_count": 134,
+    "answer_summary_word_count": 76,
+    "author": "ariana",
+    "reviewed_at": "2026-08-29T13:55:00Z",
+    "reviewed_by": "mrx_compliance-continuous-wave205",
+    "declared_source_count": 4,
+    "visible_body_citation_count": 4,
+    "internal_link_roles": {
+      "hub": "/mineral-rights/texas/",
+      "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+      "next_step": "/book/"
+    },
+    "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+    "no_ranking_or_citation_guarantee": true
+  },
+  "reviewer_id": "codex_wave205_editorial",
+  "review_run_id": "mrx1000-wave205-editorial-20260915T071316Z",
+  "capability": "editorial",
+  "findings": [
+    "Complete current MDX SHA-256 is 3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f; the answer-first article contains 1842 body tokens and five FAQs.",
+    "The article rejects the generic Martin County value-guide identity and owns one distinct official-report aggregate-row locator and interpretation-boundary job.",
+    "The 2026-08-29 factory directive is applied through a direct answer, stable claim IDs, VERIFIED-OBSERVATION, CONTEXT-ONLY, ROUTING-ONLY, and NON-VALIDATING labels, exact retrieval and render controls, supported FAQs, semantic links, and no ranking or citation promise.",
+    "Exact-title hero/share OCR passed; exact-keyword inline OCR passed; the low-oblique report-table hero and strict top-down aggregate-row worksheet are materially distinct and contain no source data."
+  ],
+  "checks": [
+    {
+      "name": "complete_file_sha256_match",
+      "status": "PASS",
+      "evidence": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f"
+    },
+    {
+      "name": "answer_first_article_depth_and_five_faqs",
+      "status": "PASS",
+      "evidence": {
+        "word_count": 1842,
+        "minimum_word_count": 700,
+        "faq_count": 5,
+        "answer_summary_word_count": 76
+      }
+    },
+    {
+      "name": "source_first_seo_aeo_entity_citation_and_internal_link_gate",
+      "status": "PASS",
+      "evidence": {
+        "seo_title_character_count": 45,
+        "description_character_count": 134,
+        "author": "ariana",
+        "reviewed_at": "2026-08-29T13:55:00Z",
+        "reviewed_by": "mrx_compliance-continuous-wave205",
+        "declared_source_count": 4,
+        "visible_body_citation_count": 4,
+        "hub": "/mineral-rights/texas/",
+        "support": "/blog/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator/",
+        "next_step": "/book/",
+        "canonical_url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+        "noindex": false
+      }
+    },
+    {
+      "name": "two_image_exact_text_identity",
+      "status": "PASS",
+      "evidence": {
+        "hero_ocr": true,
+        "inline_ocr": true,
+        "social_reuses_hero": true,
+        "hero_social_alt_match": true,
+        "inline_alt_match": true,
+        "filename_identity": true,
+        "distinct_binaries": true
+      }
+    }
+  ],
+  "sources_inspected": [
+    "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+    "/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp",
+    "/assets/articles/inline/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/martin-cad-2025-category-g-parcel-count.webp"
+  ]
+}
