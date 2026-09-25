@@ -84,7 +84,7 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 | Input                                                                                                                             | SHA-256                                                            |
 | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | `config/mrx-1000-canonical-content-ledger.json`                                                                                   | `97c080482e25676b730ebee62597fcdf6a555b28d68fc150b9a24caf1e823dd6` |
-| `reports/mrx-1000-readiness-matrix.json`                                                                                          | `0077a4ea52ba7e8a253747c97e1046bbdd21c18584befdc2173b04c78bf3832e` |
+| `reports/mrx-1000-readiness-matrix.json`                                                                                          | `6a17059ce1c4a13cc6b594d5f5a0270c8cdfe4a181eafb82f20f745f88c18286` |
 | `reports/searchatlas-cg-reconciliation-t_0c427a87/content-genius-export-raw-by-status.json`                                       | `a357f3a95fff35d484a6050769c1b77e85ba86de4223e0770269d2cca168563b` |
 | `../program-plans/mrx-1000-ceo-decision-no-spend-capacity.md`                                                                     | `46a9d02548e97a794d1cdaa919682bb159bcfbeabb5b9d8e559431c6ca34091d` |
 | `docs/governance/mrx1000-owner-continuous-publication-directive-2026-08-04.md`                                                    | `edc1d4602149558ff6d2b960416839b8caf97593f5fd8fe6ea91b56617d1425f` |
@@ -101,4 +101,4 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 | `docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md`                              | `03437048d097cd95356d99c40653fe6967f8ad9f6c37e84a777404c737b2cdca` |
 | `docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md`                                 | `e4de274bccc48d4e614258fd09792c820cea3531366612187cedc4172eda6964` |
 
-Manifest content fingerprint: `c2e349c2c7b69938b24280b518e1b43ad26498361e8deaf2c4ad50f4352922a0`.
+Manifest content fingerprint: `b8059fcf964712f47f3b1f3baa2a425433ed125e495608472ed499dca7327719`.
