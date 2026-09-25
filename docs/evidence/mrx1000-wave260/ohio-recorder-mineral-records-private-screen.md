@@ -1,0 +1,36 @@
+# Private candidate screen: Ohio county mineral records before title review
+
+Status: **source-screened candidate only** (2026-09-25 UTC). This is not an admitted MRX1000 row, public article, legal opinion, publication, or addition to the owner's 331/350 live count.
+
+## Reader job and pillar
+
+- Working question: **Where Can I Find Ohio Mineral Deeds and Leases Before a Title Review?** Final title is not approved.
+- Primary pillar: `/learning-center/title-lease-ownership/`.
+- Reader: an Ohio mineral owner with a name, tract/county clue, deed reference, or lease reference who needs to collect identifiable instruments for a qualified title review. The useful next step is an instrument-and-source register, not an ownership, lease-status, Dormant Mineral Act, payment, or offer conclusion.
+- Business objective: improve the handoff from a public-record question to a human-reviewable file without representing the file as title proof. Eligible case and completed-review denominators remain unavailable.
+
+## Why this might be distinct
+
+The public post filenames and the 1,000-row historical canonical ledger plus append-only identities contain no Ohio-specific article as of this screen. Existing general title and Texas-specific articles explain chains of title and title risk; none supplies the Ohio county-recorder instrument categories and online/offline retrieval boundary below. This is a **preliminary answer-scope comparison**, not final originality clearance. Search Atlas map [261162](https://dashboard.searchatlas.com/content/topical-maps?topicId=261162), `Understanding Title Ownership`, offers only broad generated titles; it neither approves this identity nor supplies facts. In the global Search Console property for 2026-08-25 through 2026-09-22, `ohio oil and gas title review` showed 38 impressions and average position 65; clicks were unavailable. That is a small adjacent query observation, not proven demand for this exact question or a customer outcome.
+
+## Current primary-source roles and claim boundaries
+
+1. [Ohio Revised Code §317.08](https://codes.ohio.gov/ohio-revised-code/section-317.08), current text effective June 16, 2026, defines county recorders' official-record categories. It includes conveyance instruments in (A)(1), specified mineral-interest notices/affidavits in (A)(2), (5), and (11), and leases, memoranda, supplements, modifications, and amendments in (A)(25). It identifies **record classes**, not the legal effect of a particular instrument or complete ownership.
+2. The [Ohio Recorders' Association directory](https://www.ohiorecorders.com/aws/ORA/pt/sp/home_page) describes its route to all 88 county recorder offices. Use the county where the property is located, then verify that office's current search and copy instructions; do not invent a universal statewide deed-search database.
+3. [Ashtabula County Recorder](https://www.ashtabulacounty.us/Recorder) describes indexed land records and deeds/leases/encumbrances, but expressly says the recorder does **not** perform title examinations or prepare legal documents. This is an example of an official county role, not a claim about every county's online coverage.
+4. [Erie County Recorder FAQ](https://www.eriecounty.oh.gov/RecorderFAQs.aspx) says its online indexing and images begin in 1990, with earlier material being added; copies not online may be requested from the office. It also says recording alone does not ensure legality and the office does not perform a complete history/title search. This is a **county-specific example** only: a missing online hit is not evidence that no older instrument exists elsewhere in that county's records, let alone in another county.
+
+No current source in this screen verifies the exact fields or age coverage of other counties' portals, a particular chain of title, lease validity, a Dormant Mineral Act preservation outcome, a notice/deadline calculation, the legal sufficiency of a recorded instrument, or a royalty decimal. Do not generalize the Erie 1990 boundary, assert an Ohio statewide search, or advise a reader to file an affidavit/notice.
+
+## Candidate answer contract
+
+Direct answer: start with the relevant Ohio county recorder, not a well map or buyer letter. Identify the county and search the recorder's current official records for the named parties and available tract/instrument references. Retrieve the full images and record each document's type, parties, legal description, recording locator/date, and source URL or copy request. Compare conveyances, lease/memorandum records, amendments, and any relevant notices/affidavits as **documents to review**, not as a self-proving title chain. Ask the office about older or offline records when a search does not return an expected item. Route conflicting instruments or questions about legal effect to qualified Ohio mineral-title counsel or another qualified title professional.
+
+Proposed structure: concise answer; county-recorder route; source-limited instrument checklist; Erie online-coverage example; what a recorder result cannot prove; privacy-aware handoff list; FAQ only for verified answer gaps. Link the title/lease/ownership pillar, the generic title-chain guide and the relevant offer review only when an offer is actually in hand. Avoid a generic sell-now CTA for a research-only reader.
+
+## Open gates before admission or public MDX
+
+- Recheck current official pages and full live corpus/body overlap, including statewide record-navigation posts, not just filenames; bind a unique program row/rank only after that comparison.
+- Obtain current-byte Ohio legal/compliance, factual/citation, editorial, and originality review of a private manuscript. Keep legal effect, dormant minerals, lease status and deadlines out of unqualified advice.
+- Verify the chosen county route and a real county-specific search example without exposing a private owner record or claiming all counties share a portal.
+- If admitted, follow exact-title unique hero/share plus distinct keyword-bearing in-body image, full tests/build, every active production target and postrelease audit/dashboard/exact-row gates. This source screen itself is not permission to publish.
