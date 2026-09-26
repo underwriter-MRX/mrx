@@ -231,6 +231,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave266-selection-decision-2026-09-26.md",
       "selection_decision_sha256": "5c2484ed1e1ca8c97fda3435ab4f25bb75acbb0527de2fcc3490d4511130786b"
+    },
+    {
+      "selection_rank": 337,
+      "program_row_id": "MRX1000-1131",
+      "canonical_title": "What Information Does Wyoming Require for Oil and Gas Royalty Payments?",
+      "canonical_slug": "what-information-does-wyoming-require-for-oil-and-gas-royalty-payments",
+      "canonical_url": "https://mineralrightsxchange.com/blog/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/",
+      "pillar": "oil-and-gas-royalties",
+      "cluster": "royalties-owner-operations",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "primary_source_statutory_disclosure_refinement",
+      "source_map_id": 261160,
+      "creative_manifest_path": "artifacts/mrx1000-wave267-creative-qa/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave267-selection-decision-2026-09-26.md",
+      "selection_decision_sha256": "8aabdd037fcf2679dce4ed534c792fe2870c2d4c423abac8fcaf8b947e423f2b"
     }
   ]
 }

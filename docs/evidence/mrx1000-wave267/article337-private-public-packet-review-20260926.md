@@ -1,8 +1,8 @@
 # Article337 private public-packet review — September 26, 2026
 
-**Disposition: conditional PASS for append-only admission preparation, not for production release.** This is Codex's source/citation, Wyoming legal-compliance-scope, editorial and originality review of the private MDX packet. It is not an external specialist verdict or Wyoming counsel opinion. The packet remains `draft: true`/`noindex: true` under `docs/evidence/` and is neither a public post nor a counted article.
+**Disposition: conditional PASS for append-only admission preparation, not for production release.** This is Codex's source/citation, Wyoming legal-compliance-scope, editorial and originality review of the private MDX packet. It is not an external specialist verdict or Wyoming counsel opinion. The reviewed draft/noindex snapshot remains under `docs/evidence/` and was preserved in commit `a19acab7`; a separately reviewed public MDX was later created with different bytes. This private review cannot certify those later bytes. No live publication is counted by this note.
 
-- Packet: `docs/evidence/mrx1000-wave267/article337-public-packet-private.mdx`
+- Reviewed packet: `docs/evidence/mrx1000-wave267/article337-public-packet-private.mdx` (also preserved in commit `a19acab7`)
 - Exact SHA-256 after formatting: `0b5417436aec234ce7b0fd62f1b34eafd26ff7a783385ddb57aed6a6d04333d4`
 - Locked title: **What Information Does Wyoming Require for Oil and Gas Royalty Payments?**
 - Primary pillar: `/learning-center/oil-and-gas-royalties/`

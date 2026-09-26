@@ -48,6 +48,7 @@ docs/governance/*
 !docs/governance/mrx1000-wave263-selection-decision-2026-09-26.md
 !docs/governance/mrx1000-wave264-selection-decision-2026-09-26.md
 !docs/governance/mrx1000-wave266-selection-decision-2026-09-26.md
+!docs/governance/mrx1000-wave267-selection-decision-2026-09-26.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -103,6 +104,9 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor
 !artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/*.json
 !artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments
+!artifacts/mrx1000-append-only/reviews/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/*.json
+!artifacts/mrx1000-append-only/reviews/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
@@ -163,6 +167,10 @@ artifacts/mrx1000-wave264-creative-qa/*
 artifacts/mrx1000-wave266-creative-qa/*
 !artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor
 !artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/creative-manifest.json
+!artifacts/mrx1000-wave267-creative-qa
+artifacts/mrx1000-wave267-creative-qa/*
+!artifacts/mrx1000-wave267-creative-qa/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments
+!artifacts/mrx1000-wave267-creative-qa/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews

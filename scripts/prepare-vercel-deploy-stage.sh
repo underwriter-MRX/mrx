@@ -89,6 +89,8 @@ copy_parent \
 copy_parent \
   docs/governance/mrx1000-wave266-selection-decision-2026-09-26.md
 copy_parent \
+  docs/governance/mrx1000-wave267-selection-decision-2026-09-26.md
+copy_parent \
   artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave251-creative-qa/north-dakota-inherited-royalty-questions-records-and-ombudsman/creative-manifest.json
@@ -118,6 +120,8 @@ copy_parent \
   artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/creative-manifest.json
 copy_parent \
   artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/creative-manifest.json
+copy_parent \
+  artifacts/mrx1000-wave267-creative-qa/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/creative-manifest.json
 
 mkdir -p "$stage_dir/artifacts/mrx1000-append-only/reviews"
 rsync -a \

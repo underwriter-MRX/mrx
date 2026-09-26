@@ -1,0 +1,25 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1131",
+  "slug": "what-information-does-wyoming-require-for-oil-and-gas-royalty-payments",
+  "source_path": "src/content/posts/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments.mdx",
+  "input_body_sha256": "ff69c7fc7460a021474f6317b24ecd90e7f524ec114b6039e64c521116fb290e",
+  "two_image_manifest_sha256": "790681a1bdd97f952f537f720d80766d01c01ea2ebe515b4deeea1a3bbbaf3e1",
+  "review_method": "codex_exact_public_byte_current_wyoming_primary_source_claim_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte official-source review",
+  "findings": [
+    "Current Wyoming Legislature Title 30 W.S. 30-5-305(b) was read directly on 2026-09-26. The article preserves its payment-to-interest-owner trigger and the stub, attachment, or otherwise regular-monthly placement alternative.",
+    "The article's eleven table rows follow statutory items (i) through (xi) in order, including property or well identifier, sales month and year, volume/unit, unit price, production taxes, itemized other deductions or adjustments, net total-sales value, owner decimal, owner gross and net shares, and an information address.",
+    "The certified-mail clause is presented only as context to item (xi), without turning it into a demand-letter or remedy instruction. Section 30-5-305(a) is confined to a division-order/lease boundary.",
+    "Current Wyoming Office of State Lands and Investments Trust Land Management page describes royalty compliance for minerals removed from state lands. The article uses that source only to distinguish a state-land program from a private payor contact, and does not assert the agency reviewed any owner's statement.",
+    "No payor form, actual owner decimal, deduction validity, title, amount owed, reporting violation, demand remedy, or exact-query demand is claimed. Material propositions have nearby primary-source citations."
+  ],
+  "sources_reviewed_2026_09_26": [
+    "https://www.wyoleg.gov/statutes/compress/title30.pdf#page=127",
+    "https://lands.wyo.gov/trust-land-management"
+  ]
+}

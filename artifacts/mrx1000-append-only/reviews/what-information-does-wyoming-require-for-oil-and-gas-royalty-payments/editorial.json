@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1131",
+  "slug": "what-information-does-wyoming-require-for-oil-and-gas-royalty-payments",
+  "source_path": "src/content/posts/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments.mdx",
+  "input_body_sha256": "ff69c7fc7460a021474f6317b24ecd90e7f524ec114b6039e64c521116fb290e",
+  "two_image_manifest_sha256": "790681a1bdd97f952f537f720d80766d01c01ea2ebe515b4deeea1a3bbbaf3e1",
+  "review_method": "codex_exact_public_byte_editorial_originality_and_royalty_pillar_comparison",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "findings": [
+    "The locked question is answered in the first sentence. The Wyoming eleven-category disclosure list and its stub/attachment/regular-monthly placement rule, not generic statement math, remain the center of gravity.",
+    "Full-body comparison with the existing Wyoming private-lease-rate guide and two general royalty-statement guides found no existing answer organized around W.S. 30-5-305(b)'s complete eleven-category list. Rate and arithmetic passages remain subordinate links.",
+    "Five frontmatter FAQ answers have matching visible answers; summary and takeaways preserve the source and no owner-specific result is fabricated. No exact-query GSC demand, rank, indexing or ChatGPT citation is promised.",
+    "The primary royalty pillar, Wyoming rate sibling and general royalty-statement guide form a useful topical path without forcing conversion. Visible MRX and privacy boundaries remain intact.",
+    "The unique hero/share asset contains the exact locked article title in pixels; the distinct in-body asset contains the supporting phrase. OCR, full-size and small-card visual QA and binary SHA checks passed. The title-in-image rule is a social-preview/distribution policy, not a demonstrated direct ranking factor."
+  ]
+}

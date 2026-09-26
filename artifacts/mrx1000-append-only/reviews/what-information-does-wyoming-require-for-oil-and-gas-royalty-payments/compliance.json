@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1131",
+  "slug": "what-information-does-wyoming-require-for-oil-and-gas-royalty-payments",
+  "source_path": "src/content/posts/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments.mdx",
+  "input_body_sha256": "ff69c7fc7460a021474f6317b24ecd90e7f524ec114b6039e64c521116fb290e",
+  "two_image_manifest_sha256": "790681a1bdd97f952f537f720d80766d01c01ea2ebe515b4deeea1a3bbbaf3e1",
+  "review_method": "codex_exact_public_byte_wyoming_legal_compliance_scope_check_not_counsel_opinion",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte source-scope check; not a Wyoming attorney opinion",
+  "findings": [
+    "The article supplies a source-backed disclosure-location checklist, not an owner-specific conclusion about whether a payor violated W.S. 30-5-305(b).",
+    "The certified-mail text is acknowledged but deliberately not converted into a legal notice, timing, demand, penalty or litigation workflow. Section 30-5-303(c) is not cited as an owner remedy.",
+    "The owner decimal, rate, title, deductions, amount due and payment timing are excluded from any entitlement conclusion. Material disputes are referred to qualified Wyoming legal or accounting review.",
+    "No real account, statement or sensitive identifying information appears in the article or imagery; the reader is warned against public disclosure.",
+    "MRX's possible later buyer interest is disclosed and cited public sources are usable without a form or booking. This PASS is internal exact-byte compliance-scope review, not counsel certification or external specialist approval."
+  ]
+}

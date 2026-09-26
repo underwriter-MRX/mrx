@@ -27,7 +27,7 @@ Generated from Astro content at build time.
 - [Learning Center](https://mineralrightsxchange.com/learning-center/)
 - [MRX Editorial Team](https://mineralrightsxchange.com/authors/mrx-editorial-team/)
 
-## Published article URLs (344)
+## Published article URLs (345)
 
 ### Competing offers
 
@@ -69,6 +69,7 @@ Generated from Astro content at build time.
 
 ### Mineral rights
 
+- [What Information Does Wyoming Require for Oil and Gas Royalty Payments?](https://mineralrightsxchange.com/blog/what-information-does-wyoming-require-for-oil-and-gas-royalty-payments/)
 - [Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?](https://mineralrightsxchange.com/blog/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/)
 - [Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?](https://mineralrightsxchange.com/blog/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/)
 - [What Does RI Mean on a Texas Mineral Appraisal Record?](https://mineralrightsxchange.com/blog/what-does-ri-mean-on-a-texas-mineral-appraisal-record/)
