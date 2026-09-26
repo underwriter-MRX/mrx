@@ -201,6 +201,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave263-creative-qa/what-does-ri-mean-on-a-texas-mineral-appraisal-record/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave263-selection-decision-2026-09-26.md",
       "selection_decision_sha256": "1fd213060836e3b8973adbfc798686d04a0254a47d9e68ff51cd4b2813b3f3b4"
+    },
+    {
+      "selection_rank": 335,
+      "program_row_id": "MRX1000-1129",
+      "canonical_title": "Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?",
+      "canonical_slug": "does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease",
+      "canonical_url": "https://mineralrightsxchange.com/blog/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/",
+      "pillar": "oil-and-gas-royalties",
+      "cluster": "royalties-owner-operations",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 266118,
+      "creative_manifest_path": "artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave264-selection-decision-2026-09-26.md",
+      "selection_decision_sha256": "5df0a398e5635188ae0ae3fb54c38a8beecf19c7973f6e296ca975d1d31ce908"
     }
   ]
 }

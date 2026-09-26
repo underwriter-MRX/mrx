@@ -46,6 +46,7 @@ docs/governance/*
 !docs/governance/mrx1000-wave260-selection-decision-2026-09-25.md
 !docs/governance/mrx1000-wave262-selection-decision-2026-09-25.md
 !docs/governance/mrx1000-wave263-selection-decision-2026-09-26.md
+!docs/governance/mrx1000-wave264-selection-decision-2026-09-26.md
 scripts/audit-staged-content.mjs
 
 # Remote builds need the same narrow signed inputs as prepare-vercel-deploy-stage.sh.
@@ -95,6 +96,9 @@ artifacts/mrx1000-append-only/reviews/*
 !artifacts/mrx1000-append-only/reviews/what-does-ri-mean-on-a-texas-mineral-appraisal-record
 !artifacts/mrx1000-append-only/reviews/what-does-ri-mean-on-a-texas-mineral-appraisal-record/*.json
 !artifacts/mrx1000-append-only/reviews/what-does-ri-mean-on-a-texas-mineral-appraisal-record/*.json.sha256
+!artifacts/mrx1000-append-only/reviews/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease
+!artifacts/mrx1000-append-only/reviews/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/*.json
+!artifacts/mrx1000-append-only/reviews/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/*.json.sha256
 !artifacts/mrx1000-wave250-creative-qa
 artifacts/mrx1000-wave250-creative-qa/*
 !artifacts/mrx1000-wave250-creative-qa/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes
@@ -147,6 +151,10 @@ artifacts/mrx1000-wave262-creative-qa/*
 artifacts/mrx1000-wave263-creative-qa/*
 !artifacts/mrx1000-wave263-creative-qa/what-does-ri-mean-on-a-texas-mineral-appraisal-record
 !artifacts/mrx1000-wave263-creative-qa/what-does-ri-mean-on-a-texas-mineral-appraisal-record/creative-manifest.json
+!artifacts/mrx1000-wave264-creative-qa
+artifacts/mrx1000-wave264-creative-qa/*
+!artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease
+!artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/creative-manifest.json
 artifacts/mrx1000-release-10/*
 !artifacts/mrx1000-release-10/decisions
 !artifacts/mrx1000-release-10/reviews

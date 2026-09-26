@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1129",
+  "slug": "does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease",
+  "source_path": "src/content/posts/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease.mdx",
+  "input_body_sha256": "157f23b45711da2d7dd2bfff3b03cb585e66b9b08acdbb90ca93e5cfe5565a21",
+  "two_image_manifest_sha256": "817c04b4792596c379645a3578e55c86e351615e345bcbc3a816350c89806fed",
+  "review_method": "codex_exact_public_byte_editorial_originality_and_pillar_comparison",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "findings": [
+    "The exact visible title is one focused Wyoming private-lease rate-source question. Opening answers it directly; one primary oil-and-gas-royalties pillar and related links carry a reciprocal research path without requiring contact.",
+    "Full-body comparison with the lease-rate/value guide, Wyoming federal-reservation guide and Louisiana OMR/private-lease guide found no existing Wyoming rate-authority answer. This page stays centered on distinguishing OSLI state-trust, BLM federal and identified private agreement sources, plus Wyoming's division-order boundary; generic handoff remains subordinate.",
+    "First-party GSC adjacent exact query had two impressions in the screened window and unavailable clicks; the page does not portray that as proven demand or an expected citation outcome.",
+    "The article contains no fabricated owner record, document quote, specific royalty rate, current rate benchmark, pressure CTA, compulsory booking or named sample owner. It allows a research-only next step and discloses MRX's possible buyer role.",
+    "Exact title in the unique hero/share WebP and the supporting phrase in a separate in-body WebP passed deterministic OCR plus full-size and small-card visual inspection. The image scenes, files and hashes are distinct; alt text describes the visuals without presenting them as actual records."
+  ]
+}

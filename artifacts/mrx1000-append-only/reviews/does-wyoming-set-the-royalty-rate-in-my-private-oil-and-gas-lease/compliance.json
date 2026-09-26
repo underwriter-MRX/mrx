@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1129",
+  "slug": "does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease",
+  "source_path": "src/content/posts/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease.mdx",
+  "input_body_sha256": "157f23b45711da2d7dd2bfff3b03cb585e66b9b08acdbb90ca93e5cfe5565a21",
+  "two_image_manifest_sha256": "817c04b4792596c379645a3578e55c86e351615e345bcbc3a816350c89806fed",
+  "review_method": "codex_exact_public_byte_wyoming_legal_compliance_scope_check_not_counsel_opinion",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte source-scope check; not a Wyoming attorney opinion",
+  "findings": [
+    "The article supplies educational source-selection guidance, not a legal interpretation or title, tax, accounting, royalty-payment or valuation result for an individual owner. It explicitly excludes unleased or pooled and mixed-estate fact patterns.",
+    "W.S. 30-5-305(a) is paraphrased as a division-order-versus-lease boundary without asserting a remedy, deadline, owner-specific precedence finding or amount owed. Subsection (b)(viii) is used only to distinguish a payment decimal from a lease fraction.",
+    "No percentage is characterized as a present Wyoming minimum, standard, fair rate or correct contract rate. The dated BLM comparative report's numerical examples are not repeated. OSLI and BLM pages are confined to their own state-trust and federal programs.",
+    "A public GIS layer is not converted into private ownership proof; no reader's tract, documents, payment or privacy-sensitive account information is requested on this page.",
+    "The article labels MRX's possible economic interest in a later transaction, preserves a research-only path, and recommends appropriately qualified Wyoming legal/land/accounting help for material owner-specific conflicts. This PASS is an internal compliance-scope disposition only, not external counsel certification."
+  ]
+}

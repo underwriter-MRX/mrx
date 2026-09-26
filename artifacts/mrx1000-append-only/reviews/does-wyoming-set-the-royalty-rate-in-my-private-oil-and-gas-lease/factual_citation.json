@@ -1,0 +1,31 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1129",
+  "slug": "does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease",
+  "source_path": "src/content/posts/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease.mdx",
+  "input_body_sha256": "157f23b45711da2d7dd2bfff3b03cb585e66b9b08acdbb90ca93e5cfe5565a21",
+  "two_image_manifest_sha256": "817c04b4792596c379645a3578e55c86e351615e345bcbc3a816350c89806fed",
+  "private_full_source_sha256": "7af108dc31821fb80f289c550e1961387107a4d7cd9d9e0e01255da7b148c841",
+  "review_method": "codex_exact_public_byte_current_primary_source_claim_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte source review",
+  "findings": [
+    "Wyoming OSLI's current mineral-leasing and customer-portal pages explicitly concern state lands or state-trust lessees and permittees. The article does not use them to classify a reader's parcel or privately executed agreement.",
+    "BLM Wyoming's current oil-and-gas lease-sales page concerns federal lease sales. The article treats a posted federal rate as a source-category clue, not a private-lease term.",
+    "Current official Wyoming Title 30 W.S. 30-5-305(a) states that a division order may not alter an oil-and-gas lease or other contractual agreement; subsection (b)(viii) separately identifies an owner sales-interest decimal on payment information. The article paraphrases those narrow roles without deciding an individual's contract or payable decimal.",
+    "The BLM Wyoming Federal Mineral Estate layer expressly says it does not depict private mineral ownership patterns, matching the article's limited map inference.",
+    "BLM's comparative report Wyoming section is dated study context for private-land royalties being negotiated lease terms. No historical numeric rate or standard is repeated as a current benchmark.",
+    "Article's opening, source comparisons and FAQ make no unverified rate, title, payment, valuation, remedy, timing or ChatGPT-citation claim. Material agency and statute claims carry nearby official-source links."
+  ],
+  "sources_reviewed_2026_09_26": [
+    "https://lands.wyo.gov/trust-land-management/mineral-leasing",
+    "https://lands.wyo.gov/customer-portal",
+    "https://www.blm.gov/programs/energy-and-minerals/oil-and-gas/leasing/regional-lease-sales/wyoming",
+    "https://www.wyoleg.gov/statutes/compress/title30.pdf#page=127",
+    "https://gis.blm.gov/wyarcgis/rest/services/Lands/BLM_WY_FederalMineralEstate/FeatureServer",
+    "https://www.blm.gov/sites/blm.gov/files/docs/2022-01/2018%20Comparative%20Analysis%20of%20the%20Federal%20Oil%20and%20Gas%20Fiscal%20Systems%20Onshore%20Report_0.pdf"
+  ]
+}
