@@ -1,0 +1,24 @@
+# MRX1000 Wave 266 source admission — 2026-09-26 UTC
+
+- Decision ID: `MRX1000-W266-TEXAS-P4-PURCHASER-PAYOR-2026-09-26`
+- Selection rank: `336`; independently live-verified count remains `335/350`, with 15 slots remaining.
+- Program row: `MRX1000-1130`.
+- Disposition: `APPROVED_FOR_CONTINUOUS_QUALITY_GATED_PUBLICATION`
+- Authority source: `AGENTS.md MRX Article No-Approval Execution Authority — Owner Directive 2026-08-14`
+- Owner cap: stop new production at 350 independently live-verified MRX1000 articles.
+
+OWNER_ARTICLE_AUTHORITY: APPROVE_PUBLIC_ADMISSION MRX1000-1130 RANK-336
+
+## One narrow reader job
+
+**Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?** supports the [oil-and-gas-royalties pillar](/learning-center/oil-and-gas-royalties/) under `royalties-owner-operations`. An owner who sees a P-4 `Purchaser` and a different name on a statement needs to distinguish a public **designated first buyer** from the **actual first purchaser** and private proceeds-distribution role. Current [RRC data-query descriptions](https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/), [P-4 instructions](https://www.rrc.texas.gov/media/kx0hcdrw/p-4-ins.pdf) and the [live P-4 query](https://webapps2.rrc.texas.gov/EWA/gathererPurchaserQueryAction.do) support the first label and its query fields. [Texas Natural Resources Code §91.401(2)](https://tcss.legis.texas.gov/resources/NR/htm/NR.91.htm) supplies the actual-first-purchaser default and the stated owner-of-the-right-to-produce arrangement exception. The RRC's [Royalties FAQ](https://www.rrc.texas.gov/about-us/faqs/royalties-faq/) places private royalty matters outside agency adjudication. Neither source identifies a particular reader's payor, title, decimal or amount.
+
+Full-body comparison with the existing P-4 retrieval-provenance worksheet, royalty-statement decoder, operator-name log, inherited-royalty guide and Texas severance-tax article found no answer centered on **P-4 designation versus statutory/default private payor role**. Generic record preservation and referral stay subordinate. If future copy becomes a generic royalty definition or duplicates the worksheet, consolidate rather than publish a second identity. Search Atlas map `261160` supplies royalty topical context, not factual authority. No exact-query GSC demand, ranking, ChatGPT citation or customer outcome is claimed.
+
+## Exact-public-byte and creative boundary
+
+The private [screen](../evidence/mrx1000-wave266/texas-p4-purchaser-payor-private-screen.md), [manuscript](../evidence/mrx1000-wave266/texas-p4-purchaser-payor-private-manuscript.md) SHA-256 `56b326e86a54c6e495eaafb94d8586d74dcd5e3050f5bd2241e3c18d2584698e`, and [conditional private review](../evidence/mrx1000-wave266/texas-p4-purchaser-payor-private-review-20260926.md) were preparation only. The final public MDX SHA-256 is `e125d4d926b84180caa5a6d31c0f09bf8cac4ee62f8360f72331d4dfe2809e7d`. Three separate exact-public-byte review artifacts under `artifacts/mrx1000-append-only/reviews/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/` bind that SHA and record factual/citation, Texas compliance-scope and editorial/originality checks. They are internal Codex assessments, not a Texas attorney opinion or external specialist certification.
+
+The [creative manifest](../../artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/creative-manifest.json) SHA-256 `8beea2ed78cac6d830b6ffe89fa59158c97bf0f2dc33c25633222ad91e278b6c` binds a unique exact-title 1200×630 hero/share WebP SHA-256 `7f6fd66fc15541b96be5ff3f66baf47d1989568e5e7a7211dbd274c7ba70f075` and a distinct 1200×675 in-body WebP SHA-256 `2c52497f387585b47590872a4e4d0c25df0e951eaefed98029aba497bcfabf1f`. Built-in image generation supplied text-free base art; deterministic lettering, OCR and full/small-size visual review passed. The title-in-image requirement is a social-preview/distribution policy, not a demonstrated direct ranking factor.
+
+This is **admission, not publication**. It changes no historical release-10 hash-locked canonical JSON/CSV, sends no IndexNow notification and starts no crawl. Before live count advances: pass append-only preflight, full tests/typecheck/build; recheck newest production and voice baseline; verify a protected candidate and then every active host by HTTP, image bytes, rendered Chrome, sitemap, reciprocal pillar and MRX MCP. Only after independently live-verified release does count advance to 336. Then notify the exact canonical once, start at most one justified recrawl if none is active, read terminal audit and fresh OTTO, and treat each exact Page Explorer row separately. Existing Articles331–335 exact-row deficits are not reasons for a blind crawl; no answer-engine citation is guaranteed.

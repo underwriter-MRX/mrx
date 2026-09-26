@@ -1,0 +1,29 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1130",
+  "slug": "does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor",
+  "source_path": "src/content/posts/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor.mdx",
+  "input_body_sha256": "e125d4d926b84180caa5a6d31c0f09bf8cac4ee62f8360f72331d4dfe2809e7d",
+  "two_image_manifest_sha256": "8beea2ed78cac6d830b6ffe89fa59158c97bf0f2dc33c25633222ad91e278b6c",
+  "review_method": "codex_exact_public_byte_current_texas_primary_source_claim_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte official-source review",
+  "findings": [
+    "The current Railroad Commission of Texas Oil & Gas Data Queries description defines P-4 Purchaser as a company designated to first buy a product from a well or lease; the article preserves designated, product and source-date scope.",
+    "Current P-4 instructions identify authorized gatherers and purchasers as operator-filed regulatory information. The live P-4 query displayed oil/gas, district, lease or gas-well ID, operator, Gatherer/Purchaser type, P-5 number and Gatherer Product controls on 2026-09-26; no actual sale or owner-account conclusion is attributed to them.",
+    "Texas Natural Resources Code §91.401(2) identifies a payor undertaking to distribute production-sale proceeds, makes the actual first purchaser the default, and states the specific arrangement with the owner of the right to produce under which that owner is deemed payor. The copy neither equates a designated P-4 company with the actual first purchaser nor says the purchaser always or never pays.",
+    "The RRC Royalties FAQ states private lease and royalty-payment matters are outside RRC authority. The article treats it as an informal agency guide, not an adjudication.",
+    "The article makes no owner-specific title, decimal, payment-duty, amount, deadline, valuation or search-demand claim. Material agency and statute propositions carry nearby primary-source links."
+  ],
+  "private_full_source_sha256": "56b326e86a54c6e495eaafb94d8586d74dcd5e3050f5bd2241e3c18d2584698e",
+  "sources_reviewed_2026_09_26": [
+    "https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/",
+    "https://www.rrc.texas.gov/media/kx0hcdrw/p-4-ins.pdf",
+    "https://webapps2.rrc.texas.gov/EWA/gathererPurchaserQueryAction.do",
+    "https://tcss.legis.texas.gov/resources/NR/htm/NR.91.htm",
+    "https://www.rrc.texas.gov/about-us/faqs/royalties-faq/"
+  ]
+}

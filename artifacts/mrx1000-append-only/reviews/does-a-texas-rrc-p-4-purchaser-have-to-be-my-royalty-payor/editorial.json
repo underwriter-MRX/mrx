@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1130",
+  "slug": "does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor",
+  "source_path": "src/content/posts/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor.mdx",
+  "input_body_sha256": "e125d4d926b84180caa5a6d31c0f09bf8cac4ee62f8360f72331d4dfe2809e7d",
+  "two_image_manifest_sha256": "8beea2ed78cac6d830b6ffe89fa59158c97bf0f2dc33c25633222ad91e278b6c",
+  "review_method": "codex_exact_public_byte_editorial_originality_and_pillar_comparison",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "findings": [
+    "The exact title asks a focused Texas purchaser-versus-payor question; the opening directly answers it and the royalty pillar is the sole primary hub.",
+    "Full-body comparison with the existing P-4 retrieval provenance worksheet, royalty-statement guide, operator-name log and Texas severance-tax article found no existing explanation centered on the designated P-4 purchaser versus actual first-purchaser statutory payor default and exception. Generic record-keeping passages remain subordinate.",
+    "No exact-query GSC demand or expected ChatGPT retrieval/citation is asserted. The page contains no invented sample owner, public sale, payment amount, formula or pressure CTA.",
+    "The one primary royalty pillar, reciprocal P-4 worksheet and royalty-statement link form a topical path without displacing sibling jobs or forcing a booking.",
+    "Exact title on unique hero/share image and distinct in-body image phrase passed deterministic OCR and full/small-size visual QA; alt text describes illustrative blank materials, not real records."
+  ]
+}

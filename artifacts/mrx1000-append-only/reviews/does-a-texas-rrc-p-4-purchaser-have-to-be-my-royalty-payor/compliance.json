@@ -1,0 +1,21 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1130",
+  "slug": "does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor",
+  "source_path": "src/content/posts/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor.mdx",
+  "input_body_sha256": "e125d4d926b84180caa5a6d31c0f09bf8cac4ee62f8360f72331d4dfe2809e7d",
+  "two_image_manifest_sha256": "8beea2ed78cac6d830b6ffe89fa59158c97bf0f2dc33c25633222ad91e278b6c",
+  "review_method": "codex_exact_public_byte_texas_legal_compliance_scope_check_not_counsel_opinion",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte source-scope check; not a Texas attorney opinion",
+  "findings": [
+    "The article distinguishes public designation from actual sale and private payment arrangement; it does not decide which named company owes a particular owner.",
+    "Texas §91.401(2) is given as a default and narrow stated exception, not applied to an individual lease, division order, contract or sales period; no remedy, damages, statutory payment deadline or dispute result is promised.",
+    "No real owner account or document is displayed in imagery or copy, and readers are cautioned against publishing account numbers, tax identifiers, statements or division orders.",
+    "MRX possible buyer interest is disclosed, public research remains available without contacting MRX, and material owner-specific disputes are directed to qualified Texas legal, land or accounting review.",
+    "This PASS is an internal compliance-scope assessment of these exact bytes, not external specialist approval or counsel certification."
+  ]
+}
