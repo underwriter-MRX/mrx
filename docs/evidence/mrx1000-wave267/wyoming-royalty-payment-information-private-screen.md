@@ -1,0 +1,26 @@
+# Private source screen: Wyoming royalty-payment information
+
+Screened 2026-09-26 UTC. **Conditional candidate only**—not an admitted MRX1000 row, public article, reviewed manuscript, image, or publication. The independently live-verified count remains 336/350. No exact first-party query demand is established; this is a source-first owner question, not a generated-title or GSC-volume approval.
+
+## Reader job and pillar
+
+A Wyoming royalty owner has a payment and wants to know **which information should accompany it before comparing property, period, value, decimal, taxes, deductions and net proceeds**. The candidate answer for the **oil-and-gas-royalties pillar** would be a Wyoming statutory disclosure-checklist and a bounded payor-question path—not another generic guide to arithmetic, an assertion of underpayment, or legal enforcement advice. Provisional question: **What Information Should Come With a Wyoming Oil-and-Gas Royalty Payment?** The title is not final and no art should be made yet.
+
+## Current primary-source boundary
+
+- The [Wyoming Legislature's current Title 30 PDF, W.S. 30-5-305(b), PDF pages 126–127](https://www.wyoleg.gov/statutes/compress/title30.pdf#page=127) lists eleven labeled information categories when payment for oil or gas production is made to an interest owner: property/well identifier; sales month/year; oil or gas sales quantity; unit price; production taxes; itemized other deductions/adjustments; net value of total sales after deductions; owner sales-interest decimal; owner's share before deductions; owner's share after deductions; and an address for additional information/questions. The statute permits the information on a check stub, an attachment, **or otherwise on a regular monthly basis**. Do not collapse that last clause into a universal check-stub-only claim. This is a disclosure list, not a calculation of an individual owner's entitlement.
+- The last item says that if information is requested by certified mail, an answer must be mailed by certified mail within thirty days of receipt. This is statutory text, not a verified procedure for a particular payor or proof of a violation. An article should not coach a demand letter, penalty claim or litigation step without qualified Wyoming legal review.
+- W.S. 30-5-305(a) separately says a division order cannot alter a lease or other contractual agreement to the extent of an attempted alteration. It can support a short boundary note, not become this article's main answer; the existing Wyoming lease-rate article already covers it.
+- [W.S. 30-5-303(c)](https://www.wyoleg.gov/statutes/compress/title30.pdf#page=126) contains a reporting-penalty provision. Do not use it to declare that a particular statement violates law or that an owner is owed money. Its interpretation and enforcement are outside this proposed educational checklist.
+
+The official PDF was opened and the operative 30-5-305(a)–(b) text was read directly on September 26, 2026. Recheck the current official version and effective context before any public copy. Do not infer that the Wyoming Oil and Gas Conservation Commission audits private payor statements; no such agency-service source was found in this screen.
+
+## Full-answer overlap test
+
+- [How to Decode Your Royalty Check Statement](/blog/how-to-decode-your-royalty-check-statement/) already provides a Texas-oriented identity/calculation/reconciliation workflow, including product, volume, price, decimal, tax, adjustments and net. Repeating its worksheet under a Wyoming heading would be a place-name duplicate.
+- [Understanding Your Mineral Royalty Checks: Breakdown](/blog/understanding-your-mineral-royalty-checks-breakdown/) likewise covers generic line-item reconciliation and payor code questions. The proposed answer must **not** re-explain the same math as its center of gravity.
+- [Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?](/blog/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/) already cites 30-5-305(a) and mentions the subsection (b) decimal. It does **not** walk through subsection (b)'s eleven-information disclosure rule or the stub/attachment/regular-monthly placement alternatives. The candidate is distinct only if that statutory completeness question remains central.
+
+## Decision and remaining gates
+
+**Conditional private candidate, not admitted.** Before a public Article337 identity, independently verify current official statute bytes and precise page/section references; compare the complete public corpus again; complete exact-byte Wyoming factual/citation, legal-compliance, editorial and originality review. Keep the reader's action to preserving the payment, any attachment and regular monthly information, then asking the verified payor which source supplies a missing field; do not assert an amount due, legal breach, deadline for the owner, title, decimal correctness or a particular remedy. If the copy becomes a generic statement decoder or legal demand guide, reject or consolidate it. If it passes, it still needs exact-title unique hero/share and distinct in-body image, append-only admission, full tests/build, all-active-host release verification, one bounded postrelease crawl, fresh OTTO read and exact Page Explorer row proof before the separate recrawl ledger advances.
