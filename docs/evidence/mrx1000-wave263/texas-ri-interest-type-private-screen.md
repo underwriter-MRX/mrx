@@ -2,7 +2,7 @@
 
 Status: **source-screened candidate only** (2026-09-26 UTC). Not an admitted MRX1000 row, public article, image, notification, crawl, or published count. Verified published count remains 333. Do not treat this as approved Article 334.
 
-A [private unreviewed manuscript](texas-ri-interest-type-private-manuscript.md) now exists at SHA-256 `d9fa694e77a7112e680b92b0f3c681ad3b86ed6ab561240cbf376838ecd7cea0`. It remains a candidate, not a release packet. The source and corpus boundaries below control any review; do not publicly package it on the strength of this screen alone.
+A [private manuscript](texas-ri-interest-type-private-manuscript.md) now exists at SHA-256 `29558b08c4af4d37c0ada3d1f351c8b29d2cd5cac0727688214e256dc477be0a`. It remains a candidate, not a release packet. This revision clarifies that the Tarrant code legend is in a 2024 data-exchange appendix to the 2025–2029 RFQ, not a current Ward data dictionary. A [current-byte Codex source/compliance-scope/editorial review](texas-ri-interest-type-private-review-20260926.md) conditionally passes the **private** copy for further packaging, while holding row admission and publication for final public-byte gates. It is not an external specialist compliance `PASS` or legal opinion.
 
 ## Reader job and pillar
 
