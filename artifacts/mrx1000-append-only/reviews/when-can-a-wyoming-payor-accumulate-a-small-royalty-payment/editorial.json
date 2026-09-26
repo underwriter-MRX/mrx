@@ -1,0 +1,20 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1132",
+  "slug": "when-can-a-wyoming-payor-accumulate-a-small-royalty-payment",
+  "source_path": "src/content/posts/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment.mdx",
+  "input_body_sha256": "c06f55b4dabe7d400554eb26b6d5beccbcb805facb625240cf7d65fa6b7082db",
+  "two_image_manifest_sha256": "50a8bbd5bd4cfaa22434ac542dc34c0741a66e76c715751408b41d5d68e7418c",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "review_method": "codex_exact_public_byte_editorial_originality_and_royalty_pillar_comparison",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "findings": [
+    "The locked question is answered in the first paragraph by paired Wyoming $100 annual and conditional $25 written-request timing provisions, not a generic missing-check checklist.",
+    "Full-body comparison with the royalty pillar, general statement/decline guides, Article335 private-lease-rate guide and staged Article337 disclosure guide found no existing answer centered on W.S. 30-5-301(b)'s paired small-balance conditions. Adjacent Wyoming clustering remains a risk if later edits dilute this focus; the current byte keeps payor-record and professional-boundary material subordinate.",
+    "Five frontmatter FAQ answers match five visible FAQs. The public path remains a research route without forced contact; no exact-query demand, ranking, indexing, citation, payment or customer outcome is promised.",
+    "The unique hero/share image shows the exact locked article title; the distinct overhead in-body image shows the supporting phrase. OCR, full-size, small-card visual inspection and binary hashes passed. This is social-preview/distribution identity, not a proven direct ranking factor."
+  ],
+  "capability": "editorial"
+}

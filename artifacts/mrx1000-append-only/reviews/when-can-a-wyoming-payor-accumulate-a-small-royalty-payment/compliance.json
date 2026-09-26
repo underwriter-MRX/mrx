@@ -1,0 +1,20 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1132",
+  "slug": "when-can-a-wyoming-payor-accumulate-a-small-royalty-payment",
+  "source_path": "src/content/posts/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment.mdx",
+  "input_body_sha256": "c06f55b4dabe7d400554eb26b6d5beccbcb805facb625240cf7d65fa6b7082db",
+  "two_image_manifest_sha256": "50a8bbd5bd4cfaa22434ac542dc34c0741a66e76c715751408b41d5d68e7418c",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "review_method": "codex_exact_public_byte_wyoming_legal_compliance_scope_check_not_counsel_opinion",
+  "reviewer": "Codex independent exact-current-byte Wyoming source-scope check; not a Wyoming attorney opinion",
+  "findings": [
+    "The article explains statutory timing conditions without diagnosing a payor breach, computing an amount due, assessing damages or penalties, or supplying a legal demand template.",
+    "Legal entitlement, valid contracts, responsible payor and owner-specific facts are expressly unresolved. A material dispute routes to qualified Wyoming counsel, not to an article-derived conclusion.",
+    "The source's written-request condition is described, but the article does not instruct the reader to send an informal message as a statutory request or claim that one was received. Escrow remains separately bounded.",
+    "No real account, statement or bank identifiers appear in text or images; public disclosure of private identifiers is discouraged. MRX's potential later buyer interest is disclosed, and the public source remains usable without booking. This is internal compliance-scope PASS, not counsel certification or external specialist approval."
+  ],
+  "capability": "compliance"
+}
