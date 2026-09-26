@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1128",
+  "slug": "what-does-ri-mean-on-a-texas-mineral-appraisal-record",
+  "source_path": "src/content/posts/what-does-ri-mean-on-a-texas-mineral-appraisal-record.mdx",
+  "input_body_sha256": "c6b8b8679a497b83e6d14ed2b98b95fc1fb6301c88d9783a597b6d20eccadee4",
+  "two_image_manifest_sha256": "8736413d1b58022f1f616ca0f2c28226537e13dd621d28167f54668da235d5ba",
+  "private_full_source_sha256": "ff7105b3470b0216f6a918eef995e63007dbcdae6427e5c7711a8364cf24eb2c",
+  "review_method": "codex_exact_public_byte_editorial_faq_and_full_body_corpus_overlap_review",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "editorial",
+  "reviewer": "Codex independent exact-current-byte editorial and originality review",
+  "advisory_review": "The conditional private manuscript review is not treated as a final public-byte or external editorial pass.",
+  "findings": [
+    "The opening answers the exact RI question first and immediately qualifies the Ward-issued-dictionary gap. The Ward type, decimal and G1 field-pair explanation, rather than generic royalty taxonomy or title-search advice, remains the article's center of gravity.",
+    "Full-body comparison found the Texas interest-types overview owns broad interest taxonomy; the Ward contract article owns contract-defined property classes; Martin CAD content owns search-interface retrieval; and the division-order guide owns payor-document context. None explains Ward's visible RI/type/decimal/G1 field pairing with the Tarrant and vendor source boundary.",
+    "The title/lease/ownership pillar is the one primary hub and reciprocal internal-link destination. The sibling division-order guide is a relevant next step. A public research path is available without MRX contact.",
+    "Five structured FAQs correspond to five visible question-answer sections, with consistent cautions. The public copy makes no indexing, ranking, ChatGPT citation or owner-specific outcome promise.",
+    "The same exact-title unique 1200x630 hero binary is selected for page and social preview, and a distinct 1200x675 in-body image carries the supporting phrase. OCR, binary hashes, full-size and card-size visual inspection passed."
+  ]
+}

@@ -186,6 +186,21 @@
       "creative_manifest_path": "artifacts/mrx1000-wave262-creative-qa/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/creative-manifest.json",
       "selection_decision_path": "docs/governance/mrx1000-wave262-selection-decision-2026-09-25.md",
       "selection_decision_sha256": "05cbfbd193e59c61b1e707fb618113f9541a7dccf8158bcb85e37169570588d0"
+    },
+    {
+      "selection_rank": 334,
+      "program_row_id": "MRX1000-1128",
+      "canonical_title": "What Does RI Mean on a Texas Mineral Appraisal Record?",
+      "canonical_slug": "what-does-ri-mean-on-a-texas-mineral-appraisal-record",
+      "canonical_url": "https://mineralrightsxchange.com/blog/what-does-ri-mean-on-a-texas-mineral-appraisal-record/",
+      "pillar": "title-lease-ownership",
+      "cluster": "title-lease-ownership-documents",
+      "identity_state": "admitted_quality_gated",
+      "source_system": "searchatlas_gsc_and_primary_source_refinement",
+      "source_map_id": 261162,
+      "creative_manifest_path": "artifacts/mrx1000-wave263-creative-qa/what-does-ri-mean-on-a-texas-mineral-appraisal-record/creative-manifest.json",
+      "selection_decision_path": "docs/governance/mrx1000-wave263-selection-decision-2026-09-26.md",
+      "selection_decision_sha256": "1fd213060836e3b8973adbfc798686d04a0254a47d9e68ff51cd4b2813b3f3b4"
     }
   ]
 }

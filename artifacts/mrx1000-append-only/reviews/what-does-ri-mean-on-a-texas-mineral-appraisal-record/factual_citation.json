@@ -1,0 +1,29 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1128",
+  "slug": "what-does-ri-mean-on-a-texas-mineral-appraisal-record",
+  "source_path": "src/content/posts/what-does-ri-mean-on-a-texas-mineral-appraisal-record.mdx",
+  "input_body_sha256": "c6b8b8679a497b83e6d14ed2b98b95fc1fb6301c88d9783a597b6d20eccadee4",
+  "two_image_manifest_sha256": "8736413d1b58022f1f616ca0f2c28226537e13dd621d28167f54668da235d5ba",
+  "private_full_source_sha256": "ff7105b3470b0216f6a918eef995e63007dbcdae6427e5c7711a8364cf24eb2c",
+  "review_method": "codex_exact_public_byte_primary_and_vendor_source_claim_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "factual_citation",
+  "reviewer": "Codex independent exact-current-byte source review",
+  "findings": [
+    "Ward CAD's current public detail separately displays Interest Type RI, Decimal Interest and Category Code G1 and carries a research-information caveat; the public copy does not reproduce the sample owner's identity or decimal.",
+    "Pritchard & Abbott's current royalty-owner FAQ expands RI as royalty interest in its own examples, while its separate current page identifies Ward CAD as a client. The article explicitly does not treat those vendor pages as a Ward-issued code dictionary or an owner-specific title or payment rule.",
+    "Tarrant Appraisal District's 2025-2029 RFQ PDF page 19, in the 2024 mineral data-exchange appendix, separately identifies Owner Interest Type and Owner Decimal Interest of Ownership and expands RI as Royalty Interest. The complete reviewed PDF SHA-256 is 36be3c3bdd1874b0501e700be1c55b166610d0f70f96e74b9b67a3fce289e218. The article limits this legend and G1 description to Tarrant's contract rather than importing its fields into Ward.",
+    "The Texas RRC well-records source supports only the statement that private property-rights, lease and royalty-payment matters fall outside RRC authority; it is not cited for CAD semantics.",
+    "The conclusion that a displayed code and decimal do not alone prove a particular reader's title or payable share is a bounded inference from the distinct source roles, not a source quote or parcel-specific adjudication. No numeric result, deadline, valuation or royalty amount is asserted."
+  ],
+  "sources_reviewed_2026_09_26": [
+    "https://wardcad.org/Home/Details?ownershipId=24888&parcelId=500066",
+    "https://www.pandai.com/oil_gas_faq",
+    "https://www.pandai.com/ward_cad",
+    "https://www.tad.org/content/rfp/mineral-and-utility-rfq-2025-2029.pdf#page=19",
+    "https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records/"
+  ]
+}

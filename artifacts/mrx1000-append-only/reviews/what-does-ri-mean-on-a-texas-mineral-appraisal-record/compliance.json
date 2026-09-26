@@ -1,0 +1,23 @@
+{
+  "artifact_type": "mrx1000_append_only_current_source_review",
+  "schema_version": "1.0.0",
+  "disposition": "PASS",
+  "program_row_id": "MRX1000-1128",
+  "slug": "what-does-ri-mean-on-a-texas-mineral-appraisal-record",
+  "source_path": "src/content/posts/what-does-ri-mean-on-a-texas-mineral-appraisal-record.mdx",
+  "input_body_sha256": "c6b8b8679a497b83e6d14ed2b98b95fc1fb6301c88d9783a597b6d20eccadee4",
+  "two_image_manifest_sha256": "8736413d1b58022f1f616ca0f2c28226537e13dd621d28167f54668da235d5ba",
+  "private_full_source_sha256": "ff7105b3470b0216f6a918eef995e63007dbcdae6427e5c7711a8364cf24eb2c",
+  "review_method": "codex_exact_public_byte_texas_source_scope_privacy_and_content_safety_check",
+  "authority": "standing_owner_article_publication_directive_2026_08_14",
+  "capability": "compliance",
+  "reviewer": "Codex independent exact-current-byte compliance-scope review; not Texas counsel",
+  "advisory_review": "No external legal specialist PASS is asserted; this review checks publication boundaries against cited sources and MRX policy only.",
+  "findings": [
+    "The article presents educational public-record interpretation, not individualized legal, title, tax, accounting, investment, valuation or payment advice. It does not declare a reader's interest type under a controlling instrument, ownership share, current payor decimal, royalty amount, lease effect, deadline or remedy.",
+    "The public Ward example is used only to identify visible field labels; no sample person's name, address or decimal is reproduced. Readers are told to keep their own decimal private in public questions and to retain minimum identifying information.",
+    "Vendor and Tarrant explanations are attributed to their own materials and explicitly not promoted into a Ward-issued field dictionary. A decision-critical Ward meaning is referred to Ward CAD, while disputed instruments and payor records are referred to their issuer or qualified professional.",
+    "The research route requires no MRX booking or document upload. Potential MRX buyer interest is disclosed before any later agreement, and the public copy says MRX does not certify title or payable decimal.",
+    "No new monetary charge, outreach, legal certification, guaranteed search indexing, ChatGPT citation, or invented CAD/payment calculation appears in the public bytes."
+  ]
+}
