@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T07:06:10.004Z",
+  "article": {
+    "title": "Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?",
+    "keyword": "Texas P-4 purchaser vs royalty payor",
+    "generation_prompts": {
+      "hero": "Text-free wide oblique Texas oilfield research desk, distant pumpjack through right window, separate unmarked folder and plain payment envelope on right, dark navy left negative space; no real records, text, figures, logos, seals or legal/payment claims.",
+      "inline": "Text-free strict overhead two-lane still life: blank blue archival sleeve with abstract pumpjack symbol on left, separate plain payment envelope and blank-screen calculator on right, magnifier at divider, dark navy bottom negative space; no real forms, text, figures, logos, seals or payment claim."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/hero-base.png",
+      "source_sha256": "debb819c7ed2f418046d2d7a4940270915cc9d2ffe946bd25c2054a65b5764e8",
+      "public_path": "/assets/articles/hero/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor.webp",
+      "sha256": "7f6fd66fc15541b96be5ff3f66baf47d1989568e5e7a7211dbd274c7ba70f075",
+      "perceptual_hash": "0000000000101111000000000000111100000000011011110000100000001111010000000010111100111000000011110111100000101110010000000111110000000000011111110000000001111110000000000011111000000000000011110000000000100111000000000001111100000000001111000000000000011010",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?",
+        "actual": "Does a Texas RRC\nP-4 Purchaser Have\nto Be My Royalty\nPayor?",
+        "normalized": "does a texas rrc p 4 purchaser have to be my royalty payor",
+        "normalized_expected": "does a texas rrc p 4 purchaser have to be my royalty payor",
+        "normalized_actual": "does a texas rrc p 4 purchaser have to be my royalty payor",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave266-creative-qa/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/inline-base.png",
+      "source_sha256": "9caf9a184a685f6321a167c5d65dcebbc79cd24d7c422f4899d5dc8602c0b3e7",
+      "public_path": "/assets/articles/inline/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/texas-p-4-purchaser-vs-royalty-payor.webp",
+      "sha256": "2c52497f387585b47590872a4e4d0c25df0e951eaefed98029aba497bcfabf1f",
+      "perceptual_hash": "0111111111111001011111111111101001111111111111101000001111111110000000111111111000000001111111110000001111111111000000111111111100000011111111110000001111111111000000011111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Texas P-4 purchaser vs royalty payor",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Texas P-4 purchaser vs royalty payor",
+        "actual": "Texas P-4 purchaser\nvs royalty payor",
+        "normalized": "texas p 4 purchaser vs royalty payor",
+        "normalized_expected": "texas p 4 purchaser vs royalty payor",
+        "normalized_actual": "texas p 4 purchaser vs royalty payor",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
