@@ -2,7 +2,7 @@
 
 Working title: **Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?**
 
-Working pillar: `/oil-and-gas-royalties/`. No row/rank admission, public MDX, art or release exists.
+Working pillar: `/learning-center/oil-and-gas-royalties/`. No row/rank admission, public MDX, art or release exists.
 
 ## Direct answer
 
