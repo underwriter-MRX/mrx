@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T03:44:35.165Z",
+  "article": {
+    "title": "Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?",
+    "keyword": "Wyoming private lease royalty rate",
+    "generation_prompts": {
+      "hero": "Text-free horizontal Wyoming high-plains landscape at dusk, distant oil pumpjack and closed unmarked field notebook at the far right, dark left negative space; no papers, figures, words, logos, seals or rate claims.",
+      "inline": "Distinct text-free horizontal eye-level archival-shelf photograph with three plain unmarked binders at left, brass magnifier, dark right wall; no real records, figures, words, logos, seals or rate claims."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/hero-base.png",
+      "source_sha256": "7743e39e762e83a89ee773fec8a76e14ba8b7e75799c497e88848d5f9885959d",
+      "public_path": "/assets/articles/hero/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease.webp",
+      "sha256": "ba4a4e0ffa282f66934723bae9fbe7d64fee86f8c10a3a232817fe5fa5424673",
+      "perceptual_hash": "0000000001111111000000000111111100000000011111110111100001111111011110000111111101111000011111111111100011111111011100000111111100000000000001100000000001011100000000000100100000000000000111100000000001000010000000000110010000000000011001000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?",
+        "actual": "Does Wyoming Set\nthe Royalty Rate in\nMy Private Oil and\nGas Lease?",
+        "normalized": "does wyoming set the royalty rate in my private oil and gas lease",
+        "normalized_expected": "does wyoming set the royalty rate in my private oil and gas lease",
+        "normalized_actual": "does wyoming set the royalty rate in my private oil and gas lease",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave264-creative-qa/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/inline-base.png",
+      "source_sha256": "4ce36705a7e82a9cfb0241797440a3897f7237f559e579298aefea0ccd7d770f",
+      "public_path": "/assets/articles/inline/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/wyoming-private-lease-royalty-rate.webp",
+      "sha256": "13ad1391677fbf2b9af21af012b3b8f093d64d38834388fc566dc058335a6205",
+      "perceptual_hash": "1111110000000000110001000000000011111100000000001111000000000000111100000000000011100000000000001110000000000000111000000000000011100000000000001110000000000000111001000000000000000111111000000000011111100000000000111100000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Wyoming private lease royalty rate",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Wyoming private lease royalty rate",
+        "actual": "Wyoming private lease\nroyalty rate",
+        "normalized": "wyoming private lease royalty rate",
+        "normalized_expected": "wyoming private lease royalty rate",
+        "normalized_actual": "wyoming private lease royalty rate",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
