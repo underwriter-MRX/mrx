@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T12:10:56.348Z",
+  "article": {
+    "title": "When Can a Wyoming Payor Accumulate a Small Royalty Payment?",
+    "keyword": "Wyoming small royalty payment timing",
+    "generation_prompts": {
+      "hero": "Text-free close oblique editorial photograph of one unmarked closed envelope and an unnumbered brass pocket watch on dark slate and muted sandstone, deep-navy negative space on right; no landscape, desk window, people, text, numbers, currency, logos, seals, or fake evidence.",
+      "inline": "Text-free top-down pale stone scene with a blank grid calendar, two separate blank cards and an unmarked closed envelope, quiet lower band for later exact phrase; no landscape, oilfield, dark desk, people, text, numbers, currency, logos, seals, or fake evidence."
+    },
+    "hero": {
+      "source_path": "artifacts/mrx1000-wave268-creative-qa/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment/hero-base.png",
+      "source_sha256": "c8653b921f55956459b60c9e6dff21c87cbcb340939936bbb20a932ac5de8744",
+      "public_path": "/assets/articles/hero/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment.webp",
+      "sha256": "3a9cf769ad1a01e79694e900ec5b6442e1af96740d05f18147922b2345ceebe0",
+      "perceptual_hash": "1110000000000000110110000000000011111000000000001111110010011000111111001111100011111100111110001111110011110000111111001110000011111000000000001111100000000000101110000000000000111000000000001000000000000000100000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 630,
+      "mime_type": "image/webp",
+      "rendered_text": "When Can a Wyoming Payor Accumulate a Small Royalty Payment?",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "When Can a Wyoming Payor Accumulate a Small Royalty Payment?",
+        "actual": "When Can a Wyoming\nPayor Accumulate a\nSmall Royalty\nPayment?",
+        "normalized": "when can a wyoming payor accumulate a small royalty payment",
+        "normalized_expected": "when can a wyoming payor accumulate a small royalty payment",
+        "normalized_actual": "when can a wyoming payor accumulate a small royalty payment",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    },
+    "inline": {
+      "source_path": "artifacts/mrx1000-wave268-creative-qa/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment/inline-base.png",
+      "source_sha256": "2d6eae5f397f6fd4f731180249d2604f145946aaba251e1a52cc107466488fb9",
+      "public_path": "/assets/articles/inline/when-can-a-wyoming-payor-accumulate-a-small-royalty-payment/wyoming-small-royalty-payment-timing.webp",
+      "sha256": "f538dc498ae7027ea96ce53852b133d61fda5768610596fcf1cf3f322c6dcee7",
+      "perceptual_hash": "0011111111111000001111111111100001111111111110000111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "width": 1200,
+      "height": 675,
+      "mime_type": "image/webp",
+      "rendered_text": "Wyoming small royalty payment timing",
+      "neutralized_art_text_region_count": 1,
+      "ocr": {
+        "expected": "Wyoming small royalty payment timing",
+        "actual": "Wyoming small royalty\npayment timing",
+        "normalized": "wyoming small royalty payment timing",
+        "normalized_expected": "wyoming small royalty payment timing",
+        "normalized_actual": "wyoming small royalty payment timing",
+        "uppercase_i_confusable_accepted": false,
+        "pass": true
+      }
+    }
+  },
+  "verification": {
+    "exact_title_ocr": true,
+    "exact_keyword_ocr": true,
+    "deterministic_pixel_text": true,
+    "distinct_source_binaries": true,
+    "distinct_output_binaries": true
+  }
+}
