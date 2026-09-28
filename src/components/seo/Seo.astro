@@ -47,6 +47,7 @@ interface Props {
   breadcrumbs?: Crumb[];
   exactCanonicalArticleTitle?: string;
   socialTitle?: string;
+  metaKeywords?: string[];
 }
 
 const {
@@ -72,6 +73,7 @@ const {
   breadcrumbs,
   exactCanonicalArticleTitle,
   socialTitle,
+  metaKeywords = [],
 } = Astro.props;
 
 // Final title: if the frontmatter title already includes "Mineral Rights Xchange"
@@ -114,6 +116,7 @@ const graph = buildPageGraph([
 
 <title>{finalTitle}</title>
 <meta name="description" content={description} />
+{metaKeywords.length > 0 && <meta name="keywords" content={metaKeywords.join(', ')} />}
 <meta name="robots" content={robotsContent} />
 <link rel="canonical" href={canonical} />
 {previousPath && <link rel="prev" href={buildCanonical(previousPath, SITE.url)} />}

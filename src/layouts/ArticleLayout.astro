@@ -58,6 +58,7 @@ interface Props {
   noindex?: boolean;
   robots?: string;
   socialTitle?: string;
+  metaKeywords?: string[];
   articleGuideHeading?: string;
   primaryCta: { label: string; href: string; ctaName: string };
   askCtaName: string;
@@ -105,6 +106,7 @@ const {
   noindex,
   robots,
   socialTitle,
+  metaKeywords = [],
   articleGuideHeading,
   primaryCta,
   askCtaName,
@@ -153,6 +155,7 @@ const socialImageType = dedicatedSocialImage
   breadcrumbs={breadcrumbs}
   exactCanonicalArticleTitle={articleTitle}
   socialTitle={socialTitle}
+  metaKeywords={metaKeywords}
   measurement={measurement}
 >
   <slot name="structured-data" />

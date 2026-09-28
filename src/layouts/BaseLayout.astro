@@ -38,6 +38,7 @@ interface Props {
   breadcrumbs?: Crumb[];
   exactCanonicalArticleTitle?: string;
   socialTitle?: string;
+  metaKeywords?: string[];
   pageType: 'home' | 'marketing' | 'blog' | 'post' | 'utility';
   pageCategory?: string;
   hideHeader?: boolean;
@@ -72,6 +73,7 @@ const {
   breadcrumbs,
   exactCanonicalArticleTitle,
   socialTitle,
+  metaKeywords = [],
   pageType,
   pageCategory,
   hideHeader = false,
@@ -130,6 +132,7 @@ const measurementJson = measurement ? JSON.stringify(measurement) : 'null';
       breadcrumbs={breadcrumbs}
       exactCanonicalArticleTitle={exactCanonicalArticleTitle}
       socialTitle={socialTitle}
+      metaKeywords={metaKeywords}
     />
     <script
       is:inline

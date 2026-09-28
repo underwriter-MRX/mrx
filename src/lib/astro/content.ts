@@ -62,6 +62,8 @@ export type ArticlePillar =
 export type PagesFrontmatter = {
   title: string;
   seo_title?: string;
+  social_title?: string;
+  meta_keywords?: string[];
   description: string;
   slug: string;
   draft?: boolean;
@@ -82,6 +84,8 @@ export type PagesFrontmatter = {
 export type PostsFrontmatter = {
   title: string;
   seo_title?: string;
+  social_title?: string;
+  meta_keywords?: string[];
   description: string;
   slug: string;
   published_at: string;

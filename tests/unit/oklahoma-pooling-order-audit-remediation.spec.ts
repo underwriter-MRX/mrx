@@ -20,6 +20,19 @@ function nestedScalar(source: string, parent: string, key: string): string {
   return raw;
 }
 
+function yamlList(source: string, key: string): string[] {
+  const block = source.match(new RegExp(`^${key}:\\s*\\n((?:  - '[^']+'\\n)+)`, 'm'))?.[1] ?? '';
+  return [...block.matchAll(/^  - '([^']+)'$/gm)].map((match) => match[1]);
+}
+
+function relatedAltMap(source: string): Record<string, string> {
+  const block =
+    source.match(/^related_article_image_alts:\s*\n((?:  [a-z0-9-]+: '[^']+'\n)+)/m)?.[1] ?? '';
+  return Object.fromEntries(
+    [...block.matchAll(/^  ([a-z0-9-]+): '([^']+)'$/gm)].map((match) => [match[1], match[2]]),
+  );
+}
+
 describe('Oklahoma pooling order Search Atlas audit remediation', () => {
   it('uses a narrow social-title override without changing the canonical article title', () => {
     expect(scalar(articleSource, 'title')).toBe(
@@ -56,25 +69,33 @@ describe('Oklahoma pooling order Search Atlas audit remediation', () => {
     );
   });
 
-  it('keeps the titled hero bytes and uses visual alt text instead of generic production-note wording', () => {
+  it('keeps only six concise source alts for article images', () => {
     expect(nestedScalar(articleSource, 'hero_image', 'sha256')).toBe(
       '72d99e2ea57b11d8b08ec81270440692c5ac0347e66e4e52c534e68c0b0779d0',
     );
-    const alts = [
-      nestedScalar(articleSource, 'hero_image', 'alt'),
+    expect(nestedScalar(articleSource, 'hero_image', 'alt')).toBe(
       nestedScalar(articleSource, 'hero_image', 'social_alt'),
+    );
+
+    const relatedAlts = relatedAltMap(articleSource);
+    const articleImageAlts = [
+      nestedScalar(articleSource, 'hero_image', 'alt'),
       nestedScalar(articleSource, 'inline_image', 'alt'),
-      'Two colored paper search paths lead from mineral layers to a folder beside the Oklahoma escrow title.',
-      'Ohio records desk with county book and farmland window beside title text about mineral deeds and leases.',
-      'Texas research desk with map, magnifying glass, and hill-country window beside title text about RI.',
-      'Large title text about division orders beside an abstract payment-card illustration.',
+      ...Object.values(relatedAlts),
     ];
-    for (const alt of alts) {
+    expect(articleImageAlts).toHaveLength(6);
+    expect(new Set(articleImageAlts).size).toBe(6);
+
+    for (const alt of articleImageAlts) {
       expect(alt.length).toBeGreaterThanOrEqual(20);
-      expect(alt.length).toBeLessThanOrEqual(125);
-      expect(alt).not.toMatch(/exact article title|MRX article cover|unlabeled|blank/i);
+      expect(alt.length).toBeLessThanOrEqual(70);
+      expect(alt).not.toMatch(
+        /exact article title|MRX article cover|unlabeled|blank|\.webp|image|fictional|avatar|logo/i,
+      );
     }
-    expect(articleSource).toContain('related_article_image_alts:');
+    expect(relatedAlts['what-does-ri-mean-on-a-texas-mineral-appraisal-record']).toMatch(
+      /Texas RI map desk/,
+    );
   });
 
   it('uses page-scoped related card headings and a compressed RI-card derivative without replacing the RI article hero', async () => {
@@ -108,5 +129,53 @@ describe('Oklahoma pooling order Search Atlas audit remediation', () => {
     expect(derivativeMetadata.format).toBe('webp');
     expect(originalMetadata.width).toBe(1200);
     expect(originalMetadata.height).toBe(630);
+  });
+
+  it('keeps owner-requested page-scoped meta keywords to the four explicit terms', () => {
+    expect(yamlList(articleSource, 'meta_keywords')).toEqual([
+      'Oklahoma pooling order search',
+      'Oklahoma Corporation Commission',
+      'OCC Case Document Search',
+      'Oklahoma pooling notice',
+    ]);
+  });
+
+  it('does not alter shared logo, avatar, or guide image alt plumbing', () => {
+    expect(articleSource).not.toContain('page_image_alt_overrides:');
+    for (const forbidden of [
+      'pageImageAltOverrides',
+      'guideImageAlt',
+      'travisImageAlt',
+      'logoAlt',
+      'travisAlt',
+    ]) {
+      expect(readFileSync('src/layouts/BaseLayout.astro', 'utf8')).not.toContain(forbidden);
+      expect(readFileSync('src/layouts/ArticleLayout.astro', 'utf8')).not.toContain(forbidden);
+      expect(readFileSync('src/components/molecules/ArticleTeamBox.astro', 'utf8')).not.toContain(
+        forbidden,
+      );
+      expect(
+        readFileSync('src/components/molecules/ArticleClosingCta.astro', 'utf8'),
+      ).not.toContain(forbidden);
+      expect(readFileSync('src/components/organisms/Header.astro', 'utf8')).not.toContain(
+        forbidden,
+      );
+      expect(readFileSync('src/components/organisms/Footer.astro', 'utf8')).not.toContain(
+        forbidden,
+      );
+    }
+
+    expect(readFileSync('src/components/organisms/Header.astro', 'utf8')).toContain(
+      'alt="Travis, fictional MRX AI guide"',
+    );
+    expect(readFileSync('src/components/organisms/Footer.astro', 'utf8')).toContain(
+      'alt="Travis, fictional MRX AI guide"',
+    );
+    expect(readFileSync('src/components/molecules/ArticleClosingCta.astro', 'utf8')).toContain(
+      'alt="Travis, fictional MRX AI guide"',
+    );
+    expect(readFileSync('src/components/molecules/ArticleTeamBox.astro', 'utf8')).toContain(
+      'alt={`${guide.name}, fictional ${guide.chatRole}`}',
+    );
   });
 });

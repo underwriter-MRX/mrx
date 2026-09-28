@@ -86,7 +86,12 @@ for (const file of htmlFiles) {
   if (!title) failures.push(`${route}: missing <title>`);
   if (!description) failures.push(`${route}: missing meta description`);
   if (!robotsContent) failures.push(`${route}: missing robots meta`);
-  if (metaKeywords) failures.push(`${route}: obsolete meta keywords tag must not be emitted`);
+  const ownerRequestedMetaKeywordsRoutes = new Set([
+    '/blog/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/',
+  ]);
+  if (metaKeywords && !ownerRequestedMetaKeywordsRoutes.has(canonicalRoute)) {
+    failures.push(`${route}: obsolete meta keywords tag must not be emitted`);
+  }
   if (twitterSite !== '@mineralrightsxchange') {
     failures.push(`${route}: twitter:site is ${twitterSite ?? '(missing)'}`);
   }

@@ -194,6 +194,10 @@ const posts = defineCollection({
       // Optional OG/Twitter title override. This is intentionally narrow:
       // it must not alter the HTML title, H1, or Article headline.
       social_title: z.string().min(20).max(70).optional(),
+      // Optional, page-scoped Search Atlas raw-audit compatibility field.
+      // Google ignores meta keywords; this field exists only when an owner
+      // explicitly requests the rendered tag for a specific article.
+      meta_keywords: z.array(z.string().min(2).max(60)).max(12).optional(),
       description: z.string().min(130).max(160),
       // NOTE: `slug` is auto-derived from the file name in Astro 5
       // content collections; no need to declare it in the schema.
