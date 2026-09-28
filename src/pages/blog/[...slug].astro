@@ -116,6 +116,7 @@ const measurement = resolveArticleMeasurementContext({
   ]}
   disclaimerTop={post.data.disclaimer_top}
   socialTitle={post.data.social_title}
+  articleGuideHeading={post.data.article_guide_heading}
   primaryCta={{
     label: cta.label,
     href: cta.href,
@@ -140,7 +141,7 @@ const measurement = resolveArticleMeasurementContext({
     related.length > 0 && (
       <Fragment slot="related">
         <Heading level={2} size="2xl" id="related-posts-heading">
-          Related articles
+          {post.data.related_articles_heading ?? 'Related articles'}
         </Heading>
         <Text class="text--lead related-posts__lede">
           More plain-language explainers in the same topic area.
@@ -149,13 +150,19 @@ const measurement = resolveArticleMeasurementContext({
           {related.map((p) => {
             const pSlug = p.id.replace(/\.mdx?$/, '');
             const relatedImageAlt = post.data.related_article_image_alts?.[pSlug];
-            const cardPost = relatedImageAlt
-              ? {
-                  ...p.data,
-                  hero_image: { ...p.data.hero_image, alt: relatedImageAlt },
-                  slug: pSlug,
-                }
-              : { ...p.data, slug: pSlug };
+            const relatedImageSrc = post.data.related_article_image_srcs?.[pSlug];
+            const cardPost =
+              relatedImageAlt || relatedImageSrc
+                ? {
+                    ...p.data,
+                    hero_image: {
+                      ...p.data.hero_image,
+                      ...(relatedImageAlt ? { alt: relatedImageAlt } : {}),
+                      ...(relatedImageSrc ? { src: relatedImageSrc } : {}),
+                    },
+                    slug: pSlug,
+                  }
+                : { ...p.data, slug: pSlug };
             return <PostCard post={cardPost} href={`/blog/${pSlug}/`} />;
           })}
         </div>

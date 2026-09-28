@@ -7,9 +7,11 @@ interface Props {
   authorDescription: string;
   guide: Guide;
   articleTitle: string;
+  guideHeading?: string;
 }
 
-const { authorName, authorHref, authorDescription, guide, articleTitle } = Astro.props;
+const { authorName, authorHref, authorDescription, guide, articleTitle, guideHeading } =
+  Astro.props;
 const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} to help me understand what applies to my situation.`;
 ---
 
@@ -17,7 +19,7 @@ const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} 
   <div class="article-author-box__head">
     <div>
       <p class="mrx-eyebrow">Article guide</p>
-      <h2 id="article-guide-title">Ask {guide.name}</h2>
+      <h2 id="article-guide-title">{guideHeading ?? `Ask ${guide.name}`}</h2>
     </div>
     <span>Fictional MRX AI Guide</span>
   </div>
@@ -57,7 +59,9 @@ const guidePrompt = `I am reading "${articleTitle}". I would like ${guide.name} 
     </div>
     <p>{authorDescription}</p>
     <small>
-      {guide.name} is a fictional MRX AI Guide, not an article author or licensed professional. {authorName}
+      {guide.name} is a fictional MRX AI Guide, not an article author or licensed professional. {
+        authorName
+      }
       maintains organizational responsibility for article sourcing, review, updates, and publication.
     </small>
   </footer>

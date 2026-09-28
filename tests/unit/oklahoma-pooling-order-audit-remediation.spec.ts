@@ -76,4 +76,37 @@ describe('Oklahoma pooling order Search Atlas audit remediation', () => {
     }
     expect(articleSource).toContain('related_article_image_alts:');
   });
+
+  it('uses page-scoped related card headings and a compressed RI-card derivative without replacing the RI article hero', async () => {
+    expect(scalar(articleSource, 'article_guide_heading')).toBe('Ask Connor about records');
+    expect(scalar(articleSource, 'related_articles_heading')).toBe(
+      'Related mineral rights articles',
+    );
+    expect(articleSource).not.toContain("article_guide_heading: 'Ask Connor'");
+
+    const derivative =
+      'public/assets/articles/related/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/what-does-ri-mean-on-a-texas-mineral-appraisal-record.webp';
+    const original =
+      'public/assets/articles/hero/what-does-ri-mean-on-a-texas-mineral-appraisal-record.webp';
+    const derivativeBytes = readFileSync(derivative);
+    const originalBytes = readFileSync(original);
+    const derivativeMetadata = await sharp(derivativeBytes).metadata();
+    const originalMetadata = await sharp(originalBytes).metadata();
+
+    expect(articleSource).toContain(
+      "what-does-ri-mean-on-a-texas-mineral-appraisal-record: '/assets/articles/related/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/what-does-ri-mean-on-a-texas-mineral-appraisal-record.webp'",
+    );
+    expect(statSync(derivative).size).toBeLessThan(100000);
+    expect(createHash('sha256').update(derivativeBytes).digest('hex')).toBe(
+      '914eff269f96235576861bde9f44ed9997c9f78fd1358ea233ef428fe6c12f9b',
+    );
+    expect(createHash('sha256').update(originalBytes).digest('hex')).toBe(
+      '928a76ad6d2936723be68625c73ded7d90e061d48404d71cc4780df762856cb3',
+    );
+    expect(derivativeMetadata.width).toBe(1200);
+    expect(derivativeMetadata.height).toBe(630);
+    expect(derivativeMetadata.format).toBe('webp');
+    expect(originalMetadata.width).toBe(1200);
+    expect(originalMetadata.height).toBe(630);
+  });
 });

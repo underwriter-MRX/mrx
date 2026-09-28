@@ -171,6 +171,10 @@ export type PostsFrontmatter = {
   cluster?: string;
   parent_page?: string;
   related_articles?: string[];
+  related_article_image_alts?: Record<string, string>;
+  related_article_image_srcs?: Record<string, string>;
+  article_guide_heading?: string;
+  related_articles_heading?: string;
   answer_summary?: string;
   key_takeaways?: string[];
   questions_answered?: string[];

@@ -265,6 +265,14 @@ const posts = defineCollection({
       // remediation. These affect only cards rendered from this article and
       // do not mutate the related article's own reviewed source bytes.
       related_article_image_alts: z.record(z.string().min(20).max(125)).optional(),
+      // Page-scoped related-card image source overrides for byte-budget
+      // remediation. These must not replace a related article's canonical
+      // hero/social/schema asset; they only affect cards on this page.
+      related_article_image_srcs: z
+        .record(z.string().regex(/^\/assets\/articles\/related\//))
+        .optional(),
+      article_guide_heading: z.string().min(20).max(70).optional(),
+      related_articles_heading: z.string().min(20).max(70).optional(),
       answer_summary: z.string().min(40).max(500).optional(),
       key_takeaways: z.array(z.string().min(10)).max(8).optional().default([]),
       questions_answered: z.array(z.string().min(5)).optional().default([]),

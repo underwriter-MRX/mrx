@@ -58,6 +58,7 @@ interface Props {
   noindex?: boolean;
   robots?: string;
   socialTitle?: string;
+  articleGuideHeading?: string;
   primaryCta: { label: string; href: string; ctaName: string };
   askCtaName: string;
   answerSummary?: string;
@@ -104,6 +105,7 @@ const {
   noindex,
   robots,
   socialTitle,
+  articleGuideHeading,
   primaryCta,
   askCtaName,
   answerSummary,
@@ -301,6 +303,7 @@ const socialImageType = dedicatedSocialImage
           authorDescription={authorDescription}
           guide={guide}
           articleTitle={articleTitle}
+          guideHeading={articleGuideHeading}
         />
         <ArticleSidebarCta ctaNamePrefix={articleCtaPrefix} />
       </aside>
