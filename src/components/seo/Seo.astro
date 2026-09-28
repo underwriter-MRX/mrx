@@ -46,6 +46,7 @@ interface Props {
   jsonLd?: object[];
   breadcrumbs?: Crumb[];
   exactCanonicalArticleTitle?: string;
+  socialTitle?: string;
 }
 
 const {
@@ -70,6 +71,7 @@ const {
   jsonLd = [],
   breadcrumbs,
   exactCanonicalArticleTitle,
+  socialTitle,
 } = Astro.props;
 
 // Final title: if the frontmatter title already includes "Mineral Rights Xchange"
@@ -81,7 +83,8 @@ const finalTitle =
 const exactCanonicalMetadataTitle = exactCanonicalArticleTitle
   ? buildArticleTitle(exactCanonicalArticleTitle, exactCanonicalArticleTitle)
   : undefined;
-const socialTitle = exactCanonicalArticleTitle ?? finalTitle;
+const graphTitle = exactCanonicalArticleTitle ?? finalTitle;
+const socialMetaTitle = socialTitle ?? graphTitle;
 const socialDescription = buildSocialDescription(description);
 const tOk =
   exactCanonicalArticleTitle && finalTitle === exactCanonicalMetadataTitle
@@ -103,7 +106,7 @@ const robotsContent =
   (noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1');
 
 const graph = buildPageGraph([
-  ...siteGraph(path, socialTitle),
+  ...siteGraph(path, graphTitle),
   ...(breadcrumbs ? [breadcrumbList(breadcrumbs)] : []),
   ...jsonLd,
 ]);
@@ -120,7 +123,7 @@ const graph = buildPageGraph([
 <link rel="alternate" hreflang="x-default" href={canonical} />
 
 <meta property="og:type" content={ogType} />
-<meta property="og:title" content={socialTitle} />
+<meta property="og:title" content={socialMetaTitle} />
 <meta property="og:description" content={socialDescription} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={og} />
@@ -153,7 +156,7 @@ const graph = buildPageGraph([
 
 <meta name="twitter:card" content="summary_large_image" />
 {SITE.twitterSite && <meta name="twitter:site" content={SITE.twitterSite} />}
-<meta name="twitter:title" content={socialTitle} />
+<meta name="twitter:title" content={socialMetaTitle} />
 <meta name="twitter:description" content={socialDescription} />
 <meta name="twitter:image" content={og} />
 <meta name="twitter:image:alt" content={ogImageAlt ?? finalTitle} />

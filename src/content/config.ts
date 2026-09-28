@@ -191,6 +191,9 @@ const posts = defineCollection({
       // room for ` · MRX`; up to 70 is accepted only by the refinement below
       // when it exactly matches the owner-finalized canonical article title.
       seo_title: z.string().min(20).max(70).optional(),
+      // Optional OG/Twitter title override. This is intentionally narrow:
+      // it must not alter the HTML title, H1, or Article headline.
+      social_title: z.string().min(20).max(70).optional(),
       description: z.string().min(130).max(160),
       // NOTE: `slug` is auto-derived from the file name in Astro 5
       // content collections; no need to declare it in the schema.
@@ -258,6 +261,10 @@ const posts = defineCollection({
         .array(z.string().regex(/^[a-z0-9-]+$/))
         .optional()
         .default([]),
+      // Page-scoped related-card image alt overrides for Search Atlas/A11y
+      // remediation. These affect only cards rendered from this article and
+      // do not mutate the related article's own reviewed source bytes.
+      related_article_image_alts: z.record(z.string().min(20).max(125)).optional(),
       answer_summary: z.string().min(40).max(500).optional(),
       key_takeaways: z.array(z.string().min(10)).max(8).optional().default([]),
       questions_answered: z.array(z.string().min(5)).optional().default([]),

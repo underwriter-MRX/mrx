@@ -37,6 +37,7 @@ interface Props {
   jsonLd?: object[];
   breadcrumbs?: Crumb[];
   exactCanonicalArticleTitle?: string;
+  socialTitle?: string;
   pageType: 'home' | 'marketing' | 'blog' | 'post' | 'utility';
   pageCategory?: string;
   hideHeader?: boolean;
@@ -70,6 +71,7 @@ const {
   jsonLd = [],
   breadcrumbs,
   exactCanonicalArticleTitle,
+  socialTitle,
   pageType,
   pageCategory,
   hideHeader = false,
@@ -127,6 +129,7 @@ const measurementJson = measurement ? JSON.stringify(measurement) : 'null';
       jsonLd={jsonLd}
       breadcrumbs={breadcrumbs}
       exactCanonicalArticleTitle={exactCanonicalArticleTitle}
+      socialTitle={socialTitle}
     />
     <script
       is:inline

@@ -57,6 +57,7 @@ interface Props {
   ogImage?: string;
   noindex?: boolean;
   robots?: string;
+  socialTitle?: string;
   primaryCta: { label: string; href: string; ctaName: string };
   askCtaName: string;
   answerSummary?: string;
@@ -102,6 +103,7 @@ const {
   ogImage,
   noindex,
   robots,
+  socialTitle,
   primaryCta,
   askCtaName,
   answerSummary,
@@ -148,6 +150,7 @@ const socialImageType = dedicatedSocialImage
   pageCategory={pageCategory}
   breadcrumbs={breadcrumbs}
   exactCanonicalArticleTitle={articleTitle}
+  socialTitle={socialTitle}
   measurement={measurement}
 >
   <slot name="structured-data" />

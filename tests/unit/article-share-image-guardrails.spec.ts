@@ -86,7 +86,10 @@ describe('published article image guardrails', () => {
     // admitted into the growing release slate must not be counted a second time.
     expect(published).toHaveLength(canonicalPublicRouteCount + appendOnlyAdmittedSlugs.size);
     for (const slug of appendOnlyAdmittedSlugs) {
-      expect(published.some((post) => post.slug === slug), slug).toBe(true);
+      expect(
+        published.some((post) => post.slug === slug),
+        slug,
+      ).toBe(true);
     }
     expect(new Set(heroPaths).size).toBe(heroPaths.length);
     expect(new Set(inlinePaths).size).toBe(inlinePaths.length);
@@ -208,11 +211,12 @@ describe('article share metadata wiring', () => {
     expect(articleLayout).toContain('description={description}');
     expect(articleLayout).toContain('ogImage={socialImage}');
     expect(baseLayout).toContain('ogImage={ogImage}');
-    expect(seo).toContain('const socialTitle = exactCanonicalArticleTitle ?? finalTitle;');
-    expect(seo).toContain('<meta property="og:title" content={socialTitle} />');
+    expect(seo).toContain('const graphTitle = exactCanonicalArticleTitle ?? finalTitle;');
+    expect(seo).toContain('const socialMetaTitle = socialTitle ?? graphTitle;');
+    expect(seo).toContain('<meta property="og:title" content={socialMetaTitle} />');
     expect(seo).toContain('<meta property="og:description" content={socialDescription} />');
     expect(seo).toContain('<meta property="og:image" content={og} />');
-    expect(seo).toContain('<meta name="twitter:title" content={socialTitle} />');
+    expect(seo).toContain('<meta name="twitter:title" content={socialMetaTitle} />');
     expect(seo).toContain('<meta name="twitter:description" content={socialDescription} />');
     expect(seo).toContain('<meta name="twitter:image" content={og} />');
     expect(articleLayout).toContain('data-article-inline-image');

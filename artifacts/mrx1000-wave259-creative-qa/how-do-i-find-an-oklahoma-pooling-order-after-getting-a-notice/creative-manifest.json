@@ -32,8 +32,8 @@
     "inline": {
       "source_path": "artifacts/mrx1000-wave259-creative-sources/oklahoma-pooling-order-inline-base.png",
       "source_sha256": "12d13d982e46b7cfc698c262859403b64bf8aab641d0e46dba7ec13dc6b0213f",
-      "public_path": "/assets/articles/inline/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/oklahoma-pooling-order-search.webp",
-      "sha256": "24090bd476f60d4dfed99fe4aa9574c690b3fd0345dacde2ce8aa0e700751ed3",
+      "public_path": "/assets/articles/inline/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/v2/oklahoma-pooling-order-search.webp",
+      "sha256": "122245a6485947133e6a3376236587be38fdc6af1a88fde0a6bf58d3a0194f13",
       "perceptual_hash": "0000111111111110000011111111000000001111111111000000111111011110000011111000011100001111100001110000111110000111000011111000011100001111100001110000000111111111000000011111111100000000000000000000001111000000000000011000000000000000000000000000000000000000",
       "width": 1200,
       "height": 675,
@@ -48,7 +48,9 @@
         "normalized_actual": "oklahoma pooling order search",
         "uppercase_i_confusable_accepted": false,
         "pass": true
-      }
+      },
+      "byte_size": 75140,
+      "compression_note": "Search Atlas page-audit remediation 2026-09-28: recompressed from prior 156830-byte WebP to under 100000 bytes while preserving 1200x675 dimensions and visible exact phrase."
     }
   },
   "verification": {

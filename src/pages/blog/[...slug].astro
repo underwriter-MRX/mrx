@@ -115,6 +115,7 @@ const measurement = resolveArticleMeasurementContext({
     { name: post.data.title, path: `/blog/${slug}/` },
   ]}
   disclaimerTop={post.data.disclaimer_top}
+  socialTitle={post.data.social_title}
   primaryCta={{
     label: cta.label,
     href: cta.href,
@@ -147,7 +148,15 @@ const measurement = resolveArticleMeasurementContext({
         <div class="grid grid--3 related-posts__grid">
           {related.map((p) => {
             const pSlug = p.id.replace(/\.mdx?$/, '');
-            return <PostCard post={{ ...p.data, slug: pSlug }} href={`/blog/${pSlug}/`} />;
+            const relatedImageAlt = post.data.related_article_image_alts?.[pSlug];
+            const cardPost = relatedImageAlt
+              ? {
+                  ...p.data,
+                  hero_image: { ...p.data.hero_image, alt: relatedImageAlt },
+                  slug: pSlug,
+                }
+              : { ...p.data, slug: pSlug };
+            return <PostCard post={cardPost} href={`/blog/${pSlug}/`} />;
           })}
         </div>
       </Fragment>
