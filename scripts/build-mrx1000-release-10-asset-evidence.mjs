@@ -18,6 +18,7 @@ const repoRoot =
 const root = resolve(repoRoot);
 const batchPath = join(root, 'config/mrx1000-release-10-batch.json');
 const retrofitManifestPath = join(root, 'config/mrx-article-two-image-retrofit.json');
+const pageBuilderAssetManifestPath = join(root, 'config/page-builder-sop-assets.json');
 const outputPath = join(root, 'artifacts/mrx1000-release-10/assets/asset-evidence.json');
 const markdownPath = join(root, 'artifacts/mrx1000-release-10/assets/asset-evidence.md');
 const rasterExtensions = new Set(['.webp', '.jpg', '.jpeg', '.png', '.avif']);
@@ -133,7 +134,34 @@ async function main() {
   const retrofitManifestBytes = readFileSync(retrofitManifestPath);
   const retrofitManifest = JSON.parse(retrofitManifestBytes.toString('utf8'));
   const retrofitBySlug = new Map((retrofitManifest.rows ?? []).map((row) => [row.slug, row]));
-  const libraryPaths = listRasterFiles(join(root, 'public/assets/articles'));
+  // Versioned Page Builder derivatives intentionally preserve the source
+  // composition and text, so comparing them against their source would create
+  // a false duplicate HOLD. Exclude only exact manifest-bound replacements
+  // after independently re-verifying their bytes, dimensions, and SHA.
+  const pageBuilderManifest = existsSync(pageBuilderAssetManifestPath)
+    ? JSON.parse(readFileSync(pageBuilderAssetManifestPath, 'utf8'))
+    : { assets: {} };
+  const approvedDerivativePaths = new Set();
+  for (const evidence of Object.values(pageBuilderManifest.assets ?? {})) {
+    const derivativePath = publicToRepoPath(evidence.replacement);
+    if (!derivativePath || !existsSync(derivativePath)) {
+      throw new Error(`Missing Page Builder derivative: ${evidence.replacement}`);
+    }
+    const bytes = readFileSync(derivativePath);
+    const metadata = await sharp(derivativePath).metadata();
+    if (
+      sha256(bytes) !== evidence.optimized_sha256 ||
+      bytes.length !== evidence.optimized_bytes ||
+      metadata.width !== evidence.width ||
+      metadata.height !== evidence.height
+    ) {
+      throw new Error(`Page Builder derivative evidence mismatch: ${evidence.replacement}`);
+    }
+    approvedDerivativePaths.add(resolve(derivativePath));
+  }
+  const libraryPaths = listRasterFiles(join(root, 'public/assets/articles')).filter(
+    (path) => !approvedDerivativePaths.has(resolve(path)),
+  );
   const library = [];
   for (const path of libraryPaths) {
     const bytes = readFileSync(path);
@@ -238,12 +266,11 @@ async function main() {
       const retrofitAsset = declared.kind === 'inline' ? retrofitRow?.inline : retrofitRow?.hero;
       const ocrVerified = Boolean(
         retrofitRow?.title === title &&
-          retrofitAsset?.public_path === declared.public_path &&
-          retrofitAsset?.sha256 === observed?.sha256 &&
-          retrofitAsset?.ocr?.pass === true &&
-          (retrofitAsset?.ocr?.normalized_expected ===
-            retrofitAsset?.ocr?.normalized_actual ||
-            retrofitAsset?.ocr?.uppercase_i_confusable_accepted === true),
+        retrofitAsset?.public_path === declared.public_path &&
+        retrofitAsset?.sha256 === observed?.sha256 &&
+        retrofitAsset?.ocr?.pass === true &&
+        (retrofitAsset?.ocr?.normalized_expected === retrofitAsset?.ocr?.normalized_actual ||
+          retrofitAsset?.ocr?.uppercase_i_confusable_accepted === true),
       );
       const pass = Boolean(
         observed &&
@@ -310,6 +337,7 @@ async function main() {
     comparison_universe: {
       path: 'public/assets/articles/**/*.{webp,jpg,jpeg,png,avif}',
       image_count: library.length,
+      excluded_manifest_bound_derivative_count: approvedDerivativePaths.size,
       exact_hash_algorithm: 'SHA-256',
       perceptual_hash_algorithm: '64-bit grayscale difference hash (9x8)',
       perceptual_duplicate_threshold_hamming_distance_lte: perceptualDuplicateThreshold,
