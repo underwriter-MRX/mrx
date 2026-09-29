@@ -14,7 +14,7 @@ describe('article author and guide identity', () => {
 
     expect(source).toContain('>Article guide</p>');
     expect(source).toContain('guideHeading?: string;');
-    expect(source).toContain('{guideHeading ?? `Ask ${guide.name}`}</h2>');
+    expect(source).toContain('{guideHeading ?? `Ask ${guide.name} about this article`}</h2>');
     expect(source).toContain('{guide.name} is a fictional MRX AI Guide, not an article author');
     expect(source).toContain('maintains organizational responsibility for article sourcing');
     expect(source).not.toContain('>Article author</p>');

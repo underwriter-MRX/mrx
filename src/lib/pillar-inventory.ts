@@ -8,6 +8,7 @@ import {
   type PillarDefinition,
 } from './content-graph';
 import type { ArticlePillar } from './astro/content';
+import { resolvePageBuilderImage } from './page-builder-sop';
 
 /**
  * Pillar inventory: fail-closed article enumeration for any of the 9
@@ -110,24 +111,27 @@ export async function getPillarInventoryPage(
   const start = (safePage - 1) * pageSize;
   const slice = allPosts.slice(start, start + pageSize);
 
-  const posts: PillarInventoryPost[] = slice.map((post) => ({
-    slug: post.id.replace(/\.mdx?$/, ''),
-    title: post.data.title,
-    description: post.data.description,
-    excerpt: post.data.excerpt,
-    category: post.data.category,
-    categoryLabel: post.data.category.replaceAll('-', ' '),
-    author: 'MRX Editorial Team',
-    authorSlug: 'mrx-editorial-team',
-    publishedAt: post.data.published_at,
-    readingMinutes: Math.max(
-      1,
-      Math.round((post.body ?? '').split(/\s+/).filter(Boolean).length / 220),
-    ),
-    heroImage: post.data.hero_image.src,
-    heroAlt: post.data.hero_image.alt,
-    featured: Boolean(post.data.featured),
-  }));
+  const posts: PillarInventoryPost[] = slice.map((post) => {
+    const heroImage = resolvePageBuilderImage(post.data.hero_image);
+    return {
+      slug: post.id.replace(/\.mdx?$/, ''),
+      title: post.data.title,
+      description: post.data.description,
+      excerpt: post.data.excerpt,
+      category: post.data.category,
+      categoryLabel: post.data.category.replaceAll('-', ' '),
+      author: 'MRX Editorial Team',
+      authorSlug: 'mrx-editorial-team',
+      publishedAt: post.data.published_at,
+      readingMinutes: Math.max(
+        1,
+        Math.round((post.body ?? '').split(/\s+/).filter(Boolean).length / 220),
+      ),
+      heroImage: heroImage.src,
+      heroAlt: heroImage.alt,
+      featured: Boolean(post.data.featured),
+    };
+  });
 
   return {
     pillar,

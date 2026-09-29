@@ -157,7 +157,8 @@ test.describe('MRX1000 pillar & archive navigation', () => {
         { allowSourceImageObjects: true },
       ),
     ).toBe(true);
-    await expect(page.locator('meta[name="keywords"]')).toHaveCount(0);
+    await expect(page.locator('meta[name="keywords"]')).toHaveCount(1);
+    await expect(page.locator('meta[name="keywords"]')).not.toHaveAttribute('content', '');
     await expect(page.locator('meta[name="twitter:description"]')).toHaveAttribute(
       'content',
       'Understand your options before selling mineral rights. Compare selling, holding, or a partial sale with a transparent…',

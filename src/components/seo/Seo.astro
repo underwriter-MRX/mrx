@@ -86,7 +86,11 @@ const exactCanonicalMetadataTitle = exactCanonicalArticleTitle
   ? buildArticleTitle(exactCanonicalArticleTitle, exactCanonicalArticleTitle)
   : undefined;
 const graphTitle = exactCanonicalArticleTitle ?? finalTitle;
-const socialMetaTitle = socialTitle ?? graphTitle;
+// Social previews may use the already-reviewed concise SEO identity without
+// changing the canonical article H1/headline or title-bearing hero. Strip only
+// the suffix this component adds; never truncate arbitrary words.
+const conciseMetadataTitle = finalTitle.replace(/\s+[·|]\s+(?:Mineral Rights Xchange|MRX)$/i, '');
+const socialMetaTitle = socialTitle ?? conciseMetadataTitle;
 const socialDescription = buildSocialDescription(description);
 const tOk =
   exactCanonicalArticleTitle && finalTitle === exactCanonicalMetadataTitle
@@ -106,6 +110,33 @@ const og = ogImage
 const robotsContent =
   robots ??
   (noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1');
+const finalNoindex = /\bnoindex\b/i.test(robotsContent);
+// Google ignores this tag. For the owner's Search Atlas compatibility rollout,
+// emit one accurate page-specific fallback only on indexable pages. Explicit
+// reviewed keywords remain preferred and are deduplicated below.
+const candidateMetaKeywords =
+  metaKeywords.length > 0 ? metaKeywords : finalNoindex ? [] : [conciseMetadataTitle];
+const normalizedMetaKeywords = candidateMetaKeywords
+  .map((keyword) => keyword.replace(/,/g, ' ').replace(/\s+/g, ' ').trim())
+  .filter((keyword) => keyword.length >= 2 && keyword.length <= 60)
+  .filter(
+    (keyword, index, keywords) =>
+      keywords.findIndex((candidate) => candidate.toLowerCase() === keyword.toLowerCase()) ===
+      index,
+  );
+const pathKeywordWords =
+  path.split('/').filter(Boolean).at(-1)?.replace(/-/g, ' ').split(/\s+/) ?? [];
+const pathKeyword = pathKeywordWords.reduce(
+  (value, word) => (!value || `${value} ${word}`.length <= 60 ? `${value} ${word}`.trim() : value),
+  '',
+);
+const renderedMetaKeywords = (
+  normalizedMetaKeywords.length > 0
+    ? normalizedMetaKeywords
+    : finalNoindex
+      ? []
+      : [pathKeyword || conciseMetadataTitle].filter((keyword) => keyword.length <= 60)
+).slice(0, 4);
 
 const graph = buildPageGraph([
   ...siteGraph(path, graphTitle),
@@ -116,7 +147,11 @@ const graph = buildPageGraph([
 
 <title>{finalTitle}</title>
 <meta name="description" content={description} />
-{metaKeywords.length > 0 && <meta name="keywords" content={metaKeywords.join(', ')} />}
+{
+  renderedMetaKeywords.length > 0 && (
+    <meta name="keywords" content={renderedMetaKeywords.join(', ')} />
+  )
+}
 <meta name="robots" content={robotsContent} />
 <link rel="canonical" href={canonical} />
 {previousPath && <link rel="prev" href={buildCanonical(previousPath, SITE.url)} />}

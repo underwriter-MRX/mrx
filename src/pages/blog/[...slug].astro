@@ -24,6 +24,7 @@ import { faqPage } from '../../structured-data/faq';
 import { buildArticleTitle } from '../../lib/seo';
 import { resolveArticleMeasurementContext } from '../../lib/ga4-measurement';
 import { canonicalizeStaffNames } from '../../lib/staff-identity';
+import { resolvePageBuilderImage } from '../../lib/page-builder-sop';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', isPublishedPost);
@@ -64,9 +65,13 @@ if (!articleGuide) throw new Error('The default MRX topic guide is missing.');
 const editorialAuthor = await getEntry('authors', 'mrx-editorial-team');
 const editorialAuthorName = editorialAuthor?.data.name ?? 'MRX Editorial Team';
 const editorialAuthorUrlId = `${SITE.url}/authors/mrx-editorial-team/#author`;
-const heroImageUrl = post.data.hero_image.src.startsWith('http')
-  ? post.data.hero_image.src
-  : `${SITE.url}${post.data.hero_image.src}`;
+const heroImage = resolvePageBuilderImage(post.data.hero_image);
+const inlineImage = post.data.inline_image
+  ? resolvePageBuilderImage(post.data.inline_image)
+  : undefined;
+const heroImageUrl = heroImage.src.startsWith('http')
+  ? heroImage.src
+  : `${SITE.url}${heroImage.src}`;
 const articleJsonLd = article(
   { ...post.data, slug },
   editorialAuthorUrlId,
@@ -76,6 +81,11 @@ const articleJsonLd = article(
 const pillar = resolvePillar(post);
 const cta = articleCta(post);
 const seoTitle = buildArticleTitle(post.data.title, post.data.seo_title);
+const auditCompatibilityKeywords =
+  post.data.meta_keywords ??
+  [post.data.primary_keyword, ...post.data.secondary_keywords]
+    .filter((keyword): keyword is string => Boolean(keyword))
+    .slice(0, 4);
 // Article GA4 measurement context. The public /blog/[...slug] route only
 // renders published posts (see isPublishedPost above); noindex-stage pilot
 // rows never reach this route. The resolver collapses unknown values to
@@ -98,8 +108,8 @@ const measurement = resolveArticleMeasurementContext({
   pageCategory={post.data.category}
   articleTitle={post.data.title}
   excerpt={post.data.excerpt}
-  heroImage={post.data.hero_image}
-  inlineImage={post.data.inline_image}
+  heroImage={heroImage}
+  inlineImage={inlineImage}
   authorName={authorName}
   authorHref={authorHref}
   authorDescription={authorDescription}
@@ -116,7 +126,7 @@ const measurement = resolveArticleMeasurementContext({
   ]}
   disclaimerTop={post.data.disclaimer_top}
   socialTitle={post.data.social_title}
-  metaKeywords={post.data.meta_keywords}
+  metaKeywords={auditCompatibilityKeywords}
   articleGuideHeading={post.data.article_guide_heading}
   primaryCta={{
     label: cta.label,
@@ -142,7 +152,7 @@ const measurement = resolveArticleMeasurementContext({
     related.length > 0 && (
       <Fragment slot="related">
         <Heading level={2} size="2xl" id="related-posts-heading">
-          {post.data.related_articles_heading ?? 'Related articles'}
+          {post.data.related_articles_heading ?? 'Related mineral-rights articles'}
         </Heading>
         <Text class="text--lead related-posts__lede">
           More plain-language explainers in the same topic area.

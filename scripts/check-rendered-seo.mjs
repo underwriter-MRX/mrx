@@ -66,7 +66,8 @@ for (const file of htmlFiles) {
     /<meta\s+name=["']robots["'][^>]*content=["']([^"']+)["']/i,
   )?.[1];
   const isIndexable = Boolean(robotsContent && !/\bnoindex\b/i.test(robotsContent));
-  const metaKeywords = html.match(/<meta\s+name=["']keywords["']/i);
+  const metaKeywordTags = html.match(/<meta\s+name=["']keywords["'][^>]*>/gi) ?? [];
+  const metaKeywords = metaKeywordTags[0]?.match(/content=["']([^"']+)["']/i)?.[1] ?? '';
   const twitterSite = html.match(
     /<meta\s+name=["']twitter:site["'][^>]*content=["']([^"']+)["']/i,
   )?.[1];
@@ -86,11 +87,22 @@ for (const file of htmlFiles) {
   if (!title) failures.push(`${route}: missing <title>`);
   if (!description) failures.push(`${route}: missing meta description`);
   if (!robotsContent) failures.push(`${route}: missing robots meta`);
-  const ownerRequestedMetaKeywordsRoutes = new Set([
-    '/blog/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/',
-  ]);
-  if (metaKeywords && !ownerRequestedMetaKeywordsRoutes.has(canonicalRoute)) {
-    failures.push(`${route}: obsolete meta keywords tag must not be emitted`);
+  if (isIndexable) {
+    const keywords = metaKeywords
+      .split(',')
+      .map((keyword) => keyword.trim())
+      .filter(Boolean);
+    if (metaKeywordTags.length !== 1 || keywords.length < 1 || keywords.length > 4) {
+      failures.push(`${route}: indexable page must emit one tag with 1-4 audit-compatibility keywords`);
+    }
+    if (keywords.some((keyword) => keyword.length < 2 || keyword.length > 60)) {
+      failures.push(`${route}: meta keyword values must be 2-60 characters`);
+    }
+    if (new Set(keywords.map((keyword) => keyword.toLowerCase())).size !== keywords.length) {
+      failures.push(`${route}: meta keyword values must be unique`);
+    }
+  } else if (metaKeywordTags.length > 0) {
+    failures.push(`${route}: noindex/private page must not emit meta keywords`);
   }
   if (twitterSite !== '@mineralrightsxchange') {
     failures.push(`${route}: twitter:site is ${twitterSite ?? '(missing)'}`);

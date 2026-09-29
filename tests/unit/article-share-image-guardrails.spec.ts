@@ -202,8 +202,9 @@ describe('article share metadata wiring', () => {
 
     expect(blogRoute).toContain('title={seoTitle}');
     expect(blogRoute).toContain('description={post.data.description}');
-    expect(blogRoute).toContain('heroImage={post.data.hero_image}');
-    expect(blogRoute).toContain('inlineImage={post.data.inline_image}');
+    expect(blogRoute).toContain('const heroImage = resolvePageBuilderImage(post.data.hero_image);');
+    expect(blogRoute).toContain('heroImage={heroImage}');
+    expect(blogRoute).toContain('inlineImage={inlineImage}');
     expect(articleLayout).toContain(
       'const socialImage = ogImage ?? heroImage.social_src ?? heroImage.src;',
     );
@@ -212,7 +213,11 @@ describe('article share metadata wiring', () => {
     expect(articleLayout).toContain('ogImage={socialImage}');
     expect(baseLayout).toContain('ogImage={ogImage}');
     expect(seo).toContain('const graphTitle = exactCanonicalArticleTitle ?? finalTitle;');
-    expect(seo).toContain('const socialMetaTitle = socialTitle ?? graphTitle;');
+    expect(seo).toContain('const socialMetaTitle = socialTitle ?? conciseMetadataTitle;');
+    expect(seo).toContain('const candidateMetaKeywords =');
+    expect(seo).toContain('metaKeywords.length > 0 ? metaKeywords : finalNoindex');
+    expect(seo).toContain('const finalNoindex = /\\bnoindex\\b/i.test(robotsContent);');
+    expect(seo).toContain("keyword.replace(/,/g, ' ')");
     expect(seo).toContain('<meta property="og:title" content={socialMetaTitle} />');
     expect(seo).toContain('<meta property="og:description" content={socialDescription} />');
     expect(seo).toContain('<meta property="og:image" content={og} />');

@@ -4,6 +4,7 @@
  */
 import type { PostsFrontmatter } from '../../lib/astro/content';
 import Tag from '../atoms/Tag.astro';
+import { resolvePageBuilderImage } from '../../lib/page-builder-sop';
 
 interface Props {
   post: PostsFrontmatter;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const { post, href } = Astro.props;
+const heroImage = resolvePageBuilderImage(post.hero_image);
 const date = new Date(post.published_at).toLocaleDateString('en-US', {
   timeZone: 'UTC',
   month: 'short',
@@ -22,8 +24,8 @@ const date = new Date(post.published_at).toLocaleDateString('en-US', {
 <article class="post-card">
   <a class="post-card__image" href={href} aria-label={`Read ${post.title}`}>
     <img
-      src={post.hero_image.src}
-      alt={post.hero_image.alt}
+      src={heroImage.src}
+      alt={heroImage.alt}
       width="1200"
       height="630"
       loading="lazy"

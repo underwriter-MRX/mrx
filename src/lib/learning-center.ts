@@ -1,6 +1,7 @@
 import { ownerResourcePriority } from './owner-resource-priority';
 import { getCollection } from 'astro:content';
 import { isPublishedPost } from './content-graph';
+import { resolvePageBuilderImage } from './page-builder-sop';
 
 export interface LearningCenterItem {
   slug: string;
@@ -40,6 +41,7 @@ export async function getLearningCenterData() {
 
   const items = await Promise.all(
     posts.map(async (post): Promise<LearningCenterItem> => {
+      const heroImage = resolvePageBuilderImage(post.data.hero_image);
       return {
         slug: post.id.replace(/\.mdx?$/, ''),
         title: post.data.title,
@@ -53,8 +55,8 @@ export async function getLearningCenterData() {
         authorSlug: 'mrx-editorial-team',
         publishedAt: post.data.published_at,
         readingMinutes: Math.max(1, Math.round(post.body.split(/\s+/).length / 220)),
-        heroImage: post.data.hero_image.src,
-        heroAlt: post.data.hero_image.alt,
+        heroImage: heroImage.src,
+        heroAlt: heroImage.alt,
         featured: post.data.featured,
       };
     }),

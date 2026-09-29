@@ -22,6 +22,7 @@
     "lint": "eslint . --ext .js,.ts,.astro",
     "lint:schema": "node scripts/lint-schema.mjs",
     "check:searchatlas:otto-reconciliation": "node scripts/reconcile-mrx-searchatlas-otto.mjs",
+    "audit:page-builder-sop": "node scripts/audit-page-builder-sop.mjs",
     "verify:schema:live-reconciliation": "node scripts/verify-mrx-live-schema-reconciliation.mjs",
     "build:llms": "node scripts/build-llms-index.mjs",
     "build:mrx1000:evidence-packets": "node scripts/build-mrx1000-release-10-evidence-packets.mjs",

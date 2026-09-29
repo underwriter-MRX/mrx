@@ -320,7 +320,9 @@ test.describe('Learning Center layout', () => {
     await expect(page.getByText(/published guides/i)).toHaveCount(0);
 
     await page.goto('/blog/how-are-mineral-rights-valued/');
-    await expect(page.getByRole('heading', { name: 'Related articles' })).toBeVisible();
+    await expect(
+      page.getByRole('heading', { name: 'Related mineral-rights articles' }),
+    ).toBeVisible();
     await expect(page.locator('[data-article-link="sibling"]')).toContainText(/article|exploring/i);
   });
 
