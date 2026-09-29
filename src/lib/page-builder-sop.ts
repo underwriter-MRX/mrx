@@ -1,5 +1,6 @@
 import {
-  normalizePublicImageAlt,
+  imageTextPolicyEvidence,
+  resolveImageTextAlt,
   resolvePageBuilderImage as resolvePageBuilderImageRuntime,
 } from './page-builder-sop.mjs';
 
@@ -10,7 +11,7 @@ type ImageLike = {
   social_alt?: string;
 };
 
-export { normalizePublicImageAlt };
+export { imageTextPolicyEvidence, resolveImageTextAlt };
 
 /**
  * Apply the public Page Builder SOP at render time so reviewed MDX bytes and

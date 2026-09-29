@@ -144,7 +144,9 @@ function decodeHtml(value) {
     .replaceAll('&apos;', "'")
     .replaceAll('&amp;', '&')
     .replaceAll('&lt;', '<')
-    .replaceAll('&gt;', '>');
+    .replaceAll('&gt;', '>')
+    .replace(/&#(\d+);/g, (_match, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_match, code) => String.fromCodePoint(Number.parseInt(code, 16)));
 }
 
 function attribute(html, selectorPattern, attributeName) {

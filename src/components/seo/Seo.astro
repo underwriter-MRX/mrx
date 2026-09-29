@@ -23,6 +23,7 @@ import { jsonLdStringify, buildPageGraph } from '../../lib/jsonld';
 import { siteGraph } from '../../structured-data/site';
 import type { Crumb } from '../../structured-data/breadcrumb';
 import { breadcrumbList } from '../../structured-data/breadcrumb';
+import { resolveImageTextAlt } from '../../lib/page-builder-sop';
 
 interface Props {
   title: string;
@@ -107,6 +108,7 @@ const og = ogImage
     ? ogImage
     : new URL(ogImage, `${SITE.url}/`).toString()
   : buildOgImage(path, SITE.url);
+const socialImageAlt = resolveImageTextAlt(og, ogImageAlt ?? finalTitle);
 const robotsContent =
   robots ??
   (noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1');
@@ -165,7 +167,7 @@ const graph = buildPageGraph([
 <meta property="og:description" content={socialDescription} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={og} />
-<meta property="og:image:alt" content={ogImageAlt ?? finalTitle} />
+<meta property="og:image:alt" content={socialImageAlt} />
 <meta property="og:image:width" content={String(ogImageWidth)} />
 <meta property="og:image:height" content={String(ogImageHeight)} />
 <meta property="og:image:type" content={ogImageType} />
@@ -197,6 +199,6 @@ const graph = buildPageGraph([
 <meta name="twitter:title" content={socialMetaTitle} />
 <meta name="twitter:description" content={socialDescription} />
 <meta name="twitter:image" content={og} />
-<meta name="twitter:image:alt" content={ogImageAlt ?? finalTitle} />
+<meta name="twitter:image:alt" content={socialImageAlt} />
 
 <script is:inline type="application/ld+json" set:html={jsonLdStringify(graph)} />

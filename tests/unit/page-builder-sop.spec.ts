@@ -5,25 +5,28 @@ import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 
 import manifest from '../../config/page-builder-sop-assets.json';
-import { normalizePublicImageAlt, resolvePageBuilderImage } from '../../src/lib/page-builder-sop';
+import textPolicy from '../../config/mrx-image-text-alt-policy.json';
+import { resolveImageTextAlt, resolvePageBuilderImage } from '../../src/lib/page-builder-sop';
 
 const repoRoot = process.cwd();
 
 describe('Page Builder SEO/AEO shared render prevention', () => {
-  it('removes production-note alt phrasing without changing visible title text', () => {
+  it('uses exact reviewed printed words and preserves fallback alts for no-text assets', () => {
     expect(
-      normalizePublicImageAlt(
-        'MRX article cover with the title “How to Sell Mineral Rights in Texas”.',
+      resolveImageTextAlt(
+        '/assets/articles/hero/how-to-sell-mineral-rights-in-texas.webp',
+        'old description',
       ),
-    ).toBe('Mineral-rights guide titled “How to Sell Mineral Rights in Texas”.');
+    ).toBe('How to Sell Mineral Rights in Texas');
     expect(
-      normalizePublicImageAlt(
-        'A Texas wellbore-query research counter appears beside the exact article title.',
+      resolveImageTextAlt(
+        '/assets/team/travis-256.webp',
+        'Travis, fictional MRX Offer and Value Guide',
       ),
-    ).toBe('A Texas wellbore-query research counter.');
-    expect(
-      normalizePublicImageAlt('Distinct lease-rate sensitivity board labeled “lease rates”.'),
-    ).toBe('lease-rate sensitivity board labeled “lease rates”.');
+    ).toBe('Travis, fictional MRX Offer and Value Guide');
+    expect(resolveImageTextAlt('/assets/brand/mrx-logo-white.webp', 'old logo alt')).toBe(
+      'Mineral Rights Xchange',
+    );
   });
 
   it('uses only manifest-approved versioned paths and keeps unknown paths unchanged', () => {
@@ -36,35 +39,31 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
     ).toBe('/assets/brand/unknown.webp');
   });
 
-  it('applies independently reviewed per-asset alternatives before path replacement', () => {
-    const cases = [
-      [
-        '/assets/articles/hero/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review.webp',
-        'Ohio deed book beside a farmland window',
-      ],
-      [
-        '/assets/articles/inline/existing-wells-vs-future-locations-in-a-dcf-model/existing-wells-future-locations-dcf.webp',
-        'Pumpjack and decline curves beside future well slots',
-      ],
-      [
-        '/assets/articles/inline/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation/how-do-i-know-if-my-mineral-rights-qualify-for-evaluation.webp',
-        'Mineral records, map, and rig on an evaluation board',
-      ],
-      [
-        '/assets/articles/inline/get-a-free-mineral-rights-valuation-review-today/free-mineral-rights-valuation-review.webp',
-        'Review workbook linked to maps and charts',
-      ],
-    ] as const;
-    for (const [src, alt] of cases) {
-      const resolved = resolvePageBuilderImage({
-        src,
-        alt: 'production-note placeholder',
-        social_src: src,
-        social_alt: 'production-note placeholder',
-      });
-      expect(resolved.alt).toBe(alt);
-      expect(resolved.social_alt).toBe(alt);
-    }
+  it('applies SHA-reviewed exact text after optimized path replacement', () => {
+    const source =
+      '/assets/articles/hero/pecos-cad-oil-and-gas-property-discovery-rrcid-permit-and-january-1.webp';
+    const resolved = resolvePageBuilderImage({
+      src: source,
+      alt: 'old description',
+      social_src: source,
+      social_alt: 'old social description',
+    });
+    expect(resolved.src).toContain('/sop-20260928/');
+    expect(resolved.alt).toBe(
+      'Pecos CAD Oil and Gas Property Discovery: RRCID, Permit, and January 1 JANUARY 1',
+    );
+    expect(resolved.social_alt).toBe(resolved.alt);
+  });
+
+  it('covers the complete public image policy with no unresolved assets', () => {
+    expect(Object.keys(textPolicy.assets)).toHaveLength(732);
+    expect(textPolicy.summary).toMatchObject({
+      printed_text_asset_count: 692,
+      no_text_asset_count: 40,
+      unresolved_asset_count: 0,
+      ocr_corroborated_asset_count: 676,
+      independently_visual_reviewed_asset_count: 56,
+    });
   });
 
   it('binds every optimized asset to verified bytes, dimensions, SHA and quality thresholds', async () => {
