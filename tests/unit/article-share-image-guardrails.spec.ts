@@ -261,7 +261,10 @@ describe('article share metadata wiring', () => {
     expect(productionVerifier).toContain('inline_image_binary_exact');
     expect(renderedBuildVerifier).toContain('Article schema image mismatch');
     expect(renderedBuildVerifier).toContain('rendered in-body text identity mismatch');
-    expect(renderedBuildVerifier).toContain('rendered binary SHA-256 mismatch');
+    expect(renderedBuildVerifier).toContain('reviewed original SHA-256 mismatch');
+    expect(renderedBuildVerifier).toContain('Page Builder original hash binding mismatch');
+    expect(renderedBuildVerifier).toContain('Page Builder replacement evidence mismatch');
+    expect(renderedBuildVerifier).toContain('rendered binary SHA/dimension/MIME mismatch');
     expect(packageJson).toContain('pnpm build:mrx1000:two-image-creative-briefs');
     expect(packageJson).toContain('pnpm verify:articles:two-image-build');
   });
