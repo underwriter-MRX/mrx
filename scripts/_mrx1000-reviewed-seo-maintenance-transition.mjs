@@ -3,11 +3,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const HEX64 = /^[a-f0-9]{64}$/i;
-const MAINTENANCE_REVIEW_RELATIVE_PATH = join(
-  'config',
-  'maintenance-reviews',
-  '2026-09-29-otto-source-remediation.json',
-);
+const MAINTENANCE_REVIEW_RELATIVE_PATHS = [
+  join('config', 'maintenance-reviews', '2026-09-29-h2-heading-maintenance.json'),
+  join('config', 'maintenance-reviews', '2026-09-29-otto-source-remediation.json'),
+];
 
 function failure(source, reason, details = {}) {
   const currentBytes = Buffer.isBuffer(source) ? source : Buffer.from(source);
@@ -26,6 +25,31 @@ function decodeBase64(value) {
   if (typeof value !== 'string') return null;
   const decoded = Buffer.from(value, 'base64');
   return decoded.toString('base64') === value ? decoded : null;
+}
+
+function maintenanceReviewMetadataIsValid(maintenanceReview) {
+  return Boolean(
+    maintenanceReview?.artifact_type === 'mrx_reviewed_seo_maintenance_transition' &&
+      maintenanceReview?.version === 1 &&
+      maintenanceReview?.reviewer_id &&
+      /^\d{4}-\d{2}-\d{2}T/.test(maintenanceReview?.reviewed_at ?? '') &&
+      Array.isArray(maintenanceReview?.entries) &&
+      Array.isArray(maintenanceReview?.failures) &&
+      maintenanceReview.failures.length === 0,
+  );
+}
+
+function maintenanceReviewSummary(maintenanceReview, repoPath, reviewEntry) {
+  return {
+    reviewer_id: maintenanceReview.reviewer_id,
+    reviewed_at: maintenanceReview.reviewed_at,
+    baseline_commit: maintenanceReview.baseline_commit ?? null,
+    repo_path: repoPath,
+    previous_body_sha256: reviewEntry.previous_sha256,
+    reviewed_current_body_sha256: reviewEntry.current_sha256,
+    reverse_edit_count: reviewEntry.reverse_edits.length,
+    scope: reviewEntry.scope ?? null,
+  };
 }
 
 export function reconstructReviewedSource(source, reviewEntry) {
@@ -111,12 +135,7 @@ export function analyzeReviewedSeoMaintenanceTransition({
 }) {
   const currentBytes = Buffer.isBuffer(source) ? source : Buffer.from(source);
   if (
-    maintenanceReview?.artifact_type !== 'mrx_reviewed_seo_maintenance_transition' ||
-    maintenanceReview?.version !== 1 ||
-    !maintenanceReview?.reviewer_id ||
-    !/^\d{4}-\d{2}-\d{2}T/.test(maintenanceReview?.reviewed_at ?? '') ||
-    !Array.isArray(maintenanceReview?.failures) ||
-    maintenanceReview.failures.length !== 0 ||
+    !maintenanceReviewMetadataIsValid(maintenanceReview) ||
     typeof analyzeHistoricalTransition !== 'function'
   ) {
     return failure(currentBytes, 'maintenance_review_metadata_invalid');
@@ -138,6 +157,11 @@ export function analyzeReviewedSeoMaintenanceTransition({
   }
 
   const currentFrontmatter = extractFrontmatterBytes(currentBytes);
+  const maintenanceReviewReport = maintenanceReviewSummary(
+    maintenanceReview,
+    repoPath,
+    matches[0],
+  );
   return {
     ...historical,
     authorized: true,
@@ -145,16 +169,8 @@ export function analyzeReviewedSeoMaintenanceTransition({
     reason: null,
     current_body_sha256: sha256Bytes(currentBytes),
     current_frontmatter_sha256: currentFrontmatter ? sha256Bytes(currentFrontmatter) : null,
-    maintenance_review: {
-      reviewer_id: maintenanceReview.reviewer_id,
-      reviewed_at: maintenanceReview.reviewed_at,
-      baseline_commit: maintenanceReview.baseline_commit ?? null,
-      repo_path: repoPath,
-      previous_body_sha256: matches[0].previous_sha256,
-      reviewed_current_body_sha256: matches[0].current_sha256,
-      reverse_edit_count: matches[0].reverse_edits.length,
-      scope: matches[0].scope ?? null,
-    },
+    maintenance_review: maintenanceReviewReport,
+    maintenance_chain: [maintenanceReviewReport, ...(historical.maintenance_chain ?? [])],
     historical_transition: historical,
     changes: [
       ...(historical.changes ?? []),
@@ -167,10 +183,53 @@ export function analyzeReviewedSeoMaintenanceTransition({
   };
 }
 
+export function loadReviewedSeoMaintenanceReviews(repoRoot) {
+  return MAINTENANCE_REVIEW_RELATIVE_PATHS.map((relativePath) => {
+    const path = join(repoRoot, relativePath);
+    if (!existsSync(path)) return null;
+    return JSON.parse(readFileSync(path, 'utf8'));
+  }).filter(Boolean);
+}
+
+// Compatibility for consumers that explicitly need the original immutable
+// OTTO artifact rather than the ordered maintenance chain.
 export function loadReviewedSeoMaintenanceReview(repoRoot) {
-  const path = join(repoRoot, MAINTENANCE_REVIEW_RELATIVE_PATH);
-  if (!existsSync(path)) return null;
-  return JSON.parse(readFileSync(path, 'utf8'));
+  return loadReviewedSeoMaintenanceReviews(repoRoot).at(-1) ?? null;
+}
+
+export function reconstructReviewedSourceChain(source, repoPath, maintenanceReviews) {
+  const currentBytes = Buffer.isBuffer(source) ? Buffer.from(source) : Buffer.from(source);
+  let reconstructed = currentBytes;
+  const maintenanceChain = [];
+
+  for (const maintenanceReview of maintenanceReviews ?? []) {
+    if (!maintenanceReviewMetadataIsValid(maintenanceReview)) {
+      return failure(currentBytes, 'maintenance_review_metadata_invalid');
+    }
+    const matches = maintenanceReview.entries.filter((row) => row.repo_path === repoPath);
+    if (matches.length > 1) {
+      return failure(currentBytes, 'maintenance_review_path_not_unique');
+    }
+    if (matches.length === 0) continue;
+
+    const reconstruction = reconstructReviewedSource(reconstructed, matches[0]);
+    if (!reconstruction.authorized) return reconstruction;
+    reconstructed = reconstruction.reconstructed_bytes;
+    maintenanceChain.push(maintenanceReviewSummary(maintenanceReview, repoPath, matches[0]));
+  }
+
+  if (maintenanceChain.length === 0) {
+    return failure(currentBytes, 'maintenance_review_path_not_unique');
+  }
+  return {
+    authorized: true,
+    state: 'maintenance_chain_bytes_reconstructed',
+    reason: null,
+    current_body_sha256: sha256Bytes(currentBytes),
+    maintenance_previous_sha256: sha256Bytes(reconstructed),
+    reconstructed_bytes: reconstructed,
+    maintenance_chain: maintenanceChain,
+  };
 }
 
 export function analyzeCurrentSourceTransition({
@@ -179,24 +238,46 @@ export function analyzeCurrentSourceTransition({
   repoPath,
   repoRoot,
   analyzeHistoricalTransition,
-  maintenanceReview = loadReviewedSeoMaintenanceReview(repoRoot),
+  maintenanceReview = undefined,
+  maintenanceReviews =
+    maintenanceReview == null
+      ? loadReviewedSeoMaintenanceReviews(repoRoot)
+      : [maintenanceReview],
 }) {
-  const historical = analyzeHistoricalTransition(source, entry);
-  if (historical.authorized) return historical;
-  if (!maintenanceReview) return historical;
-  return analyzeReviewedSeoMaintenanceTransition({
-    source,
-    entry,
-    repoPath,
-    maintenanceReview,
-    analyzeHistoricalTransition,
-  });
+  function analyzeChain(currentSource, remainingReviews) {
+    const historical = analyzeHistoricalTransition(currentSource, entry);
+    if (historical.authorized) return historical;
+
+    for (let index = 0; index < remainingReviews.length; index += 1) {
+      const review = remainingReviews[index];
+      if (!maintenanceReviewMetadataIsValid(review)) {
+        return failure(currentSource, 'maintenance_review_metadata_invalid');
+      }
+      const matches = review.entries.filter((row) => row.repo_path === repoPath);
+      if (matches.length > 1) {
+        return failure(currentSource, 'maintenance_review_path_not_unique');
+      }
+      if (matches.length === 0) continue;
+
+      return analyzeReviewedSeoMaintenanceTransition({
+        source: currentSource,
+        entry,
+        repoPath,
+        maintenanceReview: review,
+        analyzeHistoricalTransition: (reconstructedSource) =>
+          analyzeChain(reconstructedSource, remainingReviews.slice(index + 1)),
+      });
+    }
+    return historical;
+  }
+
+  return analyzeChain(source, maintenanceReviews ?? []);
 }
 
 export function transitionIsPublished(transition) {
   return (
     transition?.state === 'controlled_publication_transition' ||
     (transition?.state === 'reviewed_seo_maintenance_transition' &&
-      transition?.historical_transition?.state === 'controlled_publication_transition')
+      transitionIsPublished(transition?.historical_transition))
   );
 }

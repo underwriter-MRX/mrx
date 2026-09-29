@@ -79,7 +79,7 @@ export const ownerSituations: OwnerSituation[] = [
     title: 'Concerned an offer may change later? Check the adjustment language first.',
     description:
       'Review what a mineral-rights buyer can change after title review, how the price may be adjusted, and what happens if the headline number is reduced.',
-    answerTitle: 'Look closely at',
+    answerTitle: 'Offer terms to review closely',
     answerPoints: [
       'Net-acre and ownership assumptions',
       'Price-adjustment and title-defect provisions',
@@ -139,7 +139,7 @@ export const ownerSituations: OwnerSituation[] = [
     title: 'Royalty funds in suspense? Find the stated reason before assuming the fix.',
     description:
       'Use operator notices, pay statements, owner numbers, and title records to understand why mineral royalty funds may be held in suspense.',
-    answerTitle: 'Gather these items',
+    answerTitle: 'Records to gather about suspense funds',
     answerPoints: [
       'Operator and owner number',
       'Well, lease, and county information',
@@ -187,7 +187,7 @@ export const ownerSituations: OwnerSituation[] = [
         ],
       },
       {
-        title: 'Timing can matter',
+        title: 'Timing questions for a possible 1031 exchange',
         paragraphs: [
           'Discuss the possible exchange before signing or closing. Ask qualified advisers which current deadlines, documentation, and intermediary steps apply rather than relying on website summaries.',
         ],

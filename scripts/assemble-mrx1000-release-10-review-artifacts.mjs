@@ -11,16 +11,10 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { basename, dirname, join, relative } from 'node:path';
 
 import { analyzeControlledPublicationTransition } from './_mrx1000-controlled-publication-transition.mjs';
-import { analyzeReviewedSeoMaintenanceTransition } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
+import { analyzeCurrentSourceTransition } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
 const repoRoot = process.cwd();
 const batchPath = join(repoRoot, 'config', 'mrx1000-release-10-batch.json');
-const maintenanceReviewPath = join(
-  repoRoot,
-  'config',
-  'maintenance-reviews',
-  '2026-09-29-otto-source-remediation.json',
-);
 const rawRoot = join(repoRoot, 'artifacts', 'mrx1000-release-10', 'reviews', 'final');
 const capabilities = ['editorial', 'factual_citation', 'compliance'];
 
@@ -80,7 +74,6 @@ function findingText(finding) {
 }
 
 const batch = readJson(batchPath);
-const maintenanceReview = readJson(maintenanceReviewPath);
 const laneIndex = new Map(
   capabilities.map((capability) => [capability, laneArtifacts(capability)]),
 );
@@ -102,16 +95,13 @@ for (const entry of batch.articles) {
   const fm = frontmatterBlock(source.toString('utf8'));
   if (!fm) throw new Error(`Frontmatter not detected: ${entry.repo_path}`);
   const fmSha = sha256(fm);
-  const historicalTransition = analyzeControlledPublicationTransition(source, entry);
-  const transition = historicalTransition.authorized
-    ? historicalTransition
-    : analyzeReviewedSeoMaintenanceTransition({
-        source,
-        entry,
-        repoPath: entry.repo_path,
-        maintenanceReview,
-        analyzeHistoricalTransition: analyzeControlledPublicationTransition,
-      });
+  const transition = analyzeCurrentSourceTransition({
+    source,
+    entry,
+    repoPath: entry.repo_path,
+    repoRoot,
+    analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+  });
   if (!transition.authorized) {
     throw new Error(
       `Unauthorized source drift for ${entry.slug}: ${transition.reason ?? fullSha}`,

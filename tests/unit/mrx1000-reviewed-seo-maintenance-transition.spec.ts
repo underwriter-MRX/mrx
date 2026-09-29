@@ -6,8 +6,11 @@ import {
   sha256Bytes,
 } from '../../scripts/_mrx1000-controlled-publication-transition.mjs';
 import {
+  analyzeCurrentSourceTransition,
   analyzeReviewedSeoMaintenanceTransition,
+  loadReviewedSeoMaintenanceReviews,
   reconstructReviewedSource,
+  reconstructReviewedSourceChain,
   transitionIsPublished,
 } from '../../scripts/_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
@@ -81,6 +84,38 @@ const maintenanceReview = {
   entries: [reviewEntry],
   failures: [],
 };
+const latestHeading = Buffer.from(
+  '<h2 id="sources">Sources and evidence reviewed</h2>\n',
+  'utf8',
+);
+const latestHeadingStart = maintained.indexOf(newHeading);
+const latestMaintained = Buffer.concat([
+  maintained.subarray(0, latestHeadingStart),
+  latestHeading,
+  maintained.subarray(latestHeadingStart + newHeading.length),
+]);
+const latestReview = {
+  ...maintenanceReview,
+  reviewer_id: 'codex-independent-h2-maintenance-review',
+  baseline_commit: '65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1',
+  entries: [
+    {
+      repo_path: repoPath,
+      previous_sha256: sha256Bytes(maintained),
+      current_sha256: sha256Bytes(latestMaintained),
+      reverse_edits: [
+        {
+          start_byte: latestHeadingStart,
+          end_byte: latestHeadingStart + latestHeading.length,
+          current_base64: latestHeading.toString('base64'),
+          previous_base64: newHeading.toString('base64'),
+        },
+      ],
+      review_disposition: 'PASS',
+      scope: 'Reviewed H2 maintenance only.',
+    },
+  ],
+};
 
 function analyze(source: Buffer, review: any = maintenanceReview, path = repoPath) {
   return analyzeReviewedSeoMaintenanceTransition({
@@ -93,6 +128,69 @@ function analyze(source: Buffer, review: any = maintenanceReview, path = repoPat
 }
 
 describe('reviewed SEO maintenance transition', () => {
+  it('chains newest maintenance through the prior artifact to immutable historical proof', () => {
+    const proof = analyzeCurrentSourceTransition({
+      source: latestMaintained,
+      entry,
+      repoPath,
+      repoRoot: process.cwd(),
+      maintenanceReviews: [latestReview, maintenanceReview],
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
+    expect(proof.authorized).toBe(true);
+    expect(proof.maintenance_chain).toHaveLength(2);
+    expect(proof.historical_transition.state).toBe('reviewed_seo_maintenance_transition');
+    expect(proof.historical_transition.historical_transition.state).toBe(
+      'controlled_publication_transition',
+    );
+    expect(transitionIsPublished(proof)).toBe(true);
+  });
+
+  it('rejects maintenance artifacts supplied in the wrong chain order', () => {
+    const proof = analyzeCurrentSourceTransition({
+      source: latestMaintained,
+      entry,
+      repoPath,
+      repoRoot: process.cwd(),
+      maintenanceReviews: [maintenanceReview, latestReview],
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
+    expect(proof.authorized).toBe(false);
+    expect(proof.reason).toBe('maintenance_current_hash_mismatch');
+  });
+
+  it('rejects duplicate repository paths inside a maintenance artifact', () => {
+    const duplicate = structuredClone(latestReview);
+    duplicate.entries.push(structuredClone(duplicate.entries[0]));
+    const proof = analyzeCurrentSourceTransition({
+      source: latestMaintained,
+      entry,
+      repoPath,
+      repoRoot: process.cwd(),
+      maintenanceReviews: [duplicate, maintenanceReview],
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
+    expect(proof.authorized).toBe(false);
+    expect(proof.reason).toBe('maintenance_review_path_not_unique');
+  });
+
+  it('rejects unknown current content that is not bound by the newest SHA-256', () => {
+    const unknown = Buffer.from(
+      latestMaintained.toString('utf8').replace('Reviewed prose.', 'Unknown prose.'),
+      'utf8',
+    );
+    const proof = analyzeCurrentSourceTransition({
+      source: unknown,
+      entry,
+      repoPath,
+      repoRoot: process.cwd(),
+      maintenanceReviews: [latestReview, maintenanceReview],
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
+    expect(proof.authorized).toBe(false);
+    expect(proof.reason).toBe('maintenance_current_hash_mismatch');
+  });
+
   it('reconstructs the exact prior bytes and delegates to immutable historical proof', () => {
     const proof = analyze(maintained);
     expect(proof.authorized).toBe(true);
@@ -142,7 +240,7 @@ describe('reviewed SEO maintenance transition', () => {
     expect(proof.reason).toBe('maintenance_reverse_edit_bytes_mismatch');
   });
 
-  it('reconstructs all 242 independently reviewed repository entries', () => {
+  it('reconstructs all 242 independently reviewed repository entries through the chain', () => {
     const ledger = JSON.parse(
       readFileSync(
         'config/maintenance-reviews/2026-09-29-otto-source-remediation.json',
@@ -151,6 +249,33 @@ describe('reviewed SEO maintenance transition', () => {
     );
     expect(ledger.entries).toHaveLength(242);
     expect(ledger.failures).toEqual([]);
+    const reviews = loadReviewedSeoMaintenanceReviews(process.cwd());
+    for (const row of ledger.entries) {
+      const current = readFileSync(row.repo_path);
+      const proof = reconstructReviewedSourceChain(current, row.repo_path, reviews);
+      expect(proof.authorized, `${row.repo_path}: ${proof.reason}`).toBe(true);
+      expect((proof as any).maintenance_previous_sha256).toBe(row.previous_sha256);
+    }
+  });
+
+  it('binds exactly the 39 approved heading edits and reconstructs every prior file hash', () => {
+    const ledger: any = JSON.parse(
+      readFileSync(
+        'config/maintenance-reviews/2026-09-29-h2-heading-maintenance.json',
+        'utf8',
+      ),
+    );
+    expect(ledger.entries).toHaveLength(32);
+    expect(ledger.reverse_edit_count).toBe(39);
+    expect(
+      ledger.entries.reduce(
+        (sum: number, row: { reverse_edits: unknown[] }) => sum + row.reverse_edits.length,
+        0,
+      ),
+    ).toBe(39);
+    expect(
+      new Set(ledger.entries.map((row: { repo_path: string }) => row.repo_path)).size,
+    ).toBe(32);
     for (const row of ledger.entries) {
       const current = readFileSync(row.repo_path);
       const proof = reconstructReviewedSource(current, row);

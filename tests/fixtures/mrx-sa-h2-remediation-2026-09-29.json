@@ -1,0 +1,397 @@
+{
+  "audit_id": 138239,
+  "crawl_completed_at": "2026-09-29T18:55:51.006210Z",
+  "purpose": "Separate exact-hash maintenance proof for bounded 2026-09-29 H2 source remediation; historical 94bb review hashes are not modified.",
+  "corrections": [
+    {
+      "url": "https://mineralrightsxchange.com/1031-exchange/",
+      "source": "src/data/ownerSituations.ts",
+      "before": "Timing can matter",
+      "before_hash": "14ae3mu",
+      "sa_reported_length": 17,
+      "after": "Timing questions for a possible 1031 exchange",
+      "visible_length": 45,
+      "preserved_anchor": null
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/1031-exchange-vs-traditional-sales-for-mineral-rights/",
+      "source": "src/content/posts/1031-exchange-vs-traditional-sales-for-mineral-rights.mdx",
+      "before": "The core comparison",
+      "before_hash": "1a293dk",
+      "sa_reported_length": 19,
+      "after": "Core comparison of 1031 exchanges and traditional sales",
+      "visible_length": 55,
+      "preserved_anchor": "the-core-comparison"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights/",
+      "source": "src/content/posts/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights.mdx",
+      "before": "Policy boundary",
+      "before_hash": "189b5mn",
+      "sa_reported_length": 15,
+      "after": "Limits of the no-fee review policy",
+      "visible_length": 34,
+      "preserved_anchor": "policy-boundary"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records/",
+      "source": "src/content/posts/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.mdx",
+      "before": "District plus lease number or gas-well ID identifies a different RRC lane",
+      "before_hash": "1t6xnjn",
+      "sa_reported_length": 73,
+      "after": "District and lease or well IDs identify different RRC lanes",
+      "visible_length": 59,
+      "preserved_anchor": "district-plus-lease-number-or-gas-well-id-identifies-a-different-rrc-lane"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/culberson-cad-certified-mineral-roll-zip-source-control-record/",
+      "source": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+      "before": "Disclaimer",
+      "before_hash": "xl4dw2",
+      "sa_reported_length": 10,
+      "after": "Scope and article disclaimer",
+      "visible_length": 28,
+      "preserved_anchor": "disclaimer"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/depth-severances-and-formation-rights-in-mineral-valuation/",
+      "source": "src/content/posts/depth-severances-and-formation-rights-in-mineral-valuation.mdx",
+      "before": "Records to request",
+      "before_hash": "vtgnsb",
+      "sa_reported_length": 18,
+      "after": "Records to request for depth and formation rights",
+      "visible_length": 49,
+      "preserved_anchor": "records-to-request"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment/",
+      "source": "src/content/posts/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment.mdx",
+      "before": "Mineral, royalty, overriding royalty, leasehold, and working interests are not interchangeable",
+      "before_hash": "5mbp8h",
+      "sa_reported_length": 94,
+      "after": "These mineral-rights interest types are not interchangeable",
+      "visible_length": 59,
+      "preserved_anchor": "mineral-royalty-overriding-royalty-leasehold-and-working-interests-are-not-interchangeable"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment/",
+      "source": "src/content/posts/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment.mdx",
+      "before": "Nonproducing interests: identify the property before modeling possibilities",
+      "before_hash": "1q5kocr",
+      "sa_reported_length": 75,
+      "after": "Nonproducing interests: identify property before modeling",
+      "visible_length": 57,
+      "preserved_anchor": "nonproducing-interests-identify-the-property-before-modeling-possibilities"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment/",
+      "source": "src/content/posts/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment.mdx",
+      "before": "Producing interests: the evidence is broader, not automatically conclusive",
+      "before_hash": "13rlcbn",
+      "sa_reported_length": 74,
+      "after": "Producing interests: broader evidence is not conclusive",
+      "visible_length": 55,
+      "preserved_anchor": "producing-interests-the-evidence-is-broader-not-automatically-conclusive"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation/",
+      "source": "src/content/posts/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation.mdx",
+      "before": "Indicator 4: economic evidence is available, or the gap can be described",
+      "before_hash": "1xpijvx",
+      "sa_reported_length": 72,
+      "after": "Indicator 4: document economic evidence or its gaps",
+      "visible_length": 51,
+      "preserved_anchor": "indicator-4-economic-evidence-is-available-or-the-gap-can-be-described"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation/",
+      "source": "src/content/posts/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation.mdx",
+      "before": "Stop rules",
+      "before_hash": "ovf0l2",
+      "sa_reported_length": 10,
+      "after": "Stop rules for incomplete evidence",
+      "visible_length": 34,
+      "preserved_anchor": "stop-rules"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/form-50-150-confidentiality-boundary-map-crane-oil-gas-property/",
+      "source": "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+      "before": "Index the Important Information subjects without turning them into instructions",
+      "before_hash": "107ldvl",
+      "sa_reported_length": 79,
+      "after": "Index Important Information subjects without giving instructions",
+      "visible_length": 64,
+      "preserved_anchor": "index-the-important-information-subjects-without-turning-them-into-instructions"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-horizontal-drilling-changed-mineral-rights-values-in-texas/",
+      "source": "src/content/posts/how-horizontal-drilling-changed-mineral-rights-values-in-texas.mdx",
+      "before": "How an owner can pair horizontal drilling data with tract-level records",
+      "before_hash": "1e6ovzv",
+      "sa_reported_length": 71,
+      "after": "Pair horizontal drilling data with tract records",
+      "visible_length": 48,
+      "preserved_anchor": "how-an-owner-can-pair-horizontal-drilling-data-with-tract-level-records"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-oil-price-fluctuations-affect-texas-mineral-rights-values/",
+      "source": "src/content/posts/how-oil-price-fluctuations-affect-texas-mineral-rights-values.mdx",
+      "before": "Why oil-price headlines and mineral-rights value are not the same thing",
+      "before_hash": "17t0ol6",
+      "sa_reported_length": 71,
+      "after": "Why oil prices and mineral-rights value differ",
+      "visible_length": 46,
+      "preserved_anchor": "why-oil-price-headlines-and-mineral-rights-value-are-not-the-same-thing"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/",
+      "source": "src/content/posts/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter.mdx",
+      "before": "A useful next step",
+      "before_hash": "med0h7",
+      "sa_reported_length": 18,
+      "after": "Next step after comparing account and offer records",
+      "visible_length": 51,
+      "preserved_anchor": "a-useful-next-step"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-to-identify-lowball-mineral-rights-offers/",
+      "source": "src/content/posts/how-to-identify-lowball-mineral-rights-offers.mdx",
+      "before": "Begin with scope",
+      "before_hash": "1dy65ra",
+      "sa_reported_length": 16,
+      "after": "Start with the offer’s scope",
+      "visible_length": 28,
+      "preserved_anchor": "begin-with-scope"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-to-negotiate-a-mineral-rights-sale-what-sellers-need-to-know/",
+      "source": "src/content/posts/how-to-negotiate-a-mineral-rights-sale-what-sellers-need-to-know.mdx",
+      "before": "Know when to pause",
+      "before_hash": "a1rihh",
+      "sa_reported_length": 18,
+      "after": "Know when to pause negotiations",
+      "visible_length": 31,
+      "preserved_anchor": "know-when-to-pause"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/how-to-report-a-mineral-rights-sale-on-your-federal-tax-return/",
+      "source": "src/content/posts/how-to-report-a-mineral-rights-sale-on-your-federal-tax-return.mdx",
+      "before": "Step 8: Reconcile information returns without treating them as the return",
+      "before_hash": "4ktp1b",
+      "sa_reported_length": 73,
+      "after": "Step 8: reconcile information returns separately from tax return",
+      "visible_length": 64,
+      "preserved_anchor": "step-8-reconcile-information-returns-without-treating-them-as-the-return"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary/",
+      "source": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+      "before": "Source register",
+      "before_hash": "1y3elz5",
+      "sa_reported_length": 15,
+      "after": "Source register and status",
+      "visible_length": 26,
+      "preserved_anchor": "source-register"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/midland-cad-2025-report-419660-mineral-interest-accounts-page-25/",
+      "source": "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+      "before": "“Accounts” is the denominator, not owners, tracts, wells, leases, or acres",
+      "before_hash": "1t0k14u",
+      "sa_reported_length": 74,
+      "after": "“Accounts” are the denominator, not owners, tracts, or wells",
+      "visible_length": 60,
+      "preserved_anchor": "accounts-is-the-denominator-not-owners-tracts-wells-leases-or-acres"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/texas-oil-and-gas-production-by-county-what-mineral-rights-owners-should-know/",
+      "source": "src/content/posts/texas-oil-and-gas-production-by-county-what-mineral-rights-owners-should-know.mdx",
+      "before": "What Texas oil and gas production by county can tell mineral-rights owners",
+      "before_hash": "z604un",
+      "sa_reported_length": 74,
+      "after": "What county production data can show mineral owners",
+      "visible_length": 51,
+      "preserved_anchor": "what-texas-oil-and-gas-production-by-county-can-tell-mineral-rights-owners"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/texas-rrc-imaged-well-log-retrieval-provenance-worksheet/",
+      "source": "src/content/posts/texas-rrc-imaged-well-log-retrieval-provenance-worksheet.mdx",
+      "before": "Add a transfer note",
+      "before_hash": "eofmhq",
+      "sa_reported_length": 19,
+      "after": "Add a record-transfer note",
+      "visible_length": 26,
+      "preserved_anchor": "add-a-transfer-note"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/the-hidden-traps-in-selling-mineral-rights/",
+      "source": "src/content/posts/the-hidden-traps-in-selling-mineral-rights.mdx",
+      "before": "Trap 3: an option, exclusivity term, or extension controls the calendar",
+      "before_hash": "1lmc3ex",
+      "sa_reported_length": 71,
+      "after": "Trap 3: options or exclusivity can control timing",
+      "visible_length": 49,
+      "preserved_anchor": "trap-3-an-option-exclusivity-term-or-extension-controls-the-calendar"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/top-five-missteps-to-avoid-for-a-successful-mineral-rights-sale/",
+      "source": "src/content/posts/top-five-missteps-to-avoid-for-a-successful-mineral-rights-sale.mdx",
+      "before": "Misstep 5: entering closing without a controlled sequence and closeout file",
+      "before_hash": "1bzz2hl",
+      "sa_reported_length": 75,
+      "after": "Misstep 5: control the closing sequence and closeout file",
+      "visible_length": 57,
+      "preserved_anchor": "misstep-5-entering-closing-without-a-controlled-sequence-and-closeout-file"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/uncovering-hidden-costs-what-every-mineral-rights-seller-should-know-before-the-review/",
+      "source": "src/content/posts/uncovering-hidden-costs-what-every-mineral-rights-seller-should-know-before-the-review.mdx",
+      "before": "Sources and limits",
+      "before_hash": "11qo210",
+      "sa_reported_length": 18,
+      "after": "Sources and review limitations",
+      "visible_length": 30,
+      "preserved_anchor": "sources-and-limits"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/understanding-fair-valuation-key-factors-for-assessing-your-mineral-rights-worth/",
+      "source": "src/content/posts/understanding-fair-valuation-key-factors-for-assessing-your-mineral-rights-worth.mdx",
+      "before": "Checkpoint 4: grade development evidence instead of treating all signals alike",
+      "before_hash": "1rj7nkp",
+      "sa_reported_length": 78,
+      "after": "Checkpoint 4: grade development evidence separately",
+      "visible_length": 51,
+      "preserved_anchor": "checkpoint-4-grade-development-evidence-instead-of-treating-all-signals-alike"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/understanding-market-demand-how-it-influences-the-value-of-your-mineral-rights/",
+      "source": "src/content/posts/understanding-market-demand-how-it-influences-the-value-of-your-mineral-rights.mdx",
+      "before": "Layer 2: development activity changes timing and probability assumptions",
+      "before_hash": "u66bi3",
+      "sa_reported_length": 72,
+      "after": "Layer 2: development activity changes timing assumptions",
+      "visible_length": 56,
+      "preserved_anchor": "layer-2-development-activity-changes-timing-and-probability-assumptions"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/understanding-mineral-rights-valuation-near-you/",
+      "source": "src/content/posts/understanding-mineral-rights-valuation-near-you.mdx",
+      "before": "The bottom line",
+      "before_hash": "2ds6fz",
+      "sa_reported_length": 15,
+      "after": "Practical valuation takeaway",
+      "visible_length": 28,
+      "preserved_anchor": "the-bottom-line"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/understanding-mineral-rights-your-essential-selling-guide/",
+      "source": "src/content/posts/understanding-mineral-rights-your-essential-selling-guide.mdx",
+      "before": "Gate 7: control funding, deed delivery, recording, and retained records",
+      "before_hash": "ek2x5f",
+      "sa_reported_length": 71,
+      "after": "Gate 7: control funding, deed delivery, recording, and records",
+      "visible_length": 62,
+      "preserved_anchor": "gate-7-control-funding-deed-delivery-recording-and-retained-records"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs/",
+      "source": "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+      "before": "Stage 4: preserve the plan’s test label, then check current terminology",
+      "before_hash": "16gkq2y",
+      "sa_reported_length": 71,
+      "after": "Stage 4: preserve the plan’s test label and check current terms",
+      "visible_length": 63,
+      "preserved_anchor": "stage-4-preserve-the-plans-test-label-then-check-current-terminology"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/upton-cad-open-records-policy-request-response-clarification-charge-states/",
+      "source": "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+      "before": "State 4: separate local charge statements from the current estimate layer",
+      "before_hash": "196xer9",
+      "sa_reported_length": 73,
+      "after": "State 4: separate local charges from current estimates",
+      "visible_length": 54,
+      "preserved_anchor": "state-4-separate-local-charge-statements-from-the-current-estimate-layer"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/what-documents-do-you-need-to-sell-mineral-rights-in-texas/",
+      "source": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
+      "before": "The core checklist",
+      "before_hash": "li649f",
+      "sa_reported_length": 18,
+      "after": "Core documents for a Texas mineral-rights sale",
+      "visible_length": 46,
+      "preserved_anchor": "the-core-checklist"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/what-happens-to-mineral-rights-in-probate/",
+      "source": "src/content/posts/what-happens-to-mineral-rights-in-probate.mdx",
+      "before": "Prove who may act",
+      "before_hash": "1pvumpk",
+      "sa_reported_length": 17,
+      "after": "Documents that show who may act",
+      "visible_length": 31,
+      "preserved_anchor": "prove-who-may-act"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/what-is-a-clawback-clause-in-a-mineral-rights-sale/",
+      "source": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
+      "before": "A few related terms",
+      "before_hash": "1o6tp7q",
+      "sa_reported_length": 19,
+      "after": "Related contract terms to review",
+      "visible_length": 32,
+      "preserved_anchor": "a-few-related-terms"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/what-is-a-clawback-clause-in-a-mineral-rights-sale/",
+      "source": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
+      "before": "What to look for",
+      "before_hash": "u7wofs",
+      "sa_reported_length": 16,
+      "after": "What to review in a clawback clause",
+      "visible_length": 35,
+      "preserved_anchor": "what-to-look-for"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/what-is-a-clawback-clause-in-a-mineral-rights-sale/",
+      "source": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
+      "before": "Why buyers use it",
+      "before_hash": "121q331",
+      "sa_reported_length": 17,
+      "after": "Why buyers use clawback clauses",
+      "visible_length": 31,
+      "preserved_anchor": "why-buyers-use-it"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/blog/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information/",
+      "source": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+      "before": "The date-role map",
+      "before_hash": "1icrhad",
+      "sa_reported_length": 17,
+      "after": "Date and source-role map",
+      "visible_length": 24,
+      "preserved_anchor": "the-date-role-map"
+    },
+    {
+      "url": "https://mineralrightsxchange.com/suspense-funds/",
+      "source": "src/data/ownerSituations.ts",
+      "before": "Gather these items",
+      "before_hash": "1mbbgtt",
+      "sa_reported_length": 18,
+      "after": "Records to gather about suspense funds",
+      "visible_length": 38,
+      "preserved_anchor": null
+    },
+    {
+      "url": "https://mineralrightsxchange.com/suspicious-seller/",
+      "source": "src/data/ownerSituations.ts",
+      "before": "Look closely at",
+      "before_hash": "1sjqafm",
+      "sa_reported_length": 15,
+      "after": "Offer terms to review closely",
+      "visible_length": 29,
+      "preserved_anchor": null
+    }
+  ]
+}

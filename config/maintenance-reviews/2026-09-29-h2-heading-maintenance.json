@@ -1,0 +1,734 @@
+{
+  "artifact_type": "mrx_reviewed_seo_maintenance_transition",
+  "version": 1,
+  "reviewer_id": "codex-independent-h2-maintenance-review",
+  "reviewed_at": "2026-09-29T20:55:30Z",
+  "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+  "predecessor_commit": "94bb1f47",
+  "predecessor_artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+  "predecessor_artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+  "review_authority": "Codex independently reviewed and approved only the 39 existing H2/heading-label diffs; no frontmatter or content-identity changes.",
+  "evidence_limit": "Heading maintenance only. Historical editorial, factual, compliance, publication, and prior OTTO maintenance evidence remain immutable and must authorize the reconstructed prior bytes.",
+  "review_method": "Bound current and previous whole-file bytes with SHA-256 and recorded byte-exact reverse edits for exactly 39 approved heading labels across 32 source files.",
+  "entry_count": 32,
+  "reverse_edit_count": 39,
+  "predecessor_artifact_entry_count": 18,
+  "baseline_commit_entry_count": 14,
+  "entries": [
+    {
+      "repo_path": "src/content/posts/1031-exchange-vs-traditional-sales-for-mineral-rights.mdx",
+      "previous_sha256": "765f5dc54dcf84cd7b42360a4bad5c3ae60f33dacdc1b3bb6052f689b379efa4",
+      "current_sha256": "b19fa6bd34e798351ae925c85a455f530ae2ce8da873164cdb317d35b40d435a",
+      "reverse_edits": [
+        {
+          "start_byte": 8250,
+          "end_byte": 8340,
+          "current_base64": "PGgyIGlkPSJ0aGUtY29yZS1jb21wYXJpc29uIj5Db3JlIGNvbXBhcmlzb24gb2YgMTAzMSBleGNoYW5nZXMgYW5kIHRyYWRpdGlvbmFsIHNhbGVzPC9oMj4K",
+          "previous_base64": "IyMgVGhlIGNvcmUgY29tcGFyaXNvbgo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "765f5dc54dcf84cd7b42360a4bad5c3ae60f33dacdc1b3bb6052f689b379efa4"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights.mdx",
+      "previous_sha256": "80e064309f1ea6b4b2d65105c54ad78107e8f1bf1602b8216e08f0aed05970be",
+      "current_sha256": "45928b91e073e3167c09968a53339b55da989d471355f0b97ef6b96236024ccd",
+      "reverse_edits": [
+        {
+          "start_byte": 11472,
+          "end_byte": 11537,
+          "current_base64": "PGgyIGlkPSJwb2xpY3ktYm91bmRhcnkiPkxpbWl0cyBvZiB0aGUgbm8tZmVlIHJldmlldyBwb2xpY3k8L2gyPgo=",
+          "previous_base64": "IyMgUG9saWN5IGJvdW5kYXJ5Cg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "80e064309f1ea6b4b2d65105c54ad78107e8f1bf1602b8216e08f0aed05970be"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/cad-account-number-rrc-lease-id-operator-number-texas-mineral-records.mdx",
+      "previous_sha256": "150bc77f8a3bdfe6688834c2236aa9111c2594186daa6773ad1b92fe63723094",
+      "current_sha256": "5a8baac60cee277c9517349fc51af652ce3b198e760469d6dbb94f112516b264",
+      "reverse_edits": [
+        {
+          "start_byte": 13780,
+          "end_byte": 13928,
+          "current_base64": "PGgyIGlkPSJkaXN0cmljdC1wbHVzLWxlYXNlLW51bWJlci1vci1nYXMtd2VsbC1pZC1pZGVudGlmaWVzLWEtZGlmZmVyZW50LXJyYy1sYW5lIj5EaXN0cmljdCBhbmQgbGVhc2Ugb3Igd2VsbCBJRHMgaWRlbnRpZnkgZGlmZmVyZW50IFJSQyBsYW5lczwvaDI+Cg==",
+          "previous_base64": "IyMgRGlzdHJpY3QgcGx1cyBsZWFzZSBudW1iZXIgb3IgZ2FzLXdlbGwgSUQgaWRlbnRpZmllcyBhIGRpZmZlcmVudCBSUkMgbGFuZQo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "150bc77f8a3bdfe6688834c2236aa9111c2594186daa6773ad1b92fe63723094"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/culberson-cad-certified-mineral-roll-zip-source-control-record.mdx",
+      "previous_sha256": "13e056473aea34249fc584a197abad8c16f3bcd1ecff7debbde4d717116b4f81",
+      "current_sha256": "15786b3335f7f4bd52bf24b2e1889458143ae39e349e198211eb2802b2d10251",
+      "reverse_edits": [
+        {
+          "start_byte": 23389,
+          "end_byte": 23443,
+          "current_base64": "PGgyIGlkPSJkaXNjbGFpbWVyIj5TY29wZSBhbmQgYXJ0aWNsZSBkaXNjbGFpbWVyPC9oMj4K",
+          "previous_base64": "IyMgRGlzY2xhaW1lcgo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "13e056473aea34249fc584a197abad8c16f3bcd1ecff7debbde4d717116b4f81"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/depth-severances-and-formation-rights-in-mineral-valuation.mdx",
+      "previous_sha256": "9406f77e8911864c55f6047a1d4e0f08ce84cb9735728f8cf4730a4783642350",
+      "current_sha256": "0c2d011dd36dd30b1d1f2562816272c7fbd7cc3ce1baea42ece6c3c9cf4795a2",
+      "reverse_edits": [
+        {
+          "start_byte": 26851,
+          "end_byte": 26934,
+          "current_base64": "PGgyIGlkPSJyZWNvcmRzLXRvLXJlcXVlc3QiPlJlY29yZHMgdG8gcmVxdWVzdCBmb3IgZGVwdGggYW5kIGZvcm1hdGlvbiByaWdodHM8L2gyPgo=",
+          "previous_base64": "IyMgUmVjb3JkcyB0byByZXF1ZXN0Cg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "9406f77e8911864c55f6047a1d4e0f08ce84cb9735728f8cf4730a4783642350"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/discover-which-types-of-texas-mineral-rights-qualify-for-a-free-underwriter-assessment.mdx",
+      "previous_sha256": "e29bbfcbf3bdcecd1889f8b75031e6a1bb659f3013c8bbfbf69517983e94a405",
+      "current_sha256": "3f64492c43bcd82321d5642fa41684a1e78f52ffb14c2f1060cb6ce1c40d3816",
+      "reverse_edits": [
+        {
+          "start_byte": 10994,
+          "end_byte": 11137,
+          "current_base64": "PGgyIGlkPSJwcm9kdWNpbmctaW50ZXJlc3RzLXRoZS1ldmlkZW5jZS1pcy1icm9hZGVyLW5vdC1hdXRvbWF0aWNhbGx5LWNvbmNsdXNpdmUiPlByb2R1Y2luZyBpbnRlcmVzdHM6IGJyb2FkZXIgZXZpZGVuY2UgaXMgbm90IGNvbmNsdXNpdmU8L2gyPgo=",
+          "previous_base64": "IyMgUHJvZHVjaW5nIGludGVyZXN0czogdGhlIGV2aWRlbmNlIGlzIGJyb2FkZXIsIG5vdCBhdXRvbWF0aWNhbGx5IGNvbmNsdXNpdmUK"
+        },
+        {
+          "start_byte": 11903,
+          "end_byte": 12050,
+          "current_base64": "PGgyIGlkPSJub25wcm9kdWNpbmctaW50ZXJlc3RzLWlkZW50aWZ5LXRoZS1wcm9wZXJ0eS1iZWZvcmUtbW9kZWxpbmctcG9zc2liaWxpdGllcyI+Tm9ucHJvZHVjaW5nIGludGVyZXN0czogaWRlbnRpZnkgcHJvcGVydHkgYmVmb3JlIG1vZGVsaW5nPC9oMj4K",
+          "previous_base64": "IyMgTm9ucHJvZHVjaW5nIGludGVyZXN0czogaWRlbnRpZnkgdGhlIHByb3BlcnR5IGJlZm9yZSBtb2RlbGluZyBwb3NzaWJpbGl0aWVzCg=="
+        },
+        {
+          "start_byte": 13367,
+          "end_byte": 13532,
+          "current_base64": "PGgyIGlkPSJtaW5lcmFsLXJveWFsdHktb3ZlcnJpZGluZy1yb3lhbHR5LWxlYXNlaG9sZC1hbmQtd29ya2luZy1pbnRlcmVzdHMtYXJlLW5vdC1pbnRlcmNoYW5nZWFibGUiPlRoZXNlIG1pbmVyYWwtcmlnaHRzIGludGVyZXN0IHR5cGVzIGFyZSBub3QgaW50ZXJjaGFuZ2VhYmxlPC9oMj4K",
+          "previous_base64": "IyMgTWluZXJhbCwgcm95YWx0eSwgb3ZlcnJpZGluZyByb3lhbHR5LCBsZWFzZWhvbGQsIGFuZCB3b3JraW5nIGludGVyZXN0cyBhcmUgbm90IGludGVyY2hhbmdlYWJsZQo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "e29bbfcbf3bdcecd1889f8b75031e6a1bb659f3013c8bbfbf69517983e94a405"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/five-key-indicators-that-show-your-mineral-rights-are-ready-for-evaluation.mdx",
+      "previous_sha256": "f9fdcb6db20f81ecfb06b5768d1c62f3f0a9bf15ffd6f1ffd850f653d67cd7ea",
+      "current_sha256": "efd9a987d1f57c72cfa06626c5f46a17a7a4d5c80f6b95dc2b2eb5e15eebf49d",
+      "reverse_edits": [
+        {
+          "start_byte": 17513,
+          "end_byte": 17650,
+          "current_base64": "PGgyIGlkPSJpbmRpY2F0b3ItNC1lY29ub21pYy1ldmlkZW5jZS1pcy1hdmFpbGFibGUtb3ItdGhlLWdhcC1jYW4tYmUtZGVzY3JpYmVkIj5JbmRpY2F0b3IgNDogZG9jdW1lbnQgZWNvbm9taWMgZXZpZGVuY2Ugb3IgaXRzIGdhcHM8L2gyPgo=",
+          "previous_base64": "IyMgSW5kaWNhdG9yIDQ6IGVjb25vbWljIGV2aWRlbmNlIGlzIGF2YWlsYWJsZSwgb3IgdGhlIGdhcCBjYW4gYmUgZGVzY3JpYmVkCg=="
+        },
+        {
+          "start_byte": 23311,
+          "end_byte": 23371,
+          "current_base64": "PGgyIGlkPSJzdG9wLXJ1bGVzIj5TdG9wIHJ1bGVzIGZvciBpbmNvbXBsZXRlIGV2aWRlbmNlPC9oMj4K",
+          "previous_base64": "IyMgU3RvcCBydWxlcwo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "f9fdcb6db20f81ecfb06b5768d1c62f3f0a9bf15ffd6f1ffd850f653d67cd7ea"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/form-50-150-confidentiality-boundary-map-crane-oil-gas-property.mdx",
+      "previous_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f",
+      "current_sha256": "23942e22cbf4b0b5ede9c0c07da328792e44ed6501f0c245410c267cfdcdc137",
+      "reverse_edits": [
+        {
+          "start_byte": 18835,
+          "end_byte": 18994,
+          "current_base64": "PGgyIGlkPSJpbmRleC10aGUtaW1wb3J0YW50LWluZm9ybWF0aW9uLXN1YmplY3RzLXdpdGhvdXQtdHVybmluZy10aGVtLWludG8taW5zdHJ1Y3Rpb25zIj5JbmRleCBJbXBvcnRhbnQgSW5mb3JtYXRpb24gc3ViamVjdHMgd2l0aG91dCBnaXZpbmcgaW5zdHJ1Y3Rpb25zPC9oMj4K",
+          "previous_base64": "IyMgSW5kZXggdGhlIEltcG9ydGFudCBJbmZvcm1hdGlvbiBzdWJqZWN0cyB3aXRob3V0IHR1cm5pbmcgdGhlbSBpbnRvIGluc3RydWN0aW9ucwo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "2bb79cbff5f193e13e13290099a38d1b2ae9eb8f56adb5ecd67efcc22bc6da6f"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-horizontal-drilling-changed-mineral-rights-values-in-texas.mdx",
+      "previous_sha256": "878173e23863727fc019e67f7a94a8c7d56606db3488c2e1293eebfc7abb77a2",
+      "current_sha256": "8e9040edb0d51207e7dfc4906ff50b71abf5ac11a60ba81770a42aee109fc835",
+      "reverse_edits": [
+        {
+          "start_byte": 10870,
+          "end_byte": 11005,
+          "current_base64": "PGgyIGlkPSJob3ctYW4tb3duZXItY2FuLXBhaXItaG9yaXpvbnRhbC1kcmlsbGluZy1kYXRhLXdpdGgtdHJhY3QtbGV2ZWwtcmVjb3JkcyI+UGFpciBob3Jpem9udGFsIGRyaWxsaW5nIGRhdGEgd2l0aCB0cmFjdCByZWNvcmRzPC9oMj4K",
+          "previous_base64": "IyMgSG93IGFuIG93bmVyIGNhbiBwYWlyIGhvcml6b250YWwgZHJpbGxpbmcgZGF0YSB3aXRoIHRyYWN0LWxldmVsIHJlY29yZHMK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "878173e23863727fc019e67f7a94a8c7d56606db3488c2e1293eebfc7abb77a2"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-oil-price-fluctuations-affect-texas-mineral-rights-values.mdx",
+      "previous_sha256": "b5820b1667b6550dea1fc8c54dbd382a194b98612ff6d39dc466a470b777b137",
+      "current_sha256": "f0fffa4cb5bff3a5e37e6d09e8f2bfc458902c1f57a4b421ea261dc62cd71c4e",
+      "reverse_edits": [
+        {
+          "start_byte": 6533,
+          "end_byte": 6666,
+          "current_base64": "PGgyIGlkPSJ3aHktb2lsLXByaWNlLWhlYWRsaW5lcy1hbmQtbWluZXJhbC1yaWdodHMtdmFsdWUtYXJlLW5vdC10aGUtc2FtZS10aGluZyI+V2h5IG9pbCBwcmljZXMgYW5kIG1pbmVyYWwtcmlnaHRzIHZhbHVlIGRpZmZlcjwvaDI+Cg==",
+          "previous_base64": "IyMgV2h5IG9pbC1wcmljZSBoZWFkbGluZXMgYW5kIG1pbmVyYWwtcmlnaHRzIHZhbHVlIGFyZSBub3QgdGhlIHNhbWUgdGhpbmcK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "b5820b1667b6550dea1fc8c54dbd382a194b98612ff6d39dc466a470b777b137"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter.mdx",
+      "previous_sha256": "77a1edc6f0dd2c6f5cc0e6197ae6997c7a00959bed2d69388209dff850ad4aac",
+      "current_sha256": "113c4fae08cb59ea43d1ac12a0ee73a1dae8862f3ac1efa37f46dd5f65685e82",
+      "reverse_edits": [
+        {
+          "start_byte": 18685,
+          "end_byte": 18770,
+          "current_base64": "PGgyIGlkPSJhLXVzZWZ1bC1uZXh0LXN0ZXAiPk5leHQgc3RlcCBhZnRlciBjb21wYXJpbmcgYWNjb3VudCBhbmQgb2ZmZXIgcmVjb3JkczwvaDI+Cg==",
+          "previous_base64": "IyMgQSB1c2VmdWwgbmV4dCBzdGVwCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "77a1edc6f0dd2c6f5cc0e6197ae6997c7a00959bed2d69388209dff850ad4aac"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-to-identify-lowball-mineral-rights-offers.mdx",
+      "previous_sha256": "1d284696955b89070f932e8481109faf3c3baa7a737be2b700cbd4486a2c6d6a",
+      "current_sha256": "6e48b40dce5569f47fbe4b08ef8373c78f58ad572cb720fdb5f6fd56e4094db5",
+      "reverse_edits": [
+        {
+          "start_byte": 7363,
+          "end_byte": 7425,
+          "current_base64": "PGgyIGlkPSJiZWdpbi13aXRoLXNjb3BlIj5TdGFydCB3aXRoIHRoZSBvZmZlcuKAmXMgc2NvcGU8L2gyPgo=",
+          "previous_base64": "IyMgQmVnaW4gd2l0aCBzY29wZQo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "1d284696955b89070f932e8481109faf3c3baa7a737be2b700cbd4486a2c6d6a"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-to-negotiate-a-mineral-rights-sale-what-sellers-need-to-know.mdx",
+      "previous_sha256": "5ed4da94bb588a089efc5a165e5938a51b1b514c4fad9d036d446dbbebb7ccf1",
+      "current_sha256": "aaca3659d47c4fc59b337bad35531fc87c7fd44f1b78322f2334d9369e0da14b",
+      "reverse_edits": [
+        {
+          "start_byte": 13066,
+          "end_byte": 13131,
+          "current_base64": "PGgyIGlkPSJrbm93LXdoZW4tdG8tcGF1c2UiPktub3cgd2hlbiB0byBwYXVzZSBuZWdvdGlhdGlvbnM8L2gyPgo=",
+          "previous_base64": "IyMgS25vdyB3aGVuIHRvIHBhdXNlCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "5ed4da94bb588a089efc5a165e5938a51b1b514c4fad9d036d446dbbebb7ccf1"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/how-to-report-a-mineral-rights-sale-on-your-federal-tax-return.mdx",
+      "previous_sha256": "2383f28f4cafaf7734c6bf00f6a50cc003f47188c574437b6f309dae7ed898bc",
+      "current_sha256": "6c42bcaab0ea8672e232004e9c7415a0fa6390be61a6077c202efd87dd506538",
+      "reverse_edits": [
+        {
+          "start_byte": 14657,
+          "end_byte": 14809,
+          "current_base64": "PGgyIGlkPSJzdGVwLTgtcmVjb25jaWxlLWluZm9ybWF0aW9uLXJldHVybnMtd2l0aG91dC10cmVhdGluZy10aGVtLWFzLXRoZS1yZXR1cm4iPlN0ZXAgODogcmVjb25jaWxlIGluZm9ybWF0aW9uIHJldHVybnMgc2VwYXJhdGVseSBmcm9tIHRheCByZXR1cm48L2gyPgo=",
+          "previous_base64": "IyMgU3RlcCA4OiBSZWNvbmNpbGUgaW5mb3JtYXRpb24gcmV0dXJucyB3aXRob3V0IHRyZWF0aW5nIHRoZW0gYXMgdGhlIHJldHVybgo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "2383f28f4cafaf7734c6bf00f6a50cc003f47188c574437b6f309dae7ed898bc"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/martin-cad-2025-category-g-row-oil-gas-parcel-count-and-market-value-boundary.mdx",
+      "previous_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f",
+      "current_sha256": "4a531e87e99641cbbcc66eaccc4c860e712b35659e56b734b81537ccf58b3ca6",
+      "reverse_edits": [
+        {
+          "start_byte": 21166,
+          "end_byte": 21223,
+          "current_base64": "PGgyIGlkPSJzb3VyY2UtcmVnaXN0ZXIiPlNvdXJjZSByZWdpc3RlciBhbmQgc3RhdHVzPC9oMj4K",
+          "previous_base64": "IyMgU291cmNlIHJlZ2lzdGVyCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "3d6e4ea604f7db320998ccf351a5b6e03a7bbc333e13adcb465aba677259f49f"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/midland-cad-2025-report-419660-mineral-interest-accounts-page-25.mdx",
+      "previous_sha256": "42addb36def3e370ff4a336f23fa63a9d6728f98a8348df504b02e67ffd18aa5",
+      "current_sha256": "b7e8cadc22db3e49a0c18f501cb0586777cbb3bb11e12362dd64492556f36615",
+      "reverse_edits": [
+        {
+          "start_byte": 14125,
+          "end_byte": 14272,
+          "current_base64": "PGgyIGlkPSJhY2NvdW50cy1pcy10aGUtZGVub21pbmF0b3Itbm90LW93bmVycy10cmFjdHMtd2VsbHMtbGVhc2VzLW9yLWFjcmVzIj7igJxBY2NvdW50c+KAnSBhcmUgdGhlIGRlbm9taW5hdG9yLCBub3Qgb3duZXJzLCB0cmFjdHMsIG9yIHdlbGxzPC9oMj4K",
+          "previous_base64": "IyMg4oCcQWNjb3VudHPigJ0gaXMgdGhlIGRlbm9taW5hdG9yLCBub3Qgb3duZXJzLCB0cmFjdHMsIHdlbGxzLCBsZWFzZXMsIG9yIGFjcmVzCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "42addb36def3e370ff4a336f23fa63a9d6728f98a8348df504b02e67ffd18aa5"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/texas-oil-and-gas-production-by-county-what-mineral-rights-owners-should-know.mdx",
+      "previous_sha256": "2d7dfb3bc44e5c5eef6f4a99f78df38ca9093316600928f4a3f71c3752255f84",
+      "current_sha256": "299e859c9f2abc6d91a8cf484e387e5108aee7b117c1b2f0fd6eaa6555e9942f",
+      "reverse_edits": [
+        {
+          "start_byte": 7696,
+          "end_byte": 7837,
+          "current_base64": "PGgyIGlkPSJ3aGF0LXRleGFzLW9pbC1hbmQtZ2FzLXByb2R1Y3Rpb24tYnktY291bnR5LWNhbi10ZWxsLW1pbmVyYWwtcmlnaHRzLW93bmVycyI+V2hhdCBjb3VudHkgcHJvZHVjdGlvbiBkYXRhIGNhbiBzaG93IG1pbmVyYWwgb3duZXJzPC9oMj4K",
+          "previous_base64": "IyMgV2hhdCBUZXhhcyBvaWwgYW5kIGdhcyBwcm9kdWN0aW9uIGJ5IGNvdW50eSBjYW4gdGVsbCBtaW5lcmFsLXJpZ2h0cyBvd25lcnMK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "2d7dfb3bc44e5c5eef6f4a99f78df38ca9093316600928f4a3f71c3752255f84"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/texas-rrc-imaged-well-log-retrieval-provenance-worksheet.mdx",
+      "previous_sha256": "3b6901e89865ceb4b3400493e91c54e4f6039787db6b282dbef0fd15170f9869",
+      "current_sha256": "4f564103504a8bb0e2c2294e8faf3c960a8c6e69ce9c0a6209ebb4d430968e05",
+      "reverse_edits": [
+        {
+          "start_byte": 20101,
+          "end_byte": 20162,
+          "current_base64": "PGgyIGlkPSJhZGQtYS10cmFuc2Zlci1ub3RlIj5BZGQgYSByZWNvcmQtdHJhbnNmZXIgbm90ZTwvaDI+Cg==",
+          "previous_base64": "IyMgQWRkIGEgdHJhbnNmZXIgbm90ZQo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "3b6901e89865ceb4b3400493e91c54e4f6039787db6b282dbef0fd15170f9869"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/the-hidden-traps-in-selling-mineral-rights.mdx",
+      "previous_sha256": "aede6336d8d120a09eed78b630aa8dbd61a853373505b5233714c633eae16e01",
+      "current_sha256": "4b33b4f2c6577e719b78377b552f0c7149bafc9b9d0c1a2b03f042273e5fc390",
+      "reverse_edits": [
+        {
+          "start_byte": 16391,
+          "end_byte": 16524,
+          "current_base64": "PGgyIGlkPSJ0cmFwLTMtYW4tb3B0aW9uLWV4Y2x1c2l2aXR5LXRlcm0tb3ItZXh0ZW5zaW9uLWNvbnRyb2xzLXRoZS1jYWxlbmRhciI+VHJhcCAzOiBvcHRpb25zIG9yIGV4Y2x1c2l2aXR5IGNhbiBjb250cm9sIHRpbWluZzwvaDI+Cg==",
+          "previous_base64": "IyMgVHJhcCAzOiBhbiBvcHRpb24sIGV4Y2x1c2l2aXR5IHRlcm0sIG9yIGV4dGVuc2lvbiBjb250cm9scyB0aGUgY2FsZW5kYXIK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "aede6336d8d120a09eed78b630aa8dbd61a853373505b5233714c633eae16e01"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/top-five-missteps-to-avoid-for-a-successful-mineral-rights-sale.mdx",
+      "previous_sha256": "7a0adab33952fe33e85615bcb867e7ca0a049c80124835a16aff970b339d64fa",
+      "current_sha256": "7925d85835e53b6854c758e23ca7a61b5a53e3226118351d6caf47eb40e22268",
+      "reverse_edits": [
+        {
+          "start_byte": 22172,
+          "end_byte": 22319,
+          "current_base64": "PGgyIGlkPSJtaXNzdGVwLTUtZW50ZXJpbmctY2xvc2luZy13aXRob3V0LWEtY29udHJvbGxlZC1zZXF1ZW5jZS1hbmQtY2xvc2VvdXQtZmlsZSI+TWlzc3RlcCA1OiBjb250cm9sIHRoZSBjbG9zaW5nIHNlcXVlbmNlIGFuZCBjbG9zZW91dCBmaWxlPC9oMj4K",
+          "previous_base64": "IyMgTWlzc3RlcCA1OiBlbnRlcmluZyBjbG9zaW5nIHdpdGhvdXQgYSBjb250cm9sbGVkIHNlcXVlbmNlIGFuZCBjbG9zZW91dCBmaWxlCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "7a0adab33952fe33e85615bcb867e7ca0a049c80124835a16aff970b339d64fa"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/uncovering-hidden-costs-what-every-mineral-rights-seller-should-know-before-the-review.mdx",
+      "previous_sha256": "980e9ffe2d862957155e1d82c529547627d6d8f5a179072816380ebc48e22578",
+      "current_sha256": "c628957c49e13170574417a7ccbf3c31df9d371cf8d7168a7fc71ad723f3ff9f",
+      "reverse_edits": [
+        {
+          "start_byte": 25482,
+          "end_byte": 25546,
+          "current_base64": "PGgyIGlkPSJzb3VyY2VzLWFuZC1saW1pdHMiPlNvdXJjZXMgYW5kIHJldmlldyBsaW1pdGF0aW9uczwvaDI+Cg==",
+          "previous_base64": "IyMgU291cmNlcyBhbmQgbGltaXRzCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "980e9ffe2d862957155e1d82c529547627d6d8f5a179072816380ebc48e22578"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/understanding-fair-valuation-key-factors-for-assessing-your-mineral-rights-worth.mdx",
+      "previous_sha256": "2117487db0feeeb7cc017505997ae5b07f61f33afd6a75ad6ceac8f1f1029a35",
+      "current_sha256": "a70131565a76d5c500d899e9651f2354e8fb05a437af3d346eed6aa48696ab30",
+      "reverse_edits": [
+        {
+          "start_byte": 16861,
+          "end_byte": 17005,
+          "current_base64": "PGgyIGlkPSJjaGVja3BvaW50LTQtZ3JhZGUtZGV2ZWxvcG1lbnQtZXZpZGVuY2UtaW5zdGVhZC1vZi10cmVhdGluZy1hbGwtc2lnbmFscy1hbGlrZSI+Q2hlY2twb2ludCA0OiBncmFkZSBkZXZlbG9wbWVudCBldmlkZW5jZSBzZXBhcmF0ZWx5PC9oMj4K",
+          "previous_base64": "IyMgQ2hlY2twb2ludCA0OiBncmFkZSBkZXZlbG9wbWVudCBldmlkZW5jZSBpbnN0ZWFkIG9mIHRyZWF0aW5nIGFsbCBzaWduYWxzIGFsaWtlCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "2117487db0feeeb7cc017505997ae5b07f61f33afd6a75ad6ceac8f1f1029a35"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/understanding-market-demand-how-it-influences-the-value-of-your-mineral-rights.mdx",
+      "previous_sha256": "995da27e6ee414a1348f5d2679d49eff5fd008e2853ef4f1b15c96c849c59e55",
+      "current_sha256": "f60152a345fa4df2e078f97c71c87d075bfc6e331cb2415ae30ac2cd58bd6a71",
+      "reverse_edits": [
+        {
+          "start_byte": 14222,
+          "end_byte": 14365,
+          "current_base64": "PGgyIGlkPSJsYXllci0yLWRldmVsb3BtZW50LWFjdGl2aXR5LWNoYW5nZXMtdGltaW5nLWFuZC1wcm9iYWJpbGl0eS1hc3N1bXB0aW9ucyI+TGF5ZXIgMjogZGV2ZWxvcG1lbnQgYWN0aXZpdHkgY2hhbmdlcyB0aW1pbmcgYXNzdW1wdGlvbnM8L2gyPgo=",
+          "previous_base64": "IyMgTGF5ZXIgMjogZGV2ZWxvcG1lbnQgYWN0aXZpdHkgY2hhbmdlcyB0aW1pbmcgYW5kIHByb2JhYmlsaXR5IGFzc3VtcHRpb25zCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "995da27e6ee414a1348f5d2679d49eff5fd008e2853ef4f1b15c96c849c59e55"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/understanding-mineral-rights-valuation-near-you.mdx",
+      "previous_sha256": "46119e11fd375db8f54ffe3d9150b6c2a54ca75cf1c56e53102a0bb36b6cb1c3",
+      "current_sha256": "16d25a4a736888ba5cb1140844a74ed7ecbbb8822d39749fb9cbc18250189755",
+      "reverse_edits": [
+        {
+          "start_byte": 29984,
+          "end_byte": 30043,
+          "current_base64": "PGgyIGlkPSJ0aGUtYm90dG9tLWxpbmUiPlByYWN0aWNhbCB2YWx1YXRpb24gdGFrZWF3YXk8L2gyPgo=",
+          "previous_base64": "IyMgVGhlIGJvdHRvbSBsaW5lCg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "46119e11fd375db8f54ffe3d9150b6c2a54ca75cf1c56e53102a0bb36b6cb1c3"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/understanding-mineral-rights-your-essential-selling-guide.mdx",
+      "previous_sha256": "3e8200d9a7b42f281272978023ddbfe88050c04283e6fed5bf939d1702358f23",
+      "current_sha256": "5b09edd68fe7db8d4d6520590b08c7895009d79d735dd12d518f59c48bd3c992",
+      "reverse_edits": [
+        {
+          "start_byte": 24588,
+          "end_byte": 24733,
+          "current_base64": "PGgyIGlkPSJnYXRlLTctY29udHJvbC1mdW5kaW5nLWRlZWQtZGVsaXZlcnktcmVjb3JkaW5nLWFuZC1yZXRhaW5lZC1yZWNvcmRzIj5HYXRlIDc6IGNvbnRyb2wgZnVuZGluZywgZGVlZCBkZWxpdmVyeSwgcmVjb3JkaW5nLCBhbmQgcmVjb3JkczwvaDI+Cg==",
+          "previous_base64": "IyMgR2F0ZSA3OiBjb250cm9sIGZ1bmRpbmcsIGRlZWQgZGVsaXZlcnksIHJlY29yZGluZywgYW5kIHJldGFpbmVkIHJlY29yZHMK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "3e8200d9a7b42f281272978023ddbfe88050c04283e6fed5bf939d1702358f23"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/upton-cad-2025-2026-mineral-appraisal-review-chain-sources-calibration-pvs.mdx",
+      "previous_sha256": "a50574cc2b97f6ee1ba6ebab1ea9f8b2214aa0917f0d4985777bd8e5675861bc",
+      "current_sha256": "b1950216ce0740389052916e03b40a1371397c25faabcdfddd69515a437e4213",
+      "reverse_edits": [
+        {
+          "start_byte": 14546,
+          "end_byte": 14695,
+          "current_base64": "PGgyIGlkPSJzdGFnZS00LXByZXNlcnZlLXRoZS1wbGFucy10ZXN0LWxhYmVsLXRoZW4tY2hlY2stY3VycmVudC10ZXJtaW5vbG9neSI+U3RhZ2UgNDogcHJlc2VydmUgdGhlIHBsYW7igJlzIHRlc3QgbGFiZWwgYW5kIGNoZWNrIGN1cnJlbnQgdGVybXM8L2gyPgo=",
+          "previous_base64": "IyMgU3RhZ2UgNDogcHJlc2VydmUgdGhlIHBsYW4ncyB0ZXN0IGxhYmVsLCB0aGVuIGNoZWNrIGN1cnJlbnQgdGVybWlub2xvZ3kK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "a50574cc2b97f6ee1ba6ebab1ea9f8b2214aa0917f0d4985777bd8e5675861bc"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/upton-cad-open-records-policy-request-response-clarification-charge-states.mdx",
+      "previous_sha256": "7521b78e2698e25e08c4b962a1dd8f70ab8f9ed010a9817c4220fa8ef90914fd",
+      "current_sha256": "5c99f6d6a7d5a158ab86b8ea43be79c2b7f5769962e6638b78f5481421d3135a",
+      "reverse_edits": [
+        {
+          "start_byte": 16399,
+          "end_byte": 16541,
+          "current_base64": "PGgyIGlkPSJzdGF0ZS00LXNlcGFyYXRlLWxvY2FsLWNoYXJnZS1zdGF0ZW1lbnRzLWZyb20tdGhlLWN1cnJlbnQtZXN0aW1hdGUtbGF5ZXIiPlN0YXRlIDQ6IHNlcGFyYXRlIGxvY2FsIGNoYXJnZXMgZnJvbSBjdXJyZW50IGVzdGltYXRlczwvaDI+Cg==",
+          "previous_base64": "IyMgU3RhdGUgNDogc2VwYXJhdGUgbG9jYWwgY2hhcmdlIHN0YXRlbWVudHMgZnJvbSB0aGUgY3VycmVudCBlc3RpbWF0ZSBsYXllcgo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "7521b78e2698e25e08c4b962a1dd8f70ab8f9ed010a9817c4220fa8ef90914fd"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/what-documents-do-you-need-to-sell-mineral-rights-in-texas.mdx",
+      "previous_sha256": "1684db5c5d55ccf7caa98a36580bde91083372500c3712191e006a8d1ff6b4b2",
+      "current_sha256": "54f36b5dbf9035c20f496d1a62fc19444e5bf346447cd09e52a6830a36eef43a",
+      "reverse_edits": [
+        {
+          "start_byte": 7371,
+          "end_byte": 7451,
+          "current_base64": "PGgyIGlkPSJ0aGUtY29yZS1jaGVja2xpc3QiPkNvcmUgZG9jdW1lbnRzIGZvciBhIFRleGFzIG1pbmVyYWwtcmlnaHRzIHNhbGU8L2gyPgo=",
+          "previous_base64": "IyMgVGhlIGNvcmUgY2hlY2tsaXN0Cg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "1684db5c5d55ccf7caa98a36580bde91083372500c3712191e006a8d1ff6b4b2"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/what-happens-to-mineral-rights-in-probate.mdx",
+      "previous_sha256": "89754d9bc57f4a7c5ebc211649ee218c4e0dd02af08c82942f5fb9dada2aa531",
+      "current_sha256": "7d24e17fef3395f4b8e0352e025dba973853531a6085cda7be8eaa507a2ea7f7",
+      "reverse_edits": [
+        {
+          "start_byte": 9249,
+          "end_byte": 9313,
+          "current_base64": "PGgyIGlkPSJwcm92ZS13aG8tbWF5LWFjdCI+RG9jdW1lbnRzIHRoYXQgc2hvdyB3aG8gbWF5IGFjdDwvaDI+Cg==",
+          "previous_base64": "IyMgUHJvdmUgd2hvIG1heSBhY3QK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "89754d9bc57f4a7c5ebc211649ee218c4e0dd02af08c82942f5fb9dada2aa531"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/what-is-a-clawback-clause-in-a-mineral-rights-sale.mdx",
+      "previous_sha256": "1b26f9cd245ec9235543ae7ac7aa22159d98f5d4171a915b88c09f87e8438d90",
+      "current_sha256": "07d1d202677e4bb1647d4383fa5d4c79091d399d42295877dad547ab7a39a310",
+      "reverse_edits": [
+        {
+          "start_byte": 8909,
+          "end_byte": 8973,
+          "current_base64": "PGgyIGlkPSJ3aHktYnV5ZXJzLXVzZS1pdCI+V2h5IGJ1eWVycyB1c2UgY2xhd2JhY2sgY2xhdXNlczwvaDI+Cg==",
+          "previous_base64": "IyMgV2h5IGJ1eWVycyB1c2UgaXQK"
+        },
+        {
+          "start_byte": 9442,
+          "end_byte": 9509,
+          "current_base64": "PGgyIGlkPSJ3aGF0LXRvLWxvb2stZm9yIj5XaGF0IHRvIHJldmlldyBpbiBhIGNsYXdiYWNrIGNsYXVzZTwvaDI+Cg==",
+          "previous_base64": "IyMgV2hhdCB0byBsb29rIGZvcgo="
+        },
+        {
+          "start_byte": 10385,
+          "end_byte": 10452,
+          "current_base64": "PGgyIGlkPSJhLWZldy1yZWxhdGVkLXRlcm1zIj5SZWxhdGVkIGNvbnRyYWN0IHRlcm1zIHRvIHJldmlldzwvaDI+Cg==",
+          "previous_base64": "IyMgQSBmZXcgcmVsYXRlZCB0ZXJtcwo="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "1b26f9cd245ec9235543ae7ac7aa22159d98f5d4171a915b88c09f87e8438d90"
+      }
+    },
+    {
+      "repo_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-january-1-snapshot-later-information.mdx",
+      "previous_sha256": "cfcff381fee4980e0fa270b352da45fc20ee2f89f6a487529a43ca14a89086b4",
+      "current_sha256": "6a4300bff6229f7b1a1a88346e0045c79e120e1c9c2c9ffde94fd8e4c9d641cf",
+      "reverse_edits": [
+        {
+          "start_byte": 9809,
+          "end_byte": 9866,
+          "current_base64": "PGgyIGlkPSJ0aGUtZGF0ZS1yb2xlLW1hcCI+RGF0ZSBhbmQgc291cmNlLXJvbGUgbWFwPC9oMj4K",
+          "previous_base64": "IyMgVGhlIGRhdGUtcm9sZSBtYXAK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "maintenance_artifact_current_sha256",
+        "artifact_path": "config/maintenance-reviews/2026-09-29-otto-source-remediation.json",
+        "artifact_sha256": "5da6e6f9815d92b6eeb4a17c7698cda722928652ce3f5776a49a4a688ca2762c",
+        "bound_sha256": "cfcff381fee4980e0fa270b352da45fc20ee2f89f6a487529a43ca14a89086b4"
+      }
+    },
+    {
+      "repo_path": "src/data/ownerSituations.ts",
+      "previous_sha256": "bd88ff9c63647eb7f36cac8f725350ff59449405a2f0077c2dedca603b999a0b",
+      "current_sha256": "813d905a5809ff4ded2e2163867cb37667e6b5ec4582c224185b6826b8d81dff",
+      "reverse_edits": [
+        {
+          "start_byte": 3627,
+          "end_byte": 3677,
+          "current_base64": "ICAgIGFuc3dlclRpdGxlOiAnT2ZmZXIgdGVybXMgdG8gcmV2aWV3IGNsb3NlbHknLAo=",
+          "previous_base64": "ICAgIGFuc3dlclRpdGxlOiAnTG9vayBjbG9zZWx5IGF0JywK"
+        },
+        {
+          "start_byte": 6258,
+          "end_byte": 6317,
+          "current_base64": "ICAgIGFuc3dlclRpdGxlOiAnUmVjb3JkcyB0byBnYXRoZXIgYWJvdXQgc3VzcGVuc2UgZnVuZHMnLAo=",
+          "previous_base64": "ICAgIGFuc3dlclRpdGxlOiAnR2F0aGVyIHRoZXNlIGl0ZW1zJywK"
+        },
+        {
+          "start_byte": 8493,
+          "end_byte": 8557,
+          "current_base64": "ICAgICAgICB0aXRsZTogJ1RpbWluZyBxdWVzdGlvbnMgZm9yIGEgcG9zc2libGUgMTAzMSBleGNoYW5nZScsCg==",
+          "previous_base64": "ICAgICAgICB0aXRsZTogJ1RpbWluZyBjYW4gbWF0dGVyJywK"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex-reviewed heading-label maintenance only; reverse edits restore the exact prior bytes.",
+      "previous_binding": {
+        "proof_type": "git_baseline_blob_sha256",
+        "baseline_commit": "65c256cfaf9c459a6443c8c98bfb3e7f6691a9e1",
+        "parent_otto_commit": "94bb1f47",
+        "bound_sha256": "bd88ff9c63647eb7f36cac8f725350ff59449405a2f0077c2dedca603b999a0b"
+      }
+    }
+  ],
+  "failures": []
+}

@@ -71,8 +71,8 @@ import {
 } from './_mrx1000-controlled-publication-transition.mjs';
 import {
   analyzeCurrentSourceTransition,
-  loadReviewedSeoMaintenanceReview,
-  reconstructReviewedSource,
+  loadReviewedSeoMaintenanceReviews,
+  reconstructReviewedSourceChain,
   transitionIsPublished,
 } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 import {
@@ -99,7 +99,7 @@ function pickRepoRoot(argv) {
 // Note: argv here is the node-process argv, not a wrapper. We accept
 // the parse-late trade-off for the test convenience.
 const repoRoot = pickRepoRoot([...process.argv]);
-const maintenanceReview = loadReviewedSeoMaintenanceReview(repoRoot);
+const maintenanceReviews = loadReviewedSeoMaintenanceReviews(repoRoot);
 
 function analyzeSourceTransition(source, entry) {
   return analyzeCurrentSourceTransition({
@@ -109,6 +109,14 @@ function analyzeSourceTransition(source, entry) {
     repoRoot,
     analyzeHistoricalTransition: analyzeControlledPublicationTransition,
   });
+}
+
+function terminalHistoricalTransition(transition) {
+  let current = transition;
+  while (current?.state === 'reviewed_seo_maintenance_transition') {
+    current = current.historical_transition;
+  }
+  return current;
 }
 
 /* ---------- arg parsing ---------- */
@@ -419,13 +427,9 @@ function validateRetainedProductionBaseline({ manifest, admittedSlugs = new Set(
       continue;
     }
     const observedSha = sha256File(absPath);
-    const maintenanceEntries =
-      manifestEntry.role === 'page_source' && maintenanceReview?.failures?.length === 0
-        ? (maintenanceReview.entries ?? []).filter((entry) => entry.repo_path === relPath)
-        : [];
     const maintenanceProof =
-      maintenanceEntries.length === 1
-        ? reconstructReviewedSource(readFileSync(absPath), maintenanceEntries[0])
+      manifestEntry.role === 'page_source'
+        ? reconstructReviewedSourceChain(readFileSync(absPath), relPath, maintenanceReviews)
         : null;
     const retainedBaselineReconstructed = Boolean(
       maintenanceProof?.authorized &&
@@ -1722,10 +1726,8 @@ function buildCheck() {
       continue;
     }
     const sourceText = sourceBytes?.toString('utf8') ?? '';
-    const historicalReviewedBytesCurrent =
-      transition.state === 'reviewed_bytes_current' ||
-      (transition.state === 'reviewed_seo_maintenance_transition' &&
-        transition.historical_transition?.state === 'reviewed_bytes_current');
+    const terminalHistorical = terminalHistoricalTransition(transition);
+    const historicalReviewedBytesCurrent = terminalHistorical?.state === 'reviewed_bytes_current';
     const reviewedCurrentPublished =
       twoImageRebindActive &&
       historicalReviewedBytesCurrent &&
@@ -1743,7 +1745,7 @@ function buildCheck() {
       program_row_id: entry.program_row_id,
       slug: entry.slug,
       state: transition.state,
-      historical_state: transition.historical_transition?.state ?? transition.state,
+      historical_state: terminalHistorical?.state ?? transition.state,
       maintenance_reviewer_id: transition.maintenance_review?.reviewer_id ?? null,
       current_body_sha256: transition.current_body_sha256,
       normalized_body_sha256: transition.normalized_body_sha256,
