@@ -2,6 +2,10 @@ import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
 import { analyzeControlledPublicationTransition } from './_mrx1000-controlled-publication-transition.mjs';
+import {
+  analyzeCurrentSourceTransition,
+  transitionIsPublished,
+} from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
 /**
  * Read the signed exact-admission batch and prove which rows currently carry
@@ -22,7 +26,13 @@ export function loadRuntimePublicationProjection(repoRoot) {
     if (!existsSync(sourcePath)) {
       throw new Error(`Exact-admission source missing: ${entry.repo_path}`);
     }
-    const transition = analyzeControlledPublicationTransition(readFileSync(sourcePath), entry);
+    const transition = analyzeCurrentSourceTransition({
+      source: readFileSync(sourcePath),
+      entry,
+      repoPath: entry.repo_path,
+      repoRoot,
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
     if (!transition.authorized) {
       throw new Error(
         `Exact-admission publication projection failed for ${entry.slug}: ${transition.reason}`,
@@ -31,7 +41,7 @@ export function loadRuntimePublicationProjection(repoRoot) {
     bySlug.set(entry.slug, {
       entry,
       transition,
-      published: transition.state === 'controlled_publication_transition',
+      published: transitionIsPublished(transition),
     });
   }
   return { bySlug, exact_admission_count: entries.length };

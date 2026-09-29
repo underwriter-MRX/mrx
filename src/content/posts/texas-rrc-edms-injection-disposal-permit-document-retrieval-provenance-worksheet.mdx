@@ -140,12 +140,12 @@ The launched [Electronic Document Search](https://webapps.rrc.texas.gov/eds/eds_
 
 The RRC [Electronic Document Management System overview](https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/) identifies several related record families and routes. They are not interchangeable.
 
-| Source route | What this worksheet does |
-|---|---|
-| EDMS Search Injection/Disposal Permit Application Documents | Records one manual search attempt for displayed application-document material. |
-| Injection & Disposal or Injection-Storage Permit Query | Keep separate; it is a data-query route, not this EDMS document-search attempt. |
-| Oil & Gas Imaged Records | Keep separate; approved application files, hearing records, and other imaged-record classes follow their own source routes and coverage. |
-| H-9, H-10, completions, drilling permits, production, or wellbore queries | Keep separate; each has different criteria, source state, record family, and limitations. |
+| Source route                                                              | What this worksheet does                                                                                                                 |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| EDMS Search Injection/Disposal Permit Application Documents               | Records one manual search attempt for displayed application-document material.                                                           |
+| Injection & Disposal or Injection-Storage Permit Query                    | Keep separate; it is a data-query route, not this EDMS document-search attempt.                                                          |
+| Oil & Gas Imaged Records                                                  | Keep separate; approved application files, hearing records, and other imaged-record classes follow their own source routes and coverage. |
+| H-9, H-10, completions, drilling permits, production, or wellbore queries | Keep separate; each has different criteria, source state, record family, and limitations.                                                |
 
 The [About Oil and Gas Data Queries](https://www.rrc.texas.gov/resource-center/research/research-queries/about-oil-gas-data-queries/) page supplies additional evidence that the Injection-Storage Permit Query is separately routed. A link between systems is a navigation clue, not permission to merge their evidence or conclusions.
 
@@ -194,13 +194,13 @@ The application can show zero applications and a **No results found for search**
 
 Use the following state rules:
 
-| Displayed state | Worksheet outcome | What to preserve |
-|---|---|---|
-| Initial or default zero-result screen before a completed search | **unverified** | Route, access time, and evidence that no completed attempt is established. |
-| Validation message or rejected criteria | **unverified** | Exact message, labels involved, timestamp, and retained reference. |
-| Accepted criteria followed by a completed empty result attributable to the attempt | **not located** | Criteria-set reference, completed state, timestamp, and evidence reference. |
-| Responsive application or document material displayed after an accepted search | **located** | Result-list state, document-list state if opened, timestamp, and evidence reference. |
-| Error, timeout, interrupted navigation, access restriction, session termination, or unclear state | **unverified** | Exact displayed state and where the attempt stopped. |
+| Displayed state                                                                                   | Worksheet outcome | What to preserve                                                                     |
+| ------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------ |
+| Initial or default zero-result screen before a completed search                                   | **unverified**    | Route, access time, and evidence that no completed attempt is established.           |
+| Validation message or rejected criteria                                                           | **unverified**    | Exact message, labels involved, timestamp, and retained reference.                   |
+| Accepted criteria followed by a completed empty result attributable to the attempt                | **not located**   | Criteria-set reference, completed state, timestamp, and evidence reference.          |
+| Responsive application or document material displayed after an accepted search                    | **located**       | Result-list state, document-list state if opened, timestamp, and evidence reference. |
+| Error, timeout, interrupted navigation, access restriction, session termination, or unclear state | **unverified**    | Exact displayed state and where the attempt stopped.                                 |
 
 Do not retry until a preferred answer appears. If an authorized correction is necessary, start a new attempt ID or record a clearly linked correction event. Preserve the original state instead of overwriting it.
 
@@ -250,23 +250,23 @@ The recipient should not inherit an unstated assumption that **located** means v
 
 Use a structure like this in an authorized record:
 
-| Field | Entry |
-|---|---|
-| Attempt ID | Neutral internal ID |
-| Official directory route | URL and source label |
-| EDMS application route | URL and exact displayed route label |
-| Access timestamp | Date, time, and timezone |
-| Criteria labels used | Exact labels only |
-| Controlled criteria reference | Authorized location; do not expose unnecessary values |
-| Submission state | Not started, validation, accepted, error, timeout, access restriction, or interrupted |
-| Displayed result state | Default, result list, completed empty, document list, or unclear |
-| Bounded outcome | Located, not located, or unverified |
-| Retained evidence reference | Screenshot, export, note, or controlled file reference |
-| Coverage note | Forms, period, availability, and source-access date |
-| Adjacent routes excluded | Separate systems not searched under this attempt |
-| Transfer note | Recipient, limits, unresolved questions, and recheck requirement |
+| Field                         | Entry                                                                                 |
+| ----------------------------- | ------------------------------------------------------------------------------------- |
+| Attempt ID                    | Neutral internal ID                                                                   |
+| Official directory route      | URL and source label                                                                  |
+| EDMS application route        | URL and exact displayed route label                                                   |
+| Access timestamp              | Date, time, and timezone                                                              |
+| Criteria labels used          | Exact labels only                                                                     |
+| Controlled criteria reference | Authorized location; do not expose unnecessary values                                 |
+| Submission state              | Not started, validation, accepted, error, timeout, access restriction, or interrupted |
+| Displayed result state        | Default, result list, completed empty, document list, or unclear                      |
+| Bounded outcome               | Located, not located, or unverified                                                   |
+| Retained evidence reference   | Screenshot, export, note, or controlled file reference                                |
+| Coverage note                 | Forms, period, availability, and source-access date                                   |
+| Adjacent routes excluded      | Separate systems not searched under this attempt                                      |
+| Transfer note                 | Recipient, limits, unresolved questions, and recheck requirement                      |
 
-## Final quality check
+<h2 id="final-quality-check">EDMS retrieval worksheet quality controls</h2>
 
 Before closing the worksheet, confirm that:
 
@@ -283,7 +283,7 @@ Before closing the worksheet, confirm that:
 
 If any item fails, keep the attempt **unverified**. The purpose of the worksheet is to preserve what happened, including an incomplete or inconclusive attempt, without turning a retrieval event into a permit, property, compliance, legal, value, offer, or transaction conclusion.
 
-## Sources
+<h2 id="sources">Official sources for the EDMS worksheet</h2>
 
 - [Texas RRC Research Queries](https://www.rrc.texas.gov/resource-center/research/research-queries/): official EDMS directory route, update label, automation warning, and query-data limitations.
 - [Texas RRC Electronic Document Management System](https://www.rrc.texas.gov/resource-center/research/research-queries/about-edms/): document families, application coverage, source-displayed categories, availability timing, and adjacent-route separation.

@@ -70,6 +70,12 @@ import {
   transitionProofMatches,
 } from './_mrx1000-controlled-publication-transition.mjs';
 import {
+  analyzeCurrentSourceTransition,
+  loadReviewedSeoMaintenanceReview,
+  reconstructReviewedSource,
+  transitionIsPublished,
+} from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
+import {
   hasAppendOnlyAdmissionAuthority,
   validateAppendOnlyIdentityAddendum,
 } from './lib/mrx1000-append-only-identity-addendum.mjs';
@@ -93,6 +99,17 @@ function pickRepoRoot(argv) {
 // Note: argv here is the node-process argv, not a wrapper. We accept
 // the parse-late trade-off for the test convenience.
 const repoRoot = pickRepoRoot([...process.argv]);
+const maintenanceReview = loadReviewedSeoMaintenanceReview(repoRoot);
+
+function analyzeSourceTransition(source, entry) {
+  return analyzeCurrentSourceTransition({
+    source,
+    entry,
+    repoPath: entry.repo_path,
+    repoRoot,
+    analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+  });
+}
 
 /* ---------- arg parsing ---------- */
 
@@ -402,7 +419,23 @@ function validateRetainedProductionBaseline({ manifest, admittedSlugs = new Set(
       continue;
     }
     const observedSha = sha256File(absPath);
-    if (!admittedRouteUrls.has(manifestEntry.page_url) && observedSha !== manifestEntry.sha256) {
+    const maintenanceEntries =
+      manifestEntry.role === 'page_source' && maintenanceReview?.failures?.length === 0
+        ? (maintenanceReview.entries ?? []).filter((entry) => entry.repo_path === relPath)
+        : [];
+    const maintenanceProof =
+      maintenanceEntries.length === 1
+        ? reconstructReviewedSource(readFileSync(absPath), maintenanceEntries[0])
+        : null;
+    const retainedBaselineReconstructed = Boolean(
+      maintenanceProof?.authorized &&
+        maintenanceProof.maintenance_previous_sha256 === manifestEntry.sha256,
+    );
+    if (
+      !admittedRouteUrls.has(manifestEntry.page_url) &&
+      observedSha !== manifestEntry.sha256 &&
+      !retainedBaselineReconstructed
+    ) {
       findings.push(
         `Retained production baseline on-disk SHA mismatch for ${relPath}: expected ${manifestEntry.sha256}, got ${observedSha}.`,
       );
@@ -1367,7 +1400,7 @@ function buildCheck() {
           const expectedRank = continuousStartRank + index;
           const sourcePath = entry.repo_path ? join(repoRoot, entry.repo_path) : null;
           const source = sourcePath && existsSync(sourcePath) ? readFileSync(sourcePath) : null;
-          const transition = source ? analyzeControlledPublicationTransition(source, entry) : null;
+          const transition = source ? analyzeSourceTransition(source, entry) : null;
           inputs.exact_admission.continuous_quality_gated_rows.rows.push({
             selection_rank: entry.selection_rank ?? null,
             program_row_id: entry.program_row_id ?? null,
@@ -1681,9 +1714,7 @@ function buildCheck() {
     if (!['admitted_exact', 'admitted_quality_gated'].includes(entry.admission_status)) continue;
     const sourcePath = entry.repo_path ? join(repoRoot, entry.repo_path) : null;
     const sourceBytes = sourcePath && existsSync(sourcePath) ? readFileSync(sourcePath) : null;
-    const transition = sourceBytes
-      ? analyzeControlledPublicationTransition(sourceBytes, entry)
-      : null;
+    const transition = sourceBytes ? analyzeSourceTransition(sourceBytes, entry) : null;
     if (!transition?.authorized) {
       blocking.push(
         `Exact-admission runtime publication state cannot be derived for ${entry.slug}: ${transition?.reason ?? 'source_missing'}.`,
@@ -1691,14 +1722,18 @@ function buildCheck() {
       continue;
     }
     const sourceText = sourceBytes?.toString('utf8') ?? '';
+    const historicalReviewedBytesCurrent =
+      transition.state === 'reviewed_bytes_current' ||
+      (transition.state === 'reviewed_seo_maintenance_transition' &&
+        transition.historical_transition?.state === 'reviewed_bytes_current');
     const reviewedCurrentPublished =
       twoImageRebindActive &&
-      transition.state === 'reviewed_bytes_current' &&
+      historicalReviewedBytesCurrent &&
       /^publication_status:\s*published\s*$/m.test(sourceText) &&
       !/^draft:\s*true\s*$/m.test(sourceText) &&
       !/^noindex:\s*true\s*$/m.test(sourceText);
     const isPublished =
-      transition.state === 'controlled_publication_transition' || reviewedCurrentPublished;
+      transitionIsPublished(transition) || reviewedCurrentPublished;
     publicationOverrides.set(entry.slug, {
       publication_status: isPublished ? 'published' : 'draft',
       draft: false,
@@ -1708,6 +1743,8 @@ function buildCheck() {
       program_row_id: entry.program_row_id,
       slug: entry.slug,
       state: transition.state,
+      historical_state: transition.historical_transition?.state ?? transition.state,
+      maintenance_reviewer_id: transition.maintenance_review?.reviewer_id ?? null,
       current_body_sha256: transition.current_body_sha256,
       normalized_body_sha256: transition.normalized_body_sha256,
     });
@@ -1760,7 +1797,7 @@ function buildCheck() {
     const sourceBytes = existsSync(bodyPath) ? readFileSync(bodyPath) : null;
     const transition =
       sourceBytes && batchEntry
-        ? analyzeControlledPublicationTransition(sourceBytes, batchEntry)
+        ? analyzeSourceTransition(sourceBytes, batchEntry)
         : null;
     const identityFailures = [];
     if (packet.program_row_id !== entry.program_row_id) identityFailures.push('program_row_id');

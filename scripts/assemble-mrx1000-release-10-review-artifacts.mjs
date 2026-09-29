@@ -11,9 +11,16 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { basename, dirname, join, relative } from 'node:path';
 
 import { analyzeControlledPublicationTransition } from './_mrx1000-controlled-publication-transition.mjs';
+import { analyzeReviewedSeoMaintenanceTransition } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
 const repoRoot = process.cwd();
 const batchPath = join(repoRoot, 'config', 'mrx1000-release-10-batch.json');
+const maintenanceReviewPath = join(
+  repoRoot,
+  'config',
+  'maintenance-reviews',
+  '2026-09-29-otto-source-remediation.json',
+);
 const rawRoot = join(repoRoot, 'artifacts', 'mrx1000-release-10', 'reviews', 'final');
 const capabilities = ['editorial', 'factual_citation', 'compliance'];
 
@@ -73,6 +80,7 @@ function findingText(finding) {
 }
 
 const batch = readJson(batchPath);
+const maintenanceReview = readJson(maintenanceReviewPath);
 const laneIndex = new Map(
   capabilities.map((capability) => [capability, laneArtifacts(capability)]),
 );
@@ -94,7 +102,16 @@ for (const entry of batch.articles) {
   const fm = frontmatterBlock(source.toString('utf8'));
   if (!fm) throw new Error(`Frontmatter not detected: ${entry.repo_path}`);
   const fmSha = sha256(fm);
-  const transition = analyzeControlledPublicationTransition(source, entry);
+  const historicalTransition = analyzeControlledPublicationTransition(source, entry);
+  const transition = historicalTransition.authorized
+    ? historicalTransition
+    : analyzeReviewedSeoMaintenanceTransition({
+        source,
+        entry,
+        repoPath: entry.repo_path,
+        maintenanceReview,
+        analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+      });
   if (!transition.authorized) {
     throw new Error(
       `Unauthorized source drift for ${entry.slug}: ${transition.reason ?? fullSha}`,
@@ -205,6 +222,10 @@ for (const entry of batch.articles) {
     reviewed_body_sha256: reviewedFullSha,
     reviewed_frontmatter_sha256: reviewedFmSha,
     controlled_publication_transition: transition,
+    maintenance_review:
+      transition.state === 'reviewed_seo_maintenance_transition'
+        ? transition.maintenance_review
+        : null,
     reviewers: reviews.map(({ artifact, path }) => ({
       id: artifact.reviewer_id,
       capability: artifact.capability,
@@ -243,7 +264,7 @@ for (const entry of batch.articles) {
     reviewed_at_utc: reviewedAtUtc,
     assembler: 'scripts/assemble-mrx1000-release-10-review-artifacts.mjs',
     normalization_note:
-      'Raw reviewers used lane-specific body/frontmatter hash conventions. This artifact records current bytes separately from immutable reviewed bytes. A published exact-admission row is accepted only when reversing publication_status draft→published and noindex true→false reproduces the signed article_sha256 byte-for-byte.',
+      'Raw reviewers used lane-specific body/frontmatter hash conventions. This artifact records current bytes separately from immutable reviewed bytes. A published exact-admission row is accepted only when reversing publication_status draft→published and noindex true→false reproduces the signed article_sha256 byte-for-byte. When present, the separately identified SEO-maintenance reviewer binds the exact current hash and enumerated byte reversals; the reconstructed prior bytes must still pass that unchanged historical proof.',
   };
 
   const outputPath = join(repoRoot, `${entry.evidence_packet_path}.review.json`);

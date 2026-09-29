@@ -60,6 +60,7 @@ import {
   analyzeControlledPublicationTransition,
   transitionProofMatches,
 } from './_mrx1000-controlled-publication-transition.mjs';
+import { analyzeCurrentSourceTransition } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
 // Allow override via --tree=<abs-path> (used by tests) or MRX_TREE
 // environment variable. Default behavior is unchanged: cwd if it
@@ -274,7 +275,13 @@ function buildPacket({ entry, bodyPath, materializedAt, assetEvidence, publicati
   const fm = bodySource ? frontmatterBlock(bodySource.toString('utf8')) : null;
   const fmSha = fm ? sha256(fm) : null;
   const transition = bodySource
-    ? analyzeControlledPublicationTransition(bodySource, entry)
+    ? analyzeCurrentSourceTransition({
+        source: bodySource,
+        entry,
+        repoPath: entry.repo_path,
+        repoRoot,
+        analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+      })
     : {
         authorized: false,
         state: 'invalid',

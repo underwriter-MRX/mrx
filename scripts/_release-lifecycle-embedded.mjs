@@ -210,6 +210,36 @@ function reviewedHashesForPacket(packet) {
     };
   }
 
+  const historical = transition?.historical_transition;
+  const maintenance = transition?.maintenance_review;
+  const maintenanceChange = Array.isArray(transition?.changes)
+    ? transition.changes.at(-1)
+    : null;
+  if (
+    transition?.authorized === true &&
+    transition?.state === 'reviewed_seo_maintenance_transition' &&
+    currentHashesMatch &&
+    reviewedHashesAreValid &&
+    packet.body_sha256_matches_declared_or_authorized_transition === true &&
+    maintenance?.reviewer_id &&
+    /^\d{4}-\d{2}-\d{2}T/.test(maintenance?.reviewed_at ?? '') &&
+    maintenance?.reviewed_current_body_sha256 === packet.body_sha256 &&
+    maintenance?.previous_body_sha256 === historical?.current_body_sha256 &&
+    maintenanceChange?.field === 'reviewed_seo_maintenance' &&
+    maintenanceChange?.from === maintenance?.previous_body_sha256 &&
+    maintenanceChange?.to === maintenance?.reviewed_current_body_sha256 &&
+    historical?.authorized === true &&
+    ['reviewed_bytes_current', 'controlled_publication_transition'].includes(historical?.state) &&
+    historical?.reviewed_body_sha256 === transition.reviewed_body_sha256 &&
+    historical?.reviewed_frontmatter_sha256 === transition.reviewed_frontmatter_sha256 &&
+    historical?.normalized_body_sha256 === transition.normalized_body_sha256
+  ) {
+    return {
+      body_sha256: transition.reviewed_body_sha256,
+      frontmatter_sha256: transition.reviewed_frontmatter_sha256,
+    };
+  }
+
   return {
     body_sha256: packet.body_sha256,
     frontmatter_sha256: packet.frontmatter_sha256,

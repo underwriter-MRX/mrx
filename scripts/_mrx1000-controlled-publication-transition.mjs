@@ -153,6 +153,8 @@ export function transitionProofMatches(left, right) {
   ];
   return (
     keys.every((key) => left?.[key] === right?.[key]) &&
-    JSON.stringify(left?.changes ?? []) === JSON.stringify(right?.changes ?? [])
+    JSON.stringify(left?.changes ?? []) === JSON.stringify(right?.changes ?? []) &&
+    JSON.stringify(left?.maintenance_review ?? null) ===
+      JSON.stringify(right?.maintenance_review ?? null)
   );
 }

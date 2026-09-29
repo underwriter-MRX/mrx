@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 
 import { analyzeControlledPublicationTransition } from './_mrx1000-controlled-publication-transition.mjs';
+import { analyzeCurrentSourceTransition } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 
 const root = resolve(
   process.argv.find((arg) => arg.startsWith('--tree='))?.slice('--tree='.length) ??
@@ -79,7 +80,13 @@ function main() {
     const bodySha = sha256(bodyBytes);
     const fmSha = sha256(Buffer.from(`${fm}\n`, 'utf8'));
     const assets = assetsBySlug.get(entry.slug);
-    const transition = analyzeControlledPublicationTransition(bodyBytes, entry);
+    const transition = analyzeCurrentSourceTransition({
+      source: bodyBytes,
+      entry,
+      repoPath: entry.repo_path,
+      repoRoot: root,
+      analyzeHistoricalTransition: analyzeControlledPublicationTransition,
+    });
     const heroAsset = assets?.assets?.find((asset) => asset.kind === 'hero') ?? null;
     const socialAsset = assets?.assets?.find((asset) => asset.kind === 'social') ?? null;
     const inlineAsset = assets?.assets?.find((asset) => asset.kind === 'inline') ?? null;

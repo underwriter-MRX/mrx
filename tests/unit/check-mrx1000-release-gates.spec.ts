@@ -689,7 +689,12 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
     expect(cap.observed_release_total).toBe(admittedArticleCount);
     const inputs = r.payload.inputs as {
       ledger: {
-        runtime_publication_overrides: Array<{ slug: string; state: string }>;
+        runtime_publication_overrides: Array<{
+          slug: string;
+          state: string;
+          historical_state: string;
+          maintenance_reviewer_id: string | null;
+        }>;
       };
     };
     // The original ten rows are already represented as public in the
@@ -699,7 +704,13 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
     expect(inputs.ledger.runtime_publication_overrides).toHaveLength(admittedArticleCount - 10);
     expect(
       inputs.ledger.runtime_publication_overrides.every(
-        (override) => override.state === 'reviewed_bytes_current',
+        (override) =>
+          override.state === 'reviewed_bytes_current' ||
+          (override.state === 'reviewed_seo_maintenance_transition' &&
+            ['reviewed_bytes_current', 'controlled_publication_transition'].includes(
+              override.historical_state,
+            ) &&
+            override.maintenance_reviewer_id === 'codex-independent-maintenance-review'),
       ),
     ).toBe(true);
     expect(
