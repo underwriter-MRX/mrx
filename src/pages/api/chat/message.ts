@@ -41,7 +41,9 @@ const RequestSchema = z.object({
     .object({
       firstName: z.string().max(80).optional(),
       location: z.string().max(200).optional(),
-      currentPersona: z.enum(['travis', 'connor', 'clay', 'owen', 'laurel', 'elena']).optional(),
+      currentPersona: z
+        .enum(['travis', 'connor', 'clay', 'owen', 'laurel', 'elena', 'graham'])
+        .optional(),
       discoveryDeclined: z.boolean().optional(),
       bookingDeclined: z.boolean().optional(),
       preserveCurrentPersona: z.boolean().optional(),

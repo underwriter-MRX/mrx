@@ -24,6 +24,7 @@ export const STAFF_CASE_PROFILE_SELECT = `
   owner_facts(id,field,value,status,confidence,source,created_at),
   attachments(id,mineral_interest_id,original_name,document_type,mime_type,size_bytes,status,created_at),
   appointments(id,starts_at,ends_at,timezone,status,created_at),
+  appointment_preparations(id,appointment_id,inquiry_type,answers,summary,supplied_fact_status,consented,disclosure_version,staff_queue_status,ghl_sync_status,ghl_message_ids,created_at,updated_at),
   case_assignments(id,staff_profile_id,created_at,assigned_staff:staff_profiles!case_assignments_staff_profile_id_fkey(display_name,role,active)),
   internal_case_workspaces(profile_id,status,case_rating,priority,intake_confidence_score,verification_confidence,underwriter_brief,data_pull_brief,confidence_gaps,recommended_focus,risk_flags,canonical_extraction_policy,valuation_status,opportunity_value_cents,opportunity_size_label,mineral_rights_count,last_contact_at,ghl_opportunity_id,ghl_pipeline_id,ghl_pipeline_stage_id,ghl_pipeline_name,ghl_pipeline_stage_name,ghl_pipeline_status,updated_at),
   internal_case_notes(id,body,note_type,provenance,source_name,source_url,visibility,created_at,staff_profile_id),

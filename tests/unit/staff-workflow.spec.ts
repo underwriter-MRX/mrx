@@ -71,6 +71,17 @@ describe('staff case-review workflow guardrails', () => {
     );
   });
 
+  it('surfaces consented Graham preparation in the staff case query and portal', () => {
+    const staffCasesRoute = repoFile('src/pages/api/staff/cases.ts');
+    const staffPortal = repoFile('src/components/react/StaffPortal.tsx');
+    expect(staffCasesRoute).toContain(
+      'appointment_preparations(id,appointment_id,inquiry_type,answers,summary',
+    );
+    expect(staffPortal).toContain('data-testid="graham-preparation-note"');
+    expect(staffPortal).toContain('Visitor supplied, unverified');
+    expect(staffPortal).toContain('preparation.ghl_sync_status');
+  });
+
   it('exposes assignment management only through the admin staff route', () => {
     const assignmentRoute = repoFile('src/pages/api/staff/cases/[profileId]/assignments.ts');
     expect(assignmentRoute).toContain('requireAdminStaff(context)');

@@ -45,9 +45,19 @@ import {
   preparationMatches,
   preparationQuestion,
 } from '../../lib/platform/preparation';
+import {
+  GRAHAM_PREPARATION_DISCLOSURE,
+  GRAHAM_PROJECT_DOCUMENT_REQUEST,
+  applyGrahamCorrection,
+  grahamKnownAnswers,
+  grahamPreparationQuestions,
+  grahamPreparationSummary,
+  normalizeGrahamAnswer,
+  type GrahamInquiryType,
+} from '../../lib/platform/graham';
 import './AskTravis.css';
 
-type Persona = 'travis' | 'connor' | 'clay' | 'owen' | 'laurel' | 'elena';
+type Persona = 'travis' | 'connor' | 'clay' | 'owen' | 'laurel' | 'elena' | 'graham';
 type VoiceState = 'idle' | 'starting' | 'listening' | 'transcribing' | 'stopping' | 'error';
 type SpeechRecognitionEventLike = {
   resultIndex: number;
@@ -133,6 +143,11 @@ type ConversationStep =
   | 'booking-email-consent'
   | 'booking-sms-consent'
   | 'booking-ai-voice-consent'
+  | 'preparation-consent'
+  | 'preparation-path'
+  | 'preparation-question'
+  | 'preparation-summary-consent'
+  | 'preparation-save-failed'
   | 'booking-help';
 
 type ProfileDraft = {
@@ -164,6 +179,7 @@ const personaLabels: Record<Persona, string> = {
   owen: 'Owen',
   laurel: 'Laurel',
   elena: 'Elena',
+  graham: 'Graham',
 };
 
 const personaRole = (persona: Persona) => getGuide(persona)?.chatRole ?? 'MRX Guide';
@@ -174,7 +190,7 @@ const minimumGuideReplyMs = guideReplyDelay(
 
 const travisAvatar = '/assets/mrx-homepage-v4/avatars/travis-hermes-128.webp';
 const bookedAppointmentStorageKey = 'mrx_upcoming_appointment';
-const personas: Persona[] = ['travis', 'connor', 'clay', 'owen', 'laurel', 'elena'];
+const personas: Persona[] = ['travis', 'connor', 'clay', 'owen', 'laurel', 'elena', 'graham'];
 const isPersona = (value: unknown): value is Persona =>
   typeof value === 'string' && personas.includes(value as Persona);
 const personaAvatar = (persona: unknown = 'travis') => {
@@ -389,6 +405,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const [meaningfulExchanges, setMeaningfulExchanges] = useState(0);
   const [discoveryDeclined, setDiscoveryDeclined] = useState(false);
   const [bookingDeclined, setBookingDeclined] = useState(false);
+  const [preparationType, setPreparationType] = useState<GrahamInquiryType | null>(null);
+  const [preparationQuestionIndex, setPreparationQuestionIndex] = useState(0);
+  const [preparationQuestions, setPreparationQuestions] = useState<string[]>([]);
+  const [preparationAnswers, setPreparationAnswers] = useState<
+    Array<{ question: string; answer: string }>
+  >([]);
   const [preserveOpeningPersona, setPreserveOpeningPersona] = useState(false);
   const [speechSupported, setSpeechSupported] = useState<boolean | null>(null);
   const [voiceState, setVoiceState] = useState<VoiceState>('idle');
@@ -407,6 +429,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const wasOpenRef = useRef(false);
   const introStarted = useRef(false);
   const conversationIdRef = useRef('');
+  const bookingOriginPersonaRef = useRef<Persona>('travis');
   const responseStartedAt = useRef<number | null>(null);
   const recognitionRef = useRef<BrowserSpeechRecognition | null>(null);
   const voiceSessionRef = useRef(0);
@@ -1045,17 +1068,54 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       return;
     introStarted.current = true;
     const openingPersona = openingPersonaFor(pendingPrompt);
+    if (openingPersona === 'graham') {
+      setActivePersona('graham');
+      setPendingPrompt('');
+      if (bookedAppointment) {
+        setStep('preparation-consent');
+        void guideSay(
+          `Your appointment remains confirmed. May I ask a few optional questions to help the underwriter prepare? ${GRAHAM_PREPARATION_DISCLOSURE}`,
+          'graham',
+          520,
+        );
+      } else {
+        setStep('open');
+        void guideSay(
+          'Hi, I’m Graham, MRX’s fictional AI guide for investment and project inquiries. Would you like to go over the opportunity with an MRX underwriter? I can help you book a time, then ask a few optional questions so the underwriter has useful context for your appointment.',
+          'graham',
+          520,
+        );
+      }
+      return;
+    }
     const rapportPersona = openingPersona === 'elena' ? 'travis' : openingPersona;
     setActivePersona(rapportPersona);
     setPreserveOpeningPersona(rapportPersona === 'clay');
     setStep('intro-name');
     void guideSay(openingGreeting(rapportPersona), rapportPersona, 520);
-  }, [open, sessionReady, messages.length, pendingPrompt, bookingRequested]);
+  }, [open, sessionReady, messages.length, pendingPrompt, bookingRequested, bookedAppointment]);
 
   useEffect(() => {
     if (!open || !sessionReady || !pendingPrompt || !introStarted.current || step !== 'open')
       return;
     const openingPersona = openingPersonaFor(pendingPrompt);
+    if (openingPersona === 'graham') {
+      setPendingPrompt('');
+      setActivePersona('graham');
+      if (bookedAppointment) {
+        setStep('preparation-consent');
+        void guideSay(
+          `Your appointment remains confirmed. May I ask a few optional questions to help the underwriter prepare? ${GRAHAM_PREPARATION_DISCLOSURE}`,
+          'graham',
+        );
+      } else {
+        void guideSay(
+          'Would you like to go over the opportunity with an MRX underwriter? I can help you book a real available time, then ask optional preparation questions.',
+          'graham',
+        );
+      }
+      return;
+    }
     if (openingPersona === 'elena') {
       setPendingPrompt('');
       void beginBooking();
@@ -1065,7 +1125,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     setStep('confirm-intent');
     const focus = pendingPrompt.replace(/[?!.]+$/g, '').trim();
     void guideSay(`I have your focus as: “${focus}.” Is that right?`, openingPersona);
-  }, [open, sessionReady, pendingPrompt, step]);
+  }, [open, sessionReady, pendingPrompt, step, bookedAppointment]);
 
   useEffect(() => {
     if (!open || !sessionReady || !bookingRequested) return;
@@ -1534,6 +1594,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   }
 
   async function beginBooking() {
+    if (activePersona !== 'elena') bookingOriginPersonaRef.current = activePersona;
     setBookingDeclined(false);
     window.sessionStorage.removeItem('mrx_booking_declined');
     beginGuideResponseWindow();
@@ -1545,6 +1606,16 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     setOptions([]);
     setSelectedOption(null);
     if (bookedAppointment) {
+      if (bookingOriginPersonaRef.current === 'graham') {
+        setActivePersona('graham');
+        setStep('preparation-consent');
+        await guideSay(
+          `Your appointment remains confirmed. May I ask a few optional questions to help the underwriter prepare? ${GRAHAM_PREPARATION_DISCLOSURE}`,
+          'graham',
+          260,
+        );
+        return;
+      }
       setStep('booking-help');
       await guideSay(
         `You already have a phone appointment booked for ${bookedAppointment.label}. I won’t book another one. ${preparationQuestion(rapportGoal, profile.location, discoveryDeclined)}`,
@@ -1748,6 +1819,18 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         sms_permission: nextProfile.permissions.sms,
       });
       setSelectedOption(null);
+      if (bookingOriginPersonaRef.current === 'graham') {
+        setActivePersona('graham');
+        setStep('preparation-consent');
+        await guideSay(
+          `May I ask a few questions to help the underwriter prepare for your conversation? ${GRAHAM_PREPARATION_DISCLOSURE} You can skip any question or leave all preparation for the call.`,
+          'graham',
+          260,
+          false,
+          true,
+        );
+        return;
+      }
       const requestedIntakeUrl = new URL(
         result.memberAccess?.redirectTo || '/account/?welcome=appointment',
         window.location.origin,
@@ -1766,6 +1849,57 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           ? 'Your appointment is confirmed. I couldn’t finish opening your preparation here. You can use your owner account or leave preparation for the call.'
           : 'I couldn’t confirm that time, so no appointment was created. We can try the calendar again when you’re ready.',
         'elena',
+      );
+    } finally {
+      setBooking(false);
+    }
+  }
+
+  async function saveGrahamPreparation() {
+    if (!preparationType || !bookedAppointment) return;
+    setBooking(true);
+    setTypingPersona('graham');
+    try {
+      const response = await fetch('/api/appointments/preparation', {
+        method: 'POST',
+        headers: await authHeaders(),
+        body: JSON.stringify({
+          appointmentId: bookedAppointment.appointmentId,
+          inquiryType: preparationType,
+          consent: true,
+          sourceUrl: location.href,
+          answers: preparationAnswers,
+        }),
+      });
+      const result = await response.json();
+      setTypingPersona(null);
+      if (!response.ok || !result.ok) {
+        setStep('preparation-save-failed');
+        await guideError(
+          result.staffPortalSaved
+            ? 'Your appointment is still confirmed. The notes were saved privately, but I could not finish attaching them for human review. You can retry now or leave the rest for the call.'
+            : 'Your appointment is still confirmed. I could not save the preparation notes, so I will not claim the underwriter received them. You can retry the save now or leave the rest for the call.',
+          'graham',
+        );
+        return;
+      }
+      setStep('open');
+      const reviewer = result.assignedUnderwriter
+        ? `${result.assignedUnderwriter}, the assigned case reviewer,`
+        : 'an MRX underwriter';
+      await guideSay(
+        `Your preparation was received for human review. ${reviewer} can use it with your confirmed appointment. This confirms receipt, not project approval, investment eligibility, funding, or any promised outcome.`,
+        'graham',
+        260,
+        false,
+        true,
+      );
+    } catch {
+      setStep('preparation-save-failed');
+      setTypingPersona(null);
+      await guideError(
+        'Your appointment is still confirmed. I could not save the preparation notes, so I will not claim the underwriter received them. You can retry the save now or leave the rest for the call.',
+        'graham',
       );
     } finally {
       setBooking(false);
@@ -1795,6 +1929,83 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (step === 'open') {
       if (value === 'send') return beginDelivery();
       if (value === 'book') return beginBooking();
+      if (value === 'continue') {
+        await guideSay(
+          'Of course. Are you exploring an investment, bringing an opportunity, or asking about a specific project?',
+          'graham',
+        );
+      }
+      return;
+    }
+    if (step === 'preparation-consent') {
+      addUserMessage(
+        value === 'yes' ? 'Yes, help me prepare.' : 'No, leave preparation for the call.',
+      );
+      if (value !== 'yes') {
+        setStep('open');
+        await guideSay(
+          'No problem. Your appointment remains confirmed, and no preparation notes were submitted.',
+          'graham',
+        );
+        return;
+      }
+      setStep('preparation-path');
+      await guideSay(
+        'Which best describes the conversation: exploring an investment, bringing an opportunity, or asking about a specific project?',
+        'graham',
+      );
+      return;
+    }
+    if (step === 'preparation-path') {
+      const inquiryType = value as GrahamInquiryType;
+      const knownAnswers = grahamKnownAnswers(
+        inquiryType,
+        messages.filter((message) => message.role === 'user').map((message) => message.content),
+      );
+      const knownQuestions = new Set(knownAnswers.map((answer) => answer.question));
+      const questions = grahamPreparationQuestions(inquiryType).filter(
+        (question) => !knownQuestions.has(question),
+      );
+      setPreparationType(inquiryType);
+      setPreparationQuestionIndex(0);
+      setPreparationQuestions(questions);
+      setPreparationAnswers(knownAnswers);
+      addUserMessage(label || value);
+      if (!questions.length) {
+        setStep('preparation-summary-consent');
+        await guideSay(
+          `${GRAHAM_PROJECT_DOCUMENT_REQUEST}\n\nI found the seven project details in what you already shared, so I will not ask them again. Here is the preparation summary for you to correct:\n\n${grahamPreparationSummary(inquiryType, knownAnswers)}\n\nWould you like this summary passed to the MRX team for review?`,
+          'graham',
+        );
+        return;
+      }
+      setStep('preparation-question');
+      await guideSay(questions[0], 'graham');
+      return;
+    }
+    if (step === 'preparation-summary-consent') {
+      addUserMessage(
+        value === 'yes'
+          ? 'Yes, pass this preparation summary to the MRX team.'
+          : 'No, do not submit these preparation notes.',
+      );
+      if (value !== 'yes' || !preparationType || !bookedAppointment) {
+        setStep('open');
+        await guideSay(
+          'Understood. Your appointment remains confirmed, and I did not submit the preparation summary.',
+          'graham',
+        );
+        return;
+      }
+      return saveGrahamPreparation();
+    }
+    if (step === 'preparation-save-failed') {
+      if (value === 'retry') return saveGrahamPreparation();
+      setStep('open');
+      await guideSay(
+        'Understood. Your appointment remains confirmed. The preparation draft will not be represented as fully received.',
+        'graham',
+      );
       return;
     }
     if (step === 'delivery-channel') {
@@ -2255,6 +2466,21 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       await promptDeliveryConsent(deliveryRequested, 0, next);
       return;
     }
+    if (step === 'preparation-summary-consent') {
+      if (isYes(text)) return handleQuickReply('yes');
+      if (/^(?:no|no thanks?|do not submit|don'?t submit|leave it for the call|skip)$/i.test(text))
+        return handleQuickReply('no');
+      addUserMessage(text);
+      const corrected = applyGrahamCorrection(preparationAnswers, text);
+      setPreparationAnswers(corrected);
+      await guideSay(
+        `Thank you. I added that correction. Here is the revised summary:\n\n${preparationType ? grahamPreparationSummary(preparationType, corrected) : ''}\n\nWould you like this corrected summary passed to the MRX team for review?`,
+        'graham',
+      );
+      return;
+    }
+    if (step === 'preparation-save-failed')
+      return handleQuickReply(/retry/i.test(text) ? 'retry' : 'leave');
     if (
       step === 'delivery-consent' ||
       step === 'intro-email-consent' ||
@@ -2264,9 +2490,18 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       step === 'booking-call-consent' ||
       step === 'booking-email-consent' ||
       step === 'booking-sms-consent' ||
-      step === 'booking-ai-voice-consent'
+      step === 'booking-ai-voice-consent' ||
+      step === 'preparation-consent'
     ) {
       return handleQuickReply(isYes(text) ? 'yes' : 'no');
+    }
+    if (step === 'preparation-path') {
+      const lower = text.toLowerCase();
+      if (lower.includes('bring') || lower.includes('provider') || lower.includes('share'))
+        return handleQuickReply('project-provider', 'Bring an opportunity');
+      if (lower.includes('specific') || lower.includes('project'))
+        return handleQuickReply('specific-project', 'Ask about a project');
+      return handleQuickReply('investor', 'Explore investing');
     }
     if (step === 'booking-timezone') {
       if (isYes(text)) return handleQuickReply('timezone-confirm');
@@ -2344,6 +2579,40 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       setProfile(next);
       setStep('booking-call-consent');
       await guideSay(`May MRX call ${text} for this specific appointment?`, 'elena');
+      return;
+    }
+    if (step === 'preparation-question' && preparationType) {
+      if (
+        /^(?:stop|stop questions|skip (?:all|the rest)|leave (?:it|the rest) for the call|not now|no thanks?)\.?$/i.test(
+          text,
+        )
+      ) {
+        addUserMessage(text);
+        setStep('open');
+        await guideSay(
+          'No problem. Your appointment remains confirmed, and I did not submit preparation notes.',
+          'graham',
+        );
+        return;
+      }
+      const question = preparationQuestions[preparationQuestionIndex];
+      const answer = normalizeGrahamAnswer(text);
+      addUserMessage(answer);
+      const nextAnswers = [...preparationAnswers, { question, answer }];
+      setPreparationAnswers(nextAnswers);
+      const nextIndex = preparationQuestionIndex + 1;
+      if (nextIndex < preparationQuestions.length) {
+        setPreparationQuestionIndex(nextIndex);
+        await guideSay(preparationQuestions[nextIndex], 'graham');
+        return;
+      }
+      setStep('preparation-summary-consent');
+      const documentRequest =
+        preparationType === 'project-provider' ? `${GRAHAM_PROJECT_DOCUMENT_REQUEST}\n\n` : '';
+      await guideSay(
+        `${documentRequest}Here is the preparation summary for you to correct:\n\n${grahamPreparationSummary(preparationType, nextAnswers)}\n\nIs anything missing or incorrect, and would you like it passed to the MRX team for review?`,
+        'graham',
+      );
       return;
     }
     if (step === 'booking-help') {
@@ -2450,15 +2719,36 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (typingPersona || sending || booking)
       return [] as Array<{ label: string; value: string; kind?: string }>;
     if (step === 'intro-phone') return [{ label: 'Skip phone', value: 'skip' }];
+    if (step === 'preparation-consent' || step === 'preparation-summary-consent')
+      return [
+        { label: 'Yes', value: 'yes', kind: 'primary' },
+        { label: 'No, leave it for the call', value: 'no' },
+      ];
+    if (step === 'preparation-path')
+      return [
+        { label: 'Explore investing', value: 'investor', kind: 'primary' },
+        { label: 'Bring an opportunity', value: 'project-provider' },
+        { label: 'Ask about a project', value: 'specific-project' },
+      ];
+    if (step === 'preparation-save-failed')
+      return [
+        { label: 'Retry save', value: 'retry', kind: 'primary' },
+        { label: 'Leave it for the call', value: 'leave' },
+      ];
     if (step === 'open')
-      return lastAnswer
+      return activePersona === 'graham' && !bookedAppointment && !bookingDeclined
         ? [
-            { label: 'Send me this answer', value: 'send', kind: 'primary' },
-            ...(bookedAppointment || bookingDeclined
-              ? []
-              : [{ label: 'Schedule a human underwriter call', value: 'book' }]),
+            { label: 'Book an underwriter time', value: 'book', kind: 'primary' },
+            { label: 'Keep exploring here', value: 'continue' },
           ]
-        : [];
+        : lastAnswer
+          ? [
+              { label: 'Send me this answer', value: 'send', kind: 'primary' },
+              ...(bookedAppointment || bookingDeclined
+                ? []
+                : [{ label: 'Schedule a human underwriter call', value: 'book' }]),
+            ]
+          : [];
     if (step === 'delivery-channel')
       return [
         { label: 'Email it', value: 'email' },
@@ -2522,7 +2812,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     'intro-call-consent': 'Yes or no…',
     'intro-ai-voice-consent': 'Yes or no…',
     'confirm-intent': 'Yes, or tell me what changed…',
-    open: 'Ask Travis anything about your minerals…',
+    open: `Ask ${personaLabels[activePersona]} about your mineral-rights question…`,
     'delivery-channel': 'Email, text, or both…',
     'delivery-email': 'Your email address…',
     'delivery-phone': 'Your mobile number…',
@@ -2537,6 +2827,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     'booking-email-consent': 'Yes or no…',
     'booking-sms-consent': 'Yes or no…',
     'booking-ai-voice-consent': 'Yes or no…',
+    'preparation-consent': 'Yes, or leave preparation for the call…',
+    'preparation-path': 'Choose the conversation type…',
+    'preparation-question': 'Answer, skip, unknown, or not applicable…',
+    'preparation-summary-consent': 'Yes to submit, or no to keep it here…',
+    'preparation-save-failed': 'Choose Retry save or leave it for the call…',
     'booking-help': 'Tell Elena what you need help with…',
   };
   const composerInputId = `travis-question-${step}`;
@@ -2630,7 +2925,11 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                 <strong id="travis-title">Talking with {personaLabels[activePersona]}</strong>
                 <span>{personaRole(activePersona)} · Here now</span>
               </div>
-              <button type="button" onClick={closeChat} aria-label="Close Ask Travis">
+              <button
+                type="button"
+                onClick={closeChat}
+                aria-label={`Close conversation with ${personaLabels[activePersona]}`}
+              >
                 ×
               </button>
             </header>
@@ -2933,8 +3232,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                 ) : null}
               </div>
               <p>
-                Travis remembers this conversation on this device. Contact details are only used
-                with the permissions you choose.
+                MRX remembers this conversation on this device. Contact details are only used with
+                the permissions you choose.
               </p>
             </footer>
           </section>

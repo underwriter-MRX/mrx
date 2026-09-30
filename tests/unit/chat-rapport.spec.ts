@@ -26,8 +26,27 @@ describe('rapport-first chat helpers', () => {
     expect(openingPersonaFor('What might my mineral rights be worth?')).toBe('clay');
     expect(openingPersonaFor('Help me research my ownership records')).toBe('travis');
     expect(openingPersonaFor('I want to schedule a human underwriter call')).toBe('elena');
+    expect(openingPersonaFor('I am bringing an investment opportunity')).toBe('graham');
+    expect(
+      openingPersonaFor(
+        'I am exploring an investment opportunity and would like to speak with an MRX underwriter.',
+      ),
+    ).toBe('graham');
+    expect(
+      openingPersonaFor(
+        'I am bringing an opportunity for MRX human review and would like to speak with an underwriter.',
+      ),
+    ).toBe('graham');
+    expect(
+      openingPersonaFor(
+        'I am asking about a specific project and would like to speak with an MRX underwriter.',
+      ),
+    ).toBe('graham');
     expect(openingGreeting('clay')).toBe(
       'Hi, I’m Clay, a fictional MRX AI guide. What’s your first name?',
+    );
+    expect(openingGreeting('graham')).toBe(
+      'Hi, I’m Graham, a fictional MRX AI guide. What’s your first name?',
     );
   });
 

@@ -7,7 +7,30 @@ export function getStaticPaths() {
 }
 const { guide } = Astro.props as { guide: Guide };
 const seoTitle = `Meet ${guide.name}: ${guide.shortRole.replace('professional-', '')} | MRX AI Guide`;
-const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.helpsWith.slice(0, 3).join(', ').toLowerCase()}. See the role, limitations, and how to ask for focused help.`;
+const seoDescription =
+  guide.slug === 'graham'
+    ? 'Meet Graham, MRX’s fictional AI guide for investment questions, project opportunities, real underwriter booking, and optional appointment preparation.'
+    : `${guide.name} is a fictional MRX AI Guide for ${guide.helpsWith.slice(0, 3).join(', ').toLowerCase()}. See the role, limitations, and how to ask for focused help.`;
+const guidePrompt =
+  guide.slug === 'graham'
+    ? 'I am exploring an investment opportunity and would like Graham to help me prepare for an MRX underwriter conversation.'
+    : `I would like ${guide.name} to help with ${guide.shortRole.toLowerCase()}.`;
+const grahamPaths = [
+  {
+    label: 'Explore investing',
+    prompt:
+      'I am exploring an investment opportunity and would like to speak with an MRX underwriter.',
+  },
+  {
+    label: 'Bring an opportunity',
+    prompt:
+      'I am bringing an opportunity for MRX human review and would like to speak with an underwriter.',
+  },
+  {
+    label: 'Ask about a project',
+    prompt: 'I am asking about a specific project and would like to speak with an MRX underwriter.',
+  },
+];
 ---
 
 <MarketingLayout
@@ -47,11 +70,19 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
         </blockquote><div class="mrx-guide-disclosure">
           <strong>Visible limit</strong><p>{guide.limits}</p>
         </div>{
-          guide.status === 'active' ? (
+          guide.status === 'active' && guide.slug === 'graham' ? (
+            <div class="mrx-guide-profile__actions" aria-label="Choose a Graham conversation path">
+              {grahamPaths.map((path) => (
+                <button class="mrx-primary" type="button" data-guide-prompt={path.prompt}>
+                  {path.label}
+                </button>
+              ))}
+            </div>
+          ) : guide.status === 'active' ? (
             <button
               class="mrx-primary mrx-guide-profile__action"
               type="button"
-              data-guide-prompt={`I would like ${guide.name} to help with ${guide.shortRole.toLowerCase()}.`}
+              data-guide-prompt={guidePrompt}
             >
               Ask {guide.name}
             </button>
@@ -90,10 +121,12 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
   </section>
 </MarketingLayout>
 <script>
-  document.querySelector<HTMLElement>('[data-guide-prompt]')?.addEventListener('click', (event) => {
-    const prompt = (event.currentTarget as HTMLElement).dataset.guidePrompt;
-    window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { prompt } }));
-  });
+  document.querySelectorAll<HTMLElement>('[data-guide-prompt]').forEach((button) =>
+    button.addEventListener('click', (event) => {
+      const prompt = (event.currentTarget as HTMLElement).dataset.guidePrompt;
+      window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { prompt } }));
+    }),
+  );
 </script>
 
 <style>
@@ -117,6 +150,13 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
   }
 
   .mrx-guide-profile__action {
+    margin-top: 1.2rem;
+  }
+
+  .mrx-guide-profile__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
     margin-top: 1.2rem;
   }
 
@@ -174,6 +214,11 @@ const seoDescription = `${guide.name} is a fictional MRX AI Guide for ${guide.he
   }
 
   @media (max-width: 760px) {
+    .mrx-guide-profile__actions {
+      align-items: stretch;
+      flex-direction: column;
+    }
+
     .mrx-guide-directory ul {
       grid-template-columns: 1fr;
     }

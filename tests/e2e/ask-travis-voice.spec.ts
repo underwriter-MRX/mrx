@@ -218,7 +218,7 @@ test('editing and leaving the page stop capture and preserve the text', async ({
   expect(await page.evaluate(() => window.__voiceHarness.aborts)).toBe(2);
 });
 
-for (const persona of ['travis', 'connor', 'clay', 'owen', 'laurel', 'elena']) {
+for (const persona of ['travis', 'connor', 'clay', 'owen', 'laurel', 'elena', 'graham']) {
   test(`mobile microphone works in the ${persona} conversation`, async ({ page }, testInfo) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await installSpeechRecognition(page);

@@ -5,16 +5,16 @@
     "public_url_count": 465,
     "image_occurrence_count": 6659,
     "social_only_occurrence_count": 242,
-    "distinct_public_asset_count": 732,
+    "distinct_public_asset_count": 733,
     "printed_text_asset_count": 692,
-    "no_text_asset_count": 40,
+    "no_text_asset_count": 41,
     "unresolved_asset_count": 0,
     "ocr_corroborated_asset_count": 676,
-    "independently_visual_reviewed_asset_count": 56,
+    "independently_visual_reviewed_asset_count": 57,
     "sha_binding_failure_count": 0,
     "classification_counts": {
       "printed_text": 692,
-      "no_text": 40
+      "no_text": 41
     }
   },
   "assets": {
@@ -6485,6 +6485,16 @@
       "original_path": null,
       "allowed_existing_alt_values": ["Elena, MRX Relationship AI Guide"]
     },
+    "/assets/team/graham-128.webp": {
+      "sha256": "72a3ade68ebf56033a61745065d1bd69f4d0eaecce5203909bb58ae53c1c8010",
+      "bytes": 3116,
+      "classification": "no_text",
+      "exact_text": null,
+      "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
+      "visual_review": "pass",
+      "original_path": null,
+      "allowed_existing_alt_values": [""]
+    },
     "/assets/team/graham-256.webp": {
       "sha256": "c02b2c2c4fbfca31dc80e8e8e20862001691b76c78e2bc939448e418e53b891c",
       "bytes": 8304,
@@ -6495,7 +6505,9 @@
       "original_path": null,
       "allowed_existing_alt_values": [
         "Graham, MRX Strategy AI Guide",
-        "Graham, fictional MRX Decision-Context Guide"
+        "Graham, fictional MRX Decision-Context Guide",
+        "Graham, MRX Investor & Opportunity AI Guide",
+        "Graham, fictional MRX Investor and Opportunity Guide"
       ]
     },
     "/assets/team/graham-512.webp": {
@@ -6506,7 +6518,10 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Graham, MRX Strategy AI Guide"]
+      "allowed_existing_alt_values": [
+        "Graham, MRX Strategy AI Guide",
+        "Graham, MRX Investor & Opportunity AI Guide"
+      ]
     },
     "/assets/team/laurel-128.webp": {
       "sha256": "fbbf392b08f62a0d769bdc66ebb8be22ac3218359456b3fc052e5e7c3e7a17d0",

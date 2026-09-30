@@ -56,13 +56,13 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
   });
 
   it('covers the complete public image policy with no unresolved assets', () => {
-    expect(Object.keys(textPolicy.assets)).toHaveLength(732);
+    expect(Object.keys(textPolicy.assets)).toHaveLength(733);
     expect(textPolicy.summary).toMatchObject({
       printed_text_asset_count: 692,
-      no_text_asset_count: 40,
+      no_text_asset_count: 41,
       unresolved_asset_count: 0,
       ocr_corroborated_asset_count: 676,
-      independently_visual_reviewed_asset_count: 56,
+      independently_visual_reviewed_asset_count: 57,
     });
   });
 
