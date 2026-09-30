@@ -63,6 +63,16 @@ describe('dedicated guide delivery', () => {
           },
         }),
       )
+      .mockResolvedValueOnce(
+        response({
+          contact: {
+            id: 'contact-1',
+            email: request.email,
+            phone: request.phone,
+            dndSettings: { Email: { status: 'active' }, SMS: { status: 'inactive' } },
+          },
+        }),
+      )
       .mockResolvedValueOnce(response({ messageId: 'sms-accepted' }));
     vi.stubGlobal('fetch', fetchMock);
 
@@ -75,7 +85,7 @@ describe('dedicated guide delivery', () => {
     expect(result.suppressed).toEqual(['email']);
     expect(result.accepted).toEqual(['sms']);
     expect(result.providerSuppression.email).toBe(true);
-    expect(fetchMock).toHaveBeenCalledTimes(4);
+    expect(fetchMock).toHaveBeenCalledTimes(5);
   });
 
   it('preserves accepted email evidence and marks a later SMS timeout unknown', async () => {
@@ -83,6 +93,9 @@ describe('dedicated guide delivery', () => {
       .fn()
       .mockResolvedValueOnce(noDuplicate())
       .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
+      )
       .mockResolvedValueOnce(
         response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
       )
@@ -109,6 +122,9 @@ describe('dedicated guide delivery', () => {
       .mockResolvedValueOnce(
         response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
       )
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
+      )
       .mockResolvedValueOnce(new Response('gateway failure', { status: 500 }));
     vi.stubGlobal('fetch', fetchMock);
 
@@ -125,6 +141,9 @@ describe('dedicated guide delivery', () => {
     const fetchMock = vi
       .fn()
       .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
+      )
       .mockResolvedValueOnce(
         response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
       )
@@ -152,7 +171,7 @@ describe('dedicated guide delivery', () => {
         expect.objectContaining({ key: 'contact.mrx_call_permission' }),
       ]),
     );
-    const email = JSON.parse((fetchMock.mock.calls[2][1] as RequestInit).body as string);
+    const email = JSON.parse((fetchMock.mock.calls[3][1] as RequestInit).body as string);
     expect(email.emailFrom).toBe('verified-sender@example.com');
   });
 
@@ -196,6 +215,16 @@ describe('dedicated guide delivery', () => {
           },
         }),
       )
+      .mockResolvedValueOnce(
+        response({
+          contact: {
+            id: 'contact-1',
+            email: request.email,
+            phone: request.phone,
+            dndSettings: { Call: { status: 'active' } },
+          },
+        }),
+      )
       .mockResolvedValueOnce(response({ messageId: 'email-accepted' }));
     vi.stubGlobal('fetch', fetchMock);
 
@@ -210,6 +239,130 @@ describe('dedicated guide delivery', () => {
       expect.arrayContaining([expect.objectContaining({ key: 'contact.mrx_call_permission' })]),
     );
     expect(result.providerSuppression.call).toBe(true);
+    expect(fetchMock).toHaveBeenCalledTimes(5);
+  });
+
+  it('uses the authoritative contact read when upsert omits channel DND settings', async () => {
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }),
+      )
+      .mockResolvedValueOnce(
+        response({
+          contact: {
+            id: 'contact-1',
+            email: request.email,
+            phone: request.phone,
+            dndSettings: {
+              Email: { status: 'active' },
+              SMS: { status: 'active' },
+              Call: { status: 'active' },
+            },
+          },
+        }),
+      );
+    vi.stubGlobal('fetch', fetchMock);
+
+    const result = await deliverBeforeYouSellGuide(
+      { ...request, marketing_email_consent: 'on', human_call_consent: 'on' },
+      { emailSuppressed: false, smsSuppressed: false, callSuppressed: false },
+    );
+
+    expect(result.suppressed).toEqual(['email', 'sms']);
+    expect(result.accepted).toEqual([]);
+    expect(result.failed).toEqual([]);
+    expect(result.providerSuppression).toEqual({ email: true, sms: true, call: true });
     expect(fetchMock).toHaveBeenCalledTimes(4);
+    expect(String(fetchMock.mock.calls[3][0])).toMatch(/\/contacts\/contact-1$/);
+    expect(fetchMock.mock.calls.some(([url]) => String(url).endsWith('/tags'))).toBe(false);
+    expect(
+      fetchMock.mock.calls.some(([url]) => String(url).endsWith('/conversations/messages')),
+    ).toBe(false);
+  });
+
+  it('honors global DND from the authoritative contact read when upsert omits it', async () => {
+    const globallySuppressedRequest = {
+      ...request,
+      marketing_email_consent: 'on' as const,
+      human_call_consent: 'on' as const,
+    };
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(
+        response({
+          contact: {
+            id: 'contact-1',
+            email: globallySuppressedRequest.email,
+            phone: globallySuppressedRequest.phone,
+          },
+        }),
+      )
+      .mockResolvedValueOnce(
+        response({
+          contact: {
+            id: 'contact-1',
+            email: globallySuppressedRequest.email,
+            phone: globallySuppressedRequest.phone,
+            dnd: true,
+          },
+        }),
+      );
+    vi.stubGlobal('fetch', fetchMock);
+
+    const result = await deliverBeforeYouSellGuide(globallySuppressedRequest, {
+      emailSuppressed: false,
+      smsSuppressed: false,
+      callSuppressed: false,
+    });
+
+    expect(result.suppressed).toEqual(['email', 'sms']);
+    expect(result.providerSuppression).toEqual({ email: true, sms: true, call: true });
+    expect(fetchMock).toHaveBeenCalledTimes(4);
+    expect(fetchMock.mock.calls.some(([url]) => String(url).endsWith('/tags'))).toBe(false);
+    expect(
+      fetchMock.mock.calls.some(([url]) => String(url).endsWith('/conversations/messages')),
+    ).toBe(false);
+  });
+
+  it('fails safely without sends or follow-up tags when authoritative DND read fails', async () => {
+    const emailOnlyRequest = {
+      ...request,
+      sms_delivery_consent: undefined,
+      phone: '',
+      marketing_email_consent: 'on' as const,
+      human_call_consent: 'on' as const,
+    };
+    const fetchMock = vi
+      .fn()
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: emailOnlyRequest.email } }),
+      )
+      .mockResolvedValueOnce(
+        response({ contact: { id: 'contact-1', email: emailOnlyRequest.email } }),
+      )
+      .mockResolvedValueOnce(new Response('provider unavailable', { status: 503 }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    const result = await deliverBeforeYouSellGuide(emailOnlyRequest, {
+      emailSuppressed: false,
+      smsSuppressed: false,
+      callSuppressed: false,
+    });
+
+    expect(result.contactId).toBe('contact-1');
+    expect(result.failed).toEqual(['email']);
+    expect(result.accepted).toEqual([]);
+    expect(result.unknown).toEqual([]);
+    expect(result.providerSuppression).toEqual({ email: null, sms: null, call: null });
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+    expect(fetchMock.mock.calls.some(([url]) => String(url).endsWith('/tags'))).toBe(false);
+    expect(
+      fetchMock.mock.calls.some(([url]) => String(url).endsWith('/conversations/messages')),
+    ).toBe(false);
   });
 });

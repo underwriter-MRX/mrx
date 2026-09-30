@@ -37,12 +37,6 @@ function publicGuideUrl() {
   return new URL(BEFORE_YOU_SELL_GUIDE_PATH, 'https://mineralrightsxchange.com').toString();
 }
 
-function contactSmsDndActive(contact: Record<string, unknown> | undefined) {
-  if (!contact) return false;
-  const settings = contact.dndSettings as Record<string, { status?: string }> | undefined;
-  return contact.dnd === true || settings?.SMS?.status === 'active';
-}
-
 function contactChannelDndActive(
   contact: Record<string, unknown> | undefined,
   channel: 'Email' | 'SMS' | 'Call',
@@ -97,6 +91,21 @@ async function addContactTags(token: string, contactId: string, tags: string[]) 
     return response.ok;
   } catch {
     return false;
+  }
+}
+
+async function readAuthoritativeContact(token: string, contactId: string) {
+  try {
+    const response = await fetch(`${API_BASE}/contacts/${encodeURIComponent(contactId)}`, {
+      headers: headers(token),
+    });
+    if (!response.ok) throw new Error(`contact_read_failed:${response.status}`);
+    const payload = (await response.json()) as { contact?: Record<string, unknown> };
+    if (!payload.contact) throw new Error('contact_read_missing');
+    return payload.contact;
+  } catch (error) {
+    if (error instanceof Error && error.message.startsWith('contact_read_')) throw error;
+    throw new Error('contact_read_unknown');
   }
 }
 
@@ -261,6 +270,40 @@ export async function deliverBeforeYouSellGuide(
     };
   }
 
+  let authoritativeContact: Record<string, unknown>;
+  try {
+    authoritativeContact = await readAuthoritativeContact(token, contactId);
+  } catch {
+    return {
+      configured: true,
+      contactId,
+      accepted: [],
+      failed: sendChannels,
+      unknown: [],
+      suppressed: [],
+      externalIds: {},
+      providerSuppression: { email: null, sms: null, call: null },
+    };
+  }
+  const authoritativeEmail = normalizedEmail(authoritativeContact.email);
+  const authoritativePhone = normalizedPhoneDigits(authoritativeContact.phone);
+  const authoritativeIdentityMismatch =
+    !authoritativeEmail ||
+    authoritativeEmail !== normalizedEmail(request.email) ||
+    (requestedPhone && authoritativePhone && authoritativePhone !== requestedPhone);
+  if (authoritativeIdentityMismatch) {
+    return {
+      configured: true,
+      contactId,
+      accepted: [],
+      failed: sendChannels,
+      unknown: [],
+      suppressed: [],
+      externalIds: {},
+      providerSuppression: { email: null, sms: null, call: null },
+    };
+  }
+
   const accepted: Array<'email' | 'sms'> = [];
   const failed: Array<'email' | 'sms'> = [];
   const unknown: Array<'email' | 'sms'> = [];
@@ -269,19 +312,19 @@ export async function deliverBeforeYouSellGuide(
   const link = publicGuideUrl();
   const safeFollowupTags = [
     ...(request.marketing_email_consent === 'on' &&
-    !contactChannelDndActive(payload.contact, 'Email')
+    !contactChannelDndActive(authoritativeContact, 'Email')
       ? ['mrx-guide-marketing-email-consent']
       : []),
     ...(request.human_call_consent === 'on' &&
     !options.callSuppressed &&
-    !contactChannelDndActive(payload.contact, 'Call')
+    !contactChannelDndActive(authoritativeContact, 'Call')
       ? ['mrx-guide-human-call-requested']
       : []),
   ];
   await addContactTags(token, contactId, safeFollowupTags);
   if (!sendChannels.includes('email')) {
     // A prior attempt already has definitive provider acceptance for email.
-  } else if (options.emailSuppressed || contactChannelDndActive(payload.contact, 'Email')) {
+  } else if (options.emailSuppressed || contactChannelDndActive(authoritativeContact, 'Email')) {
     suppressed.push('email');
   } else {
     const email = await sendMessage(token, {
@@ -300,7 +343,8 @@ export async function deliverBeforeYouSellGuide(
   }
 
   if (wantsSms && sendChannels.includes('sms')) {
-    const smsSuppressed = options.smsSuppressed || contactSmsDndActive(payload.contact);
+    const smsSuppressed =
+      options.smsSuppressed || contactChannelDndActive(authoritativeContact, 'SMS');
     if (smsSuppressed) {
       suppressed.push('sms');
     } else {
@@ -326,9 +370,9 @@ export async function deliverBeforeYouSellGuide(
     suppressed,
     externalIds,
     providerSuppression: {
-      email: contactChannelDndActive(payload.contact, 'Email'),
-      sms: contactChannelDndActive(payload.contact, 'SMS'),
-      call: contactChannelDndActive(payload.contact, 'Call'),
+      email: contactChannelDndActive(authoritativeContact, 'Email'),
+      sms: contactChannelDndActive(authoritativeContact, 'SMS'),
+      call: contactChannelDndActive(authoritativeContact, 'Call'),
     },
   };
 }
