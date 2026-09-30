@@ -147,7 +147,10 @@ function runTamperedExactGate(
         'file',
       );
       const addendum = JSON.parse(
-        readFileSync(join(repoRoot, 'config', 'mrx1000-append-only-identity-addendum.json'), 'utf8'),
+        readFileSync(
+          join(repoRoot, 'config', 'mrx1000-append-only-identity-addendum.json'),
+          'utf8',
+        ),
       );
       opts.mutateIdentityAddendum(addendum);
       writeFileSync(
@@ -710,7 +713,10 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
             ['reviewed_bytes_current', 'controlled_publication_transition'].includes(
               override.historical_state,
             ) &&
-            override.maintenance_reviewer_id === 'codex-independent-maintenance-review'),
+            [
+              'codex-independent-maintenance-review',
+              'codex-independent-h2-maintenance-review',
+            ].includes(override.maintenance_reviewer_id ?? '')),
       ),
     ).toBe(true);
     expect(

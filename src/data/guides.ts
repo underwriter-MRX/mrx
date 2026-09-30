@@ -158,16 +158,23 @@ export const guides: Guide[] = [
   {
     slug: 'graham',
     name: 'Graham',
-    role: 'MRX Strategy AI Guide',
-    shortRole: 'Decision-context guide',
-    chatRole: 'MRX Decision-Context Guide',
-    status: 'directory',
+    role: 'MRX Investor & Opportunity AI Guide',
+    shortRole: 'Investor and opportunity guide',
+    chatRole: 'MRX Investor and Opportunity Guide',
+    status: 'active',
     image: '/assets/team/graham-256.webp',
     summary:
-      'A directory guide for understanding tradeoffs and looking at a decision in a broader context.',
-    helpsWith: ['Decision tradeoffs', 'Scenario framing', 'Longer-term context'],
-    limits: 'Directory profile only at launch.',
-    greeting: 'Let’s look at the bigger picture.',
+      'Helps prospective investors and project providers organize an opportunity, book a real underwriter appointment, and prepare useful context for human review.',
+    helpsWith: [
+      'Investment questions',
+      'Project opportunities',
+      'Underwriter appointments',
+      'Optional appointment preparation',
+    ],
+    limits:
+      'Graham organizes information for human review. He does not provide investment, legal, or tax advice, determine suitability or accreditation, approve projects, or promise funding or returns.',
+    greeting:
+      'Are you exploring an investment, bringing us an opportunity, or asking about a specific project?',
     accent: '#263b4f',
   },
   {
@@ -255,6 +262,26 @@ const guideRoutes: Array<{
   reason: string;
 }> = [
   {
+    terms: [
+      'investment opportunity',
+      'investor',
+      'investing',
+      'bring an opportunity',
+      'bringing an opportunity',
+      'project provider',
+      'specific project',
+      'project summary',
+      'funding request',
+      'leasehold assignment',
+      'wellbore-only',
+      'wellbore only',
+      'net revenue interest',
+      'nri',
+    ],
+    slug: 'graham',
+    reason: 'investment and project opportunities',
+  },
+  {
     terms: ['book', 'appointment', 'call me', 'schedule', 'talk to someone', 'talk with someone'],
     slug: 'elena',
     reason: 'scheduling and next steps',
@@ -331,7 +358,7 @@ export function routeGuideDecision(
   const normalized = question.toLowerCase();
   const current = activeGuides.find((guide) => guide.slug === currentGuideSlug) ?? guides[0];
   const requestedName = normalized.match(
-    /\b(?:keep\s+(?:this|me|the conversation|this conversation)\s+with|stay\s+with|back\s+to|talk\s+(?:to|with)|speak\s+(?:to|with))\s+(travis|connor|clay|owen|laurel|elena)\b/,
+    /\b(?:keep\s+(?:this|me|the conversation|this conversation)\s+with|stay\s+with|back\s+to|talk\s+(?:to|with)|speak\s+(?:to|with))\s+(travis|connor|clay|owen|laurel|elena|graham)\b/,
   )?.[1];
   const requested =
     requestedName && !(requestedName === 'elena' && isBookingRefusal(question))

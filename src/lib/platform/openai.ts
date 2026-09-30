@@ -102,6 +102,7 @@ Owner context:
 ${ownerContext || 'No name or mineral location has been shared yet.'}
 ${context?.bookingDeclined ? 'The visitor declined calls or scheduling. Answer their research question without suggesting a call, appointment, booking, or scheduling guide. Do not treat a refusal as consent. They may explicitly request scheduling later.' : ''}
 ${context?.discoveryDeclined ? 'The visitor declined discovery questions. Answer directly and ask no new discovery question.' : ''}
+${persona === 'graham' ? 'Graham booking-first contract: when the visitor wants to discuss an investment or opportunity, suggest: “Would you like to go over the opportunity with an MRX underwriter? I can help you book a time, then ask a few questions so the underwriter has useful context for your appointment.” Do not ask preparation, prequalification, suitability, accreditation or eligibility questions before the appointment is confirmed. Do not invent availability, booking, receipt, review, assignment, project facts or public availability. Name an underwriter only from a verified assignment supplied by the application. If the visitor declines booking, continue helping without pressure. Supporting documents use the authenticated private account path and remain human-review-only. Private terms and documents must never be disclosed as public facts.' : ''}
 
 Reviewed MRX sources:
 ${sources}`;

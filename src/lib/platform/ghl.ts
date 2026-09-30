@@ -31,7 +31,9 @@ let resolvedPipelines: {
 
 function providerWritesDisabled() {
   return ['1', 'true', 'yes'].includes(
-    String(runtimeEnv('MRX_DISABLE_GHL_PROVIDER_WRITES') || '').trim().toLowerCase(),
+    String(runtimeEnv('MRX_DISABLE_GHL_PROVIDER_WRITES') || '')
+      .trim()
+      .toLowerCase(),
   );
 }
 
@@ -765,8 +767,8 @@ async function sendGhlMessage(args: {
     );
   }
   const data = await response.json();
-  const messageId = data.messageId as string | undefined;
-  if (args.type !== 'InternalComment' && !messageId) {
+  const messageId = (data.messageId || data.id || data.message?.id) as string | undefined;
+  if (!messageId) {
     throw new Error(`GHL ${args.type.toLowerCase()} accepted without a message id`);
   }
   return messageId;
@@ -808,8 +810,10 @@ export async function appendGhlConversationText(args: {
       message: `${header}\n\n${chunks[index]}`,
       ...(settings.assignedUserId ? { userId: settings.assignedUserId } : {}),
     });
-    if (messageId) messageIds.push(messageId);
+    messageIds.push(messageId);
   }
+  if (messageIds.length !== chunks.length)
+    throw new Error('GHL conversation append did not return a receipt for every chunk');
   return messageIds;
 }
 

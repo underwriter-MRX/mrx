@@ -237,7 +237,7 @@ test.describe('Learning Center layout', () => {
         'texas-severance-tax-what-mineral-rights-owners-need-to-know',
         'graham',
         'Graham',
-        'MRX Decision-Context Guide',
+        'MRX Investor and Opportunity Guide',
       ],
       [
         'what-documents-do-you-need-to-sell-mineral-rights-in-texas',

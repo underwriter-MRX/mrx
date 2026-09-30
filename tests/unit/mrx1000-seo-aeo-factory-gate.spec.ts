@@ -804,7 +804,7 @@ describe('MRX1000 source-first SEO/AEO article factory gate', () => {
     expect(body).toContain('State 1: define a written request for existing information');
     expect(body).toContain('State 2: classify the initial response without overreading it');
     expect(body).toContain('State 3: preserve the clarification loop');
-    expect(body).toContain('State 4: separate local charge statements from the current estimate layer');
+    expect(body).toContain('State 4: separate local charges from current estimates');
     expect(body).toContain('C304-08');
     expect(body).not.toContain(
       'Upton County, Texas Mineral Rights Value: Guide For Mineral Owners',

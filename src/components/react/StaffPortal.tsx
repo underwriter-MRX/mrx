@@ -103,6 +103,21 @@ type StaffCase = {
     timezone?: string;
     status: string;
   }>;
+  appointment_preparations?: Array<{
+    id: string;
+    appointment_id: string;
+    inquiry_type: 'investor' | 'project-provider' | 'specific-project';
+    answers: Array<{ question: string; answer: string }>;
+    summary: string;
+    supplied_fact_status: 'visitor_supplied_unverified';
+    consented: true;
+    disclosure_version: string;
+    staff_queue_status: 'ready' | 'partial' | 'reviewed';
+    ghl_sync_status: 'pending' | 'synced' | 'failed' | 'not_configured';
+    ghl_message_ids: string[];
+    created_at: string;
+    updated_at: string;
+  }>;
   internal_case_notes?: Array<{
     id: string;
     body: string;
@@ -2815,6 +2830,22 @@ export default function StaffPortal({ supabaseUrl, supabaseAnonKey }: Props) {
                             </small>
                           </span>
                         </div>
+                        {selected.appointment_preparations?.map((preparation) => (
+                          <div key={preparation.id} data-testid="graham-preparation-note">
+                            <span>
+                              <strong>
+                                Graham appointment preparation ·{' '}
+                                {preparation.inquiry_type.replaceAll('-', ' ')}
+                              </strong>
+                              <small>
+                                Visitor supplied, unverified · staff queue{' '}
+                                {preparation.staff_queue_status} · review-system sync{' '}
+                                {preparation.ghl_sync_status}
+                              </small>
+                              <small>{preparation.summary}</small>
+                            </span>
+                          </div>
+                        ))}
                         {selected.internal_case_notes?.map((note) => (
                           <div key={note.id}>
                             <span>

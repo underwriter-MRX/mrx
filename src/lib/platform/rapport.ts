@@ -1,4 +1,4 @@
-export type OpeningPersona = 'clay' | 'travis' | 'elena';
+export type OpeningPersona = 'clay' | 'travis' | 'elena' | 'graham';
 
 export type OwnerGoal =
   | 'compare-offer'
@@ -13,6 +13,8 @@ export type OwnerGoal =
 const bookingIntent =
   /\b(?:(?:book|schedule|arrange|set up)\s+(?:(?:a|an|the|my|phone|human|underwriter)\s+)*(?:call|appointment|meeting|time|slot)|(?:want|like|need|ready)\s+to\s+(?:book|schedule)|call me|(?:talk|speak)\s+(?:to|with)\s+(?:a |an )?(?:human|underwriter|someone))\b|^(?:please\s+)?(?:book|schedule)[.!?]?$/i;
 const valueIntent = /\b(?:offer|value|worth|price|sell|selling|hold|buyer)\b/i;
+const investorOpportunityIntent =
+  /\b(?:invest(?:or|ing|ment)|investment opportunity|bring(?:ing)? (?:us )?an opportunity|specific project|project provider|leasehold assignment|wellbore-only|wellbore only|net revenue interest|nri)\b/i;
 const nameRefusal =
   /^(?:skip|pass|rather not|i(?:'d| would) rather not(?: say)?|i do not want to share my name|i don'?t want to share my name|anonymous|no name|not sharing|prefer not to say|just answer(?: my question)?|no thanks?)\.?$/i;
 const discoveryRefusal =
@@ -62,13 +64,15 @@ export function isAccountRefusal(value: string) {
 }
 
 export function openingPersonaFor(prompt = '', booking = false): OpeningPersona {
-  if (booking || isBookingIntent(prompt)) return 'elena';
+  if (booking) return 'elena';
+  if (investorOpportunityIntent.test(prompt)) return 'graham';
+  if (isBookingIntent(prompt)) return 'elena';
   if (valueIntent.test(prompt)) return 'clay';
   return 'travis';
 }
 
 export function openingGreeting(persona: Exclude<OpeningPersona, 'elena'>) {
-  const name = persona === 'clay' ? 'Clay' : 'Travis';
+  const name = persona === 'clay' ? 'Clay' : persona === 'graham' ? 'Graham' : 'Travis';
   return `Hi, I’m ${name}, a fictional MRX AI guide. What’s your first name?`;
 }
 

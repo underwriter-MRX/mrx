@@ -9,7 +9,7 @@ import {
 } from '../../src/data/guides';
 
 describe('MRX AI guide routing', () => {
-  it('launches exactly the six approved active response modes', () => {
+  it('launches the approved active response modes including Graham', () => {
     expect(activeGuides.map((guide) => guide.slug)).toEqual([
       'travis',
       'connor',
@@ -17,6 +17,7 @@ describe('MRX AI guide routing', () => {
       'owen',
       'laurel',
       'elena',
+      'graham',
     ]);
   });
 
@@ -27,6 +28,8 @@ describe('MRX AI guide routing', () => {
     ['What basin and formation is this nearby well in?', 'clay'],
     ['Why did my royalty check decline with production?', 'owen'],
     ['What does this contract clause mean for closing?', 'laurel'],
+    ['I am bringing an investment opportunity for review', 'graham'],
+    ['I have an NRI and wellbore-only project to discuss', 'graham'],
     ['Is this mineral offer worth considering?', 'travis'],
   ])('routes “%s” to %s', (question, expected) => {
     expect(routeGuide(question).slug).toBe(expected);
@@ -89,7 +92,7 @@ describe('MRX AI guide routing', () => {
   it('keeps launch directory profiles non-interactive and clearly labeled as AI guides', () => {
     expect(
       guides.filter((guide) => guide.status === 'directory').map((guide) => guide.slug),
-    ).toEqual(['wade', 'graham', 'cora', 'marisol', 'paige']);
+    ).toEqual(['wade', 'cora', 'marisol', 'paige']);
     expect(guides.every((guide) => guide.role.includes('AI Guide'))).toBe(true);
     expect(getGuide('travis')?.limits).toMatch(/educational information/i);
   });
@@ -102,7 +105,7 @@ describe('MRX AI guide routing', () => {
     ['laurel', 'Laurel MRX Terms and Professional-Routing Guide'],
     ['elena', 'Elena MRX Scheduling and Next-Steps Guide'],
     ['wade', 'Wade MRX Risk Guide'],
-    ['graham', 'Graham MRX Decision-Context Guide'],
+    ['graham', 'Graham MRX Investor and Opportunity Guide'],
     ['cora', 'Cora MRX Decision-Process Guide'],
     ['marisol', 'Marisol MRX Owner-Options Guide'],
     ['paige', 'Paige MRX Process-Experience Guide'],
