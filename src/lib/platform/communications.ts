@@ -12,6 +12,7 @@ export type DispatchStatus =
   | 'sent'
   | 'delivered'
   | 'failed'
+  | 'unknown'
   | 'cancelled'
   | 'revoked';
 

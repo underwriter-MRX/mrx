@@ -16,6 +16,10 @@ interface Props {
   description: string;
   path: string;
   ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
+  ogImageType?: string;
   noindex?: boolean;
   robots?: string;
   pageType?: 'home' | 'marketing' | 'blog' | 'post' | 'utility';
@@ -35,6 +39,10 @@ const {
   description,
   path,
   ogImage,
+  ogImageAlt,
+  ogImageWidth,
+  ogImageHeight,
+  ogImageType,
   noindex,
   robots,
   pageType = 'marketing',
@@ -54,6 +62,10 @@ const extraJsonLd = faq && faq.length > 0 ? [faqPage(faq)] : [];
   description={description}
   path={path}
   ogImage={ogImage}
+  ogImageAlt={ogImageAlt}
+  ogImageWidth={ogImageWidth}
+  ogImageHeight={ogImageHeight}
+  ogImageType={ogImageType}
   noindex={noindex}
   robots={robots}
   pageType={pageType}

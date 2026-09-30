@@ -2,18 +2,18 @@
   "schema_version": "1.0.0",
   "owner_policy": "For printed-text images, alt equals all intentional printed words with line breaks normalized to spaces. For no-text images, preserve a truthful existing description or appropriate decorative empty alt; never invent printed text.",
   "summary": {
-    "public_url_count": 465,
-    "image_occurrence_count": 6659,
-    "social_only_occurrence_count": 242,
-    "distinct_public_asset_count": 732,
-    "printed_text_asset_count": 692,
+    "public_url_count": 466,
+    "image_occurrence_count": 6662,
+    "social_only_occurrence_count": 244,
+    "distinct_public_asset_count": 734,
+    "printed_text_asset_count": 694,
     "no_text_asset_count": 40,
     "unresolved_asset_count": 0,
     "ocr_corroborated_asset_count": 676,
-    "independently_visual_reviewed_asset_count": 56,
+    "independently_visual_reviewed_asset_count": 58,
     "sha_binding_failure_count": 0,
     "classification_counts": {
-      "printed_text": 692,
+      "printed_text": 694,
       "no_text": 40
     }
   },
@@ -6669,6 +6669,24 @@
       "visual_review": "pass",
       "original_path": null,
       "allowed_existing_alt_values": ["Wade, MRX Risk AI Guide"]
+    },
+    "/assets/guides/before-you-sell-mineral-rights/guide-cover.webp": {
+      "sha256": "89379c178362795eaa7f97a100c066f3cbb61565017300d0a91f7e734aa40b45",
+      "bytes": 55358,
+      "classification": "printed_text",
+      "exact_text": "Mineral Rights Xchange. THE MINERAL OWNER'S DECISION GUIDE. Before You Sell Your Mineral Rights. 7 questions to ask before accepting an offer plus an offer-comparison worksheet. By Travis. Fictional MRX AI Guide. OFFER COMPARISON. Compare terms. Compare terms. Compare terms. Published by Mineral Rights Xchange. Practical questions. Clearer next steps. MineralRightsXchange.com. FREE PDF | 2026.",
+      "evidence_source": "Codex asset-manifest.json + image-transcriptions.json (2026-09-30)",
+      "visual_review": "pass",
+      "original_path": null
+    },
+    "/assets/guides/before-you-sell-mineral-rights/infographic-square.webp": {
+      "sha256": "dec54d235f01d5ee08134b01b3b0f133e2c0bcdb082c1ace8ff64cb8bc77067a",
+      "bytes": 310856,
+      "classification": "printed_text",
+      "exact_text": "Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis · Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free PDF guide. Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.",
+      "evidence_source": "Codex asset-manifest.json + image-transcriptions.json (2026-09-30)",
+      "visual_review": "pass",
+      "original_path": null
     }
   }
 }

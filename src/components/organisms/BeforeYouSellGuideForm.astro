@@ -1,0 +1,314 @@
+---
+import {
+  BEFORE_YOU_SELL_CONSENT_VERSION,
+  BEFORE_YOU_SELL_GUIDE_ID,
+  GUIDE_HUMAN_CALL_TEXT,
+  GUIDE_MARKETING_EMAIL_TEXT,
+  GUIDE_TRANSACTIONAL_EMAIL_TEXT,
+  GUIDE_TRANSACTIONAL_SMS_TEXT,
+} from '../../lib/before-you-sell-guide';
+
+interface Props {
+  sourceSurface?: 'landing' | 'homepage' | 'chat' | 'site';
+  compact?: boolean;
+}
+
+const { sourceSurface = 'landing', compact = false } = Astro.props;
+---
+
+<form
+  class:list={['decision-guide-form', { 'decision-guide-form--compact': compact }]}
+  method="POST"
+  action="/api/guides/before-you-sell-mineral-rights"
+  data-decision-guide-form
+  aria-label="Get Before You Sell Your Mineral Rights"
+>
+  <div class="decision-guide-form__grid">
+    <label>
+      <span>First name</span>
+      <input name="firstName" autocomplete="given-name" maxlength="60" required />
+    </label>
+    <label>
+      <span>Last name</span>
+      <input name="lastName" autocomplete="family-name" maxlength="60" required />
+    </label>
+  </div>
+  <label>
+    <span>Email</span>
+    <input name="email" type="email" autocomplete="email" maxlength="120" required />
+  </label>
+
+  <label class="decision-guide-form__check decision-guide-form__required">
+    <input name="transactional_email_consent" type="checkbox" checked required />
+    <span>{GUIDE_TRANSACTIONAL_EMAIL_TEXT}</span>
+  </label>
+
+  <fieldset class="decision-guide-form__choices">
+    <legend>Optional contact choices</legend>
+    <p>These choices start unchecked and are not required to receive the guide by email.</p>
+    <label class="decision-guide-form__check">
+      <input name="sms_delivery_consent" type="checkbox" data-needs-guide-phone />
+      <span>{GUIDE_TRANSACTIONAL_SMS_TEXT}</span>
+    </label>
+    <label class="decision-guide-form__check">
+      <input name="marketing_email_consent" type="checkbox" />
+      <span>{GUIDE_MARKETING_EMAIL_TEXT}</span>
+    </label>
+    <label class="decision-guide-form__check">
+      <input name="human_call_consent" type="checkbox" data-needs-guide-phone />
+      <span>{GUIDE_HUMAN_CALL_TEXT}</span>
+    </label>
+  </fieldset>
+
+  <label class="decision-guide-form__phone" data-guide-phone-field hidden>
+    <span>Phone</span>
+    <input
+      name="phone"
+      type="tel"
+      autocomplete="tel"
+      maxlength="30"
+      disabled
+      aria-describedby="decision-guide-phone-help"
+    />
+    <small id="decision-guide-phone-help">
+      Required only when you request the one-time text link or a human call.
+    </small>
+  </label>
+
+  <input type="hidden" name="guide_id" value={BEFORE_YOU_SELL_GUIDE_ID} />
+  <input type="hidden" name="consent_version" value={BEFORE_YOU_SELL_CONSENT_VERSION} />
+  <input type="hidden" name="idempotency_key" value="" />
+  <input type="hidden" name="source_url" value="" />
+  <input type="hidden" name="source_surface" value={sourceSurface} />
+  <input type="hidden" name="consent_client_timestamp" value="" />
+  <input type="hidden" name="consent_timezone_offset" value="" />
+  <input type="hidden" name="utm_source" value="" />
+  <input type="hidden" name="utm_medium" value="" />
+  <input type="hidden" name="utm_campaign" value="" />
+  <input type="hidden" name="utm_term" value="" />
+  <input type="hidden" name="utm_content" value="" />
+
+  <button class="decision-guide-form__submit" type="submit">Get the free guide</button>
+  <p class="decision-guide-form__privacy">
+    Do not submit deeds, account numbers, or private ownership documents here. Review the
+    <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms/">Terms &amp; AI Disclosure</a
+    >.
+  </p>
+  <p class="decision-guide-form__status" data-guide-status aria-live="polite"></p>
+  <div class="decision-guide-form__success" data-guide-success hidden>
+    <strong>Your request was accepted.</strong>
+    <p data-guide-delivery-status></p>
+    <a href="/guides/before-you-sell-mineral-rights.pdf" data-guide-download>
+      Download Before You Sell Your Mineral Rights
+    </a>
+  </div>
+</form>
+
+<script>
+  function initializeDecisionGuideForm(form: HTMLFormElement) {
+    const phoneField = form.querySelector<HTMLElement>('[data-guide-phone-field]');
+    const phone = form.querySelector<HTMLInputElement>('input[name="phone"]');
+    const phoneChoices = [...form.querySelectorAll<HTMLInputElement>('[data-needs-guide-phone]')];
+    const status = form.querySelector<HTMLElement>('[data-guide-status]');
+    const success = form.querySelector<HTMLElement>('[data-guide-success]');
+    const deliveryStatus = form.querySelector<HTMLElement>('[data-guide-delivery-status]');
+    const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+    const syncPhone = () => {
+      const required = phoneChoices.some((choice) => choice.checked);
+      if (phoneField) phoneField.hidden = !required;
+      if (phone) {
+        phone.disabled = !required;
+        phone.required = required;
+        if (!required) phone.value = '';
+      }
+    };
+    phoneChoices.forEach((choice) => choice.addEventListener('change', syncPhone));
+    syncPhone();
+
+    const idempotency = form.querySelector<HTMLInputElement>('input[name="idempotency_key"]');
+    if (idempotency && !idempotency.value) idempotency.value = crypto.randomUUID();
+    const sourceSurface = form.querySelector<HTMLInputElement>('input[name="source_surface"]');
+    const requestedSource = new URL(window.location.href).searchParams.get('source');
+    if (sourceSurface && ['homepage', 'chat', 'site'].includes(requestedSource || ''))
+      sourceSurface.value = requestedSource || sourceSurface.value;
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const url = new URL(window.location.href);
+      const sourceUrl = form.querySelector<HTMLInputElement>('input[name="source_url"]');
+      if (sourceUrl) sourceUrl.value = `${url.origin}${url.pathname}`;
+      const timestamp = form.querySelector<HTMLInputElement>(
+        'input[name="consent_client_timestamp"]',
+      );
+      if (timestamp) timestamp.value = new Date().toISOString();
+      const timezone = form.querySelector<HTMLInputElement>(
+        'input[name="consent_timezone_offset"]',
+      );
+      if (timezone) timezone.value = String(new Date().getTimezoneOffset());
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach((key) => {
+        const input = form.querySelector<HTMLInputElement>(`input[name="${key}"]`);
+        if (input) input.value = url.searchParams.get(key) || '';
+      });
+
+      if (submit) submit.disabled = true;
+      if (status) status.textContent = 'Saving your request…';
+      try {
+        const isRetry = form.dataset.retryFailed === 'true';
+        if (isRetry && idempotency) idempotency.value = crypto.randomUUID();
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: isRetry ? { 'x-mrx-retry-failed': '1' } : undefined,
+        });
+        const result = await response.json();
+        if (!response.ok || !result.accepted) throw new Error(result.error || 'request_failed');
+        const acceptedChannels = result.delivery?.acceptedChannels || [];
+        const failedChannels = result.delivery?.failedChannels || [];
+        const unknownChannels = result.delivery?.unknownChannels || [];
+        const suppressedChannels = result.delivery?.suppressedChannels || [];
+        if (deliveryStatus) {
+          const messages: string[] = [];
+          if (acceptedChannels.includes('email'))
+            messages.push('We asked our email service to send your guide.');
+          if (acceptedChannels.includes('sms'))
+            messages.push('We asked our text service to send the one-time link.');
+          if (failedChannels.includes('email'))
+            messages.push('The email request was not accepted.');
+          if (failedChannels.includes('sms')) messages.push('The text request was not accepted.');
+          if (unknownChannels.includes('email'))
+            messages.push(
+              'We could not confirm whether the email service accepted the request. We will not automatically resend it.',
+            );
+          if (unknownChannels.includes('sms'))
+            messages.push(
+              'We could not confirm whether the text service accepted the request. We will not automatically resend it.',
+            );
+          if (suppressedChannels.includes('email'))
+            messages.push('Your current email preference prevented an email request.');
+          if (suppressedChannels.includes('sms'))
+            messages.push('Your current text preference prevented a text request.');
+          if (!messages.length)
+            messages.push('We saved your request, but could not confirm an email or text request.');
+          messages.push('You can download the guide now.');
+          deliveryStatus.textContent = messages.join(' ');
+        }
+        if (status) status.textContent = '';
+        if (success) success.hidden = false;
+        form.dataset.accepted = 'true';
+        form.dataset.retryFailed = failedChannels.length ? 'true' : 'false';
+        if (submit && failedChannels.length) {
+          submit.disabled = false;
+          submit.textContent = 'Retry failed email or text request';
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'mrx_guide_request_accepted',
+          guide_id: 'before-you-sell-mineral-rights',
+          duplicate: Boolean(result.duplicate),
+          provider_state: result.delivery?.state || 'unknown',
+        });
+      } catch {
+        if (status)
+          status.textContent =
+            'We could not confirm your request. It may already be saved, so please try again.';
+        if (submit) submit.disabled = false;
+      }
+    });
+  }
+
+  document
+    .querySelectorAll<HTMLFormElement>('[data-decision-guide-form]')
+    .forEach(initializeDecisionGuideForm);
+</script>
+
+<style>
+  .decision-guide-form {
+    display: grid;
+    gap: 1rem;
+  }
+  .decision-guide-form__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+  }
+  .decision-guide-form label > span,
+  .decision-guide-form legend {
+    color: var(--color-brand-900);
+    font-weight: 700;
+  }
+  .decision-guide-form input:not([type='checkbox']) {
+    width: 100%;
+    min-height: 2.9rem;
+    margin-top: 0.35rem;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid var(--color-ink-300);
+    border-radius: var(--radius-md);
+    background: #fff;
+  }
+  .decision-guide-form__check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+  .decision-guide-form__check input {
+    flex: 0 0 auto;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin-top: 0.15rem;
+    accent-color: var(--color-brand-800);
+  }
+  .decision-guide-form__required,
+  .decision-guide-form__choices {
+    padding: 0.85rem;
+    border: 1px solid var(--color-ink-100);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-alt);
+  }
+  .decision-guide-form__choices {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .decision-guide-form__choices > p,
+  .decision-guide-form__phone small,
+  .decision-guide-form__privacy,
+  .decision-guide-form__status {
+    color: var(--color-ink-700);
+    font-size: 0.8rem;
+  }
+  .decision-guide-form__submit,
+  .decision-guide-form__success a {
+    display: inline-flex;
+    justify-content: center;
+    min-height: 3rem;
+    padding: 0.8rem 1.1rem;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-accent-500);
+    color: var(--color-brand-900);
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .decision-guide-form__submit:disabled {
+    cursor: wait;
+    opacity: 0.65;
+  }
+  .decision-guide-form__success {
+    padding: 1rem;
+    border: 2px solid var(--color-accent-500);
+    border-radius: var(--radius-lg);
+    background: #fff;
+  }
+  .decision-guide-form__success a {
+    margin-top: 0.75rem;
+  }
+  @media (max-width: 560px) {
+    .decision-guide-form__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

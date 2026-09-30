@@ -1,0 +1,340 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+import BeforeYouSellGuideForm from '../components/organisms/BeforeYouSellGuideForm.astro';
+
+export const prerender = true;
+
+const title = 'Before You Sell Your Mineral Rights - Free Guide | MRX';
+const description =
+  'Get seven questions to ask before accepting a mineral rights offer, plus an offer-comparison worksheet. Free educational PDF from MRX.';
+const coverAlt =
+  "Mineral Rights Xchange. THE MINERAL OWNER'S DECISION GUIDE. Before You Sell Your Mineral Rights. 7 questions to ask before accepting an offer plus an offer-comparison worksheet. By Travis. Fictional MRX AI Guide. OFFER COMPARISON. Compare terms. Compare terms. Compare terms. Published by Mineral Rights Xchange. Practical questions. Clearer next steps. MineralRightsXchange.com. FREE PDF | 2026.";
+const infographicAlt =
+  'Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis · Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free PDF guide. Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.';
+const questions = [
+  'What do you own?',
+  'What is your goal?',
+  'What would the buyer receive?',
+  'What assumptions support the price?',
+  'What can change before closing?',
+  'Who is buying and how will you be paid?',
+  'What still needs an answer?',
+];
+const faq = [
+  {
+    question: 'Does this guide tell me what my mineral rights are worth?',
+    answer:
+      'No. It helps you organize questions about ownership, property scope, assumptions, adjustments, deadlines, and closing. It does not provide an appraisal, automatic estimate, legal opinion, individualized tax guidance, or a recommendation to sell.',
+  },
+  {
+    question: 'Do I have to agree to marketing, texts, or a call?',
+    answer:
+      'No. Name, email, and one-time email delivery consent are required. The one-time text link, ongoing marketing email, and a human call are separate optional choices that start unchecked.',
+  },
+];
+---
+
+<MarketingLayout
+  title={title}
+  description={description}
+  path="/before-you-sell-mineral-rights/"
+  ogImage="/assets/guides/before-you-sell-mineral-rights/guide-cover.webp"
+  ogImageAlt={coverAlt}
+  ogImageWidth={918}
+  ogImageHeight={1188}
+  ogImageType="image/webp"
+  pageType="marketing"
+  pageCategory="decision-guide"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Before You Sell Your Mineral Rights', path: '/before-you-sell-mineral-rights/' },
+  ]}
+  faq={faq}
+>
+  <section class="decision-guide-hero" aria-labelledby="decision-guide-title">
+    <div class="container decision-guide-hero__grid">
+      <div class="decision-guide-hero__cover">
+        <img
+          src="/assets/guides/before-you-sell-mineral-rights/guide-cover.webp"
+          alt={coverAlt}
+          width="918"
+          height="1188"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="decision-guide-hero__copy">
+        <p class="decision-guide-kicker">Free mineral-owner decision guide</p>
+        <h1 id="decision-guide-title">Before You Sell Your Mineral Rights</h1>
+        <p class="decision-guide-subtitle">
+          7 questions to ask before accepting an offer, plus an offer-comparison worksheet.
+        </p>
+        <div class="decision-guide-byline">
+          <img
+            src="/assets/mrx-homepage-v4/avatars/travis-hermes-128.webp"
+            alt="Travis, fictional MRX AI guide"
+            width="128"
+            height="128"
+          />
+          <span>
+            <strong>By Travis, MRX AI Guide</strong>
+            <small>Fictional AI guide • Published by Mineral Rights Xchange</small>
+          </span>
+        </div>
+        <p>
+          Received an offer? Use these seven questions to compare the written terms, organize your
+          records, and prepare for your next conversation. You do not have to decide to sell.
+        </p>
+        <ul class="decision-guide-includes">
+          <li>Compare two offers side by side</li>
+          <li>Know which records to gather</li>
+          <li>Bring clearer questions to your next conversation</li>
+        </ul>
+        <a class="decision-guide-jump" href="#get-the-guide">Get the free PDF</a>
+      </div>
+      <aside class="decision-guide-hero__form" id="get-the-guide">
+        <h2>Email me the guide</h2>
+        <p>
+          Name and email are required. Phone appears only if you request a text link or a human
+          call.
+        </p>
+        <BeforeYouSellGuideForm sourceSurface="landing" compact={true} />
+      </aside>
+    </div>
+  </section>
+
+  <section class="container decision-guide-section" aria-labelledby="seven-questions-title">
+    <div class="decision-guide-section__heading">
+      <p class="decision-guide-kicker">A usable starting point</p>
+      <h2 id="seven-questions-title">Seven questions before accepting an offer</h2>
+      <p>
+        The guide turns each question into a checklist or worksheet. These questions organize a
+        conversation; they do not determine value or replace state-specific professional advice.
+      </p>
+    </div>
+    <div class="decision-guide-questions">
+      <ol>
+        {questions.map((question) => <li>{question}</li>)}
+      </ol>
+      <img
+        src="/assets/guides/before-you-sell-mineral-rights/infographic-square.webp"
+        alt={infographicAlt}
+        width="1254"
+        height="1254"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <section class="decision-guide-boundary">
+    <div class="container container--narrow">
+      <h2>What this guide does and its limits</h2>
+      <p>
+        It helps you identify the interest and property scope being discussed, examine assumptions,
+        compare written terms, and record questions that still need an answer. It does not determine
+        fair market value, promise a sale result, interpret your agreement, establish title, or give
+        legal, tax, financial, engineering, or individualized valuation advice.
+      </p>
+      <p>
+        Keep private deeds, royalty statements, account numbers, and ownership documents out of this
+        public form. If you later choose a confidential review, use MRX’s secure process.
+      </p>
+      <p>
+        <a href="/mineral-rights-offer-comparison/">Compare two written offers</a> ·
+        <a href="/offer-review/">Learn about offer review</a> ·
+        <a href="/free-guide/">Need the mineral-ownership records guide instead?</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="container container--narrow decision-guide-faq" aria-labelledby="guide-faq-title">
+    <h2 id="guide-faq-title">Questions about the free guide</h2>
+    {
+      faq.map((item) => (
+        <details>
+          <summary>{item.question}</summary>
+          <p>{item.answer}</p>
+        </details>
+      ))
+    }
+  </section>
+</MarketingLayout>
+
+<style>
+  .decision-guide-hero {
+    padding: clamp(2rem, 5vw, 5rem) 0;
+    background:
+      radial-gradient(circle at 12% 12%, rgba(215, 154, 43, 0.16), transparent 28rem),
+      linear-gradient(135deg, #f9f4ea, #fff);
+  }
+  .decision-guide-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.55fr) minmax(0, 0.9fr) minmax(340px, 0.8fr);
+    align-items: start;
+    gap: clamp(1.5rem, 3vw, 3.5rem);
+  }
+  .decision-guide-hero__cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 24px 50px rgba(20, 36, 51, 0.2);
+  }
+  .decision-guide-kicker {
+    color: var(--color-accent-700);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .decision-guide-hero h1 {
+    margin: 0.4rem 0 1rem;
+    color: var(--color-brand-900);
+    font-size: clamp(2.2rem, 5vw, 4.25rem);
+    line-height: 1.02;
+  }
+  .decision-guide-subtitle {
+    color: var(--color-brand-800);
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .decision-guide-byline {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.2rem 0;
+  }
+  .decision-guide-byline img {
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 50%;
+  }
+  .decision-guide-byline span {
+    display: grid;
+  }
+  .decision-guide-byline small {
+    color: var(--color-ink-700);
+  }
+  .decision-guide-includes {
+    display: grid;
+    gap: 0.6rem;
+    margin: 1.25rem 0;
+    padding-left: 1.2rem;
+  }
+  .decision-guide-jump {
+    display: inline-flex;
+    padding: 0.8rem 1.2rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-brand-900);
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .decision-guide-hero__form {
+    padding: clamp(1rem, 2vw, 1.5rem);
+    border-top: 4px solid var(--color-accent-500);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .decision-guide-hero__form h2 {
+    color: var(--color-brand-900);
+  }
+  .decision-guide-section,
+  .decision-guide-faq {
+    padding-block: clamp(3rem, 7vw, 6rem);
+  }
+  .decision-guide-section__heading {
+    max-width: 760px;
+    margin-bottom: 2rem;
+  }
+  .decision-guide-section h2,
+  .decision-guide-boundary h2,
+  .decision-guide-faq h2 {
+    color: var(--color-brand-900);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+  }
+  .decision-guide-questions {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(280px, 1fr);
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+  }
+  .decision-guide-questions ol {
+    display: grid;
+    gap: 0.8rem;
+    counter-reset: questions;
+    padding: 0;
+    list-style: none;
+  }
+  .decision-guide-questions li {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    color: var(--color-brand-900);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .decision-guide-questions li::before {
+    counter-increment: questions;
+    content: counter(questions, decimal-leading-zero);
+    display: grid;
+    width: 2.4rem;
+    height: 2.4rem;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-accent-100);
+    color: var(--color-accent-800);
+    font-size: 0.8rem;
+  }
+  .decision-guide-questions img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  .decision-guide-boundary {
+    padding-block: clamp(3rem, 6vw, 5rem);
+    background: var(--color-brand-900);
+    color: #fff;
+  }
+  .decision-guide-boundary h2,
+  .decision-guide-boundary a {
+    color: #fff;
+  }
+  .decision-guide-faq details {
+    margin-top: 0.8rem;
+    padding: 1rem;
+    border: 1px solid var(--color-ink-100);
+    border-radius: var(--radius-md);
+    background: #fff;
+  }
+  .decision-guide-faq summary {
+    color: var(--color-brand-900);
+    font-weight: 800;
+    cursor: pointer;
+  }
+  @media (max-width: 980px) {
+    .decision-guide-hero__grid {
+      grid-template-columns: minmax(160px, 0.4fr) minmax(0, 1fr);
+    }
+    .decision-guide-hero__form {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 680px) {
+    .decision-guide-hero__grid,
+    .decision-guide-questions {
+      grid-template-columns: 1fr;
+    }
+    .decision-guide-hero__cover {
+      max-width: 250px;
+      margin-inline: auto;
+    }
+    .decision-guide-hero__copy {
+      order: -2;
+    }
+    .decision-guide-hero__form {
+      order: -1;
+    }
+  }
+</style>

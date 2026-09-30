@@ -187,6 +187,36 @@ const commonQuestions = [
     </div>
   </section>
 
+  <section class="mrx-guide-promo" aria-labelledby="home-guide-title">
+    <div class="container mrx-guide-promo__card">
+      <img
+        src="/assets/guides/before-you-sell-mineral-rights/guide-cover.webp"
+        alt="Mineral Rights Xchange. THE MINERAL OWNER'S DECISION GUIDE. Before You Sell Your Mineral Rights. 7 questions to ask before accepting an offer plus an offer-comparison worksheet. By Travis. Fictional MRX AI Guide. OFFER COMPARISON. Compare terms. Compare terms. Compare terms. Published by Mineral Rights Xchange. Practical questions. Clearer next steps. MineralRightsXchange.com. FREE PDF | 2026."
+        width="918"
+        height="1188"
+        loading="lazy"
+      />
+      <div>
+        <p class="mrx-eyebrow">New free guide</p>
+        <h2 id="home-guide-title">Before You Sell Your Mineral Rights</h2>
+        <p>
+          Work through seven questions before accepting an offer, then compare written terms with a
+          practical worksheet. Educational questions only; no automatic estimate or pressure to sell.
+        </p>
+        <p class="mrx-guide-promo__byline">
+          <strong>By Travis, MRX AI Guide</strong><br />Fictional AI guide • Published by Mineral
+          Rights Xchange
+        </p>
+        <a
+          href="/before-you-sell-mineral-rights/?source=homepage#get-the-guide"
+          data-cta-name="home-before-you-sell-guide"
+        >
+          Get the free guide <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="mrx-benefits" aria-labelledby="why-travis-title">
     <div class="container">
       <h2 id="why-travis-title">Why mineral owners ask Travis first</h2>
@@ -425,7 +455,58 @@ const commonQuestions = [
 </script>
 
 <style>
+  .mrx-guide-promo {
+    padding: clamp(2.5rem, 6vw, 5rem) 0;
+    background: #f8f3e9;
+  }
+  .mrx-guide-promo__card {
+    display: grid;
+    grid-template-columns: minmax(150px, 250px) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    max-width: 980px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border: 1px solid rgba(23, 49, 68, 0.12);
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 20px 45px rgba(21, 38, 50, 0.1);
+  }
+  .mrx-guide-promo__card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.35rem;
+    box-shadow: 0 16px 32px rgba(21, 38, 50, 0.18);
+  }
+  .mrx-guide-promo__card h2 {
+    margin: 0.35rem 0 0.8rem;
+    color: #173144;
+    font-size: clamp(1.9rem, 4vw, 3rem);
+  }
+  .mrx-guide-promo__byline {
+    color: #4b5d69;
+    font-size: 0.9rem;
+  }
+  .mrx-guide-promo__card a {
+    display: inline-flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: #173144;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+  }
   .mrx-section-followup {
     margin-top: 1.2rem;
+  }
+  @media (max-width: 620px) {
+    .mrx-guide-promo__card {
+      grid-template-columns: 1fr;
+    }
+    .mrx-guide-promo__card > img {
+      max-width: 210px;
+      margin-inline: auto;
+    }
   }
 </style>

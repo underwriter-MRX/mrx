@@ -221,6 +221,25 @@
 .travis-location-card em {
   font-style: normal;
 }
+.travis-guide-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  background: #173e58;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-decoration: none;
+}
+.travis-guide-cta:hover,
+.travis-guide-cta:focus-visible {
+  background: #245f7f;
+}
 .travis-message-row--typing {
   align-items: center;
 }
