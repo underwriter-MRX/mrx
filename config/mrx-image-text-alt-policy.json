@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "owner_policy": "For printed-text images, alt equals all intentional printed words with line breaks normalized to spaces. For no-text images, preserve a truthful existing description or appropriate decorative empty alt; never invent printed text.",
+  "owner_policy": "Alternative text must be concise, visually accurate, asset-specific, and appropriate to the occurrence context. Keep exact printed text as pixel/title identity evidence, but do not require a full transcription in alt text when an approved concise description is more useful. For no-text images, preserve a truthful existing description or appropriate decorative empty alt; never invent visible content.",
   "summary": {
     "public_url_count": 465,
     "image_occurrence_count": 6659,
@@ -2930,8 +2930,9 @@
       "bytes": 32598,
       "classification": "printed_text",
       "exact_text": "What Is a Division Order and Why Does It Matter for Mineral Rights Owners?",
+      "concise_alt": "Division order article cover with title beside a document card",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
+      "visual_review": "2026-09-30: navy title panel beside outlined document card; mrx_ceo-approved concise-alt pilot",
       "original_path": null
     },
     "/assets/articles/hero/what-is-a-held-by-production-lease-and-how-does-it-affect-your-mineral-rights.webp": {

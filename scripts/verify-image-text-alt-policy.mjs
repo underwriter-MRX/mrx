@@ -6,6 +6,7 @@ import { join, resolve } from 'node:path';
 
 import policy from '../config/mrx-image-text-alt-policy.json' with { type: 'json' };
 import pageBuilderAssets from '../config/page-builder-sop-assets.json' with { type: 'json' };
+import { validateAltOccurrence } from '../src/lib/image-text-alt-policy-verifier.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const renderedRoot = existsSync(join(root, 'dist/client'))
@@ -14,7 +15,7 @@ const renderedRoot = existsSync(join(root, 'dist/client'))
 const publicRoot = join(root, 'public');
 const failures = [];
 const usedPaths = new Set();
-const verifiedFiles = new Set();
+const verifiedFiles = new Map();
 let imageOccurrenceCount = 0;
 let socialOccurrenceCount = 0;
 
@@ -28,7 +29,9 @@ function decodeHtml(value) {
     .replaceAll('&lt;', '<')
     .replaceAll('&gt;', '>')
     .replace(/&#(\d+);/g, (_match, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([0-9a-f]+);/gi, (_match, code) => String.fromCodePoint(Number.parseInt(code, 16)));
+    .replace(/&#x([0-9a-f]+);/gi, (_match, code) =>
+      String.fromCodePoint(Number.parseInt(code, 16)),
+    );
 }
 
 function attribute(tag, name) {
@@ -48,16 +51,15 @@ function sha256(path) {
 }
 
 function verifyFile(path, evidence) {
-  if (verifiedFiles.has(path)) return;
-  verifiedFiles.add(path);
+  if (verifiedFiles.has(path)) return verifiedFiles.get(path);
   const file = join(publicRoot, path.slice(1));
   if (!existsSync(file)) {
     failures.push(`${path}: policy asset is missing from public/`);
-    return;
+    verifiedFiles.set(path, null);
+    return null;
   }
-  if (sha256(file) !== evidence.sha256 || statSync(file).size !== evidence.bytes) {
-    failures.push(`${path}: policy SHA or byte binding mismatch`);
-  }
+  const identity = { actualSha256: sha256(file), actualBytes: statSync(file).size };
+  verifiedFiles.set(path, identity);
   if (evidence.original_path) {
     const mapping = pageBuilderAssets.assets[evidence.original_path];
     const original = join(publicRoot, evidence.original_path.slice(1));
@@ -71,6 +73,7 @@ function verifyFile(path, evidence) {
       failures.push(`${path}: original-to-replacement evidence binding mismatch`);
     }
   }
+  return identity;
 }
 
 function verifyAlt(route, surface, src, alt) {
@@ -81,23 +84,15 @@ function verifyAlt(route, surface, src, alt) {
     failures.push(`${route}: ${surface} path is absent from exact-text policy: ${path}`);
     return;
   }
-  verifyFile(path, evidence);
-  if (evidence.classification === 'printed_text') {
-    if (!evidence.exact_text || alt !== evidence.exact_text) {
-      failures.push(`${route}: ${surface} alt does not equal exact printed text for ${path}`);
-    }
-  } else if (evidence.classification === 'no_text') {
-    if (
-      evidence.exact_text !== null ||
-      !Array.isArray(evidence.allowed_existing_alt_values) ||
-      !evidence.allowed_existing_alt_values.includes(alt)
-    ) {
-      failures.push(
-        `${route}: ${surface} no-text alt is not an approved existing value for ${path}`,
-      );
-    }
-  } else {
-    failures.push(`${route}: ${surface} has unresolved classification for ${path}`);
+  const identity = verifyFile(path, evidence);
+  if (!identity) return;
+  for (const failure of validateAltOccurrence({
+    assets: policy.assets,
+    path,
+    alt,
+    ...identity,
+  })) {
+    failures.push(`${route}: ${surface} ${failure} for ${path}`);
   }
 }
 
@@ -153,13 +148,11 @@ if (policy.summary?.unresolved_asset_count !== 0) {
 }
 
 if (failures.length > 0) {
-  console.error(
-    `MRX exact printed-image-text alt verification failed (${failures.length} findings):`,
-  );
+  console.error(`MRX reviewed image-text alt verification failed (${failures.length} findings):`);
   failures.forEach((failure) => console.error(`- ${failure}`));
   process.exit(1);
 }
 
 console.log(
-  `MRX exact printed-image-text alt verification passed: ${policyPaths.length} assets, ${imageOccurrenceCount} img occurrences, ${socialOccurrenceCount} social occurrences across ${new Set(publicUrls).size} public URLs.`,
+  `MRX reviewed image-text alt verification passed: ${policyPaths.length} assets, ${imageOccurrenceCount} img occurrences, ${socialOccurrenceCount} social occurrences across ${new Set(publicUrls).size} public URLs.`,
 );

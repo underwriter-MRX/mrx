@@ -29,6 +29,34 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
     );
   });
 
+  it('uses the visually reviewed concise alt only for the approved division-order hero', () => {
+    const target =
+      '/assets/articles/hero/what-is-a-division-order-and-why-does-it-matter-for-mineral-rights-owners.webp';
+    const evidence = textPolicy.assets[target];
+    const targetFile = join(repoRoot, 'public', target);
+
+    expect(textPolicy.owner_policy).toContain(
+      'Keep exact printed text as pixel/title identity evidence',
+    );
+    expect(textPolicy.owner_policy).toContain(
+      'do not require a full transcription in alt text',
+    );
+    expect(evidence.exact_text).toBe(
+      'What Is a Division Order and Why Does It Matter for Mineral Rights Owners?',
+    );
+    expect(evidence.concise_alt).toBe(
+      'Division order article cover with title beside a document card',
+    );
+    expect(resolveImageTextAlt(target, evidence.exact_text)).toBe(evidence.concise_alt);
+    expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
+      evidence.sha256,
+    );
+    expect(resolveImageTextAlt('/assets/brand/mrx-logo-white.webp', 'old logo alt')).toBe(
+      'Mineral Rights Xchange',
+    );
+    expect(resolveImageTextAlt('/assets/decorative/unknown.webp', '')).toBe('');
+  });
+
   it('uses only manifest-approved versioned paths and keeps unknown paths unchanged', () => {
     const [source, evidence] = Object.entries(manifest.assets)[0];
     expect(resolvePageBuilderImage({ src: source, alt: 'Lease records on a desk.' }).src).toBe(

@@ -28,6 +28,7 @@ export function imageTextPolicyEvidence(src) {
 
 export function resolveImageTextAlt(src, fallbackAlt = '') {
   const evidence = imageTextPolicyEvidence(src);
+  if (evidence?.concise_alt) return evidence.concise_alt;
   if (evidence?.classification === 'printed_text') return evidence.exact_text;
   return String(fallbackAlt ?? '');
 }
