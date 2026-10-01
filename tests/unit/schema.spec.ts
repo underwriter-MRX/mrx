@@ -65,4 +65,55 @@ describe('site-level JSON-LD graph', () => {
     expect(serialized).not.toMatch(/reviewCount/i);
     expect(serialized).not.toMatch(/aggregateRating/i);
   });
+
+  it.each([
+    {
+      path: '/contact',
+      name: 'Contact',
+      pageType: 'ContactPage',
+      canonical: 'https://mineralrightsxchange.com/contact/',
+    },
+    {
+      path: '/about/',
+      name: 'About',
+      pageType: 'AboutPage',
+      canonical: 'https://mineralrightsxchange.com/about/',
+    },
+  ])('specializes only the existing canonical $path page node as $pageType', (testCase) => {
+    const specializedGraph = siteGraph(testCase.path, testCase.name);
+    const specializedPage = specializedGraph.find(
+      (node: any) => node['@id'] === `${testCase.canonical}#page`,
+    ) as any;
+    const defaultPage = graph.find((node: any) => node['@type'] === 'WebPage') as any;
+
+    expect(specializedPage).toMatchObject({
+      '@type': testCase.pageType,
+      '@id': `${testCase.canonical}#page`,
+      url: testCase.canonical,
+      name: testCase.name,
+    });
+    expect(specializedPage.speakable).toEqual(defaultPage.speakable);
+    expect(specializedPage.isPartOf).toEqual(defaultPage.isPartOf);
+    expect(specializedPage.about).toEqual(defaultPage.about);
+    expect(specializedGraph).toHaveLength(graph.length);
+    expect(specializedGraph.filter((node: any) => node['@id']?.endsWith('#page'))).toHaveLength(1);
+    expect(new Set(specializedGraph.map((node: any) => node['@id']))).toHaveLength(
+      specializedGraph.length,
+    );
+  });
+
+  it.each(['/contact-us/', '/about/team/', '/learning-center/'])(
+    'keeps unrelated canonical path %s as WebPage without duplicate nodes',
+    (path) => {
+      const unrelatedGraph = siteGraph(path, 'Unrelated page');
+      const pages = unrelatedGraph.filter((node: any) => node['@id']?.endsWith('#page')) as any[];
+
+      expect(pages).toHaveLength(1);
+      expect(pages[0]['@type']).toBe('WebPage');
+      expect(unrelatedGraph).toHaveLength(graph.length);
+      expect(new Set(unrelatedGraph.map((node: any) => node['@id']))).toHaveLength(
+        unrelatedGraph.length,
+      );
+    },
+  );
 });

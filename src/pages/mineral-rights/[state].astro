@@ -55,7 +55,20 @@ const inventory =
       <div>
         <h2>Common {state.name} owner questions</h2><ul>
           {state.commonQuestions.map((question) => <li>{question}</li>)}
-        </ul><h2>Information worth gathering</h2><p>
+        </ul>{
+          state.featuredResources && (
+            <>
+              <h2>State-specific next step</h2>
+              <ul>
+                {state.featuredResources.map((resource) => (
+                  <li>
+                    <a href={resource.href}>{resource.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )
+        }<h2>Information worth gathering</h2><p>
           Start with the county and legal description, how the interest was acquired, net ownership
           if known, lease or division-order documents, recent royalty statements, operator details,
           and the full written offer.

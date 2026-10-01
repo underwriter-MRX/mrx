@@ -148,6 +148,18 @@ function postPublicPath(post: Post): string {
   return `/blog/${post.id.replace(/\.mdx?$/, '')}/`;
 }
 
+function contextPathLabel(path: string, pillar: PillarDefinition): string {
+  if (path === '/learning-center/') return 'Explore the Learning Center';
+  if (path === '/how-it-works/') return 'See how MRX works';
+  if (path === '/methodology/') return 'Review the MRX methodology';
+  const destinationPillar = Object.values(ARTICLE_PILLARS).find(
+    (candidate) => candidate.path === path,
+  );
+  return destinationPillar
+    ? `Explore ${destinationPillar.label}`
+    : `Continue exploring ${pillar.label.toLowerCase()}`;
+}
+
 /**
  * Fail-closed publication predicate. A post is published only when ALL
  * three conditions hold:
@@ -262,6 +274,9 @@ export function resolveInternalLinks(post: Post, allPublished: Post[] = []): Res
   const researchOnly = triangle?.conversion === '/learning-center/title-lease-ownership/';
   const cluster = resolveCluster(post);
   const publishedPosts = allPublished.filter(isPublishedPost);
+  const publishedPostByPath = new Map(
+    publishedPosts.map((candidate) => [postPublicPath(candidate), candidate]),
+  );
   const publishedArticlePaths = new Set(publishedPosts.map(postPublicPath));
   const configuredHub = normalizeInternalPath(triangle?.hub);
   const hubHref =
@@ -278,14 +293,16 @@ export function resolveInternalLinks(post: Post, allPublished: Post[] = []): Res
   let siblingLabel: string;
   if (configuredSiblingIsSafe && configuredSibling) {
     siblingHref = configuredSibling;
-    siblingLabel = `Continue exploring ${pillar.label.toLowerCase()}`;
+    siblingLabel =
+      publishedPostByPath.get(configuredSibling)?.data.title ??
+      contextPathLabel(configuredSibling, pillar);
   } else {
     const sameCluster = publishedPosts
       .filter((candidate) => candidate.id !== post.id && resolveCluster(candidate) === cluster)
       .sort((a, b) => compareCanonicalPaths(postPublicPath(a), postPublicPath(b)))[0];
     if (sameCluster) {
       siblingHref = postPublicPath(sameCluster);
-      siblingLabel = `Read another ${pillar.label.toLowerCase()} article`;
+      siblingLabel = sameCluster.data.title;
     } else {
       siblingHref = pillar.path;
       siblingLabel = `See all ${pillar.label.toLowerCase()} articles`;

@@ -39,6 +39,27 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights.webp',
 ].sort();
 
+const rawNineExpectedAlts = {
+  '/assets/articles/hero/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights.webp':
+    'Review fees cover with document card beside title',
+  '/assets/articles/hero/key-factors-that-determine-your-mineral-rights-assessment-pricing-range.webp':
+    'Pricing range cover with bar chart beside title',
+  '/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp':
+    'Loving CAD cover with open file box beside title',
+  '/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp':
+    'Mineral classification cover with three category cards',
+  '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp':
+    'Appraisal directory cover with Texas cutout and card file',
+  '/assets/articles/hero/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp':
+    'Title curative cover with magnifying glass and checkmark',
+  '/assets/articles/hero/understanding-royalty-checks-after-inheriting-mineral-rights.webp':
+    'Inherited royalty checks cover with geometric diagram',
+  '/assets/articles/hero/what-is-an-oil-and-gas-lease-and-how-does-it-affect-your-mineral-rights.webp':
+    'Oil and gas lease cover with document card beside title',
+  '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp':
+    'Tax value cover with mineral samples, map and folders',
+} as const;
+
 function printedEvidence(overrides = {}) {
   return {
     sha256: assetSha,
@@ -86,6 +107,17 @@ describe('image text alt policy verifier', () => {
     expect(validate({ alt: 'A vaguely relevant document image' })).toContain(
       'alt does not equal the reviewed concise override',
     );
+  });
+
+  it('retains the nine owner-approved raw-audit concise alternatives exactly', () => {
+    expect(Object.keys(rawNineExpectedAlts)).toHaveLength(9);
+    for (const [path, expectedAlt] of Object.entries(rawNineExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-01:\s+\S/);
+    }
   });
 
   it('rejects empty and unreviewed concise overrides', () => {
