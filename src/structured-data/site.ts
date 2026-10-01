@@ -1,4 +1,4 @@
-import type { Organization, Service, WebPage, WebSite } from 'schema-dts';
+import type { AboutPage, ContactPage, Organization, Service, WebPage, WebSite } from 'schema-dts';
 import { SITE } from '../lib/site';
 import { buildCanonical } from '../lib/seo';
 import { speakable } from './article';
@@ -65,10 +65,16 @@ export const webSite: WebSite = {
   },
 } as WebSite;
 
-export function pageNode(path: string, name: string): WebPage {
+export function pageNode(path: string, name: string): WebPage | ContactPage | AboutPage {
   const canonical = buildCanonical(path, SITE.url);
+  const pageType =
+    canonical === buildCanonical('/contact/', SITE.url)
+      ? 'ContactPage'
+      : canonical === buildCanonical('/about/', SITE.url)
+        ? 'AboutPage'
+        : 'WebPage';
   return {
-    '@type': 'WebPage',
+    '@type': pageType,
     '@id': `${canonical}#page`,
     url: canonical,
     name,
