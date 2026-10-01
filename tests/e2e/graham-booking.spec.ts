@@ -98,7 +98,7 @@ test('Graham books first, prepares progressively, preserves the appointment, and
     });
   });
 
-  await page.goto('/team/graham/');
+  await page.goto('/team/graham/', { waitUntil: 'domcontentloaded' });
   await expect(page.getByRole('button', { name: 'Explore investing' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Bring an opportunity' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Ask about a project' })).toBeVisible();
@@ -113,9 +113,7 @@ test('Graham books first, prepares progressively, preserves the appointment, and
     'Ask Graham about your mineral-rights question…',
   );
   await expect(page.getByText('MRX remembers this conversation on this device.')).toBeVisible();
-  await expect(
-    page.getByRole('button', { name: 'Close conversation with Graham' }),
-  ).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Close conversation with Graham' })).toBeVisible();
   await expect(page.getByText('Ask Travis anything about your minerals…')).toHaveCount(0);
   await expect(page.getByText('Who is the operator?')).toHaveCount(0);
   await expect(page.getByText('What’s your first name?')).toHaveCount(0);
@@ -213,7 +211,7 @@ test('Explore investing CTA keeps Graham as the booking origin', async ({ page }
   await page.route('**/api/chat/events', (route) =>
     route.fulfill({ status: 200, contentType: 'application/json', body: '{"ok":true}' }),
   );
-  await page.goto('/team/graham/');
+  await page.goto('/team/graham/', { waitUntil: 'domcontentloaded' });
   await page.getByRole('button', { name: 'Explore investing' }).click();
   await expect(page.getByText('Talking with Graham', { exact: true })).toBeVisible();
   await expect(
@@ -222,7 +220,9 @@ test('Explore investing CTA keeps Graham as the booking origin', async ({ page }
   await expect(page.locator('[data-reply="book"]')).toBeVisible();
 });
 
-test('returning confirmed visitor enters Graham preparation without rebooking', async ({ page }) => {
+test('returning confirmed visitor enters Graham preparation without rebooking', async ({
+  page,
+}) => {
   let bookingCalls = 0;
   await page.route('**/api/chat/session', (route) =>
     route.fulfill({
@@ -262,7 +262,7 @@ test('returning confirmed visitor enters Graham preparation without rebooking', 
     return route.fulfill({ status: 500, body: 'must not book again' });
   });
 
-  await page.goto('/team/graham/');
+  await page.goto('/team/graham/', { waitUntil: 'domcontentloaded' });
   await page.getByRole('button', { name: 'Ask about a project' }).click();
   await expect(page.getByText('Talking with Graham', { exact: true })).toBeVisible();
   await expect(page.getByText('Your appointment remains confirmed.')).toBeVisible();

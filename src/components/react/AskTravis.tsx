@@ -385,6 +385,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
   const [typingPersona, setTypingPersona] = useState<Persona | null>(null);
   const [notice, setNotice] = useState('');
   const [activePersona, setActivePersona] = useState<Persona>('travis');
+  const requestedProfilePersona = useRef<Persona | null>(null);
+  const [profileGuideNotice, setProfileGuideNotice] = useState('');
   const [lastAnswer, setLastAnswer] = useState<Message | null>(null);
   const [deliveryAnswer, setDeliveryAnswer] = useState<Message | null>(null);
   const [deliveryRequested, setDeliveryRequested] = useState<DeliveryChannel[]>([]);
@@ -932,7 +934,8 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           .find((message) => message.role === 'assistant' && message.content);
         if (restoredAnswer) {
           setLastAnswer(restoredAnswer);
-          if (isPersona(restoredAnswer.persona)) setActivePersona(restoredAnswer.persona);
+          if (requestedProfilePersona.current) setActivePersona(requestedProfilePersona.current);
+          else if (isPersona(restoredAnswer.persona)) setActivePersona(restoredAnswer.persona);
         }
         setProfile((current) => ({
           ...current,
@@ -999,7 +1002,12 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         if (!cancelled) setSessionReady(true);
       }
     })();
-    type ChatOpenDetail = { prompt?: string; booking?: boolean; opener?: HTMLElement };
+    type ChatOpenDetail = {
+      prompt?: string;
+      booking?: boolean;
+      opener?: HTMLElement;
+      guide?: string;
+    };
     type ChatOpenRequest = { detail: ChatOpenDetail; sequence: number };
     const browserWindow = window as typeof window & {
       __mrxChatReady?: boolean;
@@ -1013,6 +1021,26 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       if (sequence) handledSequences.add(sequence);
       rememberChatOpener(detail.opener);
       beginGuideResponseWindow();
+      const profileGuide = detail.guide ? getGuide(detail.guide) : undefined;
+      if (profileGuide) {
+        const persona: Persona =
+          profileGuide.status === 'active' && isPersona(profileGuide.slug)
+            ? profileGuide.slug
+            : 'travis';
+        requestedProfilePersona.current = persona;
+        setProfileGuideNotice(
+          profileGuide.status === 'active'
+            ? ''
+            : `${profileGuide.name} is a directory-only guide. Travis can help with your question and continue your conversation.`,
+        );
+        setActivePersona(persona);
+        setTypingPersona(null);
+        setPreserveOpeningPersona(true);
+        setPendingPrompt('');
+        setOpen(true);
+        track('ask_travis_open', { source: 'guide_profile' });
+        return;
+      }
       const openingPersona = openingPersonaFor(detail?.prompt, detail?.booking);
       if (!introStarted.current || detail?.prompt || detail?.booking)
         setTypingPersona(openingPersona);
@@ -1067,7 +1095,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     if (!open || !sessionReady || messages.length || introStarted.current || bookingRequested)
       return;
     introStarted.current = true;
-    const openingPersona = openingPersonaFor(pendingPrompt);
+    const openingPersona = requestedProfilePersona.current ?? openingPersonaFor(pendingPrompt);
     if (openingPersona === 'graham') {
       setActivePersona('graham');
       setPendingPrompt('');
@@ -1088,11 +1116,17 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       }
       return;
     }
-    const rapportPersona = openingPersona === 'elena' ? 'travis' : openingPersona;
+    const rapportPersona =
+      requestedProfilePersona.current ?? (openingPersona === 'elena' ? 'travis' : openingPersona);
     setActivePersona(rapportPersona);
-    setPreserveOpeningPersona(rapportPersona === 'clay');
+    setPreserveOpeningPersona(
+      Boolean(requestedProfilePersona.current) || rapportPersona === 'clay',
+    );
     setStep('intro-name');
-    void guideSay(openingGreeting(rapportPersona), rapportPersona, 520);
+    const greeting = requestedProfilePersona.current
+      ? `Hi, I’m ${getGuide(rapportPersona)?.name}, a fictional MRX AI guide. What’s your first name?`
+      : openingGreeting(rapportPersona as 'travis' | 'clay' | 'graham');
+    void guideSay(greeting, rapportPersona, 520);
   }, [open, sessionReady, messages.length, pendingPrompt, bookingRequested, bookedAppointment]);
 
   useEffect(() => {
@@ -2936,6 +2970,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
             <div className="travis-panel__disclosure">
               Educational information, not a certified appraisal or individualized professional
               advice.
+              {profileGuideNotice && <div role="status">{profileGuideNotice}</div>}
             </div>
             <div className="travis-messages" aria-live="polite">
               {messages

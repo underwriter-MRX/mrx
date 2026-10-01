@@ -59,7 +59,16 @@ const grahamPaths = [
               ? 'Active fictional MRX AI Guide'
               : 'Fictional MRX AI Guide directory profile'
           }
-        </p><h1>Meet {guide.name}, {guide.shortRole}</h1><p class="mrx-guide-profile__role">
+        </p><div class="mrx-guide-profile__heading">
+          <h1>Meet {guide.name}, {guide.shortRole}</h1>
+          <button
+            class="mrx-guide-profile__ask"
+            type="button"
+            data-profile-guide={guide.slug}
+            aria-label={`Ask ${guide.name} a question`}
+            aria-haspopup="dialog">Ask {guide.name} <span aria-hidden="true">?</span></button
+          >
+        </div><p class="mrx-guide-profile__role">
           {guide.role}
         </p><p class="mrx-guide-profile__summary">{guide.summary}</p><h2>
           What {guide.name} can help organize
@@ -121,6 +130,15 @@ const grahamPaths = [
   </section>
 </MarketingLayout>
 <script>
+  document.querySelectorAll<HTMLElement>('[data-profile-guide]').forEach((button) =>
+    button.addEventListener('click', () => {
+      window.dispatchEvent(
+        new CustomEvent('mrx:open-chat', {
+          detail: { guide: button.dataset.profileGuide, opener: button },
+        }),
+      );
+    }),
+  );
   document.querySelectorAll<HTMLElement>('[data-guide-prompt]').forEach((button) =>
     button.addEventListener('click', (event) => {
       const prompt = (event.currentTarget as HTMLElement).dataset.guidePrompt;
@@ -130,6 +148,60 @@ const grahamPaths = [
 </script>
 
 <style>
+  .mrx-guide-profile__heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem 1rem;
+  }
+  .mrx-guide-profile__heading h1 {
+    flex: 1 1 15rem;
+    margin: 0;
+  }
+  .mrx-guide-profile__ask {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
+    border: 1px solid #a77222;
+    border-radius: 10px;
+    background: #071e34;
+    color: #fff;
+    font: inherit;
+    font-weight: 750;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .mrx-guide-profile__ask span {
+    display: inline-grid;
+    place-items: center;
+    line-height: 1;
+    width: 1.3em;
+    height: 1.3em;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+  }
+  .mrx-guide-profile__ask:focus-visible {
+    outline: 3px solid #a77222;
+    outline-offset: 3px;
+  }
+  @media (max-width: 760px) {
+    .mrx-guide-profile {
+      gap: 1rem;
+    }
+    .mrx-guide-profile > img {
+      width: 80px;
+      height: 80px;
+      max-width: 80px;
+      border-radius: 16px;
+    }
+    .mrx-guide-profile__heading h1 {
+      font-size: clamp(1.65rem, 6vw, 2.25rem);
+    }
+  }
+
   .mrx-guide-profile__role {
     color: #8a5d18;
     font-size: 1.15rem;
