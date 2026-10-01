@@ -14,8 +14,8 @@
     },
     "readiness": {
       "path": "reports/mrx-1000-readiness-matrix.json",
-      "sha256": "1febcfd82c21e21bcac3c3ad0368eef582ac2603a9b89b35cae1d660c882b6db",
-      "bytes": 3508463,
+      "sha256": "3b56f69f173b87d5df16b57189bdada45961b728fb10f602e438528030c1393f",
+      "bytes": 3508512,
       "sha256_method": "canonical_json_with_top_level_generated_at_masked",
       "generated_at_excluded_from_sha256": true
     },
@@ -217215,7 +217215,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
           "mdx_exists": true,
-          "source_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+          "source_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -217290,7 +217290,7 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-          "source_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+          "source_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
           "body_sha256": "885a036c99b082ecc7d9b8c10d05590e5eb9245af27c4754ae55c8f57a814605",
           "body_word_count": 941,
           "candidate_type": "existing_public_article",
@@ -217367,7 +217367,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-            "review_candidate_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+            "review_candidate_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -217404,7 +217404,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-            "review_candidate_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+            "review_candidate_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -217441,7 +217441,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-            "review_candidate_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+            "review_candidate_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -217478,7 +217478,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-            "review_candidate_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+            "review_candidate_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -217515,7 +217515,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/1031-exchange-for-mineral-rights-in-texas-explained.mdx",
-            "review_candidate_sha256": "37112e80b6723ae284a537735432c798959eddadc141e34ad0aad633d068605c",
+            "review_candidate_sha256": "5775303c01bc3b7ed2a0fc1cfef301fea2c0b02f218624e4d2d42b880cb61aa1",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -220319,7 +220319,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
           "mdx_exists": true,
-          "source_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+          "source_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -220394,7 +220394,7 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-          "source_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+          "source_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
           "body_sha256": "7a0434d29df581d363a0bff5f549816aeef51d05e99d7eca54a5bdb9d9b9ff03",
           "body_word_count": 907,
           "candidate_type": "existing_public_article",
@@ -220471,7 +220471,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-            "review_candidate_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+            "review_candidate_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -220508,7 +220508,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-            "review_candidate_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+            "review_candidate_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -220545,7 +220545,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-            "review_candidate_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+            "review_candidate_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -220582,7 +220582,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-            "review_candidate_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+            "review_candidate_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -220619,7 +220619,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/maximize-gains-with-1031-exchange-for-texas-mineral-rights.mdx",
-            "review_candidate_sha256": "b8abbce53803205e038fa3a9fd220ab4216ef4a03d1985f9f9b78c1e972d31fd",
+            "review_candidate_sha256": "1437d697f8fa95d784b838f1fb55a22d389b240f6135d839404677d93dfaae12",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -221851,7 +221851,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
           "mdx_exists": true,
-          "source_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+          "source_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -221926,7 +221926,7 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-          "source_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+          "source_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
           "body_sha256": "9a0106b4cf6e779fc9fc37f585acb68f8c46cafb29a81bb2a76483e887d18008",
           "body_word_count": 886,
           "candidate_type": "existing_public_article",
@@ -222003,7 +222003,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-            "review_candidate_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+            "review_candidate_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -222040,7 +222040,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-            "review_candidate_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+            "review_candidate_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -222077,7 +222077,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-            "review_candidate_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+            "review_candidate_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -222114,7 +222114,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-            "review_candidate_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+            "review_candidate_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -222151,7 +222151,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/understanding-1031-tax-implications-for-mineral-rights-owners.mdx",
-            "review_candidate_sha256": "656b9a546945f85fa02fb58255ff36a2ccadfe88d50eaf0ef6882fe86a1da1c5",
+            "review_candidate_sha256": "e34f126dbb0b803e14901415abd6ceaba3a3491c1aac4a064bd419e51c01723c",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -272103,7 +272103,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
           "mdx_exists": true,
-          "source_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+          "source_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -272124,10 +272124,10 @@
             "frontmatter_draft": false,
             "frontmatter_noindex": false,
             "frontmatter_indexable": null,
-            "body_sha256": "000525eefd175719ce5fe736dcd93540fbac0b9448475e6ff7535e6eee7f5ffa",
-            "body_bytes": 10234,
-            "body_characters": 10234,
-            "body_word_count": 1365,
+            "body_sha256": "ab89b167e84d1b1acbc3733d0121e32a31cc775019588d482902759aef18db54",
+            "body_bytes": 10434,
+            "body_characters": 10434,
+            "body_word_count": 1384,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -272158,9 +272158,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-          "source_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
-          "body_sha256": "000525eefd175719ce5fe736dcd93540fbac0b9448475e6ff7535e6eee7f5ffa",
-          "body_word_count": 1365,
+          "source_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
+          "body_sha256": "ab89b167e84d1b1acbc3733d0121e32a31cc775019588d482902759aef18db54",
+          "body_word_count": 1384,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -272235,7 +272235,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-            "review_candidate_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+            "review_candidate_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -272272,7 +272272,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-            "review_candidate_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+            "review_candidate_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -272309,7 +272309,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-            "review_candidate_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+            "review_candidate_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -272346,7 +272346,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-            "review_candidate_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+            "review_candidate_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -272383,7 +272383,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/karnes-cad-2025-certified-mineral-roll-corrected-zip-identity-check.mdx",
-            "review_candidate_sha256": "fba7d6f261cc437b8edcd4887625c6d9fa9bbdfce29b3d73bd8e848341b6c577",
+            "review_candidate_sha256": "8da7ce5d2a77e900e31cc620d09adab29e5ac920fbbea3180a0897e42cdbf220",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -355016,5 +355016,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "065cd6687ffcdfe45d373411861a7b3e7ddb59e16db8f0be0023f549009936ce"
+  "content_fingerprint_sha256": "9d10f6c56c285c0a5c63f78b78a126d68c7101da3b5e6ce3fb31e5760fe6defb"
 }

@@ -716,6 +716,7 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
             [
               'codex-independent-maintenance-review',
               'codex-independent-h2-maintenance-review',
+              'codex-root-bounded-discovery-review',
             ].includes(override.maintenance_reviewer_id ?? '')),
       ),
     ).toBe(true);
