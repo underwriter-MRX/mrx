@@ -61,8 +61,9 @@
       "classification": "printed_text",
       "exact_text": "Are There Any Fees for a Free Underwriter Review of Your Mineral Rights?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: complete title is large, high-contrast, and legible across five lines beside an abstract document-card motif; only the decorative card is cropped at the right edge, the title is intact, and no rendering artifacts are visible",
+      "original_path": null,
+      "concise_alt": "White title text beside an abstract document card on a navy and dark green background."
     },
     "/assets/articles/hero/basis-differentials-and-mineral-rights-cash-flow.webp": {
       "sha256": "826f9c6b67016bc62f7af58fbf9fb5cf4b2a23a1717d9ed305bbc808c7a0d6b5",
@@ -160,8 +161,9 @@
       "classification": "printed_text",
       "exact_text": "Can You Sell Part of Your Mineral Rights? Partial Interest Sales Explained",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full partial-interest-sales title is legible in large white type across five lines; the segmented circular icon and geometric block pattern are distinct visible features, decorative edge cropping is intentional, and no rendering artifacts are visible",
+      "original_path": null,
+      "concise_alt": "White title text beside a segmented circle icon and geometric navy-and-brown blocks."
     },
     "/assets/articles/hero/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know.webp": {
       "sha256": "dc8694b879676687af4fe53a4c657bd8e8f489fe6d09f0d2adec4cc8bfdd723f",
@@ -1183,8 +1185,9 @@
       "classification": "printed_text",
       "exact_text": "Loving CAD 2026 Certified Mineral Roll ZIP: PDF, TXT, and CSV Member Map",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Loving CAD title is readable in high-contrast white text across four lines; the open archival box, clipped file-card stacks, grid card, and magnifying glass are visible, right-edge cropping is compositional, and no rendering artifacts are visible",
+      "original_path": null,
+      "concise_alt": "Open navy archival box with clipped file cards beside the Loving CAD member-map title."
     },
     "/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp": {
       "sha256": "0fac4c853ade6c7d3a66407965f4085ab6807da78ba4a34b12a2034474d74bbb",
@@ -2539,8 +2542,9 @@
       "classification": "printed_text",
       "exact_text": "Title Curative for Mineral Rights: What It Is and Why It Matters Before You Sell",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full title-curative wording is large, high-contrast, and legible across five lines; the magnifying glass and green check mark are distinct visible features, the title and icon are intact, and no rendering artifacts are visible",
+      "original_path": null,
+      "concise_alt": "White title text beside a magnifying glass with a green check mark on a dark brown grid."
     },
     "/assets/articles/hero/top-texas-counties-for-mineral-rights-value-permian-eagle-ford-and-haynesville.webp": {
       "sha256": "3d01b41ca857ea83a5ecc5be1f450130845ece36e10402b35af1a33b61899473",
@@ -2984,8 +2988,9 @@
       "classification": "printed_text",
       "exact_text": "What Is an Oil and Gas Lease and How Does It Affect Your Mineral Rights?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: complete oil-and-gas-lease title is large, high-contrast, and legible across five lines; the stylized document card is visible, cropping is confined to decorative right-side artwork, and no rendering artifacts are visible",
+      "original_path": null,
+      "concise_alt": "White title text beside a stylized document card on a navy and dark green background."
     },
     "/assets/articles/hero/what-is-your-texas-mineral-rights-worth.webp": {
       "sha256": "8c3f95683ee0d194e1981d4b3dd368fbe30e2269799a778bb4471f5ec8aa4f20",

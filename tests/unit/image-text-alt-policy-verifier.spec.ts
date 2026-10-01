@@ -12,7 +12,11 @@ const assetSha = '456aa0a777cf0288d9bd7f358930ed3a5535cd3e462be91506676b6509d5e1
 const assetBytes = 32598;
 
 const reviewedBatchPaths = [
+  '/assets/articles/hero/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights.webp',
+  '/assets/articles/hero/can-you-sell-part-of-your-mineral-rights-partial-interest-sales-explained.webp',
+  '/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp',
   '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp',
+  '/assets/articles/hero/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp',
   '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp',
   '/assets/articles/hero/mineral-rights-inheritance-in-texas-what-heirs-need-to-know-before-selling.webp',
   '/assets/articles/hero/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet.webp',
@@ -31,6 +35,7 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp',
   '/assets/articles/hero/understanding-royalty-checks-after-inheriting-mineral-rights.webp',
   '/assets/articles/hero/what-determines-the-value-of-your-mineral-rights.webp',
+  '/assets/articles/hero/what-is-an-oil-and-gas-lease-and-how-does-it-affect-your-mineral-rights.webp',
   '/assets/articles/hero/what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights.webp',
 ].sort();
 
