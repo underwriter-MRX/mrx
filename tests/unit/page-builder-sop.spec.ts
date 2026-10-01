@@ -29,7 +29,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
     );
   });
 
-  it('uses the visually reviewed concise alt only for the approved division-order hero', () => {
+  it('keeps the reviewed division-order candidate inside the explicit concise-alt batch', () => {
     const target =
       '/assets/articles/hero/what-is-a-division-order-and-why-does-it-matter-for-mineral-rights-owners.webp';
     const evidence = textPolicy.assets[target];
@@ -48,6 +48,11 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       'Division order article cover with title beside a document card',
     );
     expect(resolveImageTextAlt(target, evidence.exact_text)).toBe(evidence.concise_alt);
+    expect(
+      Object.values(textPolicy.assets).filter(
+        (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
+      ),
+    ).toHaveLength(20);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -90,7 +95,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       no_text_asset_count: 40,
       unresolved_asset_count: 0,
       ocr_corroborated_asset_count: 676,
-      independently_visual_reviewed_asset_count: 56,
+      independently_visual_reviewed_asset_count: 76,
     });
   });
 

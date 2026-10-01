@@ -11,6 +11,29 @@ const conciseAlt = 'Division order article cover with title beside a document ca
 const assetSha = '456aa0a777cf0288d9bd7f358930ed3a5535cd3e462be91506676b6509d5e12b';
 const assetBytes = 32598;
 
+const reviewedBatchPaths = [
+  '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp',
+  '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp',
+  '/assets/articles/hero/mineral-rights-inheritance-in-texas-what-heirs-need-to-know-before-selling.webp',
+  '/assets/articles/hero/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet.webp',
+  '/assets/articles/hero/what-to-bring-to-your-underwriter-review-call-essential-documents-and-preparation-guide.webp',
+  '/assets/articles/hero/1031-exchange-for-mineral-rights-does-it-qualify-and-how-does-it-work.webp',
+  '/assets/articles/hero/mineral-rights-retained-evidence-source-scope-worksheet.webp',
+  '/assets/articles/hero/net-mineral-acres-vs-royalty-acres-what-texas-mineral-rights-owners-need-to-know.webp',
+  '/assets/articles/hero/understanding-the-key-factors-influencing-your-mineral-rights-offer-range.webp',
+  targetPath,
+  '/assets/articles/hero/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know.webp',
+  '/assets/articles/hero/how-texas-mineral-rights-ownership-works-deeds-conveyances-and-title.webp',
+  '/assets/articles/hero/how-to-find-out-if-you-own-mineral-rights-in-texas.webp',
+  '/assets/articles/hero/how-to-identify-lowball-mineral-rights-offers.webp',
+  '/assets/articles/hero/howard-cad-2024-annual-report-category-g-oil-and-gas-property-totals-page-locator.webp',
+  '/assets/articles/hero/key-factors-that-determine-your-mineral-rights-assessment-pricing-range.webp',
+  '/assets/articles/hero/texas-comptroller-category-g1-g2-and-g3-mineral-classification-boundary-table.webp',
+  '/assets/articles/hero/understanding-royalty-checks-after-inheriting-mineral-rights.webp',
+  '/assets/articles/hero/what-determines-the-value-of-your-mineral-rights.webp',
+  '/assets/articles/hero/what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights.webp',
+].sort();
+
 function printedEvidence(overrides = {}) {
   return {
     sha256: assetSha,
@@ -43,12 +66,17 @@ function validate({
 }
 
 describe('image text alt policy verifier', () => {
-  it('accepts only the reviewed asset-specific concise override', () => {
+  it('accepts only the explicit reviewed asset-specific concise-alt batch inventory', () => {
     const conciseOverrides = Object.entries(textPolicy.assets).filter(
       ([, evidence]) => 'concise_alt' in evidence && evidence.concise_alt !== undefined,
     );
-    expect(conciseOverrides).toHaveLength(1);
-    expect(conciseOverrides[0]?.[0]).toBe(targetPath);
+    expect(conciseOverrides.map(([path]) => path).sort()).toEqual(reviewedBatchPaths);
+    for (const [, evidence] of conciseOverrides) {
+      const reviewed = evidence as { concise_alt: string; visual_review: string };
+      expect(reviewed.concise_alt.trim()).toBe(reviewed.concise_alt);
+      expect(reviewed.concise_alt.length).toBeGreaterThan(0);
+      expect(reviewed.visual_review).toMatch(/^2026-10-01:\s+\S/);
+    }
     expect(validate()).toEqual([]);
     expect(validate({ alt: 'A vaguely relevant document image' })).toContain(
       'alt does not equal the reviewed concise override',
@@ -70,15 +98,21 @@ describe('image text alt policy verifier', () => {
     expect(validate({ evidence: printedEvidence({ visual_review: '2026-09-30:' }) })).toContain(
       'concise_alt requires completed visual review evidence',
     );
-    expect(
-      validate({ evidence: printedEvidence({ visual_review: '2026-09-30:   ' }) }),
-    ).toContain('concise_alt requires completed visual review evidence');
+    expect(validate({ evidence: printedEvidence({ visual_review: '2026-09-30:   ' }) })).toContain(
+      'concise_alt requires completed visual review evidence',
+    );
     expect(
       validate({ evidence: printedEvidence({ visual_review: '2026-02-30: reviewed image' }) }),
     ).toContain('concise_alt requires completed visual review evidence');
     expect(
       validate({ evidence: printedEvidence({ visual_review: '09/30/2026: reviewed image' }) }),
     ).toContain('concise_alt requires completed visual review evidence');
+  });
+
+  it('rejects punctuation-only dated visual review detail', () => {
+    expect(validate({ evidence: printedEvidence({ visual_review: '2026-09-30: ---' }) })).toContain(
+      'concise_alt requires completed visual review evidence',
+    );
   });
 
   it('rejects wrong asset path, identity, exact-text evidence, or classification', () => {

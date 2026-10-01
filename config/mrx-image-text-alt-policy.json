@@ -10,7 +10,7 @@
     "no_text_asset_count": 40,
     "unresolved_asset_count": 0,
     "ocr_corroborated_asset_count": 676,
-    "independently_visual_reviewed_asset_count": 56,
+    "independently_visual_reviewed_asset_count": 76,
     "sha_binding_failure_count": 0,
     "classification_counts": {
       "printed_text": 692,
@@ -33,8 +33,9 @@
       "classification": "printed_text",
       "exact_text": "1031 Exchange for Mineral Rights: Does It Qualify and How Does It Work?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; dark green clock-face and checkmark illustration at right; title legible",
+      "original_path": null,
+      "concise_alt": "1031 exchange article cover with clock and checkmark beside title"
     },
     "/assets/articles/hero/1031-exchange-for-mineral-rights-in-texas-explained.webp": {
       "sha256": "d539b00cd3f06b13a9e4602ef277b17f5baef33e0eaf8c237c17527172ebaae0",
@@ -168,8 +169,9 @@
       "classification": "printed_text",
       "exact_text": "Capital Gains Tax on Mineral Rights Sales in Texas: What Sellers Need to Know",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; dark blue document-card illustration with two horizontal lines at right; title legible",
+      "original_path": null,
+      "concise_alt": "Capital gains tax article cover with document icon beside title"
     },
     "/assets/articles/hero/cash-for-mineral-rights-how-to-retrieve-irs-tax-transcripts-for-a-cpa-handoff.webp": {
       "sha256": "893b088fd925d30605618c8bedf34aac0b51db296b8d5d83f4e99113b58007b1",
@@ -645,8 +647,9 @@
       "classification": "printed_text",
       "exact_text": "How Texas Mineral Rights Ownership Works: Deeds, Conveyances, and Title",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; checked document icon inside a gold ring on a burgundy grid at right; title legible",
+      "original_path": null,
+      "concise_alt": "Mineral ownership article cover with checked deed icon beside title"
     },
     "/assets/articles/hero/how-the-step-by-step-process-of-selling-texas-mineral-rights-works.webp": {
       "sha256": "101adb6b0c7dc90c2946fa3c581f29b1d5c5c6ddb3fcfa8672e4cb3ccd839907",
@@ -861,8 +864,9 @@
       "classification": "printed_text",
       "exact_text": "How to Find Out If You Own Mineral Rights in Texas",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; gold-ringed compass icon on a blue grid at right; title legible",
+      "original_path": null,
+      "concise_alt": "Mineral ownership search article cover with compass icon beside title"
     },
     "/assets/articles/hero/how-to-get-a-free-underwriter-review-of-mineral-rights.webp": {
       "sha256": "8b1dae28127161ea64b864911f543a1e67114e25263f8c85b0f7a1e426a81190",
@@ -897,8 +901,9 @@
       "classification": "printed_text",
       "exact_text": "How to Identify Lowball Mineral Rights Offers",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; pale document card with three dark lines on a brown field at right; title legible",
+      "original_path": null,
+      "concise_alt": "Lowball offers article cover with offer document beside title"
     },
     "/assets/articles/hero/how-to-identify-predatory-mineral-buyers.webp": {
       "sha256": "06bd1e62c5acb349b9d7919b8e9dfae047a1cacdf4eb1e8e0633fdfe981d1ac8",
@@ -1050,8 +1055,9 @@
       "classification": "printed_text",
       "exact_text": "Howard CAD 2024 Annual Report: Category G Oil and Gas Property Totals Page Locator",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; open ring binder, gold pen, navy archive box, and clear-handled stamp on a stone desktop at right; title legible",
+      "original_path": null,
+      "concise_alt": "Open ring binder, pen, archive box and stamp beside article title"
     },
     "/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp": {
       "sha256": "8ffeafb8c204d9e3d0c7ae205d9f78fb222ed4b53ba05ad3255fe4edcfa45bef",
@@ -1167,8 +1173,9 @@
       "classification": "printed_text",
       "exact_text": "Key Factors That Determine Your Mineral Rights Assessment Pricing Range",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; blue chart with two rounded bars and vertical slider markers at right; title legible",
+      "original_path": null,
+      "concise_alt": "Mineral rights pricing article cover with bar-and-slider chart beside title"
     },
     "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp": {
       "sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
@@ -1347,8 +1354,9 @@
       "classification": "printed_text",
       "exact_text": "Mineral Rights Inheritance in Texas: What Heirs Need to Know Before Selling",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; dark transfer-card illustration with a light card and right-pointing arrow at right; title legible",
+      "original_path": null,
+      "concise_alt": "Inheritance article cover with transfer icon and arrow beside title"
     },
     "/assets/articles/hero/mineral-rights-offer-version-control-and-deadline-register.webp": {
       "sha256": "2ffba27845e4d317221d493a21249e9266999e2a528306d3eaeb3a7e92faae40",
@@ -1374,8 +1382,9 @@
       "classification": "printed_text",
       "exact_text": "Mineral Rights Retained Evidence Source-Scope Worksheet",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; blank sheet and card on a dark folder inside a round copper tray with a brass pen at right; title legible",
+      "original_path": null,
+      "concise_alt": "Blank paper, folder and pen on a tray beside article title"
     },
     "/assets/articles/hero/mineral-valuation-sensitivity-analysis-a-one-variable-scenario-worksheet.webp": {
       "sha256": "1e7a242ee452bcd9a2e63dec61736c9173ad1eb01d381511c0b19ab0e51e6bad",
@@ -1410,8 +1419,9 @@
       "classification": "printed_text",
       "exact_text": "Net Mineral Acres vs. Royalty Acres: What Texas Mineral Rights Owners Need to Know",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; dark blue document-card illustration with two horizontal lines at right; title legible",
+      "original_path": null,
+      "concise_alt": "Net mineral acres article cover with document-line icon beside title"
     },
     "/assets/articles/hero/north-dakota-inherited-royalty-questions-records-and-ombudsman.webp": {
       "sha256": "d7a0367a6b55ddb788b445b26de34e0d5c7c20e7adf2f5bfdd25ce923958842b",
@@ -2013,8 +2023,9 @@
       "classification": "printed_text",
       "exact_text": "Texas Comptroller Category G1, G2, and G3 Mineral Classification Boundary Table",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; three cream category cards showing an oil drop, gem, and layered strata with magnifying glass, ledger, and papers at right; title legible",
+      "original_path": null,
+      "concise_alt": "Oil, gem and strata category cards with magnifying glass beside article title"
     },
     "/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp": {
       "sha256": "12f47957a3807e8cfde171d14237d005d6c8d6959f08cee2a787f5faaf957c27",
@@ -2022,8 +2033,9 @@
       "classification": "printed_text",
       "exact_text": "Texas Comptroller County Appraisal District Directory Retrieval Provenance Worksheet",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; card file, closed ledger, desk lamp, blank card, and Texas-shaped cutout on a wood desk at right; title legible",
+      "original_path": null,
+      "concise_alt": "Texas-shaped cutout, card file, ledger and desk lamp beside article title"
     },
     "/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp": {
       "sha256": "50fc85f3e8893292ea972cbe6c954c18f1c936315e65652c04b41164a1908866",
@@ -2157,8 +2169,9 @@
       "classification": "printed_text",
       "exact_text": "Texas RRC EDMS Injection/Disposal Permit Document Retrieval Provenance Worksheet",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; laptop, map, folders, sleeves, and a hand holding a blank document with pumpjacks visible through the window at right; title legible",
+      "original_path": null,
+      "concise_alt": "Laptop, map, folders and hand-held document beside article title"
     },
     "/assets/articles/hero/texas-rrc-field-classification-codes-g-o-b-and-associated-field-numbers.webp": {
       "sha256": "0f112b38a9e71ad8070b5a2440f1118772637f66135dcfe84693663a370bafae",
@@ -2697,8 +2710,9 @@
       "classification": "printed_text",
       "exact_text": "Understanding Royalty Checks After Inheriting Mineral Rights",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; purple-blue flow diagram with a circle, rectangular node, and outlined terminal node at right; title legible",
+      "original_path": null,
+      "concise_alt": "Inherited royalty checks article cover with payment-flow diagram beside title"
     },
     "/assets/articles/hero/understanding-the-key-differences-our-underwriter-review-vs-traditional-mineral-rights-brokers.webp": {
       "sha256": "e2e4499434f3261b0ac03b9a35a658ed20e6616fbdb940e00e8ce4f82223dbc6",
@@ -2715,8 +2729,9 @@
       "classification": "printed_text",
       "exact_text": "Understanding the Key Factors Influencing Your Mineral Rights Offer Range",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; blue comparison graphic with two rounded bars and an arcing line at right; title legible",
+      "original_path": null,
+      "concise_alt": "Offer range article cover with comparison chart beside title"
     },
     "/assets/articles/hero/understanding-the-probate-process-for-mineral-interests.webp": {
       "sha256": "56749558510c5f183ca9b2b3157439b838346ad9726fdfb1f42d3433e6f152b5",
@@ -2895,8 +2910,9 @@
       "classification": "printed_text",
       "exact_text": "What Determines the Value of Your Mineral Rights?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; green line chart with a highlighted point on a pale plot card at right; title legible",
+      "original_path": null,
+      "concise_alt": "Mineral rights value article cover with line chart beside title"
     },
     "/assets/articles/hero/what-happens-after-you-sell-your-mineral-rights-in-texas.webp": {
       "sha256": "86fdba0843322746cbd965e181117e50c2930bb067ae345eefba20f9003dd812",
@@ -2932,7 +2948,7 @@
       "exact_text": "What Is a Division Order and Why Does It Matter for Mineral Rights Owners?",
       "concise_alt": "Division order article cover with title beside a document card",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "2026-09-30: navy title panel beside outlined document card; mrx_ceo-approved concise-alt pilot",
+      "visual_review": "2026-10-01: navy title panel at left; outlined document card with three horizontal lines on a dark brown field at right; title legible",
       "original_path": null
     },
     "/assets/articles/hero/what-is-a-held-by-production-lease-and-how-does-it-affect-your-mineral-rights.webp": {
@@ -2986,8 +3002,9 @@
       "classification": "printed_text",
       "exact_text": "What to Bring to Your Underwriter Review Call: Essential Documents and Preparation Guide",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; dark green checklist illustration with three checked rows at right; title legible",
+      "original_path": null,
+      "concise_alt": "Underwriter review article cover with checklist icon beside title"
     },
     "/assets/articles/hero/what-to-do-when-you-have-competing-offers-on-your-mineral-rights-a-guide.webp": {
       "sha256": "910fe1a11a68c5d5888955383aea40357df4320f18f1bad2076ec0ccd9d0a326",
@@ -3004,8 +3021,9 @@
       "classification": "printed_text",
       "exact_text": "What to Expect During the Underwriter Review Process for Your Mineral Rights",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; blue workflow graphic with a circle, right-pointing arrow, and second node at right; title legible",
+      "original_path": null,
+      "concise_alt": "Underwriter review process cover with arrow workflow beside title"
     },
     "/assets/articles/hero/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review.webp": {
       "sha256": "997177708bd0a08c951794482ec44164026ddcf1c61753acbcca55b24234987e",
@@ -3031,8 +3049,9 @@
       "classification": "printed_text",
       "exact_text": "Why Doesn\u2019t My Texas Mineral Tax Value Match a Sale Estimate?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel at left; mineral samples, Texas county map, document stacks, clipboard, pen, and magnifying glass on a wood desk at right; title legible",
+      "original_path": null,
+      "concise_alt": "Mineral samples, county map, folders and magnifying glass beside article title"
     },
     "/assets/articles/hero/why-mineral-rights-are-separate-from-surface-rights-in-texas-a-landowners-guide.webp": {
       "sha256": "c9632dd5daa9741749a0b6d79a36ddec88312bf2cd3cbadc33de32ade7340178",
