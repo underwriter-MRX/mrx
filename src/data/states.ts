@@ -5,7 +5,41 @@ export interface StateGuide {
   overview: string;
   regulator: { name: string; url: string };
   commonQuestions: string[];
+  featuredResources?: Array<{ label: string; href: string }>;
 }
+
+const featuredResourcesByState: Partial<Record<string, Array<{ label: string; href: string }>>> = {
+  oklahoma: [
+    {
+      label: 'How Do I Find an Oklahoma Pooling Order After Getting a Notice?',
+      href: '/blog/how-do-i-find-an-oklahoma-pooling-order-after-getting-a-notice/',
+    },
+  ],
+  'north-dakota': [
+    {
+      label: 'North Dakota Inherited Royalty Questions: Records and Ombudsman',
+      href: '/blog/north-dakota-inherited-royalty-questions-records-and-ombudsman/',
+    },
+  ],
+  pennsylvania: [
+    {
+      label: 'Can Pennsylvania DEP Production Data Verify My Royalty Check?',
+      href: '/blog/can-pennsylvania-dep-production-data-verify-my-royalty-check/',
+    },
+  ],
+  'west-virginia': [
+    {
+      label: 'How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter',
+      href: '/blog/how-to-compare-a-west-virginia-oil-and-gas-tax-account-with-a-mineral-buyer-letter/',
+    },
+  ],
+  ohio: [
+    {
+      label: 'Where Can I Find Ohio Mineral Deeds and Leases Before a Title Review?',
+      href: '/blog/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/',
+    },
+  ],
+};
 
 export const stateGuides: StateGuide[] = [
   [
@@ -94,6 +128,7 @@ export const stateGuides: StateGuide[] = [
   abbreviation,
   overview,
   regulator: { name: regulatorName, url: regulatorUrl },
+  featuredResources: featuredResourcesByState[slug],
   commonQuestions: [
     `What information helps explain a ${name} mineral-rights offer?`,
     `Where can an owner verify wells and production in ${name}?`,

@@ -212,7 +212,7 @@ describe('MRX1000 internal_links triangle resolution', () => {
     (post as { id: string }).id = 'current-guide.mdx';
     const resolved = resolveInternalLinks(post, [post, siblingPost]);
     expect(resolved.sibling.href).toBe('/blog/sibling-guide/');
-    expect(resolved.sibling.label.length).toBeGreaterThan(0);
+    expect(resolved.sibling.label).toBe('Sibling guide');
   });
 
   it('falls back to the pillar path when no same-cluster candidate exists', () => {
@@ -248,9 +248,25 @@ describe('MRX1000 internal_links triangle resolution', () => {
         conversion: '/book/',
       },
     });
-    expect(resolveInternalLinks(post, [siblingPost2, siblingPost]).sibling.href).toBe(
-      '/blog/sibling-guide/',
-    );
+    expect(resolveInternalLinks(post, [siblingPost2, siblingPost]).sibling).toEqual({
+      href: '/blog/sibling-guide/',
+      label: 'Sibling guide',
+    });
+  });
+
+  it('uses a truthful contextual label for an allowed non-article sibling', () => {
+    const post = makePost({
+      content_cluster: 'tax-1031-legal-education',
+      internal_links: {
+        hub: '/learning-center/mineral-rights-taxes/',
+        sibling: '/methodology/',
+        conversion: '/book/',
+      },
+    });
+    expect(resolveInternalLinks(post, [post]).sibling).toEqual({
+      href: '/methodology/',
+      label: 'Review the MRX methodology',
+    });
   });
 
   it('excludes self, unpublished and other-cluster posts before ordering the fallback', () => {
@@ -317,6 +333,9 @@ describe('MRX1000 internal_links triangle resolution', () => {
       const resolved = resolveInternalLinks(post, [post, held]);
       expect(resolved.hub.href).toBe(ARTICLE_PILLARS['mineral-rights-taxes'].path);
       expect(resolved.sibling.href).toBe(ARTICLE_PILLARS['mineral-rights-taxes'].path);
+      expect(resolved.sibling.label).toBe(
+        'See all mineral rights taxes and 1031 exchanges articles',
+      );
       expect(resolved.conversion.href).toBe('/book/');
     }
   });
