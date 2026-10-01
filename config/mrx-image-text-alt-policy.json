@@ -161,9 +161,9 @@
       "classification": "printed_text",
       "exact_text": "Can You Sell Part of Your Mineral Rights? Partial Interest Sales Explained",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "2026-10-01: full partial-interest-sales title is legible in large white type across five lines; the segmented circular icon and geometric block pattern are distinct visible features, decorative edge cropping is intentional, and no rendering artifacts are visible",
+      "visual_review": "2026-10-01: partial mineral sale cover has the full title legible in large white type across five lines with a segmented circular icon beside it; geometric edge cropping is decorative and intentional, and no rendering artifacts are visible",
       "original_path": null,
-      "concise_alt": "White title text beside a segmented circle icon and geometric navy-and-brown blocks."
+      "concise_alt": "Partial mineral sale cover with segmented circle beside title"
     },
     "/assets/articles/hero/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know.webp": {
       "sha256": "dc8694b879676687af4fe53a4c657bd8e8f489fe6d09f0d2adec4cc8bfdd723f",

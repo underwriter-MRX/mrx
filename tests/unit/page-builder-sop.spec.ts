@@ -62,6 +62,17 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
     expect(resolveImageTextAlt('/assets/decorative/unknown.webp', '')).toBe('');
   });
 
+  it('uses the reviewed partial-sale controlled-pilot wording', () => {
+    const target =
+      '/assets/articles/hero/can-you-sell-part-of-your-mineral-rights-partial-interest-sales-explained.webp';
+    const evidence = textPolicy.assets[target];
+
+    expect(evidence.concise_alt).toBe(
+      'Partial mineral sale cover with segmented circle beside title',
+    );
+    expect(resolveImageTextAlt(target, evidence.exact_text)).toBe(evidence.concise_alt);
+  });
+
   it('uses only manifest-approved versioned paths and keeps unknown paths unchanged', () => {
     const [source, evidence] = Object.entries(manifest.assets)[0];
     expect(resolvePageBuilderImage({ src: source, alt: 'Lease records on a desk.' }).src).toBe(
