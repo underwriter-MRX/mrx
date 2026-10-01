@@ -3,6 +3,7 @@ import {
   BEFORE_YOU_SELL_CONSENT_VERSION,
   BEFORE_YOU_SELL_GUIDE_ID,
   GUIDE_HUMAN_CALL_TEXT,
+  GUIDE_AI_SMS_TEXT,
   GUIDE_MARKETING_EMAIL_TEXT,
   GUIDE_TRANSACTIONAL_EMAIL_TEXT,
   GUIDE_TRANSACTIONAL_SMS_TEXT,
@@ -38,6 +39,20 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
     <input name="email" type="email" autocomplete="email" maxlength="120" required />
   </label>
 
+  <label class="decision-guide-form__phone" data-guide-phone-field>
+    <span>Mobile phone (optional)</span>
+    <input
+      name="phone"
+      type="tel"
+      autocomplete="tel"
+      maxlength="30"
+      aria-describedby="decision-guide-phone-help"
+    />
+    <small id="decision-guide-phone-help">
+      Required only if you choose a text message or human call below.
+    </small>
+  </label>
+
   <label class="decision-guide-form__check decision-guide-form__required">
     <input name="transactional_email_consent" type="checkbox" checked required />
     <span>{GUIDE_TRANSACTIONAL_EMAIL_TEXT}</span>
@@ -46,6 +61,10 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
   <fieldset class="decision-guide-form__choices">
     <legend>Optional contact choices</legend>
     <p>These choices start unchecked and are not required to receive the guide by email.</p>
+    <label class="decision-guide-form__check">
+      <input name="ai_sms_consent" type="checkbox" data-needs-guide-phone />
+      <span>{GUIDE_AI_SMS_TEXT}</span>
+    </label>
     <label class="decision-guide-form__check">
       <input name="sms_delivery_consent" type="checkbox" data-needs-guide-phone />
       <span>{GUIDE_TRANSACTIONAL_SMS_TEXT}</span>
@@ -59,21 +78,6 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
       <span>{GUIDE_HUMAN_CALL_TEXT}</span>
     </label>
   </fieldset>
-
-  <label class="decision-guide-form__phone" data-guide-phone-field hidden>
-    <span>Phone</span>
-    <input
-      name="phone"
-      type="tel"
-      autocomplete="tel"
-      maxlength="30"
-      disabled
-      aria-describedby="decision-guide-phone-help"
-    />
-    <small id="decision-guide-phone-help">
-      Required only when you request the one-time text link or a human call.
-    </small>
-  </label>
 
   <input type="hidden" name="guide_id" value={BEFORE_YOU_SELL_GUIDE_ID} />
   <input type="hidden" name="consent_version" value={BEFORE_YOU_SELL_CONSENT_VERSION} />
@@ -116,11 +120,10 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
 
     const syncPhone = () => {
       const required = phoneChoices.some((choice) => choice.checked);
-      if (phoneField) phoneField.hidden = !required;
+      if (phoneField) phoneField.hidden = false;
       if (phone) {
-        phone.disabled = !required;
+        phone.disabled = false;
         phone.required = required;
-        if (!required) phone.value = '';
       }
     };
     phoneChoices.forEach((choice) => choice.addEventListener('change', syncPhone));

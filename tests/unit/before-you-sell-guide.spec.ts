@@ -44,6 +44,7 @@ describe('BeforeYouSellGuideRequestSchema', () => {
       false,
       false,
       false,
+      false,
     ]);
   });
 
@@ -61,6 +62,36 @@ describe('BeforeYouSellGuideRequestSchema', () => {
         sms_delivery_consent: 'on',
       }).success,
     ).toBe(true);
+  });
+
+  it('requires a phone for AI replies and never upgrades one-time SMS consent', () => {
+    expect(
+      BeforeYouSellGuideRequestSchema.safeParse({ ...valid, ai_sms_consent: 'on' }).success,
+    ).toBe(false);
+    const oneTime = BeforeYouSellGuideRequestSchema.parse({
+      ...valid,
+      phone: '+15125550100',
+      sms_delivery_consent: 'on',
+    });
+    expect(
+      guideConsentChoices(oneTime).find((item) => item.channel === 'sms_ai_conversation')?.granted,
+    ).toBe(false);
+    const ai = BeforeYouSellGuideRequestSchema.parse({
+      ...valid,
+      phone: '+15125550100',
+      ai_sms_consent: 'on',
+    });
+    expect(
+      guideConsentChoices(ai).find((item) => item.channel === 'sms_ai_conversation')?.granted,
+    ).toBe(true);
+    expect(
+      BeforeYouSellGuideRequestSchema.safeParse({
+        ...valid,
+        consent_version: '2026-09-30-before-you-sell-v1',
+        ai_sms_consent: 'on',
+        phone: '+15125550100',
+      }).success,
+    ).toBe(false);
   });
 
   it('never exposes an AI outbound-call permission', () => {

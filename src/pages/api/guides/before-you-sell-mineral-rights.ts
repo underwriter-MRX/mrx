@@ -109,7 +109,9 @@ export const POST: APIRoute = async (context) => {
     const email = normalizeGuideEmail(parsed.data.email);
     const phone = parsed.data.phone ? normalizePhone(parsed.data.phone) : null;
     if (
-      (parsed.data.sms_delivery_consent === 'on' || parsed.data.human_call_consent === 'on') &&
+      (parsed.data.sms_delivery_consent === 'on' ||
+        parsed.data.ai_sms_consent === 'on' ||
+        parsed.data.human_call_consent === 'on') &&
       !phone
     )
       return json({ ok: false, error: 'invalid_phone' }, { status: 400 });
@@ -169,7 +171,8 @@ export const POST: APIRoute = async (context) => {
     );
     const requestedChannels = [
       'email',
-      ...(request.sms_delivery_consent === 'on' ? ['sms'] : []),
+      ...(request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on' ? ['sms'] : []),
+      ...(request.ai_sms_consent === 'on' ? ['sms_ai_conversation'] : []),
       ...(request.marketing_email_consent === 'on' ? ['marketing_email'] : []),
       ...(request.human_call_consent === 'on' ? ['human_call'] : []),
     ];
@@ -216,7 +219,7 @@ export const POST: APIRoute = async (context) => {
             },
           ]
         : []),
-      ...(request.sms_delivery_consent === 'on' &&
+      ...((request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on') &&
       !smsSuppressed &&
       latestPermission(prior, 'sms', ['guide_delivery']) !== true
         ? [
@@ -226,7 +229,10 @@ export const POST: APIRoute = async (context) => {
               purpose: 'guide_delivery',
               granted: true,
               disclosure_version: BEFORE_YOU_SELL_CONSENT_VERSION,
-              disclosure_text: receiptRows[1].disclosure_text,
+              disclosure_text:
+                request.ai_sms_consent === 'on'
+                  ? receiptRows[4].disclosure_text
+                  : receiptRows[1].disclosure_text,
               submitted_value: 'true',
               destination: phone,
               source_url: request.source_url,
@@ -300,7 +306,9 @@ export const POST: APIRoute = async (context) => {
 
     const desiredDelivery = [
       'email' as const,
-      ...(request.sms_delivery_consent === 'on' ? (['sms'] as const) : []),
+      ...(request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on'
+        ? (['sms'] as const)
+        : []),
     ];
     const retryClaimToken = crypto.randomUUID();
     const { data: claimResult, error: claimError } = await supabase.rpc(

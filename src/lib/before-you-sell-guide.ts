@@ -5,7 +5,7 @@ export const BEFORE_YOU_SELL_GUIDE_TITLE = 'Before You Sell Your Mineral Rights'
 export const BEFORE_YOU_SELL_GUIDE_SUBTITLE =
   '7 questions to ask before accepting an offer \u2014 plus an offer-comparison worksheet.';
 export const BEFORE_YOU_SELL_GUIDE_PATH = `/guides/${BEFORE_YOU_SELL_GUIDE_ID}.pdf`;
-export const BEFORE_YOU_SELL_CONSENT_VERSION = '2026-09-30-before-you-sell-v1';
+export const BEFORE_YOU_SELL_CONSENT_VERSION = '2026-09-30-before-you-sell-v2';
 export const BEFORE_YOU_SELL_DEDUPE_WINDOW_MS = 24 * 60 * 60 * 1_000;
 
 export const GUIDE_TRANSACTIONAL_EMAIL_TEXT = `I agree that Mineral Rights Xchange may email me the requested guide, “${BEFORE_YOU_SELL_GUIDE_TITLE}.” This one-time transactional email is required to deliver the guide.`;
@@ -14,6 +14,9 @@ export const GUIDE_MARKETING_EMAIL_TEXT =
   'Optional: Email me educational and marketing updates from Mineral Rights Xchange. I can unsubscribe at any time. This is not required to receive the guide.';
 export const GUIDE_HUMAN_CALL_TEXT =
   'Optional: A human member of the Mineral Rights Xchange team may call me at the number I provide about my mineral-rights questions. No AI-generated, artificial, or prerecorded outbound call is authorized. I may revoke this permission at any time.';
+
+export const GUIDE_AI_SMS_TEXT =
+  'Optional: Mineral Rights Xchange may send me automated texts from Travis, its AI guide on MineralRightsXchange.com, with my requested book link and replies to my mineral-rights questions. Travis is AI, not a human. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not required to receive the book or make a purchase.';
 
 const optionalCheckbox = z.literal('on').optional();
 const optionalText = (max: number) => z.string().max(max).optional().or(z.literal(''));
@@ -34,6 +37,7 @@ export const BeforeYouSellGuideRequestSchema = z
       errorMap: () => ({ message: 'Email delivery consent is required.' }),
     }),
     sms_delivery_consent: optionalCheckbox,
+    ai_sms_consent: optionalCheckbox,
     marketing_email_consent: optionalCheckbox,
     human_call_consent: optionalCheckbox,
     guide_id: z.literal(BEFORE_YOU_SELL_GUIDE_ID),
@@ -51,13 +55,16 @@ export const BeforeYouSellGuideRequestSchema = z
   })
   .superRefine((value, context) => {
     if (
-      (value.sms_delivery_consent === 'on' || value.human_call_consent === 'on') &&
+      (value.sms_delivery_consent === 'on' ||
+        value.ai_sms_consent === 'on' ||
+        value.human_call_consent === 'on') &&
       (value.phone || '').replace(/\D/g, '').length < 10
     ) {
       context.addIssue({
         code: z.ZodIssueCode.custom,
         path: ['phone'],
-        message: 'Phone is required when text delivery or a human call is requested.',
+        message:
+          'Phone is required when text delivery, AI text replies, or a human call is requested.',
       });
     }
   });
@@ -99,5 +106,10 @@ export const guideConsentChoices = (request: BeforeYouSellGuideRequest) =>
       channel: 'human_call',
       granted: request.human_call_consent === 'on',
       disclosureText: GUIDE_HUMAN_CALL_TEXT,
+    },
+    {
+      channel: 'sms_ai_conversation',
+      granted: request.ai_sms_consent === 'on',
+      disclosureText: GUIDE_AI_SMS_TEXT,
     },
   ] as const;

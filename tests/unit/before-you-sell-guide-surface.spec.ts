@@ -21,10 +21,10 @@ describe('before-you-sell guide surface contract', () => {
 
   it('uses exact-word image alternatives and exact WebP metadata dimensions', () => {
     const page = read('src/pages/before-you-sell-mineral-rights.astro');
-    expect(page).toContain("THE MINERAL OWNER'S DECISION GUIDE");
+    expect(page).toContain('approved-guide-promo.webp');
     expect(page).toContain('01 What do you own?');
-    expect(page).toContain('ogImageWidth={918}');
-    expect(page).toContain('ogImageHeight={1188}');
+    expect(page).toContain('ogImageWidth={1122}');
+    expect(page).toContain('ogImageHeight={1402}');
     expect(page).toContain('ogImageType="image/webp"');
   });
 

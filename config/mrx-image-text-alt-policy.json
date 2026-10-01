@@ -6254,7 +6254,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Travis, fictional MRX AI guide"]
+      "allowed_existing_alt_values": [
+        "Travis, fictional MRX AI guide"
+      ]
     },
     "/assets/mrx-homepage-v4/avatars/travis-hermes-256.webp": {
       "sha256": "6f01e6ac6e1592635e3b3e5d0d4422b1498a68f29b0e2de5ba5ebd951689fa24",
@@ -6264,7 +6266,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/backgrounds/hero-travis-left-layout-768.webp": {
       "sha256": "92c74bc817e2fa4a6fa2f91c7d2ea65891e9d51169ddb486c6f94c7d3e8d414d",
@@ -6274,7 +6278,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-check.webp": {
       "sha256": "8741c9d8fad29ede2b60f11096edcfdb4d9ebcde72347542e708b2b8958344c8",
@@ -6284,7 +6290,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-inherited.webp": {
       "sha256": "4d494b785181eaceb5b2c50dc64ada5e09d5d3c86d451432fdd62bba5d13aca1",
@@ -6294,7 +6302,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-lock.webp": {
       "sha256": "9a16699f30d04c9a6486a86a28a4048378ef8eebfd547b9b245cf8ea9eb5d428",
@@ -6304,7 +6314,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-market.webp": {
       "sha256": "6071620b04c59f77b5131ed36abf4e2bab1e1bb5c445fafac47c13a521712bdf",
@@ -6314,7 +6326,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-nopressure.webp": {
       "sha256": "8741c9d8fad29ede2b60f11096edcfdb4d9ebcde72347542e708b2b8958344c8",
@@ -6324,7 +6338,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-offer.webp": {
       "sha256": "c1bf26e62dbeabdb9118933d4111a4b119d80d1895f57df555bc156d72ebd0f8",
@@ -6334,7 +6350,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-ownership.webp": {
       "sha256": "5c1466b19948e1cba41c24d2ecfc7e5ed95f57724dc7579f90488241c790b52c",
@@ -6344,7 +6362,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-royalty-checks.webp": {
       "sha256": "c1bf26e62dbeabdb9118933d4111a4b119d80d1895f57df555bc156d72ebd0f8",
@@ -6354,7 +6374,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/mrx-homepage-v4/hermes/icons/icon-shield.webp": {
       "sha256": "8741c9d8fad29ede2b60f11096edcfdb4d9ebcde72347542e708b2b8958344c8",
@@ -6364,7 +6386,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/clay-128.webp": {
       "sha256": "b2fad26a525ca0a985e0ce8db2832bfb638cc2c512008a7a4e4e7481e83b1818",
@@ -6374,7 +6398,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/clay-256.webp": {
       "sha256": "e2593dd4be6d00c19c6677d94325809a9a33ea3956c149a8cc05254570e13a1a",
@@ -6397,7 +6423,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Clay, MRX Geology AI Guide"]
+      "allowed_existing_alt_values": [
+        "Clay, MRX Geology AI Guide"
+      ]
     },
     "/assets/team/connor-128.webp": {
       "sha256": "76f6897278966d9416afd4da8e893f43a0f57f3fafc9d0feb8607705d5cf784b",
@@ -6407,7 +6435,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/connor-256.webp": {
       "sha256": "122c4882a0b43d9807d7783d58b777ff9c6b586e7d760923f68c81e51f702d4b",
@@ -6430,7 +6460,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Connor, MRX Research AI Guide"]
+      "allowed_existing_alt_values": [
+        "Connor, MRX Research AI Guide"
+      ]
     },
     "/assets/team/cora-256.webp": {
       "sha256": "253bccdb620ce1bdb73c14aae379f2baf2224cf9d960a1930b922c8028e0d217",
@@ -6440,7 +6472,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Cora, MRX Governance AI Guide"]
+      "allowed_existing_alt_values": [
+        "Cora, MRX Governance AI Guide"
+      ]
     },
     "/assets/team/cora-512.webp": {
       "sha256": "f6cf447ee056f44004822d7be75b7cb093f75ab4a0a9c3ed55dce6a849f97846",
@@ -6450,7 +6484,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Cora, MRX Governance AI Guide"]
+      "allowed_existing_alt_values": [
+        "Cora, MRX Governance AI Guide"
+      ]
     },
     "/assets/team/elena-128.webp": {
       "sha256": "257b6a27eac2924136d01eed577bf2895b16042da92eb4e2e7b762293d14af92",
@@ -6460,7 +6496,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/elena-256.webp": {
       "sha256": "087666a9a239b5b3665d9e1970d68674b47dacc995fd1de7821f41c5d90f0e1a",
@@ -6483,7 +6521,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Elena, MRX Relationship AI Guide"]
+      "allowed_existing_alt_values": [
+        "Elena, MRX Relationship AI Guide"
+      ]
     },
     "/assets/team/graham-256.webp": {
       "sha256": "c02b2c2c4fbfca31dc80e8e8e20862001691b76c78e2bc939448e418e53b891c",
@@ -6506,7 +6546,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Graham, MRX Strategy AI Guide"]
+      "allowed_existing_alt_values": [
+        "Graham, MRX Strategy AI Guide"
+      ]
     },
     "/assets/team/laurel-128.webp": {
       "sha256": "fbbf392b08f62a0d769bdc66ebb8be22ac3218359456b3fc052e5e7c3e7a17d0",
@@ -6516,7 +6558,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/laurel-256.webp": {
       "sha256": "c6638cc57325b58acefaa1f1a41ecaf43227ae14616e6ed97042684d570d5f3f",
@@ -6539,7 +6583,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Laurel, MRX Legal Information AI Guide"]
+      "allowed_existing_alt_values": [
+        "Laurel, MRX Legal Information AI Guide"
+      ]
     },
     "/assets/team/marisol-256.webp": {
       "sha256": "58092e7ec2ccfeffaa09d09cea54df3a917c70b86f710c9f032847d56eee9392",
@@ -6562,7 +6608,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Marisol, MRX Owner Advocate AI Guide"]
+      "allowed_existing_alt_values": [
+        "Marisol, MRX Owner Advocate AI Guide"
+      ]
     },
     "/assets/team/owen-128.webp": {
       "sha256": "f97f867f71239de7b569f344dc8847094f9d425a361c82dc84574eccf45b1e3f",
@@ -6572,7 +6620,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/owen-256.webp": {
       "sha256": "966d2c9032d4237aa82c98fb49ff9c6c02bdbcdde3db4f85caf21afd6f772805",
@@ -6595,7 +6645,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Owen, MRX Engineering AI Guide"]
+      "allowed_existing_alt_values": [
+        "Owen, MRX Engineering AI Guide"
+      ]
     },
     "/assets/team/paige-256.webp": {
       "sha256": "c42ae6157aa9d6a2ba569c4ad08130e710952c6b8f84db5c83b192f147794ff1",
@@ -6605,7 +6657,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Paige, MRX Experience AI Guide"]
+      "allowed_existing_alt_values": [
+        "Paige, MRX Experience AI Guide"
+      ]
     },
     "/assets/team/paige-512.webp": {
       "sha256": "eea58b68a2d644630a997ecde8e67b5c5181d4fd2d3021c725a28ea6bb22e703",
@@ -6615,7 +6669,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Paige, MRX Experience AI Guide"]
+      "allowed_existing_alt_values": [
+        "Paige, MRX Experience AI Guide"
+      ]
     },
     "/assets/team/travis-128.webp": {
       "sha256": "9a0241509556fc0b66fc43e2a9f05a0a3d9f72934f7b1cc588d8893f980b7147",
@@ -6625,7 +6681,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": [""]
+      "allowed_existing_alt_values": [
+        ""
+      ]
     },
     "/assets/team/travis-256.webp": {
       "sha256": "9b5517939f13238fd5d082d144020eef3fdecffaf0e7ab375cdabf653c688649",
@@ -6648,7 +6706,9 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Travis, MRX Underwriter AI Guide"]
+      "allowed_existing_alt_values": [
+        "Travis, MRX Underwriter AI Guide"
+      ]
     },
     "/assets/team/wade-256.webp": {
       "sha256": "7b81fbf8ad349b62930fcd41aaecbd16fe0ef41dbcf7b5f99c80171da1065a07",
@@ -6658,7 +6718,10 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Wade, MRX Risk AI Guide", "Wade, fictional MRX Risk Guide"]
+      "allowed_existing_alt_values": [
+        "Wade, MRX Risk AI Guide",
+        "Wade, fictional MRX Risk Guide"
+      ]
     },
     "/assets/team/wade-512.webp": {
       "sha256": "7b5537780ced77cf856168fd41c840fa96a95a955ceb1cef8580b74082460f69",
@@ -6668,23 +6731,25 @@
       "evidence_source": "CODEX_TRANSCRIPTION_REVIEW.json",
       "visual_review": "pass",
       "original_path": null,
-      "allowed_existing_alt_values": ["Wade, MRX Risk AI Guide"]
+      "allowed_existing_alt_values": [
+        "Wade, MRX Risk AI Guide"
+      ]
     },
-    "/assets/guides/before-you-sell-mineral-rights/guide-cover.webp": {
-      "sha256": "89379c178362795eaa7f97a100c066f3cbb61565017300d0a91f7e734aa40b45",
-      "bytes": 55358,
+    "/assets/guides/before-you-sell-mineral-rights/approved-guide-promo.webp": {
+      "sha256": "0f1877d79755e018b4399c944c3afcc18d5502c0398e0e295c41a163db097658",
+      "bytes": 1392440,
       "classification": "printed_text",
-      "exact_text": "Mineral Rights Xchange. THE MINERAL OWNER'S DECISION GUIDE. Before You Sell Your Mineral Rights. 7 questions to ask before accepting an offer plus an offer-comparison worksheet. By Travis. Fictional MRX AI Guide. OFFER COMPARISON. Compare terms. Compare terms. Compare terms. Published by Mineral Rights Xchange. Practical questions. Clearer next steps. MineralRightsXchange.com. FREE PDF | 2026.",
-      "evidence_source": "Codex asset-manifest.json + image-transcriptions.json (2026-09-30)",
+      "exact_text": "Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis \u00b7 Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free guide Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.",
+      "evidence_source": "Owner-approved artwork attachment / visually reviewed finished PDF worksheet page 10 (2026-09-30); pixel-identical lossless WebP conversion",
       "visual_review": "pass",
       "original_path": null
     },
-    "/assets/guides/before-you-sell-mineral-rights/infographic-square.webp": {
-      "sha256": "dec54d235f01d5ee08134b01b3b0f133e2c0bcdb082c1ace8ff64cb8bc77067a",
-      "bytes": 310856,
+    "/assets/guides/before-you-sell-mineral-rights/offer-comparison-worksheet.webp": {
+      "sha256": "bcbe787fb2eeb40d4216865ce974754b54e6a4c70398e1ea6b7b50e7fb67bf94",
+      "bytes": 36680,
       "classification": "printed_text",
-      "exact_text": "Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis · Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free PDF guide. Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.",
-      "evidence_source": "Codex asset-manifest.json + image-transcriptions.json (2026-09-30)",
+      "exact_text": "MRX / BEFORE YOU SELL YOUR MINERAL RIGHTS. WORKSHEET 01. Put the offers side by side. Use the actual written terms. Leave blanks or write 'unknown' when something is missing. Keep this worksheet with your documents; it is not a valuation or a winner score. TERM TO CHECK. OFFER A. OFFER B. Buyer / offer date. Interest type and location. Exact rights and depths. Headline total and basis. Stated acres and unit. Assumptions / records used. Possible price adjustments. Diligence / extensions. Closing / final payment. Effective date / receivables. Rights retained / obligations. Questions still unanswered. Compare the same asset and conditions before relying on totals. Neither this table nor a per-acre calculation determines value or which offer you should accept. Optional online companion: mineralrightsxchange.com/mineral-rights-offer-comparison/. 10. Travis: fictional AI guide | Published by Mineral Rights Xchange.",
+      "evidence_source": "Owner-approved artwork attachment / visually reviewed finished PDF worksheet page 10 (2026-09-30); pixel-identical lossless WebP conversion",
       "visual_review": "pass",
       "original_path": null
     }
