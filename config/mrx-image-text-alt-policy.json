@@ -63,7 +63,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: complete title is large, high-contrast, and legible across five lines beside an abstract document-card motif; only the decorative card is cropped at the right edge, the title is intact, and no rendering artifacts are visible",
       "original_path": null,
-      "concise_alt": "White title text beside an abstract document card on a navy and dark green background."
+      "concise_alt": "Review fees cover with document card beside title"
     },
     "/assets/articles/hero/basis-differentials-and-mineral-rights-cash-flow.webp": {
       "sha256": "826f9c6b67016bc62f7af58fbf9fb5cf4b2a23a1717d9ed305bbc808c7a0d6b5",
@@ -1177,7 +1177,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: navy title panel at left; blue chart with two rounded bars and vertical slider markers at right; title legible",
       "original_path": null,
-      "concise_alt": "Mineral rights pricing article cover with bar-and-slider chart beside title"
+      "concise_alt": "Pricing range cover with bar chart beside title"
     },
     "/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp": {
       "sha256": "62b28a32b14dd3dc56041415bd584d42ef02f6c917841df85defc06f3b91e9e3",
@@ -1187,7 +1187,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: full Loving CAD title is readable in high-contrast white text across four lines; the open archival box, clipped file-card stacks, grid card, and magnifying glass are visible, right-edge cropping is compositional, and no rendering artifacts are visible",
       "original_path": null,
-      "concise_alt": "Open navy archival box with clipped file cards beside the Loving CAD member-map title."
+      "concise_alt": "Loving CAD cover with open file box beside title"
     },
     "/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp": {
       "sha256": "0fac4c853ade6c7d3a66407965f4085ab6807da78ba4a34b12a2034474d74bbb",
@@ -2028,7 +2028,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: navy title panel at left; three cream category cards showing an oil drop, gem, and layered strata with magnifying glass, ledger, and papers at right; title legible",
       "original_path": null,
-      "concise_alt": "Oil, gem and strata category cards with magnifying glass beside article title"
+      "concise_alt": "Mineral classification cover with three category cards"
     },
     "/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp": {
       "sha256": "12f47957a3807e8cfde171d14237d005d6c8d6959f08cee2a787f5faaf957c27",
@@ -2038,7 +2038,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: navy title panel at left; card file, closed ledger, desk lamp, blank card, and Texas-shaped cutout on a wood desk at right; title legible",
       "original_path": null,
-      "concise_alt": "Texas-shaped cutout, card file, ledger and desk lamp beside article title"
+      "concise_alt": "Appraisal directory cover with Texas cutout and card file"
     },
     "/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp": {
       "sha256": "50fc85f3e8893292ea972cbe6c954c18f1c936315e65652c04b41164a1908866",
@@ -2544,7 +2544,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: full title-curative wording is large, high-contrast, and legible across five lines; the magnifying glass and green check mark are distinct visible features, the title and icon are intact, and no rendering artifacts are visible",
       "original_path": null,
-      "concise_alt": "White title text beside a magnifying glass with a green check mark on a dark brown grid."
+      "concise_alt": "Title curative cover with magnifying glass and checkmark"
     },
     "/assets/articles/hero/top-texas-counties-for-mineral-rights-value-permian-eagle-ford-and-haynesville.webp": {
       "sha256": "3d01b41ca857ea83a5ecc5be1f450130845ece36e10402b35af1a33b61899473",
@@ -2716,7 +2716,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: navy title panel at left; purple-blue flow diagram with a circle, rectangular node, and outlined terminal node at right; title legible",
       "original_path": null,
-      "concise_alt": "Inherited royalty checks article cover with payment-flow diagram beside title"
+      "concise_alt": "Inherited royalty checks cover with geometric diagram"
     },
     "/assets/articles/hero/understanding-the-key-differences-our-underwriter-review-vs-traditional-mineral-rights-brokers.webp": {
       "sha256": "e2e4499434f3261b0ac03b9a35a658ed20e6616fbdb940e00e8ce4f82223dbc6",
@@ -2990,7 +2990,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: complete oil-and-gas-lease title is large, high-contrast, and legible across five lines; the stylized document card is visible, cropping is confined to decorative right-side artwork, and no rendering artifacts are visible",
       "original_path": null,
-      "concise_alt": "White title text beside a stylized document card on a navy and dark green background."
+      "concise_alt": "Oil and gas lease cover with document card beside title"
     },
     "/assets/articles/hero/what-is-your-texas-mineral-rights-worth.webp": {
       "sha256": "8c3f95683ee0d194e1981d4b3dd368fbe30e2269799a778bb4471f5ec8aa4f20",
@@ -3056,7 +3056,7 @@
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
       "visual_review": "2026-10-01: navy title panel at left; mineral samples, Texas county map, document stacks, clipboard, pen, and magnifying glass on a wood desk at right; title legible",
       "original_path": null,
-      "concise_alt": "Mineral samples, county map, folders and magnifying glass beside article title"
+      "concise_alt": "Tax value cover with mineral samples, map and folders"
     },
     "/assets/articles/hero/why-mineral-rights-are-separate-from-surface-rights-in-texas-a-landowners-guide.webp": {
       "sha256": "c9632dd5daa9741749a0b6d79a36ddec88312bf2cd3cbadc33de32ade7340178",
