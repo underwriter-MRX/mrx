@@ -57,6 +57,9 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/what-determines-the-value-of-your-mineral-rights.webp',
   '/assets/articles/hero/what-is-an-oil-and-gas-lease-and-how-does-it-affect-your-mineral-rights.webp',
   '/assets/articles/hero/what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights.webp',
+  '/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp',
+  '/assets/articles/hero/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer.webp',
+  '/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp',
 ].sort();
 
 const rawNineExpectedAlts = {
@@ -127,6 +130,15 @@ const remainingTwelveExpectedAlts = {
     'Competing-offers cover with folders stacked on a desk',
   '/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp':
     'Form 50-171 cover with file dividers and a rock sample',
+} as const;
+
+const currentThreeExpectedAlts = {
+  '/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp':
+    'Form 50-843 cover with tabbed folders in a black file box',
+  '/assets/articles/hero/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer.webp':
+    'Ownership report cover with a pumpjack photo on clipped papers',
+  '/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp':
+    'Howard CAD plan cover with folders in an open file drawer',
 } as const;
 
 function printedEvidence(overrides = {}) {
@@ -214,6 +226,17 @@ describe('image text alt policy verifier', () => {
   it('uses exactly the remaining twelve root-reviewed concise alternatives', () => {
     expect(Object.keys(remainingTwelveExpectedAlts)).toHaveLength(12);
     for (const [path, expectedAlt] of Object.entries(remainingTwelveExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-02:\s+\S/);
+    }
+  });
+
+  it('uses exactly the current three root-reviewed concise alternatives', () => {
+    expect(Object.keys(currentThreeExpectedAlts)).toHaveLength(3);
+    for (const [path, expectedAlt] of Object.entries(currentThreeExpectedAlts)) {
       const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
       expect('concise_alt' in evidence).toBe(true);
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);

@@ -50,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(45);
+    ).toHaveLength(48);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -116,6 +116,25 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
         'Competing-offers cover with folders stacked on a desk',
       '/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp':
         'Form 50-171 cover with file dividers and a rock sample',
+    } as const;
+
+    for (const [path, conciseAlt] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
+  });
+
+  it('resolves the current three reviewed asset-specific concise alternatives', () => {
+    const expected = {
+      '/assets/articles/hero/form-50-843-electronic-delivery-request-field-inventory-for-crane-mineral-properties.webp':
+        'Form 50-843 cover with tabbed folders in a black file box',
+      '/assets/articles/hero/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer.webp':
+        'Ownership report cover with a pumpjack photo on clipped papers',
+      '/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp':
+        'Howard CAD plan cover with folders in an open file drawer',
     } as const;
 
     for (const [path, conciseAlt] of Object.entries(expected)) {

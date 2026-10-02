@@ -528,8 +528,9 @@
       "classification": "printed_text",
       "exact_text": "Form 50-843 Electronic Delivery Request Field Inventory for Crane Mineral Properties",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: full exact title at left; black file box at right holds cream folders with blue tabs, with a rough rock behind",
+      "original_path": null,
+      "concise_alt": "Form 50-843 cover with tabbed folders in a black file box"
     },
     "/assets/articles/hero/glasscock-cad-2025-2026-reappraisal-plan-oil-and-gas-reserves-page-locator.webp": {
       "sha256": "5b92f79dadacc088c5a18d47b4b8687b94e65d565ff6f0611f39e881ec2dba4e",
@@ -800,8 +801,9 @@
       "classification": "printed_text",
       "exact_text": "How to Check a Texas Mineral Ownership Report Before Comparing a Buyer Offer",
       "evidence_source": "artifacts/mrx1000-wave255-creative-qa/how-to-check-a-texas-mineral-ownership-report-before-comparing-a-buyer-offer/creative-manifest.json:hero rendered_text",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: full exact title at right; clipped cream papers over a map at left include a pumpjack photograph, with a pencil and lamp",
+      "original_path": null,
+      "concise_alt": "Ownership report cover with a pumpjack photo on clipped papers"
     },
     "/assets/articles/hero/how-to-choose-a-family-point-person-for-mineral-rights-inquiries.webp": {
       "sha256": "42b8cebaba417411a6cffb2e9de229f5fc66eb08c6f5d0c7e7256476f6c67341",
@@ -1074,8 +1076,9 @@
       "classification": "printed_text",
       "exact_text": "Howard CAD 2025-2026 Reappraisal Plan: Mineral Property Valuation Section Locator",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: full exact title at left; open dark file drawer at right contains cream folders and has brass pulls",
+      "original_path": null,
+      "concise_alt": "Howard CAD plan cover with folders in an open file drawer"
     },
     "/assets/articles/hero/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.webp": {
       "sha256": "2ff15b850ec62aaaad4679ce15547e0363aa648232f87c65d03645cd845bb1d1",
