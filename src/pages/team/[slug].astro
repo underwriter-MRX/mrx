@@ -81,6 +81,7 @@ const grahamPaths = [
             <span class="mrx-guide-profile__ask-label">
               <strong>Ask {guide.name}</strong>
               <small>Straight answers, 24/7</small>
+              <span class="mrx-guide-profile__ask-prompt">Click here</span>
             </span>
           </button>
         </div><p class="mrx-guide-profile__role">
@@ -233,13 +234,18 @@ const grahamPaths = [
     line-height: 1.4;
     color: #d7e2eb;
   }
+  .mrx-guide-profile__ask-prompt {
+    font-size: 0.68rem;
+    line-height: 1.4;
+    color: #f1c76e;
+  }
   .mrx-guide-profile__ask:focus-visible {
     outline: 3px solid #a77222;
     outline-offset: 3px;
   }
   @media (max-width: 760px) {
     .mrx-guide-profile {
-      grid-template-columns: 80px minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 0 0.75rem;
     }
     .mrx-guide-profile > div,
@@ -251,21 +257,14 @@ const grahamPaths = [
       grid-column: 1 / -1;
     }
     .mrx-guide-profile__ask {
-      grid-column: 2;
+      grid-column: 1;
       grid-row: 1;
-      justify-self: end;
+      justify-self: center;
       align-self: center;
       margin-bottom: 1rem;
     }
     .mrx-guide-profile > img {
-      grid-column: 1;
-      grid-row: 1;
-      align-self: center;
-      margin-bottom: 1rem;
-      width: 80px;
-      height: 80px;
-      max-width: 80px;
-      border-radius: 16px;
+      display: none;
     }
     .mrx-guide-profile__heading h1 {
       font-size: clamp(1.65rem, 6vw, 2.25rem);
