@@ -85,10 +85,42 @@ for (const width of [320, 375, 430, 768, 1440])
     const bar = page.locator('.mobile-contact-bar');
     if (width <= 767) {
       await expect(bar).toBeVisible();
-      await expect(bar.getByRole('link', { name: /Call/ })).toHaveAttribute(
-        'href',
-        (await phone.getAttribute('href')) as string,
+      const schedule = bar.getByRole('button', { name: 'Schedule a call with the MRX team' });
+      await expect(schedule).toBeVisible();
+      expect((await schedule.boundingBox())!.width).toBe(44);
+      const call = bar.getByRole('link', { name: /Call/ });
+      await expect(call).toHaveAttribute('href', (await phone.getAttribute('href')) as string);
+      const callBox = (await call.boundingBox())!;
+      const calendarBox = (await schedule.boundingBox())!;
+      const askBox = (await bar
+        .getByRole('button', { name: 'Ask Travis', exact: true })
+        .boundingBox())!;
+      expect(callBox.width).toBeLessThan(askBox.width);
+      expect(calendarBox.x).toBeGreaterThan(callBox.x + callBox.width);
+      expect(askBox.x).toBeGreaterThan(calendarBox.x + calendarBox.width);
+      expect(askBox.width).toBeCloseTo((width - 24) / 2, 0);
+      const gold = await page.evaluate(() =>
+        getComputedStyle(document.documentElement).getPropertyValue('--mrx-gold').trim(),
       );
+      const colorProbe = await bar
+        .getByRole('button', { name: 'Ask Travis', exact: true })
+        .evaluate((element, gold) => {
+          const probe = document.createElement('span');
+          probe.style.color = gold;
+          element.append(probe);
+          const expected = getComputedStyle(probe).color;
+          probe.remove();
+          return { actual: getComputedStyle(element).backgroundColor, expected };
+        }, gold);
+      expect(colorProbe.actual).toBe(colorProbe.expected);
+      await schedule.click();
+      await expect(page.locator('#travis-title')).toHaveText('Talking with Elena');
+      await expect(page.getByText(/I’m Elena, the MRX scheduling guide/)).toBeVisible();
+      await expect(
+        page.getByText('Your saved conversation is still here.', { exact: true }),
+      ).toBeVisible();
+      await page.getByRole('button', { name: 'Close conversation with Elena' }).click();
+      await expect(schedule).toBeFocused();
       await page.getByRole('button', { name: 'Ask Graham a question', exact: true }).click();
       await expect(bar).not.toBeVisible();
       await page.getByRole('button', { name: 'Close conversation with Graham' }).click();
@@ -125,10 +157,9 @@ for (const path of [
     await page.addStyleTag({ content: 'astro-dev-toolbar { display:none !important; }' });
     const bar = page.getByRole('navigation', { name: 'Quick contact' });
     await expect(bar).toBeInViewport();
-    await expect(bar.getByRole('link', { name: /Call/ })).toHaveAttribute(
-      'href',
-      /^tel:\+\d{10,15}$/,
-    );
+    await expect(
+      bar.getByRole('button', { name: 'Schedule a call with the MRX team' }),
+    ).toBeVisible();
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(
       375,
     );
