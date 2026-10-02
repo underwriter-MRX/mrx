@@ -18,8 +18,11 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp',
   '/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp',
   '/assets/articles/hero/form-50-150-confidentiality-boundary-map-for-crane-oil-and-gas-property.webp',
+  '/assets/articles/hero/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.webp',
   '/assets/articles/hero/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.webp',
   '/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp',
+  '/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp',
+  '/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp',
   '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp',
   '/assets/articles/hero/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp',
   '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp',
@@ -76,6 +79,15 @@ const nextFiveExpectedAlts = {
     'Form 50-150 cover with open case, envelope and core sample',
   '/assets/articles/hero/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.webp':
     'Karnes CAD cover with folders and a blue case beside the title',
+} as const;
+
+const nextThreeExpectedAlts = {
+  '/assets/articles/hero/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.webp':
+    'Karnes CAD cover with two table windows in an ivory binder',
+  '/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp':
+    'Martin CAD cover with a tabbed table and brass ruler',
+  '/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp':
+    'Midland CAD cover with reels, storage boxes and folders',
 } as const;
 
 function printedEvidence(overrides = {}) {
@@ -141,6 +153,17 @@ describe('image text alt policy verifier', () => {
   it('uses exactly the five current root-reviewed concise alternatives', () => {
     expect(Object.keys(nextFiveExpectedAlts)).toHaveLength(5);
     for (const [path, expectedAlt] of Object.entries(nextFiveExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-01:\s+\S/);
+    }
+  });
+
+  it('uses exactly the next three root-reviewed concise alternatives', () => {
+    expect(Object.keys(nextThreeExpectedAlts)).toHaveLength(3);
+    for (const [path, expectedAlt] of Object.entries(nextThreeExpectedAlts)) {
       const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
       expect('concise_alt' in evidence).toBe(true);
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);

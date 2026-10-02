@@ -52,7 +52,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(30);
+    ).toHaveLength(33);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -71,6 +71,25 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       'Partial mineral sale cover with segmented circle beside title',
     );
     expect(resolveImageTextAlt(target, evidence.exact_text)).toBe(evidence.concise_alt);
+  });
+
+  it('uses the next three reviewed asset-specific concise alternatives', () => {
+    const expected = {
+      '/assets/articles/hero/karnes-cad-2024-annual-report-category-g-parcel-and-ratio-study-table-crosswalk.webp':
+        'Karnes CAD cover with two table windows in an ivory binder',
+      '/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp':
+        'Martin CAD cover with a tabbed table and brass ruler',
+      '/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp':
+        'Midland CAD cover with reels, storage boxes and folders',
+    } as const;
+
+    for (const [path, conciseAlt] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
   });
 
   it('uses only manifest-approved versioned paths and keeps unknown paths unchanged', () => {

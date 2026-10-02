@@ -1134,8 +1134,9 @@
       "classification": "printed_text",
       "exact_text": "Karnes CAD 2024 Annual Report: Category G Parcel and Ratio-Study Table Crosswalk",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel; upright ivory binder with two grid-table windows, brass vertical fastener and small blue block at lower right; no authentic government-document claim",
+      "original_path": null,
+      "concise_alt": "Karnes CAD cover with two table windows in an ivory binder"
     },
     "/assets/articles/hero/karnes-cad-2024-mass-appraisal-report-page-20-county-name-source-check.webp": {
       "sha256": "06dd26bbb0e770ee67fbe83738be18439488b51890e1ba8f6d1d3e0ac1257044",
@@ -1263,8 +1264,9 @@
       "classification": "printed_text",
       "exact_text": "Martin CAD 2025 Category G Row: Oil & Gas Parcel Count and Market-Value Boundary",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel; stack of grid-table sheets with a highlighted row and blue tab; brass ruler crosses the foreground diagonally",
+      "original_path": null,
+      "concise_alt": "Martin CAD cover with a tabbed table and brass ruler"
     },
     "/assets/articles/hero/martin-cad-2026-mineral-archive-certified-link-vs-preliminary-pdf-label.webp": {
       "sha256": "7b68eb5f13fcb30dfdedf0ebc3d198d7bb4ca8b26b066ad44d91d2195412c2d1",
@@ -1326,8 +1328,9 @@
       "classification": "printed_text",
       "exact_text": "Midland CAD 2026 Certified Mineral Roll ZIP: File Order, Formats, and Privacy Limits",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: navy title panel; two dark round reels behind a closed storage box and shield-marked container; several colored folders in the foreground",
+      "original_path": null,
+      "concise_alt": "Midland CAD cover with reels, storage boxes and folders"
     },
     "/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp": {
       "sha256": "50f492afeed7a04ce3b1635398a6c352331a26de96ad64d5bd6baf27023ec43f",
