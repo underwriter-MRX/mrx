@@ -38,9 +38,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
     expect(textPolicy.owner_policy).toContain(
       'Keep exact printed text as pixel/title identity evidence',
     );
-    expect(textPolicy.owner_policy).toContain(
-      'do not require a full transcription in alt text',
-    );
+    expect(textPolicy.owner_policy).toContain('do not require a full transcription in alt text');
     expect(evidence.exact_text).toBe(
       'What Is a Division Order and Why Does It Matter for Mineral Rights Owners?',
     );
@@ -52,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(33);
+    ).toHaveLength(45);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -81,6 +79,43 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
         'Martin CAD cover with a tabbed table and brass ruler',
       '/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp':
         'Midland CAD cover with reels, storage boxes and folders',
+    } as const;
+
+    for (const [path, conciseAlt] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
+  });
+
+  it('resolves the remaining twelve reviewed asset-specific concise alternatives', () => {
+    const expected = {
+      '/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp':
+        'Midland CAD cover with three separate card-file drawers',
+      '/assets/articles/hero/why-mineral-rights-are-separate-from-surface-rights-in-texas-a-landowners-guide.webp':
+        'Mineral and surface rights cover with a mountain-and-sun icon',
+      '/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp':
+        'Winkler CAD cover with three paper stacks feeding a file tray',
+      '/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp':
+        'Glasscock CAD cover with stacked folders and a brass label',
+      '/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp':
+        'Inherited royalty cover with a tabbed statement and Texas map',
+      '/assets/articles/hero/midland-cad-2025-report-419-660-mineral-interest-accounts-on-pdf-page-25.webp':
+        'Midland CAD report cover with a tabbed book and rock samples',
+      '/assets/articles/hero/risks-of-selling-your-mineral-rights-to-a-direct-buyer-what-to-know-before-you-sign.webp':
+        'Direct-buyer risks cover with a three-line document icon',
+      '/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp':
+        'Tax directory cover with a service window and notice board',
+      '/assets/articles/hero/types-of-mineral-rights-in-texas-royalty-interests-working-interests-and-overriding-royalties-explained.webp':
+        'Mineral-rights types cover with three binder icons',
+      '/assets/articles/hero/what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include.webp':
+        'Purchase-agreement cover with a signed-document icon',
+      '/assets/articles/hero/what-to-do-when-you-have-competing-offers-on-your-mineral-rights-a-guide.webp':
+        'Competing-offers cover with folders stacked on a desk',
+      '/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp':
+        'Form 50-171 cover with file dividers and a rock sample',
     } as const;
 
     for (const [path, conciseAlt] of Object.entries(expected)) {

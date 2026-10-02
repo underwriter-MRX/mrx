@@ -509,8 +509,9 @@
       "classification": "printed_text",
       "exact_text": "Form 50-171 Separate-Taxation Request Field Inventory for Crane Mineral Interests",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Form 50-171 cover with file dividers and a rock sample; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Form 50-171 cover with file dividers and a rock sample"
     },
     "/assets/articles/hero/form-50-172-joint-taxation-instruction-source-map-for-crane-mineral-interests.webp": {
       "sha256": "2c233c59bcc6a659f2c18ee9e781e5d6c592a6b0ce9cee338003761ee965eeb8",
@@ -545,8 +546,9 @@
       "classification": "printed_text",
       "exact_text": "Glasscock CAD 2025 Annual Report Category G Mineral Definition Page Locator",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Glasscock CAD cover with stacked folders and a brass label; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Glasscock CAD cover with stacked folders and a brass label"
     },
     "/assets/articles/hero/glasscock-cad-2025-certified-mineral-roll-zip-link-locator.webp": {
       "sha256": "b1e131b00d720233c104621ee0aac5dc72ff7f99c2076e054cfd6e23ec7eeb79",
@@ -962,8 +964,9 @@
       "classification": "printed_text",
       "exact_text": "How to Locate a Texas Mineral Interest From an Inherited Royalty Statement",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Inherited royalty cover with a tabbed statement and Texas map; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Inherited royalty cover with a tabbed statement and Texas map"
     },
     "/assets/articles/hero/how-to-locate-an-unanswered-question-in-a-mineral-rights-worksheet.webp": {
       "sha256": "d830e39261c419ed2f40daec98a4ac05c5076c29a786ba9aed76a1c8b90df989",
@@ -1310,8 +1313,9 @@
       "classification": "printed_text",
       "exact_text": "Midland CAD 2025 Report: 419,660 Mineral Interest Accounts on PDF Page 25",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Midland CAD report cover with a tabbed book and rock samples; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Midland CAD report cover with a tabbed book and rock samples"
     },
     "/assets/articles/hero/midland-cad-2026-appraisal-services-rfp-mineral-scope-and-date-control-crosswalk.webp": {
       "sha256": "a83837eaf743865a1f9c9cff0ce0fc516ae3389cb27c5365f3e2acc7c95d45f7",
@@ -1338,8 +1342,9 @@
       "classification": "printed_text",
       "exact_text": "Midland CAD Open Records Page: Mineral Files, Rolls, and Notices as Separate Source Routes",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Midland CAD cover with three separate card-file drawers; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Midland CAD cover with three separate card-file drawers"
     },
     "/assets/articles/hero/midland-vs-delaware-basin-mineral-rights.webp": {
       "sha256": "bfa2c66cf19349e675c62475a033430630b7f6ecc92ffa504b5f3dace1a7764f",
@@ -1548,8 +1553,9 @@
       "classification": "printed_text",
       "exact_text": "Risks of Selling Your Mineral Rights to a Direct Buyer: What to Know Before You Sign",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Direct-buyer risks cover with a three-line document icon; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Direct-buyer risks cover with a three-line document icon"
     },
     "/assets/articles/hero/sec-edgar-mineral-rights-offeror-filing-search-retrieval-provenance-worksheet.webp": {
       "sha256": "51df8f04514a3b602e607ec7c1e5c95074621c997f6714ec584b1aa77c34a204",
@@ -2054,8 +2060,9 @@
       "classification": "printed_text",
       "exact_text": "Texas Comptroller County Tax Assessor-Collector Directory Retrieval Provenance Worksheet",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Tax directory cover with a service window and notice board; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Tax directory cover with a service window and notice board"
     },
     "/assets/articles/hero/texas-comptroller-lease-drop-retrieval-provenance-worksheet.webp": {
       "sha256": "728b104a36204786cba4051832d1eac7e51433a9c22fbc279ef10a417a412a25",
@@ -2578,8 +2585,9 @@
       "classification": "printed_text",
       "exact_text": "Types of Mineral Rights in Texas: Royalty Interests, Working Interests, and Overriding Royalties Explained",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Mineral-rights types cover with three binder icons; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Mineral-rights types cover with three binder icons"
     },
     "/assets/articles/hero/uncovering-hidden-costs-what-every-mineral-rights-seller-should-know-before-the-review.webp": {
       "sha256": "ffffe76bd181b7a7080cebe5a0416bbb2edce3a14aa573af74339216fa65dfdf",
@@ -2978,8 +2986,9 @@
       "classification": "printed_text",
       "exact_text": "What Is a Mineral Rights Purchase Agreement and What Should It Include?",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Purchase-agreement cover with a signed-document icon; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Purchase-agreement cover with a signed-document icon"
     },
     "/assets/articles/hero/what-is-a-net-royalty-acre-nri-and-mineral-rights-value.webp": {
       "sha256": "6d6c21142e1338c4f4c09110921ee92c51f59921e2a350b688d0f09ec6ef61d6",
@@ -3025,8 +3034,9 @@
       "classification": "printed_text",
       "exact_text": "What to Do When You Have Competing Offers on Your Mineral Rights: A Guide",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Competing-offers cover with folders stacked on a desk; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Competing-offers cover with folders stacked on a desk"
     },
     "/assets/articles/hero/what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights.webp": {
       "sha256": "f893e10a3b236679b85d516c337c9b1d28949b61276e3d5655c2912d4f130e88",
@@ -3072,8 +3082,9 @@
       "classification": "printed_text",
       "exact_text": "Why Mineral Rights Are Separate From Surface Rights in Texas: A Landowner's Guide",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Mineral and surface rights cover with a mountain-and-sun icon; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Mineral and surface rights cover with a mountain-and-sun icon"
     },
     "/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp": {
       "sha256": "16c1a3f58d73389319af080a18db84807f547e97c49df92fb194db8ba799ae38",
@@ -3135,8 +3146,9 @@
       "classification": "printed_text",
       "exact_text": "Winkler CAD 2025-2026 Mineral Data Chain: RRC Files, Operator Inputs, and Taxpayer Records",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Winkler CAD cover with three paper stacks feeding a file tray; exact printed article title was visually verified in the left title panel. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Winkler CAD cover with three paper stacks feeding a file tray"
     },
     "/assets/articles/hero/winkler-cad-2025-2026-mineral-reports-recipients-vs-intended-users.webp": {
       "sha256": "de7bc0b324cc49f54d1617ee8989d9adacd4c6ea6579ea3530fe7fd867f81399",

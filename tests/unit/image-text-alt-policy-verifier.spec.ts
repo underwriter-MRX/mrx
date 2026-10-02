@@ -23,6 +23,18 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp',
   '/assets/articles/hero/martin-cad-2025-category-g-row-oil-and-gas-parcel-count-and-market-value-boundary.webp',
   '/assets/articles/hero/midland-cad-2026-certified-mineral-roll-zip-file-order-formats-and-privacy-limits.webp',
+  '/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp',
+  '/assets/articles/hero/why-mineral-rights-are-separate-from-surface-rights-in-texas-a-landowners-guide.webp',
+  '/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp',
+  '/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp',
+  '/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp',
+  '/assets/articles/hero/midland-cad-2025-report-419-660-mineral-interest-accounts-on-pdf-page-25.webp',
+  '/assets/articles/hero/risks-of-selling-your-mineral-rights-to-a-direct-buyer-what-to-know-before-you-sign.webp',
+  '/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp',
+  '/assets/articles/hero/types-of-mineral-rights-in-texas-royalty-interests-working-interests-and-overriding-royalties-explained.webp',
+  '/assets/articles/hero/what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include.webp',
+  '/assets/articles/hero/what-to-do-when-you-have-competing-offers-on-your-mineral-rights-a-guide.webp',
+  '/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp',
   '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp',
   '/assets/articles/hero/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp',
   '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp',
@@ -90,6 +102,33 @@ const nextThreeExpectedAlts = {
     'Midland CAD cover with reels, storage boxes and folders',
 } as const;
 
+const remainingTwelveExpectedAlts = {
+  '/assets/articles/hero/midland-cad-open-records-page-mineral-files-rolls-and-notices-as-separate-source-routes.webp':
+    'Midland CAD cover with three separate card-file drawers',
+  '/assets/articles/hero/why-mineral-rights-are-separate-from-surface-rights-in-texas-a-landowners-guide.webp':
+    'Mineral and surface rights cover with a mountain-and-sun icon',
+  '/assets/articles/hero/winkler-cad-2025-2026-mineral-data-chain-rrc-files-operator-inputs-and-taxpayer-records.webp':
+    'Winkler CAD cover with three paper stacks feeding a file tray',
+  '/assets/articles/hero/glasscock-cad-2025-annual-report-category-g-mineral-definition-page-locator.webp':
+    'Glasscock CAD cover with stacked folders and a brass label',
+  '/assets/articles/hero/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement.webp':
+    'Inherited royalty cover with a tabbed statement and Texas map',
+  '/assets/articles/hero/midland-cad-2025-report-419-660-mineral-interest-accounts-on-pdf-page-25.webp':
+    'Midland CAD report cover with a tabbed book and rock samples',
+  '/assets/articles/hero/risks-of-selling-your-mineral-rights-to-a-direct-buyer-what-to-know-before-you-sign.webp':
+    'Direct-buyer risks cover with a three-line document icon',
+  '/assets/articles/hero/texas-comptroller-county-tax-assessor-collector-directory-retrieval-provenance-worksheet.webp':
+    'Tax directory cover with a service window and notice board',
+  '/assets/articles/hero/types-of-mineral-rights-in-texas-royalty-interests-working-interests-and-overriding-royalties-explained.webp':
+    'Mineral-rights types cover with three binder icons',
+  '/assets/articles/hero/what-is-a-mineral-rights-purchase-agreement-and-what-should-it-include.webp':
+    'Purchase-agreement cover with a signed-document icon',
+  '/assets/articles/hero/what-to-do-when-you-have-competing-offers-on-your-mineral-rights-a-guide.webp':
+    'Competing-offers cover with folders stacked on a desk',
+  '/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp':
+    'Form 50-171 cover with file dividers and a rock sample',
+} as const;
+
 function printedEvidence(overrides = {}) {
   return {
     sha256: assetSha,
@@ -131,7 +170,7 @@ describe('image text alt policy verifier', () => {
       const reviewed = evidence as { concise_alt: string; visual_review: string };
       expect(reviewed.concise_alt.trim()).toBe(reviewed.concise_alt);
       expect(reviewed.concise_alt.length).toBeGreaterThan(0);
-      expect(reviewed.visual_review).toMatch(/^2026-10-01:\s+\S/);
+      expect(reviewed.visual_review).toMatch(/^2026-10-(?:01|02):\s+\S/);
     }
     expect(validate()).toEqual([]);
     expect(validate({ alt: 'A vaguely relevant document image' })).toContain(
@@ -169,6 +208,17 @@ describe('image text alt policy verifier', () => {
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
       expect(evidence.concise_alt).toBe(expectedAlt);
       expect(evidence.visual_review).toMatch(/^2026-10-01:\s+\S/);
+    }
+  });
+
+  it('uses exactly the remaining twelve root-reviewed concise alternatives', () => {
+    expect(Object.keys(remainingTwelveExpectedAlts)).toHaveLength(12);
+    for (const [path, expectedAlt] of Object.entries(remainingTwelveExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-02:\s+\S/);
     }
   });
 
