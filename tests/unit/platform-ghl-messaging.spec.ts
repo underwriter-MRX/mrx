@@ -48,6 +48,11 @@ describe('HighLevel conversational delivery contract', () => {
     vi.stubEnv('GHL_EMAIL_FROM', 'underwriter@mineralrightsxchange.com');
     vi.stubEnv('GHL_APPOINTMENT_WORKFLOW_ID', 'workflow-1');
     fetchSpy = vi.fn(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/contacts/contact-1')) {
+        return new Response(JSON.stringify({ contact: { id: 'contact-1', dnd: false } }), {
+          status: 200,
+        });
+      }
       if (url.endsWith('/contacts/upsert')) {
         return new Response(JSON.stringify({ contact: { id: 'contact-1' } }), { status: 200 });
       }
@@ -324,6 +329,73 @@ describe('HighLevel conversational delivery contract', () => {
       Authorization: 'Bearer legacy-token',
     });
   });
+
+  it('restores only an MRX-created block for the newly consented delivery channel', async () => {
+    const original = fetchSpy.getMockImplementation()!;
+    fetchSpy.mockImplementation(async (url: string, init?: RequestInit) => {
+      if (url.endsWith('/contacts/contact-1') && !init?.method) {
+        return new Response(
+          JSON.stringify({
+            contact: {
+              dnd: false,
+              dndSettings: {
+                SMS: { status: 'active', code: 'MRX_PERMISSION_DECLINED' },
+                Email: { status: 'active', code: 'MANUAL' },
+              },
+            },
+          }),
+        );
+      }
+      return original(url, init);
+    });
+    const result = await sendRequestedInformation({
+      profile,
+      channels: ['sms'],
+      answer: 'Saved answer',
+      link: 'https://mineralrightsxchange.com/',
+    });
+    expect(result.sent).toEqual(['sms']);
+    const update = fetchSpy.mock.calls.find(
+      ([url, init]) =>
+        String(url).endsWith('/contacts/contact-1') && (init as RequestInit)?.method === 'PUT',
+    );
+    expect(JSON.parse(String((update?.[1] as RequestInit).body))).toEqual({
+      dndSettings: { SMS: { status: 'inactive' } },
+    });
+  });
+
+  it.each(['STOP', 'MANUAL', 'UNKNOWN', 'GLOBAL'])(
+    'preserves %s restrictions and does not send',
+    async (code) => {
+      const original = fetchSpy.getMockImplementation()!;
+      fetchSpy.mockImplementation(async (url: string, init?: RequestInit) => {
+        if (url.endsWith('/contacts/contact-1') && !init?.method) {
+          return new Response(
+            JSON.stringify({
+              contact: { dnd: code === 'GLOBAL', dndSettings: { SMS: { status: 'active', code } } },
+            }),
+          );
+        }
+        return original(url, init);
+      });
+      const result = await sendRequestedInformation({
+        profile,
+        channels: ['sms'],
+        answer: 'Saved answer',
+        link: 'https://mineralrightsxchange.com/',
+      });
+      expect(result.sent).toEqual([]);
+      expect(result.failureReasons).toEqual({ sms: 'delivery_channel_blocked' });
+      expect(
+        fetchSpy.mock.calls.some(
+          ([url, init]) =>
+            String(url).endsWith('/conversations/messages') ||
+            (String(url).endsWith('/contacts/contact-1') &&
+              (init as RequestInit)?.method === 'PUT'),
+        ),
+      ).toBe(false);
+    },
+  );
 
   it('sends the full answer by email and a mobile link by SMS only after both permissions are granted', async () => {
     const result = await sendRequestedInformation({

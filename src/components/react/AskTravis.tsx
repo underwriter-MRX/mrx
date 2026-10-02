@@ -1666,14 +1666,29 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         }),
       });
       const result = await response.json();
-      if (!response.ok || !result.sent?.length) throw new Error(result.error || 'delivery_failed');
+      if (!response.ok || !result.sent?.length) {
+        const blocked = Object.values(result.failureReasons || {}).includes(
+          'delivery_channel_blocked',
+        );
+        const message = blocked
+          ? 'The messaging provider has this contact blocked for the requested channel. Your answer is still here. You can choose another delivery method or contact MRX for help.'
+          : result.suppressed
+            ? 'Sending is disabled for this test conversation. Your answer is still here.'
+            : result.error === 'delivery_not_configured'
+              ? 'Message delivery is unavailable right now. Your answer is still here; please contact MRX if you need a copy.'
+              : 'MRX couldn’t confirm the message was sent. Your answer is still here. Check your inbox or texts before trying again, or choose another delivery method.';
+        setTypingPersona(null);
+        setStep('open');
+        await guideError(message, 'travis');
+        return;
+      }
       const sentLabels = result.sent.map((channel: DeliveryChannel) =>
         channel === 'email' ? 'email' : 'text message',
       );
       setStep('open');
       setTypingPersona(null);
       await guideSay(
-        `Done. MRX sent it by ${sentLabels.join(' and ')}. You can keep asking questions here anytime.`,
+        `MRX submitted it for delivery by ${sentLabels.join(' and ')}.${result.failures?.length ? ' The other requested delivery method failed; your answer is still here.' : ' You can keep asking questions here anytime.'}`,
         'travis',
         260,
       );
@@ -1684,7 +1699,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       setTypingPersona(null);
       setStep('open');
       await guideError(
-        'I couldn’t send that just now, so nothing left the site. Your answer is still here, and you can try sending it again in a moment.',
+        'MRX couldn’t confirm the message was sent. Your answer is still here. Check your inbox or texts before trying again, or choose another delivery method.',
         'travis',
       );
     }

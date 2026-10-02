@@ -72,7 +72,17 @@ for (const name of guideNames) {
       await expect(portrait).not.toBeVisible();
       await expect(ask.locator('.mrx-guide-profile__ask-prompt')).toHaveText('Click here');
       const buttonBox = await ask.boundingBox();
-      expect(buttonBox?.height).toBeGreaterThanOrEqual(44);
+      expect(buttonBox?.height).toBeGreaterThanOrEqual(100);
+      expect((await buttonPortrait.boundingBox())!.width).toBeGreaterThanOrEqual(76);
+      const footerPortrait = page.locator('.mobile-contact-bar img');
+      expect((await buttonPortrait.boundingBox())!.width).toBeGreaterThan(
+        (await footerPortrait.boundingBox())!.width * 2,
+      );
+      await expect(page.locator('.mobile-contact-bar small')).toHaveText('Click here');
+      await expect(page.locator('.mobile-contact-bar small')).toHaveCSS(
+        'color',
+        'rgb(255, 255, 255)',
+      );
       expect(Math.abs(buttonBox!.x + buttonBox!.width / 2 - width / 2)).toBeLessThan(2);
       const labelBox = await page.locator('.mrx-guide-label').boundingBox();
       expect(labelBox!.y).toBeGreaterThanOrEqual(buttonBox!.y + buttonBox!.height);

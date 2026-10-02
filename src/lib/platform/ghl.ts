@@ -852,6 +852,32 @@ export async function enrollContactInGhlWorkflow(
   return response.json().catch(() => ({}));
 }
 
+// A fresh answer-delivery consent can reverse only a block created by MRX.
+// Never clear a global, carrier, STOP, or manually applied provider opt-out.
+async function restoreAnswerDeliveryPermission(contactId: string, channel: 'email' | 'sms') {
+  const settings = config();
+  if (!settings) throw new Error('delivery_not_configured');
+  const url = `${API_BASE}/contacts/${encodeURIComponent(contactId)}`;
+  const response = await fetch(url, { headers: headers(settings.token) });
+  if (!response.ok) throw new Error('delivery_permission_check_failed');
+  const payload = await response.json();
+  const contact = payload.contact;
+  if (!contact) throw new Error('delivery_permission_check_failed');
+  const key = channel === 'sms' ? 'SMS' : 'Email';
+  const restriction = contact.dndSettings?.[key];
+  if (contact.dnd === true) throw new Error('delivery_channel_blocked');
+  if (restriction?.status !== 'active') return;
+  if (restriction.code !== 'MRX_PERMISSION_DECLINED') {
+    throw new Error('delivery_channel_blocked');
+  }
+  const restored = await fetch(url, {
+    method: 'PUT',
+    headers: headers(settings.token),
+    body: JSON.stringify({ dndSettings: { [key]: { status: 'inactive' } } }),
+  });
+  if (!restored.ok) throw new Error('delivery_permission_update_failed');
+}
+
 export async function sendRequestedInformation(args: {
   profile: ContactProfile;
   channels: Array<'email' | 'sms'>;
@@ -861,9 +887,11 @@ export async function sendRequestedInformation(args: {
   const contactId = await upsertContact(args.profile);
   const sent: Array<'email' | 'sms'> = [];
   const failures: Array<'email' | 'sms'> = [];
-  for (const channel of args.channels) {
+  const failureReasons: Partial<Record<'email' | 'sms', string>> = {};
+  for (const channel of [...new Set(args.channels)]) {
     try {
       if (channel === 'email' && args.profile.email && args.profile.permissions.email) {
+        await restoreAnswerDeliveryPermission(contactId, channel);
         const normalizedAnswer = normalizeMrxText(args.answer);
         const safeAnswer = escapeHtml(normalizedAnswer).replace(/\n/g, '<br />');
         await sendGhlMessage({
@@ -876,6 +904,7 @@ export async function sendRequestedInformation(args: {
         });
         sent.push('email');
       } else if (channel === 'sms' && args.profile.phone && args.profile.permissions.sms) {
+        await restoreAnswerDeliveryPermission(contactId, channel);
         await sendGhlMessage({
           contactId,
           type: 'SMS',
@@ -886,11 +915,16 @@ export async function sendRequestedInformation(args: {
       } else {
         failures.push(channel);
       }
-    } catch {
+    } catch (error) {
       failures.push(channel);
+      const reason = error instanceof Error ? error.message : '';
+      const code = reason === 'delivery_channel_blocked' ? reason : 'provider_delivery_failed';
+      failureReasons[channel] = code;
+      // Codes only: no recipient, message content, provider body, or credentials.
+      console.warn('[MRX answer delivery]', { channel, code });
     }
   }
-  return { contactId, sent, failures };
+  return { contactId, sent, failures, ...(failures.length ? { failureReasons } : {}) };
 }
 
 export async function sendGhlIntakeChecklist(args: {

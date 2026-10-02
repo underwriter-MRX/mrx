@@ -399,17 +399,22 @@
 }
 .travis-composer form .travis-voice-button {
   min-height: 44px;
-  border: 1px solid #365f7a;
-  background: #fff;
-  color: #173e58;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #238553;
+  background: #124b36;
+  color: #64ee9d;
 }
 .travis-composer form .travis-voice-button:hover:not(:disabled) {
-  background: #edf4f7;
+  background: #0e3c2b;
 }
-.travis-composer form .travis-voice-button[aria-pressed='true'] {
+.travis-composer form .travis-voice-button[aria-pressed='true'],
+.travis-composer form .travis-voice-button[aria-pressed='true']:hover:not(:disabled) {
   border-color: #9b2f2f;
-  background: #fff1f1;
-  color: #8a2424;
+  background: #a52332;
+  color: #fff;
   box-shadow: 0 0 0 3px rgba(155, 47, 47, 0.12);
 }
 .travis-voice-button svg {
@@ -610,10 +615,10 @@
   gap: 0.6rem;
   margin-top: 0.6rem;
   padding: 0.55rem 0.75rem;
-  border: 1px solid #c2d4df;
+  border: 1px solid #a52332;
   border-radius: 13px;
-  background: #f0f6fa;
-  color: #173e58;
+  background: #651925;
+  color: #fff;
   font-size: 0.85rem;
 }
 .travis-voice-panel button {
@@ -627,7 +632,7 @@
   cursor: pointer;
 }
 .travis-voice-indicator {
-  color: #9b2f2f;
+  color: #ff8791;
 }
 .travis-voice-privacy {
   margin: 0.25rem 0 0;
