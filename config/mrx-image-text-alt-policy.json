@@ -2878,8 +2878,9 @@
       "classification": "printed_text",
       "exact_text": "Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Exact title at left; open zip portfolio holding folders and a long perforated paper sheet at right. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Upton data files cover with folders and perforated paper"
     },
     "/assets/articles/hero/upton-cad-open-records-policy-request-response-clarification-and-charge-states.webp": {
       "sha256": "bcc3c13e27ab896dc8d3af344c62142d773cc8a1e8eb274d994c207337f0a33a",
@@ -2896,8 +2897,9 @@
       "classification": "printed_text",
       "exact_text": "Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Exact title at left; open ring binder with map sheets and blue and gold divider tabs at right. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Ward reappraisal cover with an open tabbed map binder"
     },
     "/assets/articles/hero/ward-cad-2026-mineral-recap-what-83-920-items-and-5-829b-gross-value-do-and-do-not-mean.webp": {
       "sha256": "e4759c159b55294ad7575ee3bc70a867b1bd0cc0f9f83d9547aa0ee51f466082",
@@ -3103,8 +3105,9 @@
       "classification": "printed_text",
       "exact_text": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Exact title at left; chart lines, document cards and a partly cropped magnifying glass at right. Image pixels remain unchanged.",
+      "original_path": null,
+      "concise_alt": "Transparent acquisition cover with charts and a magnifying glass"
     },
     "/assets/articles/hero/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services.webp": {
       "sha256": "9f21ba36795b0c4b087dc3203d46201fb0dcf6caf408223a94095f58719379e4",

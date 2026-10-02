@@ -68,6 +68,9 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/sop-20260928/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp',
   '/assets/articles/hero/sop-20260928/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp',
   '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp',
+  '/assets/articles/hero/upton-cad-2026-mineral-data-files-2-260-byte-txt-records-and-a-nested-csv-header.webp',
+  '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp',
+  '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp',
 ].sort();
 
 const rawNineExpectedAlts = {
@@ -172,6 +175,15 @@ const appraisalTwoExpectedAlts = {
     'Midland appraisal cover with rock samples and calipers',
   '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp':
     'Valuation guide cover with two men reviewing maps and documents',
+} as const;
+
+const offerThreeExpectedAlts = {
+  '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp':
+    'Transparent acquisition cover with charts and a magnifying glass',
+  '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp':
+    'Ward reappraisal cover with an open tabbed map binder',
+  '/assets/articles/hero/upton-cad-2026-mineral-data-files-2-260-byte-txt-records-and-a-nested-csv-header.webp':
+    'Upton data files cover with folders and perforated paper',
 } as const;
 
 function printedEvidence(overrides = {}) {
@@ -303,6 +315,17 @@ describe('image text alt policy verifier', () => {
   it('uses exactly the appraisal-two root-reviewed concise alternatives', () => {
     expect(Object.keys(appraisalTwoExpectedAlts)).toHaveLength(2);
     for (const [path, expectedAlt] of Object.entries(appraisalTwoExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-02:\s+\S/);
+    }
+  });
+
+  it('uses exactly the offer-three root-reviewed concise alternatives', () => {
+    expect(Object.keys(offerThreeExpectedAlts)).toHaveLength(3);
+    for (const [path, expectedAlt] of Object.entries(offerThreeExpectedAlts)) {
       const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
       expect('concise_alt' in evidence).toBe(true);
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);

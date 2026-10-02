@@ -50,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(56);
+    ).toHaveLength(59);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -196,6 +196,37 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
         {
           exactText: 'The Comprehensive Guide to Factors Impacting Your Mineral Rights Valuation',
           conciseAlt: 'Valuation guide cover with two men reviewing maps and documents',
+        },
+    } as const;
+
+    for (const [path, reviewed] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect(evidence.exact_text).toBe(reviewed.exactText);
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(reviewed.conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(reviewed.conciseAlt);
+    }
+  });
+
+  it('resolves the offer-three reviewed alternatives without changing exact-text identity', () => {
+    const expected = {
+      '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp':
+        {
+          exactText: 'Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition',
+          conciseAlt: 'Transparent acquisition cover with charts and a magnifying glass',
+        },
+      '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp':
+        {
+          exactText:
+            'Ward CAD 2025-2026 Reappraisal Plan: Two Mineral Sections and Their Page Ranges',
+          conciseAlt: 'Ward reappraisal cover with an open tabbed map binder',
+        },
+      '/assets/articles/hero/upton-cad-2026-mineral-data-files-2-260-byte-txt-records-and-a-nested-csv-header.webp':
+        {
+          exactText:
+            'Upton CAD 2026 Mineral Data Files: 2,260-Byte TXT Records and a Nested CSV Header',
+          conciseAlt: 'Upton data files cover with folders and perforated paper',
         },
     } as const;
 
