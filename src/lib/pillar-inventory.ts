@@ -1,4 +1,4 @@
-import { ownerResourcePriority } from './owner-resource-priority';
+import { ownerResourcePriorityForPillar } from './owner-resource-priority';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import {
@@ -78,7 +78,8 @@ export async function getPostsForPillar(
     .filter((post) => resolvePillar(post).id === pillarId)
     .sort(
       (a, b) =>
-        ownerResourcePriority(a.id) - ownerResourcePriority(b.id) ||
+        ownerResourcePriorityForPillar(pillarId, a.id) -
+          ownerResourcePriorityForPillar(pillarId, b.id) ||
         Number(Boolean(b.data.featured)) - Number(Boolean(a.data.featured)) ||
         new Date(b.data.published_at).getTime() - new Date(a.data.published_at).getTime() ||
         a.id.localeCompare(b.id),

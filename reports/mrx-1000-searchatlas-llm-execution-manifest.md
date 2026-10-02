@@ -101,4 +101,4 @@ Every row stops on its incomplete ordered review sequence and this artifact's lo
 | `docs/evidence/mrx1000-row2/reports/mrx1000-row2-remediated-fresh-post-recovery-audit-compliance.md`                              | `03437048d097cd95356d99c40653fe6967f8ad9f6c37e84a777404c737b2cdca` |
 | `docs/evidence/mrx1000-row2/reports/mrx1000-055-fresh-seo-aeo-audit-after-exact-row2-recovery.md`                                 | `e4de274bccc48d4e614258fd09792c820cea3531366612187cedc4172eda6964` |
 
-Manifest content fingerprint: `9d10f6c56c285c0a5c63f78b78a126d68c7101da3b5e6ce3fb31e5760fe6defb`.
+Manifest content fingerprint: `c0773fe75c6b9c79630e967f1291b58c22e935fd7a24139d3f378bfa421e605d`.

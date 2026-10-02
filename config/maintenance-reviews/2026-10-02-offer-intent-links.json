@@ -1,0 +1,45 @@
+{
+  "artifact_type": "mrx_reviewed_seo_maintenance_transition",
+  "version": 1,
+  "reviewer_id": "codex-offer-intent-independent-review",
+  "reviewed_at": "2026-10-02T18:23:02.828430+00:00",
+  "baseline_commit": "9958678a7f9e10c0b46b5f99c76f01265aa4280a",
+  "owner_authorization": "October 2 owner request to execute ordered MRX offer-intent marketing playbooks, with standing publication authority.",
+  "evidence_limit": "Exactly two reviewed contextual-link insertions. This review preserves immutable prior publication proof and does not assert deployment or citation impact.",
+  "review_method": "Reviewed proposed paragraphs against live worksheet behavior, article context and existing disclosures. Bound whole-file hashes and one reversible insertion per article; verified unchanged frontmatter and unchanged remaining bytes.",
+  "entry_count": 2,
+  "reverse_edit_count": 2,
+  "entries": [
+    {
+      "repo_path": "src/content/posts/converting-monthly-royalty-history-into-a-valuation-baseline.mdx",
+      "previous_sha256": "0ee238866fe0838ec4e4060974d50f76b1080dc7c2cb77cd599002a19e4171ed",
+      "current_sha256": "37f72c89a677bf2dcc3fb72cb2132652c62ddb65a7836ea9b6fee67f3b7aa120",
+      "reverse_edits": [
+        {
+          "start_byte": 9996,
+          "end_byte": 10367,
+          "current_base64": "VXNlIHRoZSBbbWluZXJhbCByaWdodHMgdmFsdWUgaHViXSgvbWluZXJhbC1yaWdodHMtdmFsdWUvKSB0byBwbGFjZSB0aGF0IGhpc3RvcnkgYWxvbmdzaWRlIHRoZSBvdGhlciBpbnB1dHMgYW5kIGFzc3VtcHRpb25zIGluIGEgZGlyZWN0aW9uYWwgcmV2aWV3LiBXaGVuIGNvbXBhcmluZyB3cml0dGVuIG9mZmVycyBmb3IgdGhlIHNhbWUgaW50ZXJlc3QsIGNhcnJ5IHRoZSBzYW1lIGFjcmVhZ2UsIHJveWFsdHksIHByb2R1Y3Rpb24tcGVyaW9kLCBhbmQgYWRqdXN0bWVudCBkZWZpbml0aW9ucyBpbnRvIHRoZSBbbWluZXJhbC1yaWdodHMgb2ZmZXIgY29tcGFyaXNvbiB3b3Jrc2hlZXRdKC9taW5lcmFsLXJpZ2h0cy1vZmZlci1jb21wYXJpc29uLykuCgo=",
+          "previous_base64": ""
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex independently reviewed the single contextual-link paragraph; no frontmatter, identity, claim, image, schema or other prose changes."
+    },
+    {
+      "repo_path": "src/content/posts/what-is-a-net-royalty-acre.mdx",
+      "previous_sha256": "6324b79db9f4d7ddccc002aafe11675d638efb6755f004e96bd7a3aa7fbd104a",
+      "current_sha256": "42f17749dbb3ddb4c0852891b6a12b2f4f9a3e7a810726d1826370dc8b48a817",
+      "reverse_edits": [
+        {
+          "start_byte": 11468,
+          "end_byte": 11716,
+          "current_base64": "VXNlIHRoZSBbbWluZXJhbC1yaWdodHMgb2ZmZXIgY29tcGFyaXNvbiB3b3Jrc2hlZXRdKC9taW5lcmFsLXJpZ2h0cy1vZmZlci1jb21wYXJpc29uLykgdG8gcmVjb3JkIGVhY2ggcHJvcG9zYWwgb24gdGhlIHNhbWUgc3RhdGVkIHVuaXQgYW5kIGZsYWcgYW55IGFjcmVhZ2UsIHJveWFsdHktYmFzaXMsIHRpdGxlLCBvciBjbG9zaW5nLWFkanVzdG1lbnQgZGlmZmVyZW5jZSBiZWZvcmUgY29tcGFyaW5nIGhlYWRsaW5lIGFtb3VudHMuCgo=",
+          "previous_base64": ""
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Codex independently reviewed the single contextual-link paragraph; no frontmatter, identity, claim, image, schema or other prose changes."
+    }
+  ],
+  "failures": []
+}
