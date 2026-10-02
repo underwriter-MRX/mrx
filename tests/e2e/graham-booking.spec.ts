@@ -110,7 +110,7 @@ test('Graham books first, prepares progressively, preserves the appointment, and
   ).toBeVisible();
   await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
     'placeholder',
-    'Ask Graham about your mineral-rights question…',
+    'Message Graham…',
   );
   await expect(page.getByText('MRX remembers this conversation on this device.')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Close conversation with Graham' })).toBeVisible();

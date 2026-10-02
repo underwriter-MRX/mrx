@@ -377,6 +377,7 @@ class ChatErrorBoundary extends Component<{ children: ReactNode }, { failed: boo
 function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Props) {
   const [open, setOpen] = useState(false);
   const [compactChatViewport, setCompactChatViewport] = useState(false);
+  const [mobileChatViewport, setMobileChatViewport] = useState(true);
   const [sessionReady, setSessionReady] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [step, setStep] = useState<ConversationStep>('loading');
@@ -1201,6 +1202,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       const height = viewport?.height ?? window.innerHeight;
       root.style.setProperty('--mrx-chat-height', `${height}px`);
       root.style.setProperty('--mrx-chat-top', `${viewport?.offsetTop ?? 0}px`);
+      setMobileChatViewport(window.innerWidth <= 767);
       setCompactChatViewport(window.innerWidth <= 767 && height <= 550);
     };
     updateViewport();
@@ -2907,7 +2909,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     'intro-call-consent': 'Yes or no…',
     'intro-ai-voice-consent': 'Yes or no…',
     'confirm-intent': 'Yes, or tell me what changed…',
-    open: `Ask ${personaLabels[activePersona]} about your mineral-rights question…`,
+    open: `Message ${personaLabels[activePersona]}…`,
     'delivery-channel': 'Email, text, or both…',
     'delivery-email': 'Your email address…',
     'delivery-phone': 'Your mobile number…',
@@ -3089,15 +3091,6 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               )}
               {!!quickReplies.length && (
                 <div className="travis-quick-replies" aria-label="Suggested replies">
-                  {step === 'open' && lastAnswer && (
-                    <p>
-                      {bookedAppointment
-                        ? 'Want me to send this answer? Your phone conversation is already booked.'
-                        : bookingDeclined
-                          ? 'Want me to send this answer?'
-                          : 'Want me to send this answer, or help you set up a phone conversation?'}
-                    </p>
-                  )}
                   {quickReplies.map((reply) => (
                     <button
                       className={reply.kind === 'primary' ? 'is-primary' : ''}
@@ -3113,7 +3106,10 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                 </div>
               )}
               {showAccountPrompt && (
-                <aside className="travis-account-prompt" data-testid="travis-account-prompt">
+                <details className="travis-account-prompt" data-testid="travis-account-prompt">
+                  <summary>
+                    Save conversation <span>(optional)</span>
+                  </summary>
                   <div>
                     <strong>Save this conversation for a human underwriter review</strong>
                     <p>
@@ -3146,7 +3142,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                       Keep chatting for now
                     </button>
                   </span>
-                </aside>
+                </details>
               )}
               {notice && <p className="travis-notice">{notice}</p>}
               <div ref={endRef} />
@@ -3210,6 +3206,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                   aria-pressed={Boolean(recognitionRef.current)}
                   aria-expanded={Boolean(recognitionRef.current)}
                   aria-controls="travis-voice-panel"
+                  aria-describedby="travis-voice-privacy"
                   title={
                     speechSupported === false
                       ? 'Voice input is not supported in this browser'
@@ -3264,18 +3261,18 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               )}
               <p
                 id="travis-voice-status"
-                className={`travis-voice-status travis-voice-status--${voiceState}`}
+                className={`travis-voice-status travis-voice-status--${voiceState}${voiceMessage === 'Use the microphone to dictate, then review your words and tap Send.' ? ' visually-hidden' : ''}`}
                 role="status"
                 aria-live="polite"
               >
                 {voiceMessage}
               </p>
-              <p className="travis-voice-privacy">
-                Your browser may send audio to its speech service. MRX receives the text when you
-                tap Send.
-              </p>
-              <details className="travis-more-options" open={!compactChatViewport}>
-                <summary>Call, documents &amp; privacy</summary>
+              <details className="travis-more-options" open={!mobileChatViewport}>
+                <summary>Options · call, files &amp; privacy</summary>
+                <p id="travis-voice-privacy" className="travis-voice-privacy">
+                  Dictate with the microphone, review your words, then tap Send. Your browser may
+                  send audio to its speech service. MRX receives the text when you tap Send.
+                </p>
                 <div className="travis-composer__actions">
                   <input
                     ref={fileInputRef}

@@ -69,7 +69,7 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(
       page.getByRole('button', { name: 'Schedule a human underwriter call', exact: true }),
     ).toHaveCount(0);
-    await expect(page.getByText('Want me to send this answer?', { exact: true })).toBeVisible();
+    await expect(page.getByText('Want me to send this answer?', { exact: true })).toHaveCount(0);
     await expect(page.getByText(/or help you set up a phone conversation/)).toHaveCount(0);
     expect(payloads.at(-1).context.bookingDeclined).toBe(true);
     await reply(
@@ -127,7 +127,7 @@ test.describe('Ask Travis conversational experience', () => {
     await opener.press('Enter');
     const dialog = page.getByTestId('ask-travis-dialog');
     await expect(dialog).toBeVisible();
-    const close = dialog.getByRole('button', { name: 'Close Ask Travis' });
+    const close = dialog.getByRole('button', { name: 'Close conversation with Travis' });
     await close.focus();
     await page.keyboard.press('Shift+Tab');
     expect(await dialog.evaluate((element) => element.contains(document.activeElement))).toBe(true);
@@ -139,7 +139,7 @@ test.describe('Ask Travis conversational experience', () => {
 
     await opener.press('Enter');
     await expect(dialog).toBeVisible();
-    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await dialog.getByRole('button', { name: 'Close conversation with Travis' }).click();
     await expect(opener).toBeFocused();
   });
 
@@ -152,7 +152,7 @@ test.describe('Ask Travis conversational experience', () => {
     await launcher.press('Enter');
     const dialog = page.getByTestId('ask-travis-dialog');
     await expect(dialog).toBeVisible();
-    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await dialog.getByRole('button', { name: 'Close conversation with Travis' }).click();
     await expect(launcher).toBeFocused();
   });
 
@@ -170,7 +170,7 @@ test.describe('Ask Travis conversational experience', () => {
     await page.locator('.mobile-nav__ask').click();
     const dialog = page.getByTestId('ask-travis-dialog');
     await expect(dialog).toBeVisible();
-    await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await dialog.getByRole('button', { name: 'Close conversation with Travis' }).click();
     await expect(menuToggle).toBeFocused();
     await expect(menuToggle).toHaveAttribute('aria-expanded', 'false');
   });
@@ -195,7 +195,7 @@ test.describe('Ask Travis conversational experience', () => {
       releaseChatBundle();
       const dialog = page.getByTestId('ask-travis-dialog');
       await expect(dialog).toBeVisible();
-      await dialog.getByRole('button', { name: 'Close Ask Travis' }).click();
+      await dialog.getByRole('button', { name: 'Close conversation with Travis' }).click();
       await expect(menuToggle).toBeFocused();
     } finally {
       releaseChatBundle();
@@ -361,7 +361,7 @@ test.describe('Ask Travis conversational experience', () => {
     await expect(page.getByText('What first name should I use?')).toHaveCount(0);
     await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
       'placeholder',
-      'Ask Travis anything about your minerals…',
+      'Message Travis…',
     );
     await expect(page.getByTestId('travis-composer-input')).toHaveAttribute(
       'name',
@@ -382,6 +382,7 @@ test.describe('Ask Travis conversational experience', () => {
       'mrx-chat-open',
     );
     await expect(page.getByTestId('travis-account-prompt')).toBeVisible();
+    await page.getByTestId('travis-account-prompt').locator('summary').click();
     await expect(
       page.getByText('Save this conversation for a human underwriter review'),
     ).toBeVisible();

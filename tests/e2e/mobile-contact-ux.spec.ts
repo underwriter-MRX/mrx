@@ -137,3 +137,85 @@ for (const path of [
     await expect(page.getByTestId('travis-composer-input')).toBeInViewport();
   });
 }
+
+for (const width of [320, 375, 430])
+  test(`mobile conversation keeps reading space at ${width}px`, async ({ page }, info) => {
+    await page.setViewportSize({ width, height: 740 });
+    await page.route('**/api/chat/session', (r) =>
+      r.fulfill({
+        json: {
+          ok: true,
+          authenticated: false,
+          appointments: [],
+          permissions: {},
+          interests: [],
+          messages: [
+            { id: '1', role: 'user', content: 'I received an offer for my mineral rights.' },
+            {
+              id: '2',
+              role: 'assistant',
+              persona: 'graham',
+              content: 'We can organize the offer and your questions for a human underwriter.',
+            },
+            {
+              id: '3',
+              role: 'user',
+              content: 'The minerals are in Reeves County, Texas. What should I bring to the call?',
+            },
+            {
+              id: '4',
+              role: 'assistant',
+              persona: 'graham',
+              content:
+                'Bring the written offer and any ownership records you already have. A human underwriter can review them with you. Missing documents are okay; we can identify the next useful step together.',
+            },
+          ],
+        },
+      }),
+    );
+    await page.route('**/api/chat/events', (r) => r.fulfill({ json: { ok: true } }));
+    await page.goto('/team/graham/');
+    await page.addStyleTag({ content: 'astro-dev-toolbar { display:none !important; }' });
+    await page.getByRole('button', { name: 'Ask Graham a question', exact: true }).click();
+    const input = page.getByTestId('travis-composer-input');
+    await expect(input).toHaveAttribute('placeholder', 'Message Graham…');
+    const account = page.getByTestId('travis-account-prompt');
+    await expect(account).toBeVisible();
+    await expect(account).not.toHaveAttribute('open', '');
+    await expect(page.getByRole('button', { name: 'Create a free account' })).not.toBeVisible();
+    await expect(page.locator('.travis-more-options')).not.toHaveAttribute('open', '');
+    expect((await page.locator('.travis-messages').boundingBox())!.height).toBeGreaterThan(480);
+    expect((await page.locator('.travis-composer').boundingBox())!.height).toBeLessThan(150);
+    expect((await input.boundingBox())!.height).toBeLessThan(60);
+    await account.scrollIntoViewIfNeeded();
+    await page.screenshot({
+      path: info.outputPath('clean-mobile-chat.png'),
+      animations: 'disabled',
+    });
+    await account.locator('summary').click();
+    await expect(
+      page.getByText('A free account keeps your questions and records together.', { exact: false }),
+    ).toBeVisible();
+    await page.getByRole('button', { name: 'Keep chatting for now' }).click();
+    await expect(account).toHaveCount(0);
+    const summary = page.locator('.travis-more-options > summary');
+    await summary.focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.travis-more-options')).toHaveAttribute('open', '');
+    await expect(
+      page.getByRole('button', { name: 'Schedule a human underwriter call' }),
+    ).toBeVisible();
+    await expect(
+      page.getByText('Dictate with the microphone, review your words, then tap Send.', {
+        exact: false,
+      }),
+    ).toBeVisible();
+    await input.fill('Keep my draft while opening options');
+    await summary.click();
+    await expect(input).toHaveValue('Keep my draft while opening options');
+    await expect(
+      page.getByText('Bring the written offer and any ownership records you already have.', {
+        exact: false,
+      }),
+    ).toBeVisible();
+  });
