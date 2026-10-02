@@ -8,10 +8,13 @@ const postsDir = join(import.meta.dirname, '..', '..', 'src', 'content', 'posts'
 const expectedResources = {
   oklahoma: 'How Do I Find an Oklahoma Pooling Order After Getting a Notice?',
   'north-dakota': 'North Dakota Inherited Royalty Questions: Records and Ombudsman',
+  colorado: 'Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?',
+  wyoming: 'How to Check Federal Mineral Reservations in Wyoming',
   pennsylvania: 'Can Pennsylvania DEP Production Data Verify My Royalty Check?',
   'west-virginia':
     'How to Compare a West Virginia Oil and Gas Tax Account With a Mineral Buyer Letter',
   ohio: 'Where Can I Find Ohio Mineral Deeds and Leases Before a Title Review?',
+  louisiana: 'Can Louisiana OMR Records Prove My Private Mineral Lease?',
 } as const;
 
 describe('state featured resources', () => {

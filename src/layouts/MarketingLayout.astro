@@ -64,5 +64,6 @@ const extraJsonLd = faq && faq.length > 0 ? [faqPage(faq)] : [];
   jsonLd={extraJsonLd}
   hideHeader={hideHeader}
 >
+  <slot name="structured-data" />
   <slot />
 </BaseLayout>

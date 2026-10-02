@@ -21,6 +21,18 @@ const featuredResourcesByState: Partial<Record<string, Array<{ label: string; hr
       href: '/blog/north-dakota-inherited-royalty-questions-records-and-ombudsman/',
     },
   ],
+  colorado: [
+    {
+      label: 'Does “Surface Mineral Owner Same” on a Colorado Well Card Prove Title?',
+      href: '/blog/does-surface-mineral-owner-same-on-a-colorado-well-card-prove-title/',
+    },
+  ],
+  wyoming: [
+    {
+      label: 'How to Check Federal Mineral Reservations in Wyoming',
+      href: '/blog/how-to-check-federal-mineral-reservations-in-wyoming/',
+    },
+  ],
   pennsylvania: [
     {
       label: 'Can Pennsylvania DEP Production Data Verify My Royalty Check?',
@@ -37,6 +49,12 @@ const featuredResourcesByState: Partial<Record<string, Array<{ label: string; hr
     {
       label: 'Where Can I Find Ohio Mineral Deeds and Leases Before a Title Review?',
       href: '/blog/where-can-i-find-ohio-mineral-deeds-and-leases-before-a-title-review/',
+    },
+  ],
+  louisiana: [
+    {
+      label: 'Can Louisiana OMR Records Prove My Private Mineral Lease?',
+      href: '/blog/can-louisiana-omr-records-prove-my-private-mineral-lease/',
     },
   ],
 };
