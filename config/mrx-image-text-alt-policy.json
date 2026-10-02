@@ -116,8 +116,9 @@
       "classification": "printed_text",
       "exact_text": "Brazos County, Texas Mineral Rights Property Tax Protest Evidence Packet",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Brazos County tax-protest title is legible in large white type; upright folders, a dark expanding organizer, blank cards and a cream storage box are visible, with no misleading document or government-seal claim",
+      "original_path": null,
+      "concise_alt": "Brazos tax protest cover with folders and a storage box"
     },
     "/assets/articles/hero/can-i-still-get-a-valid-underwriter-review-if-i-have-competing-mineral-rights-offers.webp": {
       "sha256": "87ca752b2ce0a1ac5c6a388ecc9952f53cb95c1038d6442b92a38e9a384711bf",
@@ -343,8 +344,9 @@
       "classification": "printed_text",
       "exact_text": "Dimmit CAD 2025 Mass Appraisal Report Mineral Responsibility Source Map",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Dimmit CAD title is legible in large white type; a closed dark tabbed book sits beside the title with background books and a brass desk marker, and no official-record claim is inferred",
+      "original_path": null,
+      "concise_alt": "Dimmit CAD cover with a tabbed book beside the title"
     },
     "/assets/articles/hero/dimmit-cad-2025-oil-gas-minerals-ratio-study-source-record.webp": {
       "sha256": "fdaceeeeff6ebbf52ea4d6c2564f9dab255d258b404736f3e6a2ee3cdd856862",
@@ -442,8 +444,9 @@
       "classification": "printed_text",
       "exact_text": "Ector CAD 2026 Certified Mineral Appraisal Roll ZIP Source-Control Record",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Ector CAD title is legible in large white type; a closed black lockbox with brass latch stands behind a wood tray holding an ivory rectangular case, without identifying the case as an actual record or drive",
+      "original_path": null,
+      "concise_alt": "Ector CAD cover with lockbox and tray holding an ivory case"
     },
     "/assets/articles/hero/ector-cad-2026-mass-appraisal-report-mineral-section-page-crosswalk.webp": {
       "sha256": "65cfa7e48ecdb4a34d9874d414ba072e92d096e8cc866a7334a366ebe745e2a4",
@@ -496,8 +499,9 @@
       "classification": "printed_text",
       "exact_text": "Form 50-150 Confidentiality Boundary Map for Crane Oil and Gas Property",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Form 50-150 title is legible in large white type; an open navy case contains translucent dividers, a blue envelope and a cylindrical rock core, with no confidentiality guarantee or official seal inferred",
+      "original_path": null,
+      "concise_alt": "Form 50-150 cover with open case, envelope and core sample"
     },
     "/assets/articles/hero/form-50-171-separate-taxation-request-field-inventory-for-crane-mineral-interests.webp": {
       "sha256": "25418c33c39b4c4c6cccdc2a23ef1bc674d74d0062a375f4d3723e7bca456959",
@@ -1166,8 +1170,9 @@
       "classification": "printed_text",
       "exact_text": "Karnes CAD 2026 Certified Mineral Roll ZIP: Seven-Member Container Index",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-01: full Karnes CAD title is legible in large white type; upright cream folders sit in a metal holder beside a square blue case and brass clip, without claiming the props are actual county records",
+      "original_path": null,
+      "concise_alt": "Karnes CAD cover with folders and a blue case beside the title"
     },
     "/assets/articles/hero/key-factors-that-determine-your-mineral-rights-assessment-pricing-range.webp": {
       "sha256": "bff60a8be2afbd4d3cdac85105e6497d3f9d94e11ff4227c2c9f98e285fbf3b9",
