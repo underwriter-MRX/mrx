@@ -50,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(51);
+    ).toHaveLength(54);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -154,6 +154,25 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
         'Howard mineral roll cover with two dark round containers',
       '/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp':
         'Loving report cover with a book, cards and magnifying glass',
+    } as const;
+
+    for (const [path, conciseAlt] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
+  });
+
+  it('resolves the records-three reviewed asset-specific concise alternatives', () => {
+    const expected = {
+      '/assets/articles/hero/navigating-competing-offers-what-to-do-before-your-mineral-rights-assessment-call.webp':
+        'Competing offers cover with a stylized document beside title',
+      '/assets/articles/hero/sop-20260928/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp':
+        'Mineral records cover with index cards, tags and a magnifier',
+      '/assets/articles/hero/sop-20260928/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp':
+        'Gonzales report cover with an open map binder and magnifier',
     } as const;
 
     for (const [path, conciseAlt] of Object.entries(expected)) {

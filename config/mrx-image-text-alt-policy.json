@@ -1432,8 +1432,9 @@
       "classification": "printed_text",
       "exact_text": "Navigating Competing Offers: What to Do Before Your Mineral Rights Assessment Call",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: full exact title at left; cropped stylized dark document graphic and light rounded rectangle with two dark horizontal lines at right",
+      "original_path": null,
+      "concise_alt": "Competing offers cover with a stylized document beside title"
     },
     "/assets/articles/hero/net-mineral-acres-vs-royalty-acres-what-texas-mineral-rights-owners-need-to-know.webp": {
       "sha256": "0391986ebe1d91c91ce957eb27d9159fcf167861a1434ae0862587e28bc3f917",
@@ -1605,8 +1606,9 @@
       "classification": "printed_text",
       "exact_text": "CAD Account Number, RRC Lease ID, and Operator Number in Texas Mineral Records",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": "/assets/articles/hero/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp"
+      "visual_review": "2026-10-02: full title at left; blank index cards and metal/paper tags, small connecting lines, Texas outline and brass magnifier at right",
+      "original_path": "/assets/articles/hero/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp",
+      "concise_alt": "Mineral records cover with index cards, tags and a magnifier"
     },
     "/assets/articles/hero/sop-20260928/can-pennsylvania-dep-production-data-verify-my-royalty-check.webp": {
       "sha256": "27798d56fded751ecd53db482ee89e7f10107bef43d5d572faaf32de6c8fe231",
@@ -1668,8 +1670,9 @@
       "classification": "printed_text",
       "exact_text": "Gonzales CAD 2025 Mass Appraisal Report Mineral Responsibility Page Locator",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": "/assets/articles/hero/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp"
+      "visual_review": "2026-10-02: full title at left; open ring binder showing map and ruled table, tab, loose map sheet and brass magnifier at right",
+      "original_path": "/assets/articles/hero/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp",
+      "concise_alt": "Gonzales report cover with an open map binder and magnifier"
     },
     "/assets/articles/hero/sop-20260928/how-lease-royalty-rates-influence-mineral-value.webp": {
       "sha256": "242793603330fe1b802a3f9d88f5f6dcf1ad58c7c3554b03e9f1abc4a0863994",
