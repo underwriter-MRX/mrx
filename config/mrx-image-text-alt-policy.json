@@ -1086,8 +1086,9 @@
       "classification": "printed_text",
       "exact_text": "Howard CAD 2025 Certified Mineral Dataset ZIP: One-Member Integrity Record",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Full exact title at left; gold-colored bar in a clear-lidded dark case at right, blank tabbed card, ring and small geometric pieces on a pale surface.",
+      "original_path": null,
+      "concise_alt": "Howard dataset cover with a gold bar in a clear-lidded case"
     },
     "/assets/articles/hero/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index.webp": {
       "sha256": "ce434425fe063c34a82e20c7e569b808f755b49869bf5a79a57ac168c1550430",
@@ -1095,8 +1096,9 @@
       "classification": "printed_text",
       "exact_text": "Howard CAD 2026 Certified Mineral Roll ZIP: 16-Member PACS Export Container Index",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Full exact title at left; large dark cylindrical container with pale rim and brass clasp, smaller matching round container in front, stone behind.",
+      "original_path": null,
+      "concise_alt": "Howard mineral roll cover with two dark round containers"
     },
     "/assets/articles/hero/howard-cad-open-records-request-form-mineral-record-field-inventory.webp": {
       "sha256": "ffe5c78a22d963698259d5fced16c836fa351b33bfb9af6e14360fe29a8395a7",
@@ -1207,8 +1209,9 @@
       "classification": "printed_text",
       "exact_text": "Loving CAD 2026 Mass Appraisal Report: Mineral-Assistance Roster Page Crosswalk",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
+      "visual_review": "2026-10-02: Full exact title at left; dark bound book with blank cream label, upright cream cards in brass holders, brass magnifying glass on stone surface near window.",
+      "original_path": null,
+      "concise_alt": "Loving report cover with a book, cards and magnifying glass"
     },
     "/assets/articles/hero/loving-cad-2026-mineral-file-layout-pdf-eight-page-position-and-eof-map.webp": {
       "sha256": "173df06d745b82e70ad7804e1473610f2ca99f0a68d5109e9710f42c5fd62abc",

@@ -50,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(48);
+    ).toHaveLength(51);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -135,6 +135,25 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
         'Ownership report cover with a pumpjack photo on clipped papers',
       '/assets/articles/hero/howard-cad-2025-2026-reappraisal-plan-mineral-property-valuation-section-locator.webp':
         'Howard CAD plan cover with folders in an open file drawer',
+    } as const;
+
+    for (const [path, conciseAlt] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
+  });
+
+  it('resolves the dataset-three reviewed asset-specific concise alternatives', () => {
+    const expected = {
+      '/assets/articles/hero/howard-cad-2025-certified-mineral-dataset-zip-one-member-integrity-record.webp':
+        'Howard dataset cover with a gold bar in a clear-lidded case',
+      '/assets/articles/hero/howard-cad-2026-certified-mineral-roll-zip-16-member-pacs-export-container-index.webp':
+        'Howard mineral roll cover with two dark round containers',
+      '/assets/articles/hero/loving-cad-2026-mass-appraisal-report-mineral-assistance-roster-page-crosswalk.webp':
+        'Loving report cover with a book, cards and magnifying glass',
     } as const;
 
     for (const [path, conciseAlt] of Object.entries(expected)) {
