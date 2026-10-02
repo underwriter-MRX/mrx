@@ -70,7 +70,7 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp',
   '/assets/articles/hero/upton-cad-2026-mineral-data-files-2-260-byte-txt-records-and-a-nested-csv-header.webp',
   '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp',
-  '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp',
+  '/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp',
 ].sort();
 
 const rawNineExpectedAlts = {
@@ -178,8 +178,8 @@ const appraisalTwoExpectedAlts = {
 } as const;
 
 const offerThreeExpectedAlts = {
-  '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp':
-    'Transparent acquisition cover with charts and a magnifying glass',
+  '/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp':
+    'Educational review cover with an open notebook and question cards',
   '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp':
     'Ward reappraisal cover with an open tabbed map binder',
   '/assets/articles/hero/upton-cad-2026-mineral-data-files-2-260-byte-txt-records-and-a-nested-csv-header.webp':

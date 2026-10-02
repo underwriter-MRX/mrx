@@ -1025,7 +1025,7 @@ async function buildRow(
     twoImageEvidenceUsable,
   );
   if (publicRow && !currentAssetUsable) {
-    throw new Error(`Published hero failed current-asset usability checks: ${row.program_row_id}`);
+    throw new Error(`Published hero failed current-asset usability checks: ${row.program_row_id} ${JSON.stringify({title: row.canonical_title, keyword: row.primary_keyword, legacyHeroUsable, ownerPolicyHeroUsable, currentPathUnique, currentContentUnique, article_match: currentEvidence.article_match, currentAltText, twoImageEvidenceUsable, inlineAuthorized: currentEvidence.inline_rendered_text_authorized, inline: currentInlineRenderedText})}`);
   }
 
   const preserveCurrentAsset = publicRow && currentAssetUsable;

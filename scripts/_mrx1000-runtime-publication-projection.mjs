@@ -1,3 +1,4 @@
+import { reviewedHistoricalTitle } from './_mrx-reviewed-identity-transition.mjs';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 
@@ -18,7 +19,7 @@ export function loadRuntimePublicationProjection(repoRoot) {
   if (!existsSync(batchPath)) throw new Error(`Release batch missing: ${batchPath}`);
   const batch = JSON.parse(readFileSync(batchPath, 'utf8'));
   const entries = (batch.articles ?? []).filter((entry) =>
-    ['admitted_exact', 'admitted_quality_gated'].includes(entry.admission_status),
+    entry.historical_title || ['admitted_exact', 'admitted_quality_gated'].includes(entry.admission_status),
   );
   const bySlug = new Map();
   for (const entry of entries) {
@@ -38,22 +39,29 @@ export function loadRuntimePublicationProjection(repoRoot) {
         `Exact-admission publication projection failed for ${entry.slug}: ${transition.reason}`,
       );
     }
+    reviewedHistoricalTitle(entry, readFileSync(sourcePath), repoRoot);
     bySlug.set(entry.slug, {
       entry,
       transition,
       published: transitionIsPublished(transition),
     });
   }
-  return { bySlug, exact_admission_count: entries.length };
+  return { bySlug, exact_admission_count: entries.filter((entry) => ['admitted_exact', 'admitted_quality_gated'].includes(entry.admission_status)).length };
 }
 
 export function projectLedgerArticlesForRuntime(articles, repoRoot) {
   const projection = loadRuntimePublicationProjection(repoRoot);
   const projected = articles.map((article) => {
     const runtime = projection.bySlug.get(article.canonical_slug);
-    if (!runtime?.published) return article;
+    const currentIdentity = runtime?.entry.historical_title ? {
+      canonical_title: runtime.entry.title,
+      historical_canonical_title: runtime.entry.historical_title,
+      primary_keyword: JSON.parse(readFileSync(path.join(repoRoot, 'config/maintenance-reviews/2026-10-02-education-only-identities.json'), 'utf8')).entries.find((row) => row.slug === runtime.entry.slug).keyword,
+    } : {};
+    if (!runtime?.published) return { ...article, ...currentIdentity };
     return {
       ...article,
+      ...currentIdentity,
       publication_status: 'published',
       draft: false,
       frontmatter_noindex: false,

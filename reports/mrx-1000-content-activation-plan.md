@@ -74,4 +74,4 @@ Owner decision `D-2026-0804-16` is `APPROVED_CONTINUOUS_QUALITY_GATED_ARTICLE_PU
 
 Canonical-ledger row fingerprint verified as `c95e2bb642f639b2a01d13a3e812eaec48b63adcdac23c0f8bef15f140fdcbd2`.
 
-Activation-plan content fingerprint: `91ed241c90a522337bd4f9f1f04a8cd6182a70f1f635569a2b80486734f9b352`.
+Activation-plan content fingerprint: `68618c00b228748481beb54a1d9e12ad1c8e3bda48f0c4d12d28ce09ae11b4ab`.

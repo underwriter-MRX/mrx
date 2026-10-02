@@ -259,7 +259,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article defines fairness as procedural transparency rather than an owner-specific market-value conclusion, discloses MRX’s possible economic interest, separates regulatory production from owner payments, separates public commodity context from property pricing, grades development evidence, labels uncertainty, separates asset range from transaction scope, and routes professional questions without making owner-specific conclusions.',
+    'The article defines fairness as procedural transparency rather than an owner-specific market-value conclusion, states that MRX provides education only and does not buy mineral rights, separates regulatory production from owner payments, separates public commodity context from property pricing, grades development evidence, labels uncertainty, separates asset range from transaction scope, and routes professional questions without making owner-specific conclusions.',
     'Image text is limited to the exact article title and canonical question after incidental generated document, chart, and calculator marks were neutralized; the images add no owner data, ownership conclusion, production value, commodity price, acreage, decimal, formula, offer, transaction term, appraisal result, regulatory endorsement, tax outcome, or private information.',
   ],
   checks: [

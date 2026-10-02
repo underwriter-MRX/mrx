@@ -189,7 +189,7 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/sell-mineral-rights/',
       [
-        'The current MRX selling page describes owner options, process context, possible buyer-interest disclosure, and the limits of a directional review.',
+        'The current MRX selling page describes owner options, process context, MRX education-only boundary, and the limits of a directional review.',
         'The article uses the page only to bound MRX evidence organization and professional handoffs; it does not establish owner-specific legal rights, title, taxes, value, an offer, payment, sale, or closing.',
       ],
     ],
@@ -339,7 +339,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, separates the tax-account record from a voluntary directional sale estimate, preserves complete dated evidence, discloses possible MRX buyer interest, and makes no owner-specific title, appraisal, protest, deadline, engineering, reserves, tax, value, offer, or transaction conclusion.',
+    'The article states educational and professional boundaries, separates the tax-account record from a voluntary directional sale estimate, preserves complete dated evidence, states that MRX provides education only and does not buy mineral rights, and makes no owner-specific title, appraisal, protest, deadline, engineering, reserves, tax, value, offer, or transaction conclusion.',
     'Image text is limited to the exact article title and exact canonical keyword and adds no account data, property identifier, amount, date, official seal, appraisal conclusion, tax result, title conclusion, offer, guarantee, buyer endorsement, or transaction conclusion.',
   ],
   checks: [

@@ -92,8 +92,8 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/faq/',
       [
-        'The current MRX FAQ describes the free no-card no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, identifies useful records, and discloses that MRX may ultimately want to buy an interest.',
-        'The article uses the FAQ only for current service, fee, document, professional-boundary, and possible-provider-interest disclosures; it does not value an interest or recommend a transaction.',
+        'The current MRX FAQ describes the free no-card no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, identifies useful records, and states that MRX provides education only and does not buy mineral rights.',
+        'The article uses the FAQ only for current service, fee, document, professional-boundary, and education-only disclosures; it does not value an interest or recommend a transaction.',
       ],
     ],
     [

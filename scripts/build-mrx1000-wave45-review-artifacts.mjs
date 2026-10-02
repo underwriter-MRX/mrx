@@ -273,7 +273,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article routes location-aware records and specialist questions without making an owner-specific title, reserve, engineering, appraisal, legal, tax, value, payment, eligibility, or transaction conclusion; discloses MRX’s possible economic interest; preserves separate evidence lanes and uncertainty; and does not present proximity as proof of qualification or independence.',
+    'The article routes location-aware records and specialist questions without making an owner-specific title, reserve, engineering, appraisal, legal, tax, value, payment, eligibility, or transaction conclusion; states that MRX provides education only and does not buy mineral rights; preserves separate evidence lanes and uncertainty; and does not present proximity as proof of qualification or independence.',
     'Image text is limited to the exact article title and canonical phrase; the abstract county, map, record, device, and office objects add no owner data, jurisdictional endorsement, professional credential, ownership conclusion, production value, commodity price, acreage, decimal, formula result, offer, transaction term, appraisal result, tax outcome, legal conclusion, or private information.',
   ],
   checks: [

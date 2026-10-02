@@ -1,0 +1,99 @@
+{
+  "artifact_type": "mrx_reviewed_article_identity_transition",
+  "version": 1,
+  "reviewer_id": "codex-education-only-independent-review",
+  "reviewed_at": "2026-10-02T21:30:22.065008+00:00",
+  "disposition": "PASS",
+  "entries": [
+    {
+      "slug": "why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition",
+      "program_row_id": "MRX1000-0979",
+      "repo_path": "src/content/posts/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.mdx",
+      "canonical_url": "https://mineralrightsxchange.com/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/",
+      "previous_title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
+      "current_title": "Why Owners Start With an MRX Educational Review",
+      "keyword": "MRX educational review",
+      "current_source_sha256": "704a2d812d587c4bf30e176b9f4596bc5d05238de362ba8c66c31f70efb14af4",
+      "historical_reviewed_source_sha256": "6a9a924daeec0289df13a0336398f93f95bd3772a55a0dacc6ccbe1a080c9083",
+      "disposition": "PASS",
+      "hero": {
+        "path": "/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp",
+        "sha256": "92976b0400fe104f262ab8aee603f96c310c657594536b10a05d66b529d55a0c"
+      },
+      "inline": {
+        "path": "/assets/articles/inline/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/mrx-educational-review.webp",
+        "sha256": "f0f28b6d47e0df66ea0a33e5bcae9ea7e91e23f180000c8b352bec568962bbb1"
+      },
+      "visual_review": {
+        "hero_exact_title": true,
+        "inline_exact_phrase": true,
+        "distinct_compositions": true,
+        "legible_at_social_and_mobile_sizes": true
+      },
+      "claim_review": {
+        "owner_correction_only": true,
+        "professional_boundaries_preserved": true
+      }
+    },
+    {
+      "slug": "how-mineralrightsxchange-approaches-mineral-rights-acquisition",
+      "program_row_id": "MRX1000-0980",
+      "repo_path": "src/content/posts/how-mineralrightsxchange-approaches-mineral-rights-acquisition.mdx",
+      "canonical_url": "https://mineralrightsxchange.com/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/",
+      "previous_title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
+      "current_title": "How MRX Helps Owners Organize Mineral Rights Records",
+      "keyword": "organize mineral rights records",
+      "current_source_sha256": "48ff614918bbe62fe296df41b4fad3a05f0729f0da2df77619b5ce8eb5c824d3",
+      "historical_reviewed_source_sha256": "67a046e48195c4f1e5656212a2f988975567d8067969cf16b97fc73fba39ce8d",
+      "disposition": "PASS",
+      "hero": {
+        "path": "/assets/articles/hero/how-mrx-helps-owners-organize-mineral-rights-records.webp",
+        "sha256": "a6caed1bc7ab55537ec0c57ed0be4df5d26a1033a67d7c0c38122e607bd5e16b"
+      },
+      "inline": {
+        "path": "/assets/articles/inline/how-mineralrightsxchange-approaches-mineral-rights-acquisition/organize-mineral-rights-records.webp",
+        "sha256": "afe10027bc594d1ec22d590c3e6fabc6a755a11944f36ed701a4b62c7bf69e19"
+      },
+      "visual_review": {
+        "hero_exact_title": true,
+        "inline_exact_phrase": true,
+        "distinct_compositions": true,
+        "legible_at_social_and_mobile_sizes": true
+      },
+      "claim_review": {
+        "owner_correction_only": true,
+        "professional_boundaries_preserved": true
+      }
+    },
+    {
+      "slug": "why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services",
+      "program_row_id": "MRX1000-0981",
+      "repo_path": "src/content/posts/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services.mdx",
+      "canonical_url": "https://mineralrightsxchange.com/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/",
+      "previous_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
+      "current_title": "What MRX AI Guides Can and Cannot Do",
+      "keyword": "MRX AI guide limitations",
+      "current_source_sha256": "aed0b9e7f46f2cfbd4ddebea1f38d797861a9293071a20fc40c3a09bbfcd548b",
+      "historical_reviewed_source_sha256": "a528aeb27863ea640bcac4a0c8510a52a31c45bea8776cd15981448f0d821aa3",
+      "disposition": "PASS",
+      "hero": {
+        "path": "/assets/articles/hero/what-mrx-ai-guides-can-and-cannot-do.webp",
+        "sha256": "629c654f6822536e8a4204ca5b7f953c0e6a43dd5fee6eb7257a8031864368ee"
+      },
+      "inline": {
+        "path": "/assets/articles/inline/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/mrx-ai-guide-limitations.webp",
+        "sha256": "3cd3ca9c1f13b79bda9edd8d45f5ebe708c95108a6155c9d2f09049d3a4aee06"
+      },
+      "visual_review": {
+        "hero_exact_title": true,
+        "inline_exact_phrase": true,
+        "distinct_compositions": true,
+        "legible_at_social_and_mobile_sizes": true
+      },
+      "claim_review": {
+        "owner_correction_only": true,
+        "professional_boundaries_preserved": true
+      }
+    }
+  ]
+}

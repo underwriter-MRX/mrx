@@ -191,3 +191,6 @@ An article may be reported complete only when its identity is finalized, every m
 - Use already-authorized accounts, subscriptions, included quotas, credentials, tools, deployment targets, and services without asking again when doing so creates no new or incremental charge.
 - Ask Daryl only immediately before an action that would create a new or incremental monetary charge, including a purchase, upgrade, top-up, checkout, paid placement, or activation of separately metered paid capacity. State the exact proposed charge and purpose. Do not ask for approval for ordinary article work.
 - If a tool presents an approval mechanism for a non-paid article action, treat this directive as the approval and use a configured automatic/no-prompt path. Do not pause the article workflow for Daryl.
+
+## MRX education-only owner correction — 2026-10-02
+MRX is for educational purposes only and is not a mineral-rights buyer. Do not describe MRX as acquiring interests, making purchase offers, or operating a buyer marketplace. Current generation guidance is `config/mrx-searchatlas-draft-prompt-v2-education-only.md`. The v1 prompt and pilot-batch manifest are retained only as immutable historical canary evidence; they are superseded for new drafting. Education-only does not establish independent-appraiser, licensed-adviser, nonprofit, referral, or revenue claims.

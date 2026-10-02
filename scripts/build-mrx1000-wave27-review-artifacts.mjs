@@ -99,8 +99,8 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/terms/',
       [
-        'The current MRX terms describe the website and AI assistant as educational, require users to upload only files they are authorized to share, separate requested-call scheduling from consent to marketing texts, and state that MRX may be a buyer with that relationship disclosed in writing before an agreement is signed.',
-        'The article uses those terms to distinguish a review request, document-sharing authorization, communication choices, commercial-role disclosure, and any later transaction agreement; it does not interpret the terms for an owner or announce that a particular practice or agreement complies with law.',
+        'The current MRX terms describe the website and AI assistant as educational, require users to upload only files they are authorized to share, separate requested-call scheduling from consent to marketing texts, and state that MRX provides education only and does not buy mineral rights.',
+        'The article uses those terms to distinguish a review request, document-sharing authorization, communication choices, education-only boundary, and any later transaction agreement; it does not interpret the terms for an owner or announce that a particular practice or agreement complies with law.',
       ],
     ],
     [
@@ -202,7 +202,7 @@ writeArtifact('editorial', `${programRowId}-${slug}.json`, {
   capability: 'editorial',
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; the answer-first article contains ${wordCount} body tokens and five FAQs.`,
-    'The article owns the no-obligation engagement checklist by separating the advertised free review, owner choice, provider and commercial-role disclosure, deliverable limits, information-sharing authorization, communication preferences, stopping points, and any later transaction agreement.',
+    'The article owns the no-obligation engagement checklist by separating the advertised free review, owner choice, provider and education-only boundary, deliverable limits, information-sharing authorization, communication preferences, stopping points, and any later transaction agreement.',
     `Exact-title hero/share OCR passed for “${title}”; distinct in-body OCR passed for “${inlineKeyword}”.`,
   ],
   checks: [
@@ -259,7 +259,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, separates a free directional review from information-sharing and communication choices and from any later transaction agreement, and avoids owner-specific legal, tax, privacy, communications-law, accounting, engineering, appraisal, or value conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, separates a free directional review from information-sharing and communication choices and from any later transaction agreement, and avoids owner-specific legal, tax, privacy, communications-law, accounting, engineering, appraisal, or value conclusions.',
     'Image text is limited to the exact article title and canonical keyword and adds no owner data, agreement, document, fee, card, deposit, communication choice, offer, price, deadline, legal, tax, privacy, accounting, engineering, investment, or valuation conclusion.',
   ],
   checks: [

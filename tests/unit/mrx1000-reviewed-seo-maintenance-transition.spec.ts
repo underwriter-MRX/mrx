@@ -278,7 +278,10 @@ describe('reviewed SEO maintenance transition', () => {
     ).toBe(32);
     for (const row of ledger.entries) {
       const current = readFileSync(row.repo_path);
-      const proof = reconstructReviewedSource(current, row);
+      const newer = loadReviewedSeoMaintenanceReviews(process.cwd()).filter((review: any) => review.reviewed_at > ledger.reviewed_at && review.entries.some((candidate: any) => candidate.repo_path === row.repo_path));
+      const preceding = newer.length ? reconstructReviewedSourceChain(current, row.repo_path, newer) : { authorized: true, reconstructed_bytes: current };
+      expect(preceding.authorized).toBe(true);
+      const proof = reconstructReviewedSource((preceding as { reconstructed_bytes: Buffer }).reconstructed_bytes, row);
       expect(proof.authorized, `${row.repo_path}: ${proof.reason}`).toBe(true);
       expect((proof as any).maintenance_previous_sha256).toBe(row.previous_sha256);
     }

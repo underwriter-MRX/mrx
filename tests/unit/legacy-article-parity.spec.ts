@@ -115,7 +115,7 @@ describe('legacy article Summit parity', () => {
       expect(nestedScalar(fm, 'conversion_cta', 'href'), slug).toBe('/book/');
       expect(nestedScalar(fm, 'conversion_cta', 'prompt').length, slug).toBeGreaterThanOrEqual(10);
       expect(source, slug).toMatch(
-        /MRX may be (?:a|the) buyer|MRX may become the buyer|MRX buyer relationship/i,
+        /MRX (?:is for educational purposes only|provides educational information and resources only) and (?:is not a buyer|does not buy mineral rights)/i,
       );
     },
   );

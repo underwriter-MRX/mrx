@@ -106,8 +106,8 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/faq/',
       [
-        'The current MRX FAQ describes the free no-card no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, identifies useful records, and discloses that MRX may ultimately want to buy an interest.',
-        'The article uses the FAQ only for current service, fee, document, professional-boundary, no-obligation, and possible-provider-interest disclosures; it does not value an interest or recommend a transaction.',
+        'The current MRX FAQ describes the free no-card no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, identifies useful records, and states that MRX provides education only and does not buy mineral rights.',
+        'The article uses the FAQ only for current service, fee, document, professional-boundary, no-obligation, and education-only disclosures; it does not value an interest or recommend a transaction.',
       ],
     ],
     [
@@ -253,7 +253,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, separates asset range, written proposal, expected net, and owner preference, labels unresolved title and tax questions, discloses possible MRX buyer interest, and makes no owner-specific title, value, legal, tax, investment, appraisal, or transaction conclusion.',
+    'The article states educational and professional boundaries, separates asset range, written proposal, expected net, and owner preference, labels unresolved title and tax questions, states that MRX provides education only and does not buy mineral rights, and makes no owner-specific title, value, legal, tax, investment, appraisal, or transaction conclusion.',
     'Image text is limited to the exact article title and exact canonical keyword and adds no owner data, property identifier, price, percentage, buyer endorsement, title conclusion, valuation conclusion, tax result, guarantee, or transaction conclusion.',
   ],
   checks: [

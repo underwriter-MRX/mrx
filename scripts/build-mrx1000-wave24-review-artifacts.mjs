@@ -266,7 +266,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, distinguishes a lease royalty rate from owner-specific lease interpretation and payment auditing, and avoids title, legal, tax, investment, accounting, engineering, appraisal, transaction-suitability, or owner-specific value conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, distinguishes a lease royalty rate from owner-specific lease interpretation and payment auditing, and avoids title, legal, tax, investment, accounting, engineering, appraisal, transaction-suitability, or owner-specific value conclusions.',
     'Image text is limited to the exact article title and canonical keyword and adds no owner, deed, well, lease term, production, price, acreage, decimal, offer, market, legal, tax, accounting, engineering, or valuation conclusion.',
   ],
   checks: [

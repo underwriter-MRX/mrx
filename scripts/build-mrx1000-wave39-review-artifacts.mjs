@@ -88,13 +88,13 @@ function sourceScope(source) {
       'https://mineralrightsxchange.com/faq/',
       [
         'The current MRX FAQ states that the directional underwriter review is free, requires no payment card, creates no obligation to sell, is not a certified valuation, and may precede an MRX buyer relationship that is disclosed when applicable.',
-        'The article uses the FAQ only for MRX’s current review price and service boundaries and its provider-interest disclosure; it does not extend the free-review statement to outside work, promise a result, interpret an agreement, or recommend a transaction.',
+        'The article uses the FAQ only for MRX’s current review price and service boundaries and its education-only boundary; it does not extend the free-review statement to outside work, promise a result, interpret an agreement, or recommend a transaction.',
       ],
     ],
     [
       'https://mineralrightsxchange.com/book/',
       [
-        'The current MRX booking page describes the requested phone appointment as free, asks for appointment details, presents separate communication choices, states that there is no obligation to sell, and discloses that MRX may later be a buyer.',
+        'The current MRX booking page describes the requested phone appointment as free, asks for appointment details, presents separate communication choices, states that there is no obligation to sell, and states that MRX provides education only and does not buy mineral rights.',
         'The article uses the booking page only for the current request-stage fields, communication-choice separation, no-obligation statement, and possible commercial role; it does not treat an appointment request as consent to a transaction or as proof of an outcome.',
       ],
     ],
@@ -261,7 +261,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, separates the assessment fee, payment-method rule, appointment contact, transactional messages, optional marketing, document follow-up, outside services, and later transaction decisions, supplies explicit pause conditions, labels the review as directional, and avoids owner-specific conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, separates the assessment fee, payment-method rule, appointment contact, transactional messages, optional marketing, document follow-up, outside services, and later transaction decisions, supplies explicit pause conditions, labels the review as directional, and avoids owner-specific conclusions.',
     'Image text is limited to the exact article title and canonical question after incidental generated checklist and laptop-brand marks were neutralized; the images add no owner data, provider endorsement, contract interpretation, deed language, price, fee, acreage, decimal, formula, success claim, appraisal result, tax outcome, or transaction conclusion.',
   ],
   checks: [

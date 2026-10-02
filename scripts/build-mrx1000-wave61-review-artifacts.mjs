@@ -194,7 +194,7 @@ const sourceScopes = new Map([
   [
     'https://mineralrightsxchange.com/sell-mineral-rights/',
     [
-      'The current MRX selling page describes owner options, process context, possible buyer-interest disclosure, and the limits of a directional review.',
+      'The current MRX selling page describes owner options, process context, MRX education-only boundary, and the limits of a directional review.',
       'The article uses it only to frame available review and transaction pathways; it does not establish legal rights, title, taxes, value, an offer, payment, sale, closing, or the owner’s decision.',
     ],
   ],
@@ -356,7 +356,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses possible MRX buyer interest, preserves owner agency, and makes no owner-specific recommendation, title, lease, engineering, reserves, tax, value, offer, suitability, investment, or transaction conclusion.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, preserves owner agency, and makes no owner-specific recommendation, title, lease, engineering, reserves, tax, value, offer, suitability, investment, or transaction conclusion.',
     'Image text is limited to the exact article title and approved supporting phrase and adds no account data, property identifier, amount, date, official seal, value conclusion, recommendation, offer, guarantee, buyer endorsement, or transaction result.',
   ],
   checks: [

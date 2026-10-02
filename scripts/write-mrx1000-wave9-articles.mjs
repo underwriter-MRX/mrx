@@ -1074,12 +1074,12 @@ Learn to [decode a royalty statement](/blog/how-to-decode-your-royalty-check-sta
     related: ['what-to-expect-during-the-underwriter-review-process-for-your-mineral-rights', 'can-i-still-get-a-valid-underwriter-review-if-i-have-competing-mineral-rights-offers'],
     hero: '/assets/articles/underwriter-review-vs-broker-wave9.webp',
     excerpt: 'An MRX directional underwriter review and a broker engagement can serve different jobs; compare scope, market outreach, compensation, deliverables, and conflicts in writing.',
-    answerSummary: 'An MRX directional underwriter review organizes the owner’s property, production, payment, and offer evidence and may lead to an MRX acquisition discussion. A broker engagement may involve marketing the interest, soliciting buyers, managing a process, and compensation under a separate agreement. Owners should verify the actual scope, credentials, fees, conflicts, deliverables, and decision rights for any provider.',
+    answerSummary: 'An MRX directional underwriter review organizes the owner’s property, production, payment, and offer evidence and does not lead to an MRX purchase offer. A broker engagement may involve marketing the interest, soliciting buyers, managing a process, and compensation under a separate agreement. Owners should verify the actual scope, credentials, fees, conflicts, deliverables, and decision rights for any provider.',
     takeaways: [
       'Compare the written engagement and deliverables, not the provider label alone.',
       'A directional underwriter review is not a credentialed appraisal, title opinion, reserve report, legal opinion, or brokerage auction.',
       'Market outreach, buyer solicitation, confidentiality, compensation, and closing support vary by broker and agreement.',
-      'MRX may have an acquisition interest, so owners should consider that potential conflict and seek independent advice when appropriate.',
+      'MRX provides educational information and resources only and does not buy mineral rights; education-only does not establish independent-adviser status.',
     ],
     questions: ['What does an MRX underwriter review do?', 'How may a broker engagement differ?', 'Which fees, conflicts, and deliverables should owners compare?'],
     sources: [
@@ -1092,7 +1092,7 @@ Learn to [decode a royalty statement](/blog/how-to-decode-your-royalty-check-sta
       ['Is an MRX underwriter review an appraisal?', 'No. It is a directional review of available mineral and transaction information. It is not a credentialed appraisal, reserve report, engineering study, title opinion, or legal or tax conclusion.'],
       ['Does an underwriter review market my minerals to multiple buyers?', 'Not by itself. A broker or another marketing engagement may include buyer outreach under its agreement. Confirm the actual MRX and provider scope in writing.'],
       ['Do all mineral brokers provide the same service?', 'No. Services, credentials, compensation, exclusivity, marketing methods, confidentiality, buyer access, and closing support vary. Review the specific agreement and provider.'],
-      ['Can MRX be interested in acquiring the minerals it reviews?', 'Yes, MRX may have an acquisition interest. Owners should consider that potential conflict and obtain independent advice or market evidence when appropriate.'],
+      ['Does MRX buy the minerals it reviews?', 'No. MRX provides educational information and resources only and does not buy mineral rights. Use appropriately qualified professionals or independent market evidence when needed.'],
       ['Can I use both a review and a broker?', 'Potentially. Check confidentiality, exclusivity, fee, non-circumvention, and communication terms before combining services, and make sure each provider knows the permitted role.'],
     ],
     legalTaxSensitive: true,
@@ -1130,7 +1130,7 @@ Services vary. Some providers may act in other capacities or use different compe
 
 Request a written explanation of upfront, hourly, success, percentage, referral, or other fees; minimum fees and expenses; exclusivity; engagement term; tail or non-circumvention clauses; affiliate acquisition rights; buyer-side payments; and who receives transaction funds.
 
-MRX states that its directional review is free, but MRX may have an acquisition interest. That potential conflict must be evaluated. “Free” does not mean conflict-free or independent.
+MRX states that its educational review is free and that MRX does not buy mineral rights. Free and education-only do not establish independent-adviser or licensed-professional status.
 
 ## Compare market exposure
 
@@ -1140,7 +1140,7 @@ A broker process may increase exposure but also add time, fees, confidentiality 
 
 ## Compare deliverables
 
-For an underwriter review, ask whether the owner receives a document list, assumptions, directional range, comparison table, open questions, or acquisition proposal. For a broker, ask about pricing analysis, marketing package, buyer list, bid log, recommendation, negotiation record, and closing support.
+For an underwriter review, ask whether the owner receives a document list, assumptions, directional range, comparison table, open questions, or third-party proposal. For a broker, ask about pricing analysis, marketing package, buyer list, bid log, recommendation, negotiation record, and closing support.
 
 Confirm who owns the work product and whether the owner can share it with counsel, heirs, tax professionals, or another provider.
 

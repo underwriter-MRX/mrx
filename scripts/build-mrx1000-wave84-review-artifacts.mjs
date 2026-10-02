@@ -59,7 +59,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
   'The article invents no event, operator, well, API number, property connection, production figure, decline curve, reserve estimate, valuation input, offer, owner, title, lease, payment, or transaction fact and supplies no universal numerical assumption or result.',
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
-  'The article labels every event as a claim, separates sources and conflicts, limits connection labels, marks reported periods as non-causal, turns gaps into neutral questions, assigns follow-up without predetermining an answer, discloses possible MRX buyer interest, and preserves qualified-review boundaries.',
+  'The article labels every event as a claim, separates sources and conflicts, limits connection labels, marks reported periods as non-causal, turns gaps into neutral questions, assigns follow-up without predetermining an answer, states that MRX provides education only and does not buy mineral rights, and preserves qualified-review boundaries.',
   'Image text is limited to the exact article title and approved keyword and adds no operator, well, property, source result, event conclusion, production figure, curve, reserve, value, verification, seal, recommendation, guarantee, or transaction outcome.',
 ]);
 process.env.MRX_COMPLIANCE_CHECKS_JSON = JSON.stringify([

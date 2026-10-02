@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 /** Read-only, current-byte preflight. This does not admit or publish an article. */
+import { loadReviewedSeoMaintenanceReviews, reconstructReviewedSourceChain } from './_mrx1000-reviewed-seo-maintenance-transition.mjs';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
@@ -80,6 +81,11 @@ export function inspectAppendOnlyAdmission({ slug, creativeManifestPath }) {
   const articleBytes = existsSync(resolve(repoRoot, articlePath)) ? read(articlePath) : null;
   const articleSha256 = articleBytes ? sha256(articleBytes) : null;
   if (!articleBytes) blockers.push('Final public article source is absent.');
+  const maintenanceReviews = loadReviewedSeoMaintenanceReviews(repoRoot);
+  const hasMaintenance = maintenanceReviews.some((item) => item.entries.some((row) => row.repo_path === articlePath));
+  const maintenance = articleBytes && hasMaintenance ? reconstructReviewedSourceChain(articleBytes, articlePath, maintenanceReviews) : null;
+  if (maintenance && !maintenance.authorized) blockers.push('Article maintenance proof is invalid.');
+  const reviewedArticleSha256 = maintenance?.authorized ? sha256(maintenance.reconstructed_bytes) : articleSha256;
 
   let creativeSha256 = null;
   let creative = null;
@@ -153,7 +159,7 @@ export function inspectAppendOnlyAdmission({ slug, creativeManifestPath }) {
       review.capability !== capability ||
       review.program_row_id !== entry.program_row_id ||
       review.slug !== slug ||
-      review.input_body_sha256 !== articleSha256 ||
+      review.input_body_sha256 !== reviewedArticleSha256 ||
       review.two_image_manifest_sha256 !== creativeSha256
     ) {
       blockers.push(`${capability} review does not match current article and creative bytes.`);

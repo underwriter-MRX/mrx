@@ -353,7 +353,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, separates an identity cross-check from authentication, authority, legitimacy, reputation, fraud, offer economics, property scope, contract review, and decisions, discloses possible MRX buyer interest, and preserves owner agency.',
+    'The article states educational and professional boundaries, separates an identity cross-check from authentication, authority, legitimacy, reputation, fraud, offer economics, property scope, contract review, and decisions, states that MRX provides education only and does not buy mineral rights, and preserves owner agency.',
     'Image text is limited to the exact article title and approved keyword and adds no name, address, phone, domain, entity result, amount, property identifier, signature, seal, match or mismatch result, legitimacy conclusion, ranking, recommendation, guarantee, buyer endorsement, or transaction result.',
   ],
   checks: [

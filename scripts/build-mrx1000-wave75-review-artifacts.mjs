@@ -284,7 +284,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article leaves unsupported, conflicting, or ambiguous output unresolved; separates provenance labels from verification; discloses possible MRX buyer interest; and preserves owner agency and qualified-review boundaries.',
+    'The article leaves unsupported, conflicting, or ambiguous output unresolved; separates provenance labels from verification; states that MRX provides education only and does not buy mineral rights; and preserves owner agency and qualified-review boundaries.',
     'Image text is limited to the exact article title and approved keyword and adds no owner name, property fact, source result, review result, seal, recommendation, accuracy claim, guarantee, or transaction outcome.',
   ],
   checks: [

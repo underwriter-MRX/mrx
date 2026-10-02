@@ -211,10 +211,10 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
 
   it('resolves the offer-three reviewed alternatives without changing exact-text identity', () => {
     const expected = {
-      '/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp':
+      '/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp':
         {
-          exactText: 'Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition',
-          conciseAlt: 'Transparent acquisition cover with charts and a magnifying glass',
+          exactText: 'Why Owners Start With an MRX Educational Review',
+          conciseAlt: 'Educational review cover with an open notebook and question cards',
         },
       '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp':
         {

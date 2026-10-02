@@ -99,8 +99,8 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/faq/',
       [
-        'The current MRX FAQ describes a genuinely free review with no obligation to sell, no card, no separate review fee, useful owner records, variable timing, professional-service boundaries, and written disclosure if MRX may become a buyer.',
-        'The article uses those first-party statements only for MRX process, fee, timing, scope, and commercial-role disclosures; it does not infer independence, certification, a guaranteed result, or the behavior, fees, qualifications, or outcomes of any third party.',
+        'The current MRX FAQ describes a genuinely free review with no obligation to sell, no card, no separate review fee, useful owner records, variable timing, professional-service boundaries, and the statement that MRX provides education only and does not buy mineral rights.',
+        'The article uses those first-party statements only for MRX process, fee, timing, scope, and education-only boundaries; it does not infer independence, certification, a guaranteed result, or the behavior, fees, qualifications, or outcomes of any third party.',
       ],
     ],
     [
@@ -259,7 +259,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, distinguishes free review fees from outside professional services, and avoids title, probate, lease, legal, tax, investment, surveying, engineering, appraisal, offer-eligibility, transaction-suitability, timing, or owner-specific value conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, distinguishes free review fees from outside professional services, and avoids title, probate, lease, legal, tax, investment, surveying, engineering, appraisal, offer-eligibility, transaction-suitability, timing, or owner-specific value conclusions.',
     'Image text is limited to the exact article title and canonical keyword and adds no owner, deed, probate, trust, well, lease, production, price, acreage, decimal, offer, market, completion-time, legal, tax, surveying, engineering, or valuation conclusion.',
   ],
   checks: [

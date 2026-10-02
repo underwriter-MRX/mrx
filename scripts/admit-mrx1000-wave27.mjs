@@ -284,7 +284,7 @@ const batchRow = {
   searchatlas_content_score: null,
   searchatlas_word_count: wordCount(source),
   risk_citation_remediation: [
-    'The planning-only canonical row was developed into an original no-obligation engagement checklist that separates the free review, owner choice, commercial-role disclosure, deliverable limits, information sharing, communication preferences, stopping points, and any later transaction; no factory body text was imported.',
+    'The planning-only canonical row was developed into an original no-obligation engagement checklist that separates the free review, owner choice, education-only boundary, deliverable limits, information sharing, communication preferences, stopping points, and any later transaction; no factory body text was imported.',
     'Continuous quality-gated admission under D-2026-0804-16 and MRX1000-W27-SELECT-2026-08-12; no numerical cap or elapsed-time gate applies.',
     'Publication remains conditional on current editorial, factual-citation, compliance, two-image, metadata, build, rollback, deployment, and live-verification evidence.',
   ],

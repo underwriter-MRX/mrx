@@ -94,7 +94,7 @@ function sourceScope(source) {
       'https://mineralrightsxchange.com/faq/',
       [
         'The current MRX FAQ states that its review is a free, no-obligation directional underwriter assessment, not a certified valuation, and states its no-pressure and potential-buyer disclosure boundaries.',
-        'The article uses the FAQ only for MRX’s current first-party review policy, directional limits, and provider-interest disclosure; it does not promise a result, interpret a separate agreement, or treat a directional range as a buyer offer.',
+        'The article uses the FAQ only for MRX’s current first-party review policy, directional limits, and education-only boundary; it does not promise a result, interpret a separate agreement, or treat a directional range as a buyer offer.',
       ],
     ],
     [
@@ -274,7 +274,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, separates property evidence and assumptions from a later buyer proposal and owner-net view, supplies explicit stop conditions, labels MRX review as directional, and routes unresolved title, legal, tax, accounting, engineering, appraisal, investment, and transaction questions without making owner-specific conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, separates property evidence and assumptions from a later buyer proposal and owner-net view, supplies explicit stop conditions, labels MRX review as directional, and routes unresolved title, legal, tax, accounting, engineering, appraisal, investment, and transaction questions without making owner-specific conclusions.',
     'Image text is limited to the exact article title and canonical question and adds no owner data, buyer endorsement, deed, price, factor weight, multiple, acreage, decimal, formula, reserve quantity, appraisal result, tax outcome, or transaction conclusion.',
   ],
   checks: [

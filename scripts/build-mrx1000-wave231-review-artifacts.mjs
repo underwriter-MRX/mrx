@@ -64,7 +64,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
   'No owner-level row is printed, copied, published, uploaded, or used for a person, account, lease, property, ownership, appraisal, tax, production, value, offer, or transaction conclusion.',
-  'The district, tax-office, title, qualified-review, and possible MRX buyer-interest boundaries are visible.',
+  'The district, tax-office, title, qualified-review, and MRX education-only and non-buyer boundaries are visible.',
   'Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, property data, finding, conclusion, or approval statement.',
 ]);
 process.env.MRX_FACTUAL_CHECKS_JSON = JSON.stringify([

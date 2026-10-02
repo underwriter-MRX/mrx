@@ -79,7 +79,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
   'The article publishes no real owner name, property identifier, instrument result, tax account, API number, tract match, acreage, appraisal amount, mineral value, offer, royalty decimal, production number, or transaction fact and supplies no universal numerical conclusion.',
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
-  'The article separates the four source roles, requires exact field and identifier capture, preserves access date and source limitation, labels conflicts and empty results without inference, routes restricted or interpretive work to the appropriate office or qualified professional, discloses possible MRX buyer interest, and preserves owner agency.',
+  'The article separates the four source roles, requires exact field and identifier capture, preserves access date and source limitation, labels conflicts and empty results without inference, routes restricted or interpretive work to the appropriate office or qualified professional, states that MRX provides education only and does not buy mineral rights, and preserves owner agency.',
   'Image text is limited to the exact article title and approved keyword and adds no owner, property, record result, seal, logo, title conclusion, ownership claim, acreage, price, value, offer, well, production, recommendation, guarantee, or transaction outcome.',
 ]);
 process.env.MRX_FACTUAL_CHECKS_JSON = JSON.stringify([

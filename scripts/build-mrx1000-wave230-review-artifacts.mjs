@@ -78,7 +78,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
   'The article does not decide current rule applicability, a spacing or density exception, permit eligibility, drilling approval, compliance, property scope, ownership, production, reserves, value, offer, or transaction outcome.',
-  'The owner-agency boundary and possible MRX buyer-interest disclosure are visible at the top and bottom.',
+  'The owner-agency boundary and MRX education-only boundary are visible at the top and bottom.',
   'Image text is limited to the exact canonical title and exact primary keyword and adds no official affiliation, government mark, identifier, finding, conclusion, or approval statement.',
 ]);
 process.env.MRX_FACTUAL_CHECKS_JSON = JSON.stringify([

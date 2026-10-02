@@ -4,7 +4,7 @@
   "generated_at": "2026-07-20T17:45:50.397Z",
   "generated_at_method": "canonical_ledger_generated_at",
   "generator": "scripts/build-mrx-1000-activation-plan.mjs",
-  "content_fingerprint_sha256": "91ed241c90a522337bd4f9f1f04a8cd6182a70f1f635569a2b80486734f9b352",
+  "content_fingerprint_sha256": "68618c00b228748481beb54a1d9e12ad1c8e3bda48f0c4d12d28ce09ae11b4ab",
   "inputs": {
     "canonical_ledger_path": "config/mrx-1000-canonical-content-ledger.json",
     "canonical_ledger_fingerprint_sha256": "c95e2bb642f639b2a01d13a3e812eaec48b63adcdac23c0f8bef15f140fdcbd2",
@@ -57721,7 +57721,7 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0979",
-        "target_title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
+        "target_title": "Why Owners Start With an MRX Educational Review",
         "url": "/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
         "target_source_preservation_classification": "live_public_published_route",
@@ -57768,7 +57768,7 @@
     },
     {
       "program_row_id": "MRX1000-0979",
-      "canonical_title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
+      "canonical_title": "Why Owners Start With an MRX Educational Review",
       "canonical_slug": "why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition",
       "canonical_url": "/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/",
       "cluster": "mrx-methodology-transparency-underwriter-process",
@@ -57784,7 +57784,7 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0980",
-        "target_title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
+        "target_title": "How MRX Helps Owners Organize Mineral Rights Records",
         "url": "/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
         "target_source_preservation_classification": "live_public_published_route",
@@ -57831,7 +57831,7 @@
     },
     {
       "program_row_id": "MRX1000-0980",
-      "canonical_title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
+      "canonical_title": "How MRX Helps Owners Organize Mineral Rights Records",
       "canonical_slug": "how-mineralrightsxchange-approaches-mineral-rights-acquisition",
       "canonical_url": "/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/",
       "cluster": "mrx-methodology-transparency-underwriter-process",
@@ -57847,7 +57847,7 @@
       },
       "sibling_link": {
         "target_program_row_id": "MRX1000-0981",
-        "target_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
+        "target_title": "What MRX AI Guides Can and Cannot Do",
         "url": "/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/",
         "relationship": "same_cluster_next_by_program_row_id_cyclic",
         "target_source_preservation_classification": "live_public_published_route",
@@ -57894,7 +57894,7 @@
     },
     {
       "program_row_id": "MRX1000-0981",
-      "canonical_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
+      "canonical_title": "What MRX AI Guides Can and Cannot Do",
       "canonical_slug": "why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services",
       "canonical_url": "/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/",
       "cluster": "mrx-methodology-transparency-underwriter-process",

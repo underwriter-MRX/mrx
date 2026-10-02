@@ -58,7 +58,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
   'The article invents no owner, tract, acreage, decimal, lease, well, production, payment, suspense, shut-in, title, economic, valuation, or offer fact and supplies no universal numerical assumption or result.',
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
-  'The article repeatedly labels status as claimed, keeps conflicting evidence separate, turns gaps into neutral questions, assigns follow-up without predetermining a conclusion, discloses possible MRX buyer interest, and preserves qualified-review boundaries.',
+  'The article repeatedly labels status as claimed, keeps conflicting evidence separate, turns gaps into neutral questions, assigns follow-up without predetermining a conclusion, states that MRX provides education only and does not buy mineral rights, and preserves qualified-review boundaries.',
   'Image text is limited to the exact article title and approved keyword and adds no owner name, property fact, document result, status conclusion, numerical assumption, seal, verification claim, appraisal claim, guarantee, or transaction outcome.',
 ]);
 process.env.MRX_COMPLIANCE_CHECKS_JSON = JSON.stringify([

@@ -12,7 +12,8 @@ describe('§7 disclaimer', () => {
   });
 
   it('contains the MRX-as-buyer disclosure (compliance review §7 last sentence)', () => {
-    expect(DISCLAIMER_TEXT).toMatch(/MRX may be a buyer/i);
+    expect(DISCLAIMER_TEXT).toMatch(/MRX is for educational purposes only and is not a buyer/i);
+    expect(DISCLAIMER_TEXT).not.toMatch(/MRX may (?:be|become) a buyer/i);
   });
 
   it('re-exports the same text through src/lib/disclaimer.ts', () => {

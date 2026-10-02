@@ -284,7 +284,7 @@ const batchRow = {
   searchatlas_content_score: null,
   searchatlas_word_count: wordCount(source),
   risk_citation_remediation: [
-    'The planning-only canonical row was developed into an original nationwide no-obligation review and privacy journey that separates evidence review, permission to process deliberately supplied records, any later buyer proposal, and the owner’s transaction decision; it adds a staged permission ladder, minimum-necessary record controls, an assumption-and-permission register, provider-interest disclosure, stop rules, and explicit next-step choices without importing factory body text.',
+    'The planning-only canonical row was developed into an original nationwide no-obligation review and privacy journey that separates evidence review, permission to process deliberately supplied records, any later buyer proposal, and the owner’s transaction decision; it adds a staged permission ladder, minimum-necessary record controls, an assumption-and-permission register, education-only boundary, stop rules, and explicit next-step choices without importing factory body text.',
     'Continuous quality-gated admission under D-2026-0804-16 and MRX1000-W34-SELECT-2026-08-12; no numerical cap or elapsed-time gate applies.',
     'Publication remains conditional on current editorial, factual-citation, compliance, two-image, metadata, build, rollback, deployment, and live-verification evidence.',
   ],

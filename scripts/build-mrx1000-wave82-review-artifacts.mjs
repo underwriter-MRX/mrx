@@ -203,7 +203,7 @@ const factualFindings = JSON.parse(
 const complianceFindings = JSON.parse(
   process.env.MRX_COMPLIANCE_FINDINGS_JSON ??
     JSON.stringify([
-      'The article keeps each public source in a separate column; preserves source identity, version, dates, commodity, benchmark, geography, units, nominal-or-real basis, interval, horizon, use case, and retrieval date; limits status to matched frame, different frame, missing, or unresolved; turns gaps into neutral questions; discloses possible MRX buyer interest; and preserves owner agency and qualified-review boundaries.',
+      'The article keeps each public source in a separate column; preserves source identity, version, dates, commodity, benchmark, geography, units, nominal-or-real basis, interval, horizon, use case, and retrieval date; limits status to matched frame, different frame, missing, or unresolved; turns gaps into neutral questions; states that MRX provides education only and does not buy mineral rights; and preserves owner agency and qualified-review boundaries.',
       'Image text is limited to the exact article title and approved keyword and adds no owner name, property fact, source result, model output, numerical assumption, seal, recommendation, appraisal claim, forecast, guarantee, or transaction outcome.',
     ]),
 );

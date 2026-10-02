@@ -123,7 +123,7 @@ conversion_cta:
   helper: 'Keep archive identity, parsing observations, appraisal records, title evidence, private value, and transaction decisions in separate evidence lanes.'
 ---
 
-> **Format inspection, not an owner or property result.** This article records privacy-safe structural observations from one Upton County Appraisal District archive. It does not identify an owner, account, lease, property, tract, operator, well, acreage position, title interest, appraisal result, tax outcome, production result, mineral value, offer, or transaction result. MRX may have an economic interest in a later mineral transaction. When that applies, the buyer relationship is disclosed in writing before an agreement is signed.
+> **Format inspection, not an owner or property result.** This article records privacy-safe structural observations from one Upton County Appraisal District archive. It does not identify an owner, account, lease, property, tract, operator, well, acreage position, title interest, appraisal result, tax outcome, production result, mineral value, offer, or transaction result. MRX provides educational information and resources only and does not buy mineral rights.
 
 The direct answer is: **treat the Upton CAD TXT and CSV members as two different source objects, preserve their exact bytes, and parse them independently**. In the bounded inspection used for this guide, the first two physical TXT records each measured **2,260 bytes after their trailing CRLF bytes were removed**. The CSV behaved differently: a standard first pass read its first physical line as one outer field, and a second bounded parse exposed **244 nested labels**.
 

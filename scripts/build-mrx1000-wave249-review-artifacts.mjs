@@ -63,7 +63,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
   'The named mrx_compliance source-level review passed the body and five FAQs after corrections; this hash-locked repository artifact records editorial/compliance review, not a candidate-specific counsel opinion.',
-  'The article keeps account numbers and estate papers out of public search or AI-chat examples, uses a verified payor channel, discloses potential MRX buyer interest, and preserves directional-not-appraisal and no individualized legal, tax, title, accounting, engineering, investment or financial advice boundaries.',
+  'The article keeps account numbers and estate papers out of public search or AI-chat examples, uses a verified payor channel, states that MRX provides education only and does not buy mineral rights, and preserves directional-not-appraisal and no individualized legal, tax, title, accounting, engineering, investment or financial advice boundaries.',
   'The voluntary research next step does not force an heir who is still locating the property into booking, account creation, or document upload.',
 ]);
 process.env.MRX_FACTUAL_CHECKS_JSON = JSON.stringify([
@@ -82,7 +82,7 @@ process.env.MRX_COMPLIANCE_CHECKS_JSON = JSON.stringify([
   'five_reviewed_faqs_and_visible_schema_parity_pending_render_check',
   'privacy_and_verified_payor_contact_boundary_pass',
   'no_title_heirship_decimal_payment_value_or_sale_conclusion_pass',
-  'mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_disclosed_buyer_pass',
+  'mrx_editorial_team_author_directional_assessment_not_certified_appraisal_full_advice_disclaimer_education_only_not_buyer_pass',
   'research_only_next_step_preserves_owner_agency',
   'no_ranking_indexing_retrieval_citation_traffic_lead_or_revenue_guarantee',
 ]);

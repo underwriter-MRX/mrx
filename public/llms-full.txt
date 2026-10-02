@@ -69,6 +69,8 @@ Generated from Astro content at build time.
 
 ### Mineral rights
 
+- [How MRX Helps Owners Organize Mineral Rights Records](https://mineralrightsxchange.com/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/)
+- [Why Owners Start With an MRX Educational Review](https://mineralrightsxchange.com/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/)
 - [Does a Texas RRC P-4 Purchaser Have to Be My Royalty Payor?](https://mineralrightsxchange.com/blog/does-a-texas-rrc-p-4-purchaser-have-to-be-my-royalty-payor/)
 - [Does Wyoming Set the Royalty Rate in My Private Oil and Gas Lease?](https://mineralrightsxchange.com/blog/does-wyoming-set-the-royalty-rate-in-my-private-oil-and-gas-lease/)
 - [What Does RI Mean on a Texas Mineral Appraisal Record?](https://mineralrightsxchange.com/blog/what-does-ri-mean-on-a-texas-mineral-appraisal-record/)
@@ -86,7 +88,6 @@ Generated from Astro content at build time.
 - [Oklahoma Mineral Escrow and Unclaimed Property: Two Search Routes](https://mineralrightsxchange.com/blog/oklahoma-mineral-escrow-and-unclaimed-property-two-search-routes/)
 - [How to Locate a Texas Mineral Interest From an Inherited Royalty Statement](https://mineralrightsxchange.com/blog/how-to-locate-a-texas-mineral-interest-from-an-inherited-royalty-statement/)
 - [How Royalty Payments Work for Texas Mineral Owners](https://mineralrightsxchange.com/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/)
-- [How MineralRightsXchange Approaches Mineral Rights Acquisition](https://mineralrightsxchange.com/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/)
 - [How to Accurately Assess Your Texas Mineral Rights Value](https://mineralrightsxchange.com/blog/how-to-accurately-assess-your-texas-mineral-rights-value/)
 - [How to Decode Your Royalty Check Statement](https://mineralrightsxchange.com/blog/how-to-decode-your-royalty-check-statement/)
 - [How to Identify and Avoid Hidden Fees in Your Mineral Rights Assessment Process](https://mineralrightsxchange.com/blog/how-to-identify-and-avoid-hidden-fees-in-your-mineral-rights-assessment-process/)
@@ -98,7 +99,6 @@ Generated from Astro content at build time.
 - [Understanding the Key Factors Influencing Your Mineral Rights Offer Range](https://mineralrightsxchange.com/blog/understanding-the-key-factors-influencing-your-mineral-rights-offer-range/)
 - [Unlocking Value: A Comprehensive Guide to Assessing Your Mineral Rights Worth](https://mineralrightsxchange.com/blog/unlocking-value-a-comprehensive-guide-to-assessing-your-mineral-rights-worth/)
 - [What Is a Division Order and Why Does It Matter for Mineral Rights Owners?](https://mineralrightsxchange.com/blog/what-is-a-division-order-and-why-does-it-matter-for-mineral-rights-owners/)
-- [Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition](https://mineralrightsxchange.com/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/)
 
 ### Selling process
 
@@ -297,6 +297,7 @@ Generated from Astro content at build time.
 
 ### Valuation
 
+- [What MRX AI Guides Can and Cannot Do](https://mineralrightsxchange.com/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/)
 - [What Is a Net Royalty Acre? NRI and Mineral Rights Value](https://mineralrightsxchange.com/blog/what-is-a-net-royalty-acre/)
 - [Why Did My Mineral Royalty Check Go Down?](https://mineralrightsxchange.com/blog/why-did-my-royalty-check-go-down/)
 - [Texas RRC EDMS Injection/Disposal Permit Document Retrieval Provenance Worksheet](https://mineralrightsxchange.com/blog/texas-rrc-edms-injection-disposal-permit-document-retrieval-provenance-worksheet/)
@@ -392,7 +393,6 @@ Generated from Astro content at build time.
 - [Unlocking Value: Assessing Your Texas Mineral Rights](https://mineralrightsxchange.com/blog/unlocking-value-assessing-your-texas-mineral-rights/)
 - [What Determines the Value of Your Mineral Rights?](https://mineralrightsxchange.com/blog/what-determines-the-value-of-your-mineral-rights/)
 - [What Is Your Texas Mineral Rights Worth?](https://mineralrightsxchange.com/blog/what-is-your-texas-mineral-rights-worth/)
-- [Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services](https://mineralrightsxchange.com/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/)
 
 ## State starting points
 

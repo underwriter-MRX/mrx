@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { reviewedHistoricalTitle } from './_mrx-reviewed-identity-transition.mjs';
 /**
  * Normalize the three independent, hash-locked release-10 review lanes into
  * the canonical per-article review artifact consumed by the evidence-packet
@@ -91,6 +92,7 @@ let assembled = 0;
 for (const entry of batch.articles) {
   const sourcePath = join(repoRoot, entry.repo_path);
   const source = readFileSync(sourcePath);
+  const historicalTitle = reviewedHistoricalTitle(entry, source, repoRoot);
   const fullSha = sha256(source);
   const fm = frontmatterBlock(source.toString('utf8'));
   if (!fm) throw new Error(`Frontmatter not detected: ${entry.repo_path}`);
@@ -122,7 +124,7 @@ for (const entry of batch.articles) {
     const identityMatches =
       artifact.program_row_id === entry.program_row_id &&
       artifact.slug === entry.slug &&
-      (artifact.title ?? entry.title) === entry.title &&
+      (artifact.title ?? historicalTitle) === historicalTitle &&
       artifact.canonical_url === entry.canonical_url &&
       artifact.source_path === entry.repo_path;
     if (!identityMatches) throw new Error(`${entry.slug}: ${capability} identity mismatch`);

@@ -288,7 +288,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, separates evidence lanes, labels supported, owner-reported, assumed, conflicted, missing, and professional-review-needed fields, preserves identity conflicts, protects sensitive data, discloses possible MRX buyer interest, and makes no owner-specific title, authority, value, legal, tax, investment, appraisal, or transaction conclusion.',
+    'The article states educational and professional boundaries, separates evidence lanes, labels supported, owner-reported, assumed, conflicted, missing, and professional-review-needed fields, preserves identity conflicts, protects sensitive data, states that MRX provides education only and does not buy mineral rights, and makes no owner-specific title, authority, value, legal, tax, investment, appraisal, or transaction conclusion.',
     'Image text is limited to the exact article title and exact canonical keyword and adds no owner data, property identifier, price, percentage, buyer endorsement, title conclusion, valuation conclusion, tax result, guarantee, or transaction conclusion.',
   ],
   checks: [

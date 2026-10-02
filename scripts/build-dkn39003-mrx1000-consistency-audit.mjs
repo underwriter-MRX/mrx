@@ -7,6 +7,7 @@
  * vendor calls and no content, generation, publication, or spend actions.
  */
 
+import { projectLedgerArticlesForRuntime } from './_mrx1000-runtime-publication-projection.mjs';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { writeFile } from 'node:fs/promises';
@@ -217,7 +218,10 @@ export function buildAudit() {
   const canonicalRows = canonicalLedger.articles;
   const activationById = new Map(activationPlan.rows.map((row) => [row.program_row_id, row]));
   invariant(activationById.size === 1000, 'activation program row IDs must be unique');
-  const activationIdentityMismatches = canonicalRows.filter((row) => {
+  // Validate current activation against hash-proven identity revisions while retaining
+  // the original canonical ledger for historical DKN joins below.
+  const currentRows = projectLedgerArticlesForRuntime(canonicalRows, MRX_ROOT).articles;
+  const activationIdentityMismatches = currentRows.filter((row) => {
     const activation = activationById.get(row.program_row_id);
     return (
       !activation ||

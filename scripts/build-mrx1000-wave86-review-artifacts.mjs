@@ -74,7 +74,7 @@ process.env.MRX_FACTUAL_FINDINGS_JSON = JSON.stringify([
   'The article publishes no owner document, signature, address, payment instruction, private amount, account detail, well-status finding, lease-effect conclusion, production forecast, valuation input, value, offer, or transaction claim.',
 ]);
 process.env.MRX_COMPLIANCE_FINDINGS_JSON = JSON.stringify([
-  'The article separates controlling contracts, performance records, regulatory context, and later professional conclusions; requires source locators and version control; converts ambiguity into neutral questions; and preserves owner privacy, agency, and possible MRX buyer-interest disclosure.',
+  'The article separates controlling contracts, performance records, regulatory context, and later professional conclusions; requires source locators and version control; converts ambiguity into neutral questions; and preserves owner privacy, agency, and MRX education-only boundary.',
   'Image text is limited to the exact article title and approved keyword and adds no real document text, signature, owner identifier, seal, logo, price, payment, status, lease-effect, production, valuation, offer, recommendation, guarantee, or transaction outcome.',
 ]);
 process.env.MRX_FACTUAL_CHECKS_JSON = JSON.stringify([

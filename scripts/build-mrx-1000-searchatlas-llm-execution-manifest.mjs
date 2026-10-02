@@ -868,7 +868,7 @@ function vendorJoin(ledgerRow, readinessRow, rawDetailByUuid, pilotManifestById)
       const raw = rawDetailByUuid.get(record.uuid);
       invariant(raw, `${ledgerRow.program_row_id} vendor UUID is absent from the raw export`);
       invariant(
-        normalizeTitle(raw.title) === normalizeTitle(ledgerRow.canonical_title) &&
+        normalizeTitle(raw.title) === normalizeTitle(ledgerRow.historical_canonical_title ?? ledgerRow.canonical_title) &&
           raw.status === record.status &&
           raw.uuid === record.uuid,
         `${ledgerRow.program_row_id} raw-export title/status/UUID join failed`,
@@ -1516,7 +1516,9 @@ export function buildManifest() {
         batchAssignments.get(b.program_row_id).execution_sequence,
     )
     .map((ledgerRow) => {
-      const readinessRow = readinessById.get(ledgerRow.program_row_id);
+      const historicalReadinessRow = readinessById.get(ledgerRow.program_row_id);
+      if (ledgerRow.historical_canonical_title) invariant(historicalReadinessRow?.title === ledgerRow.historical_canonical_title, `${ledgerRow.program_row_id} historical readiness identity mismatch`);
+      const readinessRow = ledgerRow.historical_canonical_title ? { ...historicalReadinessRow, title: ledgerRow.canonical_title } : historicalReadinessRow;
       invariant(readinessRow, `${ledgerRow.program_row_id} missing from readiness matrix`);
       invariant(
         readinessRow.slug === ledgerRow.canonical_slug &&

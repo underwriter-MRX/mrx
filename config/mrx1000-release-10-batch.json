@@ -771,7 +771,7 @@
     "fail_closed": true,
     "earned_scale_gates": [],
     "exact_admitted_count": 321,
-    "exact_admitted_slate_sha256": "7b0964efa00c29dcc321ecf360a23f8fab6eca4ac33fa8e730ae29fd3aa8240e"
+    "exact_admitted_slate_sha256": "fa719249a34487dc0814d438288e33204084917a10c878c957313b5829b86062"
   },
   "articles": [
     {
@@ -1700,7 +1700,7 @@
       "program_row_id": "MRX1000-0979",
       "source_shortlist_program_row_id": "MRX1000-0979",
       "slug": "why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition",
-      "title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
+      "title": "Why Owners Start With an MRX Educational Review",
       "source_shortlist_title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
       "canonical_url": "https://mineralrightsxchange.com/blog/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/",
       "pillar": "mrx-methodology",
@@ -1710,9 +1710,9 @@
       "repo_path": "src/content/posts/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.mdx",
       "repo_sha256": "6a9a924daeec0289df13a0336398f93f95bd3772a55a0dacc6ccbe1a080c9083",
       "article_sha256": "6a9a924daeec0289df13a0336398f93f95bd3772a55a0dacc6ccbe1a080c9083",
-      "hero_path": "/assets/articles/hero/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp",
-      "hero_sha256": "16c1a3f58d73389319af080a18db84807f547e97c49df92fb194db8ba799ae38",
-      "hero_asset_sha256": "16c1a3f58d73389319af080a18db84807f547e97c49df92fb194db8ba799ae38",
+      "hero_path": "/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp",
+      "hero_sha256": "92976b0400fe104f262ab8aee603f96c310c657594536b10a05d66b529d55a0c",
+      "hero_asset_sha256": "92976b0400fe104f262ab8aee603f96c310c657594536b10a05d66b529d55a0c",
       "admission_status": "admitted_quality_gated",
       "finalization_state": "draft_noindex_admitted",
       "searchatlas_content_score": null,
@@ -1725,14 +1725,16 @@
       "evidence_packet_path_required": true,
       "inline_path": "/assets/articles/inline/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition/why-mineralrightsxchange-focuses-on-transparent-mineral-rights-acquisition.webp",
       "inline_asset_sha256": "fe9cb1aaae0732d54d2868ce20636cea81273d940e4eae7d7cb269729db69c1d",
-      "inline_rendered_text": "why mineralrightsxchange focuses on transparent mineral rights acquisition"
+      "inline_rendered_text": "why mineralrightsxchange focuses on transparent mineral rights acquisition",
+      "historical_title": "Why MineralRightsXchange Focuses on Transparent Mineral Rights Acquisition",
+      "historical_hero_asset_sha256": "16c1a3f58d73389319af080a18db84807f547e97c49df92fb194db8ba799ae38"
     },
     {
       "selection_rank": 30,
       "program_row_id": "MRX1000-0980",
       "source_shortlist_program_row_id": "MRX1000-0980",
       "slug": "how-mineralrightsxchange-approaches-mineral-rights-acquisition",
-      "title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
+      "title": "How MRX Helps Owners Organize Mineral Rights Records",
       "source_shortlist_title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
       "canonical_url": "https://mineralrightsxchange.com/blog/how-mineralrightsxchange-approaches-mineral-rights-acquisition/",
       "pillar": "mrx-methodology",
@@ -1742,9 +1744,9 @@
       "repo_path": "src/content/posts/how-mineralrightsxchange-approaches-mineral-rights-acquisition.mdx",
       "repo_sha256": "67a046e48195c4f1e5656212a2f988975567d8067969cf16b97fc73fba39ce8d",
       "article_sha256": "67a046e48195c4f1e5656212a2f988975567d8067969cf16b97fc73fba39ce8d",
-      "hero_path": "/assets/articles/hero/how-mineralrightsxchange-approaches-mineral-rights-acquisition.webp",
-      "hero_sha256": "f8fbb28576746bad79205172025ccda7f1fe9676b639b7287e6ebdfbb26b0813",
-      "hero_asset_sha256": "f8fbb28576746bad79205172025ccda7f1fe9676b639b7287e6ebdfbb26b0813",
+      "hero_path": "/assets/articles/hero/how-mrx-helps-owners-organize-mineral-rights-records.webp",
+      "hero_sha256": "a6caed1bc7ab55537ec0c57ed0be4df5d26a1033a67d7c0c38122e607bd5e16b",
+      "hero_asset_sha256": "a6caed1bc7ab55537ec0c57ed0be4df5d26a1033a67d7c0c38122e607bd5e16b",
       "admission_status": "admitted_quality_gated",
       "finalization_state": "draft_noindex_admitted",
       "searchatlas_content_score": null,
@@ -1757,14 +1759,16 @@
       "evidence_packet_path_required": true,
       "inline_path": "/assets/articles/inline/how-mineralrightsxchange-approaches-mineral-rights-acquisition/how-mineralrightsxchange-approaches-mineral-rights-acquisition.webp",
       "inline_asset_sha256": "ff83cece4df5aa4abfae17c50d91c75cb6a16c5a32496b8846ab524471b9c3d7",
-      "inline_rendered_text": "how mineralrightsxchange approaches mineral rights acquisition"
+      "inline_rendered_text": "how mineralrightsxchange approaches mineral rights acquisition",
+      "historical_title": "How MineralRightsXchange Approaches Mineral Rights Acquisition",
+      "historical_hero_asset_sha256": "f8fbb28576746bad79205172025ccda7f1fe9676b639b7287e6ebdfbb26b0813"
     },
     {
       "selection_rank": 31,
       "program_row_id": "MRX1000-0981",
       "source_shortlist_program_row_id": "MRX1000-0981",
       "slug": "why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services",
-      "title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
+      "title": "What MRX AI Guides Can and Cannot Do",
       "source_shortlist_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
       "canonical_url": "https://mineralrightsxchange.com/blog/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/",
       "pillar": "mrx-methodology",
@@ -1774,9 +1778,9 @@
       "repo_path": "src/content/posts/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services.mdx",
       "repo_sha256": "a528aeb27863ea640bcac4a0c8510a52a31c45bea8776cd15981448f0d821aa3",
       "article_sha256": "a528aeb27863ea640bcac4a0c8510a52a31c45bea8776cd15981448f0d821aa3",
-      "hero_path": "/assets/articles/hero/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services.webp",
-      "hero_sha256": "9f21ba36795b0c4b087dc3203d46201fb0dcf6caf408223a94095f58719379e4",
-      "hero_asset_sha256": "9f21ba36795b0c4b087dc3203d46201fb0dcf6caf408223a94095f58719379e4",
+      "hero_path": "/assets/articles/hero/what-mrx-ai-guides-can-and-cannot-do.webp",
+      "hero_sha256": "629c654f6822536e8a4204ca5b7f953c0e6a43dd5fee6eb7257a8031864368ee",
+      "hero_asset_sha256": "629c654f6822536e8a4204ca5b7f953c0e6a43dd5fee6eb7257a8031864368ee",
       "admission_status": "admitted_quality_gated",
       "finalization_state": "draft_noindex_admitted",
       "searchatlas_content_score": null,
@@ -1789,7 +1793,9 @@
       "evidence_packet_path_required": true,
       "inline_path": "/assets/articles/inline/why-our-ai-powered-mineral-rights-platform-is-different-from-other-acquisition-services/mineral-rights-acquisition-platform.webp",
       "inline_asset_sha256": "1c2d33561e4f2c283f37028b16fbde8343d8f8f8149d6f44adfdaeea738228bf",
-      "inline_rendered_text": "mineral rights acquisition platform"
+      "inline_rendered_text": "mineral rights acquisition platform",
+      "historical_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
+      "historical_hero_asset_sha256": "9f21ba36795b0c4b087dc3203d46201fb0dcf6caf408223a94095f58719379e4"
     },
     {
       "selection_rank": 32,
@@ -12163,7 +12169,7 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "5901725b403785f48b1cca04b843a1751002c9616f6a5a3218f7ad9b0f89b66f",
+    "retrofit_manifest_sha256": "f9da84d061c9a2e9acedb9307bbb4fc16d4ef3de16362a5e52eb902dac4bdcce",
     "public_article_count": 329,
     "batch_article_count": 321,
     "assets_per_article": 2,

@@ -221,7 +221,7 @@ for (const row of rows) {
     findings: [
       `Complete reviewed MDX SHA-256 is ${inputBodySha}; exact-title hero SHA-256 is ${row.hero_sha256}.`,
       'The article states educational and professional boundaries and does not provide an owner-specific title, probate, trust, lease, fraud, tax, accounting, brokerage, engineering, appraisal, eligibility, or guaranteed-value conclusion.',
-      'MRX directional-review limits and potential buyer conflict are disclosed where relevant; copy contains no promised price, guaranteed result, unsupported fixed percentage, or fixed timetable.',
+      'MRX education-only and non-buyer boundaries are stated; copy contains no promised price, guaranteed result, unsupported fixed percentage, or fixed timetable.',
     ],
     checks: [
       'complete_file_sha256_match',

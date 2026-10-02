@@ -284,7 +284,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article preserves the exact reported entry, source location, payor and property identifiers as displayed, product and period, stated calculation basis, related support, and retrieval date; limits evidence status to matched, conflict, missing, or unresolved; turns gaps into neutral questions; discloses possible MRX buyer interest; and preserves owner agency and qualified-review boundaries.',
+    'The article preserves the exact reported entry, source location, payor and property identifiers as displayed, product and period, stated calculation basis, related support, and retrieval date; limits evidence status to matched, conflict, missing, or unresolved; turns gaps into neutral questions; states that MRX provides education only and does not buy mineral rights; and preserves owner agency and qualified-review boundaries.',
     'Image text is limited to the exact article title and approved keyword and adds no owner name, property fact, source result, model output, numerical assumption, seal, recommendation, appraisal claim, forecast, guarantee, or transaction outcome.',
   ],
   checks: [

@@ -247,7 +247,7 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/sell-mineral-rights/',
       [
-        'The current MRX selling page describes owner options, process context, possible buyer-interest disclosure, and the limits of a directional review.',
+        'The current MRX selling page describes owner options, process context, MRX education-only boundary, and the limits of a directional review.',
         'The article uses the page only to bound MRX evidence organization and professional handoffs; it does not establish owner-specific legal rights, title, fraud, remedies, taxes, value, an offer, payment, sale, or closing.',
       ],
     ],
@@ -418,7 +418,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, distinguishes evidence from conclusions, separates ordinary discrepancies from suspected security incidents, preserves exact versions and last-verified-state evidence, discloses possible MRX buyer interest, and makes no owner-specific contract, title, recording, fraud, remedy, payment-recovery, tax, value, appraisal, or transaction conclusion.',
+    'The article states educational and professional boundaries, distinguishes evidence from conclusions, separates ordinary discrepancies from suspected security incidents, preserves exact versions and last-verified-state evidence, states that MRX provides education only and does not buy mineral rights, and makes no owner-specific contract, title, recording, fraud, remedy, payment-recovery, tax, value, appraisal, or transaction conclusion.',
     'Image text is limited to the exact article title and exact canonical keyword and adds no owner data, property identifier, amount, accusation, buyer endorsement, legal or title conclusion, fraud finding, remedy, recovery claim, tax result, guarantee, or transaction conclusion.',
   ],
   checks: [

@@ -88,7 +88,7 @@ function sourceScope(source) {
       'https://mineralrightsxchange.com/faq/',
       [
         'The current MRX FAQ states that the directional underwriter review is free, requires no payment card, creates no obligation to sell, is not a certified valuation, and may precede an MRX buyer relationship that is disclosed when applicable.',
-        'The article uses the FAQ only for MRX’s current review price and service boundaries and its provider-interest disclosure; it does not extend the free-review statement to outside work, promise a result, interpret an agreement, or recommend a transaction.',
+        'The article uses the FAQ only for MRX’s current review price and service boundaries and its education-only boundary; it does not extend the free-review statement to outside work, promise a result, interpret an agreement, or recommend a transaction.',
       ],
     ],
     [
@@ -261,7 +261,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, separates the review price from records, outside engagements, later adjustments, closing deductions, taxes, and owner time, supplies explicit authorization and stop conditions, labels MRX review as directional, and routes unresolved title, legal, tax, accounting, appraisal, land, closing, and transaction questions without making owner-specific conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, separates the review price from records, outside engagements, later adjustments, closing deductions, taxes, and owner time, supplies explicit authorization and stop conditions, labels MRX review as directional, and routes unresolved title, legal, tax, accounting, appraisal, land, closing, and transaction questions without making owner-specific conclusions.',
     'Image text is limited to the exact article title and canonical question after incidental generated document and calculator text was neutralized; the images add no owner data, provider endorsement, contract interpretation, deed language, price, fee, acreage, decimal, formula, success claim, appraisal result, tax outcome, or transaction conclusion.',
   ],
   checks: [

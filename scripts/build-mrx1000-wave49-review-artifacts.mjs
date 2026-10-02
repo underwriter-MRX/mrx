@@ -87,8 +87,8 @@ function sourceScope(source) {
     [
       'https://mineralrightsxchange.com/faq/',
       [
-        'The current MRX FAQ describes a no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, and discloses that MRX may ultimately want to buy an interest.',
-        'The article uses the FAQ only for MRX’s current service boundaries and provider-interest disclosure; it does not value an interest, promise a result, or recommend a transaction.',
+        'The current MRX FAQ describes a no-obligation directional underwriter assessment, distinguishes it from a formal appraisal, and states that MRX provides education only and does not buy mineral rights.',
+        'The article uses the FAQ only for MRX’s current service boundaries and education-only boundary; it does not value an interest, promise a result, or recommend a transaction.',
       ],
     ],
     [
@@ -296,7 +296,7 @@ writeArtifact('compliance', `${slug}.json`, {
   expected_inline_sha256: inlineSha,
   findings: [
     `Complete current MDX SHA-256 is ${articleSha}; hero/share and inline image hashes are separately locked.`,
-    'The article states educational and professional boundaries, discloses MRX’s potential economic interest, separates the conditional range from its evidence-confidence grade and from an appraisal conclusion, written proposal, owner net, and tax record, labels input status, prohibits automatic confidence haircuts, and routes unresolved title, legal, tax, accounting, appraisal, land, engineering, geology, reserves, commodity, and transaction questions without making owner-specific conclusions.',
+    'The article states educational and professional boundaries, states that MRX provides education only and does not buy mineral rights, separates the conditional range from its evidence-confidence grade and from an appraisal conclusion, written proposal, owner net, and tax record, labels input status, prohibits automatic confidence haircuts, and routes unresolved title, legal, tax, accounting, appraisal, land, engineering, geology, reserves, commodity, and transaction questions without making owner-specific conclusions.',
     'Image text is limited to the exact article title and exact canonical keyword and adds no owner data, buyer endorsement, property identifier, price, acreage, decimal, formula, reserves claim, forecast, success claim, appraisal result, tax outcome, or transaction conclusion.',
   ],
   checks: [
