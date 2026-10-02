@@ -7,12 +7,14 @@
  * currentPath prop).
  */
 import { NAV, SITE } from '../../lib/site';
+import { getPublicPhone } from '../../lib/phone';
 
 interface Props {
   currentPath?: string;
 }
 
 const { currentPath = '/' } = Astro.props;
+const publicPhone = getPublicPhone();
 
 const homeIntentPrompts: Record<string, string> = {
   '/mineral-rights-value/':
@@ -59,6 +61,18 @@ const getHomeIntentPrompt = (href: string) =>
           data-account-route
           aria-current={currentPath === '/account/' ? 'page' : undefined}>Log In</button
         >
+        <a
+          class="header__phone"
+          href={publicPhone.href}
+          aria-label={publicPhone.label}
+          data-cta-name="header-call-mrx"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6.7 2.8 9.3 8l-2 2a16 16 0 0 0 6.7 6.7l2-2 5.2 2.6v3.2c0 .9-.7 1.7-1.7 1.7A17.7 17.7 0 0 1 1.8 4.5c0-.9.8-1.7 1.7-1.7h3.2Z"
+            ></path>
+          </svg>
+        </a>
         <button
           class="header__ask"
           type="button"
@@ -145,7 +159,9 @@ const getHomeIntentPrompt = (href: string) =>
   }
   document.querySelectorAll<HTMLElement>('[data-open-travis]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
-      window.dispatchEvent(new CustomEvent('mrx:open-chat', { detail: { opener: trigger } }));
+      window.dispatchEvent(
+        new CustomEvent('mrx:open-chat', { detail: { guide: 'travis', opener: trigger } }),
+      );
       nav?.setAttribute('data-open', 'false');
       btn?.setAttribute('aria-expanded', 'false');
     });
@@ -163,3 +179,56 @@ const getHomeIntentPrompt = (href: string) =>
     trigger.addEventListener('click', () => window.location.assign('/account/'));
   });
 </script>
+
+<style>
+  .header__phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 2px solid var(--mrx-gold);
+    border-radius: 999px;
+    background: #fffaf0;
+    color: var(--mrx-navy);
+    box-shadow: 0 8px 20px rgba(7, 30, 52, 0.1);
+    text-decoration: none;
+    transition:
+      background 0.18s ease,
+      color 0.18s ease,
+      transform 0.18s ease;
+  }
+
+  .header__phone:hover {
+    background: var(--mrx-navy);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+
+  .header__phone:focus-visible {
+    outline: 3px solid #1b6da8;
+    outline-offset: 2px;
+  }
+
+  .header__phone svg {
+    width: 21px;
+    height: 21px;
+    fill: currentColor;
+  }
+
+  @media (max-width: 360px) {
+    .header__inner {
+      gap: 0.25rem;
+    }
+
+    .header__actions {
+      gap: 0.2rem;
+    }
+
+    .header__brand img {
+      width: min(124px, 39vw);
+    }
+  }
+</style>

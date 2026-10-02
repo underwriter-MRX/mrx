@@ -376,6 +376,7 @@ class ChatErrorBoundary extends Component<{ children: ReactNode }, { failed: boo
 
 function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Props) {
   const [open, setOpen] = useState(false);
+  const [compactChatViewport, setCompactChatViewport] = useState(false);
   const [sessionReady, setSessionReady] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [step, setStep] = useState<ConversationStep>('loading');
@@ -1038,7 +1039,9 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         setPreserveOpeningPersona(true);
         setPendingPrompt('');
         setOpen(true);
-        track('ask_travis_open', { source: 'guide_profile' });
+        track('ask_travis_open', {
+          source: detail.opener?.hasAttribute('data-profile-guide') ? 'guide_profile' : 'site_cta',
+        });
         return;
       }
       const openingPersona = openingPersonaFor(detail?.prompt, detail?.booking);
@@ -1168,8 +1171,66 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
     void beginBooking();
   }, [open, sessionReady, bookingRequested]);
 
+  useLayoutEffect(() => {
+    if (!open) return;
+    const root = document.documentElement;
+    const body = document.body;
+    const page = document.querySelector<HTMLElement>('.page');
+    const skipLink = document.querySelector<HTMLElement>('.skip-link');
+    const previousInert = [page?.inert, skipLink?.inert];
+    const scroll = { x: window.scrollX, y: window.scrollY };
+    const previousStyle = {
+      position: body.style.position,
+      top: body.style.top,
+      left: body.style.left,
+      width: body.style.width,
+      overflow: body.style.overflow,
+    };
+    root.dataset.mrxChatOpen = 'true';
+    if (page) page.inert = true;
+    if (skipLink) skipLink.inert = true;
+    Object.assign(body.style, {
+      position: 'fixed',
+      top: `-${scroll.y}px`,
+      left: `-${scroll.x}px`,
+      width: '100%',
+      overflow: 'hidden',
+    });
+    const viewport = window.visualViewport;
+    const updateViewport = () => {
+      const height = viewport?.height ?? window.innerHeight;
+      root.style.setProperty('--mrx-chat-height', `${height}px`);
+      root.style.setProperty('--mrx-chat-top', `${viewport?.offsetTop ?? 0}px`);
+      setCompactChatViewport(window.innerWidth <= 767 && height <= 550);
+    };
+    updateViewport();
+    viewport?.addEventListener('resize', updateViewport);
+    viewport?.addEventListener('scroll', updateViewport);
+    window.addEventListener('resize', updateViewport);
+    return () => {
+      viewport?.removeEventListener('resize', updateViewport);
+      viewport?.removeEventListener('scroll', updateViewport);
+      window.removeEventListener('resize', updateViewport);
+      delete root.dataset.mrxChatOpen;
+      root.style.removeProperty('--mrx-chat-height');
+      root.style.removeProperty('--mrx-chat-top');
+      if (page) page.inert = previousInert[0] ?? false;
+      if (skipLink) skipLink.inert = previousInert[1] ?? false;
+      Object.assign(body.style, previousStyle);
+      window.scrollTo({ left: scroll.x, top: scroll.y, behavior: 'instant' });
+    };
+  }, [open]);
+
   useEffect(() => {
-    if (open && sessionReady) window.setTimeout(() => inputRef.current?.focus(), 80);
+    if (!open || !sessionReady) return;
+    const timer = window.setTimeout(() => {
+      // Show the conversation before opening a phone keyboard.
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        if (!dialogRef.current?.contains(document.activeElement))
+          dialogRef.current?.focus({ preventScroll: true });
+      } else inputRef.current?.focus({ preventScroll: true });
+    }, 80);
+    return () => window.clearTimeout(timer);
   }, [open, step, sessionReady]);
   useEffect(() => {
     if (open) {
@@ -1184,7 +1245,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         const panel = dialogRef.current;
         const focusable = Array.from(
           panel.querySelectorAll<HTMLElement>(
-            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+            'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), summary, [tabindex]:not([tabindex="-1"])',
           ),
         ).filter((element) => element.getClientRects().length && !element.hasAttribute('hidden'));
         if (!focusable.length) {
@@ -1228,7 +1289,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
           '.header__ask, [data-open-home-chat], [data-mobile-toggle]',
         ),
       ].find((element) => visible(element));
-      (visible(mobileToggle) ?? visible(opener) ?? fallback)?.focus();
+      (visible(mobileToggle) ?? visible(opener) ?? fallback)?.focus({ preventScroll: true });
     });
     return () => window.cancelAnimationFrame(frame);
   }, [open]);
@@ -2900,7 +2961,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
 
   return (
     <>
-      {!hideLauncher && (
+      {!hideLauncher && !open && (
         <button
           ref={launcherRef}
           className="travis-fab"
@@ -2943,7 +3004,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
         >
           <section
             ref={dialogRef}
-            className="travis-panel"
+            className={`travis-panel${compactChatViewport ? ' travis-panel--compact' : ''}`}
             data-testid="ask-travis-dialog"
             role="dialog"
             aria-modal="true"
@@ -3213,63 +3274,66 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                 Your browser may send audio to its speech service. MRX receives the text when you
                 tap Send.
               </p>
-              <div className="travis-composer__actions">
-                <input
-                  ref={fileInputRef}
-                  className="travis-file-input"
-                  type="file"
-                  accept=".pdf,.jpg,.jpeg,.png"
-                  onChange={(event) => {
-                    const file = event.currentTarget.files?.[0];
-                    event.currentTarget.value = '';
-                    void uploadFile(file);
-                  }}
-                  disabled={uploading || !documentProcessingEnabled}
-                  tabIndex={-1}
-                />
-                <button
-                  type="button"
-                  className="travis-footer-action travis-footer-action--document"
-                  data-testid="travis-document-button"
-                  onClick={beginDocumentUpload}
-                  disabled={uploading || !documentProcessingEnabled}
-                  title={
-                    documentProcessingEnabled
-                      ? 'Upload a private photo/document for security scanning'
-                      : 'Secure document processing is temporarily unavailable'
-                  }
-                >
-                  {uploading
-                    ? 'Uploading…'
-                    : documentProcessingEnabled
-                      ? 'Upload a photo/document'
-                      : 'Document uploads unavailable'}
-                </button>
-                {bookedAppointment ? (
+              <details className="travis-more-options" open={!compactChatViewport}>
+                <summary>Call, documents &amp; privacy</summary>
+                <div className="travis-composer__actions">
+                  <input
+                    ref={fileInputRef}
+                    className="travis-file-input"
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                    onChange={(event) => {
+                      const file = event.currentTarget.files?.[0];
+                      event.currentTarget.value = '';
+                      void uploadFile(file);
+                    }}
+                    disabled={uploading || !documentProcessingEnabled}
+                    tabIndex={-1}
+                  />
                   <button
                     type="button"
-                    className="travis-footer-action travis-appointment-status"
-                    data-testid="travis-appointment-status"
-                    title={bookedAppointment.label}
-                    onClick={() => window.location.assign('/account/')}
+                    className="travis-footer-action travis-footer-action--document"
+                    data-testid="travis-document-button"
+                    onClick={beginDocumentUpload}
+                    disabled={uploading || !documentProcessingEnabled}
+                    title={
+                      documentProcessingEnabled
+                        ? 'Upload a private photo/document for security scanning'
+                        : 'Secure document processing is temporarily unavailable'
+                    }
                   >
-                    ✓ Call booked
+                    {uploading
+                      ? 'Uploading…'
+                      : documentProcessingEnabled
+                        ? 'Upload a photo/document'
+                        : 'Document uploads unavailable'}
                   </button>
-                ) : !bookingDeclined ? (
-                  <button
-                    type="button"
-                    className="travis-footer-action travis-footer-action--appointment"
-                    onClick={beginBooking}
-                    disabled={Boolean(typingPersona) || booking}
-                  >
-                    Schedule a human underwriter call
-                  </button>
-                ) : null}
-              </div>
-              <p>
-                MRX remembers this conversation on this device. Contact details are only used with
-                the permissions you choose.
-              </p>
+                  {bookedAppointment ? (
+                    <button
+                      type="button"
+                      className="travis-footer-action travis-appointment-status"
+                      data-testid="travis-appointment-status"
+                      title={bookedAppointment.label}
+                      onClick={() => window.location.assign('/account/')}
+                    >
+                      ✓ Call booked
+                    </button>
+                  ) : !bookingDeclined ? (
+                    <button
+                      type="button"
+                      className="travis-footer-action travis-footer-action--appointment"
+                      onClick={beginBooking}
+                      disabled={Boolean(typingPersona) || booking}
+                    >
+                      Schedule a human underwriter call
+                    </button>
+                  ) : null}
+                </div>
+                <p>
+                  MRX remembers this conversation on this device. Contact details are only used with
+                  the permissions you choose.
+                </p>
+              </details>
             </footer>
           </section>
         </div>

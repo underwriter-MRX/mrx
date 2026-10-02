@@ -72,7 +72,7 @@
   height: min(860px, calc(100dvh - 1rem));
   margin: 0.5rem;
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
   overflow: hidden;
   border: 1px solid #d5dde4;
   border-radius: 24px;
@@ -105,8 +105,8 @@
   font-size: 0.74rem;
 }
 .travis-panel__head > button {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -124,6 +124,8 @@
   font-size: 0.68rem;
 }
 .travis-messages {
+  min-height: 0;
+  overscroll-behavior: contain;
   overflow: auto;
   padding: 1rem;
   display: flex;
@@ -378,7 +380,7 @@
   border-radius: 13px;
   background: #fbfcfd;
   padding: 0.78rem 0.82rem;
-  font-size: 0.88rem;
+  font-size: 1rem;
   transition:
     border-color 0.15s,
     box-shadow 0.15s;
@@ -494,7 +496,8 @@
   background: #edf8f2;
   color: #2d6b51;
 }
-.travis-composer > p {
+.travis-composer > p,
+.travis-more-options > p {
   margin-top: 0.45rem;
   color: #758590;
   font-size: 0.61rem;
@@ -549,17 +552,18 @@
     box-shadow: 0 0 0 5px rgba(69, 183, 121, 0);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .travis-fab {
-    padding: 0.35rem;
+    display: none;
   }
   .travis-fab > span:last-child {
     display: none;
   }
   .travis-panel {
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     margin: 0;
+    border: 0;
     border-radius: 0;
   }
   .travis-messages {
@@ -637,4 +641,48 @@
 .travis-voice-panel button:focus-visible {
   outline: 3px solid #365f7a;
   outline-offset: 3px;
+}
+
+.travis-more-options > summary {
+  display: none;
+  min-height: 44px;
+  align-content: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #173e58;
+}
+.travis-panel--compact .travis-more-options > summary {
+  display: list-item;
+  margin-left: 1rem;
+}
+.travis-panel--compact .travis-composer {
+  max-height: calc(var(--mrx-chat-height, 100dvh) * 0.55);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.travis-panel__head > button:focus-visible,
+.travis-more-options > summary:focus-visible {
+  outline: 3px solid #d79a2b;
+  outline-offset: 2px;
+}
+@media (max-width: 767px) {
+  .travis-backdrop {
+    top: var(--mrx-chat-top, 0px);
+    bottom: auto;
+    height: var(--mrx-chat-height, 100dvh);
+  }
+  .travis-panel__head {
+    padding-top: max(0.65rem, env(safe-area-inset-top));
+  }
+  .travis-panel--compact .travis-panel__head {
+    gap: 0.5rem;
+    padding: 0.4rem 0.65rem;
+  }
+  .travis-panel--compact .travis-panel__head .travis-avatar img {
+    width: 36px;
+    height: 36px;
+  }
+  .travis-panel--compact .travis-panel__head div > span {
+    display: none;
+  }
 }

@@ -139,7 +139,7 @@ test.describe('Ask Travis voice input', () => {
     await input.fill('Keep this draft');
     await page.getByTestId('travis-voice-button').click();
     await expect(page.getByTestId('travis-voice-button')).toHaveAttribute('aria-pressed', 'true');
-    await page.getByRole('button', { name: 'Close Ask Travis' }).click();
+    await page.getByRole('button', { name: 'Close conversation with Travis' }).click();
     expect(await page.evaluate(() => window.__voiceHarness.aborts)).toBe(1);
     await page.evaluate(() => window.__voiceHarness.late?.());
 
@@ -337,7 +337,7 @@ test('closing while the arrow finishes cancels submission and preserves the draf
     window.__voiceHarness.stopDelay = 1500;
   });
   await page.getByRole('button', { name: 'Send reply', exact: true }).click();
-  await page.getByRole('button', { name: 'Close Ask Travis' }).click();
+  await page.getByRole('button', { name: 'Close conversation with Travis' }).click();
   await page
     .getByRole('button', { name: 'Ask Travis for mineral-rights help', exact: true })
     .click();

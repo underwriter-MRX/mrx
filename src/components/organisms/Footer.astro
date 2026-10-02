@@ -6,6 +6,9 @@
  */
 import Disclaimer from '../molecules/Disclaimer.astro';
 import { NAV, SITE } from '../../lib/site';
+import { getPublicPhone } from '../../lib/phone';
+
+const publicPhone = getPublicPhone();
 ---
 
 <footer class="footer" role="contentinfo">
@@ -90,8 +93,120 @@ import { NAV, SITE } from '../../lib/site';
   </div>
 </footer>
 
+<nav class="mobile-contact-bar" aria-label="Quick contact">
+  <a class="mobile-contact-bar__action" href={publicPhone.href} aria-label={publicPhone.label}>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M6.7 2.8 9.3 8l-2 2a16 16 0 0 0 6.7 6.7l2-2 5.2 2.6v3.2c0 .9-.7 1.7-1.7 1.7A17.7 17.7 0 0 1 1.8 4.5c0-.9.8-1.7 1.7-1.7h3.2Z"
+      ></path>
+    </svg>
+    <span>Call</span>
+  </a>
+  <button class="mobile-contact-bar__action" type="button" data-mobile-ask-travis>
+    <img
+      src="/assets/mrx-homepage-v4/avatars/travis-hermes-128.webp"
+      alt="Travis, fictional MRX AI guide"
+      aria-hidden="true"
+      width="128"
+      height="128"
+    />
+    <span>Ask Travis</span>
+  </button>
+</nav>
+
 <script>
   document
-    .querySelector('[data-footer-ask]')
-    ?.addEventListener('click', () => window.dispatchEvent(new CustomEvent('mrx:open-chat')));
+    .querySelectorAll<HTMLElement>('[data-footer-ask], [data-mobile-ask-travis]')
+    .forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        window.dispatchEvent(
+          new CustomEvent('mrx:open-chat', {
+            detail: { guide: 'travis', opener: trigger },
+          }),
+        );
+      });
+    });
 </script>
+
+<style>
+  .mobile-contact-bar {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      padding-bottom: calc(5.25rem + env(safe-area-inset-bottom));
+    }
+
+    .mobile-contact-bar {
+      position: fixed;
+      z-index: 80;
+      inset: auto 0 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 0.5rem;
+      width: 100%;
+      max-width: 100vw;
+      box-sizing: border-box;
+      padding:
+        0.5rem max(0.5rem, env(safe-area-inset-right))
+        calc(0.5rem + env(safe-area-inset-bottom)) max(0.5rem, env(safe-area-inset-left));
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(7, 30, 52, 0.97);
+      box-shadow: 0 -10px 30px rgba(7, 30, 52, 0.22);
+      backdrop-filter: blur(14px);
+    }
+
+    .mobile-contact-bar__action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      min-height: 44px;
+      box-sizing: border-box;
+      gap: 0.45rem;
+      margin: 0;
+      border: 1px solid var(--mrx-gold);
+      border-radius: 999px;
+      background: #fffaf0;
+      color: var(--mrx-navy);
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .mobile-contact-bar__action:last-child {
+      background: var(--mrx-gold);
+    }
+
+    .mobile-contact-bar__action:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 2px;
+    }
+
+    .mobile-contact-bar__action svg,
+    .mobile-contact-bar__action img {
+      flex: 0 0 24px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .mobile-contact-bar__action svg {
+      fill: currentColor;
+    }
+
+    .mobile-contact-bar__action img {
+      border: 1px solid var(--mrx-navy);
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    :global(html[data-mrx-chat-open='true']) .mobile-contact-bar {
+      display: none;
+    }
+  }
+</style>
