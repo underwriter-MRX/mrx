@@ -106,10 +106,17 @@ test.describe('Ask Travis voice input', () => {
 
     const input = page.getByTestId('travis-composer-input');
     const microphone = page.getByTestId('travis-voice-button');
+    await expect(microphone).toHaveCSS('background-color', 'rgb(18, 75, 54)');
+    await expect(microphone).toHaveCSS('color', 'rgb(100, 238, 157)');
     await input.fill('Existing draft.');
     await microphone.click();
 
     await expect(microphone).toHaveAttribute('aria-pressed', 'true');
+    await expect(microphone).toHaveCSS('background-color', 'rgb(165, 35, 50)');
+    await expect(page.locator('.travis-voice-panel')).toHaveCSS(
+      'background-color',
+      'rgb(101, 25, 37)',
+    );
     await expect(page.getByRole('status')).toContainText('Listening');
     expect(await page.evaluate(() => window.__voiceHarness.starts)).toBe(1);
 

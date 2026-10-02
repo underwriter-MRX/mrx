@@ -29,7 +29,7 @@ test('Graham chat follows the keyboard viewport, preserves drafts and restores f
   await page.goto('/team/graham/', { waitUntil: 'domcontentloaded' });
   // The development-only Astro toolbar is absent from production.
   await page.addStyleTag({ content: 'astro-dev-toolbar { display:none !important; }' });
-  await page.evaluate(() => window.scrollTo({ top: 150, behavior: 'instant' }));
+  await page.evaluate(() => window.scrollTo({ top: 40, behavior: 'instant' }));
   const ask = page.getByRole('button', { name: 'Ask Graham a question', exact: true });
   await ask.click();
   const dialog = page.getByRole('dialog');
@@ -60,7 +60,7 @@ test('Graham chat follows the keyboard viewport, preserves drafts and restores f
   await expect(page.locator('.page')).toHaveJSProperty('inert', false);
   await expect(ask).toBeFocused();
   expect(await page.evaluate(() => document.body.style.position)).toBe('');
-  expect(await page.evaluate(() => scrollY)).toBeGreaterThan(0);
+  expect(await page.evaluate(() => scrollY)).toBeCloseTo(40, 0);
   await ask.click();
   await expect(input).toHaveValue('Draft remains here');
 });

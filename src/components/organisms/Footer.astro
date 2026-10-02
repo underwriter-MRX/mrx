@@ -102,7 +102,12 @@ const publicPhone = getPublicPhone();
     </svg>
     <span>Call</span>
   </a>
-  <button class="mobile-contact-bar__action" type="button" data-mobile-ask-travis>
+  <button
+    class="mobile-contact-bar__action"
+    type="button"
+    aria-label="Ask Travis"
+    data-mobile-ask-travis
+  >
     <img
       src="/assets/mrx-homepage-v4/avatars/travis-hermes-128.webp"
       alt="Travis, fictional MRX AI guide"
@@ -110,7 +115,9 @@ const publicPhone = getPublicPhone();
       width="128"
       height="128"
     />
-    <span>Ask Travis</span>
+    <span class="mobile-contact-bar__chat-label"
+      ><strong>Ask Travis</strong><small>Click here</small></span
+    >
   </button>
 </nav>
 
@@ -148,8 +155,7 @@ const publicPhone = getPublicPhone();
       width: 100%;
       max-width: 100vw;
       box-sizing: border-box;
-      padding:
-        0.5rem max(0.5rem, env(safe-area-inset-right))
+      padding: 0.5rem max(0.5rem, env(safe-area-inset-right))
         calc(0.5rem + env(safe-area-inset-bottom)) max(0.5rem, env(safe-area-inset-left));
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       background: rgba(7, 30, 52, 0.97);
@@ -180,7 +186,18 @@ const publicPhone = getPublicPhone();
     }
 
     .mobile-contact-bar__action:last-child {
-      background: var(--mrx-gold);
+      background: #173e58;
+      color: #fff;
+    }
+    .mobile-contact-bar__chat-label {
+      display: grid;
+      gap: 0.2rem;
+      text-align: left;
+    }
+    .mobile-contact-bar__chat-label small {
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 600;
     }
 
     .mobile-contact-bar__action:focus-visible {
