@@ -56,6 +56,17 @@ for (const name of guideNames) {
     const ask = page.getByRole('button', { name: `Ask ${name} a question`, exact: true });
     const portrait = page.locator('.mrx-guide-profile > img');
     await expect(ask).toBeVisible();
+    const buttonPortrait = ask.locator('img');
+    await expect(buttonPortrait).toHaveAttribute(
+      'src',
+      `/assets/team/${name.toLowerCase()}-256.webp`,
+    );
+    await expect
+      .poll(() =>
+        buttonPortrait.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
+      )
+      .toBe(true);
+    await expect(ask.locator('small')).toHaveText('Straight answers, 24/7');
     for (const width of [320, 375]) {
       await page.setViewportSize({ width, height: 812 });
       const imageBox = await portrait.boundingBox();
@@ -67,8 +78,10 @@ for (const name of guideNames) {
         await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
       ).toBe(true);
     }
-    if (name === 'Graham')
+    if (name === 'Graham') {
       await page.screenshot({ path: testInfo.outputPath('graham-mobile.png') });
+      await ask.screenshot({ path: testInfo.outputPath('graham-avatar-button.png') });
+    }
     await ask.click();
     const dialog = page.getByRole('dialog');
     const responder = directoryNames.includes(name) ? 'Travis' : name;
