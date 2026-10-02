@@ -2,7 +2,7 @@
   "artifact_type": "mrx_reviewed_article_identity_transition",
   "version": 1,
   "reviewer_id": "codex-education-only-independent-review",
-  "reviewed_at": "2026-10-02T21:30:22.065008+00:00",
+  "reviewed_at": "2026-10-02T21:58:54.135420+00:00",
   "disposition": "PASS",
   "entries": [
     {
@@ -73,7 +73,7 @@
       "previous_title": "Why Our AI-Powered Mineral Rights Platform Is Different From Other Acquisition Services",
       "current_title": "What MRX AI Guides Can and Cannot Do",
       "keyword": "MRX AI guide limitations",
-      "current_source_sha256": "aed0b9e7f46f2cfbd4ddebea1f38d797861a9293071a20fc40c3a09bbfcd548b",
+      "current_source_sha256": "eb91f3b06a90416a2ec23fb93897e0aea4b0c19fbf7c5344b98e50b40e81d635",
       "historical_reviewed_source_sha256": "a528aeb27863ea640bcac4a0c8510a52a31c45bea8776cd15981448f0d821aa3",
       "disposition": "PASS",
       "hero": {
