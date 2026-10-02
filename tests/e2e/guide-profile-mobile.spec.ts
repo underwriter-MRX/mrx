@@ -69,19 +69,13 @@ for (const name of guideNames) {
     await expect(ask.locator('small')).toHaveText('Straight answers, 24/7');
     for (const width of [320, 375, 430]) {
       await page.setViewportSize({ width, height: 812 });
-      const imageBox = await portrait.boundingBox();
+      await expect(portrait).not.toBeVisible();
+      await expect(ask.locator('.mrx-guide-profile__ask-prompt')).toHaveText('Click here');
       const buttonBox = await ask.boundingBox();
-      expect(imageBox?.width).toBeLessThanOrEqual(80);
-      expect(imageBox?.height).toBeLessThanOrEqual(80);
       expect(buttonBox?.height).toBeGreaterThanOrEqual(44);
-      expect(buttonBox!.x).toBeGreaterThanOrEqual(imageBox!.x + imageBox!.width + 8);
-      expect(
-        Math.abs(buttonBox!.y + buttonBox!.height / 2 - (imageBox!.y + imageBox!.height / 2)),
-      ).toBeLessThan(2);
+      expect(Math.abs(buttonBox!.x + buttonBox!.width / 2 - width / 2)).toBeLessThan(2);
       const labelBox = await page.locator('.mrx-guide-label').boundingBox();
-      expect(labelBox!.y).toBeGreaterThanOrEqual(
-        Math.max(imageBox!.y + imageBox!.height, buttonBox!.y + buttonBox!.height),
-      );
+      expect(labelBox!.y).toBeGreaterThanOrEqual(buttonBox!.y + buttonBox!.height);
       expect(
         await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
       ).toBe(true);
