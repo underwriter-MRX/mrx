@@ -66,8 +66,23 @@ const grahamPaths = [
             type="button"
             data-profile-guide={guide.slug}
             aria-label={`Ask ${guide.name} a question`}
-            aria-haspopup="dialog">Ask {guide.name} <span aria-hidden="true">?</span></button
+            aria-haspopup="dialog"
           >
+            <span class="mrx-guide-profile__ask-avatar" aria-hidden="true">
+              <img
+                src={guide.image}
+                alt={`${guide.name}, ${guide.role}`}
+                width="48"
+                height="48"
+                aria-hidden="true"
+              />
+              {guide.status === 'active' && <i />}
+            </span>
+            <span class="mrx-guide-profile__ask-label">
+              <strong>Ask {guide.name}</strong>
+              <small>Straight answers, 24/7</small>
+            </span>
+          </button>
         </div><p class="mrx-guide-profile__role">
           {guide.role}
         </p><p class="mrx-guide-profile__summary">{guide.summary}</p><h2>
@@ -161,27 +176,62 @@ const grahamPaths = [
   .mrx-guide-profile__ask {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
+    max-width: 100%;
     min-height: 44px;
-    padding: 0.65rem 1rem;
-    border: 1px solid #a77222;
-    border-radius: 10px;
+    padding: 0.42rem 1rem 0.42rem 0.42rem;
+    border: 1px solid #536879;
+    border-radius: 999px;
     background: #071e34;
     color: #fff;
+    box-shadow: 0 8px 24px rgba(7, 30, 52, 0.16);
     font: inherit;
-    font-weight: 750;
     cursor: pointer;
-    white-space: nowrap;
+    text-align: left;
+    transition:
+      background 0.15s,
+      box-shadow 0.15s;
   }
-  .mrx-guide-profile__ask span {
-    display: inline-grid;
-    place-items: center;
-    line-height: 1;
-    width: 1.3em;
-    height: 1.3em;
-    border: 1px solid currentColor;
+  .mrx-guide-profile__ask:hover {
+    background: #123b57;
+    box-shadow: 0 10px 28px rgba(7, 30, 52, 0.22);
+  }
+  .mrx-guide-profile__ask-avatar {
+    position: relative;
+    display: inline-flex;
+    flex: 0 0 auto;
+  }
+  .mrx-guide-profile__ask-avatar img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border: 2px solid #d79a2b;
     border-radius: 50%;
+  }
+  .mrx-guide-profile__ask-avatar i {
+    position: absolute;
+    right: 1px;
+    bottom: 2px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #071e34;
+    border-radius: 50%;
+    background: #45b779;
+  }
+  .mrx-guide-profile__ask-label {
+    display: grid;
+    gap: 0.1rem;
+    min-width: 0;
+  }
+  .mrx-guide-profile__ask-label strong {
+    font-size: 0.93rem;
+    font-weight: 750;
+    line-height: 1.3;
+  }
+  .mrx-guide-profile__ask-label small {
+    font-size: 0.68rem;
+    line-height: 1.4;
+    color: #d7e2eb;
   }
   .mrx-guide-profile__ask:focus-visible {
     outline: 3px solid #a77222;
@@ -189,9 +239,29 @@ const grahamPaths = [
   }
   @media (max-width: 760px) {
     .mrx-guide-profile {
-      gap: 1rem;
+      grid-template-columns: 80px minmax(0, 1fr);
+      gap: 0 0.75rem;
+    }
+    .mrx-guide-profile > div,
+    .mrx-guide-profile__heading {
+      display: contents;
+    }
+    .mrx-guide-profile > div > *,
+    .mrx-guide-profile__heading h1 {
+      grid-column: 1 / -1;
+    }
+    .mrx-guide-profile__ask {
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: end;
+      align-self: center;
+      margin-bottom: 1rem;
     }
     .mrx-guide-profile > img {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: center;
+      margin-bottom: 1rem;
       width: 80px;
       height: 80px;
       max-width: 80px;

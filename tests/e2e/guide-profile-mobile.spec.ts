@@ -56,19 +56,40 @@ for (const name of guideNames) {
     const ask = page.getByRole('button', { name: `Ask ${name} a question`, exact: true });
     const portrait = page.locator('.mrx-guide-profile > img');
     await expect(ask).toBeVisible();
-    for (const width of [320, 375]) {
+    const buttonPortrait = ask.locator('img');
+    await expect(buttonPortrait).toHaveAttribute(
+      'src',
+      `/assets/team/${name.toLowerCase()}-256.webp`,
+    );
+    await expect
+      .poll(() =>
+        buttonPortrait.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
+      )
+      .toBe(true);
+    await expect(ask.locator('small')).toHaveText('Straight answers, 24/7');
+    for (const width of [320, 375, 430]) {
       await page.setViewportSize({ width, height: 812 });
       const imageBox = await portrait.boundingBox();
       const buttonBox = await ask.boundingBox();
       expect(imageBox?.width).toBeLessThanOrEqual(80);
       expect(imageBox?.height).toBeLessThanOrEqual(80);
       expect(buttonBox?.height).toBeGreaterThanOrEqual(44);
+      expect(buttonBox!.x).toBeGreaterThanOrEqual(imageBox!.x + imageBox!.width + 8);
+      expect(
+        Math.abs(buttonBox!.y + buttonBox!.height / 2 - (imageBox!.y + imageBox!.height / 2)),
+      ).toBeLessThan(2);
+      const labelBox = await page.locator('.mrx-guide-label').boundingBox();
+      expect(labelBox!.y).toBeGreaterThanOrEqual(
+        Math.max(imageBox!.y + imageBox!.height, buttonBox!.y + buttonBox!.height),
+      );
       expect(
         await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
       ).toBe(true);
     }
-    if (name === 'Graham')
+    if (name === 'Graham') {
       await page.screenshot({ path: testInfo.outputPath('graham-mobile.png') });
+      await ask.screenshot({ path: testInfo.outputPath('graham-avatar-button.png') });
+    }
     await ask.click();
     const dialog = page.getByRole('dialog');
     const responder = directoryNames.includes(name) ? 'Travis' : name;
