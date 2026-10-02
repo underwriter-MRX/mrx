@@ -50,7 +50,7 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       Object.values(textPolicy.assets).filter(
         (asset) => 'concise_alt' in asset && asset.concise_alt !== undefined,
       ),
-    ).toHaveLength(54);
+    ).toHaveLength(56);
     expect(createHash('sha256').update(readFileSync(targetFile)).digest('hex')).toBe(
       evidence.sha256,
     );
@@ -181,6 +181,31 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
       expect(evidence.concise_alt).toBe(conciseAlt);
       expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(conciseAlt);
+    }
+  });
+
+  it('resolves the appraisal-two reviewed alternatives without changing exact-text identity', () => {
+    const expected = {
+      '/assets/articles/hero/sop-20260928/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp':
+        {
+          exactText:
+            'Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition',
+          conciseAlt: 'Midland appraisal cover with rock samples and calipers',
+        },
+      '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp':
+        {
+          exactText: 'The Comprehensive Guide to Factors Impacting Your Mineral Rights Valuation',
+          conciseAlt: 'Valuation guide cover with two men reviewing maps and documents',
+        },
+    } as const;
+
+    for (const [path, reviewed] of Object.entries(expected)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect(evidence.exact_text).toBe(reviewed.exactText);
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(reviewed.conciseAlt);
+      expect(resolveImageTextAlt(path, evidence.exact_text)).toBe(reviewed.conciseAlt);
     }
   });
 

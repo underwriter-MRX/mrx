@@ -1770,8 +1770,9 @@
       "classification": "printed_text",
       "exact_text": "Midland CAD Mineral Property Page: Three Approaches and the Sufficient-Data Condition",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp"
+      "visual_review": "2026-10-02: exact article title at left; right shows trays of rock cores, metal blocks, calipers, translucent screen and blue binder",
+      "original_path": "/assets/articles/hero/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp",
+      "concise_alt": "Midland appraisal cover with rock samples and calipers"
     },
     "/assets/articles/hero/sop-20260928/pecos-cad-2025-2026-reappraisal-plan-category-g-parcel-counts-by-isd.webp": {
       "sha256": "8f47fc328f94c32e46825266bd85720c6c7304e0dce16f28a308061c1353a064",
@@ -1869,8 +1870,9 @@
       "classification": "printed_text",
       "exact_text": "The Comprehensive Guide to Factors Impacting Your Mineral Rights Valuation",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:hero title",
-      "visual_review": "not_performed_not_required",
-      "original_path": "/assets/articles/hero/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp"
+      "visual_review": "2026-10-02: exact article title at left; right shows two adult men at a table reviewing maps, chart pages and documents; no professional credentials inferred",
+      "original_path": "/assets/articles/hero/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp",
+      "concise_alt": "Valuation guide cover with two men reviewing maps and documents"
     },
     "/assets/articles/hero/sop-20260928/the-hidden-traps-in-selling-mineral-rights.webp": {
       "sha256": "3e8615ca6d3a029af5c67a10b28b1d2bb6c67694328945374a3a2c8466b064f6",

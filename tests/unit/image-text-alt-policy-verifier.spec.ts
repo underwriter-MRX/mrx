@@ -66,6 +66,8 @@ const reviewedBatchPaths = [
   '/assets/articles/hero/navigating-competing-offers-what-to-do-before-your-mineral-rights-assessment-call.webp',
   '/assets/articles/hero/sop-20260928/cad-account-number-rrc-lease-id-and-operator-number-in-texas-mineral-records.webp',
   '/assets/articles/hero/sop-20260928/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp',
+  '/assets/articles/hero/sop-20260928/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp',
+  '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp',
 ].sort();
 
 const rawNineExpectedAlts = {
@@ -163,6 +165,13 @@ const recordsThreeExpectedAlts = {
     'Mineral records cover with index cards, tags and a magnifier',
   '/assets/articles/hero/sop-20260928/gonzales-cad-2025-mass-appraisal-report-mineral-responsibility-page-locator.webp':
     'Gonzales report cover with an open map binder and magnifier',
+} as const;
+
+const appraisalTwoExpectedAlts = {
+  '/assets/articles/hero/sop-20260928/midland-cad-mineral-property-page-three-approaches-and-the-sufficient-data-condition.webp':
+    'Midland appraisal cover with rock samples and calipers',
+  '/assets/articles/hero/sop-20260928/the-comprehensive-guide-to-factors-impacting-your-mineral-rights-valuation.webp':
+    'Valuation guide cover with two men reviewing maps and documents',
 } as const;
 
 function printedEvidence(overrides = {}) {
@@ -283,6 +292,17 @@ describe('image text alt policy verifier', () => {
   it('uses exactly the records-three root-reviewed concise alternatives', () => {
     expect(Object.keys(recordsThreeExpectedAlts)).toHaveLength(3);
     for (const [path, expectedAlt] of Object.entries(recordsThreeExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-02:\s+\S/);
+    }
+  });
+
+  it('uses exactly the appraisal-two root-reviewed concise alternatives', () => {
+    expect(Object.keys(appraisalTwoExpectedAlts)).toHaveLength(2);
+    for (const [path, expectedAlt] of Object.entries(appraisalTwoExpectedAlts)) {
       const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
       expect('concise_alt' in evidence).toBe(true);
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
