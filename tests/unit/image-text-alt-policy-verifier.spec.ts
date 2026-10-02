@@ -13,7 +13,12 @@ const assetBytes = 32598;
 
 const reviewedBatchPaths = [
   '/assets/articles/hero/are-there-any-fees-for-a-free-underwriter-review-of-your-mineral-rights.webp',
+  '/assets/articles/hero/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet.webp',
   '/assets/articles/hero/can-you-sell-part-of-your-mineral-rights-partial-interest-sales-explained.webp',
+  '/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp',
+  '/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp',
+  '/assets/articles/hero/form-50-150-confidentiality-boundary-map-for-crane-oil-and-gas-property.webp',
+  '/assets/articles/hero/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.webp',
   '/assets/articles/hero/loving-cad-2026-certified-mineral-roll-zip-pdf-txt-and-csv-member-map.webp',
   '/assets/articles/hero/texas-comptroller-county-appraisal-district-directory-retrieval-provenance-worksheet.webp',
   '/assets/articles/hero/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp',
@@ -58,6 +63,19 @@ const rawNineExpectedAlts = {
     'Oil and gas lease cover with document card beside title',
   '/assets/articles/hero/why-doesnt-my-texas-mineral-tax-value-match-a-sale-estimate.webp':
     'Tax value cover with mineral samples, map and folders',
+} as const;
+
+const nextFiveExpectedAlts = {
+  '/assets/articles/hero/brazos-county-texas-mineral-rights-property-tax-protest-evidence-packet.webp':
+    'Brazos tax protest cover with folders and a storage box',
+  '/assets/articles/hero/dimmit-cad-2025-mass-appraisal-report-mineral-responsibility-source-map.webp':
+    'Dimmit CAD cover with a tabbed book beside the title',
+  '/assets/articles/hero/ector-cad-2026-certified-mineral-appraisal-roll-zip-source-control-record.webp':
+    'Ector CAD cover with lockbox and tray holding an ivory case',
+  '/assets/articles/hero/form-50-150-confidentiality-boundary-map-for-crane-oil-and-gas-property.webp':
+    'Form 50-150 cover with open case, envelope and core sample',
+  '/assets/articles/hero/karnes-cad-2026-certified-mineral-roll-zip-seven-member-container-index.webp':
+    'Karnes CAD cover with folders and a blue case beside the title',
 } as const;
 
 function printedEvidence(overrides = {}) {
@@ -112,6 +130,17 @@ describe('image text alt policy verifier', () => {
   it('retains the nine owner-approved raw-audit concise alternatives exactly', () => {
     expect(Object.keys(rawNineExpectedAlts)).toHaveLength(9);
     for (const [path, expectedAlt] of Object.entries(rawNineExpectedAlts)) {
+      const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
+      expect('concise_alt' in evidence).toBe(true);
+      if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
+      expect(evidence.concise_alt).toBe(expectedAlt);
+      expect(evidence.visual_review).toMatch(/^2026-10-01:\s+\S/);
+    }
+  });
+
+  it('uses exactly the five current root-reviewed concise alternatives', () => {
+    expect(Object.keys(nextFiveExpectedAlts)).toHaveLength(5);
+    for (const [path, expectedAlt] of Object.entries(nextFiveExpectedAlts)) {
       const evidence = textPolicy.assets[path as keyof typeof textPolicy.assets];
       expect('concise_alt' in evidence).toBe(true);
       if (!('concise_alt' in evidence)) throw new Error(`Missing concise_alt for ${path}`);
