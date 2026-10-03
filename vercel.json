@@ -211,6 +211,196 @@
       "source": "/blog/how-mineral-rights-ownership-works/",
       "destination": "/blog/how-texas-mineral-rights-ownership-works-deeds-conveyances-and-title/",
       "permanent": true
+    },
+    {
+      "source": "/blog/how-to-read-a-division-order-before-signing",
+      "destination": "/blog/what-is-a-division-order-and-why-does-it-matter-for-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-read-a-division-order-before-signing/",
+      "destination": "/blog/what-is-a-division-order-and-why-does-it-matter-for-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/never-sell-mineral-rights-when-that-advice-is-wrong",
+      "destination": "/blog/should-i-sell-my-mineral-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/never-sell-mineral-rights-when-that-advice-is-wrong/",
+      "destination": "/blog/should-i-sell-my-mineral-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/category/mineral-rights",
+      "destination": "/blog/category/mineral-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/category/mineral-rights/",
+      "destination": "/blog/category/mineral-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/category/texas-oil-gas",
+      "destination": "/blog/category/texas-oil-gas/",
+      "permanent": true
+    },
+    {
+      "source": "/category/texas-oil-gas/",
+      "destination": "/blog/category/texas-oil-gas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/value-of-royalty-checks-documents-step-by-step",
+      "destination": "/blog/understanding-your-mineral-royalty-checks-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/value-of-royalty-checks-documents-step-by-step/",
+      "destination": "/blog/understanding-your-mineral-royalty-checks-value/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ensuring-transparency-how-we-avoid-predatory-tactics-in-mineral-rights-assessments",
+      "destination": "/blog/transparent-mineral-rights-reviews-questions-that-help-owners-avoid-pressure/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ensuring-transparency-how-we-avoid-predatory-tactics-in-mineral-rights-assessments/",
+      "destination": "/blog/transparent-mineral-rights-reviews-questions-that-help-owners-avoid-pressure/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-find-mineral-rights-buyers-you-can-trust",
+      "destination": "/blog/how-to-find-a-reputable-mineral-rights-buyer-in-texas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-find-mineral-rights-buyers-you-can-trust/",
+      "destination": "/blog/how-to-find-a-reputable-mineral-rights-buyer-in-texas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-mineral-rights-plain-language-guide",
+      "destination": "/blog/understanding-mineral-rights-for-new-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-are-mineral-rights-plain-language-guide/",
+      "destination": "/blog/understanding-mineral-rights-for-new-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mineral-rights-royalty-income-how-its-calculated",
+      "destination": "/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mineral-rights-royalty-income-how-its-calculated/",
+      "destination": "/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/oil-and-gas-royalties-what-owners-need-to-know",
+      "destination": "/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/oil-and-gas-royalties-what-owners-need-to-know/",
+      "destination": "/blog/how-royalty-payments-work-for-texas-mineral-rights-owners/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mineral-rights-and-estate-planning-for-heirs",
+      "destination": "/blog/managing-mineral-interests-in-estate-planning-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/mineral-rights-and-estate-planning-for-heirs/",
+      "destination": "/blog/managing-mineral-interests-in-estate-planning-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-evaluate-a-mineral-rights-offer",
+      "destination": "/blog/how-to-know-if-your-mineral-rights-offer-is-fair/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-evaluate-a-mineral-rights-offer/",
+      "destination": "/blog/how-to-know-if-your-mineral-rights-offer-is-fair/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eagle-ford-shale-mineral-rights-owners-guide",
+      "destination": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/eagle-ford-shale-mineral-rights-owners-guide/",
+      "destination": "/blog/eagle-ford-shale-how-it-affects-mineral-rights-values-in-south-texas/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-market-value-of-mineral-rights-explained",
+      "destination": "/blog/understanding-the-factors-behind-the-valuation-of-your-texas-mineral-rights-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fair-market-value-of-mineral-rights-explained/",
+      "destination": "/blog/understanding-the-factors-behind-the-valuation-of-your-texas-mineral-rights-explained/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-on-sale-of-inherited-mineral-rights",
+      "destination": "/blog/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/tax-on-sale-of-inherited-mineral-rights/",
+      "destination": "/blog/capital-gains-tax-on-mineral-rights-sales-in-texas-what-sellers-need-to-know/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/transparency-in-mineral-rights-how-we-compare-to-other-services",
+      "destination": "/blog/how-to-compare-mineral-rights-review-services-transparently/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/transparency-in-mineral-rights-how-we-compare-to-other-services/",
+      "destination": "/blog/how-to-compare-mineral-rights-review-services-transparently/",
+      "permanent": true
+    },
+    {
+      "source": "/category/selling-process",
+      "destination": "/blog/category/selling-process/",
+      "permanent": true
+    },
+    {
+      "source": "/category/selling-process/",
+      "destination": "/blog/category/selling-process/",
+      "permanent": true
+    },
+    {
+      "source": "/category/tax-legal",
+      "destination": "/blog/category/tax-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/tax-legal/",
+      "destination": "/blog/category/tax-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/category/valuation",
+      "destination": "/blog/category/valuation/",
+      "permanent": true
+    },
+    {
+      "source": "/category/valuation/",
+      "destination": "/blog/category/valuation/",
+      "permanent": true
     }
   ],
   "headers": [
