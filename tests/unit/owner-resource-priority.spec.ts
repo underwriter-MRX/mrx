@@ -47,7 +47,27 @@ describe('owner resource curation', () => {
     expect(ownerResourcePriorityForPillar('mineral-rights-value', `${valuation[0]}.mdx`)).toBe(0);
   });
 
-  it('preserves the unchanged global starter behavior for every other pillar', () => {
+  it('keeps every curated starter published in its assigned pillar', () => {
+    const clusterByPillar: Record<string, string> = {
+      'texas-mineral-rights': 'texas-county-basin-local-intent',
+      'mineral-rights-value': 'mineral-rights-value',
+    };
+    for (const [pillar, starters] of Object.entries(PILLAR_OWNER_STARTER_SLUGS)) {
+      expect(new Set(starters).size).toBe(starters.length);
+      for (const slug of starters) {
+        const source = readFileSync(join(process.cwd(), 'src/content/posts', `${slug}.mdx`), 'utf8');
+        const frontmatter = source.split('---')[1];
+        expect(frontmatter).toMatch(/publication_status: ['"]?published/);
+        expect(frontmatter).toMatch(/draft: false/);
+        expect(frontmatter).toMatch(/noindex: false/);
+        if (pillar === 'texas-mineral-rights') {
+          expect(frontmatter).toContain(`content_cluster: '${clusterByPillar[pillar]}'`);
+        }
+      }
+    }
+  });
+
+  it('preserves the unchanged global starter behavior for non-curated pillars', () => {
     for (const slug of OWNER_STARTER_SLUGS) {
       expect(ownerResourcePriorityForPillar('offer-review', slug)).toBe(
         ownerResourcePriority(slug),

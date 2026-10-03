@@ -12,6 +12,11 @@ export const OWNER_STARTER_SLUGS = [
 
 /** Pillar-only decision journeys. Do not add these slugs to the global starter list. */
 export const PILLAR_OWNER_STARTER_SLUGS: Partial<Record<ArticlePillar, readonly string[]>> = {
+  'texas-mineral-rights': [
+    'what-are-mineral-rights-a-complete-guide-for-texas-landowners',
+    'how-to-determine-the-value-of-texas-mineral-rights',
+    'texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights',
+  ],
   'mineral-rights-value': [
     'how-are-mineral-rights-valued',
     'converting-monthly-royalty-history-into-a-valuation-baseline',

@@ -1,0 +1,45 @@
+{
+  "artifact_type": "mrx_reviewed_seo_maintenance_transition",
+  "version": 1,
+  "reviewer_id": "codex-education-only-independent-review",
+  "reviewed_at": "2026-10-03T05:47:21.411074+00:00",
+  "baseline_commit": "4e313c600899f78c39290c48c66a45b0f439e9d3",
+  "owner_authorization": "Daryl education-only/nonbuyer correction and request to audit and execute remaining playbooks.",
+  "evidence_limit": "Two exact role-sentence corrections; no new expert review, appraisal, or performance claim.",
+  "review_method": "Chesty source and built finding independently verified; exact reversible byte edits and frontmatter parity checked by Codex.",
+  "entry_count": 2,
+  "reverse_edit_count": 2,
+  "entries": [
+    {
+      "repo_path": "src/content/posts/winkler-cad-2025-2026-mineral-appraisal-lease-level-full-value-owner-proration.mdx",
+      "previous_sha256": "6dfe1790124120df2ab9d842edce61ba3c2e6d597b3341a66fdb068a73027827",
+      "current_sha256": "5ddea64727f13512fe61a1aee8480e054e7601a93422a78d2538ff2ca129fdca",
+      "reverse_edits": [
+        {
+          "start_byte": 18739,
+          "end_byte": 18827,
+          "current_base64": "TVJYIHByb3ZpZGVzIGVkdWNhdGlvbmFsIGluZm9ybWF0aW9uIGFuZCByZXNvdXJjZXMgb25seSBhbmQgZG9lcyBub3QgYnV5IG1pbmVyYWwgcmlnaHRzLg==",
+          "previous_base64": "TVJYIGlzIGEgZGlyZWN0IGJ1eWVyIG9mIG1pbmVyYWwgYW5kIHJveWFsdHkgaW50ZXJlc3RzLg=="
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Exact owner-fact correction only; unchanged frontmatter, title, canonical URL, images, citations and remainder. Chesty independently identified contradiction; Codex reviewed exact edit."
+    },
+    {
+      "repo_path": "src/content/posts/what-happens-after-you-sell-your-mineral-rights-in-texas.mdx",
+      "previous_sha256": "9600f92ba706941b27b2bec2b3410a4344e936c0331bc10b122cc7954bf358b0",
+      "current_sha256": "87cde17118b60ebb7f4e2cb51dcc702caff590c4627cd446c49c132ce5061000",
+      "reverse_edits": [
+        {
+          "start_byte": 7825,
+          "end_byte": 7825,
+          "current_base64": "",
+          "previous_base64": "IElmIE1SWCBpcyB0aGUgYnV5ZXIsIHRoZSBzYW1lIHBvc3QtY2xvc2luZyBldmlkZW5jZSBhbmQgZGlzY2xvc3VyZSBzdGFuZGFyZHMgYXBwbHku"
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Exact owner-fact correction only; unchanged frontmatter, title, canonical URL, images, citations and remainder. Chesty independently identified contradiction; Codex reviewed exact edit."
+    }
+  ],
+  "failures": []
+}

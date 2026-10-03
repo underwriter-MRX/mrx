@@ -12,6 +12,8 @@ const activeRoots = [
 ];
 
 const falseBuyerPatterns = [
+  /\bMRX\s+is\s+(?:a\s+)?(?:direct\s+)?buyer\b/i,
+  /\bIf\s+MRX\s+is\s+the\s+buyer\b/i,
   /\bMRX or another buyer\b/i,
   /\bMRX acquisition discussion\b/i,
   /\bMRX buyer conflict\b/i,
@@ -56,6 +58,12 @@ describe('MRX education-only source guard', () => {
     );
 
     expect(failures).toEqual([]);
+  });
+
+  it('catches direct and conditional MRX buyer claims while preserving educational boundaries', () => {
+    expect(directFalseBuyerHits('MRX is a direct buyer of mineral and royalty interests.')).toHaveLength(1);
+    expect(directFalseBuyerHits('If MRX is the buyer, the same standards apply.')).toHaveLength(1);
+    expect(directFalseBuyerHits('MRX is not a buyer. A third-party buyer may purchase mineral rights.')).toEqual([]);
   });
 
   it('keeps third-party buyer education in scope without treating buyer terminology as a defect', () => {
