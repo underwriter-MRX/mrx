@@ -1,0 +1,30 @@
+{
+  "artifact_type": "mrx_reviewed_seo_maintenance_transition",
+  "version": 1,
+  "reviewer_id": "codex-offer-intent-independent-review",
+  "reviewed_at": "2026-10-03T13:34:26.608334+00:00",
+  "baseline_commit": "3d831b0669fff196830297e04b1967c269910a8e",
+  "owner_authorization": "Daryl requested execution of the playbooks and grants ordinary quality-gated source publication authority; no new charge.",
+  "evidence_limit": "One contextual link from the existing fairness article to the existing comparison worksheet; no title, frontmatter, image, citation, role, performance, endorsement, or service change.",
+  "review_method": "Independent Codex review of the exact insertion, published worksheet scope, unchanged frontmatter and images, and before/after hashes. Chesty preliminary review is preserved in the continuation evidence directory.",
+  "entry_count": 1,
+  "reverse_edit_count": 1,
+  "entries": [
+    {
+      "repo_path": "src/content/posts/how-to-know-if-your-mineral-rights-offer-is-fair.mdx",
+      "previous_sha256": "8d1f6d7859721e03fcf48c166ba1a2ad1893892d3e925a3ab80570ae2ed239df",
+      "current_sha256": "cab6a98834e544b050aafd1675e3cbbf9cae72a6096889ae40efbfdbcf1ea174",
+      "reverse_edits": [
+        {
+          "start_byte": 13495,
+          "end_byte": 13792,
+          "current_base64": "VXNlIHRoZSBbbWluZXJhbC1yaWdodHMgb2ZmZXIgY29tcGFyaXNvbiB3b3Jrc2hlZXRdKC9taW5lcmFsLXJpZ2h0cy1vZmZlci1jb21wYXJpc29uLykgdG8gcGxhY2UgdHdvIHdyaXR0ZW4gcHJvcG9zYWxzIG9uIHRoZSBzYW1lIHN0YXRlZCBiYXNpcyBhbmQgbGVhdmUgdW5jbGVhciBmaWVsZHMgbWFya2VkIGFzIHVua25vd24uIFRoZSB3b3Jrc2hlZXQgb3JnYW5pemVzIHRlcm1zIGFuZCBxdWVzdGlvbnM7IGl0IGRvZXMgbm90IGRldGVybWluZSBtYXJrZXQgdmFsdWUgb3Igd2hldGhlciBhbiBvZmZlciBpcyBmYWlyLgoK",
+          "previous_base64": ""
+        }
+      ],
+      "review_disposition": "PASS",
+      "scope": "Add one reader-helpful contextual worksheet link after the article terms-grid guidance. Exact title, URL, frontmatter, hero and inline image identity, citations, disclosures, and all other prose remain unchanged."
+    }
+  ],
+  "failures": []
+}
