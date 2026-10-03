@@ -25,6 +25,7 @@ const askTravisSource = readFileSync(
 
 describe('server-side funnel lifecycle analytics', () => {
   afterEach(() => {
+    vi.restoreAllMocks();
     vi.unstubAllEnvs();
     vi.unstubAllGlobals();
   });
@@ -34,11 +35,13 @@ describe('server-side funnel lifecycle analytics', () => {
     vi.stubEnv('GA4_API_SECRET', '');
     const fetchSpy = vi.fn();
     vi.stubGlobal('fetch', fetchSpy);
+    const warning = vi.spyOn(console, 'warn').mockImplementation(() => {});
 
     await expect(
       sendGa4ServerEvent({ event: 'case_ready', profileId: crypto.randomUUID() }),
     ).resolves.toEqual({ sent: false, reason: 'not_configured' });
     expect(fetchSpy).not.toHaveBeenCalled();
+    expect(warning.mock.calls).toEqual([['[mrx.analytics] server_event_not_configured']]);
   });
 
   it('sends only the approved lifecycle event and non-document parameters', async () => {

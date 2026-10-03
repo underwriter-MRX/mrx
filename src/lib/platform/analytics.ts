@@ -12,7 +12,11 @@ export async function sendGa4ServerEvent(args: {
 }) {
   const measurementId = runtimeEnv('GA4_MEASUREMENT_ID');
   const apiSecret = runtimeEnv('GA4_API_SECRET');
-  if (!measurementId || !apiSecret) return { sent: false, reason: 'not_configured' as const };
+  if (!measurementId || !apiSecret) {
+    // Fixed diagnostic only: never log profile IDs, parameters, or credentials.
+    console.warn('[mrx.analytics] server_event_not_configured');
+    return { sent: false, reason: 'not_configured' as const };
+  }
 
   const response = await fetch(
     `https://www.google-analytics.com/mp/collect?measurement_id=${encodeURIComponent(measurementId)}&api_secret=${encodeURIComponent(apiSecret)}`,
