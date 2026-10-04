@@ -9,9 +9,13 @@ test.describe('About MRX page', () => {
     await expect(
       page.getByRole('heading', { level: 1, name: 'Straight answers, backed by the right team.' }),
     ).toBeVisible();
-    await expect(page.locator('.mrx-about-guide')).toHaveCount(6);
-    await expect(page.getByText('Fictional MRX AI Guide', { exact: true })).toHaveCount(6);
+    await expect(page.locator('.mrx-about-guide')).toHaveCount(7);
+    await expect(page.getByText('Fictional MRX AI Guide', { exact: true })).toHaveCount(7);
     await expect(page.getByText('Nationwide education', { exact: true })).toBeVisible();
+
+    await expect(page.locator('.mrx-about-hero__lede')).toContainText('does not buy mineral');
+    await expect(page.locator('.mrx-about-boundary-list')).toContainText('MRX Editorial Team');
+    await expect(page.locator('.mrx-about-workflow')).toContainText('not a purchase');
 
     const heroChatButton = page.locator('.mrx-about-hero [data-about-chat]');
     await expect(heroChatButton).toHaveCount(1);

@@ -12169,7 +12169,7 @@
   "two_image_policy": {
     "directive": "AI Atom Brain/09 Project Packs/MRX/2026-08-11 MRX Two-Image Article Creative Directive.md",
     "retrofit_manifest_path": "config/mrx-article-two-image-retrofit.json",
-    "retrofit_manifest_sha256": "f9da84d061c9a2e9acedb9307bbb4fc16d4ef3de16362a5e52eb902dac4bdcce",
+    "retrofit_manifest_sha256": "79cc8d778449af272590309117cf8c6478f2a3401fac76fc26754b9aa9055d6b",
     "public_article_count": 329,
     "batch_article_count": 321,
     "assets_per_article": 2,

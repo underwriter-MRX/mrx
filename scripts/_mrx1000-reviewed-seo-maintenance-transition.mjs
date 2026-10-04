@@ -4,6 +4,7 @@ import { join } from 'node:path';
 
 const HEX64 = /^[a-f0-9]{64}$/i;
 const MAINTENANCE_REVIEW_RELATIVE_PATHS = [
+  join('config', 'maintenance-reviews', '2026-10-03-seven-playbooks.json'),
   join('config', 'maintenance-reviews', '2026-10-03-offer-fairness-worksheet-link.json'),
   join('config', 'maintenance-reviews', '2026-10-03-education-only-followup.json'),
   join('config', 'maintenance-reviews', '2026-10-02-education-only.json'),

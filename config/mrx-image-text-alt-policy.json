@@ -5017,15 +5017,6 @@
       "visual_review": "not_performed_not_required",
       "original_path": null
     },
-    "/assets/articles/inline/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/texas-railroad-commission-public-records-for-mineral-rights.webp": {
-      "sha256": "c538a2fb259a3b121628ace30eba93256c1aa55b708058f64033996165965a13",
-      "bytes": 46172,
-      "classification": "printed_text",
-      "exact_text": "Texas Railroad Commission: Public Records for Mineral Rights",
-      "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
-    },
     "/assets/articles/inline/texas-real-property-record-grantor-grantee-index-name-role-locator-search-log/texas-grantor-grantee-index-search-log.webp": {
       "sha256": "806d64a9ee85d219677cf2bc35bc7047f05e84e699f1f1a9eafb9cadefa4c013",
       "bytes": 92186,
@@ -5481,15 +5472,6 @@
       "bytes": 62052,
       "classification": "printed_text",
       "exact_text": "the permian basin explained what texas mineral rights owners need to know",
-      "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
-      "visual_review": "not_performed_not_required",
-      "original_path": null
-    },
-    "/assets/articles/inline/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp": {
-      "sha256": "d8b4dfbba958914f5c497c6a5ec321e5f1043c004a3783f4349dbda778cac8d1",
-      "bytes": 33870,
-      "classification": "printed_text",
-      "exact_text": "title curative for mineral rights what it is and why it matters before you sell",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
       "visual_review": "not_performed_not_required",
       "original_path": null
@@ -6807,6 +6789,24 @@
       "exact_text": "MRX AI guide limitations",
       "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
       "visual_review": "2026-10-02: Codex inspected the new education-only composition and exact text at social and mobile sizes.",
+      "original_path": null
+    },
+    "/assets/articles/inline/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/2026-10-03/texas-railroad-commission-public-records-for-mineral-rights.webp": {
+      "sha256": "51d5721c95faa5077a02e9582b33d9ef25985c54752f31da86aefb5bc37654d4",
+      "bytes": 69456,
+      "classification": "printed_text",
+      "exact_text": "Texas Railroad Commission: Public Records for Mineral Rights",
+      "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
+      "visual_review": "2026-10-03 independent Codex full-size visual review: exact phrase, no clipping, distinct from hero.",
+      "original_path": null
+    },
+    "/assets/articles/inline/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell/2026-10-03/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.webp": {
+      "sha256": "4e36f0fd3fbb31e1a7dcbb2bb6c812267a865f25c1c1de4498d9f3c641109036",
+      "bytes": 66344,
+      "classification": "printed_text",
+      "exact_text": "title curative for mineral rights what it is and why it matters before you sell",
+      "evidence_source": "config/mrx-article-two-image-retrofit.json:inline rendered_text",
+      "visual_review": "2026-10-03 independent Codex full-size visual review: exact phrase, no clipping, distinct from hero.",
       "original_path": null
     }
   }

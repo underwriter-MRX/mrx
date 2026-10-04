@@ -719,6 +719,7 @@ describe('scripts/check-mrx1000-release-gates.mjs', () => {
               'codex-root-bounded-discovery-review',
               'codex-offer-intent-independent-review',
               'codex-education-only-independent-review',
+              'codex-seven-playbooks-source-review',
             ].includes(override.maintenance_reviewer_id ?? '')),
       ),
     ).toBe(true);

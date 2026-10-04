@@ -39,17 +39,17 @@ hero_image:
   license: 'MRX-owned'
   perceptual_hash: '0000000000001111000000000000011100000000000011110000000000001111000010000000111101111110000011110111111110001111011111111001111101111111100111110111111110001111011100000000001101100000000001110000000000000111000000000000011100000000000000000000000000000000'
 inline_image:
-  src: '/assets/articles/inline/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/texas-railroad-commission-public-records-for-mineral-rights.webp'
-  alt: 'Mineral-rights illustration highlighting “Texas Railroad Commission: Public Records for Mineral Rights”.'
+  src: '/assets/articles/inline/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights/2026-10-03/texas-railroad-commission-public-records-for-mineral-rights.webp'
+  alt: 'Record-checking diagram: “Texas Railroad Commission: Public Records for Mineral Rights”.'
   rendered_text: 'Texas Railroad Commission: Public Records for Mineral Rights'
   width: 1200
   height: 675
   mime_type: 'image/webp'
-  prompt: 'Distinct MRX-owned in-body composition with deterministic exact-keyword text: Texas Railroad Commission: Public Records for Mineral Rights'
-  source: 'MRX-owned derivative of /assets/articles/texas-railroad-commission-how-to-use-public-records-to-understand-mineral-rights.webp'
+  prompt: 'Original record-checking diagram with deterministic exact phrase; no reused hero artwork.'
+  source: 'MRX original educational diagram; scripts/build-seven-playbook-diagrams.mjs'
   license: 'MRX-owned'
-  perceptual_hash: '0000000011111000000000001111100000000000111110000000000011111000011111101111100001000001111110000111110111111100011111111111110001111111111111000111100100111000010000000110000001100000001100000000000001111000000000001111000000000000100000000000000000000000'
-excerpt: 'Use Texas Railroad Commission public records to research well, lease, operator, permit, and production data for mineral rights. Title is confirmed through county records.'
+  perceptual_hash: '0000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111110000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
+excerpt: 'Use RRC records to research production, leases, operators, and permits. Investigate title separately through county instruments and qualified review.'
 featured: false
 disclaimer_top: false
 has_footer_disclaimer: true
@@ -66,15 +66,19 @@ sources:
     href: 'https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/production-data/'
   - label: 'Railroad Commission of Texas: Oil and Gas Well Records Online'
     href: 'https://www.rrc.texas.gov/oil-and-gas/research-and-statistics/obtaining-commission-records/oil-and-gas-well-records-online/'
+  - label: 'Railroad Commission of Texas: Production Data Query FAQs'
+    href: 'https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/'
+  - label: 'Railroad Commission of Texas: Royalties FAQs'
+    href: 'https://www.rrc.texas.gov/about-us/faqs/royalties-faq/'
   - label: 'MRX Methodology: How We Value Mineral Rights'
     href: 'https://mineralrightsxchange.com/methodology/'
-answer_summary: 'The Texas Railroad Commission publishes free public records for wells, permits, operators, leases, and production. RRC records are inputs for mineral-rights research; ownership and title must be confirmed through county deed records. MRX uses RRC data as one of several inputs in its disclosed valuation methodology.'
+answer_summary: 'The Texas Railroad Commission publishes free public records for wells, permits, operators, leases, and production. RRC records are inputs for mineral-rights research; county instruments help investigate title, and owner-specific conclusions may require qualified review. MRX uses RRC data as one of several inputs in its disclosed valuation methodology.'
 key_takeaways:
   - 'The Texas Railroad Commission (RRC) publishes well, lease, operator, permit, and production records online at no cost; it does not publish ownership or title records.'
   - 'RRC records help verify what is happening on or near your acreage; recorded county instruments are used to investigate the chain of title, and complex ownership questions may require a qualified title professional.'
   - 'RRC data is one input to MRX directional reviews, alongside the lease, division order, royalty statements, and county records; it is not by itself a valuation.'
   - 'Public RRC queries work best when paired with a specific county, section, block, or operator name and a date range for the production or permit record of interest.'
-  - 'Combining RRC public data with dated county and lease records lets an owner independently check the operator-reported production and decimal interest on their royalty statement.'
+  - 'Use public production records to frame questions; an owner’s payment decimal depends on separate ownership, lease, and allocation evidence.'
 questions_answered:
   - 'What does the Texas Railroad Commission publish?'
   - 'Are RRC records the same as ownership records?'
@@ -108,13 +112,13 @@ This article describes what the RRC publishes, what it does not, and how an owne
 
 The RRC is the state agency that regulates oil and gas activity in Texas. Among other duties, it collects and publishes records that the public can search online. The RRC publishes:
 
-- **Production records.** Monthly and annual production volumes by well, lease, county, and operator, available through the RRC production-data page and the online research query portal.
+- **Production records.** Lease-level oil and gas production totals and broader summaries, available through the RRC production-data page and the online research query portal.
 - **Permit and drilling-permit records.** Drilling permit applications and dispositions, organized by operator, well, and county.
 - **Well records.** Completion reports, plug records, and other well-bore records available through the RRC research portal.
 - **Operator and organization records.** Operator names, organization filings, and compliance history.
-- **Lease-level records.** Lease names and identifiers as reported by operators, useful for matching royalty statements to specific wells.
+- **Lease-level records.** Lease names and identifiers as reported by operators, useful for locating the relevant production record once its connection to the owner’s documents is established.
 
-These records are available at no cost through the RRC website. Each record carries a publication or retrieval date, an operator name, a county, and a well or lease identifier; an owner can use those fields to assemble a dated history of activity on a specific tract or near it.
+Online research queries are free; some historical copies or bulk datasets may have fees. Preserve the fields each record actually displays and the retrieval date. Missing identifiers or unclear matches should remain unresolved.
 
 ## What the RRC does not publish
 
@@ -131,10 +135,10 @@ If a question is about ownership, royalty share, or value, RRC public records ar
 A practical research file pairs RRC public data with the documents used to investigate ownership and explain payment. The order below is a common starting point; the actual records available for any given tract depend on its location, age, and lease status.
 
 1. **Identify the tract.** Confirm the county, survey, abstract, or block where the interest sits using the county deed records or an existing deed.
-2. **Pull RRC production by lease or well.** Use the RRC online research query to retrieve reported monthly production for the leases that cover the tract. Note the operator name and the lease identifier; these match the labels on royalty statements.
+2. **Retrieve lease-level production.** Use the RRC query for the identified lease. Oil-lease totals may combine several wells, and reported totals can arrive late or be revised. See the [RRC production-query explanation](https://www.rrc.texas.gov/about-us/faqs/oil-gas-faq/production-data-query-system-faqs/). Record the RRC identifier separately from the payor’s property number; they may differ. Ask the payor for the connection when uncertain.
 3. **Pull RRC permit and completion records.** Match the wells to drilling permits and completion reports to see when each well was drilled, completed, and (if applicable) plugged.
 4. **Cross-check operator history.** Compare the operator on the RRC records to the operator paying royalties. A difference can indicate a change in operator that may not yet be reflected in the owner's records.
-5. **Compare to your division order and royalty statements.** Confirm that the decimal interest on the division order matches the lease and that recent royalty statements reflect the production reported to the RRC.
+5. **Compare like periods and reporting levels.** Keep the division-order decimal, royalty statement, and RRC production record separate. Check the property identifier, product, production versus sales month, lease aggregation, and revisions before treating a difference as a payment question. RRC data does not verify an owner’s decimal or establish underpayment. The [RRC royalties FAQ](https://www.rrc.texas.gov/about-us/faqs/royalties-faq/) explains its records and the limits of its authority over royalty disputes.
 6. **Investigate the recorded chain through the county.** Review the recorded deeds and probate or estate instruments tied to the property. A qualified land or title professional can examine the chain of conveyances where the records are complex or incomplete.
 
 ## How MRX uses RRC records in its reviews
@@ -145,7 +149,7 @@ MRX's published methodology describes how it assembles a directional mineral-rig
 
 RRC public records can answer "what is happening on or near my land," but several related questions are outside the RRC's scope:
 
-- **Ownership disputes, severance questions, and chain-of-title review.** These typically require a title opinion from a qualified Texas oil and gas attorney or land professional.
+- **Ownership disputes, severance questions, and chain-of-title review.** A land professional can help research records; consult a qualified Texas oil and gas attorney for legal interpretation or a title opinion.
 - **Royalty-fraction interpretation and division-order review.** A division-order analyst or oil and gas attorney can compare the lease, the division order, and the deed records.
 - **Federal royalty-tax treatment and depletion.** Tax treatment is specific to each owner's facts and is outside an RRC records search. A CPA or tax attorney can address an owner's individual situation.
 

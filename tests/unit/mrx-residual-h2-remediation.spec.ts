@@ -9,7 +9,7 @@ describe('remaining ordinary public H2 remediation', () => {
       'src/content/pages/how-it-works.mdx',
       'Frequently asked questions about the underwriter review',
     ],
-    ['src/pages/about.astro', 'AI guidance with human professional support'],
+    ['src/pages/about.astro', 'AI guidance with human educational support'],
     ['src/content/pages/methodology.mdx', 'Factors used in the mineral-rights review'],
     [
       'src/content/pages/sell-mineral-rights.mdx',

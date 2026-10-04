@@ -221075,7 +221075,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
           "mdx_exists": true,
-          "source_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+          "source_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -221096,10 +221096,10 @@
             "frontmatter_draft": false,
             "frontmatter_noindex": false,
             "frontmatter_indexable": null,
-            "body_sha256": "a5c900b216cf5e3bf20a57c1971748f5ae2bcf556df9d6ab250d1bcec66c94e2",
-            "body_bytes": 3542,
-            "body_characters": 3535,
-            "body_word_count": 510,
+            "body_sha256": "cd784deced2620c0e4ef296cd65039015fdbc7ff77095767be935b58b10fd38b",
+            "body_bytes": 3832,
+            "body_characters": 3825,
+            "body_word_count": 555,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -221150,9 +221150,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-          "source_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
-          "body_sha256": "a5c900b216cf5e3bf20a57c1971748f5ae2bcf556df9d6ab250d1bcec66c94e2",
-          "body_word_count": 510,
+          "source_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
+          "body_sha256": "cd784deced2620c0e4ef296cd65039015fdbc7ff77095767be935b58b10fd38b",
+          "body_word_count": 555,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -221227,7 +221227,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-            "review_candidate_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+            "review_candidate_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -221264,7 +221264,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-            "review_candidate_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+            "review_candidate_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -221301,7 +221301,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-            "review_candidate_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+            "review_candidate_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -221338,7 +221338,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-            "review_candidate_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+            "review_candidate_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -221375,7 +221375,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/title-curative-for-mineral-rights-what-it-is-and-why-it-matters-before-you-sell.mdx",
-            "review_candidate_sha256": "44a60e16383cc348aa460081e29329cae166b7a69b20edb49093fe526dbb413d",
+            "review_candidate_sha256": "dae98ed2957b0cf4fe8b6fa2345e49bca50edd85c3ec516c216dabe757afebdb",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -251519,7 +251519,7 @@
           "state": "WORKSPACE_MDX_PRESENT",
           "path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
           "mdx_exists": true,
-          "source_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+          "source_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
           "publication_status": "published",
           "frontmatter_noindex": false,
           "workspace_public_route_configured": true,
@@ -251540,10 +251540,10 @@
             "frontmatter_draft": false,
             "frontmatter_noindex": false,
             "frontmatter_indexable": null,
-            "body_sha256": "26164b0804a090ee956d253f3042a03cc3a11c9b275ce6fa09b09657b8905abd",
-            "body_bytes": 6805,
-            "body_characters": 6805,
-            "body_word_count": 1031,
+            "body_sha256": "f5676f502d6bf19d663fc8ed6e02ec66b3909ba047272b3b62411ec0c89bf3e7",
+            "body_bytes": 7339,
+            "body_characters": 7333,
+            "body_word_count": 1090,
             "explicit_qa_shell_without_final_copy": false,
             "filename_matches_canonical_slug": true,
             "frontmatter_title_matches_canonical": true,
@@ -251574,9 +251574,9 @@
           "state": "CHECKSUMMED_EXISTING_PUBLIC_ARTICLE_READY_FOR_LLM_REVIEW",
           "checksummed_review_candidate_present": true,
           "path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-          "source_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
-          "body_sha256": "26164b0804a090ee956d253f3042a03cc3a11c9b275ce6fa09b09657b8905abd",
-          "body_word_count": 1031,
+          "source_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
+          "body_sha256": "f5676f502d6bf19d663fc8ed6e02ec66b3909ba047272b3b62411ec0c89bf3e7",
+          "body_word_count": 1090,
           "candidate_type": "existing_public_article",
           "readiness_evidence_verified": true,
           "readiness_evidence_paths": [
@@ -251651,7 +251651,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-            "review_candidate_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+            "review_candidate_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": null,
             "predecessor_pass_required": false,
@@ -251688,7 +251688,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-            "review_candidate_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+            "review_candidate_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "chatgpt",
             "predecessor_pass_required": true,
@@ -251725,7 +251725,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-            "review_candidate_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+            "review_candidate_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "google_gemini",
             "predecessor_pass_required": true,
@@ -251762,7 +251762,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-            "review_candidate_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+            "review_candidate_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "claude_opus_4_6",
             "predecessor_pass_required": true,
@@ -251799,7 +251799,7 @@
           "prerequisite_gates": {
             "checksummed_review_candidate_present": true,
             "review_candidate_path": "src/content/posts/texas-railroad-commission-how-to-use-public-records-to-understand-your-mineral-rights.mdx",
-            "review_candidate_sha256": "114a2cbe02be49ae058d0aed9ef477f0b116078e8fb0d8f137250bc60e383a3e",
+            "review_candidate_sha256": "4199d8c86ccbcd805b438f8644b597a5e9113b13f7253e0afb14df55d800624d",
             "review_candidate_readiness_evidence_verified": true,
             "predecessor_key": "perplexity",
             "predecessor_pass_required": true,
@@ -355016,5 +355016,5 @@
       ]
     }
   ],
-  "content_fingerprint_sha256": "7743073a430385c88190aad4f7ccae55757c666da023c0b7628d2fa53320a120"
+  "content_fingerprint_sha256": "b48181b764084ea38010194217cb0f8037f1d8507effdfd1cd55caa97da1b344"
 }
