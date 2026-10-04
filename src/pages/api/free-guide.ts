@@ -6,6 +6,7 @@
  * Per Architecture Plan §2.4: this is the second of the two hybrid server routes.
  */
 import type { APIRoute } from 'astro';
+import { recordAcceptedFormEvent } from '../../lib/platform/form-analytics';
 import { FreeGuideLeadFormSchema } from '../../lib/form';
 import { submitToGHL } from '../../lib/ghl';
 import { assertSameOrigin } from '../../lib/platform/security';
@@ -49,7 +50,14 @@ export const POST: APIRoute = async (ctx) => {
     });
   }
 
-  // Redirect to the in-app thank-you page; the page's <script> pushes
-  // the form_submit dataLayer event.
+  // A provider acceptance is a lead request, never a confirmed appointment.
+  // Analytics failures must not turn an accepted request into a user-facing failure.
+  await recordAcceptedFormEvent({
+    source: 'free-guide',
+    submissionId: typeof raw.submission_id === 'string' ? raw.submission_id : '',
+    contactId: result.contactId,
+  }).catch(() => console.warn('[mrx.analytics] accepted_form_measurement_failed'));
+
+  // The destination offers the guide; loading it does not emit a success event.
   return ctx.redirect('/free-guide/thank-you', 303);
 };

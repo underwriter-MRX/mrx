@@ -1,7 +1,7 @@
 ---
 /**
  * /free-guide/thank-you. Redirect target after the /api/free-guide POST.
- * Pushes a form_submit dataLayer event.
+ * Accepted requests are measured by the API, never by viewing this page.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBlock from '../../components/molecules/CtaBlock.astro';
@@ -12,18 +12,19 @@ export const prerender = true;
 ---
 
 <BaseLayout
-  title="Guide on the way · Mineral Rights Xchange"
-  description="The free Texas mineral rights guide is on the way to your inbox: valuation, the selling process, and the questions to ask any buyer before you sign."
+  title="Open your free guide · Mineral Rights Xchange"
+  description="Open the free MRX mineral-rights guide and prepare questions about ownership records and third-party offers."
   path="/free-guide/thank-you"
   noindex={true}
   pageType="utility"
   pageCategory="thank-you"
 >
   <section class="container container--narrow section" style="text-align: center;">
-    <Heading level={1} size="3xl">The guide is on the way</Heading>
+    <Heading level={1} size="3xl">Open your free mineral-rights guide</Heading>
     <Text class="text--lead" style="margin-top: var(--space-4);"
-      >Check your inbox in a few minutes. The guide is general educational information, not legal,
-      tax, or valuation advice.</Text
+      >You can open the guide below. If you requested an email copy, check your inbox. This page
+      does not verify email delivery. The guide is general educational information, not legal, tax,
+      or valuation advice.</Text
     >
     <p style="margin-top: var(--space-5);">
       <a
@@ -37,25 +38,7 @@ export const prerender = true;
   </section>
   <CtaBlock
     title="Want a transparent review?"
-    body="A free, confidential underwriter review. The output is a directional range with the assumptions stated. No card. No obligation."
+    body="Prepare questions for a free educational conversation with the human MRX team. No card required and no obligation."
     primaryCta={{ label: 'Book My Free Review', href: '/book', ctaName: 'fg-thank-you-book' }}
   />
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    const payloads = [
-      {
-        event: 'mrx_free_guide_submit',
-        lead_type: 'free_guide',
-        form_action: '/api/free-guide',
-        value: 0,
-        currency: 'USD',
-      },
-      { event: 'generate_lead', lead_type: 'free_guide', form_action: '/api/free-guide' },
-      { event: 'form_submit', mrx_form: 'free-guide' },
-    ];
-    payloads.forEach((payload) => {
-      if (typeof window.__mrxPush === 'function') window.__mrxPush(payload);
-      else window.dataLayer.push(payload);
-    });
-  </script>
 </BaseLayout>

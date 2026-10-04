@@ -8,6 +8,7 @@
  * hybrid server routes.
  */
 import type { APIRoute } from 'astro';
+import { recordAcceptedFormEvent } from '../../lib/platform/form-analytics';
 import { LeadFormSchema } from '../../lib/form';
 import { submitToGHL, buildCalendarRedirect } from '../../lib/ghl';
 import { serverEnv } from '../../lib/astro/env';
@@ -52,6 +53,14 @@ export const POST: APIRoute = async (ctx) => {
       headers: { 'Content-Type': 'application/json' },
     });
   }
+
+  // A provider acceptance is a lead request, never a confirmed appointment.
+  // Analytics failures must not turn an accepted request into a user-facing failure.
+  await recordAcceptedFormEvent({
+    source: 'book',
+    submissionId: typeof raw.submission_id === 'string' ? raw.submission_id : '',
+    contactId: result.contactId,
+  }).catch(() => console.warn('[mrx.analytics] accepted_form_measurement_failed'));
 
   // Build calendar redirect URL with name + email pre-filled; fall
   // back to the in-app thank-you page when MRX_GHL_CALENDAR_URL is

@@ -236,8 +236,8 @@ const formClass = compact ? 'form form--compact' : 'form';
     </div>
 
     <p class="form__help">
-      <strong>No card required.</strong> No obligation. Confidential review. The intake is free.
-      MRX is for educational purposes only and is not a buyer.
+      <strong>No card required.</strong> No obligation. Confidential review. The intake is free. MRX is
+      for educational purposes only and is not a buyer.
     </p>
   </fieldset>
 </form>
@@ -253,6 +253,25 @@ const formClass = compact ? 'form form--compact' : 'form';
 
 <script>
   function attachUtmCopy(form: HTMLFormElement) {
+    // Preserve the same anonymous receipt across retries/reloads in this tab.
+    // No owner details are stored with the identifier. Missing storage/JS means
+    // the server skips analytics rather than fabricating an accepted request.
+    const source = (form.getAttribute('action') ?? '').includes('free-guide')
+      ? 'free-guide'
+      : 'book';
+    try {
+      const key = `mrx-form-submission:${source}`;
+      const stored = sessionStorage.getItem(key);
+      const id = stored && /^[0-9a-f-]{36}$/i.test(stored) ? stored : crypto.randomUUID();
+      sessionStorage.setItem(key, id);
+      const receipt = document.createElement('input');
+      receipt.type = 'hidden';
+      receipt.name = 'submission_id';
+      receipt.value = id;
+      form.appendChild(receipt);
+    } catch {
+      // Preserve ordinary form delivery when browser storage is unavailable.
+    }
     form.addEventListener('submit', (event) => {
       const url = new URL(window.location.href);
       ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach((k) => {
@@ -287,34 +306,11 @@ const formClass = compact ? 'form form--compact' : 'form';
       const formName = (form.getAttribute('action') ?? '').includes('free-guide')
         ? 'free-guide'
         : 'book';
-      const eventName = formName === 'book' ? 'mrx_book_submit' : 'mrx_free_guide_submit';
-      const payload = {
-        event: eventName,
-        lead_type: formName === 'book' ? 'book_review' : 'free_guide',
-        form_id: form.getAttribute('aria-label') || formName,
-        form_action: form.getAttribute('action') || '',
-        value: 0,
-        currency: 'USD',
-      };
+      const payload = { event: 'form_submit_attempt', mrx_form: formName };
       window.dataLayer = window.dataLayer || [];
       const mrxPush = (window as any).__mrxPush;
-      if (typeof mrxPush === 'function') {
-        mrxPush(payload);
-        mrxPush({
-          event: 'generate_lead',
-          lead_type: payload.lead_type,
-          form_action: payload.form_action,
-        });
-        mrxPush({ event: 'form_submit', mrx_form: formName });
-      } else {
-        window.dataLayer.push(payload);
-        window.dataLayer.push({
-          event: 'generate_lead',
-          lead_type: payload.lead_type,
-          form_action: payload.form_action,
-        });
-        window.dataLayer.push({ event: 'form_submit', mrx_form: formName });
-      }
+      if (typeof mrxPush === 'function') mrxPush(payload);
+      else window.dataLayer.push(payload);
     });
   }
   document.querySelectorAll<HTMLFormElement>('form[method="POST"]').forEach(attachUtmCopy);

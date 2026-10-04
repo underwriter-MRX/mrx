@@ -1,7 +1,7 @@
 ---
 /**
  * /book/thank-you. Redirect target after the /api/book POST.
- * Pushes a form_submit dataLayer event so GA4 records the conversion.
+ * Page views are not proof of a submitted request or confirmed appointment.
  * Noindex by default; this is not a public landing page.
  */
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -12,27 +12,28 @@ export const prerender = true;
 ---
 
 <BaseLayout
-  title="Booking received · Mineral Rights Xchange"
-  description="Your Texas mineral rights underwriter review booking has been received. An underwriter will follow up to discuss the next steps and available documents."
+  title="Next steps for your review · Mineral Rights Xchange"
+  description="Find the next step for an educational mineral-rights conversation. A review request does not confirm an appointment."
   path="/book/thank-you"
   noindex={true}
   pageType="utility"
   pageCategory="thank-you"
 >
   <section class="container container--narrow section" style="text-align: center;">
-    <Heading level={1} size="3xl">Booking received</Heading>
+    <Heading level={1} size="3xl">Next steps for your review</Heading>
     <Text class="text--lead" style="margin-top: var(--space-4);"
-      >An underwriter will follow up as availability permits. In the meantime, you can read the
-      published methodology or download the free guide.</Text
+      >If you submitted a review request, the MRX team can follow up as availability permits. This
+      page does not confirm an appointment. Use the appointment assistant to choose an available
+      time, or keep reading the educational resources.</Text
     >
   </section>
   <CtaBlock
-    title="What to do next"
-    body="While you wait, you can read the published methodology or download the free guide."
+    title="Choose your next step"
+    body="You can request a phone conversation with the human MRX team or keep researching on your own."
     primaryCta={{
-      label: 'See the Methodology',
-      href: '/methodology',
-      ctaName: 'book-thank-you-methodology',
+      label: 'Find a phone time',
+      href: '/book/',
+      ctaName: 'book-thank-you-schedule',
     }}
     secondaryCta={{
       label: 'Download the Free Guide',
@@ -40,28 +41,4 @@ export const prerender = true;
       ctaName: 'book-thank-you-guide',
     }}
   />
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    const payloads = [
-      {
-        event: 'mrx_book_submit',
-        lead_type: 'book_review',
-        form_action: '/api/book',
-        value: 0,
-        currency: 'USD',
-      },
-      { event: 'generate_lead', lead_type: 'book_review', form_action: '/api/book' },
-      {
-        event: 'calendar_booked',
-        calendar_id: 'native-book-form',
-        calendar_source: 'book_thank_you',
-        lead_type: 'book_review',
-      },
-      { event: 'form_submit', mrx_form: 'book' },
-    ];
-    payloads.forEach((payload) => {
-      if (typeof window.__mrxPush === 'function') window.__mrxPush(payload);
-      else window.dataLayer.push(payload);
-    });
-  </script>
 </BaseLayout>
