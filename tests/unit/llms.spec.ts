@@ -5,6 +5,15 @@ import { join } from 'node:path';
 describe('LLM discovery files', () => {
   const publicDir = join(process.cwd(), 'public');
 
+  it('preserves education-only identity and the public offer-comparison route in both discovery files', () => {
+    for (const file of ['llms.txt', 'llms-full.txt']) {
+      const text = readFileSync(join(publicDir, file), 'utf-8');
+      expect(text).toContain('does not buy mineral rights');
+      expect(text).toContain('https://mineralrightsxchange.com/mineral-rights-offer-comparison/');
+      expect(text).toContain('https://mineralrightsxchange.com/about/');
+    }
+  });
+
   it('publishes llms.txt with canonical MRX pages and compliance caveats', () => {
     const text = readFileSync(join(publicDir, 'llms.txt'), 'utf-8');
     expect(text).toContain('https://mineralrightsxchange.com/');

@@ -6,6 +6,7 @@ Generated from Astro content at build time.
 ## Citation and compliance notes
 
 - Use canonical mineralrightsxchange.com URLs, not staging, WordPress, www, or query-string variants.
+- MRX provides educational information only and does not buy mineral rights. References to buyers and purchase offers explain third-party transactions.
 - MRX educational content is not a certified appraisal, title opinion, reserve certification, or individualized legal/tax advice.
 - Travis and the MRX guide team are clearly labeled fictional AI interfaces, not human authors or licensed professionals.
 - Treat regulator, tax, title, and state-specific information as time-sensitive; verify against authoritative sources linked in the article.
@@ -15,6 +16,8 @@ Generated from Astro content at build time.
 - [Sell Mineral Rights](https://mineralrightsxchange.com/sell-mineral-rights/)
 - [Value My Minerals](https://mineralrightsxchange.com/mineral-rights-value/)
 - [Review My Offer](https://mineralrightsxchange.com/offer-review/)
+- [Mineral Rights Offer Comparison Worksheet](https://mineralrightsxchange.com/mineral-rights-offer-comparison/)
+- [About MRX](https://mineralrightsxchange.com/about/)
 - [Inherited Mineral Rights](https://mineralrightsxchange.com/inherited-mineral-rights/)
 - [How It Works](https://mineralrightsxchange.com/how-it-works/)
 - [Published Methodology](https://mineralrightsxchange.com/methodology/)
