@@ -17,6 +17,7 @@ import {
   isHumanCallChannelEnabled,
 } from '../../lib/platform/consent';
 import { normalizeMrxText } from '../../lib/platform/style';
+import { guideOfferRelevant } from '../../lib/before-you-sell-guide';
 import { guideReplyDelay, remainingGuideReplyDelay } from '../../lib/platform/timing';
 import { fallbackConversationAnswer } from '../../lib/platform/conversation';
 import {
@@ -99,6 +100,7 @@ type Message = {
   persona?: Persona;
   citations?: Citation[];
   locationCard?: LocationCard;
+  guideCta?: boolean;
 };
 type AppointmentOption = {
   id: string;
@@ -1505,6 +1507,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                       content: responseText,
                       persona: currentPersona,
                       citations: [...citations],
+                      guideCta: guideOfferRelevant(text),
                     }
                   : message,
               ),
@@ -1530,6 +1533,7 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                 content: responseText,
                 persona: currentPersona,
                 citations: [...citations],
+                guideCta: guideOfferRelevant(text),
               }
             : message,
         ),
@@ -1557,7 +1561,13 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
       setMessages((current) =>
         current.map((message) =>
           message.id === assistantId
-            ? { ...message, content, persona: currentPersona, citations: [] }
+            ? {
+                ...message,
+                content,
+                persona: currentPersona,
+                citations: [],
+                guideCta: guideOfferRelevant(text),
+              }
             : message,
         ),
       );
@@ -3081,6 +3091,15 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
                               {message.locationCard.basin ? ` · ${message.locationCard.basin}` : ''}
                             </span>
                             {message.locationCard.note && <em>{message.locationCard.note}</em>}
+                          </a>
+                        )}
+                        {message.guideCta && (
+                          <a
+                            className="travis-guide-cta"
+                            href="/before-you-sell-mineral-rights/?source=chat#get-the-guide"
+                          >
+                            Get the free Before You Sell Your Mineral Rights guide
+                            <span aria-hidden="true">→</span>
                           </a>
                         )}
                       </article>

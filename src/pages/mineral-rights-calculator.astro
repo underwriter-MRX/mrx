@@ -1,0 +1,445 @@
+---
+import MarketingLayout from '../layouts/MarketingLayout.astro';
+export const prerender = true;
+---
+
+<MarketingLayout
+  title="Mineral Rights Scenario Calculator · MRX"
+  description="Explore royalty income assumptions and compare a written offer per net mineral acre. Free educational calculator with transparent formulas and a human-review next step."
+  path="/mineral-rights-calculator/"
+  pageCategory="mineral-calculator"
+  breadcrumbs={[
+    { name: 'Home', path: '/' },
+    { name: 'Scenario Calculator', path: '/mineral-rights-calculator/' },
+  ]}
+>
+  <article class="container calculator">
+    <p class="mrx-eyebrow">Free companion to Before You Sell Your Mineral Rights</p>
+    <h1>Understand the numbers behind an offer.</h1>
+    <p class="lede">
+      An offer is built on assumptions. Explore how income, decline, timing and risk affect a
+      scenario, then see which facts need a closer look before you sign.
+    </p>
+    <p>
+      This calculator shows arithmetic using your inputs. It does not determine market value, verify
+      ownership or produce an appraisal. MRX provides education only and does not buy mineral
+      rights.
+    </p>
+    <p>
+      <a href="/before-you-sell-mineral-rights/">Get the free book and fillable worksheets</a> · <a
+        href="/book/">Prepare a human underwriter conversation</a>
+    </p>
+
+    <section aria-labelledby="income-heading">
+      <p class="mrx-eyebrow">For interests already paying royalties</p>
+      <h2 id="income-heading">Model a producing-income scenario.</h2>
+      <p>
+        Use an average of representative royalty statements paid to you, after statement deductions.
+        Exclude one-time adjustments you cannot explain. You already have your ownership share in
+        that payment; do not multiply it by your royalty decimal again.
+      </p>
+      <p>
+        The rate and horizon starting values below are editable teaching assumptions, not
+        recommended rates for your property. No result appears until you enter your income and
+        calculate.
+      </p>
+      <form id="income-form">
+        <div class="fields">
+          <label
+            >Average monthly royalty income paid to you ($)<input
+              name="monthlyIncome"
+              type="number"
+              min="0"
+              max="1000000000"
+              step="0.01"
+              required
+              inputmode="decimal"
+              aria-describedby="income-help"
+            /></label
+          >
+          <label>Statement period ending<input name="recordsDate" type="date" required /></label>
+          <label
+            >Assumed annual income decline (%)<input
+              name="declinePercent"
+              type="number"
+              value="10"
+              min="0"
+              max="100"
+              step="0.1"
+              required
+            /></label
+          >
+          <label
+            >Assumed annual discount rate (%)<input
+              name="discountPercent"
+              type="number"
+              value="10"
+              min="0"
+              max="100"
+              step="0.1"
+              required
+            /></label
+          >
+          <label
+            >Years to model<input
+              name="years"
+              type="number"
+              value="10"
+              min="1"
+              max="30"
+              step="1"
+              required
+            /></label
+          >
+        </div>
+        <p id="income-help">
+          No producing income or missing statements? Leave this calculation unused. That does not
+          mean the mineral interest has no value.
+        </p>
+        <button type="submit">Calculate my income scenarios</button>
+        <button type="reset" class="secondary">Clear this calculation</button>
+      </form>
+      <div id="income-result" role="status" aria-live="polite" tabindex="-1" hidden></div>
+      <details>
+        <summary>See the formula and what it leaves out</summary>
+        <p>
+          Year t income = monthly income × 12 × (1 − decline rate)<sup>t−1</sup>. Present value =
+          the sum of each modeled year's income ÷ (1 + discount rate)<sup>t</sup>. Year one uses a
+          full year at your starting income; payments are discounted at each year end.
+        </p>
+        <p>
+          This simplified constant-decline model includes no terminal value, undeveloped acreage,
+          future wells or lease bonus. It holds prices and deductions within your starting income
+          assumption. It does not forecast engineering reserves, seasonal payments, taxes, buyer
+          costs or lease/title changes. The discount rate reflects an assumption about timing and
+          risk; it is not a promised investment return.
+        </p>
+        <p>
+          The comparison cases change decline by 10 percentage points and discount by 5 percentage
+          points, bounded between 0 and 100. They illustrate sensitivity, not a confidence interval
+          or a sale-price range. Buyers may use different records, forecasts and commercial
+          assumptions.
+        </p>
+      </details>
+    </section>
+
+    <section aria-labelledby="acreage-heading">
+      <h2 id="acreage-heading">Compare the acreage basis of a written offer.</h2>
+      <p>
+        Use gross tract acres and your documented fractional <strong>mineral ownership</strong>. Net
+        mineral acres and net royalty acres are different measures. A division-order payment decimal
+        or a lease royalty rate is not your mineral ownership fraction.
+      </p>
+      <form id="acreage-form">
+        <div class="fields">
+          <label
+            >Gross acres in the described tract<input
+              name="grossAcres"
+              type="number"
+              min="0.000001"
+              max="1000000000"
+              step="any"
+              required
+            /></label
+          >
+          <label
+            >Your mineral ownership share (%)<input
+              name="ownershipPercent"
+              type="number"
+              min="0.000001"
+              max="100"
+              step="any"
+              required
+              aria-describedby="ownership-help"
+            /></label
+          >
+          <label
+            >Total written offer for this same interest ($)<input
+              name="offer"
+              type="number"
+              min="0"
+              max="1000000000000"
+              step="0.01"
+              required
+            /></label
+          >
+          <label>Offer date<input name="offerDate" type="date" required /></label>
+        </div>
+        <p id="ownership-help">
+          For example, a documented 1/4 mineral interest is 25%. If the basis is unknown, ask for
+          the controlling records rather than guessing.
+        </p>
+        <button type="submit">Compare my offer basis</button><button type="reset" class="secondary"
+          >Clear this comparison</button
+        >
+      </form>
+      <div id="acreage-result" role="status" aria-live="polite" tabindex="-1" hidden></div>
+      <p>
+        Formula: gross acres × mineral ownership share = estimated net mineral acres. Written offer
+        ÷ those acres = the offer per net mineral acre. This standardizes your stated inputs; it
+        does not establish fair price or that the offer covers the same rights, depths and
+        conditions.
+      </p>
+    </section>
+
+    <section aria-labelledby="landman-heading">
+      <h2 id="landman-heading">What a landman checks before a purchase.</h2>
+      <ol>
+        <li>
+          <strong>What is actually owned?</strong> Legal description, chain of title, probate, reservations,
+          depths and mineral versus royalty interest.
+        </li>
+        <li>
+          <strong>What is being conveyed?</strong> Match the offer, agreement, deed and exhibits. Clarify
+          retained rights and effective dates.
+        </li>
+        <li>
+          <strong>What supports the income?</strong> Lease terms, division orders, payment history, deductions,
+          operator and available production records. Engineering forecasts and local market evidence may
+          be needed.
+        </li>
+        <li>
+          <strong>What could change the price?</strong> Ask which quantities and title assumptions are
+          preliminary, what adjustments are allowed and what records must support them.
+        </li>
+        <li>
+          <strong>What makes closing possible?</strong> Identify the buyer, signer, funding party, review
+          deadline, extension rules and payment/release sequence.
+        </li>
+      </ol>
+      <p>
+        Landmen, engineers, valuation professionals and attorneys have different roles. An online
+        calculation cannot substitute for their property-specific work. <a
+          href="https://www.landman.org/articles/Vol_61.5_-_PAULA_FLEMING_-_Divestiture_and_Acquisition_-_Due_Diligence_101_for_Land_Professionals_.PDF"
+          >AAPL due-diligence guidance</a
+        > · <a
+          href="https://naro-us.org/learn/top-10-mineral-owner-questions/mineral-rights-valuation-guide"
+          >NARO valuation methods</a
+        >.
+      </p>
+      <h3>If the offer drops, ask for the explanation in writing.</h3>
+      <p>
+        Compare the original and revised amount, interest, acreage, conditions and dates. Request
+        the calculation and supporting records. A documented ownership adjustment can be legitimate;
+        an unexplained reduction, newly introduced condition or pressure to sign deserves further
+        questions. Do not assume either deception or fairness from a number alone.
+      </p>
+      <p>
+        <a href="/guides/mineral-rights-offer-comparison-worksheet.pdf" download
+          >Download the fillable comparison worksheets</a
+        >, record what is unresolved, and <a href="/book/"
+          >book a free educational conversation with a human underwriter</a
+        >. Elena is the fictional AI scheduling guide; she helps arrange the appointment.
+      </p>
+      <p class="privacy-note">
+        Calculations run in your browser. Calculator inputs are not submitted to MRX. Refreshing or
+        leaving the page clears them; save your own notes if you want to discuss the assumptions.
+      </p>
+    </section>
+  </article>
+</MarketingLayout>
+
+<script>
+  import { modelIncome, compareAcreage } from '../lib/mineral-rights-scenarios';
+  const money = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumFractionDigits: 0,
+  });
+  const number = new Intl.NumberFormat('en-US', { maximumFractionDigits: 4 });
+  const getNumber = (data: FormData, key: string) => {
+    const value = String(data.get(key) ?? '').trim();
+    if (!value) throw new Error('Complete the labeled inputs before calculating.');
+    return Number(value);
+  };
+  function output(id: string, text: string) {
+    const el = document.getElementById(id)!;
+    el.replaceChildren();
+    el.hidden = false;
+    const p = document.createElement('p');
+    p.textContent = text;
+    el.append(p);
+    el.focus();
+    return el;
+  }
+  const income = document.querySelector<HTMLFormElement>('#income-form')!;
+  income.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!income.reportValidity()) return;
+    try {
+      const data = new FormData(income);
+      const base = {
+        monthlyIncome: getNumber(data, 'monthlyIncome'),
+        declinePercent: getNumber(data, 'declinePercent'),
+        discountPercent: getNumber(data, 'discountPercent'),
+        years: getNumber(data, 'years'),
+      };
+      const result = modelIncome(base);
+      const conservative = modelIncome({
+        ...base,
+        declinePercent: Math.min(100, base.declinePercent + 10),
+        discountPercent: Math.min(100, base.discountPercent + 5),
+      });
+      const higher = modelIncome({
+        ...base,
+        declinePercent: Math.max(0, base.declinePercent - 10),
+        discountPercent: Math.max(0, base.discountPercent - 5),
+      });
+      const el = output(
+        'income-result',
+        `Your ${base.years}-year modeled present value of income: ${money.format(result.presentValue)}. This is not market value, an appraisal or an offer. Statement period ending ${data.get('recordsDate')}; starting monthly income ${money.format(base.monthlyIncome)}, annual decline ${base.declinePercent}%, discount ${base.discountPercent}%.`,
+      );
+      const p = document.createElement('p');
+      p.textContent = `Sensitivity examples: higher decline and discount ${money.format(conservative.presentValue)}; lower decline and discount ${money.format(higher.presentValue)}. Undiscounted income in your base scenario: ${money.format(result.undiscountedIncome)}. No income or value after year ${base.years} is included.`;
+      el.append(p);
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = 'Show the annual calculation';
+      details.append(summary);
+      const list = document.createElement('ol');
+      result.rows.forEach((row) => {
+        const li = document.createElement('li');
+        li.textContent = `Year ${row.year}: income ${money.format(row.cashFlow)}; discounted income ${money.format(row.presentValue)}.`;
+        list.append(li);
+      });
+      details.append(list);
+      el.append(details);
+    } catch (error) {
+      output(
+        'income-result',
+        error instanceof Error ? error.message : 'Check your inputs and try again.',
+      );
+    }
+  });
+  const acreage = document.querySelector<HTMLFormElement>('#acreage-form')!;
+  acreage.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!acreage.reportValidity()) return;
+    try {
+      const data = new FormData(acreage);
+      const gross = getNumber(data, 'grossAcres');
+      const share = getNumber(data, 'ownershipPercent');
+      const offer = getNumber(data, 'offer');
+      const result = compareAcreage(gross, share, offer);
+      output(
+        'acreage-result',
+        `${number.format(gross)} gross acres × ${number.format(share)}% mineral ownership = ${number.format(result.netMineralAcres)} estimated net mineral acres. Your ${money.format(offer)} written offer dated ${data.get('offerDate')} equals ${money.format(result.offerPerNetMineralAcre)} per net mineral acre on these stated inputs. This does not verify ownership, equal terms or fair market price.`,
+      );
+    } catch (error) {
+      output(
+        'acreage-result',
+        error instanceof Error ? error.message : 'Check your inputs and try again.',
+      );
+    }
+  });
+  for (const [form, id] of [
+    [income, 'income-result'],
+    [acreage, 'acreage-result'],
+  ] as const) {
+    form.addEventListener('reset', () => {
+      const el = document.getElementById(id)!;
+      el.hidden = true;
+      el.replaceChildren();
+    });
+    form.addEventListener('input', () => {
+      const el = document.getElementById(id)!;
+      el.hidden = true;
+      el.replaceChildren();
+    });
+  }
+</script>
+
+<style>
+  .calculator {
+    max-width: 980px;
+    padding-block: 3rem;
+  }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.3rem);
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+  }
+  .lede {
+    font-size: 1.25rem;
+  }
+  section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #cbd5df;
+  }
+  p,
+  li {
+    line-height: 1.7;
+  }
+  li {
+    margin-block: 0.7rem;
+  }
+  .fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-weight: 600;
+  }
+  input {
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0.7rem;
+    border: 1px solid #526878;
+    border-radius: 6px;
+    font: inherit;
+    color: #112b40;
+    background: white;
+  }
+  button {
+    margin: 0.7rem 0.5rem 0.7rem 0;
+    padding: 0.8rem 1.1rem;
+    min-height: 48px;
+    background: #112b40;
+    color: white;
+    border: 2px solid #112b40;
+    border-radius: 6px;
+    font: inherit;
+    cursor: pointer;
+  }
+  .secondary {
+    background: white;
+    color: #112b40;
+  }
+  :is(a, button, input, summary):focus-visible {
+    outline: 3px solid #bc8b31;
+    outline-offset: 4px;
+  }
+  [role='status'] {
+    margin-block: 1rem;
+    background: #f7f4ed;
+    padding: 1rem;
+    border-left: 4px solid #bc8b31;
+  }
+  details {
+    margin-block: 1rem;
+  }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding-block: 0.6rem;
+  }
+  .privacy-note {
+    font-size: 0.95rem;
+  }
+  @media (max-width: 600px) {
+    .fields {
+      grid-template-columns: 1fr;
+    }
+    button {
+      width: 100%;
+    }
+  }
+</style>

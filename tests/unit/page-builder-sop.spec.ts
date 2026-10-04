@@ -211,11 +211,10 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
 
   it('resolves the offer-three reviewed alternatives without changing exact-text identity', () => {
     const expected = {
-      '/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp':
-        {
-          exactText: 'Why Owners Start With an MRX Educational Review',
-          conciseAlt: 'Educational review cover with an open notebook and question cards',
-        },
+      '/assets/articles/hero/why-owners-start-with-an-mrx-educational-review.webp': {
+        exactText: 'Why Owners Start With an MRX Educational Review',
+        conciseAlt: 'Educational review cover with an open notebook and question cards',
+      },
       '/assets/articles/hero/ward-cad-2025-2026-reappraisal-plan-two-mineral-sections-and-their-page-ranges.webp':
         {
           exactText:
@@ -267,9 +266,9 @@ describe('Page Builder SEO/AEO shared render prevention', () => {
   });
 
   it('covers the complete public image policy with no unresolved assets', () => {
-    expect(Object.keys(textPolicy.assets)).toHaveLength(733);
+    expect(Object.keys(textPolicy.assets)).toHaveLength(735);
     expect(textPolicy.summary).toMatchObject({
-      printed_text_asset_count: 692,
+      printed_text_asset_count: 694,
       no_text_asset_count: 41,
       unresolved_asset_count: 0,
       ocr_corroborated_asset_count: 676,

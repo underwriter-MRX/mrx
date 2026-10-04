@@ -20,10 +20,20 @@ export const prerender = true;
   ]}
   faq={entry.data.faq}
 >
+  <section class="container guide-resource-link">
+    <p>
+      Comparing an offer? <a href="/before-you-sell-mineral-rights/"
+        >Get the free Before You Sell Your Mineral Rights book and worksheets</a
+      >, or <a href="/mineral-rights-calculator/">explore the scenario calculator</a>.
+    </p>
+  </section>
   <Content />
 </MarketingLayout>
 
 <style is:global>
+  .guide-resource-link {
+    padding-block: 1.5rem;
+  }
   body[data-page-category='free-guide'] .hero__inner {
     gap: clamp(2rem, 5vw, 4.5rem);
   }

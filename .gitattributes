@@ -1,2 +1,5 @@
 # Immutable audit inputs: retain the exact SHA-pinned bytes, including whitespace.
 docs/evidence/mrx1000-row2/** -text -whitespace
+
+# PDF bytes contain format-required whitespace and must stay binary.
+*.pdf binary
