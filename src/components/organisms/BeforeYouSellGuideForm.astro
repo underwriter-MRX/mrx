@@ -2,11 +2,8 @@
 import {
   BEFORE_YOU_SELL_CONSENT_VERSION,
   BEFORE_YOU_SELL_GUIDE_ID,
-  GUIDE_HUMAN_CALL_TEXT,
   GUIDE_AI_SMS_TEXT,
-  GUIDE_MARKETING_EMAIL_TEXT,
   GUIDE_TRANSACTIONAL_EMAIL_TEXT,
-  GUIDE_TRANSACTIONAL_SMS_TEXT,
 } from '../../lib/before-you-sell-guide';
 
 interface Props {
@@ -49,7 +46,7 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
       aria-describedby="decision-guide-phone-help"
     />
     <small id="decision-guide-phone-help">
-      Required only if you choose a text message or human call below.
+      Required only if you choose AI text messages below.
     </small>
   </label>
 
@@ -59,23 +56,11 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
   </label>
 
   <fieldset class="decision-guide-form__choices">
-    <legend>Optional contact choices</legend>
-    <p>These choices start unchecked and are not required to receive the guide by email.</p>
+    <legend>Optional AI text delivery and replies</legend>
+    <p>This option is not required to receive the guide by email.</p>
     <label class="decision-guide-form__check">
       <input name="ai_sms_consent" type="checkbox" data-needs-guide-phone />
       <span>{GUIDE_AI_SMS_TEXT}</span>
-    </label>
-    <label class="decision-guide-form__check">
-      <input name="sms_delivery_consent" type="checkbox" data-needs-guide-phone />
-      <span>{GUIDE_TRANSACTIONAL_SMS_TEXT}</span>
-    </label>
-    <label class="decision-guide-form__check">
-      <input name="marketing_email_consent" type="checkbox" />
-      <span>{GUIDE_MARKETING_EMAIL_TEXT}</span>
-    </label>
-    <label class="decision-guide-form__check">
-      <input name="human_call_consent" type="checkbox" data-needs-guide-phone />
-      <span>{GUIDE_HUMAN_CALL_TEXT}</span>
     </label>
   </fieldset>
 

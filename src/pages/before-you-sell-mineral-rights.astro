@@ -4,7 +4,7 @@ import BeforeYouSellGuideForm from '../components/organisms/BeforeYouSellGuideFo
 export const prerender = true;
 const title = 'Before You Sell Your Mineral Rights - Free Guide | MRX';
 const description =
-  'Before accepting an offer, know what to ask. Get the free MRX guide with seven practical questions and an offer-comparison worksheet.';
+  'Before a big mineral-rights offer changes, know what to ask. Get the free guide, compare terms, and use our buyer-check checklist.';
 const artwork = '/assets/guides/before-you-sell-mineral-rights/approved-guide-promo.webp';
 const infographicAlt =
   'Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis · Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free guide Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.';
@@ -15,9 +15,9 @@ const faq = [
       'No. It helps you compare written terms, identify missing information, and prepare questions. It does not provide an appraisal or individualized legal, tax, or valuation advice.',
   },
   {
-    question: 'Do I have to agree to texts or a call?',
+    question: 'Do I have to agree to AI texts?',
     answer:
-      'No. Your name, email, and email delivery permission are required. AI text replies, a one-time text link, marketing emails, and a human call are separate optional choices. You can get the guide by email without choosing any of them.',
+      'No. Your name, email, and email delivery permission are required. Text delivery and AI replies from Travis are optional. You can get the guide by email without choosing AI texts.',
   },
 ];
 ---
@@ -43,10 +43,12 @@ const faq = [
     <div class="container">
       <div class="guide-intro">
         <p class="kicker">Free guide + offer-comparison worksheet</p>
-        <h1 id="guide-title">Before you accept an offer, know what to ask.</h1>
+        <h1 id="guide-title">A big offer. A smaller payout? Know what can change.</h1>
         <p>
-          Get <strong>Before You Sell Your Mineral Rights</strong>: seven practical questions to ask
-          before accepting an offer, plus a worksheet to compare the written terms.
+          You do not want to spend weeks on a sale only to face a lower price, a missed closing, or
+          paperwork that includes more rights than you intended. Get
+          <strong>Before You Sell Your Mineral Rights</strong> to prepare your questions and compare the
+          written terms before you commit.
         </p>
         <a class="mobile-jump" href="#get-the-guide">Get my free guide ↓</a>
       </div>
@@ -59,8 +61,8 @@ const faq = [
             >
           </p>
           <p>
-            Use the guide to organize your information and make your next conversation more useful.
-            You do not need to decide to sell.
+            Seven questions and an offer-comparison worksheet. Start with what can change the price,
+            what you would give up, and who is responsible for paying you. No obligation to sell.
           </p>
         </div>
         <div class="guide-optin">
@@ -82,6 +84,151 @@ const faq = [
           </section>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="container buyer-checks" aria-labelledby="offer-surprises">
+    <p class="kicker">What you do not want to discover too late</p>
+    <h2 id="offer-surprises">Look past the number in the first letter.</h2>
+    <div class="risk-grid">
+      <article>
+        <h3>The price changes after you commit.</h3>
+        <p>
+          Ask whether the number is firm or conditional, which ownership assumptions support it, and
+          what evidence can justify a reduction. Get the adjustment rules in writing.
+        </p>
+      </article>
+      <article>
+        <h3>The deed includes more than you expected.</h3>
+        <p>
+          Compare the proposed deed with the offer: properties, ownership share, depths and rights
+          retained. A conversation about one well does not replace reviewing the conveyance.
+        </p>
+      </article>
+      <article>
+        <h3>The deadline moves, but your plans cannot.</h3>
+        <p>
+          Ask who is funding the purchase, whether another buyer must be found, and when diligence
+          ends. Have your adviser explain extensions, exclusivity and termination rights.
+        </p>
+      </article>
+    </div>
+    <aside class="adjustment-note">
+      <h3>A lower revised offer is not automatically bait-and-switch.</h3>
+      <p>
+        Title review can reveal a different interest than expected. The issue to investigate is an
+        unexplained change, an undisclosed condition, or pressure to proceed. Ask for the reason,
+        calculation and supporting records before deciding. <a
+          href="https://www.landman.org/articles/Vol_61.5_-_PAULA_FLEMING_-_Divestiture_and_Acquisition_-_Due_Diligence_101_for_Land_Professionals_.PDF"
+          >AAPL: due-diligence review</a
+        >.
+      </p>
+    </aside>
+    <p class="note">
+      Owner guidance also flags pressure and unclear sale scope.
+      <a href="https://fliphtml5.com/NARO_US/ROAR-July-2026/">NARO ROAR, July 2026, pages 5-6</a>.
+      These are issues to check, not a claim that every buyer uses them.
+    </p>
+  </section>
+  <section class="buyer-checklist-section" aria-labelledby="buyer-checklist-title">
+    <div class="container buyer-checks">
+      <p class="kicker">Use this before choosing a buyer</p>
+      <h2 id="buyer-checklist-title">Can this buyer explain the deal and close it?</h2>
+      <p>
+        Mark an item only when you have an answer you can verify. Blank boxes are questions for your
+        next conversation. This checklist is on this page; your free PDF contains the
+        offer-comparison worksheet shown below.
+      </p>
+      <div class="buyer-checklist">
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Identity and role.</strong> I know the legal buyer, who the representative works
+            for, and whether they are a buyer or intermediary. I checked the entity and contact details
+            independently.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Comparable price.</strong> I know the interest, acreage units and assumptions behind
+            the amount. I can compare another offer on the same basis.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Changes in writing.</strong> I understand what can reduce the price, what supporting
+            evidence is required, and how disputed changes are handled.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Exact rights.</strong> My adviser has checked the proposed deed against the rights
+            I intend to sell and keep.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Funding and assignment.</strong> I asked how the purchase will be funded, who will
+            pay me, and whether closing depends on assigning the deal.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>A defined timetable.</strong> I have the diligence deadline, closing date, extension
+            rules and any restriction on considering other offers.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Payment and document release.</strong> My adviser has explained when funds clear
+            and when the deed is released or recorded. I verify changed payment instructions through a
+            previously trusted contact.</span
+          ></label
+        >
+        <label
+          ><input type="checkbox" /><span
+            ><strong>Independent review.</strong> I have time to get professional advice and ask for references.
+            A registration or polished website alone does not establish that a buyer will perform.</span
+          ></label
+        >
+      </div>
+      <p class="note">
+        This is a conversation checklist, not a buyer certification or legal review. Your selections
+        stay on this page and are not submitted. Apply the same questions to MRX: we may be a buyer,
+        and that relationship must be disclosed before an agreement.
+      </p>
+      <details class="checklist-sources">
+        <summary>Sources behind these questions</summary>
+        <ul>
+          <li>
+            <a
+              href="https://www.naro-us.org/learn/top-10-mineral-owner-questions/mineral-rights-valuation-guide"
+              >NARO: compare offers and valuation assumptions</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.landman.org/discover-the-land-profession/about-us/code-of-ethic.html"
+              >AAPL: standards for fair and honest dealings</a
+            >
+          </li>
+          <li>
+            <a href="https://www.sos.state.tx.us/corp/searches.shtml"
+              >Texas Secretary of State: entity searches</a
+            > (use the relevant state's registry).
+          </li>
+          <li>
+            <a href="https://www.consumerfinance.gov/owning-a-home/beware-mortgage-closing-scams/"
+              >CFPB: independently verify payment instructions</a
+            > (general closing-fraud precaution, adapted here).
+          </li>
+          <li>
+            <a href="https://tcss.legis.texas.gov/resources/PR/htm/PR.5.htm#5.151"
+              >Texas Property Code §5.151</a
+            > addresses disclosures for certain mailed mineral-interest offers with conveyance and payment
+            instruments; it is not a nationwide rule.
+          </li>
+        </ul>
+      </details>
+      <a class="guide-cta" href="#get-the-guide">Get my free guide + worksheet →</a>
     </div>
   </section>
   <section class="worksheet-section">
@@ -148,6 +295,72 @@ const faq = [
   </section>
 </MarketingLayout>
 <style>
+  .buyer-checks {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .buyer-checks h2 {
+    color: #051a2e;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+  }
+  .risk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .risk-grid article {
+    border-top: 3px solid #d99e30;
+    padding-top: 1rem;
+  }
+  .risk-grid h3 {
+    font-size: 1.3rem;
+  }
+  .adjustment-note {
+    background: #f4f0e6;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+  .buyer-checklist-section {
+    background: #f6f8fa;
+  }
+  .buyer-checklist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .buyer-checklist label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    background: white;
+    border: 1px solid #d8dfe4;
+    border-radius: 12px;
+    padding: 1.25rem;
+    cursor: pointer;
+  }
+  .buyer-checklist input {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.2rem;
+    accent-color: #94620c;
+  }
+  .checklist-sources {
+    margin: 1.5rem 0;
+  }
+  .checklist-sources summary {
+    cursor: pointer;
+    font-weight: 700;
+  }
+  @media (max-width: 700px) {
+    .risk-grid,
+    .buyer-checklist {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .guide-hero {
     background: #fbfaf6;
     padding: clamp(1.5rem, 4vw, 3rem) 0 4rem;
