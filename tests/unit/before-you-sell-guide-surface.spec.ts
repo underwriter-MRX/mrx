@@ -34,11 +34,11 @@ describe('before-you-sell guide surface contract', () => {
     const expected = new Map([
       [
         'public/guides/before-you-sell-mineral-rights.pdf',
-        '61de6e559d8059a6126075eefa239d848c199153a18e70a47866f7769b0b6e34',
+        '53d3dac0e51542e6be158854afdad2c8c90656d53136d2997961f133bfdd15ab',
       ],
       [
         'public/assets/guides/before-you-sell-mineral-rights/guide-cover.webp',
-        '89379c178362795eaa7f97a100c066f3cbb61565017300d0a91f7e734aa40b45',
+        '0c2cd8b91b12ca25cb849d87a0ecd2cfcb4affd3d14335c69c989083011335c1',
       ],
       [
         'public/assets/guides/before-you-sell-mineral-rights/infographic-portrait.webp',
