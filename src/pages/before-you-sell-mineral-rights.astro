@@ -1,12 +1,12 @@
 ---
 import MarketingLayout from '../layouts/MarketingLayout.astro';
 export const prerender = true;
-const title = 'Before You Sell Your Mineral Rights - Free Guide | MRX';
+const title = 'Is Your Mineral Rights Offer As Good As It Sounds? | Free MRX Book';
 const description =
   'Get the free mineral-rights book, fillable worksheets and scenario calculator. Understand offer adjustments and prepare for a human underwriter conversation.';
-const artwork = '/assets/guides/before-you-sell-mineral-rights/approved-guide-promo.webp';
+const artwork = '/assets/guides/before-you-sell-mineral-rights/guide-cover.webp';
 const infographicAlt =
-  'Mineral Rights Xchange. BEFORE YOU ACCEPT AN OFFER. An offer is more than a dollar amount. Travis · Fictional AI guide. 01 What do you own? 02 What is your goal? 03 What would the buyer receive? 04 What assumptions support the price? 05 What can change before closing? 06 Who is buying and how will you be paid? 07 What still needs an answer? Get the free guide Before You Sell Your Mineral Rights. 7 questions + an offer-comparison worksheet. MineralRightsXchange.com. Educational guide. No obligation to sell.';
+  'Mineral Rights Xchange. FREE MINERAL OWNER DECISION GUIDE. Is Your Mineral Rights Offer As Good As It Sounds? 7 questions to ask before you commit. Plus fillable worksheets and a free underwriter call.';
 const faq = [
   {
     question: 'Does this guide tell me what my mineral rights are worth?',
@@ -27,14 +27,14 @@ const faq = [
   path="/before-you-sell-mineral-rights/"
   ogImage={artwork}
   ogImageAlt={infographicAlt}
-  ogImageWidth={1122}
-  ogImageHeight={1402}
+  ogImageWidth={918}
+  ogImageHeight={1188}
   ogImageType="image/webp"
   pageType="marketing"
   pageCategory="decision-guide"
   breadcrumbs={[
     { name: 'Home', path: '/' },
-    { name: 'Before You Sell Your Mineral Rights', path: '/before-you-sell-mineral-rights/' },
+    { name: 'Free Mineral Rights Offer Book', path: '/before-you-sell-mineral-rights/' },
   ]}
   faq={faq}
 >
@@ -42,18 +42,19 @@ const faq = [
     <div class="container">
       <div class="guide-intro">
         <p class="kicker">Free book + fillable worksheets + calculator</p>
-        <h1 id="guide-title">A big offer. A smaller payout? Know what can change.</h1>
+        <h1 id="guide-title">Is Your Mineral Rights Offer As Good As It Sounds?</h1>
         <p>
           You do not want to spend weeks on a sale only to face a lower price, a missed closing, or
           paperwork that includes more rights than you intended. Get
-          <strong>Before You Sell Your Mineral Rights</strong> to prepare your questions and compare the
-          written terms before you commit.
+          <strong>Is Your Mineral Rights Offer As Good As It Sounds?</strong> to see which questions to
+          ask before you commit. Then bring your own offer and unanswered questions to a free educational
+          phone appointment with a human underwriter.
         </p>
         <a class="mobile-jump" href="#get-the-guide">Get my free guide ↓</a>
       </div>
       <div class="guide-grid">
         <div class="guide-artwork">
-          <img src={artwork} alt={infographicAlt} width="1122" height="1402" fetchpriority="high" />
+          <img src={artwork} alt={infographicAlt} width="918" height="1188" fetchpriority="high" />
           <p class="byline">
             By Travis, MRX AI Guide<br /><small
               >Fictional AI guide • Published by Mineral Rights Xchange</small
@@ -65,19 +66,13 @@ const faq = [
           </p>
         </div>
         <div class="guide-optin">
-          <div
-            class="book-detail"
-            role="img"
-            aria-label="Hardcover-style promotion for the free digital guide Before You Sell Your Mineral Rights. Seven questions and an offer-comparison worksheet."
-          >
-            <img src={artwork} alt={infographicAlt} width="1122" height="1402" aria-hidden="true" />
-          </div>
           <section id="get-the-guide" class="guide-form-card" aria-labelledby="get-guide-title">
             <p class="kicker">Your free copy</p>
-            <h2 id="get-guide-title">Get your free guide.</h2>
+            <h2 id="get-guide-title">Get the book. Make your next question count.</h2>
             <p>
               Before you accept the number, understand the terms. Get seven practical questions,
-              fillable offer comparisons and a records checklist to use in your next conversation.
+              fillable offer comparisons and a records checklist. Learn what can change, then use
+              the book to prepare for a free underwriter conversation about your own questions.
             </p>
             <div class="download-actions">
               <a
@@ -272,7 +267,7 @@ const faq = [
       <figure>
         <img
           src="/assets/guides/before-you-sell-mineral-rights/offer-comparison-worksheet.webp"
-          alt="MRX / BEFORE YOU SELL YOUR MINERAL RIGHTS. WORKSHEET 01. Put the offers side by side. Use the actual written terms. Leave blanks or write 'unknown' when something is missing. Keep this worksheet with your documents; it is not a valuation or a winner score. TERM TO CHECK. OFFER A. OFFER B. Buyer / offer date. Interest type and location. Exact rights and depths. Headline total and basis. Stated acres and unit. Assumptions / records used. Possible price adjustments. Diligence / extensions. Closing / final payment. Effective date / receivables. Rights retained / obligations. Questions still unanswered. Compare the same asset and conditions before relying on totals. Neither this table nor a per-acre calculation determines value or which offer you should accept. Optional online companion: mineralrightsxchange.com/mineral-rights-offer-comparison/. 10. Travis: fictional AI guide | Published by Mineral Rights Xchange."
+          alt="MRX / MINERAL RIGHTS OFFER DECISION GUIDE WORKSHEET 01 Put the offers side by side. Use the actual written terms. Write unknown when information is missing. Bring this comparison to your underwriter call; it organizes questions, not a valuation or a winner score. TERM TO CHECK OFFER A OFFER B Buyer / offer date Interest type and location Exact rights and depths Headline total and basis Stated acres and unit Assumptions / records used Possible price adjustments Diligence / extensions Closing / final payment Effective date / receivables Rights retained / obligations Questions still unanswered Compare the same asset and conditions before relying on totals. Neither this table nor a per-acre calculation determines value or which offer you should accept. Optional online companion: mineralrightsxchange.com/mineral-rights-offer-comparison/ 10 Book a free underwriter call: MineralRightsXchange.com/book/ | (432) 400-6198"
           width="918"
           height="1188"
           loading="lazy"
@@ -294,13 +289,26 @@ const faq = [
     </p>
     <div class="download-actions">
       <a class="guide-cta" href="/mineral-rights-calculator/">Try the free scenario calculator</a><a
-        href="/book/">Discuss my questions with a human underwriter</a>
+        href="/book/">Discuss my questions with a human underwriter</a
+      >
     </div>
   </section>
   <section class="container guide-next">
     <div>
-      <p class="kicker">Already have your copy?</p><h2>Ask your next question.</h2><p>
-        Tell Travis what you are trying to understand about your offer.
+      <p class="kicker">Put the book to work</p><h2>Get help applying it to your offer.</h2><p>
+        A general guide cannot examine your particular records or deal. Bring your worksheet to a
+        free educational phone appointment with a human MRX underwriter. Discuss the assumptions,
+        unresolved terms, and next records or qualified review you may need.
+      </p>
+      <div class="download-actions">
+        <a class="guide-cta" href="/book/" data-cta-name="ebook-underwriter-booking"
+          >Book my free underwriter phone appointment</a
+        >
+        <a href="tel:+14324006198">Call (432) 400-6198</a>
+      </div>
+      <p class="note">
+        MRX provides education only and does not buy mineral rights. No obligation to sell. An
+        educational call does not establish ownership or market value.
       </p>
     </div>
     <button class="ask-travis" type="button" data-open-travis

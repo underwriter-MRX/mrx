@@ -10,7 +10,7 @@ describe('before-you-sell guide surface contract', () => {
     const page = read('src/pages/before-you-sell-mineral-rights.astro');
     const form = read('src/components/organisms/BeforeYouSellGuideForm.astro');
     const chat = read('src/components/react/AskTravis.tsx');
-    expect(page).toContain('Before You Sell Your Mineral Rights');
+    expect(page).toContain('Is Your Mineral Rights Offer As Good As It Sounds?');
     expect(page).toContain('Fictional AI guide • Published by Mineral Rights Xchange');
     expect(page).toContain('href="/guides/before-you-sell-mineral-rights.pdf"');
     expect(page).not.toContain('<BeforeYouSellGuideForm');
@@ -23,10 +23,10 @@ describe('before-you-sell guide surface contract', () => {
 
   it('uses exact-word image alternatives and exact WebP metadata dimensions', () => {
     const page = read('src/pages/before-you-sell-mineral-rights.astro');
-    expect(page).toContain('approved-guide-promo.webp');
-    expect(page).toContain('01 What do you own?');
-    expect(page).toContain('ogImageWidth={1122}');
-    expect(page).toContain('ogImageHeight={1402}');
+    expect(page).toContain('guide-cover.webp');
+    expect(page).toContain('Is Your Mineral Rights Offer As Good As It Sounds?');
+    expect(page).toContain('ogImageWidth={918}');
+    expect(page).toContain('ogImageHeight={1188}');
     expect(page).toContain('ogImageType="image/webp"');
   });
 
@@ -34,11 +34,11 @@ describe('before-you-sell guide surface contract', () => {
     const expected = new Map([
       [
         'public/guides/before-you-sell-mineral-rights.pdf',
-        '53d3dac0e51542e6be158854afdad2c8c90656d53136d2997961f133bfdd15ab',
+        '667db1a99a459ea9b102f5d439deb2ad0c306db1cf14b0aa1e60c16cf3c5a8ec',
       ],
       [
         'public/assets/guides/before-you-sell-mineral-rights/guide-cover.webp',
-        '0c2cd8b91b12ca25cb849d87a0ecd2cfcb4affd3d14335c69c989083011335c1',
+        'b6d74efbf87bca6790965a7a4259255d40cb1e37b96221e7d9ade4baf4c0756c',
       ],
       [
         'public/assets/guides/before-you-sell-mineral-rights/infographic-portrait.webp',

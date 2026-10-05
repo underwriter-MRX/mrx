@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const BEFORE_YOU_SELL_GUIDE_ID = 'before-you-sell-mineral-rights';
-export const BEFORE_YOU_SELL_GUIDE_TITLE = 'Before You Sell Your Mineral Rights';
+export const BEFORE_YOU_SELL_GUIDE_TITLE = 'Is Your Mineral Rights Offer As Good As It Sounds?';
 export const BEFORE_YOU_SELL_GUIDE_SUBTITLE =
   '7 questions to ask before accepting an offer \u2014 plus an offer-comparison worksheet.';
 export const BEFORE_YOU_SELL_GUIDE_PATH = `/guides/${BEFORE_YOU_SELL_GUIDE_ID}.pdf`;
