@@ -45,9 +45,35 @@ describe('BeforeYouSellGuideRequestSchema', () => {
       false,
       false,
       false,
+      false,
     ]);
   });
 
+  it('requires homepage phone and one-time text permission without granting AI replies', () => {
+    expect(
+      BeforeYouSellGuideRequestSchema.safeParse({ ...valid, source_surface: 'homepage' }).success,
+    ).toBe(false);
+    const request = BeforeYouSellGuideRequestSchema.parse({
+      ...valid,
+      source_surface: 'homepage',
+      phone: '+15125550100',
+      sms_delivery_consent: 'on',
+    });
+    const permissions = guideConsentChoices(request);
+    expect(permissions.find((row) => row.channel === 'sms_ai_conversation')?.granted).toBe(false);
+    expect(permissions.find((row) => row.channel === 'email_ai_conversation')?.granted).toBe(false);
+  });
+  it('records email and text AI permissions independently of delivery', () => {
+    const emailOnly = BeforeYouSellGuideRequestSchema.parse({ ...valid, ai_email_consent: 'on' });
+    expect(
+      guideConsentChoices(emailOnly).find((row) => row.channel === 'email_ai_conversation')
+        ?.granted,
+    ).toBe(true);
+    expect(
+      guideConsentChoices(emailOnly).find((row) => row.channel === 'sms_ai_conversation')?.granted,
+    ).toBe(false);
+    expect(emailOnly.sms_delivery_consent).toBeUndefined();
+  });
   it('requires phone only for transactional SMS or a human call', () => {
     expect(
       BeforeYouSellGuideRequestSchema.safeParse({ ...valid, sms_delivery_consent: 'on' }).success,

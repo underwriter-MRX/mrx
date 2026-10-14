@@ -3,6 +3,8 @@ import {
   BEFORE_YOU_SELL_CONSENT_VERSION,
   BEFORE_YOU_SELL_GUIDE_ID,
   GUIDE_AI_SMS_TEXT,
+  GUIDE_AI_EMAIL_TEXT,
+  GUIDE_TRANSACTIONAL_SMS_TEXT,
   GUIDE_TRANSACTIONAL_EMAIL_TEXT,
 } from '../../lib/before-you-sell-guide';
 
@@ -37,30 +39,60 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
   </label>
 
   <label class="decision-guide-form__phone" data-guide-phone-field>
-    <span>Mobile phone (optional)</span>
+    <span>{sourceSurface === 'homepage' ? 'Mobile phone' : 'Mobile phone (optional)'}</span>
     <input
       name="phone"
       type="tel"
       autocomplete="tel"
       maxlength="30"
+      required={sourceSurface === 'homepage'}
       aria-describedby="decision-guide-phone-help"
     />
     <small id="decision-guide-phone-help">
-      Required only if you choose AI text messages below.
+      {
+        sourceSurface === 'homepage'
+          ? 'We use this number for your requested one-time book link. AI conversations require separate permission below.'
+          : 'Required if you request a book text or AI text replies.'
+      }
     </small>
   </label>
 
   <label class="decision-guide-form__check decision-guide-form__required">
-    <input name="transactional_email_consent" type="checkbox" checked required />
+    <input name="transactional_email_consent" type="checkbox" required />
     <span>{GUIDE_TRANSACTIONAL_EMAIL_TEXT}</span>
   </label>
 
+  <label class="decision-guide-form__check">
+    <input
+      name="sms_delivery_consent"
+      type="checkbox"
+      required={sourceSurface === 'homepage'}
+      data-needs-guide-phone
+    />
+    <span
+      >{
+        sourceSurface === 'homepage'
+          ? GUIDE_TRANSACTIONAL_SMS_TEXT.replace('Optional: ', '').replace(
+              'This is not required to receive the guide by email.',
+              'This permission covers only the requested book text.',
+            )
+          : GUIDE_TRANSACTIONAL_SMS_TEXT
+      }</span
+    >
+  </label>
   <fieldset class="decision-guide-form__choices">
-    <legend>Optional AI text delivery and replies</legend>
-    <p>This option is not required to receive the guide by email.</p>
+    <legend>Would you like Travis to answer your questions?</legend>
+    <p>
+      Travis is our fictional AI guide. Choose either, both, or neither. These optional choices do
+      not affect access to your book.
+    </p>
     <label class="decision-guide-form__check">
       <input name="ai_sms_consent" type="checkbox" data-needs-guide-phone />
       <span>{GUIDE_AI_SMS_TEXT}</span>
+    </label>
+    <label class="decision-guide-form__check">
+      <input name="ai_email_consent" type="checkbox" />
+      <span>{GUIDE_AI_EMAIL_TEXT}</span>
     </label>
   </fieldset>
 
@@ -77,14 +109,19 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
   <input type="hidden" name="utm_term" value="" />
   <input type="hidden" name="utm_content" value="" />
 
-  <button class="decision-guide-form__submit" type="submit">Get the free guide</button>
+  <button class="decision-guide-form__submit" type="submit">Send my free book + open it now</button>
   <p class="decision-guide-form__privacy">
     Do not submit deeds, account numbers, or private ownership documents here. Review the
     <a href="/privacy-policy/">Privacy Policy</a> and <a href="/terms/">Terms &amp; AI Disclosure</a
     >.
   </p>
   <p class="decision-guide-form__status" data-guide-status aria-live="polite"></p>
-  <div class="decision-guide-form__success" data-guide-success hidden>
+  <p class="decision-guide-form__privacy">
+    Prefer not to share contact details? <a href="/guides/before-you-sell-mineral-rights.pdf"
+      >Open the free book directly</a
+    >.
+  </p>
+  <div class="decision-guide-form__success" data-guide-success hidden tabindex="-1">
     <strong>Your request was accepted.</strong>
     <p data-guide-delivery-status></p>
     <a href="/guides/before-you-sell-mineral-rights.pdf" data-guide-download>
@@ -104,7 +141,9 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
     const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
 
     const syncPhone = () => {
-      const required = phoneChoices.some((choice) => choice.checked);
+      const required =
+        form.querySelector<HTMLInputElement>('input[name="source_surface"]')?.value ===
+          'homepage' || phoneChoices.some((choice) => choice.checked);
       if (phoneField) phoneField.hidden = false;
       if (phone) {
         phone.disabled = false;
@@ -183,7 +222,10 @@ const { sourceSurface = 'landing', compact = false } = Astro.props;
           deliveryStatus.textContent = messages.join(' ');
         }
         if (status) status.textContent = '';
-        if (success) success.hidden = false;
+        if (success) {
+          success.hidden = false;
+          success.focus();
+        }
         form.dataset.accepted = 'true';
         form.dataset.retryFailed = failedChannels.length ? 'true' : 'false';
         if (submit && failedChannels.length) {

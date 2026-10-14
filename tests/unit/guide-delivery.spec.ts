@@ -48,6 +48,18 @@ describe('dedicated guide delivery', () => {
       delete process.env[name];
   });
 
+  it('does not infer one-time book SMS from AI text permission', async () => {
+    const fetchMock = vi.fn()
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(noDuplicate())
+      .mockResolvedValueOnce(response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }))
+      .mockResolvedValueOnce(response({ contact: { id: 'contact-1', email: request.email, phone: request.phone } }))
+      .mockResolvedValueOnce(response({ messageId: 'email-only' }));
+    vi.stubGlobal('fetch', fetchMock);
+    const result = await deliverBeforeYouSellGuide({ ...request, sms_delivery_consent: undefined, ai_sms_consent: 'on' }, { emailSuppressed: false, smsSuppressed: false, callSuppressed: false });
+    expect(result.accepted).toEqual(['email']);
+    expect(fetchMock.mock.calls.filter(([url, options]) => String(url).includes('/conversations/messages')).map(([, options]) => JSON.parse(options.body).type)).toEqual(['Email']);
+  });
   it('honors provider Email DND and still evaluates requested SMS separately', async () => {
     const fetchMock = vi
       .fn()

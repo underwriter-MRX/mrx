@@ -171,8 +171,9 @@ export const POST: APIRoute = async (context) => {
     );
     const requestedChannels = [
       'email',
-      ...(request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on' ? ['sms'] : []),
+      ...(request.sms_delivery_consent === 'on' ? ['sms'] : []),
       ...(request.ai_sms_consent === 'on' ? ['sms_ai_conversation'] : []),
+      ...(request.ai_email_consent === 'on' ? ['email_ai_conversation'] : []),
       ...(request.marketing_email_consent === 'on' ? ['marketing_email'] : []),
       ...(request.human_call_consent === 'on' ? ['human_call'] : []),
     ];
@@ -194,7 +195,8 @@ export const POST: APIRoute = async (context) => {
           phone: request.phone,
           normalized_phone: phone || '',
         },
-        receipt_rows: receiptRows,
+        // Email AI permission is stored in the shared channel/purpose ledger.
+        receipt_rows: receiptRows.filter((row) => row.channel !== 'email_ai_conversation'),
       },
     );
     if (rpcError) throw rpcError;
@@ -202,6 +204,30 @@ export const POST: APIRoute = async (context) => {
 
     const sameSubmission = durableRequest.idempotency_key === request.idempotency_key;
     const sharedConsentRows = [
+      ...[
+        {
+          channel: 'sms',
+          granted: request.ai_sms_consent === 'on',
+          disclosure: receiptRows[4].disclosure_text,
+          destination: phone,
+        },
+        {
+          channel: 'email',
+          granted: request.ai_email_consent === 'on',
+          disclosure: receiptRows[5].disclosure_text,
+          destination: email,
+        },
+      ].map((choice) => ({
+        profile_id: session.profileId,
+        channel: choice.channel,
+        purpose: 'ai_conversation',
+        granted: choice.granted,
+        disclosure_version: BEFORE_YOU_SELL_CONSENT_VERSION,
+        disclosure_text: choice.disclosure,
+        submitted_value: String(choice.granted),
+        destination: choice.destination,
+        source_url: request.source_url,
+      })),
       ...((durableRequest.created ||
         latestPermission(prior, 'email', ['guide_delivery']) !== true) &&
       !emailSuppressed
@@ -219,7 +245,7 @@ export const POST: APIRoute = async (context) => {
             },
           ]
         : []),
-      ...((request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on') &&
+      ...((request.sms_delivery_consent === 'on') &&
       !smsSuppressed &&
       latestPermission(prior, 'sms', ['guide_delivery']) !== true
         ? [
@@ -230,9 +256,7 @@ export const POST: APIRoute = async (context) => {
               granted: true,
               disclosure_version: BEFORE_YOU_SELL_CONSENT_VERSION,
               disclosure_text:
-                request.ai_sms_consent === 'on'
-                  ? receiptRows[4].disclosure_text
-                  : receiptRows[1].disclosure_text,
+                receiptRows[1].disclosure_text,
               submitted_value: 'true',
               destination: phone,
               source_url: request.source_url,
@@ -306,7 +330,7 @@ export const POST: APIRoute = async (context) => {
 
     const desiredDelivery = [
       'email' as const,
-      ...(request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on'
+      ...(request.sms_delivery_consent === 'on'
         ? (['sms'] as const)
         : []),
     ];
@@ -412,17 +436,19 @@ export const POST: APIRoute = async (context) => {
       .eq('id', durableRequest.id);
     if (updateError) throw updateError;
 
-    const observationRows = receiptRows.map((row) => ({
-      ...row,
-      observation_stage: 'provider_observation',
-      suppression_state: {
-        ...suppressionState,
-        providerDnd: delivery.providerSuppression,
-        providerAcceptedChannels: delivery.accepted,
-        providerSuppressedChannels: delivery.suppressed,
-        providerUnknownChannels: delivery.unknown,
-      },
-    }));
+    const observationRows = receiptRows
+      .filter((row) => row.channel !== 'email_ai_conversation')
+      .map((row) => ({
+        ...row,
+        observation_stage: 'provider_observation',
+        suppression_state: {
+          ...suppressionState,
+          providerDnd: delivery.providerSuppression,
+          providerAcceptedChannels: delivery.accepted,
+          providerSuppressedChannels: delivery.suppressed,
+          providerUnknownChannels: delivery.unknown,
+        },
+      }));
     const { error: observationError } = await supabase
       .from('guide_consent_receipts')
       .insert(observationRows.map((row) => ({ ...row, request_id: durableRequest.id })));

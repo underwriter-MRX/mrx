@@ -1,4 +1,5 @@
 ---
+import BeforeYouSellGuideForm from './BeforeYouSellGuideForm.astro';
 import { getCollection } from 'astro:content';
 import { activeGuides } from '../../data/guides';
 import { stateGuides } from '../../data/states';
@@ -126,7 +127,7 @@ const commonQuestions = [
           >
         </div>
         <p>
-          <a href="/before-you-sell-mineral-rights/"
+          <a href="#home-ebook-signup" data-open-ebook-signup
             >Free book, worksheets and mineral-rights calculator →</a
           >
         </p>
@@ -194,13 +195,18 @@ const commonQuestions = [
 
   <section class="mrx-guide-promo" aria-labelledby="home-guide-title">
     <div class="container mrx-guide-promo__card">
-      <img
-        src="/assets/guides/before-you-sell-mineral-rights/guide-cover.webp"
-        alt="Mineral Rights Xchange. FREE MINERAL OWNER DECISION GUIDE. Is Your Mineral Rights Offer As Good As It Sounds? 7 questions to ask before you commit. Plus fillable worksheets and a free underwriter call."
-        width="918"
-        height="1188"
-        loading="lazy"
-      />
+      <a
+        href="#home-ebook-signup"
+        data-open-ebook-signup
+        class="mrx-guide-cover-link" aria-label="Get the free mineral-rights book"
+        ><img
+          src="/assets/guides/before-you-sell-mineral-rights/guide-cover.webp"
+          alt="Mineral Rights Xchange. FREE MINERAL OWNER DECISION GUIDE. Is Your Mineral Rights Offer As Good As It Sounds? 7 questions to ask before you commit. Plus fillable worksheets and a free underwriter call."
+          width="918"
+          height="1188"
+          loading="lazy"
+        /></a
+      >
       <div>
         <p class="mrx-eyebrow">New free guide</p>
         <h2 id="home-guide-title">Is Your Mineral Rights Offer As Good As It Sounds?</h2>
@@ -215,19 +221,23 @@ const commonQuestions = [
           Rights Xchange
         </p>
         <a
-          href="/before-you-sell-mineral-rights/?source=homepage#get-the-guide"
+          href="#home-ebook-signup"
+          data-open-ebook-signup
           data-cta-name="home-before-you-sell-guide"
         >
           Get my free book + worksheets <span aria-hidden="true">→</span>
         </a>
-        <p>
-          <a
-            href="/guides/before-you-sell-mineral-rights.pdf"
-            download
-            data-cta-name="home-ebook-download">Download the book now (PDF)</a
-          > · <a href="/mineral-rights-calculator/">Try the calculator</a>
-        </p>
-        <small>Free instant access. No email or phone required.</small>
+        <details id="home-ebook-signup">
+          <summary>Send the book to my email and phone</summary>
+          <p>
+            Enter your name, email and mobile number. Open your book here immediately after signup;
+            we will also request delivery of the link by email and text. Permission for ongoing AI
+            Travis replies is optional.
+          </p>
+          <BeforeYouSellGuideForm sourceSurface="homepage" compact />
+        </details>
+        <p><a href="/mineral-rights-calculator/">Try the free calculator</a></p>
+        <small>Free educational resources. MRX does not buy mineral rights.</small>
       </div>
     </div>
   </section>
@@ -486,12 +496,13 @@ const commonQuestions = [
     background: #fff;
     box-shadow: 0 20px 45px rgba(21, 38, 50, 0.1);
   }
-  .mrx-guide-promo__card > img {
+  .mrx-guide-cover-link img {
     width: 100%;
     height: auto;
     border-radius: 0.35rem;
     box-shadow: 0 16px 32px rgba(21, 38, 50, 0.18);
   }
+  .mrx-guide-cover-link { display: block; align-self: start; }
   .mrx-guide-promo__card h2 {
     margin: 0.35rem 0 0.8rem;
     color: #173144;
@@ -501,7 +512,8 @@ const commonQuestions = [
     color: #4b5d69;
     font-size: 0.9rem;
   }
-  .mrx-guide-promo__card a {
+  .mrx-guide-promo__card > div > a,
+  .mrx-guide-promo__card > div > p > a {
     display: inline-flex;
     gap: 0.5rem;
     margin-top: 0.75rem;
@@ -519,9 +531,31 @@ const commonQuestions = [
     .mrx-guide-promo__card {
       grid-template-columns: 1fr;
     }
-    .mrx-guide-promo__card > img {
+    .mrx-guide-cover-link img {
       max-width: 460px;
       margin-inline: auto;
     }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('[data-open-ebook-signup]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const panel = document.querySelector<HTMLDetailsElement>('#home-ebook-signup');
+      if (panel) panel.open = true;
+    });
+  });
+</script>
+<style>
+  #home-ebook-signup {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-ink-300);
+    border-radius: var(--radius-md);
+    scroll-margin-top: 6rem;
+  }
+  #home-ebook-signup summary {
+    cursor: pointer;
+    font-weight: 800;
   }
 </style>
