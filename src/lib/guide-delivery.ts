@@ -148,7 +148,7 @@ export async function deliverBeforeYouSellGuide(
     sendChannels?: Array<'email' | 'sms'>;
   },
 ): Promise<GuideDeliveryResult> {
-  const wantsSms = request.sms_delivery_consent === 'on';
+  const wantsSms = request.sms_delivery_consent === 'on' || request.ai_sms_consent === 'on';
   const sendChannels = options.sendChannels ?? ['email', ...(wantsSms ? (['sms'] as const) : [])];
   if (providerWritesDisabled()) {
     return {

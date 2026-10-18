@@ -38,6 +38,11 @@ describe('shared communication skill at the model boundary', () => {
         'The verified interface owns the delayed optional account invitation',
       );
       expect(request.instructions).toContain('The visitor asked to be called Billy.');
+      expect(request.instructions).toContain('Current MRX guidance (mrx-reviewed-learning-2026-10-15)');
+      expect(request.instructions).toContain('MRX provides mineral-rights education only and does not buy mineral rights.');
+      expect(request.instructions).toContain('Honor an explicit request for a human.');
+      expect(request.instructions).toContain('never imply MRX verifies ownership');
+      expect(request.instructions).not.toContain('can explain a supported evaluation');
       expect(request.input[0].content[0].text).toBe('I only want to learn here today.');
       expect(request.store).toBe(false);
     },

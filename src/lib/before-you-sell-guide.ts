@@ -5,21 +5,18 @@ export const BEFORE_YOU_SELL_GUIDE_TITLE = 'Is Your Mineral Rights Offer As Good
 export const BEFORE_YOU_SELL_GUIDE_SUBTITLE =
   '7 questions to ask before accepting an offer \u2014 plus an offer-comparison worksheet.';
 export const BEFORE_YOU_SELL_GUIDE_PATH = `/guides/${BEFORE_YOU_SELL_GUIDE_ID}.pdf`;
-export const BEFORE_YOU_SELL_CONSENT_VERSION = '2026-10-14-before-you-sell-v3';
+export const BEFORE_YOU_SELL_CONSENT_VERSION = '2026-09-30-before-you-sell-v2';
 export const BEFORE_YOU_SELL_DEDUPE_WINDOW_MS = 24 * 60 * 60 * 1_000;
 
-export const GUIDE_TRANSACTIONAL_EMAIL_TEXT = `I agree that Mineral Rights Xchange may email me the requested guide, “${BEFORE_YOU_SELL_GUIDE_TITLE}.” This permission covers this requested book email only, not ongoing AI replies or marketing.`;
+export const GUIDE_TRANSACTIONAL_EMAIL_TEXT = `I agree that Mineral Rights Xchange may email me the requested guide, “${BEFORE_YOU_SELL_GUIDE_TITLE}.” This one-time transactional email is required to deliver the guide.`;
 export const GUIDE_TRANSACTIONAL_SMS_TEXT = `Optional: Text me a one-time link to “${BEFORE_YOU_SELL_GUIDE_TITLE}.” Message and data rates may apply. Reply STOP to opt out or HELP for help. This is not required to receive the guide by email.`;
 export const GUIDE_MARKETING_EMAIL_TEXT =
   'Optional: Email me educational and marketing updates from Mineral Rights Xchange. I can unsubscribe at any time. This is not required to receive the guide.';
 export const GUIDE_HUMAN_CALL_TEXT =
   'Optional: A human member of the Mineral Rights Xchange team may call me at the number I provide about my mineral-rights questions. No AI-generated, artificial, or prerecorded outbound call is authorized. I may revoke this permission at any time.';
 
-export const GUIDE_AI_EMAIL_TEXT =
-  'Optional: Yes, Travis, Mineral Rights Xchange’s fictional AI guide, may answer my mineral-rights questions by email. Travis is AI, not a human or licensed adviser. This is separate from my book delivery and does not authorize marketing or calls. I can revoke permission at any time using Communication Preferences.';
-
 export const GUIDE_AI_SMS_TEXT =
-  'Optional: Mineral Rights Xchange may send me automated texts from Travis, its AI guide on MineralRightsXchange.com, to answer my mineral-rights questions. This permission is separate from the one-time book text and does not authorize calls or marketing. Travis is AI, not a human. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not required to receive the book or make a purchase.';
+  'Optional: Mineral Rights Xchange may send me automated texts from Travis, its AI guide on MineralRightsXchange.com, with my requested book link and replies to my mineral-rights questions. Travis is AI, not a human. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. Consent is not required to receive the book or make a purchase.';
 
 const optionalCheckbox = z.literal('on').optional();
 const optionalText = (max: number) => z.string().max(max).optional().or(z.literal(''));
@@ -41,7 +38,6 @@ export const BeforeYouSellGuideRequestSchema = z
     }),
     sms_delivery_consent: optionalCheckbox,
     ai_sms_consent: optionalCheckbox,
-    ai_email_consent: optionalCheckbox,
     marketing_email_consent: optionalCheckbox,
     human_call_consent: optionalCheckbox,
     guide_id: z.literal(BEFORE_YOU_SELL_GUIDE_ID),
@@ -58,16 +54,8 @@ export const BeforeYouSellGuideRequestSchema = z
     utm_content: optionalText(80),
   })
   .superRefine((value, context) => {
-    if (value.source_surface === 'homepage' && value.sms_delivery_consent !== 'on') {
-      context.addIssue({
-        code: z.ZodIssueCode.custom,
-        path: ['sms_delivery_consent'],
-        message: 'Confirm the one-time book text, or use the direct download.',
-      });
-    }
     if (
-      (value.source_surface === 'homepage' ||
-        value.sms_delivery_consent === 'on' ||
+      (value.sms_delivery_consent === 'on' ||
         value.ai_sms_consent === 'on' ||
         value.human_call_consent === 'on') &&
       (value.phone || '').replace(/\D/g, '').length < 10
@@ -123,10 +111,5 @@ export const guideConsentChoices = (request: BeforeYouSellGuideRequest) =>
       channel: 'sms_ai_conversation',
       granted: request.ai_sms_consent === 'on',
       disclosureText: GUIDE_AI_SMS_TEXT,
-    },
-    {
-      channel: 'email_ai_conversation',
-      granted: request.ai_email_consent === 'on',
-      disclosureText: GUIDE_AI_EMAIL_TEXT,
     },
   ] as const;

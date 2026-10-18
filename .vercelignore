@@ -211,3 +211,6 @@ scripts/build-mrx1000-wave*
 
 # Preserve an unrelated local duplicate without uploading it to production.
 src/components/react/AccountHub 2.tsx
+
+# Never upload local environment secrets.
+.env*
