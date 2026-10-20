@@ -25,7 +25,7 @@ describe('shared communication skill at the model boundary', () => {
       const [url, options] = fetchMock.mock.calls[0];
       const request = JSON.parse(options.body);
       expect(url).toBe('https://api.openai.com/v1/responses');
-      expect(request.instructions).toContain('Shared communication skill (alex-ai-mrx-2026-09-16)');
+      expect(request.instructions).toContain('Shared communication skill (alex-ai-mrx-2026-10-20)');
       expect(request.instructions).toContain(`Selected guide voice:\n${guide.name}:`);
       for (const other of activeGuides.filter((item) => item.slug !== guide.slug))
         expect(request.instructions).not.toContain(`\n${other.name}:`);
