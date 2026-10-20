@@ -24,7 +24,7 @@
       "ohio",
       "louisiana"
     ],
-    "service_model": "review_first_may_be_buyer_with_written_disclosure",
+    "service_model": "education_only_third_party_offer_review_information",
     "link_policy": "earned_only_no_purchase_or_exchange"
   },
   "release_gates": {
