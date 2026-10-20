@@ -6,7 +6,7 @@ export const prerender = true;
 
 <MarketingLayout
   title="Mineral Rights Offer Comparison Tool · MRX"
-  description="Compare two mineral-rights offers side by side. Normalize stated acreage, identify missing terms, and prepare questions before you sign."
+  description="Review one mineral-rights offer or compare two side by side. Normalize stated acreage, identify missing terms, and prepare questions before you sign."
   path="/mineral-rights-offer-comparison/"
   pageType="marketing"
   pageCategory="seller-intent"
@@ -21,10 +21,11 @@ export const prerender = true;
       <p class="compare-eyebrow">Private, in-browser worksheet</p>
       <h1>Mineral rights offer comparison tool</h1>
       <p>
-        Put two written offers on the same screen. This worksheet calculates price per stated net
-        mineral acre when both inputs are available and flags unanswered terms. Your entries stay in
-        this page until you clear it or leave. MRX does not upload or save the worksheet values.
-        General tool-use events contain no worksheet entries.
+        Review one written offer in Offer A, or add Offer B for a comparison. Leave Offer B blank if
+        you have one offer. This worksheet calculates price per stated net mineral acre when both
+        inputs are available and flags unanswered terms. Your entries stay in this page until you
+        clear it or leave. MRX does not upload or save the worksheet values. General tool-use events
+        contain no worksheet entries.
       </p>
       <aside>
         This tool does not determine market value or whether an offer is fair. Net mineral acres,
@@ -48,7 +49,9 @@ export const prerender = true;
 
       <p>
         Leave unknown amounts blank. Write “unknown” where a term is unclear. Do not enter names,
-        account numbers, signatures, or document text that identifies an owner.
+        account numbers, signatures, or document text that identifies an owner. Do not upload or
+        share documents subject to confidentiality restrictions. If unsure, consult your attorney or
+        obtain permission first. Only enter a non-confidential summary if sharing it is permitted.
       </p>
       <form data-offer-comparison autocomplete="off">
         <div
@@ -150,6 +153,96 @@ export const prerender = true;
                 >
                 <td>Confirm the acreage basis and do not substitute net royalty acres.</td>
               </tr>
+              <tr
+                ><th scope="row">Optional NRI</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <input
+                        name={`offer-${side}-nri`}
+                        aria-label={`Offer ${side.toUpperCase()} Optional NRI`}
+                        type="text"
+                        maxlength="160"
+                      />
+                    </td>
+                  ))
+                }<td>Net revenue interest, not acres</td></tr
+              >
+              <tr
+                ><th scope="row">Optional NRA</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <input
+                        name={`offer-${side}-nra`}
+                        aria-label={`Offer ${side.toUpperCase()} Optional NRA`}
+                        type="text"
+                        maxlength="160"
+                      />
+                    </td>
+                  ))
+                }<td>Net royalty acres, not NMA</td></tr
+              >
+              <tr
+                ><th scope="row">Optional NRA convention</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <input
+                        name={`offer-${side}-nra-basis`}
+                        aria-label={`Offer ${side.toUpperCase()} Optional NRA convention`}
+                        type="text"
+                        maxlength="160"
+                      />
+                    </td>
+                  ))
+                }<td>State the documented royalty-acre convention</td></tr
+              >
+              <tr
+                ><th scope="row">Optional property county and state</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <input
+                        name={`offer-${side}-county`}
+                        aria-label={`Offer ${side.toUpperCase()} Optional property county and state`}
+                        type="text"
+                        maxlength="160"
+                      />
+                    </td>
+                  ))
+                }<td>Keep property location separate from residence</td></tr
+              >
+              <tr
+                ><th scope="row">Optional property reference</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <input
+                        name={`offer-${side}-tract`}
+                        aria-label={`Offer ${side.toUpperCase()} Optional property reference`}
+                        type="text"
+                        maxlength="160"
+                      />
+                    </td>
+                  ))
+                }<td
+                  >Use a tract alias or public survey/abstract reference, without owner identifiers</td
+                ></tr
+              >
+              <tr
+                ><th scope="row">NRI units</th>{
+                  (['a', 'b'] as const).map((side) => (
+                    <td>
+                      <select
+                        name={`offer-${side}-nri-unit`}
+                        aria-label={`Offer ${side.toUpperCase()} NRI units`}
+                      >
+                        <>
+                          <option value="">Select if entering NRI</option>
+                          <option value="decimal">Decimal</option>
+                          <option value="percent">Percent</option>
+                        </>
+                      </select>
+                    </td>
+                  ))
+                }<td>A decimal of 0.125 equals 12.5%. Neither is acreage.</td></tr
+              >
               <tr class="compare-table__result-row">
                 <th scope="row">Amount per stated net mineral acre</th>
                 <td><output data-per-acre="a">Not enough information</output></td>
@@ -368,8 +461,9 @@ export const prerender = true;
         </p>
         <p>
           MRX publishes and maintains this educational worksheet. Fictional AI guides are not human
-          employees or licensed professionals. MRX is for educational purposes only and is not a buyer. A qualified professional must address
-          owner-specific legal, tax, title, or valuation conclusions.
+          employees or licensed professionals. MRX is for educational purposes only and is not a
+          buyer. A qualified professional must address owner-specific legal, tax, title, or
+          valuation conclusions.
         </p>
         <p>
           <a href="/methodology/">Read MRX’s methodology and role</a> · <a href="/editorial-policy/"
@@ -436,10 +530,21 @@ export const prerender = true;
   }
   function updateComparison() {
     for (const side of sides) {
+      const unused =
+        side === 'b' &&
+        !Array.from(
+          form?.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+            '[name^="offer-b-"]',
+          ) ?? [],
+        ).some((field) => field.value.trim());
       const result = compareOffer({
         interestType: value(side, 'interest') as InterestType,
         total: value(side, 'total'),
         acres: value(side, 'nma'),
+        nri: value(side, 'nri'),
+        nriUnit: value(side, 'nri-unit'),
+        nra: value(side, 'nra'),
+        nraBasis: value(side, 'nra-basis'),
         property: value(side, 'property'),
         adjustments: value(side, 'adjustments'),
         diligence: value(side, 'diligence'),
@@ -449,12 +554,15 @@ export const prerender = true;
       });
       const output = document.querySelector<HTMLOutputElement>(`[data-per-acre="${side}"]`);
       if (output)
-        output.textContent =
-          result.perAcre === null ? result.calculationNote : currency.format(result.perAcre);
+        output.textContent = unused
+          ? 'Optional: add a second offer to compare.'
+          : result.perAcre === null
+            ? result.calculationNote
+            : currency.format(result.perAcre);
       const list = document.querySelector<HTMLElement>(`[data-questions="${side}"]`);
       if (list) {
         list.replaceChildren(
-          ...result.questions.map((question) => {
+          ...(unused ? [] : result.questions).map((question) => {
             const item = document.createElement('li');
             item.textContent = question;
             return item;
@@ -463,9 +571,11 @@ export const prerender = true;
       }
       const count = document.querySelector<HTMLElement>(`[data-question-count="${side}"]`);
       if (count)
-        count.textContent = result.questions.length
-          ? `${result.questions.length} questions remain from these entries.`
-          : 'No blank or unclear entries flagged. The offer still needs verification.';
+        count.textContent = unused
+          ? 'One-offer review: use Offer A.'
+          : result.questions.length
+            ? `${result.questions.length} questions remain from these entries.`
+            : 'No blank or unclear entries flagged. The offer still needs verification.';
     }
   }
   form?.addEventListener('submit', (event) => event.preventDefault());

@@ -3,6 +3,10 @@ export interface OfferInput {
   interestType: InterestType;
   total: string;
   acres: string;
+  nri?: string;
+  nriUnit?: string;
+  nra?: string;
+  nraBasis?: string;
   property: string;
   adjustments: string;
   diligence: string;
@@ -35,11 +39,21 @@ export function compareOffer(input: OfferInput) {
   if (input.interestType === 'mineral' && acres === null) {
     questions.push('How many net mineral acres does the written offer assume?');
   }
+  const nri = positiveNumber(input.nri ?? '');
+  if (
+    input.nri?.trim() &&
+    (nri === null ||
+      !['decimal', 'percent'].includes(input.nriUnit ?? '') ||
+      nri > (input.nriUnit === 'percent' ? 100 : 1))
+  )
+    questions.push('Check NRI and select decimal (up to 1) or percent (up to 100).');
+  if (input.nra?.trim() && (positiveNumber(input.nra) === null || !known(input.nraBasis ?? '')))
+    questions.push('Check the stated NRA and its royalty-acre convention; do not substitute NMA.');
   if (input.interestType === 'royalty') {
     questions.push('Which royalty interest, decimal or acreage convention does the offer use?');
   }
   if (input.property.trim().toLowerCase() !== 'yes')
-    questions.push('Which property, depths and retained rights are included?');
+    questions.push('Which property and rights are included in this offer?');
   if (!known(input.adjustments))
     questions.push('Who may adjust the price, and under which written conditions?');
   if (!known(input.diligence))

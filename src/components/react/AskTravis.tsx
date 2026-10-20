@@ -3301,6 +3301,10 @@ function AskTravisApp({ supabaseUrl, supabaseAnonKey, hideLauncher = false }: Pr
               >
                 {voiceMessage}
               </p>
+              <p className="travis-voice-privacy">
+                Do not upload or share documents subject to confidentiality restrictions. If unsure,
+                consult your attorney or obtain permission first.
+              </p>
               <details className="travis-more-options" open={!mobileChatViewport}>
                 <summary>Options · call, files &amp; privacy</summary>
                 <p id="travis-voice-privacy" className="travis-voice-privacy">

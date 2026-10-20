@@ -1448,6 +1448,10 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
                         ))}
                       </select>
                     </label>
+                    <p>
+                      Do not upload or share documents subject to confidentiality restrictions. If
+                      unsure, consult your attorney or obtain permission first.
+                    </p>
                     <p>Underwriter preparation checklist</p>
                     <label className="account-upload-button">
                       {uploadingDocument
@@ -1954,6 +1958,10 @@ export default function AccountHub({ supabaseUrl, supabaseAnonKey }: Props) {
                 )?.label || 'selected checklist item'}
               </p>
             )}
+            <p>
+              Do not upload or share documents subject to confidentiality restrictions. If unsure,
+              consult your attorney or obtain permission first.
+            </p>
             <p>Underwriter preparation checklist</p>
             <label className="account-upload-button">
               {uploadingDocument ? 'Uploading…' : 'Upload supporting document'}

@@ -344,7 +344,7 @@ function parsePlss(text: string) {
 
 export function parseUSLocationInput(text: string, priorState?: string | null): ParsedLocation {
   const cleaned = text.trim().slice(0, 20_000);
-  const detectedState = findState(cleaned, priorState);
+  const detectedState = findState(cleaned);
   const coordinates = parseCoordinates(cleaned);
   const plss = parsePlss(cleaned);
   const legalDescription =
@@ -353,7 +353,11 @@ export function parseUSLocationInput(text: string, priorState?: string | null): 
     )
       ? cleaned.slice(0, 8_000)
       : undefined;
-  const countyMatch = cleaned.match(
+  const countyText = cleaned.replace(
+    /^(?:my (?:minerals|property|rights)(?: are| is)?|the property is)\s+(?:located\s+)?in\s+/i,
+    '',
+  );
+  const countyMatch = countyText.match(
     new RegExp(
       `(?:^|[,;]|\\b(?:in|within|of|at)\\s+)\\s*([A-Za-z][A-Za-z .'-]{1,80}?)\\s+(?:County|Parish|Borough|Census Area|Municipio),?\\s+(${statePattern})\\b`,
       'i',
@@ -379,10 +383,11 @@ export function parseUSLocationInput(text: string, priorState?: string | null): 
       new RegExp(`^([A-Za-z][A-Za-z .'-]{1,80}?)(?:,\\s*|\\s+)(${statePattern})$`, 'i'),
     );
   const state =
-    detectedState ??
     normalizedState(countyMatch?.[2]) ??
+    detectedState ??
     normalizedState(addressMatch?.[2]) ??
-    normalizedState(cityMatch?.[2]);
+    normalizedState(cityMatch?.[2]) ??
+    normalizedState(priorState);
   const county = countyMatch?.[1] ?? labeledCountyMatch?.[1]?.replace(/\s+County$/i, '');
 
   return {
