@@ -43,10 +43,12 @@ describe('sell-mineral-rights search leadership controls', () => {
     expect(queryMarkets.size).toBe(50);
   });
 
-  it('keeps the next 25 unique and nonpublic until the GSC index gate is earned', () => {
-    expect(registry.release_gates.gsc_required).toBe(true);
-    expect(registry.release_gates.minimum_index_coverage).toBe(0.8);
+  it('keeps the next 25 unique and nonpublic under their applicable release gates', () => {
+    expect(registry.release_gates.gsc_required_for_measurement).toBe(true);
     expect(registry.release_gates.current_index_status).not.toBe('verified_threshold_met');
+    expect(registry.release_gates.publication_gate_policy).toContain(
+      'Search Console coverage, article count, observation days and nonbranded-impression share are not a publication gate.',
+    );
     expect(registry.next_25).toHaveLength(25);
     expect(new Set(registry.next_25.map((row: { slug: string }) => row.slug)).size).toBe(25);
     expect(
@@ -72,6 +74,9 @@ describe('sell-mineral-rights search leadership controls', () => {
     expect(source).toContain('openTommy: true');
     expect(source).not.toContain('?ask=1');
     expect(source).toContain('reassurance="No card required. No obligation."');
+    expect(source).toContain('MRX provides educational information only.');
+    expect(source).toContain('MRX does not buy mineral rights');
+    expect(source).not.toContain('MRX may be a buyer');
 
     const ctaBlock = readFileSync(ctaBlockPath, 'utf8');
     const ctaLink = readFileSync(ctaLinkPath, 'utf8');

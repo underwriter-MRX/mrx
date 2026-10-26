@@ -30,18 +30,12 @@
   "release_gates": {
     "baseline_release": "mrx1000-release-10",
     "baseline_release_date": "2026-07-22",
-    "index_coverage_deadline": "2026-08-21",
-    "minimum_index_coverage": 0.8,
-    "gsc_required": true,
-    "current_index_status": "unverified_gsc_not_connected",
+    "gsc_required_for_measurement": true,
+    "current_index_status": "unavailable_first_party_not_verified",
     "next_25_publication_status": "held",
-    "texas_commercial_route_status": "held",
-    "hold_reason": "Google Search Console index coverage for the July 22 release has not been verified at or above 80 percent.",
-    "next_50_requirements": {
-      "prior_batches_meeting_index_coverage": 2,
-      "minimum_index_coverage": 0.8,
-      "minimum_nonbranded_impression_share_within_60_days": 0.6
-    }
+    "texas_education_route_status": "not_public",
+    "hold_reason": "The next 25 and Texas route have not completed their own editorial, factual, compliance, build, deployment and live-verification gates. Search Console coverage is a measurement input, not a publication gate.",
+    "publication_gate_policy": "Search Console coverage, article count, observation days and nonbranded-impression share are not a publication gate. Each public release must pass its own applicable quality and release gates."
   },
   "public_route_ownership": [
     {
